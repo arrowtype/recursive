@@ -1,36 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>com.typemytype.robofont.compileSettings.autohint</key>
+	<true/>
+	<key>com.typemytype.robofont.compileSettings.checkOutlines</key>
+	<false/>
+	<key>com.typemytype.robofont.compileSettings.createDummyDSIG</key>
+	<true/>
+	<key>com.typemytype.robofont.compileSettings.decompose</key>
+	<false/>
+	<key>com.typemytype.robofont.compileSettings.generateFormat</key>
+	<integer>0</integer>
+	<key>com.typemytype.robofont.compileSettings.releaseMode</key>
+	<false/>
+	<key>com.typemytype.robofont.foreground.layerStrokeColor</key>
+	<array>
+		<real>0.5</real>
+		<real>0.0</real>
+		<real>0.5</real>
+		<real>0.7</real>
+	</array>
+	<key>com.typemytype.robofont.italicSlantOffset</key>
+	<integer>0</integer>
+	<key>com.typemytype.robofont.layerOrder</key>
+	<array>
+	</array>
+	<key>com.typemytype.robofont.segmentType</key>
+	<string>curve</string>
+	<key>com.typemytype.robofont.shouldAddPointsInSplineConversion</key>
+	<integer>1</integer>
+	<key>com.typemytype.robofont.sort</key>
+	<array>
+		<dict>
+			<key>ascending</key>
+			<array>
+				<string>a</string>
+				<string>d</string>
+				<string>e</string>
+				<string>g</string>
+				<string>i</string>
+				<string>m</string>
+				<string>n</string>
+				<string>s</string>
+				<string>t</string>
+				<string>u</string>
+			</array>
+			<key>type</key>
+			<string>glyphList</string>
+		</dict>
+	</array>
 	<key>public.glyphOrder</key>
 	<array>
 		<string>a</string>
-		<string>c</string>
 		<string>d</string>
 		<string>e</string>
-		<string>equal</string>
 		<string>g</string>
-		<string>g.ver01</string>
-		<string>greater</string>
-		<string>h</string>
 		<string>i</string>
-		<string>l</string>
-		<string>less</string>
 		<string>m</string>
 		<string>n</string>
-		<string>o</string>
-		<string>p</string>
-		<string>period</string>
-		<string>quotedbl</string>
-		<string>quotesingle</string>
-		<string>r</string>
 		<string>s</string>
-		<string>slash</string>
-		<string>space</string>
 		<string>t</string>
 		<string>u</string>
+		<string>parenright</string>
+		<string>semicolon</string>
+		<string>less</string>
+		<string>hyphen</string>
+		<string>period</string>
+		<string>one</string>
+		<string>zero</string>
+		<string>g.ver01</string>
+		<string>quotesingle</string>
+		<string>parenleft</string>
+		<string>braceleft</string>
+		<string>space</string>
+		<string>comma</string>
+		<string>slash</string>
+		<string>quotedbl</string>
+		<string>greater</string>
+		<string>f.ver.001</string>
+		<string>l</string>
+		<string>c</string>
+		<string>f</string>
+		<string>h</string>
+		<string>equal</string>
+		<string>o</string>
+		<string>p</string>
+		<string>r</string>
 		<string>v</string>
 		<string>y</string>
+		<string>colon</string>
+		<string>braceright</string>
 	</array>
 </dict>
 </plist>
