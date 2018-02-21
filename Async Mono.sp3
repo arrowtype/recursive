@@ -5,28 +5,40 @@
     <version superpolator="2"/>
     <!-- measurements -->
     <!-- application data -->
-    <data name="horizontalPreviewAxis" value="Weight"/>
+    <data name="horizontalPreviewAxis" value="Optical Size"/>
     <data name="lineInverted" value="False"/>
     <data name="lineViewFilled" value="True"/>
     <data name="lineStacked" value="lined"/>
-    <data name="generateFontsAtFolder" value="/Users/stephennixon/Dropbox/KABK_netherlands/type_media/14-final_possibilities/casual-scripts/casual_mono-project/instances"/>
-    <data name="previewtext" value="quck"/>
-    <data name="verticalPreviewAxis" value="None"/>
+    <data name="generateFontsAtFolder" value="/Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/instances"/>
+    <data name="previewtext" value="alibaba"/>
+    <data name="verticalPreviewAxis" value="Weight"/>
     <!-- don't generate these glyphs -->
     <ignore glyphs=""/>
     <!-- axis definitions -->
+    <axis maximum="1000.000000" minimum="0.000000" name="Optical Size" shortname="x001">
+        <color a="1.000" b="1.000" g="0.871" r="0.122"/>
+    </axis>
     <axis maximum="1000.000000" minimum="0.000000" name="Weight" shortname="x001">
         <color a="1.000" b="0.694" g="1.226" r="0.905"/>
     </axis>
     <!-- master definitions -->
-    <master familyname="Async Mono" filename="Async Mono-Light.ufo" sortorder="0" stylename="Light">
+    <master familyname="Async-Mono" filename="Async-Mono-Bold.ufo" sortorder="2" stylename="Bold">
         <location>
+            <dimension name="Optical Size" xvalue="900.000000"/>
+            <dimension name="Weight" xvalue="700.000000"/>
+        </location>
+        <color a="1.000" b="0.300" g="0.300" r="0.300"/>
+    </master>
+    <master familyname="Async Mono" filename="Async-Mono-Light.ufo" sortorder="0" stylename="Light">
+        <location>
+            <dimension name="Optical Size" xvalue="900.000000"/>
             <dimension name="Weight" xvalue="200.000000"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
-    <master familyname="Async Mono" filename="Async Mono-Bold.ufo" sortorder="2" stylename="Bold">
+    <master familyname="Async-Mono-Text" filename="Async-Mono-Text-Bold.ufo" sortorder="4" stylename="Bold">
         <location>
+            <dimension name="Optical Size" xvalue="100.000000"/>
             <dimension name="Weight" xvalue="700.000000"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
@@ -34,7 +46,18 @@
     <!-- instance definitions -->
     <instance familyname="Async Mono" filename="instances/AsyncMono-Regular.ufo" sortorder="1" stylename="Regular">
         <location>
+            <dimension name="Optical Size" xvalue="900.000000"/>
             <dimension name="Weight" xvalue="400.000000"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Async Mono" filename="instances/AsyncMono-HeaderBold.ufo" sortorder="3" stylename="Header Bold">
+        <location>
+            <dimension name="Optical Size" xvalue="1000.000000"/>
+            <dimension name="Weight" xvalue="700.000000"/>
         </location>
         <provideFeatures state="1"/>
         <provideGroups state="1"/>

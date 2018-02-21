@@ -12,8 +12,22 @@
 		</dict>
 	</dict>
 	<key>com.typedev.version_control.a</key>
+	<integer>1</integer>
+	<key>com.typedev.version_control.b</key>
+	<integer>1</integer>
+	<key>com.typedev.version_control.braceleft</key>
+	<integer>0</integer>
+	<key>com.typedev.version_control.braceright</key>
+	<integer>0</integer>
+	<key>com.typedev.version_control.bracketleft</key>
+	<integer>0</integer>
+	<key>com.typedev.version_control.bracketright</key>
 	<integer>0</integer>
 	<key>com.typedev.version_control.c</key>
+	<integer>0</integer>
+	<key>com.typedev.version_control.colon</key>
+	<integer>0</integer>
+	<key>com.typedev.version_control.comma</key>
 	<integer>0</integer>
 	<key>com.typedev.version_control.d</key>
 	<integer>0</integer>
@@ -31,7 +45,11 @@
 	<integer>0</integer>
 	<key>com.typedev.version_control.h</key>
 	<integer>0</integer>
+	<key>com.typedev.version_control.hyphen</key>
+	<integer>0</integer>
 	<key>com.typedev.version_control.i</key>
+	<integer>0</integer>
+	<key>com.typedev.version_control.j</key>
 	<integer>0</integer>
 	<key>com.typedev.version_control.l</key>
 	<integer>0</integer>
@@ -43,9 +61,17 @@
 	<integer>0</integer>
 	<key>com.typedev.version_control.o</key>
 	<integer>0</integer>
+	<key>com.typedev.version_control.one</key>
+	<integer>0</integer>
 	<key>com.typedev.version_control.p</key>
 	<integer>0</integer>
+	<key>com.typedev.version_control.parenleft</key>
+	<integer>0</integer>
+	<key>com.typedev.version_control.parenright</key>
+	<integer>0</integer>
 	<key>com.typedev.version_control.period</key>
+	<integer>0</integer>
+	<key>com.typedev.version_control.q</key>
 	<integer>0</integer>
 	<key>com.typedev.version_control.quotedbl</key>
 	<integer>0</integer>
@@ -54,6 +80,8 @@
 	<key>com.typedev.version_control.r</key>
 	<integer>0</integer>
 	<key>com.typedev.version_control.s</key>
+	<integer>0</integer>
+	<key>com.typedev.version_control.semicolon</key>
 	<integer>0</integer>
 	<key>com.typedev.version_control.slash</key>
 	<integer>0</integer>
@@ -65,7 +93,11 @@
 	<integer>0</integer>
 	<key>com.typedev.version_control.v</key>
 	<integer>0</integer>
+	<key>com.typedev.version_control.w</key>
+	<integer>0</integer>
 	<key>com.typedev.version_control.y</key>
+	<integer>0</integer>
+	<key>com.typedev.version_control.zero</key>
 	<integer>0</integer>
 	<key>com.typemytype.robofont.background.layerStrokeColor</key>
 	<array>
@@ -74,18 +106,22 @@
 		<real>0.2</real>
 		<real>0.7</real>
 	</array>
+	<key>com.typemytype.robofont.compileSettings.MacRomanFirst</key>
+	<integer>1</integer>
 	<key>com.typemytype.robofont.compileSettings.autohint</key>
-	<true/>
+	<integer>0</integer>
 	<key>com.typemytype.robofont.compileSettings.checkOutlines</key>
-	<false/>
+	<integer>0</integer>
 	<key>com.typemytype.robofont.compileSettings.createDummyDSIG</key>
 	<true/>
 	<key>com.typemytype.robofont.compileSettings.decompose</key>
-	<false/>
-	<key>com.typemytype.robofont.compileSettings.generateFormat</key>
 	<integer>0</integer>
+	<key>com.typemytype.robofont.compileSettings.generateFormat</key>
+	<integer>1</integer>
+	<key>com.typemytype.robofont.compileSettings.path</key>
+	<string>/Users/stephennixon/Dropbox/KABK_netherlands/type_media/14-final_possibilities/casual-scripts/casual_mono-project/exports/Async-Mono-Bold.ttf</string>
 	<key>com.typemytype.robofont.compileSettings.releaseMode</key>
-	<false/>
+	<integer>0</integer>
 	<key>com.typemytype.robofont.foreground.layerStrokeColor</key>
 	<array>
 		<real>0.5</real>
