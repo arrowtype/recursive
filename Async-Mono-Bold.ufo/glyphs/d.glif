@@ -27,9 +27,10 @@
       <point x="400" y="510"/>
       <point x="357" y="548"/>
       <point x="268" y="548" type="curve" smooth="yes"/>
-      <point x="156" y="548"/>
-      <point x="33" y="452"/>
-      <point x="33" y="181" type="curve" smooth="yes"/>
+      <point x="157" y="548"/>
+      <point x="33" y="453"/>
+      <point x="33" y="186" type="curve" smooth="yes"/>
+      <point x="33" y="181" type="line" smooth="yes"/>
       <point x="33" y="56"/>
       <point x="140" y="-25"/>
       <point x="201" y="-25" type="curve" smooth="yes"/>
@@ -48,63 +49,13 @@
       <point x="181" y="116"/>
       <point x="179" y="139"/>
       <point x="179" y="162" type="curve" smooth="yes"/>
-      <point x="179" y="338"/>
-      <point x="242" y="446"/>
+      <point x="179" y="167" type="line" smooth="yes"/>
+      <point x="179" y="340"/>
+      <point x="243" y="446"/>
       <point x="328" y="446" type="curve" smooth="yes"/>
       <point x="374" y="446"/>
       <point x="399" y="425"/>
       <point x="429" y="373" type="curve"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>com.typemytype.robofont.layerData</key>
-      <dict>
-        <key>background</key>
-        <dict>
-          <key>anchors</key>
-          <array>
-          </array>
-          <key>components</key>
-          <array>
-          </array>
-          <key>contours</key>
-          <array>
-          </array>
-          <key>lib</key>
-          <dict>
-            <key>com.typemytype.robofont.image</key>
-            <dict>
-              <key>brightness</key>
-              <integer>0</integer>
-              <key>contrast</key>
-              <integer>1</integer>
-              <key>path</key>
-              <string>/Users/stephennixon/Dropbox/KABK_netherlands/type_media/14-final_possibilities/casual-scripts/scans/Scan.jpeg</string>
-              <key>saturation</key>
-              <integer>1</integer>
-              <key>sharpness</key>
-              <real>0.4</real>
-              <key>transform</key>
-              <array>
-                <real>1.7072440993319897</real>
-                <real>0.0</real>
-                <real>0.0</real>
-                <real>1.7072440993319897</real>
-                <real>-1148.1431912214427</real>
-                <real>-1383.5143910775323</real>
-              </array>
-            </dict>
-          </dict>
-          <key>name</key>
-          <string>d</string>
-          <key>unicodes</key>
-          <array>
-          </array>
-          <key>width</key>
-          <integer>600</integer>
-        </dict>
-      </dict>
-    </dict>
-  </lib>
 </glyph>
