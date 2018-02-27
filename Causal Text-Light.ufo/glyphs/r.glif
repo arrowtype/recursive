@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="r" format="1">
-  <advance width="500"/>
+  <advance width="600"/>
   <unicode hex="0072"/>
   <outline>
     <contour>
@@ -40,30 +40,30 @@
       <point x="200" y="7" type="curve" smooth="yes"/>
     </contour>
     <contour>
-      <point x="450.0" y="300.0" type="line"/>
-      <point x="450" y="450" type="line" smooth="yes"/>
-      <point x="450" y="479"/>
-      <point x="410" y="520"/>
-      <point x="375" y="520" type="curve"/>
-      <point x="400.0" y="477.0" type="line"/>
-      <point x="400.0" y="325.0" type="line" smooth="yes"/>
-      <point x="400.0" y="310.0"/>
-      <point x="410.0" y="300.0"/>
-      <point x="425.0" y="300.0" type="curve" smooth="yes"/>
+      <point x="500" y="350" type="line"/>
+      <point x="500" y="450" type="line" smooth="yes"/>
+      <point x="500" y="479"/>
+      <point x="460" y="520"/>
+      <point x="425" y="520" type="curve"/>
+      <point x="450" y="477" type="line"/>
+      <point x="450" y="375" type="line" smooth="yes"/>
+      <point x="450" y="360"/>
+      <point x="460" y="350"/>
+      <point x="475" y="350" type="curve" smooth="yes"/>
     </contour>
     <contour>
-      <point x="375" y="520" type="line"/>
-      <point x="320" y="520"/>
-      <point x="274" y="468"/>
+      <point x="425" y="520" type="line"/>
+      <point x="362" y="520"/>
+      <point x="276" y="472"/>
       <point x="235" y="400" type="curve"/>
       <point x="214" y="400" type="line"/>
       <point x="214" y="350" type="line"/>
-      <point x="287" y="433"/>
-      <point x="329" y="473"/>
-      <point x="408" y="473" type="curve"/>
-      <point x="413" y="473"/>
-      <point x="418" y="472"/>
-      <point x="422" y="469" type="curve"/>
+      <point x="292" y="438"/>
+      <point x="370" y="473"/>
+      <point x="458" y="473" type="curve"/>
+      <point x="463" y="473"/>
+      <point x="468" y="472"/>
+      <point x="472" y="469" type="curve"/>
     </contour>
   </outline>
   <lib>
@@ -221,6 +221,34 @@
           <string></string>
           <key>x</key>
           <integer>500</integer>
+          <key>y</key>
+          <integer>0</integer>
+        </dict>
+        <dict>
+          <key>angle</key>
+          <integer>90</integer>
+          <key>isGlobal</key>
+          <false/>
+          <key>magnetic</key>
+          <integer>10</integer>
+          <key>name</key>
+          <string></string>
+          <key>x</key>
+          <integer>550</integer>
+          <key>y</key>
+          <integer>0</integer>
+        </dict>
+        <dict>
+          <key>angle</key>
+          <integer>90</integer>
+          <key>isGlobal</key>
+          <false/>
+          <key>magnetic</key>
+          <integer>10</integer>
+          <key>name</key>
+          <string></string>
+          <key>x</key>
+          <integer>600</integer>
           <key>y</key>
           <integer>0</integer>
         </dict>

@@ -1,47 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="n" format="1">
+<glyph name="I" format="1">
   <advance width="600"/>
-  <unicode hex="006E"/>
+  <unicode hex="0049"/>
   <outline>
-    <contour>
-      <point x="150" y="7" type="line"/>
-      <point x="150" y="475" type="line" smooth="yes"/>
-      <point x="150" y="490"/>
-      <point x="140" y="500"/>
-      <point x="125" y="500" type="curve" smooth="yes"/>
-      <point x="100" y="500" type="line"/>
-      <point x="100" y="32" type="line" smooth="yes"/>
-      <point x="100" y="17"/>
-      <point x="110" y="7"/>
-      <point x="125" y="7" type="curve" smooth="yes"/>
-    </contour>
-    <contour>
-      <point x="500.0" y="0.0" type="line"/>
-      <point x="500" y="420" type="line" smooth="yes"/>
-      <point x="500" y="460"/>
-      <point x="440" y="520"/>
-      <point x="400" y="520" type="curve" smooth="yes"/>
-      <point x="298" y="520"/>
-      <point x="215" y="480"/>
-      <point x="160" y="400" type="curve"/>
-      <point x="139.0" y="400.0" type="line"/>
-      <point x="139" y="340" type="line"/>
-      <point x="238" y="441"/>
-      <point x="290" y="470"/>
-      <point x="375" y="470" type="curve"/>
-      <point x="410" y="470"/>
-      <point x="423" y="466"/>
-      <point x="450" y="452" type="curve"/>
-      <point x="430.0" y="491.0" type="line"/>
-      <point x="416" y="486" type="line"/>
-      <point x="440" y="462"/>
-      <point x="450" y="429"/>
-      <point x="450" y="395" type="curve" smooth="yes"/>
-      <point x="450.0" y="25.0" type="line" smooth="yes"/>
-      <point x="450" y="10"/>
-      <point x="460.0" y="0.0"/>
-      <point x="475.0" y="0.0" type="curve" smooth="yes"/>
-    </contour>
   </outline>
   <lib>
     <dict>
@@ -198,34 +159,6 @@
           <string></string>
           <key>x</key>
           <integer>500</integer>
-          <key>y</key>
-          <integer>0</integer>
-        </dict>
-        <dict>
-          <key>angle</key>
-          <integer>90</integer>
-          <key>isGlobal</key>
-          <false/>
-          <key>magnetic</key>
-          <integer>10</integer>
-          <key>name</key>
-          <string></string>
-          <key>x</key>
-          <integer>550</integer>
-          <key>y</key>
-          <integer>0</integer>
-        </dict>
-        <dict>
-          <key>angle</key>
-          <integer>90</integer>
-          <key>isGlobal</key>
-          <false/>
-          <key>magnetic</key>
-          <integer>10</integer>
-          <key>name</key>
-          <string></string>
-          <key>x</key>
-          <integer>600</integer>
           <key>y</key>
           <integer>0</integer>
         </dict>

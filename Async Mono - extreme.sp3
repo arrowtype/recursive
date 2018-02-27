@@ -21,15 +21,51 @@
     <!-- master definitions -->
     <master familyname="Async-Mono-Text" filename="Async-Mono-Text-Bold.ufo" sortorder="0" stylename="Bold">
         <location>
-            <dimension name="NewAxis001" xvalue="0.000000"/>
+            <dimension name="NewAxis001" xvalue="100.000000"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
-    <master familyname="Async-Mono-Display" filename="Async-Mono-Bold-Display.ufo" sortorder="1" stylename="Bold">
+    <master familyname="Async-Mono-Display" filename="Async-Mono-Bold-Display.ufo" sortorder="5" stylename="Bold">
         <location>
-            <dimension name="NewAxis001" xvalue="1000.000000"/>
+            <dimension name="NewAxis001" xvalue="900.000000"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
     <!-- instance definitions -->
+    <instance familyname="Async-Mono-Display" filename="instances/Async-Mono-Display-240.ufo" sortorder="2" stylename="240">
+        <location>
+            <dimension name="NewAxis001" xvalue="240.000000"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Async-Mono-Display" filename="instances/Async-Mono-Display-x001900.00.ufo" sortorder="1" stylename="x001900.00">
+        <location>
+            <dimension name="NewAxis001" xvalue="160.000000"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Async-Mono-Display" filename="instances/Async-Mono-Display-360.ufo" sortorder="3" stylename="360">
+        <location>
+            <dimension name="NewAxis001" xvalue="360.000000"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Async-Mono-Display" filename="instances/Async-Mono-Display-480.ufo" sortorder="4" stylename="480">
+        <location>
+            <dimension name="NewAxis001" xvalue="480.000000"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
 </designspace>
