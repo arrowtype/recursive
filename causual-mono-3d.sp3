@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<designspace format="2">
+    <!-- Superpolator Designspace Object -->
+    <!-- info -->
+    <version superpolator="2"/>
+    <!-- measurements -->
+    <!-- application data -->
+    <data name="horizontalPreviewAxis" value="NewAxis001"/>
+    <data name="lineInverted" value="False"/>
+    <data name="lineViewFilled" value="True"/>
+    <data name="lineStacked" value="lined"/>
+    <data name="generateFontsAtFolder" value="/Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/instances"/>
+    <data name="previewtext" value="enring togging loggat strangles ringer orison gears sill argon Lisette nigella teeing trollings taira restraints Lester rattlers retreats insatiate tarantaras gasolier lenos sonneteerings goggling satirises"/>
+    <data name="verticalPreviewAxis" value="None"/>
+    <!-- don't generate these glyphs -->
+    <ignore glyphs=""/>
+    <!-- axis definitions -->
+    <axis maximum="1000.000000" minimum="0.000000" name="NewAxis001" shortname="x001">
+        <color a="1.000" b="0.694" g="1.226" r="0.905"/>
+    </axis>
+    <!-- master definitions -->
+    <master familyname="Causal Text" filename="Causal Text-Bold.ufo" sortorder="0" stylename="Bold">
+        <location>
+            <dimension name="NewAxis001" xvalue="800.000000"/>
+        </location>
+        <color a="1.000" b="0.300" g="0.300" r="0.300"/>
+    </master>
+    <master familyname="Causal Text" filename="Causal Text-Light.ufo" sortorder="3" stylename="Light">
+        <location>
+            <dimension name="NewAxis001" xvalue="200.000000"/>
+        </location>
+        <color a="1.000" b="0.300" g="0.300" r="0.300"/>
+    </master>
+    <!-- instance definitions -->
+    <instance familyname="Causal Text" filename="instances/CausalText-Medium.ufo" sortorder="1" stylename="Medium">
+        <location>
+            <dimension name="NewAxis001" xvalue="500.000000"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Causal Text" filename="instances/CausalText-Regular.ufo" sortorder="2" stylename="Regular">
+        <location>
+            <dimension name="NewAxis001" xvalue="400.000000"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+</designspace>
