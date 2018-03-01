@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 folder=RomanMasters
-font=ElmPrototype
+font=elm-mono
 
 # build the OTF version -- this requires the AFDKO toolkit
 # which is available at https://github.com/adobe-type-tools/afdko

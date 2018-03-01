@@ -9,7 +9,7 @@
     <data name="lineInverted" value="False"/>
     <data name="lineViewFilled" value="True"/>
     <data name="lineStacked" value="lined"/>
-    <data name="generateFontsAtFolder" value="/Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/instances"/>
+    <data name="generateFontsAtFolder" value="/Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/causal-script/instances"/>
     <data name="previewtext" value="elms like magic"/>
     <data name="verticalPreviewAxis" value="weight"/>
     <!-- don't generate these glyphs -->
@@ -22,28 +22,28 @@
         <color a="1.000" b="0.694" g="1.226" r="0.905"/>
     </axis>
     <!-- master definitions -->
-    <master familyname="Causal Display" filename="causal-script/Causal Display-Light.ufo" sortorder="10" stylename="Light">
+    <master familyname="Causal Display" filename="causal-script/RomanMasters/Causal Display-Light.ufo" sortorder="10" stylename="Light">
         <location>
             <dimension name="optical" xvalue="90.000000"/>
             <dimension name="weight" xvalue="200.000000"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
-    <master familyname="Causal Text" filename="causal-script/Causal Text-Light.ufo" sortorder="5" stylename="Light">
+    <master familyname="Causal Text" filename="causal-script/RomanMasters/Causal Text-Light.ufo" sortorder="5" stylename="Light">
         <location>
             <dimension name="optical" xvalue="10.000000"/>
             <dimension name="weight" xvalue="200.000000"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
-    <master familyname="Causal Text" filename="causal-script/Causal Text-Bold.ufo" sortorder="1" stylename="Bold">
+    <master familyname="Causal Text" filename="causal-script/RomanMasters/Causal Text-Bold.ufo" sortorder="1" stylename="Bold">
         <location>
             <dimension name="optical" xvalue="10.000000"/>
             <dimension name="weight" xvalue="800.000000"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
-    <master familyname="Causal Display" filename="causal-script/Causal Display-Bold.ufo" sortorder="11" stylename="Bold">
+    <master familyname="Causal Display" filename="causal-script/RomanMasters/Causal Display-Bold.ufo" sortorder="11" stylename="Bold">
         <location>
             <dimension name="optical" xvalue="90.000000"/>
             <dimension name="weight" xvalue="800.000000"/>
@@ -51,7 +51,7 @@
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
     <!-- instance definitions -->
-    <instance familyname="Causal Text" filename="instances/CausalText-Medium.ufo" sortorder="3" stylename="Medium">
+    <instance familyname="Causal Text" filename="causal-script/instances/CausalText-Medium.ufo" sortorder="3" stylename="Medium">
         <location>
             <dimension name="optical" xvalue="10.000000"/>
             <dimension name="weight" xvalue="500.000000"/>
@@ -61,7 +61,7 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Causal Text" filename="instances/CausalText-Regular.ufo" sortorder="4" stylename="Regular">
+    <instance familyname="Causal Text" filename="causal-script/instances/CausalText-Regular.ufo" sortorder="4" stylename="Regular">
         <location>
             <dimension name="optical" xvalue="10.000000"/>
             <dimension name="weight" xvalue="400.000000"/>
@@ -71,7 +71,7 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Causal Text" filename="instances/CausalText-heavy.ufo" sortorder="0" stylename="heavy">
+    <instance familyname="Causal Text" filename="causal-script/instances/CausalText-heavy.ufo" sortorder="0" stylename="heavy">
         <location>
             <dimension name="optical" xvalue="10.000000"/>
             <dimension name="weight" xvalue="1000.000000"/>
@@ -81,7 +81,7 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Causal Text" filename="instances/CausalText-ExtraLight.ufo" sortorder="6" stylename="Extra Light">
+    <instance familyname="Causal Text" filename="causal-script/instances/CausalText-ExtraLight.ufo" sortorder="6" stylename="Extra Light">
         <location>
             <dimension name="optical" xvalue="10.000000"/>
             <dimension name="weight" xvalue="100.000000"/>
@@ -91,7 +91,7 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Causal Text" filename="instances/CausalText-SemiBold.ufo" sortorder="2" stylename="Semi Bold">
+    <instance familyname="Causal Text" filename="causal-script/instances/CausalText-SemiBold.ufo" sortorder="2" stylename="Semi Bold">
         <location>
             <dimension name="optical" xvalue="10.000000"/>
             <dimension name="weight" xvalue="650.000000"/>
@@ -101,7 +101,7 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Causal Header" filename="instances/CausalHeader-Bold.ufo" sortorder="7" stylename="Bold">
+    <instance familyname="Causal Header" filename="causal-script/instances/CausalHeader-Bold.ufo" sortorder="7" stylename="Bold">
         <location>
             <dimension name="optical" xvalue="50.000000"/>
             <dimension name="weight" xvalue="800.000000"/>
@@ -111,7 +111,7 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Causal Header" filename="instances/CausalHeader-Light.ufo" sortorder="8" stylename="Light">
+    <instance familyname="Causal Header" filename="causal-script/instances/CausalHeader-Light.ufo" sortorder="8" stylename="Light">
         <location>
             <dimension name="optical" xvalue="50.000000"/>
             <dimension name="weight" xvalue="200.000000"/>
@@ -121,7 +121,7 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Causal Display" filename="instances/CausalDisplay-Medium.ufo" sortorder="9" stylename="Medium">
+    <instance familyname="Causal Display" filename="causal-script/instances/CausalDisplay-Medium.ufo" sortorder="9" stylename="Medium">
         <location>
             <dimension name="optical" xvalue="90.000000"/>
             <dimension name="weight" xvalue="500.000000"/>
