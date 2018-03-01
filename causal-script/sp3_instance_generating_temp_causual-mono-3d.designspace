@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<designspace format="3">
+    <axes>
+        <axis default="10" maximum="90" minimum="10" name="optical" tag="opsz" />
+        <axis default="0" maximum="1000" minimum="0" name="weight" tag="wght" />
+    </axes>
+    <sources>
+        <source familyname="Causal Text" filename="Causal Text-Bold.ufo" stylename="Bold">
+            <location>
+                <dimension name="optical" xvalue="10" />
+                <dimension name="weight" xvalue="800" />
+            </location>
+        </source>
+        <source familyname="Causal Text" filename="Causal Text-Light.ufo" stylename="Light">
+            <location>
+                <dimension name="optical" xvalue="10" />
+                <dimension name="weight" xvalue="200" />
+            </location>
+        </source>
+        <source familyname="Causal Display" filename="Causal Display-Light.ufo" stylename="Light">
+            <location>
+                <dimension name="optical" xvalue="90" />
+                <dimension name="weight" xvalue="200" />
+            </location>
+        </source>
+        <source familyname="Causal Display" filename="Causal Display-Bold.ufo" stylename="Bold">
+            <location>
+                <dimension name="optical" xvalue="90" />
+                <dimension name="weight" xvalue="800" />
+            </location>
+        </source>
+    </sources>
+    <instances>
+        <instance familyname="Causal Text" filename="instances/CausalText-Medium.ufo" postscriptfontname="CausalText-Medium" stylename="Medium">
+            <location>
+                <dimension name="optical" xvalue="10" />
+                <dimension name="weight" xvalue="500" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Causal Text" filename="instances/CausalText-Regular.ufo" postscriptfontname="CausalText-Regular" stylename="Regular">
+            <location>
+                <dimension name="optical" xvalue="10" />
+                <dimension name="weight" xvalue="400" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Causal Text" filename="instances/CausalText-heavy.ufo" postscriptfontname="CausalText-heavy" stylename="heavy">
+            <location>
+                <dimension name="optical" xvalue="10" />
+                <dimension name="weight" xvalue="1000" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Causal Text" filename="instances/CausalText-ExtraLight.ufo" postscriptfontname="CausalText-ExtraLight" stylename="Extra Light">
+            <location>
+                <dimension name="optical" xvalue="10" />
+                <dimension name="weight" xvalue="100" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Causal Text" filename="instances/CausalText-SemiBold.ufo" postscriptfontname="CausalText-SemiBold" stylename="Semi Bold">
+            <location>
+                <dimension name="optical" xvalue="10" />
+                <dimension name="weight" xvalue="650" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Causal Header" filename="instances/CausalHeader-Bold.ufo" postscriptfontname="CausalHeader-Bold" stylename="Bold">
+            <location>
+                <dimension name="optical" xvalue="50" />
+                <dimension name="weight" xvalue="800" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Causal Header" filename="instances/CausalHeader-Light.ufo" postscriptfontname="CausalHeader-Light" stylename="Light">
+            <location>
+                <dimension name="optical" xvalue="50" />
+                <dimension name="weight" xvalue="200" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Causal Display" filename="instances/CausalDisplay-Medium.ufo" postscriptfontname="CausalDisplay-Medium" stylename="Medium">
+            <location>
+                <dimension name="optical" xvalue="90" />
+                <dimension name="weight" xvalue="500" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+    </instances>
+</designspace>
