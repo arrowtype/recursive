@@ -7,10 +7,10 @@
     <!-- application data -->
     <data name="horizontalPreviewAxis" value="optical"/>
     <data name="lineInverted" value="False"/>
-    <data name="lineViewFilled" value="False"/>
+    <data name="lineViewFilled" value="True"/>
     <data name="lineStacked" value="lined"/>
     <data name="generateFontsAtFolder" value="/Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/instances"/>
-    <data name="previewtext" value="ait"/>
+    <data name="previewtext" value="realignments"/>
     <data name="verticalPreviewAxis" value="weight"/>
     <!-- don't generate these glyphs -->
     <ignore glyphs=""/>
@@ -46,7 +46,7 @@
     <master familyname="Causal Display" filename="Causal Display-Light.ufo" sortorder="11" stylename="Light">
         <location>
             <dimension name="optical" xvalue="90.000000"/>
-            <dimension name="weight" xvalue="100.000000"/>
+            <dimension name="weight" xvalue="200.000000"/>
         </location>
         <color a="1.000" b="1.000" g="0.000" r="0.500"/>
     </master>
@@ -125,6 +125,16 @@
         <location>
             <dimension name="optical" xvalue="24.000000"/>
             <dimension name="weight" xvalue="400.000000"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Causal Text" filename="instances/CausalText-wght100.00_opsz50.00.ufo" sortorder="12" stylename="wght100.00_opsz50.00">
+        <location>
+            <dimension name="optical" xvalue="50.000000"/>
+            <dimension name="weight" xvalue="200.000000"/>
         </location>
         <provideFeatures state="1"/>
         <provideGroups state="1"/>
