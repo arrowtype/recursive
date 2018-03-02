@@ -10,7 +10,7 @@
     <data name="lineViewFilled" value="True"/>
     <data name="lineStacked" value="lined"/>
     <data name="generateFontsAtFolder" value="/Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/causal-script/instances"/>
-    <data name="previewtext" value="elms like magic"/>
+    <data name="previewtext" value="carpooling"/>
     <data name="verticalPreviewAxis" value="weight"/>
     <!-- don't generate these glyphs -->
     <ignore glyphs=""/>
@@ -22,43 +22,45 @@
         <color a="1.000" b="0.694" g="1.226" r="0.905"/>
     </axis>
     <!-- master definitions -->
-    <master familyname="Elm" filename="causal-script/RomanMasters/display-light/ElmDisplay-Light.ufo" sortorder="10" stylename="Display Light">
+    <master familyname="Elm" filename="RomanMasters/display-light/ElmDisplay-Light.ufo" sortorder="10" stylename="Display Light">
         <location>
             <dimension name="optical" xvalue="90.000000"/>
             <dimension name="weight" xvalue="200.000000"/>
         </location>
         <color a="1.000" b="1.000" g="0.000" r="0.500"/>
     </master>
-    <master familyname="Elm" filename="causal-script/RomanMasters/text-light/ElmText-Light.ufo" sortorder="5" stylename="Text Light">
+    <master familyname="Elm" filename="RomanMasters/text-light/ElmText-Light.ufo" sortorder="5" stylename="Text Light">
         <location>
             <dimension name="optical" xvalue="10.000000"/>
             <dimension name="weight" xvalue="200.000000"/>
         </location>
         <color a="1.000" b="0.000" g="1.000" r="0.500"/>
     </master>
-    <master familyname="Elm" filename="causal-script/RomanMasters/text-bold/ElmText-Bold.ufo" sortorder="1" stylename="Text Bold">
+    <master familyname="Elm" filename="RomanMasters/text-bold/ElmText-Bold.ufo" sortorder="1" stylename="Text Bold">
         <location>
             <dimension name="optical" xvalue="10.000000"/>
             <dimension name="weight" xvalue="800.000000"/>
         </location>
         <color a="1.000" b="0.000" g="0.000" r="1.000"/>
     </master>
-    <master familyname="Elm" filename="causal-script/RomanMasters/display-bold/ElmDisplay-Bold.ufo" sortorder="11" stylename="Display Bold">
+    <master familyname="Elm" filename="RomanMasters/display-bold/ElmDisplay-Bold.ufo" sortorder="11" stylename="Display Bold">
         <location>
             <dimension name="optical" xvalue="90.000000"/>
             <dimension name="weight" xvalue="800.000000"/>
         </location>
         <color a="1.000" b="0.500" g="0.000" r="1.000"/>
     </master>
-    <master familyname="Elm" filename="causal-script/RomanMasters/default/ElmHeader-Medium.ufo" sortorder="12" stylename="Header Medium">
+    <!-- masks -->
+    <master familyname="Elm" filename="RomanMasters/default/ElmHeader-Medium.ufo" sortorder="12" stylename="Header Medium">
         <location>
             <dimension name="optical" xvalue="50.000000"/>
             <dimension name="weight" xvalue="500.000000"/>
         </location>
         <color a="1.000" b="0.500" g="0.000" r="1.000"/>
+        <maskedfont glyphs="1"/>
     </master>
     <!-- instance definitions -->
-    <instance familyname="Elm Text" filename="causal-script/instances/ElmText-Medium.ufo" sortorder="3" stylename="Medium">
+    <instance familyname="Elm Text" filename="instances/ElmText-Medium.ufo" sortorder="3" stylename="Medium">
         <location>
             <dimension name="optical" xvalue="10.000000"/>
             <dimension name="weight" xvalue="500.000000"/>
@@ -68,7 +70,7 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Elm Text" filename="causal-script/instances/ElmText-Regular.ufo" sortorder="4" stylename="Regular">
+    <instance familyname="Elm Text" filename="instances/ElmText-Regular.ufo" sortorder="4" stylename="Regular">
         <location>
             <dimension name="optical" xvalue="10.000000"/>
             <dimension name="weight" xvalue="400.000000"/>
@@ -78,7 +80,7 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Elm Text" filename="causal-script/instances/ElmText-heavy.ufo" sortorder="0" stylename="heavy">
+    <instance familyname="Elm Text" filename="instances/ElmText-heavy.ufo" sortorder="0" stylename="heavy">
         <location>
             <dimension name="optical" xvalue="10.000000"/>
             <dimension name="weight" xvalue="1000.000000"/>
@@ -88,7 +90,7 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Elm Text" filename="causal-script/instances/ElmText-ExtraLight.ufo" sortorder="6" stylename="Extra Light">
+    <instance familyname="Elm Text" filename="instances/ElmText-ExtraLight.ufo" sortorder="6" stylename="Extra Light">
         <location>
             <dimension name="optical" xvalue="10.000000"/>
             <dimension name="weight" xvalue="100.000000"/>
@@ -98,7 +100,7 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Elm Text" filename="causal-script/instances/ElmText-SemiBold.ufo" sortorder="2" stylename="Semi Bold">
+    <instance familyname="Elm Text" filename="instances/ElmText-SemiBold.ufo" sortorder="2" stylename="Semi Bold">
         <location>
             <dimension name="optical" xvalue="10.000000"/>
             <dimension name="weight" xvalue="650.000000"/>
@@ -108,7 +110,7 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Elm Header" filename="causal-script/instances/ElmHeader-Bold.ufo" sortorder="7" stylename="Bold">
+    <instance familyname="Elm Header" filename="instances/ElmHeader-Bold.ufo" sortorder="7" stylename="Bold">
         <location>
             <dimension name="optical" xvalue="50.000000"/>
             <dimension name="weight" xvalue="800.000000"/>
@@ -118,7 +120,7 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Elm Header" filename="causal-script/instances/ElmHeader-Light.ufo" sortorder="8" stylename="Light">
+    <instance familyname="Elm Header" filename="instances/ElmHeader-Light.ufo" sortorder="8" stylename="Light">
         <location>
             <dimension name="optical" xvalue="50.000000"/>
             <dimension name="weight" xvalue="200.000000"/>
@@ -128,7 +130,7 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Elm Display" filename="causal-script/instances/ElmDisplay-Medium.ufo" sortorder="9" stylename="Medium">
+    <instance familyname="Elm Display" filename="instances/ElmDisplay-Medium.ufo" sortorder="9" stylename="Medium">
         <location>
             <dimension name="optical" xvalue="90.000000"/>
             <dimension name="weight" xvalue="500.000000"/>

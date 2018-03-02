@@ -5,13 +5,13 @@
     <version superpolator="2"/>
     <!-- measurements -->
     <!-- application data -->
-    <data name="horizontalPreviewAxis" value="weight"/>
+    <data name="horizontalPreviewAxis" value="optical"/>
     <data name="lineInverted" value="False"/>
     <data name="lineViewFilled" value="True"/>
     <data name="lineStacked" value="lined"/>
     <data name="generateFontsAtFolder" value="/Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/causal-script/instances"/>
-    <data name="previewtext" value="arararararar"/>
-    <data name="verticalPreviewAxis" value="slant"/>
+    <data name="previewtext" value="noeheul"/>
+    <data name="verticalPreviewAxis" value="weight"/>
     <!-- don't generate these glyphs -->
     <ignore glyphs=""/>
     <!-- axis definitions -->
@@ -57,6 +57,7 @@
         </location>
         <color a="1.000" b="0.500" g="0.000" r="1.000"/>
     </master>
+    <!-- masks -->
     <master familyname="Causal Text" filename="CausalText-BoldItalic.ufo" sortorder="12" stylename="Bold Italic">
         <location>
             <dimension name="optical" xvalue="10.000000"/>
@@ -64,6 +65,7 @@
             <dimension name="weight" xvalue="800.000000"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
+        <maskedfont glyphs="1"/>
     </master>
     <!-- instance definitions -->
     <instance familyname="Causal" filename="causal-script/instances/Causal-TextMedium.ufo" sortorder="3" stylename="Text Medium">
