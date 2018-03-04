@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<designspace format="2">
+    <!-- Superpolator Designspace Object -->
+    <!-- info -->
+    <version superpolator="2"/>
+    <!-- measurements -->
+    <!-- application data -->
+    <data name="horizontalPreviewAxis" value="optical"/>
+    <data name="lineInverted" value="False"/>
+    <data name="lineViewFilled" value="True"/>
+    <data name="lineStacked" value="lined"/>
+    <data name="generateFontsAtFolder" value="/Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/elm-var-font-test/instances"/>
+    <data name="previewtext" value="realignments"/>
+    <data name="verticalPreviewAxis" value="weight"/>
+    <!-- don't generate these glyphs -->
+    <ignore glyphs=""/>
+    <!-- axis definitions -->
+    <axis maximum="90.000000" minimum="10.000000" name="optical" shortname="opsz">
+        <color a="1.000" b="0.775" g="0.718" r="0.262"/>
+    </axis>
+    <axis maximum="20.000000" minimum="0.000000" name="slant" shortname="slnt">
+        <color a="1.000" b="0.001" g="0.066" r="0.989"/>
+    </axis>
+    <axis maximum="1000.000000" minimum="0.000000" name="weight" shortname="wght">
+        <color a="1.000" b="0.694" g="1.226" r="0.905"/>
+    </axis>
+    <!-- master definitions -->
+    <master familyname="Causal Display" filename="../Causal Display-Light.ufo" sortorder="10" stylename="Light">
+        <location>
+            <dimension name="optical" xvalue="90.000000"/>
+            <dimension name="slant" xvalue="0.000000"/>
+            <dimension name="weight" xvalue="200.000000"/>
+        </location>
+        <color a="1.000" b="1.000" g="0.000" r="0.500"/>
+    </master>
+    <master familyname="Causal Text" filename="../Causal Text-Light.ufo" sortorder="5" stylename="Light">
+        <location>
+            <dimension name="optical" xvalue="10.000000"/>
+            <dimension name="slant" xvalue="0.000000"/>
+            <dimension name="weight" xvalue="200.000000"/>
+        </location>
+        <color a="1.000" b="0.000" g="1.000" r="0.500"/>
+    </master>
+    <master familyname="Causal Text" filename="../Causal Text-Bold.ufo" sortorder="1" stylename="Bold">
+        <location>
+            <dimension name="optical" xvalue="10.000000"/>
+            <dimension name="slant" xvalue="0.000000"/>
+            <dimension name="weight" xvalue="800.000000"/>
+        </location>
+        <color a="1.000" b="0.000" g="0.000" r="1.000"/>
+    </master>
+    <master familyname="Causal Display" filename="../Causal Display-Bold.ufo" sortorder="11" stylename="Bold">
+        <location>
+            <dimension name="optical" xvalue="90.000000"/>
+            <dimension name="slant" xvalue="0.000000"/>
+            <dimension name="weight" xvalue="800.000000"/>
+        </location>
+        <color a="1.000" b="0.500" g="0.000" r="1.000"/>
+    </master>
+    <!-- instance definitions -->
+    <instance familyname="Causal" filename="../elm-var-font-test/instances/Causal-TextMedium.ufo" sortorder="3" stylename="Text Medium">
+        <location>
+            <dimension name="optical" xvalue="10.000000"/>
+            <dimension name="slant" xvalue="0.000000"/>
+            <dimension name="weight" xvalue="500.000000"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Causal" filename="../elm-var-font-test/instances/Causal-TextRegular.ufo" sortorder="4" stylename="Text Regular">
+        <location>
+            <dimension name="optical" xvalue="10.000000"/>
+            <dimension name="slant" xvalue="0.000000"/>
+            <dimension name="weight" xvalue="400.000000"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Causal Text" filename="../elm-var-font-test/instances/CausalText-heavy.ufo" sortorder="0" stylename="heavy">
+        <location>
+            <dimension name="optical" xvalue="10.000000"/>
+            <dimension name="slant" xvalue="0.000000"/>
+            <dimension name="weight" xvalue="1000.000000"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Casual" filename="../elm-var-font-test/instances/Casual-TextExtraLight.ufo" sortorder="6" stylename="Text Extra Light">
+        <location>
+            <dimension name="optical" xvalue="10.000000"/>
+            <dimension name="slant" xvalue="0.000000"/>
+            <dimension name="weight" xvalue="100.000000"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Causal" filename="../elm-var-font-test/instances/Causal-TextSemiBold.ufo" sortorder="2" stylename="Text Semi Bold">
+        <location>
+            <dimension name="optical" xvalue="10.000000"/>
+            <dimension name="slant" xvalue="0.000000"/>
+            <dimension name="weight" xvalue="650.000000"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Casual" filename="../elm-var-font-test/instances/Casual-HeaderBold.ufo" sortorder="7" stylename="Header Bold">
+        <location>
+            <dimension name="optical" xvalue="50.000000"/>
+            <dimension name="slant" xvalue="0.000000"/>
+            <dimension name="weight" xvalue="800.000000"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Causal" filename="../elm-var-font-test/instances/Causal-HeaderLight.ufo" sortorder="8" stylename="Header Light">
+        <location>
+            <dimension name="optical" xvalue="50.000000"/>
+            <dimension name="slant" xvalue="0.000000"/>
+            <dimension name="weight" xvalue="200.000000"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Causal" filename="../elm-var-font-test/instances/Causal-DisplayMedium.ufo" sortorder="9" stylename="Display Medium">
+        <location>
+            <dimension name="optical" xvalue="90.000000"/>
+            <dimension name="slant" xvalue="0.000000"/>
+            <dimension name="weight" xvalue="500.000000"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+</designspace>
