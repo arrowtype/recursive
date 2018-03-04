@@ -7,10 +7,10 @@
     <!-- application data -->
     <data name="horizontalPreviewAxis" value="optical"/>
     <data name="lineInverted" value="False"/>
-    <data name="lineViewFilled" value="False"/>
+    <data name="lineViewFilled" value="True"/>
     <data name="lineStacked" value="lined"/>
-    <data name="generateFontsAtFolder" value="/Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/var-font-test-2/instances"/>
-    <data name="previewtext" value="agso"/>
+    <data name="generateFontsAtFolder" value="/Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/instances"/>
+    <data name="previewtext" value="realignments"/>
     <data name="verticalPreviewAxis" value="weight"/>
     <!-- don't generate these glyphs -->
     <ignore glyphs=""/>
@@ -22,41 +22,33 @@
         <color a="1.000" b="0.694" g="1.226" r="0.905"/>
     </axis>
     <!-- master definitions -->
-    <!-- masks -->
-    <master familyname="Causal" filename="Causal Display-Light.ufo" sortorder="3" stylename="Display Light">
+    <master familyname="Causal Display" filename="../Causal Display-Light.ufo" sortorder="3" stylename="Light">
         <location>
             <dimension name="optical" xvalue="90.000000"/>
             <dimension name="weight" xvalue="0.000000"/>
         </location>
         <color a="1.000" b="1.000" g="0.000" r="0.500"/>
-        <maskedfont font="1"/>
     </master>
-    <!-- masks -->
-    <master familyname="Causal" filename="Causal Text-Light.ufo" sortorder="1" stylename="Text Light">
+    <master familyname="Causal Text" filename="../Causal Text-Light.ufo" sortorder="1" stylename="Light">
         <location>
             <dimension name="optical" xvalue="10.000000"/>
             <dimension name="weight" xvalue="0.000000"/>
         </location>
         <color a="1.000" b="0.000" g="1.000" r="0.500"/>
-        <maskedfont font="1"/>
     </master>
-    <!-- masks -->
-    <master familyname="Causal" filename="Causal Text-Bold.ufo" sortorder="0" stylename="Text Bold">
+    <master familyname="Causal Text" filename="../Causal Text-Bold.ufo" sortorder="0" stylename="Bold">
         <location>
             <dimension name="optical" xvalue="10.000000"/>
             <dimension name="weight" xvalue="1000.000000"/>
         </location>
         <color a="1.000" b="0.000" g="0.000" r="1.000"/>
-        <maskedfont font="1"/>
     </master>
-    <!-- masks -->
-    <master familyname="Causal" filename="Causal Display-Bold.ufo" sortorder="2" stylename="Display Bold">
+    <master familyname="Causal Display" filename="../Causal Display-Bold.ufo" sortorder="2" stylename="Bold">
         <location>
             <dimension name="optical" xvalue="90.000000"/>
             <dimension name="weight" xvalue="1000.000000"/>
         </location>
         <color a="1.000" b="0.500" g="0.000" r="1.000"/>
-        <maskedfont font="1"/>
     </master>
     <!-- instance definitions -->
 </designspace>
