@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<designspace format="2">
+    <!-- Superpolator Designspace Object -->
+    <!-- info -->
+    <version superpolator="2"/>
+    <!-- measurements -->
+    <!-- application data -->
+    <data name="horizontalPreviewAxis" value="optical"/>
+    <data name="lineInverted" value="False"/>
+    <data name="lineViewFilled" value="True"/>
+    <data name="lineStacked" value="lined"/>
+    <data name="generateFontsAtFolder" value="/Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/instances"/>
+    <data name="previewtext" value="fvfvfv"/>
+    <data name="verticalPreviewAxis" value="weight"/>
+    <!-- don't generate these glyphs -->
+    <ignore glyphs=""/>
+    <!-- axis definitions -->
+    <axis maximum="90.000000" minimum="10.000000" name="optical" shortname="opsz">
+        <color a="1.000" b="0.775" g="0.718" r="0.262"/>
+    </axis>
+    <axis maximum="1000.000000" minimum="0.000000" name="weight" shortname="wght">
+        <color a="1.000" b="0.694" g="1.226" r="0.905"/>
+    </axis>
+    <!-- master definitions -->
+    <master familyname="Causal" filename="Causal Display-Light.ufo" sortorder="3" stylename="Display Light">
+        <location>
+            <dimension name="optical" xvalue="90.000000"/>
+            <dimension name="weight" xvalue="0.000000"/>
+        </location>
+        <color a="1.000" b="1.000" g="0.000" r="0.500"/>
+    </master>
+    <master familyname="Causal" filename="Causal Text-Light.ufo" sortorder="1" stylename="Text Light">
+        <location>
+            <dimension name="optical" xvalue="10.000000"/>
+            <dimension name="weight" xvalue="0.000000"/>
+        </location>
+        <color a="1.000" b="0.000" g="1.000" r="0.500"/>
+    </master>
+    <master familyname="Causal" filename="Causal Text-Bold.ufo" sortorder="0" stylename="Text Bold">
+        <location>
+            <dimension name="optical" xvalue="10.000000"/>
+            <dimension name="weight" xvalue="1000.000000"/>
+        </location>
+        <color a="1.000" b="0.000" g="0.000" r="1.000"/>
+    </master>
+    <master familyname="Causal" filename="Causal Display-Bold.ufo" sortorder="2" stylename="Display Bold">
+        <location>
+            <dimension name="optical" xvalue="90.000000"/>
+            <dimension name="weight" xvalue="1000.000000"/>
+        </location>
+        <color a="1.000" b="0.500" g="0.000" r="1.000"/>
+    </master>
+    <!-- instance definitions -->
+</designspace>
