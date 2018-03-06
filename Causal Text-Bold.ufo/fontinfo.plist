@@ -9,7 +9,24 @@
 	<key>descender</key>
 	<integer>-200</integer>
 	<key>familyName</key>
-	<string>Causal</string>
+	<string>whatever</string>
+	<key>openTypeOS2Panose</key>
+	<array>
+		<integer>2</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>9</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+		<integer>0</integer>
+	</array>
+	<key>openTypeOS2UnicodeRanges</key>
+	<array>
+		<integer>0</integer>
+	</array>
 	<key>postscriptBlueValues</key>
 	<array>
 		<integer>-20</integer>
@@ -23,6 +40,8 @@
 	<key>postscriptFamilyOtherBlues</key>
 	<array>
 	</array>
+	<key>postscriptIsFixedPitch</key>
+	<true/>
 	<key>postscriptOtherBlues</key>
 	<array>
 	</array>
