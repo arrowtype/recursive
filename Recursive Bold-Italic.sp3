@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<designspace format="2">
+    <!-- Superpolator Designspace Object -->
+    <!-- info -->
+    <version superpolator="2"/>
+    <!-- measurements -->
+    <!-- application data -->
+    <data name="horizontalPreviewAxis" value="slant"/>
+    <data name="lineInverted" value="False"/>
+    <data name="lineViewFilled" value="True"/>
+    <data name="lineStacked" value="sequence"/>
+    <data name="generateFontsAtFolder" value="instances"/>
+    <data name="previewtext" value="realign"/>
+    <data name="verticalPreviewAxis" value="None"/>
+    <!-- don't generate these glyphs -->
+    <ignore glyphs=""/>
+    <!-- axis definitions -->
+    <axis maximum="20.000000" minimum="0.000000" name="slant" shortname="slnt">
+        <color a="1.000" b="0.001" g="0.066" r="0.989"/>
+    </axis>
+    <!-- master definitions -->
+    <master familyname="Recursive" filename="Recursive Text-Bold.ufo" sortorder="0" stylename="Text Bold">
+        <location>
+            <dimension name="slant" xvalue="0.000000"/>
+        </location>
+        <color a="1.000" b="0.300" g="0.300" r="0.300"/>
+    </master>
+    <master familyname="Recursive" filename="Recursive Text-Bold-Italic.ufo" sortorder="1" stylename="Text Bold Italic">
+        <location>
+            <dimension name="slant" xvalue="20.000000"/>
+        </location>
+        <color a="1.000" b="0.300" g="0.300" r="0.300"/>
+    </master>
+    <!-- instance definitions -->
+</designspace>
