@@ -5,28 +5,40 @@
     <version superpolator="2"/>
     <!-- measurements -->
     <!-- application data -->
-    <data name="horizontalPreviewAxis" value="slant"/>
+    <data name="horizontalPreviewAxis" value="optical"/>
     <data name="lineInverted" value="False"/>
     <data name="lineViewFilled" value="True"/>
     <data name="lineStacked" value="sequence"/>
-    <data name="generateFontsAtFolder" value="instances"/>
-    <data name="previewtext" value="realign"/>
-    <data name="verticalPreviewAxis" value="None"/>
+    <data name="generateFontsAtFolder" value="/Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/instances"/>
+    <data name="previewtext" value="a"/>
+    <data name="verticalPreviewAxis" value="slant"/>
     <!-- don't generate these glyphs -->
     <ignore glyphs=""/>
     <!-- axis definitions -->
+    <axis maximum="90.000000" minimum="10.000000" name="optical" shortname="opsz">
+        <color a="1.000" b="0.056" g="0.775" r="0.752"/>
+    </axis>
     <axis maximum="20.000000" minimum="0.000000" name="slant" shortname="slnt">
         <color a="1.000" b="0.001" g="0.066" r="0.989"/>
     </axis>
     <!-- master definitions -->
     <master familyname="Recursive" filename="Recursive Text-Bold.ufo" sortorder="0" stylename="Text Bold">
         <location>
+            <dimension name="optical" xvalue="16.000000"/>
             <dimension name="slant" xvalue="0.000000"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
     <master familyname="Recursive" filename="Recursive Text-Bold-Italic.ufo" sortorder="1" stylename="Text Bold Italic">
         <location>
+            <dimension name="optical" xvalue="16.000000"/>
+            <dimension name="slant" xvalue="20.000000"/>
+        </location>
+        <color a="1.000" b="0.300" g="0.300" r="0.300"/>
+    </master>
+    <master familyname="Recursive" filename="Recursive Display-Bold-Italic.ufo" sortorder="2" stylename="Display Bold Italic">
+        <location>
+            <dimension name="optical" xvalue="90.000000"/>
             <dimension name="slant" xvalue="20.000000"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
