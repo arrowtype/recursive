@@ -1,58 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>com.defcon.sortDescriptor</key>
-	<array>
-		<dict>
-			<key>allowPseudoUnicode</key>
-			<true/>
-			<key>ascending</key>
-			<true/>
-			<key>type</key>
-			<string>alphabetical</string>
-		</dict>
-		<dict>
-			<key>allowPseudoUnicode</key>
-			<true/>
-			<key>ascending</key>
-			<true/>
-			<key>type</key>
-			<string>category</string>
-		</dict>
-		<dict>
-			<key>allowPseudoUnicode</key>
-			<true/>
-			<key>ascending</key>
-			<true/>
-			<key>type</key>
-			<string>unicode</string>
-		</dict>
-		<dict>
-			<key>allowPseudoUnicode</key>
-			<true/>
-			<key>ascending</key>
-			<true/>
-			<key>type</key>
-			<string>script</string>
-		</dict>
-		<dict>
-			<key>allowPseudoUnicode</key>
-			<true/>
-			<key>ascending</key>
-			<true/>
-			<key>type</key>
-			<string>suffix</string>
-		</dict>
-		<dict>
-			<key>allowPseudoUnicode</key>
-			<true/>
-			<key>ascending</key>
-			<true/>
-			<key>type</key>
-			<string>decompositionBase</string>
-		</dict>
-	</array>
 	<key>com.typemytype.robofont.background.layerStrokeColor</key>
 	<array>
 		<real>0.0</real>
@@ -81,11 +30,15 @@
 	</array>
 	<key>com.typemytype.robofont.italicSlantOffset</key>
 	<integer>0</integer>
+	<key>com.typemytype.robofont.layerOrder</key>
+	<array>
+		<string>background</string>
+	</array>
 	<key>com.typemytype.robofont.segmentType</key>
 	<string>curve</string>
 	<key>com.typemytype.robofont.shouldAddPointsInSplineConversion</key>
 	<integer>1</integer>
-	<key>com.typesupply.defcon.sortDescriptor</key>
+	<key>com.typemytype.robofont.sort</key>
 	<array>
 		<dict>
 			<key>ascending</key>
@@ -291,7 +244,6 @@
 				<string>paragraph</string>
 				<string>space</string>
 				<string>H</string>
-				<string>s.alt1</string>
 			</array>
 			<key>type</key>
 			<string>glyphList</string>
@@ -317,7 +269,6 @@
 		<string>Edieresis</string>
 		<string>F</string>
 		<string>G</string>
-		<string>H</string>
 		<string>I</string>
 		<string>Igrave</string>
 		<string>Iacute</string>
@@ -408,18 +359,17 @@
 		<string>yacute</string>
 		<string>ydieresis</string>
 		<string>z</string>
+		<string>ordfeminine</string>
+		<string>ordmasculine</string>
 		<string>germandbls</string>
 		<string>ae</string>
 		<string>eth</string>
 		<string>oslash</string>
 		<string>thorn</string>
 		<string>dotlessi</string>
-		<string>s.alt1</string>
 		<string>mu</string>
 		<string>circumflex</string>
 		<string>caron</string>
-		<string>ordfeminine</string>
-		<string>ordmasculine</string>
 		<string>zero</string>
 		<string>one</string>
 		<string>two</string>
@@ -464,8 +414,6 @@
 		<string>at</string>
 		<string>backslash</string>
 		<string>exclamdown</string>
-		<string>section</string>
-		<string>paragraph</string>
 		<string>periodcentered</string>
 		<string>questiondown</string>
 		<string>plus</string>
@@ -497,10 +445,14 @@
 		<string>tilde</string>
 		<string>hungarumlaut</string>
 		<string>brokenbar</string>
+		<string>section</string>
 		<string>copyright</string>
 		<string>registered</string>
 		<string>degree</string>
+		<string>paragraph</string>
 		<string>space</string>
+		<string>H</string>
+		<string>s.alt1</string>
 	</array>
 </dict>
 </plist>
