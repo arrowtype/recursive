@@ -1,0 +1,116 @@
+Batch Generated Variable Fonts:
+*******************************
+
+source: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/archive/2018-03-06/causal-mono-var.designspace
+path: /Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/archive/2018-03-06/causal-mono-var.ttf
+    Making master glyphs compatible
+    '''''''''''''''''''''''''''''''
+        Adding missing glyph 'b' in the default master 'Recursive Text Light'
+        Adding missing glyph 'd' in the default master 'Recursive Text Light'
+        Adding missing glyph 'd' in master 'Recursive Display Bold'
+        Adding missing glyph 'd' in master 'Recursive Display Light'
+        Adding missing glyph 'k' in the default master 'Recursive Text Light'
+        Adding missing glyph 'k' in master 'Recursive Display Bold'
+        Adding missing glyph 'k' in master 'Recursive Display Light'
+        Adding missing glyph 'p' in the default master 'Recursive Text Light'
+        Adding missing glyph 'p' in master 'Recursive Display Bold'
+        Adding missing glyph 'p' in master 'Recursive Display Light'
+        Adding missing glyph 'u' in master 'Recursive Display Bold'
+        Adding missing glyph 'u' in master 'Recursive Display Light'
+        Adding missing glyph 'y' in the default master 'Recursive Text Light'
+        Adding missing glyph 'y' in master 'Recursive Display Bold'
+        Adding missing glyph 'y' in master 'Recursive Display Light'
+
+    Decompose Mixed Glyphs
+    ''''''''''''''''''''''
+
+    Making master kerning compatible
+    ''''''''''''''''''''''''''''''''
+
+
+    Generate TTF
+    ''''''''''''
+
+        Generate Recursive Text Bold
+            --------------------
+            
+            makeotf Report
+            
+            makeotf [Note] Converting source font 'dummyCompile.otf' to temporary Unix Type1 font file 'dummyCompile.otf.tmp'.
+            makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+            makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+            makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+            makeotf [Note] Writing options file current.fpr
+            makeotf [Note] Running makeotfexe with commands:
+               cd ""
+               makeotfexe "-f" "dummyCompile.otf.tmp" "-o" "temp_Recursive-Text Bold.ttf" -ff "features" -gf "glyphOrder" -mf "menuname" -r
+            makeotfexe [WARNING] <Recursive-TextBold> Major version number not in range 1 .. 255 [features 20]
+            makeotfexe [NOTE] Wrote new font file 'temp_Recursive-Text Bold.ttf'.
+            
+            
+            Built release mode font 'temp_Recursive-Text Bold.ttf' Revision 0.000
+            
+            --------------------
+
+        Generate Recursive Text Light
+            --------------------
+            
+            makeotf Report
+            
+            makeotf [Note] Converting source font 'dummyCompile.otf' to temporary Unix Type1 font file 'dummyCompile.otf.tmp'.
+            makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+            makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+            makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+            makeotf [Note] Writing options file current.fpr
+            makeotf [Note] Running makeotfexe with commands:
+               cd ""
+               makeotfexe "-f" "dummyCompile.otf.tmp" "-o" "temp_Recursive-Text Light.ttf" -ff "features" -gf "glyphOrder" -mf "menuname" -r
+            makeotfexe [WARNING] <Recursive-TextLight> Major version number not in range 1 .. 255 [features 19]
+            makeotfexe [NOTE] Wrote new font file 'temp_Recursive-Text Light.ttf'.
+            
+            
+            Built release mode font 'temp_Recursive-Text Light.ttf' Revision 0.000
+            
+            --------------------
+
+        Generate Recursive Display Bold
+            --------------------
+            
+            makeotf Report
+            
+            makeotf [Note] Converting source font 'dummyCompile.otf' to temporary Unix Type1 font file 'dummyCompile.otf.tmp'.
+            makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+            makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+            makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+            makeotf [Note] Writing options file current.fpr
+            makeotf [Note] Running makeotfexe with commands:
+               cd ""
+               makeotfexe "-f" "dummyCompile.otf.tmp" "-o" "temp_Recursive-Display Bold.ttf" -ff "features" -gf "glyphOrder" -mf "menuname" -r
+            makeotfexe [WARNING] <Recursive-DisplayBold> Major version number not in range 1 .. 255 [features 19]
+            makeotfexe [NOTE] Wrote new font file 'temp_Recursive-Display Bold.ttf'.
+            
+            
+            Built release mode font 'temp_Recursive-Display Bold.ttf' Revision 0.000
+            
+            --------------------
+
+        Generate Recursive Display Light
+            --------------------
+            
+            makeotf Report
+            
+            makeotf [Note] Converting source font 'dummyCompile.otf' to temporary Unix Type1 font file 'dummyCompile.otf.tmp'.
+            makeotf [Note] setting the USE_TYPO_METRICS OS/2 fsSelection bit 7 from fontinfo keyword.
+            makeotf [Note] setting the WEIGHT_WIDTH_SLOPE_ONLY OS/2 fsSelection bit 8 from fontinfo keyword.
+            makeotf [Note] setting the OBLIQUE OS/2 fsSelection bit 9 from fontinfo keyword.
+            makeotf [Note] Writing options file current.fpr
+            makeotf [Note] Running makeotfexe with commands:
+               cd ""
+               makeotfexe "-f" "dummyCompile.otf.tmp" "-o" "temp_Recursive-Display Light.ttf" -ff "features" -gf "glyphOrder" -mf "menuname" -r
+            makeotfexe [WARNING] <Recursive-DisplayLight> Major version number not in range 1 .. 255 [features 19]
+            makeotfexe [NOTE] Wrote new font file 'temp_Recursive-Display Light.ttf'.
+            
+            
+            Built release mode font 'temp_Recursive-Display Light.ttf' Revision 0.000
+            
+            --------------------
