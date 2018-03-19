@@ -16,6 +16,13 @@
         </source>
     </sources>
     <instances>
+        <instance familyname="Recursive" filename="instances/Recursive-TextRegular.ufo" postscriptfontname="Recursive-TextRegular" stylename="Text Regular">
+            <location>
+                <dimension name="weight" xvalue="300" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
         <instance familyname="Recursive" filename="instances/Recursive-TextSemiBold.ufo" postscriptfontname="Recursive-TextSemiBold" stylename="Text SemiBold">
             <location>
                 <dimension name="weight" xvalue="700" />
@@ -26,13 +33,6 @@
         <instance familyname="Recursive" filename="instances/Recursive-TextMedium.ufo" postscriptfontname="Recursive-TextMedium" stylename="Text Medium">
             <location>
                 <dimension name="weight" xvalue="500" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Recursive" filename="instances/Recursive-TextRegular.ufo" postscriptfontname="Recursive-TextRegular" stylename="Text Regular">
-            <location>
-                <dimension name="weight" xvalue="300" />
             </location>
             <kerning />
             <info />
