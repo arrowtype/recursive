@@ -5,13 +5,22 @@
 	<key>ascender</key>
 	<integer>750</integer>
 	<key>capHeight</key>
-	<integer>750</integer>
+	<integer>700</integer>
 	<key>descender</key>
 	<integer>-250</integer>
+	<key>familyName</key>
+	<string>Recursive Trio</string>
 	<key>guidelines</key>
 	<array/>
 	<key>postscriptBlueValues</key>
-	<array/>
+	<array>
+		<integer>-20</integer>
+		<integer>0</integer>
+		<integer>550</integer>
+		<integer>570</integer>
+		<integer>750</integer>
+		<integer>770</integer>
+	</array>
 	<key>postscriptFamilyBlues</key>
 	<array/>
 	<key>postscriptFamilyOtherBlues</key>
@@ -22,9 +31,11 @@
 	<array/>
 	<key>postscriptStemSnapV</key>
 	<array/>
+	<key>styleName</key>
+	<string>Text Bold</string>
 	<key>unitsPerEm</key>
 	<integer>1000</integer>
 	<key>xHeight</key>
-	<integer>500</integer>
+	<integer>550</integer>
 </dict>
 </plist>
