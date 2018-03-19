@@ -5,18 +5,18 @@
   <outline>
     <contour>
       <point x="376" y="534" type="curve" smooth="yes"/>
-      <point x="253" y="534"/>
-      <point x="93" y="445"/>
+      <point x="244" y="534"/>
+      <point x="93" y="450"/>
       <point x="93" y="357" type="curve" smooth="yes"/>
-      <point x="93" y="330" type="line" smooth="yes"/>
-      <point x="93" y="299"/>
-      <point x="146" y="290"/>
-      <point x="181" y="290" type="curve"/>
-      <point x="173" y="309"/>
-      <point x="171" y="329"/>
+      <point x="93" y="339" type="line" smooth="yes"/>
+      <point x="93" y="301"/>
+      <point x="145" y="293"/>
+      <point x="176" y="293" type="curve"/>
+      <point x="172" y="311"/>
+      <point x="171" y="330"/>
       <point x="171" y="345" type="curve" smooth="yes"/>
-      <point x="171" y="399"/>
-      <point x="289" y="456"/>
+      <point x="171" y="406"/>
+      <point x="281" y="456"/>
       <point x="372" y="456" type="curve" smooth="yes"/>
       <point x="430" y="456"/>
       <point x="465" y="448"/>
@@ -27,40 +27,40 @@
       <point x="454" y="534"/>
     </contour>
     <contour>
-      <point x="381" y="265" type="curve" smooth="yes"/>
-      <point x="289" y="282" type="line" smooth="yes"/>
-      <point x="186" y="302"/>
-      <point x="171" y="320"/>
+      <point x="381" y="267" type="curve" smooth="yes"/>
+      <point x="289" y="285" type="line" smooth="yes"/>
+      <point x="186" y="305"/>
+      <point x="171" y="322"/>
       <point x="171" y="345" type="curve" smooth="yes"/>
       <point x="171" y="356"/>
-      <point x="174" y="372"/>
-      <point x="186" y="386" type="curve"/>
-      <point x="126" y="386"/>
-      <point x="93" y="364"/>
-      <point x="93" y="330" type="curve"/>
-      <point x="93" y="279"/>
-      <point x="139" y="245"/>
-      <point x="260" y="220" type="curve" smooth="yes"/>
-      <point x="353" y="202" type="line" smooth="yes"/>
-      <point x="443" y="183"/>
-      <point x="475" y="156"/>
-      <point x="487" y="110" type="curve"/>
-      <point x="516" y="106"/>
-      <point x="531" y="125"/>
-      <point x="531" y="152" type="curve"/>
-      <point x="531" y="205"/>
-      <point x="485" y="245"/>
+      <point x="172" y="376"/>
+      <point x="183" y="396" type="curve"/>
+      <point x="126" y="387"/>
+      <point x="93" y="369"/>
+      <point x="93" y="339" type="curve"/>
+      <point x="93" y="284"/>
+      <point x="137" y="248"/>
+      <point x="253" y="224" type="curve" smooth="yes"/>
+      <point x="353" y="204" type="line" smooth="yes"/>
+      <point x="443" y="185"/>
+      <point x="474" y="156"/>
+      <point x="487" y="106" type="curve"/>
+      <point x="516" y="102"/>
+      <point x="531" y="126"/>
+      <point x="531" y="145" type="curve"/>
+      <point x="531" y="202"/>
+      <point x="486" y="247"/>
     </contour>
     <contour>
       <point x="306" y="-20" type="line" smooth="yes"/>
       <point x="444" y="-20"/>
-      <point x="531" y="36"/>
-      <point x="531" y="120" type="curve" smooth="yes"/>
-      <point x="531" y="152" type="line"/>
-      <point x="531" y="172"/>
-      <point x="506" y="173"/>
-      <point x="482" y="161" type="curve"/>
-      <point x="477" y="92"/>
+      <point x="531" y="33"/>
+      <point x="531" y="113" type="curve" smooth="yes"/>
+      <point x="531" y="145" type="line"/>
+      <point x="531" y="161"/>
+      <point x="505" y="165"/>
+      <point x="482" y="154" type="curve"/>
+      <point x="477" y="90"/>
       <point x="424" y="58"/>
       <point x="300" y="58" type="curve" smooth="yes"/>
       <point x="195" y="58"/>
@@ -77,6 +77,14 @@
   </outline>
   <lib>
     <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
       <key>com.typemytype.robofont.guideline.magnetic.1BFUVRvKEP</key>
       <integer>10</integer>
       <key>com.typemytype.robofont.guideline.magnetic.26gBBBfRs8</key>
