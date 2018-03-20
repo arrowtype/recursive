@@ -51,12 +51,15 @@
       <point x="561.0" y="401.0"/>
     </contour>
     <contour>
-      <point x="699" y="184" type="curve" smooth="yes"/>
-      <point x="699" y="211"/>
-      <point x="693" y="237"/>
-      <point x="676" y="254" type="curve"/>
-      <point x="573" y="167"/>
-      <point x="440" y="130"/>
+      <point x="701" y="218" type="curve" smooth="yes"/>
+      <point x="701" y="245"/>
+      <point x="695" y="281"/>
+      <point x="681" y="305" type="curve"/>
+      <point x="675.0" y="294.0"/>
+      <point x="662" y="277"/>
+      <point x="643" y="258" type="curve" smooth="yes"/>
+      <point x="567" y="182"/>
+      <point x="428" y="130.0"/>
       <point x="271" y="130" type="curve" smooth="yes"/>
       <point x="195" y="130"/>
       <point x="137" y="148"/>
@@ -67,11 +70,23 @@
       <point x="153" y="2"/>
       <point x="208" y="-20"/>
       <point x="267" y="-20" type="curve" smooth="yes"/>
-      <point x="435" y="-20"/>
-      <point x="593" y="49"/>
-      <point x="664" y="120" type="curve" smooth="yes"/>
-      <point x="686" y="142"/>
-      <point x="699" y="164"/>
+      <point x="437" y="-20.0"/>
+      <point x="589" y="72"/>
+      <point x="668" y="151" type="curve" smooth="yes"/>
+      <point x="690" y="173"/>
+      <point x="701.0" y="197"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+    </dict>
+  </lib>
 </glyph>
