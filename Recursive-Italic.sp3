@@ -10,7 +10,7 @@
     <data name="lineViewFilled" value="True"/>
     <data name="lineStacked" value="lined"/>
     <data name="generateFontsAtFolder" value="/Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/instances"/>
-    <data name="previewtext" value="a c d e f i j l n o r s t"/>
+    <data name="previewtext" value="a c d e f i j l n o r s tt"/>
     <data name="verticalPreviewAxis" value="None"/>
     <!-- don't generate these glyphs -->
     <ignore glyphs=""/>
@@ -19,40 +19,49 @@
         <color a="1.000" b="0.764" g="0.000" r="0.989"/>
     </axis>
     <!-- master definitions -->
-    <master familyname="Recursive" filename="Recursive Mono Text-Bold Italic.ufo" sortorder="0" stylename="Text Bold Italic">
+    <master familyname="Recursive Mono v0.0.4" filename="Recursive Mono Text-Bold Italic.ufo" sortorder="0" stylename="Text Bold Italic">
         <location>
             <dimension name="weight" xvalue="1000.000000"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
-    <master familyname="Recursive Mono" filename="Recursive Mono Text-Light Italic.ufo" sortorder="4" stylename="Text Light Italic">
+    <master familyname="Recursive Mono v0.0.4" filename="Recursive Mono Text-Light Italic.ufo" sortorder="5" stylename="Text Light Italic">
         <location>
             <dimension name="weight" xvalue="0.000000"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
     <!-- instance definitions -->
-    <instance familyname="Recursive Mono" filename="instances/Recursive-TextRegular.ufo" sortorder="3" stylename="Text Regular Italic">
+    <instance familyname="Recursive Mono" filename="instances/Recursive-TextRegular.ufo" sortorder="3" stylename="Text Regular Italic v0.0.4">
         <location>
-            <dimension name="weight" xvalue="300.000000"/>
+            <dimension name="weight" xvalue="400.000000"/>
         </location>
         <provideFeatures state="1"/>
         <provideGroups state="1"/>
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Recursive Mono" filename="instances/Recursive-TextSemiBold.ufo" sortorder="1" stylename="Text SemiBold Italic">
+    <instance familyname="Recursive Mono" filename="instances/Recursive-TextSemiBold.ufo" sortorder="1" stylename="Text SemiBold Italic v0.0.4">
         <location>
-            <dimension name="weight" xvalue="700.000000"/>
+            <dimension name="weight" xvalue="800.000000"/>
         </location>
         <provideFeatures state="1"/>
         <provideGroups state="1"/>
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Recursive Mono" filename="instances/Recursive-TextMedium.ufo" sortorder="2" stylename="Text Medium Italic">
+    <instance familyname="Recursive Mono" filename="instances/Recursive-TextMedium.ufo" sortorder="2" stylename="Text Medium Italic v0.0.4">
         <location>
-            <dimension name="weight" xvalue="500.000000"/>
+            <dimension name="weight" xvalue="600.000000"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-TextSemiLightv0.0.4.ufo" sortorder="4" stylename="Text SemiLight v0.0.4">
+        <location>
+            <dimension name="weight" xvalue="200.000000"/>
         </location>
         <provideFeatures state="1"/>
         <provideGroups state="1"/>

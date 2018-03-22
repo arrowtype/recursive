@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<designspace format="3">
+    <axes>
+        <axis default="0" maximum="1000" minimum="0" name="weight" tag="wght" />
+    </axes>
+    <sources>
+        <source familyname="Recursive Mono v0.0.4" filename="../../Recursive Text-Bold.ufo" stylename="Text Bold">
+            <location>
+                <dimension name="weight" xvalue="1000" />
+            </location>
+        </source>
+        <source familyname="Recursive Mono  v0.0.4" filename="../../Recursive Text-Light.ufo" stylename="Text Light">
+            <location>
+                <dimension name="weight" xvalue="0" />
+            </location>
+        </source>
+    </sources>
+    <instances>
+        <instance familyname="Recursive Mono" filename="../../instances/RecursiveMono-TextSemiBoldv0.0.4.ufo" postscriptfontname="RecursiveMono-TextSemiBoldv0.0.4" stylename="Text SemiBold v0.0.4">
+            <location>
+                <dimension name="weight" xvalue="800" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono" filename="../../instances/RecursiveMono-TextMediumv0.0.4.ufo" postscriptfontname="RecursiveMono-TextMediumv0.0.4" stylename="Text Medium v0.0.4">
+            <location>
+                <dimension name="weight" xvalue="600" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono" filename="../../instances/RecursiveMono-TextRegularv0.0.4.ufo" postscriptfontname="RecursiveMono-TextRegularv0.0.4" stylename="Text Regular v0.0.4">
+            <location>
+                <dimension name="weight" xvalue="400" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono" filename="../../instances/RecursiveMono-TextSemiLightv0.0.4.ufo" postscriptfontname="RecursiveMono-TextSemiLightv0.0.4" stylename="Text SemiLight v0.0.4">
+            <location>
+                <dimension name="weight" xvalue="200" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+    </instances>
+</designspace>
