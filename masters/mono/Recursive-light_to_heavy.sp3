@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<designspace format="2">
+    <!-- Superpolator Designspace Object -->
+    <!-- info -->
+    <version superpolator="2"/>
+    <!-- measurements -->
+    <!-- application data -->
+    <data name="horizontalPreviewAxis" value="weight"/>
+    <data name="lineInverted" value="False"/>
+    <data name="lineViewFilled" value="True"/>
+    <data name="lineStacked" value="sequence"/>
+    <data name="generateFontsAtFolder" value="instances"/>
+    <data name="previewtext" value="realign"/>
+    <data name="verticalPreviewAxis" value="None"/>
+    <!-- don't generate these glyphs -->
+    <ignore glyphs=""/>
+    <!-- axis definitions -->
+    <axis maximum="1000.000000" minimum="0.000000" name="weight" shortname="wght">
+        <color a="1.000" b="0.764" g="0.000" r="0.989"/>
+    </axis>
+    <!-- master definitions -->
+    <master familyname="Recursive Mono" filename="Recursive Text-Bold.ufo" sortorder="2" stylename="Text Bold">
+        <location>
+            <dimension name="weight" xvalue="700.000000"/>
+        </location>
+        <color a="1.000" b="0.300" g="0.300" r="0.300"/>
+    </master>
+    <master familyname="Recursive Mono" filename="Recursive Mono-Text Heavy.ufo" sortorder="0" stylename="Text Heavy">
+        <location>
+            <dimension name="weight" xvalue="1000.000000"/>
+        </location>
+        <color a="1.000" b="0.300" g="0.300" r="0.300"/>
+    </master>
+    <!-- instance definitions -->
+    <instance familyname="Recursive Mono" filename="../../../../../../../../../Applications/Superpolator.app/Contents/Resources/instances/RecursiveMono-wght846.56.ufo" sortorder="1" stylename="wght846.56">
+        <location>
+            <dimension name="weight" xvalue="846.561848"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+</designspace>
