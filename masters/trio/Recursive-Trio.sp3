@@ -9,7 +9,7 @@
     <data name="lineInverted" value="False"/>
     <data name="lineViewFilled" value="True"/>
     <data name="lineStacked" value="lined"/>
-    <data name="generateFontsAtFolder" value="/Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/instances"/>
+    <data name="generateFontsAtFolder" value="/Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/trio/instances"/>
     <data name="previewtext" value="recursiveniuniu"/>
     <data name="verticalPreviewAxis" value="None"/>
     <!-- don't generate these glyphs -->
@@ -32,7 +32,7 @@
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
     <!-- instance definitions -->
-    <instance familyname="Recursive Trio" filename="instances/RecursiveTrio-TextRegular.ufo" sortorder="4" stylename="Text SemiLight v0.0.4">
+    <instance familyname="Recursive Trio" filename="instances/RecursiveTrio-TextSemiLight.ufo" sortorder="4" stylename="Text SemiLight">
         <location>
             <dimension name="weight" xvalue="200.000000"/>
         </location>
@@ -41,7 +41,7 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Recursive Trio" filename="instances/RecursiveTrio-TextSemiBold.ufo" sortorder="1" stylename="Text SemiBold v0.0.4">
+    <instance familyname="Recursive Trio" filename="instances/RecursiveTrio-TextSemiBold.ufo" sortorder="1" stylename="Text SemiBold">
         <location>
             <dimension name="weight" xvalue="800.000000"/>
         </location>
@@ -50,7 +50,7 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Recursive Trio" filename="instances/RecursiveTrio-TextMedium.ufo" sortorder="2" stylename="Text Medium v0.0.4">
+    <instance familyname="Recursive Trio" filename="instances/RecursiveTrio-TextMedium.ufo" sortorder="2" stylename="Text Medium">
         <location>
             <dimension name="weight" xvalue="600.000000"/>
         </location>
@@ -59,7 +59,7 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Recursive Trio" filename="instances/RecursiveTrio-TextRegularv0.0.4.ufo" sortorder="3" stylename="Text Regular v0.0.4">
+    <instance familyname="Recursive Trio" filename="instances/RecursiveTrio-TextRegular.ufo" sortorder="3" stylename="Text Regular">
         <location>
             <dimension name="weight" xvalue="400.000000"/>
         </location>

@@ -58,7 +58,7 @@
 	<key>com.typemytype.robofont.compileSettings.autohint</key>
 	<true/>
 	<key>com.typemytype.robofont.compileSettings.checkOutlines</key>
-	<false/>
+	<integer>1</integer>
 	<key>com.typemytype.robofont.compileSettings.createDummyDSIG</key>
 	<true/>
 	<key>com.typemytype.robofont.compileSettings.decompose</key>
@@ -197,6 +197,7 @@
 		<string>i.ss01</string>
 		<string>l.ss01</string>
 		<string>r.ss01</string>
+		<string>r.ss02</string>
 		<string>g.ver02</string>
 		<string>mu</string>
 		<string>circumflex</string>
@@ -284,7 +285,6 @@
 		<string>registered</string>
 		<string>degree</string>
 		<string>space</string>
-		<string>r.ss02</string>
 	</array>
 </dict>
 </plist>

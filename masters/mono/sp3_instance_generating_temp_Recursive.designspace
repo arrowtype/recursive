@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<designspace format="3">
+    <axes>
+        <axis default="0" maximum="1000" minimum="0" name="weight" tag="wght" />
+    </axes>
+    <sources>
+        <source familyname="Recursive Mono" filename="Recursive Text-Bold.ufo" stylename="Text Bold">
+            <location>
+                <dimension name="weight" xvalue="1000" />
+            </location>
+        </source>
+        <source familyname="Recursive Mono" filename="Recursive Text-Light.ufo" stylename="Text Light">
+            <location>
+                <dimension name="weight" xvalue="0" />
+            </location>
+        </source>
+    </sources>
+    <instances>
+        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-TextSemiLight.ufo" postscriptfontname="RecursiveMono-TextSemiLight" stylename="Text SemiLight">
+            <location>
+                <dimension name="weight" xvalue="200" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-TextSemiBold.ufo" postscriptfontname="RecursiveMono-TextSemiBold" stylename="Text SemiBold">
+            <location>
+                <dimension name="weight" xvalue="800" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-TextMedium.ufo" postscriptfontname="RecursiveMono-TextMedium" stylename="Text Medium">
+            <location>
+                <dimension name="weight" xvalue="600" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-TextRegular.ufo" postscriptfontname="RecursiveMono-TextRegular" stylename="Text Regular">
+            <location>
+                <dimension name="weight" xvalue="400" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+    </instances>
+</designspace>
