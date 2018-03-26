@@ -8,12 +8,12 @@
     <data name="roundGeometry" value="False"/>
     <data name="lineInverted" value="False"/>
     <data name="expandRules" value="False"/>
-    <data name="lineViewFilled" value="False"/>
+    <data name="lineViewFilled" value="True"/>
     <data name="outputFormatUFO" value="2"/>
     <data name="lineStacked" value="lined"/>
     <data name="includeLegacyRules" value="False"/>
     <data name="keepWorkFiles" value="False"/>
-    <data name="previewtext" value="trvsai"/>
+    <data name="previewtext" value="trivialistj"/>
     <data name="instancefolder" value="instances"/>
     <data name="verticalPreviewAxis" value="None"/>
     <!-- don't generate these glyphs -->
@@ -25,13 +25,13 @@
     <!-- master definitions -->
     <master familyname="Recursive Mono" filename="Recursive Mono-Micro Bold.ufo" sortorder="0" stylename="Micro Bold">
         <location>
-            <dimension name="optical" xvalue="16"/>
+            <dimension name="optical" xvalue="6"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
     <master familyname="Recursive Mono" filename="Recursive Mono Text-Bold.ufo" sortorder="2" stylename="Text Bold">
         <location>
-            <dimension name="optical" xvalue="40"/>
+            <dimension name="optical" xvalue="72"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
