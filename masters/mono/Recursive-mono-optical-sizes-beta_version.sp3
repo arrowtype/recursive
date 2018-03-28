@@ -13,25 +13,44 @@
     <data name="lineStacked" value="lined"/>
     <data name="includeLegacyRules" value="False"/>
     <data name="keepWorkFiles" value="False"/>
-    <data name="previewtext" value="trijvialistt"/>
+    <data name="previewtext" value="trijvialistgp"/>
     <data name="instancefolder" value="instances"/>
-    <data name="verticalPreviewAxis" value="None"/>
+    <data name="verticalPreviewAxis" value="weight"/>
     <!-- don't generate these glyphs -->
     <ignore glyphs=""/>
     <!-- axis definitions -->
     <axis maximum="72" minimum="6" name="optical" shortname="opsz">
         <color a="1.000" b="0.056" g="0.775" r="0.752"/>
     </axis>
+    <axis maximum="1000" minimum="0" name="weight" shortname="wght">
+        <color a="1.000" b="0.764" g="0.000" r="0.989"/>
+    </axis>
     <!-- master definitions -->
     <master familyname="Recursive Mono" filename="Recursive Mono-Micro Bold - alt.ufo" sortorder="0" stylename="Micro Bold">
         <location>
             <dimension name="optical" xvalue="6"/>
+            <dimension name="weight" xvalue="1000"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
     <master familyname="Recursive Mono" filename="Recursive Mono Text-Bold.ufo" sortorder="2" stylename="Text Bold">
         <location>
             <dimension name="optical" xvalue="72"/>
+            <dimension name="weight" xvalue="1000"/>
+        </location>
+        <color a="1.000" b="0.300" g="0.300" r="0.300"/>
+    </master>
+    <master familyname="Recursive Mono" filename="Recursive Mono Text-Light.ufo" sortorder="3" stylename="Text Light">
+        <location>
+            <dimension name="optical" xvalue="72"/>
+            <dimension name="weight" xvalue="0"/>
+        </location>
+        <color a="1.000" b="0.300" g="0.300" r="0.300"/>
+    </master>
+    <master familyname="Recursive Mono" filename="Recursive Mono Micro-Light.ufo" sortorder="4" stylename="Micro Light">
+        <location>
+            <dimension name="optical" xvalue="6"/>
+            <dimension name="weight" xvalue="0"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
@@ -39,6 +58,7 @@
     <instance familyname="Recursive Mono" filename="instances/RecursiveMono-mid.ufo" sortorder="1" stylename="mid">
         <location>
             <dimension name="optical" xvalue="28"/>
+            <dimension name="weight" xvalue="1000"/>
         </location>
         <provideFeatures state="1"/>
         <provideGroups state="1"/>
