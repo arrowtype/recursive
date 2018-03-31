@@ -3,44 +3,54 @@
     <!-- Superpolator Designspace Object -->
     <!-- info -->
     <version superpolator="2"/>
-    <!-- measurements -->
     <!-- application data -->
     <data name="horizontalPreviewAxis" value="weight"/>
+    <data name="roundGeometry" value="True"/>
     <data name="lineInverted" value="False"/>
+    <data name="expandRules" value="False"/>
     <data name="lineViewFilled" value="True"/>
+    <data name="outputFormatUFO" value="2"/>
     <data name="lineStacked" value="lined"/>
-    <data name="generateFontsAtFolder" value="/Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/01-casual_mono-project/masters/mono/instances"/>
-    <data name="previewtext" value="ngngngngnge"/>
+    <data name="includeLegacyRules" value="False"/>
+    <data name="keepWorkFiles" value="False"/>
+    <data name="previewtext" value="s"/>
+    <data name="instancefolder" value="instances"/>
     <data name="verticalPreviewAxis" value="None"/>
     <!-- don't generate these glyphs -->
     <ignore glyphs=""/>
     <!-- axis definitions -->
-    <axis maximum="1000.000000" minimum="0.000000" name="weight" shortname="wght">
+    <axis maximum="1000" minimum="0" name="weight" shortname="wght">
         <color a="1.000" b="0.764" g="0.000" r="0.989"/>
     </axis>
     <!-- master definitions -->
+    <!-- masks -->
     <master familyname="Recursive Mono" filename="Recursive Mono Text-Bold.ufo" sortorder="2" stylename="Text Bold">
         <location>
-            <dimension name="weight" xvalue="700.000000"/>
+            <dimension name="weight" xvalue="700"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
+        <maskedfont font="1"/>
     </master>
+    <!-- masks -->
     <master familyname="Recursive Mono" filename="Recursive Mono Text-Light.ufo" sortorder="7" stylename="Text Light">
         <location>
-            <dimension name="weight" xvalue="0.000000"/>
+            <dimension name="weight" xvalue="0"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
+        <maskedfont font="1"/>
     </master>
+    <!-- masks -->
     <master familyname="Recursive Mono" filename="Recursive Mono-Text Heavy.ufo" sortorder="0" stylename="Text Heavy">
         <location>
-            <dimension name="weight" xvalue="1000.000000"/>
+            <dimension name="weight" xvalue="1000"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
+        <maskedfont font="1"/>
     </master>
     <!-- instance definitions -->
     <instance familyname="Recursive Mono" filename="instances/RecursiveMono-TextRegular.ufo" sortorder="5" stylename="Text Regular">
         <location>
-            <dimension name="weight" xvalue="280.000000"/>
+            <dimension name="weight" xvalue="280"/>
         </location>
         <provideFeatures state="1"/>
         <provideGroups state="1"/>
@@ -49,7 +59,7 @@
     </instance>
     <instance familyname="Recursive Mono" filename="instances/RecursiveMono-TextSemiBold.ufo" sortorder="3" stylename="Text SemiBold">
         <location>
-            <dimension name="weight" xvalue="560.000000"/>
+            <dimension name="weight" xvalue="560"/>
         </location>
         <provideFeatures state="1"/>
         <provideGroups state="1"/>
@@ -58,7 +68,7 @@
     </instance>
     <instance familyname="Recursive Mono" filename="instances/RecursiveMono-TextMedium.ufo" sortorder="4" stylename="Text Medium">
         <location>
-            <dimension name="weight" xvalue="420.000000"/>
+            <dimension name="weight" xvalue="420"/>
         </location>
         <provideFeatures state="1"/>
         <provideGroups state="1"/>
@@ -67,7 +77,7 @@
     </instance>
     <instance familyname="Recursive Mono" filename="instances/RecursiveMono-TextSemiLight.ufo" sortorder="6" stylename="Text SemiLight">
         <location>
-            <dimension name="weight" xvalue="140.000000"/>
+            <dimension name="weight" xvalue="140"/>
         </location>
         <provideFeatures state="1"/>
         <provideGroups state="1"/>
@@ -76,7 +86,7 @@
     </instance>
     <instance familyname="Recursive Mono" filename="instances/RecursiveMono-ExtraBold.ufo" sortorder="1" stylename="Extra Bold">
         <location>
-            <dimension name="weight" xvalue="840.000000"/>
+            <dimension name="weight" xvalue="840"/>
         </location>
         <provideFeatures state="1"/>
         <provideGroups state="1"/>
