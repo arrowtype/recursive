@@ -13,7 +13,7 @@
     <data name="lineStacked" value="lined"/>
     <data name="includeLegacyRules" value="False"/>
     <data name="keepWorkFiles" value="False"/>
-    <data name="previewtext" value="ygkw"/>
+    <data name="previewtext" value="ygkwlifa"/>
     <data name="instancefolder" value="instances"/>
     <data name="verticalPreviewAxis" value="optical"/>
     <!-- don't generate these glyphs -->
@@ -59,6 +59,16 @@
         <location>
             <dimension name="optical" xvalue="28"/>
             <dimension name="weight" xvalue="1000"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-MicroRegular.ufo" sortorder="5" stylename="Micro Regular">
+        <location>
+            <dimension name="optical" xvalue="6"/>
+            <dimension name="weight" xvalue="350"/>
         </location>
         <provideFeatures state="1"/>
         <provideGroups state="1"/>
