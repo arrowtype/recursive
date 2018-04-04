@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<designspace format="3">
+    <axes>
+        <axis default="6" maximum="72" minimum="6" name="optical" tag="opsz" />
+        <axis default="0" maximum="1000" minimum="0" name="weight" tag="wght" />
+    </axes>
+    <sources>
+        <source familyname="Recursive Trio" filename="Recursive Trio Text-Bold.ufo" stylename="Text Bold">
+            <location>
+                <dimension name="optical" xvalue="72" />
+                <dimension name="weight" xvalue="1000" />
+            </location>
+        </source>
+        <source familyname="Recursive Trio" filename="Recursive Trio Text-Light.ufo" stylename="Text Light">
+            <location>
+                <dimension name="optical" xvalue="72" />
+                <dimension name="weight" xvalue="0" />
+            </location>
+        </source>
+        <source familyname="Recursive Trio" filename="Recursive Trio Micro Bold.ufo" stylename="Micro Bold">
+            <location>
+                <dimension name="optical" xvalue="6" />
+                <dimension name="weight" xvalue="1000" />
+            </location>
+        </source>
+        <source familyname="Recursive Trio" filename="Recursive Trio Micro-Light.ufo" stylename="Micro Light">
+            <location>
+                <dimension name="optical" xvalue="6" />
+                <dimension name="weight" xvalue="0" />
+            </location>
+        </source>
+    </sources>
+    <instances>
+        <instance familyname="Recursive Trio" filename="instances/RecursiveTrio-MicroMedium.ufo" postscriptfontname="RecursiveTrio-MicroMedium" stylename="Micro Medium">
+            <location>
+                <dimension name="optical" xvalue="6" />
+                <dimension name="weight" xvalue="450" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+    </instances>
+</designspace>
