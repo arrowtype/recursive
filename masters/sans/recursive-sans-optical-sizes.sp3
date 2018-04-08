@@ -13,7 +13,7 @@
     <data name="lineStacked" value="lined"/>
     <data name="includeLegacyRules" value="False"/>
     <data name="keepWorkFiles" value="False"/>
-    <data name="previewtext" value="xxx"/>
+    <data name="previewtext" value="frisky"/>
     <data name="instancefolder" value="instances"/>
     <data name="verticalPreviewAxis" value="optical"/>
     <!-- don't generate these glyphs -->
@@ -55,7 +55,7 @@
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
     <!-- instance definitions -->
-    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-mid.ufo" sortorder="1" stylename="mid">
+    <instance familyname="Recursive Sans" filename="instances/RecursiveSans-mid.ufo" sortorder="1" stylename="mid">
         <location>
             <dimension name="optical" xvalue="28"/>
             <dimension name="weight" xvalue="1000"/>
@@ -65,7 +65,7 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-MicroRegular.ufo" sortorder="5" stylename="Micro Regular">
+    <instance familyname="Recursive Sans" filename="instances/RecursiveSans-MicroRegular.ufo" sortorder="5" stylename="Micro Regular">
         <location>
             <dimension name="optical" xvalue="6"/>
             <dimension name="weight" xvalue="350"/>
@@ -75,10 +75,40 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-MicroMedium.ufo" sortorder="6" stylename="Micro Medium">
+    <instance familyname="Recursive Sans" filename="instances/RecursiveSans-MicroMedium.ufo" sortorder="6" stylename="Micro Medium">
         <location>
             <dimension name="optical" xvalue="6"/>
             <dimension name="weight" xvalue="450"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Recursive Sans" filename="instances/RecursiveSans-MicroSemiBold.ufo" sortorder="7" stylename="Micro Semi Bold">
+        <location>
+            <dimension name="optical" xvalue="6"/>
+            <dimension name="weight" xvalue="750"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextSemiBold.ufo" sortorder="8" stylename="Text Semi Bold">
+        <location>
+            <dimension name="optical" xvalue="72"/>
+            <dimension name="weight" xvalue="750"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextRegular.ufo" sortorder="9" stylename="Text Regular">
+        <location>
+            <dimension name="optical" xvalue="72"/>
+            <dimension name="weight" xvalue="350"/>
         </location>
         <provideFeatures state="1"/>
         <provideGroups state="1"/>
