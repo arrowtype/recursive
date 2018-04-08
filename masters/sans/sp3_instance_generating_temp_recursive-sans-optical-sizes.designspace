@@ -5,25 +5,25 @@
         <axis default="0" maximum="1000" minimum="0" name="weight" tag="wght" />
     </axes>
     <sources>
-        <source familyname="Recursive Mono" filename="Recursive Mono-Micro Bold.ufo" stylename="Micro Bold">
+        <source familyname="Recursive Sans" filename="Recursive Sans Micro Bold.ufo" stylename="Micro Bold">
             <location>
                 <dimension name="optical" xvalue="6" />
                 <dimension name="weight" xvalue="1000" />
             </location>
         </source>
-        <source familyname="Recursive Mono" filename="Recursive Mono Text-Bold.ufo" stylename="Text Bold">
+        <source familyname="Recursive Sans" filename="Recursive Sans Text-Bold.ufo" stylename="Text Bold">
             <location>
                 <dimension name="optical" xvalue="72" />
                 <dimension name="weight" xvalue="1000" />
             </location>
         </source>
-        <source familyname="Recursive Mono" filename="Recursive Mono Text-Light.ufo" stylename="Text Light">
+        <source familyname="Recursive Sans" filename="Recursive Sans Text-Light.ufo" stylename="Text Light">
             <location>
                 <dimension name="optical" xvalue="72" />
                 <dimension name="weight" xvalue="0" />
             </location>
         </source>
-        <source familyname="Recursive Mono" filename="Recursive Mono Micro-Light.ufo" stylename="Micro Light">
+        <source familyname="Recursive Sans" filename="Recursive Sans Micro-Light.ufo" stylename="Micro Light">
             <location>
                 <dimension name="optical" xvalue="6" />
                 <dimension name="weight" xvalue="0" />
@@ -31,9 +31,9 @@
         </source>
     </sources>
     <instances>
-        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-MicroRegular.ufo" postscriptfontname="RecursiveMono-MicroRegular" stylename="Micro Regular">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextRegular.ufo" postscriptfontname="RecursiveSans-TextRegular" stylename="Text Regular">
             <location>
-                <dimension name="optical" xvalue="6" />
+                <dimension name="optical" xvalue="72" />
                 <dimension name="weight" xvalue="350" />
             </location>
             <kerning />
