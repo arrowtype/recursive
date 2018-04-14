@@ -13,7 +13,7 @@
     <data name="lineStacked" value="lined"/>
     <data name="includeLegacyRules" value="False"/>
     <data name="keepWorkFiles" value="False"/>
-    <data name="previewtext" value="vwxyz"/>
+    <data name="previewtext" value="abcdefghijklmnopqrstuvwxyz"/>
     <data name="instancefolder" value="instances"/>
     <data name="verticalPreviewAxis" value="optical"/>
     <!-- don't generate these glyphs -->
@@ -33,21 +33,21 @@
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
-    <master familyname="Recursive Mono v0.0.11" filename="Recursive Mono Text-Bold.ufo" sortorder="2" stylename="Text Bold">
+    <master familyname="Recursive Mono v0.0.11" filename="Recursive Mono Text-Bold.ufo" sortorder="1" stylename="Text Bold">
         <location>
             <dimension name="optical" xvalue="72"/>
             <dimension name="weight" xvalue="1000"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
-    <master familyname="Recursive Mono v0.0.11" filename="Recursive Mono Text-Light.ufo" sortorder="3" stylename="Text Light">
+    <master familyname="Recursive Mono v0.0.11" filename="Recursive Mono Text-Light.ufo" sortorder="2" stylename="Text Light">
         <location>
             <dimension name="optical" xvalue="72"/>
             <dimension name="weight" xvalue="0"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
-    <master familyname="Recursive Mono v0.0.11" filename="Recursive Mono Micro-Light.ufo" sortorder="4" stylename="Micro Light">
+    <master familyname="Recursive Mono v0.0.11" filename="Recursive Mono Micro-Light.ufo" sortorder="3" stylename="Micro Light">
         <location>
             <dimension name="optical" xvalue="6"/>
             <dimension name="weight" xvalue="0"/>
@@ -55,9 +55,9 @@
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
     <!-- instance definitions -->
-    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-mid.ufo" sortorder="1" stylename="mid">
+    <instance familyname="Recursive Mono v0.0.11" filename="instances/RecursiveMonov0.0.11-MidwayBold.ufo" sortorder="8" stylename="Midway Bold">
         <location>
-            <dimension name="optical" xvalue="28"/>
+            <dimension name="optical" xvalue="39"/>
             <dimension name="weight" xvalue="1000"/>
         </location>
         <provideFeatures state="1"/>
@@ -65,20 +65,70 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-MicroRegular.ufo" sortorder="5" stylename="Micro Regular">
+    <instance familyname="Recursive Mono v0.0.11" filename="instances/RecursiveMono-MicroRegular.ufo" sortorder="4" stylename="Micro Regular">
         <location>
             <dimension name="optical" xvalue="6"/>
-            <dimension name="weight" xvalue="350"/>
+            <dimension name="weight" xvalue="333"/>
         </location>
         <provideFeatures state="1"/>
         <provideGroups state="1"/>
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-MicroMedium.ufo" sortorder="6" stylename="Micro Medium">
+    <instance familyname="Recursive Mono v0.0.11" filename="instances/RecursiveMono-MicroMedium.ufo" sortorder="5" stylename="Micro Medium">
         <location>
             <dimension name="optical" xvalue="6"/>
-            <dimension name="weight" xvalue="450"/>
+            <dimension name="weight" xvalue="666"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Recursive Mono v0.0.11" filename="instances/RecursiveMonov0.0.11-TextRegular.ufo" sortorder="6" stylename="Text Regular">
+        <location>
+            <dimension name="optical" xvalue="72"/>
+            <dimension name="weight" xvalue="333"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Recursive Mono v0.0.11" filename="instances/RecursiveMonov0.0.11-TextMedium.ufo" sortorder="7" stylename="Text Medium">
+        <location>
+            <dimension name="optical" xvalue="72"/>
+            <dimension name="weight" xvalue="666"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Recursive Mono v0.0.11" filename="instances/RecursiveMonov0.0.11-MidwayMedium.ufo" sortorder="9" stylename="Midway Medium">
+        <location>
+            <dimension name="optical" xvalue="39"/>
+            <dimension name="weight" xvalue="666"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Recursive Mono v0.0.11" filename="instances/RecursiveMonov0.0.11-MidwayRegular.ufo" sortorder="10" stylename="Midway Regular">
+        <location>
+            <dimension name="optical" xvalue="39"/>
+            <dimension name="weight" xvalue="333"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Recursive Mono v0.0.11" filename="instances/RecursiveMonov0.0.11-MidwayLight.ufo" sortorder="11" stylename="Midway Light">
+        <location>
+            <dimension name="optical" xvalue="39"/>
+            <dimension name="weight" xvalue="0"/>
         </location>
         <provideFeatures state="1"/>
         <provideGroups state="1"/>
