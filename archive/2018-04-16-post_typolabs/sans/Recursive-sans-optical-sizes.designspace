@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<designspace format="3">
+    <axes>
+        <axis default="0" maximum="1000" minimum="0" name="weight" tag="wght" />
+        <axis default="6" maximum="72" minimum="6" name="optical" tag="opsz" />
+    </axes>
+    <sources>
+        <source familyname="Recursive Sans" filename="Recursive Sans Micro Bold.ufo" stylename="Micro Bold">
+            <location>
+                <dimension name="weight" xvalue="1000" />
+                <dimension name="optical" xvalue="6" />
+            </location>
+        </source>
+        <source familyname="Recursive Sans" filename="Recursive Sans Text-Bold.ufo" stylename="Text Bold">
+            <location>
+                <dimension name="weight" xvalue="1000" />
+                <dimension name="optical" xvalue="72" />
+            </location>
+        </source>
+        <source familyname="Recursive Sans" filename="Recursive Sans Text-Light.ufo" stylename="Text Light">
+            <location>
+                <dimension name="weight" xvalue="0" />
+                <dimension name="optical" xvalue="72" />
+            </location>
+        </source>
+        <source familyname="Recursive Sans" filename="Recursive Sans Micro-Light.ufo" stylename="Micro Light">
+            <location>
+                <dimension name="weight" xvalue="0" />
+                <dimension name="optical" xvalue="6" />
+            </location>
+        </source>
+    </sources>
+    <instances>
+        <instance familyname="Recursive Sans v0.0.11" filename="instances/RecursiveSansv0.0.11-MicroRegular.ufo" postscriptfontname="RecursiveSansv0.0.11-MicroRegular" stylename="Micro Regular">
+            <location>
+                <dimension name="weight" xvalue="333" />
+                <dimension name="optical" xvalue="6" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Sans v0.0.11" filename="instances/RecursiveSansv0.0.11-MicroMedium.ufo" postscriptfontname="RecursiveSansv0.0.11-MicroMedium" stylename="Micro Medium">
+            <location>
+                <dimension name="weight" xvalue="666" />
+                <dimension name="optical" xvalue="6" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Sans v0.0.11" filename="instances/RecursiveSansv0.0.11-TextRegular.ufo" postscriptfontname="RecursiveSansv0.0.11-TextRegular" stylename="Text Regular">
+            <location>
+                <dimension name="weight" xvalue="333" />
+                <dimension name="optical" xvalue="72" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Sans v0.0.11" filename="instances/RecursiveSansv0.0.11-TextMedium.ufo" postscriptfontname="RecursiveSansv0.0.11-TextMedium" stylename="Text Medium">
+            <location>
+                <dimension name="weight" xvalue="666" />
+                <dimension name="optical" xvalue="72" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Sans v0.0.11" filename="instances/RecursiveSansv0.0.11-MidwayBold.ufo" postscriptfontname="RecursiveSansv0.0.11-MidwayBold" stylename="Midway Bold">
+            <location>
+                <dimension name="weight" xvalue="1000" />
+                <dimension name="optical" xvalue="39" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Sans v0.0.11" filename="instances/RecursiveSansv0.0.11-MidwayMedium.ufo" postscriptfontname="RecursiveSansv0.0.11-MidwayMedium" stylename="Midway Medium">
+            <location>
+                <dimension name="weight" xvalue="666" />
+                <dimension name="optical" xvalue="39" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Sans v0.0.11" filename="instances/RecursiveSansv0.0.11-MidwayRegular.ufo" postscriptfontname="RecursiveSansv0.0.11-MidwayRegular" stylename="Midway Regular">
+            <location>
+                <dimension name="weight" xvalue="333" />
+                <dimension name="optical" xvalue="39" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Sans v0.0.11" filename="instances/RecursiveSansv0.0.11-MidwayLight.ufo" postscriptfontname="RecursiveSansv0.0.11-MidwayLight" stylename="Midway Light">
+            <location>
+                <dimension name="weight" xvalue="0" />
+                <dimension name="optical" xvalue="39" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+    </instances>
+</designspace>
