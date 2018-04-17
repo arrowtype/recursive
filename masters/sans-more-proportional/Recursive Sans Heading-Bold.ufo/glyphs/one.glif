@@ -29,29 +29,29 @@
       <point x="395.0" y="40.0" type="curve" smooth="yes"/>
     </contour>
     <contour>
-      <point x="550.0" y="0.0" type="curve"/>
-      <point x="550.0" y="45.0" type="line"/>
-      <point x="550.0" y="80"/>
+      <point x="300" y="0" type="curve" smooth="yes"/>
+      <point x="384" y="0"/>
+      <point x="467" y="0"/>
+      <point x="550" y="0" type="curve"/>
+      <point x="550" y="45" type="line"/>
+      <point x="550" y="80"/>
       <point x="542" y="122"/>
-      <point x="522.0" y="142.0" type="curve" smooth="yes"/>
-      <point x="516.0" y="148.0"/>
-      <point x="513.0" y="150.0"/>
-      <point x="505.0" y="150.0" type="curve" smooth="yes"/>
-      <point x="449.0" y="150.0"/>
-      <point x="381.0" y="150.0"/>
-      <point x="325.0" y="150.0" type="curve" smooth="yes"/>
-      <point x="242.0" y="150.0"/>
-      <point x="158.0" y="150.0"/>
-      <point x="75.0" y="150.0" type="curve"/>
-      <point x="75.0" y="125.0" type="line"/>
-      <point x="75.0" y="77.0"/>
-      <point x="87.0" y="34.0"/>
-      <point x="113.0" y="8.0" type="curve" smooth="yes"/>
-      <point x="119.0" y="2.0"/>
-      <point x="122.0" y="0.0"/>
-      <point x="130.0" y="0.0" type="curve" smooth="yes"/>
-      <point x="269.0" y="0.0"/>
-      <point x="411.0" y="0.0"/>
+      <point x="522" y="142" type="curve" smooth="yes"/>
+      <point x="516" y="148"/>
+      <point x="513" y="150"/>
+      <point x="505" y="150" type="curve" smooth="yes"/>
+      <point x="366.0" y="150.0"/>
+      <point x="213.99999999999997" y="150.0"/>
+      <point x="75" y="150" type="curve"/>
+      <point x="75" y="125" type="line"/>
+      <point x="75" y="77"/>
+      <point x="87" y="34"/>
+      <point x="113" y="8" type="curve" smooth="yes"/>
+      <point x="119" y="2"/>
+      <point x="122" y="0"/>
+      <point x="130" y="0" type="curve" smooth="yes"/>
+      <point x="186" y="0"/>
+      <point x="243" y="0"/>
     </contour>
     <contour>
       <point x="125" y="396" type="curve" smooth="yes"/>
@@ -79,7 +79,7 @@
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0,0.20402,0.40924,0.5</string>
+      <string>0,0.16331,0.40177,0.5</string>
     </dict>
   </lib>
 </glyph>
