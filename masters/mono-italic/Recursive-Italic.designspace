@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<designspace format="3">
+    <axes>
+        <axis default="0" maximum="1000" minimum="0" name="weight" tag="wght" />
+    </axes>
+    <sources>
+        <source familyname="Recursive Mono" filename="Recursive Mono Heading-Bold Italic.ufo" stylename="Heading Bold Italic">
+            <location>
+                <dimension name="weight" xvalue="1000" />
+            </location>
+        </source>
+        <source familyname="Recursive Mono" filename="Recursive Mono Heading-Light Italic.ufo" stylename="Text Light Italic">
+            <location>
+                <dimension name="weight" xvalue="0" />
+            </location>
+        </source>
+    </sources>
+    <instances>
+        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-TextRegularItalic.ufo" postscriptfontname="RecursiveMono-TextRegularItalic" stylename="Text Regular Italic">
+            <location>
+                <dimension name="weight" xvalue="333" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-TextMediumItalic.ufo" postscriptfontname="RecursiveMono-TextMediumItalic" stylename="Text Medium Italic">
+            <location>
+                <dimension name="weight" xvalue="666" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+    </instances>
+</designspace>
