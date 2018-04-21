@@ -1,71 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="l" format="2">
+<glyph name="l.ss02" format="2">
   <advance width="600"/>
-  <unicode hex="006C"/>
   <outline>
     <contour>
-      <point x="382" y="750" type="line"/>
-      <point x="321.34147030117003" y="734.2121635030443"/>
+      <point x="392" y="750" type="line"/>
+      <point x="331" y="735"/>
       <point x="187" y="700"/>
       <point x="106" y="680" type="curve"/>
       <point x="106" y="569" type="line" smooth="yes"/>
       <point x="106" y="562"/>
       <point x="107" y="558"/>
       <point x="109" y="556" type="curve" smooth="yes"/>
-      <point x="111.0" y="554.0"/>
-      <point x="115.0" y="553"/>
+      <point x="111" y="554"/>
+      <point x="115" y="553"/>
       <point x="122" y="554" type="curve" smooth="yes"/>
       <point x="140" y="557"/>
-      <point x="335.35555593502784" y="590.2834835552756"/>
+      <point x="335" y="590"/>
       <point x="429" y="608" type="curve" smooth="yes"/>
       <point x="493" y="620"/>
-      <point x="536" y="750"/>
-      <point x="526" y="750" type="curve" smooth="yes"/>
+      <point x="517" y="699"/>
+      <point x="507" y="703" type="curve" smooth="yes"/>
     </contour>
     <contour>
-      <point x="526" y="750" type="curve" smooth="yes"/>
-      <point x="504" y="750"/>
+      <point x="507" y="703" type="curve" smooth="yes"/>
+      <point x="487" y="711"/>
       <point x="366" y="710"/>
       <point x="357" y="690" type="curve"/>
-      <point x="297.0" y="534.0"/>
-      <point x="226.0" y="351.0"/>
+      <point x="299" y="534"/>
+      <point x="230" y="351"/>
       <point x="167" y="180" type="curve" smooth="yes"/>
-      <point x="149" y="128"/>
+      <point x="148" y="128"/>
       <point x="153" y="64"/>
       <point x="192" y="25" type="curve" smooth="yes"/>
       <point x="202" y="15"/>
-      <point x="279" y="13"/>
-      <point x="310" y="30" type="curve"/>
-      <point x="300" y="46"/>
-      <point x="301" y="79"/>
-      <point x="310" y="106" type="curve" smooth="yes"/>
-      <point x="367.0" y="279.0"/>
-      <point x="496.0" y="642.0"/>
-      <point x="530" y="739" type="curve" smooth="yes"/>
-      <point x="532" y="745"/>
-      <point x="530.0" y="750.0"/>
+      <point x="269" y="13"/>
+      <point x="300" y="30" type="curve"/>
+      <point x="290" y="46"/>
+      <point x="290" y="79"/>
+      <point x="300" y="106" type="curve" smooth="yes"/>
+      <point x="364" y="279"/>
+      <point x="477" y="595"/>
+      <point x="511" y="692" type="curve" smooth="yes"/>
+      <point x="513" y="698"/>
+      <point x="512" y="701"/>
     </contour>
     <contour>
-      <point x="311" y="-20.0" type="curve" smooth="yes"/>
-      <point x="388.4259259259259" y="-20.0"/>
-      <point x="498.78110462463945" y="11.32126242815933"/>
+      <point x="311" y="-20" type="curve" smooth="yes"/>
+      <point x="388" y="-20"/>
+      <point x="499" y="11"/>
       <point x="537" y="55" type="curve" smooth="yes"/>
       <point x="550" y="70"/>
       <point x="558" y="85"/>
       <point x="558" y="96" type="curve"/>
       <point x="558" y="165" type="line"/>
       <point x="546" y="165" type="line"/>
-      <point x="469.48734034667285" y="132.7212217087526"/>
-      <point x="414.8423645320197" y="130.0"/>
+      <point x="469" y="133"/>
+      <point x="415" y="130"/>
       <point x="333" y="130" type="curve" smooth="yes"/>
-      <point x="279" y="130.0"/>
-      <point x="250.0" y="143.0"/>
+      <point x="279" y="130"/>
+      <point x="250" y="143"/>
       <point x="216" y="156" type="curve"/>
       <point x="177" y="124"/>
       <point x="158" y="59"/>
       <point x="192" y="25" type="curve" smooth="yes"/>
       <point x="216" y="1"/>
-      <point x="253" y="-20.0"/>
+      <point x="253" y="-20"/>
     </contour>
   </outline>
   <lib>
@@ -78,6 +77,8 @@
       <integer>1</integer>
       <key>com.typemytype.robofont.Image.Sharpness</key>
       <real>0.4</real>
+      <key>public.markColor</key>
+      <string>0.5133,1,0.9066,1</string>
     </dict>
   </lib>
 </glyph>

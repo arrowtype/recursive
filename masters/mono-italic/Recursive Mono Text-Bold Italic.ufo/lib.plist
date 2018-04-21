@@ -7,50 +7,8 @@
 		<dict>
 			<key>allowPseudoUnicode</key>
 			<true/>
-			<key>ascending</key>
-			<true/>
 			<key>type</key>
-			<string>alphabetical</string>
-		</dict>
-		<dict>
-			<key>allowPseudoUnicode</key>
-			<true/>
-			<key>ascending</key>
-			<true/>
-			<key>type</key>
-			<string>category</string>
-		</dict>
-		<dict>
-			<key>allowPseudoUnicode</key>
-			<true/>
-			<key>ascending</key>
-			<true/>
-			<key>type</key>
-			<string>unicode</string>
-		</dict>
-		<dict>
-			<key>allowPseudoUnicode</key>
-			<true/>
-			<key>ascending</key>
-			<true/>
-			<key>type</key>
-			<string>script</string>
-		</dict>
-		<dict>
-			<key>allowPseudoUnicode</key>
-			<true/>
-			<key>ascending</key>
-			<true/>
-			<key>type</key>
-			<string>suffix</string>
-		</dict>
-		<dict>
-			<key>allowPseudoUnicode</key>
-			<true/>
-			<key>ascending</key>
-			<true/>
-			<key>type</key>
-			<string>decompositionBase</string>
+			<string>cannedDesign</string>
 		</dict>
 	</array>
 	<key>com.typemytype.robofont.compileSettings.MacRomanFirst</key>
@@ -77,6 +35,7 @@
 	<integer>1</integer>
 	<key>public.glyphOrder</key>
 	<array>
+		<string>space</string>
 		<string>A</string>
 		<string>Agrave</string>
 		<string>Aacute</string>
@@ -192,12 +151,7 @@
 		<string>oslash</string>
 		<string>thorn</string>
 		<string>dotlessi</string>
-		<string>f.ss01</string>
-		<string>r.ss01</string>
-		<string>v.ss02</string>
 		<string>mu</string>
-		<string>circumflex</string>
-		<string>caron</string>
 		<string>ordfeminine</string>
 		<string>ordmasculine</string>
 		<string>zero</string>
@@ -210,77 +164,87 @@
 		<string>seven</string>
 		<string>eight</string>
 		<string>nine</string>
+		<string>onesuperior</string>
 		<string>twosuperior</string>
 		<string>threesuperior</string>
-		<string>onesuperior</string>
 		<string>onequarter</string>
 		<string>onehalf</string>
 		<string>threequarters</string>
 		<string>underscore</string>
 		<string>hyphen</string>
 		<string>parenleft</string>
-		<string>bracketleft</string>
-		<string>braceleft</string>
 		<string>parenright</string>
+		<string>bracketleft</string>
 		<string>bracketright</string>
+		<string>braceleft</string>
 		<string>braceright</string>
-		<string>guillemetleft</string>
-		<string>quoteleft</string>
-		<string>guillemetright</string>
-		<string>quoteright</string>
-		<string>exclam</string>
-		<string>quotedbl</string>
 		<string>numbersign</string>
 		<string>percent</string>
-		<string>ampersand</string>
 		<string>quotesingle</string>
+		<string>quotedbl</string>
+		<string>quoteleft</string>
+		<string>quoteright</string>
+		<string>guillemetleft</string>
+		<string>guillemetright</string>
 		<string>asterisk</string>
-		<string>comma</string>
 		<string>period</string>
-		<string>slash</string>
+		<string>comma</string>
 		<string>colon</string>
 		<string>semicolon</string>
-		<string>question</string>
-		<string>at</string>
-		<string>backslash</string>
+		<string>exclam</string>
 		<string>exclamdown</string>
+		<string>question</string>
+		<string>questiondown</string>
+		<string>slash</string>
+		<string>backslash</string>
+		<string>bar</string>
+		<string>brokenbar</string>
+		<string>at</string>
+		<string>ampersand</string>
 		<string>section</string>
 		<string>paragraph</string>
 		<string>periodcentered</string>
-		<string>questiondown</string>
 		<string>plus</string>
-		<string>less</string>
-		<string>equal</string>
-		<string>greater</string>
-		<string>bar</string>
-		<string>asciitilde</string>
-		<string>logicalnot</string>
-		<string>plusminus</string>
-		<string>multiply</string>
-		<string>divide</string>
 		<string>minus</string>
+		<string>plusminus</string>
+		<string>divide</string>
+		<string>multiply</string>
+		<string>equal</string>
+		<string>less</string>
+		<string>greater</string>
+		<string>logicalnot</string>
 		<string>dollar</string>
 		<string>cent</string>
 		<string>sterling</string>
 		<string>currency</string>
 		<string>yen</string>
 		<string>asciicircum</string>
-		<string>grave</string>
-		<string>dieresis</string>
-		<string>macron</string>
+		<string>asciitilde</string>
 		<string>acute</string>
-		<string>cedilla</string>
+		<string>grave</string>
+		<string>hungarumlaut</string>
+		<string>circumflex</string>
+		<string>caron</string>
 		<string>breve</string>
+		<string>tilde</string>
+		<string>macron</string>
+		<string>dieresis</string>
 		<string>dotaccent</string>
 		<string>ring</string>
+		<string>cedilla</string>
 		<string>ogonek</string>
-		<string>tilde</string>
-		<string>hungarumlaut</string>
-		<string>brokenbar</string>
 		<string>copyright</string>
 		<string>registered</string>
 		<string>degree</string>
-		<string>space</string>
+		<string>c.ss02</string>
+		<string>d.ss02</string>
+		<string>f.ss02</string>
+		<string>i.ss02</string>
+		<string>l.ss02</string>
+		<string>r.ss02</string>
+		<string>t.ss02</string>
+		<string>f.ss01</string>
+		<string>r.ss01</string>
 	</array>
 </dict>
 </plist>
