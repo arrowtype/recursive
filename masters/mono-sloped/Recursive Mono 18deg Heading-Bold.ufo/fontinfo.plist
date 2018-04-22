@@ -9,9 +9,26 @@
 	<key>descender</key>
 	<real>-250.0</real>
 	<key>familyName</key>
-	<string>Recursive Mono</string>
+	<string>Recursive Mono Sloped</string>
 	<key>guidelines</key>
 	<array/>
+	<key>italicAngle</key>
+	<real>-18.43</real>
+	<key>openTypeNameRecords</key>
+	<array>
+		<dict>
+			<key>encodingID</key>
+			<integer>0</integer>
+			<key>languageID</key>
+			<integer>0</integer>
+			<key>nameID</key>
+			<integer>0</integer>
+			<key>platformID</key>
+			<integer>1</integer>
+			<key>string</key>
+			<string></string>
+		</dict>
+	</array>
 	<key>openTypeOS2Panose</key>
 	<array>
 		<integer>2</integer>
@@ -57,7 +74,7 @@
 	<key>postscriptStemSnapV</key>
 	<array/>
 	<key>styleMapStyleName</key>
-	<string>bold</string>
+	<string>bold italic</string>
 	<key>styleName</key>
 	<string>Heading Bold</string>
 	<key>unitsPerEm</key>

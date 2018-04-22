@@ -19,7 +19,7 @@
     <!-- don't generate these glyphs -->
     <ignore glyphs=""/>
     <!-- axis definitions -->
-    <axis maximum="20" minimum="0" name="slant" shortname="slnt">
+    <axis maximum="18" minimum="0" name="slant" shortname="slnt">
         <color a="1.000" b="0.001" g="0.066" r="0.989"/>
     </axis>
     <!-- master definitions -->
@@ -29,9 +29,9 @@
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
-    <master familyname="Recursive Mono" filename="Recursive Mono 18deg Heading-Bold.ufo" sortorder="1" stylename="Heading Bold">
+    <master familyname="Recursive Mono Sloped" filename="Recursive Mono 18deg Heading-Bold.ufo" sortorder="1" stylename="Heading Bold">
         <location>
-            <dimension name="slant" xvalue="18.430000"/>
+            <dimension name="slant" xvalue="18"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
