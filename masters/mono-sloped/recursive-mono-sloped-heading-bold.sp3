@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<designspace format="2">
+    <!-- Superpolator Designspace Object -->
+    <!-- info -->
+    <version superpolator="2"/>
+    <!-- application data -->
+    <data name="horizontalPreviewAxis" value="slant"/>
+    <data name="roundGeometry" value="False"/>
+    <data name="lineInverted" value="False"/>
+    <data name="expandRules" value="False"/>
+    <data name="lineViewFilled" value="True"/>
+    <data name="outputFormatUFO" value="2"/>
+    <data name="lineStacked" value="sequence"/>
+    <data name="includeLegacyRules" value="False"/>
+    <data name="keepWorkFiles" value="False"/>
+    <data name="previewtext" value="go fast"/>
+    <data name="instancefolder" value="instances"/>
+    <data name="verticalPreviewAxis" value="None"/>
+    <!-- don't generate these glyphs -->
+    <ignore glyphs=""/>
+    <!-- axis definitions -->
+    <axis maximum="20" minimum="0" name="slant" shortname="slnt">
+        <color a="1.000" b="0.001" g="0.066" r="0.989"/>
+    </axis>
+    <!-- master definitions -->
+    <master familyname="Recursive Mono" filename="../mono/Recursive Mono Heading-Bold.ufo" sortorder="0" stylename="Heading Bold">
+        <location>
+            <dimension name="slant" xvalue="0"/>
+        </location>
+        <color a="1.000" b="0.300" g="0.300" r="0.300"/>
+    </master>
+    <master familyname="Recursive Mono" filename="Recursive Mono 18deg Heading-Bold.ufo" sortorder="1" stylename="Heading Bold">
+        <location>
+            <dimension name="slant" xvalue="18.430000"/>
+        </location>
+        <color a="1.000" b="0.300" g="0.300" r="0.300"/>
+    </master>
+    <!-- instance definitions -->
+</designspace>
