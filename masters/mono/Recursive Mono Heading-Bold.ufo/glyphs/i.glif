@@ -37,15 +37,15 @@
   <guideline x="0" y="750" angle="0" identifier="LjG2ptxtXL"/>
   <outline>
     <contour>
-      <point x="30" y="550" type="curve"/>
-      <point x="30" y="525" type="line"/>
-      <point x="30" y="477"/>
-      <point x="42" y="434"/>
-      <point x="68" y="408" type="curve" smooth="yes"/>
-      <point x="74" y="402"/>
-      <point x="77" y="400"/>
-      <point x="85" y="400" type="curve" smooth="yes"/>
-      <point x="124.0" y="400.0"/>
+      <point x="30" y="550" type="curve" identifier="ACEIL1MoT5"/>
+      <point x="30" y="525" type="line" identifier="bgBHiVVZpH"/>
+      <point x="30" y="477" identifier="WwWbcWPcAr"/>
+      <point x="42" y="434" identifier="DUUOGT0uwo"/>
+      <point x="68" y="408" type="curve" smooth="yes" identifier="KGSn2bLRWo"/>
+      <point x="74" y="402" identifier="qMUExnG4CD"/>
+      <point x="77" y="400" identifier="CgLdJAR4So"/>
+      <point x="85" y="400" type="curve" smooth="yes" identifier="D11P6wFtp0"/>
+      <point x="124.0" y="400.0" identifier="LoLhtMd7y3"/>
       <point x="166" y="400.0"/>
       <point x="205" y="400" type="curve" smooth="yes"/>
       <point x="235" y="400.0"/>
@@ -59,7 +59,7 @@
       <point x="233" y="550"/>
       <point x="225" y="550" type="curve" smooth="yes"/>
       <point x="168" y="550.0"/>
-      <point x="88.0" y="550.0"/>
+      <point x="88.0" y="550.0" identifier="9aCXZrfwS8"/>
     </contour>
     <contour>
       <point x="362" y="512" type="curve" smooth="yes"/>
@@ -82,9 +82,9 @@
       <point x="368" y="506"/>
     </contour>
     <contour>
-      <point x="570" y="185" type="line"/>
-      <point x="566" y="185" type="line"/>
-      <point x="509" y="152"/>
+      <point x="570" y="185" type="line" identifier="ZWqxSJmjCt"/>
+      <point x="566" y="185" type="line" identifier="Ua7NVEc9T6"/>
+      <point x="509" y="152" identifier="yKwXgpdqff"/>
       <point x="473" y="140"/>
       <point x="405" y="140" type="curve" smooth="yes"/>
       <point x="336" y="140"/>
@@ -98,11 +98,11 @@
       <point x="400" y="-10" type="curve" smooth="yes"/>
       <point x="410" y="-10" type="line" smooth="yes"/>
       <point x="498" y="-10"/>
-      <point x="522" y="10"/>
-      <point x="532" y="20" type="curve" smooth="yes"/>
-      <point x="545.0" y="33.0"/>
-      <point x="570.0" y="100.0"/>
-      <point x="570" y="169" type="curve"/>
+      <point x="522" y="10" identifier="opaSRKvFX3"/>
+      <point x="532" y="20" type="curve" smooth="yes" identifier="Yl2vWczmbd"/>
+      <point x="545.0" y="33.0" identifier="FfZnIIDCyX"/>
+      <point x="570.0" y="100.0" identifier="m8FD1r85Pq"/>
+      <point x="570" y="169" type="curve" identifier="shjhOfyY0f"/>
     </contour>
     <contour>
       <point x="380.0" y="625.0" type="line"/>
@@ -199,6 +199,85 @@
       <integer>10</integer>
       <key>com.typemytype.robofont.guideline.magnetic.yqp9WZcs8v</key>
       <integer>10</integer>
+      <key>com.typemytype.robofont.pointLabels</key>
+      <dict>
+        <key>9aCXZrfwS8</key>
+        <array>
+          <string>verticalTerminal</string>
+        </array>
+        <key>ACEIL1MoT5</key>
+        <array>
+          <string>verticalTerminal</string>
+        </array>
+        <key>CgLdJAR4So</key>
+        <array>
+          <string>verticalTerminal</string>
+        </array>
+        <key>D11P6wFtp0</key>
+        <array>
+          <string>verticalTerminal</string>
+        </array>
+        <key>DUUOGT0uwo</key>
+        <array>
+          <string>verticalTerminal</string>
+        </array>
+        <key>FfZnIIDCyX</key>
+        <array>
+          <string>verticalTerminal</string>
+          <string>verticalTerminal</string>
+        </array>
+        <key>KGSn2bLRWo</key>
+        <array>
+          <string>verticalTerminal</string>
+        </array>
+        <key>LoLhtMd7y3</key>
+        <array>
+          <string>verticalTerminal</string>
+        </array>
+        <key>Ua7NVEc9T6</key>
+        <array>
+          <string>verticalTerminal</string>
+        </array>
+        <key>WwWbcWPcAr</key>
+        <array>
+          <string>verticalTerminal</string>
+        </array>
+        <key>Yl2vWczmbd</key>
+        <array>
+          <string>verticalTerminal</string>
+        </array>
+        <key>ZWqxSJmjCt</key>
+        <array>
+          <string>verticalTerminal</string>
+        </array>
+        <key>bgBHiVVZpH</key>
+        <array>
+          <string>verticalTerminal</string>
+        </array>
+        <key>m8FD1r85Pq</key>
+        <array>
+          <string>verticalTerminal</string>
+          <string>verticalTerminal</string>
+        </array>
+        <key>opaSRKvFX3</key>
+        <array>
+          <string>verticalTerminal</string>
+          <string>verticalTerminal</string>
+        </array>
+        <key>qMUExnG4CD</key>
+        <array>
+          <string>verticalTerminal</string>
+        </array>
+        <key>shjhOfyY0f</key>
+        <array>
+          <string>verticalTerminal</string>
+        </array>
+        <key>yKwXgpdqff</key>
+        <array>
+          <string>verticalTerminal</string>
+          <string>verticalTerminal</string>
+        </array>
+      </dict>
     </dict>
   </lib>
 </glyph>
