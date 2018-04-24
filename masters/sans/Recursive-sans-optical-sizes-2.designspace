@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<designspace format="3">
+    <axes>
+        <axis default="6" maximum="72" minimum="6" name="optical" tag="opsz" />
+        <axis default="0" maximum="1000" minimum="0" name="weight" tag="wght" />
+    </axes>
+    <sources>
+        <source familyname="Recursive Mono" filename="Recursive Mono-Text Bold.ufo" stylename="Text Bold">
+            <location>
+                <dimension name="optical" xvalue="6" />
+                <dimension name="weight" xvalue="1000" />
+            </location>
+        </source>
+        <source familyname="Recursive Mono" filename="Recursive Mono Heading-Bold.ufo" stylename="Heading Bold">
+            <location>
+                <dimension name="optical" xvalue="72" />
+                <dimension name="weight" xvalue="1000" />
+            </location>
+        </source>
+        <source familyname="Recursive Mono" filename="Recursive Mono Text-Light.ufo" stylename="Text Light">
+            <location>
+                <dimension name="optical" xvalue="6" />
+                <dimension name="weight" xvalue="0" />
+            </location>
+        </source>
+        <source familyname="Recursive Mono" filename="Recursive Mono Heading-Light.ufo" stylename="Heading Light">
+            <location>
+                <dimension name="optical" xvalue="72" />
+                <dimension name="weight" xvalue="0" />
+            </location>
+        </source>
+    </sources>
+    <instances>
+        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-TextRegular.ufo" postscriptfontname="RecursiveMono-TextRegular" stylemapfamilyname="Recursive Mono Text Regular" stylemapstylename="regular" stylename="Text Regular">
+            <location>
+                <dimension name="optical" xvalue="6" />
+                <dimension name="weight" xvalue="333" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-TextMedium.ufo" postscriptfontname="RecursiveMono-TextMedium" stylename="Text Medium">
+            <location>
+                <dimension name="optical" xvalue="6" />
+                <dimension name="weight" xvalue="666" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-HeadingRegular.ufo" postscriptfontname="RecursiveMono-HeadingRegular" stylename="Heading Regular">
+            <location>
+                <dimension name="optical" xvalue="72" />
+                <dimension name="weight" xvalue="333" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-HeadingMedium.ufo" postscriptfontname="RecursiveMono-HeadingMedium" stylename="Heading Medium">
+            <location>
+                <dimension name="optical" xvalue="72" />
+                <dimension name="weight" xvalue="666" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+    </instances>
+</designspace>
