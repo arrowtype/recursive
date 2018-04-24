@@ -5,25 +5,25 @@
         <axis default="0" maximum="1000" minimum="0" name="weight" tag="wght" />
     </axes>
     <sources>
-        <source familyname="Recursive Mono" filename="Recursive Mono-Text Bold.ufo" stylename="Text Bold">
+        <source familyname="Recursive Sans" filename="Recursive Sans Text Bold.ufo" stylename="Text Bold">
             <location>
                 <dimension name="optical" xvalue="6" />
                 <dimension name="weight" xvalue="1000" />
             </location>
         </source>
-        <source familyname="Recursive Mono" filename="Recursive Mono Heading-Bold.ufo" stylename="Heading Bold">
+        <source familyname="Recursive Sans" filename="Recursive Sans Heading Bold.ufo" stylename="Heading Bold">
             <location>
                 <dimension name="optical" xvalue="72" />
                 <dimension name="weight" xvalue="1000" />
             </location>
         </source>
-        <source familyname="Recursive Mono" filename="Recursive Mono Text-Light.ufo" stylename="Text Light">
+        <source familyname="Recursive Sans" filename="Recursive Sans Text Light.ufo" stylename="Text Light">
             <location>
                 <dimension name="optical" xvalue="6" />
                 <dimension name="weight" xvalue="0" />
             </location>
         </source>
-        <source familyname="Recursive Mono" filename="Recursive Mono Heading-Light.ufo" stylename="Heading Light">
+        <source familyname="Recursive Sans" filename="Recursive Sans Heading Light.ufo" stylename="Heading Light">
             <location>
                 <dimension name="optical" xvalue="72" />
                 <dimension name="weight" xvalue="0" />
@@ -31,7 +31,7 @@
         </source>
     </sources>
     <instances>
-        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-TextRegular.ufo" postscriptfontname="RecursiveMono-TextRegular" stylemapfamilyname="Recursive Mono Text Regular" stylemapstylename="regular" stylename="Text Regular">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextRegular.ufo" postscriptfontname="RecursiveSans-TextRegular" stylemapfamilyname="Recursive Sans Text Regular" stylemapstylename="regular" stylename="Text Regular">
             <location>
                 <dimension name="optical" xvalue="6" />
                 <dimension name="weight" xvalue="333" />
@@ -39,7 +39,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-TextMedium.ufo" postscriptfontname="RecursiveMono-TextMedium" stylename="Text Medium">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextMedium.ufo" postscriptfontname="RecursiveSans-TextMedium" stylename="Text Medium">
             <location>
                 <dimension name="optical" xvalue="6" />
                 <dimension name="weight" xvalue="666" />
@@ -47,7 +47,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-HeadingRegular.ufo" postscriptfontname="RecursiveMono-HeadingRegular" stylename="Heading Regular">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-HeadingRegular.ufo" postscriptfontname="RecursiveSans-HeadingRegular" stylename="Heading Regular">
             <location>
                 <dimension name="optical" xvalue="72" />
                 <dimension name="weight" xvalue="333" />
@@ -55,7 +55,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-HeadingMedium.ufo" postscriptfontname="RecursiveMono-HeadingMedium" stylename="Heading Medium">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-HeadingMedium.ufo" postscriptfontname="RecursiveSans-HeadingMedium" stylename="Heading Medium">
             <location>
                 <dimension name="optical" xvalue="72" />
                 <dimension name="weight" xvalue="666" />
