@@ -63,5 +63,38 @@
             <kerning />
             <info />
         </instance>
+        <!-- Medium OPSZ -->
+        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-SemiheadingLight.ufo" postscriptfontname="RecursiveMono-SemiheadingLight" stylename="Semiheading Light">
+            <location>
+                <dimension name="optical" xvalue="39" />
+                <dimension name="weight" xvalue="0" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-SemiheadingRegular.ufo" postscriptfontname="RecursiveMono-SemiheadingRegular" stylename="Semiheading Regular">
+            <location>
+                <dimension name="optical" xvalue="39" />
+                <dimension name="weight" xvalue="333" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-SemiheadingMedium.ufo" postscriptfontname="RecursiveMono-SemiheadingMedium" stylename="Semiheading Medium">
+            <location>
+                <dimension name="optical" xvalue="39" />
+                <dimension name="weight" xvalue="666" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-SemiheadingBold.ufo" postscriptfontname="RecursiveMono-SemiheadingBold" stylename="Semiheading Bold">
+            <location>
+                <dimension name="optical" xvalue="39" />
+                <dimension name="weight" xvalue="1000" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
     </instances>
 </designspace>
