@@ -13,7 +13,7 @@
     <data name="lineStacked" value="sequence"/>
     <data name="includeLegacyRules" value="False"/>
     <data name="keepWorkFiles" value="False"/>
-    <data name="previewtext" value="beavc"/>
+    <data name="previewtext" value="abcdefghijklmnopqrstuvwxyz"/>
     <data name="instancefolder" value="instances"/>
     <data name="verticalPreviewAxis" value="optical"/>
     <!-- don't generate these glyphs -->
@@ -26,28 +26,28 @@
         <color a="1.000" b="0.764" g="0.000" r="0.989"/>
     </axis>
     <!-- master definitions -->
-    <master familyname="Recursive Mono" filename="Recursive Mono Heading-Bold-more-curvy.ufo" sortorder="0" stylename="Heading Bold">
+    <master familyname="Recursive Mono" filename="mono/Recursive Mono-Heading Bold.ufo" sortorder="0" stylename="Heading Bold">
         <location>
             <dimension name="optical" xvalue="72"/>
             <dimension name="weight" xvalue="1000"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
-    <master familyname="Recursive Mono" filename="Recursive Mono Text-Light.ufo" sortorder="1" stylename="Text Light">
+    <master familyname="Recursive Mono" filename="mono/Recursive Mono-Text Light.ufo" sortorder="1" stylename="Text Light">
         <location>
             <dimension name="optical" xvalue="10"/>
             <dimension name="weight" xvalue="0"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
-    <master familyname="Recursive Mono" filename="Recursive Mono Heading-Light.ufo" sortorder="2" stylename="Heading Light">
+    <master familyname="Recursive Mono" filename="mono/Recursive Mono-Heading Light.ufo" sortorder="2" stylename="Heading Light">
         <location>
             <dimension name="optical" xvalue="72"/>
             <dimension name="weight" xvalue="0"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
-    <master familyname="Recursive Mono" filename="Recursive Mono-Text Bold.ufo" sortorder="3" stylename="Text Bold">
+    <master familyname="Recursive Mono" filename="mono/Recursive Mono-Text Bold.ufo" sortorder="3" stylename="Text Bold">
         <location>
             <dimension name="optical" xvalue="10"/>
             <dimension name="weight" xvalue="1000"/>
