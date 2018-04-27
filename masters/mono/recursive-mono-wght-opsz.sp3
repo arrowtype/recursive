@@ -55,4 +55,14 @@
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
     <!-- instance definitions -->
+    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-TextMedium.ufo" sortorder="4" stylename="Text Medium">
+        <location>
+            <dimension name="optical" xvalue="10"/>
+            <dimension name="weight" xvalue="666"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
 </designspace>
