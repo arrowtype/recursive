@@ -1,0 +1,937 @@
+22:12:15; 30 April, 2018
+
+*******************
+
+Var Prep Report
+********************************************  
+  
+Unique glyphs removed from Recursive Mono Text Light:
+ - m.straighter
+ - y.ss01
+ - s.straighter
+ - y.straighter
+ - i.ss02
+ - t.straighter
+ - q.straighter
+ - p.straighter
+ - w.straighter
+ - o.straighter
+ - e.straighter
+ - l.straighter
+ - d.straighter
+ - j.straighter
+ - c.straighter
+ - f.straighter
+ - seven.alt3
+ - r.straighter
+ - l.ss02
+ - r.ss02
+ - v.straighter
+ - x.straighter
+ - i.straighter
+ - g.straighter
+ - n.straighter
+ - k.straighter
+ - a.straighter
+ - u.straighter
+ - z.straighter
+ - h.straighter
+ - at
+ - b.straighter
+Unique glyphs removed from Recursive Mono Text Bold:
+ - m.straighter
+ - t.straighter
+ - w.straighter
+ - l.straighter
+ - d.straighter
+ - six.alt
+ - c.straighter
+ - r.ss01
+ - F.alt1
+ - f.straighter
+ - nine.alt
+ - t.ss03
+ - i.straighter
+ - nine.alt2
+ - two.alt2
+ - six.alt1
+ - u.straighter
+ - five.alt2
+ - P.alt1
+ - three.alt2
+ - m.alt1
+ - H.alt1
+ - registered
+ - b.straighter
+ - y.ss01
+ - s.straighter
+ - six.alt2
+ - y.straighter
+ - R.alt1
+ - l.ss03
+ - four.alt1
+ - i.ss02
+ - q.straighter
+ - l.ss01
+ - p.straighter
+ - o.straighter
+ - e.straighter
+ - eight.alt2
+ - j.straighter
+ - seven.alt3
+ - r.straighter
+ - l.ss02
+ - three.alt3
+ - D.alt1
+ - v.straighter
+ - x.straighter
+ - g.straighter
+ - E.alt1
+ - g.alt1
+ - n.straighter
+ - k.straighter
+ - a.straighter
+ - f.ss01
+ - i.ss03
+ - z.straighter
+ - germandbls
+ - B.alt1
+ - h.straighter
+Unique glyphs removed from Recursive Mono Heading Bold:
+ - seven.alt1
+ - quotedbl
+ - quotedblleft
+ - four.alt1
+ - r.alt3
+ - m.alt3
+ - exclam
+ - l.ss01
+ - y.alt1
+ - quoteleft
+ - one.alt1
+ - r.ss01
+ - comma
+ - g.ver02
+ - zero.ss01
+ - colon
+ - quoteright
+ - three.alt1
+ - period
+ - five.alt1
+ - eight.alt1
+ - r.ss02
+ - e.alt1
+ - zero.alt1
+ - g.alt1
+ - six.alt1
+ - f.ss01
+ - semicolon
+ - g.alt3
+ - f.alt1
+ - a.alt1
+ - two.alt1
+ - nine.alt1
+ - quotedblleft.copy_1
+ - quoteleft.copy_1
+ - space
+ - r.alt2
+Unique glyphs removed from Recursive Mono Heading Light:
+ - m.straighter
+ - s.straighter
+ - y.straighter
+ - q.straighter
+ - t.straighter
+ - l.ss01
+ - w.straighter
+ - p.straighter
+ - o.straighter
+ - e.straighter
+ - l.straighter
+ - d.straighter
+ - j.straighter
+ - c.straighter
+ - r.ss01
+ - f.straighter
+ - s.alt1
+ - comma
+ - r.straighter
+ - g.ver02
+ - period
+ - r.ss02
+ - v.straighter
+ - x.straighter
+ - i.straighter
+ - g.straighter
+ - n.straighter
+ - k.straighter
+ - six.alt1
+ - a.straighter
+ - f.ss01
+ - u.straighter
+ - z.straighter
+ - semicolon
+ - braceleft
+ - h.straighter
+ - nine.alt1
+ - braceright
+ - space
+ - b.straighter
+
+ ******************* 
+compatibleGlyphs are ['O', 'O', 'O', 'O', 'hyphen', 'hyphen', 'hyphen', 'hyphen', 'g.italic', 'g.italic', 'g.italic', 'h', 'h', 'h', 'h', 'T', 'T', 'T', 'T', 'x', 'x', 'x', 'x', 'P', 'P', 'P', 'P', 'Y.ss02', 'Y.ss02', 'Y.ss02', 'Y.ss02', 'z', 'z', 'z', 'z', 'Q', 'Q', 'Q', 'Q', 'g', 'g', 'g', 'g', 'd', 'd', 'd', 'd', 'R', 'R', 'R', 'R', 'l', 'l', 'l', 'l', 'L', 'L', 'L', 'L', 'm', 'm', 'm', 'm', 'S', 'S', 'S', 'S', 'i', 'i', 'i', 'i', 'K', 'K', 'K', 'K', 'U', 'U', 'U', 'U', 'j', 'j', 'j', 'j', 'I', 'I', 'I', 'I', 'y', 'y', 'y', 'y', 'a', 'a', 'a', 'a', 'six', 'six', 'six', 'six', 'E', 'E', 'E', 'E', 'V', 'V', 'V', 'V', 'C', 'C', 'C', 'C', 'f', 'f', 'f', 'f', 'w', 'w', 'w', 'w', 'H', 'H', 'H', 'H', 'u', 'u', 'u', 'u', 'N', 'N', 'N', 'N', 'g.ss01', 'g.ss01', 'y.italic', 'y.italic', 'k', 'k', 'k', 'k', 'e', 'e', 'e', 'e', 'F', 'F', 'F', 'F', 'o', 'o', 'o', 'o', 'J', 'J', 'J', 'J', 'numbersign', 'numbersign', 'numbersign', 'numbersign', 'f.italic', 'two.sharp', 'two.sharp', 'two.sharp', 'two.sharp', 'B', 'B', 'B', 'B', 'p', 'p', 'p', 'p', 'X', 'X', 'X', 'X', 'c', 'c', 'c', 'c', 'a.italic', 'a.italic', 'a.italic', 'a.italic', 'r', 'r', 'r', 'r', 'five', 'five', 'five', 'five', 'two', 'two', 'two', 'two', 'Z', 'Z', 'Z', 'Z', 's', 's', 's', 's', 'four', 'four', 'four', 'four', 'n', 'n', 'n', 'n', 'G', 'G', 'G', 'G', 'seven', 'seven', 'seven', 'seven', 'three', 'three', 'three', 'three', 'b', 'b', 'b', 'b', 'D', 'D', 'D', 'D', 'eight', 'eight', 'eight', 'eight', 'zero', 'zero', 'zero', 'zero', 'A', 'A', 'A', 'A', 'M', 'M', 'M', 'M', 'q', 'q', 'q', 'q', 'nine', 'nine', 'nine', 'nine', 'v', 'v', 'v', 'v', 'W', 'W', 'W', 'W', 'Y', 'Y', 'Y', 'Y', 'one', 'one', 'one', 'one', 'i.ss01', 't', 't', 't', 't']
+ ******************* 
+compatible glyphs: 
+O
+(True, '')
+O
+(True, '')
+O
+(True, '')
+O
+(True, '')
+hyphen
+(True, '')
+hyphen
+(True, '')
+hyphen
+(True, '')
+hyphen
+(True, '')
+g.italic
+(True, '')
+g.italic
+(True, '')
+g.italic
+(True, '')
+h
+(True, '')
+h
+(True, '')
+h
+(True, '')
+h
+(True, '')
+T
+(True, '')
+T
+(True, '')
+T
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+T
+(True, '')
+x
+(True, '')
+x
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+x
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+x
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+P
+(True, '')
+P
+(True, '')
+P
+(True, '')
+P
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+Y.ss02
+(True, '')
+Y.ss02
+(True, '')
+Y.ss02
+(True, '')
+Y.ss02
+(True, '')
+z
+(True, '')
+z
+(True, '')
+z
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+z
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+Q
+(True, '')
+Q
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+Q
+(True, '')
+Q
+(True, '')
+g
+(True, '')
+g
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+g
+(True, '')
+g
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+d
+(True, '')
+d
+(True, '')
+d
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+d
+(True, '')
+R
+(True, '')
+R
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+R
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+R
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+l
+(True, '')
+l
+(True, '')
+l
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+l
+(True, '')
+L
+(True, '')
+L
+(True, '')
+L
+(True, '')
+L
+(True, '')
+m
+(True, '')
+m
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+m
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+m
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+S
+(True, '')
+S
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+S
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+S
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+i
+(True, '')
+i
+(True, '')
+i
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+i
+(True, '')
+K
+(True, '')
+K
+(True, '')
+K
+(True, '')
+K
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+U
+(True, '')
+U
+(True, '')
+U
+(True, '')
+U
+(True, '')
+j
+(True, '')
+j
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+j
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+j
+(True, '')
+I
+(True, '')
+I
+(True, '')
+I
+(True, '')
+I
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+y
+(True, '')
+y
+(True, '')
+y
+(True, '')
+y
+(True, '')
+a
+(True, '')
+a
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+a
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+a
+(True, '')
+six
+(True, '')
+six
+(True, '')
+six
+(True, '')
+six
+(True, '')
+E
+(True, '')
+E
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+E
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+E
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+V
+(True, '')
+V
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+V
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+V
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+C
+(True, '')
+C
+(True, '')
+C
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+C
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+f
+(True, '')
+f
+(True, '')
+f
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+f
+(True, '')
+w
+(True, '')
+w
+(True, '')
+w
+(True, '')
+w
+(True, '')
+H
+(True, '')
+H
+(True, '')
+H
+(True, '')
+H
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+u
+(True, '')
+u
+(True, '')
+u
+(True, '')
+u
+(True, '')
+N
+(True, '')
+N
+(True, '')
+N
+(True, '')
+N
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+g.ss01
+(True, '')
+g.ss01
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+y.italic
+(True, '')
+y.italic
+(True, '')
+k
+(True, '')
+k
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+k
+(True, '')
+k
+(True, '')
+e
+(True, '')
+e
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+e
+(True, '')
+e
+(True, '')
+F
+(True, '')
+F
+(True, '')
+F
+(True, '')
+F
+(True, '')
+o
+(True, '')
+o
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+o
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+o
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+J
+(True, '')
+J
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+J
+(True, '')
+J
+(True, '')
+numbersign
+(True, '')
+numbersign
+(True, '')
+numbersign
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+numbersign
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+f.italic
+(True, '')
+two.sharp
+(True, '')
+two.sharp
+(True, '')
+two.sharp
+(True, '')
+two.sharp
+(True, '')
+B
+(True, '')
+B
+(True, '')
+B
+(True, '')
+B
+(True, '')
+p
+(True, '')
+p
+(True, '')
+p
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+p
+(True, '')
+X
+(True, '')
+X
+(True, '')
+X
+(True, '')
+X
+(True, '')
+c
+(True, '')
+c
+(True, '')
+c
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+c
+(True, '')
+a.italic
+(True, '')
+a.italic
+(True, '')
+a.italic
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+a.italic
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+r
+(True, '')
+r
+(True, '')
+r
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+r
+(True, '')
+five
+(True, '')
+five
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+five
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+five
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+two
+(True, '')
+two
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+two
+(True, '')
+two
+(True, '')
+Z
+(True, '')
+Z
+(True, '')
+Z
+(True, '')
+Z
+(True, '')
+s
+(True, '')
+s
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+s
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+s
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+four
+(True, '')
+four
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+four
+(True, '')
+four
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+n
+(True, '')
+n
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+n
+(True, '')
+n
+(True, '')
+G
+(True, '')
+G
+(True, '')
+G
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+G
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+seven
+(True, '')
+seven
+(True, '')
+seven
+(True, '')
+seven
+(True, '')
+three
+(True, '')
+three
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+three
+(True, '')
+three
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+b
+(True, '')
+b
+(True, '')
+b
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+b
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+D
+(True, '')
+D
+(True, '')
+D
+(True, '')
+D
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+eight
+(True, '')
+eight
+(True, '')
+eight
+(True, '')
+eight
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+zero
+(True, '')
+zero
+(True, '')
+zero
+(True, '')
+zero
+(True, '')
+A
+(True, '')
+A
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+A
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+A
+(True, '')
+M
+(True, '')
+M
+(True, '')
+M
+(True, '')
+M
+(True, '')
+q
+(True, '')
+q
+(True, '')
+q
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+q
+(True, '')
+nine
+(True, '')
+nine
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+nine
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+nine
+(True, '')
+v
+(True, '')
+v
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+v
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+v
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+W
+(True, '')
+W
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+W
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+W
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+Y
+(True, '')
+Y
+(True, '')
+Y
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+Y
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+one
+(True, '')
+one
+(True, '')
+one
+(True, '')
+one
+(True, '')
+i.ss01
+(True, '')
+t
+(True, '')
+t
+(True, '')
+t
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+t
+(True, '[Note] The glyphs do not contain the same number of guidelines.')
+
+ ******************* 
+non-compatible glyphs: 
+g.italic
+(False, '[Fatal] Contour 0 contains a different number of segments.\n[Fatal] Contour 1 contains a different number of segments.\n[Fatal] Contour 2 contains a different number of segments.\n[Fatal] Contour 3 contains a different number of segments.')
+g.ss01
+(False, '[Fatal] The glyphs do not contain the same number of contours.\n[Fatal] Contour 1 contains a different number of segments.\n[Fatal] Contour 2 contains a different number of segments.\n[Note] The glyphs do not contain the same number of guidelines.')
+g.ss01
+(False, '[Fatal] The glyphs do not contain the same number of contours.\n[Fatal] Contour 0 contains a different number of segments.\n[Note] The glyphs do not contain the same number of guidelines.')
+y.italic
+(False, '[Fatal] Contour 0 contains a different number of segments.\n[Fatal] Contour 1 contains a different number of segments.\n[Fatal] Contour 2 contains a different number of segments.\n[Fatal] Contour 3 contains a different number of segments.')
+y.italic
+(False, '[Fatal] Contour 0 contains a different number of segments.\n[Fatal] Contour 1 contains a different number of segments.\n[Fatal] Contour 2 contains a different number of segments.\n[Fatal] Contour 3 contains a different number of segments.')
+f.italic
+(False, '[Fatal] Contour 3 contains a different number of segments.')
+f.italic
+(False, '[Fatal] Contour 0 contains a different number of segments.\n[Fatal] Contour 2 contains a different number of segments.\n[Fatal] Contour 3 contains a different number of segments.')
+f.italic
+(False, '[Fatal] The glyphs do not contain the same number of contours.\n[Warning] The glyphs do not contain components with exactly the same base glyphs.')
+i.ss01
+(False, '[Fatal] The glyphs do not contain the same number of contours.')
+i.ss01
+(False, '[Fatal] The glyphs do not contain the same number of contours.')
+i.ss01
+(False, '[Fatal] The glyphs do not contain the same number of contours.\n[Note] The glyphs do not contain the same number of guidelines.')
+
+ ******************* 
+Non-compatible glyphs removed from Recursive Mono Text Light:
+ - g.italic
+ - g.ss01
+ - y.italic
+ - f.italic
+ - i.ss01
+
+ ******************* 
+Non-compatible glyphs removed from Recursive Mono Text Bold:
+ - g.italic
+ - g.ss01
+ - y.italic
+ - f.italic
+ - i.ss01
+
+ ******************* 
+Non-compatible glyphs removed from Recursive Mono Heading Bold:
+ - g.italic
+ - g.ss01
+ - y.italic
+ - f.italic
+ - i.ss01
+
+ ******************* 
+Non-compatible glyphs removed from Recursive Mono Heading Light:
+ - g.italic
+ - g.ss01
+ - y.italic
+ - f.italic
+ - i.ss01
+******************* 
+Guides removed from Recursive Mono Text Light:
+ - hyphen
+ - h
+ - x
+ - z
+ - Q
+ - d
+ - l
+ - m
+ - i
+ - j
+ - a
+ - V
+ - f
+ - w
+ - N
+ - J
+ - B
+ - p
+ - a.italic
+ - r
+ - two
+ - four
+ - seven
+ - three
+ - b
+ - eight
+ - M
+ - q
+ - nine
+ - Y
+ - one
+ - t
+******************* 
+Guides removed from Recursive Mono Text Bold:
+ - hyphen
+ - h
+ - z
+ - g
+ - d
+ - R
+ - l
+ - m
+ - S
+ - i
+ - E
+ - f
+ - w
+ - N
+ - k
+ - e
+ - o
+ - B
+ - p
+ - a.italic
+ - r
+ - five
+ - s
+ - n
+ - seven
+ - b
+ - eight
+ - A
+ - M
+ - q
+ - v
+ - W
+ - Y
+ - one
+ - t
+******************* 
+Guides removed from Recursive Mono Heading Bold:
+ - hyphen
+ - h
+ - T
+ - x
+ - z
+ - Q
+ - R
+ - S
+ - E
+ - C
+ - w
+ - N
+ - o
+ - J
+ - numbersign
+ - B
+ - c
+ - five
+ - two
+ - s
+ - four
+ - G
+ - seven
+ - three
+ - eight
+ - A
+ - M
+ - v
+ - W
+ - one
+******************* 
+Guides removed from Recursive Mono Heading Light:
+ - hyphen
+ - h
+ - P
+ - Q
+ - g
+ - d
+ - R
+ - l
+ - m
+ - S
+ - i
+ - K
+ - j
+ - I
+ - a
+ - E
+ - C
+ - f
+ - w
+ - H
+ - o
+ - J
+ - numbersign
+ - B
+ - p
+ - r
+ - five
+ - two
+ - s
+ - G
+ - seven
+ - D
+ - M
+ - q
+ - nine
+ - v
+ - W
+ - one
