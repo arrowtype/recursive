@@ -37,7 +37,7 @@
   <guideline x="0" y="700" angle="0" identifier="zLiqQjDvW5"/>
   <outline>
     <contour>
-      <point x="26" y="550" type="line"/>
+      <point x="26" y="550" type="curve"/>
       <point x="50" y="372"/>
       <point x="75" y="193"/>
       <point x="99" y="15" type="curve" smooth="yes"/>
@@ -57,6 +57,8 @@
       <point x="161" y="549"/>
       <point x="158" y="550"/>
       <point x="154" y="550" type="curve"/>
+      <point x="109" y="550.0"/>
+      <point x="67" y="550.0"/>
     </contour>
     <contour>
       <point x="323" y="413"/>
@@ -94,7 +96,7 @@
       <point x="351" y="410" type="curve" smooth="yes"/>
     </contour>
     <contour>
-      <point x="436" y="550" type="line"/>
+      <point x="436" y="550" type="curve"/>
       <point x="426" y="400"/>
       <point x="416" y="251"/>
       <point x="406" y="101" type="curve"/>
@@ -111,6 +113,8 @@
       <point x="569" y="549"/>
       <point x="568" y="550"/>
       <point x="564" y="550" type="curve"/>
+      <point x="521" y="550.0"/>
+      <point x="479" y="550.0"/>
     </contour>
   </outline>
   <lib>
