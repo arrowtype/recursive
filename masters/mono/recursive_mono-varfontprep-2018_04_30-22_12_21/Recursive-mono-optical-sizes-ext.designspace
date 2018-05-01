@@ -2,31 +2,43 @@
 <designspace format="3">
     <axes>
         <axis default="6" maximum="72" minimum="6" name="optical" tag="opsz" />
-        <axis default="0" maximum="1000" minimum="0" name="weight" tag="wght" />
+        <axis default="400" maximum="1000" minimum="200" name="weight" tag="wght" />
     </axes>
     <sources>
-        <source familyname="Recursive Mono" filename="varprep-Recursive Mono-Heading Bold.ufo" stylename="Heading Bold">
+        <source familyname="Recursive Mono" filename="varprep-Recursive Mono-Heading Heavy.ufo" stylename="Heading Heavy">
             <location>
                 <dimension name="optical" xvalue="72" />
                 <dimension name="weight" xvalue="1000" />
+            </location>
+        </source>
+        <source familyname="Recursive Mono" filename="varprep-Recursive Mono-Heading Bold.ufo" stylename="Heading Bold">
+            <location>
+                <dimension name="optical" xvalue="72" />
+                <dimension name="weight" xvalue="700" />
             </location>
         </source>
         <source familyname="Recursive Mono" filename="varprep-Recursive Mono-Heading Light.ufo" stylename="Heading Light">
             <location>
                 <dimension name="optical" xvalue="72" />
-                <dimension name="weight" xvalue="0" />
+                <dimension name="weight" xvalue="200" />
             </location>
         </source>
-        <source familyname="Recursive Mono" filename="varprep-Recursive Mono-Text Bold.ufo" stylename="Text Bold">
+        <source familyname="Recursive Mono" filename="varprep-Recursive Mono-Text Heavy.ufo" stylename="Text Heavy">
             <location>
                 <dimension name="optical" xvalue="6" />
                 <dimension name="weight" xvalue="1000" />
             </location>
         </source>
+        <source familyname="Recursive Mono" filename="varprep-Recursive Mono-Text Bold.ufo" stylename="Text Bold">
+            <location>
+                <dimension name="optical" xvalue="6" />
+                <dimension name="weight" xvalue="700" />
+            </location>
+        </source>
         <source familyname="Recursive Mono" filename="varprep-Recursive Mono-Text Light.ufo" stylename="Text Light">
             <location>
                 <dimension name="optical" xvalue="6" />
-                <dimension name="weight" xvalue="0" />
+                <dimension name="weight" xvalue="200" />
             </location>
         </source>
     </sources>
@@ -71,38 +83,5 @@
             <info />
         </instance>
 
-        
-        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-MidwayBold.ufo" postscriptfontname="RecursiveMono-MidwayBold" stylename="Midway Bold">
-            <location>
-                <dimension name="optical" xvalue="39" />
-                <dimension name="weight" xvalue="1000" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-MidwayMedium.ufo" postscriptfontname="RecursiveMono-MidwayMedium" stylename="Midway Medium">
-            <location>
-                <dimension name="optical" xvalue="39" />
-                <dimension name="weight" xvalue="666" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-MidwayRegular.ufo" postscriptfontname="RecursiveMono-MidwayRegular" stylename="Midway Regular">
-            <location>
-                <dimension name="optical" xvalue="39" />
-                <dimension name="weight" xvalue="333" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-MidwayLight.ufo" postscriptfontname="RecursiveMono-MidwayLight" stylename="Midway Light">
-            <location>
-                <dimension name="optical" xvalue="39" />
-                <dimension name="weight" xvalue="0" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
     </instances>
 </designspace>
