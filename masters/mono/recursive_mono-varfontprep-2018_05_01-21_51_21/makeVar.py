@@ -15,7 +15,7 @@ def getRunArguments():
         'reverse_direction': False,
         #'kern_writer_class': None,
         'interpolate_binary_layout': False,
-        'remove_overlaps': True,
+        'remove_overlaps': False,
         'autohint': None,
         'conversion_error': None,
         #'no_round': False,
