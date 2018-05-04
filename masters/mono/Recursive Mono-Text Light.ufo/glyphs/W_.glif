@@ -4,7 +4,7 @@
   <unicode hex="0057"/>
   <outline>
     <contour>
-      <point x="29" y="700" type="line"/>
+      <point x="29" y="700" type="curve"/>
       <point x="62" y="467"/>
       <point x="95" y="234"/>
       <point x="128" y="1" type="curve"/>
@@ -24,6 +24,29 @@
       <point x="83" y="699"/>
       <point x="81" y="700"/>
       <point x="78" y="700" type="curve"/>
+      <point x="62" y="700.0"/>
+      <point x="45" y="700.0"/>
+    </contour>
+    <contour>
+      <point x="515" y="700" type="curve"/>
+      <point x="484" y="472"/>
+      <point x="453" y="244"/>
+      <point x="422" y="16" type="curve"/>
+      <point x="419" y="0"/>
+      <point x="411" y="-5"/>
+      <point x="403" y="-10" type="curve"/>
+      <point x="469" y="-10" type="line"/>
+      <point x="502" y="222"/>
+      <point x="535" y="456"/>
+      <point x="568" y="688" type="curve"/>
+      <point x="569" y="693"/>
+      <point x="569" y="696"/>
+      <point x="567" y="698" type="curve" smooth="yes"/>
+      <point x="566" y="699"/>
+      <point x="564" y="700"/>
+      <point x="560" y="700.0" type="curve"/>
+      <point x="545" y="700.0"/>
+      <point x="530" y="700.0"/>
     </contour>
     <contour>
       <point x="320" y="595"/>
@@ -59,25 +82,6 @@
       <point x="402" y="207"/>
       <point x="368" y="399"/>
       <point x="334" y="590" type="curve"/>
-    </contour>
-    <contour>
-      <point x="515" y="700" type="line"/>
-      <point x="484" y="472"/>
-      <point x="453" y="244"/>
-      <point x="422" y="16" type="curve"/>
-      <point x="419" y="0"/>
-      <point x="411" y="-5"/>
-      <point x="403" y="-10" type="curve"/>
-      <point x="469" y="-10" type="line"/>
-      <point x="502" y="222"/>
-      <point x="535" y="456"/>
-      <point x="568" y="688" type="curve"/>
-      <point x="569" y="693"/>
-      <point x="569" y="696"/>
-      <point x="567" y="698" type="curve" smooth="yes"/>
-      <point x="566" y="699"/>
-      <point x="564" y="700"/>
-      <point x="560" y="700.0" type="curve"/>
     </contour>
   </outline>
   <lib>
