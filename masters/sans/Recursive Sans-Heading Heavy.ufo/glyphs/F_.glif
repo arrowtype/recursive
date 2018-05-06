@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="F" format="2">
-  <advance width="600"/>
+  <advance width="550"/>
   <unicode hex="0046"/>
   <outline>
     <contour>
@@ -30,16 +30,16 @@
       <point x="24" y="492"/>
       <point x="27" y="490"/>
       <point x="35" y="490" type="curve" smooth="yes"/>
-      <point x="576" y="490" type="line"/>
-      <point x="579" y="507"/>
-      <point x="580" y="517"/>
-      <point x="580" y="535" type="curve" smooth="yes"/>
-      <point x="580.0" y="590"/>
-      <point x="563" y="651"/>
-      <point x="530" y="684" type="curve" smooth="yes"/>
-      <point x="517" y="697"/>
-      <point x="509.0" y="700.0"/>
-      <point x="491" y="700.0" type="curve" smooth="yes"/>
+      <point x="526" y="490" type="line"/>
+      <point x="529" y="507"/>
+      <point x="530" y="517"/>
+      <point x="530" y="535" type="curve" smooth="yes"/>
+      <point x="530.0" y="590"/>
+      <point x="513" y="651"/>
+      <point x="480" y="684" type="curve" smooth="yes"/>
+      <point x="467" y="697"/>
+      <point x="459.0" y="700.0"/>
+      <point x="441" y="700.0" type="curve" smooth="yes"/>
     </contour>
     <contour>
       <point x="149" y="375" type="line"/>
@@ -69,7 +69,7 @@
       <key>com.typemytype.robofont.Image.Sharpness</key>
       <real>0.4</real>
       <key>public.markColor</key>
-      <string>1,1,0,0.6</string>
+      <string>1,0.5,0,0.5</string>
     </dict>
   </lib>
 </glyph>

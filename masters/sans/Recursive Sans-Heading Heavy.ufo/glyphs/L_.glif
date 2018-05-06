@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="L" format="2">
-  <advance width="600"/>
+  <advance width="500"/>
   <unicode hex="004C"/>
   <guideline x="0" y="0" angle="90.0" identifier="PFbg9AP1bQ"/>
   <guideline x="50" y="0" angle="90.0" identifier="xTV9sEzM3E"/>
@@ -61,13 +61,13 @@
       <point x="35" y="74.0"/>
       <point x="79" y="0"/>
       <point x="125" y="0.0" type="curve" smooth="yes"/>
-      <point x="573" y="0" type="line"/>
-      <point x="577" y="22"/>
-      <point x="580" y="57"/>
-      <point x="580.0" y="89" type="curve" smooth="yes"/>
-      <point x="580" y="170"/>
-      <point x="549" y="220"/>
-      <point x="500" y="220.0" type="curve" smooth="yes"/>
+      <point x="473" y="0" type="line"/>
+      <point x="477" y="22"/>
+      <point x="480" y="57"/>
+      <point x="480.0" y="89" type="curve" smooth="yes"/>
+      <point x="480" y="170"/>
+      <point x="449.0" y="220.0"/>
+      <point x="400" y="220.0" type="curve" smooth="yes"/>
     </contour>
   </outline>
   <lib>
@@ -147,7 +147,7 @@
       <key>com.typemytype.robofont.guideline.magnetic.zg5MM5sCfk</key>
       <integer>0</integer>
       <key>public.markColor</key>
-      <string>1,1,0,0.6</string>
+      <string>1,0.5,0,0.5</string>
     </dict>
   </lib>
 </glyph>
