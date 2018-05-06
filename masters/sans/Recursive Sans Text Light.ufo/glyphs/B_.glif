@@ -5,28 +5,19 @@
   <outline>
     <contour>
       <point x="150" y="6" type="curve"/>
-      <point x="150" y="161"/>
-      <point x="150" y="512"/>
-      <point x="150" y="667" type="curve" smooth="yes"/>
-      <point x="150" y="672"/>
-      <point x="148" y="676"/>
-      <point x="145" y="679" type="curve" smooth="yes"/>
-      <point x="137" y="687"/>
-      <point x="126" y="690"/>
-      <point x="110" y="690" type="curve" smooth="yes"/>
-      <point x="100" y="690" type="line"/>
-      <point x="100" y="587"/>
-      <point x="100" y="298"/>
-      <point x="100" y="195" type="curve" smooth="yes"/>
-      <point x="100" y="143"/>
-      <point x="100" y="24"/>
-      <point x="100" y="11" type="curve" smooth="yes"/>
+      <point x="150" y="677" type="line" smooth="yes"/>
+      <point x="150" y="687"/>
+      <point x="142" y="690"/>
+      <point x="100" y="690" type="curve"/>
+      <point x="100" y="11" type="line"/>
       <point x="100" y="9"/>
       <point x="120" y="6"/>
     </contour>
     <contour>
       <point x="50" y="700" type="curve"/>
-      <point x="50" y="661" type="line" smooth="yes"/>
+      <point x="50.0" y="687"/>
+      <point x="50.0" y="674"/>
+      <point x="50" y="661" type="curve" smooth="yes"/>
       <point x="50" y="658"/>
       <point x="51" y="655"/>
       <point x="53" y="653" type="curve" smooth="yes"/>
@@ -48,8 +39,8 @@
       <point x="413" y="696"/>
       <point x="372" y="700"/>
       <point x="300" y="700" type="curve" smooth="yes"/>
-      <point x="222" y="700"/>
-      <point x="151" y="700"/>
+      <point x="217.0" y="700.0"/>
+      <point x="133" y="700.0"/>
     </contour>
     <contour>
       <point x="500" y="503" type="curve" smooth="yes"/>
@@ -64,20 +55,20 @@
       <point x="450" y="601"/>
       <point x="450" y="536" type="curve" smooth="yes"/>
       <point x="450" y="513" type="line" smooth="yes"/>
-      <point x="450.0" y="436.0"/>
-      <point x="418.0" y="380.0"/>
+      <point x="450" y="436"/>
+      <point x="418" y="380"/>
       <point x="265" y="380" type="curve" smooth="yes"/>
-      <point x="233" y="380"/>
-      <point x="149" y="380"/>
+      <point x="221.0" y="380.0"/>
+      <point x="176" y="380.0"/>
       <point x="132" y="380" type="curve"/>
-      <point x="132" y="371"/>
-      <point x="132" y="363"/>
-      <point x="132" y="341" type="curve" smooth="yes"/>
-      <point x="132" y="335"/>
-      <point x="137" y="330"/>
+      <point x="132" y="375"/>
+      <point x="132" y="370"/>
+      <point x="132" y="366" type="curve" smooth="yes"/>
+      <point x="132.0" y="333"/>
+      <point x="139.0" y="330.0"/>
       <point x="143" y="330" type="curve" smooth="yes"/>
       <point x="260" y="330" type="line" smooth="yes"/>
-      <point x="432" y="330"/>
+      <point x="432.0" y="330.0"/>
       <point x="500" y="400"/>
     </contour>
     <contour>
@@ -94,26 +85,26 @@
       <point x="474" y="211" type="curve" smooth="yes"/>
       <point x="474" y="188" type="line" smooth="yes"/>
       <point x="474" y="103"/>
-      <point x="400" y="50"/>
+      <point x="400.0" y="50"/>
       <point x="313" y="50" type="curve" smooth="yes"/>
-      <point x="158" y="50"/>
-      <point x="150" y="50"/>
-      <point x="131" y="50" type="curve" smooth="yes"/>
-      <point x="114" y="50"/>
-      <point x="100" y="31"/>
+      <point x="252" y="50.0"/>
+      <point x="192" y="50.0"/>
+      <point x="131" y="50" type="curve"/>
+      <point x="102.0" y="23.0"/>
+      <point x="100.0" y="20.0"/>
       <point x="100" y="11" type="curve" smooth="yes"/>
       <point x="100" y="4"/>
-      <point x="104" y="0"/>
+      <point x="104.0" y="0.0"/>
       <point x="111" y="0" type="curve" smooth="yes"/>
       <point x="334" y="0" type="line" smooth="yes"/>
-      <point x="435" y="0"/>
+      <point x="435.0" y="0.0"/>
       <point x="524" y="73"/>
     </contour>
   </outline>
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0,0.14184,0.72516,0.5</string>
+      <string>1,0.45,0.45,0.75</string>
     </dict>
   </lib>
 </glyph>
