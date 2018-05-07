@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<designspace format="3">
+    <axes>
+        <axis default="700" maximum="1000" minimum="300" name="weight" tag="wght" />
+        <axis default="10" maximum="72" minimum="10" name="optical" tag="opsz" />
+    </axes>
+    <sources>
+        <source familyname="Recursive Mono" filename="Recursive Mono-Heading Heavy.ufo" stylename="Heading Heavy">
+            <location>
+                <dimension name="weight" xvalue="1000" />
+                <dimension name="optical" xvalue="72" />
+            </location>
+        </source>
+        <source familyname="Recursive Mono" filename="Recursive Mono-Heading Bold.ufo" stylename="Heading Bold">
+            <location>
+                <dimension name="weight" xvalue="700" />
+                <dimension name="optical" xvalue="72" />
+            </location>
+        </source>
+        <source familyname="Recursive Mono" filename="Recursive Mono-Heading Light.ufo" stylename="Heading Light">
+            <location>
+                <dimension name="weight" xvalue="300" />
+                <dimension name="optical" xvalue="72" />
+            </location>
+        </source>
+        <source familyname="Recursive Mono" filename="Recursive Mono-Text Heavy.ufo" stylename="Text Heavy">
+            <location>
+                <dimension name="weight" xvalue="1000" />
+                <dimension name="optical" xvalue="10" />
+            </location>
+        </source>
+        <source familyname="Recursive Mono" filename="Recursive Mono-Text Bold.ufo" stylename="Text Bold">
+            <location>
+                <dimension name="weight" xvalue="700" />
+                <dimension name="optical" xvalue="10" />
+            </location>
+        </source>
+        <source familyname="Recursive Mono" filename="Recursive Mono-Text Light.ufo" stylename="Text Light">
+            <location>
+                <dimension name="weight" xvalue="300" />
+                <dimension name="optical" xvalue="10" />
+            </location>
+        </source>
+    </sources>
+    <instances>
+        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-opsz_10_wght_1000.ufo" postscriptfontname="RecursiveMono-opsz_10_wght_1000" stylename="opsz_10_wght_1000">
+            <location>
+                <dimension name="weight" xvalue="1000" />
+                <dimension name="optical" xvalue="10" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-opsz_72_wght_1000.ufo" postscriptfontname="RecursiveMono-opsz_72_wght_1000" stylename="opsz_72_wght_1000">
+            <location>
+                <dimension name="weight" xvalue="1000" />
+                <dimension name="optical" xvalue="72" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+    </instances>
+</designspace>
