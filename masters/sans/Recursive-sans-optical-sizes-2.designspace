@@ -1,48 +1,56 @@
 <?xml version='1.0' encoding='utf-8'?>
 <designspace format="3">
     <axes>
-        <axis default="6" maximum="72" minimum="6" name="optical" tag="opsz" />
-        <axis default="0" maximum="1000" minimum="0" name="weight" tag="wght" />
+        <axis default="10" maximum="72" minimum="10" name="optical" tag="opsz" />
+        <axis default="300" maximum="700" minimum="300" name="weight" tag="wght" />
     </axes>
     <sources>
         <source familyname="Recursive Sans" filename="Recursive Sans-Text Bold.ufo" stylename="Text Bold">
             <location>
-                <dimension name="optical" xvalue="6" />
-                <dimension name="weight" xvalue="1000" />
+                <dimension name="optical" xvalue="10" />
+                <dimension name="weight" xvalue="700" />
             </location>
         </source>
         <source familyname="Recursive Sans" filename="Recursive Sans-Heading Bold.ufo" stylename="Heading Bold">
             <location>
                 <dimension name="optical" xvalue="72" />
-                <dimension name="weight" xvalue="1000" />
+                <dimension name="weight" xvalue="700" />
             </location>
         </source>
         <source familyname="Recursive Sans" filename="Recursive Sans-Text Light.ufo" stylename="Text Light">
             <location>
-                <dimension name="optical" xvalue="6" />
-                <dimension name="weight" xvalue="0" />
+                <dimension name="optical" xvalue="10" />
+                <dimension name="weight" xvalue="300" />
             </location>
         </source>
         <source familyname="Recursive Sans" filename="Recursive Sans-Heading Light.ufo" stylename="Heading Light">
             <location>
                 <dimension name="optical" xvalue="72" />
-                <dimension name="weight" xvalue="0" />
+                <dimension name="weight" xvalue="300" />
             </location>
         </source>
     </sources>
     <instances>
         <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextRegular.ufo" postscriptfontname="RecursiveSans-TextRegular" stylemapfamilyname="Recursive Sans Text Regular" stylemapstylename="regular" stylename="Text Regular">
             <location>
-                <dimension name="optical" xvalue="6" />
-                <dimension name="weight" xvalue="333" />
+                <dimension name="optical" xvalue="10" />
+                <dimension name="weight" xvalue="400" />
             </location>
             <kerning />
             <info />
         </instance>
         <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextMedium.ufo" postscriptfontname="RecursiveSans-TextMedium" stylename="Text Medium">
             <location>
-                <dimension name="optical" xvalue="6" />
-                <dimension name="weight" xvalue="666" />
+                <dimension name="optical" xvalue="10" />
+                <dimension name="weight" xvalue="500" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextSemiBold.ufo" postscriptfontname="RecursiveSans-TextSemiBold" stylename="Text SemiBold">
+            <location>
+                <dimension name="optical" xvalue="10" />
+                <dimension name="weight" xvalue="600" />
             </location>
             <kerning />
             <info />
@@ -50,7 +58,7 @@
         <instance familyname="Recursive Sans" filename="instances/RecursiveSans-HeadingRegular.ufo" postscriptfontname="RecursiveSans-HeadingRegular" stylename="Heading Regular">
             <location>
                 <dimension name="optical" xvalue="72" />
-                <dimension name="weight" xvalue="333" />
+                <dimension name="weight" xvalue="400" />
             </location>
             <kerning />
             <info />
@@ -58,7 +66,15 @@
         <instance familyname="Recursive Sans" filename="instances/RecursiveSans-HeadingMedium.ufo" postscriptfontname="RecursiveSans-HeadingMedium" stylename="Heading Medium">
             <location>
                 <dimension name="optical" xvalue="72" />
-                <dimension name="weight" xvalue="666" />
+                <dimension name="weight" xvalue="500" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-HeadingSemiBold.ufo" postscriptfontname="RecursiveSans-HeadingSemiBold" stylename="Heading SemiBold">
+            <location>
+                <dimension name="optical" xvalue="72" />
+                <dimension name="weight" xvalue="600" />
             </location>
             <kerning />
             <info />
