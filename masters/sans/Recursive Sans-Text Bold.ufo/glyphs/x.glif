@@ -8,21 +8,27 @@
       <point x="460" y="0"/>
       <point x="512" y="0"/>
       <point x="565" y="0" type="curve"/>
-      <point x="495" y="107"/>
-      <point x="426" y="214"/>
-      <point x="356" y="322" type="curve" smooth="yes"/>
-      <point x="311" y="391"/>
-      <point x="266" y="461"/>
+      <point x="501" y="104"/>
+      <point x="436" y="207"/>
+      <point x="372" y="311" type="curve"/>
+      <point x="364" y="324"/>
+      <point x="341" y="328"/>
+      <point x="332" y="341" type="curve"/>
+      <point x="295" y="404"/>
+      <point x="258" y="467"/>
       <point x="221" y="530" type="curve"/>
       <point x="216" y="537"/>
       <point x="211" y="540"/>
       <point x="202" y="540" type="curve"/>
       <point x="45" y="540" type="line"/>
-      <point x="112" y="437"/>
-      <point x="179" y="333"/>
-      <point x="246" y="229" type="curve" smooth="yes"/>
-      <point x="294" y="156"/>
-      <point x="341" y="83"/>
+      <point x="106" y="440"/>
+      <point x="166" y="340"/>
+      <point x="227" y="240" type="curve"/>
+      <point x="238" y="225"/>
+      <point x="261" y="220"/>
+      <point x="271" y="205" type="curve"/>
+      <point x="310" y="140"/>
+      <point x="349" y="75"/>
       <point x="388" y="10" type="curve"/>
       <point x="393" y="2"/>
       <point x="399" y="0"/>
@@ -66,8 +72,14 @@
   </outline>
   <lib>
     <dict>
-      <key>public.markColor</key>
-      <string>0.45,1,0.55,0.75</string>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
     </dict>
   </lib>
 </glyph>
