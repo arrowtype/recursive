@@ -4,14 +4,14 @@
   <unicode hex="0049"/>
   <outline>
     <contour>
-      <point x="375.0" y="80.0" type="curve"/>
-      <point x="375.0" y="475.0" type="line" smooth="yes"/>
-      <point x="375.0" y="567.4375"/>
-      <point x="335.0" y="610.0"/>
-      <point x="215.0" y="610.0" type="curve"/>
-      <point x="215.0" y="235.0" type="line" smooth="yes"/>
-      <point x="215.0" y="127.20000000000003"/>
-      <point x="267.0" y="80.0"/>
+      <point x="375.0" y="30.0" type="curve"/>
+      <point x="375.0" y="575.0" type="line" smooth="yes"/>
+      <point x="375.0" y="632.9259259259259"/>
+      <point x="335.0" y="660.0"/>
+      <point x="215.0" y="660.0" type="curve"/>
+      <point x="215.0" y="135.0" type="line" smooth="yes"/>
+      <point x="215.0" y="61.83870967741936"/>
+      <point x="267.0" y="30.0"/>
     </contour>
     <contour>
       <point x="46.0" y="700.0" type="line"/>
@@ -54,6 +54,14 @@
   </outline>
   <lib>
     <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
       <key>com.typemytype.robofont.guideline.magnetic.3SW4mvVeAC</key>
       <integer>10</integer>
       <key>com.typemytype.robofont.guideline.magnetic.50kLWCclZA</key>
