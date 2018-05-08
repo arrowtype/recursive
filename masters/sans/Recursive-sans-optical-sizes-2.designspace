@@ -2,9 +2,21 @@
 <designspace format="3">
     <axes>
         <axis default="10" maximum="72" minimum="10" name="optical" tag="opsz" />
-        <axis default="300" maximum="700" minimum="300" name="weight" tag="wght" />
+        <axis default="300" maximum="1000" minimum="300" name="weight" tag="wght" />
     </axes>
     <sources>
+        <source familyname="Recursive Sans" filename="Recursive Sans-Text Heavy.ufo" stylename="Text Heavy">
+            <location>
+                <dimension name="optical" xvalue="10" />
+                <dimension name="weight" xvalue="1000" />
+            </location>
+        </source>
+        <source familyname="Recursive Sans" filename="Recursive Sans-Heading Heavy.ufo" stylename="Heading Heavy">
+            <location>
+                <dimension name="optical" xvalue="72" />
+                <dimension name="weight" xvalue="1000" />
+            </location>
+        </source>
         <source familyname="Recursive Sans" filename="Recursive Sans-Text Bold.ufo" stylename="Text Bold">
             <location>
                 <dimension name="optical" xvalue="10" />
@@ -55,6 +67,33 @@
             <kerning />
             <info />
         </instance>
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextExtraBold.ufo" postscriptfontname="RecursiveSans-TextExtraBold" stylename="Text ExtraBold">
+            <location>
+                <dimension name="optical" xvalue="10" />
+                <dimension name="weight" xvalue="800" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextBlack.ufo" postscriptfontname="RecursiveSans-TextBlack" stylename="Text Black">
+            <location>
+                <dimension name="optical" xvalue="10" />
+                <dimension name="weight" xvalue="900" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextHeavy.ufo" postscriptfontname="RecursiveSans-TextHeavy" stylename="Text Heavy">
+            <location>
+                <dimension name="optical" xvalue="10" />
+                <dimension name="weight" xvalue="1000" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+
+
+
         <instance familyname="Recursive Sans" filename="instances/RecursiveSans-HeadingRegular.ufo" postscriptfontname="RecursiveSans-HeadingRegular" stylename="Heading Regular">
             <location>
                 <dimension name="optical" xvalue="72" />
@@ -75,6 +114,30 @@
             <location>
                 <dimension name="optical" xvalue="72" />
                 <dimension name="weight" xvalue="600" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-HeavyExtraBold.ufo" postscriptfontname="RecursiveSans-HeavyExtraBold" stylename="Heavy ExtraBold">
+            <location>
+                <dimension name="optical" xvalue="72" />
+                <dimension name="weight" xvalue="800" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-HeavyBlack.ufo" postscriptfontname="RecursiveSans-HeavyBlack" stylename="Heavy Black">
+            <location>
+                <dimension name="optical" xvalue="72" />
+                <dimension name="weight" xvalue="900" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-HeavyHeavy.ufo" postscriptfontname="RecursiveSans-HeavyHeavy" stylename="Heavy Heavy">
+            <location>
+                <dimension name="optical" xvalue="72" />
+                <dimension name="weight" xvalue="1000" />
             </location>
             <kerning />
             <info />

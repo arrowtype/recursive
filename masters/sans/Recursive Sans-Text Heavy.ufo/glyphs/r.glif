@@ -44,26 +44,26 @@
       <point x="10.0" y="355.0"/>
       <point x="15.0" y="350.0"/>
       <point x="21" y="350" type="curve" smooth="yes"/>
-      <point x="85.42446043165468" y="350.0"/>
-      <point x="155.57553956834533" y="350.0"/>
-      <point x="220" y="350" type="curve"/>
-      <point x="220.0" y="493.0"/>
-      <point x="210.0" y="550.0"/>
-      <point x="190" y="550" type="curve" smooth="yes"/>
-      <point x="124.0" y="550.0"/>
-      <point x="76.0" y="550.0"/>
+      <point x="69.23741007194245" y="350.0"/>
+      <point x="122" y="350.0"/>
+      <point x="170" y="350" type="curve"/>
+      <point x="170" y="530.0"/>
+      <point x="162.0" y="550.0"/>
+      <point x="150" y="550" type="curve" smooth="yes"/>
+      <point x="98" y="550"/>
+      <point x="61.33333333333332" y="550.0"/>
     </contour>
     <contour>
       <point x="295" y="0" type="curve"/>
       <point x="295.0" y="33"/>
-      <point x="295.0" y="67.0"/>
+      <point x="295" y="67"/>
       <point x="295" y="100" type="curve" smooth="yes"/>
-      <point x="295" y="439" type="line" smooth="yes"/>
-      <point x="295" y="455.0"/>
-      <point x="222" y="550"/>
-      <point x="190" y="550" type="curve" smooth="yes"/>
-      <point x="145.0" y="550.0"/>
-      <point x="110.0" y="546.0"/>
+      <point x="295" y="399" type="line" smooth="yes"/>
+      <point x="295" y="420.76576576576576"/>
+      <point x="194.07999999999998" y="550.0"/>
+      <point x="150" y="550" type="curve" smooth="yes"/>
+      <point x="119.6" y="550.0"/>
+      <point x="98.50945470883217" y="541.4037818835328"/>
       <point x="70" y="530" type="curve"/>
       <point x="70" y="11" type="line"/>
       <point x="70" y="5"/>
@@ -73,39 +73,29 @@
       <point x="248" y="0"/>
     </contour>
     <contour>
-      <point x="575.0" y="507.0"/>
-      <point x="516" y="560"/>
-      <point x="430" y="560.0" type="curve" smooth="yes"/>
-      <point x="366" y="560.0"/>
-      <point x="310" y="514"/>
-      <point x="271" y="449" type="curve" smooth="yes"/>
-      <point x="252" y="417"/>
-      <point x="237.0" y="376"/>
-      <point x="237" y="321" type="curve"/>
-      <point x="284" y="343"/>
-      <point x="308" y="350.0"/>
-      <point x="355" y="350" type="curve" smooth="yes"/>
-      <point x="420.0" y="350.0"/>
-      <point x="464.0" y="339.0"/>
-      <point x="515" y="318" type="curve"/>
-      <point x="548.0" y="318.0"/>
-      <point x="575" y="365"/>
-      <point x="575" y="392" type="curve" smooth="yes"/>
-    </contour>
-    <contour>
-      <point x="575" y="250" type="curve"/>
-      <point x="575" y="392" type="line"/>
-      <point x="575.0" y="422.0"/>
-      <point x="511" y="449"/>
-      <point x="350" y="449" type="curve"/>
-      <point x="357" y="386"/>
-      <point x="364" y="326"/>
-      <point x="372" y="261" type="curve" smooth="yes"/>
-      <point x="373" y="255"/>
-      <point x="377.0" y="250.0"/>
-      <point x="384" y="250" type="curve" smooth="yes"/>
-      <point x="448" y="250.0"/>
-      <point x="511" y="250.0"/>
+      <point x="199" y="305" type="curve"/>
+      <point x="254" y="329"/>
+      <point x="290" y="332"/>
+      <point x="333" y="332" type="curve" smooth="yes"/>
+      <point x="360" y="332"/>
+      <point x="387" y="326"/>
+      <point x="415" y="317" type="curve"/>
+      <point x="435" y="317" type="line"/>
+      <point x="435" y="380"/>
+      <point x="435" y="534"/>
+      <point x="435" y="549" type="curve" smooth="yes"/>
+      <point x="435" y="552"/>
+      <point x="434" y="555"/>
+      <point x="432" y="557" type="curve" smooth="yes"/>
+      <point x="430" y="559"/>
+      <point x="428" y="560"/>
+      <point x="424" y="560" type="curve" smooth="yes"/>
+      <point x="416" y="560" type="line" smooth="yes"/>
+      <point x="337" y="560"/>
+      <point x="293" y="534"/>
+      <point x="241" y="468" type="curve" smooth="yes"/>
+      <point x="207" y="426"/>
+      <point x="199" y="395"/>
     </contour>
   </outline>
   <lib>
@@ -185,7 +175,7 @@
       <key>com.typemytype.robofont.guideline.magnetic.y2QY7CNOVI</key>
       <integer>10</integer>
       <key>public.markColor</key>
-      <string>1,0.5,0,0.5</string>
+      <string>0.45,1,0.55,0.75</string>
     </dict>
   </lib>
 </glyph>
