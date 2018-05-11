@@ -7,50 +7,8 @@
 		<dict>
 			<key>allowPseudoUnicode</key>
 			<true/>
-			<key>ascending</key>
-			<true/>
 			<key>type</key>
-			<string>alphabetical</string>
-		</dict>
-		<dict>
-			<key>allowPseudoUnicode</key>
-			<true/>
-			<key>ascending</key>
-			<true/>
-			<key>type</key>
-			<string>category</string>
-		</dict>
-		<dict>
-			<key>allowPseudoUnicode</key>
-			<true/>
-			<key>ascending</key>
-			<true/>
-			<key>type</key>
-			<string>unicode</string>
-		</dict>
-		<dict>
-			<key>allowPseudoUnicode</key>
-			<true/>
-			<key>ascending</key>
-			<true/>
-			<key>type</key>
-			<string>script</string>
-		</dict>
-		<dict>
-			<key>allowPseudoUnicode</key>
-			<true/>
-			<key>ascending</key>
-			<true/>
-			<key>type</key>
-			<string>suffix</string>
-		</dict>
-		<dict>
-			<key>allowPseudoUnicode</key>
-			<true/>
-			<key>ascending</key>
-			<true/>
-			<key>type</key>
-			<string>decompositionBase</string>
+			<string>cannedDesign</string>
 		</dict>
 	</array>
 	<key>com.typemytype.robofont.compileSettings.autohint</key>
@@ -71,13 +29,8 @@
 	<integer>1</integer>
 	<key>public.glyphOrder</key>
 	<array>
+		<string>space</string>
 		<string>A</string>
-		<string>Agrave</string>
-		<string>Aacute</string>
-		<string>Acircumflex</string>
-		<string>Atilde</string>
-		<string>Adieresis</string>
-		<string>Aring</string>
 		<string>B</string>
 		<string>C</string>
 		<string>Ccedilla</string>
@@ -127,6 +80,12 @@
 		<string>Eth</string>
 		<string>Oslash</string>
 		<string>Thorn</string>
+		<string>Agrave</string>
+		<string>Aacute</string>
+		<string>Acircumflex</string>
+		<string>Atilde</string>
+		<string>Adieresis</string>
+		<string>Aring</string>
 		<string>a</string>
 		<string>agrave</string>
 		<string>aacute</string>
@@ -186,12 +145,7 @@
 		<string>oslash</string>
 		<string>thorn</string>
 		<string>dotlessi</string>
-		<string>i.ss01</string>
-		<string>l.ss01</string>
-		<string>r.ss01</string>
 		<string>mu</string>
-		<string>circumflex</string>
-		<string>caron</string>
 		<string>ordfeminine</string>
 		<string>ordmasculine</string>
 		<string>zero</string>
@@ -204,78 +158,78 @@
 		<string>seven</string>
 		<string>eight</string>
 		<string>nine</string>
+		<string>onesuperior</string>
 		<string>twosuperior</string>
 		<string>threesuperior</string>
-		<string>onesuperior</string>
 		<string>onequarter</string>
 		<string>onehalf</string>
 		<string>threequarters</string>
 		<string>underscore</string>
 		<string>hyphen</string>
 		<string>parenleft</string>
-		<string>bracketleft</string>
-		<string>braceleft</string>
 		<string>parenright</string>
+		<string>bracketleft</string>
 		<string>bracketright</string>
+		<string>braceleft</string>
 		<string>braceright</string>
-		<string>guillemetleft</string>
-		<string>quoteleft</string>
-		<string>guillemetright</string>
-		<string>quoteright</string>
-		<string>exclam</string>
-		<string>quotedbl</string>
 		<string>numbersign</string>
 		<string>percent</string>
-		<string>ampersand</string>
 		<string>quotesingle</string>
+		<string>quotedbl</string>
+		<string>quoteleft</string>
+		<string>quoteright</string>
+		<string>guillemetleft</string>
+		<string>guillemetright</string>
 		<string>asterisk</string>
-		<string>comma</string>
 		<string>period</string>
-		<string>slash</string>
+		<string>comma</string>
 		<string>colon</string>
 		<string>semicolon</string>
-		<string>question</string>
-		<string>at</string>
-		<string>backslash</string>
+		<string>exclam</string>
 		<string>exclamdown</string>
+		<string>question</string>
+		<string>questiondown</string>
+		<string>slash</string>
+		<string>backslash</string>
+		<string>bar</string>
+		<string>brokenbar</string>
+		<string>at</string>
+		<string>ampersand</string>
 		<string>section</string>
 		<string>paragraph</string>
 		<string>periodcentered</string>
-		<string>questiondown</string>
 		<string>plus</string>
-		<string>less</string>
-		<string>equal</string>
-		<string>greater</string>
-		<string>bar</string>
-		<string>asciitilde</string>
-		<string>logicalnot</string>
-		<string>plusminus</string>
-		<string>multiply</string>
-		<string>divide</string>
 		<string>minus</string>
+		<string>plusminus</string>
+		<string>divide</string>
+		<string>multiply</string>
+		<string>equal</string>
+		<string>less</string>
+		<string>greater</string>
+		<string>logicalnot</string>
 		<string>dollar</string>
 		<string>cent</string>
 		<string>sterling</string>
 		<string>currency</string>
 		<string>yen</string>
 		<string>asciicircum</string>
-		<string>grave</string>
-		<string>dieresis</string>
-		<string>macron</string>
+		<string>asciitilde</string>
 		<string>acute</string>
-		<string>cedilla</string>
+		<string>grave</string>
+		<string>hungarumlaut</string>
+		<string>circumflex</string>
+		<string>caron</string>
 		<string>breve</string>
+		<string>tilde</string>
+		<string>macron</string>
+		<string>dieresis</string>
 		<string>dotaccent</string>
 		<string>ring</string>
+		<string>cedilla</string>
 		<string>ogonek</string>
-		<string>tilde</string>
-		<string>hungarumlaut</string>
-		<string>brokenbar</string>
 		<string>copyright</string>
 		<string>registered</string>
 		<string>degree</string>
-		<string>space</string>
-		<string>n.alt1</string>
 		<string>A.stemtaper</string>
 		<string>B.stemtaper</string>
 		<string>D.stemtaper</string>
@@ -286,7 +240,25 @@
 		<string>P.stemtaper</string>
 		<string>R.stemtaper</string>
 		<string>T.stemtaper</string>
+		<string>i.ss01</string>
+		<string>l.ss01</string>
+		<string>r.ss01</string>
+		<string>F.2018_05_11-15h14m32s</string>
+		<string>H.2018_05_11-15h14m32s</string>
+		<string>I.2018_05_11-15h14m32s</string>
+		<string>P.2018_05_11-15h14m33s</string>
+		<string>R.2018_05_11-15h14m33s</string>
+		<string>T.2018_05_11-15h14m33s</string>
+		<string>D.2018_05_11-15h14m31s</string>
+		<string>E.2018_05_11-15h14m31s</string>
+		<string>n.alt1</string>
 		<string>Z.noserif</string>
+		<string>A.2018_05_11-14h45m05s</string>
+		<string>A.2018_05_11-14h45m29s</string>
+		<string>A.2018_05_11-14h46m55s</string>
+		<string>A.2018_05_11-14h47m04s</string>
+		<string>B.2018_05_11-14h47m29s</string>
+		<string>B.2018_05_11-14h48m04s</string>
 	</array>
 </dict>
 </plist>
