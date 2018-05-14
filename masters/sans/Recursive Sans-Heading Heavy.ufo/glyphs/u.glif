@@ -4,9 +4,9 @@
   <unicode hex="0075"/>
   <outline>
     <contour>
-      <point x="340.0" y="554.0" type="curve"/>
+      <point x="340.0" y="550.0" type="curve"/>
       <point x="340.0" y="110.0" type="line" smooth="yes"/>
-      <point x="340.0" y="63.0"/>
+      <point x="340" y="63"/>
       <point x="347.0" y="36.0"/>
       <point x="363.0" y="20.0" type="curve" smooth="yes"/>
       <point x="382.0" y="1.0"/>
@@ -16,14 +16,14 @@
       <point x="546.0" y="-3.0"/>
       <point x="577.0" y="4.0" type="curve"/>
       <point x="569.0" y="42.0"/>
-      <point x="565.0" y="87.0"/>
+      <point x="565" y="87"/>
       <point x="565.0" y="144.0" type="curve" smooth="yes"/>
-      <point x="565.0" y="478.0" type="line" smooth="yes"/>
-      <point x="565.0" y="545.0"/>
-      <point x="538.0" y="561.0"/>
-      <point x="425.0" y="561.0" type="curve" smooth="yes"/>
-      <point x="395.0" y="561.0"/>
-      <point x="366.0" y="559.0"/>
+      <point x="565.0" y="474.0" type="line" smooth="yes"/>
+      <point x="565.0" y="541.0"/>
+      <point x="538.0" y="555.0"/>
+      <point x="425.0" y="555.0" type="curve" smooth="yes"/>
+      <point x="395.0" y="555.0"/>
+      <point x="371.0" y="555.0"/>
     </contour>
     <contour>
       <point x="35.0" y="92.0"/>
@@ -46,20 +46,20 @@
       <point x="35.0" y="178.0" type="curve" smooth="yes"/>
     </contour>
     <contour>
-      <point x="23.0" y="559.0" type="curve"/>
-      <point x="31.0" y="517.0"/>
+      <point x="23.0" y="550.0" type="curve"/>
+      <point x="31.0" y="508.0"/>
       <point x="35.0" y="470.0"/>
       <point x="35.0" y="414.0" type="curve" smooth="yes"/>
       <point x="35.0" y="178.0" type="line"/>
       <point x="35.0" y="125.0"/>
       <point x="134.0" y="83.0"/>
       <point x="260.0" y="83.0" type="curve"/>
-      <point x="260.0" y="503.0" type="line" smooth="yes"/>
-      <point x="260.0" y="547.0"/>
-      <point x="221.0" y="564.0"/>
-      <point x="125.0" y="564.0" type="curve" smooth="yes"/>
-      <point x="89.0" y="564.0"/>
-      <point x="56.0" y="562.0"/>
+      <point x="260.0" y="494.0" type="line" smooth="yes"/>
+      <point x="260.0" y="538.0"/>
+      <point x="221.0" y="555.0"/>
+      <point x="125.0" y="555.0" type="curve" smooth="yes"/>
+      <point x="89.0" y="555.0"/>
+      <point x="56.0" y="553.0"/>
     </contour>
   </outline>
   <lib>
@@ -72,6 +72,8 @@
       <integer>1</integer>
       <key>com.typemytype.robofont.Image.Sharpness</key>
       <real>0.4</real>
+      <key>public.markColor</key>
+      <string>0.45,1,0.55,0.75</string>
     </dict>
   </lib>
 </glyph>

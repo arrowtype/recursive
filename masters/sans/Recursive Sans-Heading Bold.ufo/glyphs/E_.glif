@@ -27,10 +27,10 @@
     </contour>
     <contour>
       <point x="235.0" y="85.0" type="curve"/>
-      <point x="235.0" y="615.0" type="line" smooth="yes"/>
-      <point x="235.0" y="642.0"/>
-      <point x="169" y="660.0"/>
-      <point x="75.0" y="660.0" type="curve"/>
+      <point x="235.0" y="477" type="line" smooth="yes"/>
+      <point x="235" y="558"/>
+      <point x="195.0" y="584.0"/>
+      <point x="75.0" y="584" type="curve"/>
       <point x="75.0" y="140.0" type="line"/>
       <point x="75.0" y="97"/>
       <point x="151" y="85.0"/>
@@ -68,6 +68,14 @@
   </outline>
   <lib>
     <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
       <key>public.markColor</key>
       <string>1,1,0,0.6</string>
     </dict>
