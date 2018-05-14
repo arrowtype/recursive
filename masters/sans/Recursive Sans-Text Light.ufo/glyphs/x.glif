@@ -2,8 +2,6 @@
 <glyph name="x" format="2">
   <advance width="600"/>
   <unicode hex="0078"/>
-  <guideline x="85" y="546" angle="90" identifier="tBzLpSL28w"/>
-  <guideline x="507" y="0" angle="90" identifier="AejtQeg3Y5"/>
   <outline>
     <contour>
       <point x="470" y="0" type="curve" smooth="yes"/>
@@ -82,6 +80,8 @@
       <integer>1</integer>
       <key>com.typemytype.robofont.Image.Sharpness</key>
       <real>0.4</real>
+      <key>public.markColor</key>
+      <string>0.45,1,0.55,0.75</string>
     </dict>
   </lib>
 </glyph>
