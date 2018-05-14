@@ -35,6 +35,16 @@
   <guideline x="0" y="700" angle="0" identifier="bzJcwWZPaF"/>
   <outline>
     <contour>
+      <point x="330.0" y="86.0" type="curve"/>
+      <point x="330.0" y="477.0" type="line" smooth="yes"/>
+      <point x="330" y="558"/>
+      <point x="292.0" y="584.0"/>
+      <point x="170.0" y="584.0" type="curve"/>
+      <point x="170.0" y="228.0" type="line" smooth="yes"/>
+      <point x="170.0" y="130"/>
+      <point x="208.0" y="86.0"/>
+    </contour>
+    <contour>
       <point x="46.0" y="700.0" type="line"/>
       <point x="43" y="691"/>
       <point x="41" y="679"/>
@@ -71,16 +81,6 @@
       <point x="461.0" y="109.0"/>
       <point x="453.0" y="150.0"/>
       <point x="399.0" y="150.0" type="curve" smooth="yes"/>
-    </contour>
-    <contour>
-      <point x="330.0" y="86.0" type="curve"/>
-      <point x="330.0" y="477.0" type="line" smooth="yes"/>
-      <point x="330" y="558"/>
-      <point x="292.0" y="584.0"/>
-      <point x="170.0" y="584.0" type="curve"/>
-      <point x="170.0" y="228.0" type="line" smooth="yes"/>
-      <point x="170.0" y="130"/>
-      <point x="208.0" y="86.0"/>
     </contour>
   </outline>
   <lib>
