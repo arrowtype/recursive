@@ -3,28 +3,18 @@
   <advance width="600"/>
   <unicode hex="2019"/>
   <outline>
-    <contour>
-      <point x="195" y="371"/>
-      <point x="227" y="360"/>
-      <point x="276" y="360.0" type="curve" smooth="yes"/>
-      <point x="297" y="360"/>
-      <point x="310" y="364"/>
-      <point x="321" y="375" type="curve" smooth="yes"/>
-      <point x="364" y="418"/>
-      <point x="431" y="539"/>
-      <point x="431.0" y="642" type="curve" smooth="yes"/>
-      <point x="431" y="668"/>
-      <point x="429" y="675"/>
-      <point x="417" y="688" type="curve" smooth="yes"/>
-      <point x="398" y="708"/>
-      <point x="350" y="720"/>
-      <point x="307" y="720.0" type="curve" smooth="yes"/>
-      <point x="280.0" y="720.0"/>
-      <point x="263" y="718"/>
-      <point x="236" y="713" type="curve"/>
-      <point x="236.0" y="574"/>
-      <point x="209" y="470"/>
-      <point x="165" y="395" type="curve"/>
-    </contour>
+    <component base="quoteleft" xScale="-1.0" xyScale="2.220446049250313e-16" yxScale="-2.220446049250313e-16" yScale="-1.0" xOffset="616" yOffset="1080"/>
   </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+    </dict>
+  </lib>
 </glyph>
