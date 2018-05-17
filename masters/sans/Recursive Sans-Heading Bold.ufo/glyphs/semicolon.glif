@@ -1,49 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="semicolon" format="2">
-  <advance width="300"/>
+  <advance width="350"/>
   <unicode hex="003B"/>
-  <guideline x="0" y="0" angle="90.0" identifier="96KeWwcwC8"/>
-  <guideline x="50" y="0" angle="90.0" identifier="hWAtct23Up"/>
-  <guideline x="100" y="0" angle="90.0" identifier="eZOiSAIBYN"/>
-  <guideline x="150" y="0" angle="90.0" identifier="MAUZatjaGJ"/>
-  <guideline x="200" y="0" angle="90.0" identifier="4xtOc19CaY"/>
-  <guideline x="250" y="0" angle="90.0" identifier="nrLHVuKTQR"/>
-  <guideline x="300" y="0" angle="90.0" identifier="VIb8L462Za"/>
-  <guideline x="350" y="0" angle="90.0" identifier="fa2fQwcXEz"/>
-  <guideline x="400" y="0" angle="90.0" identifier="Jh82Dl0JnP"/>
-  <guideline x="450" y="0" angle="90.0" identifier="cvsET7eRh1"/>
-  <guideline x="500" y="0" angle="90.0" identifier="fp1U1MqZmX"/>
-  <guideline x="550" y="0" angle="90.0" identifier="AaDB0cqjo1"/>
-  <guideline x="600" y="0" angle="90.0" identifier="nxzabrdkqW"/>
-  <guideline x="0" y="-250.0" angle="0" identifier="3aHjUvw70r"/>
-  <guideline x="0" y="-200.0" angle="0" identifier="D5ZdmseCp9"/>
-  <guideline x="0" y="-150.0" angle="0" identifier="8vV6H1xW3C"/>
-  <guideline x="0" y="-100.0" angle="0" identifier="R274FGQ1aH"/>
-  <guideline x="0" y="-50.0" angle="0" identifier="Dncsik4fy6"/>
-  <guideline x="0" y="0" angle="0" identifier="xRDXJ0UxSP"/>
-  <guideline x="0" y="50.0" angle="0" identifier="8sGcNwyQgM"/>
-  <guideline x="0" y="100.0" angle="0" identifier="OjZrXS0XVY"/>
-  <guideline x="0" y="150.0" angle="0" identifier="ahC8YN2qpA"/>
-  <guideline x="0" y="200.0" angle="0" identifier="SIVcErgiOl"/>
-  <guideline x="0" y="250.0" angle="0" identifier="Hqvn8SCUXH"/>
-  <guideline x="0" y="300.0" angle="0" identifier="c5rNCNrvkR"/>
-  <guideline x="0" y="350.0" angle="0" identifier="QHUDiF1OCa"/>
-  <guideline x="0" y="400.0" angle="0" identifier="b1sCINXlIf"/>
-  <guideline x="0" y="450.0" angle="0" identifier="cZWGp7UaLw"/>
-  <guideline x="0" y="500.0" angle="0" identifier="6Xec6MHcg0"/>
-  <guideline x="0" y="550.0" angle="0" identifier="2wClt6qHhg"/>
-  <guideline x="0" y="600.0" angle="0" identifier="CesnVmpODm"/>
-  <guideline x="0" y="650.0" angle="0" identifier="26xVOeGbZO"/>
-  <guideline x="0" y="700.0" angle="0" identifier="pPGFaYgzAJ"/>
   <outline>
-    <contour>
-      <point x="353" y="611" type="line"/>
-      <point x="353" y="611" type="line"/>
-      <point x="353" y="612" type="line"/>
-      <point x="353" y="612" type="line"/>
-    </contour>
-    <component base="comma"/>
-    <component base="period" yOffset="310"/>
+    <component base="comma" xOffset="-30.0"/>
+    <component base="period" xOffset="20.0" yOffset="344.0"/>
   </outline>
   <lib>
     <dict>
@@ -121,6 +82,8 @@
       <integer>10</integer>
       <key>com.typemytype.robofont.guideline.magnetic.xRDXJ0UxSP</key>
       <integer>10</integer>
+      <key>public.markColor</key>
+      <string>0.45,0.73,1,0.75</string>
     </dict>
   </lib>
 </glyph>

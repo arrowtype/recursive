@@ -1,30 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="quoteright" format="2">
-  <advance width="300"/>
+  <advance width="350"/>
   <unicode hex="2019"/>
   <outline>
-    <contour>
-      <point x="62" y="453" type="curve" smooth="yes"/>
-      <point x="83.0" y="432.0"/>
-      <point x="119.0" y="420.0"/>
-      <point x="164" y="420" type="curve"/>
-      <point x="189" y="420" type="line"/>
-      <point x="189.0" y="502"/>
-      <point x="264.0" y="583"/>
-      <point x="264" y="665" type="curve"/>
-      <point x="264" y="673"/>
-      <point x="262" y="676"/>
-      <point x="256" y="682" type="curve" smooth="yes"/>
-      <point x="230.0" y="708.0"/>
-      <point x="167.0" y="720.0"/>
-      <point x="119" y="720" type="curve"/>
-      <point x="94" y="720" type="line"/>
-      <point x="94.0" y="638"/>
-      <point x="54.0" y="552"/>
-      <point x="54" y="470" type="curve" smooth="yes"/>
-      <point x="54.0" y="462.0"/>
-      <point x="56" y="459"/>
-    </contour>
+    <component base="quoteleft" xScale="-1.0" xyScale="2.220446049250313e-16" yxScale="-2.220446049250313e-16" yScale="-1.0" xOffset="350.0000000000001" yOffset="1080.0"/>
   </outline>
   <lib>
     <dict>
@@ -36,6 +15,8 @@
       <integer>1</integer>
       <key>com.typemytype.robofont.Image.Sharpness</key>
       <real>0.4</real>
+      <key>public.markColor</key>
+      <string>0.45,0.73,1,0.75</string>
     </dict>
   </lib>
 </glyph>
