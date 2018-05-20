@@ -7,7 +7,6 @@
 		<dict>
 			<key>ascending</key>
 			<array>
-				<string>space</string>
 				<string>A</string>
 				<string>B</string>
 				<string>C</string>
@@ -196,9 +195,11 @@
 				<string>a.inktraps</string>
 				<string>n.inktraps</string>
 				<string>r.inktraps</string>
+				<string>k.replaced_with_smoother</string>
+				<string>x.replaced_with_smoother</string>
+				<string>y.replaced_with_smoother</string>
 				<string>Z.noserif</string>
 				<string>g.replaced_with_bigear</string>
-				<string>y.replaced_with_smoother</string>
 				<string>a.replaced_with_shorttail</string>
 				<string>A.nocontrast</string>
 				<string>B.nocontrast</string>
@@ -261,7 +262,6 @@
 	<integer>1</integer>
 	<key>public.glyphOrder</key>
 	<array>
-		<string>space</string>
 		<string>A</string>
 		<string>B</string>
 		<string>C</string>
@@ -450,9 +450,11 @@
 		<string>a.inktraps</string>
 		<string>n.inktraps</string>
 		<string>r.inktraps</string>
+		<string>k.replaced_with_smoother</string>
+		<string>x.replaced_with_smoother</string>
+		<string>y.replaced_with_smoother</string>
 		<string>Z.noserif</string>
 		<string>g.replaced_with_bigear</string>
-		<string>y.replaced_with_smoother</string>
 		<string>a.replaced_with_shorttail</string>
 		<string>A.nocontrast</string>
 		<string>B.nocontrast</string>
@@ -486,6 +488,7 @@
 		<string>m.alt1</string>
 		<string>four.alt1</string>
 		<string>six.alt1</string>
+		<string>bar</string>
 	</array>
 </dict>
 </plist>
