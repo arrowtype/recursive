@@ -13,7 +13,7 @@
     <data name="lineStacked" value="sequence"/>
     <data name="includeLegacyRules" value="False"/>
     <data name="keepWorkFiles" value="False"/>
-    <data name="previewtext" value="=&gt; &lt;p c/l.smoother ass=&quot;p/r.smoother /i.smoother nt-on/l.smoother /y.smoother  page-/l.smoother abe/l.smoother &quot;&gt;{{ fam/i.smoother /l.smoother /y.smoother Name }} {{ wdth }} {{ opsz }} {{ wght }} {{ /i.smoother ta/l.smoother  }} - {{ ve/r.smoother s/i.smoother onDate }}&lt;/p&gt;"/>
+    <data name="previewtext" value=",.//#"/>
     <data name="instancefolder" value="instances"/>
     <data name="verticalPreviewAxis" value="None"/>
     <!-- don't generate these glyphs -->
@@ -36,9 +36,18 @@
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
     <!-- instance definitions -->
-    <instance familyname="Recursive Mono" filename="../../../../../../../../../Applications/Superpolator 2.app/Contents/Resources/instances/RecursiveMono-wght_391.41.ufo" sortorder="2" stylename="wght_391.41">
+    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-wght_391.41.ufo" sortorder="2" stylename="wght_391.41">
         <location>
             <dimension name="weight" xvalue="440"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-wght_918.78.ufo" sortorder="3" stylename="wght_918.78">
+        <location>
+            <dimension name="weight" xvalue="1100"/>
         </location>
         <provideFeatures state="1"/>
         <provideGroups state="1"/>
