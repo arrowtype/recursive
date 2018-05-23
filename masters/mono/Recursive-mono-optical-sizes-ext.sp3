@@ -13,7 +13,7 @@
     <data name="lineStacked" value="sequence"/>
     <data name="includeLegacyRules" value="False"/>
     <data name="keepWorkFiles" value="False"/>
-    <data name="previewtext" value="ttss"/>
+    <data name="previewtext" value="99%"/>
     <data name="instancefolder" value="instances"/>
     <data name="verticalPreviewAxis" value="optical"/>
     <!-- don't generate these glyphs -->
@@ -33,7 +33,7 @@
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
-    <master familyname="Recursive Mono" filename="Recursive Mono-Heading Bold.ufo" sortorder="1" stylename="Heading Bold">
+    <master familyname="Recursive Mono Test" filename="Recursive Mono-Heading Bold.ufo" sortorder="1" stylename="Heading Bold test">
         <location>
             <dimension name="optical" xvalue="72"/>
             <dimension name="weight" xvalue="700"/>
@@ -69,61 +69,61 @@
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
     <!-- instance definitions -->
-    <instance familyname="Recursive Mono" filename="instances/Recursive Mono-Heading Regular.ufo" sortorder="6" styleMapFamilyName="Recursive Mono Heading Regular" styleMapStyleName="regular" stylename="Heading Regular">
+    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-HeadingRegular.ufo" sortorder="6" styleMapFamilyName="Recursive Mono Heading Regular" styleMapStyleName="regular" stylename="Heading Regular">
         <location>
             <dimension name="optical" xvalue="72"/>
             <dimension name="weight" xvalue="400"/>
         </location>
     </instance>
-    <instance familyname="Recursive Mono" filename="instances/Recursive Mono-Heading Medium.ufo" sortorder="7" stylename="Heading Medium">
+    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-HeadingMedium.ufo" sortorder="7" stylename="Heading Medium">
         <location>
             <dimension name="optical" xvalue="72"/>
             <dimension name="weight" xvalue="500"/>
         </location>
     </instance>
-    <instance familyname="Recursive Mono" filename="instances/Recursive Mono-Heading SemiBold.ufo" sortorder="8" styleMapFamilyName="Recursive Mono Heading SemiBold" stylename="Heading SemiBold">
+    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-HeadingSemiBold.ufo" sortorder="8" styleMapFamilyName="Recursive Mono Heading SemiBold" stylename="Heading SemiBold">
         <location>
             <dimension name="optical" xvalue="72"/>
             <dimension name="weight" xvalue="600"/>
         </location>
     </instance>
-    <instance familyname="Recursive Mono" filename="instances/Recursive Mono-Heading ExtraBold.ufo" sortorder="9" stylename="Heading ExtraBold">
+    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-HeadingExtraBold.ufo" sortorder="9" stylename="Heading ExtraBold">
         <location>
             <dimension name="optical" xvalue="72"/>
             <dimension name="weight" xvalue="800"/>
         </location>
     </instance>
-    <instance familyname="Recursive Mono" filename="instances/Recursive Mono-Heading Black.ufo" sortorder="10" stylename="Heading Black">
+    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-HeadingBlack.ufo" sortorder="10" stylename="Heading Black">
         <location>
             <dimension name="optical" xvalue="72"/>
             <dimension name="weight" xvalue="900"/>
         </location>
     </instance>
-    <instance familyname="Recursive Mono" filename="instances/Recursive Mono-Text Regular.ufo" sortorder="11" styleMapFamilyName="Recursive Mono Text Regular" styleMapStyleName="regular" stylename="Text Regular">
+    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-TextRegular.ufo" sortorder="11" styleMapFamilyName="Recursive Mono Text Regular" styleMapStyleName="regular" stylename="Text Regular">
         <location>
             <dimension name="optical" xvalue="10"/>
             <dimension name="weight" xvalue="400"/>
         </location>
     </instance>
-    <instance familyname="Recursive Mono" filename="instances/Recursive Mono-Text Medium.ufo" sortorder="12" stylename="Text Medium">
+    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-TextMedium.ufo" sortorder="12" stylename="Text Medium">
         <location>
             <dimension name="optical" xvalue="10"/>
             <dimension name="weight" xvalue="500"/>
         </location>
     </instance>
-    <instance familyname="Recursive Mono" filename="instances/Recursive Mono-Text SemiBold.ufo" sortorder="13" styleMapFamilyName="Recursive Mono Text SemiBold" stylename="Text SemiBold">
+    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-TextSemiBold.ufo" sortorder="13" styleMapFamilyName="Recursive Mono Text SemiBold" stylename="Text SemiBold">
         <location>
             <dimension name="optical" xvalue="10"/>
             <dimension name="weight" xvalue="600"/>
         </location>
     </instance>
-    <instance familyname="Recursive Mono" filename="instances/Recursive Mono-Text ExtraBold.ufo" sortorder="14" stylename="Text ExtraBold">
+    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-TextExtraBold.ufo" sortorder="14" stylename="Text ExtraBold">
         <location>
             <dimension name="optical" xvalue="10"/>
             <dimension name="weight" xvalue="800"/>
         </location>
     </instance>
-    <instance familyname="Recursive Mono" filename="instances/Recursive Mono-Text Black.ufo" sortorder="15" stylename="Text Black">
+    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-TextBlack.ufo" sortorder="15" stylename="Text Black">
         <location>
             <dimension name="optical" xvalue="10"/>
             <dimension name="weight" xvalue="900"/>
