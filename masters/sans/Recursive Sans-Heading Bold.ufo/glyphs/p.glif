@@ -4,7 +4,7 @@
   <unicode hex="0070"/>
   <outline>
     <contour>
-      <point x="225.0" y="-244.0" type="curve"/>
+      <point x="225.0" y="-200.0" type="curve"/>
       <point x="225.0" y="329.0" type="line" smooth="yes"/>
       <point x="225" y="441"/>
       <point x="223" y="492"/>
@@ -18,12 +18,12 @@
       <point x="61.0" y="506.0"/>
       <point x="65" y="475"/>
       <point x="65.0" y="436.0" type="curve" smooth="yes"/>
-      <point x="65.0" y="-188.0" type="line" smooth="yes"/>
-      <point x="65.0" y="-242.0"/>
-      <point x="110.0" y="-250.0"/>
-      <point x="167.0" y="-250.0" type="curve" smooth="yes"/>
-      <point x="190.0" y="-250.0"/>
-      <point x="210.0" y="-248.0"/>
+      <point x="65.0" y="-144.0" type="line" smooth="yes"/>
+      <point x="65.0" y="-198.0"/>
+      <point x="110.0" y="-206.0"/>
+      <point x="167.0" y="-206.0" type="curve" smooth="yes"/>
+      <point x="190.0" y="-206.0"/>
+      <point x="210.0" y="-204.0"/>
     </contour>
     <contour>
       <point x="560.0" y="461.0"/>
@@ -77,7 +77,7 @@
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>1,0.45,0.45,0.75</string>
+      <string>0.45,1,0.55,0.75</string>
     </dict>
   </lib>
 </glyph>

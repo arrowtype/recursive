@@ -4,8 +4,6 @@
 <dict>
 	<key>A</key>
 	<string>A_.glif</string>
-	<key>A.nocontrast</key>
-	<string>A_.nocontrast.glif</string>
 	<key>A.pointy</key>
 	<string>A_.pointy.glif</string>
 	<key>B</key>
@@ -14,10 +12,10 @@
 	<string>B_.alt1.glif</string>
 	<key>B.biggerserif</key>
 	<string>B_.biggerserif.glif</string>
+	<key>B.gothic</key>
+	<string>B_.gothic.glif</string>
 	<key>B.moreserif</key>
 	<string>B_.moreserif.glif</string>
-	<key>B.nocontrast</key>
-	<string>B_.nocontrast.glif</string>
 	<key>C</key>
 	<string>C_.glif</string>
 	<key>C.rounder</key>
@@ -28,30 +26,30 @@
 	<string>D_.alt1.glif</string>
 	<key>D.biggerserif</key>
 	<string>D_.biggerserif.glif</string>
+	<key>D.gothic</key>
+	<string>D_.gothic.glif</string>
 	<key>D.moreserif</key>
 	<string>D_.moreserif.glif</string>
-	<key>D.nocontrast</key>
-	<string>D_.nocontrast.glif</string>
 	<key>E</key>
 	<string>E_.glif</string>
 	<key>E.alt1</key>
 	<string>E_.alt1.glif</string>
 	<key>E.biggerserif</key>
 	<string>E_.biggerserif.glif</string>
+	<key>E.gothic</key>
+	<string>E_.gothic.glif</string>
 	<key>E.moreserif</key>
 	<string>E_.moreserif.glif</string>
-	<key>E.nocontrast</key>
-	<string>E_.nocontrast.glif</string>
 	<key>F</key>
 	<string>F_.glif</string>
 	<key>F.alt1</key>
 	<string>F_.alt1.glif</string>
 	<key>F.biggerserif</key>
 	<string>F_.biggerserif.glif</string>
+	<key>F.gothic</key>
+	<string>F_.gothic.glif</string>
 	<key>F.moreserif</key>
 	<string>F_.moreserif.glif</string>
-	<key>F.nocontrast</key>
-	<string>F_.nocontrast.glif</string>
 	<key>G</key>
 	<string>G_.glif</string>
 	<key>G.rounder</key>
@@ -60,26 +58,18 @@
 	<string>H_.glif</string>
 	<key>H.alt1</key>
 	<string>H_.alt1.glif</string>
-	<key>H.nocontrast</key>
-	<string>H_.nocontrast.glif</string>
 	<key>I</key>
 	<string>I_.glif</string>
-	<key>I.nocontrast</key>
-	<string>I_.nocontrast.glif</string>
 	<key>J</key>
 	<string>J_.glif</string>
 	<key>J.evencut</key>
 	<string>J_.evencut.glif</string>
-	<key>J.nocontrast</key>
-	<string>J_.nocontrast.glif</string>
 	<key>K</key>
 	<string>K_.glif</string>
-	<key>K.nocontrast</key>
-	<string>K_.nocontrast.glif</string>
+	<key>K.gothic</key>
+	<string>K_.gothic.glif</string>
 	<key>L</key>
 	<string>L_.glif</string>
-	<key>L.nocontrast</key>
-	<string>L_.nocontrast.glif</string>
 	<key>M</key>
 	<string>M_.glif</string>
 	<key>N</key>
@@ -92,6 +82,8 @@
 	<string>P_.alt1.glif</string>
 	<key>P.biggerserif</key>
 	<string>P_.biggerserif.glif</string>
+	<key>P.gothic</key>
+	<string>P_.gothic.glif</string>
 	<key>Q</key>
 	<string>Q_.glif</string>
 	<key>R</key>
@@ -100,6 +92,8 @@
 	<string>R_.alt1.glif</string>
 	<key>R.biggerserif</key>
 	<string>R_.biggerserif.glif</string>
+	<key>R.gothic</key>
+	<string>R_.gothic.glif</string>
 	<key>R.moreserif</key>
 	<string>R_.moreserif.glif</string>
 	<key>S</key>
@@ -108,8 +102,6 @@
 	<string>S_.rounder.glif</string>
 	<key>T</key>
 	<string>T_.glif</string>
-	<key>T.nocontrast</key>
-	<string>T_.nocontrast.glif</string>
 	<key>U</key>
 	<string>U_.glif</string>
 	<key>V</key>
@@ -146,6 +138,12 @@
 	<string>a.straighter.glif</string>
 	<key>ampersand</key>
 	<string>ampersand.glif</string>
+	<key>ampersand.nobar</key>
+	<string>ampersand.nobar.glif</string>
+	<key>ampersand.smooth</key>
+	<string>ampersand.smooth.glif</string>
+	<key>ampersand.straightbar</key>
+	<string>ampersand.straightbar.glif</string>
 	<key>asterisk</key>
 	<string>asterisk.glif</string>
 	<key>at</key>
@@ -164,18 +162,24 @@
 	<string>bar.glif</string>
 	<key>braceleft</key>
 	<string>braceleft.glif</string>
+	<key>braceleft.assymetrical</key>
+	<string>braceleft.assymetrical.glif</string>
 	<key>braceleft.cap</key>
 	<string>braceleft.cap.glif</string>
 	<key>braceleft.smooth</key>
 	<string>braceleft.smooth.glif</string>
 	<key>braceright</key>
 	<string>braceright.glif</string>
+	<key>braceright.assymetrical</key>
+	<string>braceright.assymetrical.glif</string>
 	<key>braceright.smooth</key>
 	<string>braceright.smooth.glif</string>
 	<key>bracketleft</key>
 	<string>bracketleft.glif</string>
 	<key>bracketright</key>
 	<string>bracketright.glif</string>
+	<key>bullet</key>
+	<string>bullet.glif</string>
 	<key>c</key>
 	<string>c.glif</string>
 	<key>c.evencut</key>
@@ -196,6 +200,8 @@
 	<string>d.straighter.glif</string>
 	<key>d.tooround</key>
 	<string>d.tooround.glif</string>
+	<key>divide</key>
+	<string>divide.glif</string>
 	<key>dollar</key>
 	<string>dollar.glif</string>
 	<key>dollar.lower</key>
@@ -208,6 +214,8 @@
 	<string>e.straighter.glif</string>
 	<key>eight</key>
 	<string>eight.glif</string>
+	<key>ellipsis</key>
+	<string>ellipsis.glif</string>
 	<key>equal</key>
 	<string>equal.glif</string>
 	<key>exclam</key>
@@ -218,26 +226,18 @@
 	<string>f.glif</string>
 	<key>f.italic</key>
 	<string>f.italic.glif</string>
-	<key>f.nocontrast</key>
-	<string>f.nocontrast.glif</string>
 	<key>f.replaced_with_ss01</key>
 	<string>f.replaced_with_ss01.glif</string>
-	<key>f.ss01_nocontrast</key>
-	<string>f.ss01_nocontrast.glif</string>
 	<key>f.straighter</key>
 	<string>f.straighter.glif</string>
 	<key>five</key>
 	<string>five.glif</string>
-	<key>five.nocontrast</key>
-	<string>five.nocontrast.glif</string>
 	<key>five.topserif</key>
 	<string>five.topserif.glif</string>
 	<key>four</key>
 	<string>four.glif</string>
 	<key>four.alt1</key>
 	<string>four.alt1.glif</string>
-	<key>four.nocontrast</key>
-	<string>four.nocontrast.glif</string>
 	<key>fraction</key>
 	<string>fraction.glif</string>
 	<key>g</key>
@@ -248,6 +248,8 @@
 	<string>g.italic.glif</string>
 	<key>g.replaced_with_bigear</key>
 	<string>g.replaced_with_bigear.glif</string>
+	<key>g.replaced_with_rounder</key>
+	<string>g.replaced_with_rounder.glif</string>
 	<key>g.ss01</key>
 	<string>g.ss01.glif</string>
 	<key>g.straighter</key>
@@ -266,12 +268,8 @@
 	<string>hyphen.glif</string>
 	<key>i</key>
 	<string>i.glif</string>
-	<key>i.nocontrast</key>
-	<string>i.nocontrast.glif</string>
 	<key>i.replaced_with_ss01</key>
 	<string>i.replaced_with_ss01.glif</string>
-	<key>i.ss01_nocontrast</key>
-	<string>i.ss01_nocontrast.glif</string>
 	<key>i.ss02</key>
 	<string>i.ss02.glif</string>
 	<key>i.ss03</key>
@@ -280,8 +278,6 @@
 	<string>i.straighter.glif</string>
 	<key>j</key>
 	<string>j.glif</string>
-	<key>j.nocontrast</key>
-	<string>j.nocontrast.glif</string>
 	<key>j.straighter</key>
 	<string>j.straighter.glif</string>
 	<key>k</key>
@@ -292,12 +288,8 @@
 	<string>k.straighter.glif</string>
 	<key>l</key>
 	<string>l.glif</string>
-	<key>l.nocontrast</key>
-	<string>l.nocontrast.glif</string>
 	<key>l.replaced_with_ss01</key>
 	<string>l.replaced_with_ss01.glif</string>
-	<key>l.ss01_nocontrast</key>
-	<string>l.ss01_nocontrast.glif</string>
 	<key>l.ss02</key>
 	<string>l.ss02.glif</string>
 	<key>l.ss03</key>
@@ -310,16 +302,24 @@
 	<string>m.glif</string>
 	<key>m.alt1</key>
 	<string>m.alt1.glif</string>
+	<key>m.roundcounter</key>
+	<string>m.roundcounter.glif</string>
 	<key>m.sharpcounter</key>
 	<string>m.sharpcounter.glif</string>
 	<key>m.straighter</key>
 	<string>m.straighter.glif</string>
+	<key>minus</key>
+	<string>minus.glif</string>
+	<key>multiply</key>
+	<string>multiply.glif</string>
 	<key>n</key>
 	<string>n.glif</string>
 	<key>n.evencut</key>
 	<string>n.evencut.glif</string>
 	<key>n.inktraps</key>
 	<string>n.inktraps.glif</string>
+	<key>n.roundcounter</key>
+	<string>n.roundcounter.glif</string>
 	<key>n.sharpcounter</key>
 	<string>n.sharpcounter.glif</string>
 	<key>n.smoothtraps</key>
@@ -338,8 +338,6 @@
 	<string>o.straighter.glif</string>
 	<key>one</key>
 	<string>one.glif</string>
-	<key>one.nocontrast</key>
-	<string>one.nocontrast.glif</string>
 	<key>p</key>
 	<string>p.glif</string>
 	<key>p.straighter</key>
@@ -354,6 +352,10 @@
 	<string>percent.glif</string>
 	<key>period</key>
 	<string>period.glif</string>
+	<key>plus</key>
+	<string>plus.glif</string>
+	<key>plusminus</key>
+	<string>plusminus.glif</string>
 	<key>q</key>
 	<string>q.glif</string>
 	<key>q.straighter</key>
@@ -384,8 +386,6 @@
 	<string>r.replaced_with_ss01.glif</string>
 	<key>r.smoothtraps</key>
 	<string>r.smoothtraps.glif</string>
-	<key>r.ss01_nocontrast</key>
-	<string>r.ss01_nocontrast.glif</string>
 	<key>r.straighter</key>
 	<string>r.straighter.glif</string>
 	<key>registered</key>
@@ -398,8 +398,6 @@
 	<string>semicolon.glif</string>
 	<key>seven</key>
 	<string>seven.glif</string>
-	<key>seven.nocontrast</key>
-	<string>seven.nocontrast.glif</string>
 	<key>six</key>
 	<string>six.glif</string>
 	<key>six.alt1</key>
@@ -408,8 +406,6 @@
 	<string>slash.glif</string>
 	<key>t</key>
 	<string>t.glif</string>
-	<key>t.nocontrast</key>
-	<string>t.nocontrast.glif</string>
 	<key>t.ss03</key>
 	<string>t.ss03.glif</string>
 	<key>t.straighter</key>
@@ -420,8 +416,6 @@
 	<string>three.smooth.glif</string>
 	<key>two</key>
 	<string>two.glif</string>
-	<key>two.nocontrast</key>
-	<string>two.nocontrast.glif</string>
 	<key>u</key>
 	<string>u.glif</string>
 	<key>u.evencut</key>
@@ -432,8 +426,6 @@
 	<string>u.straighter.glif</string>
 	<key>underscore</key>
 	<string>underscore.glif</string>
-	<key>uni2022</key>
-	<string>uni2022.glif</string>
 	<key>v</key>
 	<string>v.glif</string>
 	<key>v.pointy</key>

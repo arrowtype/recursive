@@ -97,20 +97,32 @@
 				<string>slash</string>
 				<string>backslash</string>
 				<string>fraction</string>
+				<string>bar</string>
 				<string>at</string>
-				<string>uni2022</string>
+				<string>ampersand</string>
+				<string>bullet</string>
+				<string>plus</string>
+				<string>minus</string>
+				<string>plusminus</string>
+				<string>divide</string>
+				<string>multiply</string>
 				<string>equal</string>
 				<string>less</string>
 				<string>greater</string>
 				<string>dollar</string>
 				<string>grave</string>
+				<string>braceleft.assymetrical</string>
+				<string>braceright.assymetrical</string>
 				<string>braceleft.cap</string>
+				<string>ampersand.nobar</string>
+				<string>ampersand.straightbar</string>
 				<string>dollar.lower</string>
 				<string>seven.alt3</string>
 				<string>two.sharp</string>
-				<string>three.smooth</string>
 				<string>five.topserif</string>
 				<string>five.replaced_with_replaced_with_curvedown</string>
+				<string>three.smooth</string>
+				<string>ampersand.smooth</string>
 				<string>a.straighter</string>
 				<string>b.straighter</string>
 				<string>c.straighter</string>
@@ -150,6 +162,12 @@
 				<string>w.italic</string>
 				<string>y.italic</string>
 				<string>z.italic</string>
+				<string>B.smallserif</string>
+				<string>D.smallserif</string>
+				<string>E.smallserif</string>
+				<string>F.smallserif</string>
+				<string>P.smallserif</string>
+				<string>R.smallserif</string>
 				<string>Y.ss02</string>
 				<string>i.ss02</string>
 				<string>l.ss02</string>
@@ -171,8 +189,11 @@
 				<string>k.replaced_with_smoother</string>
 				<string>x.replaced_with_smoother</string>
 				<string>y.replaced_with_smoother</string>
+				<string>m.roundcounter</string>
+				<string>n.roundcounter</string>
 				<string>g.ss01alt</string>
 				<string>g.replaced_with_bigear</string>
+				<string>g.replaced_with_rounder</string>
 			</array>
 			<key>type</key>
 			<string>glyphList</string>
@@ -519,20 +540,32 @@
 		<string>slash</string>
 		<string>backslash</string>
 		<string>fraction</string>
+		<string>bar</string>
 		<string>at</string>
-		<string>uni2022</string>
+		<string>ampersand</string>
+		<string>bullet</string>
+		<string>plus</string>
+		<string>minus</string>
+		<string>plusminus</string>
+		<string>divide</string>
+		<string>multiply</string>
 		<string>equal</string>
 		<string>less</string>
 		<string>greater</string>
 		<string>dollar</string>
 		<string>grave</string>
+		<string>braceleft.assymetrical</string>
+		<string>braceright.assymetrical</string>
 		<string>braceleft.cap</string>
+		<string>ampersand.nobar</string>
+		<string>ampersand.straightbar</string>
 		<string>dollar.lower</string>
 		<string>seven.alt3</string>
 		<string>two.sharp</string>
-		<string>three.smooth</string>
 		<string>five.topserif</string>
 		<string>five.replaced_with_replaced_with_curvedown</string>
+		<string>three.smooth</string>
+		<string>ampersand.smooth</string>
 		<string>a.straighter</string>
 		<string>b.straighter</string>
 		<string>c.straighter</string>
@@ -572,6 +605,12 @@
 		<string>w.italic</string>
 		<string>y.italic</string>
 		<string>z.italic</string>
+		<string>B.smallserif</string>
+		<string>D.smallserif</string>
+		<string>E.smallserif</string>
+		<string>F.smallserif</string>
+		<string>P.smallserif</string>
+		<string>R.smallserif</string>
 		<string>Y.ss02</string>
 		<string>i.ss02</string>
 		<string>l.ss02</string>
@@ -593,17 +632,11 @@
 		<string>k.replaced_with_smoother</string>
 		<string>x.replaced_with_smoother</string>
 		<string>y.replaced_with_smoother</string>
+		<string>m.roundcounter</string>
+		<string>n.roundcounter</string>
 		<string>g.ss01alt</string>
 		<string>g.replaced_with_bigear</string>
-		<string>bar</string>
-		<string>ampersand</string>
-		<string>space</string>
-		<string>B.smallserif</string>
-		<string>D.smallserif</string>
-		<string>E.smallserif</string>
-		<string>F.smallserif</string>
-		<string>P.smallserif</string>
-		<string>R.smallserif</string>
+		<string>g.replaced_with_rounder</string>
 	</array>
 </dict>
 </plist>

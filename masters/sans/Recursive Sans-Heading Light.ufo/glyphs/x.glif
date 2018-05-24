@@ -36,9 +36,9 @@
       <point x="471" y="-6"/>
     </contour>
     <contour>
-      <point x="515" y="526" type="curve" smooth="yes"/>
-      <point x="477" y="526" type="line"/>
-      <point x="423" y="403"/>
+      <point x="487" y="530.0" type="curve" smooth="yes"/>
+      <point x="479" y="530" type="line"/>
+      <point x="425" y="407"/>
       <point x="363" y="310"/>
       <point x="293" y="227" type="curve" smooth="yes"/>
       <point x="286" y="220"/>
@@ -61,13 +61,13 @@
       <point x="316" y="183"/>
       <point x="322" y="190" type="curve" smooth="yes"/>
       <point x="398" y="278"/>
-      <point x="467" y="380"/>
-      <point x="522" y="503" type="curve" smooth="yes"/>
-      <point x="525" y="510"/>
-      <point x="526" y="514"/>
-      <point x="526" y="518" type="curve" smooth="yes"/>
-      <point x="526.0" y="524.0"/>
-      <point x="522.0" y="526.0"/>
+      <point x="466" y="378"/>
+      <point x="521" y="501" type="curve" smooth="yes"/>
+      <point x="524" y="508"/>
+      <point x="525" y="511"/>
+      <point x="525" y="517" type="curve" smooth="yes"/>
+      <point x="525.0" y="525.0"/>
+      <point x="515" y="530"/>
     </contour>
   </outline>
   <lib>
@@ -146,6 +146,8 @@
       <integer>10</integer>
       <key>com.typemytype.robofont.guideline.magnetic.zo7v5Zoc9H</key>
       <integer>10</integer>
+      <key>public.markColor</key>
+      <string>0.45,1,0.55,0.75</string>
     </dict>
   </lib>
 </glyph>
