@@ -4,12 +4,12 @@
   <unicode hex="002C"/>
   <outline>
     <contour>
-      <point x="298" y="-206" type="curve" smooth="yes"/>
-      <point x="327" y="-206"/>
-      <point x="343" y="-201"/>
-      <point x="357" y="-187" type="curve" smooth="yes"/>
+      <point x="284" y="-206.0" type="curve" smooth="yes"/>
+      <point x="324.40506329113924" y="-206.0"/>
+      <point x="343.228860392086" y="-199.77113960791397"/>
+      <point x="368" y="-175" type="curve" smooth="yes"/>
       <point x="420" y="-123"/>
-      <point x="475" y="24"/>
+      <point x="475.0" y="-11.0"/>
       <point x="475" y="72" type="curve" smooth="yes"/>
       <point x="475" y="146"/>
       <point x="434" y="177"/>
@@ -18,10 +18,10 @@
       <point x="250" y="175"/>
       <point x="208" y="170" type="curve"/>
       <point x="208" y="52"/>
-      <point x="180" y="-86"/>
+      <point x="190" y="-70.0"/>
       <point x="141" y="-156" type="curve"/>
-      <point x="184" y="-192"/>
-      <point x="230" y="-206"/>
+      <point x="183.15199599647377" y="-191.29004315983852"/>
+      <point x="226.99324324324326" y="-206.0"/>
     </contour>
   </outline>
   <lib>
@@ -35,7 +35,7 @@
       <key>com.typemytype.robofont.Image.Sharpness</key>
       <real>0.4</real>
       <key>public.markColor</key>
-      <string>1,0,0,1</string>
+      <string>1,1,0,1</string>
     </dict>
   </lib>
 </glyph>
