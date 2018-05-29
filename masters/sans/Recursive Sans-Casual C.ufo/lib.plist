@@ -5,149 +5,10 @@
 	<key>com.defcon.sortDescriptor</key>
 	<array>
 		<dict>
-			<key>ascending</key>
-			<array>
-				<string>space</string>
-				<string>A</string>
-				<string>B</string>
-				<string>C</string>
-				<string>D</string>
-				<string>E</string>
-				<string>F</string>
-				<string>G</string>
-				<string>H</string>
-				<string>I</string>
-				<string>J</string>
-				<string>K</string>
-				<string>L</string>
-				<string>M</string>
-				<string>N</string>
-				<string>O</string>
-				<string>P</string>
-				<string>Q</string>
-				<string>R</string>
-				<string>S</string>
-				<string>T</string>
-				<string>U</string>
-				<string>V</string>
-				<string>W</string>
-				<string>Y</string>
-				<string>Z</string>
-				<string>a</string>
-				<string>b</string>
-				<string>c</string>
-				<string>d</string>
-				<string>e</string>
-				<string>f</string>
-				<string>g</string>
-				<string>h</string>
-				<string>i</string>
-				<string>j</string>
-				<string>k</string>
-				<string>l</string>
-				<string>m</string>
-				<string>n</string>
-				<string>o</string>
-				<string>p</string>
-				<string>q</string>
-				<string>r</string>
-				<string>s</string>
-				<string>t</string>
-				<string>u</string>
-				<string>v</string>
-				<string>w</string>
-				<string>x</string>
-				<string>y</string>
-				<string>z</string>
-				<string>zero</string>
-				<string>one</string>
-				<string>two</string>
-				<string>three</string>
-				<string>four</string>
-				<string>five</string>
-				<string>six</string>
-				<string>seven</string>
-				<string>eight</string>
-				<string>nine</string>
-				<string>underscore</string>
-				<string>hyphen</string>
-				<string>parenleft</string>
-				<string>parenright</string>
-				<string>bracketleft</string>
-				<string>bracketright</string>
-				<string>braceleft</string>
-				<string>braceright</string>
-				<string>numbersign</string>
-				<string>percent</string>
-				<string>quotesingle</string>
-				<string>quotedbl</string>
-				<string>quoteleft</string>
-				<string>quoteright</string>
-				<string>quotedblleft</string>
-				<string>quotedblright</string>
-				<string>asterisk</string>
-				<string>period</string>
-				<string>comma</string>
-				<string>colon</string>
-				<string>semicolon</string>
-				<string>exclam</string>
-				<string>exclamdown</string>
-				<string>question</string>
-				<string>questiondown</string>
-				<string>slash</string>
-				<string>backslash</string>
-				<string>fraction</string>
-				<string>bar</string>
-				<string>at</string>
-				<string>ampersand</string>
-				<string>plus</string>
-				<string>minus</string>
-				<string>equal</string>
-				<string>less</string>
-				<string>greater</string>
-				<string>uni2190</string>
-				<string>uni2191</string>
-				<string>uni2192</string>
-				<string>uni2193</string>
-				<string>dollar</string>
-				<string>asciicircum</string>
-				<string>asciitilde</string>
-				<string>grave</string>
-				<string>ellipses</string>
-				<string>braceleft.asymmetrical</string>
-				<string>braceright.asymmetrical</string>
-				<string>ampersand.nobar</string>
-				<string>b.replaced_with_higherjoints</string>
-				<string>d.replaced_with_higherjoints</string>
-				<string>h.replaced_with_higherjoints</string>
-				<string>n.replaced_with_higherjoints</string>
-				<string>p.replaced_with_higherjoints</string>
-				<string>q.replaced_with_higherjoints</string>
-				<string>r.replaced_with_higherjoints</string>
-				<string>a.italic</string>
-				<string>f.italic</string>
-				<string>g.italic</string>
-				<string>r.italic</string>
-				<string>y.italic</string>
-				<string>c.ss01</string>
-				<string>i.ss01</string>
-				<string>l.ss01</string>
-				<string>r.ss01</string>
-				<string>k.replaced_with_smoother</string>
-				<string>x.replaced_with_smoother</string>
-				<string>y.replaced_with_smoother</string>
-				<string>m.roundcounter</string>
-				<string>n.roundcounter</string>
-				<string>n.alt1</string>
-				<string>Z.noserif</string>
-				<string>a.rounder</string>
-				<string>e.tooround</string>
-				<string>x.replaced_with_morecasual</string>
-				<string>w.replaced_with_alt-flattop</string>
-				<string>n.replaced_with_roundcounter</string>
-			</array>
+			<key>allowPseudoUnicode</key>
+			<true/>
 			<key>type</key>
-			<string>glyphList</string>
+			<string>cannedDesign</string>
 		</dict>
 	</array>
 	<key>com.typemytype.robofont.compileSettings.autohint</key>
@@ -278,6 +139,13 @@
 		<string>braceleft.asymmetrical</string>
 		<string>braceright.asymmetrical</string>
 		<string>ampersand.nobar</string>
+		<string>a.italic</string>
+		<string>f.italic</string>
+		<string>g.italic</string>
+		<string>i.italic</string>
+		<string>l.italic</string>
+		<string>r.italic</string>
+		<string>y.italic</string>
 		<string>b.replaced_with_higherjoints</string>
 		<string>d.replaced_with_higherjoints</string>
 		<string>h.replaced_with_higherjoints</string>
@@ -285,11 +153,6 @@
 		<string>p.replaced_with_higherjoints</string>
 		<string>q.replaced_with_higherjoints</string>
 		<string>r.replaced_with_higherjoints</string>
-		<string>a.italic</string>
-		<string>f.italic</string>
-		<string>g.italic</string>
-		<string>r.italic</string>
-		<string>y.italic</string>
 		<string>c.ss01</string>
 		<string>i.ss01</string>
 		<string>l.ss01</string>
@@ -300,14 +163,14 @@
 		<string>m.roundcounter</string>
 		<string>n.roundcounter</string>
 		<string>n.alt1</string>
+		<string>g.ss02</string>
 		<string>Z.noserif</string>
 		<string>a.rounder</string>
+		<string>l.alt-wide</string>
 		<string>e.tooround</string>
 		<string>x.replaced_with_morecasual</string>
 		<string>w.replaced_with_alt-flattop</string>
 		<string>n.replaced_with_roundcounter</string>
-		<string>l.alt-wide</string>
-		<string>g.ss02</string>
 	</array>
 </dict>
 </plist>
