@@ -30,6 +30,8 @@
 	<string>E_.replaced_with_stemtaper.glif</string>
 	<key>E.stemtaper</key>
 	<string>E_.stemtaper.glif</string>
+	<key>Euro</key>
+	<string>E_uro.glif</string>
 	<key>F</key>
 	<string>F_.glif</string>
 	<key>F.replaced_with_stemtaper</key>
@@ -106,8 +108,8 @@
 	<string>a.smoothtraps.glif</string>
 	<key>a.ss01</key>
 	<string>a.ss01.glif</string>
-	<key>ae</key>
-	<string>ae.glif</string>
+	<key>acute</key>
+	<string>acute.glif</string>
 	<key>ampersand</key>
 	<string>ampersand.glif</string>
 	<key>ampersand.v1</key>
@@ -142,8 +144,8 @@
 	<string>bracketleft.glif</string>
 	<key>bracketright</key>
 	<string>bracketright.glif</string>
-	<key>brokenbar</key>
-	<string>brokenbar.glif</string>
+	<key>breve</key>
+	<string>breve.glif</string>
 	<key>bullet</key>
 	<string>bullet.glif</string>
 	<key>c</key>
@@ -152,14 +154,32 @@
 	<string>c.sansfirst.glif</string>
 	<key>c.ss01</key>
 	<string>c.ss01.glif</string>
+	<key>caron</key>
+	<string>caron.glif</string>
+	<key>cedilla</key>
+	<string>cedilla.glif</string>
+	<key>cent</key>
+	<string>cent.glif</string>
+	<key>circumflex</key>
+	<string>circumflex.glif</string>
 	<key>colon</key>
 	<string>colon.glif</string>
 	<key>comma</key>
 	<string>comma.glif</string>
+	<key>currency</key>
+	<string>currency.glif</string>
 	<key>d</key>
 	<string>d.glif</string>
 	<key>d.replaced_with_higherjoints</key>
 	<string>d.replaced_with_higherjoints.glif</string>
+	<key>dagger</key>
+	<string>dagger.glif</string>
+	<key>daggerdbl</key>
+	<string>daggerdbl.glif</string>
+	<key>degree</key>
+	<string>degree.glif</string>
+	<key>dieresis</key>
+	<string>dieresis.glif</string>
 	<key>divide</key>
 	<string>divide.glif</string>
 	<key>dollar</key>
@@ -168,6 +188,8 @@
 	<string>dollar.curvy.glif</string>
 	<key>dollar.lower</key>
 	<string>dollar.lower.glif</string>
+	<key>dotaccent</key>
+	<string>dotaccent.glif</string>
 	<key>e</key>
 	<string>e.glif</string>
 	<key>e.alt1</key>
@@ -182,6 +204,10 @@
 	<string>eight.alt1.glif</string>
 	<key>ellipsis</key>
 	<string>ellipsis.glif</string>
+	<key>emdash</key>
+	<string>emdash.glif</string>
+	<key>endash</key>
+	<string>endash.glif</string>
 	<key>equal</key>
 	<string>equal.glif</string>
 	<key>exclam</key>
@@ -210,6 +236,8 @@
 	<string>five.alt1.glif</string>
 	<key>five.middlewaist</key>
 	<string>five.middlewaist.glif</string>
+	<key>florin</key>
+	<string>florin.glif</string>
 	<key>four</key>
 	<string>four.glif</string>
 	<key>four.alt1</key>
@@ -244,6 +272,14 @@
 	<string>grave.glif</string>
 	<key>greater</key>
 	<string>greater.glif</string>
+	<key>guillemotleft</key>
+	<string>guillemotleft.glif</string>
+	<key>guillemotright</key>
+	<string>guillemotright.glif</string>
+	<key>guilsinglleft</key>
+	<string>guilsinglleft.glif</string>
+	<key>guilsinglright</key>
+	<string>guilsinglright.glif</string>
 	<key>h</key>
 	<string>h.glif</string>
 	<key>h.replaced_with_higherjoints</key>
@@ -252,6 +288,8 @@
 	<string>h.replaced_with_morecasual.glif</string>
 	<key>h.wedgeserif</key>
 	<string>h.wedgeserif.glif</string>
+	<key>hungarumlaut</key>
+	<string>hungarumlaut.glif</string>
 	<key>hyphen</key>
 	<string>hyphen.glif</string>
 	<key>i</key>
@@ -282,6 +320,8 @@
 	<string>k.replaced_with_smoother.glif</string>
 	<key>l</key>
 	<string>l.glif</string>
+	<key>l.alt-wide</key>
+	<string>l.alt-wide.glif</string>
 	<key>l.extra</key>
 	<string>l.extra.glif</string>
 	<key>l.italic</key>
@@ -306,6 +346,8 @@
 	<string>less.replaced_with_arrow.glif</string>
 	<key>less.replaced_with_taller</key>
 	<string>less.replaced_with_taller.glif</string>
+	<key>logicalnot</key>
+	<string>logicalnot.glif</string>
 	<key>m</key>
 	<string>m.glif</string>
 	<key>m.alt3</key>
@@ -354,6 +396,8 @@
 	<string>o.replaced_with_morecasual.glif</string>
 	<key>o.symmetrical</key>
 	<string>o.symmetrical.glif</string>
+	<key>ogonek</key>
+	<string>ogonek.glif</string>
 	<key>one</key>
 	<string>one.glif</string>
 	<key>one.alt1</key>
@@ -370,6 +414,8 @@
 	<string>p.glif</string>
 	<key>p.replaced_with_higherjoints</key>
 	<string>p.replaced_with_higherjoints.glif</string>
+	<key>paragraph</key>
+	<string>paragraph.glif</string>
 	<key>parenleft</key>
 	<string>parenleft.glif</string>
 	<key>parenright</key>
@@ -382,6 +428,8 @@
 	<string>period.glif</string>
 	<key>periodcentered</key>
 	<string>periodcentered.glif</string>
+	<key>perthousand</key>
+	<string>perthousand.glif</string>
 	<key>plus</key>
 	<string>plus.glif</string>
 	<key>plusminus</key>
@@ -396,6 +444,8 @@
 	<string>questiondown.glif</string>
 	<key>quotedbl</key>
 	<string>quotedbl.glif</string>
+	<key>quotedblbase</key>
+	<string>quotedblbase.glif</string>
 	<key>quotedblleft</key>
 	<string>quotedblleft.glif</string>
 	<key>quotedblright</key>
@@ -404,6 +454,8 @@
 	<string>quoteleft.glif</string>
 	<key>quoteright</key>
 	<string>quoteright.glif</string>
+	<key>quotesinglbase</key>
+	<string>quotesinglbase.glif</string>
 	<key>quotesingle</key>
 	<string>quotesingle.glif</string>
 	<key>r</key>
@@ -436,8 +488,12 @@
 	<string>r.ss02.glif</string>
 	<key>r.wedgeserif</key>
 	<string>r.wedgeserif.glif</string>
+	<key>ring</key>
+	<string>ring.glif</string>
 	<key>s</key>
 	<string>s.glif</string>
+	<key>section</key>
+	<string>section.glif</string>
 	<key>semicolon</key>
 	<string>semicolon.glif</string>
 	<key>seven</key>
@@ -452,6 +508,8 @@
 	<string>slash.glif</string>
 	<key>space</key>
 	<string>space.glif</string>
+	<key>sterling</key>
+	<string>sterling.glif</string>
 	<key>t</key>
 	<string>t.glif</string>
 	<key>t.wedgeserif</key>
@@ -462,6 +520,10 @@
 	<string>three.alt1.glif</string>
 	<key>threequarters</key>
 	<string>threequarters.glif</string>
+	<key>tilde</key>
+	<string>tilde.glif</string>
+	<key>trademark</key>
+	<string>trademark.glif</string>
 	<key>two</key>
 	<string>two.glif</string>
 	<key>two.alt1</key>
@@ -498,6 +560,8 @@
 	<string>v.wedgeserif.glif</string>
 	<key>w</key>
 	<string>w.glif</string>
+	<key>w.replaced_with_alt-flattop</key>
+	<string>w.replaced_with_alt-flattop.glif</string>
 	<key>x</key>
 	<string>x.glif</string>
 	<key>x.replaced_with_smoother</key>
@@ -512,6 +576,8 @@
 	<string>y.replaced_with_smoother.glif</string>
 	<key>y.wedgeserif</key>
 	<string>y.wedgeserif.glif</string>
+	<key>yen</key>
+	<string>yen.glif</string>
 	<key>z</key>
 	<string>z.glif</string>
 	<key>zero</key>

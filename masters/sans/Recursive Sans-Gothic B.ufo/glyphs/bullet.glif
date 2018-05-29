@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="bullet" format="2">
   <advance width="600"/>
+  <unicode hex="2022"/>
   <outline>
     <contour>
       <point x="450" y="150" type="curve"/>
@@ -22,7 +23,7 @@
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>1,0.45,0.45,0.75</string>
+      <string>0.45,0.73,1,0.75</string>
     </dict>
   </lib>
 </glyph>

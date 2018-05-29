@@ -5,10 +5,166 @@
 	<key>com.defcon.sortDescriptor</key>
 	<array>
 		<dict>
-			<key>allowPseudoUnicode</key>
-			<true/>
+			<key>ascending</key>
+			<array>
+				<string>space</string>
+				<string>A</string>
+				<string>B</string>
+				<string>C</string>
+				<string>D</string>
+				<string>E</string>
+				<string>F</string>
+				<string>G</string>
+				<string>H</string>
+				<string>I</string>
+				<string>J</string>
+				<string>K</string>
+				<string>L</string>
+				<string>M</string>
+				<string>N</string>
+				<string>O</string>
+				<string>P</string>
+				<string>Q</string>
+				<string>R</string>
+				<string>S</string>
+				<string>T</string>
+				<string>U</string>
+				<string>V</string>
+				<string>W</string>
+				<string>X</string>
+				<string>Y</string>
+				<string>Z</string>
+				<string>a</string>
+				<string>b</string>
+				<string>c</string>
+				<string>d</string>
+				<string>e</string>
+				<string>f</string>
+				<string>g</string>
+				<string>h</string>
+				<string>i</string>
+				<string>j</string>
+				<string>k</string>
+				<string>l</string>
+				<string>m</string>
+				<string>n</string>
+				<string>o</string>
+				<string>p</string>
+				<string>q</string>
+				<string>r</string>
+				<string>s</string>
+				<string>t</string>
+				<string>u</string>
+				<string>v</string>
+				<string>w</string>
+				<string>x</string>
+				<string>y</string>
+				<string>z</string>
+				<string>ae</string>
+				<string>zero</string>
+				<string>one</string>
+				<string>two</string>
+				<string>three</string>
+				<string>four</string>
+				<string>five</string>
+				<string>six</string>
+				<string>seven</string>
+				<string>eight</string>
+				<string>nine</string>
+				<string>underscore</string>
+				<string>hyphen</string>
+				<string>parenleft</string>
+				<string>parenright</string>
+				<string>bracketleft</string>
+				<string>bracketright</string>
+				<string>braceleft</string>
+				<string>braceright</string>
+				<string>numbersign</string>
+				<string>percent</string>
+				<string>quotesingle</string>
+				<string>quotedbl</string>
+				<string>quoteleft</string>
+				<string>quoteright</string>
+				<string>quotedblleft</string>
+				<string>quotedblright</string>
+				<string>asterisk</string>
+				<string>period</string>
+				<string>comma</string>
+				<string>colon</string>
+				<string>semicolon</string>
+				<string>exclam</string>
+				<string>exclamdown</string>
+				<string>question</string>
+				<string>questiondown</string>
+				<string>slash</string>
+				<string>backslash</string>
+				<string>fraction</string>
+				<string>bar</string>
+				<string>at</string>
+				<string>ampersand</string>
+				<string>plus</string>
+				<string>equal</string>
+				<string>less</string>
+				<string>greater</string>
+				<string>uni2190</string>
+				<string>uni2191</string>
+				<string>uni2192</string>
+				<string>uni2193</string>
+				<string>dollar</string>
+				<string>asciicircum</string>
+				<string>asciitilde</string>
+				<string>grave</string>
+				<string>ellipses</string>
+				<string>fl</string>
+				<string>asterisk.copy_1</string>
+				<string>period.copy_1</string>
+				<string>comma.copy_1</string>
+				<string>colon.copy_1</string>
+				<string>semicolon.copy_1</string>
+				<string>exclam.copy_1</string>
+				<string>exclamdown.copy_1</string>
+				<string>question.copy_1</string>
+				<string>questiondown.copy_1</string>
+				<string>slash.copy_1</string>
+				<string>backslash.copy_1</string>
+				<string>braceleft.asymmetrical</string>
+				<string>braceright.asymmetrical</string>
+				<string>five.topserif</string>
+				<string>a.italic</string>
+				<string>f.italic</string>
+				<string>g.italic</string>
+				<string>i.italic</string>
+				<string>l.italic</string>
+				<string>r.italic</string>
+				<string>y.italic</string>
+				<string>c.ss01</string>
+				<string>i.ss01</string>
+				<string>l.ss01</string>
+				<string>r.ss01</string>
+				<string>C.rounder</string>
+				<string>G.rounder</string>
+				<string>S.rounder</string>
+				<string>a.smoothtraps</string>
+				<string>n.smoothtraps</string>
+				<string>r.smoothtraps</string>
+				<string>k.replaced_with_smoother</string>
+				<string>x.replaced_with_smoother</string>
+				<string>y.replaced_with_smoother</string>
+				<string>m.roundcounter</string>
+				<string>n.roundcounter</string>
+				<string>n.alt1</string>
+				<string>l.wide</string>
+				<string>Z.noserif</string>
+				<string>R.sharper</string>
+				<string>e.highcontrast</string>
+				<string>s.reversecontrast</string>
+				<string>x.straight_diagonal</string>
+				<string>g.replaced_with_ss01</string>
+				<string>c.replaced_with_sharper</string>
+				<string>w.replaced_with_alt-flattop</string>
+			</array>
 			<key>type</key>
-			<string>cannedDesign</string>
+			<string>glyphList</string>
 		</dict>
 	</array>
 	<key>com.typemytype.robofont.compileSettings.autohint</key>
@@ -93,61 +249,62 @@
 		<string>seven</string>
 		<string>eight</string>
 		<string>nine</string>
+		<string>underscore</string>
+		<string>hyphen</string>
+		<string>parenleft</string>
+		<string>parenright</string>
+		<string>bracketleft</string>
+		<string>bracketright</string>
+		<string>braceleft</string>
+		<string>braceright</string>
+		<string>numbersign</string>
+		<string>percent</string>
+		<string>quotesingle</string>
+		<string>quotedbl</string>
+		<string>quoteleft</string>
+		<string>quoteright</string>
+		<string>quotedblleft</string>
+		<string>quotedblright</string>
+		<string>asterisk</string>
+		<string>period</string>
+		<string>comma</string>
+		<string>colon</string>
+		<string>semicolon</string>
+		<string>exclam</string>
+		<string>exclamdown</string>
+		<string>question</string>
+		<string>questiondown</string>
+		<string>slash</string>
+		<string>backslash</string>
+		<string>fraction</string>
+		<string>bar</string>
+		<string>at</string>
+		<string>ampersand</string>
+		<string>plus</string>
+		<string>equal</string>
+		<string>less</string>
+		<string>greater</string>
 		<string>uni2190</string>
 		<string>uni2191</string>
 		<string>uni2192</string>
 		<string>uni2193</string>
-		<string>ampersand</string>
+		<string>dollar</string>
 		<string>asciicircum</string>
 		<string>asciitilde</string>
-		<string>asterisk</string>
-		<string>at</string>
-		<string>backslash</string>
-		<string>bar</string>
-		<string>braceleft</string>
-		<string>braceright</string>
-		<string>bracketleft</string>
-		<string>bracketright</string>
-		<string>colon</string>
-		<string>comma</string>
-		<string>dollar</string>
-		<string>ellipses</string>
-		<string>equal</string>
-		<string>exclam</string>
-		<string>exclamdown</string>
-		<string>fraction</string>
 		<string>grave</string>
-		<string>greater</string>
-		<string>hyphen</string>
-		<string>less</string>
-		<string>numbersign</string>
-		<string>parenleft</string>
-		<string>parenright</string>
-		<string>percent</string>
-		<string>period</string>
-		<string>plus</string>
-		<string>question</string>
-		<string>questiondown</string>
-		<string>quotedbl</string>
-		<string>quotedblleft</string>
-		<string>quotedblright</string>
-		<string>quoteleft</string>
-		<string>quoteright</string>
-		<string>quotesingle</string>
-		<string>semicolon</string>
-		<string>slash</string>
-		<string>underscore</string>
+		<string>ellipses</string>
+		<string>fl</string>
 		<string>asterisk.copy_1</string>
-		<string>backslash.copy_1</string>
-		<string>colon.copy_1</string>
+		<string>period.copy_1</string>
 		<string>comma.copy_1</string>
+		<string>colon.copy_1</string>
+		<string>semicolon.copy_1</string>
 		<string>exclam.copy_1</string>
 		<string>exclamdown.copy_1</string>
-		<string>period.copy_1</string>
 		<string>question.copy_1</string>
 		<string>questiondown.copy_1</string>
-		<string>semicolon.copy_1</string>
 		<string>slash.copy_1</string>
+		<string>backslash.copy_1</string>
 		<string>braceleft.asymmetrical</string>
 		<string>braceright.asymmetrical</string>
 		<string>five.topserif</string>
@@ -159,7 +316,6 @@
 		<string>r.italic</string>
 		<string>y.italic</string>
 		<string>c.ss01</string>
-		<string>g.ss01</string>
 		<string>i.ss01</string>
 		<string>l.ss01</string>
 		<string>r.ss01</string>
@@ -175,12 +331,15 @@
 		<string>m.roundcounter</string>
 		<string>n.roundcounter</string>
 		<string>n.alt1</string>
+		<string>l.wide</string>
 		<string>Z.noserif</string>
 		<string>R.sharper</string>
 		<string>e.highcontrast</string>
 		<string>s.reversecontrast</string>
 		<string>x.straight_diagonal</string>
+		<string>g.ss02</string>
 		<string>c.replaced_with_sharper</string>
+		<string>w.replaced_with_alt-flattop</string>
 	</array>
 </dict>
 </plist>
