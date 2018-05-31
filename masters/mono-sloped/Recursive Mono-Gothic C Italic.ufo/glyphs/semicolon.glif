@@ -3,42 +3,8 @@
   <advance width="600"/>
   <unicode hex="003B"/>
   <outline>
-    <contour>
-      <point x="457.9700581339007" y="312.0" type="curve"/>
-      <point x="537.6137885633952" y="551.0" type="line" smooth="yes"/>
-      <point x="539.613212758278" y="557.0"/>
-      <point x="536.2793995873469" y="562.0"/>
-      <point x="530.2793995873469" y="562.0" type="curve" smooth="yes"/>
-      <point x="446.2793995873469" y="562.0"/>
-      <point x="377.27939958734686" y="562.0"/>
-      <point x="293.27939958734686" y="562.0" type="curve"/>
-      <point x="213.63566915785236" y="323.0" type="line" smooth="yes"/>
-      <point x="211.63624496296967" y="317.0"/>
-      <point x="214.97005813390075" y="312.0"/>
-      <point x="220.97005813390075" y="312.0" type="curve" smooth="yes"/>
-      <point x="304.97005813390075" y="312.0"/>
-      <point x="373.97005813390075" y="312.0"/>
-    </contour>
-    <contour>
-      <point x="179.69267386446444" y="-271.0" type="curve" smooth="yes"/>
-      <point x="183.69267386446444" y="-271.0"/>
-      <point x="188.0259112302782" y="-270.0"/>
-      <point x="192.0253354251609" y="-264.0" type="curve" smooth="yes"/>
-      <point x="271.68058195700127" y="-145.0"/>
-      <point x="375.33294946325515" y="4.0"/>
-      <point x="430.65841345998547" y="86.0" type="curve" smooth="yes"/>
-      <point x="435.32431238649576" y="94.0"/>
-      <point x="434.9904992155647" y="99.0"/>
-      <point x="426.9904992155647" y="99.0" type="curve" smooth="yes"/>
-      <point x="332.9904992155647" y="99.0"/>
-      <point x="276.9904992155647" y="99.0"/>
-      <point x="167.99049921556465" y="99.0" type="curve"/>
-      <point x="103.00230322046917" y="-24.0"/>
-      <point x="37.680869859559905" y="-148.0"/>
-      <point x="-27.307326135535575" y="-271.0" type="curve"/>
-      <point x="26.692673864464425" y="-271.0"/>
-      <point x="88.69267386446444" y="-271.0"/>
-    </contour>
+    <component base="period" yOffset="325"/>
+    <component base="comma" xOffset="-16" yOffset="-81"/>
   </outline>
   <lib>
     <dict>

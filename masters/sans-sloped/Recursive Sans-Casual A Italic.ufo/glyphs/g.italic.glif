@@ -3,28 +3,6 @@
   <advance width="600"/>
   <outline>
     <contour>
-      <point x="400.0" y="0.0" type="curve" smooth="yes"/>
-      <point x="546.9576783238789" y="441.0" type="line" smooth="yes"/>
-      <point x="562.6198345171268" y="488.0"/>
-      <point x="568.951920272706" y="501.0"/>
-      <point x="586.9493291496782" y="528.0" type="curve"/>
-      <point x="582.6158038813057" y="530.0"/>
-      <point x="576.9490412471196" y="531.0"/>
-      <point x="571.9490412471196" y="531.0" type="curve" smooth="yes"/>
-      <point x="561.9490412471196" y="531.0"/>
-      <point x="550.2825665154919" y="529.0"/>
-      <point x="536.9501928573541" y="519.0" type="curve" smooth="yes"/>
-      <point x="520.9513444675887" y="507.0"/>
-      <point x="511.62012241968546" y="485.0"/>
-      <point x="502.6227135427133" y="458.0" type="curve" smooth="yes"/>
-      <point x="350.0" y="0.0" type="line" smooth="yes"/>
-      <point x="310.67799083397347" y="-118.0"/>
-      <point x="280.6811577621186" y="-151.0"/>
-      <point x="201.35281473980177" y="-203.0" type="curve"/>
-      <point x="227.3562695705055" y="-239.0"/>
-      <point x="356.679142444208" y="-130.0"/>
-    </contour>
-    <contour>
       <point x="371.0" y="536.0" type="curve" smooth="yes"/>
       <point x="237" y="536"/>
       <point x="133.0" y="461.0"/>
@@ -73,6 +51,28 @@
       <point x="50.0" y="195.0" type="curve" smooth="yes"/>
     </contour>
     <contour>
+      <point x="400.0" y="0.0" type="curve" smooth="yes"/>
+      <point x="547" y="441.0" type="line" smooth="yes"/>
+      <point x="563" y="488.0"/>
+      <point x="569" y="501.0"/>
+      <point x="587" y="528.0" type="curve"/>
+      <point x="583" y="530.0"/>
+      <point x="577" y="531.0"/>
+      <point x="572" y="531.0" type="curve" smooth="yes"/>
+      <point x="562" y="531.0"/>
+      <point x="550" y="529.0"/>
+      <point x="537" y="519.0" type="curve" smooth="yes"/>
+      <point x="521" y="507.0"/>
+      <point x="512" y="485.0"/>
+      <point x="503" y="458.0" type="curve" smooth="yes"/>
+      <point x="350.0" y="0.0" type="line" smooth="yes"/>
+      <point x="311" y="-118.0"/>
+      <point x="281" y="-151.0"/>
+      <point x="201" y="-203.0" type="curve"/>
+      <point x="227" y="-239.0"/>
+      <point x="357" y="-130.0"/>
+    </contour>
+    <contour>
       <point x="117" y="-202.0" type="curve" smooth="yes"/>
       <point x="49" y="-202.0"/>
       <point x="19" y="-193.0"/>
@@ -108,7 +108,7 @@
       <key>com.typemytype.robofont.Image.Sharpness</key>
       <real>0.4</real>
       <key>public.markColor</key>
-      <string>0.1294,1,0.9886,1</string>
+      <string>0.45,0.73,1,0.75</string>
     </dict>
   </lib>
 </glyph>

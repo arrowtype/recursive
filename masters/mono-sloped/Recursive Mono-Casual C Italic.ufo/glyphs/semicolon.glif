@@ -3,42 +3,8 @@
   <advance width="600"/>
   <unicode hex="003B"/>
   <outline>
-    <contour>
-      <point x="461.6373965732042" y="305.0" type="curve"/>
-      <point x="505.29149149481" y="436.0" type="line" smooth="yes"/>
-      <point x="534.9496170522368" y="525.0"/>
-      <point x="494.27997539246417" y="556.0"/>
-      <point x="395.27997539246417" y="556.0" type="curve" smooth="yes"/>
-      <point x="346.27997539246417" y="556.0"/>
-      <point x="315.947025929209" y="552.0"/>
-      <point x="281.2811270026987" y="544.0" type="curve"/>
-      <point x="237.62703208109298" y="413.0" type="line" smooth="yes"/>
-      <point x="207.9689065236662" y="324.0"/>
-      <point x="248.63854818343884" y="293.0"/>
-      <point x="347.63854818343884" y="293.0" type="curve" smooth="yes"/>
-      <point x="396.63854818343884" y="293.0"/>
-      <point x="426.971497646694" y="297.0"/>
-    </contour>
-    <contour>
-      <point x="125.3531026423604" y="-206.0" type="curve" smooth="yes"/>
-      <point x="165.75816593349964" y="-206.0"/>
-      <point x="186.657652063527" y="-199.77113960791397"/>
-      <point x="219.68346098258775" y="-175.0" type="curve" smooth="yes"/>
-      <point x="289.0118040049045" y="-123.0"/>
-      <point x="381.3343889760484" y="-11.0"/>
-      <point x="408.9930903385925" y="72.0" type="curve" smooth="yes"/>
-      <point x="433.6526554088125" y="146.0"/>
-      <point x="402.98301374903986" y="177.0"/>
-      <point x="270.98301374903986" y="177.0" type="curve" smooth="yes"/>
-      <point x="239.98301374903986" y="177.0"/>
-      <point x="218.31653901741225" y="175.0"/>
-      <point x="174.65035218834336" y="170.0" type="curve"/>
-      <point x="135.3283430223168" y="52.0"/>
-      <point x="76.6733843930351" y="-70.0"/>
-      <point x="-0.985029066950375" y="-156.0" type="curve"/>
-      <point x="29.40700590748405" y="-191.29004315983852"/>
-      <point x="68.34634588560368" y="-206.0"/>
-    </contour>
+    <component base="period" yOffset="305"/>
+    <component base="comma" xOffset="-20"/>
   </outline>
   <lib>
     <dict>

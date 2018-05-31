@@ -82,6 +82,10 @@
 	<string>ampersand.glif</string>
 	<key>ampersand.v1</key>
 	<string>ampersand.v1.glif</string>
+	<key>asciicircum</key>
+	<string>asciicircum.glif</string>
+	<key>asciitilde</key>
+	<string>asciitilde.glif</string>
 	<key>asterisk</key>
 	<string>asterisk.glif</string>
 	<key>at</key>
@@ -110,6 +114,8 @@
 	<string>bracketleft.glif</string>
 	<key>bracketright</key>
 	<string>bracketright.glif</string>
+	<key>brokenbar</key>
+	<string>brokenbar.glif</string>
 	<key>bullet</key>
 	<string>bullet.glif</string>
 	<key>c</key>
@@ -218,10 +224,10 @@
 	<string>i.glif</string>
 	<key>i.extra</key>
 	<string>i.extra.glif</string>
+	<key>i.italic</key>
+	<string>i.italic.glif</string>
 	<key>i.replaced_with_reversewedge2</key>
 	<string>i.replaced_with_reversewedge2.glif</string>
-	<key>i.replaced_with_ss01</key>
-	<string>i.replaced_with_ss01.glif</string>
 	<key>i.reversewedge</key>
 	<string>i.reversewedge.glif</string>
 	<key>i.sansfirst</key>
@@ -240,10 +246,10 @@
 	<string>l.glif</string>
 	<key>l.extra</key>
 	<string>l.extra.glif</string>
+	<key>l.italic</key>
+	<string>l.italic.glif</string>
 	<key>l.replaced_with_reversewedge2</key>
 	<string>l.replaced_with_reversewedge2.glif</string>
-	<key>l.replaced_with_ss01</key>
-	<string>l.replaced_with_ss01.glif</string>
 	<key>l.reversewedge</key>
 	<string>l.reversewedge.glif</string>
 	<key>l.sansfirst</key>
@@ -314,6 +320,8 @@
 	<string>onehalf.v1.glif</string>
 	<key>onequarter</key>
 	<string>onequarter.glif</string>
+	<key>overline</key>
+	<string>overline.glif</string>
 	<key>p</key>
 	<string>p.glif</string>
 	<key>p.replaced_with_higherjoints</key>
@@ -360,12 +368,12 @@
 	<string>r.alt3.glif</string>
 	<key>r.extra</key>
 	<string>r.extra.glif</string>
+	<key>r.italic</key>
+	<string>r.italic.glif</string>
 	<key>r.replaced_with_higherjoints</key>
 	<string>r.replaced_with_higherjoints.glif</string>
 	<key>r.replaced_with_reversewedge2</key>
 	<string>r.replaced_with_reversewedge2.glif</string>
-	<key>r.replaced_with_ss01</key>
-	<string>r.replaced_with_ss01.glif</string>
 	<key>r.reversewedge</key>
 	<string>r.reversewedge.glif</string>
 	<key>r.sansfirst</key>
@@ -414,6 +422,14 @@
 	<string>u.wedgeserif.glif</string>
 	<key>underscore</key>
 	<string>underscore.glif</string>
+	<key>uni2190</key>
+	<string>uni2190.glif</string>
+	<key>uni2191</key>
+	<string>uni2191.glif</string>
+	<key>uni2192</key>
+	<string>uni2192.glif</string>
+	<key>uni2193</key>
+	<string>uni2193.glif</string>
 	<key>v</key>
 	<string>v.glif</string>
 	<key>v.smoothtraps</key>
