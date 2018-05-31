@@ -3,8 +3,42 @@
   <advance width="600"/>
   <unicode hex="003B"/>
   <outline>
-    <component base="period" yOffset="344"/>
-    <component base="comma"/>
+    <contour>
+      <point x="446.96746701087295" y="339.0" type="curve"/>
+      <point x="493.287460858989" y="478.0" type="line" smooth="yes"/>
+      <point x="514.1846685732469" y="540.7096774193549"/>
+      <point x="448.2805511975814" y="550.0"/>
+      <point x="387.2805511975814" y="550.0" type="curve" smooth="yes"/>
+      <point x="364.2805511975814" y="550.0"/>
+      <point x="333.6140764659539" y="548.0"/>
+      <point x="307.2811270026987" y="544.0" type="curve"/>
+      <point x="260.9611331545827" y="405.0" type="line" smooth="yes"/>
+      <point x="240.06392544032474" y="342.2903225806452"/>
+      <point x="305.9680428159902" y="333.0"/>
+      <point x="366.9680428159902" y="333.0" type="curve" smooth="yes"/>
+      <point x="389.9680428159902" y="333.0"/>
+      <point x="420.6345175476178" y="335.0"/>
+    </contour>
+    <contour>
+      <point x="139.35252683724312" y="-200.0" type="curve" smooth="yes"/>
+      <point x="161.35252683724312" y="-200.0"/>
+      <point x="174.68547630049824" y="-196.0"/>
+      <point x="189.35108732444985" y="-185.0" type="curve" smooth="yes"/>
+      <point x="266.6788545416494" y="-127.0"/>
+      <point x="361.0" y="0.0"/>
+      <point x="388.3254639967303" y="82.0" type="curve" smooth="yes"/>
+      <point x="406.98675648230227" y="138.0"/>
+      <point x="379.3179785302055" y="160.0"/>
+      <point x="290.3179785302055" y="160.0" type="curve" smooth="yes"/>
+      <point x="265.3179785302055" y="160.0"/>
+      <point x="247.65150379857795" y="158.0"/>
+      <point x="216.98531696950903" y="153.0" type="curve"/>
+      <point x="173.33122204790325" y="22.0"/>
+      <point x="113.67482390582833" y="-85.0"/>
+      <point x="40.01583464072556" y="-165.0" type="curve"/>
+      <point x="62.68490049538096" y="-190.0"/>
+      <point x="91.35252683724312" y="-200.0"/>
+    </contour>
   </outline>
   <lib>
     <dict>
