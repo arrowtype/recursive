@@ -103,9 +103,11 @@
 				<string>backslash</string>
 				<string>fraction</string>
 				<string>bar</string>
+				<string>brokenbar</string>
 				<string>at</string>
 				<string>ampersand</string>
 				<string>bullet</string>
+				<string>overline</string>
 				<string>plus</string>
 				<string>minus</string>
 				<string>plusminus</string>
@@ -114,7 +116,13 @@
 				<string>equal</string>
 				<string>less</string>
 				<string>greater</string>
+				<string>uni2190</string>
+				<string>uni2191</string>
+				<string>uni2192</string>
+				<string>uni2193</string>
 				<string>dollar</string>
+				<string>asciicircum</string>
+				<string>asciitilde</string>
 				<string>grave</string>
 				<string>macron</string>
 				<string>braceleft.asymmetrical</string>
@@ -142,16 +150,6 @@
 				<string>u.wedgeserif</string>
 				<string>v.wedgeserif</string>
 				<string>y.wedgeserif</string>
-				<string>A.replaced_with_stemtaper</string>
-				<string>B.replaced_with_stemtaper</string>
-				<string>D.replaced_with_stemtaper</string>
-				<string>E.replaced_with_stemtaper</string>
-				<string>F.replaced_with_stemtaper</string>
-				<string>H.replaced_with_stemtaper</string>
-				<string>I.replaced_with_stemtaper</string>
-				<string>P.replaced_with_stemtaper</string>
-				<string>R.replaced_with_stemtaper</string>
-				<string>T.replaced_with_stemtaper</string>
 				<string>b.replaced_with_higherjoints</string>
 				<string>d.replaced_with_higherjoints</string>
 				<string>h.replaced_with_higherjoints</string>
@@ -161,6 +159,13 @@
 				<string>q.replaced_with_higherjoints</string>
 				<string>r.replaced_with_higherjoints</string>
 				<string>u.replaced_with_higherjoints</string>
+				<string>a.italic</string>
+				<string>f.italic</string>
+				<string>g.italic</string>
+				<string>i.italic</string>
+				<string>l.italic</string>
+				<string>r.italic</string>
+				<string>y.italic</string>
 				<string>f.extra</string>
 				<string>g.extra</string>
 				<string>i.extra</string>
@@ -173,31 +178,24 @@
 				<string>n.replaced_with_morecasual</string>
 				<string>o.replaced_with_morecasual</string>
 				<string>u.replaced_with_morecasual</string>
+				<string>a.alt1</string>
+				<string>e.alt1</string>
+				<string>f.alt1</string>
+				<string>g.alt1</string>
+				<string>y.alt1</string>
 				<string>R.smoother</string>
 				<string>g.smoother</string>
 				<string>i.smoother</string>
 				<string>l.smoother</string>
 				<string>r.smoother</string>
-				<string>a.italic</string>
-				<string>f.italic</string>
-				<string>g.italic</string>
-				<string>y.italic</string>
 				<string>c.sansfirst</string>
 				<string>i.sansfirst</string>
 				<string>l.sansfirst</string>
 				<string>r.sansfirst</string>
-				<string>B.stemtaper</string>
-				<string>D.stemtaper</string>
-				<string>E.stemtaper</string>
-				<string>H.stemtaper</string>
 				<string>f.reversewedge</string>
 				<string>i.reversewedge</string>
 				<string>l.reversewedge</string>
 				<string>r.reversewedge</string>
-				<string>f.replaced_with_ss01</string>
-				<string>i.replaced_with_ss01</string>
-				<string>l.replaced_with_ss01</string>
-				<string>r.replaced_with_ss01</string>
 				<string>g.alt3</string>
 				<string>m.alt3</string>
 				<string>r.alt3</string>
@@ -211,6 +209,8 @@
 				<string>r.ss02</string>
 				<string>m.roundcounter</string>
 				<string>n.roundcounter</string>
+				<string>e.replaced_with_nokinks</string>
+				<string>g.replaced_with_nokinks</string>
 				<string>a.replaced_with_rounder</string>
 				<string>e.replaced_with_rounder</string>
 				<string>r.alt2</string>
@@ -220,28 +220,14 @@
 				<string>Z.noserif</string>
 				<string>e.tooround</string>
 				<string>R.italicize</string>
+				<string>B.stemtaper</string>
 				<string>g.lessdroopy</string>
 				<string>o.symmetrical</string>
-				<string>B.reallytopheavy</string>
 				<string>o.replaced_with_egg</string>
+				<string>f.replaced_with_ss01</string>
 				<string>m.curvy</string>
 				<string>n.curvy</string>
 				<string>dollar.curvy</string>
-				<string>a.alt1</string>
-				<string>e.alt1</string>
-				<string>f.alt1</string>
-				<string>g.alt1</string>
-				<string>y.alt1</string>
-				<string>zero.alt1</string>
-				<string>one.alt1</string>
-				<string>two.alt1</string>
-				<string>three.alt1</string>
-				<string>four.alt1</string>
-				<string>five.alt1</string>
-				<string>six.alt1</string>
-				<string>seven.alt1</string>
-				<string>eight.alt1</string>
-				<string>nine.alt1</string>
 				<string>f.replaced_with_reversewedge2</string>
 				<string>i.replaced_with_reversewedge2</string>
 				<string>l.replaced_with_reversewedge2</string>
@@ -604,9 +590,11 @@
 		<string>backslash</string>
 		<string>fraction</string>
 		<string>bar</string>
+		<string>brokenbar</string>
 		<string>at</string>
 		<string>ampersand</string>
 		<string>bullet</string>
+		<string>overline</string>
 		<string>plus</string>
 		<string>minus</string>
 		<string>plusminus</string>
@@ -615,7 +603,13 @@
 		<string>equal</string>
 		<string>less</string>
 		<string>greater</string>
+		<string>uni2190</string>
+		<string>uni2191</string>
+		<string>uni2192</string>
+		<string>uni2193</string>
 		<string>dollar</string>
+		<string>asciicircum</string>
+		<string>asciitilde</string>
 		<string>grave</string>
 		<string>macron</string>
 		<string>braceleft.asymmetrical</string>
@@ -652,6 +646,13 @@
 		<string>q.replaced_with_higherjoints</string>
 		<string>r.replaced_with_higherjoints</string>
 		<string>u.replaced_with_higherjoints</string>
+		<string>a.italic</string>
+		<string>f.italic</string>
+		<string>g.italic</string>
+		<string>i.italic</string>
+		<string>l.italic</string>
+		<string>r.italic</string>
+		<string>y.italic</string>
 		<string>f.extra</string>
 		<string>g.extra</string>
 		<string>i.extra</string>
@@ -664,25 +665,24 @@
 		<string>n.replaced_with_morecasual</string>
 		<string>o.replaced_with_morecasual</string>
 		<string>u.replaced_with_morecasual</string>
+		<string>a.alt1</string>
+		<string>e.alt1</string>
+		<string>f.alt1</string>
+		<string>g.alt1</string>
+		<string>y.alt1</string>
 		<string>R.smoother</string>
 		<string>g.smoother</string>
 		<string>i.smoother</string>
 		<string>l.smoother</string>
 		<string>r.smoother</string>
-		<string>a.italic</string>
-		<string>f.italic</string>
-		<string>g.italic</string>
-		<string>y.italic</string>
 		<string>c.sansfirst</string>
 		<string>i.sansfirst</string>
 		<string>l.sansfirst</string>
 		<string>r.sansfirst</string>
-		<string>B.stemtaper</string>
 		<string>f.reversewedge</string>
 		<string>i.reversewedge</string>
 		<string>l.reversewedge</string>
 		<string>r.reversewedge</string>
-		<string>f.replaced_with_ss01</string>
 		<string>g.alt3</string>
 		<string>m.alt3</string>
 		<string>r.alt3</string>
@@ -696,6 +696,8 @@
 		<string>r.ss02</string>
 		<string>m.roundcounter</string>
 		<string>n.roundcounter</string>
+		<string>e.replaced_with_nokinks</string>
+		<string>g.replaced_with_nokinks</string>
 		<string>a.replaced_with_rounder</string>
 		<string>e.replaced_with_rounder</string>
 		<string>r.alt2</string>
@@ -705,17 +707,14 @@
 		<string>Z.noserif</string>
 		<string>e.tooround</string>
 		<string>R.italicize</string>
+		<string>B.stemtaper</string>
 		<string>g.lessdroopy</string>
 		<string>o.symmetrical</string>
 		<string>o.replaced_with_egg</string>
+		<string>f.replaced_with_ss01</string>
 		<string>m.curvy</string>
 		<string>n.curvy</string>
 		<string>dollar.curvy</string>
-		<string>a.alt1</string>
-		<string>e.alt1</string>
-		<string>f.alt1</string>
-		<string>g.alt1</string>
-		<string>y.alt1</string>
 		<string>f.replaced_with_reversewedge2</string>
 		<string>i.replaced_with_reversewedge2</string>
 		<string>l.replaced_with_reversewedge2</string>
@@ -725,18 +724,6 @@
 		<string>c.ss01</string>
 		<string>g.ss01</string>
 		<string>zero.ss01</string>
-		<string>i.italic</string>
-		<string>l.italic</string>
-		<string>r.italic</string>
-		<string>asciicircum</string>
-		<string>asciitilde</string>
-		<string>uni2190</string>
-		<string>uni2191</string>
-		<string>uni2193</string>
-		<string>uni2192</string>
-		<string>overline</string>
-		<string>brokenbar</string>
-		<string>numbersign.straight</string>
 	</array>
 </dict>
 </plist>
