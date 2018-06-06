@@ -243,6 +243,8 @@
 			<string>glyphList</string>
 		</dict>
 	</array>
+	<key>com.typemytype.glyphBuilder.lastSavedFileName</key>
+	<string>recursive-diacritics-for-latin-refined</string>
 	<key>com.typemytype.robofont.background.layerStrokeColor</key>
 	<array>
 		<real>0.0</real>
@@ -761,29 +763,24 @@
 		<string>Aacute</string>
 		<string>Acircumflex</string>
 		<string>Atilde</string>
-		<string>Adieresis</string>
 		<string>AE</string>
 		<string>Ccedilla</string>
 		<string>Egrave</string>
 		<string>Eacute</string>
 		<string>Ecircumflex</string>
-		<string>Edieresis</string>
 		<string>Igrave</string>
 		<string>Iacute</string>
 		<string>Icircumflex</string>
-		<string>Idieresis</string>
 		<string>Eth</string>
 		<string>Ntilde</string>
 		<string>Ograve</string>
 		<string>Oacute</string>
 		<string>Ocircumflex</string>
 		<string>Otilde</string>
-		<string>Odieresis</string>
 		<string>Oslash</string>
 		<string>Ugrave</string>
 		<string>Uacute</string>
 		<string>Ucircumflex</string>
-		<string>Udieresis</string>
 		<string>Yacute</string>
 		<string>Thorn</string>
 		<string>germandbls</string>
@@ -791,32 +788,26 @@
 		<string>aacute</string>
 		<string>acircumflex</string>
 		<string>atilde</string>
-		<string>adieresis</string>
 		<string>ae</string>
 		<string>ccedilla</string>
 		<string>egrave</string>
 		<string>eacute</string>
 		<string>ecircumflex</string>
-		<string>edieresis</string>
 		<string>igrave</string>
 		<string>iacute</string>
 		<string>icircumflex</string>
-		<string>idieresis</string>
 		<string>eth</string>
 		<string>ntilde</string>
 		<string>ograve</string>
 		<string>oacute</string>
 		<string>ocircumflex</string>
 		<string>otilde</string>
-		<string>odieresis</string>
 		<string>oslash</string>
 		<string>ugrave</string>
 		<string>uacute</string>
 		<string>ucircumflex</string>
-		<string>udieresis</string>
 		<string>yacute</string>
 		<string>thorn</string>
-		<string>ydieresis</string>
 		<string>dotlessi</string>
 		<string>Lslash</string>
 		<string>lslash</string>
@@ -883,9 +874,20 @@
 		<string>uni0323.case</string>
 		<string>uni0326.case</string>
 		<string>uni0328.case</string>
+		<string>bitcoin</string>
 		<string>aring</string>
 		<string>Aring</string>
-		<string>bitcoin</string>
+		<string>adieresis</string>
+		<string>edieresis</string>
+		<string>idieresis</string>
+		<string>odieresis</string>
+		<string>udieresis</string>
+		<string>ydieresis</string>
+		<string>Adieresis</string>
+		<string>Edieresis</string>
+		<string>Idieresis</string>
+		<string>Odieresis</string>
+		<string>Udieresis</string>
 	</array>
 </dict>
 </plist>
