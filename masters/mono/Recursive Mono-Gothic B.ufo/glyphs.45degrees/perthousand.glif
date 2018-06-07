@@ -173,5 +173,37 @@
       <point x="249.0" y="282.0"/>
       <point x="240" y="266"/>
     </contour>
+    <contour>
+      <point x="30.0" y="229.0" type="curve"/>
+      <point x="173" y="290.0"/>
+      <point x="436.0" y="402.0"/>
+      <point x="570.0" y="459.0" type="curve"/>
+      <point x="570.0" y="523"/>
+      <point x="570" y="573"/>
+      <point x="570.0" y="611.0" type="curve" smooth="yes"/>
+      <point x="570.0" y="620.0"/>
+      <point x="561" y="623"/>
+      <point x="554" y="618" type="curve" smooth="yes"/>
+      <point x="426" y="534"/>
+      <point x="163" y="364"/>
+      <point x="37" y="281" type="curve"/>
+      <point x="31" y="277"/>
+      <point x="30" y="274"/>
+      <point x="30.0" y="269.0" type="curve" smooth="yes"/>
+      <point x="30.0" y="256"/>
+      <point x="30.0" y="242"/>
+    </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+    </dict>
+  </lib>
 </glyph>
