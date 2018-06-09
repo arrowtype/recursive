@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="uni0303" format="2">
   <unicode hex="0303"/>
-  <anchor x="0" y="536" name="_top"/>
+  <anchor x="0" y="535" name="_top"/>
   <outline>
     <contour>
       <point x="110" y="688.0" type="curve"/>
@@ -38,4 +38,16 @@
       <point x="144" y="688.0"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+    </dict>
+  </lib>
 </glyph>

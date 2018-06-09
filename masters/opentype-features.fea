@@ -9,3 +9,14 @@ languagesystem latn dflt;
 feature ss01 {
     sub @romanstyles by @trueitalics;
 } ss01;
+
+feature locl {
+
+    script latn;
+
+        language NLD exclude_dflt;
+            lookup DutchIJ {
+                sub I J by IJ;
+            } DutchIJ;
+
+} locl;
