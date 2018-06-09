@@ -38,21 +38,27 @@
 	<key>public.glyphOrder</key>
 	<array>
 		<string>space</string>
+		<string>uni00A0</string>
 		<string>A</string>
+		<string>Amacron</string>
+		<string>uni01FA</string>
 		<string>B</string>
 		<string>C</string>
 		<string>D</string>
 		<string>E</string>
+		<string>Emacron</string>
 		<string>F</string>
 		<string>G</string>
 		<string>H</string>
 		<string>I</string>
+		<string>Imacron</string>
 		<string>J</string>
 		<string>K</string>
 		<string>L</string>
 		<string>M</string>
 		<string>N</string>
 		<string>O</string>
+		<string>Omacron</string>
 		<string>Ohungarumlaut</string>
 		<string>P</string>
 		<string>Q</string>
@@ -61,36 +67,44 @@
 		<string>Scaron</string>
 		<string>T</string>
 		<string>U</string>
+		<string>Umacron</string>
 		<string>V</string>
 		<string>W</string>
 		<string>X</string>
 		<string>Y</string>
 		<string>Ydieresis</string>
+		<string>Ymacron</string>
 		<string>Z</string>
 		<string>Zcaron</string>
 		<string>AE</string>
 		<string>Eth</string>
 		<string>Oslash</string>
 		<string>Thorn</string>
+		<string>IJ</string>
 		<string>Lslash</string>
 		<string>OE</string>
 		<string>uni1E9E</string>
-		<string>uni00B5</string>
+		<string>uni2126</string>
 		<string>a</string>
+		<string>amacron</string>
+		<string>uni01FB</string>
 		<string>b</string>
 		<string>c</string>
 		<string>d</string>
 		<string>e</string>
+		<string>emacron</string>
 		<string>f</string>
 		<string>g</string>
 		<string>h</string>
 		<string>i</string>
+		<string>imacron</string>
 		<string>j</string>
 		<string>k</string>
 		<string>l</string>
 		<string>m</string>
 		<string>n</string>
 		<string>o</string>
+		<string>omacron</string>
 		<string>ohungarumlaut</string>
 		<string>p</string>
 		<string>q</string>
@@ -99,10 +113,12 @@
 		<string>scaron</string>
 		<string>t</string>
 		<string>u</string>
+		<string>umacron</string>
 		<string>v</string>
 		<string>w</string>
 		<string>x</string>
 		<string>y</string>
+		<string>ymacron</string>
 		<string>z</string>
 		<string>zcaron</string>
 		<string>germandbls</string>
@@ -111,8 +127,10 @@
 		<string>oslash</string>
 		<string>thorn</string>
 		<string>dotlessi</string>
+		<string>ij</string>
 		<string>lslash</string>
 		<string>oe</string>
+		<string>pi</string>
 		<string>ordfeminine</string>
 		<string>ordmasculine</string>
 		<string>uni0300</string>
@@ -194,6 +212,7 @@
 		<string>ampersand</string>
 		<string>section</string>
 		<string>paragraph</string>
+		<string>uni2113</string>
 		<string>periodcentered</string>
 		<string>bullet</string>
 		<string>overline</string>
@@ -205,11 +224,26 @@
 		<string>equal</string>
 		<string>less</string>
 		<string>greater</string>
+		<string>lessequal</string>
+		<string>greaterequal</string>
+		<string>approxequal</string>
+		<string>notequal</string>
 		<string>logicalnot</string>
 		<string>uni2190</string>
 		<string>uni2191</string>
 		<string>uni2192</string>
 		<string>uni2193</string>
+		<string>partialdiff</string>
+		<string>uni2206</string>
+		<string>product</string>
+		<string>summation</string>
+		<string>uni00B5</string>
+		<string>uni2215</string>
+		<string>uni2219</string>
+		<string>radical</string>
+		<string>infinity</string>
+		<string>integral</string>
+		<string>uni2261</string>
 		<string>dollar</string>
 		<string>cent</string>
 		<string>sterling</string>
@@ -235,6 +269,9 @@
 		<string>registered</string>
 		<string>trademark</string>
 		<string>degree</string>
+		<string>estimated</string>
+		<string>lozenge</string>
+		<string>uni00AD</string>
 		<string>bitcoin</string>
 		<string>Aacute</string>
 		<string>Acircumflex</string>
@@ -247,6 +284,7 @@
 		<string>Ecircumflex</string>
 		<string>Edieresis</string>
 		<string>Egrave</string>
+		<string>IJacute</string>
 		<string>Iacute</string>
 		<string>Icircumflex</string>
 		<string>Idieresis</string>
@@ -278,12 +316,14 @@
 		<string>icircumflex</string>
 		<string>idieresis</string>
 		<string>igrave</string>
+		<string>ijacute</string>
 		<string>ntilde</string>
 		<string>oacute</string>
 		<string>ocircumflex</string>
 		<string>odieresis</string>
 		<string>ograve</string>
 		<string>otilde</string>
+		<string>ringacute</string>
 		<string>uacute</string>
 		<string>ucircumflex</string>
 		<string>udieresis</string>
@@ -309,6 +349,7 @@
 		<string>uni0326.case</string>
 		<string>uni0327.case</string>
 		<string>uni0328.case</string>
+		<string>ringacute.case</string>
 		<string>braceleft.assymetrical</string>
 		<string>braceright.assymetrical</string>
 		<string>braceleft.cap</string>
@@ -376,6 +417,7 @@
 		<string>g.partialkinks</string>
 		<string>m.roundcounter</string>
 		<string>n.roundcounter</string>
+		<string>ij.dotless</string>
 		<string>Z.noserif</string>
 		<string>c.replaced_with_ss01</string>
 		<string>B.replaced_with_nokinks</string>

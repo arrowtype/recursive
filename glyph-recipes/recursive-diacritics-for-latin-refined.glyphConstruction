@@ -1,3 +1,4 @@
+# ring
 aring=a+uni030A@top
 Aring=A+uni030A.case@ring
 
@@ -84,3 +85,23 @@ Aogonek=A+uni0328.case@ogonek
 Eogonek=E+uni0328.case@ogonek
 Iogonek=I+uni0328.case@ogonek
 Uogonek=U+uni0328.case@ogonek
+
+# macron
+amacron=a+uni0304@top
+emacron=e+uni0304@top
+imacron=dotlessi+uni0304@top
+omacron=o+uni0304@top
+umacron=u+uni0304@top
+ymacron=y+uni0304@top
+Amacron=A+uni0304.case@top
+Emacron=E+uni0304.case@top
+Imacron=I+uni0304.case@top
+Omacron=O+uni0304.case@top
+Umacron=U+uni0304.case@top
+Ymacron=Y+uni0304.case@top
+
+# ring acute
+# ringacute=uni03A+uni0301@top
+# ringacute.case=uni030A.case+uni0301.case@top
+uni01FB=a+ringacute@top
+uni01FA=A+ringacute.case@ring

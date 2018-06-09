@@ -14,6 +14,8 @@
 	<string>A_dieresis.glif</string>
 	<key>Agrave</key>
 	<string>A_grave.glif</string>
+	<key>Amacron</key>
+	<string>A_macron.glif</string>
 	<key>Aogonek</key>
 	<string>A_ogonek.glif</string>
 	<key>Aring</key>
@@ -42,6 +44,8 @@
 	<string>E_dieresis.glif</string>
 	<key>Egrave</key>
 	<string>E_grave.glif</string>
+	<key>Emacron</key>
+	<string>E_macron.glif</string>
 	<key>Eogonek</key>
 	<string>E_ogonek.glif</string>
 	<key>Eth</key>
@@ -68,6 +72,8 @@
 	<string>I_dieresis.glif</string>
 	<key>Igrave</key>
 	<string>I_grave.glif</string>
+	<key>Imacron</key>
+	<string>I_macron.glif</string>
 	<key>Iogonek</key>
 	<string>I_ogonek.glif</string>
 	<key>J</key>
@@ -98,6 +104,8 @@
 	<string>O_grave.glif</string>
 	<key>Ohungarumlaut</key>
 	<string>O_hungarumlaut.glif</string>
+	<key>Omacron</key>
+	<string>O_macron.glif</string>
 	<key>Oslash</key>
 	<string>O_slash.glif</string>
 	<key>Otilde</key>
@@ -130,6 +138,8 @@
 	<string>U_dieresis.glif</string>
 	<key>Ugrave</key>
 	<string>U_grave.glif</string>
+	<key>Umacron</key>
+	<string>U_macron.glif</string>
 	<key>Uogonek</key>
 	<string>U_ogonek.glif</string>
 	<key>V</key>
@@ -146,6 +156,8 @@
 	<string>Y_acute.glif</string>
 	<key>Ydieresis</key>
 	<string>Y_dieresis.glif</string>
+	<key>Ymacron</key>
+	<string>Y_macron.glif</string>
 	<key>Z</key>
 	<string>Z_.glif</string>
 	<key>Z.noserif</key>
@@ -174,6 +186,8 @@
 	<string>ae.glif</string>
 	<key>agrave</key>
 	<string>agrave.glif</string>
+	<key>amacron</key>
+	<string>amacron.glif</string>
 	<key>ampersand</key>
 	<string>ampersand.glif</string>
 	<key>ampersand.crossbar</key>
@@ -296,6 +310,8 @@
 	<string>eight.glif</string>
 	<key>ellipsis</key>
 	<string>ellipsis.glif</string>
+	<key>emacron</key>
+	<string>emacron.glif</string>
 	<key>emdash</key>
 	<string>emdash.glif</string>
 	<key>endash</key>
@@ -394,6 +410,8 @@
 	<string>ij.dotless.glif</string>
 	<key>ijacute</key>
 	<string>ijacute.glif</string>
+	<key>imacron</key>
+	<string>imacron.glif</string>
 	<key>iogonek</key>
 	<string>iogonek.glif</string>
 	<key>j</key>
@@ -470,6 +488,8 @@
 	<string>ograve.glif</string>
 	<key>ohungarumlaut</key>
 	<string>ohungarumlaut.glif</string>
+	<key>omacron</key>
+	<string>omacron.glif</string>
 	<key>one</key>
 	<string>one.glif</string>
 	<key>one.replaced_with_reversewedge2</key>
@@ -506,6 +526,8 @@
 	<string>periodcentered.glif</string>
 	<key>perthousand</key>
 	<string>perthousand.glif</string>
+	<key>pi</key>
+	<string>pi.glif</string>
 	<key>plus</key>
 	<string>plus.glif</string>
 	<key>plusminus</key>
@@ -520,6 +542,8 @@
 	<string>questiondown.glif</string>
 	<key>quotedbl</key>
 	<string>quotedbl.glif</string>
+	<key>quotedblbase</key>
+	<string>quotedblbase.glif</string>
 	<key>quotedblleft</key>
 	<string>quotedblleft.glif</string>
 	<key>quotedblright</key>
@@ -528,6 +552,8 @@
 	<string>quoteleft.glif</string>
 	<key>quoteright</key>
 	<string>quoteright.glif</string>
+	<key>quotesinglbase</key>
+	<string>quotesinglbase.glif</string>
 	<key>quotesingle</key>
 	<string>quotesingle.glif</string>
 	<key>r</key>
@@ -548,6 +574,10 @@
 	<string>registered.glif</string>
 	<key>ring</key>
 	<string>ring.glif</string>
+	<key>ringacute</key>
+	<string>ringacute.glif</string>
+	<key>ringacute.case</key>
+	<string>ringacute.case.glif</string>
 	<key>s</key>
 	<string>s.glif</string>
 	<key>scaron</key>
@@ -598,10 +628,16 @@
 	<string>udieresis.glif</string>
 	<key>ugrave</key>
 	<string>ugrave.glif</string>
+	<key>umacron</key>
+	<string>umacron.glif</string>
 	<key>underscore</key>
 	<string>underscore.glif</string>
 	<key>uni00B5</key>
 	<string>uni00B_5.glif</string>
+	<key>uni01FA</key>
+	<string>uni01F_A_.glif</string>
+	<key>uni01FB</key>
+	<string>uni01F_B_.glif</string>
 	<key>uni0300</key>
 	<string>uni0300.glif</string>
 	<key>uni0300.case</key>
@@ -646,8 +682,16 @@
 	<string>uni030C_.glif</string>
 	<key>uni030C.case</key>
 	<string>uni030C_.case.glif</string>
+	<key>uni0312</key>
+	<string>uni0312.glif</string>
+	<key>uni0315</key>
+	<string>uni0315.glif</string>
 	<key>uni0323</key>
 	<string>uni0323.glif</string>
+	<key>uni0323.case</key>
+	<string>uni0323.case.glif</string>
+	<key>uni0326</key>
+	<string>uni0326.glif</string>
 	<key>uni0327</key>
 	<string>uni0327.glif</string>
 	<key>uni0327.case</key>
@@ -692,6 +736,8 @@
 	<string>ydieresis.glif</string>
 	<key>yen</key>
 	<string>yen.glif</string>
+	<key>ymacron</key>
+	<string>ymacron.glif</string>
 	<key>z</key>
 	<string>z.glif</string>
 	<key>zcaron</key>
