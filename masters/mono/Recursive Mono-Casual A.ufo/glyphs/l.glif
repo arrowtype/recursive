@@ -2,6 +2,10 @@
 <glyph name="l" format="2">
   <advance width="600"/>
   <unicode hex="006C"/>
+  <anchor x="460" y="711" name="caronslovak"/>
+  <anchor x="310" y="-1" name="bottom"/>
+  <anchor x="310" y="730" name="top"/>
+  <anchor x="460" y="400" name="dot"/>
   <outline>
     <contour>
       <point x="78" y="750" type="curve"/>
@@ -56,6 +60,14 @@
   </outline>
   <lib>
     <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
       <key>public.markColor</key>
       <string>0.5133,1,0.9066,1</string>
     </dict>

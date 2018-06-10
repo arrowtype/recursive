@@ -10,7 +10,7 @@ aeacute=ae+uni0301@top
 cacute=c+uni0301@top
 eacute=e+uni0301@top
 iacute=dotlessi+uni0301@top
-lacute=l+uni0301@top
+lacute=l+uni0301.case@top
 nacute=n+uni0301@top
 oacute=o+uni0301@top
 oslashacute=oslash+uni0301@top
@@ -29,7 +29,7 @@ Iacute=I+uni0301.case@top
 Lacute=L+uni0301.case@top
 Nacute=N+uni0301.case@top
 Oacute=O+uni0301.case@top
-Oslashacute=Oslashacute+uni0301.case@top
+Oslashacute=Oslash+uni0301.case@top
 Racute=R+uni0301.case@top
 Sacute=S+uni0301.case@top
 Uacute=U+uni0301.case@top
@@ -44,8 +44,8 @@ Zacute=Z+uni0301.case@top
 
 abreve=a+uni0306@top
 ebreve=e+uni0306@top
-gbreve=g.ss01+uni0306@top
-ibreve=i+uni0306@top
+gbreve=flatg+uni0306@top
+ibreve=dotlessi+uni0306@top
 obreve=o+uni0306@top
 ubreve=u+uni0306@top
 
@@ -61,19 +61,19 @@ Ubreve=U+uni0306.case@top
 
 # commaaccent
 
-gcommaaccent=g.ss01+uni0312@top # turned comma accent above
+gcommaaccent=flatg+uni0312@top # turned comma accent above
 kcommaaccent=k+uni0326@bottom
 lcommaaccent=l+uni0326@bottom
 ncommaaccent=n+uni0326@bottom
 rcommaaccent=r+uni0326@bottom
 scommaaccent=s+uni0326@bottom
 
-Gcommaaccent=G+uni0326@bottom
-Kcommaaccent=K+uni0326@bottom
-Lcommaaccent=L+uni0326@bottom
-Ncommaaccent=N+uni0326@bottom
-Rcommaaccent=R+uni0326@bottom
-Scommaaccent=S+uni0326@bottom
+Gcommaaccent=G+uni0326.case@bottom
+Kcommaaccent=K+uni0326.case@bottom
+Lcommaaccent=L+uni0326.case@bottom
+Ncommaaccent=N+uni0326.case@bottom
+Rcommaaccent=R+uni0326.case@bottom
+Scommaaccent=S+uni0326.case@bottom
 
 ############################
 
@@ -107,9 +107,9 @@ Ygrave=Y+uni0300.case@top
 # caron
 
 ccaron=c+uni030C@top
-dcaron=d+uni030C@top
+
 ecaron=e+uni030C@top
-gcaron=g.ss01+uni030C@top
+gcaron=flatg+uni030C@top
 ncaron=n+uni030C@top
 rcaron=r+uni030C@top
 scaron=s+uni030C@top
@@ -122,14 +122,15 @@ Gcaron=G+uni030C.case@top
 Ncaron=N+uni030C.case@top
 Rcaron=R+uni030C.case@top
 Scaron=S+uni030C.case@top
+Tcaron=T+uni030C.case@top
 Zcaron=Z+uni030C.case@top
 
 # side caron
 
-lcaron=l+uni030C@caron
-tcaron=t+uni030C@caron
-Lcaron=L+uni030C.case@caron
-Tcaron=T+uni030C.case@caron
+dcaron=d+uni0315@caronslovak
+lcaron=l+uni0315@caronslovak
+tcaron=t+uni0315@caronslovak
+Lcaron=L+uni0315@caronslovak
 
 
 ############################
@@ -139,10 +140,10 @@ Tcaron=T+uni030C.case@caron
 acircumflex=a+uni0302@top
 ccircumflex=c+uni0302@top
 ecircumflex=e+uni0302@top
-gcircumflex=guni0302@top
+gcircumflex=flatg+uni0302@top
 hcircumflex=h+uni0302@top
 icircumflex=dotlessi+uni0302@top
-jcircumflex=j+uni0302@top
+jcircumflex=dotlessj+uni0302@top
 ocircumflex=o+uni0302@top
 scircumflex=s+uni0302@top
 ucircumflex=u+uni0302@top
@@ -168,7 +169,7 @@ Ycircumflex=Y+uni0302.case@top
 
 ccedilla=c+uni0327@bottom
 scedilla=s+uni0327@bottom
-tcedilla=t+uni0327@bottom # t cedilla
+uni0163=t+uni0327@bottom # t cedilla
 Ccedilla=C+uni0327.case@bottom
 Scedilla=S+uni0327.case@bottom
 uni0162=T+uni0327.case@bottom # T cedilla
@@ -199,7 +200,7 @@ Ydieresis=Y+uni0308.case@top
 
 cdotaccent=c+uni0307@top
 edotaccent=e+uni0307@top
-gdotaccent=g.ss01+uni0307@top
+gdotaccent=flatg+uni0307@top
 zdotaccent=z+uni0307@top
 
 Cdotaccent=C+uni0307.case@top
@@ -207,6 +208,10 @@ Edotaccent=E+uni0307.case@top
 Gdotaccent=G+uni0307.case@top
 Idotaccent=I+uni0307.case@top
 Zdotaccent=Z+uni0307.case@top
+
+
+ldot=l+uni0307@dot
+Ldot=L+uni0307@dot
 
 ############################
 
@@ -271,9 +276,9 @@ Ymacron=Y+uni0304.case@top
 # ring
 
 aring=a+uni030A@top
-uring=u+uni030A@ring
+uring=u+uni030A@top
 Aring=A+uni030A.case@ring
-Uring=U+uni030A.case@top
+Uring=U+uni030A@top
 
 ############################
 
@@ -343,7 +348,7 @@ Ytilde=Y+uni0303.case@top
 # ae
 # c
 # e
-# g.ss01 # flat-top
+# flatg # flat-top
 # idotless
 # l
 # n
