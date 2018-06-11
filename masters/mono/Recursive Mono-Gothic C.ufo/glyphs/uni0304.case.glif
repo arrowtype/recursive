@@ -2,7 +2,22 @@
 <glyph name="uni0304.case" format="2">
   <anchor x="0" y="712" name="_top"/>
   <outline>
-    <component base="uni0304" yOffset="150"/>
+    <contour>
+      <point x="-180" y="923" type="line"/>
+      <point x="-180" y="884"/>
+      <point x="-180" y="850"/>
+      <point x="-180" y="811" type="curve" smooth="yes"/>
+      <point x="-180" y="804"/>
+      <point x="-176" y="800"/>
+      <point x="-169" y="800" type="curve" smooth="yes"/>
+      <point x="180" y="800" type="line"/>
+      <point x="180" y="839"/>
+      <point x="180" y="873"/>
+      <point x="180" y="912" type="curve" smooth="yes"/>
+      <point x="180" y="918"/>
+      <point x="175" y="923"/>
+      <point x="169" y="923" type="curve" smooth="yes"/>
+    </contour>
   </outline>
   <lib>
     <dict>
