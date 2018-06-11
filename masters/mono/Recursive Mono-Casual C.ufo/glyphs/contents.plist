@@ -86,6 +86,12 @@
 	<string>a.italic.glif</string>
 	<key>a.rounder</key>
 	<string>a.rounder.glif</string>
+	<key>acute</key>
+	<string>acute.glif</string>
+	<key>acute.copy_1</key>
+	<string>acute.copy_1.glif</string>
+	<key>acute.copy_2</key>
+	<string>acute.copy_2.glif</string>
 	<key>ae</key>
 	<string>ae.glif</string>
 	<key>ampersand</key>
@@ -126,6 +132,12 @@
 	<string>bracketleft.glif</string>
 	<key>bracketright</key>
 	<string>bracketright.glif</string>
+	<key>breve</key>
+	<string>breve.glif</string>
+	<key>breve.copy_1</key>
+	<string>breve.copy_1.glif</string>
+	<key>breve.copy_2</key>
+	<string>breve.copy_2.glif</string>
 	<key>brokenbar</key>
 	<string>brokenbar.glif</string>
 	<key>bullet</key>
@@ -134,8 +146,26 @@
 	<string>c.glif</string>
 	<key>c.replaced_with_ss01</key>
 	<string>c.replaced_with_ss01.glif</string>
+	<key>caron</key>
+	<string>caron.glif</string>
+	<key>caron.copy_1</key>
+	<string>caron.copy_1.glif</string>
+	<key>caron.copy_2</key>
+	<string>caron.copy_2.glif</string>
+	<key>cedilla</key>
+	<string>cedilla.glif</string>
+	<key>cedilla.copy_1</key>
+	<string>cedilla.copy_1.glif</string>
+	<key>cedilla.copy_2</key>
+	<string>cedilla.copy_2.glif</string>
 	<key>cent</key>
 	<string>cent.glif</string>
+	<key>circumflex</key>
+	<string>circumflex.glif</string>
+	<key>circumflex.copy_1</key>
+	<string>circumflex.copy_1.glif</string>
+	<key>circumflex.copy_2</key>
+	<string>circumflex.copy_2.glif</string>
 	<key>colon</key>
 	<string>colon.glif</string>
 	<key>comma</key>
@@ -154,8 +184,24 @@
 	<string>daggerdbl.glif</string>
 	<key>degree</key>
 	<string>degree.glif</string>
+	<key>dieresis</key>
+	<string>dieresis.glif</string>
+	<key>dieresis.copy_1</key>
+	<string>dieresis.copy_1.glif</string>
+	<key>dieresis.copy_2</key>
+	<string>dieresis.copy_2.glif</string>
 	<key>dollar</key>
 	<string>dollar.glif</string>
+	<key>dotaccent</key>
+	<string>dotaccent.glif</string>
+	<key>dotaccent.copy_1</key>
+	<string>dotaccent.copy_1.glif</string>
+	<key>dotaccent.copy_2</key>
+	<string>dotaccent.copy_2.glif</string>
+	<key>dotlessi</key>
+	<string>dotlessi.glif</string>
+	<key>dotlessj</key>
+	<string>dotlessj.glif</string>
 	<key>e</key>
 	<string>e.glif</string>
 	<key>e.nokinks</key>
@@ -184,6 +230,8 @@
 	<string>f.italic.glif</string>
 	<key>five</key>
 	<string>five.glif</string>
+	<key>flatg</key>
+	<string>flatg.glif</string>
 	<key>four</key>
 	<string>four.glif</string>
 	<key>fraction</key>
@@ -214,6 +262,12 @@
 	<string>h.glif</string>
 	<key>h.replaced_with_higherjoints</key>
 	<string>h.replaced_with_higherjoints.glif</string>
+	<key>hungarumlaut</key>
+	<string>hungarumlaut.glif</string>
+	<key>hungarumlaut.copy_1</key>
+	<string>hungarumlaut.copy_1.glif</string>
+	<key>hungarumlaut.copy_2</key>
+	<string>hungarumlaut.copy_2.glif</string>
 	<key>hyphen</key>
 	<string>hyphen.glif</string>
 	<key>i</key>
@@ -246,6 +300,12 @@
 	<string>m.replaced_with_higherjoints.glif</string>
 	<key>m.roundcounter</key>
 	<string>m.roundcounter.glif</string>
+	<key>macron</key>
+	<string>macron.glif</string>
+	<key>macron.copy_1</key>
+	<string>macron.copy_1.glif</string>
+	<key>macron.copy_2</key>
+	<string>macron.copy_2.glif</string>
 	<key>minus</key>
 	<string>minus.glif</string>
 	<key>n</key>
@@ -266,6 +326,12 @@
 	<string>o.glif</string>
 	<key>oe</key>
 	<string>oe.glif</string>
+	<key>ogonek</key>
+	<string>ogonek.glif</string>
+	<key>ogonek.copy_1</key>
+	<string>ogonek.copy_1.glif</string>
+	<key>ogonek.copy_2</key>
+	<string>ogonek.copy_2.glif</string>
 	<key>one</key>
 	<string>one.glif</string>
 	<key>onehalf</key>
@@ -332,6 +398,18 @@
 	<string>r.ss01.glif</string>
 	<key>registered</key>
 	<string>registered.glif</string>
+	<key>ring</key>
+	<string>ring.glif</string>
+	<key>ring.copy_1</key>
+	<string>ring.copy_1.glif</string>
+	<key>ring.copy_2</key>
+	<string>ring.copy_2.glif</string>
+	<key>ringacute.case</key>
+	<string>ringacute.case.glif</string>
+	<key>ringacute.case.copy_1</key>
+	<string>ringacute.case.copy_1.glif</string>
+	<key>ringacute.case.copy_2</key>
+	<string>ringacute.case.copy_2.glif</string>
 	<key>s</key>
 	<string>s.glif</string>
 	<key>schwa</key>
@@ -358,6 +436,12 @@
 	<string>three.glif</string>
 	<key>threequarters</key>
 	<string>threequarters.glif</string>
+	<key>tilde</key>
+	<string>tilde.glif</string>
+	<key>tilde.copy_1</key>
+	<string>tilde.copy_1.glif</string>
+	<key>tilde.copy_2</key>
+	<string>tilde.copy_2.glif</string>
 	<key>two</key>
 	<string>two.glif</string>
 	<key>u</key>
@@ -366,10 +450,200 @@
 	<string>underscore.glif</string>
 	<key>uni00B5</key>
 	<string>uni00B_5.glif</string>
+	<key>uni0300</key>
+	<string>uni0300.glif</string>
+	<key>uni0300.case</key>
+	<string>uni0300.case.glif</string>
+	<key>uni0300.case.copy_1</key>
+	<string>uni0300.case.copy_1.glif</string>
+	<key>uni0300.case.copy_2</key>
+	<string>uni0300.case.copy_2.glif</string>
+	<key>uni0300.copy_1</key>
+	<string>uni0300.copy_1.glif</string>
+	<key>uni0300.copy_2</key>
+	<string>uni0300.copy_2.glif</string>
+	<key>uni0301</key>
+	<string>uni0301.glif</string>
+	<key>uni0301.case</key>
+	<string>uni0301.case.glif</string>
+	<key>uni0301.case.copy_1</key>
+	<string>uni0301.case.copy_1.glif</string>
+	<key>uni0301.case.copy_2</key>
+	<string>uni0301.case.copy_2.glif</string>
+	<key>uni0301.copy_1</key>
+	<string>uni0301.copy_1.glif</string>
+	<key>uni0301.copy_2</key>
+	<string>uni0301.copy_2.glif</string>
+	<key>uni0302</key>
+	<string>uni0302.glif</string>
+	<key>uni0302.case</key>
+	<string>uni0302.case.glif</string>
+	<key>uni0302.case.copy_1</key>
+	<string>uni0302.case.copy_1.glif</string>
+	<key>uni0302.case.copy_2</key>
+	<string>uni0302.case.copy_2.glif</string>
+	<key>uni0302.copy_1</key>
+	<string>uni0302.copy_1.glif</string>
+	<key>uni0302.copy_2</key>
+	<string>uni0302.copy_2.glif</string>
 	<key>uni0303</key>
 	<string>uni0303.glif</string>
+	<key>uni0303.case</key>
+	<string>uni0303.case.glif</string>
+	<key>uni0303.case.copy_1</key>
+	<string>uni0303.case.copy_1.glif</string>
+	<key>uni0303.case.copy_2</key>
+	<string>uni0303.case.copy_2.glif</string>
+	<key>uni0304</key>
+	<string>uni0304.glif</string>
+	<key>uni0304.case</key>
+	<string>uni0304.case.glif</string>
+	<key>uni0304.case.copy_1</key>
+	<string>uni0304.case.copy_1.glif</string>
+	<key>uni0304.case.copy_2</key>
+	<string>uni0304.case.copy_2.glif</string>
+	<key>uni0304.copy_1</key>
+	<string>uni0304.copy_1.glif</string>
+	<key>uni0304.copy_2</key>
+	<string>uni0304.copy_2.glif</string>
+	<key>uni0306</key>
+	<string>uni0306.glif</string>
+	<key>uni0306.case</key>
+	<string>uni0306.case.glif</string>
+	<key>uni0306.case.copy_1</key>
+	<string>uni0306.case.copy_1.glif</string>
+	<key>uni0306.case.copy_2</key>
+	<string>uni0306.case.copy_2.glif</string>
+	<key>uni0306.copy_1</key>
+	<string>uni0306.copy_1.glif</string>
+	<key>uni0306.copy_2</key>
+	<string>uni0306.copy_2.glif</string>
+	<key>uni0307</key>
+	<string>uni0307.glif</string>
+	<key>uni0307.case</key>
+	<string>uni0307.case.glif</string>
+	<key>uni0307.case.copy_1</key>
+	<string>uni0307.case.copy_1.glif</string>
+	<key>uni0307.case.copy_2</key>
+	<string>uni0307.case.copy_2.glif</string>
+	<key>uni0307.copy_1</key>
+	<string>uni0307.copy_1.glif</string>
+	<key>uni0307.copy_2</key>
+	<string>uni0307.copy_2.glif</string>
+	<key>uni0308</key>
+	<string>uni0308.glif</string>
+	<key>uni0308.case</key>
+	<string>uni0308.case.glif</string>
+	<key>uni0308.case.copy_1</key>
+	<string>uni0308.case.copy_1.glif</string>
+	<key>uni0308.case.copy_2</key>
+	<string>uni0308.case.copy_2.glif</string>
+	<key>uni0308.copy_1</key>
+	<string>uni0308.copy_1.glif</string>
+	<key>uni0308.copy_2</key>
+	<string>uni0308.copy_2.glif</string>
+	<key>uni030A</key>
+	<string>uni030A_.glif</string>
+	<key>uni030A.case</key>
+	<string>uni030A_.case.glif</string>
+	<key>uni030A.case.copy_1</key>
+	<string>uni030A_.case.copy_1.glif</string>
+	<key>uni030A.case.copy_2</key>
+	<string>uni030A_.case.copy_2.glif</string>
+	<key>uni030A.copy_1</key>
+	<string>uni030A_.copy_1.glif</string>
+	<key>uni030A.copy_2</key>
+	<string>uni030A_.copy_2.glif</string>
+	<key>uni030B</key>
+	<string>uni030B_.glif</string>
+	<key>uni030B.case</key>
+	<string>uni030B_.case.glif</string>
+	<key>uni030B.case.copy_1</key>
+	<string>uni030B_.case.copy_1.glif</string>
+	<key>uni030B.case.copy_2</key>
+	<string>uni030B_.case.copy_2.glif</string>
+	<key>uni030B.copy_1</key>
+	<string>uni030B_.copy_1.glif</string>
+	<key>uni030B.copy_2</key>
+	<string>uni030B_.copy_2.glif</string>
+	<key>uni030C</key>
+	<string>uni030C_.glif</string>
+	<key>uni030C.case</key>
+	<string>uni030C_.case.glif</string>
+	<key>uni030C.case.copy_1</key>
+	<string>uni030C_.case.copy_1.glif</string>
+	<key>uni030C.case.copy_2</key>
+	<string>uni030C_.case.copy_2.glif</string>
+	<key>uni030C.copy_1</key>
+	<string>uni030C_.copy_1.glif</string>
+	<key>uni030C.copy_2</key>
+	<string>uni030C_.copy_2.glif</string>
+	<key>uni0312</key>
+	<string>uni0312.glif</string>
+	<key>uni0312.case</key>
+	<string>uni0312.case.glif</string>
+	<key>uni0312.case.copy_1</key>
+	<string>uni0312.case.copy_1.glif</string>
+	<key>uni0312.case.copy_2</key>
+	<string>uni0312.case.copy_2.glif</string>
+	<key>uni0312.copy_1</key>
+	<string>uni0312.copy_1.glif</string>
+	<key>uni0312.copy_2</key>
+	<string>uni0312.copy_2.glif</string>
+	<key>uni0315</key>
+	<string>uni0315.glif</string>
+	<key>uni0315.copy_1</key>
+	<string>uni0315.copy_1.glif</string>
+	<key>uni0315.copy_2</key>
+	<string>uni0315.copy_2.glif</string>
+	<key>uni0323</key>
+	<string>uni0323.glif</string>
+	<key>uni0323.case</key>
+	<string>uni0323.case.glif</string>
+	<key>uni0323.case.copy_1</key>
+	<string>uni0323.case.copy_1.glif</string>
+	<key>uni0323.case.copy_2</key>
+	<string>uni0323.case.copy_2.glif</string>
+	<key>uni0323.copy_1</key>
+	<string>uni0323.copy_1.glif</string>
+	<key>uni0323.copy_2</key>
+	<string>uni0323.copy_2.glif</string>
+	<key>uni0326</key>
+	<string>uni0326.glif</string>
+	<key>uni0326.case</key>
+	<string>uni0326.case.glif</string>
+	<key>uni0326.case.copy_1</key>
+	<string>uni0326.case.copy_1.glif</string>
+	<key>uni0326.case.copy_2</key>
+	<string>uni0326.case.copy_2.glif</string>
+	<key>uni0326.copy_1</key>
+	<string>uni0326.copy_1.glif</string>
+	<key>uni0326.copy_2</key>
+	<string>uni0326.copy_2.glif</string>
 	<key>uni0327</key>
 	<string>uni0327.glif</string>
+	<key>uni0327.case</key>
+	<string>uni0327.case.glif</string>
+	<key>uni0327.case.copy_1</key>
+	<string>uni0327.case.copy_1.glif</string>
+	<key>uni0327.case.copy_2</key>
+	<string>uni0327.case.copy_2.glif</string>
+	<key>uni0327.copy_1</key>
+	<string>uni0327.copy_1.glif</string>
+	<key>uni0327.copy_2</key>
+	<string>uni0327.copy_2.glif</string>
+	<key>uni0328</key>
+	<string>uni0328.glif</string>
+	<key>uni0328.case</key>
+	<string>uni0328.case.glif</string>
+	<key>uni0328.case.copy_1</key>
+	<string>uni0328.case.copy_1.glif</string>
+	<key>uni0328.case.copy_2</key>
+	<string>uni0328.case.copy_2.glif</string>
+	<key>uni0328.copy_1</key>
+	<string>uni0328.copy_1.glif</string>
+	<key>uni0328.copy_2</key>
+	<string>uni0328.copy_2.glif</string>
 	<key>uni1E9E</key>
 	<string>uni1E_9E_.glif</string>
 	<key>uni2126</key>

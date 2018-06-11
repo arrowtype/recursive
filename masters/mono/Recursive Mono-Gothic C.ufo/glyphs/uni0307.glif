@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni0307" format="2">
+  <unicode hex="0307"/>
+  <anchor x="0" y="549" name="_top"/>
+  <anchor x="0" y="729" name="_dot"/>
+  <outline>
+    <contour>
+      <point x="90" y="650" type="curve"/>
+      <point x="90" y="789" type="line" smooth="yes"/>
+      <point x="90.0" y="795.0"/>
+      <point x="85.0" y="800.0"/>
+      <point x="79" y="800" type="curve" smooth="yes"/>
+      <point x="23.0" y="800.0"/>
+      <point x="-34" y="800.0"/>
+      <point x="-90" y="800" type="curve"/>
+      <point x="-90" y="661" type="line" smooth="yes"/>
+      <point x="-90.0" y="655.0"/>
+      <point x="-85.0" y="650.0"/>
+      <point x="-79" y="650" type="curve" smooth="yes"/>
+      <point x="-23" y="650.0"/>
+      <point x="34" y="650.0"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+    </dict>
+  </lib>
+</glyph>
