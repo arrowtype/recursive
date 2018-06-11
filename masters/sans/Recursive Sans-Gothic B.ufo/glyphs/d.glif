@@ -2,6 +2,7 @@
 <glyph name="d" format="2">
   <advance width="600"/>
   <unicode hex="0064"/>
+  <anchor x="442" y="711" name="caronslovak"/>
   <outline>
     <contour>
       <point x="235.0" y="552.0" type="curve" smooth="yes"/>
@@ -15,11 +16,11 @@
       <point x="228.0" y="61.0"/>
       <point x="247.0" y="75.0"/>
       <point x="247.0" y="100.0" type="curve"/>
-      <point x="225.11617943981923" y="126.26058467221696"/>
+      <point x="225" y="126"/>
       <point x="210" y="137"/>
       <point x="210.0" y="180.0" type="curve" smooth="yes"/>
       <point x="210.0" y="338.0" type="line" smooth="yes"/>
-      <point x="210.0" y="382.7567567567568"/>
+      <point x="210.0" y="383"/>
       <point x="233.0" y="407.0"/>
       <point x="274.0" y="407.0" type="curve" smooth="yes"/>
       <point x="310" y="407.0"/>
@@ -41,14 +42,14 @@
       <point x="423" y="138"/>
       <point x="428" y="188"/>
       <point x="408" y="217" type="curve"/>
-      <point x="338.7577903891671" y="156.41306659052123"/>
-      <point x="297.84722222222223" y="133.0"/>
+      <point x="339" y="156"/>
+      <point x="298" y="133.0"/>
       <point x="254" y="133.0" type="curve" smooth="yes"/>
-      <point x="223.85185185185185" y="133.0"/>
-      <point x="210.0" y="145.327868852459"/>
+      <point x="224" y="133.0"/>
+      <point x="210.0" y="145"/>
       <point x="210.0" y="180.0" type="curve"/>
-      <point x="134.18300712217044" y="210.32679715113184"/>
-      <point x="55.0" y="179.06191950464395"/>
+      <point x="134" y="210"/>
+      <point x="55.0" y="179"/>
       <point x="55.0" y="177.0" type="curve" smooth="yes"/>
     </contour>
     <contour>
@@ -149,7 +150,7 @@
       <key>com.typemytype.robofont.guideline.magnetic.yPO3Sb713w</key>
       <integer>10</integer>
       <key>public.markColor</key>
-      <string>0.45,1,0.55,0.75</string>
+      <string>1,0.45,0.45,0.75</string>
     </dict>
   </lib>
 </glyph>

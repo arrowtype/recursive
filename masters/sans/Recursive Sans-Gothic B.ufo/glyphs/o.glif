@@ -2,6 +2,9 @@
 <glyph name="o" format="2">
   <advance width="600"/>
   <unicode hex="006F"/>
+  <anchor x="300" y="551" name="top"/>
+  <anchor x="379" y="-1" name="ogonek"/>
+  <anchor x="300" y="-1" name="bottom"/>
   <outline>
     <contour>
       <point x="302.0" y="552.0" type="curve" smooth="yes"/>
@@ -123,7 +126,7 @@
       <key>com.typemytype.robofont.guideline.magnetic.zVI8Emxh2J</key>
       <integer>10</integer>
       <key>public.markColor</key>
-      <string>0.45,1,0.55,0.75</string>
+      <string>1,0.45,0.45,0.75</string>
     </dict>
   </lib>
 </glyph>
