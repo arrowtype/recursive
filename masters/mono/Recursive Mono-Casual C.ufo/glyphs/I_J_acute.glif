@@ -2,6 +2,9 @@
 <glyph name="IJacute" format="2">
   <advance width="600"/>
   <outline>
+    <component base="IJ"/>
+    <component base="uni0301.case" xOffset="130"/>
+    <component base="uni0301.case" xOffset="450"/>
   </outline>
   <lib>
     <dict>
