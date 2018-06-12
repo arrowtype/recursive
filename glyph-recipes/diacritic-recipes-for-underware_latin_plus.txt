@@ -56,6 +56,30 @@ Ibreve=I+uni0306.case@top
 Obreve=O+uni0306.case@top
 Ubreve=U+uni0306.case@top
 
+############################
+
+
+# commaaccent
+
+gcommaaccent=flatg+uni0312@top # turned comma accent above
+kcommaaccent=k+uni0326@bottom
+lcommaaccent=l+uni0326@bottom
+ncommaaccent=n+uni0326@bottom
+rcommaaccent=r+uni0326@bottom
+scommaaccent=s+uni0326@bottom
+
+Gcommaaccent=G+uni0326.case@bottom
+Kcommaaccent=K+uni0326.case@bottom
+Lcommaaccent=L+uni0326.case@bottom
+Ncommaaccent=N+uni0326.case@bottom
+Rcommaaccent=R+uni0326.case@bottom
+Scommaaccent=S+uni0326.case@bottom
+
+############################
+
+# comma below
+uni021A=t+uni0326@bottom # T comma below
+uni021B=T+uni0326.case@bottom # t comma below
 
 ############################
 
@@ -77,41 +101,6 @@ Ugrave=U+uni0300.case@top
 Wgrave=W+uni0300.case@top
 Ygrave=Y+uni0300.case@top
 
-############################
-
-# cedilla
-
-ccedilla=c+uni0327@bottom
-scedilla=s+uni0327@bottom
-uni0163=t+uni0327@bottom # t cedilla
-Ccedilla=C+uni0327.case@bottom
-Scedilla=S+uni0327.case@bottom
-
-############################
-
-
-# commaaccent
-
-gcommaaccent=flatg+uni0312@top # turned comma accent above
-kcommaaccent=k+uni0326@bottom
-lcommaaccent=l+uni0326@bottom
-ncommaaccent=n+uni0326@bottom
-rcommaaccent=r+uni0326@bottom
-scommaaccent=s+uni0326@bottom
-
-Gcommaaccent=G+uni0326.case@bottom
-Kcommaaccent=K+uni0326.case@bottom
-Lcommaaccent=L+uni0326.case@bottom
-Ncommaaccent=N+uni0326.case@bottom
-Rcommaaccent=R+uni0326.case@bottom
-Scommaaccent=S+uni0326.case@bottom
-uni0162=T+uni0326.case@bottom # T cedilla but with a comma accent
-
-############################
-
-# comma below
-uni021A=t+uni0326@bottom # T comma below
-uni021B=T+uni0326.case@bottom # t comma below
 
 ############################
 
@@ -138,10 +127,10 @@ Zcaron=Z+uni030C.case@top
 
 # side caron
 
-# dcaron=d+uni0315@caronslovak # draw manually
-# lcaron=l+uni0315@caronslovak # draw manually
+# dcaron=d+uni0315@caronslovak
+# lcaron=l+uni0315@caronslovak
 tcaron=t+uni0315@caronslovak
-Lcaron=L+uni0315.case@caronslovak
+Lcaron=L+uni0315@caronslovak
 
 
 ############################
@@ -174,6 +163,16 @@ Ucircumflex=U+uni0302.case@top
 Wcircumflex=W+uni0302.case@top
 Ycircumflex=Y+uni0302.case@top
 
+############################
+
+# cedilla
+
+ccedilla=c+uni0327@bottom
+scedilla=s+uni0327@bottom
+uni0163=t+uni0327@bottom # t cedilla
+Ccedilla=C+uni0327.case@bottom
+Scedilla=S+uni0327.case@bottom
+uni0162=T+uni0327.case@bottom # T cedilla
 
 ############################
 
@@ -279,14 +278,14 @@ Ymacron=Y+uni0304.case@top
 aring=a+uni030A@top
 uring=u+uni030A@top
 Aring=A+uni030A.case@ring
-Uring=U+uni030A@ring
+Uring=U+uni030A@top
 
 ############################
 
 # ring acute
 
-aringacute=a+ringacute@top
-Aringacute=A+ringacute.case@ring
+uni01FB=a+ringacute@top
+uni01FA=A+ringacute.case@ring
 
 ############################
 
