@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="uni0303.case" format="2">
-  <anchor x="0" y="712" name="_top"/>
+  <advance width="600"/>
   <outline>
     <contour>
       <point x="110" y="923" type="curve" smooth="yes"/>
@@ -29,7 +29,7 @@
       <point x="207" y="798"/>
       <point x="207" y="802"/>
       <point x="207" y="814" type="curve"/>
-      <point x="207.0" y="847.4603174603175"/>
+      <point x="207.0" y="847"/>
       <point x="207.0" y="917"/>
       <point x="207" y="950" type="curve"/>
       <point x="190" y="950" type="line"/>
@@ -37,16 +37,4 @@
       <point x="141" y="923"/>
     </contour>
   </outline>
-  <lib>
-    <dict>
-      <key>com.typemytype.robofont.Image.Brightness</key>
-      <integer>0</integer>
-      <key>com.typemytype.robofont.Image.Contrast</key>
-      <integer>1</integer>
-      <key>com.typemytype.robofont.Image.Saturation</key>
-      <integer>1</integer>
-      <key>com.typemytype.robofont.Image.Sharpness</key>
-      <real>0.4</real>
-    </dict>
-  </lib>
 </glyph>
