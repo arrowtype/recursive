@@ -56,30 +56,6 @@ Ibreve=I+uni0306.case@top
 Obreve=O+uni0306.case@top
 Ubreve=U+uni0306.case@top
 
-############################
-
-
-# commaaccent
-
-gcommaaccent=flatg+uni0312@top # turned comma accent above
-kcommaaccent=k+uni0326@bottom
-lcommaaccent=l+uni0326@bottom
-ncommaaccent=n+uni0326@bottom
-rcommaaccent=r+uni0326@bottom
-scommaaccent=s+uni0326@bottom
-
-Gcommaaccent=G+uni0326.case@bottom
-Kcommaaccent=K+uni0326.case@bottom
-Lcommaaccent=L+uni0326.case@bottom
-Ncommaaccent=N+uni0326.case@bottom
-Rcommaaccent=R+uni0326.case@bottom
-Scommaaccent=S+uni0326.case@bottom
-
-############################
-
-# comma below
-uni021A=t+uni0326@bottom # T comma below
-uni021B=T+uni0326.case@bottom # t comma below
 
 ############################
 
@@ -101,6 +77,41 @@ Ugrave=U+uni0300.case@top
 Wgrave=W+uni0300.case@top
 Ygrave=Y+uni0300.case@top
 
+############################
+
+# cedilla
+
+ccedilla=c+uni0327@bottom
+scedilla=s+uni0327@bottom
+uni0163=t+uni0327@bottom # t cedilla
+Ccedilla=C+uni0327.case@bottom
+Scedilla=S+uni0327.case@bottom
+
+############################
+
+
+# commaaccent
+
+gcommaaccent=flatg+uni0312@top # turned comma accent above
+kcommaaccent=k+uni0326@bottom
+lcommaaccent=l+uni0326@bottom
+ncommaaccent=n+uni0326@bottom
+rcommaaccent=r+uni0326@bottom
+scommaaccent=s+uni0326@bottom
+
+Gcommaaccent=G+uni0326.case@bottom
+Kcommaaccent=K+uni0326.case@bottom
+Lcommaaccent=L+uni0326.case@bottom
+Ncommaaccent=N+uni0326.case@bottom
+Rcommaaccent=R+uni0326.case@bottom
+Scommaaccent=S+uni0326.case@bottom
+uni0162=T+uni0326.case@bottom # T cedilla but with a comma accent
+
+############################
+
+# comma below
+uni021A=t+uni0326@bottom # T comma below
+uni021B=T+uni0326.case@bottom # t comma below
 
 ############################
 
@@ -163,16 +174,6 @@ Ucircumflex=U+uni0302.case@top
 Wcircumflex=W+uni0302.case@top
 Ycircumflex=Y+uni0302.case@top
 
-############################
-
-# cedilla
-
-ccedilla=c+uni0327@bottom
-scedilla=s+uni0327@bottom
-uni0163=t+uni0327@bottom # t cedilla
-Ccedilla=C+uni0327.case@bottom
-Scedilla=S+uni0327.case@bottom
-uni0162=T+uni0327.case@bottom # T cedilla
 
 ############################
 
