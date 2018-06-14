@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="agrave" format="2">
   <advance width="600"/>
+  <unicode hex="00E0"/>
   <outline>
     <component base="a"/>
     <component base="uni0300" xOffset="284.0" yOffset="2.0"/>
@@ -8,7 +9,7 @@
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>1,0.7179,0,1</string>
+      <string>0.45,1,0.55,0.75</string>
     </dict>
   </lib>
 </glyph>

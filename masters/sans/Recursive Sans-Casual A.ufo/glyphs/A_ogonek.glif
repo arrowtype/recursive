@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Aogonek" format="2">
   <advance width="600"/>
+  <unicode hex="0104"/>
   <outline>
     <component base="A"/>
     <component base="uni0328.case" xOffset="503.0" yOffset="-7.0"/>
@@ -8,7 +9,7 @@
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>1,0.7179,0,1</string>
+      <string>0.45,1,0.55,0.75</string>
     </dict>
   </lib>
 </glyph>

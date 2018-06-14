@@ -3,7 +3,7 @@
   <advance width="600"/>
   <unicode hex="0065"/>
   <anchor x="300" y="551" name="top"/>
-  <anchor x="439" y="-1" name="ogonek"/>
+  <anchor x="510" y="18" name="ogonek"/>
   <anchor x="297" y="-1" name="bottom"/>
   <outline>
     <contour>
@@ -50,10 +50,10 @@
       <point x="241" y="136.0"/>
       <point x="197" y="144" type="curve"/>
       <point x="196" y="55"/>
-      <point x="254.66153846153844" y="-12.0"/>
+      <point x="255" y="-12.0"/>
       <point x="319" y="-12.0" type="curve" smooth="yes"/>
       <point x="412.0" y="-12.0"/>
-      <point x="491.20574355315296" y="10.097457472546148"/>
+      <point x="491" y="10"/>
     </contour>
     <contour>
       <point x="520" y="230" type="line" smooth="yes"/>
@@ -87,6 +87,14 @@
   </outline>
   <lib>
     <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
       <key>com.typemytype.robofont.guideline.magnetic.3vPNoMzDiW</key>
       <integer>10</integer>
       <key>com.typemytype.robofont.guideline.magnetic.4zmvu0sQSO</key>
