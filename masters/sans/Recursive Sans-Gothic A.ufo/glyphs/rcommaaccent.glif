@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="rcommaaccent" format="2">
-  <advance width="600"/>
+  <advance width="450"/>
+  <unicode hex="0157"/>
   <outline>
     <component base="r"/>
-    <component base="uni0326" xOffset="305.0"/>
+    <component base="uni0326" xOffset="263.0"/>
   </outline>
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0.45,0.73,1,0.75</string>
+      <string>1,0.7179,0,1</string>
     </dict>
   </lib>
 </glyph>

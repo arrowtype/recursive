@@ -2,6 +2,9 @@
 <glyph name="uni0162" format="2">
   <advance width="600"/>
   <unicode hex="0162"/>
+  <note>
+    T cedilla
+  </note>
   <outline>
     <component base="T"/>
     <component base="uni0327.case" xOffset="300.0"/>
@@ -9,7 +12,7 @@
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0.45,0.73,1,0.75</string>
+      <string>1,0.7179,0,1</string>
     </dict>
   </lib>
 </glyph>
