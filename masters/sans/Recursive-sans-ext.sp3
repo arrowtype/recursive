@@ -4,7 +4,7 @@
     <!-- info -->
     <version superpolator="2"/>
     <!-- application data -->
-    <data name="horizontalPreviewAxis" value="weight"/>
+    <data name="horizontalPreviewAxis" value="genre"/>
     <data name="roundGeometry" value="True"/>
     <data name="lineInverted" value="False"/>
     <data name="expandRules" value="False"/>
@@ -13,131 +13,131 @@
     <data name="lineStacked" value="sequence"/>
     <data name="includeLegacyRules" value="False"/>
     <data name="keepWorkFiles" value="False"/>
-    <data name="previewtext" value="ZR"/>
+    <data name="previewtext" value="Hgkx012"/>
     <data name="instancefolder" value="instances"/>
-    <data name="verticalPreviewAxis" value="optical"/>
+    <data name="verticalPreviewAxis" value="weight"/>
     <!-- don't generate these glyphs -->
     <ignore glyphs=""/>
     <!-- axis definitions -->
-    <axis maximum="72" minimum="10" name="optical" shortname="opsz">
-        <color a="1.000" b="0.056" g="0.775" r="0.752"/>
+    <axis maximum="1" minimum="0" name="genre" shortname="GNRE">
+        <color a="1.000" b="0.500" g="0.500" r="0.500"/>
     </axis>
-    <axis maximum="1000" minimum="300" name="weight" shortname="wght">
+    <axis maximum="1000" minimum="218" name="weight" shortname="wght">
         <color a="1.000" b="0.764" g="0.000" r="0.989"/>
     </axis>
     <!-- master definitions -->
-    <master familyname="Recursive Sans" filename="Recursive Sans-Text Heavy.ufo" sortorder="0" stylename="Text Heavy">
+    <master familyname="Recursive Sans" filename="Recursive Sans-Gothic C.ufo" sortorder="0" stylename="Gothic C">
         <location>
-            <dimension name="optical" xvalue="10"/>
+            <dimension name="genre" xvalue="0"/>
             <dimension name="weight" xvalue="1000"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
-    <master familyname="Recursive Sans" filename="Recursive Sans-Heading Heavy.ufo" sortorder="1" stylename="Heading Heavy">
+    <master familyname="Recursive Sans" filename="Recursive Sans-Casual C.ufo" sortorder="1" stylename="Casual C">
         <location>
-            <dimension name="optical" xvalue="72"/>
+            <dimension name="genre" xvalue="1"/>
             <dimension name="weight" xvalue="1000"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
-    <master familyname="Recursive Sans" filename="Recursive Sans-Text Bold.ufo" sortorder="2" stylename="Text Bold">
+    <master familyname="Recursive Sans" filename="Recursive Sans-Gothic B.ufo" sortorder="2" stylename="Gothic B">
         <location>
-            <dimension name="optical" xvalue="10"/>
+            <dimension name="genre" xvalue="0"/>
             <dimension name="weight" xvalue="700"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
-    <master familyname="Recursive Sans" filename="Recursive Sans-Heading Bold.ufo" sortorder="3" stylename="Heading Bold">
+    <master familyname="Recursive Sans" filename="Recursive Sans-Casual B.ufo" sortorder="3" stylename="Casual B">
         <location>
-            <dimension name="optical" xvalue="72"/>
+            <dimension name="genre" xvalue="1"/>
             <dimension name="weight" xvalue="700"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
-    <master familyname="Recursive Sans" filename="Recursive Sans-Text Light.ufo" sortorder="4" stylename="Text Light">
+    <master familyname="Recursive Sans" filename="Recursive Sans-Gothic A.ufo" sortorder="4" stylename="Gothic A">
         <location>
-            <dimension name="optical" xvalue="10"/>
-            <dimension name="weight" xvalue="300"/>
+            <dimension name="genre" xvalue="0"/>
+            <dimension name="weight" xvalue="218"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
-    <master familyname="Recursive Sans" filename="Recursive Sans-Heading Light.ufo" sortorder="5" stylename="Heading Light">
+    <master familyname="Recursive Sans" filename="Recursive Sans-Casual A.ufo" sortorder="5" stylename="Casual A">
         <location>
-            <dimension name="optical" xvalue="72"/>
-            <dimension name="weight" xvalue="300"/>
+            <dimension name="genre" xvalue="1"/>
+            <dimension name="weight" xvalue="218"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
     <!-- instance definitions -->
-    <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextRegular.ufo" sortorder="6" styleMapFamilyName="Recursive Sans Text Regular" styleMapStyleName="regular" stylename="Text Regular">
+    <instance familyname="Recursive Sans" filename="../../../../../../Applications/Superpolator 2.app/Contents/Resources/instances/RecursiveSans-GothicRegular.ufo" sortorder="6" styleMapFamilyName="Recursive Sans Gothic Regular" styleMapStyleName="regular" stylename="Gothic Regular">
         <location>
-            <dimension name="optical" xvalue="10"/>
+            <dimension name="genre" xvalue="0"/>
             <dimension name="weight" xvalue="400"/>
         </location>
     </instance>
-    <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextMedium.ufo" sortorder="7" stylename="Text Medium">
+    <instance familyname="Recursive Sans" filename="../../../../../../Applications/Superpolator 2.app/Contents/Resources/instances/RecursiveSans-GothicMedium.ufo" sortorder="7" stylename="Gothic Medium">
         <location>
-            <dimension name="optical" xvalue="10"/>
+            <dimension name="genre" xvalue="0"/>
             <dimension name="weight" xvalue="500"/>
         </location>
     </instance>
-    <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextSemiBold.ufo" sortorder="8" stylename="Text SemiBold">
+    <instance familyname="Recursive Sans" filename="../../../../../../Applications/Superpolator 2.app/Contents/Resources/instances/RecursiveSans-GothicSemiBold.ufo" sortorder="8" stylename="Gothic SemiBold">
         <location>
-            <dimension name="optical" xvalue="10"/>
+            <dimension name="genre" xvalue="0"/>
             <dimension name="weight" xvalue="600"/>
         </location>
     </instance>
-    <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextExtraBold.ufo" sortorder="9" stylename="Text ExtraBold">
+    <instance familyname="Recursive Sans" filename="../../../../../../Applications/Superpolator 2.app/Contents/Resources/instances/RecursiveSans-GothicExtraBold.ufo" sortorder="9" stylename="Gothic ExtraBold">
         <location>
-            <dimension name="optical" xvalue="10"/>
+            <dimension name="genre" xvalue="0"/>
             <dimension name="weight" xvalue="800"/>
         </location>
     </instance>
-    <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextBlack.ufo" sortorder="10" stylename="Text Black">
+    <instance familyname="Recursive Sans" filename="../../../../../../Applications/Superpolator 2.app/Contents/Resources/instances/RecursiveSans-GothicBlack.ufo" sortorder="10" stylename="Gothic Black">
         <location>
-            <dimension name="optical" xvalue="10"/>
+            <dimension name="genre" xvalue="0"/>
             <dimension name="weight" xvalue="900"/>
         </location>
     </instance>
-    <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextHeavy.ufo" sortorder="11" stylename="Text Heavy">
+    <instance familyname="Recursive Sans" filename="../../../../../../Applications/Superpolator 2.app/Contents/Resources/instances/RecursiveSans-GothicHeavy.ufo" sortorder="11" stylename="Gothic Heavy">
         <location>
-            <dimension name="optical" xvalue="10"/>
+            <dimension name="genre" xvalue="0"/>
             <dimension name="weight" xvalue="1000"/>
         </location>
     </instance>
-    <instance familyname="Recursive Sans" filename="instances/RecursiveSans-HeadingRegular.ufo" sortorder="12" stylename="Heading Regular">
+    <instance familyname="Recursive Sans" filename="../../../../../../Applications/Superpolator 2.app/Contents/Resources/instances/RecursiveSans-CasualRegular.ufo" sortorder="12" stylename="Casual Regular">
         <location>
-            <dimension name="optical" xvalue="72"/>
+            <dimension name="genre" xvalue="1"/>
             <dimension name="weight" xvalue="400"/>
         </location>
     </instance>
-    <instance familyname="Recursive Sans" filename="instances/RecursiveSans-HeadingMedium.ufo" sortorder="13" stylename="Heading Medium">
+    <instance familyname="Recursive Sans" filename="../../../../../../Applications/Superpolator 2.app/Contents/Resources/instances/RecursiveSans-CasualMedium.ufo" sortorder="13" stylename="Casual Medium">
         <location>
-            <dimension name="optical" xvalue="72"/>
+            <dimension name="genre" xvalue="1"/>
             <dimension name="weight" xvalue="500"/>
         </location>
     </instance>
-    <instance familyname="Recursive Sans" filename="instances/RecursiveSans-HeadingSemiBold.ufo" sortorder="14" stylename="Heading SemiBold">
+    <instance familyname="Recursive Sans" filename="../../../../../../Applications/Superpolator 2.app/Contents/Resources/instances/RecursiveSans-CasualSemiBold.ufo" sortorder="14" stylename="Casual SemiBold">
         <location>
-            <dimension name="optical" xvalue="72"/>
+            <dimension name="genre" xvalue="1"/>
             <dimension name="weight" xvalue="600"/>
         </location>
     </instance>
-    <instance familyname="Recursive Sans" filename="instances/RecursiveSans-HeadingExtraBold.ufo" sortorder="15" stylename="Heading ExtraBold">
+    <instance familyname="Recursive Sans" filename="../../../../../../Applications/Superpolator 2.app/Contents/Resources/instances/RecursiveSans-CasualExtraBold.ufo" sortorder="15" stylename="Casual ExtraBold">
         <location>
-            <dimension name="optical" xvalue="72"/>
+            <dimension name="genre" xvalue="1"/>
             <dimension name="weight" xvalue="800"/>
         </location>
     </instance>
-    <instance familyname="Recursive Sans" filename="instances/RecursiveSans-HeadingBlack.ufo" sortorder="16" stylename="Heading Black">
+    <instance familyname="Recursive Sans" filename="../../../../../../Applications/Superpolator 2.app/Contents/Resources/instances/RecursiveSans-CasualBlack.ufo" sortorder="16" stylename="Casual Black">
         <location>
-            <dimension name="optical" xvalue="72"/>
+            <dimension name="genre" xvalue="1"/>
             <dimension name="weight" xvalue="900"/>
         </location>
     </instance>
-    <instance familyname="Recursive Sans" filename="instances/RecursiveSans-HeadingHeavy.ufo" sortorder="17" stylename="Heading Heavy">
+    <instance familyname="Recursive Sans" filename="../../../../../../Applications/Superpolator 2.app/Contents/Resources/instances/RecursiveSans-CasualHeavy.ufo" sortorder="17" stylename="Casual Heavy">
         <location>
-            <dimension name="optical" xvalue="72"/>
+            <dimension name="genre" xvalue="1"/>
             <dimension name="weight" xvalue="1000"/>
         </location>
     </instance>

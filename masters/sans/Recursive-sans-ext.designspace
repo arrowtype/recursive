@@ -1,91 +1,91 @@
 <?xml version='1.0' encoding='utf-8'?>
 <designspace format="3">
     <axes>
-        <axis default="10" maximum="72" minimum="10" name="optical" tag="opsz" />
-        <axis default="300" maximum="1000" minimum="300" name="weight" tag="wght" />
+        <axis default="0" maximum="1" minimum="0" name="genre" tag="GNRE" />
+        <axis default="218" maximum="1000" minimum="218" name="weight" tag="wght" />
     </axes>
     <sources>
-        <source familyname="Recursive Sans" filename="Recursive Sans-Text Heavy.ufo" stylename="Text Heavy">
+        <source familyname="Recursive Sans" filename="Recursive Sans-Gothic C.ufo" stylename="Gothic C">
             <location>
-                <dimension name="optical" xvalue="10" />
+                <dimension name="genre" xvalue="0" />
                 <dimension name="weight" xvalue="1000" />
             </location>
         </source>
-        <source familyname="Recursive Sans" filename="Recursive Sans-Heading Heavy.ufo" stylename="Heading Heavy">
+        <source familyname="Recursive Sans" filename="Recursive Sans-Casual C.ufo" stylename="Casual C">
             <location>
-                <dimension name="optical" xvalue="72" />
+                <dimension name="genre" xvalue="1" />
                 <dimension name="weight" xvalue="1000" />
             </location>
         </source>
-        <source familyname="Recursive Sans" filename="Recursive Sans-Text Bold.ufo" stylename="Text Bold">
+        <source familyname="Recursive Sans" filename="Recursive Sans-Gothic B.ufo" stylename="Gothic B">
             <location>
-                <dimension name="optical" xvalue="10" />
+                <dimension name="genre" xvalue="0" />
                 <dimension name="weight" xvalue="700" />
             </location>
         </source>
-        <source familyname="Recursive Sans" filename="Recursive Sans-Heading Bold.ufo" stylename="Heading Bold">
+        <source familyname="Recursive Sans" filename="Recursive Sans-Casual B.ufo" stylename="Casual B">
             <location>
-                <dimension name="optical" xvalue="72" />
+                <dimension name="genre" xvalue="1" />
                 <dimension name="weight" xvalue="700" />
             </location>
         </source>
-        <source familyname="Recursive Sans" filename="Recursive Sans-Text Light.ufo" stylename="Text Light">
+        <source familyname="Recursive Sans" filename="Recursive Sans-Gothic A.ufo" stylename="Gothic A">
             <location>
-                <dimension name="optical" xvalue="10" />
-                <dimension name="weight" xvalue="300" />
+                <dimension name="genre" xvalue="0" />
+                <dimension name="weight" xvalue="218" />
             </location>
         </source>
-        <source familyname="Recursive Sans" filename="Recursive Sans-Heading Light.ufo" stylename="Heading Light">
+        <source familyname="Recursive Sans" filename="Recursive Sans-Casual A.ufo" stylename="Casual A">
             <location>
-                <dimension name="optical" xvalue="72" />
-                <dimension name="weight" xvalue="300" />
+                <dimension name="genre" xvalue="1" />
+                <dimension name="weight" xvalue="218" />
             </location>
         </source>
     </sources>
     <instances>
-        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextRegular.ufo" postscriptfontname="RecursiveSans-TextRegular" stylemapfamilyname="Recursive Sans Text Regular" stylemapstylename="regular" stylename="Text Regular">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-GothicRegular.ufo" postscriptfontname="RecursiveSans-GothicRegular" stylemapfamilyname="Recursive Sans Gothic Regular" stylemapstylename="regular" stylename="Gothic Regular">
             <location>
-                <dimension name="optical" xvalue="10" />
+                <dimension name="genre" xvalue="0" />
                 <dimension name="weight" xvalue="400" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextMedium.ufo" postscriptfontname="RecursiveSans-TextMedium" stylename="Text Medium">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-GothicMedium.ufo" postscriptfontname="RecursiveSans-GothicMedium" stylename="Gothic Medium">
             <location>
-                <dimension name="optical" xvalue="10" />
+                <dimension name="genre" xvalue="0" />
                 <dimension name="weight" xvalue="500" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextSemiBold.ufo" postscriptfontname="RecursiveSans-TextSemiBold" stylename="Text SemiBold">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-GothicSemiBold.ufo" postscriptfontname="RecursiveSans-GothicSemiBold" stylename="Gothic SemiBold">
             <location>
-                <dimension name="optical" xvalue="10" />
+                <dimension name="genre" xvalue="0" />
                 <dimension name="weight" xvalue="600" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextExtraBold.ufo" postscriptfontname="RecursiveSans-TextExtraBold" stylename="Text ExtraBold">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-GothicExtraBold.ufo" postscriptfontname="RecursiveSans-GothicExtraBold" stylename="Gothic ExtraBold">
             <location>
-                <dimension name="optical" xvalue="10" />
+                <dimension name="genre" xvalue="0" />
                 <dimension name="weight" xvalue="800" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextBlack.ufo" postscriptfontname="RecursiveSans-TextBlack" stylename="Text Black">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-GothicBlack.ufo" postscriptfontname="RecursiveSans-GothicBlack" stylename="Gothic Black">
             <location>
-                <dimension name="optical" xvalue="10" />
+                <dimension name="genre" xvalue="0" />
                 <dimension name="weight" xvalue="900" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-TextHeavy.ufo" postscriptfontname="RecursiveSans-TextHeavy" stylename="Text Heavy">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-GothicHeavy.ufo" postscriptfontname="RecursiveSans-GothicHeavy" stylename="Gothic Heavy">
             <location>
-                <dimension name="optical" xvalue="10" />
+                <dimension name="genre" xvalue="0" />
                 <dimension name="weight" xvalue="1000" />
             </location>
             <kerning />
@@ -94,49 +94,49 @@
 
 
 
-        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-HeadingRegular.ufo" postscriptfontname="RecursiveSans-HeadingRegular" stylename="Heading Regular">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-CasualRegular.ufo" postscriptfontname="RecursiveSans-CasualRegular" stylename="Casual Regular">
             <location>
-                <dimension name="optical" xvalue="72" />
+                <dimension name="genre" xvalue="1" />
                 <dimension name="weight" xvalue="400" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-HeadingMedium.ufo" postscriptfontname="RecursiveSans-HeadingMedium" stylename="Heading Medium">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-CasualMedium.ufo" postscriptfontname="RecursiveSans-CasualMedium" stylename="Casual Medium">
             <location>
-                <dimension name="optical" xvalue="72" />
+                <dimension name="genre" xvalue="1" />
                 <dimension name="weight" xvalue="500" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-HeadingSemiBold.ufo" postscriptfontname="RecursiveSans-HeadingSemiBold" stylename="Heading SemiBold">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-CasualSemiBold.ufo" postscriptfontname="RecursiveSans-CasualSemiBold" stylename="Casual SemiBold">
             <location>
-                <dimension name="optical" xvalue="72" />
+                <dimension name="genre" xvalue="1" />
                 <dimension name="weight" xvalue="600" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-HeadingExtraBold.ufo" postscriptfontname="RecursiveSans-HeadingExtraBold" stylename="Heading ExtraBold">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-CasualExtraBold.ufo" postscriptfontname="RecursiveSans-CasualExtraBold" stylename="Casual ExtraBold">
             <location>
-                <dimension name="optical" xvalue="72" />
+                <dimension name="genre" xvalue="1" />
                 <dimension name="weight" xvalue="800" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-HeadingBlack.ufo" postscriptfontname="RecursiveSans-HeadingBlack" stylename="Heading Black">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-CasualBlack.ufo" postscriptfontname="RecursiveSans-CasualBlack" stylename="Casual Black">
             <location>
-                <dimension name="optical" xvalue="72" />
+                <dimension name="genre" xvalue="1" />
                 <dimension name="weight" xvalue="900" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-HeadingHeavy.ufo" postscriptfontname="RecursiveSans-HeadingHeavy" stylename="Heading Heavy">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-CasualHeavy.ufo" postscriptfontname="RecursiveSans-CasualHeavy" stylename="Casual Heavy">
             <location>
-                <dimension name="optical" xvalue="72" />
+                <dimension name="genre" xvalue="1" />
                 <dimension name="weight" xvalue="1000" />
             </location>
             <kerning />
