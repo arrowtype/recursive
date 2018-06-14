@@ -2,6 +2,9 @@
 <glyph name="e" format="2">
   <advance width="600"/>
   <unicode hex="0065"/>
+  <anchor x="320" y="551" name="top"/>
+  <anchor x="461" y="-1" name="ogonek"/>
+  <anchor x="300" y="-1" name="bottom"/>
   <outline>
     <contour>
       <point x="345" y="415" type="curve" smooth="yes"/>
@@ -85,7 +88,7 @@
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0.45,1,0.55,0.75</string>
+      <string>1,0.45,0.45,0.75</string>
     </dict>
   </lib>
 </glyph>
