@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='utf-8'?>
+<designspace format="3">
+    <axes>
+        <axis default="0" maximum="1" minimum="0" name="genre" tag="GNRE" />
+        <axis default="218" maximum="1100" minimum="218" name="weight" tag="wght" />
+        <!-- <axis default="218" maximum="800" minimum="218" name="weight" tag="wght" /> -->
+    </axes>
+    <sources>
+
+        <source familyname="Recursive Mono Gothic" filename="Recursive Mono-Gothic A.ufo">
+            <location>
+                <dimension name="genre" xvalue="0" />
+                <dimension name="weight" xvalue="218" />
+            </location>
+        </source>
+        <source familyname="Recursive Mono Gothic" filename="Recursive Mono-Gothic B.ufo">
+            <location>
+                <dimension name="genre" xvalue="0" />
+                <dimension name="weight" xvalue="800" />
+            </location>
+        </source>
+        
+        <source familyname="Recursive Mono Gothic" filename="Recursive Mono-Gothic C.ufo">
+            <location>
+                <dimension name="genre" xvalue="0" />
+                <dimension name="weight" xvalue="1100" />
+            </location>
+        </source>
+        
+        <source familyname="Recursive Mono Casual" filename="Recursive Mono-Casual A.ufo">
+            <location>
+                <dimension name="genre" xvalue="1" />
+                <dimension name="weight" xvalue="218" />
+            </location>
+        </source>
+        <source familyname="Recursive Mono Casual" filename="Recursive Mono-Casual B.ufo">
+            <location>
+                <dimension name="genre" xvalue="1" />
+                <dimension name="weight" xvalue="800" />
+            </location>
+        </source>
+        <source familyname="Recursive Mono Casual" filename="Recursive Mono-Casual C.ufo">
+            <location>
+                <dimension name="genre" xvalue="1" />
+                <dimension name="weight" xvalue="1100" />
+            </location>
+        </source>
+
+
+    </sources>
+        
+    
+    <instances>
+
+        <instance familyname="Recursive Mono Gothic" filename="instances/Recursive Mono-Gothic Light.ufo" postscriptfontname="RecursiveMono-GothicLight" stylemapfamilyname="Recursive Mono Gothic"  stylename="Light">
+            <location>
+                <dimension name="genre" xvalue="0" />
+                <dimension name="weight" xvalue="250" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+
+        <instance familyname="Recursive Mono Gothic" filename="instances/Recursive Mono-Gothic Regular.ufo" postscriptfontname="RecursiveMono-GothicRegular" stylemapfamilyname="Recursive Mono Gothic" stylemapstylename="regular" stylename="Regular">
+            <location>
+                <dimension name="genre" xvalue="0" />
+                <dimension name="weight" xvalue="400" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        
+        <instance familyname="Recursive Mono Gothic" filename="instances/Recursive Mono-Gothic Medium.ufo" postscriptfontname="RecursiveMono-GothicMedium" stylemapfamilyname="Recursive Mono Gothic" stylename="Medium">
+            <location>
+                <dimension name="genre" xvalue="0" />
+                <dimension name="weight" xvalue="500" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono Gothic" filename="instances/Recursive Mono-Gothic SemiBold.ufo" postscriptfontname="RecursiveMono-GothicSemiBold" stylemapfamilyname="Recursive Mono Gothic" stylename="SemiBold">
+            <location>
+                <dimension name="genre" xvalue="0" />
+                <dimension name="weight" xvalue="600" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono Gothic" filename="instances/Recursive Mono-Gothic Bold.ufo" postscriptfontname="RecursiveMono-GothicBold" stylemapfamilyname="Recursive Mono Gothic" stylemapstylename="bold" stylename="Bold">
+            <location>
+                <dimension name="genre" xvalue="0" />
+                <dimension name="weight" xvalue="700" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono Gothic" filename="instances/Recursive Mono-Gothic ExtraBold.ufo" postscriptfontname="RecursiveMono-GothicExtraBold" stylemapfamilyname="Recursive Mono Gothic"  stylename="ExtraBold">
+            <location>
+                <dimension name="genre" xvalue="0" />
+                <dimension name="weight" xvalue="800" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono Gothic" filename="instances/Recursive Mono-Gothic Black.ufo" postscriptfontname="RecursiveMono-GothicBlack" stylemapfamilyname="Recursive Mono Gothic"  stylename="Black">
+            <location>
+                <dimension name="genre" xvalue="0" />
+                <dimension name="weight" xvalue="950" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono Gothic" filename="instances/Recursive Mono-Gothic Heavy.ufo" postscriptfontname="RecursiveMono-GothicHeavy" stylemapfamilyname="Recursive Mono Gothic"  stylename="Heavy">
+            <location>
+                <dimension name="genre" xvalue="0" />
+                <dimension name="weight" xvalue="1100" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+       
+        <instance familyname="Recursive Mono Casual" filename="instances/Recursive Mono-Casual Light.ufo" postscriptfontname="RecursiveMono-CasualLight"  stylemapfamilyname="Recursive Mono Casual" stylename="Light">
+            <location>
+                <dimension name="genre" xvalue="1" />
+                <dimension name="weight" xvalue="250" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono Casual" filename="instances/Recursive Mono-Casual Regular.ufo" postscriptfontname="RecursiveMono-CasualRegular" stylemapfamilyname="Recursive Mono Casual" stylemapstylename="regular" stylename="Regular">
+            <location>
+                <dimension name="genre" xvalue="1" />
+                <dimension name="weight" xvalue="400" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        
+        <instance familyname="Recursive Mono Casual" filename="instances/Recursive Mono-Casual Medium.ufo" postscriptfontname="RecursiveMono-CasualMedium" stylemapfamilyname="Recursive Mono Casual" stylename="Medium">
+            <location>
+                <dimension name="genre" xvalue="1" />
+                <dimension name="weight" xvalue="500" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono Casual" filename="instances/Recursive Mono-Casual SemiBold.ufo" postscriptfontname="RecursiveMono-CasualSemiBold" stylemapfamilyname="Recursive Mono Casual" stylename="SemiBold">
+            <location>
+                <dimension name="genre" xvalue="1" />
+                <dimension name="weight" xvalue="600" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono Casual" filename="instances/Recursive Mono-Casual Bold.ufo" postscriptfontname="RecursiveMono-CasualBold" stylemapfamilyname="Recursive Mono Casual" stylemapstylename="bold" stylename="Bold">
+            <location>
+                <dimension name="genre" xvalue="1" />
+                <dimension name="weight" xvalue="700" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono Casual" filename="instances/Recursive Mono-Casual ExtraBold.ufo" postscriptfontname="RecursiveMono-CasualExtraBold" stylemapfamilyname="Recursive Mono Casual" stylename="ExtraBold">
+            <location>
+                <dimension name="genre" xvalue="1" />
+                <dimension name="weight" xvalue="800" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono Casual" filename="instances/Recursive Mono-Casual Black.ufo" postscriptfontname="RecursiveMono-CasualBlack" stylemapfamilyname="Recursive Mono Casual" stylename="Black">
+            <location>
+                <dimension name="genre" xvalue="1" />
+                <dimension name="weight" xvalue="950" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono Casual" filename="instances/Recursive Mono-Casual Heavy.ufo" postscriptfontname="RecursiveMono-CasualHeavy" stylemapfamilyname="Recursive Mono Casual" stylename="Heavy">
+            <location>
+                <dimension name="genre" xvalue="1" />
+                <dimension name="weight" xvalue="1100" />
+            </location>
+            <kerning />
+            <info />
+        </instance>     
+
+        
+        
+        
+
+    </instances>
+</designspace>
