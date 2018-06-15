@@ -30,6 +30,7 @@
 	<key>public.glyphOrder</key>
 	<array>
 		<string>space</string>
+		<string>uni00A0</string>
 		<string>A</string>
 		<string>Agrave</string>
 		<string>Aacute</string>
@@ -308,11 +309,13 @@
 		<string>kgreenlandic</string>
 		<string>ldot</string>
 		<string>lslash</string>
+		<string>napostrophe</string>
 		<string>eng</string>
 		<string>oe</string>
 		<string>tbar</string>
 		<string>schwa</string>
 		<string>pi</string>
+		<string>uni02BC</string>
 		<string>ordfeminine</string>
 		<string>ordmasculine</string>
 		<string>uni0300</string>
@@ -391,9 +394,9 @@
 		<string>ampersand</string>
 		<string>section</string>
 		<string>paragraph</string>
+		<string>uni2113</string>
 		<string>periodcentered</string>
 		<string>bullet</string>
-		<string>uni2022</string>
 		<string>overline</string>
 		<string>plus</string>
 		<string>minus</string>
@@ -403,15 +406,25 @@
 		<string>equal</string>
 		<string>less</string>
 		<string>greater</string>
+		<string>lessequal</string>
+		<string>greaterequal</string>
+		<string>approxequal</string>
+		<string>notequal</string>
 		<string>logicalnot</string>
 		<string>uni2190</string>
 		<string>uni2191</string>
 		<string>uni2192</string>
 		<string>uni2193</string>
+		<string>partialdiff</string>
 		<string>uni2206</string>
 		<string>product</string>
 		<string>summation</string>
 		<string>uni00B5</string>
+		<string>uni2215</string>
+		<string>uni2219</string>
+		<string>radical</string>
+		<string>infinity</string>
+		<string>integral</string>
 		<string>uni2261</string>
 		<string>dollar</string>
 		<string>cent</string>
@@ -440,6 +453,7 @@
 		<string>trademark</string>
 		<string>degree</string>
 		<string>estimated</string>
+		<string>lozenge</string>
 		<string>uni00AD</string>
 		<string>ijacute</string>
 		<string>IJacute</string>
@@ -502,81 +516,12 @@
 		<string>l.italic</string>
 		<string>r.italic</string>
 		<string>y.italic</string>
-		<string>c.kinks</string>
-		<string>f.kinks</string>
-		<string>g.kinks</string>
-		<string>j.kinks</string>
-		<string>l.kinks</string>
-		<string>t.kinks</string>
 		<string>a.ss01</string>
 		<string>c.ss01</string>
 		<string>g.ss01</string>
 		<string>y.ss01</string>
-		<string>l.wide</string>
-		<string>z.wide</string>
-		<string>a.partialkinks</string>
-		<string>g.partialkinks</string>
 		<string>Y.ss02</string>
-		<string>R.nokinks</string>
 		<string>Z.noserif</string>
-		<string>c.replaced_with_ss01</string>
-		<string>g.replaced_with_bigear</string>
-		<string>g.replaced_with_rounder</string>
-		<string>a.replaced_with_shorttail</string>
-		<string>w.replaced_with_alt-flattop</string>
-		<string>B.replaced_with_nokinks</string>
-		<string>C.replaced_with_nokinks</string>
-		<string>D.replaced_with_nokinks</string>
-		<string>G.replaced_with_nokinks</string>
-		<string>J.replaced_with_nokinks</string>
-		<string>O.replaced_with_nokinks</string>
-		<string>P.replaced_with_nokinks</string>
-		<string>Q.replaced_with_nokinks</string>
-		<string>S.replaced_with_nokinks</string>
-		<string>U.replaced_with_nokinks</string>
-		<string>a.replaced_with_nokinks</string>
-		<string>b.replaced_with_nokinks</string>
-		<string>c.replaced_with_nokinks</string>
-		<string>d.replaced_with_nokinks</string>
-		<string>e.replaced_with_nokinks</string>
-		<string>f.replaced_with_nokinks</string>
-		<string>g.replaced_with_nokinks</string>
-		<string>h.replaced_with_nokinks</string>
-		<string>i.replaced_with_nokinks</string>
-		<string>j.replaced_with_nokinks</string>
-		<string>k.replaced_with_nokinks</string>
-		<string>l.replaced_with_nokinks</string>
-		<string>m.replaced_with_nokinks</string>
-		<string>n.replaced_with_nokinks</string>
-		<string>o.replaced_with_nokinks</string>
-		<string>p.replaced_with_nokinks</string>
-		<string>q.replaced_with_nokinks</string>
-		<string>r.replaced_with_nokinks</string>
-		<string>s.replaced_with_nokinks</string>
-		<string>t.replaced_with_nokinks</string>
-		<string>u.replaced_with_nokinks</string>
-		<string>v.replaced_with_nokinks</string>
-		<string>w.replaced_with_nokinks</string>
-		<string>x.replaced_with_nokinks</string>
-		<string>y.replaced_with_nokinks</string>
-		<string>zero.replaced_with_nokinks</string>
-		<string>two.replaced_with_nokinks</string>
-		<string>three.replaced_with_nokinks</string>
-		<string>five.replaced_with_nokinks</string>
-		<string>six.replaced_with_nokinks</string>
-		<string>eight.replaced_with_nokinks</string>
-		<string>nine.replaced_with_nokinks</string>
-		<string>B.alt1</string>
-		<string>D.alt1</string>
-		<string>E.alt1</string>
-		<string>F.alt1</string>
-		<string>H.alt1</string>
-		<string>P.alt1</string>
-		<string>R.alt1</string>
-		<string>g.alt1</string>
-		<string>m.alt1</string>
-		<string>four.alt1</string>
-		<string>six.alt1</string>
 	</array>
 </dict>
 </plist>
