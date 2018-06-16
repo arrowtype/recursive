@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="oslashacute" format="2">
   <advance width="600"/>
+  <unicode hex="01FF"/>
   <outline>
     <component base="oslash"/>
-    <component base="uni0301" xOffset="300.0" yOffset="22.0"/>
+    <component base="acutecomb" xOffset="300.0" yOffset="22.0"/>
   </outline>
   <lib>
     <dict>
