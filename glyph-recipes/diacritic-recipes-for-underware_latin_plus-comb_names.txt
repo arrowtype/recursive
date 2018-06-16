@@ -1,0 +1,404 @@
+
+## Glyph Construction recipes for diacritics in Underware's Latin Plus character set
+## more info at http://www.underware.nl/latin_plus/character_set/
+
+############################
+
+# acute
+aacute=a+acutecomb@top
+aeacute=ae+acutecomb@top
+cacute=c+acutecomb@top
+eacute=e+acutecomb@top
+iacute=dotlessi+acutecomb@top
+lacute=l+acutecomb.case@top
+nacute=n+acutecomb@top
+oacute=o+acutecomb@top
+oslashacute=oslash+acutecomb@top
+racute=r+acutecomb@top
+sacute=s+acutecomb@top
+uacute=u+acutecomb@top
+wacute=w+acutecomb@top
+yacute=y+acutecomb@top
+zacute=z+acutecomb@top
+
+Aacute=A+acutecomb.case@top
+AEacute=AE+acutecomb.case@top
+Cacute=C+acutecomb.case@top
+Eacute=E+acutecomb.case@top
+Iacute=I+acutecomb.case@top
+Lacute=L+acutecomb.case@top
+Nacute=N+acutecomb.case@top
+Oacute=O+acutecomb.case@top
+Oslashacute=Oslash+acutecomb.case@top
+Racute=R+acutecomb.case@top
+Sacute=S+acutecomb.case@top
+Uacute=U+acutecomb.case@top
+Wacute=W+acutecomb.case@top
+Yacute=Y+acutecomb.case@top
+Zacute=Z+acutecomb.case@top
+
+
+############################
+
+#breve
+
+abreve=a+brevecomb@top
+ebreve=e+brevecomb@top
+gbreve=flatg+brevecomb@top
+ibreve=dotlessi+brevecomb@top
+obreve=o+brevecomb@top
+ubreve=u+brevecomb@top
+
+Abreve=A+brevecomb.case@top
+Ebreve=E+brevecomb.case@top
+Gbreve=G+brevecomb.case@top
+Ibreve=I+brevecomb.case@top
+Obreve=O+brevecomb.case@top
+Ubreve=U+brevecomb.case@top
+
+############################
+
+
+# commaaccent
+
+gcommaaccent=flatg+uni0312@top # turned comma accent above
+kcommaaccent=k+commaaccentcomb@bottom
+lcommaaccent=l+commaaccentcomb@bottom
+ncommaaccent=n+commaaccentcomb@bottom
+rcommaaccent=r+commaaccentcomb@bottom
+scommaaccent=s+commaaccentcomb@bottom
+
+Gcommaaccent=G+commaaccentcomb.case@bottom
+Kcommaaccent=K+commaaccentcomb.case@bottom
+Lcommaaccent=L+commaaccentcomb.case@bottom
+Ncommaaccent=N+commaaccentcomb.case@bottom
+Rcommaaccent=R+commaaccentcomb.case@bottom
+Scommaaccent=S+commaaccentcomb.case@bottom
+
+############################
+
+# comma below
+uni021A=t+commaaccentcomb@bottom # T comma below
+uni021B=T+commaaccentcomb.case@bottom # t comma below
+
+############################
+
+# grave
+
+agrave=a+gravecomb@top
+egrave=e+gravecomb@top
+igrave=dotlessi+gravecomb@top
+ograve=o+gravecomb@top
+ugrave=u+gravecomb@top
+wgrave=w+gravecomb@top
+ygrave=y+gravecomb@top
+
+Agrave=A+gravecomb.case@top
+Egrave=E+gravecomb.case@top
+Igrave=I+gravecomb.case@top
+Ograve=O+gravecomb.case@top
+Ugrave=U+gravecomb.case@top
+Wgrave=W+gravecomb.case@top
+Ygrave=Y+gravecomb.case@top
+
+
+############################
+
+# caron
+
+ccaron=c+caroncomb@top
+
+ecaron=e+caroncomb@top
+gcaron=flatg+caroncomb@top
+ncaron=n+caroncomb@top
+rcaron=r+caroncomb@top
+scaron=s+caroncomb@top
+zcaron=z+caroncomb@top
+
+Ccaron=C+caroncomb.case@top
+Dcaron=D+caroncomb.case@top
+Ecaron=E+caroncomb.case@top
+Gcaron=G+caroncomb.case@top
+Ncaron=N+caroncomb.case@top
+Rcaron=R+caroncomb.case@top
+Scaron=S+caroncomb.case@top
+Tcaron=T+caroncomb.case@top
+Zcaron=Z+caroncomb.case@top
+
+# side caron
+
+# dcaron=d+commaaboverightcomb@caronslovak
+# lcaron=l+commaaboverightcomb@caronslovak
+tcaron=t+commaaboverightcomb@caronslovak
+Lcaron=L+commaaboverightcomb@caronslovak
+napostrophe=n+commaaboverightcomb@caronslovak
+
+
+############################
+
+# circumflex
+
+acircumflex=a+circumflexcomb@top
+ccircumflex=c+circumflexcomb@top
+ecircumflex=e+circumflexcomb@top
+gcircumflex=flatg+circumflexcomb@top
+hcircumflex=h+circumflexcomb@top
+icircumflex=dotlessi+circumflexcomb@top
+jcircumflex=dotlessj+circumflexcomb@top
+ocircumflex=o+circumflexcomb@top
+scircumflex=s+circumflexcomb@top
+ucircumflex=u+circumflexcomb@top
+wcircumflex=w+circumflexcomb@top
+ycircumflex=y+circumflexcomb@top
+
+Acircumflex=A+circumflexcomb.case@top
+Ccircumflex=C+circumflexcomb.case@top
+Ecircumflex=E+circumflexcomb.case@top
+Gcircumflex=G+circumflexcomb.case@top
+Hcircumflex=H+circumflexcomb.case@top
+Icircumflex=I+circumflexcomb.case@top
+Jcircumflex=J+circumflexcomb.case@top
+Ocircumflex=O+circumflexcomb.case@top
+Scircumflex=S+circumflexcomb.case@top
+Ucircumflex=U+circumflexcomb.case@top
+Wcircumflex=W+circumflexcomb.case@top
+Ycircumflex=Y+circumflexcomb.case@top
+
+############################
+
+# cedilla
+
+ccedilla=c+cedillacomb@bottom
+scedilla=s+cedillacomb@bottom
+uni0163=t+cedillacomb@bottom # t cedilla
+Ccedilla=C+cedillacomb.case@bottom
+Scedilla=S+cedillacomb.case@bottom
+uni0162=T+cedillacomb.case@bottom # T cedilla
+
+############################
+
+# dieresis
+
+adieresis=a+dieresiscomb@top
+edieresis=e+dieresiscomb@top
+idieresis=dotlessi+dieresiscomb@top
+odieresis=o+dieresiscomb@top
+udieresis=u+dieresiscomb@top
+wdieresis=w+dieresiscomb@top
+ydieresis=y+dieresiscomb@top
+
+Adieresis=A+dieresiscomb.case@top
+Edieresis=E+dieresiscomb.case@top
+Idieresis=I+dieresiscomb.case@top
+Odieresis=O+dieresiscomb.case@top
+Udieresis=U+dieresiscomb.case@top
+Wdieresis=W+dieresiscomb.case@top
+Ydieresis=Y+dieresiscomb.case@top
+
+############################
+
+# dotaccent
+
+cdotaccent=c+dotaccentcomb@top
+edotaccent=e+dotaccentcomb@top
+gdotaccent=flatg+dotaccentcomb@top
+zdotaccent=z+dotaccentcomb@top
+
+Cdotaccent=C+dotaccentcomb.case@top
+Edotaccent=E+dotaccentcomb.case@top
+Gdotaccent=G+dotaccentcomb.case@top
+Idotaccent=I+dotaccentcomb.case@top
+Zdotaccent=Z+dotaccentcomb.case@top
+
+
+# ldot=l+dotaccentcomb@dot # decomposed for more control
+# Ldot=L+dotaccentcomb@dot # decomposed for more control
+
+############################
+
+# dotbelow
+
+adotbelow=a+dotbelowcomb@bottom
+edotbelow=e+dotbelowcomb@bottom
+idotbelow=i+dotbelowcomb@bottom
+odotbelow=o+dotbelowcomb@bottom
+udotbelow=u+dotbelowcomb@bottom
+
+Adotbelow=A+dotbelowcomb@bottom
+Edotbelow=E+dotbelowcomb@bottom
+Idotbelow=I+dotbelowcomb@bottom
+Odotbelow=O+dotbelowcomb@bottom
+Udotbelow=U+dotbelowcomb@bottom
+
+############################
+
+# hungarumlaut
+
+ohungarumlaut=o+hungarumlautcomb@top
+uhungarumlaut=u+hungarumlautcomb@top
+Ohungarumlaut=O+hungarumlautcomb.case@top
+Uhungarumlaut=U+hungarumlautcomb.case@top
+
+############################
+
+# ogonek
+
+aogonek=a+ogonekcomb@ogonek
+eogonek=e+ogonekcomb@ogonek
+iogonek=i+ogonekcomb@ogonek
+oogonek=o+ogonekcomb@ogonek
+uogonek=u+ogonekcomb@ogonek
+
+Aogonek=A+ogonekcomb.case@ogonek
+Eogonek=E+ogonekcomb.case@ogonek
+Iogonek=I+ogonekcomb.case@ogonek
+Oogonek=O+ogonekcomb.case@ogonek
+Uogonek=U+ogonekcomb.case@ogonek
+
+############################
+
+# macron
+
+amacron=a+macroncomb@top
+emacron=e+macroncomb@top
+imacron=dotlessi+macroncomb@top
+omacron=o+macroncomb@top
+umacron=u+macroncomb@top
+ymacron=y+macroncomb@top
+Amacron=A+macroncomb.case@top
+Emacron=E+macroncomb.case@top
+Imacron=I+macroncomb.case@top
+Omacron=O+macroncomb.case@top
+Umacron=U+macroncomb.case@top
+Ymacron=Y+macroncomb.case@top
+
+############################
+
+# ring
+
+aring=a+ringcomb@top
+uring=u+ringcomb@top
+Aring=A+ringcomb.case@ring
+Uring=U+ringcomb@ring
+
+############################
+
+# ring acute
+
+aringacute=a+ringacute@top
+Aringacute=A+ringacute.case@ring
+
+############################
+
+# tilde
+
+atilde=a+tildecomb@top
+etilde=e+tildecomb@top
+itilde=dotlessi+tildecomb@top
+ntilde=n+tildecomb@top
+otilde=o+tildecomb@top
+utilde=u+tildecomb@top
+ytilde=y+tildecomb@top
+
+Atilde=A+tildecomb.case@top
+Etilde=E+tildecomb.case@top
+Itilde=I+tildecomb.case@top
+Ntilde=N+tildecomb.case@top
+Otilde=O+tildecomb.case@top
+Utilde=U+tildecomb.case@top
+Ytilde=Y+tildecomb.case@top
+
+############################
+
+## to draw manually
+
+# AE
+# ae
+# Dcroat
+# dcroat
+# Eth
+# eth
+# Eng
+# eng
+# uni1E9E # cap germandbls
+# germandbls
+# Hbar
+# hbar
+# IJ
+# ij
+# IJacute # use component of acutecomb.case
+# ijacute # use component of acutecomb
+# Nhookleft
+# nhookleft
+# OE
+# oe
+# Oslash
+# oslash
+# Schwa # start with e, rotate 180 degrees, and scale to cap size
+# schwa # use component of e, rotated 180 degrees
+# Thorn
+# thorn
+# Tbar
+# tbar
+
+############################
+
+# ## insert top-center anchor "top" on:
+# 
+# a
+# ae
+# c
+# e
+# flatg # flat-top
+# idotless
+# l
+# n
+# o
+# oslash
+# r
+# s
+# u
+# w
+# y
+# z
+
+# A
+# AE
+# C
+# E
+# G
+# I
+# L
+# N
+# O
+# Oslash
+# R
+# S
+# U
+# W
+# Y
+# Z
+
+# ## insert bottom-center anchor "bottom" on:
+# 
+# a
+# e
+# i
+# o
+# t
+# u
+# 
+# A
+# E
+# I
+# O
+# T
+# U
+
+# ## insert caron position anchor "caron" on:
+# 
+# l
+# t
+# L
+# T
+# 
