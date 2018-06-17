@@ -4,7 +4,7 @@
     <!-- info -->
     <version superpolator="2"/>
     <!-- application data -->
-    <data name="horizontalPreviewAxis" value="genre"/>
+    <data name="horizontalPreviewAxis" value="slant"/>
     <data name="roundGeometry" value="False"/>
     <data name="lineInverted" value="False"/>
     <data name="expandRules" value="False"/>
@@ -13,34 +13,34 @@
     <data name="lineStacked" value="lined"/>
     <data name="includeLegacyRules" value="False"/>
     <data name="keepWorkFiles" value="False"/>
-    <data name="previewtext" value="nonononononononoonoooo"/>
+    <data name="previewtext" value="g"/>
     <data name="instancefolder" value="instances"/>
-    <data name="verticalPreviewAxis" value="slant"/>
+    <data name="verticalPreviewAxis" value="weight"/>
     <!-- don't generate these glyphs -->
     <ignore glyphs=""/>
     <!-- axis definitions -->
     <axis maximum="1" minimum="0" name="genre" shortname="gnre">
         <color a="1.000" b="0.686" g="1.196" r="0.794"/>
     </axis>
-    <axis maximum="18.430000" minimum="0" name="slant" shortname="slnt">
+    <axis maximum="14.040000" minimum="0" name="slant" shortname="slnt">
         <color a="1.000" b="0.001" g="0.066" r="0.989"/>
     </axis>
     <axis maximum="800" minimum="218" name="weight" shortname="wght">
         <color a="1.000" b="0.764" g="0.000" r="0.989"/>
     </axis>
     <!-- master definitions -->
-    <master familyname="Recursive Mono" filename="Recursive Mono-Casual A.ufo" sortorder="0" stylename="Casual A Italic">
+    <master familyname="Recursive Mono" filename="Recursive Mono-Casual A Italic.ufo" sortorder="0" stylename="Casual A 14 Italic">
         <location>
             <dimension name="genre" xvalue="1"/>
-            <dimension name="slant" xvalue="18.430000"/>
+            <dimension name="slant" xvalue="14.040000"/>
             <dimension name="weight" xvalue="218"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
-    <master familyname="Recursive Mono" filename="Recursive Mono-Casual B.ufo" sortorder="1" stylename="Casual B Italic">
+    <master familyname="Recursive Mono" filename="Recursive Mono-Casual B Italic.ufo" sortorder="1" stylename="Casual B 14 Italic">
         <location>
             <dimension name="genre" xvalue="1"/>
-            <dimension name="slant" xvalue="18.430000"/>
+            <dimension name="slant" xvalue="14.040000"/>
             <dimension name="weight" xvalue="800"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
@@ -61,18 +61,18 @@
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
-    <master familyname="Recursive Mono" filename="Recursive Mono-Gothic A.ufo" sortorder="4" stylename="Gothic A Italic">
+    <master familyname="Recursive Mono" filename="Recursive Mono-Gothic A Italic.ufo" sortorder="4" stylename="Gothic A 14 Italic">
         <location>
             <dimension name="genre" xvalue="0"/>
-            <dimension name="slant" xvalue="18.430000"/>
+            <dimension name="slant" xvalue="14.040000"/>
             <dimension name="weight" xvalue="218"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
-    <master familyname="Recursive Mono" filename="Recursive Mono-Gothic B.ufo" sortorder="5" stylename="Gothic B Italic">
+    <master familyname="Recursive Mono" filename="Recursive Mono-Gothic B Italic.ufo" sortorder="5" stylename="Gothic B 14 Italic">
         <location>
             <dimension name="genre" xvalue="0"/>
-            <dimension name="slant" xvalue="18.430000"/>
+            <dimension name="slant" xvalue="14.040000"/>
             <dimension name="weight" xvalue="800"/>
         </location>
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
@@ -94,7 +94,7 @@
         <color a="1.000" b="0.300" g="0.300" r="0.300"/>
     </master>
     <!-- instance definitions -->
-    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-GothicRegularItalic.ufo" sortorder="13" styleMapFamilyName="Recursive Mono Gothic" styleMapStyleName="italic" stylename="Gothic Regular Italic">
+    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-GothicRegularItalic.ufo" sortorder="12" styleMapFamilyName="Recursive Mono Gothic" styleMapStyleName="italic" stylename="Gothic Regular Italic">
         <location>
             <dimension name="genre" xvalue="0"/>
             <dimension name="slant" xvalue="14.040000"/>
@@ -116,7 +116,7 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-GothicRegular.ufo" sortorder="12" styleMapFamilyName="Recursive Mono Gothic" styleMapStyleName="regular" stylename="Gothic Regular">
+    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-GothicRegular.ufo" sortorder="11" styleMapFamilyName="Recursive Mono Gothic" styleMapStyleName="regular" stylename="Gothic Regular">
         <location>
             <dimension name="genre" xvalue="0"/>
             <dimension name="slant" xvalue="0"/>
@@ -127,11 +127,11 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-GothicBoldItalic.ufo" sortorder="15" styleMapFamilyName="Recursive Mono Gothic" styleMapStyleName="bold italic" stylename="Gothic Bold Italic">
+    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-GothicB14Italic.ufo" sortorder="15" styleMapFamilyName="Recursive Mono Gothic" styleMapStyleName="bold italic" stylename="Gothic B 14 Italic">
         <location>
             <dimension name="genre" xvalue="0"/>
             <dimension name="slant" xvalue="14.040000"/>
-            <dimension name="weight" xvalue="725"/>
+            <dimension name="weight" xvalue="800"/>
         </location>
         <provideFeatures state="1"/>
         <provideGroups state="1"/>
@@ -160,7 +160,7 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-CasualBold.ufo" sortorder="14" styleMapFamilyName="Recursive Mono Gothic" styleMapStyleName="bold" stylename="Casual Bold">
+    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-CasualBold.ufo" sortorder="13" styleMapFamilyName="Recursive Mono Gothic" styleMapStyleName="bold" stylename="Casual Bold">
         <location>
             <dimension name="genre" xvalue="0"/>
             <dimension name="slant" xvalue="0"/>
@@ -171,11 +171,33 @@
         <provideLib state="1"/>
         <provideInfo state="1"/>
     </instance>
-    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-CasualBoldItalic.ufo" sortorder="11" styleMapFamilyName="Recursive Mono Casual" styleMapStyleName="bold italic" stylename="Casual Bold Italic">
+    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-CasualB14Italic.ufo" sortorder="14" styleMapFamilyName="Recursive Mono Casual" styleMapStyleName="bold italic" stylename="Casual B 14 Italic">
         <location>
             <dimension name="genre" xvalue="1"/>
             <dimension name="slant" xvalue="14.430000"/>
-            <dimension name="weight" xvalue="725"/>
+            <dimension name="weight" xvalue="800"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-GothicA14Italic.ufo" sortorder="16" stylename="Gothic A 14 Italic">
+        <location>
+            <dimension name="genre" xvalue="0"/>
+            <dimension name="slant" xvalue="14.040000"/>
+            <dimension name="weight" xvalue="218"/>
+        </location>
+        <provideFeatures state="1"/>
+        <provideGroups state="1"/>
+        <provideLib state="1"/>
+        <provideInfo state="1"/>
+    </instance>
+    <instance familyname="Recursive Mono" filename="instances/RecursiveMono-CasualA14Italic.ufo" sortorder="17" stylename="Casual A 14 Italic">
+        <location>
+            <dimension name="genre" xvalue="1"/>
+            <dimension name="slant" xvalue="14.040000"/>
+            <dimension name="weight" xvalue="218"/>
         </location>
         <provideFeatures state="1"/>
         <provideGroups state="1"/>
