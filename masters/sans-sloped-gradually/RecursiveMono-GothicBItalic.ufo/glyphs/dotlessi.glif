@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dotlessi" format="1">
+  <advance width="350"/>
+  <unicode hex="0131"/>
+  <outline>
+    <contour>
+      <point x="20" y="550" type="curve"/>
+      <point x="20" y="504"/>
+      <point x="20" y="392"/>
+      <point x="20" y="346" type="curve" smooth="yes"/>
+      <point x="20" y="340"/>
+      <point x="25" y="335"/>
+      <point x="31" y="335" type="curve" smooth="yes"/>
+      <point x="82" y="335"/>
+      <point x="144" y="335"/>
+      <point x="195" y="335" type="curve"/>
+      <point x="195" y="394"/>
+      <point x="173" y="550"/>
+      <point x="120" y="550" type="curve" smooth="yes"/>
+      <point x="90" y="550"/>
+      <point x="50" y="550"/>
+    </contour>
+    <contour>
+      <point x="310" y="0" type="curve"/>
+      <point x="310" y="54"/>
+      <point x="310" y="108"/>
+      <point x="310" y="162" type="curve" smooth="yes"/>
+      <point x="310" y="539" type="line" smooth="yes"/>
+      <point x="310" y="545"/>
+      <point x="305" y="550"/>
+      <point x="299" y="550" type="curve" smooth="yes"/>
+      <point x="85" y="550" type="line"/>
+      <point x="85" y="11" type="line" smooth="yes"/>
+      <point x="85" y="5"/>
+      <point x="90" y="0"/>
+      <point x="96" y="0" type="curve" smooth="yes"/>
+      <point x="167" y="0"/>
+      <point x="239" y="0"/>
+    </contour>
+    <contour>
+      <point x="187" y="561" type="move" name="top"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.45,0.73,1,0.75</string>
+    </dict>
+  </lib>
+</glyph>

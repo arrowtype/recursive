@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<designspace format="3">
+    <axes>
+        <axis default="0" maximum="1" minimum="0" name="genre" tag="gnre" />
+        <axis default="0" maximum="18.430000" minimum="0" name="slant" tag="slnt" />
+        <axis default="218" maximum="800" minimum="218" name="weight" tag="wght" />
+    </axes>
+    <sources>
+        <source familyname="Recursive Sans" filename="Recursive Sans-Casual A Italic.ufo" stylename="Casual A Italic">
+            <location>
+                <dimension name="genre" xvalue="1" />
+                <dimension name="slant" xvalue="18.430000" />
+                <dimension name="weight" xvalue="218" />
+            </location>
+        </source>
+        <source familyname="Recursive Sans" filename="Recursive Sans-Casual B Italic.ufo" stylename="Casual B Italic">
+            <location>
+                <dimension name="genre" xvalue="1" />
+                <dimension name="slant" xvalue="18.430000" />
+                <dimension name="weight" xvalue="800" />
+            </location>
+        </source>
+        <source familyname="Recursive Sans" filename="../sans/Recursive Sans-Casual B.ufo" stylename="Casual B">
+            <location>
+                <dimension name="genre" xvalue="1" />
+                <dimension name="slant" xvalue="0" />
+                <dimension name="weight" xvalue="800" />
+            </location>
+        </source>
+        <source familyname="Recursive Sans" filename="../sans/Recursive Sans-Casual A.ufo" stylename="Casual A">
+            <location>
+                <dimension name="genre" xvalue="1" />
+                <dimension name="slant" xvalue="0" />
+                <dimension name="weight" xvalue="218" />
+            </location>
+        </source>
+        <source familyname="Recursive Sans" filename="Recursive Sans-Gothic A Italic.ufo" stylename="Gothic A Italic">
+            <location>
+                <dimension name="genre" xvalue="0" />
+                <dimension name="slant" xvalue="18.430000" />
+                <dimension name="weight" xvalue="218" />
+            </location>
+        </source>
+        <source familyname="Recursive Sans" filename="Recursive Sans-Gothic B Italic.ufo" stylename="Gothic B Italic">
+            <location>
+                <dimension name="genre" xvalue="0" />
+                <dimension name="slant" xvalue="18.430000" />
+                <dimension name="weight" xvalue="800" />
+            </location>
+        </source>
+        <source familyname="Recursive Sans" filename="../sans/Recursive Sans-Gothic A.ufo" stylename="Gothic A">
+            <location>
+                <dimension name="genre" xvalue="0" />
+                <dimension name="slant" xvalue="0" />
+                <dimension name="weight" xvalue="218" />
+            </location>
+        </source>
+        <source familyname="Recursive Sans" filename="../sans/Recursive Sans-Gothic C.ufo" stylename="Gothic C">
+            <location>
+                <dimension name="genre" xvalue="0" />
+                <dimension name="slant" xvalue="0" />
+                <dimension name="weight" xvalue="800" />
+            </location>
+        </source>
+    </sources>
+    <instances>
+        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-GothicBItalic.ufo" postscriptfontname="RecursiveMono-GothicBItalic" stylemapfamilyname="Recursive Mono Gothic" stylename="Gothic B Italic">
+            <location>
+                <dimension name="genre" xvalue="0" />
+                <dimension name="slant" xvalue="14.040000" />
+                <dimension name="weight" xvalue="800" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-GothicAItalic.ufo" postscriptfontname="RecursiveMono-GothicAItalic" stylemapfamilyname="Recursive Mono Gothic" stylename="Gothic A Italic">
+            <location>
+                <dimension name="genre" xvalue="0" />
+                <dimension name="slant" xvalue="14.040000" />
+                <dimension name="weight" xvalue="218" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-CasualAItalic.ufo" postscriptfontname="RecursiveMono-CasualAItalic" stylemapfamilyname="Recursive Mono Gothic" stylename="Casual A Italic">
+            <location>
+                <dimension name="genre" xvalue="1" />
+                <dimension name="slant" xvalue="14.040000" />
+                <dimension name="weight" xvalue="218" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono" filename="instances/RecursiveMono-CasualBItalic.ufo" postscriptfontname="RecursiveMono-CasualBItalic" stylemapfamilyname="Recursive Mono Gothic" stylemapstylename="bold" stylename="Casual B Italic">
+            <location>
+                <dimension name="genre" xvalue="1" />
+                <dimension name="slant" xvalue="14.040000" />
+                <dimension name="weight" xvalue="800" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+    </instances>
+</designspace>
