@@ -43,25 +43,6 @@
       <point x="278.49484495754336" y="-74.0"/>
     </contour>
     <contour>
-      <point x="100.53552799530905" y="510.0" type="line"/>
-      <point x="99.03511001889365" y="504.0"/>
-      <point x="97.53469204247824" y="498.0"/>
-      <point x="95.78420440332695" y="491.0" type="curve" smooth="yes"/>
-      <point x="83.53079092926782" y="442.0"/>
-      <point x="85.52884037266264" y="414.0"/>
-      <point x="99.02758644341645" y="396.0" type="curve" smooth="yes"/>
-      <point x="122.27542689860354" y="365.0"/>
-      <point x="167.02507858492402" y="360.0"/>
-      <point x="289.025078584924" y="360.0" type="curve" smooth="yes"/>
-      <point x="567.025078584924" y="360.0" type="line"/>
-      <point x="575.2762628514344" y="377.0"/>
-      <point x="584.0278650943601" y="400.0"/>
-      <point x="589.7794673372857" y="423.0" type="curve" smooth="yes"/>
-      <point x="606.2840650778552" y="489.0"/>
-      <point x="594.535527995309" y="510.0"/>
-      <point x="538.535527995309" y="510.0" type="curve" smooth="yes"/>
-    </contour>
-    <contour>
       <point x="48.99303372640999" y="-100.0" type="curve" smooth="yes"/>
       <point x="7.99303372640999" y="-100.0"/>
       <point x="-20.256478634438707" y="-93.0"/>
@@ -85,5 +66,36 @@
       <point x="165.2731900302507" y="-78.03787733265145"/>
       <point x="105.99303372640998" y="-100.0"/>
     </contour>
+    <contour>
+      <point x="100.53552799530905" y="510.0" type="line"/>
+      <point x="99.03511001889365" y="504.0"/>
+      <point x="97.53469204247824" y="498.0"/>
+      <point x="95.78420440332695" y="491.0" type="curve" smooth="yes"/>
+      <point x="83.53079092926782" y="442.0"/>
+      <point x="85.52884037266264" y="414.0"/>
+      <point x="99.02758644341645" y="396.0" type="curve" smooth="yes"/>
+      <point x="122.27542689860354" y="365.0"/>
+      <point x="167.02507858492402" y="360.0"/>
+      <point x="289.025078584924" y="360.0" type="curve" smooth="yes"/>
+      <point x="567.025078584924" y="360.0" type="line"/>
+      <point x="575.2762628514344" y="377.0"/>
+      <point x="584.0278650943601" y="400.0"/>
+      <point x="589.7794673372857" y="423.0" type="curve" smooth="yes"/>
+      <point x="606.2840650778552" y="489.0"/>
+      <point x="594.535527995309" y="510.0"/>
+      <point x="538.535527995309" y="510.0" type="curve" smooth="yes"/>
+    </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+    </dict>
+  </lib>
 </glyph>
