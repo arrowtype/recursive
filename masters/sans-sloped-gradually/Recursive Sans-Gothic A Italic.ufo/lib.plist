@@ -7,50 +7,8 @@
 		<dict>
 			<key>allowPseudoUnicode</key>
 			<true/>
-			<key>ascending</key>
-			<true/>
 			<key>type</key>
-			<string>alphabetical</string>
-		</dict>
-		<dict>
-			<key>allowPseudoUnicode</key>
-			<true/>
-			<key>ascending</key>
-			<true/>
-			<key>type</key>
-			<string>category</string>
-		</dict>
-		<dict>
-			<key>allowPseudoUnicode</key>
-			<true/>
-			<key>ascending</key>
-			<true/>
-			<key>type</key>
-			<string>unicode</string>
-		</dict>
-		<dict>
-			<key>allowPseudoUnicode</key>
-			<true/>
-			<key>ascending</key>
-			<true/>
-			<key>type</key>
-			<string>script</string>
-		</dict>
-		<dict>
-			<key>allowPseudoUnicode</key>
-			<true/>
-			<key>ascending</key>
-			<true/>
-			<key>type</key>
-			<string>suffix</string>
-		</dict>
-		<dict>
-			<key>allowPseudoUnicode</key>
-			<true/>
-			<key>ascending</key>
-			<true/>
-			<key>type</key>
-			<string>decompositionBase</string>
+			<string>cannedDesign</string>
 		</dict>
 	</array>
 	<key>com.typemytype.robofont.compileSettings.autohint</key>
@@ -138,13 +96,6 @@
 		<string>x</string>
 		<string>y</string>
 		<string>z</string>
-		<string>a.italic</string>
-		<string>f.italic</string>
-		<string>g.italic</string>
-		<string>i.italic</string>
-		<string>l.italic</string>
-		<string>r.italic</string>
-		<string>y.italic</string>
 		<string>zero</string>
 		<string>one</string>
 		<string>two</string>
@@ -155,7 +106,13 @@
 		<string>seven</string>
 		<string>eight</string>
 		<string>nine</string>
-		<string>f.copy_1</string>
+		<string>a.italic</string>
+		<string>f.italic</string>
+		<string>g.italic</string>
+		<string>i.italic</string>
+		<string>l.italic</string>
+		<string>r.italic</string>
+		<string>y.italic</string>
 	</array>
 </dict>
 </plist>
