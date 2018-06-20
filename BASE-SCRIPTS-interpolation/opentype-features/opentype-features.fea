@@ -1,0 +1,13 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt; 
+
+@romanForms  = [ a          f        g        i        l        r        y        ];
+@italicForms = [ a.italic   f.italic g.italic i.italic l.italic r.italic y.italic ];
+
+feature ss01 {
+    sub @romanForms by @italicForms;
+} ss01;
+
+feature ss02 {
+    sub @italicForms by @romanForms;
+} ss02;
