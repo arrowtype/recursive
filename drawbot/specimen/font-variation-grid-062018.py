@@ -1,4 +1,4 @@
-H= 700
+H= 525
 
 W = 1000
 
@@ -7,8 +7,8 @@ size(W, H)
 font("RecursiveMonoVar-StrictLight")
 
 # list all axis from the current font
-# for axis, data in listFontVariations().items():
-#     print((axis, data))
+for axis, data in listFontVariations().items():
+    print((axis, data))
 
 maxWeight = 1100
 minWeight = 220
@@ -16,13 +16,17 @@ minWeight = 220
 maxExpression = 1.0
 minExpression = 0.01
 
-steps = 8
+maxSlant = 14
+minSlant = 0
+
+stepsX = 8
+stepsY = 6
 padding = 20
 
 string = "Rr"
 
-stepWeight =     (maxWeight - minWeight)/steps
-stepExpression = (maxExpression - minExpression)/steps
+# stepWeight =     (maxWeight - minWeight)/stepsX
+# stepExpression = (maxExpression - minExpression)/steps
 
 def interpFunc(a, b, numSteps, currentStep):
     distance = b-a
@@ -40,51 +44,47 @@ print(normalRGB(210, 46, 237)) # magenta
 print(normalRGB(251, 208, 0)) # yellow
 print(normalRGB(16, 205, 103)) # green
 
-fontSize(W/steps/1.5)
+fontSize(W/stepsX/1.5)
 
-for i in range(0,steps):
+for i in range(0,stepsX):
     # set x position
-    x = padding + i * (W-padding) / steps
+    x = padding + i * (W-padding) / stepsX
     # set XPRN
-    currentExpression = minExpression + stepExpression * i
+    # currentExpression = minExpression + stepExpression * i
     
-    red = interpFunc(0.325,0.823, steps, i)
-    green = interpFunc(0.231,0.180, steps, i)
-    blue = interpFunc(0.90,0.92, steps, i)
+    currentExpression = interpFunc(minExpression, maxExpression, stepsX, i)
+    
+    
+    # this is unnecessarily cumbersome. make a tuple interpolatetion func
+    red = interpFunc(0.325,0.823, stepsX, i)
+    green = interpFunc(0.231,0.180, stepsX, i)
+    blue = interpFunc(0.90,0.92, stepsX, i)
     # blue    ### magenta #
     #####################
     # green   ### yellow  #
-
-    # or
-
-    # (0,0,1) ### (1,0,1) #
-    #######################
-    # (0,1,0) ### (1,1,0) #
     
     # if the first or last column
-    if i == 0 or i == steps -1:
+    if i == 0 or i == stepsX-1:
         fill(red, green, blue, 1)
     # if in the middle columns
     else:
         fill(red, green, blue, 0.65)
+        
+    currentSlant = interpFunc(minSlant, maxSlant, stepsX, i)
     
-    for j in range(0,steps):
+    for j in range(0,stepsY):
         
-        # if the first or last column
-        if i == 0 or i == steps -1:
-            fill(red, green, blue, 1)
-        # if in the middle columns
-        else:
-            fill(red, green, blue, 0.65)
+        currentWeight = interpFunc(minWeight, maxWeight, stepsY, j)
+        # currentSlant = interpFunc(minSlant, maxSlant, stepsY, j)
+
+        # TODO: make slant in bottom-right corner and top-left corners?
+        # currentSlant = maxSlant-currentSlant
         
-            
+        y = padding + j * (H-padding) / stepsY
         
-        currentWeight = minWeight + stepWeight * j
-        
-        y = padding + j * (H-padding) / steps
-        
+        # fontVariations(XPRN=currentExpression, wght=currentWeight, slnt=currentSlant)
         fontVariations(XPRN=currentExpression, wght=currentWeight)
         text(string, (x, y))
     
-saveImage("/Users/stephennixon/type/01-casual_mono-project/drawbot/specimen/exports/recursive-var-grid--wght_xprn.pdf")
+# saveImage("/Users/stephennixon/type/01-casual_mono-project/drawbot/specimen/exports/recursive-var-grid--wght_xprn-1.pdf")
     

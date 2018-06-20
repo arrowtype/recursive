@@ -537,6 +537,37 @@
 	<integer>0</integer>
 	<key>com.typemytype.robofont.shouldAddPointsInSplineConversion</key>
 	<integer>1</integer>
+	<key>com.typesupply.metricsMachine4.groupColors</key>
+	<dict>
+		<key>public.kern1.A</key>
+		<array>
+			<real>1.0</real>
+			<real>0.0</real>
+			<real>0.0</real>
+			<real>0.25</real>
+		</array>
+		<key>public.kern1.O</key>
+		<array>
+			<real>1.0</real>
+			<real>0.5</real>
+			<real>0.0</real>
+			<real>0.25</real>
+		</array>
+		<key>public.kern2.A</key>
+		<array>
+			<real>1.0</real>
+			<real>0.0</real>
+			<real>0.0</real>
+			<real>0.25</real>
+		</array>
+		<key>public.kern2.O</key>
+		<array>
+			<real>1.0</real>
+			<real>0.5</real>
+			<real>0.0</real>
+			<real>0.25</real>
+		</array>
+	</dict>
 	<key>public.glyphOrder</key>
 	<array>
 		<string>space</string>
@@ -985,11 +1016,6 @@
 		<string>cedillacomb.case</string>
 		<string>ogonekcomb.case</string>
 		<string>ringacute.case</string>
-		<string>braceleft.asymmetrical</string>
-		<string>braceright.asymmetrical</string>
-		<string>question.nokinks</string>
-		<string>ampersand.crossbar</string>
-		<string>five.topserif</string>
 		<string>a.italic</string>
 		<string>f.italic</string>
 		<string>g.italic</string>
@@ -997,57 +1023,6 @@
 		<string>l.italic</string>
 		<string>r.italic</string>
 		<string>y.italic</string>
-		<string>C.rounder</string>
-		<string>G.rounder</string>
-		<string>S.rounder</string>
-		<string>a.smoothtraps</string>
-		<string>n.smoothtraps</string>
-		<string>r.smoothtraps</string>
-		<string>k.replaced_with_smoother</string>
-		<string>x.replaced_with_smoother</string>
-		<string>y.replaced_with_smoother</string>
-		<string>g.ss01</string>
-		<string>r.ss01</string>
-		<string>m.roundcounter</string>
-		<string>n.roundcounter</string>
-		<string>n.alt1</string>
-		<string>Z.noserif</string>
-		<string>R.sharper</string>
-		<string>e.highcontrast</string>
-		<string>s.reversecontrast</string>
-		<string>x.straight_diagonal</string>
-		<string>c.replaced_with_ss01</string>
-		<string>c.replaced_with_sharper</string>
-		<string>B.replaced_with_nokinks</string>
-		<string>C.replaced_with_nokinks</string>
-		<string>D.replaced_with_nokinks</string>
-		<string>G.replaced_with_nokinks</string>
-		<string>J.replaced_with_nokinks</string>
-		<string>O.replaced_with_nokinks</string>
-		<string>P.replaced_with_nokinks</string>
-		<string>R.replaced_with_nokinks</string>
-		<string>S.replaced_with_nokinks</string>
-		<string>U.replaced_with_nokinks</string>
-		<string>a.replaced_with_nokinks</string>
-		<string>b.replaced_with_nokinks</string>
-		<string>d.replaced_with_nokinks</string>
-		<string>e.replaced_with_nokinks</string>
-		<string>g.replaced_with_nokinks</string>
-		<string>h.replaced_with_nokinks</string>
-		<string>j.replaced_with_nokinks</string>
-		<string>m.replaced_with_nokinks</string>
-		<string>n.replaced_with_nokinks</string>
-		<string>o.replaced_with_nokinks</string>
-		<string>p.replaced_with_nokinks</string>
-		<string>q.replaced_with_nokinks</string>
-		<string>t.replaced_with_nokinks</string>
-		<string>u.replaced_with_nokinks</string>
-		<string>zero.replaced_with_nokinks</string>
-		<string>two.replaced_with_nokinks</string>
-		<string>five.replaced_with_nokinks</string>
-		<string>six.replaced_with_nokinks</string>
-		<string>eight.replaced_with_nokinks</string>
-		<string>nine.replaced_with_nokinks</string>
 	</array>
 </dict>
 </plist>
