@@ -56,9 +56,9 @@ for i in range(0,stepsX):
     
     
     # this is unnecessarily cumbersome. make a tuple interpolatetion func
-    red = interpFunc(0.325,0.823, stepsX, i)
-    green = interpFunc(0.231,0.180, stepsX, i)
-    blue = interpFunc(0.90,0.92, stepsX, i)
+    red = interpFunc(0.6,0.1, stepsX, i)
+    green = interpFunc(0.6,0.1, stepsX, i)
+    blue = interpFunc(0.6,0.1, stepsX, i)
     # blue    ### magenta #
     #####################
     # green   ### yellow  #
@@ -66,11 +66,11 @@ for i in range(0,stepsX):
     # if the first or last column
     if i == 0 or i == stepsX-1:
         strokeWidth(0)
-        fill(red, green, blue, 1)
+        fill(0, 0, 0, 1)
     # if in the middle columns
     else:
-        strokeWidth(1)
-        stroke(red, green, blue, 0.65)
+        strokeWidth(.5)
+        stroke(0, 0, 0, 1)
         fill(red, green, blue, 0.05)
         
     currentSlant = interpFunc(minSlant, maxSlant, stepsX, i)
@@ -89,5 +89,5 @@ for i in range(0,stepsX):
         fontVariations(XPRN=currentExpression, wght=currentWeight)
         text(string, (x, y))
     
-saveImage("/Users/stephennixon/type/01-casual_mono-project/drawbot/specimen/exports/recursive-var-grid--wght_xprn-lines.pdf")
+saveImage("/Users/stephennixon/type/01-casual_mono-project/drawbot/specimen/exports/recursive-var-grid--wght_xprn-lines-BW.pdf")
     
