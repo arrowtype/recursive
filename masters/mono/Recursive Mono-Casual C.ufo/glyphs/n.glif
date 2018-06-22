@@ -4,7 +4,8 @@
   <unicode hex="006E"/>
   <anchor x="300" y="561" name="top"/>
   <anchor x="300" y="-1" name="bottom"/>
-  <anchor x="450" y="711" name="caronslovak"/>
+  <anchor x="110" y="711" name="caronslovak"/>
+  <anchor x="137" y="562" name="apostrophe"/>
   <outline>
     <contour>
       <point x="255" y="0" type="curve"/>
@@ -30,9 +31,9 @@
     </contour>
     <contour>
       <point x="565.0" y="462.0"/>
-      <point x="476.27848101265823" y="564.0"/>
+      <point x="484.0" y="564.0"/>
       <point x="402" y="564.0" type="curve" smooth="yes"/>
-      <point x="328.0" y="564.0"/>
+      <point x="328" y="564"/>
       <point x="251.0" y="486.0"/>
       <point x="227" y="403" type="curve" smooth="yes"/>
       <point x="216" y="366"/>

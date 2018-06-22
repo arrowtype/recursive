@@ -7,6 +7,8 @@
 		<dict>
 			<key>ascending</key>
 			<array>
+				<string>space</string>
+				<string>uni00A0</string>
 				<string>A</string>
 				<string>Agrave</string>
 				<string>Aacute</string>
@@ -286,6 +288,7 @@
 				<string>kgreenlandic</string>
 				<string>ldot</string>
 				<string>lslash</string>
+				<string>napostrophe</string>
 				<string>eng</string>
 				<string>oe</string>
 				<string>tbar</string>
@@ -374,6 +377,7 @@
 				<string>ampersand</string>
 				<string>section</string>
 				<string>paragraph</string>
+				<string>uni2113</string>
 				<string>periodcentered</string>
 				<string>bullet</string>
 				<string>overline</string>
@@ -387,16 +391,19 @@
 				<string>greater</string>
 				<string>lessequal</string>
 				<string>greaterequal</string>
+				<string>approxequal</string>
 				<string>notequal</string>
 				<string>logicalnot</string>
 				<string>uni2190</string>
 				<string>uni2191</string>
 				<string>uni2192</string>
 				<string>uni2193</string>
+				<string>partialdiff</string>
 				<string>uni2206</string>
 				<string>product</string>
 				<string>summation</string>
 				<string>uni00B5</string>
+				<string>uni2215</string>
 				<string>radical</string>
 				<string>infinity</string>
 				<string>integral</string>
@@ -436,6 +443,8 @@
 				<string>dotlessij</string>
 				<string>flatg</string>
 				<string>ringacute</string>
+				<string>fi</string>
+				<string>fl</string>
 				<string>gravecomb.case</string>
 				<string>acutecomb.case</string>
 				<string>circumflexcomb.case</string>
@@ -454,27 +463,7 @@
 				<string>cedillacomb.case</string>
 				<string>ogonekcomb.case</string>
 				<string>ringacute.case</string>
-				<string>braceleft.assymetrical</string>
-				<string>braceright.assymetrical</string>
-				<string>braceleft.cap</string>
-				<string>ampersand.nobar</string>
-				<string>at.simple</string>
-				<string>ampersand.crossbar</string>
-				<string>ampersand.straightbar</string>
 				<string>dollar.lower</string>
-				<string>bar.italictest2</string>
-				<string>five.topserif</string>
-				<string>three.smooth</string>
-				<string>braceleft.smooth</string>
-				<string>braceright.smooth</string>
-				<string>ampersand.smooth</string>
-				<string>B.gothic</string>
-				<string>D.gothic</string>
-				<string>E.gothic</string>
-				<string>F.gothic</string>
-				<string>K.gothic</string>
-				<string>P.gothic</string>
-				<string>R.gothic</string>
 				<string>a.italic</string>
 				<string>f.italic</string>
 				<string>g.italic</string>
@@ -484,8 +473,6 @@
 				<string>y.italic</string>
 				<string>a.ss01</string>
 				<string>g.ss01</string>
-				<string>y.ss01</string>
-				<string>Y.ss02</string>
 				<string>Z.noserif</string>
 			</array>
 			<key>type</key>
@@ -518,6 +505,8 @@
 	<integer>1</integer>
 	<key>public.glyphOrder</key>
 	<array>
+		<string>space</string>
+		<string>uni00A0</string>
 		<string>A</string>
 		<string>Agrave</string>
 		<string>Aacute</string>
@@ -797,6 +786,7 @@
 		<string>kgreenlandic</string>
 		<string>ldot</string>
 		<string>lslash</string>
+		<string>napostrophe</string>
 		<string>eng</string>
 		<string>oe</string>
 		<string>tbar</string>
@@ -885,6 +875,7 @@
 		<string>ampersand</string>
 		<string>section</string>
 		<string>paragraph</string>
+		<string>uni2113</string>
 		<string>periodcentered</string>
 		<string>bullet</string>
 		<string>overline</string>
@@ -898,16 +889,19 @@
 		<string>greater</string>
 		<string>lessequal</string>
 		<string>greaterequal</string>
+		<string>approxequal</string>
 		<string>notequal</string>
 		<string>logicalnot</string>
 		<string>uni2190</string>
 		<string>uni2191</string>
 		<string>uni2192</string>
 		<string>uni2193</string>
+		<string>partialdiff</string>
 		<string>uni2206</string>
 		<string>product</string>
 		<string>summation</string>
 		<string>uni00B5</string>
+		<string>uni2215</string>
 		<string>radical</string>
 		<string>infinity</string>
 		<string>integral</string>
@@ -947,6 +941,8 @@
 		<string>dotlessij</string>
 		<string>flatg</string>
 		<string>ringacute</string>
+		<string>fi</string>
+		<string>fl</string>
 		<string>gravecomb.case</string>
 		<string>acutecomb.case</string>
 		<string>circumflexcomb.case</string>
@@ -976,15 +972,6 @@
 		<string>a.ss01</string>
 		<string>g.ss01</string>
 		<string>Z.noserif</string>
-		<string>space</string>
-		<string>uni00A0</string>
-		<string>uni2113</string>
-		<string>partialdiff</string>
-		<string>uni2215</string>
-		<string>approxequal</string>
-		<string>fi</string>
-		<string>fl</string>
-		<string>napostrophe</string>
 	</array>
 </dict>
 </plist>
