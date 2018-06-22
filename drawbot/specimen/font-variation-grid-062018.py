@@ -1,8 +1,7 @@
-H= 525
-
+H= 1000 # was 525
 W = 1000
-
 size(W, H)
+rect(0,0,W,H)
 # pick a font
 font("RecursiveMonoVar-StrictLight")
 
@@ -13,20 +12,17 @@ for axis, data in listFontVariations().items():
 maxWeight = 1100
 minWeight = 220
 
-maxExpression = 1.0
-minExpression = 0.01
+maxExpression = 1
+minExpression = 0
 
 maxSlant = 14
 minSlant = 0
 
-stepsX = 20 #8
-stepsY = 8 # 6
+stepsX = 9
+stepsY = 7
 padding = 20
 
-string = "R" # Rr
-
-# stepWeight =     (maxWeight - minWeight)/stepsX
-# stepExpression = (maxExpression - minExpression)/steps
+string = "S"
 
 def interpFunc(a, b, numSteps, currentStep):
     distance = b-a
@@ -39,10 +35,10 @@ def normalRGB(r, g, b):
     r1, g1, b1 = r / 255, g / 255, b / 255
     return(r1, g1, b1)
     
-print(normalRGB(83, 59, 230)) # blue
-print(normalRGB(210, 46, 237)) # magenta
-print(normalRGB(251, 208, 0)) # yellow
-print(normalRGB(16, 205, 103)) # green
+# print(normalRGB(83, 59, 230)) # blue
+# print(normalRGB(210, 46, 237)) # magenta
+# print(normalRGB(251, 208, 0)) # yellow
+# print(normalRGB(16, 205, 103)) # green
 
 fontSize(W/stepsX/.75) # 1.5
 
@@ -89,5 +85,5 @@ for i in range(0,stepsX):
         fontVariations(XPRN=currentExpression, wght=currentWeight)
         text(string, (x, y))
     
-saveImage("/Users/stephennixon/type/01-casual_mono-project/drawbot/specimen/exports/recursive-var-grid--wght_xprn-lines.pdf")
+# saveImage("/Users/stephennixon/type/01-casual_mono-project/drawbot/specimen/exports/recursive-var-grid--wght_xprn-lines.pdf")
     
