@@ -1,6 +1,6 @@
 W,H = 1100,1000
 newPage(W,H)
-glyphName = "percent"
+glyphName = "S"
 
 def normalRGB(r, g, b):
     r1, g1, b1 = r / 255, g / 255, b / 255
