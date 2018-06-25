@@ -7,10 +7,18 @@
   </note>
   <outline>
     <component base="T"/>
-    <component base="commaaccentcomb.case" xOffset="300.0"/>
+    <component base="cedillacomb.case" xOffset="295"/>
   </outline>
   <lib>
     <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
       <key>public.markColor</key>
       <string>0.45,1,0.55,0.75</string>
     </dict>
