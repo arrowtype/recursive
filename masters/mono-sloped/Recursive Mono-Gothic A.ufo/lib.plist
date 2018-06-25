@@ -7,7 +7,6 @@
 		<dict>
 			<key>ascending</key>
 			<array>
-				<string>uni00A0</string>
 				<string>A</string>
 				<string>Agrave</string>
 				<string>Aacute</string>
@@ -481,6 +480,13 @@
 				<string>w.italicer</string>
 				<string>y.italicer</string>
 				<string>z.italicer</string>
+				<string>a.roman</string>
+				<string>f.roman</string>
+				<string>g.roman</string>
+				<string>i.roman</string>
+				<string>l.roman</string>
+				<string>r.roman</string>
+				<string>y.roman</string>
 				<string>a.italic</string>
 				<string>f.italic</string>
 				<string>g.italic</string>
@@ -529,7 +535,7 @@
 		<real>0.7</real>
 	</array>
 	<key>com.typemytype.robofont.italicSlantOffset</key>
-	<integer>0</integer>
+	<real>-65.76832129954173</real>
 	<key>com.typemytype.robofont.segmentType</key>
 	<string>curve</string>
 	<key>com.typemytype.robofont.shouldAddPointsInSplineConversion</key>
@@ -747,7 +753,6 @@
 	</array>
 	<key>public.glyphOrder</key>
 	<array>
-		<string>uni00A0</string>
 		<string>A</string>
 		<string>Agrave</string>
 		<string>Aacute</string>
@@ -1221,6 +1226,13 @@
 		<string>w.italicer</string>
 		<string>y.italicer</string>
 		<string>z.italicer</string>
+		<string>a.roman</string>
+		<string>f.roman</string>
+		<string>g.roman</string>
+		<string>i.roman</string>
+		<string>l.roman</string>
+		<string>r.roman</string>
+		<string>y.roman</string>
 		<string>a.italic</string>
 		<string>f.italic</string>
 		<string>g.italic</string>
