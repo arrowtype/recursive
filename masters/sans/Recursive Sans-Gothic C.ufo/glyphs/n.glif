@@ -4,7 +4,8 @@
   <unicode hex="006E"/>
   <anchor x="300" y="561" name="top"/>
   <anchor x="300" y="-1" name="bottom"/>
-  <anchor x="96" y="711" name="caronslovak"/>
+  <anchor x="105" y="711" name="caronslovak"/>
+  <anchor x="146" y="561" name="apostrophe"/>
   <outline>
     <contour>
       <point x="260" y="0" type="curve"/>
@@ -57,8 +58,8 @@
       <point x="565.0" y="414.0"/>
       <point x="551.0" y="421.0"/>
       <point x="325" y="384" type="curve"/>
-      <point x="338.2130891980015" y="360.8770939034974"/>
-      <point x="340" y="348.2307692307692"/>
+      <point x="338" y="361"/>
+      <point x="340" y="348"/>
       <point x="340" y="322" type="curve" smooth="yes"/>
       <point x="340" y="11" type="line" smooth="yes"/>
       <point x="340" y="5"/>
@@ -145,7 +146,7 @@
       <key>com.typemytype.robofont.guideline.magnetic.zLQlHKZ4jr</key>
       <integer>10</integer>
       <key>public.markColor</key>
-      <string>1,0.45,0.45,0.75</string>
+      <string>0.45,1,0.55,0.75</string>
     </dict>
   </lib>
 </glyph>

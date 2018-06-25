@@ -1,39 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ogonekcomb.case" format="2">
-  <anchor x="27" y="-1" name="_ogonek"/>
+  <anchor x="32" y="0" name="_ogonek"/>
   <outline>
     <contour>
-      <point x="-148" y="-134" type="curve" smooth="yes"/>
-      <point x="-148" y="-206.0"/>
-      <point x="-92" y="-250"/>
-      <point x="-9" y="-250" type="curve" smooth="yes"/>
-      <point x="36.0" y="-250.0"/>
-      <point x="80" y="-233"/>
-      <point x="80" y="-212" type="curve" smooth="yes"/>
-      <point x="80" y="-202"/>
-      <point x="80" y="-189"/>
-      <point x="80" y="-178" type="curve"/>
-      <point x="68" y="-178" type="line"/>
-      <point x="47" y="-194"/>
-      <point x="23" y="-202"/>
-      <point x="-8" y="-202" type="curve" smooth="yes"/>
-      <point x="-61.0" y="-202.0"/>
-      <point x="-97" y="-179"/>
-      <point x="-97" y="-130" type="curve" smooth="yes"/>
-      <point x="-97.0" y="-75.0"/>
-      <point x="-63" y="-29.0"/>
-      <point x="27" y="0" type="curve"/>
-      <point x="27" y="11"/>
-      <point x="17" y="17"/>
-      <point x="-8" y="17" type="curve" smooth="yes"/>
-      <point x="-59" y="17"/>
-      <point x="-148" y="-43"/>
+      <point x="-173" y="-144" type="curve" smooth="yes"/>
+      <point x="-173" y="-210.0"/>
+      <point x="-128" y="-250"/>
+      <point x="-53" y="-250.0" type="curve" smooth="yes"/>
+      <point x="-4" y="-250"/>
+      <point x="28" y="-231.0"/>
+      <point x="28" y="-217" type="curve" smooth="yes"/>
+      <point x="28" y="-204"/>
+      <point x="28" y="-191"/>
+      <point x="28" y="-180" type="curve"/>
+      <point x="16" y="-180" type="line"/>
+      <point x="-5" y="-196"/>
+      <point x="-24" y="-203"/>
+      <point x="-55" y="-203" type="curve" smooth="yes"/>
+      <point x="-92" y="-203"/>
+      <point x="-122.0" y="-181.0"/>
+      <point x="-122.0" y="-136" type="curve" smooth="yes"/>
+      <point x="-122" y="-87"/>
+      <point x="-92" y="-40"/>
+      <point x="20" y="-11" type="curve" smooth="yes"/>
+      <point x="29.0" y="-8.0"/>
+      <point x="31" y="-6"/>
+      <point x="31" y="0" type="curve"/>
+      <point x="21" y="11.0"/>
+      <point x="2.0" y="18"/>
+      <point x="-22" y="13" type="curve" smooth="yes"/>
+      <point x="-96" y="-3"/>
+      <point x="-173" y="-53"/>
     </contour>
   </outline>
   <lib>
     <dict>
-      <key>public.markColor</key>
-      <string>1,0.45,0.45,0.75</string>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
     </dict>
   </lib>
 </glyph>

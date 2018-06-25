@@ -296,6 +296,8 @@
 				<string>schwa</string>
 				<string>nhookleft</string>
 				<string>pi</string>
+				<string>ordfeminine</string>
+				<string>ordmasculine</string>
 				<string>gravecomb</string>
 				<string>acutecomb</string>
 				<string>circumflexcomb</string>
@@ -375,6 +377,7 @@
 				<string>ampersand</string>
 				<string>section</string>
 				<string>paragraph</string>
+				<string>uni2113</string>
 				<string>periodcentered</string>
 				<string>bullet</string>
 				<string>overline</string>
@@ -386,15 +389,24 @@
 				<string>equal</string>
 				<string>less</string>
 				<string>greater</string>
+				<string>lessequal</string>
+				<string>greaterequal</string>
+				<string>approxequal</string>
+				<string>notequal</string>
 				<string>logicalnot</string>
 				<string>uni2190</string>
 				<string>uni2191</string>
 				<string>uni2192</string>
 				<string>uni2193</string>
+				<string>partialdiff</string>
 				<string>uni2206</string>
 				<string>product</string>
 				<string>summation</string>
 				<string>uni00B5</string>
+				<string>uni2215</string>
+				<string>radical</string>
+				<string>infinity</string>
+				<string>integral</string>
 				<string>uni2261</string>
 				<string>dollar</string>
 				<string>cent</string>
@@ -402,6 +414,7 @@
 				<string>currency</string>
 				<string>yen</string>
 				<string>Euro</string>
+				<string>florin</string>
 				<string>asciicircum</string>
 				<string>asciitilde</string>
 				<string>acute</string>
@@ -428,8 +441,11 @@
 				<string>IJacute</string>
 				<string>bitcoin</string>
 				<string>dotlessij</string>
+				<string>fj</string>
 				<string>flatg</string>
+				<string>foursuperior</string>
 				<string>ringacute</string>
+				<string>fi</string>
 				<string>gravecomb.case</string>
 				<string>acutecomb.case</string>
 				<string>circumflexcomb.case</string>
@@ -448,41 +464,19 @@
 				<string>cedillacomb.case</string>
 				<string>ogonekcomb.case</string>
 				<string>ringacute.case</string>
-				<string>braceleft.angular</string>
-				<string>braceright.angular</string>
-				<string>braceleft.asymmetrical</string>
-				<string>braceright.asymmetrical</string>
 				<string>at.short</string>
-				<string>at.simpler</string>
 				<string>ampersand.crossbar</string>
 				<string>numbersign.straight</string>
 				<string>greater.arrow</string>
+				<string>dollar.lower</string>
 				<string>dollar.nobar</string>
-				<string>less.replaced_with_taller</string>
-				<string>less.replaced_with_replaced_with_arrow</string>
-				<string>two.middlewaist</string>
-				<string>three.middlewaist</string>
-				<string>five.middlewaist</string>
-				<string>two.sharp</string>
-				<string>four.angledtop</string>
-				<string>b.replaced_with_higherjoints</string>
-				<string>d.replaced_with_higherjoints</string>
-				<string>h.replaced_with_higherjoints</string>
-				<string>m.replaced_with_higherjoints</string>
-				<string>n.replaced_with_higherjoints</string>
-				<string>p.replaced_with_higherjoints</string>
-				<string>q.replaced_with_higherjoints</string>
-				<string>r.replaced_with_higherjoints</string>
-				<string>u.replaced_with_higherjoints</string>
-				<string>b.replaced_with_mediumheightjoints</string>
-				<string>d.replaced_with_mediumheightjoints</string>
-				<string>h.replaced_with_mediumheightjoints</string>
-				<string>m.replaced_with_mediumheightjoints</string>
-				<string>n.replaced_with_mediumheightjoints</string>
-				<string>p.replaced_with_mediumheightjoints</string>
-				<string>q.replaced_with_mediumheightjoints</string>
-				<string>r.replaced_with_mediumheightjoints</string>
-				<string>u.replaced_with_mediumheightjoints</string>
+				<string>a.roman</string>
+				<string>f.roman</string>
+				<string>g.roman</string>
+				<string>i.roman</string>
+				<string>l.roman</string>
+				<string>r.roman</string>
+				<string>y.roman</string>
 				<string>a.italic</string>
 				<string>f.italic</string>
 				<string>g.italic</string>
@@ -490,70 +484,7 @@
 				<string>l.italic</string>
 				<string>r.italic</string>
 				<string>y.italic</string>
-				<string>c.kinks</string>
-				<string>f.kinks</string>
-				<string>j.kinks</string>
-				<string>l.kinks</string>
-				<string>m.kinks</string>
-				<string>t.kinks</string>
-				<string>c.smoother</string>
-				<string>e.smoother</string>
-				<string>g.smoother</string>
-				<string>i.smoother</string>
-				<string>l.smoother</string>
-				<string>r.smoother</string>
-				<string>g.replaced_with_morecasual</string>
-				<string>h.replaced_with_morecasual</string>
-				<string>m.replaced_with_morecasual</string>
-				<string>n.replaced_with_morecasual</string>
-				<string>u.replaced_with_morecasual</string>
-				<string>Y.ss02</string>
-				<string>g.ss02</string>
-				<string>r.ss02</string>
-				<string>e.nokinks</string>
-				<string>f.nokinks</string>
-				<string>g.nokinks</string>
-				<string>a.smoothtraps</string>
-				<string>r.smoothtraps</string>
-				<string>v.smoothtraps</string>
-				<string>c.replaced_with_ss01</string>
-				<string>f.replaced_with_ss01</string>
-				<string>r.replaced_with_ss01</string>
-				<string>k.replaced_with_smoother</string>
-				<string>x.replaced_with_smoother</string>
-				<string>y.replaced_with_smoother</string>
-				<string>c.ss01</string>
 				<string>g.ss01</string>
-				<string>m.curvy</string>
-				<string>n.curvy</string>
-				<string>C.leaning</string>
-				<string>S.leaning</string>
-				<string>e.45_oblique</string>
-				<string>g.45_oblique</string>
-				<string>m.roundcounter</string>
-				<string>n.roundcounter</string>
-				<string>e.smooth_oblique</string>
-				<string>g.smooth_oblique</string>
-				<string>A.replaced_with_stemtaper</string>
-				<string>B.replaced_with_stemtaper</string>
-				<string>z.wide</string>
-				<string>g.ver02</string>
-				<string>Z.noserif</string>
-				<string>l.alt-wide</string>
-				<string>e.tooround</string>
-				<string>A.stemtaper</string>
-				<string>o.symmetrical</string>
-				<string>o.replaced_with_egg</string>
-				<string>a.replaced_with_rounder</string>
-				<string>w.replaced_with_alt-flattop</string>
-				<string>f.replaced_with_reversewedge2</string>
-				<string>i.replaced_with_reversewedge2</string>
-				<string>l.replaced_with_reversewedge2</string>
-				<string>r.replaced_with_reversewedge2</string>
-				<string>one.replaced_with_reversewedge2</string>
-				<string>s.alt1</string>
-				<string>six.alt1</string>
-				<string>nine.alt1</string>
 			</array>
 			<key>type</key>
 			<string>glyphList</string>
@@ -1057,6 +988,8 @@
 		<string>schwa</string>
 		<string>nhookleft</string>
 		<string>pi</string>
+		<string>ordfeminine</string>
+		<string>ordmasculine</string>
 		<string>gravecomb</string>
 		<string>acutecomb</string>
 		<string>circumflexcomb</string>
@@ -1136,6 +1069,7 @@
 		<string>ampersand</string>
 		<string>section</string>
 		<string>paragraph</string>
+		<string>uni2113</string>
 		<string>periodcentered</string>
 		<string>bullet</string>
 		<string>overline</string>
@@ -1147,15 +1081,24 @@
 		<string>equal</string>
 		<string>less</string>
 		<string>greater</string>
+		<string>lessequal</string>
+		<string>greaterequal</string>
+		<string>approxequal</string>
+		<string>notequal</string>
 		<string>logicalnot</string>
 		<string>uni2190</string>
 		<string>uni2191</string>
 		<string>uni2192</string>
 		<string>uni2193</string>
+		<string>partialdiff</string>
 		<string>uni2206</string>
 		<string>product</string>
 		<string>summation</string>
 		<string>uni00B5</string>
+		<string>uni2215</string>
+		<string>radical</string>
+		<string>infinity</string>
+		<string>integral</string>
 		<string>uni2261</string>
 		<string>dollar</string>
 		<string>cent</string>
@@ -1163,6 +1106,7 @@
 		<string>currency</string>
 		<string>yen</string>
 		<string>Euro</string>
+		<string>florin</string>
 		<string>asciicircum</string>
 		<string>asciitilde</string>
 		<string>acute</string>
@@ -1189,8 +1133,11 @@
 		<string>IJacute</string>
 		<string>bitcoin</string>
 		<string>dotlessij</string>
+		<string>fj</string>
 		<string>flatg</string>
+		<string>foursuperior</string>
 		<string>ringacute</string>
+		<string>fi</string>
 		<string>gravecomb.case</string>
 		<string>acutecomb.case</string>
 		<string>circumflexcomb.case</string>
@@ -1209,41 +1156,19 @@
 		<string>cedillacomb.case</string>
 		<string>ogonekcomb.case</string>
 		<string>ringacute.case</string>
-		<string>braceleft.angular</string>
-		<string>braceright.angular</string>
-		<string>braceleft.asymmetrical</string>
-		<string>braceright.asymmetrical</string>
 		<string>at.short</string>
-		<string>at.simpler</string>
 		<string>ampersand.crossbar</string>
 		<string>numbersign.straight</string>
 		<string>greater.arrow</string>
+		<string>dollar.lower</string>
 		<string>dollar.nobar</string>
-		<string>less.replaced_with_taller</string>
-		<string>less.replaced_with_replaced_with_arrow</string>
-		<string>two.middlewaist</string>
-		<string>three.middlewaist</string>
-		<string>five.middlewaist</string>
-		<string>two.sharp</string>
-		<string>four.angledtop</string>
-		<string>b.replaced_with_higherjoints</string>
-		<string>d.replaced_with_higherjoints</string>
-		<string>h.replaced_with_higherjoints</string>
-		<string>m.replaced_with_higherjoints</string>
-		<string>n.replaced_with_higherjoints</string>
-		<string>p.replaced_with_higherjoints</string>
-		<string>q.replaced_with_higherjoints</string>
-		<string>r.replaced_with_higherjoints</string>
-		<string>u.replaced_with_higherjoints</string>
-		<string>b.replaced_with_mediumheightjoints</string>
-		<string>d.replaced_with_mediumheightjoints</string>
-		<string>h.replaced_with_mediumheightjoints</string>
-		<string>m.replaced_with_mediumheightjoints</string>
-		<string>n.replaced_with_mediumheightjoints</string>
-		<string>p.replaced_with_mediumheightjoints</string>
-		<string>q.replaced_with_mediumheightjoints</string>
-		<string>r.replaced_with_mediumheightjoints</string>
-		<string>u.replaced_with_mediumheightjoints</string>
+		<string>a.roman</string>
+		<string>f.roman</string>
+		<string>g.roman</string>
+		<string>i.roman</string>
+		<string>l.roman</string>
+		<string>r.roman</string>
+		<string>y.roman</string>
 		<string>a.italic</string>
 		<string>f.italic</string>
 		<string>g.italic</string>
@@ -1251,85 +1176,7 @@
 		<string>l.italic</string>
 		<string>r.italic</string>
 		<string>y.italic</string>
-		<string>c.kinks</string>
-		<string>f.kinks</string>
-		<string>j.kinks</string>
-		<string>l.kinks</string>
-		<string>m.kinks</string>
-		<string>t.kinks</string>
-		<string>c.smoother</string>
-		<string>e.smoother</string>
-		<string>g.smoother</string>
-		<string>i.smoother</string>
-		<string>l.smoother</string>
-		<string>r.smoother</string>
-		<string>g.replaced_with_morecasual</string>
-		<string>h.replaced_with_morecasual</string>
-		<string>m.replaced_with_morecasual</string>
-		<string>n.replaced_with_morecasual</string>
-		<string>u.replaced_with_morecasual</string>
-		<string>Y.ss02</string>
-		<string>g.ss02</string>
-		<string>r.ss02</string>
-		<string>e.nokinks</string>
-		<string>f.nokinks</string>
-		<string>g.nokinks</string>
-		<string>a.smoothtraps</string>
-		<string>r.smoothtraps</string>
-		<string>v.smoothtraps</string>
-		<string>c.replaced_with_ss01</string>
-		<string>f.replaced_with_ss01</string>
-		<string>r.replaced_with_ss01</string>
-		<string>k.replaced_with_smoother</string>
-		<string>x.replaced_with_smoother</string>
-		<string>y.replaced_with_smoother</string>
-		<string>c.ss01</string>
 		<string>g.ss01</string>
-		<string>m.curvy</string>
-		<string>n.curvy</string>
-		<string>C.leaning</string>
-		<string>S.leaning</string>
-		<string>e.45_oblique</string>
-		<string>g.45_oblique</string>
-		<string>m.roundcounter</string>
-		<string>n.roundcounter</string>
-		<string>e.smooth_oblique</string>
-		<string>g.smooth_oblique</string>
-		<string>A.replaced_with_stemtaper</string>
-		<string>B.replaced_with_stemtaper</string>
-		<string>z.wide</string>
-		<string>g.ver02</string>
-		<string>Z.noserif</string>
-		<string>l.alt-wide</string>
-		<string>e.tooround</string>
-		<string>A.stemtaper</string>
-		<string>o.symmetrical</string>
-		<string>o.replaced_with_egg</string>
-		<string>a.replaced_with_rounder</string>
-		<string>w.replaced_with_alt-flattop</string>
-		<string>f.replaced_with_reversewedge2</string>
-		<string>i.replaced_with_reversewedge2</string>
-		<string>l.replaced_with_reversewedge2</string>
-		<string>r.replaced_with_reversewedge2</string>
-		<string>one.replaced_with_reversewedge2</string>
-		<string>s.alt1</string>
-		<string>six.alt1</string>
-		<string>nine.alt1</string>
-		<string>ordfeminine</string>
-		<string>ordmasculine</string>
-		<string>florin</string>
-		<string>uni2113</string>
-		<string>partialdiff</string>
-		<string>uni2215</string>
-		<string>radical</string>
-		<string>infinity</string>
-		<string>integral</string>
-		<string>approxequal</string>
-		<string>notequal</string>
-		<string>lessequal</string>
-		<string>greaterequal</string>
-		<string>fi</string>
-		<string>fj</string>
 	</array>
 </dict>
 </plist>

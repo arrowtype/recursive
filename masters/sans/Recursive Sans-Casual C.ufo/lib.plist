@@ -294,6 +294,9 @@
 				<string>tbar</string>
 				<string>schwa</string>
 				<string>pi</string>
+				<string>uni02BC</string>
+				<string>ordfeminine</string>
+				<string>ordmasculine</string>
 				<string>gravecomb</string>
 				<string>acutecomb</string>
 				<string>circumflexcomb</string>
@@ -321,6 +324,9 @@
 				<string>seven</string>
 				<string>eight</string>
 				<string>nine</string>
+				<string>onesuperior</string>
+				<string>twosuperior</string>
+				<string>threesuperior</string>
 				<string>onequarter</string>
 				<string>onehalf</string>
 				<string>threequarters</string>
@@ -370,24 +376,36 @@
 				<string>ampersand</string>
 				<string>section</string>
 				<string>paragraph</string>
+				<string>uni2113</string>
 				<string>periodcentered</string>
 				<string>bullet</string>
 				<string>overline</string>
 				<string>plus</string>
 				<string>minus</string>
+				<string>plusminus</string>
+				<string>divide</string>
+				<string>multiply</string>
 				<string>equal</string>
 				<string>less</string>
 				<string>greater</string>
+				<string>lessequal</string>
+				<string>greaterequal</string>
 				<string>approxequal</string>
+				<string>notequal</string>
 				<string>logicalnot</string>
 				<string>uni2190</string>
 				<string>uni2191</string>
 				<string>uni2192</string>
 				<string>uni2193</string>
+				<string>partialdiff</string>
 				<string>uni2206</string>
 				<string>product</string>
 				<string>summation</string>
 				<string>uni00B5</string>
+				<string>uni2215</string>
+				<string>radical</string>
+				<string>infinity</string>
+				<string>integral</string>
 				<string>uni2261</string>
 				<string>dollar</string>
 				<string>cent</string>
@@ -395,6 +413,7 @@
 				<string>currency</string>
 				<string>yen</string>
 				<string>Euro</string>
+				<string>florin</string>
 				<string>asciicircum</string>
 				<string>asciitilde</string>
 				<string>acute</string>
@@ -412,8 +431,10 @@
 				<string>ogonek</string>
 				<string>copyright</string>
 				<string>registered</string>
+				<string>trademark</string>
 				<string>degree</string>
 				<string>estimated</string>
+				<string>lozenge</string>
 				<string>uni00AD</string>
 				<string>ijacute</string>
 				<string>IJacute</string>
@@ -422,9 +443,12 @@
 				<string>dotlessij</string>
 				<string>dotlessj</string>
 				<string>ellipses</string>
+				<string>fj</string>
 				<string>flatg</string>
+				<string>foursuperior</string>
 				<string>nhookleft</string>
 				<string>ringacute</string>
+				<string>fi</string>
 				<string>gravecomb.case</string>
 				<string>acutecomb.case</string>
 				<string>circumflexcomb.case</string>
@@ -455,6 +479,13 @@
 				<string>p.replaced_with_higherjoints</string>
 				<string>q.replaced_with_higherjoints</string>
 				<string>r.replaced_with_higherjoints</string>
+				<string>a.roman</string>
+				<string>f.roman</string>
+				<string>g.roman</string>
+				<string>i.roman</string>
+				<string>l.roman</string>
+				<string>r.roman</string>
+				<string>y.roman</string>
 				<string>a.italic</string>
 				<string>f.italic</string>
 				<string>g.italic</string>
@@ -980,6 +1011,9 @@
 		<string>tbar</string>
 		<string>schwa</string>
 		<string>pi</string>
+		<string>uni02BC</string>
+		<string>ordfeminine</string>
+		<string>ordmasculine</string>
 		<string>gravecomb</string>
 		<string>acutecomb</string>
 		<string>circumflexcomb</string>
@@ -1007,6 +1041,9 @@
 		<string>seven</string>
 		<string>eight</string>
 		<string>nine</string>
+		<string>onesuperior</string>
+		<string>twosuperior</string>
+		<string>threesuperior</string>
 		<string>onequarter</string>
 		<string>onehalf</string>
 		<string>threequarters</string>
@@ -1056,24 +1093,36 @@
 		<string>ampersand</string>
 		<string>section</string>
 		<string>paragraph</string>
+		<string>uni2113</string>
 		<string>periodcentered</string>
 		<string>bullet</string>
 		<string>overline</string>
 		<string>plus</string>
 		<string>minus</string>
+		<string>plusminus</string>
+		<string>divide</string>
+		<string>multiply</string>
 		<string>equal</string>
 		<string>less</string>
 		<string>greater</string>
+		<string>lessequal</string>
+		<string>greaterequal</string>
 		<string>approxequal</string>
+		<string>notequal</string>
 		<string>logicalnot</string>
 		<string>uni2190</string>
 		<string>uni2191</string>
 		<string>uni2192</string>
 		<string>uni2193</string>
+		<string>partialdiff</string>
 		<string>uni2206</string>
 		<string>product</string>
 		<string>summation</string>
 		<string>uni00B5</string>
+		<string>uni2215</string>
+		<string>radical</string>
+		<string>infinity</string>
+		<string>integral</string>
 		<string>uni2261</string>
 		<string>dollar</string>
 		<string>cent</string>
@@ -1081,6 +1130,7 @@
 		<string>currency</string>
 		<string>yen</string>
 		<string>Euro</string>
+		<string>florin</string>
 		<string>asciicircum</string>
 		<string>asciitilde</string>
 		<string>acute</string>
@@ -1098,8 +1148,10 @@
 		<string>ogonek</string>
 		<string>copyright</string>
 		<string>registered</string>
+		<string>trademark</string>
 		<string>degree</string>
 		<string>estimated</string>
+		<string>lozenge</string>
 		<string>uni00AD</string>
 		<string>ijacute</string>
 		<string>IJacute</string>
@@ -1108,9 +1160,12 @@
 		<string>dotlessij</string>
 		<string>dotlessj</string>
 		<string>ellipses</string>
+		<string>fj</string>
 		<string>flatg</string>
+		<string>foursuperior</string>
 		<string>nhookleft</string>
 		<string>ringacute</string>
+		<string>fi</string>
 		<string>gravecomb.case</string>
 		<string>acutecomb.case</string>
 		<string>circumflexcomb.case</string>
@@ -1141,6 +1196,13 @@
 		<string>p.replaced_with_higherjoints</string>
 		<string>q.replaced_with_higherjoints</string>
 		<string>r.replaced_with_higherjoints</string>
+		<string>a.roman</string>
+		<string>f.roman</string>
+		<string>g.roman</string>
+		<string>i.roman</string>
+		<string>l.roman</string>
+		<string>r.roman</string>
+		<string>y.roman</string>
 		<string>a.italic</string>
 		<string>f.italic</string>
 		<string>g.italic</string>
@@ -1171,30 +1233,6 @@
 		<string>x.replaced_with_morecasual</string>
 		<string>w.replaced_with_alt-flattop</string>
 		<string>n.replaced_with_roundcounter</string>
-		<string>uni00A0</string>
-		<string>ordfeminine</string>
-		<string>plusminus</string>
-		<string>twosuperior</string>
-		<string>threesuperior</string>
-		<string>onesuperior</string>
-		<string>ordmasculine</string>
-		<string>multiply</string>
-		<string>divide</string>
-		<string>florin</string>
-		<string>uni2113</string>
-		<string>trademark</string>
-		<string>partialdiff</string>
-		<string>uni2215</string>
-		<string>radical</string>
-		<string>infinity</string>
-		<string>integral</string>
-		<string>notequal</string>
-		<string>lessequal</string>
-		<string>greaterequal</string>
-		<string>lozenge</string>
-		<string>fi</string>
-		<string>fl</string>
-		<string>fj</string>
 	</array>
 </dict>
 </plist>

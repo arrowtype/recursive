@@ -295,6 +295,8 @@
 				<string>schwa</string>
 				<string>pi</string>
 				<string>uni02BC</string>
+				<string>ordfeminine</string>
+				<string>ordmasculine</string>
 				<string>gravecomb</string>
 				<string>acutecomb</string>
 				<string>circumflexcomb</string>
@@ -374,6 +376,7 @@
 				<string>ampersand</string>
 				<string>section</string>
 				<string>paragraph</string>
+				<string>uni2113</string>
 				<string>periodcentered</string>
 				<string>bullet</string>
 				<string>overline</string>
@@ -385,16 +388,24 @@
 				<string>equal</string>
 				<string>less</string>
 				<string>greater</string>
+				<string>lessequal</string>
+				<string>greaterequal</string>
 				<string>approxequal</string>
+				<string>notequal</string>
 				<string>logicalnot</string>
 				<string>uni2190</string>
 				<string>uni2191</string>
 				<string>uni2192</string>
 				<string>uni2193</string>
+				<string>partialdiff</string>
 				<string>uni2206</string>
 				<string>product</string>
 				<string>summation</string>
 				<string>uni00B5</string>
+				<string>uni2215</string>
+				<string>radical</string>
+				<string>infinity</string>
+				<string>integral</string>
 				<string>uni2261</string>
 				<string>dollar</string>
 				<string>cent</string>
@@ -423,6 +434,7 @@
 				<string>trademark</string>
 				<string>degree</string>
 				<string>estimated</string>
+				<string>lozenge</string>
 				<string>uni00AD</string>
 				<string>ijacute</string>
 				<string>IJacute</string>
@@ -430,7 +442,9 @@
 				<string>bitcoin</string>
 				<string>dotlessij</string>
 				<string>dotlessj</string>
+				<string>fj</string>
 				<string>flatg</string>
+				<string>foursuperior</string>
 				<string>nhookleft</string>
 				<string>ri</string>
 				<string>ringacute</string>
@@ -455,7 +469,9 @@
 				<string>ringacute.case</string>
 				<string>braceleft.asymmetrical</string>
 				<string>braceright.asymmetrical</string>
+				<string>braceleft.cap</string>
 				<string>at.short</string>
+				<string>hyphen.simple</string>
 				<string>dagger.daggery</string>
 				<string>ampersand.crossbar</string>
 				<string>numbersign.v2-curvy</string>
@@ -466,6 +482,13 @@
 				<string>two.middlewaist</string>
 				<string>five.middlewaist</string>
 				<string>onehalf.v1</string>
+				<string>a.roman</string>
+				<string>f.roman</string>
+				<string>g.roman</string>
+				<string>i.roman</string>
+				<string>l.roman</string>
+				<string>r.roman</string>
+				<string>y.roman</string>
 				<string>a.italic</string>
 				<string>f.italic</string>
 				<string>g.italic</string>
@@ -822,6 +845,8 @@
 		<string>schwa</string>
 		<string>pi</string>
 		<string>uni02BC</string>
+		<string>ordfeminine</string>
+		<string>ordmasculine</string>
 		<string>gravecomb</string>
 		<string>acutecomb</string>
 		<string>circumflexcomb</string>
@@ -901,6 +926,7 @@
 		<string>ampersand</string>
 		<string>section</string>
 		<string>paragraph</string>
+		<string>uni2113</string>
 		<string>periodcentered</string>
 		<string>bullet</string>
 		<string>overline</string>
@@ -912,16 +938,24 @@
 		<string>equal</string>
 		<string>less</string>
 		<string>greater</string>
+		<string>lessequal</string>
+		<string>greaterequal</string>
 		<string>approxequal</string>
+		<string>notequal</string>
 		<string>logicalnot</string>
 		<string>uni2190</string>
 		<string>uni2191</string>
 		<string>uni2192</string>
 		<string>uni2193</string>
+		<string>partialdiff</string>
 		<string>uni2206</string>
 		<string>product</string>
 		<string>summation</string>
 		<string>uni00B5</string>
+		<string>uni2215</string>
+		<string>radical</string>
+		<string>infinity</string>
+		<string>integral</string>
 		<string>uni2261</string>
 		<string>dollar</string>
 		<string>cent</string>
@@ -950,6 +984,7 @@
 		<string>trademark</string>
 		<string>degree</string>
 		<string>estimated</string>
+		<string>lozenge</string>
 		<string>uni00AD</string>
 		<string>ijacute</string>
 		<string>IJacute</string>
@@ -957,7 +992,9 @@
 		<string>bitcoin</string>
 		<string>dotlessij</string>
 		<string>dotlessj</string>
+		<string>fj</string>
 		<string>flatg</string>
+		<string>foursuperior</string>
 		<string>nhookleft</string>
 		<string>ri</string>
 		<string>ringacute</string>
@@ -982,7 +1019,9 @@
 		<string>ringacute.case</string>
 		<string>braceleft.asymmetrical</string>
 		<string>braceright.asymmetrical</string>
+		<string>braceleft.cap</string>
 		<string>at.short</string>
+		<string>hyphen.simple</string>
 		<string>dagger.daggery</string>
 		<string>ampersand.crossbar</string>
 		<string>numbersign.v2-curvy</string>
@@ -993,6 +1032,13 @@
 		<string>two.middlewaist</string>
 		<string>five.middlewaist</string>
 		<string>onehalf.v1</string>
+		<string>a.roman</string>
+		<string>f.roman</string>
+		<string>g.roman</string>
+		<string>i.roman</string>
+		<string>l.roman</string>
+		<string>r.roman</string>
+		<string>y.roman</string>
 		<string>a.italic</string>
 		<string>f.italic</string>
 		<string>g.italic</string>
@@ -1032,20 +1078,6 @@
 		<string>l.ss01</string>
 		<string>r.ss01</string>
 		<string>zero.ss01</string>
-		<string>uni00A0</string>
-		<string>ordfeminine</string>
-		<string>ordmasculine</string>
-		<string>uni2113</string>
-		<string>partialdiff</string>
-		<string>uni2215</string>
-		<string>radical</string>
-		<string>infinity</string>
-		<string>integral</string>
-		<string>notequal</string>
-		<string>lessequal</string>
-		<string>greaterequal</string>
-		<string>lozenge</string>
-		<string>fj</string>
 	</array>
 </dict>
 </plist>

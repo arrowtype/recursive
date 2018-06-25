@@ -4,7 +4,7 @@
   <unicode hex="006F"/>
   <anchor x="300" y="561" name="top"/>
   <anchor x="300" y="-1" name="bottom"/>
-  <anchor x="414" y="-1" name="ogonek"/>
+  <anchor x="419" y="8" name="ogonek"/>
   <outline>
     <contour>
       <point x="301.0" y="570.0" type="curve" smooth="yes"/>
@@ -33,11 +33,11 @@
     </contour>
     <contour>
       <point x="299.0" y="-20.0" type="curve" smooth="yes"/>
-      <point x="455.46415094339625" y="-20.0"/>
+      <point x="455" y="-20.0"/>
       <point x="570.0" y="72.0"/>
       <point x="570.0" y="220.0" type="curve" smooth="yes"/>
       <point x="570.0" y="330.0" type="line" smooth="yes"/>
-      <point x="570.0" y="489.0"/>
+      <point x="570" y="489"/>
       <point x="474" y="570.0"/>
       <point x="301.0" y="570.0" type="curve"/>
       <point x="279" y="570.0"/>
@@ -54,7 +54,7 @@
       <point x="205.24564506302917" y="192.82355744047246"/>
       <point x="168.0" y="228.0" type="curve"/>
       <point x="97.0" y="98.9090909090909"/>
-      <point x="181.86536796536797" y="-20.0"/>
+      <point x="182" y="-20.0"/>
     </contour>
   </outline>
   <lib>
@@ -134,7 +134,7 @@
       <key>com.typemytype.robofont.guideline.magnetic.x8vgOGuF4Y</key>
       <integer>0</integer>
       <key>public.markColor</key>
-      <string>1,0.45,0.45,0.75</string>
+      <string>0.45,1,0.55,0.75</string>
     </dict>
   </lib>
 </glyph>

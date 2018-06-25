@@ -4,7 +4,7 @@
   <unicode hex="0065"/>
   <anchor x="302" y="561" name="top"/>
   <anchor x="302" y="-1" name="bottom"/>
-  <anchor x="552" y="14" name="ogonek"/>
+  <anchor x="556" y="23" name="ogonek"/>
   <outline>
     <contour>
       <point x="308" y="395" type="curve" smooth="yes"/>
@@ -70,11 +70,11 @@
       <point x="346.0" y="395.0"/>
       <point x="360.0" y="374.0"/>
       <point x="360.0" y="339" type="curve" smooth="yes"/>
-      <point x="360.0" y="321.0" type="line" smooth="yes"/>
-      <point x="360.0" y="320"/>
-      <point x="360" y="320"/>
-      <point x="359.0" y="320.0" type="curve" smooth="yes"/>
-      <point x="305" y="320"/>
+      <point x="360" y="331" type="line" smooth="yes"/>
+      <point x="360" y="324"/>
+      <point x="356" y="320"/>
+      <point x="349" y="320" type="curve" smooth="yes"/>
+      <point x="305" y="320.0"/>
       <point x="277.0" y="320.0"/>
       <point x="205" y="320" type="curve"/>
       <point x="205.0" y="298"/>
@@ -228,7 +228,7 @@
       <key>com.typemytype.robofont.guideline.magnetic.zhlSDndNAE</key>
       <integer>10</integer>
       <key>public.markColor</key>
-      <string>1,0.45,0.45,0.75</string>
+      <string>0.45,1,0.55,0.75</string>
     </dict>
   </lib>
 </glyph>
