@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="acutecomb" format="1">
+  <unicode hex="0301"/>
+  <note>
+    combining acute accent
+  </note>
+  <outline>
+    <contour>
+      <point x="89" y="626" type="curve" smooth="yes"/>
+      <point x="110" y="626"/>
+      <point x="131" y="632"/>
+      <point x="148" y="641" type="curve" smooth="yes"/>
+      <point x="204" y="669"/>
+      <point x="245" y="707"/>
+      <point x="277" y="761" type="curve"/>
+      <point x="286" y="775"/>
+      <point x="287" y="791"/>
+      <point x="273" y="798" type="curve" smooth="yes"/>
+      <point x="253" y="809"/>
+      <point x="234" y="812"/>
+      <point x="204" y="812" type="curve"/>
+      <point x="168" y="741"/>
+      <point x="119" y="696"/>
+      <point x="42" y="639" type="curve"/>
+      <point x="58" y="629"/>
+      <point x="72" y="626"/>
+    </contour>
+    <contour>
+      <point x="69" y="542" type="move" name="_top"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+    </dict>
+  </lib>
+</glyph>

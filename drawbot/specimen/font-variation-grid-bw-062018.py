@@ -89,5 +89,5 @@ for i in range(0,stepsX):
         fontVariations(XPRN=currentExpression, wght=currentWeight)
         text(string, (x, y))
     
-saveImage("/Users/stephennixon/type/01-casual_mono-project/drawbot/specimen/exports/recursive-var-grid--wght_xprn-lines-BW.pdf")
+# saveImage("/Users/stephennixon/type/01-casual_mono-project/drawbot/specimen/exports/recursive-var-grid--wght_xprn-lines-BW.pdf")
     

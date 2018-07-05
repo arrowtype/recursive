@@ -3,7 +3,7 @@
   <advance width="600"/>
   <unicode hex="00BF"/>
   <outline>
-    <component base="question" xScale="-1.0" yScale="-1.0" xOffset="616" yOffset="535"/>
+    <component base="question" xScale="-1.0" yScale="-1.0" xOffset="616.0" yOffset="535.0"/>
   </outline>
   <lib>
     <dict>
@@ -15,6 +15,8 @@
       <integer>1</integer>
       <key>com.typemytype.robofont.Image.Sharpness</key>
       <real>0.4</real>
+      <key>public.markColor</key>
+      <string>0.45,0.73,1,0.75</string>
     </dict>
   </lib>
 </glyph>

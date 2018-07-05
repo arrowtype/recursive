@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="brokenbar" format="1">
+  <advance width="300"/>
+  <unicode hex="00A6"/>
+  <outline>
+    <contour>
+      <point x="122" y="760" type="curve"/>
+      <point x="122" y="727"/>
+      <point x="122" y="694"/>
+      <point x="122" y="661" type="curve" smooth="yes"/>
+      <point x="122" y="380" type="line" smooth="yes"/>
+      <point x="122" y="374"/>
+      <point x="127" y="369"/>
+      <point x="133" y="369" type="curve" smooth="yes"/>
+      <point x="148" y="369"/>
+      <point x="163" y="369"/>
+      <point x="178" y="369" type="curve"/>
+      <point x="178" y="749" type="line" smooth="yes"/>
+      <point x="178" y="752"/>
+      <point x="177" y="755"/>
+      <point x="175" y="757" type="curve" smooth="yes"/>
+      <point x="173" y="759"/>
+      <point x="170" y="760"/>
+      <point x="167" y="760" type="curve" smooth="yes"/>
+      <point x="152" y="760"/>
+      <point x="137" y="760"/>
+    </contour>
+    <contour>
+      <point x="122" y="231" type="curve"/>
+      <point x="122" y="-149" type="line"/>
+      <point x="122" y="-155"/>
+      <point x="127" y="-160"/>
+      <point x="133" y="-160" type="curve" smooth="yes"/>
+      <point x="148" y="-160"/>
+      <point x="163" y="-160"/>
+      <point x="178" y="-160" type="curve"/>
+      <point x="178" y="220" type="line" smooth="yes"/>
+      <point x="178" y="227"/>
+      <point x="174" y="231"/>
+      <point x="167" y="231" type="curve" smooth="yes"/>
+      <point x="152" y="231"/>
+      <point x="137" y="231"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+    </dict>
+  </lib>
+</glyph>

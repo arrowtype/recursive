@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ringcomb" format="1">
+  <unicode hex="030A"/>
+  <outline>
+    <contour>
+      <point x="17" y="651" type="curve"/>
+      <point x="-27" y="651"/>
+      <point x="-54" y="683"/>
+      <point x="-54" y="725" type="curve" smooth="yes"/>
+      <point x="-54" y="732" type="line" smooth="yes"/>
+      <point x="-54" y="767"/>
+      <point x="-33" y="787"/>
+      <point x="4" y="787" type="curve" smooth="yes"/>
+      <point x="24" y="787"/>
+      <point x="36" y="780"/>
+      <point x="54" y="763" type="curve"/>
+      <point x="72" y="803"/>
+      <point x="45" y="852"/>
+      <point x="3" y="852" type="curve"/>
+      <point x="-74" y="852"/>
+      <point x="-129" y="800"/>
+      <point x="-129" y="725" type="curve" smooth="yes"/>
+      <point x="-129" y="719" type="line" smooth="yes"/>
+      <point x="-129" y="645"/>
+      <point x="-76" y="597"/>
+      <point x="-3" y="597" type="curve"/>
+      <point x="11" y="597"/>
+      <point x="17" y="619"/>
+    </contour>
+    <contour>
+      <point x="-17" y="798" type="curve"/>
+      <point x="27" y="798"/>
+      <point x="54" y="775"/>
+      <point x="54" y="737" type="curve" smooth="yes"/>
+      <point x="54" y="730" type="line" smooth="yes"/>
+      <point x="54" y="699"/>
+      <point x="32" y="678"/>
+      <point x="-2" y="678" type="curve" smooth="yes"/>
+      <point x="-23" y="678"/>
+      <point x="-37" y="682"/>
+      <point x="-54" y="699" type="curve"/>
+      <point x="-72" y="659"/>
+      <point x="-45" y="597"/>
+      <point x="-3" y="597" type="curve"/>
+      <point x="74" y="597"/>
+      <point x="129" y="649"/>
+      <point x="129" y="724" type="curve" smooth="yes"/>
+      <point x="129" y="730" type="line" smooth="yes"/>
+      <point x="129" y="803"/>
+      <point x="76" y="852"/>
+      <point x="3" y="852" type="curve"/>
+      <point x="-11" y="852"/>
+      <point x="-17" y="842"/>
+    </contour>
+    <contour>
+      <point x="0" y="544" type="move" name="_top"/>
+    </contour>
+    <contour>
+      <point x="0" y="834" type="move" name="top"/>
+    </contour>
+    <contour>
+      <point x="0" y="588" type="move" name="_ring"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+    </dict>
+  </lib>
+</glyph>

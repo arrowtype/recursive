@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dieresiscomb" format="1">
+  <unicode hex="0308"/>
+  <outline>
+    <contour>
+      <point x="-46" y="641" type="curve"/>
+      <point x="-46" y="720" type="line" smooth="yes"/>
+      <point x="-46" y="753"/>
+      <point x="-79" y="762"/>
+      <point x="-117" y="762" type="curve" smooth="yes"/>
+      <point x="-132" y="762"/>
+      <point x="-149" y="761"/>
+      <point x="-163" y="759" type="curve"/>
+      <point x="-163" y="681" type="line" smooth="yes"/>
+      <point x="-163" y="648"/>
+      <point x="-130" y="638"/>
+      <point x="-93" y="638" type="curve" smooth="yes"/>
+      <point x="-78" y="638"/>
+      <point x="-61" y="638"/>
+    </contour>
+    <contour>
+      <point x="163" y="641" type="curve"/>
+      <point x="163" y="720" type="line" smooth="yes"/>
+      <point x="163" y="753"/>
+      <point x="130" y="762"/>
+      <point x="93" y="762" type="curve" smooth="yes"/>
+      <point x="78" y="762"/>
+      <point x="61" y="761"/>
+      <point x="46" y="759" type="curve"/>
+      <point x="46" y="681" type="line" smooth="yes"/>
+      <point x="46" y="648"/>
+      <point x="80" y="638"/>
+      <point x="116" y="638" type="curve" smooth="yes"/>
+      <point x="132" y="638"/>
+      <point x="149" y="638"/>
+    </contour>
+    <contour>
+      <point x="0" y="542" type="move" name="_top"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.45,0.73,1,0.75</string>
+    </dict>
+  </lib>
+</glyph>

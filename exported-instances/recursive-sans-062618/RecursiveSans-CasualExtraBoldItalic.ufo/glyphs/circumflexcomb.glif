@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="circumflexcomb" format="1">
+  <unicode hex="0302"/>
+  <outline>
+    <contour>
+      <point x="-4" y="608" type="line"/>
+      <point x="37" y="661"/>
+      <point x="103" y="710"/>
+      <point x="173" y="731" type="curve"/>
+      <point x="188" y="789"/>
+      <point x="165" y="810"/>
+      <point x="120" y="810" type="curve"/>
+      <point x="96" y="810" type="line"/>
+      <point x="46" y="789"/>
+      <point x="-31" y="742"/>
+      <point x="-71" y="698" type="curve" smooth="yes"/>
+      <point x="-93" y="673"/>
+      <point x="-105" y="655"/>
+      <point x="-107" y="647" type="curve" smooth="yes"/>
+      <point x="-112" y="624"/>
+      <point x="-60" y="608"/>
+      <point x="-10" y="608" type="curve"/>
+    </contour>
+    <contour>
+      <point x="304" y="624" type="curve"/>
+      <point x="290" y="693"/>
+      <point x="260" y="740"/>
+      <point x="220" y="777" type="curve" smooth="yes"/>
+      <point x="185" y="809"/>
+      <point x="155" y="810"/>
+      <point x="125" y="810" type="curve" smooth="yes"/>
+      <point x="117" y="810" type="line"/>
+      <point x="98" y="810"/>
+      <point x="78" y="791"/>
+      <point x="51" y="729" type="curve"/>
+      <point x="120" y="705"/>
+      <point x="143" y="681"/>
+      <point x="164" y="637" type="curve" smooth="yes"/>
+      <point x="170" y="618"/>
+      <point x="185" y="608"/>
+      <point x="218" y="608" type="curve" smooth="yes"/>
+      <point x="252" y="608"/>
+      <point x="276" y="613"/>
+    </contour>
+    <contour>
+      <point x="70" y="549" type="move" name="_top"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.45,0.73,1,0.75</string>
+    </dict>
+  </lib>
+</glyph>

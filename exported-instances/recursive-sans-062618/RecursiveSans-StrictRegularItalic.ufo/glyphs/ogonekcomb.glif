@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ogonekcomb" format="1">
+  <unicode hex="0328"/>
+  <outline>
+    <contour>
+      <point x="-262" y="-142" type="curve" smooth="yes"/>
+      <point x="-279" y="-208"/>
+      <point x="-247" y="-250"/>
+      <point x="-174" y="-250" type="curve" smooth="yes"/>
+      <point x="-133" y="-250"/>
+      <point x="-95" y="-236"/>
+      <point x="-90" y="-217" type="curve" smooth="yes"/>
+      <point x="-83" y="-187"/>
+      <point x="-77" y="-166"/>
+      <point x="-75" y="-154" type="curve"/>
+      <point x="-89" y="-154" type="line"/>
+      <point x="-110" y="-167"/>
+      <point x="-127" y="-172"/>
+      <point x="-150" y="-172" type="curve" smooth="yes"/>
+      <point x="-180" y="-172"/>
+      <point x="-194" y="-157"/>
+      <point x="-186" y="-126" type="curve" smooth="yes"/>
+      <point x="-174" y="-77"/>
+      <point x="-126" y="-33"/>
+      <point x="-47" y="-7" type="curve" smooth="yes"/>
+      <point x="-34" y="-3"/>
+      <point x="-32" y="2"/>
+      <point x="-30" y="8" type="curve" smooth="yes"/>
+      <point x="-31" y="17"/>
+      <point x="-39" y="31"/>
+      <point x="-54" y="31" type="curve" smooth="yes"/>
+      <point x="-120" y="31"/>
+      <point x="-236" y="-34"/>
+    </contour>
+    <contour>
+      <point x="-29" y="8" type="move" name="_ogonek"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+      <key>public.markColor</key>
+      <string>0.45,0.73,1,0.75</string>
+    </dict>
+  </lib>
+</glyph>

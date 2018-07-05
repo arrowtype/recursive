@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="caroncomb" format="1">
+  <unicode hex="030C"/>
+  <outline>
+    <contour>
+      <point x="99" y="839" type="line"/>
+      <point x="54" y="795"/>
+      <point x="7" y="749"/>
+      <point x="-56" y="686" type="curve"/>
+      <point x="-15" y="640"/>
+      <point x="4" y="637"/>
+      <point x="12" y="637" type="curve"/>
+      <point x="48" y="637" type="line"/>
+      <point x="75" y="669"/>
+      <point x="157" y="766"/>
+      <point x="187" y="802" type="curve" smooth="yes"/>
+      <point x="203" y="822"/>
+      <point x="206" y="824"/>
+      <point x="206" y="830" type="curve" smooth="yes"/>
+      <point x="206" y="835"/>
+      <point x="203" y="839"/>
+      <point x="195" y="839" type="curve"/>
+    </contour>
+    <contour>
+      <point x="-218" y="839" type="curve"/>
+      <point x="-169" y="781"/>
+      <point x="-86" y="682"/>
+      <point x="-67" y="659" type="curve" smooth="yes"/>
+      <point x="-50" y="640"/>
+      <point x="-46" y="637"/>
+      <point x="-36" y="637" type="curve" smooth="yes"/>
+      <point x="15" y="637" type="line"/>
+      <point x="20" y="637"/>
+      <point x="36" y="641"/>
+      <point x="55" y="686" type="curve"/>
+      <point x="-9" y="750"/>
+      <point x="-67" y="807"/>
+      <point x="-88" y="828" type="curve" smooth="yes"/>
+      <point x="-97" y="837"/>
+      <point x="-102" y="839"/>
+      <point x="-117" y="839" type="curve" smooth="yes"/>
+      <point x="-162" y="839"/>
+      <point x="-192" y="839"/>
+    </contour>
+    <contour>
+      <point x="0" y="549" type="move" name="_top"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.45,0.73,1,0.75</string>
+    </dict>
+  </lib>
+</glyph>

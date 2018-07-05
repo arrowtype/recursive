@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="commaaboverightcomb" format="1">
+  <unicode hex="0315"/>
+  <outline>
+    <contour>
+      <point x="-21" y="524" type="curve" smooth="yes"/>
+      <point x="-6" y="524"/>
+      <point x="2" y="527"/>
+      <point x="11" y="536" type="curve" smooth="yes"/>
+      <point x="44" y="569"/>
+      <point x="57" y="619"/>
+      <point x="57" y="674" type="curve" smooth="yes"/>
+      <point x="57" y="701"/>
+      <point x="38" y="714"/>
+      <point x="5" y="714" type="curve" smooth="yes"/>
+      <point x="-10" y="714"/>
+      <point x="-19" y="712"/>
+      <point x="-34" y="707" type="curve"/>
+      <point x="-34" y="627"/>
+      <point x="-39" y="599"/>
+      <point x="-59" y="533" type="curve"/>
+      <point x="-48" y="527"/>
+      <point x="-38" y="524"/>
+    </contour>
+    <contour>
+      <point x="0" y="611" type="move" name="_caronslovak"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.45,0.73,1,0.75</string>
+    </dict>
+  </lib>
+</glyph>

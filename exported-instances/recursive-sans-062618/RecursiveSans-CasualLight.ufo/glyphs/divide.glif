@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="divide" format="1">
+  <advance width="600"/>
+  <unicode hex="00F7"/>
+  <outline>
+    <contour>
+      <point x="59" y="328" type="line"/>
+      <point x="59" y="325"/>
+      <point x="59" y="320"/>
+      <point x="59" y="317" type="curve" smooth="yes"/>
+      <point x="59" y="299"/>
+      <point x="63" y="287"/>
+      <point x="71" y="278" type="curve" smooth="yes"/>
+      <point x="75" y="274"/>
+      <point x="80" y="272"/>
+      <point x="87" y="272" type="curve"/>
+      <point x="540" y="272" type="line"/>
+      <point x="541" y="276"/>
+      <point x="541" y="281"/>
+      <point x="541" y="285" type="curve" smooth="yes"/>
+      <point x="541" y="310"/>
+      <point x="535" y="328"/>
+      <point x="515" y="328" type="curve"/>
+    </contour>
+    <contour>
+      <point x="363" y="421" type="curve"/>
+      <point x="363" y="483" type="line" smooth="yes"/>
+      <point x="363" y="518"/>
+      <point x="339" y="538"/>
+      <point x="289" y="538" type="curve" smooth="yes"/>
+      <point x="267" y="538"/>
+      <point x="250" y="534"/>
+      <point x="237" y="525" type="curve"/>
+      <point x="237" y="463" type="line" smooth="yes"/>
+      <point x="237" y="427"/>
+      <point x="261" y="407"/>
+      <point x="311" y="407" type="curve" smooth="yes"/>
+      <point x="333" y="407"/>
+      <point x="350" y="412"/>
+    </contour>
+    <contour>
+      <point x="363" y="75" type="curve"/>
+      <point x="363" y="137" type="line" smooth="yes"/>
+      <point x="363" y="173"/>
+      <point x="339" y="193"/>
+      <point x="289" y="193" type="curve" smooth="yes"/>
+      <point x="267" y="193"/>
+      <point x="250" y="188"/>
+      <point x="237" y="179" type="curve"/>
+      <point x="237" y="117" type="line" smooth="yes"/>
+      <point x="237" y="82"/>
+      <point x="261" y="62"/>
+      <point x="311" y="62" type="curve" smooth="yes"/>
+      <point x="333" y="62"/>
+      <point x="350" y="66"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.45,0.73,1,0.75</string>
+    </dict>
+  </lib>
+</glyph>

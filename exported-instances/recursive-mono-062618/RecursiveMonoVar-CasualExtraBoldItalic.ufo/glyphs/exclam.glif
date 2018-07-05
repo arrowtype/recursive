@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="exclam" format="1">
+  <advance width="600"/>
+  <unicode hex="0021"/>
+  <outline>
+    <contour>
+      <point x="365" y="290" type="line"/>
+      <point x="397" y="355"/>
+      <point x="438" y="463"/>
+      <point x="455" y="529" type="curve"/>
+      <point x="483" y="641" type="line" smooth="yes"/>
+      <point x="495" y="689"/>
+      <point x="444" y="710"/>
+      <point x="374" y="710" type="curve" smooth="yes"/>
+      <point x="349" y="710"/>
+      <point x="330" y="709"/>
+      <point x="305" y="703" type="curve"/>
+      <point x="305" y="667"/>
+      <point x="300" y="630"/>
+      <point x="290" y="590" type="curve" smooth="yes"/>
+      <point x="276" y="535" type="line"/>
+      <point x="257" y="456"/>
+      <point x="241" y="343"/>
+      <point x="258" y="321" type="curve" smooth="yes"/>
+      <point x="272" y="302"/>
+      <point x="302" y="290"/>
+      <point x="350" y="290" type="curve"/>
+    </contour>
+    <contour>
+      <point x="335" y="-5" type="curve"/>
+      <point x="370" y="134" type="line" smooth="yes"/>
+      <point x="386" y="197"/>
+      <point x="319" y="206"/>
+      <point x="258" y="206" type="curve" smooth="yes"/>
+      <point x="235" y="206"/>
+      <point x="204" y="204"/>
+      <point x="178" y="200" type="curve"/>
+      <point x="144" y="61" type="line" smooth="yes"/>
+      <point x="128" y="-2"/>
+      <point x="195" y="-11"/>
+      <point x="256" y="-11" type="curve" smooth="yes"/>
+      <point x="279" y="-11"/>
+      <point x="309" y="-9"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+    </dict>
+  </lib>
+</glyph>

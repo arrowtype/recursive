@@ -1,7 +1,7 @@
-H= 1000 # was 525
-W = 1000
+H= 700 # was 525
+W = 2000
 size(W, H)
-rect(0,0,W,H)
+# rect(0,0,W,H)
 # pick a font
 font("RecursiveMonoVar-StrictLight")
 
@@ -13,13 +13,13 @@ maxWeight = 1100
 minWeight = 220
 
 maxExpression = 1
-minExpression = 0
+minExpression = 0.01
 
 maxSlant = 14
 minSlant = 0
 
-stepsX = 9
-stepsY = 7
+stepsX = 16
+stepsY = 4
 padding = 20
 
 string = "S"
@@ -40,7 +40,7 @@ def normalRGB(r, g, b):
 # print(normalRGB(251, 208, 0)) # yellow
 # print(normalRGB(16, 205, 103)) # green
 
-fontSize(W/stepsX/.75) # 1.5
+fontSize(W/stepsX/.7) # 1.5
 
 for i in range(0,stepsX):
     # set x position
@@ -48,7 +48,7 @@ for i in range(0,stepsX):
     # set XPRN
     # currentExpression = minExpression + stepExpression * i
     
-    currentExpression = interpFunc(minExpression, maxExpression, stepsX, i)
+    currentExpression = interpFunc(minExpression, maxExpression, stepsX-1, i)
     
     
     # this is unnecessarily cumbersome. make a tuple interpolatetion func
@@ -71,9 +71,10 @@ for i in range(0,stepsX):
         
     currentSlant = interpFunc(minSlant, maxSlant, stepsX, i)
     
+    
     for j in range(0,stepsY):
         
-        currentWeight = interpFunc(minWeight, maxWeight, stepsY, j)
+        currentWeight = interpFunc(minWeight, maxWeight, stepsY-1, j)
         # currentSlant = interpFunc(minSlant, maxSlant, stepsY, j)
 
         # TODO: make slant in bottom-right corner and top-left corners?
@@ -85,5 +86,5 @@ for i in range(0,stepsX):
         fontVariations(XPRN=currentExpression, wght=currentWeight)
         text(string, (x, y))
     
-# saveImage("/Users/stephennixon/type/01-casual_mono-project/drawbot/specimen/exports/recursive-var-grid--wght_xprn-lines.pdf")
+saveImage("/Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/specimens-and-presentations/01-graduation/grad-poster/assets/var-grid-S.pdf")
     

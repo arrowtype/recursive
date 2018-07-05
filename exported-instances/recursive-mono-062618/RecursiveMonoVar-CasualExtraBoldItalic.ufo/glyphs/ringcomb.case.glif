@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ringcomb.case" format="1">
+  <outline>
+    <contour>
+      <point x="120" y="690" type="curve"/>
+      <point x="73" y="690"/>
+      <point x="49" y="711"/>
+      <point x="58" y="746" type="curve" smooth="yes"/>
+      <point x="60" y="752" type="line" smooth="yes"/>
+      <point x="69" y="790"/>
+      <point x="98" y="813"/>
+      <point x="142" y="813" type="curve" smooth="yes"/>
+      <point x="172" y="813"/>
+      <point x="200" y="808"/>
+      <point x="216" y="787" type="curve"/>
+      <point x="253" y="842"/>
+      <point x="239" y="903"/>
+      <point x="161" y="903" type="curve"/>
+      <point x="60" y="903"/>
+      <point x="-30" y="842"/>
+      <point x="-52" y="752" type="curve" smooth="yes"/>
+      <point x="-54" y="746" type="line" smooth="yes"/>
+      <point x="-74" y="664"/>
+      <point x="-15" y="611"/>
+      <point x="82" y="611" type="curve"/>
+      <point x="97" y="611"/>
+      <point x="108" y="640"/>
+    </contour>
+    <contour>
+      <point x="124" y="825" type="curve"/>
+      <point x="171" y="825"/>
+      <point x="193" y="799"/>
+      <point x="183" y="757" type="curve" smooth="yes"/>
+      <point x="181" y="751" type="line" smooth="yes"/>
+      <point x="173" y="719"/>
+      <point x="146" y="701"/>
+      <point x="102" y="701" type="curve" smooth="yes"/>
+      <point x="72" y="701"/>
+      <point x="44" y="706"/>
+      <point x="27" y="727" type="curve"/>
+      <point x="-9" y="672"/>
+      <point x="4" y="611"/>
+      <point x="82" y="611" type="curve"/>
+      <point x="184" y="611"/>
+      <point x="273" y="668"/>
+      <point x="293" y="751" type="curve" smooth="yes"/>
+      <point x="295" y="757" type="line" smooth="yes"/>
+      <point x="317" y="846"/>
+      <point x="259" y="903"/>
+      <point x="161" y="903" type="curve"/>
+      <point x="146" y="903"/>
+      <point x="139" y="886"/>
+    </contour>
+    <contour>
+      <point x="156" y="892" type="move" name="top"/>
+    </contour>
+    <contour>
+      <point x="108" y="700" type="move" name="_ring"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+    </dict>
+  </lib>
+</glyph>

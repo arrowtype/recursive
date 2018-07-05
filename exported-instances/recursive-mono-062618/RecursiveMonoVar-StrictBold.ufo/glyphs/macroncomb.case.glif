@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="macroncomb.case" format="1">
+  <outline>
+    <contour>
+      <point x="-179" y="913" type="line"/>
+      <point x="-179" y="878"/>
+      <point x="-179" y="848"/>
+      <point x="-179" y="813" type="curve" smooth="yes"/>
+      <point x="-179" y="806"/>
+      <point x="-175" y="802"/>
+      <point x="-168" y="802" type="curve"/>
+      <point x="179" y="802" type="line"/>
+      <point x="179" y="837"/>
+      <point x="179" y="867"/>
+      <point x="179" y="902" type="curve" smooth="yes"/>
+      <point x="179" y="908"/>
+      <point x="174" y="913"/>
+      <point x="168" y="913" type="curve"/>
+    </contour>
+    <contour>
+      <point x="0" y="712" type="move" name="_top"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+    </dict>
+  </lib>
+</glyph>

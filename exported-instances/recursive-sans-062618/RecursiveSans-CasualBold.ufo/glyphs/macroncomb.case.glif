@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="macroncomb.case" format="1">
+  <outline>
+    <contour>
+      <point x="-203" y="904" type="line"/>
+      <point x="-203" y="899"/>
+      <point x="-203" y="893"/>
+      <point x="-203" y="887" type="curve" smooth="yes"/>
+      <point x="-203" y="819"/>
+      <point x="-183" y="796"/>
+      <point x="-78" y="796" type="curve"/>
+      <point x="196" y="796" type="line"/>
+      <point x="198" y="808"/>
+      <point x="202" y="826"/>
+      <point x="202" y="842" type="curve" smooth="yes"/>
+      <point x="202" y="887"/>
+      <point x="187" y="904"/>
+      <point x="137" y="904" type="curve"/>
+    </contour>
+    <contour>
+      <point x="0" y="712" type="move" name="_top"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.45,0.73,1,0.75</string>
+    </dict>
+  </lib>
+</glyph>

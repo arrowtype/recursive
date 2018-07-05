@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="caroncomb" format="1">
+  <unicode hex="030C"/>
+  <outline>
+    <contour>
+      <point x="231" y="841" type="line"/>
+      <point x="175" y="797"/>
+      <point x="116" y="751"/>
+      <point x="38" y="688" type="curve"/>
+      <point x="77" y="640"/>
+      <point x="98" y="639"/>
+      <point x="106" y="639" type="curve"/>
+      <point x="145" y="639" type="line"/>
+      <point x="179" y="671"/>
+      <point x="284" y="768"/>
+      <point x="322" y="804" type="curve" smooth="yes"/>
+      <point x="343" y="824"/>
+      <point x="345" y="826"/>
+      <point x="347" y="832" type="curve" smooth="yes"/>
+      <point x="348" y="837"/>
+      <point x="346" y="841"/>
+      <point x="338" y="841" type="curve"/>
+    </contour>
+    <contour>
+      <point x="-75" y="841" type="curve"/>
+      <point x="-43" y="783"/>
+      <point x="14" y="684"/>
+      <point x="27" y="661" type="curve" smooth="yes"/>
+      <point x="38" y="642"/>
+      <point x="41" y="639"/>
+      <point x="51" y="639" type="curve" smooth="yes"/>
+      <point x="109" y="639" type="line"/>
+      <point x="114" y="639"/>
+      <point x="132" y="642"/>
+      <point x="171" y="688" type="curve"/>
+      <point x="123" y="752"/>
+      <point x="79" y="809"/>
+      <point x="63" y="830" type="curve" smooth="yes"/>
+      <point x="56" y="839"/>
+      <point x="52" y="841"/>
+      <point x="37" y="841" type="curve" smooth="yes"/>
+      <point x="-15" y="841"/>
+      <point x="-47" y="841"/>
+    </contour>
+    <contour>
+      <point x="70" y="551" type="move" name="_top"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+    </dict>
+  </lib>
+</glyph>

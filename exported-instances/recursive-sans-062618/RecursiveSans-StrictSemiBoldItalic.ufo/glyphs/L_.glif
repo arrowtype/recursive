@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="L" format="1">
+  <advance width="550"/>
+  <unicode hex="004C"/>
+  <outline>
+    <contour>
+      <point x="150" y="75" type="curve"/>
+      <point x="304" y="689" type="line" smooth="yes"/>
+      <point x="305" y="692"/>
+      <point x="305" y="695"/>
+      <point x="303" y="697" type="curve" smooth="yes"/>
+      <point x="302" y="699"/>
+      <point x="299" y="700"/>
+      <point x="296" y="700" type="curve" smooth="yes"/>
+      <point x="259" y="700"/>
+      <point x="222" y="700"/>
+      <point x="185" y="700" type="curve"/>
+      <point x="176" y="667"/>
+      <point x="168" y="633"/>
+      <point x="160" y="600" type="curve" smooth="yes"/>
+      <point x="31" y="86" type="line" smooth="yes"/>
+      <point x="30" y="80"/>
+      <point x="33" y="75"/>
+    </contour>
+    <contour>
+      <point x="37" y="109" type="line"/>
+      <point x="12" y="11" type="line" smooth="yes"/>
+      <point x="11" y="5"/>
+      <point x="14" y="0"/>
+      <point x="21" y="0" type="curve" smooth="yes"/>
+      <point x="429" y="0" type="line"/>
+      <point x="437" y="33"/>
+      <point x="446" y="65"/>
+      <point x="454" y="98" type="curve" smooth="yes"/>
+      <point x="455" y="104"/>
+      <point x="452" y="109"/>
+      <point x="446" y="109" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="473" y="550" type="move" name="caronslovak"/>
+    </contour>
+    <contour>
+      <point x="249" y="711" type="move" name="top"/>
+    </contour>
+    <contour>
+      <point x="469" y="400" type="move" name="dot"/>
+    </contour>
+    <contour>
+      <point x="219" y="-1" type="move" name="bottom"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0.45,0.45,0.75</string>
+    </dict>
+  </lib>
+</glyph>
