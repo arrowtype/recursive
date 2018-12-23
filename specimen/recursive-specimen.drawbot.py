@@ -5,13 +5,14 @@ codeExample = file_object.read()
 # print(codeExample)
 
 import random
+import math
 
 newPage('A4')
 # rect(1,1,593,840)
 W,H = 595,842
 
 
-glyphsToRemove = '" ( ) { } [ ] _ . ; = > < ? : , / - ` \' '
+glyphsToRemove = '" ( ) { } [ ] _ . ; = > < ? : , / - ` \' 1 2 3 4 5 6 7 8 9 0'
 
 glyphsToRemoveList = glyphsToRemove.split(' ')
 
@@ -68,15 +69,16 @@ def chooseRandomWord(list):
 
 
 
-minFontSize = 21.32
-maxFontSize = 92
+minFontSize = 10
+maxFontSize = 124
 
 def currentFontSize(minSize,maxSize,t):
     totalRange = maxSize - minSize
-    currentSize = maxSize - (totalRange * t)
+    currentSize = (maxSize - (totalRange * t)) #* math.tan(t)
     return currentSize
     
 counter = 0
+currentHeight = 0
 for num in range(minWordLength,maxWordLength):
     # print(num)
     if num in sortedByLengthSorted.keys():
@@ -85,11 +87,18 @@ for num in range(minWordLength,maxWordLength):
         currentSize= currentFontSize(minFontSize,maxFontSize,t)
         print(currentSize)
         fontSize(currentSize)
+        lineHeight(currentSize)
         font("RecursiveMono-CasualMedium")
         # choose a random word from list
         wordToDraw = chooseRandomWord(sortedByLengthSorted[num])
         print(wordToDraw)
-        textBox(wordToDraw,(0,H-boxHeight*counter,W,boxHeight))  
+        fill(0,0,0)
+        textBox(wordToDraw,(0,H-currentHeight-currentSize*1.1,W,currentSize*1.05)) 
+        
+        fill(1,0,0)
+        rect((counter+2)*currentSize, H-currentHeight-currentSize*1.1, 10,10)
+        
+        currentHeight += currentSize
         counter += 1
         
     # textBox(sortedByLength[num],(0,H-boxHeight*index,W,boxHeight))
