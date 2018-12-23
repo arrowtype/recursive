@@ -70,11 +70,11 @@ def chooseRandomWord(list):
 
 
 minFontSize = 10
-maxFontSize = 124
+maxFontSize = 194
 
 def currentFontSize(minSize,maxSize,t):
     totalRange = maxSize - minSize
-    currentSize = (maxSize - (totalRange * t)) #* math.tan(t)
+    currentSize = (maxSize - (totalRange * t)) / 1.36*math.tan(1-t)
     return currentSize
     
 counter = 0
@@ -96,7 +96,7 @@ for num in range(minWordLength,maxWordLength):
         textBox(wordToDraw,(0,H-currentHeight-currentSize*1.1,W,currentSize*1.05)) 
         
         fill(1,0,0)
-        rect((counter+2)*currentSize, H-currentHeight-currentSize*1.1, 10,10)
+        rect((counter+3)*currentSize*.6, H-currentHeight-currentSize, 10,10)
         
         currentHeight += currentSize
         counter += 1
