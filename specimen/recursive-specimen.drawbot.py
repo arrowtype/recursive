@@ -1,19 +1,49 @@
-file_object = open("./drawbot-drawing-tools.txt", 'r')
-codeExample = file_object.read()
+# file_object = open("./drawbot-drawing-tools.txt", 'r')
+# codeExample = file_object.read()
 
-file_object_2 = open("./drawbot-misc.txt")
-codeExample += file_object_2.read()
+# file_object_2 = open("./drawbot-misc.txt")
+# codeExample += file_object_2.read()
+
+import os
+import random
+import math
+from pathlib import Path
+
+dir_path = os.path.dirname(os.path.realpath(__file__))
+
+print(dir_path)
+
+folderToGet = "../../../../stephennixon/Environments/gfonts3/lib/python3.6"
+
+codeExample= ""
+
+# for file in folder
+for filename in os.listdir(folderToGet):
+    if filename.endswith(".py"): 
+        # print(os.path.join(directory, filename))
+        file_object = open(folderToGet + "/" + filename, 'r', encoding='utf-8')
+        codeExample += file_object.read()
+        # print(filename)
+
+pathlist = Path(folderToGet).glob('**/*.py')
+for path in pathlist:
+    # because path is object not string
+    path_in_str = str(path)
+    # print(path_in_str)
+
+    file_object = open(path_in_str, 'r', encoding='utf-8')
+    codeExample += file_object.read()
 
 # print(codeExample)
 
-import random
-import math
+# print(codeExample)
+
 
 # A4 page size is 595, 842
 # rect(1,1,593,840)
 W,H = 595,842
 
-glyphsToRemove = '" ( ) { } [ ] _ . ; = > < ? : , / - ` \' 1 2 3 4 5 6 7 8 9 0'
+glyphsToRemove = '" ( ) { } [ ] _ . ; = > < ? : , / - ` \' ^ @ 1 2 3 4 5 6 7 8 9 0'
 
 glyphsToRemoveList = glyphsToRemove.split(' ')
 
@@ -29,16 +59,16 @@ codeWords = set(cleanedCodeExample.replace('\n', ' ').split(' '))
 
 # print(codeWords)
 
-wordsToRemove = ['', 'aabcde1234567890', 'A4Landscape']
+wordsToRemove = ['', 'aabcde1234567890', 'A4Landscape', 'molestie', 'vvvvvvvvvvvvvvvvvvvv', 'eEfFgGdiouxXcrs%', ' ', '   ', 'математика']
 
 for word in wordsToRemove:
     if word in codeWords:
         codeWords.remove(word)
         
-padding = 60
+padding = 150
 
 minWordLength = 8
-maxWordLength = 20
+maxWordLength = 30
 textColumnWidth = W-padding*2
 
 sortedByLength = {}
@@ -71,22 +101,15 @@ def chooseRandomWord(list):
     item = random.randint(0, listLength-1)
     return list[item]
 
-def currentFontSize(minSize,maxSize,t):
-    totalRange = maxSize - minSize
-    currentSize = (maxSize - (totalRange * t)) #/ 1.36 * math.tan(1+t)
-    return currentSize
-    
-
-# width = 0.6 * currentSize * numOfLetters    
-## set font size to whatever is needed to match width of first thing
-
-# width = 500 = 0.6 * currentSize * 3
-# currentSize = 0.6/500 * 3/500
-
+# def currentFontSize(minSize,maxSize,t):
+#     totalRange = maxSize - minSize
+#     currentSize = (maxSize - (totalRange * t)) #/ 1.36 * math.tan(1+t)
+#     return currentSize
 
 
 def calcFontSize(currentLetters, t):
-    currentSize = textColumnWidth / currentLetters / 0.6      
+    # textColumnWidth += textColumnWidth * (1 - t)
+    currentSize = textColumnWidth / currentLetters / 0.6 
     return currentSize
     
 font("RecursiveMonoVar-StrictLight")
@@ -102,15 +125,13 @@ maxWght = 1100
 weightSteps = int((maxWght - minWght)/100)
 
 currentWght = 300
-currentXprn = 0.99
+currentXprn = 1
 
-for page in range(0,weightSteps):
+for page in range(0,weightSteps*2):
     newPage(W,H)
     counter = 0
     currentHeight = 0
-    
-    
-    
+
     for num in range(minWordLength,maxWordLength):
         # print(num)
         if num in sortedByLengthSorted.keys():
@@ -119,7 +140,7 @@ for page in range(0,weightSteps):
             # currentSize= currentFontSize(minFontSize,maxFontSize,t)
             currentLetters = num
             currentSize = calcFontSize(currentLetters, t)
-            # print(currentSize)
+            print(currentSize)
             fontSize(currentSize)
             lineHeight(currentSize)
             
@@ -130,14 +151,17 @@ for page in range(0,weightSteps):
             # choose a random word from list
             wordToDraw = chooseRandomWord(sortedByLengthSorted[num])
             
-            if len(sortedByLengthSorted[num]) > 1:
-                sortedByLengthSorted[num].remove(wordToDraw)
+            # if len(sortedByLengthSorted[num]) > 1:
+            #     sortedByLengthSorted[num].remove(wordToDraw)
             # print(wordToDraw)
-            textBox(wordToDraw,(padding, H-currentHeight-currentSize-30, W, currentSize*1.1)) 
+            textBox(wordToDraw,(padding, H-currentHeight-currentSize-padding/2, W, currentSize*1.1)) 
         
-            currentHeight += currentSize*1.05
+            currentHeight += currentSize*1.1
             counter += 1
     currentWght += 100
+    if currentWght == maxWght:
+        currentWght = minWght
+        currentXprn = 0.001
         
     # textBox(sortedByLength[num],(0,H-boxHeight*index,W,boxHeight))
 
@@ -146,6 +170,7 @@ for page in range(0,weightSteps):
 
 
 
-
+saveImage('exports/recursive-mono-122518.pdf')
 
 file_object.close()
+
