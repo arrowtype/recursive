@@ -1,5 +1,5 @@
 
-W, H = 1920, 1080
+W, H = 1200, 1200
 size(W, H)
 # rect(0,0,W,H)
 # pick a font
@@ -19,7 +19,7 @@ maxSlant = 14
 minSlant = 0
 
 
-stepsX = 20
+stepsX = 10
 stepsY = 8
 padding = 20
 
@@ -45,6 +45,10 @@ def normalRGB(r, g, b):
 
 fontSize(W/stepsX/.7) # 1.5
 
+# main colors in the composition, converted from RGB values
+rOne, gOne, bOne = normalRGB(83, 59, 230)
+rTwo, gTwo, bTwo = normalRGB(32, 171, 133)
+
 for i in range(0,stepsX):
     # set x position
     x = padding + i * (W-padding) / stepsX
@@ -55,9 +59,16 @@ for i in range(0,stepsX):
     
     
     # this is unnecessarily cumbersome. make a tuple interpolatetion func
-    red = interpFunc(0.325,0.823, stepsX, i)
-    green = interpFunc(0.231,0.180, stepsX, i)
-    blue = interpFunc(0.90,0.92, stepsX, i)
+    # red = interpFunc(0.325,0.823, stepsX, i)
+    # green = interpFunc(0.231,0.180, stepsX, i)
+    # blue = interpFunc(0.90,0.92, stepsX, i)
+
+    # green: 164, 81, 67
+    
+    
+    red = interpFunc(rOne,rTwo, stepsX, i)
+    green = interpFunc(gOne,gTwo, stepsX, i)
+    blue = interpFunc(bOne,bTwo, stepsX, i)
     # blue    ### magenta #
     #####################
     # green   ### yellow  #
@@ -119,7 +130,7 @@ interSteps = 80 #140
 
 def drawInterPath(x1, y1, x2, y2, wght1, wght2, xprn1, xprn2,rgb1,rgb2):
     
-    print(rgb1,rgb2)
+    # print(rgb1,rgb2)
 
     for interLetter in range(0, interSteps+1):
         interX = interpFunc(x1, x2, interSteps, interLetter)
@@ -134,12 +145,12 @@ def drawInterPath(x1, y1, x2, y2, wght1, wght2, xprn1, xprn2,rgb1,rgb2):
         interG = interpFunc(rgb1[1],rgb2[1],interSteps, interLetter)
         interB = interpFunc(rgb1[2],rgb2[2],interSteps, interLetter)
         
-        print(interR,interG, interB,)
+        # print(interR,interG, interB)
         
         strokeOpacity = interpFunc(0.05, 1, interSteps, interLetter)
         # print(strokeOpacity)
         r,g,b = normalRGB(240,164,63)
-        print(interLetter, interSteps)
+        # print(interLetter, interSteps)
         if interLetter != interSteps:
             strokeWidth(1)
             # stroke(1,1,1,strokeOpacity)
@@ -184,9 +195,9 @@ def drawDiagonals(col1,row1, col2,row2):
 
 # x1 y1 x2 y2
 # drawDiagonals(0,stepsY-1, stepsX-1,1)
-drawDiagonals(3, stepsY-2,stepsX-4,1)
-drawDiagonals(stepsX-4, stepsY-2,3,2)
-drawDiagonals(6, stepsY-1,stepsX-3,stepsY-3)
+drawDiagonals(2, stepsY-2,stepsX-4,0)
+drawDiagonals(stepsX-2, stepsY-1,2,1)
+drawDiagonals(stepsX-3,stepsY-4,5, stepsY-1)
 
 
 # drawInterPath(x1, y1, x2, y2, interSteps)
@@ -198,5 +209,5 @@ drawDiagonals(6, stepsY-1,stepsX-3,stepsY-3)
 
 
     
-saveImage("/Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/specimens-and-presentations/01-graduation/presentation/assets/var-grid-S-grid-transition4.png")
+# saveImage("/Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/specimens-and-presentations/01-graduation/presentation/assets/var-grid-S-grid-transition4.png")
     
