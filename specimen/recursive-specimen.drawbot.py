@@ -11,7 +11,7 @@ import math
 from pythonCodeExamples import sortedByLengthSorted
 
 W,H = 595, 842
-padding = 150
+padding = 160
 
 minWordLength = 8
 maxWordLength = 30
@@ -54,9 +54,24 @@ for page in range(0,weightSteps*2):
     newPage(W,H)
     counter = 0
     currentHeight = 0
-
+    
+    fontSize(12)
+    font("RecursiveMonoVar-StrictLight")
+    fontVariations(wght=600, XPRN=1)
+    # rect(40,H-120,400,100)
+    textBox("Recursive Mono Var", (20,H-120,400,100))
+    fontVariations(wght=400, XPRN=0.001)
+    if currentXprn <= 0.1:
+        textBox(f"XPRN: 0", (20,H-140,400,100))
+    else:
+        textBox(f"XPRN: 1", (20,H-140,400,100))
+    textBox(f"WGHT: {currentWght}", (20,H-160,400,100))
+    
+    
     for num in range(minWordLength,maxWordLength):
         # print(num)
+        
+        
         if num in sortedByLengthSorted.keys():
             t = (num - minWordLength) / (maxWordLength - minWordLength)
             # print(t)
@@ -77,7 +92,8 @@ for page in range(0,weightSteps*2):
             # if len(sortedByLengthSorted[num]) > 1:
             #     sortedByLengthSorted[num].remove(wordToDraw)
             # print(wordToDraw)
-            textBox(wordToDraw,(padding, H-currentHeight-currentSize-padding/2, W, currentSize*1.1)) 
+            textBox(wordToDraw,(padding*1.5, H-currentHeight-currentSize-padding/2, W, currentSize*1.1)) 
+            
         
             currentHeight += currentSize*1.1
             counter += 1
@@ -93,6 +109,6 @@ for page in range(0,weightSteps*2):
 
 
 
-saveImage('exports/recursive-mono-122518.pdf')
+saveImage('exports/recursive-mono-030319.pdf')
 
 
