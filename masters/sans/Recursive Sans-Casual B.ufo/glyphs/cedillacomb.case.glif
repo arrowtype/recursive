@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="cedillacomb.case" format="2">
-  <anchor x="0" y="0" name="_bottom"/>
-  <outline>
-    <contour>
-      <point x="124" y="-106" type="curve" smooth="yes"/>
-      <point x="124.0" y="-36.0"/>
-      <point x="75.35005610667912" y="-4.319052962540867"/>
-      <point x="30" y="0" type="curve"/>
-      <point x="30" y="18"/>
-      <point x="31" y="31"/>
-      <point x="34" y="44" type="curve"/>
-      <point x="-21" y="44"/>
-      <point x="-34" y="38"/>
-      <point x="-40" y="29" type="curve" smooth="yes"/>
-      <point x="-54" y="9"/>
-      <point x="-59" y="-15"/>
-      <point x="-59" y="-29" type="curve"/>
-      <point x="-59" y="-36"/>
-      <point x="-56" y="-38"/>
-      <point x="-49" y="-38" type="curve" smooth="yes"/>
-      <point x="-16.62222222222222" y="-38.0"/>
-      <point x="-2.0" y="-51.0"/>
-      <point x="-2" y="-76" type="curve" smooth="yes"/>
-      <point x="-2.0" y="-102.0"/>
-      <point x="-20.72" y="-117.0"/>
-      <point x="-54" y="-117.0" type="curve" smooth="yes"/>
-      <point x="-87.2463768115942" y="-117.0"/>
-      <point x="-107.01628286157683" y="-111.68860199689622"/>
-      <point x="-128" y="-97" type="curve"/>
-      <point x="-132" y="-97" type="line"/>
-      <point x="-139" y="-116"/>
-      <point x="-141" y="-136"/>
-      <point x="-141" y="-156" type="curve" smooth="yes"/>
-      <point x="-141.0" y="-207.0"/>
-      <point x="-115.73684210526315" y="-247.0"/>
-      <point x="-41" y="-247" type="curve" smooth="yes"/>
-      <point x="78.0506329113924" y="-247.0"/>
-      <point x="124.0" y="-177.0"/>
-    </contour>
-  </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0.45,0.73,1,0.75</string>
-    </dict>
-  </lib>
+	<outline>
+		<contour>
+			<point x="124" y="-106" type="curve" smooth="yes"/>
+			<point x="124" y="-36"/>
+			<point x="75.3500561067" y="-4.3190529625"/>
+			<point x="30" y="0" type="curve"/>
+			<point x="30" y="18"/>
+			<point x="31" y="31"/>
+			<point x="34" y="44" type="curve"/>
+			<point x="-21" y="44"/>
+			<point x="-34" y="38"/>
+			<point x="-40" y="29" type="curve" smooth="yes"/>
+			<point x="-54" y="9"/>
+			<point x="-59" y="-15"/>
+			<point x="-59" y="-29" type="curve"/>
+			<point x="-59" y="-36"/>
+			<point x="-56" y="-38"/>
+			<point x="-49" y="-38" type="curve" smooth="yes"/>
+			<point x="-16.6222222222" y="-38"/>
+			<point x="-2" y="-51"/>
+			<point x="-2" y="-76" type="curve" smooth="yes"/>
+			<point x="-2" y="-102"/>
+			<point x="-20.72" y="-117"/>
+			<point x="-54" y="-117" type="curve" smooth="yes"/>
+			<point x="-87.2463768116" y="-117"/>
+			<point x="-107.0162828616" y="-111.6886019969"/>
+			<point x="-128" y="-97" type="curve"/>
+			<point x="-132" y="-97" type="line"/>
+			<point x="-139" y="-116"/>
+			<point x="-141" y="-136"/>
+			<point x="-141" y="-156" type="curve" smooth="yes"/>
+			<point x="-141" y="-207"/>
+			<point x="-115.7368421053" y="-247"/>
+			<point x="-41" y="-247" type="curve" smooth="yes"/>
+			<point x="78.0506329114" y="-247"/>
+			<point x="124" y="-177"/>
+		</contour>
+	</outline>
+	<anchor name="_bottom" x="0" y="0"/>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0.45,0.73,1,0.75</string>
+		</dict>
+	</lib>
 </glyph>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ogonek" format="2">
-  <advance width="600"/>
-  <unicode hex="02DB"/>
-  <outline>
-    <component base="ogonekcomb" xOffset="365.0"/>
-  </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0.45,0.73,1,0.75</string>
-    </dict>
-  </lib>
+	<unicode hex="02DB"/>
+	<advance width="600"/>
+	<outline>
+		<component base="ogonekcomb" xOffset="365"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0.45,0.73,1,0.75</string>
+		</dict>
+	</lib>
 </glyph>
