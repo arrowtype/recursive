@@ -1,7 +1,5 @@
 # Recursive Mono & Sans
 
-For better code & UI.
-
 ![](specimen.jpg)
 
 
