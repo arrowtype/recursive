@@ -80,4 +80,28 @@
       <info/>
     </instance>
   </instances>
+  <lib>
+    <dict>
+      <key>com.letterror.skateboard.interactionSources</key>
+      <dict>
+        <key>horizontal</key>
+        <array>
+          <string>slant</string>
+        </array>
+        <key>vertical</key>
+        <array>
+          <string>weight</string>
+        </array>
+      </dict>
+      <key>com.letterror.skateboard.previewLocation</key>
+      <dict>
+        <key>slant</key>
+        <real>9.45</real>
+        <key>weight</key>
+        <real>400.0</real>
+      </dict>
+      <key>com.letterror.skateboard.previewText</key>
+      <string>/n.med_curvy</string>
+    </dict>
+  </lib>
 </designspace>
