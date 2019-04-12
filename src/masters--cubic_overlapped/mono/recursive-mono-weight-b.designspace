@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.0">
+  <axes>
+    <axis tag="XPRN" name="expression" minimum="0" maximum="1" default="0"/>
+  </axes>
+  <sources>
+    <source filename="Recursive Mono-Gothic B.ufo" familyname="Recursive Mono" stylename="Text ExtraBold">
+      <location>
+        <dimension name="expression" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual ExtraBold">
+      <location>
+        <dimension name="expression" xvalue="1"/>
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance familyname="Recursive Mono" stylename="Strict ExtraBold" filename="instances/Recursive Mono-Strict ExtraBold.ufo" postscriptfontname="RecursiveMono-StrictExtraBold">
+      <location>
+        <dimension name="expression" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Recursive Mono" stylename="SemiCasual ExtraBold" filename="instances/Recursive Mono-SemiCasual ExtraBold.ufo" postscriptfontname="RecursiveMono-SemiCasualExtraBold">
+      <location>
+        <dimension name="expression" xvalue="0.500000"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Recursive Mono" stylename="Casual ExtraBold" filename="instances/Recursive Mono-Casual ExtraBold.ufo" postscriptfontname="RecursiveMono-CasualExtraBold">
+      <location>
+        <dimension name="expression" xvalue="1"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+  </instances>
+  <lib>
+    <dict>
+      <key>com.letterror.skateboard.interactionSources</key>
+      <dict>
+        <key>horizontal</key>
+        <array>
+          <string>expression</string>
+        </array>
+      </dict>
+      <key>com.letterror.skateboard.previewLocation</key>
+      <dict>
+        <key>expression</key>
+        <real>1.0</real>
+      </dict>
+      <key>com.letterror.skateboard.previewText</key>
+      <string>n/n.simpler /e.replaced_with_romaner /e.simpler</string>
+    </dict>
+  </lib>
+</designspace>

@@ -1,0 +1,695 @@
+# ##########################################################################
+#
+# Copyright (c) Underware 1999-2014, Den Haag, the Netherlands
+#
+# The data 'Underware Latin Plus' by Underware is licensed under
+# a Creative Commons Attribution-ShareAlike 4.0 International License.
+#
+# ##########################################################################
+#
+# Name: Underware Latin Plus
+# Version: 1.01
+# Date: 12 January 2015
+#
+#
+# Content
+# Languages > name, iso 639 & required language specific characters
+# Character set > name, unicode, notes
+#
+# Format
+# tab-delimited txt file
+#
+# ##########################################################################
+
+
+
+
+# ##########################################################################
+#
+# Languages: name	iso required
+#
+# ##########################################################################
+
+Abenaki	abe	Ocircumflexx,ocircumflexx
+Afaan Oromo	gaz	
+Afar	aar	
+Afrikaans	afr Egrave,egrave,Eacute,eacute,Ecircumflexx,ecircumflexx,Edieresis,edieresis,Icircumflexx,icircumflexx,Idieresis,idieresis,napostrophe,Ocircumflexx,ocircumflexx,Ucircumflexx,ucircumflexx
+Albanian	sqi	Ccedilla,ccedilla,Edieresis,edieresis
+Alsatian	gsw	Adieresis,adieresis,Agrave,agrave,Eacute,eacute,Igrave,igrave,Odieresis,odieresis,Udieresis,udieresis,Ugrave,ugrave
+Amis	ami	
+Anuta	aud	
+Aragonese	arg	Aacute,aacute,Eacute,eacute,Iacute,iacute,Ntilde,ntilde,Oacute,oacute,Uacute,uacute
+Aranese	oci Aacute,aacute,Agrave,agrave,Ccedilla,ccedilla,Eacute,eacute,Egrave,egrave,Iacute,iacute,Idieresis,idieresis,Oacute,oacute,Ograve,ograve,Uacute,uacute,Udieresis,udieresis
+Aromanian	rup	Atilde,atilde,Acircumflexx,acircumflexx,Abreve,abreve,Scommaaccent,scommaaccent,uni021A,uni021B
+Arrernte	aer	
+Arvanitic (Latin)	aat Aacute,aacute,Adieresis,adieresis,Ccedilla,ccedilla,Egrave,egrave,Eacute,eacute,Edieresis,edieresis,Iacute,iacute,Idieresis,idieresis,Oacute,oacute,Odieresis,odieresis,Uacute,uacute,Udieresis,udieresis,Yacute,yacute
+Asturian	ast	Aacute,aacute,Eacute,eacute,Iacute,iacute,Ntilde,ntilde,Oacute,oacute,Uacute,uacute,Udieresis,udieresis
+Atayal	tay	Eng,eng
+Aymara	aym	Adieresis,adieresis,Idieresis,idieresis,Ntilde,ntilde,Udieresis,udieresis
+Azerbaijani	azj	Adieresis,adieresis,Ccedilla,ccedilla,Schwa,schwa,Gbreve,gbreve,Idotaccent,dotlessi,Odieresis,odieresis,Scedilla,scedilla,Udieresis,udieresis
+Bashkir (Latin)	bak Adieresis,adieresis,Ccedilla,ccedilla,Ccaron,ccaron,Gbreve,gbreve,Idotaccent,dotlessi,Kcommaaccent,kcommaaccent,Ncommaaccent,ncommaaccent,Odieresis,odieresis,Sacute,sacute,Scedilla,scedilla,Scaron,scaron,Udieresis,udieresis,Zacute,zacute
+Basque	eus	Ntilde,ntilde,Udieresis,udieresis
+Belarusian (Latin)	bel	Cacute,cacute,Ccaron,ccaron,Lslash,lslash,Nacute,nacute,Sacute,sacute,Scaron,scaron,Ubreve,ubreve,Zacute,zacute,Zcaron,zcaron
+Bemba	bem	Eng,eng
+Bikol	bik	
+Bislama	bis	
+Bosnian	bos	Cacute,cacute,Ccaron,ccaron,Dcroat,dcroat,Scaron,scaron,Zcaron,zcaron
+Breton	bre Agrave,agrave,Acircumflexx,acircumflexx,AE,ae,Ccedilla,ccedilla,Eacute,eacute,Egrave,egrave,Edieresis,edieresis,Ecircumflexx,ecircumflexx,Itilde,itilde,Idieresis,idieresis,Icircumflexx,icircumflexx,Ntilde,ntilde,Ocircumflexx,ocircumflexx,OE,oe,Ugrave,ugrave,Udieresis,udieresis,Utilde,utilde,Ucircumflexx,ucircumflexx,Ydieresis,ydieresis
+Cape Verdean Creole	kea Agrave,agrave,Aacute,aacute,Acircumflexx,acircumflexx,Atilde,atilde,Ccedilla,ccedilla,Egrave,egrave,Eacute,eacute,Ecircumflexx,ecircumflexx,Iacute,iacute,Ograve,ograve,Oacute,oacute,Ocircumflexx,ocircumflexx,Otilde,otilde,Uacute,uacute,Udieresis,udieresis
+Catalan	cat Agrave,agrave,Ccedilla,ccedilla,Egrave,egrave,Eacute,eacute,Iacute,iacute,Idieresis,idieresis,Ldot,ldot,Ntilde,ntilde,Ograve,ograve,Oacute,oacute,Uacute,uacute,Udieresis,udieresis
+Cebuano	ceb	
+Chamorro	cha	Aring,aring,Acircumflexx,acircumflexx,Ntilde,ntilde,Udieresis,udieresis
+Chavacano	cbk	Ntilde,ntilde
+Chichewa	nya	Eng,eng,Wcircumflexx,wcircumflexx
+Chickasaw	cic	Aacute,aacute,Eacute,eacute,Iacute,iacute,Oacute,oacute,Uacute,uacute
+Cimbrian	cim	Adieresis,adieresis,Cacute,cacute,Odieresis,odieresis,Udieresis,udieresis
+CofÃ¡n	con	Ntilde,ntilde,Ucircumflexx,ucircumflexx
+Cornish	cor	Amacron,amacron,Emacron,emacron,Imacron,imacron,Omacron,omacron,Umacron,umacron,Udieresis,udieresis,Ymacron,ymacron
+Corsican	cos	Agrave,agrave,Acircumflexx,acircumflexx,Egrave,egrave,Igrave,igrave,Ograve,ograve,Ugrave,ugrave
+Creek	mus	Emacron,emacron
+Crimean Tatar (Latin)	crh	Ccedilla,ccedilla,Gbreve,gbreve,Ntilde,ntilde,Odieresis,odieresis,Scedilla,scedilla,Udieresis,udieresis
+Croatian	hrv	Cacute,cacute,Ccaron,ccaron,Dcroat,dcroat,Scaron,scaron,Zcaron,zcaron
+Czech	ces Aacute,aacute,Ccaron,ccaron,Dcaron,dcaron,Eacute,eacute,Ecaron,ecaron,Iacute,iacute,Ncaron,ncaron,Oacute,oacute,Rcaron,rcaron,Scaron,scaron,Tcaron,tcaron,Uacute,uacute,Uring,uring,Yacute,yacute,Zcaron,zcaron
+Danish	dan Aacute,aacute,Aring,aring,Aringacute,aringacute,AE,ae,AEacute,aeacute,Eacute,eacute,Iacute,iacute,Oacute,oacute,Oslash,oslash,Oslashacute,oslashacute,Uacute,uacute,Yacute,yacute
+Dawan	aoz	Aacute,aacute,Eacute,eacute,Ecircumflexx,ecircumflexx,Iacute,iacute,Oacute,oacute,Uacute,uacute,Ucircumflexx,ucircumflexx
+Delaware	del	Agrave,agrave,Egrave,egrave,Edieresis,edieresis,Igrave,igrave,Ograve,ograve,Ugrave,ugrave
+Dholuo	luo	
+Drehu	dhv	Edieresis,edieresis,Odieresis,odieresis
+Dutch	nld Aacute,aacute,Acircumflexx,acircumflexx,Adieresis,adieresis,Egrave,egrave,Eacute,eacute,Ecircumflexx,ecircumflexx,Edieresis,edieresis,Iacute,iacute,Idieresis,idieresis,Oacute,oacute,Ocircumflexx,ocircumflexx,Odieresis,odieresis,Uacute,uacute,Ucircumflexx,ucircumflexx,Udieresis,udieresis,IJ,ij,IJacute,ijacute
+English	eng AE,ae,Ccedilla,ccedilla,Idieresis,idieresis,Ocircumflexx,ocircumflexx,OE,oe,Aacute,aacute,Egrave,egrave,Eacute,eacute,Edieresis,edieresis,Ecircumflexx,ecircumflexx,Ntilde,ntilde,Odieresis,odieresis
+Esperanto	epo	Ccircumflexx,ccircumflexx,Gcircumflexx,gcircumflexx,Hcircumflexx,hcircumflexx,Jcircumflexx,jcircumflexx,Scircumflexx,scircumflexx,Ubreve,ubreve
+Estonian	est	Adieresis,adieresis,Otilde,otilde,Odieresis,odieresis,Scaron,scaron,Udieresis,udieresis,Zcaron,zcaron
+Faroese	fao	Aacute,aacute,Aring,aring,AE,ae,Eth,eth,Iacute,iacute,Oacute,oacute,Odieresis,odieresis,Oslash,oslash,Uacute,uacute,Yacute,yacute
+Fijian	fij	
+Filipino	fil	Ntilde,ntilde
+Finnish	fin	Adieresis,adieresis,Aring,aring,AE,ae,Odieresis,odieresis,Otilde,otilde,Oslash,oslash,Scaron,scaron,Udieresis,udieresis,Zcaron,zcaron
+Folkspraak	 Acircumflexx,acircumflexx,Ecircumflexx,ecircumflexx,Icircumflexx,icircumflexx,Ocircumflexx,ocircumflexx,Ucircumflexx,ucircumflexx
+French	fra Agrave,agrave,Acircumflexx,acircumflexx,Ccedilla,ccedilla,Egrave,egrave,Eacute,eacute,Ecircumflexx,ecircumflexx,Edieresis,edieresis,Icircumflexx,icircumflexx,Idieresis,idieresis,Ocircumflexx,ocircumflexx,OE,oe,Ugrave,ugrave,Ucircumflexx,ucircumflexx,Udieresis,udieresis,Ydieresis,ydieresis,AE,ae
+Frisian	fry Adieresis,adieresis,Acircumflexx,acircumflexx,Eacute,eacute,Edieresis,edieresis,Ecircumflexx,ecircumflexx,Idieresis,idieresis,Icircumflexx,icircumflexx,Odieresis,odieresis,Ocircumflexx,ocircumflexx,Uacute,uacute,Ucircumflexx,ucircumflexx,Udieresis,udieresis
+Friulian	fur Agrave,agrave,Aacute,aacute,Acircumflexx,acircumflexx,Ccedilla,ccedilla,Egrave,egrave,Ecircumflexx,ecircumflexx,Igrave,igrave,Icircumflexx,icircumflexx,Ograve,ograve,Ocircumflexx,ocircumflexx,Ugrave,ugrave,Ucircumflexx,ucircumflexx
+Gagauz (Latin)	gag Adieresis,adieresis,Ccedilla,ccedilla,Ecircumflexx,ecircumflexx,Gbreve,gbreve,Idotaccent,dotlessi,Odieresis,odieresis,Scedilla,scedilla,Scommaaccent,scommaaccent,uni0162,uni0163,uni021A,uni021B,Udieresis,udieresis
+Galician	glg	Aacute,aacute,Eacute,eacute,Iacute,iacute,Ntilde,ntilde,Oacute,oacute,Uacute,uacute,Udieresis,udieresis
+Ganda	gqa	Eng,eng
+Genoese	lij Agrave,agrave,Aacute,aacute,Acircumflexx,acircumflexx,Adieresis,adieresis,AE,ae,Egrave,egrave,Eacute,eacute,Edieresis,edieresis,Ecircumflexx,ecircumflexx,Igrave,igrave,Iacute,iacute,Idieresis,idieresis,Icircumflexx,icircumflexx,Ograve,ograve,Oacute,oacute,Odieresis,odieresis,Ocircumflexx,ocircumflexx,Ugrave,ugrave,Uacute,uacute
+German	deu	Adieresis,adieresis,Odieresis,odieresis,uni1E9E,germandbls,Udieresis,udieresis,Agrave,agrave,Eacute,eacute
+Gikuyu	kik	Itilde,itilde,Eng,eng,Utilde,utilde
+Gooniyandi	gni	Agrave,agrave,Adieresis,adieresis,Eacute,eacute,Odieresis,odieresis,uni1E9E,germandbls,Udieresis,udieresis
+Greenlandic (Kalaallisut)	kal Aring,aring,Aacute,aacute,Acircumflexx,acircumflexx,Atilde,atilde,AE,ae,Ecircumflexx,ecircumflexx,Iacute,iacute,Icircumflexx,icircumflexx,Itilde,itilde,kgreenlandic,Ocircumflexx,ocircumflexx,Oslash,oslash,Uacute,uacute,Ucircumflexx,ucircumflexx,Utilde,utilde
+Guadeloupean Creole	gcf	Eacute,eacute,Egrave,egrave,Ograve,ograve
+Gwichâ€™in	gwi Agrave,agrave,Aring,aring,Egrave,egrave,Eacute,eacute,Iacute,iacute,Igrave,igrave,Lslash,lslash,Oacute,oacute,Ograve,ograve,Uacute,uacute,Ugrave,ugrave
+Haitian Creole	hat	Aacute,aacute,Agrave,agrave,Eacute,eacute,Egrave,egrave,Oacute,oacute,Ograve,ograve
+Hawaiian	haw	Amacron,amacron,Emacron,emacron,Imacron,imacron,Omacron,omacron,Umacron,umacron
+Hiligaynon	hil	
+Hopi	hop	
+HotcÄ…k (Latin)	win	Aogonek,aogonek,Gbreve,gbreve,Iogonek,iogonek,Scaron,scaron,Uogonek,uogonek,Zcaron,zcaron
+Hungarian	hun Aacute,aacute,Eacute,eacute,Iacute,iacute,Oacute,oacute,Odieresis,odieresis,Ohungarumlaut,ohungarumlaut,Uacute,uacute,Udieresis,udieresis,Uhungarumlaut,uhungarumlaut
+HÃ¤n	haa	Adieresis,adieresis,Edieresis,edieresis
+Icelandic	isl Aacute,aacute,AE,ae,Eth,eth,Eacute,eacute,Iacute,iacute,Oacute,oacute,Odieresis,odieresis,Thorn,thorn,Uacute,uacute,Yacute,yacute,AEacute,aeacute,Oslashacute,oslashacute
+Ido	ido	
+Igbo	ibo	Idotbelow,idotbelow,Ntilde,ntilde,Odotbelow,odotbelow,Udotbelow,udotbelow
+Ilocano	ilo	
+Indonesian	ind	Eacute,eacute
+Interglossa	igs	
+Interlingua	ile	
+Irish	gle	Agrave,agrave,Aacute,aacute,Egrave,egrave,Eacute,eacute,Igrave,igrave,Iacute,iacute,Ograve,ograve,Oacute,oacute,Uacute,uacute,Ugrave,ugrave
+Istro-Romanian	ruo	Aring,aring,Abreve,abreve,Lcaron,lcaron,Nacute,nacute,Scommaaccent,scommaaccent,uni021A,uni021B
+Italian	ita Agrave,agrave,Egrave,egrave,Eacute,eacute,Igrave,igrave,Ograve,ograve,Oacute,oacute,Ugrave,ugrave,Aacute,aacute,Iacute,iacute,Icircumflexx,icircumflexx,Idieresis,idieresis,Uacute,uacute
+Jamaican	jam	
+Javanese (Latin)	jav	
+JÃ¨rriais	fra Acircumflexx,acircumflexx,Ccedilla,ccedilla,Eacute,eacute,Ecircumflexx,ecircumflexx,Egrave,egrave,Icircumflexx,icircumflexx,Ocircumflexx,ocircumflexx,Ucircumflexx,ucircumflexx
+Kaingang	kgp	Aacute,aacute,Acircumflexx,acircumflexx,Eacute,eacute,Itilde,itilde,Oacute,oacute,Ytilde,ytilde
+Kala Lagaw Ya	mwp Adieresis,adieresis,Aacute,aacute,Agrave,agrave,Edieresis,edieresis,Eacute,eacute,Egrave,egrave,Idieresis,idieresis,Iacute,iacute,Igrave,igrave,Odieresis,odieresis,Oacute,oacute,Ograve,ograve,Udieresis,udieresis,Uacute,uacute,Ugrave,ugrave
+Kapampangan (Latin)	pam	
+Kaqchikel	cak	Adieresis,adieresis,Edieresis,edieresis,Idieresis,idieresis,Odieresis,odieresis,Udieresis,udieresis
+Karakalpak (Latin)	kaa	Idotaccent,dotlessi
+Karelian (Latin)	krl	Adieresis,adieresis,Ccaron,ccaron,Odieresis,odieresis,Scaron,scaron,Zcaron,zcaron
+Kashubian	csb Aogonek,aogonek,Atilde,atilde,Eacute,eacute,Edieresis,edieresis,Eogonek,eogonek,Lslash,lslash,Nacute,nacute,Ograve,ograve,Oacute,oacute,Ocircumflexx,ocircumflexx,Sacute,sacute,Ugrave,ugrave,Zdotaccent,zdotaccent
+Kikongo	kng	
+Kinyarwanda	kin	
+Kiribati	gil	
+Kirundi	run	
+Klingon	tlh	
+Kurdish (Latin)	kur Amacron,amacron,Abreve,abreve,Ccedilla,ccedilla,Eacute,eacute,Ecircumflexx,ecircumflexx,Emacron,emacron,Ebreve,ebreve,Iacute,iacute,Icircumflexx,icircumflexx,Imacron,imacron,Ibreve,ibreve,Omacron,omacron,Obreve,obreve,Scommaaccent,scommaaccent,Uacute,uacute,Ucircumflexx,ucircumflexx,Umacron,umacron,Ubreve,ubreve
+Ladin	lld Agrave,agrave,Aacute,aacute,Acircumflexx,acircumflexx,Cacute,cacute,Eacute,eacute,Egrave,egrave,Edieresis,edieresis,Ecircumflexx,ecircumflexx,Igrave,igrave,Icircumflexx,icircumflexx,Oacute,oacute,Ograve,ograve,Odieresis,odieresis,Ocircumflexx,ocircumflexx,Sacute,sacute,Ugrave,ugrave,Udieresis,udieresis,Ucircumflexx,ucircumflexx
+Latin	lat	
+Latino sine Flexione	
+Latvian	lav Amacron,amacron,Ccaron,ccaron,Emacron,emacron,Gcommaaccent,gcommaaccent,Imacron,imacron,Kcommaaccent,kcommaaccent,Lcommaaccent,lcommaaccent,Ncommaaccent,ncommaaccent,Scaron,scaron,Umacron,umacron,Zcaron,zcaron,Omacron,omacron,Rcommaaccent,rcommaaccent
+Lithuanian	lit Aogonek,aogonek,Ccaron,ccaron,Eogonek,eogonek,Edotaccent,edotaccent,Iogonek,iogonek,Scaron,scaron,Uogonek,uogonek,Umacron,umacron,Zcaron,zcaron
+Lojban	jbo	
+Lombard	lmo Agrave,agrave,Aacute,aacute,Egrave,egrave,Eacute,eacute,Igrave,igrave,Iacute,iacute,Ograve,ograve,Oacute,oacute,Ocircumflexx,ocircumflexx,Oslash,oslash,Ugrave,ugrave,Udieresis,udieresis
+Low Saxon	nds	Adieresis,adieresis,Edieresis,edieresis,Idieresis,idieresis,Odieresis,odieresis,Udieresis,udieresis,germandbls,uni1E9E
+Luxembourgish	ltz Adieresis,adieresis,Acircumflexx,acircumflexx,Egrave,egrave,Eacute,eacute,Edieresis,edieresis,Ecircumflexx,ecircumflexx,Icircumflexx,icircumflexx,Odieresis,odieresis,Ocircumflexx,ocircumflexx,germandbls,uni1E9E,Udieresis,udieresis,Ucircumflexx,ucircumflexx
+Maasai	mas Agrave,agrave,Aacute,aacute,Acircumflexx,acircumflexx,Egrave,egrave,Eacute,eacute,Ecircumflexx,ecircumflexx,Igrave,igrave,Iacute,iacute,Icircumflexx,icircumflexx,Eng,eng,Ograve,ograve,Oacute,oacute,Ocircumflexx,ocircumflexx,Ugrave,ugrave,Uacute,uacute,Ucircumflexx,ucircumflexx
+Makhuwa	vmw	Agrave,agrave,Egrave,egrave,Igrave,igrave,Ograve,ograve,Ugrave,ugrave
+Malay	zlm	
+Maltese	mlt Agrave,agrave,Aacute,aacute,Acircumflexx,acircumflexx,Cdotaccent,cdotaccent,Egrave,egrave,Eacute,eacute,Ecircumflexx,ecircumflexx,Gdotaccent,gdotaccent,Hbar,hbar,Igrave,igrave,Iacute,iacute,Icircumflexx,icircumflexx,Ograve,ograve,Oacute,oacute,Ocircumflexx,ocircumflexx,Ugrave,ugrave,Uacute,uacute,Ucircumflexx,ucircumflexx,Zdotaccent,zdotaccent
+Manx	glv	
+Marquesan	mrq	Aacute,aacute,Eacute,eacute,Iacute,iacute,Oacute,oacute,Uacute,uacute
+Megleno-Romanian	ruq	Abreve,abreve,Lcaron,lcaron,Nacute,nacute,Scommaaccent,scommaaccent,uni021A,uni021B
+Meriam Mir	ulk	Igrave,igrave,Ograve,ograve,Ugrave,ugrave
+Mirandese	mwl Aacute,aacute,Ccedilla,ccedilla,Eacute,eacute,Ecircumflexx,ecircumflexx,Iacute,iacute,Oacute,oacute,Ocircumflexx,ocircumflexx,Uacute,uacute,Utilde,utilde
+Mohawk	moh	
+Moldovan	ron	Acircumflexx,acircumflexx,Abreve,abreve,Icircumflexx,icircumflexx,Scommaaccent,scommaaccent,uni021A,uni021B
+Montagnais	moe	Acircumflexx,acircumflexx,Icircumflexx,icircumflexx,Ucircumflexx,ucircumflexx
+Montenegrin	srp	Ccaron,ccaron,Cacute,cacute,Dcroat,dcroat,Scaron,scaron,Sacute,sacute,Zacute,zacute,Zcaron,zcaron
+Murrinh-Patha	mwf	
+MÄori	rar	Amacron,amacron,Emacron,emacron,Imacron,imacron,Omacron,omacron,Umacron,umacron
+Nagamese Creole	nag	
+Nahuatl	nhn	Amacron,amacron,Emacron,emacron,Imacron,imacron,Omacron,omacron,Umacron,umacron,Udieresis,udieresis,Ymacron,ymacron
+Ndebele	nbl	
+Neapolitan	nap Agrave,agrave,Aacute,aacute,Egrave,egrave,Eacute,eacute,Igrave,igrave,Iacute,iacute,Ograve,ograve,Oacute,oacute,Ugrave,ugrave,Uacute,uacute
+Ngiyambaa	wyb	
+Niuean	niu	Amacron,amacron,Emacron,emacron,Imacron,imacron,Omacron,omacron,Umacron,umacron
+Noongar	xrg	Amacron,amacron,Emacron,emacron,Imacron,imacron,Omacron,omacron,Umacron,umacron
+Norwegian	nor AE,ae,Oslash,oslash,Aring,aring,Agrave,agrave,Eacute,eacute,Ecircumflexx,ecircumflexx,Oacute,oacute,Ograve,ograve,Ocircumflexx,ocircumflexx,Adieresis,adieresis,Odieresis,odieresis,Udieresis,udieresis
+Novial	nov	
+Occidental	occ	Aacute,aacute,Eacute,eacute,Iacute,iacute,Oacute,oacute,Uacute,uacute
+Occitan	oci Aacute,aacute,Agrave,agrave,Ccedilla,ccedilla,Eacute,eacute,Egrave,egrave,Edieresis,edieresis,Iacute,iacute,Idieresis,idieresis,Oacute,oacute,Ograve,ograve,Uacute,uacute,Udieresis,udieresis
+Old Icelandic	isl Aacute,aacute,AE,ae,AEacute,aeacute,Eth,eth,Eacute,eacute,Iacute,iacute,Oacute,oacute,Odieresis,odieresis,Oslash,oslash,Oslashacute,oslashacute,Oogonek,oogonek,OE,oe,Thorn,thorn,Uacute,uacute,Yacute,yacute
+Old Norse	non Aacute,aacute,AE,ae,AEacute,aeacute,Eth,eth,Eacute,eacute,Iacute,iacute,Oacute,oacute,OE,oe,Oslash,oslash,Oogonek,oogonek,Uacute,uacute,Yacute,yacute
+OnÄ•ipÅt	acz	Adotbelow,adotbelow,Etilde,etilde,Ebreve,ebreve,Edotbelow,edotbelow,dotlessj,Obreve,obreve,uni0162,uni0163
+Oshiwambo	kua	
+Ossetian (Latin)	oss	Adieresis,adieresis,AE,ae,Ccaron,ccaron,Scaron,scaron,Zcaron,zcaron
+Palauan	plz	
+Papiamento	pap	Egrave,egrave,Ograve,ograve
+Piedmontese	pms Agrave,agrave,Adieresis,adieresis,Egrave,egrave,Edieresis,edieresis,Igrave,igrave,Idieresis,idieresis,Ograve,ograve,Odieresis,odieresis,Ugrave,ugrave,Udieresis,udieresis
+Polish	pol	Aogonek,aogonek,Cacute,cacute,Eogonek,eogonek,Lslash,lslash,Nacute,nacute,Oacute,oacute,Sacute,sacute,Zacute,zacute,Zdotaccent,zdotaccent
+Portuguese	por Agrave,agrave,Aacute,aacute,Acircumflexx,acircumflexx,Atilde,atilde,Ccedilla,ccedilla,Eacute,eacute,Ecircumflexx,ecircumflexx,Iacute,iacute,Oacute,oacute,Ocircumflexx,ocircumflexx,Otilde,otilde,Uacute,uacute,Udieresis,udieresis,Egrave,egrave,Ograve,ograve
+Potawatomi	pot	Egrave,egrave
+Quechua	que	Ntilde,ntilde
+Qâ€™eqchiâ€™	kek	
+Rarotongan	rar	Aacute,aacute,Eacute,eacute,Iacute,iacute,Oacute,oacute,Uacute,uacute
+Romanian	ron	Acircumflexx,acircumflexx,Abreve,abreve,Icircumflexx,icircumflexx,Scommaaccent,scommaaccent,uni021A,uni021B
+Romansh	roh	Agrave,agrave,Egrave,egrave,Eacute,eacute,Igrave,igrave,Icircumflexx,icircumflexx,Ograve,ograve,Ugrave,ugrave,Udieresis,udieresis
+Rotokas	roo	
+Sami (Inari Sami)	smn Aacute,aacute,Acircumflexx,acircumflexx,Adieresis,adieresis,Aring,aring,Ccaron,ccaron,Dcroat,dcroat,Eng,eng,Odieresis,odieresis,Scaron,scaron,Zcaron,zcaron
+Sami (Lule Sami)	smj	Aacute,aacute,Adieresis,adieresis,Aring,aring,Nacute,nacute,Ntilde,ntilde,Odieresis,odieresis
+Sami (Northern Sami)	sme Aacute,aacute,Adieresis,adieresis,Aring,aring,AE,ae,Ccaron,ccaron,Dcroat,dcroat,Eng,eng,Oslash,oslash,Odieresis,odieresis,Scaron,scaron,Tbar,tbar,Zcaron,zcaron
+Sami (Southern Sami)	sma	Adieresis,adieresis,Aring,aring,AE,ae,Idieresis,idieresis,Odieresis,odieresis,Oslash,oslash
+Samoan	smo	
+Sango	sag Adieresis,adieresis,Acircumflexx,acircumflexx,Edieresis,edieresis,Ecircumflexx,ecircumflexx,Idieresis,idieresis,Icircumflexx,icircumflexx,Odieresis,odieresis,Ocircumflexx,ocircumflexx,Udieresis,udieresis,Ucircumflexx,ucircumflexx
+Saramaccan	srm	Odieresis,odieresis
+Sardinian	srd	Agrave,agrave,Ccedilla,ccedilla,Egrave,egrave,Igrave,igrave,Ograve,ograve,Ugrave,ugrave
+Scottish Gaelic	gla	Agrave,agrave,Egrave,egrave,Eacute,eacute,Igrave,igrave,Ograve,ograve,Oacute,oacute,Ugrave,ugrave
+Serbian (Latin)	hrv	Cacute,cacute,Ccaron,ccaron,Dcroat,dcroat,Scaron,scaron,Zcaron,zcaron
+Seri	sei	Odieresis,odieresis
+Seychellois Creole	crs	
+Shawnee	sjw	
+Shona	sna	
+Sicilian	scn	Agrave,agrave,Egrave,egrave,Igrave,igrave,Ograve,ograve,Ugrave,ugrave
+Silesian	szl Ccaron,ccaron,Cacute,cacute,Nacute,nacute,Rcaron,rcaron,Scaron,scaron,Sacute,sacute,Uring,uring,Zacute,zacute,Zcaron,zcaron,Zdotaccent,zdotaccent
+Slovak	slk Aacute,aacute,Adieresis,adieresis,Ccaron,ccaron,Dcaron,dcaron,Eacute,eacute,Iacute,iacute,Lacute,lacute,Lcaron,lcaron,Ncaron,ncaron,Oacute,oacute,Ocircumflexx,ocircumflexx,Racute,racute,Scaron,scaron,Tcaron,tcaron,Uacute,uacute,Yacute,yacute,Zcaron,zcaron
+Slovenian	slv	Ccaron,ccaron,Scaron,scaron,Zcaron,zcaron,Cacute,cacute,Dcroat,dcroat,Adieresis,adieresis,Odieresis,odieresis,Udieresis,udieresis
+Slovio (Latin)	
+Somali	som	
+Sorbian (Lower Sorbian)	dsb Cacute,cacute,Ccaron,ccaron,Ecaron,ecaron,Lslash,lslash,Nacute,nacute,Oacute,oacute,Racute,racute,Sacute,sacute,Scaron,scaron,Zacute,zacute,Zcaron,zcaron
+Sorbian (Upper Sorbian)	hsb Cacute,cacute,Ccaron,ccaron,Ecaron,ecaron,Lslash,lslash,Nacute,nacute,Oacute,oacute,Rcaron,rcaron,Scaron,scaron,Zacute,zacute,Zcaron,zcaron
+Sotho (Northern)	nso	Ecircumflexx,ecircumflexx,Ocircumflexx,ocircumflexx,Scaron,scaron
+Sotho (Southern)	sot	
+Spanish	spa	Aacute,aacute,Eacute,eacute,Iacute,iacute,Ntilde,ntilde,Oacute,oacute,Uacute,uacute,Udieresis,udieresis
+Sranan	srn	
+Sundanese (Latin)	sun	
+Swahili	swa	
+Swazi	ssw	
+Swedish	swe	Adieresis,adieresis,Aring,aring,Eacute,eacute,Odieresis,odieresis,Aacute,aacute,Agrave,agrave,Edieresis,edieresis,Udieresis,udieresis
+Tagalog	tgl	
+Tahitian	tah	Amacron,amacron,Emacron,emacron,Imacron,imacron,Omacron,omacron,Umacron,umacron
+Tetum	tdt	Ntilde,ntilde
+Tok Pisin	tpi	
+Tokelauan	tkl	
+Tongan	ton	Amacron,amacron,Emacron,emacron,Imacron,imacron,Omacron,omacron,Umacron,umacron
+Tshiluba	lua	
+Tsonga	tso	
+Tswana	tsn	Ecircumflexx,ecircumflexx,Ocircumflexx,ocircumflexx,Scaron,scaron
+Tumbuka	tum	
+Turkish	tur Acircumflexx,acircumflexx,Ccedilla,ccedilla,Gbreve,gbreve,Icircumflexx,icircumflexx,Idotaccent,dotlessi,Odieresis,odieresis,Scommaaccent,scommaaccent,Ucircumflexx,ucircumflexx,Udieresis,udieresis
+Turkmen (Latin)	tuk Adieresis,adieresis,Ccedilla,ccedilla,Ncaron,ncaron,Odieresis,odieresis,Scedilla,scedilla,Scommaaccent,scommaaccent,Udieresis,udieresis,Yacute,Yacute,Zcaron,zcaron
+Tuvaluan	tvl	Amacron,amacron,Emacron,emacron,Imacron,imacron,Omacron,omacron,Umacron,umacron
+Tzotzil	tzo	
+Uzbek (Latin)	uzb	
+Venetian	vec Aacute,aacute,Agrave,agrave,Ccedilla,ccedilla,Eacute,eacute,Egrave,egrave,Iacute,iacute,Igrave,igrave,Lslash,lslash,Oacute,oacute,Ograve,ograve,Ugrave,ugrave
+Vepsian	vep	Ccaron,ccaron,Scaron,scaron,Zcaron,zcaron,Udieresis,udieresis,Adieresis,adieresis,Odieresis,odieresis
+VolapÃ¼k	vol	Adieresis,adieresis,Odieresis,odieresis,Udieresis,udieresis
+VÃµro	vro	Adieresis,adieresis,Otilde,otilde,Odieresis,odieresis,Scaron,scaron,Udieresis,udieresis,Zcaron,zcaron
+Wallisian	wls	Amacron,amacron,Emacron,emacron,Imacron,imacron,Omacron,omacron,Umacron,umacron
+Walloon	wln Aring,aring,Acircumflexx,acircumflexx,Ccedilla,ccedilla,Ecircumflexx,ecircumflexx,Eacute,eacute,Egrave,egrave,Icircumflexx,icircumflexx,Ocircumflexx,ocircumflexx,Ucircumflexx,ucircumflexx
+Waray-Waray	war	Ntilde,ntilde
+Warlpiri	wbp	
+Wayuu	guc	Ntilde,ntilde,Udieresis,udieresis
+Welsh	cym Aacute,aacute,Agrave,agrave,Acircumflexx,acircumflexx,Adieresis,adieresis,Eacute,eacute,Egrave,egrave,Ecircumflexx,ecircumflexx,Edieresis,edieresis,Iacute,iacute,Igrave,igrave,Icircumflexx,icircumflexx,Idieresis,idieresis,Oacute,oacute,Ograve,ograve,Ocircumflexx,ocircumflexx,Odieresis,odieresis,Uacute,uacute,Ugrave,ugrave,Ucircumflexx,ucircumflexx,Udieresis,udieresis,Yacute,yacute,Ygrave,ygrave,Ycircumflexx,ycircumflexx,Ydieresis,ydieresis,Wacute,wacute,Wgrave,wgrave,Wcircumflexx,wcircumflexx,Wdieresis,wdieresis
+Wik-Mungkan	wim	
+Wiradjuri	wrh	
+Wolof	wol	Agrave,agrave,Atilde,atilde,Eacute,eacute,Edieresis,edieresis,Ntilde,ntilde,Eng,eng,Oacute,oacute
+Xavante	xav	Atilde,atilde,Eacute,eacute,Itilde,itilde,Otilde,otilde,Ocircumflexx,ocircumflexx,Odieresis,odieresis
+Xhosa	xho	
+Yapese	yap	Adieresis,adieresis,Edieresis,edieresis,Odieresis,odieresis
+Yindjibarndi	yij	
+Zapotec	zap	Aacute,aacute,Ntilde,ntilde
+Zarma	dje	Eng,eng,Nhookleft,nhookleft
+Zazaki	diq	Ccedilla,ccedilla,Ecircumflexx,ecircumflexx,Gcaron,gcaron,Idotaccent,dotlessi,Scedilla,scedilla,Udieresis,udieresis
+Zulu	zul	
+Zuni	zun	Lslash,lslash
+
+
+
+# ##########################################################################
+#
+# Character set: name	unicode	notes
+#
+# ##########################################################################
+
+.notdef	
+.null
+CR
+space
+uni00A0
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+Z
+a
+b
+c
+d
+e
+f
+g
+h
+i
+j
+k
+l
+m
+n
+o
+p
+q
+r
+s
+t
+u
+v
+w
+x	
+y
+z
+Agrave
+agrave
+Aacute
+aacute
+Acircumflex
+acircumflex
+Atilde
+atilde
+Adieresis
+adieresis
+Amacron
+amacron
+Abreve
+abreve
+Aring
+aring
+Aringacute
+aringacute
+Adotbelow
+adotbelow
+Aogonek
+aogonek
+AE
+ae
+AEacute
+aeacute
+Cacute
+cacute
+Ccircumflex
+ccircumflex
+Ccaron
+ccaron
+Cdotaccent
+cdotaccent
+Ccedilla
+ccedilla
+Dcaron
+dcaron
+Dcroat
+dcroat
+Eth
+eth
+Egrave
+egrave
+Eacute
+eacute
+Ecircumflex
+ecircumflex
+Etilde
+etilde
+Ecaron
+ecaron
+Edieresis
+edieresis
+Emacron
+emacron
+Ebreve
+ebreve
+Edotaccent
+edotaccent
+Edotbelow
+edotbelow
+Eogonek
+eogonek
+Gcircumflex
+gcircumflex
+Gcaron
+gcaron
+Gbreve
+gbreve
+Gdotaccent
+gdotaccent
+Gcommaaccent
+gcommaaccent
+Hcircumflex
+hcircumflex
+Hbar
+hbar
+dotlessi
+Igrave
+igrave
+Iacute
+iacute
+Icircumflex
+icircumflex
+Itilde
+itilde
+Idieresis
+idieresis
+Imacron
+imacron
+Ibreve
+ibreve
+Idotaccent
+Idotbelow
+idotbelow
+Iogonek
+iogonek
+dotlessj
+Jcircumflex
+jcircumflex
+Kcommaaccent
+kcommaaccent
+kgreenlandic
+Lacute
+lacute
+Lcaron
+lcaron
+Lcommaaccent
+lcommaaccent
+Lslash
+lslash
+Ldot
+ldot
+Nacute
+nacute
+Ntilde
+ntilde
+Ncaron
+ncaron
+Ncommaaccent
+ncommaaccent
+Nhookleft
+nhookleft
+Eng
+eng
+napostrophe
+Ograve
+ograve
+Oacute
+oacute
+Ocircumflex
+ocircumflex
+Otilde
+otilde
+Odieresis
+odieresis
+Omacron
+omacron
+Obreve
+obreve
+Ohungarumlaut
+ohungarumlaut
+Odotbelow
+odotbelow
+Oogonek
+oogonek
+Oslash
+oslash
+Oslashacute
+oslashacute
+OE
+oe
+Racute
+racute
+Rcaron
+rcaron
+Rcommaaccent
+rcommaaccent
+Sacute
+sacute
+Scircumflex
+scircumflex
+Scaron
+scaron
+Scedilla
+scedilla
+Scommaaccent
+scommaaccent
+uni1E9E
+germandbls
+Tcaron
+tcaron
+uni0162
+uni0163
+uni021A
+uni021B
+Tbar
+tbar
+Thorn
+thorn
+Ugrave
+ugrave
+Uacute
+uacute
+Ucircumflex
+ucircumflex
+Utilde
+utilde
+Udieresis
+udieresis
+Umacron
+umacron
+Ubreve
+ubreve
+Uring
+uring
+Uhungarumlaut
+uhungarumlaut
+Udotbelow
+udotbelow
+Uogonek
+uogonek
+Wgrave
+wgrave
+Wacute
+wacute
+Wcircumflex
+wcircumflex
+Wdieresis
+wdieresis
+Ygrave
+ygrave
+Yacute
+yacute
+Ycircumflex
+ycircumflex
+Ytilde
+ytilde
+Ydieresis
+ydieresis
+Ymacron
+ymacron
+Zacute
+zacute
+Zcaron
+zcaron
+Zdotaccent
+zdotaccent
+IJ
+ij
+IJacute
+ijacute
+Schwa
+schwa
+ampersand
+at
+asterisk
+copyright
+registered
+trademark
+asciicircum
+asciitilde
+grave
+gravecap
+acute
+acutecap
+circumflex
+circumflexxcap
+caron
+caroncap
+caronalt
+tilde
+tildecap
+dieresis
+dieresiscap
+macron
+macroncap
+uni02C9
+breve
+brevecap
+ring
+ringcap
+hungarumlaut
+hungarumlautcap
+dotaccent
+dotaccentcap
+cedilla
+dotbelowcomb
+ogonek
+commaaccent
+commaaccentalt
+uni00AD
+hyphen
+endash
+emdash
+underscore
+period
+comma
+colon
+semicolon
+exclam
+exclamdown
+question
+questiondown
+ellipsis
+periodcentered
+uni2219
+bullet
+slash
+backslash
+bar
+brokenbar
+parenleft
+parenright
+bracketleft
+bracketright
+braceleft
+braceright
+quotesingle
+quotedbl
+quoteleft
+quoteright
+quotedblleft
+quotedblright
+quotesinglbase
+quotedblbase
+guilsinglleft
+guilsinglright
+guillemotleft
+guillemotright
+paragraph
+uniF8FF
+numbersign
+zero
+one
+two
+three
+four
+five
+si
+seven
+eight
+nine
+zeroslash
+fraction
+uni2215
+onequarter
+onehalf
+threequarters
+degree
+percent
+perthousand
+plus
+minus
+plusminus
+equal
+notequal
+approxequal
+multiply
+less
+greater
+lessequal
+greaterequal
+divide
+logicalnot
+dagger
+daggerdbl
+section
+Euro
+currency
+dollar
+cent
+florin
+sterling
+yen
+onesuperior
+twosuperior
+threesuperior
+ordfeminine
+ordmasculine
+uni2116
+Delta
+Deltagreek
+Omega
+Omegagreek
+mu
+mugreek
+pi
+uni2113
+estimated
+infinity
+partialdiff
+integral
+radical
+summation
+product
+lozenge

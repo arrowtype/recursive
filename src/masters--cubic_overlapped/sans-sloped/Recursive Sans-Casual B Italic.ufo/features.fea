@@ -1,0 +1,16 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+@defaultletters = [a            f            g            i            l            r            y       ];
+@slopedroman    = [a.roman      f.roman      g.roman      i.roman      l.roman      r.roman      y.roman];
+@trueitalics    = [a.italic     f.italic     g.italic     i.italic     l.italic     r.italic     y.italic];
+
+feature ss01 {
+    sub @defaultletters by @trueitalics;
+} ss01;
+
+feature ss02 {
+    sub @defaultletters by @slopedroman;
+} ss02;
+
+
