@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="lcaron" format="2">
+	<unicode hex="013E"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="438" y="586" type="qcurve" smooth="yes"/>
+			<point x="445.4626865672" y="586"/>
+			<point x="454.5223880597" y="589.5223880597"/>
+			<point x="459" y="594" type="qcurve" smooth="yes"/>
+			<point x="480.6417910448" y="615.6417910448"/>
+			<point x="502" y="683.9552238806"/>
+			<point x="502" y="725" type="qcurve" smooth="yes"/>
+			<point x="502" y="745.1492537313"/>
+			<point x="485.6865671642" y="760"/>
+			<point x="473" y="760" type="qcurve" smooth="yes"/>
+			<point x="464.7910447761" y="760"/>
+			<point x="455.223880597" y="757.2388059701"/>
+			<point x="450" y="755" type="qcurve"/>
+			<point x="450" y="702.7611940299"/>
+			<point x="436.4029850746" y="639.0149253731"/>
+			<point x="417" y="592" type="qcurve"/>
+			<point x="421.4776119403" y="589.0149253731"/>
+			<point x="430.5373134328" y="586"/>
+		</contour>
+		<component base="l"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+			<key>public.markColor</key>
+			<string>1,0.7179,0,1</string>
+		</dict>
+	</lib>
+</glyph>

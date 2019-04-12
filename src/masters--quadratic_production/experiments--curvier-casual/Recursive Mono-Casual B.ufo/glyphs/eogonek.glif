@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="eogonek" format="2">
+	<unicode hex="0119"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="290" y="-121" type="qcurve" smooth="yes"/>
+			<point x="290" y="-182.1940298507"/>
+			<point x="376.7910447761" y="-250"/>
+			<point x="435" y="-250" type="qcurve" smooth="yes"/>
+			<point x="478.2835820896" y="-250"/>
+			<point x="526" y="-208.0149253731"/>
+			<point x="526" y="-161" type="qcurve" smooth="yes"/>
+			<point x="526" y="-140.8507462687"/>
+			<point x="518.9552238806" y="-110.9104477612"/>
+			<point x="510" y="-93" type="qcurve"/>
+			<point x="506" y="-93" type="line"/>
+			<point x="494.0597014925" y="-99.7164179104"/>
+			<point x="471.4328358209" y="-106"/>
+			<point x="458" y="-106" type="qcurve" smooth="yes"/>
+			<point x="438.5970149254" y="-106"/>
+			<point x="418" y="-90.1791044776"/>
+			<point x="418" y="-76" type="qcurve" smooth="yes"/>
+			<point x="418" y="-51.3731343284"/>
+			<point x="456.1641791045" y="-8.4179104478"/>
+			<point x="489" y="8" type="qcurve" smooth="yes"/>
+			<point x="503.9253731343" y="15.4626865672"/>
+			<point x="530" y="65.8208955224"/>
+			<point x="530" y="130" type="qcurve"/>
+			<point x="512.8358208955" y="103.1343283582"/>
+			<point x="473.6567164179" y="69.2089552239"/>
+			<point x="455" y="61" type="qcurve" smooth="yes"/>
+			<point x="390.0746268657" y="33.3880597015"/>
+			<point x="290" y="-56.8208955224"/>
+		</contour>
+		<component base="e"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+			<key>public.markColor</key>
+			<string>1,0.7179,0,1</string>
+		</dict>
+	</lib>
+</glyph>

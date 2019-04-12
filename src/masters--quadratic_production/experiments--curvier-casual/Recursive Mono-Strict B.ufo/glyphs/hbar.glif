@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="hbar" format="2">
+	<unicode hex="0127"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="30" y="690" type="line"/>
+			<point x="30" y="668.3582089552"/>
+			<point x="30" y="626.6417910448"/>
+			<point x="30" y="605" type="qcurve" smooth="yes"/>
+			<point x="30" y="599.776119403"/>
+			<point x="35.776119403" y="594"/>
+			<point x="41" y="594" type="qcurve" smooth="yes"/>
+			<point x="380" y="594" type="line"/>
+			<point x="380" y="615.6417910448"/>
+			<point x="380" y="657.3582089552"/>
+			<point x="380" y="679" type="qcurve" smooth="yes"/>
+			<point x="380" y="683.4776119403"/>
+			<point x="373.4776119403" y="690"/>
+			<point x="369" y="690" type="qcurve" smooth="yes"/>
+		</contour>
+		<component base="h"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+		</dict>
+	</lib>
+</glyph>

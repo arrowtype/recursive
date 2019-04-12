@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="bracketleft" format="2">
+	<unicode hex="005B"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="205" y="643" type="qcurve" smooth="yes"/>
+			<point x="205" y="11" type="line" smooth="yes"/>
+			<point x="205" y="3.5373134328"/>
+			<point x="271.7164179104" y="0"/>
+			<point x="365" y="0" type="qcurve"/>
+			<point x="365" y="739" type="line" smooth="yes"/>
+			<point x="365" y="743.4776119403"/>
+			<point x="350.1492537313" y="750"/>
+			<point x="330" y="750" type="qcurve" smooth="yes"/>
+			<point x="292.6865671642" y="750"/>
+			<point x="242.3134328358" y="750"/>
+			<point x="205" y="750" type="qcurve"/>
+			<point x="205" y="723.1343283582"/>
+			<point x="205" y="669.8656716418"/>
+		</contour>
+		<contour>
+			<point x="520" y="608" type="line"/>
+			<point x="520" y="642.328358209"/>
+			<point x="520" y="704.671641791"/>
+			<point x="520" y="739" type="qcurve" smooth="yes"/>
+			<point x="520" y="741.2388059701"/>
+			<point x="518.4925373134" y="745.5074626866"/>
+			<point x="517" y="747" type="qcurve" smooth="yes"/>
+			<point x="515.5074626866" y="748.4925373134"/>
+			<point x="511.2388059701" y="750"/>
+			<point x="509" y="750" type="qcurve" smooth="yes"/>
+			<point x="330" y="750" type="line"/>
+			<point x="330" y="647.0149253731"/>
+			<point x="337.2686567164" y="608"/>
+			<point x="341" y="608" type="qcurve" smooth="yes"/>
+		</contour>
+		<contour>
+			<point x="520" y="-130" type="line"/>
+			<point x="520" y="-95.671641791"/>
+			<point x="520" y="-33.328358209"/>
+			<point x="520" y="1" type="qcurve" smooth="yes"/>
+			<point x="520" y="5.4776119403"/>
+			<point x="513.4776119403" y="12"/>
+			<point x="509" y="12" type="qcurve" smooth="yes"/>
+			<point x="205" y="12" type="line"/>
+			<point x="205" y="-119" type="line" smooth="yes"/>
+			<point x="205" y="-123.4776119403"/>
+			<point x="211.5223880597" y="-130"/>
+			<point x="216" y="-130" type="qcurve" smooth="yes"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+		</dict>
+	</lib>
+</glyph>

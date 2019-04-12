@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="I" format="2">
+	<unicode hex="0049"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="325" y="50" type="qcurve"/>
+			<point x="472" y="639" type="line" smooth="yes"/>
+			<point x="472.7462686567" y="643.4776119403"/>
+			<point x="430.671641791" y="650"/>
+			<point x="315" y="650" type="qcurve"/>
+			<point x="167" y="61" type="line"/>
+			<point x="166.2537313433" y="56.5223880597"/>
+			<point x="209.328358209" y="50"/>
+		</contour>
+		<contour>
+			<point x="177" y="700" type="line"/>
+			<point x="168.7910447761" y="667.1641791045"/>
+			<point x="154.2089552239" y="606.8358208955"/>
+			<point x="146" y="574" type="qcurve"/>
+			<point x="145.2537313433" y="571.7611940299"/>
+			<point x="145.5074626866" y="567.4925373134"/>
+			<point x="147" y="566" type="qcurve" smooth="yes"/>
+			<point x="147.7462686567" y="564.5074626866"/>
+			<point x="151.7611940299" y="563"/>
+			<point x="154" y="563" type="qcurve" smooth="yes"/>
+			<point x="603" y="563" type="line"/>
+			<point x="611.2089552239" y="595.8358208955"/>
+			<point x="625.7910447761" y="656.1641791045"/>
+			<point x="634" y="689" type="qcurve" smooth="yes"/>
+			<point x="635.4925373134" y="693.4776119403"/>
+			<point x="630.4776119403" y="700"/>
+			<point x="626" y="700" type="qcurve" smooth="yes"/>
+		</contour>
+		<contour>
+			<point x="36" y="137" type="line"/>
+			<point x="27.7910447761" y="104.1641791045"/>
+			<point x="13.2089552239" y="43.8358208955"/>
+			<point x="5" y="11" type="qcurve" smooth="yes"/>
+			<point x="4.2537313433" y="8.7611940299"/>
+			<point x="4.5074626866" y="4.4925373134"/>
+			<point x="6" y="3" type="qcurve" smooth="yes"/>
+			<point x="6.7462686567" y="1.5074626866"/>
+			<point x="10.7611940299" y="0"/>
+			<point x="13" y="0" type="qcurve" smooth="yes"/>
+			<point x="462" y="0" type="line"/>
+			<point x="470.2089552239" y="32.8358208955"/>
+			<point x="485.7910447761" y="93.1641791045"/>
+			<point x="494" y="126" type="qcurve" smooth="yes"/>
+			<point x="494.7462686567" y="130.4776119403"/>
+			<point x="489.4776119403" y="137"/>
+			<point x="485" y="137" type="qcurve" smooth="yes"/>
+		</contour>
+	</outline>
+	<anchor name="top" x="409.7995302052" y="711"/>
+	<anchor name="ogonek" x="461.7499303373" y="-1"/>
+	<anchor name="bottom" x="231.7499303373" y="-1"/>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+		</dict>
+	</lib>
+</glyph>

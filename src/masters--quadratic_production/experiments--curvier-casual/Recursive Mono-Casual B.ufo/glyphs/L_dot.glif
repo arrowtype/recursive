@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Ldot" format="2">
+	<unicode hex="013F"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="518" y="328" type="qcurve"/>
+			<point x="518" y="423" type="line" smooth="yes"/>
+			<point x="518" y="463.2985074627"/>
+			<point x="464.0597014925" y="485"/>
+			<point x="426" y="485" type="qcurve" smooth="yes"/>
+			<point x="408.8358208955" y="485"/>
+			<point x="366.6567164179" y="481.9850746269"/>
+			<point x="348" y="479" type="qcurve"/>
+			<point x="348" y="384" type="line" smooth="yes"/>
+			<point x="348" y="343.7014925373"/>
+			<point x="401.9402985075" y="322"/>
+			<point x="440" y="322" type="qcurve" smooth="yes"/>
+			<point x="457.1641791045" y="322"/>
+			<point x="499.3432835821" y="325.0149253731"/>
+		</contour>
+		<component base="L"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+			<key>public.markColor</key>
+			<string>1,0.7179,0,1</string>
+		</dict>
+	</lib>
+</glyph>
