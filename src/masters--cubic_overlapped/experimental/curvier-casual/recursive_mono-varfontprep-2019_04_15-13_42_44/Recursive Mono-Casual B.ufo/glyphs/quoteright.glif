@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="quoteright" format="2">
+	<unicode hex="2019"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="185" y="370"/>
+			<point x="217" y="360"/>
+			<point x="265" y="360" type="curve" smooth="yes"/>
+			<point x="286" y="360"/>
+			<point x="299" y="364"/>
+			<point x="310" y="375" type="curve" smooth="yes"/>
+			<point x="368" y="433"/>
+			<point x="420" y="560"/>
+			<point x="420" y="642" type="curve" smooth="yes"/>
+			<point x="420" y="706.4632931524"/>
+			<point x="373.0945814042" y="720"/>
+			<point x="296" y="720" type="curve" smooth="yes"/>
+			<point x="271" y="720"/>
+			<point x="254" y="718"/>
+			<point x="225" y="713" type="curve"/>
+			<point x="225" y="582"/>
+			<point x="201" y="475"/>
+			<point x="154" y="395" type="curve"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+		</dict>
+	</lib>
+</glyph>
