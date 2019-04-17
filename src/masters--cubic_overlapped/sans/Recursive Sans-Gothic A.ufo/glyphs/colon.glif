@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="colon" format="2">
-  <advance width="300"/>
-  <unicode hex="003A"/>
-  <outline>
-    <component base="period" xOffset="1.0" yOffset="416.0"/>
-    <component base="period" xOffset="-1.0"/>
-  </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>1,0.45,0.45,0.75</string>
-    </dict>
-  </lib>
+	<unicode hex="003A"/>
+	<advance width="300"/>
+	<outline>
+		<component base="period" xOffset="1" yOffset="416"/>
+		<component base="period" xOffset="-1"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>1,0.45,0.45,0.75</string>
+		</dict>
+	</lib>
 </glyph>

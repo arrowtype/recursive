@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="emdash" format="2">
-  <advance width="600"/>
-  <unicode hex="2014"/>
-  <outline>
-    <contour>
-      <point x="14.257035936325906" y="371.0" type="line"/>
-      <point x="2.7538314504745074" y="325.0"/>
-      <point x="-7.248955058961499" y="285.0"/>
-      <point x="-18.752159544812905" y="239.0" type="curve" smooth="yes"/>
-      <point x="-20.502647183964207" y="232.0"/>
-      <point x="-17.502925834907806" y="228.0"/>
-      <point x="-10.502925834907806" y="228.0" type="curve" smooth="yes"/>
-      <point x="600.4970741650922" y="228.0" type="line"/>
-      <point x="612.0002786509436" y="274.0"/>
-      <point x="622.0030651603796" y="314.0"/>
-      <point x="633.506269646231" y="360.0" type="curve" smooth="yes"/>
-      <point x="635.0066876226464" y="366.0"/>
-      <point x="631.2570359363259" y="371.0"/>
-      <point x="625.2570359363259" y="371.0" type="curve" smooth="yes"/>
-    </contour>
-  </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0.45,0.73,1,0.75</string>
-    </dict>
-  </lib>
+	<unicode hex="2014"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="14.2570359363" y="371" type="line"/>
+			<point x="2.7538314505" y="325"/>
+			<point x="-7.248955059" y="285"/>
+			<point x="-18.7521595448" y="239" type="curve" smooth="yes"/>
+			<point x="-20.502647184" y="232"/>
+			<point x="-17.5029258349" y="228"/>
+			<point x="-10.5029258349" y="228" type="curve" smooth="yes"/>
+			<point x="600.4970741651" y="228" type="line"/>
+			<point x="612.0002786509" y="274"/>
+			<point x="622.0030651604" y="314"/>
+			<point x="633.5062696462" y="360" type="curve" smooth="yes"/>
+			<point x="635.0066876226" y="366"/>
+			<point x="631.2570359363" y="371"/>
+			<point x="625.2570359363" y="371" type="curve" smooth="yes"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0.45,0.73,1,0.75</string>
+		</dict>
+	</lib>
 </glyph>

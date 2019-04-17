@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="L" format="2">
-  <advance width="550"/>
-  <unicode hex="004C"/>
-  <anchor x="259.799530205225" y="711" name="top"/>
-  <anchor x="216.74993033726412" y="-1" name="bottom"/>
-  <anchor x="467.0278650943601" y="400" name="dot"/>
-  <anchor x="484.538314504745" y="550" name="caronslovak"/>
-  <outline>
-    <contour>
-      <point x="187.00696627359002" y="100.0" type="curve"/>
-      <point x="334.2979976250351" y="689.0" type="line"/>
-      <point x="335.0482066132429" y="692.0"/>
-      <point x="334.79841560145053" y="695.0"/>
-      <point x="333.29855492692235" y="697.0" type="curve" smooth="yes"/>
-      <point x="331.79869425239417" y="699.0"/>
-      <point x="329.04876391513005" y="700.0"/>
-      <point x="326.04876391513005" y="700.0" type="curve"/>
-      <point x="276.04876391513005" y="700.0"/>
-      <point x="227.04876391513005" y="700.0"/>
-      <point x="177.04876391513005" y="700.0" type="curve"/>
-      <point x="168.79646504484535" y="667.0"/>
-      <point x="160.29409651182476" y="633.0"/>
-      <point x="152.04179764154006" y="600.0" type="curve" smooth="yes"/>
-      <point x="29.75773256368491" y="111.0" type="line" smooth="yes"/>
-      <point x="28.257314587269505" y="105.0"/>
-      <point x="32.00696627359001" y="100.0"/>
-    </contour>
-    <contour>
-      <point x="37.50989210849781" y="142.0" type="line"/>
-      <point x="4.7507662900949015" y="11.0" type="line" smooth="yes"/>
-      <point x="3.2503483136794955" y="5.0"/>
-      <point x="7.0" y="0.0"/>
-      <point x="13.0" y="0.0" type="curve" smooth="yes"/>
-      <point x="432.0" y="0.0" type="line"/>
-      <point x="442.84114955141393" y="43.35251798561151"/>
-      <point x="453.91797626698894" y="87.64748201438849"/>
-      <point x="464.75912581840294" y="131.0" type="curve" smooth="yes"/>
-      <point x="466.25954379481834" y="137.0"/>
-      <point x="462.50989210849787" y="142.0"/>
-      <point x="456.50989210849787" y="142.0" type="curve" smooth="yes"/>
-    </contour>
-  </outline>
-  <lib>
-    <dict>
-      <key>com.typemytype.robofont.Image.Brightness</key>
-      <integer>0</integer>
-      <key>com.typemytype.robofont.Image.Contrast</key>
-      <integer>1</integer>
-      <key>com.typemytype.robofont.Image.Saturation</key>
-      <integer>1</integer>
-      <key>com.typemytype.robofont.Image.Sharpness</key>
-      <real>0.4</real>
-      <key>public.markColor</key>
-      <string>1,1,0,0.6</string>
-    </dict>
-  </lib>
+	<unicode hex="004C"/>
+	<advance width="550"/>
+	<outline>
+		<contour>
+			<point x="187.0069662736" y="100" type="curve"/>
+			<point x="334.297997625" y="689" type="line"/>
+			<point x="335.0482066132" y="692"/>
+			<point x="334.7984156015" y="695"/>
+			<point x="333.2985549269" y="697" type="curve" smooth="yes"/>
+			<point x="331.7986942524" y="699"/>
+			<point x="329.0487639151" y="700"/>
+			<point x="326.0487639151" y="700" type="curve"/>
+			<point x="276.0487639151" y="700"/>
+			<point x="227.0487639151" y="700"/>
+			<point x="177.0487639151" y="700" type="curve"/>
+			<point x="168.7964650448" y="667"/>
+			<point x="160.2940965118" y="633"/>
+			<point x="152.0417976415" y="600" type="curve" smooth="yes"/>
+			<point x="29.7577325637" y="111" type="line" smooth="yes"/>
+			<point x="28.2573145873" y="105"/>
+			<point x="32.0069662736" y="100"/>
+		</contour>
+		<contour>
+			<point x="37.5098921085" y="142" type="line"/>
+			<point x="4.7507662901" y="11" type="line" smooth="yes"/>
+			<point x="3.2503483137" y="5"/>
+			<point x="7" y="0"/>
+			<point x="13" y="0" type="curve" smooth="yes"/>
+			<point x="432" y="0" type="line"/>
+			<point x="442.8411495514" y="43.3525179856"/>
+			<point x="453.917976267" y="87.6474820144"/>
+			<point x="464.7591258184" y="131" type="curve" smooth="yes"/>
+			<point x="466.2595437948" y="137"/>
+			<point x="462.5098921085" y="142"/>
+			<point x="456.5098921085" y="142" type="curve" smooth="yes"/>
+		</contour>
+	</outline>
+	<anchor name="top" x="259.7995302052" y="711"/>
+	<anchor name="bottom" x="216.7499303373" y="-1"/>
+	<anchor name="dot" x="467.0278650944" y="400"/>
+	<anchor name="caronslovak" x="484.5383145047" y="550"/>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+			<key>public.markColor</key>
+			<string>1,1,0,0.6</string>
+		</dict>
+	</lib>
 </glyph>

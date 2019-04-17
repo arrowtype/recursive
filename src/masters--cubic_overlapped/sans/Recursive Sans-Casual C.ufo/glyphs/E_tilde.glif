@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Etilde" format="2">
-  <advance width="550"/>
-  <unicode hex="1EBC"/>
-  <outline>
-    <component base="E"/>
-    <component base="tildecomb.case" xOffset="267.0" yOffset="1.0"/>
-  </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>1,0.7179,0,1</string>
-    </dict>
-  </lib>
+	<unicode hex="1EBC"/>
+	<advance width="550"/>
+	<outline>
+		<component base="E"/>
+		<component base="tildecomb.case" xOffset="267" yOffset="1"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>1,0.7179,0,1</string>
+		</dict>
+	</lib>
 </glyph>

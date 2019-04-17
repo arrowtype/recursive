@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="macron" format="2">
-  <advance width="600"/>
-  <unicode hex="00AF"/>
-  <outline>
-    <contour>
-      <point x="211.03204485851404" y="730.0" type="line"/>
-      <point x="209.53162688209864" y="724.0"/>
-      <point x="208.03120890568323" y="718.0"/>
-      <point x="206.28072126653194" y="711.0" type="curve" smooth="yes"/>
-      <point x="187.0253572358676" y="634.0"/>
-      <point x="205.02368533020604" y="610.0"/>
-      <point x="327.02368533020604" y="610.0" type="curve" smooth="yes"/>
-      <point x="584.023685330206" y="610.0" type="line"/>
-      <point x="590.5246606085086" y="624.0"/>
-      <point x="599.5260538632266" y="644.0"/>
-      <point x="604.2773774552087" y="663.0" type="curve" smooth="yes"/>
-      <point x="616.7808605920037" y="713.0"/>
-      <point x="604.032044858514" y="730.0"/>
-      <point x="548.032044858514" y="730.0" type="curve" smooth="yes"/>
-    </contour>
-  </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>1,0.45,0.45,0.75</string>
-    </dict>
-  </lib>
+	<unicode hex="00AF"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="211.0320448585" y="730" type="line"/>
+			<point x="209.5316268821" y="724"/>
+			<point x="208.0312089057" y="718"/>
+			<point x="206.2807212665" y="711" type="curve" smooth="yes"/>
+			<point x="187.0253572359" y="634"/>
+			<point x="205.0236853302" y="610"/>
+			<point x="327.0236853302" y="610" type="curve" smooth="yes"/>
+			<point x="584.0236853302" y="610" type="line"/>
+			<point x="590.5246606085" y="624"/>
+			<point x="599.5260538632" y="644"/>
+			<point x="604.2773774552" y="663" type="curve" smooth="yes"/>
+			<point x="616.780860592" y="713"/>
+			<point x="604.0320448585" y="730"/>
+			<point x="548.0320448585" y="730" type="curve" smooth="yes"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>1,0.45,0.45,0.75</string>
+		</dict>
+	</lib>
 </glyph>

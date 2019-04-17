@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="acutecomb" format="2">
-  <unicode hex="0301"/>
-  <anchor x="0" y="549" name="_top"/>
-  <outline>
-    <contour>
-      <point x="-30.0" y="617.0"/>
-      <point x="7.0" y="617.0"/>
-      <point x="50.0" y="617.0" type="curve" smooth="yes"/>
-      <point x="58.0" y="617.0"/>
-      <point x="64.0" y="621.0"/>
-      <point x="67.0" y="625.0" type="curve" smooth="yes"/>
-      <point x="126.0" y="690.0"/>
-      <point x="165.0" y="733.0"/>
-      <point x="216.0" y="790.0" type="curve" smooth="yes"/>
-      <point x="222.0" y="797.0"/>
-      <point x="217.0" y="805.0"/>
-      <point x="209.0" y="805.0" type="curve" smooth="yes"/>
-      <point x="148.0" y="805.0"/>
-      <point x="101.0" y="805.0"/>
-      <point x="38.0" y="805.0" type="curve"/>
-      <point x="2.0" y="741.0"/>
-      <point x="-33.0" y="679.0"/>
-      <point x="-68.0" y="617.0" type="curve"/>
-    </contour>
-  </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0.45,0.73,1,0.75</string>
-    </dict>
-  </lib>
+	<unicode hex="0301"/>
+	<outline>
+		<contour>
+			<point x="-30" y="617"/>
+			<point x="7" y="617"/>
+			<point x="50" y="617" type="curve" smooth="yes"/>
+			<point x="58" y="617"/>
+			<point x="64" y="621"/>
+			<point x="67" y="625" type="curve" smooth="yes"/>
+			<point x="126" y="690"/>
+			<point x="165" y="733"/>
+			<point x="216" y="790" type="curve" smooth="yes"/>
+			<point x="222" y="797"/>
+			<point x="217" y="805"/>
+			<point x="209" y="805" type="curve" smooth="yes"/>
+			<point x="148" y="805"/>
+			<point x="101" y="805"/>
+			<point x="38" y="805" type="curve"/>
+			<point x="2" y="741"/>
+			<point x="-33" y="679"/>
+			<point x="-68" y="617" type="curve"/>
+		</contour>
+	</outline>
+	<anchor name="_top" x="0" y="549"/>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0.45,0.73,1,0.75</string>
+		</dict>
+	</lib>
 </glyph>

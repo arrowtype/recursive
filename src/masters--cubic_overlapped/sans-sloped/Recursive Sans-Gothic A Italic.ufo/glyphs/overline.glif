@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="overline" format="2">
-  <advance width="600"/>
-  <outline>
-    <contour>
-      <point x="222.79089202597336" y="850.0" type="line"/>
-      <point x="219.53998641040667" y="837.0"/>
-      <point x="216.28908079483998" y="824.0"/>
-      <point x="213.03817517927328" y="811.0" type="curve" smooth="yes"/>
-      <point x="212.28796619106552" y="808.0"/>
-      <point x="212.53775720285788" y="805.0"/>
-      <point x="214.03761787738605" y="803.0" type="curve" smooth="yes"/>
-      <point x="215.53747855191423" y="801.0"/>
-      <point x="218.28740888917835" y="800.0"/>
-      <point x="221.28740888917835" y="800.0" type="curve"/>
-      <point x="658.2874088891783" y="800.0" type="line"/>
-      <point x="661.538314504745" y="813.0"/>
-      <point x="664.7892201203117" y="826.0"/>
-      <point x="668.0401257358784" y="839.0" type="curve" smooth="yes"/>
-      <point x="669.5405437122938" y="845.0"/>
-      <point x="665.7908920259733" y="850.0"/>
-      <point x="659.7908920259733" y="850.0" type="curve"/>
-    </contour>
-  </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0.45,0.73,1,0.75</string>
-    </dict>
-  </lib>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="222.790892026" y="850" type="line"/>
+			<point x="219.5399864104" y="837"/>
+			<point x="216.2890807948" y="824"/>
+			<point x="213.0381751793" y="811" type="curve" smooth="yes"/>
+			<point x="212.2879661911" y="808"/>
+			<point x="212.5377572029" y="805"/>
+			<point x="214.0376178774" y="803" type="curve" smooth="yes"/>
+			<point x="215.5374785519" y="801"/>
+			<point x="218.2874088892" y="800"/>
+			<point x="221.2874088892" y="800" type="curve"/>
+			<point x="658.2874088892" y="800" type="line"/>
+			<point x="661.5383145047" y="813"/>
+			<point x="664.7892201203" y="826"/>
+			<point x="668.0401257359" y="839" type="curve" smooth="yes"/>
+			<point x="669.5405437123" y="845"/>
+			<point x="665.790892026" y="850"/>
+			<point x="659.790892026" y="850" type="curve"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0.45,0.73,1,0.75</string>
+		</dict>
+	</lib>
 </glyph>

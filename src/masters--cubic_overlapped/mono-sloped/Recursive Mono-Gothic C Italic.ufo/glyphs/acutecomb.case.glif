@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="acutecomb.case" format="2">
-  <note>
-    combining acute accent
-  </note>
-  <anchor x="110.53079092926784" y="712" name="_top"/>
-  <outline>
-    <contour>
-      <point x="99.53524934436545" y="776.0"/>
-      <point x="118.53524934436545" y="776.0"/>
-      <point x="181.53524934436547" y="776.0" type="curve" smooth="yes"/>
-      <point x="189.5352493443654" y="776.0"/>
-      <point x="195.2854583325731" y="779.0"/>
-      <point x="199.03566732078082" y="782.0" type="curve" smooth="yes"/>
-      <point x="290.2910313514451" y="859.0"/>
-      <point x="322.54305157078625" y="888.0"/>
-      <point x="387.54695268399666" y="944.0" type="curve" smooth="yes"/>
-      <point x="394.04737066041207" y="950.0"/>
-      <point x="393.04792796229924" y="958.0"/>
-      <point x="385.04792796229924" y="958.0" type="curve" smooth="yes"/>
-      <point x="314.04792796229924" y="958.0"/>
-      <point x="296.04792796229924" y="958.0"/>
-      <point x="213.04792796229924" y="958.0" type="curve"/>
-      <point x="162.79367853540936" y="897.0"/>
-      <point x="111.78949877125534" y="837.0"/>
-      <point x="61.535249344365454" y="776.0" type="curve"/>
-    </contour>
-  </outline>
-  <lib>
-    <dict>
-      <key>com.typemytype.robofont.Image.Brightness</key>
-      <integer>0</integer>
-      <key>com.typemytype.robofont.Image.Contrast</key>
-      <integer>1</integer>
-      <key>com.typemytype.robofont.Image.Saturation</key>
-      <integer>1</integer>
-      <key>com.typemytype.robofont.Image.Sharpness</key>
-      <real>0.4</real>
-    </dict>
-  </lib>
+	<outline>
+		<contour>
+			<point x="99.5352493444" y="776"/>
+			<point x="118.5352493444" y="776"/>
+			<point x="181.5352493444" y="776" type="curve" smooth="yes"/>
+			<point x="189.5352493444" y="776"/>
+			<point x="195.2854583326" y="779"/>
+			<point x="199.0356673208" y="782" type="curve" smooth="yes"/>
+			<point x="290.2910313514" y="859"/>
+			<point x="322.5430515708" y="888"/>
+			<point x="387.546952684" y="944" type="curve" smooth="yes"/>
+			<point x="394.0473706604" y="950"/>
+			<point x="393.0479279623" y="958"/>
+			<point x="385.0479279623" y="958" type="curve" smooth="yes"/>
+			<point x="314.0479279623" y="958"/>
+			<point x="296.0479279623" y="958"/>
+			<point x="213.0479279623" y="958" type="curve"/>
+			<point x="162.7936785354" y="897"/>
+			<point x="111.7894987713" y="837"/>
+			<point x="61.5352493444" y="776" type="curve"/>
+		</contour>
+	</outline>
+	<anchor name="_top" x="110.5307909293" y="712"/>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+		</dict>
+	</lib>
+	<note>
+		combining acute accent
+	</note>
 </glyph>

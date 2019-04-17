@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="exclam" format="2">
-  <advance width="350"/>
-  <unicode hex="0021"/>
-  <outline>
-    <contour>
-      <point x="250.0" y="321.0" type="line"/>
-      <point x="278.0" y="384.0"/>
-      <point x="300.0" y="459.0"/>
-      <point x="300.0" y="566.0" type="curve" smooth="yes"/>
-      <point x="300.0" y="619.0" type="line" smooth="yes"/>
-      <point x="300.0" y="682.0"/>
-      <point x="217.0" y="710.0"/>
-      <point x="135.0" y="710.0" type="curve" smooth="yes"/>
-      <point x="95.0" y="710.0"/>
-      <point x="68.0" y="707.0"/>
-      <point x="35.0" y="700.0" type="curve"/>
-      <point x="45.0" y="664.0"/>
-      <point x="51.0" y="626.0"/>
-      <point x="51.0" y="584.0" type="curve" smooth="yes"/>
-      <point x="51.0" y="576.0" type="line" smooth="yes"/>
-      <point x="51.0" y="499.0"/>
-      <point x="70.0" y="392.0"/>
-      <point x="103.0" y="359.0" type="curve" smooth="yes"/>
-      <point x="130" y="332"/>
-      <point x="163.0" y="321.0"/>
-      <point x="228.0" y="321.0" type="curve" smooth="yes"/>
-    </contour>
-    <component base="period" xOffset="25.0" yOffset="-3.0"/>
-  </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0.45,0.73,1,0.75</string>
-    </dict>
-  </lib>
+	<unicode hex="0021"/>
+	<advance width="350"/>
+	<outline>
+		<contour>
+			<point x="250" y="321" type="line"/>
+			<point x="278" y="384"/>
+			<point x="300" y="459"/>
+			<point x="300" y="566" type="curve" smooth="yes"/>
+			<point x="300" y="619" type="line" smooth="yes"/>
+			<point x="300" y="682"/>
+			<point x="217" y="710"/>
+			<point x="135" y="710" type="curve" smooth="yes"/>
+			<point x="95" y="710"/>
+			<point x="68" y="707"/>
+			<point x="35" y="700" type="curve"/>
+			<point x="45" y="664"/>
+			<point x="51" y="626"/>
+			<point x="51" y="584" type="curve" smooth="yes"/>
+			<point x="51" y="576" type="line" smooth="yes"/>
+			<point x="51" y="499"/>
+			<point x="70" y="392"/>
+			<point x="103" y="359" type="curve" smooth="yes"/>
+			<point x="130" y="332"/>
+			<point x="163" y="321"/>
+			<point x="228" y="321" type="curve" smooth="yes"/>
+		</contour>
+		<component base="period" xOffset="25" yOffset="-3"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0.45,0.73,1,0.75</string>
+		</dict>
+	</lib>
 </glyph>

@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="commaaboverightcomb" format="2">
-  <unicode hex="0315"/>
-  <anchor x="87.02424263209323" y="611" name="_caronslovak"/>
-  <outline>
-    <contour>
-      <point x="46.018948264164834" y="535.0" type="curve" smooth="yes"/>
-      <point x="56.018948264164834" y="535.0"/>
-      <point x="61.51908758963663" y="537.0"/>
-      <point x="69.01950556605203" y="543.0" type="curve" smooth="yes"/>
-      <point x="105.27152578539312" y="572.0"/>
-      <point x="131.02479993398043" y="619.0"/>
-      <point x="144.77863138445494" y="674.0" type="curve" smooth="yes"/>
-      <point x="151.53051227832424" y="701.0"/>
-      <point x="141.53106958021144" y="709.0"/>
-      <point x="124.53106958021144" y="709.0" type="curve" smooth="yes"/>
-      <point x="113.53106958021144" y="709.0"/>
-      <point x="108.03093025473964" y="707.0"/>
-      <point x="100.28072126653194" y="704.0" type="curve"/>
-      <point x="82.77584487501892" y="634.0"/>
-      <point x="68.27375499294192" y="604.0"/>
-      <point x="26.51936624058021" y="541.0" type="curve"/>
-      <point x="31.519087589636626" y="537.0"/>
-      <point x="36.018948264164834" y="535.0"/>
-    </contour>
-  </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0.45,0.73,1,0.75</string>
-    </dict>
-  </lib>
+	<unicode hex="0315"/>
+	<outline>
+		<contour>
+			<point x="46.0189482642" y="535" type="curve" smooth="yes"/>
+			<point x="56.0189482642" y="535"/>
+			<point x="61.5190875896" y="537"/>
+			<point x="69.0195055661" y="543" type="curve" smooth="yes"/>
+			<point x="105.2715257854" y="572"/>
+			<point x="131.024799934" y="619"/>
+			<point x="144.7786313845" y="674" type="curve" smooth="yes"/>
+			<point x="151.5305122783" y="701"/>
+			<point x="141.5310695802" y="709"/>
+			<point x="124.5310695802" y="709" type="curve" smooth="yes"/>
+			<point x="113.5310695802" y="709"/>
+			<point x="108.0309302547" y="707"/>
+			<point x="100.2807212665" y="704" type="curve"/>
+			<point x="82.775844875" y="634"/>
+			<point x="68.2737549929" y="604"/>
+			<point x="26.5193662406" y="541" type="curve"/>
+			<point x="31.5190875896" y="537"/>
+			<point x="36.0189482642" y="535"/>
+		</contour>
+	</outline>
+	<anchor name="_caronslovak" x="87.0242426321" y="611"/>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0.45,0.73,1,0.75</string>
+		</dict>
+	</lib>
 </glyph>

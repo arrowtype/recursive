@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="cedillacomb" format="2">
-  <unicode hex="0327"/>
-  <anchor x="-66.01839096227762" y="-1" name="_bottom"/>
-  <outline>
-    <contour>
-      <point x="-1.7769594787933372" y="-124.0" type="curve" smooth="yes"/>
-      <point x="10.726523658001668" y="-74.0"/>
-      <point x="-14.021456122657227" y="-45.0"/>
-      <point x="-63.27124713444953" y="-42.0" type="curve"/>
-      <point x="-54.01978421699563" y="-21.0"/>
-      <point x="-43.51825163680583" y="1.0"/>
-      <point x="-34.26678871935192" y="22.0" type="curve"/>
-      <point x="-74.26678871935192" y="22.0"/>
-      <point x="-79.26678871935192" y="22.0"/>
-      <point x="-84.51769433491862" y="9.0" type="curve" smooth="yes"/>
-      <point x="-96.01950556605203" y="-17.0"/>
-      <point x="-105.77110780897773" y="-40.0"/>
-      <point x="-117.52298870284703" y="-67.0" type="curve" smooth="yes"/>
-      <point x="-120.02340667926244" y="-73.0"/>
-      <point x="-118.52382465567783" y="-79.0"/>
-      <point x="-111.52382465567783" y="-79.0" type="curve" smooth="yes"/>
-      <point x="-49.52382465567783" y="-79.0"/>
-      <point x="-39.52493925945223" y="-95.0"/>
-      <point x="-47.02702914152924" y="-125.0" type="curve" smooth="yes"/>
-      <point x="-55.27932801181394" y="-158.0"/>
-      <point x="-88.28072126653194" y="-178.0"/>
-      <point x="-131.28072126653194" y="-178.0" type="curve" smooth="yes"/>
-      <point x="-168.28072126653194" y="-178.0"/>
-      <point x="-181.53023362738065" y="-171.0"/>
-      <point x="-193.27932801181393" y="-158.0" type="curve"/>
-      <point x="-205.27932801181393" y="-158.0" type="line"/>
-      <point x="-208.03009430190883" y="-169.0"/>
-      <point x="-209.78058194106015" y="-176.0"/>
-      <point x="-213.78169654483455" y="-192.0" type="curve" smooth="yes"/>
-      <point x="-216.53246283492945" y="-203.0"/>
-      <point x="-195.78364710143975" y="-220.0"/>
-      <point x="-143.78364710143975" y="-220.0" type="curve" smooth="yes"/>
-      <point x="-68.78364710143975" y="-220.0"/>
-      <point x="-15.530790929267837" y="-179.0"/>
-    </contour>
-  </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0.45,0.73,1,0.75</string>
-    </dict>
-  </lib>
+	<unicode hex="0327"/>
+	<outline>
+		<contour>
+			<point x="-1.7769594788" y="-124" type="curve" smooth="yes"/>
+			<point x="10.726523658" y="-74"/>
+			<point x="-14.0214561227" y="-45"/>
+			<point x="-63.2712471344" y="-42" type="curve"/>
+			<point x="-54.019784217" y="-21"/>
+			<point x="-43.5182516368" y="1"/>
+			<point x="-34.2667887194" y="22" type="curve"/>
+			<point x="-74.2667887194" y="22"/>
+			<point x="-79.2667887194" y="22"/>
+			<point x="-84.5176943349" y="9" type="curve" smooth="yes"/>
+			<point x="-96.0195055661" y="-17"/>
+			<point x="-105.771107809" y="-40"/>
+			<point x="-117.5229887028" y="-67" type="curve" smooth="yes"/>
+			<point x="-120.0234066793" y="-73"/>
+			<point x="-118.5238246557" y="-79"/>
+			<point x="-111.5238246557" y="-79" type="curve" smooth="yes"/>
+			<point x="-49.5238246557" y="-79"/>
+			<point x="-39.5249392595" y="-95"/>
+			<point x="-47.0270291415" y="-125" type="curve" smooth="yes"/>
+			<point x="-55.2793280118" y="-158"/>
+			<point x="-88.2807212665" y="-178"/>
+			<point x="-131.2807212665" y="-178" type="curve" smooth="yes"/>
+			<point x="-168.2807212665" y="-178"/>
+			<point x="-181.5302336274" y="-171"/>
+			<point x="-193.2793280118" y="-158" type="curve"/>
+			<point x="-205.2793280118" y="-158" type="line"/>
+			<point x="-208.0300943019" y="-169"/>
+			<point x="-209.7805819411" y="-176"/>
+			<point x="-213.7816965448" y="-192" type="curve" smooth="yes"/>
+			<point x="-216.5324628349" y="-203"/>
+			<point x="-195.7836471014" y="-220"/>
+			<point x="-143.7836471014" y="-220" type="curve" smooth="yes"/>
+			<point x="-68.7836471014" y="-220"/>
+			<point x="-15.5307909293" y="-179"/>
+		</contour>
+	</outline>
+	<anchor name="_bottom" x="-66.0183909623" y="-1"/>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0.45,0.73,1,0.75</string>
+		</dict>
+	</lib>
 </glyph>

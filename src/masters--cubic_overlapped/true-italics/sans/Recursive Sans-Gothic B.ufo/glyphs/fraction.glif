@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="fraction" format="2">
-  <advance width="600"/>
-  <unicode hex="2044"/>
-  <outline>
-    <contour>
-      <point x="357" y="405" type="curve"/>
-      <point x="379" y="405.0"/>
-      <point x="404" y="405.0"/>
-      <point x="441" y="405" type="curve" smooth="yes"/>
-      <point x="446" y="405"/>
-      <point x="448" y="406"/>
-      <point x="451" y="412" type="curve" smooth="yes"/>
-      <point x="495" y="507"/>
-      <point x="539" y="602"/>
-      <point x="583" y="697" type="curve" smooth="yes"/>
-      <point x="587" y="705"/>
-      <point x="583" y="710"/>
-      <point x="575" y="710" type="curve" smooth="yes"/>
-      <point x="526" y="710.0"/>
-      <point x="497" y="710.0"/>
-      <point x="439" y="710" type="curve"/>
-      <point x="412" y="608"/>
-      <point x="384" y="507"/>
-    </contour>
-    <contour>
-      <point x="243.0" y="296.0" type="curve"/>
-      <point x="221.0" y="296.0"/>
-      <point x="196.0" y="296.0"/>
-      <point x="159.0" y="296.0" type="curve" smooth="yes"/>
-      <point x="154.0" y="296.0"/>
-      <point x="152.0" y="295.0"/>
-      <point x="149.0" y="289.0" type="curve" smooth="yes"/>
-      <point x="105.0" y="194.0"/>
-      <point x="61.0" y="99.0"/>
-      <point x="17.0" y="4.0" type="curve" smooth="yes"/>
-      <point x="13.0" y="-4.0"/>
-      <point x="17.0" y="-9.0"/>
-      <point x="25.0" y="-9.0" type="curve" smooth="yes"/>
-      <point x="74.0" y="-9.0"/>
-      <point x="103.0" y="-9.0"/>
-      <point x="161.0" y="-9.0" type="curve"/>
-      <point x="188.0" y="93.0"/>
-      <point x="216.0" y="194.0"/>
-    </contour>
-  </outline>
-  <lib>
-    <dict>
-      <key>com.typemytype.robofont.Image.Brightness</key>
-      <integer>0</integer>
-      <key>com.typemytype.robofont.Image.Contrast</key>
-      <integer>1</integer>
-      <key>com.typemytype.robofont.Image.Saturation</key>
-      <integer>1</integer>
-      <key>com.typemytype.robofont.Image.Sharpness</key>
-      <real>0.4</real>
-      <key>public.markColor</key>
-      <string>1,0.45,0.45,0.75</string>
-    </dict>
-  </lib>
+	<unicode hex="2044"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="357" y="405" type="curve"/>
+			<point x="379" y="405"/>
+			<point x="404" y="405"/>
+			<point x="441" y="405" type="curve" smooth="yes"/>
+			<point x="446" y="405"/>
+			<point x="448" y="406"/>
+			<point x="451" y="412" type="curve" smooth="yes"/>
+			<point x="495" y="507"/>
+			<point x="539" y="602"/>
+			<point x="583" y="697" type="curve" smooth="yes"/>
+			<point x="587" y="705"/>
+			<point x="583" y="710"/>
+			<point x="575" y="710" type="curve" smooth="yes"/>
+			<point x="526" y="710"/>
+			<point x="497" y="710"/>
+			<point x="439" y="710" type="curve"/>
+			<point x="412" y="608"/>
+			<point x="384" y="507"/>
+		</contour>
+		<contour>
+			<point x="243" y="296" type="curve"/>
+			<point x="221" y="296"/>
+			<point x="196" y="296"/>
+			<point x="159" y="296" type="curve" smooth="yes"/>
+			<point x="154" y="296"/>
+			<point x="152" y="295"/>
+			<point x="149" y="289" type="curve" smooth="yes"/>
+			<point x="105" y="194"/>
+			<point x="61" y="99"/>
+			<point x="17" y="4" type="curve" smooth="yes"/>
+			<point x="13" y="-4"/>
+			<point x="17" y="-9"/>
+			<point x="25" y="-9" type="curve" smooth="yes"/>
+			<point x="74" y="-9"/>
+			<point x="103" y="-9"/>
+			<point x="161" y="-9" type="curve"/>
+			<point x="188" y="93"/>
+			<point x="216" y="194"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+			<key>public.markColor</key>
+			<string>1,0.45,0.45,0.75</string>
+		</dict>
+	</lib>
 </glyph>

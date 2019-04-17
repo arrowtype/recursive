@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="commaaboverightcomb" format="2">
-  <unicode hex="0315"/>
-  <anchor x="85.27375499294193" y="611" name="_caronslovak"/>
-  <outline>
-    <contour>
-      <point x="41.76692804482373" y="513.0" type="curve" smooth="yes"/>
-      <point x="61.76692804482373" y="513.0"/>
-      <point x="72.51713703303143" y="516.0"/>
-      <point x="88.76804264859813" y="529.0" type="curve" smooth="yes"/>
-      <point x="133.77055050709055" y="565.0"/>
-      <point x="160.27431229482914" y="619.0"/>
-      <point x="173.77807408256774" y="673.0" type="curve" smooth="yes"/>
-      <point x="180.78002463917295" y="701.0"/>
-      <point x="158.53134823115505" y="720.0"/>
-      <point x="109.53134823115504" y="720.0" type="curve" smooth="yes"/>
-      <point x="90.53134823115504" y="720.0"/>
-      <point x="75.03120890568324" y="718.0"/>
-      <point x="50.28072126653193" y="711.0" type="curve"/>
-      <point x="27.52438195756504" y="620.0"/>
-      <point x="18.022570726431624" y="594.0"/>
-      <point x="-12.232236002345488" y="525.0" type="curve"/>
-      <point x="2.5171370330314318" y="516.0"/>
-      <point x="15.766928044823729" y="513.0"/>
-    </contour>
-  </outline>
-  <lib>
-    <dict>
-      <key>com.typemytype.robofont.Image.Brightness</key>
-      <integer>0</integer>
-      <key>com.typemytype.robofont.Image.Contrast</key>
-      <integer>1</integer>
-      <key>com.typemytype.robofont.Image.Saturation</key>
-      <integer>1</integer>
-      <key>com.typemytype.robofont.Image.Sharpness</key>
-      <real>0.4</real>
-    </dict>
-  </lib>
+	<unicode hex="0315"/>
+	<outline>
+		<contour>
+			<point x="41.7669280448" y="513" type="curve" smooth="yes"/>
+			<point x="61.7669280448" y="513"/>
+			<point x="72.517137033" y="516"/>
+			<point x="88.7680426486" y="529" type="curve" smooth="yes"/>
+			<point x="133.7705505071" y="565"/>
+			<point x="160.2743122948" y="619"/>
+			<point x="173.7780740826" y="673" type="curve" smooth="yes"/>
+			<point x="180.7800246392" y="701"/>
+			<point x="158.5313482312" y="720"/>
+			<point x="109.5313482312" y="720" type="curve" smooth="yes"/>
+			<point x="90.5313482312" y="720"/>
+			<point x="75.0312089057" y="718"/>
+			<point x="50.2807212665" y="711" type="curve"/>
+			<point x="27.5243819576" y="620"/>
+			<point x="18.0225707264" y="594"/>
+			<point x="-12.2322360023" y="525" type="curve"/>
+			<point x="2.517137033" y="516"/>
+			<point x="15.7669280448" y="513"/>
+		</contour>
+	</outline>
+	<anchor name="_caronslovak" x="85.2737549929" y="611"/>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+		</dict>
+	</lib>
 </glyph>
