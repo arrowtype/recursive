@@ -25,7 +25,7 @@ SCRIPT_VERSION = "v0.6.0"
 
 # Define font name for font path and name table re-writes
 
-FONTNAME = "RecMono"
+FONTNAME = "Iterative D"
 
 # Default axis values (when not explicitly included on the command line)
 DEFAULT_WEIGHT = 400
@@ -36,8 +36,8 @@ DEFAULT_EXPRESSION = 0.0
 WEIGHT_MIN = 300
 WEIGHT_MAX = 1100
 
-SLANT_MIN = 0
-SLANT_MAX = 14
+SLANT_MIN = 0.0
+SLANT_MAX = 14.04
 
 EXPRESSION_MIN = 0
 EXPRESSION_MAX = 1
@@ -144,8 +144,8 @@ def main():
 
     # instantiate the variable font with the requested values
     font = TTFont(args.path)
-    instantiateVariableFont(font, instance_location, inplace=True)
-    print(instance_location)
+    instantiateVariableFont(font, instance_location, inplace=True, overlap=False)
+    print(f"Generating static instance at {instance_location}")
 
     # ---------------------------------------------------------------
     # rewrite name table records with new name values for A/B testing
@@ -182,6 +182,8 @@ def main():
             record.string = nameID4_name
         elif record.nameID == 6:
             record.string = nameID6_name.replace(" ","")
+        elif record.nameID == 16:
+            record.string = nameID1_name
         elif record.nameID == 17:
             record.string = nameID2_name
 
