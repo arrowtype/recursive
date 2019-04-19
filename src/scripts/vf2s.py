@@ -25,7 +25,7 @@ SCRIPT_VERSION = "v0.6.0"
 
 # Define font name for font path and name table re-writes
 
-FONTNAME = "Iterative D"
+FONTNAME = "Iterative SemiCasual"
 
 # Default axis values (when not explicitly included on the command line)
 DEFAULT_WEIGHT = 400
