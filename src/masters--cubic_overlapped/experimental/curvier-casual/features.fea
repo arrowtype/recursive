@@ -1,8 +1,8 @@
 languagesystem DFLT dflt;
 languagesystem latn dflt;
 
-@defaultletters    = [a        d        f        g        h        i        k        l        m        n        r        u        v        w        x        y        c        s        ];
-@trueitalics       = [a.italic d.italic f.italic g.italic h.italic i.italic k.italic l.italic m.italic n.italic r.italic u.italic v.italic w.italic x.italic y.italic c.italic s.italic ];
+@defaultletters       = [a        d        f        g        h        i        k        l        m        n        r        u        v        w        x        y        c        s        j       ];
+@trueitalics       = [a.italic d.italic f.italic g.italic h.italic i.italic k.italic l.italic m.italic n.italic r.italic u.italic v.italic w.italic x.italic y.italic c.italic s.italic j.italic];
 
 feature ss01 {
     featureNames {
