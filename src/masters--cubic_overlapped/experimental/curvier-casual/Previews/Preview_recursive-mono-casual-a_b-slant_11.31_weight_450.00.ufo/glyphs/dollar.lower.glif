@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="dollar.lower" format="2">
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="345.7" y="517.3" type="curve" smooth="yes"/>
+			<point x="362.4" y="636.5" type="line" smooth="yes"/>
+			<point x="371.1" y="685.7"/>
+			<point x="357.1" y="709.4"/>
+			<point x="306.6" y="709.4" type="curve" smooth="yes"/>
+			<point x="294.2" y="709.4"/>
+			<point x="277.9" y="707.1"/>
+			<point x="268" y="703.6" type="curve"/>
+			<point x="276.9" y="678.5"/>
+			<point x="280.9" y="665.5"/>
+			<point x="283.8" y="612.7" type="curve" smooth="yes"/>
+			<point x="291.7" y="483.8" type="line"/>
+			<point x="320.8" y="483.1"/>
+			<point x="341.6" y="494.4"/>
+		</contour>
+		<contour>
+			<point x="263.8" y="10.6" type="curve" smooth="yes"/>
+			<point x="246.4" y="-122.6" type="line" smooth="yes"/>
+			<point x="238" y="-171.8"/>
+			<point x="252" y="-195.5"/>
+			<point x="302.2" y="-195.5" type="curve" smooth="yes"/>
+			<point x="314.9" y="-195.5"/>
+			<point x="331.2" y="-193.2"/>
+			<point x="341.1" y="-190" type="curve"/>
+			<point x="331.9" y="-164.6"/>
+			<point x="328.2" y="-151.6"/>
+			<point x="325" y="-99.1" type="curve" smooth="yes"/>
+			<point x="317.4" y="44.1" type="line"/>
+			<point x="288.7" y="44.8"/>
+			<point x="268.2" y="33.5"/>
+		</contour>
+		<component base="s" yOffset="-0.7"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+		</dict>
+	</lib>
+</glyph>

@@ -46,7 +46,7 @@ EXPRESSION_MAX = 1
 # used for workaround fix for fontTools varLib.mutator bug
 MAC_OVERLAP_RENDERING_BIT = 1 << 6
 
-
+# nncnnoocoo
 def set_mac_overlap_rendering_bit(font):
     """Sets the bit6 macOS overlap rendering bit."""
     glyf = font["glyf"]
