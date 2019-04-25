@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 # This is a super simple shell script to speed up a test proces I was doing by hand
 # 
 # USAGE
