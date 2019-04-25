@@ -45,7 +45,7 @@ fontmake -o ttf -u $ufoRoman
 fontmake -o ttf -u $ufoItalic
 
 # ----------------------------------------------------------------------------------------------
-# freeze ss01 into italic font to activate true-italic characters by default justify
+# freeze ss01 into italic font to activate true-italic characters by default
 
 python src/scripts/pyftfeatfreeze.py -f 'ss01' $ttfItalic
 
