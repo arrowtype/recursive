@@ -1,3 +1,4 @@
+
 #!/bin/sh
 
 # This is a super simple shell script to speed up a test proces I was doing by hand
@@ -8,43 +9,61 @@
 #    chmod +x <path>/build-previews.sh
 #    <path>/build-previews.sh <three-digit version number>
 
-# ----------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 # EDIT THESE VARIABLES AS NEEDED
 
 oldFamilyName="recursive-mono-casual-a_b"
 oldRomanStyleName="slant_0.00_weight_450.00"
 oldItalicStyleName="slant_9.45_weight_450.00"
 
+sourceDir="src/masters--cubic_overlapped/experimental/curvier-casual"
+
 ufoRoman="src/masters--cubic_overlapped/experimental/curvier-casual/Previews/Preview_recursive-mono-casual-a_b-slant_0.00_weight_450.00.ufo"
 
 ufoItalic="src/masters--cubic_overlapped/experimental/curvier-casual/Previews/Preview_recursive-mono-casual-a_b-slant_9.45_weight_450.00.ufo"
 
+ufoDir="src/masters--cubic_overlapped/experimental/curvier-casual/Previews"
 
-# ----------------------------------------------------------------------------------------------
+ttfDir="master_ttf"
+
+
+# ---------------------------------------------------------------------------
 # shell script setup
 set -e
+source venv/bin/activate
+
 version=$1
 rm -rf master_ttf
 
-ufoDir="src/masters--cubic_overlapped/experimental/curvier-casual/Previews"
-ttfDir="master_ttf"
-
-ttfItalic=${ufoItalic/$ufoDir/$ttfDir}
+ttfItalic=${ufoItalic/"$ufoDir"/"$ttfDir"}
 ttfItalic=${ttfItalic/"ufo"/"ttf"}
 
-ttfRoman=${ufoRoman/$ufoDir/$ttfDir}
+ttfRoman=${ufoRoman/"$ufoDir"/"$ttfDir"}
 ttfRoman=${ttfRoman/"ufo"/"ttf"}
 
 
-# ----------------------------------------------------------------------------------------------
+cp $sourceDir/features.fea $ufoRoman/features.fea
+cp $sourceDir/features.fea $ufoItalic/features.fea
+
+# check that version number was included in script call
+
+if [[ -z "$version" || $version = "--help" ]] ; then
+    echo 'Add three-digit version number to your script call, like:'
+    echo '$ <script_path>/build-previews.sh 009'
+    exit 2
+fi
+
+# ---------------------------------------------------------------------------
 # generate static TTF fonts 
 
 fontmake -o ttf -u $ufoRoman
 
 fontmake -o ttf -u $ufoItalic
 
-# ----------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 # freeze ss01 into italic font to activate true-italic characters by default
+
+echo $ttfItalic
 
 python src/scripts/pyftfeatfreeze.py -f 'ss01' $ttfItalic
 
@@ -54,7 +73,7 @@ echo $featFreeze
 
 mv $featFreeze $ttfItalic
 
-# ----------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 # update name tables to have desired naming
 
 ttx -t name $ttfRoman
@@ -76,13 +95,13 @@ sed  -i "" -e "s/ ${oldItalicStyleName}/ Italic/g" ${ttfItalic/".ttf"/".ttx"}
 sed  -i "" -e "s/${newFamilyName} Italic/${newFamilyName}/g" ${ttfRoman/".ttf"/".ttx"} 
 sed  -i "" -e "s/0.000/0.${version}/g" ${ttfItalic/".ttf"/".ttx"} 
 
-# ----------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 # merge edits back into TTFs
 
 ttx -m $ttfRoman ${ttfRoman/".ttf"/".ttx"} 
 ttx -m $ttfItalic ${ttfItalic/".ttf"/".ttx"} 
 
-# ----------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 # Get rid of temp files
 
 for ttx in master_ttf/*.ttx; do
@@ -92,8 +111,11 @@ done
 mv ${ttfRoman/".ttf"/"#1.ttf"} $ttfRoman
 mv ${ttfItalic/".ttf"/"#1.ttf"} $ttfItalic
 
-# ----------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 # copy to system fonts folder
 
 cp $ttfRoman /Users/stephennixon/Library/Fonts/${ttfRoman/"master_ttf/"/""}
 cp $ttfItalic /Users/stephennixon/Library/Fonts/${ttfItalic/"master_ttf/"/""}
+
+echo "-----------------------------"
+echo "Fonts copied to fonts folder!"
