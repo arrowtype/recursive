@@ -24,6 +24,7 @@ As a result of a quickly-moving design project, things are currently fairly mess
   - **`RecurMono-Regular`**
     - This is a fuller version of the "Strict" end of the expression axis. It has some of the quirks of the Casual, but it's less curvy and has overall proportions which are more traditional to highly-legible humanist-sans monospace fonts. I personally find it nicer for complex code, because it's a lot less expressive than the "Casual" end of the expression axis. This makes it easier for me to focus.
     - The italic here is a heavy 14.04° slant, which is more than usual. Moving forward, I intend to reduce this to 9.45° or 11.31° (these values are based on the slopes derived from following a pixel grid).
+    - **Overall, this is the most complete version of Recursive Mono. So, if you come across anything that seems messed up in here, I'd love to hear about it! Please add issues to the repo or email me with questions / comments.**
 
   - **`Iterative SemiCasual`**
     - This is a quick experiment: what does it feel like to code with the instance in between Casual and Strict? Overall, I'm pleasantly surprised! It's fun, but not distracting.
