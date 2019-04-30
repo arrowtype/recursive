@@ -27,8 +27,8 @@ for file in files:
             # adds glyph top foreground
             otherFont.__setitem__(glyphName,f[glyphName])
             otherFont[glyphName].layers[0].copyLayerToLayer("foreground", "background")
-            otherFont[glyphName].layers[0].__delitem__(glyphName)
+            otherFont[glyphName].markColor = (0.3,0,1,0.5)
             print(f"\t {glyphName} is created!")
 
-    font.save()
-    font.close()
+    # font.save()
+    # font.close()
