@@ -10,7 +10,6 @@ Recursive Sans borrows glyphs from its parent mono but adjusts the widths of man
 
 ## Build
 
-(...to be continued)
 
 To build, set up the virtual environment
 
@@ -30,3 +29,4 @@ Then install requirements:
 pip install -U -r requirements.txt
 ```
 
+(...to be continued)
