@@ -6,7 +6,7 @@
 # 1. Start by making some "Preview" UFOs from RoboFont Skateboard
 # 2. Edit the variables below, as needed, then run the script:
 #    chmod +x <path>/build-previews.sh
-#    <path>/build-previews.sh <three-digit version number>
+#    <path>/build-previews.sh 1.<three-digit version number>
 
 # ---------------------------------------------------------------------------
 # EDIT THESE VARIABLES AS NEEDED
@@ -53,7 +53,7 @@ cp $sourceDir/features.fea $ufoItalic/features.fea
 
 if [[ -z "$version" || $version = "--help" ]] ; then
     echo 'Add three-digit version number to your script call, like:'
-    echo '$ <script_path>/build-previews.sh 009'
+    echo '$ <script_path>/build-previews.sh 1.009'
     exit 2
 fi
 
