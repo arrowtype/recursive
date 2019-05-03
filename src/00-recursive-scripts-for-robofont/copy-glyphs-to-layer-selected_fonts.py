@@ -10,5 +10,7 @@ for file in files:
     font = OpenFont(file)
     for glyph in font:
         glyph.layers[0].copyLayerToLayer("foreground", newLayer)
-    font.save()
-    font.close()
+    # font.save()
+    # font.close()
+    print(f"Glyphs copied to {newLayer}! Please save font to keep changes.")
+

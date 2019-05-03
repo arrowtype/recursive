@@ -1,7 +1,6 @@
-
 #!/bin/sh
 
-# This is a super simple shell script to speed up a test proces I was doing by hand
+# This is a super simple shell script to speed up a test process I was doing by hand
 # 
 # USAGE
 # 1. Start by making some "Preview" UFOs from RoboFont Skateboard
@@ -12,15 +11,20 @@
 # ---------------------------------------------------------------------------
 # EDIT THESE VARIABLES AS NEEDED
 
-oldFamilyName="recursive-mono-casual-a_b"
-oldRomanStyleName="slant_0.00_weight_450.00"
-oldItalicStyleName="slant_9.45_weight_450.00"
+# The files you're building from
+ufoRoman="src/masters--cubic_overlapped/experimental/curvier-casual/Previews/Preview_recursive-mono-slant_0.00_weight_450.00_expression_0.00.ufo"
+ufoItalic="src/masters--cubic_overlapped/experimental/curvier-casual/Previews/Preview_recursive-mono-slant_9.45_weight_450.00_expression_1.00.ufo"
 
+# Get these from the font info
+oldFamilyName="recursive-mono"
+oldRomanStyleName="slant_0.00_weight_450.00_expression_0.00"
+oldItalicStyleName="slant_9.45_weight_450.00_expression_1.00"
+
+# your system fonts folder
+fontsFolder="/Users/stephennixon/Library/Fonts"
+
+# the current source dir which is holding the "Previews" folder
 sourceDir="src/masters--cubic_overlapped/experimental/curvier-casual"
-
-ufoRoman="src/masters--cubic_overlapped/experimental/curvier-casual/Previews/Preview_recursive-mono-casual-a_b-slant_0.00_weight_450.00.ufo"
-
-ufoItalic="src/masters--cubic_overlapped/experimental/curvier-casual/Previews/Preview_recursive-mono-casual-a_b-slant_9.45_weight_450.00.ufo"
 
 ufoDir="src/masters--cubic_overlapped/experimental/curvier-casual/Previews"
 
@@ -63,15 +67,15 @@ fontmake -o ttf -u $ufoItalic
 # ---------------------------------------------------------------------------
 # freeze ss01 into italic font to activate true-italic characters by default
 
-echo $ttfItalic
+# echo $ttfItalic
 
-python src/scripts/pyftfeatfreeze.py -f 'ss01' $ttfItalic
+# python src/build-scripts/pyftfeatfreeze.py -f 'ss01' $ttfItalic
 
-featFreeze=${ttfItalic/".ttf"/".ttf.featfreeze.otf"}
+# featFreeze=${ttfItalic/".ttf"/".ttf.featfreeze.otf"}
 
-echo $featFreeze
+# echo $featFreeze
 
-mv $featFreeze $ttfItalic
+# mv $featFreeze $ttfItalic
 
 # ---------------------------------------------------------------------------
 # update name tables to have desired naming
@@ -114,8 +118,8 @@ mv ${ttfItalic/".ttf"/"#1.ttf"} $ttfItalic
 # ---------------------------------------------------------------------------
 # copy to system fonts folder
 
-cp $ttfRoman /Users/stephennixon/Library/Fonts/${ttfRoman/"master_ttf/"/""}
-cp $ttfItalic /Users/stephennixon/Library/Fonts/${ttfItalic/"master_ttf/"/""}
+cp $ttfRoman $fontsFolder/${ttfRoman/"master_ttf/"/""}
+cp $ttfItalic $fontsFolder/${ttfItalic/"master_ttf/"/""}
 
 echo "-----------------------------"
-echo "Fonts copied to fonts folder!"
+echo "Fonts copied to $fontsFolder"
