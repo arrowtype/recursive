@@ -6,6 +6,32 @@
   <anchor x="574" y="0" name="ogonek"/>
   <outline>
     <contour>
+      <point x="36" y="550" type="curve"/>
+      <point x="29" y="521"/>
+      <point x="25" y="494"/>
+      <point x="25" y="469" type="curve" smooth="yes"/>
+      <point x="25" y="388"/>
+      <point x="40" y="328"/>
+      <point x="84" y="328" type="curve" smooth="yes"/>
+      <point x="117" y="328"/>
+      <point x="149" y="334"/>
+      <point x="200" y="354" type="curve"/>
+      <point x="200.0" y="330"/>
+      <point x="200.0" y="305"/>
+      <point x="200" y="281" type="curve" smooth="yes"/>
+      <point x="200" y="153"/>
+      <point x="283" y="77"/>
+      <point x="423" y="77" type="curve"/>
+      <point x="423.0" y="214"/>
+      <point x="423.0" y="352"/>
+      <point x="423" y="489" type="curve"/>
+      <point x="423" y="530"/>
+      <point x="400" y="560"/>
+      <point x="208" y="560" type="curve"/>
+      <point x="145" y="560"/>
+      <point x="103" y="557"/>
+    </contour>
+    <contour>
       <point x="27" y="210" type="line"/>
       <point x="22" y="183"/>
       <point x="19" y="158"/>
@@ -48,32 +74,6 @@
       <point x="252" y="183" type="line"/>
       <point x="255" y="198" type="line"/>
       <point x="214" y="229" type="line"/>
-    </contour>
-    <contour>
-      <point x="36" y="550" type="curve"/>
-      <point x="29" y="521"/>
-      <point x="25" y="494"/>
-      <point x="25" y="469" type="curve" smooth="yes"/>
-      <point x="25" y="388"/>
-      <point x="40" y="328"/>
-      <point x="84" y="328" type="curve" smooth="yes"/>
-      <point x="117" y="328"/>
-      <point x="149" y="334"/>
-      <point x="200" y="354" type="curve"/>
-      <point x="200.0" y="330"/>
-      <point x="200.0" y="305"/>
-      <point x="200" y="281" type="curve" smooth="yes"/>
-      <point x="200" y="153"/>
-      <point x="283" y="77"/>
-      <point x="423" y="77" type="curve"/>
-      <point x="423.0" y="214"/>
-      <point x="423.0" y="352"/>
-      <point x="423" y="489" type="curve"/>
-      <point x="423" y="530"/>
-      <point x="400" y="560"/>
-      <point x="208" y="560" type="curve"/>
-      <point x="145" y="560"/>
-      <point x="103" y="557"/>
     </contour>
   </outline>
   <lib>
@@ -153,7 +153,7 @@
       <key>com.typemytype.robofont.guideline.magnetic.xpOgeFL0BR</key>
       <integer>10</integer>
       <key>public.markColor</key>
-      <string>0.5133,1,0.9066,1</string>
+      <string>0.1313,0.9997,0.0236,1</string>
     </dict>
   </lib>
 </glyph>
