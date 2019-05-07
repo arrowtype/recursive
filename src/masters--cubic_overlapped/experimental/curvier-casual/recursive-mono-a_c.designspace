@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.0">
+  <axes>
+    <axis tag="slnt" name="slant" minimum="0" maximum="14.040000" default="0"/>
+    <axis tag="wght" name="weight" minimum="300" maximum="1100" default="300"/>
+    <axis tag="XPRN" name="expression" minimum="0" maximum="1" default="0"/>
+  </axes>
+  <sources>
+    <source filename="Recursive Mono-Strict A.ufo" familyname="Recursive Mono" stylename="Strict Light">
+      <location>
+        <dimension name="slant" xvalue="0"/>
+        <dimension name="weight" xvalue="300"/>
+        <dimension name="expression" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Strict A Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Strict Light Italic">
+      <location>
+        <dimension name="slant" xvalue="14.040000"/>
+        <dimension name="weight" xvalue="300"/>
+        <dimension name="expression" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Strict B.ufo" familyname="Recursive Mono" stylename="Strict ExtraBold">
+      <location>
+        <dimension name="slant" xvalue="0"/>
+        <dimension name="weight" xvalue="800"/>
+        <dimension name="expression" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Strict B Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Strict ExtraBold Italic">
+      <location>
+        <dimension name="slant" xvalue="14.040000"/>
+        <dimension name="weight" xvalue="800"/>
+        <dimension name="expression" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Strict C.ufo" familyname="Recursive Mono" stylename="Strict Heavy">
+      <location>
+        <dimension name="slant" xvalue="0"/>
+        <dimension name="weight" xvalue="1100"/>
+        <dimension name="expression" xvalue="0"/>
+      </location>
+    </source>
+    <!-- <source filename="Recursive Mono-Strict C Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Strict Heavy Italic">
+      <location>
+        <dimension name="slant" xvalue="14.040000"/>
+        <dimension name="weight" xvalue="1100"/>
+        <dimension name="expression" xvalue="0"/>
+      </location>
+    </source> -->
+    <source filename="Recursive Mono-Casual A.ufo" familyname="Recursive Mono" stylename="Casual Light">
+      <location>
+        <dimension name="slant" xvalue="0"/>
+        <dimension name="weight" xvalue="300"/>
+        <dimension name="expression" xvalue="1"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Casual A Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Casual Light Italic">
+      <location>
+        <dimension name="slant" xvalue="14.040000"/>
+        <dimension name="weight" xvalue="300"/>
+        <dimension name="expression" xvalue="1"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual ExtraBold">
+      <location>
+        <dimension name="slant" xvalue="0"/>
+        <dimension name="weight" xvalue="800"/>
+        <dimension name="expression" xvalue="1"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Casual B Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Casual ExtraBold Italic">
+      <location>
+        <dimension name="slant" xvalue="14.040000"/>
+        <dimension name="weight" xvalue="800"/>
+        <dimension name="expression" xvalue="1"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Casual C.ufo" familyname="Recursive Mono" stylename="Casual Heavy">
+      <location>
+        <dimension name="slant" xvalue="0"/>
+        <dimension name="weight" xvalue="1100"/>
+        <dimension name="expression" xvalue="1"/>
+      </location>
+    </source>
+    <!-- <source filename="Recursive Mono-Casual C Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Casual Heavy Italic">
+      <location>
+        <dimension name="slant" xvalue="14.040000"/>
+        <dimension name="weight" xvalue="1100"/>
+        <dimension name="expression" xvalue="1"/>
+      </location>
+    </source> -->
+  </sources>
+  <instances>
+    <instance familyname="Recursive Mono" stylename="Strict Regular" filename="instances/Recursive Mono-Strict Regular.ufo" postscriptfontname="RecursiveMono-StrictRegular">
+      <location>
+        <dimension name="slant" xvalue="0"/>
+        <dimension name="weight" xvalue="450"/>
+        <dimension name="expression" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Recursive Mono" stylename="Strict Regular Italic" filename="instances/Recursive Mono-Strict Regular Italic.ufo" postscriptfontname="RecursiveMono-StrictRegularItalic">
+      <location>
+        <dimension name="slant" xvalue="9.450000"/>
+        <dimension name="weight" xvalue="450"/>
+        <dimension name="expression" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Recursive Mono" stylename="Strict Regular ExtraItalic" filename="instances/Recursive Mono-Strict Regular ExtraItalic.ufo" postscriptfontname="RecursiveMono-StrictRegularExtraItalic">
+      <location>
+        <dimension name="slant" xvalue="14.040000"/>
+        <dimension name="weight" xvalue="450"/>
+        <dimension name="expression" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Recursive Mono" stylename="Strict Bold" filename="instances/Recursive Mono-Strict Bold.ufo" postscriptfontname="RecursiveMono-StrictBold">
+      <location>
+        <dimension name="slant" xvalue="0"/>
+        <dimension name="weight" xvalue="700"/>
+        <dimension name="expression" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Recursive Mono" stylename="Strict Bold Italic" filename="instances/Recursive Mono-Strict Bold Italic.ufo" postscriptfontname="RecursiveMono-StrictBoldItalic">
+      <location>
+        <dimension name="slant" xvalue="9.450000"/>
+        <dimension name="weight" xvalue="700"/>
+        <dimension name="expression" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Recursive Mono" stylename="Strict Bold ExtraItalic" filename="instances/Recursive Mono-Strict Bold ExtraItalic.ufo" postscriptfontname="RecursiveMono-StrictBoldExtraItalic">
+      <location>
+        <dimension name="slant" xvalue="14.040000"/>
+        <dimension name="weight" xvalue="700"/>
+        <dimension name="expression" xvalue="0"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Recursive Mono" stylename="SemiCasual Regular" filename="instances/Recursive Mono-SemiCasual Regular.ufo" postscriptfontname="RecursiveMono-SemiCasualRegular">
+      <location>
+        <dimension name="slant" xvalue="0"/>
+        <dimension name="weight" xvalue="450"/>
+        <dimension name="expression" xvalue="0.500000"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Recursive Mono" stylename="SemiCasual Regular Italic" filename="instances/Recursive Mono-SemiCasual Regular Italic.ufo" postscriptfontname="RecursiveMono-SemiCasualRegularItalic">
+      <location>
+        <dimension name="slant" xvalue="9.450000"/>
+        <dimension name="weight" xvalue="450"/>
+        <dimension name="expression" xvalue="0.500000"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Recursive Mono" stylename="SemiCasual Regular ExtraItalic" filename="instances/Recursive Mono-SemiCasual Regular ExtraItalic.ufo" postscriptfontname="RecursiveMono-SemiCasualRegularExtraItalic">
+      <location>
+        <dimension name="slant" xvalue="14.040000"/>
+        <dimension name="weight" xvalue="450"/>
+        <dimension name="expression" xvalue="0.500000"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Recursive Mono" stylename="SemiCasual Bold" filename="instances/Recursive Mono-SemiCasual Bold.ufo" postscriptfontname="RecursiveMono-SemiCasualBold">
+      <location>
+        <dimension name="slant" xvalue="0"/>
+        <dimension name="weight" xvalue="700"/>
+        <dimension name="expression" xvalue="0.500000"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Recursive Mono" stylename="SemiCasual Bold Italic" filename="instances/Recursive Mono-SemiCasual Bold Italic.ufo" postscriptfontname="RecursiveMono-SemiCasualBoldItalic">
+      <location>
+        <dimension name="slant" xvalue="9.450000"/>
+        <dimension name="weight" xvalue="700"/>
+        <dimension name="expression" xvalue="0.500000"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Recursive Mono" stylename="SemiCasual Bold ExtraItalic" filename="instances/Recursive Mono-SemiCasual Bold ExtraItalic.ufo" postscriptfontname="RecursiveMono-SemiCasualBoldExtraItalic">
+      <location>
+        <dimension name="slant" xvalue="14.040000"/>
+        <dimension name="weight" xvalue="700"/>
+        <dimension name="expression" xvalue="0.500000"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Recursive Mono" stylename="Casual Regular" filename="instances/Recursive Mono-Casual Regular.ufo" postscriptfontname="RecursiveMono-CasualRegular">
+      <location>
+        <dimension name="slant" xvalue="0"/>
+        <dimension name="weight" xvalue="450"/>
+        <dimension name="expression" xvalue="1"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Recursive Mono" stylename="Casual Regular Italic" filename="instances/Recursive Mono-Casual Regular Italic.ufo" postscriptfontname="RecursiveMono-CasualRegularItalic">
+      <location>
+        <dimension name="slant" xvalue="9.450000"/>
+        <dimension name="weight" xvalue="450"/>
+        <dimension name="expression" xvalue="1"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Recursive Mono" stylename="Casual Regular ExtraItalic" filename="instances/Recursive Mono-Casual Regular ExtraItalic.ufo" postscriptfontname="RecursiveMono-CasualRegularExtraItalic">
+      <location>
+        <dimension name="slant" xvalue="14.040000"/>
+        <dimension name="weight" xvalue="450"/>
+        <dimension name="expression" xvalue="1"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Recursive Mono" stylename="Casual Bold" filename="instances/Recursive Mono-Casual Bold.ufo" postscriptfontname="RecursiveMono-CasualBold">
+      <location>
+        <dimension name="slant" xvalue="0"/>
+        <dimension name="weight" xvalue="700"/>
+        <dimension name="expression" xvalue="1"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Recursive Mono" stylename="Casual Bold Italic" filename="instances/Recursive Mono-Casual Bold Italic.ufo" postscriptfontname="RecursiveMono-CasualBoldItalic">
+      <location>
+        <dimension name="slant" xvalue="9.450000"/>
+        <dimension name="weight" xvalue="700"/>
+        <dimension name="expression" xvalue="1"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+    <instance familyname="Recursive Mono" stylename="Casual Bold ExtraItalic" filename="instances/Recursive Mono-Casual Bold ExtraItalic.ufo" postscriptfontname="RecursiveMono-CasualBoldExtraItalic">
+      <location>
+        <dimension name="slant" xvalue="14.040000"/>
+        <dimension name="weight" xvalue="700"/>
+        <dimension name="expression" xvalue="1"/>
+      </location>
+      <kerning/>
+      <info/>
+    </instance>
+  </instances>
+  <lib>
+    <dict>
+      <key>com.letterror.skateboard.interactionSources</key>
+      <dict>
+        <key>horizontal</key>
+        <array>
+          <string>slant</string>
+          <string>expression</string>
+        </array>
+        <key>ignore</key>
+        <array/>
+        <key>vertical</key>
+        <array>
+          <string>weight</string>
+        </array>
+      </dict>
+      <key>com.letterror.skateboard.previewLocation</key>
+      <dict>
+        <key>expression</key>
+        <real>1.0</real>
+        <key>slant</key>
+        <real>9.45</real>
+        <key>weight</key>
+        <real>450.0</real>
+      </dict>
+      <key>com.letterror.skateboard.previewText</key>
+      <string>skateboard</string>
+    </dict>
+  </lib>
+</designspace>
