@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="uni0163" format="2">
-	<unicode hex="0163"/>
-	<advance width="600"/>
-	<outline>
-		<component base="t"/>
-		<component base="cedillacomb" xOffset="376" yOffset="-1"/>
-	</outline>
-	<lib>
-		<dict>
-			<key>public.markColor</key>
-			<string>1,0.8012,0.2928,1</string>
-		</dict>
-	</lib>
-	<note>
-		t cedilla
-	</note>
+  <advance width="600"/>
+  <unicode hex="0163"/>
+  <note>
+t cedilla
+</note>
+  <outline>
+    <component base="t"/>
+    <component base="cedillacomb" xOffset="376" yOffset="-1"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0.8012,0.2928,1</string>
+    </dict>
+  </lib>
 </glyph>
