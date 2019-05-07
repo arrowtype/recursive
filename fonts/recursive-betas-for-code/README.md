@@ -14,7 +14,7 @@ As a result of a quickly-moving design project, things are currently fairly mess
    
 2. Add the betas to your computer's fonts folder.
    
-3. Edit the preferences to point to one of the following font names:
+3. Edit the preferences to point to one of the following font names. These names correspond relatively closely to the filenames themselves, in case you only wish to install specific fonts.
 
   - **`IterativeBetaV009`** (this number will change, so be sure to double-check the filename you have)
     - This is where recent work has happened on more-cursive italics
