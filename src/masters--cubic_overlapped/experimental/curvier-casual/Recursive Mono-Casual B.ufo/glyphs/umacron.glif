@@ -1,14 +1,14 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="umacron" format="2">
-  <advance width="600"/>
-  <outline>
-    <component base="u"/>
-    <component base="macroncomb" xOffset="300" yOffset="2"/>
-  </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>1,0.8012,0.2928,1</string>
-    </dict>
-  </lib>
+	<advance width="600"/>
+	<outline>
+		<component base="u"/>
+		<component base="macroncomb" xOffset="300" yOffset="2"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>1,0.8012,0.2928,1</string>
+		</dict>
+	</lib>
 </glyph>
