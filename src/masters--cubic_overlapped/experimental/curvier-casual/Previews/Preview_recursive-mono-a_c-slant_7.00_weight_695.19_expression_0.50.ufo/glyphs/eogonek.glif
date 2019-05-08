@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="eogonek" format="2">
+	<unicode hex="0119"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="294.4258400538" y="-128.482594086" type="curve" smooth="yes"/>
+			<point x="294.4258400538" y="-206.4672715054"/>
+			<point x="351.3624663978" y="-250"/>
+			<point x="430.4519489247" y="-250" type="curve" smooth="yes"/>
+			<point x="480.6135080645" y="-250"/>
+			<point x="515.5894825269" y="-230.4192204301"/>
+			<point x="515.5894825269" y="-191.982594086" type="curve" smooth="yes"/>
+			<point x="515.5894825269" y="-146.6486895161"/>
+			<point x="514.008702957" y="-130.0679099462"/>
+			<point x="508.8471438172" y="-110.8168682796" type="curve"/>
+			<point x="497.6855846774" y="-110.8168682796" type="line"/>
+			<point x="481.9279233871" y="-120.99375"/>
+			<point x="466.1702620968" y="-125.9129704301"/>
+			<point x="446.9693548387" y="-125.9129704301" type="curve" smooth="yes"/>
+			<point x="418.0107862903" y="-125.9129704301"/>
+			<point x="402.5194892473" y="-113.4216733871"/>
+			<point x="402.5194892473" y="-89.729469086" type="curve" smooth="yes"/>
+			<point x="402.5194892473" y="-52.5699932796"/>
+			<point x="430.3732526882" y="-19.8537634409"/>
+			<point x="489.008702957" y="4.2249327957" type="curve" smooth="yes"/>
+			<point x="508.4519489247" y="12.7970094086"/>
+			<point x="519.9846774194" y="29.272983871"/>
+			<point x="519.9846774194" y="76.718313172" type="curve" smooth="yes"/>
+			<point x="503.8384408602" y="66.2336357527"/>
+			<point x="485.1114247312" y="61.0961021505"/>
+			<point x="460.6114247312" y="52.1288306452" type="curve" smooth="yes"/>
+			<point x="371.5393481183" y="21.8885752688"/>
+			<point x="294.4258400538" y="-37.1114247312"/>
+		</contour>
+		<component base="e"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+			<key>public.markColor</key>
+			<string>1,0.7179,0,1</string>
+		</dict>
+	</lib>
+</glyph>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="exclam" format="2">
+	<unicode hex="0021"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="349.8732526882" y="279.5194892473" type="line"/>
+			<point x="362.0915658602" y="350.5588373656"/>
+			<point x="373.2050739247" y="437.9867607527"/>
+			<point x="378.3666330645" y="509.3164986559" type="curve"/>
+			<point x="378.3666330645" y="668.0393481183" type="line" smooth="yes"/>
+			<point x="378.3666330645" y="693.7576612903"/>
+			<point x="352.4780577957" y="705"/>
+			<point x="317.3077956989" y="705" type="curve" smooth="yes"/>
+			<point x="275.9345430108" y="705"/>
+			<point x="243.5699932796" y="704.5"/>
+			<point x="215.5525873656" y="701.9192204301" type="curve"/>
+			<point x="219.738172043" y="665.0240255376"/>
+			<point x="221.4237567204" y="629.2336357527"/>
+			<point x="221.4237567204" y="591.0480510753" type="curve" smooth="yes"/>
+			<point x="221.4237567204" y="511.5828629032" type="line"/>
+			<point x="235.5132392473" y="361.4648185484"/>
+			<point x="241.5699932796" y="306.5849462366"/>
+			<point x="253.7315524194" y="294.4233870968" type="curve" smooth="yes"/>
+			<point x="263.1835013441" y="284.971438172"/>
+			<point x="278.6922043011" y="279.5194892473"/>
+			<point x="301.1288306452" y="279.5194892473" type="curve"/>
+		</contour>
+		<component base="period"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+		</dict>
+	</lib>
+</glyph>
