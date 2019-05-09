@@ -24,6 +24,14 @@ https://twitter.com/arkotypeco/status/1121994178785882113
 
 [https://twitter.com/arkotypeco/status/1121994178785882113](https://twitter.com/arkotypeco/status/1121994178785882113)
 
+**Grainy Colors**
+
+Beautiful [illustrations by Elliot Salazar](https://www.elliotsalazar.com/#/trip-sitting-tips/):
+
+![](assets/2019-05-09-15-45-27.png)
+
+(If this graininess were applied to a glowing/moving gradient, that would be suuuuper cool)
+
 ## “Weird” design
 
 ![](assets/recursive-minisite-inspo-3.png)
@@ -105,6 +113,12 @@ https://twitter.com/zachlieberman/status/1108153597945171969
 [https://twitter.com/zachlieberman/status/1108153597945171969](https://twitter.com/zachlieberman/status/1108153597945171969)
 
 ![](assets/2019-05-09-12-22-54.png)
+
+\*\*EnFont Terrible
+
+What an amazing type experiment! https://enfont-terrible.glitch.me/
+
+![](assets/2019-05-09-14-50-14.png)
 
 ## Risography
 
