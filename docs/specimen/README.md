@@ -17,3 +17,12 @@ What if we allowed people to write their own messages with glyphs from Recursive
 This could follow a simplified [English letter frequency](https://norvig.com/mayzner.html) to ensure that there were more copies of the most-frequent letters.
 
 ![](assets/2019-05-10-16-45-31.png)
+
+**Random "badges"**
+
+![](assets/2019-05-10-17-31-25.png)
+
+- One inspired by Milton Glaser's I ♥ NY design: `I ←→ VFs`
+- `I ←→ VFs`, but in a spectrum of weights, to show the "variable fonts" idea
+- "RECURSIVE MONO&SANS" set out in fun ways
+- The Noordzij Cube with wght, slnt, & xprn (I still need to mock this up to know how well it would actually work)
