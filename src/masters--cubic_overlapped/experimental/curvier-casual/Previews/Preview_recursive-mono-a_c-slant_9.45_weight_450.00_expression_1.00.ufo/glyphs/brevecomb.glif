@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="brevecomb" format="2">
+	<unicode hex="0306"/>
+	<outline>
+		<contour>
+			<point x="-122.7" y="801.7" type="curve"/>
+			<point x="-139.3" y="800"/>
+			<point x="-154.5" y="795.4"/>
+			<point x="-165.7" y="786.6" type="curve"/>
+			<point x="-172.1" y="781.4"/>
+			<point x="-173.4" y="772"/>
+			<point x="-168.4" y="758.4" type="curve" smooth="yes"/>
+			<point x="-142.2" y="687.2"/>
+			<point x="-86.7" y="647"/>
+			<point x="-4" y="647" type="curve" smooth="yes"/>
+			<point x="0" y="647" type="line"/>
+			<point x="28.6" y="647"/>
+			<point x="43.5" y="680.5"/>
+			<point x="40.2" y="710" type="curve"/>
+			<point x="-56" y="710"/>
+			<point x="-100.7" y="729.9"/>
+		</contour>
+		<contour>
+			<point x="122.7" y="801.7" type="curve"/>
+			<point x="100.7" y="729.9"/>
+			<point x="56" y="710"/>
+			<point x="-40.2" y="710" type="curve"/>
+			<point x="-43.5" y="680.5"/>
+			<point x="-28.6" y="647"/>
+			<point x="0" y="647" type="curve"/>
+			<point x="4" y="647" type="line" smooth="yes"/>
+			<point x="86.7" y="647"/>
+			<point x="142.2" y="687.2"/>
+			<point x="168.4" y="758.4" type="curve" smooth="yes"/>
+			<point x="173.4" y="772"/>
+			<point x="172.1" y="781.4"/>
+			<point x="165.7" y="786.6" type="curve"/>
+			<point x="154.5" y="795.4"/>
+			<point x="139.3" y="800"/>
+		</contour>
+	</outline>
+	<anchor name="_top" x="0" y="539.2"/>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+		</dict>
+	</lib>
+</glyph>
