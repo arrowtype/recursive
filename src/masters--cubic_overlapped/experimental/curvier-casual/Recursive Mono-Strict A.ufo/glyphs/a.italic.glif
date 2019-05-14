@@ -64,7 +64,9 @@
 			<point x="440" y="29"/>
 			<point x="479" y="0"/>
 			<point x="541" y="0" type="curve" smooth="yes"/>
-			<point x="554" y="0" type="line" smooth="yes"/>
+			<point x="545" y="0"/>
+			<point x="547" y="0"/>
+			<point x="554" y="0" type="curve" smooth="yes"/>
 			<point x="561" y="0"/>
 			<point x="565" y="3"/>
 			<point x="565" y="11" type="curve"/>
@@ -162,6 +164,8 @@
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.yLUoZ7nXTi</key>
 			<integer>0</integer>
+			<key>public.markColor</key>
+			<string>0,0.99216,0.03137,1</string>
 		</dict>
 	</lib>
 </glyph>

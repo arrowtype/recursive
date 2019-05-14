@@ -19,22 +19,6 @@
 			<point x="561" y="450" type="curve" smooth="yes"/>
 		</contour>
 		<contour>
-			<point x="538" y="664" type="curve"/>
-			<point x="527" y="618"/>
-			<point x="533" y="643"/>
-			<point x="514" y="569" type="curve"/>
-			<point x="512" y="560" type="line"/>
-			<point x="552" y="560"/>
-			<point x="600" y="560"/>
-			<point x="637" y="560" type="curve" smooth="yes"/>
-			<point x="645" y="560"/>
-			<point x="648" y="564"/>
-			<point x="650" y="571" type="curve"/>
-			<point x="659" y="607" type="line" smooth="yes"/>
-			<point x="668" y="643"/>
-			<point x="627" y="678"/>
-		</contour>
-		<contour>
 			<point x="277" y="585" type="curve" smooth="yes"/>
 			<point x="211" y="328"/>
 			<point x="145" y="45"/>
@@ -42,22 +26,29 @@
 			<point x="83" y="-197"/>
 			<point x="87" y="-200"/>
 			<point x="93" y="-200" type="curve" smooth="yes"/>
-			<point x="139" y="-200"/>
-			<point x="184.6642335766" y="-200"/>
-			<point x="231" y="-200" type="curve"/>
+			<point x="231" y="-200" type="line"/>
 			<point x="239" y="-167"/>
 			<point x="248" y="-133"/>
 			<point x="256" y="-100" type="curve"/>
 			<point x="310" y="114"/>
-			<point x="363.562435268" y="330.8000170328"/>
+			<point x="364" y="331"/>
 			<point x="418" y="545" type="curve"/>
 			<point x="434" y="609"/>
 			<point x="454" y="630"/>
-			<point x="514" y="630" type="curve"/>
-			<point x="560" y="630"/>
-			<point x="605" y="622"/>
-			<point x="639" y="607" type="curve"/>
-			<point x="659" y="607" type="line"/>
+			<point x="512" y="630" type="curve"/>
+			<point x="518" y="630"/>
+			<point x="524" y="630"/>
+			<point x="529" y="628" type="curve"/>
+			<point x="524" y="608"/>
+			<point x="519" y="589"/>
+			<point x="514" y="569" type="curve"/>
+			<point x="512" y="560" type="line"/>
+			<point x="554" y="560"/>
+			<point x="595" y="560"/>
+			<point x="637" y="560" type="curve" smooth="yes"/>
+			<point x="645" y="560"/>
+			<point x="648" y="564"/>
+			<point x="650" y="571" type="curve" smooth="yes"/>
 			<point x="669" y="648"/>
 			<point x="677" y="677"/>
 			<point x="688" y="722" type="curve"/>
@@ -82,7 +73,7 @@
 	<guideline x="332" y="0" angle="75.96" identifier="GK5KkTUlHx"/>
 	<guideline x="382" y="0" angle="75.96" identifier="6wXkto2vYY"/>
 	<guideline x="432" y="0" angle="75.96" identifier="EXo0ODMR34"/>
-	<guideline x="482" y="0" angle="75.96" identifier="69f3t7Jjlh"/>
+	<guideline x="670" y="750" angle="75.96" identifier="69f3t7Jjlh"/>
 	<guideline x="532" y="0" angle="75.96" identifier="0GCFpkl2vy"/>
 	<guideline x="-68" y="-250" angle="0" identifier="n5yzqMaZEY"/>
 	<guideline x="-68" y="-200" angle="0" identifier="QVlXzUoDpr"/>
@@ -247,7 +238,7 @@
 			<key>com.typemytype.robofont.guideline.magnetic.xckPDTytKF</key>
 			<integer>0</integer>
 			<key>public.markColor</key>
-			<string>0.5133,1,0.9066,1</string>
+			<string>0,0.99216,0.03137,1</string>
 		</dict>
 	</lib>
 </glyph>
