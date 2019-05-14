@@ -5,14 +5,14 @@
 		<contour>
 			<point x="248" y="-10" type="curve" smooth="yes"/>
 			<point x="325" y="-10"/>
-			<point x="384" y="33"/>
+			<point x="385" y="31"/>
 			<point x="437" y="97" type="curve" smooth="yes"/>
 			<point x="454" y="118"/>
 			<point x="464" y="142"/>
 			<point x="457" y="163" type="curve"/>
-			<point x="381" y="76"/>
+			<point x="381" y="74"/>
 			<point x="322" y="37"/>
-			<point x="258" y="37" type="curve" smooth="yes"/>
+			<point x="253" y="37" type="curve" smooth="yes"/>
 			<point x="198" y="37"/>
 			<point x="159" y="71"/>
 			<point x="159" y="143" type="curve" smooth="yes"/>
@@ -40,13 +40,13 @@
 			<point x="149" y="-154"/>
 			<point x="109" y="-133" type="curve"/>
 			<point x="97" y="-133" type="line"/>
-			<point x="97" y="-146"/>
-			<point x="97" y="-158"/>
-			<point x="97" y="-171" type="curve" smooth="yes"/>
-			<point x="97" y="-175"/>
-			<point x="98" y="-177"/>
-			<point x="100" y="-179" type="curve" smooth="yes"/>
-			<point x="117" y="-196"/>
+			<point x="97" y="-145.3157894737"/>
+			<point x="97" y="-156.6842105263"/>
+			<point x="97" y="-169" type="curve" smooth="yes"/>
+			<point x="97" y="-173"/>
+			<point x="98" y="-175"/>
+			<point x="100" y="-177" type="curve" smooth="yes"/>
+			<point x="117" y="-194"/>
 			<point x="180" y="-210"/>
 			<point x="256" y="-210" type="curve" smooth="yes"/>
 			<point x="408" y="-210"/>
@@ -153,6 +153,8 @@
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.tpmOGJ6t3n</key>
 			<integer>0</integer>
+			<key>public.markColor</key>
+			<string>0,0.99216,0.03137,1</string>
 		</dict>
 	</lib>
 </glyph>
