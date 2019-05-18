@@ -8,9 +8,7 @@
 			<point x="521" y="550"/>
 			<point x="413" y="550"/>
 			<point x="369" y="550" type="curve"/>
-			<point x="341" y="356"/>
-			<point x="298" y="70"/>
-			<point x="284" y="-21" type="curve" smooth="yes"/>
+			<point x="284" y="-21" type="line"/>
 			<point x="281" y="-44"/>
 			<point x="273" y="-50"/>
 			<point x="248" y="-50" type="curve" smooth="yes"/>
@@ -22,10 +20,8 @@
 			<point x="274" y="-250" type="line" smooth="yes"/>
 			<point x="387" y="-250"/>
 			<point x="456" y="-182"/>
-			<point x="477" y="-66" type="curve" smooth="yes"/>
-			<point x="519" y="159"/>
-			<point x="551" y="346"/>
-			<point x="582" y="534" type="curve" smooth="yes"/>
+			<point x="477" y="-66" type="curve"/>
+			<point x="582" y="534" type="line"/>
 			<point x="584" y="544"/>
 			<point x="579" y="550"/>
 		</contour>
@@ -56,6 +52,7 @@
 		</contour>
 	</outline>
 	<anchor name="top" x="296" y="561"/>
+	<guideline x="28" y="-200" angle="0" identifier="CEQTIRz23A"/>
 	<lib>
 		<dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
