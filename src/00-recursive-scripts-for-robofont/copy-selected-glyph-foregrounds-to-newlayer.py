@@ -5,7 +5,7 @@ newLayer = AskString('Layer to copy all existing glyphs to, e.g. "overlap"')
 
 f = CurrentFont()
 
-glyphsToCopyToNewLayer = f.selectedGlyphNames()
+glyphsToCopyToNewLayer = f.selectedGlyphNames
 
 for name in glyphsToCopyToNewLayer:
     for font in AllFonts():
