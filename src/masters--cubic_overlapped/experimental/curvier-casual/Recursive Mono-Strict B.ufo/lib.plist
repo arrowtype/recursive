@@ -7,6 +7,7 @@
 			<dict>
 				<key>ascending</key>
 				<array>
+					<string>space</string>
 					<string>uni00A0</string>
 					<string>A</string>
 					<string>Agrave</string>
@@ -442,7 +443,6 @@
 					<string>dotlessij</string>
 					<string>flatg</string>
 					<string>ringacute</string>
-					<string>space</string>
 					<string>gravecomb.case</string>
 					<string>acutecomb.case</string>
 					<string>circumflexcomb.case</string>
@@ -462,6 +462,26 @@
 					<string>ogonekcomb.case</string>
 					<string>ringacute.case</string>
 					<string>dollar.lower</string>
+					<string>a.italic</string>
+					<string>c.italic</string>
+					<string>d.italic</string>
+					<string>f.italic</string>
+					<string>g.italic</string>
+					<string>h.italic</string>
+					<string>i.italic</string>
+					<string>j.italic</string>
+					<string>k.italic</string>
+					<string>l.italic</string>
+					<string>m.italic</string>
+					<string>n.italic</string>
+					<string>r.italic</string>
+					<string>s.italic</string>
+					<string>u.italic</string>
+					<string>v.italic</string>
+					<string>w.italic</string>
+					<string>x.italic</string>
+					<string>y.italic</string>
+					<string>z.italic</string>
 					<string>a.roman</string>
 					<string>f.roman</string>
 					<string>g.roman</string>
@@ -469,16 +489,21 @@
 					<string>l.roman</string>
 					<string>r.roman</string>
 					<string>y.roman</string>
-					<string>a.italic</string>
-					<string>f.italic</string>
-					<string>g.italic</string>
-					<string>i.italic</string>
-					<string>l.italic</string>
-					<string>r.italic</string>
-					<string>y.italic</string>
+					<string>a.curvy</string>
+					<string>h.curvy</string>
+					<string>i.curvy</string>
+					<string>l.curvy</string>
+					<string>o.curvy</string>
 					<string>a.ss01</string>
 					<string>g.ss01</string>
+					<string>n.italic2</string>
 					<string>Z.noserif</string>
+					<string>e.simpler</string>
+					<string>a.curve_tail</string>
+					<string>a.italic_curl</string>
+					<string>k.italic_kinked</string>
+					<string>r.italic_square</string>
+					<string>e.replaced_with_italic</string>
 					<string>e.replaced_with_romaner</string>
 				</array>
 				<key>type</key>
@@ -517,6 +542,7 @@
 		<integer>1</integer>
 		<key>public.glyphOrder</key>
 		<array>
+			<string>space</string>
 			<string>uni00A0</string>
 			<string>A</string>
 			<string>Agrave</string>
@@ -952,7 +978,6 @@
 			<string>dotlessij</string>
 			<string>flatg</string>
 			<string>ringacute</string>
-			<string>space</string>
 			<string>gravecomb.case</string>
 			<string>acutecomb.case</string>
 			<string>circumflexcomb.case</string>
@@ -972,6 +997,26 @@
 			<string>ogonekcomb.case</string>
 			<string>ringacute.case</string>
 			<string>dollar.lower</string>
+			<string>a.italic</string>
+			<string>c.italic</string>
+			<string>d.italic</string>
+			<string>f.italic</string>
+			<string>g.italic</string>
+			<string>h.italic</string>
+			<string>i.italic</string>
+			<string>j.italic</string>
+			<string>k.italic</string>
+			<string>l.italic</string>
+			<string>m.italic</string>
+			<string>n.italic</string>
+			<string>r.italic</string>
+			<string>s.italic</string>
+			<string>u.italic</string>
+			<string>v.italic</string>
+			<string>w.italic</string>
+			<string>x.italic</string>
+			<string>y.italic</string>
+			<string>z.italic</string>
 			<string>a.roman</string>
 			<string>f.roman</string>
 			<string>g.roman</string>
@@ -979,83 +1024,22 @@
 			<string>l.roman</string>
 			<string>r.roman</string>
 			<string>y.roman</string>
-			<string>a.italic</string>
-			<string>f.italic</string>
-			<string>g.italic</string>
-			<string>i.italic</string>
-			<string>l.italic</string>
-			<string>r.italic</string>
-			<string>y.italic</string>
-			<string>a.ss01</string>
-			<string>g.ss01</string>
-			<string>Z.noserif</string>
-			<string>e.replaced_with_romaner</string>
-			<string>J.evencut</string>
-			<string>B.nokinks</string>
-			<string>P.nokinks</string>
-			<string>R.nokinks</string>
-			<string>c.evencut</string>
-			<string>d.evencut</string>
-			<string>e.evencut</string>
-			<string>n.evencut</string>
-			<string>o.evencut</string>
-			<string>u.evencut</string>
-			<string>n.evencuts</string>
-			<string>r.inktraps</string>
-			<string>g.nokinks</string>
-			<string>e.romaner</string>
-			<string>k.smoother</string>
-			<string>x.smoother</string>
-			<string>y.smoother</string>
-			<string>a.smoothtraps</string>
-			<string>n.smoothtraps</string>
-			<string>c.ss01</string>
-			<string>f.ss01</string>
-			<string>i.ss01</string>
-			<string>l.ss01</string>
-			<string>r.ss01</string>
-			<string>two.nokinks</string>
-			<string>six.nokinks</string>
-			<string>eight.nokinks</string>
-			<string>nine.nokinks</string>
-			<string>uni0300</string>
-			<string>uni0301</string>
-			<string>uni0302</string>
-			<string>uni0306</string>
-			<string>uni030C</string>
-			<string>uni0326</string>
-			<string>uni0327</string>
-			<string>uni0300.case</string>
-			<string>uni0301.case</string>
-			<string>uni0302.case</string>
-			<string>uni030A.case</string>
-			<string>uni0327.case</string>
-			<string>e.simpler</string>
-			<string>n.simpler</string>
-			<string>n.italic</string>
-			<string>n.italic2</string>
 			<string>a.curvy</string>
-			<string>o.curvy</string>
 			<string>h.curvy</string>
 			<string>i.curvy</string>
 			<string>l.curvy</string>
+			<string>o.curvy</string>
+			<string>a.ss01</string>
+			<string>g.ss01</string>
+			<string>n.italic2</string>
+			<string>Z.noserif</string>
+			<string>e.simpler</string>
 			<string>a.curve_tail</string>
-			<string>c.italic</string>
-			<string>d.italic</string>
-			<string>h.italic</string>
-			<string>j.italic</string>
-			<string>k.italic</string>
-			<string>m.italic</string>
-			<string>s.italic</string>
-			<string>u.italic</string>
-			<string>v.italic</string>
-			<string>w.italic</string>
-			<string>x.italic</string>
-			<string>z.italic</string>
+			<string>a.italic_curl</string>
 			<string>k.italic_kinked</string>
 			<string>r.italic_square</string>
-			<string>a.italic_curl</string>
 			<string>e.italic</string>
+			<string>e.replaced_with_romaner</string>
 		</array>
 	</dict>
 </plist>
