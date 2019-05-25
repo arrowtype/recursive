@@ -7,6 +7,7 @@
 			<dict>
 				<key>ascending</key>
 				<array>
+					<string>space</string>
 					<string>A</string>
 					<string>B</string>
 					<string>C</string>
@@ -70,12 +71,39 @@
 					<string>eight</string>
 					<string>nine</string>
 					<string>a.italic</string>
+					<string>c.italic</string>
+					<string>d.italic</string>
+					<string>e.italic</string>
 					<string>f.italic</string>
 					<string>g.italic</string>
+					<string>h.italic</string>
 					<string>i.italic</string>
+					<string>j.italic</string>
+					<string>k.italic</string>
 					<string>l.italic</string>
+					<string>m.italic</string>
+					<string>n.italic</string>
 					<string>r.italic</string>
+					<string>s.italic</string>
+					<string>u.italic</string>
+					<string>v.italic</string>
+					<string>w.italic</string>
+					<string>x.italic</string>
 					<string>y.italic</string>
+					<string>z.italic</string>
+					<string>a.roman</string>
+					<string>f.roman</string>
+					<string>g.roman</string>
+					<string>i.roman</string>
+					<string>l.roman</string>
+					<string>r.roman</string>
+					<string>y.roman</string>
+					<string>k.italic_kinked</string>
+					<string>x.italic_kinked</string>
+					<string>r.curve</string>
+					<string>a.curve_tail</string>
+					<string>a.italic_curl</string>
+					<string>r.italic_square</string>
 				</array>
 				<key>type</key>
 				<string>glyphList</string>
@@ -120,6 +148,7 @@
 		</array>
 		<key>public.glyphOrder</key>
 		<array>
+			<string>space</string>
 			<string>A</string>
 			<string>B</string>
 			<string>C</string>
@@ -183,24 +212,25 @@
 			<string>eight</string>
 			<string>nine</string>
 			<string>a.italic</string>
-			<string>f.italic</string>
-			<string>g.italic</string>
-			<string>i.italic</string>
-			<string>l.italic</string>
-			<string>r.italic</string>
-			<string>y.italic</string>
 			<string>c.italic</string>
 			<string>d.italic</string>
+			<string>e.italic</string>
+			<string>f.italic</string>
+			<string>g.italic</string>
 			<string>h.italic</string>
+			<string>i.italic</string>
 			<string>j.italic</string>
 			<string>k.italic</string>
+			<string>l.italic</string>
 			<string>m.italic</string>
 			<string>n.italic</string>
+			<string>r.italic</string>
 			<string>s.italic</string>
 			<string>u.italic</string>
 			<string>v.italic</string>
 			<string>w.italic</string>
 			<string>x.italic</string>
+			<string>y.italic</string>
 			<string>z.italic</string>
 			<string>a.roman</string>
 			<string>f.roman</string>
@@ -211,11 +241,10 @@
 			<string>y.roman</string>
 			<string>k.italic_kinked</string>
 			<string>x.italic_kinked</string>
+			<string>r.curve</string>
 			<string>a.curve_tail</string>
 			<string>a.italic_curl</string>
 			<string>r.italic_square</string>
-			<string>e.italic</string>
-			<string>space</string>
 		</array>
 	</dict>
 </plist>
