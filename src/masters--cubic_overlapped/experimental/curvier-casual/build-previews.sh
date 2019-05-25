@@ -135,6 +135,9 @@ italicName="$newFamilyNameVersioned-Italic.ttf"
 cp $ttfRoman "$fontsFolder/$romanName"
 cp $ttfItalic "$fontsFolder/$italicName"
 
+cp $ttfRoman "fonts/recursive-betas-for-code/$romanName"
+cp $ttfItalic "fonts/recursive-betas-for-code/$italicName"
+
 echo "-----------------------------"
 echo "Roman copied to $fontsFolder/$romanName"
 echo "Italic copied to $fontsFolder/$italicName"
