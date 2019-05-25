@@ -12,13 +12,17 @@
 # EDIT THESE VARIABLES AS NEEDED
 
 # The files you're building from
-ufoRoman="src/masters--cubic_overlapped/experimental/curvier-casual/Previews/Preview_recursive-mono-slant_0.00_weight_450.00_expression_0.00.ufo"
-ufoItalic="src/masters--cubic_overlapped/experimental/curvier-casual/Previews/Preview_recursive-mono-slant_9.45_weight_450.00_expression_1.00.ufo"
+ufoRoman="src/masters--cubic_overlapped/experimental/curvier-casual/Previews/Preview_recursive-mono-a_b-slant_0.00_weight_450.00_expression_0.00.ufo"
+ufoItalic="src/masters--cubic_overlapped/experimental/curvier-casual/Previews/Preview_recursive-mono-a_b-slant_9.45_weight_450.00_expression_0.00.ufo"
 
-# Get these from the font info
-oldFamilyName="recursive-mono"
+# These might be weird – get them from the font info or from the name table
+oldFamilyName="recursive-mono-a_b"
 oldRomanStyleName="slant_0.00_weight_450.00_expression_0.00"
-oldItalicStyleName="slant_9.45_weight_450.00_expression_1.00"
+oldItalicStyleName="slant_9.45_weight_450.00_expression_0.00"
+
+
+# Give a new family name
+newFamilyName="IterativeBetaV"
 
 # your system fonts folder
 fontsFolder="/Users/stephennixon/Library/Fonts"
@@ -26,7 +30,7 @@ fontsFolder="/Users/stephennixon/Library/Fonts"
 # the current source dir which is holding the "Previews" folder
 sourceDir="src/masters--cubic_overlapped/experimental/curvier-casual"
 
-ufoDir="src/masters--cubic_overlapped/experimental/curvier-casual/Previews"
+ufoDir="$sourceDir/Previews"
 
 ttfDir="master_ttf"
 
@@ -39,12 +43,19 @@ source venv/bin/activate
 version=$1
 rm -rf master_ttf
 
+echo ----------------------
+
 ttfItalic=${ufoItalic/"$ufoDir"/"$ttfDir"}
 ttfItalic=${ttfItalic/"ufo"/"ttf"}
+
+echo TTF Italic will be $ttfItalic 
 
 ttfRoman=${ufoRoman/"$ufoDir"/"$ttfDir"}
 ttfRoman=${ttfRoman/"ufo"/"ttf"}
 
+echo TTF Roman will be $ttfRoman 
+
+echo ----------------------
 
 cp $sourceDir/features.fea $ufoRoman/features.fea
 cp $sourceDir/features.fea $ufoItalic/features.fea
@@ -64,39 +75,39 @@ fontmake -o ttf -u $ufoRoman
 
 fontmake -o ttf -u $ufoItalic
 
-# ---------------------------------------------------------------------------
-# freeze ss01 into italic font to activate true-italic characters by default
+# # ---------------------------------------------------------------------------
+# # freeze ss01 into italic font to activate true-italic characters by default
 
-# echo $ttfItalic
+echo $ttfItalic
 
-# python src/build-scripts/pyftfeatfreeze.py -f 'ss01' $ttfItalic
+python src/build-scripts/pyftfeatfreeze.py -f 'ss01' $ttfItalic
 
-# featFreeze=${ttfItalic/".ttf"/".ttf.featfreeze.otf"}
+featFreeze=${ttfItalic/".ttf"/".ttf.featfreeze.otf"}
 
-# echo $featFreeze
+echo $featFreeze
 
-# mv $featFreeze $ttfItalic
+mv $featFreeze $ttfItalic
 
-# ---------------------------------------------------------------------------
-# update name tables to have desired naming
+# # ---------------------------------------------------------------------------
+# # update name tables to have desired naming
 
 ttx -t name $ttfRoman
 ttx -t name $ttfItalic
 
-newFamilyName=IterativeBetaV${version}
+newFamilyNameVersioned="${newFamilyName}${version}"
 
-sed  -i "" -e "s/${oldFamilyName}/${newFamilyName}/g" ${ttfRoman/".ttf"/".ttx"} 
+sed  -i "" -e "s/${oldFamilyName}/${newFamilyNameVersioned}/g" ${ttfRoman/".ttf"/".ttx"} 
 sed  -i "" -e "s/${oldRomanStyleName}/Regular/g" ${ttfRoman/".ttf"/".ttx"} 
 sed  -i "" -e "s/-${oldRomanStyleName}/-Regular/g" ${ttfRoman/".ttf"/".ttx"} 
 sed  -i "" -e "s/ ${oldRomanStyleName}/ Regular/g" ${ttfRoman/".ttf"/".ttx"} 
-sed  -i "" -e "s/${newFamilyName} Regular/${newFamilyName}/g" ${ttfRoman/".ttf"/".ttx"} 
+sed  -i "" -e "s/${newFamilyNameVersioned} Regular/${newFamilyNameVersioned}/g" ${ttfRoman/".ttf"/".ttx"} 
 sed  -i "" -e "s/0.000/0.${version}/g" ${ttfRoman/".ttf"/".ttx"} 
 
-sed  -i "" -e "s/${oldFamilyName}/${newFamilyName}/g" ${ttfItalic/".ttf"/".ttx"} 
+sed  -i "" -e "s/${oldFamilyName}/${newFamilyNameVersioned}/g" ${ttfItalic/".ttf"/".ttx"} 
 sed  -i "" -e "s/${oldItalicStyleName}/Italic/g" ${ttfItalic/".ttf"/".ttx"} 
 sed  -i "" -e "s/-${oldItalicStyleName}/-Italic/g" ${ttfItalic/".ttf"/".ttx"} 
 sed  -i "" -e "s/ ${oldItalicStyleName}/ Italic/g" ${ttfItalic/".ttf"/".ttx"} 
-sed  -i "" -e "s/${newFamilyName} Italic/${newFamilyName}/g" ${ttfRoman/".ttf"/".ttx"} 
+sed  -i "" -e "s/${newFamilyNameVersioned} Italic/${newFamilyNameVersioned}/g" ${ttfRoman/".ttf"/".ttx"} 
 sed  -i "" -e "s/0.000/0.${version}/g" ${ttfItalic/".ttf"/".ttx"} 
 
 # ---------------------------------------------------------------------------
@@ -118,8 +129,12 @@ mv ${ttfItalic/".ttf"/"#1.ttf"} $ttfItalic
 # ---------------------------------------------------------------------------
 # copy to system fonts folder
 
-cp $ttfRoman $fontsFolder/${ttfRoman/"master_ttf/"/""}
-cp $ttfItalic $fontsFolder/${ttfItalic/"master_ttf/"/""}
+romanName="$newFamilyNameVersioned-Roman.ttf"
+italicName="$newFamilyNameVersioned-Italic.ttf"
+
+cp $ttfRoman "$fontsFolder/$romanName"
+cp $ttfItalic "$fontsFolder/$italicName"
 
 echo "-----------------------------"
-echo "Fonts copied to $fontsFolder"
+echo "Roman copied to $fontsFolder/$romanName"
+echo "Italic copied to $fontsFolder/$italicName"
