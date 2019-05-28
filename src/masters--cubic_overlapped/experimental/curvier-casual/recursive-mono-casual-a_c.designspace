@@ -20,4 +20,26 @@
       </location>
     </source>
   </sources>
+  <lib>
+    <dict>
+      <key>com.letterror.skateboard.interactionSources</key>
+      <dict>
+        <key>horizontal</key>
+        <array/>
+        <key>ignore</key>
+        <array/>
+        <key>vertical</key>
+        <array>
+          <string>weight</string>
+        </array>
+      </dict>
+      <key>com.letterror.skateboard.previewLocation</key>
+      <dict>
+        <key>weight</key>
+        <real>800.0</real>
+      </dict>
+      <key>com.letterror.skateboard.previewText</key>
+      <string>obopo</string>
+    </dict>
+  </lib>
 </designspace>
