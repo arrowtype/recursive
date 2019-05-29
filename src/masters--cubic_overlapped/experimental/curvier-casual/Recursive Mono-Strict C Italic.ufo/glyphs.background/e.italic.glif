@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="e" format="2">
+<glyph name="e.italic" format="2">
 	<advance width="600"/>
 	<outline>
 		<contour>
@@ -60,23 +60,5 @@
 			<point x="618" y="472"/>
 			<point x="528" y="570"/>
 		</contour>
-		<contour>
-			<point x="219" y="217" type="line"/>
-			<point x="264" y="233" type="line"/>
-			<point x="247" y="277" type="line"/>
-			<point x="228" y="273" type="line"/>
-		</contour>
 	</outline>
-	<lib>
-		<dict>
-			<key>com.typemytype.robofont.Image.Brightness</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.Image.Contrast</key>
-			<integer>1</integer>
-			<key>com.typemytype.robofont.Image.Saturation</key>
-			<integer>1</integer>
-			<key>com.typemytype.robofont.Image.Sharpness</key>
-			<real>0.4</real>
-		</dict>
-	</lib>
 </glyph>
