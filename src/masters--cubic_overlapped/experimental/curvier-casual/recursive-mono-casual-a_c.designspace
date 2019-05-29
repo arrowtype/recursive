@@ -1,9 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <designspace format="4.0">
   <axes>
-    <axis tag="wght" name="weight" minimum="800" maximum="1100" default="800"/>
+    <axis tag="wght" name="weight" minimum="300" maximum="1100" default="800"/>
   </axes>
   <sources>
+    <source filename="Recursive Mono-Casual a.ufo" familyname="Recursive Mono" stylename="Casual B">
+      <location>
+        <dimension name="weight" xvalue="300"/>
+      </location>
+    </source>
     <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B">
       <location>
         <dimension name="weight" xvalue="800"/>
@@ -31,10 +36,10 @@
       <key>com.letterror.skateboard.previewLocation</key>
       <dict>
         <key>weight</key>
-        <real>765.6763347022587</real>
+        <real>800.0</real>
       </dict>
       <key>com.letterror.skateboard.previewText</key>
-      <string>free</string>
+      <string>obopo</string>
     </dict>
   </lib>
 </designspace>
