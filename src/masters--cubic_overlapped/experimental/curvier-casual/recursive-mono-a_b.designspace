@@ -234,10 +234,11 @@
         <key>horizontal</key>
         <array>
           <string>slant</string>
-          <string>expression</string>
         </array>
         <key>ignore</key>
-        <array/>
+        <array>
+          <string>expression</string>
+        </array>
         <key>vertical</key>
         <array>
           <string>weight</string>
@@ -246,14 +247,14 @@
       <key>com.letterror.skateboard.previewLocation</key>
       <dict>
         <key>expression</key>
-        <real>-0.23723668175487464</real>
+        <real>1.379</real>
         <key>slant</key>
-        <real>-3.3308030118384395</real>
+        <real>14.378774414062498</real>
         <key>weight</key>
-        <real>178.59743968172484</real>
+        <real>700.0</real>
       </dict>
       <key>com.letterror.skateboard.previewText</key>
-      <string>r</string>
+      <string>/h.italic /a.italic /n.italic /g.italic t/i.italic /m.italic /e.italic</string>
     </dict>
   </lib>
 </designspace>
