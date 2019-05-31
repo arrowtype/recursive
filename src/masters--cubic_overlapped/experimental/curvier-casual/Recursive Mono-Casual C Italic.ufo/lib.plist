@@ -5,36 +5,10 @@
 		<key>com.defcon.sortDescriptor</key>
 		<array>
 			<dict>
-				<key>ascending</key>
-				<array>
-					<string>space</string>
-					<string>a</string>
-					<string>b</string>
-					<string>e</string>
-					<string>f</string>
-					<string>g</string>
-					<string>h</string>
-					<string>m</string>
-					<string>n</string>
-					<string>o</string>
-					<string>r</string>
-					<string>t</string>
-					<string>u</string>
-					<string>a.italic</string>
-					<string>e.italic</string>
-					<string>f.italic</string>
-					<string>g.italic</string>
-					<string>h.italic</string>
-					<string>m.italic</string>
-					<string>n.italic</string>
-					<string>r.italic</string>
-					<string>h.replaced_with_wavy</string>
-					<string>m.replaced_with_wavy</string>
-					<string>n.replaced_with_wavy</string>
-					<string>t.replaced_with_wavy</string>
-				</array>
+				<key>allowPseudoUnicode</key>
+				<true/>
 				<key>type</key>
-				<string>glyphList</string>
+				<string>cannedDesign</string>
 			</dict>
 		</array>
 		<key>com.typemytype.robofont.compileSettings.autohint</key>
@@ -82,6 +56,14 @@
 			<string>m.replaced_with_wavy</string>
 			<string>n.replaced_with_wavy</string>
 			<string>t.replaced_with_wavy</string>
+			<string>a.replaced_with_wavy</string>
+			<string>b.replaced_with_wavy</string>
+			<string>e.replaced_with_wavy</string>
+			<string>f.replaced_with_wavy</string>
+			<string>g.replaced_with_wavy</string>
+			<string>o.replaced_with_wavy</string>
+			<string>r.replaced_with_wavy</string>
+			<string>u.replaced_with_wavy</string>
 		</array>
 	</dict>
 </plist>
