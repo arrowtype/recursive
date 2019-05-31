@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8" ?>
 <designspace format="3">
     <axes>
         <axis default="0" maximum="1" minimum="0" name="expression" tag="XPRN" />
@@ -27,29 +27,29 @@
                 <dimension name="slant" xvalue="0" />
             </location>
         </source>
-
-        <source familyname="Recursive Mono" filename="mono/Recursive Mono-Gothic A.ufo" stylename="Gothic A">
+        
+        <source familyname="Recursive Mono" filename="mono/Recursive Mono-Strict A.ufo" stylename="Strict A">
             <location>
                 <dimension name="expression" xvalue="0" />
                 <dimension name="weight" xvalue="300" />
                 <dimension name="slant" xvalue="0" />
             </location>
         </source>
-        <source familyname="Recursive Mono" filename="mono/Recursive Mono-Gothic B.ufo" stylename="Gothic B">
+        <source familyname="Recursive Mono" filename="mono/Recursive Mono-Strict B.ufo" stylename="Strict B">
             <location>
                 <dimension name="expression" xvalue="0" />
                 <dimension name="weight" xvalue="800" />
                 <dimension name="slant" xvalue="0" />
             </location>
         </source>
-        <source familyname="Recursive Mono" filename="mono/Recursive Mono-Gothic C.ufo" stylename="Gothic C">
+        <source familyname="Recursive Mono" filename="mono/Recursive Mono-Strict C.ufo" stylename="Strict C">
             <location>
                 <dimension name="expression" xvalue="0" />
                 <dimension name="weight" xvalue="1100" />
                 <dimension name="slant" xvalue="0" />
             </location>
         </source>
-
+        
         <source familyname="Recursive Mono" filename="mono-sloped/Recursive Mono-Casual A Italic.ufo" stylename="Casual A Italic">
             <location>
                 <dimension name="expression" xvalue="1" />
@@ -71,35 +71,35 @@
                 <dimension name="slant" xvalue="14.04" />
             </location>
         </source>
-
-        <source familyname="Recursive Mono" filename="mono-sloped/Recursive Mono-Gothic A Italic.ufo" stylename="Gothic A Italic">
+        
+        <source familyname="Recursive Mono" filename="mono-sloped/Recursive Mono-Strict A Italic.ufo" stylename="Strict A Italic">
             <location>
                 <dimension name="expression" xvalue="0" />
                 <dimension name="weight" xvalue="300" />
                 <dimension name="slant" xvalue="14.04" />
             </location>
         </source>
-        <source familyname="Recursive Mono" filename="mono-sloped/Recursive Mono-Gothic B Italic.ufo" stylename="Gothic B Italic">
+        <source familyname="Recursive Mono" filename="mono-sloped/Recursive Mono-Strict B Italic.ufo" stylename="Strict B Italic">
             <location>
                 <dimension name="expression" xvalue="0" />
                 <dimension name="weight" xvalue="800" />
                 <dimension name="slant" xvalue="14.04" />
             </location>
         </source>
-        <source familyname="Recursive Mono" filename="mono-sloped/Recursive Mono-Gothic C Italic.ufo" stylename="Gothic C Italic">
+        <source familyname="Recursive Mono" filename="mono-sloped/Recursive Mono-Strict C Italic.ufo" stylename="Strict C Italic">
             <location>
                 <dimension name="expression" xvalue="0" />
                 <dimension name="weight" xvalue="1100" />
                 <dimension name="slant" xvalue="14.04" />
             </location>
         </source>
-
+        
     </sources>
-
-
+    
+    
     <instances>
-
-        <instance familyname="Recursive Mono" filename="instances/Recursive Mono-Gothic Regular.ufo" postscriptfontname="RecursiveMono-GothicRegular" stylemapfamilyname="Recursive Mono Gothic Regular" stylemapstylename="regular" stylename="Gothic Regular">
+        
+        <instance familyname="Recursive Mono" filename="instances/Recursive Mono-Strict Regular.ufo" postscriptfontname="RecursiveMono-StrictRegular" stylemapfamilyname="Recursive Mono Strict Regular" stylemapstylename="regular" stylename="Strict Regular">
             <location>
                 <dimension name="expression" xvalue="0" />
                 <dimension name="weight" xvalue="400" />
@@ -108,8 +108,8 @@
             <kerning />
             <info />
         </instance>
-
-        <instance familyname="Recursive Mono" filename="instances/Recursive Mono-Gothic Bold.ufo" postscriptfontname="RecursiveMono-GothicBold" stylemapfamilyname="Recursive Mono Gothic Bold" stylemapstylename="bold" stylename="Gothic Bold">
+        
+        <instance familyname="Recursive Mono" filename="instances/Recursive Mono-Strict Bold.ufo" postscriptfontname="RecursiveMono-StrictBold" stylemapfamilyname="Recursive Mono Strict Bold" stylemapstylename="bold" stylename="Strict Bold">
             <location>
                 <dimension name="expression" xvalue="0" />
                 <dimension name="weight" xvalue="700" />
@@ -118,7 +118,7 @@
             <kerning />
             <info />
         </instance>
-
+        
         <instance familyname="Recursive Mono" filename="instances/Recursive Mono-Casual Regular.ufo" postscriptfontname="RecursiveMono-CasualRegular" stylemapfamilyname="Recursive Mono Casual Regular" stylemapstylename="regular" stylename="Casual Regular">
             <location>
                 <dimension name="expression" xvalue="1" />
@@ -128,7 +128,7 @@
             <kerning />
             <info />
         </instance>
-
+        
         <instance familyname="Recursive Mono" filename="instances/Recursive Mono-Casual Bold.ufo" postscriptfontname="RecursiveMono-CasualBold" stylemapfamilyname="Recursive Mono Casual Bold" stylemapstylename="bold" stylename="Casual Bold">
             <location>
                 <dimension name="expression" xvalue="1" />
@@ -138,8 +138,8 @@
             <kerning />
             <info />
         </instance>
-
-        <instance familyname="Recursive Mono" filename="instances/Recursive Mono-Gothic Regular Italic.ufo" postscriptfontname="RecursiveMono-GothicRegular Italic" stylemapfamilyname="Recursive Mono Gothic Regular Italic" stylemapstylename="italic" stylename="Gothic Regular Italic">
+        
+        <instance familyname="Recursive Mono" filename="instances/Recursive Mono-Strict Regular Italic.ufo" postscriptfontname="RecursiveMono-StrictRegular Italic" stylemapfamilyname="Recursive Mono Strict Regular Italic" stylemapstylename="italic" stylename="Strict Regular Italic">
             <location>
                 <dimension name="expression" xvalue="0" />
                 <dimension name="weight" xvalue="400" />
@@ -148,8 +148,8 @@
             <kerning />
             <info />
         </instance>
-
-        <instance familyname="Recursive Mono" filename="instances/Recursive Mono-Gothic Bold Italic.ufo" postscriptfontname="RecursiveMono-GothicBold Italic" stylemapfamilyname="Recursive Mono Gothic Bold Italic" stylemapstylename="bold italic" stylename="Gothic Bold Italic">
+        
+        <instance familyname="Recursive Mono" filename="instances/Recursive Mono-Strict Bold Italic.ufo" postscriptfontname="RecursiveMono-StrictBold Italic" stylemapfamilyname="Recursive Mono Strict Bold Italic" stylemapstylename="bold italic" stylename="Strict Bold Italic">
             <location>
                 <dimension name="expression" xvalue="0" />
                 <dimension name="weight" xvalue="700" />
@@ -158,7 +158,7 @@
             <kerning />
             <info />
         </instance>
-
+        
         <instance familyname="Recursive Mono" filename="instances/Recursive Mono-Casual Regular Italic.ufo" postscriptfontname="RecursiveMono-CasualRegular Italic" stylemapfamilyname="Recursive Mono Casual Regular Italic" stylemapstylename="italic" stylename="Casual Regular Italic">
             <location>
                 <dimension name="expression" xvalue="1" />
@@ -168,7 +168,7 @@
             <kerning />
             <info />
         </instance>
-
+        
         <instance familyname="Recursive Mono" filename="instances/Recursive Mono-Casual Bold Italic.ufo" postscriptfontname="RecursiveMono-CasualBold Italic" stylemapfamilyname="Recursive Mono Casual Bold Italic" stylemapstylename="bold italic" stylename="Casual Bold Italic">
             <location>
                 <dimension name="expression" xvalue="1" />
@@ -178,9 +178,7 @@
             <kerning />
             <info />
         </instance>
-
-
-
-
+        
+        
     </instances>
 </designspace>
