@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Uring" format="2">
-	<unicode hex="016E"/>
 	<advance width="600"/>
 	<outline>
 		<component base="U"/>
-		<component base="ringcomb" xOffset="299" yOffset="143"/>
+		<component base="ringcomb" xOffset="299" yOffset="711"/>
 	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>1,0.8012,0.2928,1</string>
+		</dict>
+	</lib>
 </glyph>

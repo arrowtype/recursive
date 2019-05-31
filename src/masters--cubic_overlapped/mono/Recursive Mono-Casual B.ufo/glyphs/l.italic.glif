@@ -3,65 +3,58 @@
 	<advance width="600"/>
 	<outline>
 		<contour>
-			<point x="36" y="750" type="curve"/>
-			<point x="32" y="735"/>
-			<point x="30" y="715"/>
-			<point x="30" y="692" type="curve" smooth="yes"/>
-			<point x="30" y="625"/>
-			<point x="50" y="600"/>
-			<point x="73" y="600" type="curve" smooth="yes"/>
-			<point x="118" y="600"/>
-			<point x="156" y="618"/>
-			<point x="263" y="618" type="curve"/>
-			<point x="263" y="693"/>
-			<point x="269" y="760"/>
-			<point x="220" y="760" type="curve" smooth="yes"/>
-			<point x="157" y="760"/>
-			<point x="95" y="757"/>
-		</contour>
-		<contour>
-			<point x="354" y="728" type="curve" smooth="yes"/>
-			<point x="333" y="749"/>
-			<point x="283" y="760"/>
-			<point x="230" y="760" type="curve"/>
-			<point x="220" y="760" type="line"/>
-			<point x="220" y="155" type="line" smooth="yes"/>
-			<point x="220" y="81"/>
-			<point x="321" y="45"/>
-			<point x="414" y="63" type="curve"/>
-			<point x="379" y="106"/>
-			<point x="370" y="149"/>
-			<point x="370" y="215" type="curve" smooth="yes"/>
-			<point x="370" y="689" type="line" smooth="yes"/>
-			<point x="370" y="708"/>
-			<point x="367" y="715"/>
-		</contour>
-		<contour>
-			<point x="566" y="169" type="curve"/>
-			<point x="562" y="169" type="line"/>
-			<point x="511" y="147"/>
-			<point x="467" y="135"/>
-			<point x="399" y="135" type="curve" smooth="yes"/>
-			<point x="331" y="135"/>
-			<point x="296" y="157"/>
-			<point x="278" y="223" type="curve"/>
-			<point x="227" y="206"/>
-			<point x="220" y="181"/>
-			<point x="220" y="155" type="curve" smooth="yes"/>
-			<point x="220" y="81"/>
-			<point x="286" y="-10"/>
+			<point x="19" y="720" type="curve"/>
+			<point x="15" y="704"/>
+			<point x="11" y="679"/>
+			<point x="11" y="656" type="curve" smooth="yes"/>
+			<point x="11" y="582"/>
+			<point x="30" y="547"/>
+			<point x="58" y="547" type="curve" smooth="yes"/>
+			<point x="106" y="547"/>
+			<point x="131" y="601"/>
+			<point x="210" y="631" type="curve"/>
+			<point x="210" y="472"/>
+			<point x="210" y="314"/>
+			<point x="210" y="155" type="curve" smooth="yes"/>
+			<point x="210" y="81"/>
+			<point x="276" y="-10"/>
 			<point x="400" y="-10" type="curve" smooth="yes"/>
-			<point x="410" y="-10" type="line" smooth="yes"/>
-			<point x="498" y="-10"/>
-			<point x="528" y="10"/>
-			<point x="538" y="20" type="curve" smooth="yes"/>
-			<point x="556" y="38"/>
-			<point x="570" y="82"/>
-			<point x="570" y="131" type="curve" smooth="yes"/>
-			<point x="570" y="143"/>
-			<point x="569" y="156"/>
+			<point x="476" y="-10"/>
+			<point x="506" y="8"/>
+			<point x="525" y="27" type="curve" smooth="yes"/>
+			<point x="543" y="45"/>
+			<point x="560" y="82"/>
+			<point x="560" y="131" type="curve" smooth="yes"/>
+			<point x="560" y="143"/>
+			<point x="559" y="156"/>
+			<point x="556" y="169" type="curve"/>
+			<point x="550" y="169" type="line"/>
+			<point x="508" y="145"/>
+			<point x="457" y="135"/>
+			<point x="411" y="135" type="curve" smooth="yes"/>
+			<point x="395" y="135"/>
+			<point x="380" y="136"/>
+			<point x="367" y="137" type="curve"/>
+			<point x="362" y="160"/>
+			<point x="360" y="185"/>
+			<point x="360" y="215" type="curve" smooth="yes"/>
+			<point x="360" y="364"/>
+			<point x="360" y="512"/>
+			<point x="360" y="661" type="curve" smooth="yes"/>
+			<point x="360" y="724"/>
+			<point x="309" y="760"/>
+			<point x="210" y="760" type="curve" smooth="yes"/>
+			<point x="159" y="760"/>
+			<point x="97" y="750"/>
+		</contour>
+		<contour>
+			<point x="222" y="616" type="line"/>
+			<point x="268" y="692" type="line"/>
+			<point x="253" y="695" type="line"/>
+			<point x="196" y="637" type="line"/>
 		</contour>
 	</outline>
+	<guideline x="220" y="760" angle="0" identifier="r02IpIKuB6"/>
 	<lib>
 		<dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
@@ -138,6 +131,8 @@
 			<integer>10</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.vITBDWDIB5</key>
 			<integer>10</integer>
+			<key>public.markColor</key>
+			<string>0,0.99216,0.03137,1</string>
 		</dict>
 	</lib>
 </glyph>

@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="gcommaaccent" format="2">
-	<unicode hex="0123"/>
 	<advance width="600"/>
 	<outline>
 		<component base="flatg"/>
-		<component base="commaturnedabovecomb" xOffset="304" yOffset="2"/>
+		<component base="uni0312" xOffset="304" yOffset="551"/>
 	</outline>
 	<lib>
 		<dict>
 			<key>public.markColor</key>
-			<string>1,0.7179,0,1</string>
+			<string>1,0.8012,0.2928,1</string>
 		</dict>
 	</lib>
 	<note>
