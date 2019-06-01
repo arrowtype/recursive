@@ -2,10 +2,14 @@
 <designspace format="4.0">
   <axes>
     <axis tag="wght" name="weight" minimum="800" maximum="1100" default="800"/>
-    <axis tag="slnt" name="slant" minimum="0" maximum="14.04" default="0"/>
+    <axis tag="slnt" name="slant" minimum="0" maximum="14.040000" default="0"/>
   </axes>
   <sources>
     <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
       <location>
         <dimension name="weight" xvalue="800"/>
         <dimension name="slant" xvalue="0"/>
@@ -20,13 +24,13 @@
     <source filename="Recursive Mono-Casual B Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Casual B Italic">
       <location>
         <dimension name="weight" xvalue="800"/>
-        <dimension name="slant" xvalue="14.04"/>
+        <dimension name="slant" xvalue="14.040000"/>
       </location>
     </source>
-    <source filename="Recursive Mono-Casual C Italic.ufo" familyname="Recursive Mono" stylename="Casual C Italic">
+    <source filename="Recursive Mono-Casual C Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Casual C Italic">
       <location>
         <dimension name="weight" xvalue="1100"/>
-        <dimension name="slant" xvalue="14.04"/>
+        <dimension name="slant" xvalue="14"/>
       </location>
     </source>
   </sources>
