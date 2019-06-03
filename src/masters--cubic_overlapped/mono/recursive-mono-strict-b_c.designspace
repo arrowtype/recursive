@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.0">
+  <axes>
+    <axis tag="wght" name="weight" minimum="800" maximum="1000" default="800"/>
+    <axis tag="slnt" name="slant" minimum="0" maximum="14" default="0"/>
+  </axes>
+  <sources>
+    <source filename="Recursive Mono-Strict C.ufo" familyname="Recursive Mono" stylename="Gothic C">
+      <location>
+        <dimension name="weight" xvalue="1100"/>
+        <dimension name="slant" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Strict C Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Gothic C Italic">
+      <location>
+        <dimension name="weight" xvalue="100"/>
+        <dimension name="slant" xvalue="14"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Strict B.ufo" familyname="Recursive Mono" stylename="Gothic B">
+      <location>
+        <dimension name="weight" xvalue="800"/>
+        <dimension name="slant" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Strict B Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Gothic B 14 Italic">
+      <location>
+        <dimension name="weight" xvalue="800"/>
+        <dimension name="slant" xvalue="14"/>
+      </location>
+    </source>
+  </sources>
+</designspace>
