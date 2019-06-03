@@ -7,6 +7,10 @@
   </axes>
   <sources>
     <source filename="Recursive Mono-Strict A.ufo" familyname="Recursive Mono" stylename="Strict Light">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
       <location>
         <dimension name="slant" xvalue="0"/>
         <dimension name="weight" xvalue="300"/>
@@ -74,6 +78,13 @@
         <dimension name="slant" xvalue="0"/>
         <dimension name="weight" xvalue="1100"/>
         <dimension name="expression" xvalue="1"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Strict C Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Gothic C Italic">
+      <location>
+        <dimension name="slant" xvalue="14"/>
+        <dimension name="weight" xvalue="1100"/>
+        <dimension name="expression" xvalue="0"/>
       </location>
     </source>
   </sources>
