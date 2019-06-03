@@ -13,11 +13,15 @@
     </source>
     <source filename="Recursive Mono-Strict C Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Gothic C Italic">
       <location>
-        <dimension name="weight" xvalue="100"/>
+        <dimension name="weight" xvalue="1100"/>
         <dimension name="slant" xvalue="14"/>
       </location>
     </source>
     <source filename="Recursive Mono-Strict B.ufo" familyname="Recursive Mono" stylename="Gothic B">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
       <location>
         <dimension name="weight" xvalue="800"/>
         <dimension name="slant" xvalue="0"/>
@@ -30,4 +34,28 @@
       </location>
     </source>
   </sources>
+  <lib>
+    <dict>
+      <key>com.letterror.skateboard.interactionSources</key>
+      <dict>
+        <key>horizontal</key>
+        <array>
+          <string>slant</string>
+        </array>
+        <key>vertical</key>
+        <array>
+          <string>weight</string>
+        </array>
+      </dict>
+      <key>com.letterror.skateboard.previewLocation</key>
+      <dict>
+        <key>slant</key>
+        <real>0.0</real>
+        <key>weight</key>
+        <real>800.0</real>
+      </dict>
+      <key>com.letterror.skateboard.previewText</key>
+      <string>SKATEBOARD</string>
+    </dict>
+  </lib>
 </designspace>
