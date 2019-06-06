@@ -27,3 +27,18 @@ Variable font can retain overlapped contours, and this is very useful to draw gl
 ![](assets/2019-06-05-22-21-17.png)
 
 It appears to happen, though thankfully in a less-noticeable way. 
+
+
+## Testing
+
+I've made a very simple VF, `variable_ttf/overlap-tester-VF.ttf`. This puts contours for /d, /e, and /l into the spots for /a through /i, each in three different styles of drawing. This was then built with FontMake.
+
+![](assets/2019-06-05-22-45-48.png)
+
+![](assets/2019-06-05-22-46-47.png)
+
+![](assets/2019-06-05-23-02-29.png)
+
+*Interestingly, either FontMake or Sketch are removing some overlap from the first "e," even though that overlap is present in the UFO.*
+
+This is tested in `index.html` of this directory, which can be opened directly in any browser. I am looking at it in Chrome.
