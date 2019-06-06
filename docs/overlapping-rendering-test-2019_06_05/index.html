@@ -13,17 +13,29 @@
       body {
         font-family: "Overlap Tester";
         height: 100vh;
+        overflow-x: auto;
         /* display: grid;
         justify-content: center;
         align-content: center; */
       }
       div {
-        background: black;
+        /* background: black; */
       }
       p {
+        /* color: white; */
         line-height: 1.25em;
-        color: white;
-        margin: 0;
+        margin: 0 0 1rem;
+        font-variation-settings: "wght" 300;
+        white-space: nowrap;
+      }
+      .one {
+        border-bottom: 2px solid orange;
+      }
+      .two {
+        border-bottom: 2px solid blue;
+      }
+      .three {
+        border-bottom: 2px solid greenyellow;
       }
       .size8 {
         font-size: 8px;
@@ -68,19 +80,84 @@
   </head>
   <body>
     <div>
-      <p class="size8">abcdefghi</p>
-      <p class="size10">abcdefghi</p>
-      <p class="size12">abcdefghi</p>
-      <p class="size14">abcdefghi</p>
-      <p class="size16">abcdefghi</p>
-      <p class="size20">abcdefghi</p>
-      <p class="size24">abcdefghi</p>
-      <p class="size32">abcdefghi</p>
-      <p class="size40">abcdefghi</p>
-      <p class="size48">abcdefghi</p>
-      <p class="size56">abcdefghi</p>
-      <p class="size64">abcdefghi</p>
-      <p class="size72">abcdefghi</p>
+      <!-- <p class="size8">abcdefghiabcdefghiabcdefghi</p>
+      <p class="size10">abcdefghiabcdefghiabcdefghi</p>
+      <p class="size12">abcdefghiabcdefghiabcdefghi</p>
+      <p class="size14">abcdefghiabcdefghiabcdefghi</p>
+      <p class="size16">abcdefghiabcdefghiabcdefghi</p>
+      <p class="size20">abcdefghiabcdefghiabcdefghi</p>
+      <p class="size24">abcdefghiabcdefghiabcdefghi</p>
+      <p class="size32">abcdefghiabcdefghiabcdefghi</p>
+      <p class="size40">abcdefghiabcdefghiabcdefghi</p>
+      <p class="size48">abcdefghiabcdefghiabcdefghi</p>
+      <p class="size56">abcdefghiabcdefghiabcdefghi</p>
+      <p class="size64">abcdefghiabcdefghiabcdefghi</p>
+      <p class="size72">abcdefghiabcdefghiabcdefghi</p> -->
+      <p class="size8">
+        <span class="one">aaa</span><span class="two">bbb</span><span class="three">ccc</span>
+        <span class="one">ddd</span><span class="two">eee</span><span class="three">fff</span>
+        <span class="one">ggg</span><span class="two">hhh</span><span class="three">iii</span>
+      </p>
+      <p class="size10">
+        <span class="one">aaa</span><span class="two">bbb</span><span class="three">ccc</span>
+        <span class="one">ddd</span><span class="two">eee</span><span class="three">fff</span>
+        <span class="one">ggg</span><span class="two">hhh</span><span class="three">iii</span>
+      </p>
+      <p class="size12">
+        <span class="one">aaa</span><span class="two">bbb</span><span class="three">ccc</span>
+        <span class="one">ddd</span><span class="two">eee</span><span class="three">fff</span>
+        <span class="one">ggg</span><span class="two">hhh</span><span class="three">iii</span>
+      </p>
+      <p class="size14">
+        <span class="one">aaa</span><span class="two">bbb</span><span class="three">ccc</span>
+        <span class="one">ddd</span><span class="two">eee</span><span class="three">fff</span>
+        <span class="one">ggg</span><span class="two">hhh</span><span class="three">iii</span>
+      </p>
+      <p class="size16">
+        <span class="one">aaa</span><span class="two">bbb</span><span class="three">ccc</span>
+        <span class="one">ddd</span><span class="two">eee</span><span class="three">fff</span>
+        <span class="one">ggg</span><span class="two">hhh</span><span class="three">iii</span>
+      </p>
+      <p class="size20">
+        <span class="one">aaa</span><span class="two">bbb</span><span class="three">ccc</span>
+        <span class="one">ddd</span><span class="two">eee</span><span class="three">fff</span>
+        <span class="one">ggg</span><span class="two">hhh</span><span class="three">iii</span>
+      </p>
+      <p class="size24">
+        <span class="one">aaa</span><span class="two">bbb</span><span class="three">ccc</span>
+        <span class="one">ddd</span><span class="two">eee</span><span class="three">fff</span>
+        <span class="one">ggg</span><span class="two">hhh</span><span class="three">iii</span>
+      </p>
+      <p class="size32">
+        <span class="one">aaa</span><span class="two">bbb</span><span class="three">ccc</span>
+        <span class="one">ddd</span><span class="two">eee</span><span class="three">fff</span>
+        <span class="one">ggg</span><span class="two">hhh</span><span class="three">iii</span>
+      </p>
+      <p class="size40">
+        <span class="one">aaa</span><span class="two">bbb</span><span class="three">ccc</span>
+        <span class="one">ddd</span><span class="two">eee</span><span class="three">fff</span>
+        <span class="one">ggg</span><span class="two">hhh</span><span class="three">iii</span>
+      </p>
+      <p class="size48">
+        <span class="one">aaa</span><span class="two">bbb</span><span class="three">ccc</span>
+        <span class="one">ddd</span><span class="two">eee</span><span class="three">fff</span>
+        <span class="one">ggg</span><span class="two">hhh</span><span class="three">iii</span>
+      </p>
+      <p class="size56">
+        <span class="one">aaa</span><span class="two">bbb</span><span class="three">ccc</span>
+        <span class="one">ddd</span><span class="two">eee</span><span class="three">fff</span>
+        <span class="one">ggg</span><span class="two">hhh</span><span class="three">iii</span>
+      </p>
+      <p class="size64">
+        <span class="one">aaa</span><span class="two">bbb</span><span class="three">ccc</span>
+        <span class="one">ddd</span><span class="two">eee</span><span class="three">fff</span>
+        <span class="one">ggg</span><span class="two">hhh</span><span class="three">iii</span>
+      </p>
+      <p class="size72">
+        <span class="one">aaa</span><span class="two">bbb</span><span class="three">ccc</span>
+        <span class="one">ddd</span><span class="two">eee</span><span class="three">fff</span>
+        <span class="one">ggg</span><span class="two">hhh</span><span class="three">iii</span>
+      </p>
     </div>
   </body>
 </html>
