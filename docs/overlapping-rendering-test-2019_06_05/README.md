@@ -2,6 +2,8 @@
 
 **Date: June 5, 2019**
 
+TL;DR: Exterior overlaps in fonts cause poor text rendering. However, interior overlaps (overlapping corners, overlapping crossbars, overlapping bowl joints, etc) cause negligible or no issues. Type should be drawn with efficiency as a principle goal, and interior overlaps can help this without a negative impact on rendering.
+
 
 ## Question
 
