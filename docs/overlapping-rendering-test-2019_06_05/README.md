@@ -48,8 +48,6 @@ This is tested in `index.html` of this directory, which can be opened directly i
 
 Variable font, macOS 10.14.5, Chrome 74, Dell P2419H (Pixel per Inch (PPI) 92)
 
-![](assets/2019-06-06-15-16-17.png)
-
 ![](assets/overlap-test-screenshot.png)
 
 ![](assets/overlap-test-screenshot-windows.png)
