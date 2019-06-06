@@ -39,9 +39,9 @@ I've made a very simple VF, `variable_ttf/overlap-tester-VF.ttf`. This puts cont
 
 ![](assets/2019-06-05-22-46-47.png)
 
-![](assets/2019-06-06-15-15-30.png)
+Here are the contours of the output variable TTF, as seen by opening this output font in GlyphApp:
 
-*Interestingly, either FontMake or Sketch are removing some overlap from the first "e," even though that overlap is present in the UFO.*
+![](assets/2019-06-06-15-15-30.png)
 
 This is tested in `index.html` of this directory, which can be opened directly in any browser. I am looking at it in Chrome.
 
