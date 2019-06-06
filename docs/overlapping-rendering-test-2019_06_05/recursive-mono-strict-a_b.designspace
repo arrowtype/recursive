@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<designspace format="4.0">
+  <axes>
+    <axis tag="wght" name="weight" minimum="300" maximum="800" default="300" />
+  </axes>
+  <sources>
+    <source filename="Overlap Tester-A.ufo" familyname="Overlap Tester" stylename="Light">
+      <lib copy="1" />
+      <groups copy="1" />
+      <features copy="1" />
+      <info copy="1" />
+      <location>
+        <dimension name="weight" xvalue="300" />
+      </location>
+    </source>
+    
+    <source filename="Overlap Tester-B.ufo" familyname="Overlap Tester" stylename="ExtraBold">
+      <location>
+        <dimension name="weight" xvalue="800" />
+      </location>
+    </source>
+    
+  </sources>
+  <instances>
+    <instance familyname="Overlap Tester" stylename="Regular" filename="instances/Overlap Tester-Regular.ufo" postscriptfontname="OverlapTester-Regular">
+      <location>
+        <dimension name="weight" xvalue="400" />
+      </location>
+      <kerning />
+      <info />
+    </instance>
+    
+    <instance familyname="Overlap Tester" stylename="Bold" filename="instances/Overlap Tester-Bold.ufo" postscriptfontname="OverlapTester-Bold">
+      <location>
+        <dimension name="weight" xvalue="700" />
+      </location>
+      <kerning />
+      <info />
+    </instance>
+  </instances>
+</designspace>
