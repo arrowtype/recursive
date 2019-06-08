@@ -39,9 +39,9 @@
       <key>com.letterror.skateboard.interactionSources</key>
       <dict>
         <key>horizontal</key>
-        <array/>
-        <key>ignore</key>
-        <array/>
+        <array>
+          <string>slant</string>
+        </array>
         <key>vertical</key>
         <array>
           <string>weight</string>
@@ -49,8 +49,10 @@
       </dict>
       <key>com.letterror.skateboard.previewLocation</key>
       <dict>
+        <key>slant</key>
+        <real>-2.5603965992647058</real>
         <key>weight</key>
-        <real>765.6763347022587</real>
+        <real>685.5159344059406</real>
       </dict>
       <key>com.letterror.skateboard.previewText</key>
       <string>free</string>
