@@ -40,16 +40,16 @@
 			<point x="94" y="-10"/>
 		</contour>
 		<contour>
-			<point x="592" y="200" type="curve"/>
-			<point x="589" y="200" type="line"/>
-			<point x="587" y="200"/>
-			<point x="586" y="200"/>
-			<point x="584" y="200" type="curve" smooth="yes"/>
-			<point x="572" y="200"/>
-			<point x="561" y="201"/>
-			<point x="550" y="204" type="curve"/>
-			<point x="550" y="271"/>
-			<point x="550" y="337"/>
+			<point x="588" y="200" type="curve"/>
+			<point x="582" y="200" type="line"/>
+			<point x="575" y="194"/>
+			<point x="564" y="188"/>
+			<point x="554" y="188" type="curve"/>
+			<point x="553" y="188"/>
+			<point x="551" y="188"/>
+			<point x="550" y="188" type="curve"/>
+			<point x="550" y="260"/>
+			<point x="550" y="332"/>
 			<point x="550" y="404" type="curve"/>
 			<point x="550" y="523"/>
 			<point x="511" y="560"/>
@@ -60,20 +60,20 @@
 			<point x="337" y="538"/>
 			<point x="325" y="470"/>
 			<point x="325" y="437" type="curve" smooth="yes"/>
-			<point x="325" y="343"/>
-			<point x="325" y="250"/>
-			<point x="325" y="156" type="curve" smooth="yes"/>
-			<point x="325" y="75"/>
-			<point x="414" y="-10"/>
-			<point x="534" y="-10" type="curve" smooth="yes"/>
-			<point x="550" y="-10"/>
-			<point x="562" y="-2"/>
-			<point x="571" y="17" type="curve" smooth="yes"/>
-			<point x="585" y="46"/>
-			<point x="592" y="100"/>
-			<point x="592" y="187" type="curve" smooth="yes"/>
-			<point x="592" y="191"/>
-			<point x="592" y="196"/>
+			<point x="325" y="340"/>
+			<point x="325" y="245"/>
+			<point x="325" y="148" type="curve" smooth="yes"/>
+			<point x="325" y="58"/>
+			<point x="408" y="-10"/>
+			<point x="486" y="-10" type="curve"/>
+			<point x="519" y="-10"/>
+			<point x="538" y="-1"/>
+			<point x="553" y="15" type="curve" smooth="yes"/>
+			<point x="576" y="38"/>
+			<point x="593" y="88"/>
+			<point x="593" y="149" type="curve"/>
+			<point x="593" y="172"/>
+			<point x="590" y="193"/>
 		</contour>
 		<contour>
 			<point x="341" y="492" type="line"/>
@@ -82,13 +82,14 @@
 			<point x="394" y="385" type="line"/>
 		</contour>
 		<contour>
-			<point x="348" y="111" type="line"/>
-			<point x="377" y="238" type="line"/>
-			<point x="355" y="241" type="line"/>
-			<point x="322" y="111" type="line"/>
+			<point x="343" y="105" type="line"/>
+			<point x="372" y="232" type="line"/>
+			<point x="350" y="235" type="line"/>
+			<point x="317" y="105" type="line"/>
 		</contour>
 	</outline>
 	<guideline x="395" y="92" angle="0" identifier="y5wNmitEs5"/>
+	<guideline x="-87" y="-5" angle="0" identifier="Pg9hb1LRJ1"/>
 	<lib>
 		<dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
