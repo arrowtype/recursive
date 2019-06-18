@@ -1,27 +1,19 @@
 
 from drawBot import *
 import datetime
+import subprocess
 
-now = datetime.datetime.now()
+timestamp = datetime.datetime.now().strftime("%Y.%m.%d – %H:%M")
 W, H = 792, 612
 
 
 txt = FormattedString()
-
-# # adding some text with some formatting
-# txt.append("hello", font="Helvetica", fontSize=100, fill=(1, 0, 0))
-# # adding more text
-# txt.append("world", font="Times-Italic", fontSize=50, fill=(0, 1, 0))
 
 fontSize = 18
 padding = 40
 
 # setting a font
 txt.fontSize(fontSize)
-# txt += "abcdefghijklmnopqrstuvwxyz\n"
-
-# txt += "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
 
 
 lower = "\
@@ -43,52 +35,45 @@ nums = "\
 0050088588 0060088688 0070088788 0090088988\n"
 
 
-# drawing the formatted string
-# txt.font("Recursive Mono Test 061719-Casual C Italic")
+newPage('LetterLandscape')
 # txt.font("Recursive Mono Test 061719")
-# txt += lower 
-# txt += upper.replace("HHGHHOOGOO ","")
-# text(txt, (10, H-fontSize*2))
-
-
-newPage('LetterLandscape')
-txt.font("Recursive Mono Test 061719")
-txt += lower 
+txt.font("Helvetica")
+txt += lower
 txt += upper
 txt.openTypeFeatures(ss01=True)
 txt += lower
 txt += nums
 text(txt, (padding, H-padding))
 
-font("Recur Mono")
-fontSize= 12
-text("Recursive Mono Casual Heavy – " + now.strftime("%Y.%m.%d – %H:%M"), padding, padding)
+font("Courier")
+fontSize = 12
+text("Helvetica – " +
+     timestamp, padding, padding)
 
 
+# ----------------------------------------
+# Next Page ------------------------------
 
-# ========================================
+# TODO: figure out how to call a fresh instance of txt, but keep the formatting
 
 newPage('LetterLandscape')
 
-txt.clear()
 
-txt.font("Recursive Mono Test 061719")
-txt += lower 
-txt += upper
-txt.openTypeFeatures(ss01=True)
-txt += lower
-txt += nums
+# txt.font("Recursive Mono Test 061719 Casual C Italic")
+txt.font("Times New Roman")
 text(txt, (padding, H-padding))
 
-font("Recur Mono")
-fontSize= 12
-text("Recursive Mono Casual Heavy – " + now.strftime("%Y.%m.%d – %H:%M"), padding, padding)
+text("Times New Roman – " +
+     timestamp, padding, padding)
 
 
-# ========================================
-# Save ==================================-
+# ----------------------------------------
+# Save -----------------------------------
 
 print("saving")
 # path = "/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-basic-proof/exports/" + now.strftime("%Y_%m_%d-%H_%M_%S") + ".pdf"
 path = "/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-basic-proof/exports/temp.pdf"
-saveImage(path) #imageResolution=300
+saveImage(path)  # imageResolution=300
+
+# open(path)
+# subprocess.call(['open', path])
