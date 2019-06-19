@@ -48,29 +48,32 @@
 			<point x="527" y="277" type="curve"/>
 			<point x="541" y="304" type="line"/>
 			<point x="394" y="304" type="line"/>
-			<point x="380.2592683451" y="249.0370733805"/>
-			<point x="367.1600394255" y="192.6172949268"/>
+			<point x="380" y="249"/>
+			<point x="367" y="193"/>
 			<point x="353" y="138" type="curve"/>
-			<point x="351.1371138447" y="133.3427846118"/>
-			<point x="314.9397590361" y="115"/>
+			<point x="351" y="133"/>
+			<point x="315" y="115"/>
 			<point x="272" y="115" type="curve" smooth="yes"/>
-			<point x="210" y="115"/>
-			<point x="166" y="135"/>
+			<point x="243" y="115"/>
+			<point x="219" y="119"/>
+			<point x="203" y="135" type="curve" smooth="yes"/>
+			<point x="185" y="153"/>
+			<point x="179" y="187"/>
 			<point x="194" y="247" type="curve"/>
 			<point x="248" y="465" type="line" smooth="yes"/>
-			<point x="268.9089456666" y="549.4101880615"/>
+			<point x="269" y="549"/>
 			<point x="329" y="584"/>
 			<point x="391" y="584" type="curve" smooth="yes"/>
-			<point x="428.5319148936" y="584"/>
-			<point x="451.9056187269" y="578.6991880356"/>
+			<point x="429" y="584"/>
+			<point x="452" y="579"/>
 			<point x="489" y="555" type="curve"/>
 			<point x="494" y="654" type="line"/>
 			<point x="461" y="654" type="line"/>
-			<point x="447.9381823063" y="688.1616770451"/>
-			<point x="418.495412844" y="720"/>
+			<point x="448" y="688"/>
+			<point x="418" y="720"/>
 			<point x="348" y="720" type="curve" smooth="yes"/>
 			<point x="245" y="720"/>
-			<point x="140.9349824466" y="636.0160287333"/>
+			<point x="141" y="636"/>
 			<point x="103" y="482" type="curve" smooth="yes"/>
 			<point x="53" y="279" type="line" smooth="yes"/>
 			<point x="7" y="91"/>
@@ -79,39 +82,6 @@
 	</outline>
 	<anchor name="top" x="414.7995302052" y="711"/>
 	<anchor name="bottom" x="236.7499303373" y="-1"/>
-	<guideline x="-68" y="0" angle="75.96" identifier="PMRML47Zhh"/>
-	<guideline x="-18" y="0" angle="75.96" identifier="YulBShFW3V"/>
-	<guideline x="32" y="0" angle="75.96" identifier="5YdJqKLVzA"/>
-	<guideline x="82" y="0" angle="75.96" identifier="0SfOCH3J1s"/>
-	<guideline x="132" y="0" angle="75.96" identifier="xBsXyrpxRN"/>
-	<guideline x="182" y="0" angle="75.96" identifier="T0HHq4GZ9e"/>
-	<guideline x="232" y="0" angle="75.96" identifier="5jNnbWv8Gb"/>
-	<guideline x="282" y="0" angle="75.96" identifier="T5UbStXltt"/>
-	<guideline x="332" y="0" angle="75.96" identifier="VTQNN27KQE"/>
-	<guideline x="382" y="0" angle="75.96" identifier="NN0sJKDD8N"/>
-	<guideline x="432" y="0" angle="75.96" identifier="d0xr0xOvvH"/>
-	<guideline x="482" y="0" angle="75.96" identifier="m5FFQwaqfN"/>
-	<guideline x="532" y="0" angle="75.96" identifier="NbVFCJJMvl"/>
-	<guideline x="-68" y="-250" angle="0" identifier="Q9stDonAoN"/>
-	<guideline x="-68" y="-200" angle="0" identifier="7pmMO8uRjE"/>
-	<guideline x="-68" y="-150" angle="0" identifier="N5nJaP28i5"/>
-	<guideline x="-68" y="-100" angle="0" identifier="IefksrpBTb"/>
-	<guideline x="-68" y="-50" angle="0" identifier="SCUFn2b1C0"/>
-	<guideline x="-68" y="0" angle="0" identifier="GvvGm7Fmjp"/>
-	<guideline x="-68" y="50" angle="0" identifier="6cwavDpe9H"/>
-	<guideline x="-68" y="100" angle="0" identifier="LCBDFtSgVV"/>
-	<guideline x="-68" y="150" angle="0" identifier="i6YwaTiBlX"/>
-	<guideline x="-68" y="200" angle="0" identifier="mTwQs44yWh"/>
-	<guideline x="-68" y="250" angle="0" identifier="cp0grs92Tk"/>
-	<guideline x="-68" y="300" angle="0" identifier="Iyom0uYnGI"/>
-	<guideline x="-68" y="350" angle="0" identifier="KbGsCvFz14"/>
-	<guideline x="-68" y="400" angle="0" identifier="ou8oJhVwXM"/>
-	<guideline x="-68" y="450" angle="0" identifier="S41ahUqmWI"/>
-	<guideline x="-68" y="500" angle="0" identifier="ZfRQEO1vE8"/>
-	<guideline x="-68" y="550" angle="0" identifier="nOUKcjxFBM"/>
-	<guideline x="-68" y="600" angle="0" identifier="rynKHgJCK9"/>
-	<guideline x="-68" y="650" angle="0" identifier="eJxMBNPT0T"/>
-	<guideline x="-68" y="700" angle="0" identifier="KE5co88zjb"/>
 	<lib>
 		<dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
@@ -126,8 +96,6 @@
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.0O9vJ3Ez7n</key>
 			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.0SfOCH3J1s</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.0kGYziLSm0</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.1cNptkCVfJ</key>
@@ -140,17 +108,9 @@
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.4y4TSUTtCJ</key>
 			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.5YdJqKLVzA</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.5jNnbWv8Gb</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.67mJKROjzT</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.6Y7c4YwEoK</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.6cwavDpe9H</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.7pmMO8uRjE</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.8o8EsV5cyx</key>
 			<integer>0</integer>
@@ -168,47 +128,17 @@
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.EVfZiOvM9o</key>
 			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.GvvGm7Fmjp</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.IefksrpBTb</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.IqjUwfWgzn</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.Iyom0uYnGI</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.JZNKoUGPfB</key>
 			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.KE5co88zjb</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.KbGsCvFz14</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.KovPi4DsE5</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.LCBDFtSgVV</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.LbvuHTrhhS</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.MTfjVACWIW</key>
 			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.N5nJaP28i5</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.NN0sJKDD8N</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.NbVFCJJMvl</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.PMRML47Zhh</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.Q9stDonAoN</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.RYop4ESIMJ</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.S41ahUqmWI</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.SCUFn2b1C0</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.T0HHq4GZ9e</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.T5UbStXltt</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.Tv1n3Ur5VA</key>
 			<integer>0</integer>
@@ -219,8 +149,6 @@
 			<key>com.typemytype.robofont.guideline.magnetic.VPb3StaJQq</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.VRpdCbbVHt</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.VTQNN27KQE</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.VfcuEjXy2v</key>
 			<integer>0</integer>
@@ -238,10 +166,6 @@
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.Yhy7OtSTA2</key>
 			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.YulBShFW3V</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.ZfRQEO1vE8</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.aV5KKFfUIL</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.bGjNv8C54O</key>
@@ -250,37 +174,21 @@
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.c7RCS0iP53</key>
 			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.cp0grs92Tk</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.d0xr0xOvvH</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.eJxMBNPT0T</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.elQRaxXFhw</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.g2ItsCLl9F</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.gtTMnJrguH</key>
 			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.i6YwaTiBlX</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.i7X5MzA6Rl</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.m5FFQwaqfN</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.mLqfHHk1Zi</key>
 			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.mTwQs44yWh</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.n1ZN4QbhhE</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.nOUKcjxFBM</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.nl1fF74ech</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.nmGhxuMujb</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.ou8oJhVwXM</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.pdUUk4cqm4</key>
 			<integer>0</integer>
@@ -289,8 +197,6 @@
 			<key>com.typemytype.robofont.guideline.magnetic.qxce94sJF5</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.rcnb5Mvu5p</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.rynKHgJCK9</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.sSzndbatew</key>
 			<integer>0</integer>
@@ -307,8 +213,6 @@
 			<key>com.typemytype.robofont.guideline.magnetic.vNkNG4EbyV</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.vcoTXJvs5G</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.xBsXyrpxRN</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.xKI5VxrFfB</key>
 			<integer>0</integer>
