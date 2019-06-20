@@ -32,5 +32,7 @@ pip install -U -r requirements.txt
 (...to be continued)
 
 ## Collaborators 
-Lisa 
-Katja
+
+- Stephen Nixon
+- Lisa Huang
+- Katja Schimmel
