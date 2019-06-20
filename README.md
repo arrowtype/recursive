@@ -30,3 +30,7 @@ pip install -U -r requirements.txt
 ```
 
 (...to be continued)
+
+## Collaborators 
+Lisa 
+Katja
