@@ -27,13 +27,27 @@
 			<point x="147" y="0"/>
 		</contour>
 		<contour>
-			<point x="464" y="526" type="line"/>
-			<point x="231" y="315"/>
-			<point x="222" y="308"/>
-			<point x="138" y="194" type="curve"/>
-			<point x="131" y="173"/>
-			<point x="132.4628302163" y="165.4297709151"/>
-			<point x="146" y="178" type="curve" smooth="yes"/>
+			<point x="491" y="0" type="curve" smooth="yes"/>
+			<point x="510" y="0"/>
+			<point x="522" y="0"/>
+			<point x="546" y="0" type="curve"/>
+			<point x="449" y="111"/>
+			<point x="358" y="215"/>
+			<point x="265" y="322" type="curve"/>
+			<point x="235" y="272" type="line"/>
+			<point x="264" y="272" type="line"/>
+			<point x="280" y="235"/>
+			<point x="292" y="216"/>
+			<point x="337" y="164" type="curve" smooth="yes"/>
+			<point x="385" y="108"/>
+			<point x="459" y="21"/>
+			<point x="470" y="9" type="curve" smooth="yes"/>
+			<point x="475" y="3"/>
+			<point x="481" y="0"/>
+		</contour>
+		<contour>
+			<point x="146" y="238" type="line"/>
+			<point x="146" y="178" type="line"/>
 			<point x="265" y="283"/>
 			<point x="383" y="387"/>
 			<point x="516" y="506" type="curve" smooth="yes"/>
@@ -43,32 +57,18 @@
 			<point x="525" y="522"/>
 			<point x="522" y="526"/>
 			<point x="517" y="526" type="curve"/>
-		</contour>
-		<contour>
-			<point x="491" y="0" type="curve" smooth="yes"/>
-			<point x="510" y="0"/>
-			<point x="522" y="0"/>
-			<point x="546" y="0" type="curve"/>
-			<point x="449" y="111"/>
-			<point x="358" y="215"/>
-			<point x="265" y="322" type="curve"/>
-			<point x="238" y="290"/>
-			<point x="235" y="284"/>
-			<point x="243" y="273" type="curve" smooth="yes"/>
-			<point x="261" y="250"/>
-			<point x="453" y="29"/>
-			<point x="470" y="9" type="curve" smooth="yes"/>
-			<point x="475" y="3"/>
-			<point x="481" y="0"/>
-		</contour>
-		<contour>
-			<point x="139" y="238" type="line"/>
-			<point x="125" y="196" type="line"/>
-			<point x="148" y="194" type="line"/>
-			<point x="191" y="238" type="line"/>
+			<point x="464" y="526" type="line"/>
+			<point x="385" y="454"/>
+			<point x="310" y="386"/>
+			<point x="269" y="349" type="curve" smooth="yes"/>
+			<point x="227" y="311"/>
+			<point x="204" y="286"/>
+			<point x="171" y="238" type="curve"/>
 		</contour>
 	</outline>
 	<anchor name="bottom" x="328" y="-1"/>
+	<guideline x="464" y="526" angle="222.2072976343" identifier="MMXZdcf1wU"/>
+	<guideline x="243" y="273" angle="310.6905403353" identifier="rUdRd2m90Q"/>
 	<lib>
 		<dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
