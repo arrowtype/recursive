@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.0">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="250" maximum="900" default="800">
+      <labelname xml:lang="en">Weight</labelname>
+    </axis>
+    <axis tag="slnt" name="Slant" minimum="0" maximum="14" default="0">
+      <labelname xml:lang="en">Slant</labelname>
+    </axis>
+    <axis tag="XPRN" name="Expression" minimum="0" maximum="1" default="0">
+      <labelname xml:lang="en">Expression</labelname>
+    </axis>
+  </axes>
+  <sources>
+    <source filename="Recursive Mono-Casual A Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Casual A Italic">
+      <location>
+        <dimension name="Weight" xvalue="250"/>
+        <dimension name="Slant" xvalue="14"/>
+        <dimension name="Expression" xvalue="1"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Casual A.ufo" familyname="Recursive Mono" stylename="Casual A">
+      <location>
+        <dimension name="Weight" xvalue="250"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Expression" xvalue="1"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Casual B Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Casual B Italic">
+      <location>
+        <dimension name="Weight" xvalue="800"/>
+        <dimension name="Slant" xvalue="14"/>
+        <dimension name="Expression" xvalue="1"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B">
+      <location>
+        <dimension name="Weight" xvalue="800"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Expression" xvalue="1"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Casual C Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Casual C Italic">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+        <dimension name="Slant" xvalue="14"/>
+        <dimension name="Expression" xvalue="1"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Casual C.ufo" familyname="Recursive Mono" stylename="Casual C">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Expression" xvalue="1"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Strict A Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Gothic A 14 Italic">
+      <location>
+        <dimension name="Weight" xvalue="250"/>
+        <dimension name="Slant" xvalue="14"/>
+        <dimension name="Expression" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Strict A.ufo" familyname="Recursive Mono" stylename="Gothic A">
+      <location>
+        <dimension name="Weight" xvalue="250"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Expression" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Strict B Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Gothic B 14 Italic">
+      <location>
+        <dimension name="Weight" xvalue="800"/>
+        <dimension name="Slant" xvalue="14"/>
+        <dimension name="Expression" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Strict B.ufo" familyname="Recursive Mono" stylename="Gothic B">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Weight" xvalue="800"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Expression" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Strict C Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Strict C Italic">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+        <dimension name="Slant" xvalue="14"/>
+        <dimension name="Expression" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Strict C.ufo" familyname="Recursive Mono" stylename="Strict C">
+      <location>
+        <dimension name="Weight" xvalue="900"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Expression" xvalue="0"/>
+      </location>
+    </source>
+  </sources>
+  <lib>
+    <dict>
+      <key>com.letterror.skateboard.interactionSources</key>
+      <dict>
+        <key>horizontal</key>
+        <array>
+          <string>Slant</string>
+        </array>
+        <key>ignore</key>
+        <array>
+          <string>Expression</string>
+        </array>
+        <key>vertical</key>
+        <array>
+          <string>Weight</string>
+        </array>
+      </dict>
+      <key>com.letterror.skateboard.previewLocation</key>
+      <dict>
+        <key>Expression</key>
+        <real>1.0</real>
+        <key>Slant</key>
+        <real>-4.1502685546875</real>
+        <key>Weight</key>
+        <real>814.7879464285714</real>
+      </dict>
+      <key>com.letterror.skateboard.previewText</key>
+      <string>ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    </dict>
+  </lib>
+</designspace>
