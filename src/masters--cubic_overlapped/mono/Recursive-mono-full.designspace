@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <designspace format="4.0">
   <axes>
-    <axis tag="wght" name="Weight" minimum="250" maximum="900" default="800">
+    <axis tag="wght" name="Weight" minimum="300" maximum="900" default="800">
       <labelname xml:lang="en">Weight</labelname>
       <map input="300" output="250" />
-      <map input="400" output="450" />
+      <map input="400" output="350" />
       <map input="500" output="500" />
       <map input="600" output="600" />
       <map input="700" output="700" />
