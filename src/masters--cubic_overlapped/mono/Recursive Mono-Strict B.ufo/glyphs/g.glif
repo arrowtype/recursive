@@ -21,8 +21,8 @@
 			<point x="382" y="-140" type="curve" smooth="yes"/>
 			<point x="228" y="-140" type="line" smooth="yes"/>
 			<point x="195" y="-140"/>
-			<point x="183" y="-126"/>
-			<point x="183" y="-92" type="curve" smooth="yes"/>
+			<point x="183" y="-130"/>
+			<point x="183" y="-96" type="curve" smooth="yes"/>
 			<point x="183" y="-68" type="line" smooth="yes"/>
 			<point x="183" y="-42"/>
 			<point x="190" y="-27"/>
@@ -95,7 +95,7 @@
 			<point x="293" y="437" type="curve" smooth="yes"/>
 			<point x="327" y="437"/>
 			<point x="351" y="430"/>
-			<point x="366" y="416" type="curve" smooth="yes"/>
+			<point x="365" y="417" type="curve"/>
 			<point x="376" y="406"/>
 			<point x="381" y="392"/>
 			<point x="381" y="374" type="curve" smooth="yes"/>
@@ -141,6 +141,16 @@
 	<guideline x="293" y="430" angle="90" identifier="9JCW6YWWrA"/>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>-34</integer>
+					<integer>338</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
