@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="uni2193" format="2">
+<glyph name="arrowdown" format="2">
 	<unicode hex="2193"/>
 	<advance width="600"/>
 	<outline>
-		<component base="uni2191" xScale="-1" yScale="-1" xOffset="600" yOffset="700"/>
+		<component base="arrowup" xScale="-1" yScale="-1" xOffset="600" yOffset="700"/>
 	</outline>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
