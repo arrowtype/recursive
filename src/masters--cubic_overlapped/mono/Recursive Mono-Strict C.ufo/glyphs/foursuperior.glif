@@ -3,71 +3,59 @@
 	<advance width="600"/>
 	<outline>
 		<contour>
-			<point x="214" y="475" type="curve"/>
-			<point x="272" y="539"/>
-			<point x="349" y="624"/>
-			<point x="412" y="693" type="curve"/>
-			<point x="412" y="700" type="line"/>
-			<point x="384" y="700"/>
-			<point x="273" y="700"/>
-			<point x="240" y="700" type="curve" smooth="yes"/>
-			<point x="235" y="700"/>
-			<point x="231" y="699"/>
-			<point x="227" y="692" type="curve"/>
-			<point x="209" y="661"/>
-			<point x="124" y="516"/>
-			<point x="124" y="514" type="curve" smooth="yes"/>
-			<point x="124" y="492"/>
-			<point x="180" y="475"/>
+			<point x="415" y="337" type="curve"/>
+			<point x="415" y="347"/>
+			<point x="415" y="378"/>
+			<point x="415" y="388" type="curve" smooth="yes"/>
+			<point x="415" y="607" type="line" smooth="yes"/>
+			<point x="415" y="614"/>
+			<point x="412" y="618"/>
+			<point x="404" y="618" type="curve" smooth="yes"/>
+			<point x="332" y="618" type="line"/>
+			<point x="328" y="607"/>
+			<point x="302" y="534"/>
+			<point x="302" y="528" type="curve" smooth="yes"/>
+			<point x="302" y="348" type="line" smooth="yes"/>
+			<point x="302" y="340"/>
+			<point x="306" y="337"/>
+			<point x="313" y="337" type="curve" smooth="yes"/>
+			<point x="323" y="337"/>
+			<point x="405" y="337"/>
 		</contour>
 		<contour>
-			<point x="450" y="408" type="line"/>
-			<point x="450" y="433"/>
-			<point x="450" y="488"/>
-			<point x="450" y="513" type="curve" smooth="yes"/>
-			<point x="450" y="520"/>
-			<point x="446" y="524"/>
-			<point x="439" y="524" type="curve" smooth="yes"/>
-			<point x="232" y="524" type="line" smooth="yes"/>
-			<point x="212" y="524"/>
-			<point x="198" y="523"/>
-			<point x="124" y="514" type="curve"/>
-			<point x="124" y="419" type="line" smooth="yes"/>
-			<point x="124" y="413"/>
-			<point x="128" y="408"/>
-			<point x="135" y="408" type="curve" smooth="yes"/>
-		</contour>
-		<contour>
-			<point x="419" y="358" type="curve"/>
-			<point x="419" y="379"/>
-			<point x="419" y="382"/>
-			<point x="419" y="402" type="curve" smooth="yes"/>
-			<point x="419" y="554" type="line" smooth="yes"/>
-			<point x="419" y="561"/>
-			<point x="416" y="565"/>
-			<point x="408" y="565" type="curve" smooth="yes"/>
-			<point x="350" y="565" type="line"/>
-			<point x="314" y="534"/>
-			<point x="283" y="509"/>
-			<point x="283" y="503" type="curve" smooth="yes"/>
-			<point x="283" y="369" type="line" smooth="yes"/>
-			<point x="283" y="361"/>
-			<point x="287" y="358"/>
-			<point x="294" y="358" type="curve" smooth="yes"/>
-			<point x="328" y="358"/>
-			<point x="385" y="358"/>
+			<point x="459" y="416" type="curve"/>
+			<point x="459" y="426"/>
+			<point x="459" y="515"/>
+			<point x="459" y="525" type="curve" smooth="yes"/>
+			<point x="459" y="532"/>
+			<point x="455" y="536"/>
+			<point x="448" y="536" type="curve" smooth="yes"/>
+			<point x="367" y="536" type="line" smooth="yes"/>
+			<point x="321" y="536"/>
+			<point x="286" y="531"/>
+			<point x="245" y="511" type="curve"/>
+			<point x="261" y="496" type="line"/>
+			<point x="261" y="552" type="line"/>
+			<point x="245" y="502" type="line"/>
+			<point x="253" y="516"/>
+			<point x="367" y="718"/>
+			<point x="373" y="728" type="curve"/>
+			<point x="373" y="740" type="line"/>
+			<point x="363" y="740"/>
+			<point x="238" y="740"/>
+			<point x="228" y="740" type="curve" smooth="yes"/>
+			<point x="223" y="740"/>
+			<point x="218" y="739"/>
+			<point x="214" y="732" type="curve" smooth="yes"/>
+			<point x="208" y="722"/>
+			<point x="120" y="514"/>
+			<point x="120" y="512" type="curve" smooth="yes"/>
+			<point x="120" y="427" type="line" smooth="yes"/>
+			<point x="120" y="420"/>
+			<point x="124" y="416"/>
+			<point x="131" y="416" type="curve" smooth="yes"/>
+			<point x="141" y="416"/>
+			<point x="449" y="416"/>
 		</contour>
 	</outline>
-	<lib>
-		<dict>
-			<key>com.typemytype.robofont.Image.Brightness</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.Image.Contrast</key>
-			<integer>1</integer>
-			<key>com.typemytype.robofont.Image.Saturation</key>
-			<integer>1</integer>
-			<key>com.typemytype.robofont.Image.Sharpness</key>
-			<real>0.4</real>
-		</dict>
-	</lib>
 </glyph>
