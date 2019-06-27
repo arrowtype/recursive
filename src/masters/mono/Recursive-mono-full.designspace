@@ -93,29 +93,29 @@
     </source>
     
     
-    <!-- strict -->
-    <source filename="Recursive Mono-Strict A Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Gothic A 14 Italic">
+    <!-- Linear -->
+    <source filename="Recursive Mono-Linear A Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Gothic A 14 Italic">
       <location>
         <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="14" />
         <dimension name="Expression" xvalue="0" />
       </location>
     </source>
-    <source filename="Recursive Mono-Strict A.ufo" familyname="Recursive Mono" stylename="Gothic A">
+    <source filename="Recursive Mono-Linear A.ufo" familyname="Recursive Mono" stylename="Gothic A">
       <location>
         <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="0" />
       </location>
     </source>
-    <source filename="Recursive Mono-Strict B Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Gothic B 14 Italic">
+    <source filename="Recursive Mono-Linear B Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Gothic B 14 Italic">
       <location>
         <dimension name="Weight" xvalue="800" />
         <dimension name="Slant" xvalue="14" />
         <dimension name="Expression" xvalue="0" />
       </location>
     </source>
-    <source filename="Recursive Mono-Strict B.ufo" familyname="Recursive Mono" stylename="Gothic B">
+    <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Gothic B">
       <lib copy="1" />
       <groups copy="1" />
       <features copy="1" />
@@ -126,14 +126,14 @@
         <dimension name="Expression" xvalue="0" />
       </location>
     </source>
-    <source filename="Recursive Mono-Strict C Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Strict C Italic">
+    <source filename="Recursive Mono-Linear C Italic - gradually fixed.ufo" familyname="Recursive Mono" stylename="Linear C Italic">
       <location>
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="14" />
         <dimension name="Expression" xvalue="0" />
       </location>
     </source>
-    <source filename="Recursive Mono-Strict C.ufo" familyname="Recursive Mono" stylename="Strict C">
+    <source filename="Recursive Mono-Linear C.ufo" familyname="Recursive Mono" stylename="Linear C">
       <location>
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="0" />
@@ -142,7 +142,7 @@
     </source>
   </sources>
   <instances>
-    <instance familyname="Recursive Mono" stylename="Light" filename="instances/Recursive Mono-Strict Light.ufo">
+    <instance familyname="Recursive Mono" stylename="Light" filename="instances/Recursive Mono-Linear Light.ufo">
       <location>
         <dimension name="Weight" xvalue="300" />
         <dimension name="Slant" xvalue="0" />
@@ -151,7 +151,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="Light ExtraItalic" filename="instances/Recursive Mono-Strict Light ExtraItalic.ufo">
+    <instance familyname="Recursive Mono" stylename="Light ExtraItalic" filename="instances/Recursive Mono-Linear Light ExtraItalic.ufo">
       <location>
         <dimension name="Weight" xvalue="300" />
         <dimension name="Slant" xvalue="14" />
@@ -160,7 +160,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="Light Italic" filename="instances/Recursive Mono-Strict Light Italic.ufo">
+    <instance familyname="Recursive Mono" stylename="Light Italic" filename="instances/Recursive Mono-Linear Light Italic.ufo">
       <location>
         <dimension name="Weight" xvalue="300" />
         <dimension name="Slant" xvalue="10" />
@@ -196,7 +196,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="Regular" filename="instances/Recursive Mono-Strict Regular.ufo">
+    <instance familyname="Recursive Mono" stylename="Regular" filename="instances/Recursive Mono-Linear Regular.ufo">
       <location>
         <dimension name="Weight" xvalue="400" />
         <dimension name="Slant" xvalue="0" />
@@ -205,7 +205,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="ExtraItalic" filename="instances/Recursive Mono-Strict ExtraItalic.ufo">
+    <instance familyname="Recursive Mono" stylename="ExtraItalic" filename="instances/Recursive Mono-Linear ExtraItalic.ufo">
       <location>
         <dimension name="Weight" xvalue="400" />
         <dimension name="Slant" xvalue="14" />
@@ -214,7 +214,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="Italic" filename="instances/Recursive Mono-Strict Italic.ufo">
+    <instance familyname="Recursive Mono" stylename="Italic" filename="instances/Recursive Mono-Linear Italic.ufo">
       <location>
         <dimension name="Weight" xvalue="400" />
         <dimension name="Slant" xvalue="10" />
@@ -250,7 +250,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="Medium" filename="instances/Recursive Mono-Strict Medium.ufo">
+    <instance familyname="Recursive Mono" stylename="Medium" filename="instances/Recursive Mono-Linear Medium.ufo">
       <location>
         <dimension name="Weight" xvalue="500" />
         <dimension name="Slant" xvalue="0" />
@@ -259,7 +259,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="Medium ExtraItalic" filename="instances/Recursive Mono-Strict Medium ExtraItalic.ufo">
+    <instance familyname="Recursive Mono" stylename="Medium ExtraItalic" filename="instances/Recursive Mono-Linear Medium ExtraItalic.ufo">
       <location>
         <dimension name="Weight" xvalue="500" />
         <dimension name="Slant" xvalue="14" />
@@ -268,7 +268,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="Medium Italic" filename="instances/Recursive Mono-Strict Medium Italic.ufo">
+    <instance familyname="Recursive Mono" stylename="Medium Italic" filename="instances/Recursive Mono-Linear Medium Italic.ufo">
       <location>
         <dimension name="Weight" xvalue="500" />
         <dimension name="Slant" xvalue="10" />
@@ -304,7 +304,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="SemiBold" filename="instances/Recursive Mono-Strict SemiBold.ufo">
+    <instance familyname="Recursive Mono" stylename="SemiBold" filename="instances/Recursive Mono-Linear SemiBold.ufo">
       <location>
         <dimension name="Weight" xvalue="600" />
         <dimension name="Slant" xvalue="0" />
@@ -313,7 +313,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="SemiBold ExtraItalic" filename="instances/Recursive Mono-Strict SemiBold ExtraItalic.ufo">
+    <instance familyname="Recursive Mono" stylename="SemiBold ExtraItalic" filename="instances/Recursive Mono-Linear SemiBold ExtraItalic.ufo">
       <location>
         <dimension name="Weight" xvalue="600" />
         <dimension name="Slant" xvalue="14" />
@@ -322,7 +322,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="SemiBold Italic" filename="instances/Recursive Mono-Strict SemiBold Italic.ufo">
+    <instance familyname="Recursive Mono" stylename="SemiBold Italic" filename="instances/Recursive Mono-Linear SemiBold Italic.ufo">
       <location>
         <dimension name="Weight" xvalue="600" />
         <dimension name="Slant" xvalue="10" />
@@ -358,7 +358,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="Bold" filename="instances/Recursive Mono-Strict Bold.ufo">
+    <instance familyname="Recursive Mono" stylename="Bold" filename="instances/Recursive Mono-Linear Bold.ufo">
       <location>
         <dimension name="Weight" xvalue="700" />
         <dimension name="Slant" xvalue="0" />
@@ -367,7 +367,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="Bold ExtraItalic" filename="instances/Recursive Mono-Strict Bold ExtraItalic.ufo">
+    <instance familyname="Recursive Mono" stylename="Bold ExtraItalic" filename="instances/Recursive Mono-Linear Bold ExtraItalic.ufo">
       <location>
         <dimension name="Weight" xvalue="700" />
         <dimension name="Slant" xvalue="14" />
@@ -376,7 +376,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="Bold Italic" filename="instances/Recursive Mono-Strict Bold Italic.ufo">
+    <instance familyname="Recursive Mono" stylename="Bold Italic" filename="instances/Recursive Mono-Linear Bold Italic.ufo">
       <location>
         <dimension name="Weight" xvalue="700" />
         <dimension name="Slant" xvalue="10" />
@@ -412,7 +412,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="ExtraBold" filename="instances/Recursive Mono-Strict ExtraBold.ufo">
+    <instance familyname="Recursive Mono" stylename="ExtraBold" filename="instances/Recursive Mono-Linear ExtraBold.ufo">
       <location>
         <dimension name="Weight" xvalue="800" />
         <dimension name="Slant" xvalue="0" />
@@ -421,7 +421,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="ExtraBold ExtraItalic" filename="instances/Recursive Mono-Strict ExtraBold ExtraItalic.ufo">
+    <instance familyname="Recursive Mono" stylename="ExtraBold ExtraItalic" filename="instances/Recursive Mono-Linear ExtraBold ExtraItalic.ufo">
       <location>
         <dimension name="Weight" xvalue="800" />
         <dimension name="Slant" xvalue="14" />
@@ -430,7 +430,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="ExtraBold Italic" filename="instances/Recursive Mono-Strict ExtraBold Italic.ufo">
+    <instance familyname="Recursive Mono" stylename="ExtraBold Italic" filename="instances/Recursive Mono-Linear ExtraBold Italic.ufo">
       <location>
         <dimension name="Weight" xvalue="800" />
         <dimension name="Slant" xvalue="10" />
@@ -466,7 +466,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="Black" filename="instances/Recursive Mono-Strict Black.ufo">
+    <instance familyname="Recursive Mono" stylename="Black" filename="instances/Recursive Mono-Linear Black.ufo">
       <location>
         <dimension name="Weight" xvalue="850" />
         <dimension name="Slant" xvalue="0" />
@@ -475,7 +475,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="Black ExtraItalic" filename="instances/Recursive Mono-Strict Black ExtraItalic.ufo">
+    <instance familyname="Recursive Mono" stylename="Black ExtraItalic" filename="instances/Recursive Mono-Linear Black ExtraItalic.ufo">
       <location>
         <dimension name="Weight" xvalue="850" />
         <dimension name="Slant" xvalue="14" />
@@ -484,7 +484,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="Black Italic" filename="instances/Recursive Mono-Strict Black Italic.ufo">
+    <instance familyname="Recursive Mono" stylename="Black Italic" filename="instances/Recursive Mono-Linear Black Italic.ufo">
       <location>
         <dimension name="Weight" xvalue="850" />
         <dimension name="Slant" xvalue="10" />
@@ -520,7 +520,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="Heavy" filename="instances/Recursive Mono-Strict Heavy.ufo">
+    <instance familyname="Recursive Mono" stylename="Heavy" filename="instances/Recursive Mono-Linear Heavy.ufo">
       <location>
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="0" />
@@ -529,7 +529,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="Heavy ExtraItalic" filename="instances/Recursive Mono-Strict Heavy ExtraItalic.ufo">
+    <instance familyname="Recursive Mono" stylename="Heavy ExtraItalic" filename="instances/Recursive Mono-Linear Heavy ExtraItalic.ufo">
       <location>
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="14" />
@@ -538,7 +538,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Mono" stylename="Heavy Italic" filename="instances/Recursive Mono-Strict Heavy Italic.ufo">
+    <instance familyname="Recursive Mono" stylename="Heavy Italic" filename="instances/Recursive Mono-Linear Heavy Italic.ufo">
       <location>
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="10" />
