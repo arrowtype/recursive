@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8" ?>
 <designspace format="3">
     <axes>
         <axis default="0" maximum="18.430000" minimum="0" name="slant" tag="slnt" />
@@ -6,30 +6,30 @@
         <axis default="0" maximum="1" minimum="0" name="genre" tag="gnre" />
     </axes>
     <sources>
-    <!-- gothic A -->
-        <source familyname="Recursive Sans" filename="../sans/Recursive Sans-Gothic A.ufo" stylename="Gothic A">
+        <!-- Linear A -->
+        <source familyname="Recursive Sans" filename="../sans/Recursive Sans-Linear A.ufo" stylename="Linear A">
             <location>
                 <dimension name="slant" xvalue="0" />
                 <dimension name="weight" xvalue="218" />
                 <dimension name="genre" xvalue="0" />
             </location>
         </source>
-        <source familyname="Recursive Sans" filename="Recursive Sans-Gothic A Italic.ufo" stylename="Gothic A">
+        <source familyname="Recursive Sans" filename="Recursive Sans-Linear A Italic.ufo" stylename="Linear A">
             <location>
                 <dimension name="slant" xvalue="18.430000" />
                 <dimension name="weight" xvalue="218" />
                 <dimension name="genre" xvalue="0" />
             </location>
         </source>
-        <!-- gothic b -->
-        <source familyname="Recursive Sans" filename="../sans/Recursive Sans-Gothic B.ufo" stylename="Gothic A">
+        <!-- Linear b -->
+        <source familyname="Recursive Sans" filename="../sans/Recursive Sans-Linear B.ufo" stylename="Linear A">
             <location>
                 <dimension name="slant" xvalue="0" />
                 <dimension name="weight" xvalue="800" />
                 <dimension name="genre" xvalue="0" />
             </location>
         </source>
-        <source familyname="Recursive Sans" filename="Recursive Sans-Gothic B Italic.ufo" stylename="Gothic B">
+        <source familyname="Recursive Sans" filename="Recursive Sans-Linear B Italic.ufo" stylename="Linear B">
             <location>
                 <dimension name="slant" xvalue="18.430000" />
                 <dimension name="weight" xvalue="800" />

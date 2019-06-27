@@ -1,11 +1,11 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8" ?>
 <designspace format="3">
     <axes>
         <axis default="0" maximum="1" minimum="0" name="genre" tag="GNRE" />
         <axis default="218" maximum="1000" minimum="218" name="weight" tag="wght" />
     </axes>
     <sources>
-        <source familyname="Recursive Sans" filename="Recursive Sans-Gothic C.ufo" stylename="Gothic C">
+        <source familyname="Recursive Sans" filename="Recursive Sans-Linear C.ufo" stylename="Linear C">
             <location>
                 <dimension name="genre" xvalue="0" />
                 <dimension name="weight" xvalue="1000" />
@@ -17,7 +17,7 @@
                 <dimension name="weight" xvalue="1000" />
             </location>
         </source>
-        <source familyname="Recursive Sans" filename="Recursive Sans-Gothic B.ufo" stylename="Gothic B">
+        <source familyname="Recursive Sans" filename="Recursive Sans-Linear B.ufo" stylename="Linear B">
             <location>
                 <dimension name="genre" xvalue="0" />
                 <dimension name="weight" xvalue="700" />
@@ -29,7 +29,7 @@
                 <dimension name="weight" xvalue="700" />
             </location>
         </source>
-        <source familyname="Recursive Sans" filename="Recursive Sans-Gothic A.ufo" stylename="Gothic A">
+        <source familyname="Recursive Sans" filename="Recursive Sans-Linear A.ufo" stylename="Linear A">
             <location>
                 <dimension name="genre" xvalue="0" />
                 <dimension name="weight" xvalue="218" />
@@ -43,7 +43,7 @@
         </source>
     </sources>
     <instances>
-        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-GothicRegular.ufo" postscriptfontname="RecursiveSans-GothicRegular" stylemapfamilyname="Recursive Sans Gothic Regular" stylemapstylename="regular" stylename="Gothic Regular">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-LinearRegular.ufo" postscriptfontname="RecursiveSans-LinearRegular" stylemapfamilyname="Recursive Sans Linear Regular" stylemapstylename="regular" stylename="Linear Regular">
             <location>
                 <dimension name="genre" xvalue="0" />
                 <dimension name="weight" xvalue="400" />
@@ -51,7 +51,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-GothicMedium.ufo" postscriptfontname="RecursiveSans-GothicMedium" stylename="Gothic Medium">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-LinearMedium.ufo" postscriptfontname="RecursiveSans-LinearMedium" stylename="Linear Medium">
             <location>
                 <dimension name="genre" xvalue="0" />
                 <dimension name="weight" xvalue="500" />
@@ -59,7 +59,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-GothicSemiBold.ufo" postscriptfontname="RecursiveSans-GothicSemiBold" stylename="Gothic SemiBold">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-LinearSemiBold.ufo" postscriptfontname="RecursiveSans-LinearSemiBold" stylename="Linear SemiBold">
             <location>
                 <dimension name="genre" xvalue="0" />
                 <dimension name="weight" xvalue="600" />
@@ -67,7 +67,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-GothicExtraBold.ufo" postscriptfontname="RecursiveSans-GothicExtraBold" stylename="Gothic ExtraBold">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-LinearExtraBold.ufo" postscriptfontname="RecursiveSans-LinearExtraBold" stylename="Linear ExtraBold">
             <location>
                 <dimension name="genre" xvalue="0" />
                 <dimension name="weight" xvalue="800" />
@@ -75,7 +75,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-GothicBlack.ufo" postscriptfontname="RecursiveSans-GothicBlack" stylename="Gothic Black">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-LinearBlack.ufo" postscriptfontname="RecursiveSans-LinearBlack" stylename="Linear Black">
             <location>
                 <dimension name="genre" xvalue="0" />
                 <dimension name="weight" xvalue="900" />
@@ -83,7 +83,7 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-GothicHeavy.ufo" postscriptfontname="RecursiveSans-GothicHeavy" stylename="Gothic Heavy">
+        <instance familyname="Recursive Sans" filename="instances/RecursiveSans-LinearHeavy.ufo" postscriptfontname="RecursiveSans-LinearHeavy" stylename="Linear Heavy">
             <location>
                 <dimension name="genre" xvalue="0" />
                 <dimension name="weight" xvalue="1000" />
@@ -91,9 +91,8 @@
             <kerning />
             <info />
         </instance>
-
-
-
+        
+        
         <instance familyname="Recursive Sans" filename="instances/RecursiveSans-CasualRegular.ufo" postscriptfontname="RecursiveSans-CasualRegular" stylename="Casual Regular">
             <location>
                 <dimension name="genre" xvalue="1" />
