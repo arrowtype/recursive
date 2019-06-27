@@ -48,9 +48,9 @@
     </rule>
   </rules>
   <sources>
-    <!-- casual -->
     <source filename="Recursive Mono-Casual A Slanted.ufo" familyname="Recursive Mono" stylename="Casual A Italic">
       <location>
+        Z
         <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="14" />
         <dimension name="Expression" xvalue="1" />
@@ -91,9 +91,6 @@
         <dimension name="Expression" xvalue="1" />
       </location>
     </source>
-    
-    
-    <!-- Linear -->
     <source filename="Recursive Mono-Linear A Slanted.ufo" familyname="Recursive Mono" stylename="Linear A 14 Italic">
       <location>
         <dimension name="Weight" xvalue="250" />
@@ -597,9 +594,9 @@
         <key>Expression</key>
         <real>0.0</real>
         <key>Slant</key>
-        <real>-0.8645450367647058</real>
+        <real>-4.997633272058824</real>
         <key>Weight</key>
-        <real>930.8581343579855</real>
+        <real>400.0</real>
       </dict>
       <key>com.letterror.skateboard.previewText</key>
       <string>abcdefghijklmnopqrstuvwxyz</string>
