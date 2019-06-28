@@ -25,8 +25,8 @@
 			<point x="397" y="450"/>
 			<point x="363" y="428"/>
 			<point x="169" y="428" type="curve"/>
-			<point x="156" y="376"/>
-			<point x="139" y="314"/>
+			<point x="164" y="408"/>
+			<point x="137" y="299"/>
 			<point x="132" y="281" type="curve" smooth="yes"/>
 			<point x="130" y="273"/>
 			<point x="132" y="270"/>
@@ -69,4 +69,10 @@
 			<point x="566" y="720"/>
 		</contour>
 	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>1,1,0,1</string>
+		</dict>
+	</lib>
 </glyph>
