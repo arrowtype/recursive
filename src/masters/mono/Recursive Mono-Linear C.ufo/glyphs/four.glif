@@ -42,10 +42,10 @@
 		</contour>
 		<contour>
 			<point x="368" y="424" type="curve"/>
-			<point x="365" y="414"/>
-			<point x="301" y="180"/>
-			<point x="298" y="170" type="curve"/>
-			<point x="298" y="160"/>
+			<point x="363" y="414"/>
+			<point x="303" y="292"/>
+			<point x="298" y="282" type="curve"/>
+			<point x="298" y="272"/>
 			<point x="298" y="21"/>
 			<point x="298" y="11" type="curve" smooth="yes"/>
 			<point x="298" y="4"/>
@@ -141,6 +141,8 @@
 			<integer>10</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.ys2MSlI0Op</key>
 			<integer>10</integer>
+			<key>public.markColor</key>
+			<string>1,1,0,1</string>
 		</dict>
 	</lib>
 </glyph>
