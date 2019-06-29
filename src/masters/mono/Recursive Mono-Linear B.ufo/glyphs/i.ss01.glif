@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="aogonek" format="2">
+<glyph name="i.ss01" format="2">
 	<advance width="600"/>
-	<outline>
-		<component base="a"/>
-		<component base="ogonekcomb" xOffset="534" yOffset="6"/>
-	</outline>
 	<lib>
 		<dict>
 			<key>com.rafalbuchner.mirroringDrawingLocal</key>
@@ -17,8 +13,6 @@
 					<integer>0</integer>
 				</array>
 			</dict>
-			<key>public.markColor</key>
-			<string>0.9355,0.7889,0.1214,1</string>
 		</dict>
 	</lib>
 </glyph>

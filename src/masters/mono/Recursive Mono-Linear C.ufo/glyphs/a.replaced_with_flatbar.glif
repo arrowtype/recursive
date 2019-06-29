@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="a" format="2">
-	<unicode hex="0061"/>
+<glyph name="a.replaced_with_flatbar" format="2">
 	<advance width="600"/>
 	<outline>
 		<contour>
@@ -14,18 +13,18 @@
 			<point x="46" y="530"/>
 			<point x="45" y="527"/>
 			<point x="45" y="522" type="curve" smooth="yes"/>
-			<point x="45" y="468.3248407643"/>
-			<point x="45" y="416"/>
-			<point x="45" y="362" type="curve"/>
-			<point x="65" y="362" type="line"/>
-			<point x="124" y="376"/>
-			<point x="187" y="385"/>
-			<point x="247" y="385" type="curve" smooth="yes"/>
-			<point x="316" y="385"/>
-			<point x="332" y="370.9836065574"/>
-			<point x="332" y="328" type="curve" smooth="yes"/>
-			<point x="332" y="312.6666666667"/>
-			<point x="332" y="297.5806451613"/>
+			<point x="45" y="469"/>
+			<point x="45" y="418"/>
+			<point x="45" y="365" type="curve"/>
+			<point x="65" y="365" type="line"/>
+			<point x="124" y="379"/>
+			<point x="171" y="385"/>
+			<point x="237" y="385" type="curve" smooth="yes"/>
+			<point x="296" y="385"/>
+			<point x="332" y="375"/>
+			<point x="332" y="344" type="curve" smooth="yes"/>
+			<point x="332" y="323"/>
+			<point x="332" y="303"/>
 			<point x="332" y="282" type="curve" smooth="yes"/>
 			<point x="332" y="236"/>
 			<point x="332" y="190"/>
@@ -57,33 +56,33 @@
 		</contour>
 		<contour>
 			<point x="230" y="171" type="curve" smooth="yes"/>
-			<point x="230" y="189" type="line" smooth="yes"/>
-			<point x="230" y="200"/>
-			<point x="233" y="208"/>
-			<point x="238" y="213" type="curve" smooth="yes"/>
-			<point x="244" y="219"/>
-			<point x="252" y="222"/>
-			<point x="263" y="222" type="curve" smooth="yes"/>
-			<point x="305" y="222"/>
-			<point x="349" y="222"/>
-			<point x="391" y="222" type="curve"/>
-			<point x="391" y="314"/>
-			<point x="387" y="322"/>
-			<point x="372" y="322" type="curve" smooth="yes"/>
-			<point x="331" y="322"/>
-			<point x="263" y="322"/>
-			<point x="185" y="322" type="curve" smooth="yes"/>
-			<point x="81" y="322"/>
-			<point x="25" y="266"/>
-			<point x="25" y="169" type="curve" smooth="yes"/>
-			<point x="25" y="129" type="line" smooth="yes"/>
-			<point x="25" y="43"/>
-			<point x="88" y="-10"/>
-			<point x="184" y="-10" type="curve"/>
-			<point x="261" y="-10"/>
-			<point x="313" y="30"/>
-			<point x="334" y="90" type="curve" smooth="yes"/>
-			<point x="350" y="135"/>
+			<point x="230" y="184" type="line" smooth="yes"/>
+			<point x="230" y="195"/>
+			<point x="233" y="203"/>
+			<point x="238" y="208" type="curve" smooth="yes"/>
+			<point x="244" y="214"/>
+			<point x="252" y="217"/>
+			<point x="263" y="217" type="curve" smooth="yes"/>
+			<point x="305" y="217"/>
+			<point x="349" y="217"/>
+			<point x="391" y="217" type="curve"/>
+			<point x="391" y="256"/>
+			<point x="393" y="286"/>
+			<point x="365" y="299" type="curve" smooth="yes"/>
+			<point x="330" y="316"/>
+			<point x="269" y="330"/>
+			<point x="195" y="330" type="curve" smooth="yes"/>
+			<point x="85" y="330"/>
+			<point x="25" y="274"/>
+			<point x="25" y="177" type="curve" smooth="yes"/>
+			<point x="25" y="136" type="line" smooth="yes"/>
+			<point x="25" y="46"/>
+			<point x="92" y="-10"/>
+			<point x="190" y="-10" type="curve" smooth="yes"/>
+			<point x="262" y="-10"/>
+			<point x="310" y="27"/>
+			<point x="332" y="85" type="curve" smooth="yes"/>
+			<point x="350" y="134"/>
 			<point x="351" y="159"/>
 			<point x="349" y="174" type="curve"/>
 			<point x="323" y="152"/>
@@ -94,8 +93,8 @@
 		</contour>
 		<contour>
 			<point x="371" y="175" type="line"/>
-			<point x="312" y="77" type="line"/>
-			<point x="360" y="77" type="line"/>
+			<point x="322" y="78" type="line"/>
+			<point x="360" y="78" type="line"/>
 			<point x="386" y="172" type="line"/>
 		</contour>
 	</outline>
@@ -107,7 +106,7 @@
 			<key>com.rafalbuchner.mirroringDrawingLocal</key>
 			<dict>
 				<key>mirroringOptions</key>
-				<integer>2</integer>
+				<integer>3</integer>
 				<key>offset</key>
 				<array>
 					<integer>0</integer>
