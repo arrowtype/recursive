@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.0">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="300" maximum="900" default="800">
+      <labelname xml:lang="en">Weight</labelname>
+      <map input="300" output="250"/>
+      <map input="400" output="350"/>
+      <map input="500" output="500"/>
+      <map input="600" output="600"/>
+      <map input="700" output="700"/>
+      <map input="800" output="800"/>
+      <map input="900" output="900"/>
+    </axis>
+    <axis tag="slnt" name="Slant" minimum="0" maximum="15" default="0">
+      <labelname xml:lang="en">Slant</labelname>
+    </axis>
+    <axis tag="ital" name="Italic" minimum="0" maximum="1" default="0">
+      <labelname xml:lang="en">Italic</labelname>
+    </axis>
+    <axis tag="XPRN" name="Expression" minimum="0" maximum="100" default="0">
+      <labelname xml:lang="en">Expression</labelname>
+    </axis>
+    <axis tag="OPSZ" name="Optical size" minimum="8" maximum="64" default="8">
+      <labelname xml:lang="en">Optical size</labelname>
+    </axis>
+  </axes>
+  <rules>
+    <rule name="cursive">
+      <conditionset>
+        <condition name="Italic" minimum="0.010000" maximum="1"/>
+      </conditionset>
+      <sub name="a" with="a.italic"/>
+      <sub name="f" with="f.italic"/>
+      <sub name="g" with="g.italic"/>
+      <sub name="i" with="i.italic"/>
+      <sub name="l" with="l.italic"/>
+      <sub name="r" with="r.italic"/>
+      <sub name="y" with="y.italic"/>
+    </rule>
+    <rule name="cursive">
+      <conditionset>
+        <condition name="Italic" minimum="0.500000" maximum="1"/>
+      </conditionset>
+      <sub name="d" with="d.italic"/>
+      <sub name="e" with="e.italic"/>
+      <sub name="h" with="h.italic"/>
+      <sub name="j" with="j.italic"/>
+      <sub name="m" with="m.italic"/>
+      <sub name="n" with="n.italic"/>
+      <sub name="u" with="u.italic"/>
+    </rule>
+    <rule name="cursive">
+      <conditionset>
+        <condition name="Italic" minimum="0.990000" maximum="1"/>
+      </conditionset>
+      <sub name="c" with="c.italic"/>
+      <sub name="k" with="k.italic"/>
+      <sub name="s" with="s.italic"/>
+      <sub name="v" with="v.italic"/>
+      <sub name="w" with="w.italic"/>
+      <sub name="x" with="x.italic"/>
+      <sub name="z" with="z.italic"/>
+    </rule>
+  </rules>
+  <sources>
+
+    <!-- ============================================================================== -->
+    <!-- ============================================================================== -->
+    <!-- ============================================================================== -->
+    <!-- ============================================================================== -->
+    <!-- OPSZ 8 ======================================================================= -->
+
+    <!-- LINEAR 2 ===================================================================== -->
+    
+    <source filename="Recursive Mono-Linear A Slanted.ufo" familyname="Recursive Mono" stylename="Linear A 14 Italic"><location><dimension name="Weight" xvalue="250"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Linear A.ufo" familyname="Recursive Mono" stylename="Linear A"><location><dimension name="Weight" xvalue="250"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Linear B Slanted.ufo" familyname="Recursive Mono" stylename="Linear B 14 Italic"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="8"/></location></source>
+
+    <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear ExtraBold">
+        <lib copy="1"/>
+        <groups copy="1"/>
+        <features copy="1"/>
+        <info copy="1"/>
+        <location>
+          <dimension name="Weight" xvalue="800"/>
+          <dimension name="Slant" xvalue="0"/>
+          <dimension name="Italic" xvalue="0"/>
+          <dimension name="Expression" xvalue="0"/>
+          <dimension name="Optical size" xvalue="8"/>
+        </location>
+      </source>
+
+    <source filename="Recursive Mono-Linear C Slanted.ufo" familyname="Recursive Mono" stylename="Linear C Italic"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Linear C.ufo" familyname="Recursive Mono" stylename="Linear C"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear B" layer="support.w.middle"><location><dimension name="Weight" xvalue="500"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="8"/></location></source>
+
+    <!-- CASUAL 1 ===================================================================== -->
+
+    <source filename="Recursive Mono-Casual A Slanted.ufo" familyname="Recursive Mono" stylename="Casual A Italic"><location><dimension name="Weight" xvalue="250"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Casual A.ufo" familyname="Recursive Mono" stylename="Casual A"><location><dimension name="Weight" xvalue="250"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Casual B Slanted.ufo" familyname="Recursive Mono" stylename="Casual B Italic"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Casual C Slanted.ufo" familyname="Recursive Mono" stylename="Casual C Italic"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Casual C.ufo" familyname="Recursive Mono" stylename="Casual C"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B" layer="support.w.middle"><location><dimension name="Weight" xvalue="500"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="8"/></location></source>
+
+    <!-- ============================================================================== -->
+    <!-- ============================================================================== -->
+    <!-- ============================================================================== -->
+    <!-- ============================================================================== -->
+    <!-- OPSZ 19.9 ======================================================================= -->
+
+    <!-- LINEAR 2 ===================================================================== -->
+    
+    <source filename="Recursive Mono-Linear A Slanted.ufo" familyname="Recursive Mono" stylename="Linear A 14 Italic"><location><dimension name="Weight" xvalue="250"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="19.999999"/></location></source>
+    <source filename="Recursive Mono-Linear A.ufo" familyname="Recursive Mono" stylename="Linear A"><location><dimension name="Weight" xvalue="250"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="19.999999"/></location></source>
+    <source filename="Recursive Mono-Linear B Slanted.ufo" familyname="Recursive Mono" stylename="Linear B 14 Italic"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="19.999999"/></location></source>
+    <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear ExtraBold"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="19.999999"/></location></source>
+    <source filename="Recursive Mono-Linear C Slanted.ufo" familyname="Recursive Mono" stylename="Linear C Italic"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="19.999999"/></location></source>
+    <source filename="Recursive Mono-Linear C.ufo" familyname="Recursive Mono" stylename="Linear C"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="19.999999"/></location></source>
+    <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear B" layer="support.w.middle"><location><dimension name="Weight" xvalue="500"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="19.999999"/></location></source>
+
+    <!-- CASUAL 1 ===================================================================== -->
+
+    <source filename="Recursive Mono-Casual A Slanted.ufo" familyname="Recursive Mono" stylename="Casual A Italic"><location><dimension name="Weight" xvalue="250"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="19.999999"/></location></source>
+    <source filename="Recursive Mono-Casual A.ufo" familyname="Recursive Mono" stylename="Casual A"><location><dimension name="Weight" xvalue="250"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="19.999999"/></location></source>
+    <source filename="Recursive Mono-Casual B Slanted.ufo" familyname="Recursive Mono" stylename="Casual B Italic"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="19.999999"/></location></source>
+    <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="19.999999"/></location></source>
+    <source filename="Recursive Mono-Casual C Slanted.ufo" familyname="Recursive Mono" stylename="Casual C Italic"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="19.999999"/></location></source>
+    <source filename="Recursive Mono-Casual C.ufo" familyname="Recursive Mono" stylename="Casual C"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="19.999999"/></location></source>
+    <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B" layer="support.w.middle"><location><dimension name="Weight" xvalue="500"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="19.999999"/></location></source>
+
+
+    <!-- ============================================================================== -->
+    <!-- ============================================================================== -->
+    <!-- ============================================================================== -->
+    <!-- ============================================================================== -->
+    <!-- OPSZ 20 ====================================================================== -->
+
+    <!-- LINEAR 0 ===================================================================== -->
+    
+    <source filename="Recursive Mono-Linear A Slanted.ufo" familyname="Recursive Mono" stylename="Linear A 14 Italic"><location><dimension name="Weight" xvalue="250"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Linear A.ufo" familyname="Recursive Mono" stylename="Linear A"><location><dimension name="Weight" xvalue="250"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Linear B Slanted.ufo" familyname="Recursive Mono" stylename="Linear B 14 Italic"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear ExtraBold"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Linear C Slanted.ufo" familyname="Recursive Mono" stylename="Linear C Italic"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Linear C.ufo" familyname="Recursive Mono" stylename="Linear C"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear B" layer="support.w.middle"><location><dimension name="Weight" xvalue="500"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="8"/></location></source>
+
+    <!-- LINEAR 49 ==================================================================== -->
+
+    <source filename="Recursive Mono-Linear A Slanted.ufo" familyname="Recursive Mono" stylename="Linear A 14 Italic"><location><dimension name="Weight" xvalue="250"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="49"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Linear A.ufo" familyname="Recursive Mono" stylename="Linear A"><location><dimension name="Weight" xvalue="250"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="49"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Linear B Slanted.ufo" familyname="Recursive Mono" stylename="Linear B 14 Italic"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="49"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear B"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="49"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Linear C Slanted.ufo" familyname="Recursive Mono" stylename="Linear C Italic"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="49"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Linear C.ufo" familyname="Recursive Mono" stylename="Linear C"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="49"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear B" layer="support.w.middle"><location><dimension name="Weight" xvalue="500"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="49"/><dimension name="Optical size" xvalue="8"/></location></source>
+
+    <!-- CASUAL 50 ==================================================================== -->
+
+    <source filename="Recursive Mono-Casual A.ufo" familyname="Recursive Mono" stylename="Casual A"><location><dimension name="Weight" xvalue="250"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="50"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Casual B Slanted.ufo" familyname="Recursive Mono" stylename="Casual B Italic"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="50"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="50"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Casual C Slanted.ufo" familyname="Recursive Mono" stylename="Casual C Italic"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="50"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Casual C.ufo" familyname="Recursive Mono" stylename="Casual C"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="50"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B" layer="support.w.middle"><location><dimension name="Weight" xvalue="500"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="50"/><dimension name="Optical size" xvalue="8"/></location></source>
+
+    <!-- CASUAL 100 =================================================================== -->
+
+    <source filename="Recursive Mono-Casual A Slanted.ufo" familyname="Recursive Mono" stylename="Casual A Italic"><location><dimension name="Weight" xvalue="250"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Casual A.ufo" familyname="Recursive Mono" stylename="Casual A"><location><dimension name="Weight" xvalue="250"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Casual B Slanted.ufo" familyname="Recursive Mono" stylename="Casual B Italic"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Casual C Slanted.ufo" familyname="Recursive Mono" stylename="Casual C Italic"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Casual C.ufo" familyname="Recursive Mono" stylename="Casual C"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="8"/></location></source>
+    <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B" layer="support.w.middle"><location><dimension name="Weight" xvalue="500"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="8"/></location></source>
+
+
+    <!-- ============================================================================== -->
+    <!-- ============================================================================== -->
+    <!-- ============================================================================== -->
+    <!-- ============================================================================== -->
+    <!-- OPSZ 64 ====================================================================== -->
+
+    <!-- LINEAR 0 ===================================================================== -->
+    
+    <source filename="Recursive Mono-Linear A Slanted.ufo" familyname="Recursive Mono" stylename="Linear A 14 Italic"><location><dimension name="Weight" xvalue="250"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Linear A.ufo" familyname="Recursive Mono" stylename="Linear A"><location><dimension name="Weight" xvalue="250"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Linear B Slanted.ufo" familyname="Recursive Mono" stylename="Linear B 14 Italic"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear ExtraBold"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Linear C Slanted.ufo" familyname="Recursive Mono" stylename="Linear C Italic"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Linear C.ufo" familyname="Recursive Mono" stylename="Linear C"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear B" layer="support.w.middle"><location><dimension name="Weight" xvalue="500"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="0"/><dimension name="Optical size" xvalue="64"/></location></source>
+
+    <!-- LINEAR 49 ==================================================================== -->
+
+    <source filename="Recursive Mono-Linear A Slanted.ufo" familyname="Recursive Mono" stylename="Linear A 14 Italic"><location><dimension name="Weight" xvalue="250"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="49"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Linear A.ufo" familyname="Recursive Mono" stylename="Linear A"><location><dimension name="Weight" xvalue="250"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="49"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Linear B Slanted.ufo" familyname="Recursive Mono" stylename="Linear B 14 Italic"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="49"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear B"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="49"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Linear C Slanted.ufo" familyname="Recursive Mono" stylename="Linear C Italic"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="49"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Linear C.ufo" familyname="Recursive Mono" stylename="Linear C"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="49"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear B" layer="support.w.middle"><location><dimension name="Weight" xvalue="500"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="49"/><dimension name="Optical size" xvalue="64"/></location></source>
+
+    <!-- CASUAL 50 ==================================================================== -->
+
+    <source filename="Recursive Mono-Casual A.ufo" familyname="Recursive Mono" stylename="Casual A"><location><dimension name="Weight" xvalue="250"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="50"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Casual B Slanted.ufo" familyname="Recursive Mono" stylename="Casual B Italic"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="50"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="50"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Casual C Slanted.ufo" familyname="Recursive Mono" stylename="Casual C Italic"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="50"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Casual C.ufo" familyname="Recursive Mono" stylename="Casual C"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="50"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B" layer="support.w.middle"><location><dimension name="Weight" xvalue="500"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="50"/><dimension name="Optical size" xvalue="64"/></location></source>
+
+    <!-- CASUAL 100 =================================================================== -->
+
+    <source filename="Recursive Mono-Casual A Slanted.ufo" familyname="Recursive Mono" stylename="Casual A Italic"><location><dimension name="Weight" xvalue="250"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Casual A.ufo" familyname="Recursive Mono" stylename="Casual A"><location><dimension name="Weight" xvalue="250"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Casual B Slanted.ufo" familyname="Recursive Mono" stylename="Casual B Italic"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B"><location><dimension name="Weight" xvalue="800"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Casual C Slanted.ufo" familyname="Recursive Mono" stylename="Casual C Italic"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="15"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Casual C.ufo" familyname="Recursive Mono" stylename="Casual C"><location><dimension name="Weight" xvalue="900"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="64"/></location></source>
+    <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B" layer="support.w.middle"><location><dimension name="Weight" xvalue="500"/><dimension name="Slant" xvalue="0"/><dimension name="Italic" xvalue="0"/><dimension name="Expression" xvalue="100"/><dimension name="Optical size" xvalue="64"/></location></source>
+
+
+  </sources>
+  <instances>
+      <instance familyname="Recursive Mono" stylename="Regular" filename="instances/Recursive Mono-Linear Regular.ufo">
+        <location>
+          <dimension name="Weight" xvalue="400"/>
+          <dimension name="Slant" xvalue="0"/>
+          <dimension name="Italic" xvalue="0"/>
+          <dimension name="Expression" xvalue="0"/>
+          <dimension name="Optical size" xvalue="8"/>
+        </location>
+        <kerning/>
+        <info/>
+      </instance>
+  </instances>
+</designspace>
