@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<designspace format="4.0">
+    <axes>
+        <axis tag="slnt" name="Slant" minimum="0" maximum="15" default="0" />
+        <axis tag="opsz" name="Optical size" minimum="8" maximum="20" default="8" />
+    </axes>
+    <sources>
+
+        <!-- OPSZ 8 -->
+        
+        <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual ExtraBold">
+            <location>
+                <dimension name="Slant" xvalue="0" />
+                <dimension name="Optical size" xvalue="8" />
+            </location>
+        </source>
+        <source filename="Recursive Mono-Casual B Slanted.ufo" familyname="Recursive Mono" stylename="Casual ExtraBold Italic">
+            <location>
+                <dimension name="Slant" xvalue="15" />
+                <dimension name="Optical size" xvalue="8" />
+            </location>
+        </source>
+
+        <!-- OPSZ 19 -->
+        
+        <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual ExtraBold">
+            <location>
+                <dimension name="Slant" xvalue="0" />
+                <dimension name="Optical size" xvalue="19.99" />
+            </location>
+        </source>
+        <source filename="Recursive Mono-Casual B Slanted.ufo" familyname="Recursive Mono" stylename="Casual ExtraBold Italic">
+            <location>
+                <dimension name="Slant" xvalue="15" />
+                <dimension name="Optical size" xvalue="19.99" />
+            </location>
+        </source>
+
+        <!-- OPSZ 20 -->
+        
+        <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual ExtraBold">
+            <location>
+                <dimension name="Slant" xvalue="0" />
+                <dimension name="Optical size" xvalue="20" />
+            </location>
+        </source>
+        
+        <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual ExtraBold">
+            <location>
+                <dimension name="Slant" xvalue="7.49" />
+                <dimension name="Optical size" xvalue="20" />
+            </location>
+        </source>
+    
+        <source filename="Recursive Mono-Casual B Slanted.ufo" familyname="Recursive Mono" stylename="Casual ExtraBold Italic">
+            <location>
+                <dimension name="Slant" xvalue="7.5" />
+                <dimension name="Optical size" xvalue="20" />
+            </location>
+        </source>
+        <source filename="Recursive Mono-Casual B Slanted.ufo" familyname="Recursive Mono" stylename="Casual ExtraBold Italic">
+            <location>
+                <dimension name="Slant" xvalue="15" />
+                <dimension name="Optical size" xvalue="20" />
+            </location>
+        </source>
+
+        <!-- OPSZ 64 -->
+        
+        <!-- <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual ExtraBold">
+            <location>
+                <dimension name="Slant" xvalue="0" />
+                <dimension name="Optical size" xvalue="64" />
+            </location>
+        </source>
+        
+        <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual ExtraBold">
+            <location>
+                <dimension name="Slant" xvalue="0.49" />
+                <dimension name="Optical size" xvalue="64" />
+            </location>
+        </source>
+    
+        <source filename="Recursive Mono-Casual B Slanted.ufo" familyname="Recursive Mono" stylename="Casual ExtraBold Italic">
+            <location>
+                <dimension name="Slant" xvalue="0.5" />
+                <dimension name="Optical size" xvalue="64" />
+            </location>
+        </source>
+        <source filename="Recursive Mono-Casual B Slanted.ufo" familyname="Recursive Mono" stylename="Casual ExtraBold Italic">
+            <location>
+                <dimension name="Slant" xvalue="15" />
+                <dimension name="Optical size" xvalue="64" />
+            </location>
+        </source> -->
+        
+    </sources>
+    <instances>
+        <instance familyname="Recursive Mono" stylename="Casual ExtraBold" filename="instances/Recursive Mono-Casual ExtraBold.ufo" postscriptfontname="RecursiveMono-CasualExtraBold">
+            <location>
+                <dimension name="Slant" xvalue="0" />
+                <dimension name="Optical size" xvalue="8" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+        <instance familyname="Recursive Mono" stylename="Casual ExtraBold Italic" filename="instances/Recursive Mono-Casual ExtraBold Italic.ufo" postscriptfontname="RecursiveMono-CasualExtraBoldItalic">
+            <location>
+                <dimension name="Slant" xvalue="15" />
+                <dimension name="Optical size" xvalue="8" />
+            </location>
+            <kerning />
+            <info />
+        </instance>
+    </instances>
+</designspace>

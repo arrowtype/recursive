@@ -88,8 +88,8 @@
 		<string>F_.glif</string>
 		<key>G</key>
 		<string>G_.glif</string>
-		<key>G.morph</key>
-		<string>G_.morph.glif</string>
+		<key>G.replaced_with_morph</key>
+		<string>G_.replaced_with_morph.glif</string>
 		<key>Gbreve</key>
 		<string>G_breve.glif</string>
 		<key>Gcaron</key>
@@ -316,6 +316,8 @@
 		<string>a.italic.glif</string>
 		<key>a.italic_curl</key>
 		<string>a.italic_curl.glif</string>
+		<key>a.replaced_with_flatbar</key>
+		<string>a.replaced_with_flatbar.glif</string>
 		<key>a.roman</key>
 		<string>a.roman.glif</string>
 		<key>a.ss01</key>
@@ -346,6 +348,12 @@
 		<string>amacron.glif</string>
 		<key>ampersand</key>
 		<string>ampersand.glif</string>
+		<key>ampersand.code_experimental</key>
+		<string>ampersand.code_experimental.glif</string>
+		<key>ampersand.code_experimental_2</key>
+		<string>ampersand.code_experimental_2.glif</string>
+		<key>ampersand.code_experimental_3</key>
+		<string>ampersand.code_experimental_3.glif</string>
 		<key>aogonek</key>
 		<string>aogonek.glif</string>
 		<key>approxequal</key>
@@ -402,6 +410,8 @@
 		<string>c.glif</string>
 		<key>c.italic</key>
 		<string>c.italic.glif</string>
+		<key>c.ss01</key>
+		<string>c.ss01.glif</string>
 		<key>cacute</key>
 		<string>cacute.glif</string>
 		<key>caron</key>
@@ -638,6 +648,8 @@
 		<string>i.italic.glif</string>
 		<key>i.roman</key>
 		<string>i.roman.glif</string>
+		<key>i.ss01</key>
+		<string>i.ss01.glif</string>
 		<key>iacute</key>
 		<string>iacute.glif</string>
 		<key>ibreve</key>
@@ -710,6 +722,8 @@
 		<string>m.glif</string>
 		<key>m.italic</key>
 		<string>m.italic.glif</string>
+		<key>m.replaced_with_italic</key>
+		<string>m.replaced_with_italic.glif</string>
 		<key>macron</key>
 		<string>macron.glif</string>
 		<key>macroncomb</key>

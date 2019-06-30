@@ -25,4 +25,6 @@ timestamp() {
 
 date=$(timestamp)
 
-fontmake -m $DS -o variable --output-path $outputDir/$fontName-$date.tff
+fontmake -m $DS -o variable --output-path $outputDir/$fontName-$date.ttf
+
+woff2_compress $outputDir/$fontName-$date.ttf
