@@ -224,6 +224,8 @@ Because three of these four delta tuples describe the same exact points, it seem
 
 ## Conclusion
 
+Because every single glyph gets additional deltas for duplicate source references, this would very likely cause an even great filesize increases for larger character sets.
+
 For the time being (unless I get different data or find a better hack), I will not include an opsz axis in Recursive.
 
 Instead, I will do something that type designers have always had to rely on: allow typographers to make usage choices with the font, and accept that those choices may be better or worse, depending on the knowledge and judgement of the individual. However, this gives more incentive for the minisite to include a set of "usage" guidelines.
