@@ -5,10 +5,10 @@
 	<outline>
 		<contour>
 			<point x="130" y="0" type="curve" smooth="yes"/>
-			<point x="530" y="0" type="line"/>
-			<point x="530" y="30"/>
-			<point x="523.6666666667" y="50"/>
-			<point x="507" y="50" type="curve"/>
+			<point x="500" y="0" type="line"/>
+			<point x="500" y="30"/>
+			<point x="494" y="50"/>
+			<point x="477" y="50" type="curve"/>
 			<point x="150" y="50" type="line"/>
 			<point x="150" y="250"/>
 			<point x="150" y="450"/>
@@ -29,21 +29,21 @@
 			<point x="114" y="0"/>
 		</contour>
 		<contour>
-			<point x="514" y="173" type="curve"/>
-			<point x="514" y="84"/>
-			<point x="487" y="14"/>
-			<point x="486" y="-4" type="curve" smooth="yes"/>
-			<point x="485" y="-22"/>
-			<point x="503" y="-27"/>
-			<point x="530" y="-27" type="curve"/>
-			<point x="552" y="27"/>
-			<point x="564" y="92"/>
-			<point x="564" y="150" type="curve" smooth="yes"/>
-			<point x="564" y="168"/>
-			<point x="546" y="173"/>
-			<point x="524" y="173" type="curve" smooth="yes"/>
-			<point x="521" y="173"/>
-			<point x="517" y="173"/>
+			<point x="484" y="173" type="curve"/>
+			<point x="484" y="84"/>
+			<point x="457" y="14"/>
+			<point x="456" y="-4" type="curve" smooth="yes"/>
+			<point x="455" y="-22"/>
+			<point x="473" y="-27"/>
+			<point x="500" y="-27" type="curve"/>
+			<point x="522" y="27"/>
+			<point x="534" y="92"/>
+			<point x="534" y="150" type="curve" smooth="yes"/>
+			<point x="534" y="168"/>
+			<point x="516" y="173"/>
+			<point x="494" y="173" type="curve" smooth="yes"/>
+			<point x="491" y="173"/>
+			<point x="487" y="173"/>
 		</contour>
 	</outline>
 	<anchor name="top" x="126" y="711"/>
@@ -85,6 +85,16 @@
 	<guideline x="0" y="700" angle="0" identifier="a02ru8f7gg"/>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
