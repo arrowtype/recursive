@@ -185,7 +185,7 @@ source B
 
 A big problem with strategies involving duplicate references to font sources is that they seem to bloat font filesize.
 
-My experiments of making an ExtraBold font with Slant & Optical Size axes resulted in a final filesize of 24KB WOFF2, 61KB TTF (with a limited A–Z, a–z character set).
+My experiments of making an ExtraBold font with Slant & Optical Size axes resulted in a final filesize of 24KB WOFF2, 61KB TTF (with a limited A–Z, a–z character set, with a total of 75 glyphs).
 
 The same font, but without the Optical Size from duplicate source references, is only 14KB WOFF2, 24KB TTF.
 
@@ -210,34 +210,12 @@ The `gvar` table is:
 - lines 6765 to 29060 in the opsz+slnt font (22295 total)
 
 The `gvar` table alone takes up an extra 17047 lines in the opsz+slnt font – almost the entire difference of 17722 lines. Looking at these files, it is obvious why: the one-axis font has just a single `tuple` of `delta` entries per glyph. Meanwhile, the opsz+slnt font has four sets of deltas per glyph.
+- `<coord axis="slnt" min="0.0007" value="0.9993" max="1.0"/>`
+- `<coord axis="slnt" min="0.9993" value="1.0" max="1.0"/>`
+- `<coord axis="slnt" min="0.0007" value="0.4993" max="0.9993"/> <coord axis="opsz" value="1.0"/>`
+- `<coord axis="slnt" min="0.4993" value="0.5" max="0.9993"/> <coord axis="opsz" value="1.0"/>`
 
-The number `4` is significant here, because it corresponds to the number of separate locations I have described on the `slnt` axis in the designspace:
-- slnt= `0`, for opsz = `8` and `19` and `20`
-- slnt= `7.49`, for opsz `20`
-- slnt= `7.5`, for opsz `20`
-- slnt= `15`, for opsz = `8` and `19` and `20`
-
-I know that this is connected specifically to slant, because the XML tells me.
-
-```
- <glyphVariations glyph="x.italic">
-      <tuple>
-        <coord axis="slnt" min="0.0007" value="0.9993" max="1.0"/>
-        <delta pt="0" x="-40" y="0"/>
-        <delta pt="1" x="-44" y="0"/>
-        
-        etc...
-
-      </tuple>
-      <tuple>
-        <coord axis="slnt" min="0.9993" value="1.0" max="1.0"/>
-        <delta pt="0" x="-40" y="0"/>
-        <delta pt="1" x="-44" y="0"/>
-
-        etc...
-```
-
-*SO,* it's not that the opsz axis added weight, per se – but rather, describing additional "deltas" along the `slnt` axis (even if they're duplicates) *does* add weight. 
+It seems that it's not that the opsz axis added weight, per se – but rather, describing additional "deltas" along the `slnt` axis (even if they're duplicates) *does* add weight.
 
 I had expected WOFF2 compression to somehow work around this, but it seems that (at least for now), it doesn't.
 
