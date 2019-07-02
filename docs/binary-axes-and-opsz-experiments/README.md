@@ -1,4 +1,4 @@
-# Experiments with Optical Sizing & "Binary" Variation Axes
+# Experiments with Optical Sizing & "Binary" Variation Axes, June 30
 
 Goal: Make a font which has: 
 - A large range of flexibility.
@@ -109,18 +109,123 @@ source B
 
 Works at 8pt:
 
-![]("assets/Kapture 2019-06-29 at 18.36.56.gif")
+![](assets/slant-at-opsz_8.gif)
 
 Works at 20pt:
 
-![]("assets/Kapture 2019-06-29 at 18.37.24.gif")
+![](assets/slant-at-opsz_20.gif)
 
 Confusing between 8pt & 20pt:
 
-![]("assets/Kapture 2019-06-29 at 18.37.57.gif")
+![](assets/slant-at-opsz_14.gif)
+
+I would expect it to be the exact same at opsz 14 as at opsz 8, because I have tried to duplicate source references to make it the same between 8 and 19.99. However, it seems to be influenced by both sides of the opsz divide, resulting in something not useful at all: an axis which is partially smooth, and partially snapping.
+
+I have also tried a setup with *even more* duplicate source references, but this didn't change the behavior.
+
+<details><summary><b>Setup for second trial of opsz control for slant</b> (Click to expand)</summary>
+
+```
+
+# fluid axis at 8pt size
+source A
+- slant: 0
+- opsz: 8
+
+source A
+- slant: 0.01
+- opsz: 8
+
+source B
+- slant: 14.99
+- opsz: 8
+
+source B
+- slant: 15
+- opsz: 8
+
+# fluid axis up to 19.99pt size
+source A
+- slant: 0
+- opsz: 19.99
+
+source A
+- slant: 0.01
+- opsz: 19.99
+
+source B
+- slant: 14.99
+- opsz: 19.99
+
+source B
+- slant: 15
+- opsz: 19.99
+
+# binary axis at 20pt size and above
+source A
+- slant: 0
+- opsz: 20
+
+source A
+- slant: 7.49
+- opsz: 20
+
+source B
+- slant: 7.5
+- opsz: 20
+
+source B
+- slant: 15
+- opsz: 20
+```
+
+</details>
 
 ## Maintaining a compact file size
 
-I've done one experiment with this, making the "Expression" axis binary above 20pt.
+A big problem with strategies involving duplicate references to font sources is that they seem to bloat font filesize.
 
-![](assets/2019-06-29-17-17-04.png)
+My experiments of making an ExtraBold font with Slant & Optical Size axes resulted in a final filesize of 24KB WOFF2, 61KB TTF (with a limited A–Z, a–z character set, with a total of 75 glyphs).
+
+The same font, but without the Optical Size from duplicate source references, is only 14KB WOFF2, 24KB TTF.
+
+Notably, the Optical Size didn't actually use any additional UFO sources – it merely made more `<source>` references to the in the designspace file.
+
+![](assets/2019-07-01-13-13-40.png)
+
+I don't yet know *why* there is that size difference, however, and I can't predict whether it would be more or less pronounced for a full character set. Is the size change proportional to added characters, or would it stay relatively constant, even with many more characters? That is, if I made a font with 8x more characters, would the size change be 80KB (8 times the 10KB difference), or would it still be around 10KB (the current difference)?
+
+Why the difference in size?
+
+By inspecting the font files with TTX, I can find a main area of difference.
+
+Overall, the slant-only font is 11,341 lines of XML, while the opsz+slnt font is 29,063 lines.
+
+The `glyf` table is
+- lines 417 to 5718 in the slant-only font (5301 total)
+- lines 396 to 6120 in the opsz+slnt font (5724 total)
+
+The `gvar` table is:
+- lines 6090 to 11338 in the slant-only font (5248 total)
+- lines 6765 to 29060 in the opsz+slnt font (22295 total)
+
+The `gvar` table alone takes up an extra 17047 lines in the opsz+slnt font – almost the entire difference of 17722 lines. Looking at these files, it is obvious why: the one-axis font has just a single `tuple` of `delta` entries per glyph. Meanwhile, the opsz+slnt font has four sets of deltas per glyph.
+- `<coord axis="slnt" min="0.0007" value="0.9993" max="1.0"/>`
+- `<coord axis="slnt" min="0.9993" value="1.0" max="1.0"/>`
+- `<coord axis="slnt" min="0.0007" value="0.4993" max="0.9993"/> <coord axis="opsz" value="1.0"/>`
+- `<coord axis="slnt" min="0.4993" value="0.5" max="0.9993"/> <coord axis="opsz" value="1.0"/>`
+
+It seems that it's not that the opsz axis added weight, per se – but rather, describing additional "deltas" along the `slnt` axis (even if they're duplicates) *does* add weight.
+
+I had expected WOFF2 compression to somehow work around this, but it seems that (at least for now), it doesn't.
+
+Because three of these four delta tuples describe the same exact points, it seems plausible that at some time, each tuple could refer to multiple `slnt` values, to save space. However, I'm not sure what would be involved in that change to the OpenType format, or to WOFF2 compression.
+
+
+## Conclusion
+
+Because every single glyph gets additional deltas for duplicate source references, this would very likely cause an even great filesize increases for larger character sets.
+
+For the time being (unless I get different data or find a better hack), I will not include an opsz axis in Recursive.
+
+Instead, I will do something that type designers have always had to rely on: allow typographers to make usage choices with the font, and accept that those choices may be better or worse, depending on the knowledge and judgement of the individual. However, this gives more incentive for the minisite to include a set of "usage" guidelines.

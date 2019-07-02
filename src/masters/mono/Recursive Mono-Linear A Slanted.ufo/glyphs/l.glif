@@ -4,15 +4,15 @@
 	<advance width="600"/>
 	<outline>
 		<contour>
-			<point x="215" y="750" type="curve"/>
-			<point x="212" y="738"/>
-			<point x="209" y="728"/>
-			<point x="206" y="716" type="curve" smooth="yes"/>
-			<point x="205" y="710"/>
-			<point x="208" y="705"/>
-			<point x="214" y="705" type="curve" smooth="yes"/>
-			<point x="274" y="705"/>
-			<point x="334" y="705"/>
+			<point x="205" y="750" type="curve"/>
+			<point x="202" y="738"/>
+			<point x="199" y="728"/>
+			<point x="196" y="716" type="curve" smooth="yes"/>
+			<point x="195" y="710"/>
+			<point x="198" y="705"/>
+			<point x="204" y="705" type="curve" smooth="yes"/>
+			<point x="267.3333333333" y="705"/>
+			<point x="330.6666666667" y="705"/>
 			<point x="394" y="705" type="curve"/>
 			<point x="337" y="482"/>
 			<point x="280" y="257"/>
@@ -26,8 +26,8 @@
 			<point x="455" y="750"/>
 			<point x="449" y="750"/>
 			<point x="443" y="750" type="curve" smooth="yes"/>
-			<point x="367" y="750"/>
-			<point x="291" y="750"/>
+			<point x="363.6666666667" y="750"/>
+			<point x="284.3333333333" y="750"/>
 		</contour>
 		<contour>
 			<point x="26" y="45" type="line"/>
@@ -67,6 +67,16 @@
 	<guideline x="345" y="526" angle="255.7447579635" identifier="ZmVlybhTpu"/>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>

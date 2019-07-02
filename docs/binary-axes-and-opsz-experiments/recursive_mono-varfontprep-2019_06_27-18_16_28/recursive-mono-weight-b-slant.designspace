@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <designspace format="4.0">
     <axes>
-        <axis tag="XPRN" name="expression" minimum="0" maximum="1" default="0" />
+        <axis tag="slnt" name="Slant" minimum="0" maximum="15" default="0" />
     </axes>
     <sources>
 
-        
         <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear ExtraBold">
             <location>
-                <dimension name="expression" xvalue="0" />
+                <dimension name="Slant" xvalue="0" />
             </location>
         </source>
-        <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual ExtraBold">
+        <source filename="Recursive Mono-Linear B Slanted.ufo" familyname="Recursive Mono" stylename="Linear ExtraBold Italic">
             <location>
-                <dimension name="expression" xvalue="1" />
+                <dimension name="Slant" xvalue="15" />
             </location>
         </source>
 
@@ -21,14 +20,14 @@
     <instances>
         <instance familyname="Recursive Mono" stylename="Linear ExtraBold" filename="instances/Recursive Mono-Linear ExtraBold.ufo" postscriptfontname="RecursiveMono-LinearExtraBold">
             <location>
-                <dimension name="expression" xvalue="0" />
+                <dimension name="Slant" xvalue="0" />
             </location>
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Mono" stylename="Casual ExtraBold" filename="instances/Recursive Mono-Casual ExtraBold.ufo" postscriptfontname="RecursiveMono-CasualExtraBold">
+        <instance familyname="Recursive Mono" stylename="Linear ExtraBold Italic" filename="instances/Recursive Mono-Linear ExtraBold Italic.ufo" postscriptfontname="RecursiveMono-LinearExtraBoldItalic">
             <location>
-                <dimension name="expression" xvalue="1" />
+                <dimension name="Slant" xvalue="15" />
             </location>
             <kerning />
             <info />

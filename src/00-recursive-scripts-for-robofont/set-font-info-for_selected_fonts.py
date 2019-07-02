@@ -11,6 +11,7 @@ for fontPath in inputFonts:
 
     f.info.openTypeOS2VendorID = "ARRW"
     f.info.familyName = "Recursive Mono"
+    f.info.copyright = "Copyright 2019 The Recursive Project Authors (github.com/thundernixon/recursive)"
 
     f.save()
     f.close()

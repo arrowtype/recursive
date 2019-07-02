@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run in RoboFont",
+      "type": "shell",
+      "command": "robofont",
+      "args": ["-p", "${file}"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
