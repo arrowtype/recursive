@@ -45,8 +45,8 @@
 			<point x="411" y="59" type="line"/>
 			<point x="426" y="36" type="line"/>
 			<point x="366" y="272"/>
-			<point x="315" y="482"/>
-			<point x="265" y="690" type="curve"/>
+			<point x="275" y="650"/>
+			<point x="267" y="683" type="curve"/>
 			<point x="263" y="698"/>
 			<point x="259" y="700"/>
 			<point x="251" y="700" type="curve"/>
@@ -68,8 +68,19 @@
 	</outline>
 	<anchor name="top" x="411.7995302052" y="711"/>
 	<anchor name="bottom" x="233.7499303373" y="-1"/>
+	<guideline x="426" y="36" angle="103.8299217832" identifier="uiw8Uwtxhr"/>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
