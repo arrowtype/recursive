@@ -38,9 +38,9 @@
 			<point x="19" y="272"/>
 			<point x="3" y="141" type="curve" smooth="yes"/>
 			<point x="-2" y="101"/>
-			<point x="8" y="69"/>
-			<point x="36" y="41" type="curve" smooth="yes"/>
-			<point x="72" y="5"/>
+			<point x="12" y="70"/>
+			<point x="31" y="51" type="curve" smooth="yes"/>
+			<point x="76" y="6"/>
 			<point x="124" y="-10"/>
 		</contour>
 		<contour>
@@ -89,6 +89,16 @@
 	<guideline x="313" y="263" angle="0" identifier="mSiFZAiwZc"/>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
