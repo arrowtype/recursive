@@ -11,7 +11,7 @@
       <map input="800" output="800"/>
       <map input="900" output="900"/>
     </axis>
-    <axis tag="slnt" name="Slant" minimum="0" maximum="15" default="0">
+    <axis tag="slnt" name="Slant" minimum="-15" maximum="0" default="0">
       <labelname xml:lang="en">Slant</labelname>
     </axis>
     <axis tag="ital" name="Italic" minimum="0" maximum="1" default="0">
