@@ -65,6 +65,19 @@ This may be the ultimate solution, but would have some big challenges:
 - It would require working with many masters open at a time, which currently requires a very large amount of computing power (a 2018 MacBook Pro with 2.2 GHz Intel Core i7 & 32GB RAM currently gets major lag with more than 8 masters.)
 - It would be very time-consuming, yet require a fair amount of technical expertise to do well. It's not the kind of problem that could be easily outsourced or crowdsourced.
 
-## Conclusion: consider this as a future enhancement
+## Another option: completely automate compatibility for Linear glyphs
+
+It is possible to force compatibility for glyphs. Here is one method that does this, from RoboFont Batch:
+
+https://github.com/typemytype/batchRoboFontExtension/blob/master/Batch.roboFontExt/lib/variableFontGenerator/__init__.py#L105
+
+Would this result in decent shapes? It might! It needs testing.
+
+## Conclusion (for now): consider this as a future enhancement
 
 In the future, tools for variable fonts will be easier and faster to use. Someone may solve this problem. We will better understand the demand for this typeface, and whether the static-font workaround works for designers. 
+
+## Further reading
+
+https://forum.robofont.com/topic/593/glyph-compatibility-iscompatible/6
+
