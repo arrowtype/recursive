@@ -1,37 +1,63 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version='1.0' encoding='UTF-8'?>
 <designspace format="4.0">
   <axes>
-    <axis tag="slnt" name="slant" minimum="0" maximum="14" default="0" />
-    <axis tag="XPRN" name="expression" minimum="0" maximum="1" default="0" />
+    <axis tag="slnt" name="slant" minimum="0" maximum="14" default="0"/>
+    <axis tag="XPRN" name="expression" minimum="0" maximum="1" default="0"/>
   </axes>
   <sources>
     <source filename="Recursive Mono-Casual C Slanted.ufo" familyname="Recursive Mono" stylename="Casual Heavy Italic">
       <location>
-        <dimension name="slant" xvalue="14" />
-        <dimension name="expression" xvalue="1" />
+        <dimension name="slant" xvalue="14"/>
+        <dimension name="expression" xvalue="1"/>
       </location>
     </source>
     <source filename="Recursive Mono-Linear C Slanted.ufo" familyname="Recursive Mono" stylename="Linear Heavy Italic">
       <location>
-        <dimension name="slant" xvalue="14" />
-        <dimension name="expression" xvalue="0" />
+        <dimension name="slant" xvalue="14"/>
+        <dimension name="expression" xvalue="0"/>
       </location>
     </source>
     <source filename="Recursive Mono-Linear C.ufo" familyname="Recursive Mono" stylename="Linear Heavy">
-      <lib copy="1" />
-      <groups copy="1" />
-      <features copy="1" />
-      <info copy="1" />
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
       <location>
-        <dimension name="slant" xvalue="0" />
-        <dimension name="expression" xvalue="0" />
+        <dimension name="slant" xvalue="0"/>
+        <dimension name="expression" xvalue="0"/>
       </location>
     </source>
     <source filename="Recursive Mono-Casual C.ufo" familyname="Recursive Mono" stylename="Casual Heavy">
       <location>
-        <dimension name="slant" xvalue="0" />
-        <dimension name="expression" xvalue="1" />
+        <dimension name="slant" xvalue="0"/>
+        <dimension name="expression" xvalue="1"/>
       </location>
     </source>
   </sources>
+  <lib>
+    <dict>
+      <key>com.letterror.skateboard.interactionSources</key>
+      <dict>
+        <key>horizontal</key>
+        <array>
+          <string>slant</string>
+        </array>
+        <key>ignore</key>
+        <array>
+          <string>expression</string>
+        </array>
+        <key>vertical</key>
+        <array/>
+      </dict>
+      <key>com.letterror.skateboard.previewLocation</key>
+      <dict>
+        <key>expression</key>
+        <real>0.0</real>
+        <key>slant</key>
+        <real>0.0</real>
+      </dict>
+      <key>com.letterror.skateboard.previewText</key>
+      <string>/zerosuperior/onesuperior/twosuperior/threesuperior/foursuperior/fivesuperior/sixsuperior/sevensuperior/eightsuperior/ninesuperior</string>
+    </dict>
+  </lib>
 </designspace>
