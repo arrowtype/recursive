@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="z.italic" format="2">
+<glyph name="z.altdiagonal" format="2">
 	<advance width="600"/>
 	<outline>
 		<contour>
@@ -88,18 +88,20 @@
 		</contour>
 	</outline>
 	<anchor name="top" x="368.2874088892" y="537"/>
+	<guideline x="539" y="398" angle="50.3080858042" identifier="6HnCMFxx9c"/>
+	<guideline x="442" y="493" angle="230.1145026031" identifier="gojFLKV5ya"/>
 	<lib>
 		<dict>
-			<key>com.rafalbuchner.mirroringDrawingLocal</key>
-			<dict>
-				<key>mirroringOptions</key>
-				<integer>3</integer>
-				<key>offset</key>
-				<array>
-					<integer>0</integer>
-					<integer>0</integer>
-				</array>
-			</dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+			<key>com.typemytype.robofont.guideline.showMeasurements.ahZJMrMpPW</key>
+			<integer>1</integer>
 		</dict>
 	</lib>
 </glyph>

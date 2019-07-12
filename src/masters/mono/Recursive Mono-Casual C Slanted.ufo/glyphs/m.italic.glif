@@ -72,20 +72,20 @@
 			<point x="561.2836897384" y="206.243162633"/>
 			<point x="552" y="201"/>
 			<point x="542" y="201" type="curve" smooth="yes"/>
-			<point x="533.2" y="201"/>
-			<point x="525.4337705205" y="202.8264917918"/>
-			<point x="520" y="205" type="curve"/>
-			<point x="523.0731814858" y="214.2195444573"/>
-			<point x="526.8402768814" y="221.6406229831"/>
+			<point x="533" y="201"/>
+			<point x="523" y="203"/>
+			<point x="518" y="205" type="curve"/>
+			<point x="522" y="214"/>
+			<point x="526" y="222"/>
 			<point x="531" y="231" type="curve" smooth="yes"/>
-			<point x="554" y="285"/>
+			<point x="560" y="285"/>
 			<point x="575" y="322"/>
 			<point x="588" y="376" type="curve" smooth="yes"/>
-			<point x="607" y="453"/>
-			<point x="582" y="560"/>
-			<point x="544" y="560" type="curve"/>
-			<point x="509" y="560"/>
-			<point x="475" y="539"/>
+			<point x="610" y="468"/>
+			<point x="586" y="560"/>
+			<point x="539" y="560" type="curve"/>
+			<point x="506" y="560"/>
+			<point x="476" y="540"/>
 			<point x="445" y="500" type="curve" smooth="yes"/>
 			<point x="414" y="460"/>
 			<point x="346.9989130868" y="363.0138581434"/>
@@ -115,6 +115,16 @@
 	<guideline x="607" y="203" angle="90" identifier="cVQ1a5irNs"/>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>public.markColor</key>
 			<string>0.77255,1,0.94902,1</string>
 		</dict>
