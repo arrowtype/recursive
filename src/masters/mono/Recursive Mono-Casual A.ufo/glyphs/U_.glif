@@ -29,20 +29,20 @@
 		<contour>
 			<point x="235" y="-20" type="curve" smooth="yes"/>
 			<point x="320" y="-20"/>
-			<point x="392" y="24"/>
-			<point x="464" y="118" type="curve"/>
-			<point x="491" y="118" type="line"/>
-			<point x="491" y="197" type="line"/>
-			<point x="375" y="63"/>
+			<point x="394" y="21"/>
+			<point x="464" y="128" type="curve"/>
+			<point x="491" y="128" type="line"/>
+			<point x="491" y="214" type="line"/>
+			<point x="384" y="68"/>
 			<point x="327" y="30"/>
 			<point x="243" y="30" type="curve" smooth="yes"/>
 			<point x="171" y="30"/>
 			<point x="131" y="69"/>
 			<point x="117" y="164" type="curve"/>
 			<point x="125" y="301"/>
-			<point x="130" y="401"/>
-			<point x="130" y="546" type="curve" smooth="yes"/>
-			<point x="130" y="672"/>
+			<point x="132" y="397"/>
+			<point x="132" y="542" type="curve" smooth="yes"/>
+			<point x="132" y="668"/>
 			<point x="108" y="710"/>
 			<point x="81" y="710" type="curve" smooth="yes"/>
 			<point x="73" y="710"/>
@@ -97,6 +97,16 @@
 	<guideline x="0" y="700" angle="0" identifier="0tY7VCJDWX"/>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.guideline.magnetic.0iuks2vere</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.0tY7VCJDWX</key>

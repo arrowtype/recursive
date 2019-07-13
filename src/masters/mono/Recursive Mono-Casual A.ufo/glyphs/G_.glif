@@ -31,11 +31,11 @@
 			<point x="469" y="41" type="curve" smooth="yes"/>
 			<point x="506" y="78"/>
 			<point x="527" y="129"/>
-			<point x="527" y="191" type="curve"/>
+			<point x="527" y="189" type="curve"/>
 			<point x="527" y="213"/>
-			<point x="525" y="230"/>
-			<point x="520" y="244" type="curve"/>
-			<point x="520" y="279" type="line"/>
+			<point x="523" y="232"/>
+			<point x="513" y="246" type="curve"/>
+			<point x="530" y="279" type="line"/>
 			<point x="468" y="279" type="line"/>
 			<point x="474" y="256"/>
 			<point x="477" y="229"/>
@@ -44,8 +44,8 @@
 			<point x="407" y="30"/>
 			<point x="306" y="30" type="curve" smooth="yes"/>
 			<point x="213" y="30"/>
-			<point x="152" y="87"/>
-			<point x="126" y="185" type="curve"/>
+			<point x="155" y="86"/>
+			<point x="129" y="163" type="curve"/>
 			<point x="123" y="211"/>
 			<point x="122" y="238"/>
 			<point x="122" y="266" type="curve" smooth="yes"/>
@@ -80,6 +80,18 @@
 	<anchor name="bottom" x="317" y="-1"/>
 	<lib>
 		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>needsFixing</string>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
@@ -154,6 +166,8 @@
 			<integer>10</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.xKrFBVnb6r</key>
 			<integer>10</integer>
+			<key>public.markColor</key>
+			<string>1,0.45,0.45,0.75</string>
 		</dict>
 	</lib>
 </glyph>

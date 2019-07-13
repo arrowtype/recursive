@@ -7,7 +7,6 @@
 			<dict>
 				<key>ascending</key>
 				<array>
-					<string>space</string>
 					<string>A</string>
 					<string>B</string>
 					<string>C</string>
@@ -117,13 +116,6 @@
 					<string>x.italic</string>
 					<string>y.italic</string>
 					<string>z.italic</string>
-					<string>a.roman</string>
-					<string>f.roman</string>
-					<string>g.roman</string>
-					<string>i.roman</string>
-					<string>l.roman</string>
-					<string>r.roman</string>
-					<string>y.roman</string>
 					<string>c.sharp</string>
 					<string>f.sharp</string>
 					<string>j.sharp</string>
@@ -164,12 +156,9 @@
 					<string>threesuperior</string>
 					<string>onequarter</string>
 					<string>onehalf</string>
-					<string>threequarter</string>
 					<string>sterling</string>
 					<string>fraction</string>
-					<string>sterling.flat</string>
 					<string>sterling.replaced_with_flat</string>
-					<string>two.rounder</string>
 					<string>two.replaced_with_rounder</string>
 					<string>C.morph</string>
 					<string>G.morph</string>
@@ -186,6 +175,45 @@
 					<string>arrowright</string>
 					<string>arrowdown</string>
 					<string>.arrowhead</string>
+					<string>threequarters</string>
+					<string>zeroinferior</string>
+					<string>oneinferior</string>
+					<string>twoinferior</string>
+					<string>threeinferior</string>
+					<string>fourinferior</string>
+					<string>fiveinferior</string>
+					<string>sixinferior</string>
+					<string>seveninferior</string>
+					<string>eightinferior</string>
+					<string>nineinferior</string>
+					<string>onethird</string>
+					<string>twothirds</string>
+					<string>oneeighth</string>
+					<string>threeeighths</string>
+					<string>fiveeighths</string>
+					<string>seveneighths</string>
+					<string>colonmonetary</string>
+					<string>franc</string>
+					<string>lira</string>
+					<string>naira</string>
+					<string>peseta</string>
+					<string>won</string>
+					<string>dong</string>
+					<string>kip</string>
+					<string>peso</string>
+					<string>guarani</string>
+					<string>uni20B4</string>
+					<string>cedi</string>
+					<string>uni20B8</string>
+					<string>rupeeIndian</string>
+					<string>liraTurkish</string>
+					<string>manat</string>
+					<string>ruble</string>
+					<string>cent</string>
+					<string>Euro</string>
+					<string>yen</string>
+					<string>currency</string>
+					<string>bitcoin</string>
 				</array>
 				<key>type</key>
 				<string>glyphList</string>
@@ -250,7 +278,6 @@
 		</array>
 		<key>public.glyphOrder</key>
 		<array>
-			<string>space</string>
 			<string>A</string>
 			<string>B</string>
 			<string>C</string>
@@ -360,13 +387,6 @@
 			<string>x.italic</string>
 			<string>y.italic</string>
 			<string>z.italic</string>
-			<string>a.roman</string>
-			<string>f.roman</string>
-			<string>g.roman</string>
-			<string>i.roman</string>
-			<string>l.roman</string>
-			<string>r.roman</string>
-			<string>y.roman</string>
 			<string>c.sharp</string>
 			<string>f.sharp</string>
 			<string>j.sharp</string>
@@ -409,9 +429,7 @@
 			<string>onehalf</string>
 			<string>sterling</string>
 			<string>fraction</string>
-			<string>sterling.flat</string>
 			<string>sterling.replaced_with_flat</string>
-			<string>two.rounder</string>
 			<string>two.replaced_with_rounder</string>
 			<string>C.morph</string>
 			<string>G.morph</string>
