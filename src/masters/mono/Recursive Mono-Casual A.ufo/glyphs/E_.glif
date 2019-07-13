@@ -13,11 +13,11 @@
 			<point x="73" y="650" type="curve" smooth="yes"/>
 			<point x="527" y="650" type="line"/>
 			<point x="529" y="655"/>
-			<point x="530" y="661"/>
-			<point x="530" y="667" type="curve" smooth="yes"/>
-			<point x="530" y="679.375"/>
+			<point x="530" y="660"/>
+			<point x="530" y="669" type="curve" smooth="yes"/>
+			<point x="530" y="683"/>
 			<point x="524" y="700"/>
-			<point x="508" y="700" type="curve" smooth="yes"/>
+			<point x="504" y="700" type="curve" smooth="yes"/>
 		</contour>
 		<contour>
 			<point x="120" y="350" type="line"/>
@@ -61,7 +61,9 @@
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
-			<string>needsFixing</string>
+			<string>workInProgress</string>
+			<key>com.arrowtype.numberOfIterations</key>
+			<integer>1</integer>
 			<key>com.rafalbuchner.mirroringDrawingLocal</key>
 			<dict>
 				<key>mirroringOptions</key>
@@ -147,7 +149,7 @@
 			<key>com.typemytype.robofont.guideline.magnetic.zNX8Ijd50T</key>
 			<integer>10</integer>
 			<key>public.markColor</key>
-			<string>1,0.45,0.45,0.75</string>
+			<string>0,0.25,1,0.1</string>
 		</dict>
 	</lib>
 </glyph>
