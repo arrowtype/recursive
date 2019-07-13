@@ -18,68 +18,79 @@
 			<point x="559" y="340" type="curve" smooth="yes"/>
 		</contour>
 		<contour>
-			<point x="328" y="720" type="curve" smooth="yes"/>
-			<point x="160" y="720"/>
-			<point x="75" y="632"/>
-			<point x="75" y="447" type="curve" smooth="yes"/>
-			<point x="75" y="212" type="line" smooth="yes"/>
-			<point x="75" y="73"/>
-			<point x="163" y="-20"/>
-			<point x="313" y="-20" type="curve" smooth="yes"/>
-			<point x="430" y="-20"/>
-			<point x="499" y="26"/>
-			<point x="518" y="54" type="curve" smooth="yes"/>
-			<point x="521" y="59"/>
-			<point x="523" y="63"/>
-			<point x="523" y="67" type="curve" smooth="yes"/>
-			<point x="523" y="147"/>
+			<point x="127" y="439" type="line"/>
+			<point x="127" y="595"/>
+			<point x="199" y="673"/>
+			<point x="325" y="673" type="curve"/>
+			<point x="397" y="673"/>
+			<point x="447" y="655"/>
+			<point x="497" y="613" type="curve"/>
+			<point x="474" y="664" type="line"/>
+			<point x="474" y="613"/>
+			<point x="474" y="562"/>
+			<point x="474" y="511" type="curve"/>
+			<point x="474" y="504"/>
+			<point x="478" y="500"/>
+			<point x="485" y="500" type="curve"/>
+			<point x="498" y="500"/>
+			<point x="511" y="500"/>
+			<point x="524" y="500" type="curve"/>
+			<point x="524" y="547"/>
+			<point x="524" y="596"/>
+			<point x="524" y="643" type="curve"/>
+			<point x="524" y="645"/>
+			<point x="523" y="650"/>
+			<point x="520" y="653" type="curve" smooth="yes"/>
+			<point x="484" y="689"/>
+			<point x="425" y="720"/>
+			<point x="325" y="720" type="curve"/>
+			<point x="162" y="720"/>
+			<point x="75" y="610"/>
+			<point x="75" y="445" type="curve"/>
+			<point x="75" y="255" type="line"/>
+			<point x="75" y="90"/>
+			<point x="162" y="-20"/>
+			<point x="325" y="-20" type="curve" smooth="yes"/>
+			<point x="422" y="-20"/>
+			<point x="485" y="12"/>
+			<point x="518" y="45" type="curve" smooth="yes"/>
+			<point x="523" y="50"/>
+			<point x="523" y="54"/>
+			<point x="523" y="58" type="curve" smooth="yes"/>
+			<point x="523" y="138"/>
 			<point x="523" y="227"/>
 			<point x="523" y="307" type="curve"/>
 			<point x="527" y="318" type="line"/>
 			<point x="471" y="318" type="line"/>
 			<point x="471" y="237"/>
-			<point x="471" y="156"/>
-			<point x="471" y="75" type="curve" smooth="yes"/>
-			<point x="471" y="72"/>
-			<point x="412" y="27"/>
-			<point x="313" y="27" type="curve" smooth="yes"/>
-			<point x="256" y="27"/>
-			<point x="209" y="44"/>
-			<point x="177" y="76" type="curve" smooth="yes"/>
-			<point x="145" y="108"/>
-			<point x="127" y="156"/>
-			<point x="127" y="217" type="curve"/>
-			<point x="127" y="449" type="line" smooth="yes"/>
-			<point x="127" y="602"/>
-			<point x="189" y="673"/>
-			<point x="323" y="673" type="curve" smooth="yes"/>
-			<point x="409" y="673"/>
-			<point x="458" y="654"/>
-			<point x="509" y="605" type="curve"/>
-			<point x="474" y="665" type="line"/>
-			<point x="474" y="613"/>
-			<point x="474" y="561"/>
-			<point x="474" y="509" type="curve" smooth="yes"/>
-			<point x="474" y="502"/>
-			<point x="478" y="498"/>
-			<point x="485" y="498" type="curve" smooth="yes"/>
-			<point x="498" y="498"/>
-			<point x="511" y="498"/>
-			<point x="524" y="498" type="curve"/>
-			<point x="524" y="544"/>
-			<point x="524" y="591"/>
-			<point x="524" y="637" type="curve" smooth="yes"/>
-			<point x="524" y="648"/>
-			<point x="523" y="651"/>
-			<point x="518" y="656" type="curve" smooth="yes"/>
-			<point x="481" y="693"/>
-			<point x="409" y="720"/>
+			<point x="471" y="149"/>
+			<point x="471" y="68" type="curve" smooth="yes"/>
+			<point x="471" y="67"/>
+			<point x="419" y="27"/>
+			<point x="325" y="27" type="curve" smooth="yes"/>
+			<point x="261" y="27"/>
+			<point x="219" y="45"/>
+			<point x="185" y="79" type="curve" smooth="yes"/>
+			<point x="144" y="120"/>
+			<point x="127" y="190"/>
+			<point x="127" y="261" type="curve"/>
 		</contour>
 	</outline>
 	<anchor name="top" x="322" y="711"/>
 	<anchor name="bottom" x="322" y="-1"/>
+	<guideline x="523" y="67" angle="90" identifier="cysaYlyd6y"/>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>2</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>

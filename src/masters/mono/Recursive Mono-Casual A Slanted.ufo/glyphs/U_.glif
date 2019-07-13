@@ -65,7 +65,9 @@
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
-			<string>needsFixing</string>
+			<string>workInProgress</string>
+			<key>com.arrowtype.numberOfIterations</key>
+			<integer>1</integer>
 			<key>com.rafalbuchner.mirroringDrawingLocal</key>
 			<dict>
 				<key>mirroringOptions</key>
@@ -151,7 +153,7 @@
 			<key>com.typemytype.robofont.guideline.magnetic.xlyIhvAsw5</key>
 			<integer>0</integer>
 			<key>public.markColor</key>
-			<string>1,0.45,0.45,0.75</string>
+			<string>0,0.25,1,0.1</string>
 		</dict>
 	</lib>
 </glyph>
