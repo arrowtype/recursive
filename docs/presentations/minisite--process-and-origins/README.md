@@ -1,7 +1,7 @@
 # Major stages & decisions in recursive
 
 _Written by Stephen Nixon_
-_Edited by Noemi Stauffer_
+_Edited by Noemi Stauffer (?)_
 
 Recursive is a very personal project, but one which I think many people can benefit from.
 
@@ -60,7 +60,7 @@ Recursive is a very personal project, but one which I think many people can bene
 
 [IMAGES: EARLY /n & /o VERSUS CURRENT /n & /o (maybe a word like `sonorous`?)]
 
-- Made a chrome extension to inject my font into any page, and read with it. (This has since been turned into Type-X, a very useful and much faster version of what I made – thanks, @PixelAmbacht).
+- Made a chrome extension to inject my font into any page, and read with it. (This has since been turned into Type-X, but more on this later).
 
 [EARLY VERSION OF TYPE-X][current version of type-x]
 
@@ -82,7 +82,11 @@ Recursive is a very personal project, but one which I think many people can bene
 
 - I had been planning to work on Recursive as a side project, and eventually release it either through Arrow Type or through a more establish type foundry. However, because Google Fonts is in the process of pushing their library further into the realm of variable fonts, they offered to sponsor me to finish Recursive and release it sooner, as an OFL (open-source) font.
 - In the type industry, Google Fonts is somewhat controversial. Does it devalue the industry to have so many free options? I discussed my options with a few trusted type designers.
-- Ultimately, I decided that for Recursive, Google Fonts was an ideal place to release. This typeface is for coders of all abilities and experiences, code documentation, and to push new ideas forward in variable type on the web, software, and end users. It could be a niche product that i made a side project for 5 years, or it could make an impact and be published within 2019. There are still tons of benefits in favor of buying non-open type. Operator and Input are _masterful,_ classic designs. I am not trying to replace them, but rather, to push the wider typographic environment to be more interesting and expressive.
+- Ultimately, I decided that for Recursive, Google Fonts was an ideal place to release. This typeface is for coders of all abilities and experiences, code documentation, and to push new ideas forward in variable type on the web, software, and end users. It could be a niche product that i made a side project for 5 years, or it could make an impact and be published within 2019.
+- As a quick plug for commercially-released type: as biased as I am towards Recursive, there are still lots of benefits in favor of buying type. If you are branding a company, the typeface you select will do a lot of work to help or hinder your ability to communicate, connect, and differentiate. This is a choice that should be carefully considered for every project, and ultimately, the cost of licensing type is almost always extremely reasonable for the value it can add to a project.
+  - In the realm of Recursive, if you are a professional coder, you probably spend hours every day with your chosen monospace font as your primary interface. You (or your employer) probably paid some good money to buy a computer, an office chair, and a desk that would allow you to maximize focus and productivity. It's worth finding (and buying, if applicable) a typeface that is best for you and can do the same! There are a number of _masterful,_ modern, classic monospace designs, including Operator, Input, Atlas, Nitti, Gintronic, and Covik Mono.
+  - If you are committed to an open-source route and you aren't quite sure about Recursive Mono, IBM Plex Mono is libre, beautiful, and a must-try. Hack Mono is also lovely – taking the classic Bitstream Vera body and adding a few code-specific typographic improvements.
+  - I am not trying to displace other good coding fonts. Rather, I hope to expand the wider typographic audience & environment to be more interesting, more expressive, and more open to variable fonts.
 
 ## Improvements made for Google Fonts release
 
@@ -115,9 +119,31 @@ Recursive is a very personal project, but one which I think many people can bene
 ### General Refinements
 
 - Things were drawn quickly at TypeMedia because I needed to cover a lot of ground in just a few months, so tons of things were bothering me. Lumpy curves, asymmetrical glyphs that should be symmetrical, not-quite ideal proportions, almost no kerning in sans beyond a proof of concept.
+
+* intermediate glyphs drawings, where useful
+
+[IMAGE: EXAMPLE OF /w WITH AND WITHOUT INTERMEDIATE MASTERS (a word like wasm)]
+
 - Rafał helped develop two important tools
   - Master compatibility, to help find and correct incompatible glyph drawings
-  - Glyph Mirror, to make it much faster to draw symmetrica contours where desired
+  - To be compatible for interpolation, all drawings of a glyph must have the exact same number of points. This is even harder for variable fonts than for traditional static fonts, so Master Compatibility was essential for finding where problems were, and fixing them.
+
+[IMAGE OF MASTER COMPATIBILITY]
+
+- Glyph Mirror, to make it much faster to draw symmetrica contours where desired
+- Most fonts are subtly asymmetrical in many ways. For Recursive's Linear styles, I wanted to add more symmetry than usual, to make it just a bit more mechanical and rational than most fonts. Glyph Mirror helped me achieve this by placing a live, mirrored drawing of the current glyph behind itself. Even when I want to make a glyph with subtle asymmetry for visual harmony, this can be extremely helpful in allowing me to know _exactly how asymmetrical_ my drawing is, and to more-quickly achieve the right balance.
+
+[IMAGE OF ROUND CHARACTERS, COMPARING SYMMETRY BEFORE/AFTER]
+
+- During TypeMedia, I made a simple Chrome Extension to inject any font into any website. This was very helpful, but limited in its performance and functionality. I was lucky enough to work with @PixelAmbacht to take this idea and completely redesign and re-implement it. It is now far more seamless across web pages and is much more flexible for usage with multiple fonts. So, beyond just giving me a better way to test in-progress versions of Recursive, it has also given me a new way to enjoy other fonts on my system!
+
+[GIF OF TYPE-X]
+
+A big bonus of this project: these tools are all open-source!
+
+- link to master tools
+- link to glyph mirror
+- link to Type-X
 
 ### Code ligatures
 
@@ -126,6 +152,8 @@ Recursive is a very personal project, but one which I think many people can bene
 - Why are they useful? They are like syntax highlighting. They help coders to see that they have typed the right thing in the moment, and to visually scan their code more easily later on
 - Worked with Rafał on early designs of this. Principles: better chunking (things with a combined meaning should be "one unit" even if they don't physically connect, such as `||` or `**`), more recognizability, and improving legibility.
 - Crowdfunding this part so Rafał and I can finish these. Google will match contributions!
+
+[IMAGES OF CODE LIGATURES][images of code with ligatures turned on]
 
 ## This project is still under construction
 
