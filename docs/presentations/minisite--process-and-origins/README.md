@@ -43,7 +43,7 @@ Recursive is a very personal project, but one which I think many people can bene
 
 ## Development at TypeMedia
 
-- Inventing my own casual alphabet, with different brushes and pens. Taking uppercase forms into a roman lowercase.
+- Inventing my own casual alphabet, with different brushes and pens. Taking uppercase forms into a roman lowercase. Lots of sketching with brush pens led me to find some details that aren't common from professional signpainters, but which I think work well, anyway. Little "kicks" are added to letters like `R` and `K`, but left out of lowercase letters like `k` and `x`, to improve readability (because the vast majority of running text is set in lowercase).
 
 [SKETCHES]
 
@@ -55,7 +55,11 @@ Recursive is a very personal project, but one which I think many people can bene
 
 [IMAGES: EARLY EXPLORATIONS OF HEAVY STYLES]
 
-- Finding the right balance of personality and typographic harmony
+- Finding the right balance of personality and typographic harmony.
+
+  - How big should corner curves be?
+  - How much overshoot should stroke connections have?
+
 - Making curviness match between letters like /n and /o – finding that low connections and bouncy contrast could help with this
 
 [IMAGES: EARLY /n & /o VERSUS CURRENT /n & /o (maybe a word like `sonorous`?)]
@@ -96,33 +100,43 @@ Recursive is a very personal project, but one which I think many people can bene
 - Goaded on by the second question, I decided to ignore the advice to take the short road. I set about adding a more cursive italic lowercase, giving many more curves to slanted forms, designing inktraps, removing problematic overlaps, and refining basically everything. And adding code ligatures.
 - It was a lot of work to do! Luckily, I was able to get help from some awesome collaborators. Katja, Lisa, and Rafał.
 
-### Cursive letters
+### Removing overlaps for better rendering at text sizes
 
-- for a more fun and unique italic. Bringing these from a stylistic set into their own ital axis, for easier control and less font weight than stylistic sets.
+- During TypeMedia, I drew Recursive in such a way that took the idea of designing with "The Stroke" in mind very literally. However, I realized right after TypeMedia that while this approach did enhance my design approach in some ways and gave me flexibility to think differently about what I was drawing, it had a critical flaw in use: overlaps showed up as little "blobs" on the outlines of letters, leading text to be subtly distorted in an unflattering way.
 
-### Curvy slanted forms
+### Added contrast and curves for more personality
 
-- for an even wider range of expression. Kept horizontal curves flat, but put curves into all vertical strokes to better follow the movement of a brush.
+- After stepping away from really looking at Recursive at large sizes for awhile, and then coming back, I realized that it had way less contrast than I wanted it to. This helped make things feel consistent, but they didn't feel _right._
+- It was a challenge to determine exactly _how much_ contrast and personality things should have. I had to push things too far before I could understand where simplicity was helping the design, and where it was holding it back.
+
+[IMAGE OF EXPERIMENTS THAT WENT TOO FAR]
+
+- Ultimately, I determined that adding lots of curves worked well in slanted, casual forms, but less well in the upright casual or in the linear styles. Really, this family originated in a style that is meant to be painted at a slant, with curves in every stem. Embracing this more in the slanted Casual styles gave the typeface an even wider range of expression, and adds more spice to the type family. I kept horizontal curves flat to keep a solid link to the typographic nature of the project, but put curves into nearly all vertical strokes to better follow the movement of a brush.
+
+### A more-cursive (but still disconnected) italic lowercase
+
+- A more fun and unique italic.
+- Bringing these from a stylistic set into their own ital axis, for easier control and less font weight than stylistic sets.
 
 ### Inktraps
 
 – If you look closely at modern type releases, you will see that many of them (or maybe nearly all of them) have _inktraps,_ which are little flattened corners in the whitespace of letters – these are especially common in acute angles such as the joint in an `n` or the vertices in a `W`. Historically, these were added spaces cut into the corners to increase legibility in fonts which would be printed in ink. The ink would tend to spread out from the printing, filling in such corners to make them crisp. In digital fonts, it is debatable whether inktraps really serve much of a purpose of aiding legibility in text sizes. I, for one, find that they are only really noticeable in the contrast they add to joints. This does add some drama at text sizes, but in my eyes, the real benefit of inktraps comes at much larger sizes. Inktraps are a visual hack that tacitly signals, "This typeface is carefully drawn. Every curve and every corner has been considered." In "Graphic Design 101" language, inktraps enhance figure-ground integration by shaping the whitespace in a way that reflects the form of the letters.
 
-- I had already cut the point ends of strokes in an homage to Verdana, so it felt natural to reflect this stroke blunting with similar cuts to inner corners.
+- I had already cut the point ends of strokes in an homage to Verdana, so it felt natural to reflect this stroke blunting with similar cuts to inner corners. The cuts were somewhat small on the Casual styles, and big enough to be slightly absurd – but not big enough to be distracting – in the Linear styles. I matched these cuts in the strokes with cuts into the whitespace.
 - Me, in March: How hard can it be to add inktraps?
-- Answer: very hard. Inktraps seem like a small decision, but actually, inktraps are very challenging to do right. How big should they be? How consistent in size? Angle? What about in different Glyphs? Different masters?
-
-### Removing overlaps for better rendering at text sizes
-
-- During TypeMedia, I drew Recursive in such a way that took the idea of designing with "The Stroke" in mind very literally. However, I realized right after TypeMedia that while this approach did enhance my design approach in some ways and gave me flexibility to think differently about what I was drawing, it had a critical flaw in use: overlaps showed up as little "blobs" on the outlines of letters, leading text to be subtly distorted in an unflattering way.
+- Me, now: very hard. Inktraps seem like a small decision, but actually, inktraps are very challenging to do right. How big should they be? How consistent in size? Angle? What about in different Glyphs? Different masters?
 
 ### General Refinements
 
 - Things were drawn quickly at TypeMedia because I needed to cover a lot of ground in just a few months, so tons of things were bothering me. Lumpy curves, asymmetrical glyphs that should be symmetrical, not-quite ideal proportions, almost no kerning in sans beyond a proof of concept.
 
-* intermediate glyphs drawings, where useful
+- Softer stroke endings
 
-[IMAGE: EXAMPLE OF /w WITH AND WITHOUT INTERMEDIATE MASTERS (a word like wasm)]
+[IMAGE: STROKE ENDINGS of w/v/x/y, BEFORE AND AFTER]
+
+- intermediate glyphs drawings, where useful
+
+[IMAGE: EXAMPLE OF /w WITH AND WITHOUT INTERMEDIATE MASTERS (a phrase like web message)]
 
 - Rafał helped develop two important tools
   - Master compatibility, to help find and correct incompatible glyph drawings
