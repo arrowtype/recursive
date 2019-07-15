@@ -39,47 +39,51 @@
 			<point x="868" y="700"/>
 			<point x="859" y="700" type="curve" smooth="yes"/>
 			<point x="811" y="700"/>
-			<point x="729" y="700"/>
-			<point x="666" y="700" type="curve"/>
-			<point x="641" y="469"/>
-			<point x="636" y="431"/>
+			<point x="721" y="700"/>
+			<point x="658" y="700" type="curve"/>
+			<point x="637" y="469"/>
+			<point x="632" y="431"/>
 			<point x="629" y="188" type="curve"/>
 			<point x="651" y="213" type="line"/>
 			<point x="582" y="213" type="line"/>
 			<point x="612" y="190" type="line"/>
 			<point x="593" y="394"/>
-			<point x="570" y="495"/>
-			<point x="545" y="639" type="curve"/>
-			<point x="543" y="646"/>
-			<point x="540" y="650"/>
-			<point x="533" y="650" type="curve" smooth="yes"/>
+			<point x="569" y="495"/>
+			<point x="544" y="639" type="curve"/>
+			<point x="542" y="646"/>
+			<point x="539" y="650"/>
+			<point x="532" y="650" type="curve" smooth="yes"/>
 			<point x="360" y="650" type="line"/>
 			<point x="329" y="501"/>
-			<point x="308" y="398"/>
-			<point x="287" y="190" type="curve"/>
-			<point x="317" y="213" type="line"/>
+			<point x="309" y="398"/>
+			<point x="288" y="190" type="curve"/>
+			<point x="318" y="213" type="line"/>
 			<point x="247" y="213" type="line"/>
 			<point x="270" y="188" type="line"/>
-			<point x="266" y="406"/>
-			<point x="254" y="513"/>
-			<point x="236" y="687" type="curve"/>
-			<point x="235" y="695"/>
-			<point x="231" y="700"/>
-			<point x="222" y="700" type="curve"/>
-			<point x="160" y="700"/>
+			<point x="269" y="406"/>
+			<point x="259" y="513"/>
+			<point x="243" y="687" type="curve"/>
+			<point x="242" y="695"/>
+			<point x="238" y="700"/>
+			<point x="229" y="700" type="curve"/>
+			<point x="167" y="700"/>
 			<point x="74" y="700"/>
 		</contour>
 	</outline>
 	<anchor name="top" x="448" y="711"/>
 	<lib>
 		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>workInProgress</string>
+			<key>com.arrowtype.numberOfIterations</key>
+			<integer>2</integer>
 			<key>com.rafalbuchner.mirroringDrawingLocal</key>
 			<dict>
 				<key>mirroringOptions</key>
-				<integer>3</integer>
+				<integer>1</integer>
 				<key>offset</key>
 				<array>
-					<integer>0</integer>
+					<integer>3</integer>
 					<integer>0</integer>
 				</array>
 			</dict>
@@ -158,7 +162,7 @@
 			<key>com.typemytype.robofont.guideline.magnetic.yiDttKX13c</key>
 			<integer>10</integer>
 			<key>public.markColor</key>
-			<string>0.45,1,0.55,0.75</string>
+			<string>0,0.2575,0.975,0.1325</string>
 		</dict>
 	</lib>
 </glyph>

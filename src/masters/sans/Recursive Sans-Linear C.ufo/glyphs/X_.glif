@@ -39,8 +39,8 @@
 			<point x="442" y="232" type="curve"/>
 			<point x="313" y="457" type="line"/>
 			<point x="358" y="457" type="line"/>
-			<point x="375" y="558"/>
-			<point x="379" y="571"/>
+			<point x="373" y="549"/>
+			<point x="378" y="565"/>
 			<point x="432" y="700" type="curve"/>
 			<point x="532" y="700"/>
 			<point x="546" y="700"/>
@@ -55,15 +55,19 @@
 			<point x="208" y="459" type="curve"/>
 			<point x="339" y="241" type="line"/>
 			<point x="295" y="241" type="line"/>
-			<point x="281" y="160"/>
-			<point x="274" y="143"/>
-			<point x="220" y="0" type="curve"/>
-			<point x="129" y="-1"/>
+			<point x="280" y="156"/>
+			<point x="276" y="143"/>
+			<point x="226" y="0" type="curve"/>
+			<point x="135" y="-2"/>
 			<point x="103" y="0"/>
 		</contour>
 	</outline>
 	<lib>
 		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>workInProgress</string>
+			<key>com.arrowtype.numberOfIterations</key>
+			<integer>1</integer>
 			<key>com.rafalbuchner.mirroringDrawingLocal</key>
 			<dict>
 				<key>mirroringOptions</key>
@@ -83,7 +87,7 @@
 			<key>com.typemytype.robofont.Image.Sharpness</key>
 			<real>0.4</real>
 			<key>public.markColor</key>
-			<string>0.45,1,0.55,0.75</string>
+			<string>0,0.25,1,0.1</string>
 		</dict>
 	</lib>
 </glyph>
