@@ -5,10 +5,10 @@
 	<outline>
 		<contour>
 			<point x="265" y="383" type="curve"/>
-			<point x="213" y="329" type="line"/>
-			<point x="241" y="329" type="line"/>
-			<point x="300" y="242"/>
-			<point x="364.395" y="148.91"/>
+			<point x="235" y="325" type="line"/>
+			<point x="263" y="325" type="line"/>
+			<point x="302" y="241"/>
+			<point x="327" y="205"/>
 			<point x="426" y="59" type="curve"/>
 			<point x="456" y="15"/>
 			<point x="478" y="0"/>
@@ -40,8 +40,8 @@
 			<point x="308" y="478" type="curve" smooth="yes"/>
 			<point x="248" y="398"/>
 			<point x="187" y="319"/>
-			<point x="127" y="240" type="curve"/>
-			<point x="104" y="240" type="line"/>
+			<point x="152" y="250" type="curve"/>
+			<point x="124" y="250" type="line"/>
 			<point x="124" y="163" type="line"/>
 			<point x="257" y="334"/>
 			<point x="396" y="513"/>
@@ -79,6 +79,20 @@
 	<anchor name="bottom" x="325" y="-1"/>
 	<lib>
 		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>workInProgress</string>
+			<key>com.arrowtype.numberOfIterations</key>
+			<integer>1</integer>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
@@ -87,6 +101,8 @@
 			<integer>1</integer>
 			<key>com.typemytype.robofont.Image.Sharpness</key>
 			<real>0.4</real>
+			<key>public.markColor</key>
+			<string>0,0.25,1,0.1</string>
 		</dict>
 	</lib>
 </glyph>

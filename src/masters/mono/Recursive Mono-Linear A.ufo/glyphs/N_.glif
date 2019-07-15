@@ -10,17 +10,17 @@
 			<point x="132" y="160" type="curve"/>
 			<point x="132" y="319"/>
 			<point x="132" y="479"/>
-			<point x="132" y="668" type="curve"/>
-			<point x="114" y="642" type="line"/>
-			<point x="151" y="642" type="line"/>
-			<point x="119" y="665" type="line"/>
-			<point x="237" y="428"/>
-			<point x="340" y="217"/>
-			<point x="445" y="7" type="curve"/>
-			<point x="448" y="2"/>
-			<point x="451" y="0"/>
-			<point x="459" y="0" type="curve" smooth="yes"/>
-			<point x="479" y="0"/>
+			<point x="122" y="668" type="curve"/>
+			<point x="114" y="630" type="line"/>
+			<point x="151" y="630" type="line"/>
+			<point x="119" y="668" type="line"/>
+			<point x="233" y="429"/>
+			<point x="333" y="217"/>
+			<point x="435" y="7" type="curve"/>
+			<point x="438" y="2"/>
+			<point x="441" y="0"/>
+			<point x="449" y="0" type="curve" smooth="yes"/>
+			<point x="469" y="0"/>
 			<point x="498" y="0"/>
 			<point x="518" y="0" type="curve"/>
 			<point x="518" y="56"/>
@@ -40,11 +40,11 @@
 			<point x="468" y="538" type="curve"/>
 			<point x="468" y="374"/>
 			<point x="468" y="211"/>
-			<point x="468" y="47" type="curve"/>
-			<point x="490" y="72" type="line"/>
-			<point x="454" y="72" type="line"/>
-			<point x="481" y="50" type="line"/>
-			<point x="366" y="281"/>
+			<point x="477" y="47" type="curve"/>
+			<point x="490" y="70" type="line"/>
+			<point x="444" y="70" type="line"/>
+			<point x="471" y="51" type="line"/>
+			<point x="359" y="282"/>
 			<point x="194" y="630"/>
 			<point x="164" y="690" type="curve"/>
 			<point x="160" y="698"/>
@@ -104,6 +104,10 @@
 	<guideline x="481" y="50" angle="116.349789399" identifier="KyCzaLdRPf"/>
 	<lib>
 		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>workInProgress</string>
+			<key>com.arrowtype.numberOfIterations</key>
+			<integer>1</integer>
 			<key>com.rafalbuchner.mirroringDrawingLocal</key>
 			<dict>
 				<key>mirroringOptions</key>
@@ -188,6 +192,8 @@
 			<integer>10</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.zKVl5DgVO6</key>
 			<integer>10</integer>
+			<key>public.markColor</key>
+			<string>0,0.25,1,0.1</string>
 		</dict>
 	</lib>
 </glyph>

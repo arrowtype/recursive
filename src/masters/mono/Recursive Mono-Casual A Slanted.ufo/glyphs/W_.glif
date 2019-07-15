@@ -5,41 +5,41 @@
 	<outline>
 		<contour>
 			<point x="140" y="700" type="curve"/>
-			<point x="143" y="670"/>
+			<point x="143" y="672"/>
 			<point x="139" y="645"/>
-			<point x="126" y="597" type="curve" smooth="yes"/>
-			<point x="33" y="243"/>
-			<point x="34" y="113"/>
-			<point x="90" y="18" type="curve" smooth="yes"/>
-			<point x="101" y="0"/>
+			<point x="126" y="598" type="curve" smooth="yes"/>
+			<point x="34" y="255"/>
+			<point x="34" y="116"/>
+			<point x="87" y="19" type="curve" smooth="yes"/>
+			<point x="97" y="1"/>
 			<point x="111" y="-5"/>
 			<point x="125" y="-5" type="curve"/>
 			<point x="136" y="-5"/>
-			<point x="142" y="-4"/>
-			<point x="148" y="0" type="curve"/>
-			<point x="208" y="63"/>
+			<point x="143" y="-4"/>
+			<point x="153" y="0" type="curve"/>
+			<point x="209" y="63"/>
 			<point x="265" y="149"/>
 			<point x="309" y="300" type="curve"/>
-			<point x="281" y="254" type="line"/>
-			<point x="314" y="248" type="line"/>
+			<point x="285" y="266" type="line"/>
+			<point x="318" y="261" type="line"/>
 			<point x="310" y="304" type="line"/>
 			<point x="284.7053422523" y="148.3405677063"/>
-			<point x="292" y="67"/>
-			<point x="313" y="22" type="curve" smooth="yes"/>
-			<point x="320" y="6"/>
+			<point x="292" y="66"/>
+			<point x="313" y="21" type="curve" smooth="yes"/>
+			<point x="320" y="5"/>
 			<point x="329" y="-5"/>
 			<point x="348" y="-5" type="curve" smooth="yes"/>
-			<point x="356" y="-5"/>
-			<point x="364.165145465" y="-2.71841678"/>
-			<point x="373" y="0" type="curve"/>
-			<point x="514" y="138"/>
-			<point x="563" y="247"/>
-			<point x="658" y="663" type="curve" smooth="yes"/>
-			<point x="667" y="702"/>
-			<point x="654" y="706"/>
-			<point x="635" y="706" type="curve"/>
-			<point x="627" y="706"/>
-			<point x="618" y="704"/>
+			<point x="360" y="-5"/>
+			<point x="369" y="-3"/>
+			<point x="378" y="0" type="curve"/>
+			<point x="515" y="138"/>
+			<point x="561" y="234"/>
+			<point x="656" y="650" type="curve" smooth="yes"/>
+			<point x="665.0655826024" y="689.2841912771"/>
+			<point x="653.7142857143" y="706"/>
+			<point x="632" y="706" type="curve"/>
+			<point x="625" y="706"/>
+			<point x="617.3414133343" y="703.6236647625"/>
 			<point x="611" y="700" type="curve"/>
 			<point x="525" y="280"/>
 			<point x="475" y="173"/>
@@ -49,9 +49,9 @@
 			<point x="360" y="26" type="line"/>
 			<point x="314" y="129"/>
 			<point x="347" y="336"/>
-			<point x="400" y="548" type="curve" smooth="yes"/>
-			<point x="410.2132082186" y="589.8741536962"/>
-			<point x="401.2962962963" y="600"/>
+			<point x="399" y="542" type="curve" smooth="yes"/>
+			<point x="409" y="583"/>
+			<point x="390" y="600"/>
 			<point x="365" y="600" type="curve" smooth="yes"/>
 			<point x="357" y="600" type="line"/>
 			<point x="294" y="345"/>
@@ -60,14 +60,14 @@
 			<point x="156" y="42" type="line"/>
 			<point x="105" y="50" type="line"/>
 			<point x="134" y="26" type="line"/>
-			<point x="71" y="146"/>
-			<point x="96" y="264"/>
-			<point x="184" y="615" type="curve" smooth="yes"/>
-			<point x="200" y="677"/>
-			<point x="194" y="705"/>
-			<point x="167" y="705" type="curve" smooth="yes"/>
-			<point x="156" y="705"/>
-			<point x="148" y="703"/>
+			<point x="74" y="146"/>
+			<point x="97" y="294"/>
+			<point x="182" y="610" type="curve" smooth="yes"/>
+			<point x="197.2193131191" y="666.8187689781"/>
+			<point x="195" y="705"/>
+			<point x="164" y="705" type="curve" smooth="yes"/>
+			<point x="154" y="705"/>
+			<point x="147.226611475" y="702.7099793031"/>
 		</contour>
 	</outline>
 	<anchor name="top" x="410.7995302052" y="711"/>
@@ -75,7 +75,9 @@
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
-			<string>needsFixing</string>
+			<string>workInProgress</string>
+			<key>com.arrowtype.numberOfIterations</key>
+			<integer>1</integer>
 			<key>com.rafalbuchner.mirroringDrawingLocal</key>
 			<dict>
 				<key>mirroringOptions</key>
@@ -227,7 +229,7 @@
 			<key>com.typemytype.robofont.guideline.magnetic.zVcCnNlETk</key>
 			<integer>10</integer>
 			<key>public.markColor</key>
-			<string>1,0.45,0.45,0.75</string>
+			<string>0,0.25,1,0.1</string>
 		</dict>
 	</lib>
 </glyph>

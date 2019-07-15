@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="threequarters" format="2">
+	<unicode hex="00BE"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="369.8" y="405" type="curve"/>
+			<point x="379.2" y="405"/>
+			<point x="415.8" y="405"/>
+			<point x="425" y="405" type="curve" smooth="yes"/>
+			<point x="430" y="405"/>
+			<point x="432" y="406"/>
+			<point x="435" y="412" type="curve" smooth="yes"/>
+			<point x="474" y="491"/>
+			<point x="534.2" y="618"/>
+			<point x="573" y="697" type="curve" smooth="yes"/>
+			<point x="576.8" y="705"/>
+			<point x="573" y="710"/>
+			<point x="565" y="710" type="curve" smooth="yes"/>
+			<point x="554.2" y="710"/>
+			<point x="516.2" y="710"/>
+			<point x="507" y="710" type="curve"/>
+			<point x="466.4" y="626.2"/>
+			<point x="411.4" y="489.4"/>
+		</contour>
+		<contour>
+			<point x="230.2" y="296" type="curve"/>
+			<point x="220" y="296"/>
+			<point x="184.8" y="296"/>
+			<point x="175" y="296" type="curve" smooth="yes"/>
+			<point x="170" y="296"/>
+			<point x="167.8" y="295"/>
+			<point x="165" y="289" type="curve" smooth="yes"/>
+			<point x="126.2" y="210"/>
+			<point x="65.6" y="82.4"/>
+			<point x="27" y="4" type="curve" smooth="yes"/>
+			<point x="23.2" y="-4"/>
+			<point x="27" y="-9"/>
+			<point x="35" y="-9" type="curve" smooth="yes"/>
+			<point x="47.4" y="-9"/>
+			<point x="83.8" y="-9"/>
+			<point x="93" y="-9" type="curve"/>
+			<point x="133.6" y="75"/>
+			<point x="188.4" y="211.2"/>
+		</contour>
+		<component base="threesuperior" xOffset="-126"/>
+		<component base="fourinferior" xOffset="122"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+			<key>public.markColor</key>
+			<string>0.1278,0.9998,0.999,1</string>
+		</dict>
+	</lib>
+</glyph>
