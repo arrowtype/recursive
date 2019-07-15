@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 	<dict>
+		<key>com.arrowtype.iteratedGlyphs</key>
+		<array>
+			<string>g.ss01</string>
+		</array>
+		<key>com.arrowtype.maxIterations</key>
+		<integer>20</integer>
 		<key>com.defcon.sortDescriptor</key>
 		<array>
 			<dict>
@@ -509,16 +515,7 @@
 					<string>y.italic</string>
 					<string>z.italic</string>
 					<string>a.ss01</string>
-					<string>c.ss01</string>
 					<string>g.ss01</string>
-					<string>i.ss01</string>
-					<string>a.roman</string>
-					<string>f.roman</string>
-					<string>g.roman</string>
-					<string>i.roman</string>
-					<string>l.roman</string>
-					<string>r.roman</string>
-					<string>y.roman</string>
 					<string>a.curvy</string>
 					<string>h.curvy</string>
 					<string>i.curvy</string>
@@ -550,48 +547,6 @@
 					<string>G.replaced_with_morph</string>
 					<string>a.replaced_with_flatbar</string>
 					<string>e.replaced_with_romaner</string>
-					<string>J.evencut</string>
-					<string>B.nokinks</string>
-					<string>P.nokinks</string>
-					<string>R.nokinks</string>
-					<string>c.evencut</string>
-					<string>d.evencut</string>
-					<string>e.evencut</string>
-					<string>n.evencut</string>
-					<string>o.evencut</string>
-					<string>u.evencut</string>
-					<string>n.evencuts</string>
-					<string>r.inktraps</string>
-					<string>g.nokinks</string>
-					<string>e.romaner</string>
-					<string>k.smoother</string>
-					<string>x.smoother</string>
-					<string>y.smoother</string>
-					<string>a.smoothtraps</string>
-					<string>n.smoothtraps</string>
-					<string>f.ss01</string>
-					<string>l.ss01</string>
-					<string>r.ss01</string>
-					<string>two.nokinks</string>
-					<string>six.nokinks</string>
-					<string>eight.nokinks</string>
-					<string>nine.nokinks</string>
-					<string>sterling.italicish</string>
-					<string>uni0300</string>
-					<string>uni0301</string>
-					<string>uni0302</string>
-					<string>uni0306</string>
-					<string>uni030C</string>
-					<string>uni0326</string>
-					<string>uni0327</string>
-					<string>uni2190</string>
-					<string>uni2191</string>
-					<string>uni2192</string>
-					<string>uni2193</string>
-					<string>uni0300.case</string>
-					<string>uni0301.case</string>
-					<string>uni0302.case</string>
-					<string>uni030A.case</string>
 					<string>uni0327.case</string>
 					<string>onethird</string>
 					<string>twothirds</string>
@@ -617,6 +572,7 @@
 					<string>manat</string>
 					<string>ruble</string>
 					<string>z.altdiagonal</string>
+					<string>R.trap</string>
 				</array>
 				<key>type</key>
 				<string>glyphList</string>
@@ -1232,16 +1188,7 @@
 			<string>y.italic</string>
 			<string>z.italic</string>
 			<string>a.ss01</string>
-			<string>c.ss01</string>
 			<string>g.ss01</string>
-			<string>i.ss01</string>
-			<string>a.roman</string>
-			<string>f.roman</string>
-			<string>g.roman</string>
-			<string>i.roman</string>
-			<string>l.roman</string>
-			<string>r.roman</string>
-			<string>y.roman</string>
 			<string>a.curvy</string>
 			<string>h.curvy</string>
 			<string>i.curvy</string>
@@ -1273,48 +1220,6 @@
 			<string>G.replaced_with_morph</string>
 			<string>a.replaced_with_flatbar</string>
 			<string>e.replaced_with_romaner</string>
-			<string>J.evencut</string>
-			<string>B.nokinks</string>
-			<string>P.nokinks</string>
-			<string>R.nokinks</string>
-			<string>c.evencut</string>
-			<string>d.evencut</string>
-			<string>e.evencut</string>
-			<string>n.evencut</string>
-			<string>o.evencut</string>
-			<string>u.evencut</string>
-			<string>n.evencuts</string>
-			<string>r.inktraps</string>
-			<string>g.nokinks</string>
-			<string>e.romaner</string>
-			<string>k.smoother</string>
-			<string>x.smoother</string>
-			<string>y.smoother</string>
-			<string>a.smoothtraps</string>
-			<string>n.smoothtraps</string>
-			<string>f.ss01</string>
-			<string>l.ss01</string>
-			<string>r.ss01</string>
-			<string>two.nokinks</string>
-			<string>six.nokinks</string>
-			<string>eight.nokinks</string>
-			<string>nine.nokinks</string>
-			<string>sterling.italicish</string>
-			<string>uni0300</string>
-			<string>uni0301</string>
-			<string>uni0302</string>
-			<string>uni0306</string>
-			<string>uni030C</string>
-			<string>uni0326</string>
-			<string>uni0327</string>
-			<string>uni2190</string>
-			<string>uni2191</string>
-			<string>uni2192</string>
-			<string>uni2193</string>
-			<string>uni0300.case</string>
-			<string>uni0301.case</string>
-			<string>uni0302.case</string>
-			<string>uni030A.case</string>
 			<string>uni0327.case</string>
 			<string>onethird</string>
 			<string>twothirds</string>
