@@ -1,56 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="N" format="2">
-	<unicode hex="004E"/>
-	<advance width="650"/>
+<glyph name="N.wide" format="2">
+	<advance width="700"/>
 	<outline>
 		<contour>
 			<point x="250" y="0" type="curve"/>
 			<point x="250" y="47"/>
-			<point x="250" y="107"/>
-			<point x="250" y="155" type="curve" smooth="yes"/>
-			<point x="250" y="211"/>
-			<point x="248" y="244"/>
-			<point x="213" y="389" type="curve"/>
-			<point x="205" y="350" type="line"/>
-			<point x="271" y="350" type="line"/>
-			<point x="223" y="380" type="line"/>
-			<point x="294" y="243"/>
-			<point x="349" y="144"/>
-			<point x="421" y="8" type="curve"/>
-			<point x="424" y="2"/>
-			<point x="426" y="0"/>
-			<point x="430" y="0" type="curve"/>
-			<point x="478" y="0"/>
-			<point x="555" y="0"/>
-			<point x="615" y="0" type="curve"/>
-			<point x="615" y="32"/>
-			<point x="615" y="63"/>
-			<point x="615" y="95" type="curve"/>
-			<point x="615" y="293"/>
-			<point x="615" y="491"/>
-			<point x="615" y="689" type="curve" smooth="yes"/>
-			<point x="615" y="695"/>
-			<point x="610" y="700"/>
-			<point x="604" y="700" type="curve" smooth="yes"/>
-			<point x="538" y="700"/>
-			<point x="456" y="700"/>
-			<point x="390" y="700" type="curve"/>
-			<point x="390" y="644"/>
-			<point x="390" y="613"/>
-			<point x="390" y="553" type="curve" smooth="yes"/>
-			<point x="390" y="491"/>
-			<point x="394" y="452"/>
-			<point x="439" y="308" type="curve"/>
-			<point x="447" y="350" type="line"/>
-			<point x="378" y="350" type="line"/>
-			<point x="425" y="319" type="line"/>
-			<point x="356" y="450"/>
-			<point x="300" y="560"/>
-			<point x="231" y="691" type="curve"/>
-			<point x="227" y="698"/>
-			<point x="223" y="700"/>
-			<point x="214" y="700" type="curve"/>
-			<point x="168" y="700"/>
+			<point x="250" y="105"/>
+			<point x="250" y="152" type="curve" smooth="yes"/>
+			<point x="250" y="207"/>
+			<point x="248" y="239"/>
+			<point x="213" y="381" type="curve"/>
+			<point x="205" y="342" type="line"/>
+			<point x="271" y="342" type="line"/>
+			<point x="223" y="372" type="line"/>
+			<point x="313" y="237"/>
+			<point x="382" y="141"/>
+			<point x="472" y="7" type="curve"/>
+			<point x="476" y="2"/>
+			<point x="479" y="0"/>
+			<point x="484" y="0" type="curve"/>
+			<point x="544" y="0"/>
+			<point x="605" y="0"/>
+			<point x="665" y="0" type="curve"/>
+			<point x="665" y="32"/>
+			<point x="665" y="63"/>
+			<point x="665" y="95" type="curve"/>
+			<point x="665" y="293"/>
+			<point x="665" y="491"/>
+			<point x="665" y="689" type="curve" smooth="yes"/>
+			<point x="665" y="695"/>
+			<point x="660" y="700"/>
+			<point x="654" y="700" type="curve" smooth="yes"/>
+			<point x="588" y="700"/>
+			<point x="506" y="700"/>
+			<point x="440" y="700" type="curve"/>
+			<point x="440" y="644"/>
+			<point x="440" y="618"/>
+			<point x="440" y="562" type="curve" smooth="yes"/>
+			<point x="440" y="503"/>
+			<point x="444" y="467"/>
+			<point x="489" y="332" type="curve"/>
+			<point x="497" y="371" type="line"/>
+			<point x="428" y="371" type="line"/>
+			<point x="475" y="342" type="line"/>
+			<point x="388" y="465"/>
+			<point x="317" y="568"/>
+			<point x="230" y="692" type="curve"/>
+			<point x="225" y="698"/>
+			<point x="220" y="700"/>
+			<point x="209" y="700" type="curve"/>
+			<point x="151" y="700"/>
 			<point x="93" y="700"/>
 			<point x="35" y="700" type="curve"/>
 			<point x="35" y="653"/>
@@ -103,6 +102,8 @@
 	<guideline x="0" y="700" angle="0" identifier="pn03aVCeBq"/>
 	<lib>
 		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>experiment</string>
 			<key>com.rafalbuchner.mirroringDrawingLocal</key>
 			<dict>
 				<key>mirroringOptions</key>
@@ -254,7 +255,7 @@
 			<key>com.typemytype.robofont.guideline.magnetic.zmVrwXMnJO</key>
 			<integer>10</integer>
 			<key>public.markColor</key>
-			<string>0.45,1,0.55,0.75</string>
+			<string>0.5,0,1,0.75</string>
 		</dict>
 	</lib>
 </glyph>
