@@ -103,6 +103,10 @@
 	<guideline x="145" y="-6" angle="0" identifier="fFKr3bjRr5"/>
 	<lib>
 		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>workInProgress</string>
+			<key>com.arrowtype.numberOfIterations</key>
+			<integer>1</integer>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
@@ -182,7 +186,7 @@
 			<key>com.typemytype.robofont.guideline.showMeasurements.ORNSC1Ai2q</key>
 			<integer>1</integer>
 			<key>public.markColor</key>
-			<string>1,1,0,1</string>
+			<string>0,0.25,1,0.1</string>
 		</dict>
 	</lib>
 </glyph>

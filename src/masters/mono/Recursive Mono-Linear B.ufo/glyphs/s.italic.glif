@@ -68,6 +68,10 @@
 	<anchor name="bottom" x="254" y="-1"/>
 	<lib>
 		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>workInProgress</string>
+			<key>com.arrowtype.numberOfIterations</key>
+			<integer>1</integer>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
@@ -143,7 +147,7 @@
 			<key>com.typemytype.robofont.guideline.magnetic.vZQtVB9t9J</key>
 			<integer>10</integer>
 			<key>public.markColor</key>
-			<string>0,1,0,1</string>
+			<string>0,0.25,1,0.1</string>
 		</dict>
 	</lib>
 </glyph>
