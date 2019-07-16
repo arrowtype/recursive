@@ -76,7 +76,8 @@ somewhatNarrowGlyphs = [
     "E",
     "F",
     "c",
-    "zero"
+    "zero",
+    "z"
 ]
 
 
@@ -109,12 +110,24 @@ typicallyWideGlyphs = [
     "at"
 ]
 
+newItalicGlyphs = [
+    "c.italic",
+    "d.italic",
+    "g.italic",
+    "j.italic",
+    "m.italic",
+    "s.italic",
+    "w.italic",
+    "z.italic",
+]
+
 # ? list glyphs that shouldn't be copied due to visual adjustments, e.g. serif "f" to sans-serif "f"
 # f, r
 # should these have versions like "ss01" that are copied, instead of normal versions?
 
-glyphsToNotMove = typicallyNarrowGlyphs + narrowPunctuation + sansSpecificForm + \
-    somewhatNarrowGlyphs + somewhatWideGlyphs + typicallyWideGlyphs
+glyphsToNotMove = typicallyNarrowGlyphs + narrowPunctuation + sansSpecificForm +
+somewhatNarrowGlyphs + somewhatWideGlyphs + \
+    typicallyWideGlyphs + newItalicGlyphs
 
 
 def protectNonNormalGlyphs(masterToSendTo):
