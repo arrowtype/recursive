@@ -19,27 +19,21 @@ The main part of ligature's name is build with source glyphs' names separated by
 
 Work was divided into 3 stages that corresponds to different priority levels
 
-### _priority 1_
+### _priority 0_
+
+Ligatures to add to betas as early as possible – even just in the Upright A–B range, and then copy to other UFOs.
 
 #### logic operators
 
-| ligature     | name                     | usecase        |
-| ------------ | ------------------------ | -------------- |
-| ==           | equal_equal.code         | Python, JS     |
-| !=           | exclam_equal.code        | Python, JS     |
-| ===          | equal_equal_equal.code   | Python, JS     |
-| >=           | greater_equal.code       | JS, Python, C# |
-| <=           | less_equal.code          | JS, Python, C# |
-| !==          | exclam_equal_equal.code  | JS             |
-| =/=          | equal_slash_equal.code   |
-| !!           | exclam_exclam.code       | JS             |
-| ??           | question_question.code   | C#             |
+| ligature     | name                     | usecase    |
+| ------------ | ------------------------ | ---------- |
+| ==           | equal_equal.code         | Python, JS |
+| ===          | equal_equal_equal.code   | JS         |
+| !!           | exclam_exclam.code       | JS         |
+| ??           | question_question.code   | C#         |
 | %%           | percent_percent.code     |
 | &&           | ampersand_ampersand.code |
-| &#124;&#124; | bar_bar.code             | JS             |
-| ?.           | question_period.code     |
-| ?:           | question_colon.code      |
-| ?:           | question_colon.code      |
+| &#124;&#124; | bar_bar.code             | JS         |
 
 #### arrows & more
 
@@ -47,38 +41,64 @@ Work was divided into 3 stages that corresponds to different priority levels
 | -------- | ------------------ | ------------------ |
 | =>       | equal_greater.code | JS arrow functions |
 
+#### comments and others
+
+Including these because they should be relatively simple, and will be seen very frequently.
+
+| ligature | name                                             | note             |
+| -------- | ------------------------------------------------ | ---------------- |
+| #        | numbersign.code                                  | Python, Markdown |
+| ##       | numbersign_numbersign.code                       | Python, Markdown |
+| ###      | numbersign_numbersign_numbersign.code            | Python, Markdown |
+| ####     | numbersign_numbersign_numbersign_numbersign.code | Python, Markdown |
+| //       | slash_slash.code                                 | JS               |
+
+### _priority 1_
+
+#### more comments
+
+| ligature | name                                     | note    |
+| -------- | ---------------------------------------- | ------- |
+| \_\_     | underscore_underscore.code               |
+| /\*      | slash_asterix.code                       | C#, CSS |
+| \*/      | asterix_slash.code                       | C#, CSS |
+| ///      | slash_slash_slash.code                   | JS      |
+| '''      | quotesingle_quotesingle_quotesingle.code | maybe?  |
+| """      | quotedbl_quotedbl_quotedbl.code          | maybe?  |
+| \`\`\`   | grave_grave_grave.code                   | maybe?  |
+| <!\-\-   | less_exclam_hyphen_hyphen.code           | HTML    |
+| -->      | hyphen_hyphen_greater.code               | HTML    |
+
+#### logic operators
+
+| ligature | name                    | usecase        |
+| -------- | ----------------------- | -------------- |
+| !=       | exclam_equal.code       | Python, JS     |
+| >=       | greater_equal.code      | JS, Python, C# |
+| <=       | less_equal.code         | JS, Python, C# |
+| !==      | exclam_equal_equal.code | JS             |
+| =/=      | equal_slash_equal.code  |
+| ?.       | question_period.code    |
+| ?:       | question_colon.code     |
+| ?:       | question_colon.code     |
+
 #### math operators
 
-| ligature | name                         | usecase |
-| -------- | ---------------------------- | ------- |
+| ligature | name                         | usecase            |
+| -------- | ---------------------------- | ------------------ |
 | +        | plus.code                    |
 | ++       | plus_plus.code               |
 | +++      | plus_plus_plus.code          |
 | -        | hyphen.code                  |
 | --       | hyphen_hyphen.code           |
 | ---      | hyphen_hyphen_hyphen.code    |
-| \*       | asterix.code                 |
-| \*\*     | asterix_asterix.code         | JS      |
-| \*\*\*   | asterix_asterix_asterix.code | Haskell |
-| +=       | plus_equal.code              | JS, SQL |
-| -=       | minus_equal.code             | JS, SQL |
-| \*=      | asterisk_equal.code          | JS, SQL |
-| /=       | slash_equal.code             | JS, SQL |
-
-#### comments and others
-
-| ligature | name                                     |
-| -------- | ---------------------------------------- |
-| \_\_     | underscore_underscore.code               |
-| /\*      | slash_asterix.code                       |
-| \*/      | asterix_slash.code                       |
-| //       | slash_slash.code                         |
-| ///      | slash_slash_slash.code                   |
-| '''      | quotesingle_quotesingle_quotesingle.code |
-| """      | quotedbl_quotedbl_quotedbl.code          |
-| #        | numbersign.code                          |
-| ##       | numbersign_numbersign.code               |
-| ###      | numbersign_numbersign_numbersign.code    |
+| \*       | asterix.code                 | JS, Python, others |
+| \*\*     | asterix_asterix.code         | JS, others         |
+| \*\*\*   | asterix_asterix_asterix.code | Haskell            |
+| +=       | plus_equal.code              | JS, SQL            |
+| -=       | minus_equal.code             | JS, SQL            |
+| \*=      | asterisk_equal.code          | JS, SQL            |
+| /=       | slash_equal.code             | JS, SQL            |
 
 ### _prority 2_
 
