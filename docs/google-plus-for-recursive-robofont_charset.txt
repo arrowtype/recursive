@@ -1,4 +1,5 @@
 .notdef
+.null
 zerowidthspace
 space
 nbspace
@@ -613,6 +614,7 @@ greaterequal
 approxequal
 notequal
 logicalnot
+.arrowhead
 arrowleft
 arrowup
 arrowright
@@ -699,7 +701,6 @@ heartsuitwhite
 heart
 check
 softhyphen
-.null
 Jacute
 acutedotaccent
 blacktriangle
@@ -837,14 +838,5 @@ seven.sups
 eight.sups
 nine.sups
 zero.zero
-zero.slashLP
-zero.LP
-one.LP
-two.LP
-three.LP
-four.LP
-five.LP
-six.LP
-seven.LP
-eight.LP
-nine.LP
+zero.slash
+one.prop
