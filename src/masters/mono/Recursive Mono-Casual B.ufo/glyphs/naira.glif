@@ -116,6 +116,8 @@
 	</outline>
 	<lib>
 		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>waitingForCritique</string>
 			<key>com.rafalbuchner.mirroringDrawingLocal</key>
 			<dict>
 				<key>mirroringOptions</key>
@@ -126,6 +128,8 @@
 					<integer>0</integer>
 				</array>
 			</dict>
+			<key>public.markColor</key>
+			<string>1,1,0,0.75</string>
 		</dict>
 	</lib>
 </glyph>
