@@ -302,6 +302,11 @@ We could create the stylistic set that "emulates" mark down behaviour. With liga
 
 # Resources
 
+## Fonts
+
+- https://github.com/tonsky/FiraCode
+- https://github.com/i-tu/Hasklig
+
 ## JavaScript
 
 - [MDN: Comparison operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
@@ -312,6 +317,5 @@ We could create the stylistic set that "emulates" mark down behaviour. With liga
 
 ## Haskell
 
-- https://github.com/i-tu/Hasklig
 - https://wiki.haskell.org/Arrow_tutorial
 - https://en.wikibooks.org/wiki/Haskell/Understanding_arrows
