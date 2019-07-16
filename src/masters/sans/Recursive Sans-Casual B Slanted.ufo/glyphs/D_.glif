@@ -106,6 +106,18 @@
 	<guideline x="-66" y="700" angle="0" identifier="XZGnPu8g8c"/>
 	<lib>
 		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>needsFixing</string>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
@@ -183,7 +195,7 @@
 			<key>com.typemytype.robofont.guideline.magnetic.zacsiM4Wrp</key>
 			<integer>0</integer>
 			<key>public.markColor</key>
-			<string>1,1,0,0.6</string>
+			<string>1,0.45,0.45,0.75</string>
 		</dict>
 	</lib>
 </glyph>

@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 	<dict>
+		<key>.arrowhead</key>
+		<string>_arrowhead.glif</string>
 		<key>A</key>
 		<string>A_.glif</string>
 		<key>A.replaced_with_stemtaper</key>
@@ -300,6 +302,10 @@
 		<string>a.glif</string>
 		<key>a.italic</key>
 		<string>a.italic.glif</string>
+		<key>a.italic_curl</key>
+		<string>a.italic_curl.glif</string>
+		<key>a.replaced_with_med_curvy</key>
+		<string>a.replaced_with_med_curvy.glif</string>
 		<key>a.replaced_with_rounder</key>
 		<string>a.replaced_with_rounder.glif</string>
 		<key>a.roman</key>
@@ -342,6 +348,14 @@
 		<string>aring.glif</string>
 		<key>aringacute</key>
 		<string>aringacute.glif</string>
+		<key>arrowdown</key>
+		<string>arrowdown.glif</string>
+		<key>arrowleft</key>
+		<string>arrowleft.glif</string>
+		<key>arrowright</key>
+		<string>arrowright.glif</string>
+		<key>arrowup</key>
+		<string>arrowup.glif</string>
 		<key>asciicircum</key>
 		<string>asciicircum.glif</string>
 		<key>asciitilde</key>
@@ -350,6 +364,8 @@
 		<string>asterisk.glif</string>
 		<key>at</key>
 		<string>at.glif</string>
+		<key>at.cap</key>
+		<string>at.cap.glif</string>
 		<key>at.short</key>
 		<string>at.short.glif</string>
 		<key>at.simpler</key>
@@ -360,6 +376,8 @@
 		<string>b.glif</string>
 		<key>b.replaced_with_higherjoints</key>
 		<string>b.replaced_with_higherjoints.glif</string>
+		<key>b.replaced_with_med_curvy</key>
+		<string>b.replaced_with_med_curvy.glif</string>
 		<key>b.replaced_with_mediumheightjoints</key>
 		<string>b.replaced_with_mediumheightjoints.glif</string>
 		<key>backslash</key>
@@ -396,10 +414,16 @@
 		<string>bullet.glif</string>
 		<key>c</key>
 		<string>c.glif</string>
+		<key>c.italic</key>
+		<string>c.italic.glif</string>
 		<key>c.kinks</key>
 		<string>c.kinks.glif</string>
+		<key>c.replaced_with_med_curvy</key>
+		<string>c.replaced_with_med_curvy.glif</string>
 		<key>c.replaced_with_ss01</key>
 		<string>c.replaced_with_ss01.glif</string>
+		<key>c.sharp</key>
+		<string>c.sharp.glif</string>
 		<key>c.smoother</key>
 		<string>c.smoother.glif</string>
 		<key>c.ss01</key>
@@ -420,6 +444,8 @@
 		<string>ccircumflex.glif</string>
 		<key>cdotaccent</key>
 		<string>cdotaccent.glif</string>
+		<key>cedi</key>
+		<string>cedi.glif</string>
 		<key>cedilla</key>
 		<string>cedilla.glif</string>
 		<key>cedillacomb</key>
@@ -436,6 +462,8 @@
 		<string>circumflexcomb.case.glif</string>
 		<key>colon</key>
 		<string>colon.glif</string>
+		<key>colonmonetary</key>
+		<string>colonmonetary.glif</string>
 		<key>comma</key>
 		<string>comma.glif</string>
 		<key>commaaboverightcomb</key>
@@ -456,8 +484,12 @@
 		<string>currency.glif</string>
 		<key>d</key>
 		<string>d.glif</string>
+		<key>d.italic</key>
+		<string>d.italic.glif</string>
 		<key>d.replaced_with_higherjoints</key>
 		<string>d.replaced_with_higherjoints.glif</string>
+		<key>d.replaced_with_med_curvy</key>
+		<string>d.replaced_with_med_curvy.glif</string>
 		<key>d.replaced_with_mediumheightjoints</key>
 		<string>d.replaced_with_mediumheightjoints.glif</string>
 		<key>dagger</key>
@@ -480,8 +512,12 @@
 		<string>divide.glif</string>
 		<key>dollar</key>
 		<string>dollar.glif</string>
+		<key>dollar.lower</key>
+		<string>dollar.lower.glif</string>
 		<key>dollar.nobar</key>
 		<string>dollar.nobar.glif</string>
+		<key>dong</key>
+		<string>dong.glif</string>
 		<key>dotaccent</key>
 		<string>dotaccent.glif</string>
 		<key>dotaccentcomb</key>
@@ -502,8 +538,12 @@
 		<string>e.glif</string>
 		<key>e.45_oblique</key>
 		<string>e.45_oblique.glif</string>
+		<key>e.italic</key>
+		<string>e.italic.glif</string>
 		<key>e.nokinks</key>
 		<string>e.nokinks.glif</string>
+		<key>e.replaced_with_med_curvy</key>
+		<string>e.replaced_with_med_curvy.glif</string>
 		<key>e.smooth_oblique</key>
 		<string>e.smooth_oblique.glif</string>
 		<key>e.smoother</key>
@@ -528,6 +568,10 @@
 		<string>egrave.glif</string>
 		<key>eight</key>
 		<string>eight.glif</string>
+		<key>eightinferior</key>
+		<string>eightinferior.glif</string>
+		<key>eightsuperior</key>
+		<string>eightsuperior.glif</string>
 		<key>ellipsis</key>
 		<string>ellipsis.glif</string>
 		<key>emacron</key>
@@ -556,22 +600,40 @@
 		<string>f.glif</string>
 		<key>f.italic</key>
 		<string>f.italic.glif</string>
+		<key>f.italish</key>
+		<string>f.italish.glif</string>
+		<key>f.kinked</key>
+		<string>f.kinked.glif</string>
 		<key>f.kinks</key>
 		<string>f.kinks.glif</string>
 		<key>f.nokinks</key>
 		<string>f.nokinks.glif</string>
+		<key>f.replaced_with_med_curvy</key>
+		<string>f.replaced_with_med_curvy.glif</string>
+		<key>f.replaced_with_reverse</key>
+		<string>f.replaced_with_reverse.glif</string>
 		<key>f.replaced_with_reversewedge2</key>
 		<string>f.replaced_with_reversewedge2.glif</string>
 		<key>f.replaced_with_ss01</key>
 		<string>f.replaced_with_ss01.glif</string>
 		<key>f.roman</key>
 		<string>f.roman.glif</string>
+		<key>f.sharp</key>
+		<string>f.sharp.glif</string>
+		<key>f.simple_italic</key>
+		<string>f.simple_italic.glif</string>
 		<key>fi</key>
 		<string>fi.glif</string>
 		<key>five</key>
 		<string>five.glif</string>
 		<key>five.middlewaist</key>
 		<string>five.middlewaist.glif</string>
+		<key>fiveeighths</key>
+		<string>fiveeighths.glif</string>
+		<key>fiveinferior</key>
+		<string>fiveinferior.glif</string>
+		<key>fivesuperior</key>
+		<string>fivesuperior.glif</string>
 		<key>fj</key>
 		<string>fj.glif</string>
 		<key>flatg</key>
@@ -582,18 +644,26 @@
 		<string>four.glif</string>
 		<key>four.angledtop</key>
 		<string>four.angledtop.glif</string>
+		<key>fourinferior</key>
+		<string>fourinferior.glif</string>
 		<key>foursuperior</key>
 		<string>foursuperior.glif</string>
 		<key>fraction</key>
 		<string>fraction.glif</string>
+		<key>franc</key>
+		<string>franc.glif</string>
 		<key>g</key>
 		<string>g.glif</string>
 		<key>g.45_oblique</key>
 		<string>g.45_oblique.glif</string>
+		<key>g.compact_desc</key>
+		<string>g.compact_desc.glif</string>
 		<key>g.italic</key>
 		<string>g.italic.glif</string>
 		<key>g.nokinks</key>
 		<string>g.nokinks.glif</string>
+		<key>g.replaced_with_med_curvy</key>
+		<string>g.replaced_with_med_curvy.glif</string>
 		<key>g.replaced_with_morecasual</key>
 		<string>g.replaced_with_morecasual.glif</string>
 		<key>g.roman</key>
@@ -632,6 +702,8 @@
 		<string>greater.arrow.glif</string>
 		<key>greaterequal</key>
 		<string>greaterequal.glif</string>
+		<key>guarani</key>
+		<string>guarani.glif</string>
 		<key>guillemotleft</key>
 		<string>guillemotleft.glif</string>
 		<key>guillemotright</key>
@@ -642,8 +714,12 @@
 		<string>guilsinglright.glif</string>
 		<key>h</key>
 		<string>h.glif</string>
+		<key>h.italic</key>
+		<string>h.italic.glif</string>
 		<key>h.replaced_with_higherjoints</key>
 		<string>h.replaced_with_higherjoints.glif</string>
+		<key>h.replaced_with_med_curvy</key>
+		<string>h.replaced_with_med_curvy.glif</string>
 		<key>h.replaced_with_mediumheightjoints</key>
 		<string>h.replaced_with_mediumheightjoints.glif</string>
 		<key>h.replaced_with_morecasual</key>
@@ -664,6 +740,8 @@
 		<string>i.glif</string>
 		<key>i.italic</key>
 		<string>i.italic.glif</string>
+		<key>i.replaced_with_med_curvy</key>
+		<string>i.replaced_with_med_curvy.glif</string>
 		<key>i.replaced_with_reversewedge2</key>
 		<string>i.replaced_with_reversewedge2.glif</string>
 		<key>i.roman</key>
@@ -698,18 +776,32 @@
 		<string>itilde.glif</string>
 		<key>j</key>
 		<string>j.glif</string>
+		<key>j.italic</key>
+		<string>j.italic.glif</string>
 		<key>j.kinks</key>
 		<string>j.kinks.glif</string>
+		<key>j.replaced_with_med_curvy</key>
+		<string>j.replaced_with_med_curvy.glif</string>
+		<key>j.sharp</key>
+		<string>j.sharp.glif</string>
 		<key>jcircumflex</key>
 		<string>jcircumflex.glif</string>
 		<key>k</key>
 		<string>k.glif</string>
+		<key>k.italic</key>
+		<string>k.italic.glif</string>
+		<key>k.italic_kinked</key>
+		<string>k.italic_kinked.glif</string>
+		<key>k.replaced_with_med_curvy</key>
+		<string>k.replaced_with_med_curvy.glif</string>
 		<key>k.replaced_with_smoother</key>
 		<string>k.replaced_with_smoother.glif</string>
 		<key>kcommaaccent</key>
 		<string>kcommaaccent.glif</string>
 		<key>kgreenlandic</key>
 		<string>kgreenlandic.glif</string>
+		<key>kip</key>
+		<string>kip.glif</string>
 		<key>l</key>
 		<string>l.glif</string>
 		<key>l.alt-wide</key>
@@ -718,6 +810,8 @@
 		<string>l.italic.glif</string>
 		<key>l.kinks</key>
 		<string>l.kinks.glif</string>
+		<key>l.replaced_with_med_curvy</key>
+		<string>l.replaced_with_med_curvy.glif</string>
 		<key>l.replaced_with_reversewedge2</key>
 		<string>l.replaced_with_reversewedge2.glif</string>
 		<key>l.roman</key>
@@ -740,6 +834,10 @@
 		<string>less.replaced_with_taller.glif</string>
 		<key>lessequal</key>
 		<string>lessequal.glif</string>
+		<key>lira</key>
+		<string>lira.glif</string>
+		<key>liraTurkish</key>
+		<string>liraT_urkish.glif</string>
 		<key>logicalnot</key>
 		<string>logicalnot.glif</string>
 		<key>lozenge</key>
@@ -750,10 +848,14 @@
 		<string>m.glif</string>
 		<key>m.curvy</key>
 		<string>m.curvy.glif</string>
+		<key>m.italic</key>
+		<string>m.italic.glif</string>
 		<key>m.kinks</key>
 		<string>m.kinks.glif</string>
 		<key>m.replaced_with_higherjoints</key>
 		<string>m.replaced_with_higherjoints.glif</string>
+		<key>m.replaced_with_med_curvy</key>
+		<string>m.replaced_with_med_curvy.glif</string>
 		<key>m.replaced_with_mediumheightjoints</key>
 		<string>m.replaced_with_mediumheightjoints.glif</string>
 		<key>m.replaced_with_morecasual</key>
@@ -766,6 +868,8 @@
 		<string>macroncomb.glif</string>
 		<key>macroncomb.case</key>
 		<string>macroncomb.case.glif</string>
+		<key>manat</key>
+		<string>manat.glif</string>
 		<key>minus</key>
 		<string>minus.glif</string>
 		<key>multiply</key>
@@ -774,8 +878,12 @@
 		<string>n.glif</string>
 		<key>n.curvy</key>
 		<string>n.curvy.glif</string>
+		<key>n.italic</key>
+		<string>n.italic.glif</string>
 		<key>n.replaced_with_higherjoints</key>
 		<string>n.replaced_with_higherjoints.glif</string>
+		<key>n.replaced_with_med_curvy</key>
+		<string>n.replaced_with_med_curvy.glif</string>
 		<key>n.replaced_with_mediumheightjoints</key>
 		<string>n.replaced_with_mediumheightjoints.glif</string>
 		<key>n.replaced_with_morecasual</key>
@@ -784,6 +892,8 @@
 		<string>n.roundcounter.glif</string>
 		<key>nacute</key>
 		<string>nacute.glif</string>
+		<key>naira</key>
+		<string>naira.glif</string>
 		<key>napostrophe</key>
 		<string>napostrophe.glif</string>
 		<key>ncaron</key>
@@ -796,6 +906,10 @@
 		<string>nine.glif</string>
 		<key>nine.alt1</key>
 		<string>nine.alt1.glif</string>
+		<key>nineinferior</key>
+		<string>nineinferior.glif</string>
+		<key>ninesuperior</key>
+		<string>ninesuperior.glif</string>
 		<key>notequal</key>
 		<string>notequal.glif</string>
 		<key>ntilde</key>
@@ -808,6 +922,8 @@
 		<string>o.glif</string>
 		<key>o.replaced_with_egg</key>
 		<string>o.replaced_with_egg.glif</string>
+		<key>o.replaced_with_med_curvy</key>
+		<string>o.replaced_with_med_curvy.glif</string>
 		<key>o.symmetrical</key>
 		<string>o.symmetrical.glif</string>
 		<key>oacute</key>
@@ -838,12 +954,18 @@
 		<string>one.glif</string>
 		<key>one.replaced_with_reversewedge2</key>
 		<string>one.replaced_with_reversewedge2.glif</string>
+		<key>oneeighth</key>
+		<string>oneeighth.glif</string>
 		<key>onehalf</key>
 		<string>onehalf.glif</string>
+		<key>oneinferior</key>
+		<string>oneinferior.glif</string>
 		<key>onequarter</key>
 		<string>onequarter.glif</string>
 		<key>onesuperior</key>
 		<string>onesuperior.glif</string>
+		<key>onethird</key>
+		<string>onethird.glif</string>
 		<key>oogonek</key>
 		<string>oogonek.glif</string>
 		<key>ordfeminine</key>
@@ -862,6 +984,8 @@
 		<string>p.glif</string>
 		<key>p.replaced_with_higherjoints</key>
 		<string>p.replaced_with_higherjoints.glif</string>
+		<key>p.replaced_with_med_curvy</key>
+		<string>p.replaced_with_med_curvy.glif</string>
 		<key>p.replaced_with_mediumheightjoints</key>
 		<string>p.replaced_with_mediumheightjoints.glif</string>
 		<key>paragraph</key>
@@ -880,6 +1004,10 @@
 		<string>periodcentered.glif</string>
 		<key>perthousand</key>
 		<string>perthousand.glif</string>
+		<key>peseta</key>
+		<string>peseta.glif</string>
+		<key>peso</key>
+		<string>peso.glif</string>
 		<key>pi</key>
 		<string>pi.glif</string>
 		<key>plus</key>
@@ -892,6 +1020,8 @@
 		<string>q.glif</string>
 		<key>q.replaced_with_higherjoints</key>
 		<string>q.replaced_with_higherjoints.glif</string>
+		<key>q.replaced_with_med_curvy</key>
+		<string>q.replaced_with_med_curvy.glif</string>
 		<key>q.replaced_with_mediumheightjoints</key>
 		<string>q.replaced_with_mediumheightjoints.glif</string>
 		<key>question</key>
@@ -918,8 +1048,14 @@
 		<string>r.glif</string>
 		<key>r.italic</key>
 		<string>r.italic.glif</string>
+		<key>r.italic_square</key>
+		<string>r.italic_square.glif</string>
+		<key>r.replaced_with_curve</key>
+		<string>r.replaced_with_curve.glif</string>
 		<key>r.replaced_with_higherjoints</key>
 		<string>r.replaced_with_higherjoints.glif</string>
+		<key>r.replaced_with_med_curvy</key>
+		<string>r.replaced_with_med_curvy.glif</string>
 		<key>r.replaced_with_mediumheightjoints</key>
 		<string>r.replaced_with_mediumheightjoints.glif</string>
 		<key>r.replaced_with_reversewedge2</key>
@@ -928,6 +1064,10 @@
 		<string>r.replaced_with_ss01.glif</string>
 		<key>r.roman</key>
 		<string>r.roman.glif</string>
+		<key>r.sharp</key>
+		<string>r.sharp.glif</string>
+		<key>r.simple_italic</key>
+		<string>r.simple_italic.glif</string>
 		<key>r.smoother</key>
 		<string>r.smoother.glif</string>
 		<key>r.smoothtraps</key>
@@ -954,10 +1094,20 @@
 		<string>ringcomb.glif</string>
 		<key>ringcomb.case</key>
 		<string>ringcomb.case.glif</string>
+		<key>ruble</key>
+		<string>ruble.glif</string>
+		<key>rupeeIndian</key>
+		<string>rupeeI_ndian.glif</string>
 		<key>s</key>
 		<string>s.glif</string>
 		<key>s.alt1</key>
 		<string>s.alt1.glif</string>
+		<key>s.italic</key>
+		<string>s.italic.glif</string>
+		<key>s.replaced_with_med_curvy</key>
+		<string>s.replaced_with_med_curvy.glif</string>
+		<key>s.sharp</key>
+		<string>s.sharp.glif</string>
 		<key>sacute</key>
 		<string>sacute.glif</string>
 		<key>scaron</key>
@@ -976,10 +1126,20 @@
 		<string>semicolon.glif</string>
 		<key>seven</key>
 		<string>seven.glif</string>
+		<key>seveneighths</key>
+		<string>seveneighths.glif</string>
+		<key>seveninferior</key>
+		<string>seveninferior.glif</string>
+		<key>sevensuperior</key>
+		<string>sevensuperior.glif</string>
 		<key>six</key>
 		<string>six.glif</string>
 		<key>six.alt1</key>
 		<string>six.alt1.glif</string>
+		<key>sixinferior</key>
+		<string>sixinferior.glif</string>
+		<key>sixsuperior</key>
+		<string>sixsuperior.glif</string>
 		<key>slash</key>
 		<string>slash.glif</string>
 		<key>space</key>
@@ -992,6 +1152,8 @@
 		<string>t.glif</string>
 		<key>t.kinks</key>
 		<string>t.kinks.glif</string>
+		<key>t.replaced_with_med_curvy</key>
+		<string>t.replaced_with_med_curvy.glif</string>
 		<key>tbar</key>
 		<string>tbar.glif</string>
 		<key>tcaron</key>
@@ -1002,6 +1164,10 @@
 		<string>three.glif</string>
 		<key>three.middlewaist</key>
 		<string>three.middlewaist.glif</string>
+		<key>threeeighths</key>
+		<string>threeeighths.glif</string>
+		<key>threeinferior</key>
+		<string>threeinferior.glif</string>
 		<key>threequarters</key>
 		<string>threequarters.glif</string>
 		<key>threesuperior</key>
@@ -1020,12 +1186,20 @@
 		<string>two.middlewaist.glif</string>
 		<key>two.sharp</key>
 		<string>two.sharp.glif</string>
+		<key>twoinferior</key>
+		<string>twoinferior.glif</string>
 		<key>twosuperior</key>
 		<string>twosuperior.glif</string>
+		<key>twothirds</key>
+		<string>twothirds.glif</string>
 		<key>u</key>
 		<string>u.glif</string>
+		<key>u.italic</key>
+		<string>u.italic.glif</string>
 		<key>u.replaced_with_higherjoints</key>
 		<string>u.replaced_with_higherjoints.glif</string>
+		<key>u.replaced_with_med_curvy</key>
+		<string>u.replaced_with_med_curvy.glif</string>
 		<key>u.replaced_with_mediumheightjoints</key>
 		<string>u.replaced_with_mediumheightjoints.glif</string>
 		<key>u.replaced_with_morecasual</key>
@@ -1064,6 +1238,10 @@
 		<string>uni021B_.glif</string>
 		<key>uni1E9E</key>
 		<string>uni1E_9E_.glif</string>
+		<key>uni20B4</key>
+		<string>uni20B_4.glif</string>
+		<key>uni20B8</key>
+		<string>uni20B_8.glif</string>
 		<key>uni2113</key>
 		<string>uni2113.glif</string>
 		<key>uni2126</key>
@@ -1090,12 +1268,22 @@
 		<string>utilde.glif</string>
 		<key>v</key>
 		<string>v.glif</string>
+		<key>v.italic</key>
+		<string>v.italic.glif</string>
+		<key>v.replaced_with_med_curvy</key>
+		<string>v.replaced_with_med_curvy.glif</string>
 		<key>v.smoothtraps</key>
 		<string>v.smoothtraps.glif</string>
 		<key>w</key>
 		<string>w.glif</string>
+		<key>w.italic</key>
+		<string>w.italic.glif</string>
+		<key>w.more_italic</key>
+		<string>w.more_italic.glif</string>
 		<key>w.replaced_with_alt-flattop</key>
 		<string>w.replaced_with_alt-flattop.glif</string>
+		<key>w.replaced_with_med_curvy</key>
+		<string>w.replaced_with_med_curvy.glif</string>
 		<key>wacute</key>
 		<string>wacute.glif</string>
 		<key>wcircumflex</key>
@@ -1104,14 +1292,24 @@
 		<string>wdieresis.glif</string>
 		<key>wgrave</key>
 		<string>wgrave.glif</string>
+		<key>won</key>
+		<string>won.glif</string>
 		<key>x</key>
 		<string>x.glif</string>
+		<key>x.italic</key>
+		<string>x.italic.glif</string>
+		<key>x.replaced_with_med_curvy</key>
+		<string>x.replaced_with_med_curvy.glif</string>
 		<key>x.replaced_with_smoother</key>
 		<string>x.replaced_with_smoother.glif</string>
 		<key>y</key>
 		<string>y.glif</string>
+		<key>y.dual_curve</key>
+		<string>y.dual_curve.glif</string>
 		<key>y.italic</key>
 		<string>y.italic.glif</string>
+		<key>y.replaced_with_med_curvy</key>
+		<string>y.replaced_with_med_curvy.glif</string>
 		<key>y.replaced_with_smoother</key>
 		<string>y.replaced_with_smoother.glif</string>
 		<key>y.roman</key>
@@ -1132,6 +1330,10 @@
 		<string>ytilde.glif</string>
 		<key>z</key>
 		<string>z.glif</string>
+		<key>z.italic</key>
+		<string>z.italic.glif</string>
+		<key>z.replaced_with_med_curvy</key>
+		<string>z.replaced_with_med_curvy.glif</string>
 		<key>z.wide</key>
 		<string>z.wide.glif</string>
 		<key>zacute</key>
@@ -1142,5 +1344,9 @@
 		<string>zdotaccent.glif</string>
 		<key>zero</key>
 		<string>zero.glif</string>
+		<key>zeroinferior</key>
+		<string>zeroinferior.glif</string>
+		<key>zerosuperior</key>
+		<string>zerosuperior.glif</string>
 	</dict>
 </plist>

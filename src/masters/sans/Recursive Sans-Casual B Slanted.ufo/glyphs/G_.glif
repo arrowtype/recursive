@@ -127,6 +127,8 @@
 	<guideline x="-66" y="700" angle="0" identifier="0BcIqwUHE1"/>
 	<lib>
 		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>needsFixing</string>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
@@ -204,7 +206,7 @@
 			<key>com.typemytype.robofont.guideline.magnetic.wbPatA1LsD</key>
 			<integer>0</integer>
 			<key>public.markColor</key>
-			<string>1,1,0,0.6</string>
+			<string>1,0.45,0.45,0.75</string>
 		</dict>
 	</lib>
 </glyph>
