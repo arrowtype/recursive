@@ -3,12 +3,26 @@
 	<unicode hex="005D"/>
 	<advance width="400"/>
 	<outline>
-		<component base="bracketleft" xScale="-1" yScale="-1" xOffset="600" yOffset="632"/>
+		<component base="bracketleft" xScale="-1" yScale="-1" xOffset="405" yOffset="632"/>
 	</outline>
 	<lib>
 		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>workInProgress</string>
+			<key>com.arrowtype.numberOfIterations</key>
+			<integer>1</integer>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>public.markColor</key>
-			<string>0.45,1,0.55,0.75</string>
+			<string>0,0.25,1,0.1</string>
 		</dict>
 	</lib>
 </glyph>

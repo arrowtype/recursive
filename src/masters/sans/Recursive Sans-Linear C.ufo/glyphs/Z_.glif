@@ -71,6 +71,18 @@
 	<anchor name="top" x="300" y="711"/>
 	<lib>
 		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>fromComponents</string>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
@@ -146,7 +158,7 @@
 			<key>com.typemytype.robofont.guideline.magnetic.xKhImA5eFL</key>
 			<integer>0</integer>
 			<key>public.markColor</key>
-			<string>0.45,0.73,1,0.75</string>
+			<string>0,0.25,1,1</string>
 		</dict>
 	</lib>
 </glyph>

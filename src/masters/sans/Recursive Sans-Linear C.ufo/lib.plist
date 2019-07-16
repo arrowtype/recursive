@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 	<dict>
+		<key>com.arrowtype.iteratedGlyphs</key>
+		<array>
+			<string>l.wide</string>
+		</array>
+		<key>com.arrowtype.maxIterations</key>
+		<integer>20</integer>
 		<key>com.defcon.sortDescriptor</key>
 		<array>
 			<dict>
@@ -411,6 +417,8 @@
 					<string>yen</string>
 					<string>Euro</string>
 					<string>florin</string>
+					<string>uni20B4</string>
+					<string>uni20B8</string>
 					<string>asciicircum</string>
 					<string>asciitilde</string>
 					<string>acute</string>
@@ -437,16 +445,54 @@
 					<string>IJacute</string>
 					<string>Nhookleft</string>
 					<string>bitcoin</string>
+					<string>cedi</string>
+					<string>colonmonetary</string>
+					<string>dong</string>
 					<string>dotlessij</string>
 					<string>dotlessj</string>
+					<string>eightinferior</string>
+					<string>eightsuperior</string>
 					<string>ellipses</string>
+					<string>fiveeighths</string>
+					<string>fiveinferior</string>
+					<string>fivesuperior</string>
 					<string>fj</string>
 					<string>flatg</string>
+					<string>fourinferior</string>
 					<string>foursuperior</string>
+					<string>franc</string>
+					<string>guarani</string>
+					<string>kip</string>
+					<string>lira</string>
+					<string>liraTurkish</string>
+					<string>manat</string>
+					<string>naira</string>
 					<string>nhookleft</string>
+					<string>nineinferior</string>
+					<string>ninesuperior</string>
+					<string>oneeighth</string>
+					<string>oneinferior</string>
+					<string>onethird</string>
+					<string>peseta</string>
+					<string>peso</string>
 					<string>ringacute</string>
+					<string>ruble</string>
+					<string>rupeeIndian</string>
+					<string>seveneighths</string>
+					<string>seveninferior</string>
+					<string>sevensuperior</string>
+					<string>sixinferior</string>
+					<string>sixsuperior</string>
+					<string>threeeighths</string>
+					<string>threeinferior</string>
+					<string>twoinferior</string>
+					<string>twothirds</string>
+					<string>won</string>
+					<string>zeroinferior</string>
+					<string>zerosuperior</string>
 					<string>fi</string>
 					<string>fl</string>
+					<string>flatg.copy_1</string>
 					<string>gravecomb.case</string>
 					<string>acutecomb.case</string>
 					<string>circumflexcomb.case</string>
@@ -465,11 +511,27 @@
 					<string>cedillacomb.case</string>
 					<string>ogonekcomb.case</string>
 					<string>ringacute.case</string>
-					<string>braceleft.asymmetrical</string>
-					<string>braceright.asymmetrical</string>
-					<string>question.nokinks</string>
-					<string>ampersand.crossbar</string>
-					<string>five.topserif</string>
+					<string>a.italic</string>
+					<string>c.italic</string>
+					<string>d.italic</string>
+					<string>e.italic</string>
+					<string>f.italic</string>
+					<string>g.italic</string>
+					<string>h.italic</string>
+					<string>i.italic</string>
+					<string>j.italic</string>
+					<string>k.italic</string>
+					<string>l.italic</string>
+					<string>m.italic</string>
+					<string>n.italic</string>
+					<string>r.italic</string>
+					<string>s.italic</string>
+					<string>u.italic</string>
+					<string>v.italic</string>
+					<string>w.italic</string>
+					<string>x.italic</string>
+					<string>y.italic</string>
+					<string>z.italic</string>
 					<string>a.roman</string>
 					<string>f.roman</string>
 					<string>g.roman</string>
@@ -477,70 +539,23 @@
 					<string>l.roman</string>
 					<string>r.roman</string>
 					<string>y.roman</string>
-					<string>a.italic</string>
-					<string>f.italic</string>
-					<string>g.italic</string>
-					<string>i.italic</string>
-					<string>l.italic</string>
-					<string>r.italic</string>
-					<string>y.italic</string>
+					<string>A.replaced_with_replaced_with_trad_contrast</string>
+					<string>M.replaced_with_replaced_with_trad_contrast</string>
+					<string>N.replaced_with_replaced_with_trad_contrast</string>
+					<string>V.replaced_with_replaced_with_trad_contrast</string>
+					<string>W.replaced_with_replaced_with_trad_contrast</string>
+					<string>Y.replaced_with_replaced_with_trad_contrast</string>
 					<string>c.ss01</string>
 					<string>g.ss01</string>
 					<string>i.ss01</string>
 					<string>l.ss01</string>
-					<string>r.ss01</string>
-					<string>C.rounder</string>
-					<string>G.rounder</string>
-					<string>S.rounder</string>
-					<string>a.smoothtraps</string>
-					<string>n.smoothtraps</string>
-					<string>r.smoothtraps</string>
-					<string>k.replaced_with_smoother</string>
-					<string>x.replaced_with_smoother</string>
-					<string>y.replaced_with_smoother</string>
-					<string>l.wide</string>
-					<string>z.wide</string>
-					<string>m.roundcounter</string>
-					<string>n.roundcounter</string>
-					<string>n.alt1</string>
-					<string>g.ss02</string>
-					<string>Z.noserif</string>
-					<string>R.sharper</string>
-					<string>e.highcontrast</string>
-					<string>s.reversecontrast</string>
-					<string>x.straight_diagonal</string>
-					<string>c.replaced_with_ss01</string>
-					<string>c.replaced_with_sharper</string>
-					<string>B.replaced_with_nokinks</string>
-					<string>C.replaced_with_nokinks</string>
-					<string>D.replaced_with_nokinks</string>
-					<string>G.replaced_with_nokinks</string>
-					<string>J.replaced_with_nokinks</string>
-					<string>O.replaced_with_nokinks</string>
-					<string>P.replaced_with_nokinks</string>
-					<string>R.replaced_with_nokinks</string>
-					<string>S.replaced_with_nokinks</string>
-					<string>U.replaced_with_nokinks</string>
-					<string>a.replaced_with_nokinks</string>
-					<string>b.replaced_with_nokinks</string>
-					<string>d.replaced_with_nokinks</string>
-					<string>e.replaced_with_nokinks</string>
-					<string>g.replaced_with_nokinks</string>
-					<string>h.replaced_with_nokinks</string>
-					<string>j.replaced_with_nokinks</string>
-					<string>m.replaced_with_nokinks</string>
-					<string>n.replaced_with_nokinks</string>
-					<string>o.replaced_with_nokinks</string>
-					<string>p.replaced_with_nokinks</string>
-					<string>q.replaced_with_nokinks</string>
-					<string>t.replaced_with_nokinks</string>
-					<string>u.replaced_with_nokinks</string>
-					<string>zero.replaced_with_nokinks</string>
-					<string>two.replaced_with_nokinks</string>
-					<string>five.replaced_with_nokinks</string>
-					<string>six.replaced_with_nokinks</string>
-					<string>eight.replaced_with_nokinks</string>
-					<string>nine.replaced_with_nokinks</string>
+					<string>N.wide</string>
+					<string>g.long_desc</string>
+					<string>z.altdiagonal</string>
+					<string>a.italic_curl</string>
+					<string>N.trad_contrast_wide</string>
+					<string>r.replaced_with_curve</string>
+					<string>a.replaced_with_flatbar</string>
 				</array>
 				<key>type</key>
 				<string>glyphList</string>
@@ -1155,6 +1170,8 @@
 			<string>yen</string>
 			<string>Euro</string>
 			<string>florin</string>
+			<string>uni20B4</string>
+			<string>uni20B8</string>
 			<string>asciicircum</string>
 			<string>asciitilde</string>
 			<string>acute</string>
@@ -1181,16 +1198,54 @@
 			<string>IJacute</string>
 			<string>Nhookleft</string>
 			<string>bitcoin</string>
+			<string>cedi</string>
+			<string>colonmonetary</string>
+			<string>dong</string>
 			<string>dotlessij</string>
 			<string>dotlessj</string>
+			<string>eightinferior</string>
+			<string>eightsuperior</string>
 			<string>ellipses</string>
+			<string>fiveeighths</string>
+			<string>fiveinferior</string>
+			<string>fivesuperior</string>
 			<string>fj</string>
 			<string>flatg</string>
+			<string>fourinferior</string>
 			<string>foursuperior</string>
+			<string>franc</string>
+			<string>guarani</string>
+			<string>kip</string>
+			<string>lira</string>
+			<string>liraTurkish</string>
+			<string>manat</string>
+			<string>naira</string>
 			<string>nhookleft</string>
+			<string>nineinferior</string>
+			<string>ninesuperior</string>
+			<string>oneeighth</string>
+			<string>oneinferior</string>
+			<string>onethird</string>
+			<string>peseta</string>
+			<string>peso</string>
 			<string>ringacute</string>
+			<string>ruble</string>
+			<string>rupeeIndian</string>
+			<string>seveneighths</string>
+			<string>seveninferior</string>
+			<string>sevensuperior</string>
+			<string>sixinferior</string>
+			<string>sixsuperior</string>
+			<string>threeeighths</string>
+			<string>threeinferior</string>
+			<string>twoinferior</string>
+			<string>twothirds</string>
+			<string>won</string>
+			<string>zeroinferior</string>
+			<string>zerosuperior</string>
 			<string>fi</string>
 			<string>fl</string>
+			<string>flatg.copy_1</string>
 			<string>gravecomb.case</string>
 			<string>acutecomb.case</string>
 			<string>circumflexcomb.case</string>
@@ -1209,11 +1264,27 @@
 			<string>cedillacomb.case</string>
 			<string>ogonekcomb.case</string>
 			<string>ringacute.case</string>
-			<string>braceleft.asymmetrical</string>
-			<string>braceright.asymmetrical</string>
-			<string>question.nokinks</string>
-			<string>ampersand.crossbar</string>
-			<string>five.topserif</string>
+			<string>a.italic</string>
+			<string>c.italic</string>
+			<string>d.italic</string>
+			<string>e.italic</string>
+			<string>f.italic</string>
+			<string>g.italic</string>
+			<string>h.italic</string>
+			<string>i.italic</string>
+			<string>j.italic</string>
+			<string>k.italic</string>
+			<string>l.italic</string>
+			<string>m.italic</string>
+			<string>n.italic</string>
+			<string>r.italic</string>
+			<string>s.italic</string>
+			<string>u.italic</string>
+			<string>v.italic</string>
+			<string>w.italic</string>
+			<string>x.italic</string>
+			<string>y.italic</string>
+			<string>z.italic</string>
 			<string>a.roman</string>
 			<string>f.roman</string>
 			<string>g.roman</string>
@@ -1221,129 +1292,23 @@
 			<string>l.roman</string>
 			<string>r.roman</string>
 			<string>y.roman</string>
-			<string>a.italic</string>
-			<string>f.italic</string>
-			<string>g.italic</string>
-			<string>i.italic</string>
-			<string>l.italic</string>
-			<string>r.italic</string>
-			<string>y.italic</string>
+			<string>A.replaced_with_replaced_with_trad_contrast</string>
+			<string>M.replaced_with_replaced_with_trad_contrast</string>
+			<string>N.replaced_with_replaced_with_trad_contrast</string>
+			<string>V.replaced_with_replaced_with_trad_contrast</string>
+			<string>W.replaced_with_replaced_with_trad_contrast</string>
+			<string>Y.replaced_with_replaced_with_trad_contrast</string>
 			<string>c.ss01</string>
 			<string>g.ss01</string>
 			<string>i.ss01</string>
 			<string>l.ss01</string>
-			<string>r.ss01</string>
-			<string>C.rounder</string>
-			<string>G.rounder</string>
-			<string>S.rounder</string>
-			<string>a.smoothtraps</string>
-			<string>n.smoothtraps</string>
-			<string>r.smoothtraps</string>
-			<string>k.replaced_with_smoother</string>
-			<string>x.replaced_with_smoother</string>
-			<string>y.replaced_with_smoother</string>
-			<string>l.wide</string>
-			<string>z.wide</string>
-			<string>m.roundcounter</string>
-			<string>n.roundcounter</string>
-			<string>n.alt1</string>
-			<string>g.ss02</string>
-			<string>Z.noserif</string>
-			<string>R.sharper</string>
-			<string>e.highcontrast</string>
-			<string>s.reversecontrast</string>
-			<string>x.straight_diagonal</string>
-			<string>c.replaced_with_ss01</string>
-			<string>c.replaced_with_sharper</string>
-			<string>B.replaced_with_nokinks</string>
-			<string>C.replaced_with_nokinks</string>
-			<string>D.replaced_with_nokinks</string>
-			<string>G.replaced_with_nokinks</string>
-			<string>J.replaced_with_nokinks</string>
-			<string>O.replaced_with_nokinks</string>
-			<string>P.replaced_with_nokinks</string>
-			<string>R.replaced_with_nokinks</string>
-			<string>S.replaced_with_nokinks</string>
-			<string>U.replaced_with_nokinks</string>
-			<string>a.replaced_with_nokinks</string>
-			<string>b.replaced_with_nokinks</string>
-			<string>d.replaced_with_nokinks</string>
-			<string>e.replaced_with_nokinks</string>
-			<string>g.replaced_with_nokinks</string>
-			<string>h.replaced_with_nokinks</string>
-			<string>j.replaced_with_nokinks</string>
-			<string>m.replaced_with_nokinks</string>
-			<string>n.replaced_with_nokinks</string>
-			<string>o.replaced_with_nokinks</string>
-			<string>p.replaced_with_nokinks</string>
-			<string>q.replaced_with_nokinks</string>
-			<string>t.replaced_with_nokinks</string>
-			<string>u.replaced_with_nokinks</string>
-			<string>zero.replaced_with_nokinks</string>
-			<string>two.replaced_with_nokinks</string>
-			<string>five.replaced_with_nokinks</string>
-			<string>six.replaced_with_nokinks</string>
-			<string>eight.replaced_with_nokinks</string>
-			<string>nine.replaced_with_nokinks</string>
-			<string>r.replaced_with_curve</string>
-			<string>colonmonetary</string>
-			<string>j.italic</string>
-			<string>s.italic</string>
-			<string>threeinferior</string>
-			<string>eightinferior</string>
-			<string>twoinferior</string>
-			<string>zerosuperior</string>
-			<string>peso</string>
-			<string>manat</string>
-			<string>z.altdiagonal</string>
-			<string>zeroinferior</string>
-			<string>n.italic</string>
-			<string>fiveeighths</string>
-			<string>ninesuperior</string>
-			<string>e.italic</string>
-			<string>guarani</string>
-			<string>liraTurkish</string>
-			<string>uni20B4</string>
-			<string>dong</string>
-			<string>h.italic</string>
-			<string>cedi</string>
-			<string>kip</string>
-			<string>won</string>
-			<string>sevensuperior</string>
-			<string>oneinferior</string>
-			<string>franc</string>
-			<string>sixinferior</string>
-			<string>fivesuperior</string>
-			<string>d.italic</string>
-			<string>v.italic</string>
-			<string>sixsuperior</string>
-			<string>seveninferior</string>
-			<string>seveneighths</string>
-			<string>m.italic</string>
-			<string>ruble</string>
-			<string>oneeighth</string>
-			<string>lira</string>
-			<string>z.italic</string>
-			<string>peseta</string>
-			<string>eightsuperior</string>
-			<string>fiveinferior</string>
-			<string>onethird</string>
-			<string>x.italic</string>
-			<string>c.italic</string>
-			<string>a.italic_curl</string>
-			<string>flatg.copy_1</string>
-			<string>rupeeIndian</string>
-			<string>uni20B8</string>
-			<string>u.italic</string>
-			<string>fourinferior</string>
-			<string>k.italic</string>
-			<string>w.italic</string>
-			<string>threeeighths</string>
+			<string>N.wide</string>
 			<string>g.long_desc</string>
-			<string>naira</string>
+			<string>z.altdiagonal</string>
+			<string>a.italic_curl</string>
+			<string>N.trad_contrast_wide</string>
+			<string>r.replaced_with_curve</string>
 			<string>a.replaced_with_flatbar</string>
-			<string>nineinferior</string>
-			<string>twothirds</string>
 		</array>
 	</dict>
 </plist>

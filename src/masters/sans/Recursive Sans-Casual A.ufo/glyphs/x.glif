@@ -69,9 +69,23 @@
 			<point x="525" y="525"/>
 			<point x="515" y="530"/>
 		</contour>
+		<contour>
+			<point x="313" y="161" type="line"/>
+			<point x="303" y="192" type="line"/>
+			<point x="290" y="194" type="line"/>
+			<point x="277" y="161" type="line"/>
+		</contour>
+		<contour>
+			<point x="283" y="242" type="line"/>
+			<point x="292" y="211" type="line"/>
+			<point x="304" y="210" type="line"/>
+			<point x="319" y="242" type="line"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>fromComponents</string>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
@@ -147,7 +161,7 @@
 			<key>com.typemytype.robofont.guideline.magnetic.zo7v5Zoc9H</key>
 			<integer>10</integer>
 			<key>public.markColor</key>
-			<string>0.45,0.73,1,0.75</string>
+			<string>0,0,0,0.25</string>
 		</dict>
 	</lib>
 </glyph>
