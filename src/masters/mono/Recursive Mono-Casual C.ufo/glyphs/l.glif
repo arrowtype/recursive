@@ -15,12 +15,12 @@
 			<point x="145" y="522"/>
 			<point x="200" y="554" type="curve"/>
 			<point x="200" y="463"/>
-			<point x="200" y="372"/>
-			<point x="200" y="292" type="curve" smooth="yes"/>
-			<point x="200" y="198"/>
-			<point x="291" y="137"/>
-			<point x="423" y="137" type="curve"/>
-			<point x="423" y="320"/>
+			<point x="200" y="384"/>
+			<point x="200" y="292" type="curve"/>
+			<point x="200" y="226"/>
+			<point x="238" y="167"/>
+			<point x="423" y="187" type="curve"/>
+			<point x="423" y="370"/>
 			<point x="423" y="503.0102915952"/>
 			<point x="423" y="660" type="curve"/>
 			<point x="423" y="733"/>
@@ -52,10 +52,10 @@
 			<point x="182" y="560" type="line"/>
 		</contour>
 		<contour>
-			<point x="217" y="200" type="line"/>
-			<point x="267" y="181" type="line"/>
-			<point x="270" y="196" type="line"/>
-			<point x="229" y="227" type="line"/>
+			<point x="224" y="202" type="line"/>
+			<point x="274" y="183" type="line"/>
+			<point x="277" y="198" type="line"/>
+			<point x="236" y="229" type="line"/>
 		</contour>
 	</outline>
 	<anchor name="top" x="301" y="730"/>
@@ -64,6 +64,16 @@
 	<anchor name="caronslovak" x="511" y="661"/>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>public.markColor</key>
 			<string>0.77255,1,0.94902,1</string>
 		</dict>
