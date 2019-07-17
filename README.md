@@ -36,3 +36,6 @@ pip install -U -r requirements.txt
 - Stephen Nixon
 - Lisa Huang
 - Katja Schimmel
+- Rafał Buchner
+
++ Many other advisors and reviewers
