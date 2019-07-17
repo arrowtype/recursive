@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<designspace format="4.0">
+  <axes>
+    <axis tag="slnt" name="slant" minimum="0" maximum="14" default="0" />
+    <axis tag="wght" name="weight" minimum="800" maximum="900" default="800" />
+  </axes>
+  <sources>
+    <source filename="../Recursive Mono-Linear C.ufo" familyname="Recursive Mono" stylename="Linear C">
+      <location>
+        <dimension name="slant" xvalue="0" />
+        <dimension name="weight" xvalue="900" />
+      </location>
+    </source>
+    <source filename="../Recursive Mono-Linear C Slanted.ufo" familyname="Recursive Mono" stylename="Linear C Italic">
+      <location>
+        <dimension name="slant" xvalue="14" />
+        <dimension name="weight" xvalue="900" />
+      </location>
+    </source>
+    <source filename="../Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear B">
+      <location>
+        <dimension name="slant" xvalue="0" />
+        <dimension name="weight" xvalue="800" />
+      </location>
+    </source>
+    <source filename="../Recursive Mono-Linear B Slanted.ufo" familyname="Recursive Mono" stylename="Linear B Italic">
+      <location>
+        <dimension name="slant" xvalue="14" />
+        <dimension name="weight" xvalue="800" />
+      </location>
+    </source>
+  </sources>
+</designspace>

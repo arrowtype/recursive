@@ -1,83 +1,83 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <designspace format="4.0">
   <axes>
-    <axis tag="slnt" name="slant" minimum="0" maximum="14" default="0"/>
-    <axis tag="XPRN" name="expression" minimum="0" maximum="1" default="0"/>
+    <axis tag="slnt" name="slant" minimum="0" maximum="14" default="0" />
+    <axis tag="XPRN" name="expression" minimum="0" maximum="1" default="0" />
   </axes>
   <sources>
-    <source filename="Recursive Mono-Casual A.ufo" familyname="Recursive Mono" stylename="Casual Light">
+    <source filename="../Recursive Mono-Casual A.ufo" familyname="Recursive Mono" stylename="Casual Light">
       <location>
-        <dimension name="slant" xvalue="0"/>
-        <dimension name="expression" xvalue="1"/>
+        <dimension name="slant" xvalue="0" />
+        <dimension name="expression" xvalue="1" />
       </location>
     </source>
-    <source filename="Recursive Mono-Casual A Slanted.ufo" familyname="Recursive Mono" stylename="Casual Light Italic">
+    <source filename="../Recursive Mono-Casual A Slanted.ufo" familyname="Recursive Mono" stylename="Casual Light Italic">
       <location>
-        <dimension name="slant" xvalue="14"/>
-        <dimension name="expression" xvalue="1"/>
+        <dimension name="slant" xvalue="14" />
+        <dimension name="expression" xvalue="1" />
       </location>
     </source>
-    <source filename="Recursive Mono-Linear A.ufo" familyname="Recursive Mono" stylename="Linear Light">
+    <source filename="../Recursive Mono-Linear A.ufo" familyname="Recursive Mono" stylename="Linear Light">
       <location>
-        <dimension name="slant" xvalue="0"/>
-        <dimension name="expression" xvalue="0"/>
+        <dimension name="slant" xvalue="0" />
+        <dimension name="expression" xvalue="0" />
       </location>
     </source>
-    <source filename="Recursive Mono-Linear A Slanted.ufo" familyname="Recursive Mono" stylename="Linear Light Italic">
+    <source filename="../Recursive Mono-Linear A Slanted.ufo" familyname="Recursive Mono" stylename="Linear Light Italic">
       <location>
-        <dimension name="slant" xvalue="14"/>
-        <dimension name="expression" xvalue="0"/>
+        <dimension name="slant" xvalue="14" />
+        <dimension name="expression" xvalue="0" />
       </location>
     </source>
   </sources>
   <instances>
     <instance familyname="Recursive Mono" stylename="Casual Light" filename="instances/Recursive Mono-Casual Light.ufo" postscriptfontname="RecursiveMono-CasualLight">
       <location>
-        <dimension name="slant" xvalue="0"/>
-        <dimension name="expression" xvalue="1"/>
+        <dimension name="slant" xvalue="0" />
+        <dimension name="expression" xvalue="1" />
       </location>
-      <kerning/>
-      <info/>
+      <kerning />
+      <info />
     </instance>
     <instance familyname="Recursive Mono" stylename="Casual Light SemiItalic" filename="instances/Recursive Mono-Casual Light SemiItalic.ufo" postscriptfontname="RecursiveMono-CasualLightSemiItalic">
       <location>
-        <dimension name="slant" xvalue="11"/>
-        <dimension name="expression" xvalue="1"/>
+        <dimension name="slant" xvalue="11" />
+        <dimension name="expression" xvalue="1" />
       </location>
-      <kerning/>
-      <info/>
+      <kerning />
+      <info />
     </instance>
     <instance familyname="Recursive Mono" stylename="Casual Light Italic" filename="instances/Recursive Mono-Casual Light Italic.ufo" postscriptfontname="RecursiveMono-CasualLightItalic">
       <location>
-        <dimension name="slant" xvalue="14"/>
-        <dimension name="expression" xvalue="1"/>
+        <dimension name="slant" xvalue="14" />
+        <dimension name="expression" xvalue="1" />
       </location>
-      <kerning/>
-      <info/>
+      <kerning />
+      <info />
     </instance>
     <instance familyname="Recursive Mono" stylename="Linear Light" filename="instances/Recursive Mono-Linear Light.ufo" postscriptfontname="RecursiveMono-LinearLight">
       <location>
-        <dimension name="slant" xvalue="0"/>
-        <dimension name="expression" xvalue="0"/>
+        <dimension name="slant" xvalue="0" />
+        <dimension name="expression" xvalue="0" />
       </location>
-      <kerning/>
-      <info/>
+      <kerning />
+      <info />
     </instance>
     <instance familyname="Recursive Mono" stylename="Linear Light SemiItalic" filename="instances/Recursive Mono-Linear Light SemiItalic.ufo" postscriptfontname="RecursiveMono-LinearLightSemiItalic">
       <location>
-        <dimension name="slant" xvalue="11"/>
-        <dimension name="expression" xvalue="0"/>
+        <dimension name="slant" xvalue="11" />
+        <dimension name="expression" xvalue="0" />
       </location>
-      <kerning/>
-      <info/>
+      <kerning />
+      <info />
     </instance>
     <instance familyname="Recursive Mono" stylename="Linear Light Italic" filename="instances/Recursive Mono-Linear Light Italic.ufo" postscriptfontname="RecursiveMono-LinearLightItalic">
       <location>
-        <dimension name="slant" xvalue="14"/>
-        <dimension name="expression" xvalue="0"/>
+        <dimension name="slant" xvalue="14" />
+        <dimension name="expression" xvalue="0" />
       </location>
-      <kerning/>
-      <info/>
+      <kerning />
+      <info />
     </instance>
   </instances>
   <lib>
@@ -89,7 +89,7 @@
           <string>slant</string>
         </array>
         <key>ignore</key>
-        <array/>
+        <array />
         <key>vertical</key>
         <array>
           <string>expression</string>
