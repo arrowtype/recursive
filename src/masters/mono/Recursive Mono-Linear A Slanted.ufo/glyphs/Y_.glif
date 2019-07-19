@@ -4,22 +4,22 @@
 	<advance width="600"/>
 	<outline>
 		<contour>
-			<point x="255" y="0" type="curve"/>
-			<point x="263" y="32"/>
-			<point x="271" y="65"/>
-			<point x="280" y="100" type="curve"/>
-			<point x="298" y="173"/>
-			<point x="317" y="247"/>
-			<point x="335" y="320" type="curve" smooth="yes"/>
-			<point x="285" y="320" type="line"/>
-			<point x="259" y="217"/>
-			<point x="234" y="114"/>
-			<point x="208" y="11" type="curve" smooth="yes"/>
-			<point x="206.209430585" y="5.6282917549"/>
-			<point x="208" y="0"/>
-			<point x="216" y="0" type="curve" smooth="yes"/>
-			<point x="229" y="0"/>
-			<point x="242" y="0"/>
+			<point x="259" y="0" type="curve"/>
+			<point x="267" y="32"/>
+			<point x="275" y="65"/>
+			<point x="284" y="100" type="curve"/>
+			<point x="302" y="173"/>
+			<point x="321" y="247"/>
+			<point x="339" y="320" type="curve" smooth="yes"/>
+			<point x="289" y="320" type="line"/>
+			<point x="263" y="217"/>
+			<point x="238" y="115"/>
+			<point x="212" y="12" type="curve"/>
+			<point x="210" y="4"/>
+			<point x="214" y="0"/>
+			<point x="222" y="0" type="curve" smooth="yes"/>
+			<point x="235" y="0"/>
+			<point x="246" y="0"/>
 		</contour>
 		<contour>
 			<point x="150" y="700" type="curve"/>
@@ -39,12 +39,12 @@
 			<point x="624" y="700"/>
 			<point x="608" y="700" type="curve"/>
 			<point x="504" y="572"/>
-			<point x="401" y="443"/>
-			<point x="297" y="315" type="curve"/>
-			<point x="337" y="330" type="line"/>
+			<point x="399" y="443"/>
+			<point x="298" y="302" type="curve"/>
+			<point x="337" y="332" type="line"/>
 			<point x="293" y="332" type="line"/>
-			<point x="321" y="315" type="line"/>
-			<point x="282" y="440"/>
+			<point x="315" y="302" type="line"/>
+			<point x="280" y="440"/>
 			<point x="244" y="565"/>
 			<point x="205" y="690" type="curve"/>
 			<point x="203" y="696"/>
@@ -91,7 +91,17 @@
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
-			<string>needsFixing</string>
+			<string>finished</string>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
@@ -299,7 +309,7 @@
 			<key>com.typemytype.robofont.guideline.magnetic.z8R8B6IgKP</key>
 			<integer>0</integer>
 			<key>public.markColor</key>
-			<string>1,0.45,0.45,0.75</string>
+			<string>1,1,1,1</string>
 		</dict>
 	</lib>
 </glyph>
