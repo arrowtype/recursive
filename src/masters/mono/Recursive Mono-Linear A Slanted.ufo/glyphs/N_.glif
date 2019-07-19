@@ -4,15 +4,15 @@
 	<advance width="600"/>
 	<outline>
 		<contour>
-			<point x="66" y="0" type="curve"/>
-			<point x="80" y="56"/>
-			<point x="94" y="112"/>
-			<point x="108" y="168" type="curve"/>
-			<point x="149" y="334"/>
+			<point x="68" y="0" type="curve"/>
+			<point x="85" y="70"/>
+			<point x="101" y="139"/>
+			<point x="118" y="209" type="curve"/>
+			<point x="168" y="415"/>
 			<point x="191" y="501"/>
-			<point x="232" y="667" type="curve"/>
-			<point x="217" y="642" type="line"/>
-			<point x="242" y="642" type="line"/>
+			<point x="222" y="667" type="curve"/>
+			<point x="207" y="630" type="line"/>
+			<point x="242" y="630" type="line"/>
 			<point x="218" y="667" type="line"/>
 			<point x="272" y="447"/>
 			<point x="327" y="227"/>
@@ -33,20 +33,20 @@
 			<point x="622" y="700"/>
 			<point x="616" y="700" type="curve"/>
 			<point x="603" y="700"/>
-			<point x="590" y="700"/>
-			<point x="577" y="700" type="curve"/>
-			<point x="563" y="646"/>
-			<point x="550" y="591"/>
-			<point x="536" y="537" type="curve"/>
-			<point x="495" y="370"/>
+			<point x="591" y="700"/>
+			<point x="575" y="700" type="curve"/>
+			<point x="558" y="632"/>
+			<point x="542" y="563"/>
+			<point x="525" y="496" type="curve"/>
+			<point x="475" y="286"/>
 			<point x="453" y="203"/>
-			<point x="412" y="36" type="curve"/>
-			<point x="426" y="59" type="line"/>
-			<point x="411" y="59" type="line"/>
+			<point x="422" y="36" type="curve"/>
+			<point x="436" y="70" type="line"/>
+			<point x="401" y="70" type="line"/>
 			<point x="426" y="36" type="line"/>
 			<point x="366" y="272"/>
-			<point x="275" y="650"/>
-			<point x="267" y="683" type="curve"/>
+			<point x="272" y="661"/>
+			<point x="266" y="686" type="curve"/>
 			<point x="263" y="698"/>
 			<point x="259" y="700"/>
 			<point x="251" y="700" type="curve"/>
@@ -63,16 +63,18 @@
 			<point x="21" y="0"/>
 			<point x="27" y="0" type="curve"/>
 			<point x="40" y="0"/>
-			<point x="53" y="0"/>
+			<point x="52" y="0"/>
 		</contour>
 	</outline>
 	<anchor name="top" x="411.7995302052" y="711"/>
 	<anchor name="bottom" x="233.7499303373" y="-1"/>
 	<guideline x="426" y="36" angle="103.8299217832" identifier="uiw8Uwtxhr"/>
+	<guideline x="148" y="630" angle="0" identifier="kX0l06vE5i"/>
+	<guideline x="492" y="70" angle="0" identifier="vla5m7BMC4"/>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
-			<string>needsFixing</string>
+			<string>finished</string>
 			<key>com.rafalbuchner.mirroringDrawingLocal</key>
 			<dict>
 				<key>mirroringOptions</key>
@@ -157,8 +159,12 @@
 			<integer>10</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.zKVl5DgVO6</key>
 			<integer>10</integer>
+			<key>com.typemytype.robofont.guideline.showMeasurements.kX0l06vE5i</key>
+			<true/>
+			<key>com.typemytype.robofont.guideline.showMeasurements.vla5m7BMC4</key>
+			<true/>
 			<key>public.markColor</key>
-			<string>1,0.45,0.45,0.75</string>
+			<string>1,1,1,1</string>
 		</dict>
 	</lib>
 </glyph>
