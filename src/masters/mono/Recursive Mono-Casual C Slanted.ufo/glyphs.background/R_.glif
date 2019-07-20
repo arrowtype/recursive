@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="R" format="2">
 	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="328" y="388" type="move"/>
+			<point x="343" y="439"/>
+			<point x="342" y="474"/>
+			<point x="325" y="495" type="curve"/>
+			<point x="339" y="514" type="line"/>
+			<point x="128" y="509" type="line"/>
+		</contour>
+	</outline>
 	<lib>
 		<dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
