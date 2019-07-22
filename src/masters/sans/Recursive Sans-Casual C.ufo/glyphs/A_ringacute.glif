@@ -2,16 +2,22 @@
 <glyph name="Aringacute" format="2">
 	<unicode hex="01FA"/>
 	<advance width="600"/>
-	<outline>
-		<component base="A"/>
-		<component base="ringacute.case" xOffset="300" yOffset="10"/>
-	</outline>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
-			<string>fromComponents</string>
+			<string>needsFixing</string>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>public.markColor</key>
-			<string>0,0,0,0.25</string>
+			<string>1,0.45,0.45,0.75</string>
 		</dict>
 	</lib>
 </glyph>

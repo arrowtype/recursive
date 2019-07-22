@@ -78,6 +78,6 @@ for fontPath in inputFonts:
 
     getReadableNames(f)
 
-    # uncomment to use
-    # f.save()
-    # f.close()
+    # comment to test run
+    f.save()
+    f.close()

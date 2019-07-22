@@ -601,7 +601,7 @@
 		<key>public.glyphOrder</key>
 		<array>
 			<string>space</string>
-			<string>uni00A0</string>
+			<string>nbspace</string>
 			<string>A</string>
 			<string>Agrave</string>
 			<string>Aacute</string>
@@ -693,9 +693,9 @@
 			<string>Scaron</string>
 			<string>Scommaaccent</string>
 			<string>T</string>
-			<string>uni0162</string>
+			<string>Tcedilla</string>
 			<string>Tcaron</string>
-			<string>uni021A</string>
+			<string>Tcommaaccent</string>
 			<string>U</string>
 			<string>Ugrave</string>
 			<string>Uacute</string>
@@ -741,8 +741,8 @@
 			<string>OE</string>
 			<string>Tbar</string>
 			<string>Schwa</string>
-			<string>uni1E9E</string>
-			<string>uni2126</string>
+			<string>Germandbls</string>
+			<string>ohm</string>
 			<string>a</string>
 			<string>agrave</string>
 			<string>aacute</string>
@@ -833,9 +833,9 @@
 			<string>scaron</string>
 			<string>scommaaccent</string>
 			<string>t</string>
-			<string>uni0163</string>
+			<string>tcedilla</string>
 			<string>tcaron</string>
-			<string>uni021B</string>
+			<string>tcommaaccent</string>
 			<string>u</string>
 			<string>ugrave</string>
 			<string>uacute</string>
@@ -964,7 +964,7 @@
 			<string>ampersand</string>
 			<string>section</string>
 			<string>paragraph</string>
-			<string>uni2113</string>
+			<string>litre</string>
 			<string>periodcentered</string>
 			<string>bullet</string>
 			<string>overline</string>
@@ -981,20 +981,20 @@
 			<string>approxequal</string>
 			<string>notequal</string>
 			<string>logicalnot</string>
-			<string>uni2190</string>
-			<string>uni2191</string>
-			<string>uni2192</string>
-			<string>uni2193</string>
+			<string>arrowleft</string>
+			<string>arrowup</string>
+			<string>arrowright</string>
+			<string>arrowdown</string>
 			<string>partialdiff</string>
-			<string>uni2206</string>
+			<string>increment</string>
 			<string>product</string>
 			<string>summation</string>
-			<string>uni00B5</string>
-			<string>uni2215</string>
+			<string>mu.math</string>
+			<string>divisionslash</string>
 			<string>radical</string>
 			<string>infinity</string>
 			<string>integral</string>
-			<string>uni2261</string>
+			<string>equivalence</string>
 			<string>dollar</string>
 			<string>cent</string>
 			<string>sterling</string>
@@ -1023,7 +1023,7 @@
 			<string>degree</string>
 			<string>estimated</string>
 			<string>lozenge</string>
-			<string>uni00AD</string>
+			<string>hyphensoft</string>
 			<string>ijacute</string>
 			<string>IJacute</string>
 			<string>Nhookleft</string>
@@ -1070,7 +1070,7 @@
 			<string>Y.ss02</string>
 			<string>Z.noserif</string>
 			<string>sixsuperior</string>
-			<string>uni20B4</string>
+			<string>hryvnia</string>
 			<string>R.trap</string>
 			<string>lira</string>
 			<string>a.italic_curl</string>
@@ -1089,8 +1089,6 @@
 			<string>ampersand.code_experimental_3</string>
 			<string>g.compact_desc</string>
 			<string>u.italic</string>
-			<string>arrowup</string>
-			<string>arrowleft</string>
 			<string>s.italic</string>
 			<string>franc</string>
 			<string>seveneighths</string>
@@ -1099,10 +1097,9 @@
 			<string>c.italic</string>
 			<string>h.curvy</string>
 			<string>uni0327.case</string>
-			<string>arrowdown</string>
 			<string>rupeeIndian</string>
 			<string>zeroinferior</string>
-			<string>uni20B8</string>
+			<string>tenge</string>
 			<string>Z.upward-traps</string>
 			<string>sixinferior</string>
 			<string>e.replaced_with_romaner</string>
@@ -1117,7 +1114,6 @@
 			<string>M.sharptrap</string>
 			<string>ampersand.code_experimental_2</string>
 			<string>e.italic</string>
-			<string>arrowright</string>
 			<string>.arrowhead</string>
 			<string>fourinferior</string>
 			<string>one.flatflag</string>
