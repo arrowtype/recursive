@@ -24,9 +24,6 @@ def getReadableNames(font):
         if "uni" in old_name:  # and "." not in old_name:
             new_name = getNameFromUnicode(glyph)
 
-            print(old_name, "\t\t\t", new_name)
-            print("---------------------------------")
-
             if new_name is None:
                 continue
             else:
@@ -44,7 +41,6 @@ def getReadableNames(font):
     renamingDictKeys = list(renamingDict.keys())
 
     for old in reversed(renamingDictKeys):
-        print(old)
         if old in font.keys():
             glyph = font[old]
             if len(glyph.contours) != 0:
@@ -55,33 +51,33 @@ def getReadableNames(font):
                         if comp.baseGlyph == old:
                             comp.baseGlyph = renamingDict[old]
 
-    #             # del renamingDict[old]
-                print(old)
                 renamingDictKeys.remove(old)
-
-    print(renamingDictKeys)
 
     for old in reversed(renamingDictKeys):
         glyph = font[old]
         if len(glyph.contours) == 0:
-
             font.renameGlyph(old, renamingDict[old])
-            print(old, "\t\t\t→", renamingDict[old])
+            print("\t", old, "→", renamingDict[old])
             for glyph2 in font:
                 for comp in glyph2.components:
                     if comp.baseGlyph == old:
                         comp.baseGlyph = renamingDict[old]
 
 
-# getReadableNames(CurrentFont())
-
 inputFonts = getFile(
     "select UFOs", allowsMultipleSelection=True, fileTypes=["ufo"])
 
 for fontPath in inputFonts:
-    f = OpenFont(fontPath, showInterface=True)
+    # set showInterface to True if you wish to see the font window
+    f = OpenFont(fontPath, showInterface=False)
+
+    print("----------------------------------\n")
+    print("----------------------------------\n")
+    print(f.path, "\n")
+    print("----------------------------------\n")
 
     getReadableNames(f)
 
-#     # f.save()
-#     # f.close()
+    # uncomment to use
+    # f.save()
+    # f.close()
