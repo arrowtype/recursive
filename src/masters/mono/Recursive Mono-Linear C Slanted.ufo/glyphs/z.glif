@@ -16,7 +16,9 @@
 			<point x="279" y="341"/>
 			<point x="335" y="354" type="curve"/>
 			<point x="334" y="345" type="line"/>
-			<point x="6" y="180" type="line"/>
+			<point x="225" y="290"/>
+			<point x="115" y="235"/>
+			<point x="6" y="180" type="curve"/>
 			<point x="-36" y="11" type="line" smooth="yes"/>
 			<point x="-38" y="4"/>
 			<point x="-35" y="0"/>
@@ -90,6 +92,16 @@
 	<guideline x="0" y="700" angle="0" identifier="C7dcOHLnGe"/>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>

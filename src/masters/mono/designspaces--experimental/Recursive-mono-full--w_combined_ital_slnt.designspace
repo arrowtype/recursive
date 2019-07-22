@@ -14,7 +14,7 @@
     <axis tag="slnt" name="Slant" minimum="-15" maximum="0" default="0">
       <labelname xml:lang="en">Slant</labelname>
     </axis>
-    <axis tag="ital" name="Italic" minimum="-1" maximum="1" default="0">
+    <axis tag="ital" name="Italic" minimum="0" maximum="1" default="0.5">
       <labelname xml:lang="en">Italic</labelname>
     </axis>
     <axis tag="XPRN" name="Expression" minimum="0" maximum="1" default="0">
@@ -25,7 +25,7 @@
     <rule name="autoitalic">
       <conditionset>
         <condition name="Slant" minimum="-15" maximum="-7.5" />
-        <condition name="Italic" minimum="0" maximum="1" />
+        <condition name="Italic" minimum="0.1" maximum="1" />
       </conditionset>
       <sub name="a" with="a.italic" />
       <sub name="f" with="f.italic" />
@@ -51,7 +51,7 @@
     </rule>
     <rule name="italic">
       <conditionset>
-        <condition name="Italic" minimum="0.01" maximum="1" />
+        <condition name="Italic" minimum="0.9" maximum="1" />
       </conditionset>
       <sub name="a" with="a.italic" />
       <sub name="f" with="f.italic" />
@@ -83,7 +83,7 @@
         <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
     </source>
     <source filename="../Recursive Mono-Casual A.ufo" familyname="Recursive Mono" stylename="Casual A">
@@ -91,7 +91,7 @@
         <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
     </source>
     <source filename="../Recursive Mono-Casual B Slanted.ufo" familyname="Recursive Mono" stylename="Casual B Italic">
@@ -99,7 +99,7 @@
         <dimension name="Weight" xvalue="800" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
     </source>
     <source filename="../Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B">
@@ -107,7 +107,7 @@
         <dimension name="Weight" xvalue="800" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
     </source>
     <source filename="../Recursive Mono-Casual C Slanted.ufo" familyname="Recursive Mono" stylename="Casual C Italic">
@@ -115,7 +115,7 @@
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
     </source>
     <source filename="../Recursive Mono-Casual C.ufo" familyname="Recursive Mono" stylename="Casual C">
@@ -123,7 +123,7 @@
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
     </source>
     <source filename="../Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B" layer="support.w.middle">
@@ -131,7 +131,7 @@
         <dimension name="Weight" xvalue="500" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
     </source>
     <source filename="../Recursive Mono-Linear A Slanted.ufo" familyname="Recursive Mono" stylename="Linear A 14 Italic">
@@ -139,7 +139,7 @@
         <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
     </source>
     <source filename="../Recursive Mono-Linear A.ufo" familyname="Recursive Mono" stylename="Linear A">
@@ -147,7 +147,7 @@
         <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
     </source>
     <source filename="../Recursive Mono-Linear B Slanted.ufo" familyname="Recursive Mono" stylename="Linear B 14 Italic">
@@ -155,7 +155,7 @@
         <dimension name="Weight" xvalue="800" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
     </source>
     <source filename="../Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear B">
@@ -167,7 +167,7 @@
         <dimension name="Weight" xvalue="800" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
     </source>
     <source filename="../Recursive Mono-Linear C Slanted.ufo" familyname="Recursive Mono" stylename="Linear C Italic">
@@ -175,7 +175,7 @@
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
     </source>
     <source filename="../Recursive Mono-Linear C.ufo" familyname="Recursive Mono" stylename="Linear C">
@@ -183,7 +183,7 @@
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
     </source>
     <source filename="../Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear B" layer="support.w.middle">
@@ -191,7 +191,7 @@
         <dimension name="Weight" xvalue="500" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
     </source>
   </sources>
@@ -201,7 +201,7 @@
         <dimension name="Weight" xvalue="300" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
       <kerning />
       <info />
@@ -231,7 +231,7 @@
         <dimension name="Weight" xvalue="300" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
       <kerning />
       <info />
@@ -261,7 +261,7 @@
         <dimension name="Weight" xvalue="400" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
       <kerning />
       <info />
@@ -291,7 +291,7 @@
         <dimension name="Weight" xvalue="400" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
       <kerning />
       <info />
@@ -321,7 +321,7 @@
         <dimension name="Weight" xvalue="500" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
       <kerning />
       <info />
@@ -351,7 +351,7 @@
         <dimension name="Weight" xvalue="500" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
       <kerning />
       <info />
@@ -381,7 +381,7 @@
         <dimension name="Weight" xvalue="600" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
       <kerning />
       <info />
@@ -411,7 +411,7 @@
         <dimension name="Weight" xvalue="600" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
       <kerning />
       <info />
@@ -441,7 +441,7 @@
         <dimension name="Weight" xvalue="700" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
       <kerning />
       <info />
@@ -471,7 +471,7 @@
         <dimension name="Weight" xvalue="700" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
       <kerning />
       <info />
@@ -501,7 +501,7 @@
         <dimension name="Weight" xvalue="800" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
       <kerning />
       <info />
@@ -531,7 +531,7 @@
         <dimension name="Weight" xvalue="800" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
       <kerning />
       <info />
@@ -561,7 +561,7 @@
         <dimension name="Weight" xvalue="850" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
       <kerning />
       <info />
@@ -591,7 +591,7 @@
         <dimension name="Weight" xvalue="850" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
       <kerning />
       <info />
@@ -621,7 +621,7 @@
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
       <kerning />
       <info />
@@ -651,7 +651,7 @@
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
       </location>
       <kerning />
       <info />

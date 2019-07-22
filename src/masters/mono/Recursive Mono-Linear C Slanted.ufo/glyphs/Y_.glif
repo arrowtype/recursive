@@ -23,11 +23,15 @@
 		</contour>
 		<contour>
 			<point x="112" y="700" type="curve"/>
-			<point x="190" y="219" type="line"/>
+			<point x="138" y="540"/>
+			<point x="164" y="379"/>
+			<point x="190" y="219" type="curve"/>
 			<point x="191" y="209"/>
 			<point x="197" y="205"/>
 			<point x="383" y="205" type="curve"/>
-			<point x="690" y="681" type="line"/>
+			<point x="485" y="364"/>
+			<point x="674" y="657"/>
+			<point x="690" y="681" type="curve"/>
 			<point x="696" y="691"/>
 			<point x="693" y="700"/>
 			<point x="682" y="700" type="curve"/>
@@ -53,6 +57,16 @@
 	<anchor name="top" x="409.7995302052" y="711"/>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>

@@ -4,6 +4,7 @@
 	<advance width="600"/>
 	<outline>
 		<contour>
+			<point x="513" y="639" type="curve" smooth="yes"/>
 			<point x="514" y="644" type="line" smooth="yes"/>
 			<point x="524" y="694"/>
 			<point x="487" y="742"/>
@@ -64,13 +65,22 @@
 			<point x="378" y="546" type="line"/>
 			<point x="471" y="564"/>
 			<point x="503" y="590"/>
-			<point x="513" y="639" type="curve" smooth="yes"/>
 		</contour>
 	</outline>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
 			<string>finished</string>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 		</dict>
 	</lib>
 </glyph>
