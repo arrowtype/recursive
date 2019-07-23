@@ -11,15 +11,11 @@
 			<point x="178" y="504"/>
 			<point x="52" y="283"/>
 			<point x="52" y="200" type="curve" smooth="yes"/>
-			<point x="52" y="198"/>
-			<point x="52" y="197"/>
-			<point x="52" y="195" type="curve" smooth="yes"/>
+			<point x="52" y="195" type="line" smooth="yes"/>
 			<point x="52" y="173"/>
 			<point x="63" y="150"/>
 			<point x="81" y="150" type="curve" smooth="yes"/>
-			<point x="98" y="150"/>
-			<point x="553" y="150"/>
-			<point x="563" y="150" type="curve"/>
+			<point x="563" y="150" type="line"/>
 			<point x="564" y="155"/>
 			<point x="565" y="160"/>
 			<point x="565" y="168" type="curve" smooth="yes"/>
@@ -67,6 +63,16 @@
 	</outline>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
