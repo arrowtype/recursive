@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="u.italic" format="2">
+  <advance width="600.0"/>
+  <anchor x="368.2874088892" y="537.0" name="top"/>
+  <anchor x="233.7499303373" y="-1.0" name="bottom"/>
+  <anchor x="443.9997213491" y="-1.0" name="ogonek"/>
+  <outline>
+    <contour>
+      <point x="165.2" y="-12.0" type="curve" smooth="yes"/>
+      <point x="231.4" y="-12.0"/>
+      <point x="283.8" y="22.799999999999997"/>
+      <point x="335.6" y="104.8" type="curve" smooth="yes"/>
+      <point x="360.0" y="144.2"/>
+      <point x="380.2" y="187.6"/>
+      <point x="387.0" y="234.2" type="curve"/>
+      <point x="333.01282586627997" y="167.93575416416002"/>
+      <point x="285.89918699188" y="145.2"/>
+      <point x="245.2" y="145.2" type="curve" smooth="yes"/>
+      <point x="220.6" y="145.2"/>
+      <point x="211.8" y="158.6"/>
+      <point x="214.8" y="181.2" type="curve" smooth="yes"/>
+      <point x="232.2" y="297.6"/>
+      <point x="249.0" y="412.6"/>
+      <point x="266.4" y="529.0" type="curve" smooth="yes"/>
+      <point x="267.6" y="535.0"/>
+      <point x="263.2" y="540.0"/>
+      <point x="257.2" y="540.0" type="curve"/>
+      <point x="208.4711409396" y="540.0"/>
+      <point x="159.5288590604" y="540.0"/>
+      <point x="110.8" y="540.0" type="curve"/>
+      <point x="106.6" y="510.6"/>
+      <point x="101.2" y="477.0"/>
+      <point x="95.80000000000001" y="442.8" type="curve" smooth="yes"/>
+      <point x="81.4" y="343.4"/>
+      <point x="65.8" y="243.6"/>
+      <point x="51.4" y="144.2" type="curve" smooth="yes"/>
+      <point x="38.8" y="57.4"/>
+      <point x="80.6" y="-12.0"/>
+    </contour>
+    <contour>
+      <point x="477.8" y="0.0" type="curve" smooth="yes"/>
+      <point x="492.6" y="0.0"/>
+      <point x="518.6" y="0.0"/>
+      <point x="526.2" y="0.0" type="curve" smooth="yes"/>
+      <point x="533.2" y="0.0"/>
+      <point x="537.8" y="3.4"/>
+      <point x="539.0" y="11.0" type="curve"/>
+      <point x="545.0" y="50.4"/>
+      <point x="551.0" y="88.80000000000001"/>
+      <point x="557.0" y="128.2" type="curve"/>
+      <point x="537.0" y="128.2" type="line"/>
+      <point x="534.0" y="128.2"/>
+      <point x="531.0" y="128.2"/>
+      <point x="527.4" y="128.2" type="curve" smooth="yes"/>
+      <point x="521.6" y="128.2"/>
+      <point x="515.6" y="130.2"/>
+      <point x="512.6" y="133.2" type="curve" smooth="yes"/>
+      <point x="509.0" y="136.8"/>
+      <point x="508.2" y="141.8"/>
+      <point x="509.4" y="149.4" type="curve" smooth="yes"/>
+      <point x="525.6" y="265.2"/>
+      <point x="547.2" y="401.8"/>
+      <point x="566.4" y="529.0" type="curve" smooth="yes"/>
+      <point x="567.6" y="535.6"/>
+      <point x="563.2" y="540.0"/>
+      <point x="557.2" y="540.0" type="curve" smooth="yes"/>
+      <point x="509.2" y="540.0"/>
+      <point x="461.2" y="540.0"/>
+      <point x="413.2" y="540.0" type="curve"/>
+      <point x="386.02243336341996" y="379.36042132976"/>
+      <point x="373.82617932472" y="277.69715987826"/>
+      <point x="355.6" y="149.6" type="curve"/>
+      <point x="341.2" y="64.2"/>
+      <point x="378.0" y="0.0"/>
+    </contour>
+    <contour>
+      <point x="369.6" y="100.6" type="line"/>
+      <point x="398.6" y="192.6" type="line"/>
+      <point x="378.2" y="195.6" type="line"/>
+      <point x="310.8" y="100.6" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.rafalbuchner.mirroringDrawingLocal</key>
+      <dict>
+        <key>mirroringOptions</key>
+        <integer>3</integer>
+        <key>offset</key>
+        <array>
+          <integer>0</integer>
+          <integer>0</integer>
+        </array>
+      </dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+      <key>public.markColor</key>
+      <string>0,1,0,1</string>
+    </dict>
+  </lib>
+</glyph>
