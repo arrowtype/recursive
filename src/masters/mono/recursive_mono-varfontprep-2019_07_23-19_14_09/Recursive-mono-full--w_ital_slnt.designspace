@@ -14,7 +14,7 @@
     <axis tag="slnt" name="Slant" minimum="-15" maximum="0" default="0">
       <labelname xml:lang="en">Slant</labelname>
     </axis>
-    <axis tag="ital" name="Italic" minimum="0" maximum="1" default="0">
+    <axis tag="ital" name="Italic" minimum="0" maximum="1" default="0.5">
       <labelname xml:lang="en">Italic</labelname>
     </axis>
     <axis tag="XPRN" name="Expression" minimum="0" maximum="1" default="0">
@@ -22,9 +22,10 @@
     </axis>
   </axes>
   <rules>
-    <rule name="cursive">
+    <rule name="autoitalic">
       <conditionset>
-        <condition name="Italic" minimum="0.010000" maximum="1" />
+        <condition name="Slant" minimum="-15" maximum="-7.5" />
+        <condition name="Italic" minimum="0.1" maximum="1" />
       </conditionset>
       <sub name="a" with="a.italic" />
       <sub name="f" with="f.italic" />
@@ -33,11 +34,6 @@
       <sub name="l" with="l.italic" />
       <sub name="r" with="r.italic" />
       <sub name="y" with="y.italic" />
-    </rule>
-    <rule name="cursive">
-      <conditionset>
-        <condition name="Italic" minimum="0.500000" maximum="1" />
-      </conditionset>
       <sub name="d" with="d.italic" />
       <sub name="e" with="e.italic" />
       <sub name="h" with="h.italic" />
@@ -45,11 +41,32 @@
       <sub name="m" with="m.italic" />
       <sub name="n" with="n.italic" />
       <sub name="u" with="u.italic" />
+      <sub name="c" with="c.italic" />
+      <sub name="k" with="k.italic" />
+      <sub name="s" with="s.italic" />
+      <sub name="v" with="v.italic" />
+      <sub name="w" with="w.italic" />
+      <sub name="x" with="x.italic" />
+      <sub name="z" with="z.italic" />
     </rule>
-    <rule name="cursive">
+    <rule name="italic">
       <conditionset>
-        <condition name="Italic" minimum="0.990000" maximum="1" />
+        <condition name="Italic" minimum="0.9" maximum="1" />
       </conditionset>
+      <sub name="a" with="a.italic" />
+      <sub name="f" with="f.italic" />
+      <sub name="g" with="g.italic" />
+      <sub name="i" with="i.italic" />
+      <sub name="l" with="l.italic" />
+      <sub name="r" with="r.italic" />
+      <sub name="y" with="y.italic" />
+      <sub name="d" with="d.italic" />
+      <sub name="e" with="e.italic" />
+      <sub name="h" with="h.italic" />
+      <sub name="j" with="j.italic" />
+      <sub name="m" with="m.italic" />
+      <sub name="n" with="n.italic" />
+      <sub name="u" with="u.italic" />
       <sub name="c" with="c.italic" />
       <sub name="k" with="k.italic" />
       <sub name="s" with="s.italic" />
@@ -64,7 +81,7 @@
       <location>
         <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="1" />
       </location>
     </source>
@@ -72,7 +89,7 @@
       <location>
         <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="1" />
       </location>
     </source>
@@ -80,7 +97,7 @@
       <location>
         <dimension name="Weight" xvalue="800" />
         <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="1" />
       </location>
     </source>
@@ -88,7 +105,7 @@
       <location>
         <dimension name="Weight" xvalue="800" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="1" />
       </location>
     </source>
@@ -96,7 +113,7 @@
       <location>
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="1" />
       </location>
     </source>
@@ -104,7 +121,7 @@
       <location>
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="1" />
       </location>
     </source>
@@ -112,7 +129,7 @@
       <location>
         <dimension name="Weight" xvalue="500"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Italic" xvalue="0.5"/>
         <dimension name="Expression" xvalue="1"/>
       </location>
     </source> -->
@@ -120,7 +137,7 @@
       <location>
         <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="0" />
       </location>
     </source>
@@ -128,7 +145,7 @@
       <location>
         <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="0" />
       </location>
     </source>
@@ -136,7 +153,7 @@
       <location>
         <dimension name="Weight" xvalue="800" />
         <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="0" />
       </location>
     </source>
@@ -148,7 +165,7 @@
       <location>
         <dimension name="Weight" xvalue="800" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="0" />
       </location>
     </source>
@@ -156,7 +173,7 @@
       <location>
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="0" />
       </location>
     </source>
@@ -164,7 +181,7 @@
       <location>
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="0" />
       </location>
     </source>
@@ -172,7 +189,7 @@
       <location>
         <dimension name="Weight" xvalue="500"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Italic" xvalue="0.5"/>
         <dimension name="Expression" xvalue="0"/>
       </location>
     </source> -->
@@ -182,7 +199,7 @@
       <location>
         <dimension name="Weight" xvalue="300" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="0" />
       </location>
       <kerning />
@@ -212,7 +229,7 @@
       <location>
         <dimension name="Weight" xvalue="300" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="1" />
       </location>
       <kerning />
@@ -242,7 +259,7 @@
       <location>
         <dimension name="Weight" xvalue="400" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="0" />
       </location>
       <kerning />
@@ -272,7 +289,7 @@
       <location>
         <dimension name="Weight" xvalue="400" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="1" />
       </location>
       <kerning />
@@ -302,7 +319,7 @@
       <location>
         <dimension name="Weight" xvalue="500" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="0" />
       </location>
       <kerning />
@@ -332,7 +349,7 @@
       <location>
         <dimension name="Weight" xvalue="500" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="1" />
       </location>
       <kerning />
@@ -362,7 +379,7 @@
       <location>
         <dimension name="Weight" xvalue="600" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="0" />
       </location>
       <kerning />
@@ -392,7 +409,7 @@
       <location>
         <dimension name="Weight" xvalue="600" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="1" />
       </location>
       <kerning />
@@ -422,7 +439,7 @@
       <location>
         <dimension name="Weight" xvalue="700" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="0" />
       </location>
       <kerning />
@@ -452,7 +469,7 @@
       <location>
         <dimension name="Weight" xvalue="700" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="1" />
       </location>
       <kerning />
@@ -482,7 +499,7 @@
       <location>
         <dimension name="Weight" xvalue="800" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="0" />
       </location>
       <kerning />
@@ -512,7 +529,7 @@
       <location>
         <dimension name="Weight" xvalue="800" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="1" />
       </location>
       <kerning />
@@ -542,7 +559,7 @@
       <location>
         <dimension name="Weight" xvalue="850" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="0" />
       </location>
       <kerning />
@@ -572,7 +589,7 @@
       <location>
         <dimension name="Weight" xvalue="850" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="1" />
       </location>
       <kerning />
@@ -602,7 +619,7 @@
       <location>
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="0" />
       </location>
       <kerning />
@@ -632,7 +649,7 @@
       <location>
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="1" />
       </location>
       <kerning />
