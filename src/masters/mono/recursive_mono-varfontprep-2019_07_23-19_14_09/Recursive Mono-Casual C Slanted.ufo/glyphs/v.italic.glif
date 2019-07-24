@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="v.italic" format="2">
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="499" y="560" type="curve"/>
+			<point x="456" y="560"/>
+			<point x="427" y="553"/>
+			<point x="391" y="541" type="curve"/>
+			<point x="391" y="535" type="line"/>
+			<point x="405" y="479"/>
+			<point x="408" y="420"/>
+			<point x="384" y="325" type="curve" smooth="yes"/>
+			<point x="382" y="317" type="line" smooth="yes"/>
+			<point x="355" y="210"/>
+			<point x="302.7686279487" y="166.7947713248"/>
+			<point x="256" y="159" type="curve"/>
+			<point x="253" y="159" type="line"/>
+			<point x="255" y="171"/>
+			<point x="258" y="183"/>
+			<point x="261" y="197" type="curve" smooth="yes"/>
+			<point x="279" y="265"/>
+			<point x="314" y="326"/>
+			<point x="331" y="394" type="curve" smooth="yes"/>
+			<point x="357" y="494"/>
+			<point x="290" y="560"/>
+			<point x="220" y="560" type="curve"/>
+			<point x="169" y="560"/>
+			<point x="122.3042402571" y="549.4738780835"/>
+			<point x="87" y="538" type="curve"/>
+			<point x="69.6295439037" y="501.2155047372"/>
+			<point x="57" y="467"/>
+			<point x="46" y="425" type="curve" smooth="yes"/>
+			<point x="37" y="384"/>
+			<point x="39" y="341"/>
+			<point x="61" y="341" type="curve" smooth="yes"/>
+			<point x="72" y="341"/>
+			<point x="100" y="350"/>
+			<point x="123" y="373" type="curve"/>
+			<point x="105" y="299"/>
+			<point x="66" y="248"/>
+			<point x="53" y="171" type="curve" smooth="yes"/>
+			<point x="41" y="94"/>
+			<point x="127" y="-9"/>
+			<point x="249" y="-9" type="curve"/>
+			<point x="254" y="-9" type="line"/>
+			<point x="408.5045045045" y="-9"/>
+			<point x="557" y="138"/>
+			<point x="597" y="339" type="curve" smooth="yes"/>
+			<point x="598" y="344" type="line" smooth="yes"/>
+			<point x="615.0801497057" y="429.4007485284"/>
+			<point x="609.9604051377" y="493.0720822018"/>
+			<point x="579" y="525" type="curve" smooth="yes"/>
+			<point x="559.9518818401" y="546.1645757332"/>
+			<point x="534.4430379747" y="560"/>
+		</contour>
+		<contour>
+			<point x="139" y="366" type="line"/>
+			<point x="150" y="411" type="line"/>
+			<point x="135" y="414" type="line"/>
+			<point x="101" y="366" type="line"/>
+		</contour>
+		<contour>
+			<point x="217" y="104" type="line"/>
+			<point x="250" y="104" type="line"/>
+			<point x="268" y="149" type="line"/>
+			<point x="240" y="177" type="line"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
+			<key>public.markColor</key>
+			<string>0.77255,1,0.94902,1</string>
+		</dict>
+	</lib>
+</glyph>

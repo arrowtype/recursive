@@ -21,6 +21,27 @@
 			<point x="267" y="700"/>
 		</contour>
 		<contour>
+			<point x="256" y="0" type="curve"/>
+			<point x="321" y="101"/>
+			<point x="377" y="186"/>
+			<point x="435" y="274" type="curve" smooth="yes"/>
+			<point x="493" y="362"/>
+			<point x="630" y="570"/>
+			<point x="631" y="574" type="curve" smooth="yes"/>
+			<point x="658" y="685" type="line" smooth="yes"/>
+			<point x="660" y="695"/>
+			<point x="657" y="700"/>
+			<point x="647" y="700" type="curve" smooth="yes"/>
+			<point x="157" y="700" type="line"/>
+			<point x="153" y="602"/>
+			<point x="185" y="560"/>
+			<point x="260" y="560" type="curve" smooth="yes"/>
+			<point x="294" y="560" type="line" smooth="yes"/>
+			<point x="357" y="560"/>
+			<point x="431" y="560"/>
+			<point x="480" y="560" type="curve"/>
+			<point x="470" y="576" type="line"/>
+			<point x="454" y="513" type="line"/>
 			<point x="489" y="559" type="line"/>
 			<point x="419" y="518"/>
 			<point x="389" y="460"/>
@@ -33,29 +54,6 @@
 			<point x="102" y="0" type="curve" smooth="yes"/>
 			<point x="153" y="0"/>
 			<point x="244" y="0"/>
-			<point x="256" y="0" type="curve"/>
-			<point x="321" y="101"/>
-			<point x="377" y="186"/>
-			<point x="435" y="274" type="curve" smooth="yes"/>
-			<point x="493" y="362"/>
-			<point x="630" y="570"/>
-			<point x="631" y="574" type="curve" smooth="yes"/>
-			<point x="658" y="685" type="line" smooth="yes"/>
-			<point x="660" y="695"/>
-			<point x="657" y="700"/>
-			<point x="647" y="700" type="curve" smooth="yes"/>
-			<point x="636" y="700"/>
-			<point x="253" y="700"/>
-			<point x="157" y="700" type="curve"/>
-			<point x="153" y="602"/>
-			<point x="185" y="560"/>
-			<point x="260" y="560" type="curve" smooth="yes"/>
-			<point x="294" y="560" type="line" smooth="yes"/>
-			<point x="357" y="560"/>
-			<point x="431" y="560"/>
-			<point x="480" y="560" type="curve"/>
-			<point x="470" y="576" type="line"/>
-			<point x="454" y="513" type="line"/>
 		</contour>
 	</outline>
 	<guideline x="-68" y="0" angle="75.96" identifier="XvowgQ8lce"/>
@@ -93,6 +91,16 @@
 	<guideline x="-68" y="700" angle="0" identifier="GousTzEzYs"/>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
