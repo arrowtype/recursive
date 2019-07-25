@@ -29,20 +29,8 @@ for i in badWidthGlyphs.keys():
     if len(badWidthGlyphs[i].keys()) != 0:
         print(f"\n### {i} – glyphs not in units of {widthUnit}\n")
         print(f"| {'**Glyph**'.ljust(20)} | **width** |")
-        print(f"| {'-'.ljust(20,'-')} | {'-'.ljust(4,'-')}: |")
+        print(f"| {'-'.ljust(20,'-')} | {'-'.ljust(8,'-')}: |")
         for j in badWidthGlyphs[i].keys():
-            print(f"| {j.ljust(20)} | {str(badWidthGlyphs[i][j]).rjust(5)} |")
+            print(f"| {j.ljust(20)} | {str(badWidthGlyphs[i][j]).rjust(9)} |")
 
         print()
-
-# if mono
-# find any glyphs that are not multiples of 600
-# add these glyphs to "badWidths"
-
-# elif sans
-# find any glyphs that are not multiples of 50
-# add these glyphs to "badWidths"
-
-# for name in badWidthGlyphs:
-# print(name + " ️️️☠️ is bad width ☠️ \t \t" + f[name].width )
-# mark glyph in (1,0,0,1) # bright red
