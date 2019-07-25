@@ -7,7 +7,7 @@ from mojo.UI import AskString
 
 widthUnit = AskString('Width unit to check for (e.g. 600, 50, 10)')
 
-files = getFile("Select files to check glyph widths in",
+files = getFile(f"Select files to check glyph widths for units of {widthUnit}",
                 allowsMultipleSelection=True, fileTypes=["ufo"])
 
 badWidthGlyphs = {}
@@ -24,16 +24,16 @@ for file in files:
 
 OutputWindow().show()
 
+# check if there are problem-width glyphs, print to markdown-ready tables
 for i in badWidthGlyphs.keys():
-    # check if there are problem-width glyphs
     if len(badWidthGlyphs[i].keys()) != 0:
-        print(f"\n### {i}\n")
-        print(f"| {'Glyph with bad width'.ljust(20)} | width |")
+        print(f"\n### {i} – glyphs not in units of {widthUnit}\n")
+        print(f"| {'**Glyph**'.ljust(20)} | **width** |")
         print(f"| {'-'.ljust(20,'-')} | {'-'.ljust(4,'-')}: |")
         for j in badWidthGlyphs[i].keys():
             print(f"| {j.ljust(20)} | {str(badWidthGlyphs[i][j]).rjust(5)} |")
 
-    print()
+        print()
 
 # if mono
 # find any glyphs that are not multiples of 600
