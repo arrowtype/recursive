@@ -16,4 +16,4 @@ for f in fontsToCheck:
             for glyphName in layer.keys():
                 if glyphName not in glyphsWithSupportLayer.split(" "):
                     print("  •", glyphName)
-                    del layer[glyphName]
+                    # del layer[glyphName] # NOT WORKING YET
