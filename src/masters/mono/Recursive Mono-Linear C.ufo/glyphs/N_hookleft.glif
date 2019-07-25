@@ -19,13 +19,13 @@
 			<point x="-14" y="-250"/>
 			<point x="16" y="-250" type="curve" smooth="yes"/>
 			<point x="25" y="-250" type="line" smooth="yes"/>
-			<point x="173" y="-250"/>
-			<point x="245" y="-150"/>
-			<point x="245" y="-8" type="curve" smooth="yes"/>
-			<point x="245" y="4" type="line" smooth="yes"/>
-			<point x="245" y="15"/>
-			<point x="235" y="21"/>
-			<point x="35" y="21" type="curve"/>
+			<point x="175.0181818182" y="-250"/>
+			<point x="248" y="-152"/>
+			<point x="248" y="-12" type="curve" smooth="yes"/>
+			<point x="248" y="0" type="line" smooth="yes"/>
+			<point x="248" y="8"/>
+			<point x="238" y="11"/>
+			<point x="35" y="11" type="curve"/>
 			<point x="35" y="-8" type="line" smooth="yes"/>
 			<point x="35" y="-44"/>
 			<point x="21" y="-55"/>
@@ -34,6 +34,16 @@
 	</outline>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>public.markColor</key>
 			<string>1,1,0,1</string>
 		</dict>

@@ -5,38 +5,38 @@
 	<outline>
 		<contour>
 			<point x="154" y="0" type="curve"/>
-			<point x="165" y="41"/>
-			<point x="175" y="82"/>
-			<point x="186" y="123" type="curve" smooth="yes"/>
-			<point x="203" y="187"/>
-			<point x="207" y="381"/>
-			<point x="198" y="513" type="curve"/>
-			<point x="193" y="487" type="line"/>
-			<point x="226" y="487" type="line"/>
-			<point x="219" y="511" type="line"/>
-			<point x="224" y="358"/>
-			<point x="232" y="233"/>
-			<point x="244" y="108" type="curve"/>
-			<point x="246" y="101"/>
-			<point x="250" y="100"/>
-			<point x="254" y="100" type="curve"/>
-			<point x="265" y="100" type="line"/>
-			<point x="340" y="223"/>
-			<point x="412" y="349"/>
-			<point x="492" y="500" type="curve"/>
-			<point x="475" y="487" type="line"/>
-			<point x="517" y="487" type="line"/>
-			<point x="513" y="502" type="line"/>
-			<point x="443.0855974654" y="369.1626351842"/>
-			<point x="350.9951997261" y="177.981141781"/>
-			<point x="337" y="123" type="curve" smooth="yes"/>
-			<point x="328" y="86"/>
-			<point x="318" y="48"/>
-			<point x="309" y="11" type="curve"/>
-			<point x="308" y="5"/>
-			<point x="310" y="0"/>
-			<point x="317" y="0" type="curve"/>
-			<point x="379" y="0"/>
+			<point x="162.2772144025" y="30.8514355003"/>
+			<point x="172" y="61"/>
+			<point x="180" y="92" type="curve" smooth="yes"/>
+			<point x="199" y="165"/>
+			<point x="199" y="215"/>
+			<point x="193" y="518" type="curve"/>
+			<point x="188" y="491" type="line"/>
+			<point x="221" y="491" type="line"/>
+			<point x="212" y="516" type="line"/>
+			<point x="227" y="367"/>
+			<point x="239" y="250"/>
+			<point x="250" y="132" type="curve"/>
+			<point x="252" y="125"/>
+			<point x="256" y="124"/>
+			<point x="260" y="124" type="curve"/>
+			<point x="271" y="124" type="line"/>
+			<point x="342" y="241"/>
+			<point x="413" y="357"/>
+			<point x="500" y="504" type="curve"/>
+			<point x="482" y="491" type="line"/>
+			<point x="524" y="491" type="line"/>
+			<point x="521" y="506" type="line"/>
+			<point x="367" y="210"/>
+			<point x="345" y="159"/>
+			<point x="329" y="92" type="curve" smooth="yes"/>
+			<point x="323" y="65"/>
+			<point x="314" y="38"/>
+			<point x="307" y="11" type="curve"/>
+			<point x="306" y="5"/>
+			<point x="308" y="0"/>
+			<point x="315" y="0" type="curve"/>
+			<point x="377" y="0"/>
 			<point x="442" y="0"/>
 			<point x="504" y="0" type="curve"/>
 			<point x="513" y="33"/>
@@ -51,19 +51,19 @@
 			<point x="604" y="700"/>
 			<point x="540" y="700"/>
 			<point x="475" y="700" type="curve"/>
-			<point x="435" y="635"/>
-			<point x="381" y="540"/>
-			<point x="339" y="446" type="curve"/>
-			<point x="395" y="506" type="line"/>
-			<point x="322" y="506" type="line"/>
-			<point x="345" y="446" type="line"/>
-			<point x="351" y="549"/>
-			<point x="345" y="630"/>
-			<point x="339" y="691" type="curve" smooth="yes"/>
-			<point x="338" y="699"/>
-			<point x="337" y="700"/>
-			<point x="327" y="700" type="curve"/>
-			<point x="262" y="700"/>
+			<point x="399" y="582"/>
+			<point x="376" y="530"/>
+			<point x="332" y="395" type="curve"/>
+			<point x="383" y="455" type="line"/>
+			<point x="310" y="455" type="line"/>
+			<point x="329" y="395" type="line"/>
+			<point x="342" y="536"/>
+			<point x="343" y="587"/>
+			<point x="339" y="688" type="curve" smooth="yes"/>
+			<point x="339" y="696"/>
+			<point x="336" y="700"/>
+			<point x="326" y="700" type="curve"/>
+			<point x="261" y="700"/>
 			<point x="197" y="700"/>
 			<point x="132" y="700" type="curve"/>
 			<point x="122" y="667"/>
@@ -81,6 +81,16 @@
 	</outline>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
