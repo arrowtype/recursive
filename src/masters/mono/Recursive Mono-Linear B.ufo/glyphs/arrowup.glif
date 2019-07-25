@@ -32,7 +32,7 @@
 			<point x="297" y="491"/>
 			<point x="280" y="491"/>
 		</contour>
-		<component base=".arrowhead" xScale="-1" xOffset="600"/>
+		<component base=".arrowhead"/>
 	</outline>
 	<guideline x="0" y="0" angle="90" identifier="wwhwiwbx03"/>
 	<guideline x="50" y="0" angle="90" identifier="WchsVYzLlE"/>
@@ -69,6 +69,16 @@
 	<guideline x="0" y="700" angle="0" identifier="Sawr4uIFYg"/>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>

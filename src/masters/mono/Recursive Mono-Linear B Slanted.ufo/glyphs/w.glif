@@ -5,7 +5,7 @@
 	<outline>
 		<contour>
 			<point x="295" y="451" type="line"/>
-			<point x="252" y="358"/>
+			<point x="253" y="354"/>
 			<point x="203" y="235"/>
 			<point x="137" y="46" type="curve"/>
 			<point x="128" y="46" type="line"/>
@@ -83,6 +83,16 @@
 	<guideline x="378" y="117" angle="0" identifier="MDADPS3vti"/>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
