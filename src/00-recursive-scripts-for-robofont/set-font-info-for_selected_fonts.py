@@ -10,7 +10,7 @@ for fontPath in inputFonts:
     # http://unifiedfontobject.org/versions/ufo3/fontinfo.plist/
 
     f.info.openTypeOS2VendorID = "ARRW"
-    f.info.familyName = "Recursive Mono"
+    f.info.familyName = "Rec Mono Beta013 Var"
     f.info.copyright = "Copyright 2019 The Recursive Project Authors (github.com/thundernixon/recursive)"
 
     f.save()

@@ -20,27 +20,27 @@
 			<point x="320" y="177"/>
 			<point x="284" y="171"/>
 			<point x="233" y="171" type="curve" smooth="yes"/>
-			<point x="146" y="171"/>
-			<point x="96" y="193"/>
-			<point x="48" y="249" type="curve"/>
-			<point x="42" y="249" type="line"/>
-			<point x="26" y="224"/>
-			<point x="8" y="181"/>
+			<point x="146.9405405405" y="171"/>
+			<point x="98" y="193"/>
+			<point x="54" y="249" type="curve"/>
+			<point x="48" y="249" type="line"/>
+			<point x="28" y="224"/>
+			<point x="9" y="187"/>
 			<point x="3" y="155" type="curve" smooth="yes"/>
-			<point x="-10" y="99"/>
+			<point x="-8" y="99"/>
 			<point x="0" y="55"/>
 			<point x="31" y="28" type="curve" smooth="yes"/>
 			<point x="66" y="-2"/>
 			<point x="131" y="-20"/>
 			<point x="239" y="-20" type="curve" smooth="yes"/>
-			<point x="415" y="-20"/>
-			<point x="511" y="29"/>
-			<point x="538" y="135" type="curve" smooth="yes"/>
-			<point x="542" y="151" type="line" smooth="yes"/>
-			<point x="564" y="241"/>
-			<point x="505" y="324"/>
-			<point x="394" y="360" type="curve" smooth="yes"/>
-			<point x="327" y="382" type="line" smooth="yes"/>
+			<point x="416.1772575251" y="-20"/>
+			<point x="512" y="33"/>
+			<point x="540" y="146" type="curve" smooth="yes"/>
+			<point x="544" y="162" type="line" smooth="yes"/>
+			<point x="565" y="247"/>
+			<point x="519" y="319"/>
+			<point x="400" y="358" type="curve" smooth="yes"/>
+			<point x="329" y="381" type="line" smooth="yes"/>
 			<point x="290" y="394"/>
 			<point x="277" y="411"/>
 			<point x="284" y="438" type="curve" smooth="yes"/>
@@ -63,8 +63,8 @@
 			<point x="607" y="412" type="curve"/>
 			<point x="609" y="450"/>
 			<point x="615" y="482"/>
-			<point x="626" y="524" type="curve" smooth="yes"/>
-			<point x="638" y="573"/>
+			<point x="627" y="528" type="curve" smooth="yes"/>
+			<point x="640" y="583"/>
 			<point x="625" y="628"/>
 			<point x="594" y="664" type="curve" smooth="yes"/>
 			<point x="560" y="701"/>
@@ -108,6 +108,16 @@
 	<guideline x="-68" y="700" angle="0" identifier="mNIt0xHNEr"/>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>

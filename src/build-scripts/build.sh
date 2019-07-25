@@ -28,3 +28,7 @@ date=$(timestamp)
 fontmake -m $DS -o variable --output-path $outputDir/$fontName-$date.ttf
 
 woff2_compress $outputDir/$fontName-$date.ttf
+
+# add base64 of woff2 for testing in CodePen, etc
+
+base64 $outputDir/$fontName-$date.woff2 > $outputDir/$fontName-$date.base64

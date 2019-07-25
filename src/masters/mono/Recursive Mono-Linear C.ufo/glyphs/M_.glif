@@ -5,11 +5,11 @@
 	<outline>
 		<contour>
 			<point x="224" y="0" type="curve"/>
-			<point x="224" y="41"/>
-			<point x="225" y="82"/>
-			<point x="225" y="123" type="curve" smooth="yes"/>
-			<point x="226" y="180"/>
-			<point x="173" y="379"/>
+			<point x="224" y="31"/>
+			<point x="225" y="62"/>
+			<point x="225" y="93" type="curve" smooth="yes"/>
+			<point x="225" y="150"/>
+			<point x="218" y="200"/>
 			<point x="134" y="513" type="curve"/>
 			<point x="134" y="492" type="line"/>
 			<point x="167" y="492" type="line"/>
@@ -27,11 +27,11 @@
 			<point x="426" y="492" type="line"/>
 			<point x="469" y="492" type="line"/>
 			<point x="464" y="502" type="line"/>
-			<point x="422" y="365"/>
-			<point x="376" y="175"/>
-			<point x="376" y="123" type="curve" smooth="yes"/>
-			<point x="376" y="86"/>
-			<point x="376" y="48"/>
+			<point x="384" y="200"/>
+			<point x="376" y="149.1160949868"/>
+			<point x="376" y="93" type="curve" smooth="yes"/>
+			<point x="376" y="65.9107142857"/>
+			<point x="376" y="38.0892857143"/>
 			<point x="376" y="11" type="curve"/>
 			<point x="376" y="5"/>
 			<point x="380" y="0"/>
@@ -51,13 +51,13 @@
 			<point x="498" y="700"/>
 			<point x="434" y="700"/>
 			<point x="369" y="700" type="curve"/>
-			<point x="335" y="611"/>
-			<point x="310" y="481"/>
-			<point x="307" y="366" type="curve"/>
-			<point x="338" y="426" type="line"/>
-			<point x="265" y="426" type="line"/>
-			<point x="294" y="366" type="line"/>
-			<point x="289" y="484"/>
+			<point x="328" y="596"/>
+			<point x="311" y="523"/>
+			<point x="307" y="406" type="curve"/>
+			<point x="338" y="456" type="line"/>
+			<point x="265" y="456" type="line"/>
+			<point x="294" y="406" type="line"/>
+			<point x="289" y="524"/>
 			<point x="269" y="596"/>
 			<point x="236" y="691" type="curve" smooth="yes"/>
 			<point x="233" y="699"/>
@@ -114,6 +114,16 @@
 	<guideline x="0" y="700" angle="0" identifier="y6iUXELdd0"/>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
