@@ -34,3 +34,7 @@ for i in badWidthGlyphs.keys():
             print(f"| {j.ljust(20)} | {str(badWidthGlyphs[i][j]).rjust(9)} |")
 
         print()
+
+
+# TODO: check for widths that different in a glyph, between masters
+    # note... this script might be already written
