@@ -4,22 +4,8 @@
 	<advance width="600"/>
 	<outline>
 		<contour>
-			<point x="142" y="540" type="curve"/>
-			<point x="128" y="521"/>
-			<point x="117" y="498"/>
-			<point x="110" y="470" type="curve" smooth="yes"/>
-			<point x="94" y="407"/>
-			<point x="112" y="378"/>
-			<point x="148" y="378" type="curve" smooth="yes"/>
-			<point x="184" y="378"/>
-			<point x="234" y="394"/>
-			<point x="288" y="428" type="curve"/>
-			<point x="267" y="367"/>
-			<point x="243" y="306"/>
-			<point x="232" y="245" type="curve" smooth="yes"/>
-			<point x="216" y="153"/>
-			<point x="260" y="117"/>
-			<point x="348" y="117" type="curve"/>
+			<point x="233" y="117" type="line"/>
+			<point x="348" y="117" type="line"/>
 			<point x="364" y="261"/>
 			<point x="417" y="346"/>
 			<point x="437" y="448" type="curve" smooth="yes"/>
@@ -28,6 +14,23 @@
 			<point x="322" y="550" type="curve" smooth="yes"/>
 			<point x="273" y="550"/>
 			<point x="187" y="546"/>
+			<point x="142" y="540" type="curve"/>
+			<point x="128" y="521"/>
+			<point x="117" y="498"/>
+			<point x="110" y="470" type="curve" smooth="yes"/>
+			<point x="94" y="407"/>
+			<point x="112" y="378"/>
+			<point x="148" y="378" type="curve" smooth="yes"/>
+			<point x="183" y="378"/>
+			<point x="231" y="393"/>
+			<point x="283" y="425" type="curve"/>
+			<point x="286" y="422" type="line"/>
+			<point x="265" y="363"/>
+			<point x="243" y="304"/>
+			<point x="232" y="245" type="curve" smooth="yes"/>
+			<point x="224" y="201"/>
+			<point x="230" y="170"/>
+			<point x="248" y="149" type="curve"/>
 		</contour>
 		<contour>
 			<point x="29" y="145" type="line"/>
@@ -61,23 +64,21 @@
 			<point x="485" y="612"/>
 			<point x="497" y="613"/>
 		</contour>
-		<contour>
-			<point x="299" y="410" type="line"/>
-			<point x="318" y="466" type="line"/>
-			<point x="303" y="469" type="line"/>
-			<point x="275" y="432" type="line"/>
-		</contour>
-		<contour>
-			<point x="239" y="131" type="line"/>
-			<point x="289" y="112" type="line"/>
-			<point x="292" y="127" type="line"/>
-			<point x="253" y="158" type="line"/>
-		</contour>
 	</outline>
 	<anchor name="bottom" x="237.7499303373" y="-1"/>
 	<anchor name="ogonek" x="486.7499303373" y="-1"/>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
