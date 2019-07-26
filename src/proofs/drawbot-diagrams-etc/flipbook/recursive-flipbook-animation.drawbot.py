@@ -26,8 +26,9 @@ def get_font_sizes(num_pages: int, min: int = 6, max: int = 72, round_strategy: 
     return [ y(t) for t in [ delta * n for n in range(num_pages) ] ]
 
 # This example interpolates between size 10 and 60 instead of the default 6 and 72
-pages = 5
-weights = get_font_sizes(pages, 300.01, 1100)
+pages = 100
+weights = get_font_sizes(pages, 300.01, 900)
+expressions = get_font_sizes(pages, 0, 1000)
 
 W,H = 500, 500
 now = datetime.datetime.now()
@@ -39,26 +40,35 @@ now = datetime.datetime.now()
 
 
 print(weights)
+print(expressions)
 
 for page in range(0,pages):
     newPage(W, H)
     frameDuration(1/60)
-    fill(*hex2rgb('2F3137'))
+    fill(*hex2rgb('222222'))
     rect(0, 0, W, H)
     # fill(0,0,0)
-    stroke(*hex2rgb('F3B665'))
-    strokeWidth(0.5)
-    fill(*hex2rgb('EA8D91'),0.125)
+    fill(*hex2rgb('FFFFFF'),1)
     print(weights[page])
-    font("Recursive Mono")
-    fontSize(200)
-    lineHeight(180)
+    font("Rec Mono Beta013 Var")
+    fontSize(W/1.375)
+    # lineHeight(180)
     currentWeight = weights[page]
+    currentExpression = expressions[page]*0.001 + 0.001
     print("currentWeight is ", currentWeight)
     fontVariations(
         wght=currentWeight, 
-        XPRN=0.001
+        XPRN=currentExpression,
+        slnt=-15*currentExpression
         )
-    text("very \nnice", (10, 285))
+    text("rw", (W/16, H/12))
     
-# saveImage("./exports/recursive-wavy-" + now.strftime("%Y_%m_%d-%H_%M_%S") + ".gif")
+    barChartWidth = 14
+    wghtChart = f"[{'|'.ljust(int(barChartWidth*currentExpression),'|').ljust(barChartWidth)}]"
+    xprnChart = f"[{'|'.ljust(int(barChartWidth*currentExpression),'|').ljust(barChartWidth)}]"
+    fontSize(W/20)
+    text(f"wght {str(round(currentWeight,0)).ljust(6)} {wghtChart} \n\
+XPRN {str(round(currentExpression,2)).ljust(6)} {xprnChart} \n\
+slnt {str(round(currentExpression,2)).ljust(6)} {xprnChart}", (W/10, H/1.15))
+    
+saveImage("./exports/recursive-wavy-" + now.strftime("%Y_%m_%d-%H_%M_%S") + ".gif")
