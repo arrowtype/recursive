@@ -4,24 +4,6 @@
 	<advance width="600"/>
 	<outline>
 		<contour>
-			<point x="166" y="-11" type="curve" smooth="yes"/>
-			<point x="249" y="-11"/>
-			<point x="354" y="75"/>
-			<point x="427" y="193" type="curve" smooth="yes"/>
-			<point x="446" y="226"/>
-			<point x="471" y="258"/>
-			<point x="464" y="300" type="curve"/>
-			<point x="382" y="167"/>
-			<point x="263" y="37"/>
-			<point x="166" y="37" type="curve" smooth="yes"/>
-			<point x="123" y="37"/>
-			<point x="103" y="63"/>
-			<point x="105" y="117" type="curve"/>
-			<point x="146" y="246"/>
-			<point x="170" y="293"/>
-			<point x="185" y="394" type="curve" smooth="yes"/>
-			<point x="200" y="500"/>
-			<point x="188" y="531"/>
 			<point x="155" y="531" type="curve" smooth="yes"/>
 			<point x="146" y="531"/>
 			<point x="139" y="529"/>
@@ -34,8 +16,28 @@
 			<point x="64" y="133" type="curve" smooth="yes"/>
 			<point x="53" y="63"/>
 			<point x="78" y="-11"/>
+			<point x="166" y="-11" type="curve" smooth="yes"/>
+			<point x="246" y="-11"/>
+			<point x="347" y="70"/>
+			<point x="420" y="182" type="curve"/>
+			<point x="433" y="176" type="line"/>
+			<point x="464" y="300" type="line"/>
+			<point x="382" y="167"/>
+			<point x="263" y="37"/>
+			<point x="166" y="37" type="curve" smooth="yes"/>
+			<point x="123" y="37"/>
+			<point x="103" y="63"/>
+			<point x="105" y="117" type="curve"/>
+			<point x="146" y="246"/>
+			<point x="170" y="293"/>
+			<point x="185" y="394" type="curve" smooth="yes"/>
+			<point x="200" y="500"/>
+			<point x="188" y="531"/>
 		</contour>
 		<contour>
+			<point x="525" y="531" type="curve" smooth="yes"/>
+			<point x="520" y="531"/>
+			<point x="515" y="530"/>
 			<point x="510" y="528" type="curve"/>
 			<point x="500" y="380"/>
 			<point x="426" y="222"/>
@@ -54,15 +56,6 @@
 			<point x="554" y="485" type="curve" smooth="yes"/>
 			<point x="558" y="516"/>
 			<point x="549" y="531"/>
-			<point x="525" y="531" type="curve" smooth="yes"/>
-			<point x="520" y="531"/>
-			<point x="515" y="530"/>
-		</contour>
-		<contour>
-			<point x="433" y="176" type="line"/>
-			<point x="460" y="229" type="line"/>
-			<point x="437" y="231" type="line"/>
-			<point x="411" y="186" type="line"/>
 		</contour>
 	</outline>
 	<anchor name="top" x="368.2874088892" y="537"/>
