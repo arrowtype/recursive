@@ -27,19 +27,19 @@
 			<point x="530" y="0"/>
 		</contour>
 		<contour>
-			<point x="227" y="-10" type="curve" smooth="yes"/>
-			<point x="306" y="-10"/>
-			<point x="363" y="21"/>
+			<point x="232" y="-10" type="curve" smooth="yes"/>
+			<point x="308" y="-10"/>
+			<point x="363" y="26"/>
 			<point x="400" y="86" type="curve"/>
 			<point x="442" y="86" type="line"/>
-			<point x="442" y="235" type="line"/>
-			<point x="393" y="178"/>
-			<point x="327" y="142"/>
-			<point x="283" y="142" type="curve" smooth="yes"/>
-			<point x="243" y="142"/>
-			<point x="230" y="156"/>
-			<point x="230" y="196" type="curve" smooth="yes"/>
-			<point x="230" y="350"/>
+			<point x="442" y="213" type="line"/>
+			<point x="395" y="157"/>
+			<point x="350" y="130"/>
+			<point x="283" y="130" type="curve" smooth="yes"/>
+			<point x="243" y="130"/>
+			<point x="230" y="144"/>
+			<point x="230" y="184" type="curve" smooth="yes"/>
+			<point x="230" y="338"/>
 			<point x="230" y="523"/>
 			<point x="230" y="689" type="curve" smooth="yes"/>
 			<point x="230" y="696"/>
@@ -55,7 +55,7 @@
 			<point x="70" y="305"/>
 			<point x="70" y="174" type="curve" smooth="yes"/>
 			<point x="70" y="55"/>
-			<point x="133" y="-10"/>
+			<point x="125" y="-10"/>
 		</contour>
 	</outline>
 	<anchor name="top" x="325" y="711"/>
@@ -66,6 +66,16 @@
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
 			<string>check</string>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
