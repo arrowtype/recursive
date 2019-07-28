@@ -2,19 +2,19 @@
 <designspace format="3">
     <axes>
         <axis default="0" maximum="1" minimum="0" name="genre" tag="GNRE" />
-        <axis default="218" maximum="1000" minimum="218" name="weight" tag="wght" />
+        <axis default="300" maximum="900" minimum="300" name="weight" tag="wght" />
     </axes>
     <sources>
         <source familyname="Recursive Sans" filename="Recursive Sans-Linear C.ufo" stylename="Linear C">
             <location>
                 <dimension name="genre" xvalue="0" />
-                <dimension name="weight" xvalue="1000" />
+                <dimension name="weight" xvalue="900" />
             </location>
         </source>
         <source familyname="Recursive Sans" filename="Recursive Sans-Casual C.ufo" stylename="Casual C">
             <location>
                 <dimension name="genre" xvalue="1" />
-                <dimension name="weight" xvalue="1000" />
+                <dimension name="weight" xvalue="900" />
             </location>
         </source>
         <source familyname="Recursive Sans" filename="Recursive Sans-Linear B.ufo" stylename="Linear B">
@@ -32,13 +32,13 @@
         <source familyname="Recursive Sans" filename="Recursive Sans-Linear A.ufo" stylename="Linear A">
             <location>
                 <dimension name="genre" xvalue="0" />
-                <dimension name="weight" xvalue="218" />
+                <dimension name="weight" xvalue="300" />
             </location>
         </source>
         <source familyname="Recursive Sans" filename="Recursive Sans-Casual A.ufo" stylename="Casual A">
             <location>
                 <dimension name="genre" xvalue="1" />
-                <dimension name="weight" xvalue="218" />
+                <dimension name="weight" xvalue="300" />
             </location>
         </source>
     </sources>
@@ -78,7 +78,7 @@
         <instance familyname="Recursive Sans" filename="instances/RecursiveSans-LinearBlack.ufo" postscriptfontname="RecursiveSans-LinearBlack" stylename="Linear Black">
             <location>
                 <dimension name="genre" xvalue="0" />
-                <dimension name="weight" xvalue="900" />
+                <dimension name="weight" xvalue="850" />
             </location>
             <kerning />
             <info />
@@ -86,13 +86,13 @@
         <instance familyname="Recursive Sans" filename="instances/RecursiveSans-LinearHeavy.ufo" postscriptfontname="RecursiveSans-LinearHeavy" stylename="Linear Heavy">
             <location>
                 <dimension name="genre" xvalue="0" />
-                <dimension name="weight" xvalue="1000" />
+                <dimension name="weight" xvalue="900" />
             </location>
             <kerning />
             <info />
         </instance>
-        
-        
+
+
         <instance familyname="Recursive Sans" filename="instances/RecursiveSans-CasualRegular.ufo" postscriptfontname="RecursiveSans-CasualRegular" stylename="Casual Regular">
             <location>
                 <dimension name="genre" xvalue="1" />
@@ -128,7 +128,7 @@
         <instance familyname="Recursive Sans" filename="instances/RecursiveSans-CasualBlack.ufo" postscriptfontname="RecursiveSans-CasualBlack" stylename="Casual Black">
             <location>
                 <dimension name="genre" xvalue="1" />
-                <dimension name="weight" xvalue="900" />
+                <dimension name="weight" xvalue="850" />
             </location>
             <kerning />
             <info />
@@ -136,7 +136,7 @@
         <instance familyname="Recursive Sans" filename="instances/RecursiveSans-CasualHeavy.ufo" postscriptfontname="RecursiveSans-CasualHeavy" stylename="Casual Heavy">
             <location>
                 <dimension name="genre" xvalue="1" />
-                <dimension name="weight" xvalue="1000" />
+                <dimension name="weight" xvalue="900" />
             </location>
             <kerning />
             <info />
