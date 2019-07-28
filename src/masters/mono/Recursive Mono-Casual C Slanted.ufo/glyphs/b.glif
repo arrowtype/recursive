@@ -9,11 +9,11 @@
 			<point x="195" y="107"/>
 			<point x="208" y="160" type="curve" smooth="yes"/>
 			<point x="235" y="284"/>
-			<point x="313" y="449"/>
-			<point x="342" y="557" type="curve" smooth="yes"/>
+			<point x="299" y="406"/>
+			<point x="334" y="532" type="curve" smooth="yes"/>
 			<point x="380" y="700"/>
-			<point x="349.3181818182" y="760"/>
-			<point x="227" y="760" type="curve" smooth="yes"/>
+			<point x="349" y="760"/>
+			<point x="235" y="760" type="curve" smooth="yes"/>
 			<point x="202" y="760"/>
 			<point x="168" y="756"/>
 			<point x="138" y="749" type="curve"/>
@@ -21,68 +21,64 @@
 			<point x="152" y="676"/>
 			<point x="141" y="622" type="curve" smooth="yes"/>
 			<point x="109" y="464"/>
-			<point x="31" y="308"/>
-			<point x="-6" y="149" type="curve" smooth="yes"/>
-			<point x="-32" y="43"/>
+			<point x="37" y="330"/>
+			<point x="0" y="171" type="curve" smooth="yes"/>
+			<point x="-26" y="65"/>
 			<point x="10" y="-7"/>
 			<point x="120" y="-7" type="curve"/>
 			<point x="144.7424242424" y="-7"/>
 			<point x="174" y="-4"/>
 		</contour>
 		<contour>
+			<point x="165" y="84" type="line"/>
+			<point x="201" y="90" type="line"/>
+			<point x="225" y="28"/>
+			<point x="270.6443749621" y="-10"/>
 			<point x="321" y="-10" type="curve"/>
 			<point x="440" y="-10"/>
-			<point x="523" y="102"/>
-			<point x="581" y="334" type="curve" smooth="yes"/>
-			<point x="585" y="350" type="line" smooth="yes"/>
-			<point x="611" y="451"/>
-			<point x="558" y="562"/>
+			<point x="519" y="86"/>
+			<point x="577" y="318" type="curve" smooth="yes"/>
+			<point x="581" y="334" type="line" smooth="yes"/>
+			<point x="606" y="435"/>
+			<point x="574" y="562"/>
 			<point x="488" y="562" type="curve" smooth="yes"/>
-			<point x="435" y="562"/>
-			<point x="377" y="522"/>
-			<point x="298" y="432" type="curve" smooth="yes"/>
-			<point x="257" y="386"/>
-			<point x="231" y="328"/>
-			<point x="254" y="311" type="curve"/>
-			<point x="281" y="344"/>
-			<point x="309" y="364"/>
-			<point x="332" y="364" type="curve" smooth="yes"/>
-			<point x="341" y="364"/>
-			<point x="350" y="363"/>
-			<point x="355" y="361" type="curve"/>
-			<point x="354" y="334"/>
+			<point x="438" y="562"/>
+			<point x="384" y="527"/>
+			<point x="313" y="448" type="curve"/>
+			<point x="295" y="453" type="line"/>
+			<point x="232" y="280" type="line"/>
+			<point x="273" y="342"/>
+			<point x="305" y="364"/>
+			<point x="335" y="364" type="curve" smooth="yes"/>
+			<point x="343" y="364"/>
+			<point x="350" y="362"/>
+			<point x="355" y="359" type="curve"/>
+			<point x="354" y="333"/>
 			<point x="349" y="304"/>
 			<point x="338" y="270" type="curve" smooth="yes"/>
 			<point x="336" y="263" type="line" smooth="yes"/>
 			<point x="311" y="178"/>
 			<point x="279" y="165"/>
 			<point x="251" y="165" type="curve" smooth="yes"/>
-			<point x="229" y="165"/>
-			<point x="211" y="173"/>
-			<point x="202" y="181" type="curve"/>
-			<point x="184" y="149"/>
-			<point x="186" y="114"/>
-			<point x="209" y="72" type="curve" smooth="yes"/>
-			<point x="233" y="21"/>
-			<point x="276" y="-10"/>
-		</contour>
-		<contour>
-			<point x="295" y="453" type="line"/>
-			<point x="213" y="315" type="line"/>
-			<point x="235" y="312" type="line"/>
-			<point x="321" y="446" type="line"/>
-		</contour>
-		<contour>
-			<point x="191" y="87" type="line"/>
-			<point x="214" y="94" type="line"/>
-			<point x="191" y="156" type="line"/>
-			<point x="169" y="153" type="line"/>
+			<point x="227" y="165"/>
+			<point x="210" y="171"/>
+			<point x="191" y="188" type="curve"/>
 		</contour>
 	</outline>
 	<guideline x="345" y="439" angle="0" identifier="0euh4Ld1Jh"/>
 	<guideline x="91" y="87" angle="0" identifier="mSj5UnfJua"/>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>

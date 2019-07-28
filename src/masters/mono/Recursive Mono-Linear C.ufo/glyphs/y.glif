@@ -45,31 +45,30 @@
 			<point x="122" y="44"/>
 			<point x="127" y="40"/>
 			<point x="135" y="40" type="curve" smooth="yes"/>
-			<point x="336" y="40" type="line" smooth="yes"/>
-			<point x="362" y="40"/>
-			<point x="388.1135855794" y="115.4521078132"/>
-			<point x="390" y="206" type="curve"/>
-			<point x="307" y="206" type="line" smooth="yes"/>
-			<point x="303" y="206"/>
-			<point x="299" y="209"/>
-			<point x="298" y="214" type="curve" smooth="yes"/>
-			<point x="294.9083420785" y="227.3971843264"/>
+			<point x="336" y="40" type="line"/>
+			<point x="367" y="216" type="line"/>
+			<point x="295" y="216" type="line"/>
+			<point x="284" y="290"/>
 			<point x="260" y="439"/>
 			<point x="246" y="535" type="curve" smooth="yes"/>
 			<point x="245" y="543"/>
 			<point x="238" y="550"/>
-		</contour>
-		<contour>
-			<point x="266" y="170" type="line"/>
-			<point x="351" y="170" type="line"/>
-			<point x="351" y="216" type="line"/>
-			<point x="266" y="216" type="line"/>
 		</contour>
 	</outline>
 	<anchor name="top" x="296" y="561"/>
 	<guideline x="28" y="-200" angle="0" identifier="CEQTIRz23A"/>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
