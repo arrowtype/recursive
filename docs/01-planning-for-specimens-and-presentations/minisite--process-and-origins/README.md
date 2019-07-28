@@ -5,6 +5,10 @@ _Edited by Noemi Stauffer (?)_
 
 Recursive is a very personal project, but one which I think many people can benefit from.
 
+## Main Storyline
+- Finding what a casual script for code should look like
+- Exploring the boundaries of what is possible in variable fonts
+
 ## Before
 
 - Grew up living letters. Excited to learn graphic design was a career path. Went to school for it. Excited to learn type had a career path, and programs like TypeMedia existed.
