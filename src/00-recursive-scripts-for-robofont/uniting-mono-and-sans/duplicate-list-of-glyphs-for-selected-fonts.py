@@ -2,7 +2,6 @@
     for selected fonts, copy mono-specific glyphs to glyphs with ".mono" suffixes
 '''
 
-
 from vanilla.dialogs import *
 import os
 from mojo.UI import AskString
