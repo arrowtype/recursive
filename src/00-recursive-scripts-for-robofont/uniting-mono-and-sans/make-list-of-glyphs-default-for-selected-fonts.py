@@ -18,7 +18,7 @@ glyphsToMakeDefault = AskString(
     'Space-separated list of glyphs to make default').split(" ")
 
 # if the user cancels or inputs an empty string, cancel the script
-if newGlyphSuffix == "" or glyphsToMakeDefault == "":
+if glyphsToMakeDefault == "":
     print("canceled")
 
 # if the script is valid, keep going

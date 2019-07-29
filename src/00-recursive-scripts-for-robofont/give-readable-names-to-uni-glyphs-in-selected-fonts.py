@@ -7,8 +7,9 @@ from glyphNameFormatter.reader import u2n, n2u, u2U
 from vanilla.dialogs import *
 
 
-def updateGlyphName(f):
-    f.features.text = feaText
+# would need editing
+# def updateGlyphName(f):
+#     f.features.text = feaText
 
 
 def getNameFromUnicode(g):
