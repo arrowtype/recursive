@@ -4,9 +4,16 @@
 	<advance width="600"/>
 	<outline>
 		<contour>
+			<point x="517" y="98" type="line"/>
+			<point x="429" y="190"/>
+			<point x="381" y="241"/>
+			<point x="326" y="299" type="curve"/>
+			<point x="385" y="362"/>
+			<point x="436" y="417"/>
+			<point x="517" y="502" type="curve"/>
 			<point x="517" y="522" type="line"/>
-			<point x="473" y="522"/>
-			<point x="311" y="522"/>
+			<point x="437" y="522"/>
+			<point x="357" y="522"/>
 			<point x="277" y="522" type="curve" smooth="yes"/>
 			<point x="265" y="522"/>
 			<point x="260" y="521"/>
@@ -14,34 +21,20 @@
 			<point x="222" y="482"/>
 			<point x="136" y="391"/>
 			<point x="74" y="325" type="curve"/>
-			<point x="74" y="305" type="line"/>
-			<point x="74" y="292"/>
-			<point x="114" y="276"/>
-			<point x="286" y="257" type="curve"/>
-			<point x="364" y="340"/>
-			<point x="419" y="398"/>
-			<point x="517" y="501" type="curve"/>
-		</contour>
-		<contour>
-			<point x="517" y="99" type="line"/>
-			<point x="418" y="202"/>
-			<point x="369" y="253"/>
-			<point x="305" y="322" type="curve"/>
-			<point x="104" y="322"/>
-			<point x="74" y="320"/>
-			<point x="74" y="309" type="curve"/>
-			<point x="74" y="285" type="line" smooth="yes"/>
+			<point x="74" y="312"/>
+			<point x="74" y="298"/>
+			<point x="74" y="285" type="curve" smooth="yes"/>
 			<point x="74" y="277"/>
 			<point x="75" y="273"/>
 			<point x="84" y="263" type="curve" smooth="yes"/>
 			<point x="104" y="242"/>
 			<point x="235" y="105"/>
-			<point x="249" y="90" type="curve"/>
+			<point x="249" y="90" type="curve" smooth="yes"/>
 			<point x="260" y="79"/>
 			<point x="262" y="78"/>
 			<point x="275" y="78" type="curve" smooth="yes"/>
-			<point x="330" y="78"/>
-			<point x="487" y="78"/>
+			<point x="348" y="78"/>
+			<point x="436" y="78"/>
 			<point x="517" y="78" type="curve"/>
 		</contour>
 	</outline>
@@ -80,6 +73,8 @@
 	<guideline x="0" y="700" angle="0" identifier="fXzyAKhYGA"/>
 	<lib>
 		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>check</string>
 			<key>com.rafalbuchner.mirroringDrawingLocal</key>
 			<dict>
 				<key>mirroringOptions</key>
@@ -164,6 +159,8 @@
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.z309DLXb2i</key>
 			<integer>0</integer>
+			<key>public.markColor</key>
+			<string>1,1,0,1</string>
 		</dict>
 	</lib>
 </glyph>
