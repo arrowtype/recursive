@@ -4,8 +4,13 @@
 	<advance width="600"/>
 	<outline>
 		<contour>
+			<point x="232" y="299" type="curve"/>
+			<point x="299" y="372"/>
+			<point x="386" y="431"/>
 			<point x="533" y="462" type="curve"/>
-			<point x="533" y="485" type="line"/>
+			<point x="533" y="470"/>
+			<point x="533" y="477"/>
+			<point x="533" y="485" type="curve" smooth="yes"/>
 			<point x="533" y="528"/>
 			<point x="507" y="592"/>
 			<point x="468" y="592" type="curve" smooth="yes"/>
@@ -15,14 +20,14 @@
 			<point x="259" y="514"/>
 			<point x="131" y="415"/>
 			<point x="68" y="329" type="curve"/>
-			<point x="68" y="307" type="line"/>
-			<point x="68" y="268"/>
-			<point x="105" y="260"/>
-			<point x="198" y="260" type="curve"/>
-			<point x="270" y="350"/>
-			<point x="360" y="425"/>
-		</contour>
-		<contour>
+			<point x="68" y="320"/>
+			<point x="68" y="311"/>
+			<point x="68" y="302" type="curve" smooth="yes"/>
+			<point x="68" y="274"/>
+			<point x="72" y="258"/>
+			<point x="115" y="217" type="curve" smooth="yes"/>
+			<point x="208" y="129"/>
+			<point x="330" y="47"/>
 			<point x="522" y="0" type="curve"/>
 			<point x="527" y="15"/>
 			<point x="529" y="31"/>
@@ -30,28 +35,14 @@
 			<point x="529" y="110"/>
 			<point x="517" y="150"/>
 			<point x="490" y="159" type="curve" smooth="yes"/>
-			<point x="342" y="207"/>
-			<point x="253" y="267"/>
-			<point x="170" y="362" type="curve" smooth="yes"/>
-			<point x="163" y="370"/>
-			<point x="161" y="378"/>
-			<point x="161" y="382" type="curve" smooth="yes"/>
-			<point x="161" y="388"/>
-			<point x="161" y="392"/>
-			<point x="161" y="398" type="curve"/>
-			<point x="94" y="360"/>
-			<point x="68" y="328"/>
-			<point x="68" y="311" type="curve" smooth="yes"/>
-			<point x="68" y="302" type="line" smooth="yes"/>
-			<point x="68" y="274"/>
-			<point x="72" y="258"/>
-			<point x="115" y="217" type="curve" smooth="yes"/>
-			<point x="208" y="129"/>
-			<point x="330" y="47"/>
+			<point x="378" y="195"/>
+			<point x="299" y="239"/>
 		</contour>
 	</outline>
 	<lib>
 		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>check</string>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
@@ -258,6 +249,8 @@
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.yi9785qQgS</key>
 			<integer>0</integer>
+			<key>public.markColor</key>
+			<string>1,1,0,1</string>
 		</dict>
 	</lib>
 </glyph>
