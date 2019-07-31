@@ -707,9 +707,7 @@
 			<string>Scaron</string>
 			<string>Scommaaccent</string>
 			<string>T</string>
-			<string>Tcedilla</string>
 			<string>Tcaron</string>
-			<string>Tcommaaccent</string>
 			<string>U</string>
 			<string>Ugrave</string>
 			<string>Uacute</string>
@@ -780,8 +778,6 @@
 			<string>r</string>
 			<string>s</string>
 			<string>t</string>
-			<string>tcedilla</string>
-			<string>tcommaaccent</string>
 			<string>u</string>
 			<string>v</string>
 			<string>w</string>
@@ -897,7 +893,6 @@
 			<string>ampersand</string>
 			<string>section</string>
 			<string>paragraph</string>
-			<string>litre</string>
 			<string>periodcentered</string>
 			<string>bullet</string>
 			<string>overline</string>
@@ -921,14 +916,12 @@
 			<string>arrowright</string>
 			<string>arrowdown</string>
 			<string>partialdiff</string>
-			<string>increment</string>
 			<string>product</string>
 			<string>summation</string>
 			<string>divisionslash</string>
 			<string>radical</string>
 			<string>infinity</string>
 			<string>integral</string>
-			<string>equivalence</string>
 			<string>dollar</string>
 			<string>cent</string>
 			<string>sterling</string>
@@ -972,7 +965,6 @@
 			<string>degree</string>
 			<string>estimated</string>
 			<string>lozenge</string>
-			<string>hyphensoft</string>
 			<string>ijacute</string>
 			<string>IJacute</string>
 			<string>bitcoin</string>
@@ -1145,11 +1137,25 @@
 			<string>a.italic_curl</string>
 			<string>r.replaced_with_curve</string>
 			<string>a.replaced_with_flatbar</string>
+			<string>Tcedilla</string>
+			<string>Tcommaaccent</string>
+			<string>tcedilla</string>
+			<string>tcommaaccent</string>
+			<string>litre</string>
+			<string>increment</string>
+			<string>equivalence</string>
+			<string>hyphensoft</string>
+			<string>zero.sans</string>
+			<string>one.sans</string>
 			<string>l.sans</string>
 			<string>i.sans</string>
 			<string>f.sans</string>
 			<string>r.sans</string>
 			<string>flatg</string>
+<<<<<<< HEAD
+=======
+			<string>notdef</string>
+>>>>>>> d9c74a3385e74cdb7173f659c2c95d0b1ca9e900
 		</array>
 	</dict>
 </plist>

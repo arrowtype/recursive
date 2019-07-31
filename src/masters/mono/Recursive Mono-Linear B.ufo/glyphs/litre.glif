@@ -4,17 +4,17 @@
 	<advance width="600"/>
 	<outline>
 		<contour>
-			<point x="488" y="142" type="curve"/>
-			<point x="476" y="142" type="line"/>
-			<point x="409" y="142"/>
-			<point x="360" y="142"/>
-			<point x="280" y="142" type="curve" smooth="yes"/>
-			<point x="260" y="142"/>
-			<point x="255" y="147"/>
-			<point x="255" y="167" type="curve"/>
-			<point x="116" y="181"/>
-			<point x="105" y="163"/>
-			<point x="105" y="155" type="curve"/>
+			<point x="530" y="500" type="curve" smooth="yes"/>
+			<point x="530" y="573" type="line" smooth="yes"/>
+			<point x="530" y="691"/>
+			<point x="447" y="760"/>
+			<point x="320" y="760" type="curve" smooth="yes"/>
+			<point x="195" y="760"/>
+			<point x="105" y="688"/>
+			<point x="105" y="568" type="curve" smooth="yes"/>
+			<point x="105" y="430"/>
+			<point x="105" y="293"/>
+			<point x="105" y="155" type="curve" smooth="yes"/>
 			<point x="105" y="62"/>
 			<point x="155" y="0"/>
 			<point x="282" y="0" type="curve" smooth="yes"/>
@@ -22,38 +22,27 @@
 			<point x="485" y="0"/>
 			<point x="488" y="4"/>
 			<point x="488" y="11" type="curve" smooth="yes"/>
-			<point x="488" y="92"/>
-			<point x="488" y="117"/>
-		</contour>
-		<contour>
-			<point x="317" y="619" type="curve"/>
-			<point x="346" y="744"/>
-			<point x="339" y="760"/>
-			<point x="320" y="760" type="curve" smooth="yes"/>
-			<point x="195" y="760"/>
-			<point x="105" y="688"/>
-			<point x="105" y="568" type="curve" smooth="yes"/>
-			<point x="105" y="155" type="line" smooth="yes"/>
-			<point x="105" y="108"/>
-			<point x="143" y="93"/>
-			<point x="255" y="93" type="curve"/>
-			<point x="255" y="117"/>
-			<point x="255" y="130"/>
+			<point x="488" y="55"/>
+			<point x="488" y="98"/>
+			<point x="488" y="142" type="curve"/>
+			<point x="463" y="142" type="line"/>
+			<point x="402" y="142"/>
+			<point x="341" y="142"/>
+			<point x="280" y="142" type="curve" smooth="yes"/>
+			<point x="271" y="142"/>
+			<point x="264" y="143"/>
+			<point x="261" y="146" type="curve"/>
+			<point x="256" y="150"/>
+			<point x="255" y="156"/>
 			<point x="255" y="167" type="curve" smooth="yes"/>
-			<point x="255" y="553" type="line" smooth="yes"/>
-			<point x="255" y="603"/>
-			<point x="282" y="619"/>
-		</contour>
-		<contour>
-			<point x="530" y="573" type="line" smooth="yes"/>
-			<point x="530" y="691"/>
-			<point x="447" y="760"/>
-			<point x="320" y="760" type="curve" smooth="yes"/>
-			<point x="275" y="760"/>
-			<point x="201" y="725"/>
-			<point x="201" y="619" type="curve"/>
-			<point x="235" y="619"/>
-			<point x="274" y="619"/>
+			<point x="255" y="296"/>
+			<point x="255" y="424"/>
+			<point x="255" y="553" type="curve" smooth="yes"/>
+			<point x="255" y="579"/>
+			<point x="262" y="596"/>
+			<point x="274" y="606" type="curve"/>
+			<point x="285" y="615"/>
+			<point x="300" y="619"/>
 			<point x="317" y="619" type="curve" smooth="yes"/>
 			<point x="359" y="619"/>
 			<point x="380" y="604"/>
@@ -73,7 +62,6 @@
 			<point x="160" y="196" type="curve" smooth="yes"/>
 			<point x="466" y="275"/>
 			<point x="530" y="375"/>
-			<point x="530" y="500" type="curve" smooth="yes"/>
 		</contour>
 	</outline>
 	<guideline x="0" y="0" angle="90" identifier="XKEDk6eM9x"/>
@@ -111,6 +99,8 @@
 	<guideline x="0" y="700" angle="0" identifier="fJ9Rha2ZiH"/>
 	<lib>
 		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>check</string>
 			<key>com.rafalbuchner.mirroringDrawingLocal</key>
 			<dict>
 				<key>mirroringOptions</key>
@@ -187,6 +177,8 @@
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.wphXb4N7bU</key>
 			<integer>0</integer>
+			<key>public.markColor</key>
+			<string>1,1,0,1</string>
 		</dict>
 	</lib>
 </glyph>

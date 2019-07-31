@@ -4,25 +4,15 @@
 	<advance width="600"/>
 	<outline>
 		<contour>
-			<point x="520" y="518" type="curve"/>
-			<point x="520" y="562" type="line"/>
-			<point x="520" y="566"/>
-			<point x="518" y="569"/>
-			<point x="514" y="569" type="curve" smooth="yes"/>
-			<point x="510" y="569"/>
-			<point x="507" y="568"/>
-			<point x="494" y="561" type="curve" smooth="yes"/>
-			<point x="453" y="539"/>
-			<point x="218" y="413"/>
 			<point x="80" y="339" type="curve"/>
-			<point x="80" y="275" type="line"/>
-			<point x="86" y="284"/>
-			<point x="91" y="288"/>
-			<point x="106" y="296" type="curve"/>
-			<point x="244" y="370"/>
-			<point x="382" y="444"/>
-		</contour>
-		<contour>
+			<point x="80" y="316"/>
+			<point x="80" y="293"/>
+			<point x="80" y="270" type="curve" smooth="yes"/>
+			<point x="80" y="262"/>
+			<point x="82" y="258"/>
+			<point x="91" y="253" type="curve" smooth="yes"/>
+			<point x="233" y="177"/>
+			<point x="377" y="100"/>
 			<point x="520" y="23" type="curve"/>
 			<point x="520" y="39"/>
 			<point x="520" y="54"/>
@@ -36,18 +26,22 @@
 			<point x="130" y="290"/>
 			<point x="130" y="292"/>
 			<point x="130" y="297" type="curve" smooth="yes"/>
-			<point x="130" y="312"/>
-			<point x="130" y="329"/>
-			<point x="130" y="346" type="curve"/>
-			<point x="93" y="342"/>
-			<point x="80" y="302"/>
-			<point x="80" y="279" type="curve" smooth="yes"/>
-			<point x="80" y="270" type="line" smooth="yes"/>
-			<point x="80" y="262"/>
-			<point x="82" y="258"/>
-			<point x="91" y="253" type="curve" smooth="yes"/>
-			<point x="233" y="177"/>
-			<point x="377" y="100"/>
+			<point x="130" y="323" type="line"/>
+			<point x="117" y="302" type="line"/>
+			<point x="251" y="374"/>
+			<point x="386" y="446"/>
+			<point x="520" y="518" type="curve"/>
+			<point x="520" y="533"/>
+			<point x="520" y="547"/>
+			<point x="520" y="562" type="curve" smooth="yes"/>
+			<point x="520" y="566"/>
+			<point x="518" y="569"/>
+			<point x="514" y="569" type="curve" smooth="yes"/>
+			<point x="510" y="569"/>
+			<point x="507" y="568"/>
+			<point x="494" y="561" type="curve" smooth="yes"/>
+			<point x="453" y="539"/>
+			<point x="218" y="413"/>
 		</contour>
 	</outline>
 	<guideline x="0" y="0" angle="90" identifier="IpQX6eANPX"/>
@@ -85,6 +79,8 @@
 	<guideline x="0" y="700" angle="0" identifier="WLS3paTTSW"/>
 	<lib>
 		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>check</string>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
@@ -225,6 +221,8 @@
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.zvXVltiRJN</key>
 			<integer>0</integer>
+			<key>public.markColor</key>
+			<string>1,1,0,1</string>
 		</dict>
 	</lib>
 </glyph>

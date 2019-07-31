@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.0">
+  <axes>
+    <axis tag="PROP" name="Proportion" minimum="0" maximum="1" default="0">
+      <labelname xml:lang="en">Proportion</labelname>
+    </axis>
+    <axis tag="XPRN" name="Expression" minimum="0" maximum="1" default="0">
+      <labelname xml:lang="en">Expression</labelname>
+    </axis>
+  </axes>
+  <sources>
+    <source filename="../../mono/Recursive Mono-Linear C.ufo" familyname="Recursive Mono" stylename="Linear C">
+      <location>
+        <dimension name="Proportion" xvalue="0"/>
+        <dimension name="Expression" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="../../mono/Recursive Mono-Casual C.ufo" familyname="Recursive Mono" stylename="Casual C">
+      <location>
+        <dimension name="Proportion" xvalue="0"/>
+        <dimension name="Expression" xvalue="1"/>
+      </location>
+    </source>
+    <source filename="../Recursive Sans-Linear C.ufo" familyname="Recursive Sans Test" stylename="Gothic C">
+      <location>
+        <dimension name="Proportion" xvalue="1"/>
+        <dimension name="Expression" xvalue="0"/>
+      </location>
+    </source>
+    <source filename="../Recursive Sans-Casual C.ufo" familyname="Recursive Sans" stylename="Casual C">
+      <location>
+        <dimension name="Proportion" xvalue="1"/>
+        <dimension name="Expression" xvalue="1"/>
+      </location>
+    </source>
+  </sources>
+</designspace>

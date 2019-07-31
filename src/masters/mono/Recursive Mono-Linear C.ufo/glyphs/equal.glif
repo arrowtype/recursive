@@ -8,38 +8,32 @@
 			<point x="50" y="465"/>
 			<point x="50" y="409"/>
 			<point x="50" y="343" type="curve" smooth="yes"/>
-			<point x="50" y="340"/>
-			<point x="51" y="337"/>
-			<point x="53" y="335" type="curve" smooth="yes"/>
-			<point x="55" y="333"/>
-			<point x="58" y="332"/>
+			<point x="50" y="336"/>
+			<point x="53" y="332"/>
 			<point x="61" y="332" type="curve" smooth="yes"/>
 			<point x="550" y="332" type="line"/>
 			<point x="550" y="398"/>
 			<point x="550" y="454"/>
 			<point x="550" y="520" type="curve" smooth="yes"/>
-			<point x="550" y="526"/>
-			<point x="545" y="531"/>
+			<point x="550" y="527"/>
+			<point x="547" y="531"/>
 			<point x="539" y="531" type="curve" smooth="yes"/>
 		</contour>
 		<contour>
-			<point x="550" y="66" type="line"/>
-			<point x="550" y="132"/>
-			<point x="550" y="187"/>
-			<point x="550" y="254" type="curve" smooth="yes"/>
-			<point x="550" y="257"/>
-			<point x="549" y="260"/>
-			<point x="547" y="262" type="curve" smooth="yes"/>
-			<point x="545" y="264"/>
-			<point x="542" y="265"/>
-			<point x="539" y="265" type="curve" smooth="yes"/>
 			<point x="50" y="265" type="line"/>
 			<point x="50" y="198"/>
 			<point x="50" y="143"/>
 			<point x="50" y="76" type="curve" smooth="yes"/>
 			<point x="50" y="70"/>
-			<point x="55" y="66"/>
+			<point x="53" y="66"/>
 			<point x="61" y="66" type="curve" smooth="yes"/>
+			<point x="550" y="66" type="line"/>
+			<point x="550" y="132"/>
+			<point x="550" y="187"/>
+			<point x="550" y="254" type="curve" smooth="yes"/>
+			<point x="550" y="261"/>
+			<point x="547" y="265"/>
+			<point x="539" y="265" type="curve" smooth="yes"/>
 		</contour>
 	</outline>
 	<lib>
@@ -118,6 +112,8 @@
 			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.z9WQpMqEXm</key>
 			<integer>0</integer>
+			<key>public.markColor</key>
+			<string>1,1,0,1</string>
 		</dict>
 	</lib>
 </glyph>
