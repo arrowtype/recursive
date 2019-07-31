@@ -37,3 +37,11 @@
     - every style can smoothly transition to every other style
     - glyph metrics stay the exact same between all styles. 
     - Casual Heavy Italic = Strict Light = SemiCasual Medium SemiItalic
+
+
+---
+
+## My advice to students of type design
+
+- designers should code – especially type designers
+- There are a few tasks in type that allow you to do them while entertaining yourself with something secondary, like a TV show. This makes it easy to spend long hours drawing ... but that shouldn't be the goal of type design. Instead, as much as possible, resist watching secondary entertaining, and invest that extra attention to writing notes as you work, noticing when a boring task could instead be scripted, and just watching what you're working on

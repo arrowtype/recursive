@@ -1,6 +1,6 @@
 # Recursive Mono & Sans
 
-![](specimen.jpg)
+![](specimen.png)
 
 Recursive Mono & Sans is a variable type family built for better code & UI. It is inspired by casual script signpainting, but designed primarily to meet the needs of programming environments and application interfaces.
 
