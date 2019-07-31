@@ -4,16 +4,6 @@
 	<advance width="600"/>
 	<outline>
 		<contour>
-			<point x="312" y="108" type="curve"/>
-			<point x="292" y="108" type="line"/>
-			<point x="270" y="241"/>
-			<point x="255" y="311"/>
-			<point x="224" y="433" type="curve" smooth="yes"/>
-			<point x="221" y="444"/>
-			<point x="216" y="450"/>
-			<point x="207" y="450" type="curve"/>
-			<point x="162" y="450"/>
-			<point x="75" y="450"/>
 			<point x="30" y="450" type="curve"/>
 			<point x="30" y="404"/>
 			<point x="30" y="365"/>
@@ -30,7 +20,7 @@
 			<point x="188" y="15" type="curve" smooth="yes"/>
 			<point x="191" y="5"/>
 			<point x="199" y="0"/>
-			<point x="209" y="0" type="curve"/>
+			<point x="209" y="0" type="curve" smooth="yes"/>
 			<point x="275" y="0"/>
 			<point x="341" y="0"/>
 			<point x="407" y="0" type="curve"/>
@@ -40,13 +30,31 @@
 			<point x="598" y="691"/>
 			<point x="593" y="700"/>
 			<point x="582" y="700" type="curve" smooth="yes"/>
-			<point x="442" y="700" type="line"/>
+			<point x="535" y="700"/>
+			<point x="489" y="700"/>
+			<point x="442" y="700" type="curve"/>
 			<point x="411" y="567"/>
-			<point x="333" y="241"/>
+			<point x="332" y="235"/>
+			<point x="311" y="102" type="curve"/>
+			<point x="319" y="108" type="line"/>
+			<point x="301" y="108" type="line" smooth="yes"/>
+			<point x="294" y="108"/>
+			<point x="292" y="110"/>
+			<point x="289" y="124" type="curve" smooth="yes"/>
+			<point x="264" y="252"/>
+			<point x="255" y="311"/>
+			<point x="224" y="433" type="curve" smooth="yes"/>
+			<point x="221" y="444"/>
+			<point x="216" y="450"/>
+			<point x="207" y="450" type="curve" smooth="yes"/>
+			<point x="162" y="450"/>
+			<point x="75" y="450"/>
 		</contour>
 	</outline>
 	<lib>
 		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>check</string>
 			<key>com.rafalbuchner.mirroringDrawingLocal</key>
 			<dict>
 				<key>mirroringOptions</key>
@@ -57,6 +65,8 @@
 					<integer>0</integer>
 				</array>
 			</dict>
+			<key>public.markColor</key>
+			<string>1,1,0,1</string>
 		</dict>
 	</lib>
 </glyph>
