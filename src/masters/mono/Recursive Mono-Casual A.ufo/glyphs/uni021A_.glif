@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="Oslashacute" format="2">
-	<unicode hex="01FE"/>
+<glyph name="uni021A" format="2">
+	<unicode hex="021A"/>
 	<advance width="600"/>
-	<outline>
-		<component base="Oslash"/>
-		<component base="acutecomb.case" xOffset="247" yOffset="9"/>
-	</outline>
 	<lib>
 		<dict>
 			<key>com.rafalbuchner.mirroringDrawingLocal</key>
@@ -18,8 +14,6 @@
 					<integer>0</integer>
 				</array>
 			</dict>
-			<key>public.markColor</key>
-			<string>0.5809,0.5735,0.5862,1</string>
 		</dict>
 	</lib>
 </glyph>
