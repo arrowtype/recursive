@@ -97,11 +97,28 @@
 					<string>threeeighths</string>
 					<string>fiveeighths</string>
 					<string>seveneighths</string>
+					<string>parenleft</string>
+					<string>parenright</string>
+					<string>bracketleft</string>
+					<string>bracketright</string>
+					<string>braceleft</string>
+					<string>braceright</string>
+					<string>quotedblleft</string>
+					<string>quotedblright</string>
+					<string>guilsinglleft</string>
+					<string>guilsinglright</string>
+					<string>guillemotleft</string>
+					<string>guillemotright</string>
 					<string>numbersign</string>
-					<string>ampersand</string>
+					<string>percent</string>
+					<string>asterisk</string>
 					<string>slash</string>
 					<string>fraction</string>
 					<string>bar</string>
+					<string>question</string>
+					<string>questiondown</string>
+					<string>at</string>
+					<string>ampersand</string>
 					<string>arrowleft</string>
 					<string>arrowup</string>
 					<string>arrowright</string>
@@ -150,9 +167,7 @@
 					<string>twoinferior</string>
 					<string>zeroinferior</string>
 					<string>zerosuperior</string>
-					<string>sterling.flat</string>
 					<string>sterling.replaced_with_flat</string>
-					<string>two.rounder</string>
 					<string>one.flatflag</string>
 					<string>two.replaced_with_rounder</string>
 					<string>a.replaced_with_med_curvy</string>
@@ -202,52 +217,16 @@
 					<string>x.italic</string>
 					<string>y.italic</string>
 					<string>z.italic</string>
-					<string>a.roman</string>
-					<string>f.roman</string>
-					<string>g.roman</string>
-					<string>i.roman</string>
-					<string>l.roman</string>
-					<string>r.roman</string>
-					<string>y.roman</string>
 					<string>f.mono</string>
 					<string>g.mono</string>
 					<string>i.mono</string>
 					<string>l.mono</string>
 					<string>r.mono</string>
-					<string>c.sharp</string>
-					<string>f.sharp</string>
-					<string>j.sharp</string>
-					<string>r.sharp</string>
-					<string>s.sharp</string>
-					<string>C.morph</string>
-					<string>G.morph</string>
-					<string>S.morph</string>
-					<string>a.curvy</string>
-					<string>o.curvy</string>
-					<string>f.italish</string>
-					<string>s.italish</string>
-					<string>C.overlap2</string>
-					<string>S.overlap2</string>
-					<string>M.topserif</string>
-					<string>Z.topserif</string>
-					<string>g.190729-16h26m</string>
-					<string>l.190729-16h26m</string>
-					<string>f.simple_italic</string>
-					<string>r.simple_italic</string>
-					<string>f.kinked</string>
 					<string>L.noserif</string>
-					<string>C.overlap</string>
-					<string>y.dual_curve</string>
-					<string>a.italic_curl</string>
-					<string>w.more_italic</string>
-					<string>S.simpleserif</string>
 					<string>g.compact_desc</string>
-					<string>Z.upward-traps</string>
-					<string>n.high_contrast</string>
-					<string>k.italic_kinked</string>
-					<string>r.italic_square</string>
-					<string>r.replaced_with_curve</string>
-					<string>f.replaced_with_reverse</string>
+					<string>l.sans</string>
+					<string>zero.sans</string>
+					<string>one.sans</string>
 				</array>
 				<key>type</key>
 				<string>glyphList</string>
@@ -402,11 +381,28 @@
 			<string>threeeighths</string>
 			<string>fiveeighths</string>
 			<string>seveneighths</string>
+			<string>parenleft</string>
+			<string>parenright</string>
+			<string>bracketleft</string>
+			<string>bracketright</string>
+			<string>braceleft</string>
+			<string>braceright</string>
+			<string>quotedblleft</string>
+			<string>quotedblright</string>
+			<string>guilsinglleft</string>
+			<string>guilsinglright</string>
+			<string>guillemotleft</string>
+			<string>guillemotright</string>
 			<string>numbersign</string>
-			<string>ampersand</string>
+			<string>percent</string>
+			<string>asterisk</string>
 			<string>slash</string>
 			<string>fraction</string>
 			<string>bar</string>
+			<string>question</string>
+			<string>questiondown</string>
+			<string>at</string>
+			<string>ampersand</string>
 			<string>arrowleft</string>
 			<string>arrowup</string>
 			<string>arrowright</string>
@@ -455,9 +451,7 @@
 			<string>twoinferior</string>
 			<string>zeroinferior</string>
 			<string>zerosuperior</string>
-			<string>sterling.flat</string>
 			<string>sterling.replaced_with_flat</string>
-			<string>two.rounder</string>
 			<string>one.flatflag</string>
 			<string>two.replaced_with_rounder</string>
 			<string>a.replaced_with_med_curvy</string>
@@ -507,76 +501,16 @@
 			<string>x.italic</string>
 			<string>y.italic</string>
 			<string>z.italic</string>
-			<string>a.roman</string>
-			<string>f.roman</string>
-			<string>g.roman</string>
-			<string>i.roman</string>
-			<string>l.roman</string>
-			<string>r.roman</string>
-			<string>y.roman</string>
 			<string>f.mono</string>
 			<string>g.mono</string>
 			<string>i.mono</string>
 			<string>l.mono</string>
 			<string>r.mono</string>
-			<string>c.sharp</string>
-			<string>f.sharp</string>
-			<string>j.sharp</string>
-			<string>r.sharp</string>
-			<string>s.sharp</string>
-			<string>C.morph</string>
-			<string>G.morph</string>
-			<string>S.morph</string>
-			<string>a.curvy</string>
-			<string>o.curvy</string>
-			<string>f.italish</string>
-			<string>s.italish</string>
-			<string>C.overlap2</string>
-			<string>S.overlap2</string>
-			<string>M.topserif</string>
-			<string>Z.topserif</string>
-			<string>g.190729-16h26m</string>
-			<string>l.190729-16h26m</string>
-			<string>f.simple_italic</string>
-			<string>r.simple_italic</string>
-			<string>f.kinked</string>
 			<string>L.noserif</string>
-			<string>C.overlap</string>
-			<string>y.dual_curve</string>
-			<string>a.italic_curl</string>
-			<string>w.more_italic</string>
-			<string>S.simpleserif</string>
 			<string>g.compact_desc</string>
-			<string>Z.upward-traps</string>
-			<string>n.high_contrast</string>
-			<string>k.italic_kinked</string>
-			<string>r.italic_square</string>
-			<string>r.replaced_with_curve</string>
-			<string>f.replaced_with_reverse</string>
-			<string>flatg</string>
+			<string>l.sans</string>
 			<string>zero.sans</string>
 			<string>one.sans</string>
-			<string>parenleft</string>
-			<string>bracketleft</string>
-			<string>braceleft</string>
-			<string>guilsinglleft</string>
-			<string>asterisk</string>
-			<string>question</string>
-			<string>parenright</string>
-			<string>bracketright</string>
-			<string>braceright</string>
-			<string>guilsinglright</string>
-			<string>guillemotright</string>
-			<string>questiondown</string>
-			<string>at</string>
-			<string>percent</string>
-			<string>guillemotleft</string>
-			<string>quotedblleft</string>
-			<string>quotedblright</string>
-			<string>l.sans</string>
-			<string>i.sans</string>
-			<string>f.sans</string>
-			<string>r.sans</string>
 		</array>
 	</dict>
 </plist>
