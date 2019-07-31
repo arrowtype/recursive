@@ -37,7 +37,7 @@ else:
                 # get default glyph (with no suffix) and make duplicate of it with current timestamp
                 now = datetime.datetime.now()
                 dupedDefaultGlyphName = splitAltGlyphName[0] + \
-                    "." + now.strftime("%y%m%d-%Hh%Mm")
+                    "." + now.strftime("%y%m%d-%H_%M")
 
                 # hardto read
                 # dupedDefaultGlyphName = splitAltGlyphName[0] + "." + "replaced_with_" + splitAltGlyphName[1]
