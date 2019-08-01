@@ -40,7 +40,9 @@
 			<point x="273" y="496"/>
 			<point x="366" y="470" type="curve"/>
 			<point x="347" y="508" type="line"/>
-			<point x="347" y="442" type="line"/>
+			<point x="347" y="486"/>
+			<point x="347" y="464"/>
+			<point x="347" y="442" type="curve"/>
 			<point x="365" y="481" type="line"/>
 			<point x="262" y="447"/>
 			<point x="185" y="436"/>
@@ -60,8 +62,10 @@
 	</outline>
 	<lib>
 		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>check</string>
 			<key>public.markColor</key>
-			<string>1,0,0,1</string>
+			<string>1,1,0,1</string>
 		</dict>
 	</lib>
 </glyph>
