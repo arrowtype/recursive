@@ -155,9 +155,7 @@
 					<string>Schwa</string>
 					<string>Nhookleft</string>
 					<string>Germandbls</string>
-					<string>uni1E9E</string>
 					<string>ohm</string>
-					<string>uni2126</string>
 					<string>a</string>
 					<string>b</string>
 					<string>c</string>
@@ -313,9 +311,7 @@
 					<string>notequal</string>
 					<string>logicalnot</string>
 					<string>arrowleft</string>
-					<string>uni2190</string>
 					<string>arrowup</string>
-					<string>uni2191</string>
 					<string>arrowright</string>
 					<string>arrowdown</string>
 					<string>partialdiff</string>
@@ -433,6 +429,7 @@
 					<string>ncommaaccent</string>
 					<string>nineinferior</string>
 					<string>ninesuperior</string>
+					<string>notdef</string>
 					<string>ntilde</string>
 					<string>oacute</string>
 					<string>obreve</string>
@@ -534,15 +531,13 @@
 					<string>i.mono</string>
 					<string>l.mono</string>
 					<string>r.mono</string>
-					<string>g.190729-16h26m</string>
-					<string>l.190729-16h26m</string>
+					<string>M.tighttaper</string>
+					<string>N.tighttaper</string>
 					<string>mu.math</string>
-					<string>ohm.sketch</string>
 					<string>g.long_desc</string>
-					<string>z.altdiagonal</string>
-					<string>a.italic_curl</string>
-					<string>r.replaced_with_curve</string>
-					<string>a.replaced_with_flatbar</string>
+					<string>l.sans</string>
+					<string>zero.sans</string>
+					<string>one.sans</string>
 				</array>
 				<key>type</key>
 				<string>glyphList</string>
@@ -707,7 +702,9 @@
 			<string>Scaron</string>
 			<string>Scommaaccent</string>
 			<string>T</string>
+			<string>Tcedilla</string>
 			<string>Tcaron</string>
+			<string>Tcommaaccent</string>
 			<string>U</string>
 			<string>Ugrave</string>
 			<string>Uacute</string>
@@ -755,9 +752,7 @@
 			<string>Schwa</string>
 			<string>Nhookleft</string>
 			<string>Germandbls</string>
-			<string>uni1E9E</string>
 			<string>ohm</string>
-			<string>uni2126</string>
 			<string>a</string>
 			<string>b</string>
 			<string>c</string>
@@ -778,6 +773,8 @@
 			<string>r</string>
 			<string>s</string>
 			<string>t</string>
+			<string>tcedilla</string>
+			<string>tcommaaccent</string>
 			<string>u</string>
 			<string>v</string>
 			<string>w</string>
@@ -893,6 +890,7 @@
 			<string>ampersand</string>
 			<string>section</string>
 			<string>paragraph</string>
+			<string>litre</string>
 			<string>periodcentered</string>
 			<string>bullet</string>
 			<string>overline</string>
@@ -910,18 +908,18 @@
 			<string>notequal</string>
 			<string>logicalnot</string>
 			<string>arrowleft</string>
-			<string>uni2190</string>
 			<string>arrowup</string>
-			<string>uni2191</string>
 			<string>arrowright</string>
 			<string>arrowdown</string>
 			<string>partialdiff</string>
+			<string>increment</string>
 			<string>product</string>
 			<string>summation</string>
 			<string>divisionslash</string>
 			<string>radical</string>
 			<string>infinity</string>
 			<string>integral</string>
+			<string>equivalence</string>
 			<string>dollar</string>
 			<string>cent</string>
 			<string>sterling</string>
@@ -965,6 +963,7 @@
 			<string>degree</string>
 			<string>estimated</string>
 			<string>lozenge</string>
+			<string>hyphensoft</string>
 			<string>ijacute</string>
 			<string>IJacute</string>
 			<string>bitcoin</string>
@@ -1027,6 +1026,7 @@
 			<string>ncommaaccent</string>
 			<string>nineinferior</string>
 			<string>ninesuperior</string>
+			<string>notdef</string>
 			<string>ntilde</string>
 			<string>oacute</string>
 			<string>obreve</string>
@@ -1128,31 +1128,13 @@
 			<string>i.mono</string>
 			<string>l.mono</string>
 			<string>r.mono</string>
-			<string>g.190729-16h26m</string>
-			<string>l.190729-16h26m</string>
+			<string>M.tighttaper</string>
+			<string>N.tighttaper</string>
 			<string>mu.math</string>
-			<string>ohm.sketch</string>
 			<string>g.long_desc</string>
-			<string>z.altdiagonal</string>
-			<string>a.italic_curl</string>
-			<string>r.replaced_with_curve</string>
-			<string>a.replaced_with_flatbar</string>
-			<string>Tcedilla</string>
-			<string>Tcommaaccent</string>
-			<string>tcedilla</string>
-			<string>tcommaaccent</string>
-			<string>litre</string>
-			<string>increment</string>
-			<string>equivalence</string>
-			<string>hyphensoft</string>
+			<string>l.sans</string>
 			<string>zero.sans</string>
 			<string>one.sans</string>
-			<string>l.sans</string>
-			<string>i.sans</string>
-			<string>f.sans</string>
-			<string>r.sans</string>
-			<string>flatg</string>
-			<string>notdef</string>
 		</array>
 	</dict>
 </plist>

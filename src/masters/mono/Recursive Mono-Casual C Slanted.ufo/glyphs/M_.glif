@@ -20,8 +20,10 @@
 			<point x="273" y="196"/>
 			<point x="277" y="195"/>
 			<point x="282" y="195" type="curve"/>
-			<point x="291" y="195" type="line"/>
-			<point x="327.7375319956" y="215.8510316732"/>
+			<point x="285" y="195"/>
+			<point x="288" y="195"/>
+			<point x="291" y="195" type="curve"/>
+			<point x="328" y="216"/>
 			<point x="418.1601887868" y="351.3165635549"/>
 			<point x="502" y="517" type="curve"/>
 			<point x="474" y="483" type="line"/>
@@ -79,41 +81,18 @@
 			<point x="151" y="-6"/>
 		</contour>
 	</outline>
-	<guideline x="-68" y="0" angle="75.96" identifier="xNRII3QFQB"/>
-	<guideline x="-18" y="0" angle="75.96" identifier="38hn4SGCOV"/>
-	<guideline x="32" y="0" angle="75.96" identifier="Xf7AC3FWkg"/>
-	<guideline x="82" y="0" angle="75.96" identifier="xyDqUslOol"/>
-	<guideline x="132" y="0" angle="75.96" identifier="M3a3API1R8"/>
-	<guideline x="182" y="0" angle="75.96" identifier="fLUY7SZCLf"/>
-	<guideline x="232" y="0" angle="75.96" identifier="ulniRUrIzP"/>
-	<guideline x="282" y="0" angle="75.96" identifier="oXv8TfpeTf"/>
-	<guideline x="332" y="0" angle="75.96" identifier="VRtTilHb9e"/>
-	<guideline x="382" y="0" angle="75.96" identifier="bS7Piomkfh"/>
-	<guideline x="432" y="0" angle="75.96" identifier="IgKgzhQLJ1"/>
-	<guideline x="482" y="0" angle="75.96" identifier="KPgdZJV8Yq"/>
-	<guideline x="532" y="0" angle="75.96" identifier="zHXSVTb3Vv"/>
-	<guideline x="-68" y="-250" angle="0" identifier="krKTreg6EJ"/>
-	<guideline x="-68" y="-200" angle="0" identifier="0JjkD20LIh"/>
-	<guideline x="-68" y="-150" angle="0" identifier="WEUOTdguwv"/>
-	<guideline x="-68" y="-100" angle="0" identifier="X9MsE4nuTa"/>
-	<guideline x="-68" y="-50" angle="0" identifier="0hQW4EQeDQ"/>
-	<guideline x="-68" y="0" angle="0" identifier="QsC5mbATjm"/>
-	<guideline x="-68" y="50" angle="0" identifier="Fu5lFkC1Pd"/>
-	<guideline x="-68" y="100" angle="0" identifier="LbiLRdQahS"/>
-	<guideline x="-68" y="150" angle="0" identifier="pFjrhLUN6B"/>
-	<guideline x="-68" y="200" angle="0" identifier="KCJfy8xEf7"/>
-	<guideline x="-68" y="250" angle="0" identifier="fRBMswafhR"/>
-	<guideline x="-68" y="300" angle="0" identifier="8b5Xo2fAQ4"/>
-	<guideline x="-68" y="350" angle="0" identifier="d9l5UgWdUX"/>
-	<guideline x="-68" y="400" angle="0" identifier="1yh4ohTAaa"/>
-	<guideline x="-68" y="450" angle="0" identifier="9NnIz1faAQ"/>
-	<guideline x="-68" y="500" angle="0" identifier="8rX21dlRQ2"/>
-	<guideline x="-68" y="550" angle="0" identifier="Ea8s3q3sZs"/>
-	<guideline x="-68" y="600" angle="0" identifier="tKs0aXDbjV"/>
-	<guideline x="-68" y="650" angle="0" identifier="xc2Cmk4xyz"/>
-	<guideline x="-68" y="700" angle="0" identifier="PLCnqbtpgF"/>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>
@@ -122,22 +101,8 @@
 			<integer>1</integer>
 			<key>com.typemytype.robofont.Image.Sharpness</key>
 			<real>0.4</real>
-			<key>com.typemytype.robofont.guideline.magnetic.0JjkD20LIh</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.0hQW4EQeDQ</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.1AnCOraa10</key>
 			<integer>10</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.1yh4ohTAaa</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.38hn4SGCOV</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.8b5Xo2fAQ4</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.8rX21dlRQ2</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.9NnIz1faAQ</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.9t6YANsuEJ</key>
 			<integer>10</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.BidssAOVn6</key>
@@ -148,34 +113,16 @@
 			<integer>10</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.EYSS4qAqVQ</key>
 			<integer>10</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.Ea8s3q3sZs</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.Fu5lFkC1Pd</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.G4MafWI2wR</key>
 			<integer>10</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.HKOJWFzD3s</key>
 			<integer>10</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.IBScAnMbC7</key>
 			<integer>10</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.IgKgzhQLJ1</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.KCJfy8xEf7</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.KPgdZJV8Yq</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.LbiLRdQahS</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.M3a3API1R8</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.OqONQoqYiT</key>
 			<integer>10</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.PLCnqbtpgF</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.QJTEGFHFYm</key>
 			<integer>10</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.QsC5mbATjm</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.RJdIAtel8l</key>
 			<integer>10</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.RZAYXvKXNw</key>
@@ -186,16 +133,8 @@
 			<integer>10</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.VJd7GFle1V</key>
 			<integer>10</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.VRtTilHb9e</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.WEUOTdguwv</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.X9MsE4nuTa</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.Xb9FGUmiF0</key>
 			<integer>10</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.Xf7AC3FWkg</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.YDL1C10aSw</key>
 			<integer>10</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.ZiPKFFlGfF</key>
@@ -204,34 +143,18 @@
 			<integer>10</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.bCjiCxUj6e</key>
 			<integer>10</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.bS7Piomkfh</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.cAYv1KWajT</key>
 			<integer>10</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.d9l5UgWdUX</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.fLUY7SZCLf</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.fRBMswafhR</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.fqYFMUDyxz</key>
 			<integer>10</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.hVZBXLKbpr</key>
 			<integer>10</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.j8m399p8oe</key>
 			<integer>10</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.krKTreg6EJ</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.mVmofAcB9b</key>
 			<integer>10</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.ns5Pvj7nnJ</key>
 			<integer>10</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.oXv8TfpeTf</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.pFjrhLUN6B</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.tKs0aXDbjV</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.tMr4xxvS3N</key>
 			<integer>10</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.tZBGs95OW5</key>
@@ -240,20 +163,10 @@
 			<integer>10</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.uACYskKUgV</key>
 			<integer>10</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.ulniRUrIzP</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.xNRII3QFQB</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.xOXhJelYj2</key>
 			<integer>10</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.xc2Cmk4xyz</key>
-			<integer>0</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.xyDqUslOol</key>
-			<integer>0</integer>
 			<key>com.typemytype.robofont.guideline.magnetic.yvFQ90UqSP</key>
 			<integer>10</integer>
-			<key>com.typemytype.robofont.guideline.magnetic.zHXSVTb3Vv</key>
-			<integer>0</integer>
 		</dict>
 	</lib>
 </glyph>
