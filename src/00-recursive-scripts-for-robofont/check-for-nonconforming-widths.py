@@ -52,6 +52,9 @@ for i in badWidthGlyphs.keys():
         print()
 
 
+# table headers for master names: LA LAi LB LBi LC LCi CA CAi CB CBi CC CCi
+# take first initials of style name
+
 if duplexing.lower() == "y":
     nameLength = 15  # max(map(len, glyphWidthDict))
     print(nameLength)
