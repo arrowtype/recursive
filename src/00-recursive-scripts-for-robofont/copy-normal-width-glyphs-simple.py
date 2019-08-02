@@ -35,6 +35,11 @@ typicallyNarrowGlyphs = [
     "r.italic",
     "i.italic",
     "l.italic",
+    # "one.sans",
+    # "i.mono",
+    # "l.sans",
+    # "f.mono",
+    # "l.mono"
 ]
 
 narrowPunctuation = [
@@ -125,9 +130,8 @@ newItalicGlyphs = [
 # f, r
 # should these have versions like "ss01" that are copied, instead of normal versions?
 
-glyphsToNotMove = typicallyNarrowGlyphs + narrowPunctuation + sansSpecificForm +
-somewhatNarrowGlyphs + somewhatWideGlyphs + \
-    typicallyWideGlyphs + newItalicGlyphs
+glyphsToNotMove = typicallyNarrowGlyphs + narrowPunctuation + sansSpecificForm + \
+    somewhatNarrowGlyphs + somewhatWideGlyphs + typicallyWideGlyphs + newItalicGlyphs
 
 
 def protectNonNormalGlyphs(masterToSendTo):
@@ -171,7 +175,7 @@ def glyphIsNormalWidth(glyphName):
 def getMasterToCopyFrom():
     # let user select masterToCopyFrom
     masterToCopyFromPath = getFile(
-        "Please pick a master to copy normal-width characters from")
+        "COPY FROM")
     # print(masterToCopyFromPath)
 
     masterToCopyFrom = OpenFont(masterToCopyFromPath)[0]
@@ -182,7 +186,7 @@ def getMasterToCopyFrom():
 def getMasterToSendTo():
     # let user select masterToSendTo
     masterToSendToPath = getFile(
-        "Please pick a master to overwrite copied normal-width characters into")
+        "MOVE INTO")
     # print(masterToSendToPath)
     masterToSendTo = OpenFont(masterToSendToPath)[0]
 
