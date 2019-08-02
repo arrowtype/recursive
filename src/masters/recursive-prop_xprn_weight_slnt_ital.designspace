@@ -25,6 +25,25 @@
         </axis>
     </axes>
     <rules>
+        <rules>
+            <rule name="mono">
+                <conditionset>
+                    <condition name="Proportion" minimum="0" maximum="0.510000" />
+                </conditionset>
+                <sub name="f" with="f.mono" />
+                <sub name="g" with="g.mono" />
+                <sub name="i" with="i.mono" />
+                <sub name="l" with="l.mono" />
+                <sub name="r" with="r.mono" />
+                <sub name="fl" with="fl.mono" />
+            </rule>
+            <rule name="sans">
+                <conditionset>
+                    <condition name="Proportion" minimum="0.510000" maximum="1" />
+                </conditionset>
+                <sub name="l" with="l.sans" />
+            </rule>
+        </rules>
         <rule name="autoitalic">
             <conditionset>
                 <condition name="Slant" minimum="-15" maximum="-7.500000" />

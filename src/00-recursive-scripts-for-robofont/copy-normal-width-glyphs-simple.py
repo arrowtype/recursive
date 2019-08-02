@@ -11,7 +11,7 @@ import random
 ##############################################
 
 sansSpecificForm = [
-    "g",
+    # "g",
     "g.ss01",
     "fi",
     "fl",
