@@ -17,9 +17,9 @@
 			<point x="57" y="414"/>
 			<point x="59" y="405"/>
 			<point x="63" y="399" type="curve"/>
-			<point x="67" y="399" type="line"/>
-			<point x="99" y="435"/>
-			<point x="130" y="453"/>
+			<point x="69" y="399" type="line"/>
+			<point x="97" y="435"/>
+			<point x="130.7884615385" y="453"/>
 			<point x="171" y="453" type="curve" smooth="yes"/>
 			<point x="262" y="453"/>
 			<point x="339" y="353"/>
@@ -33,9 +33,9 @@
 			<point x="543" y="442"/>
 			<point x="541" y="451"/>
 			<point x="537" y="457" type="curve"/>
-			<point x="533" y="457" type="line"/>
-			<point x="501" y="421"/>
-			<point x="470" y="403"/>
+			<point x="531" y="457" type="line"/>
+			<point x="503" y="421"/>
+			<point x="469.2115384615" y="403"/>
 		</contour>
 		<contour>
 			<point x="429" y="153" type="curve"/>
@@ -51,9 +51,9 @@
 			<point x="57" y="164"/>
 			<point x="59" y="155"/>
 			<point x="63" y="149" type="curve"/>
-			<point x="67" y="149" type="line"/>
-			<point x="99" y="185"/>
-			<point x="130" y="203"/>
+			<point x="69" y="149" type="line"/>
+			<point x="97" y="185"/>
+			<point x="130.7884615385" y="203"/>
 			<point x="171" y="203" type="curve" smooth="yes"/>
 			<point x="262" y="203"/>
 			<point x="339" y="103"/>
@@ -67,9 +67,9 @@
 			<point x="543" y="192"/>
 			<point x="541" y="201"/>
 			<point x="537" y="207" type="curve"/>
-			<point x="533" y="207" type="line"/>
-			<point x="501" y="171"/>
-			<point x="470" y="153"/>
+			<point x="531" y="207" type="line"/>
+			<point x="503" y="171"/>
+			<point x="469.2115384615" y="153"/>
 		</contour>
 	</outline>
 	<lib>
@@ -82,6 +82,8 @@
 			<integer>1</integer>
 			<key>com.typemytype.robofont.Image.Sharpness</key>
 			<real>0.4</real>
+			<key>public.markColor</key>
+			<string>1,1,0,1</string>
 		</dict>
 	</lib>
 </glyph>
