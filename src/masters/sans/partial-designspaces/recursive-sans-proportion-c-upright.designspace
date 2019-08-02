@@ -9,18 +9,6 @@
     </axis>
   </axes>
   <sources>
-    <source filename="../../mono/Recursive Mono-Linear C.ufo" familyname="Recursive Mono" stylename="Linear C">
-      <location>
-        <dimension name="Proportion" xvalue="0"/>
-        <dimension name="Expression" xvalue="0"/>
-      </location>
-    </source>
-    <source filename="../../mono/Recursive Mono-Casual C.ufo" familyname="Recursive Mono" stylename="Casual C">
-      <location>
-        <dimension name="Proportion" xvalue="0"/>
-        <dimension name="Expression" xvalue="1"/>
-      </location>
-    </source>
     <source filename="../Recursive Sans-Linear C.ufo" familyname="Recursive Sans Test" stylename="Gothic C">
       <location>
         <dimension name="Proportion" xvalue="1"/>
@@ -31,6 +19,22 @@
       <location>
         <dimension name="Proportion" xvalue="1"/>
         <dimension name="Expression" xvalue="1"/>
+      </location>
+    </source>
+    <source filename="../../mono/Recursive Mono-Casual C.ufo" familyname="Recursive Mono" stylename="Casual C">
+      <location>
+        <dimension name="Proportion" xvalue="0"/>
+        <dimension name="Expression" xvalue="1"/>
+      </location>
+    </source>
+    <source filename="../../mono/Recursive Mono-Linear C.ufo" familyname="Recursive Mono" stylename="Linear C">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Proportion" xvalue="0"/>
+        <dimension name="Expression" xvalue="0"/>
       </location>
     </source>
   </sources>
