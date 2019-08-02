@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="w" format="2">
-	<unicode hex="0077"/>
-	<advance width="600"/>
+<glyph name="fl" format="2">
+	<unicode hex="FB02"/>
+	<advance width="750"/>
+	<outline>
+		<component base="f"/>
+		<component base="l.sans" xOffset="400"/>
+	</outline>
 	<lib>
 		<dict>
 			<key>com.rafalbuchner.mirroringDrawingLocal</key>
