@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.0">
+  <axes>
+    <axis tag="PROP" name="Proportion" minimum="0" maximum="1" default="0">
+      <labelname xml:lang="en">Proportion</labelname>
+    </axis>
+  </axes>
+  <rules>
+    <rule name="mono">
+      <conditionset>
+        <condition name="Proportion" minimum="0" maximum="0.510000"/>
+      </conditionset>
+      <sub name="f" with="f.mono"/>
+      <sub name="g" with="g.mono"/>
+      <sub name="i" with="i.mono"/>
+      <sub name="l" with="l.mono"/>
+      <sub name="r" with="r.mono"/>
+      <sub name="fl" with="fl.mono"/>
+    </rule>
+    <rule name="sans">
+      <conditionset>
+        <condition name="Proportion" minimum="0.510000" maximum="1"/>
+      </conditionset>
+      <sub name="l" with="l.sans"/>
+    </rule>
+  </rules>
+  <sources>
+    <source filename="Recursive Sans-Casual B.ufo" familyname="Recursive Sans" stylename="Casual B">
+      <location>
+        <dimension name="Proportion" xvalue="1"/>
+      </location>
+    </source>
+    <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B">
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
+      <location>
+        <dimension name="Proportion" xvalue="0"/>
+      </location>
+    </source>
+  </sources>
+  <lib>
+    <dict>
+      <key>com.letterror.skateboard.interactionSources</key>
+      <dict>
+        <key>horizontal</key>
+        <array>
+          <string>Proportion</string>
+        </array>
+        <key>ignore</key>
+        <array/>
+        <key>vertical</key>
+        <array/>
+      </dict>
+      <key>com.letterror.skateboard.previewLocation</key>
+      <dict>
+        <key>Proportion</key>
+        <real>0.9929057126322751</real>
+      </dict>
+      <key>com.letterror.skateboard.previewText</key>
+      <string>lmfao wwgd irl</string>
+    </dict>
+  </lib>
+</designspace>
