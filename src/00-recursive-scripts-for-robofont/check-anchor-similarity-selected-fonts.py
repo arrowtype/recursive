@@ -1,6 +1,7 @@
 from vanilla.dialogs import *
 import os
 from mojo.UI import AskString
+from mojo.UI import OutputWindow
 import pprint
 
 files = getFile("Select files to update", allowsMultipleSelection=True, fileTypes=["ufo"])
@@ -8,14 +9,18 @@ files = getFile("Select files to update", allowsMultipleSelection=True, fileType
 fonts = []
 anchors = {}
 
+OutputWindow().show()
+
 for file in files:
     font = OpenFont(file, showInterface=False)
 
     fontName = font.info.familyName + " " + font.info.styleName
 
     fonts.append(fontName)
+    print(fontName)
 
     for glyph in font:
+        print(glyph.name)
         for anchor in glyph.anchors:
 
             # if the anchor doesn't yet have an entry, make one
@@ -39,5 +44,5 @@ for anchor in anchors:
     for glyph in anchors[anchor]:
         if len(anchors[anchor][glyph]) < len(fonts):
             print(f"{anchor}")
-            print(f"\t /{glyph} only has {anchor} in {anchors[anchor][glyph]}")
+            print(f"\t Glyph /{glyph} only has {anchor} in {anchors[anchor][glyph]}")
             print("")

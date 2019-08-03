@@ -3,12 +3,22 @@
 	<advance width="600"/>
 	<outline>
 		<component base="L"/>
-		<component base="commaaboverightcomb" xOffset="425" yOffset="-61"/>
+		<component base="commaaboverightcomb" xOffset="460" yOffset="-6"/>
 	</outline>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>public.markColor</key>
-			<string>1,0.8012,0.2928,1</string>
+			<string>0.8206,0.8138,0.8271,1</string>
 		</dict>
 	</lib>
 </glyph>

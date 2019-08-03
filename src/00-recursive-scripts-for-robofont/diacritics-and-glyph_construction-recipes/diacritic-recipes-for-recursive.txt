@@ -4,12 +4,15 @@
 ############################
 
 # acute
+
 aacute=a+acutecomb@top
 aeacute=ae+acutecomb@top
 cacute=c+acutecomb@top
 eacute=e+acutecomb@top
 iacute=dotlessi+acutecomb@top
 lacute=l+acutecomb.case@top
+lacute.sans=l.sans+acutecomb.case@top
+lacute.mono=l.mono+acutecomb.case@top
 nacute=n+acutecomb@top
 oacute=o+acutecomb@top
 oslashacute=oslash+acutecomb@top
@@ -43,7 +46,7 @@ Zacute=Z+acutecomb.case@top
 
 abreve=a+brevecomb@top
 ebreve=e+brevecomb@top
-gbreve=flatg+brevecomb@top
+gbreve=g+brevecomb@top
 ibreve=dotlessi+brevecomb@top
 obreve=o+brevecomb@top
 ubreve=u+brevecomb@top
@@ -60,9 +63,11 @@ Ubreve=U+brevecomb.case@top
 
 # commaaccent
 
-gcommaaccent=flatg+commaturnedabovecomb@top # turned comma accent above
+gcommaaccent=g+commaturnedabovecomb@top # turned comma accent above
 kcommaaccent=k+commaaccentcomb@bottom
 lcommaaccent=l+commaaccentcomb@bottom
+lcommaaccent.sans=l.sans+commaaccentcomb@bottom
+lcommaaccent.mono=l.mono+commaaccentcomb@bottom
 ncommaaccent=n+commaaccentcomb@bottom
 rcommaaccent=r+commaaccentcomb@bottom
 scommaaccent=s+commaaccentcomb@bottom
@@ -108,7 +113,7 @@ Ygrave=Y+gravecomb.case@top
 ccaron=c+caroncomb@top
 
 ecaron=e+caroncomb@top
-gcaron=flatg+caroncomb@top
+gcaron=g+caroncomb@top
 ncaron=n+caroncomb@top
 rcaron=r+caroncomb@top
 scaron=s+caroncomb@top
@@ -140,7 +145,7 @@ napostrophe=n+commaaboverightcomb@caronslovak
 acircumflex=a+circumflexcomb@top
 ccircumflex=c+circumflexcomb@top
 ecircumflex=e+circumflexcomb@top
-gcircumflex=flatg+circumflexcomb@top
+gcircumflex=g+circumflexcomb@top
 hcircumflex=h+circumflexcomb@top
 icircumflex=dotlessi+circumflexcomb@top
 jcircumflex=dotlessj+circumflexcomb@top
@@ -200,7 +205,7 @@ Ydieresis=Y+dieresiscomb.case@top
 
 cdotaccent=c+dotaccentcomb@top
 edotaccent=e+dotaccentcomb@top
-gdotaccent=flatg+dotaccentcomb@top
+gdotaccent=g+dotaccentcomb@top
 zdotaccent=z+dotaccentcomb@top
 
 Cdotaccent=C+dotaccentcomb.case@top
@@ -348,7 +353,7 @@ Ytilde=Y+tildecomb.case@top
 # ae
 # c
 # e
-# flatg # flat-top
+# g # flat-top
 # idotless
 # l
 # n
