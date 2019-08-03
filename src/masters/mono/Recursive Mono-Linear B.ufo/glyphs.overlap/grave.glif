@@ -23,7 +23,30 @@
 			<point x="365" y="402"/>
 			<point x="390" y="402"/>
 		</contour>
+		<contour>
+			<point x="428" y="402" type="curve"/>
+			<point x="400" y="514"/>
+			<point x="379" y="599"/>
+			<point x="351" y="711" type="curve"/>
+			<point x="268" y="711"/>
+			<point x="226" y="711"/>
+			<point x="155" y="711" type="curve" smooth="yes"/>
+			<point x="147" y="711"/>
+			<point x="142" y="704"/>
+			<point x="146" y="696" type="curve" smooth="yes"/>
+			<point x="188" y="611"/>
+			<point x="235" y="517"/>
+			<point x="286" y="412" type="curve" smooth="yes"/>
+			<point x="289" y="406"/>
+			<point x="294" y="402"/>
+			<point x="305" y="402" type="curve" smooth="yes"/>
+			<point x="365" y="402"/>
+			<point x="390" y="402"/>
+		</contour>
+		<component base="gravecomb" xOffset="309"/>
 	</outline>
+	<guideline x="144" y="706" angle="296.1468412356"/>
+	<guideline x="351" y="711" angle="283.9044282568"/>
 	<guideline x="144" y="706" angle="296.1468412356"/>
 	<guideline x="351" y="711" angle="283.9044282568"/>
 </glyph>
