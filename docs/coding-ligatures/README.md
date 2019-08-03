@@ -55,6 +55,15 @@ Including these because they should be relatively simple, and will be seen very 
 
 ### _priority 1_
 
+#### formatted strings
+
+| ligature | name                  | note     |
+| -------- | --------------------- | -------- |
+| f"       | f_quote.code          | python   |
+| ${       | dollar_braceleft.code | JS, bash |
+
+
+
 #### more comments
 
 | ligature | name                                     | note    |
