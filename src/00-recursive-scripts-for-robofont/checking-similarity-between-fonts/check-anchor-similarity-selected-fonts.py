@@ -1,5 +1,4 @@
 from vanilla.dialogs import *
-import os
 from mojo.UI import AskString
 from mojo.UI import OutputWindow
 import pprint
@@ -42,6 +41,11 @@ for file in files:
 
     font.close()
 
+print("Checking fonts:")
+for fontName in fonts:
+    print("• ", fontName)
+print("")
+
 ## uncomment below to see full dictionary printed
 # pp = pprint.PrettyPrinter(indent=2, width=200)
 # pp.pprint(anchors)
@@ -53,8 +57,6 @@ for anchor in anchors:
         if len(anchors[anchor][glyphName]) < len(fonts):
             if glyphName not in problemGlyphs and glyphName not in glyphsToIgnore.split(" "):
                 problemGlyphs.append(glyphName)
-
-
 
 for glyphName in sorted(problemGlyphs):
     print("--------------------------------------------------------------")
@@ -76,32 +78,12 @@ for glyphName in sorted(problemGlyphs):
                         print(f"\t\t\t • {fontName}")
                 print("")
 
+if len(problemGlyphs) is 0:
+    print("🤖🤖🤖\n")
+    print("Looks like all glyphs have the same anchors – nice work! \n")
+    print("🎉🎉🎉\n")
+
 print("--------------------------------------------------------------")
 print("NOTE: ignored the following glyphs (edit script to adjust this)")
 for name in glyphsToIgnore.split(" "):
     print("• ", name)
-
-# # if a font is *missing* from an anchor glyph entry, report it as missing that anchor for that glyph
-# for anchor in anchors:
-#     print("--------------------------------------------------------------")
-#     print("--------------------------------------------------------------")
-#     print(f"{anchor}")
-#     for glyph in anchors[anchor]:
-#         if len(anchors[anchor][glyph]) < len(fonts):
-#             # print(f"\t Glyph /{glyph} only has {anchor} in {anchors[anchor][glyph]}")
-#             print(f"\t Glyph /{glyph} has anchor '{anchor}' in:")
-#             for fontName in fonts:
-#                 if fontName in anchors[anchor][glyph]:
-#                     print(f"\t • {fontName}")
-
-#             print("")
-#             print(f"\t ...but not in:")
-#             for fontName in fonts:
-#                 if fontName not in anchors[anchor][glyph]:
-#                     print(f"\t • {fontName}")
-#             print("")
-
-
-#             print("")
-
-#     print("--------------------------------------------------------------\n")
