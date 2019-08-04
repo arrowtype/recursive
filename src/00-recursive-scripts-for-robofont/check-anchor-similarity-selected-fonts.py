@@ -17,10 +17,8 @@ for file in files:
     fontName = font.info.familyName + " " + font.info.styleName
 
     fonts.append(fontName)
-    print(fontName)
 
     for glyph in font:
-        print(glyph.name)
         for anchor in glyph.anchors:
 
             # if the anchor doesn't yet have an entry, make one
@@ -41,8 +39,27 @@ for file in files:
 
 # if a font is *missing* from an anchor glyph entry, report it as missing that anchor for that glyph
 for anchor in anchors:
+    print("--------------------------------------------------------------")
+    print("--------------------------------------------------------------")
+    print(f"{anchor}")
     for glyph in anchors[anchor]:
         if len(anchors[anchor][glyph]) < len(fonts):
-            print(f"{anchor}")
-            print(f"\t Glyph /{glyph} only has {anchor} in {anchors[anchor][glyph]}")
+            # print(f"\t Glyph /{glyph} only has {anchor} in {anchors[anchor][glyph]}")
+            print(f"\t Glyph /{glyph} has anchor '{anchor}' in:")
+            for fontName in fonts:
+                if fontName in anchors[anchor][glyph]:
+                    print(f"\t • {fontName}")
+
             print("")
+            print(f"\t ...but not in:")
+            for fontName in fonts:
+                if fontName not in anchors[anchor][glyph]:
+                    print(f"\t • {fontName}")
+            print("")
+
+            # for problem in set(fonts).difference(anchors[anchor][glyph]):
+            #     print(f"\t • {problem}")
+
+            print("")
+
+    print("--------------------------------------------------------------\n")
