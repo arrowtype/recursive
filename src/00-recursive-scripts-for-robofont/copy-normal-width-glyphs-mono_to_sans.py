@@ -6,41 +6,35 @@ from mojo.UI import AskYesNoCancel
 from mojo.UI import AskString
 import random
 
-##############################################
-######## list of glyphs to *not* copy ########
-##############################################
+protectPunctuation = False
 
-sansSpecificForm = [
-    # "g",
-    "g.ss01",
-    "fi",
-    "fl",
-    "cent"  # not a component
-]
+protectNonNormalGlyphs = False
 
-# list narrow glyphs (.5 width)
-typicallyNarrowGlyphs = [
-    "space",
-    "i",
-    "igrave",
-    "iacute",
-    "icircumflex",
-    "idieresis",
-    "j",
-    "l",
-    "z",
-    "i.ss01",
-    "l.ss01",
+monoFormsToCopyAndMark = [
     "f.italic",
     "r.italic",
     "i.italic",
     "l.italic",
-    # "one.sans",
-    # "i.mono",
-    # "l.sans",
-    # "f.mono",
-    # "l.mono"
+    "i.mono",
+    "l.sans",
+    "f.mono",
+    "l.mono"
 ]
+
+##############################################
+######## list of glyphs to *not* copy ########
+##############################################
+
+glyphsToNotMove = [] # start empty list
+
+monoSansSwitchingForms = [
+    "g.ss01",
+    "fi",
+    "fl",
+    "one.sans",
+   
+]
+
 
 narrowPunctuation = [
     "asterisk",  # different size for sans
@@ -68,8 +62,17 @@ narrowPunctuation = [
     "dollar.lower"
 ]
 
-# .75 width
-somewhatNarrowGlyphs = [
+# list narrow glyphs 
+narrowGlyphs = [
+    "space",
+    "i",
+    "igrave",
+    "iacute",
+    "icircumflex",
+    "idieresis",
+    "j",
+    "l",
+    "z",
     "r",
     "f",
     "t",
@@ -82,12 +85,14 @@ somewhatNarrowGlyphs = [
     "F",
     "c",
     "zero",
-    "z"
+    "z",
+    "i.ss01",
+    "l.ss01",
 ]
 
 
 # more than 600 units wide
-somewhatWideGlyphs = [
+wideGlyphs = [
     "m",
     "O",
     "A",
@@ -100,11 +105,7 @@ somewhatWideGlyphs = [
     "N",
     "U",
     "X",
-    "Y"
-]
-
-# extra wide glyphs (not sure if these need to be separate?)
-typicallyWideGlyphs = [
+    "Y",
     "w",
     "M",
     "W",
@@ -126,20 +127,26 @@ newItalicGlyphs = [
     "z.italic",
 ]
 
-# ? list glyphs that shouldn't be copied due to visual adjustments, e.g. serif "f" to sans-serif "f"
-# f, r
-# should these have versions like "ss01" that are copied, instead of normal versions?
+glyphsToNotMove = glyphsToNotMove + monoSansSwitchingForms + narrowGlyphs + wideGlyphs + newItalicGlyphs
 
-glyphsToNotMove = typicallyNarrowGlyphs + narrowPunctuation + sansSpecificForm + \
-    somewhatNarrowGlyphs + somewhatWideGlyphs + typicallyWideGlyphs + newItalicGlyphs
-
+if protectPunctuation is True:
+    glyphsToNotMove = glyphsToNotMove + narrowPunctuation
 
 def protectNonNormalGlyphs(masterToSendTo):
+    global glyphsToNotMove
+    nonNormalGlyphs = []
+
     for g in masterToSendTo:
         # if glyph width is not 600 (e.g. lcaron) or 0 (e.g. combinatory diacritics)
-        if g.width != 600 and g.width != 0:
-            glyphsToNotMove.append(g.name)
-            print(g.name)
+        if g.name not in glyphsToNotMove and g.width != 600 and g.width != 0:
+            nonNormalGlyphs.append(g.name)
+            print(f"{g.name} is {g.width}")
+                
+    if protectNonNormalGlyphs is True:
+         glyphsToNotMove = glyphsToNotMove + nonNormalGlyphs
+         print("Protecting non-600 unit glyphs.")
+    else:
+        print("NOT protecting non-600 unit glyphs.")
 
 
 def setMarkColor():
@@ -160,23 +167,14 @@ def setMarkColor():
 
     return markColor
 
-
-def glyphIsNormalWidth(glyphName):
-    # make a variable
-    glyphIsNormalWidth = False
-
-    # if glyph name is not in the lists of not-normal width glyphs, set glyphIsNormalWidth to True
-    if glyphName not in glyphsToNotMove:
-        glyphIsNormalWidth = True
-
-    return glyphIsNormalWidth
-
-
 def getMasterToCopyFrom():
     # let user select masterToCopyFrom
     masterToCopyFromPath = getFile(
         "COPY FROM")
-    # print(masterToCopyFromPath)
+
+    if "sans" in masterToCopyFromPath[0].lower():
+        print("error: you are trying to copy from a sans font")
+        exit()
 
     masterToCopyFrom = OpenFont(masterToCopyFromPath)[0]
 
@@ -187,7 +185,11 @@ def getMasterToSendTo():
     # let user select masterToSendTo
     masterToSendToPath = getFile(
         "MOVE INTO")
-    # print(masterToSendToPath)
+
+    if "mono" in masterToSendToPath[0].lower():
+        print("error: you are trying to copy into a mono font")
+        exit()
+    
     masterToSendTo = OpenFont(masterToSendToPath)[0]
 
     masterToSendToName = masterToSendTo.info.familyName + \
@@ -200,10 +202,10 @@ def makeListOfGlyphsToOverwrite(masterToCopyFrom, masterToSendTo):
     glyphsToOverwrite = []
     for g in masterToCopyFrom:
         # if g.name not in typicallyNarrowGlyphs and g.name not in typicallyWideGlyphs:
-        if glyphIsNormalWidth(g.name) and len(g.contours) > 0:
+        if g.name not in glyphsToNotMove and len(g.contours) > 0:
             glyphsToOverwrite.append(g.name)
 
-    print(glyphsToOverwrite)
+    print("Glyphs to overwrite:\n", sorted(glyphsToOverwrite))
     return glyphsToOverwrite
 
 
@@ -211,7 +213,6 @@ def checkIfOkay(glyphsToOverwrite, masterToSendToName):
     proceedWithCopy = AskYesNoCancel("This will overwrite glyphs " + str(
         glyphsToOverwrite) + " in " + masterToSendToName+"." + " Proceed?")
 
-    print(proceedWithCopy)
     return proceedWithCopy
 
 
@@ -223,7 +224,8 @@ def clearThenCopyGlyphs(masterToCopyFrom, masterToSendTo, userConfirmation):
     if userConfirmation == 1:
         for g in masterToSendTo:
             # if g.name not in typicallyNarrowGlyphs and g.name not in typicallyWideGlyphs and g.name not in somewhatNarrowGlyphs and g.name not in somewhatWideGlyphs:
-            if glyphIsNormalWidth(g.name):
+            # if glyphIsNormalWidth(g.name):
+            if g.name not in glyphsToNotMove:
                 g.clear()
 
                 # # # check that glyph has no suffix (so as not to clear alternate glyphs) (but is this necessary?)
@@ -236,7 +238,8 @@ def clearThenCopyGlyphs(masterToCopyFrom, masterToSendTo, userConfirmation):
             if g.name not in masterToSendTo:
                 masterToSendTo.newGlyph(g.name)
 
-            if glyphIsNormalWidth(g.name):
+            # if glyphIsNormalWidth(g.name):
+            if g.name not in glyphsToNotMove:
                 # get the layered glyph
                 layerGlyph = masterToSendTo[g.name].getLayer("foreground")
 
@@ -249,6 +252,14 @@ def clearThenCopyGlyphs(masterToCopyFrom, masterToSendTo, userConfirmation):
 
                 # mark overwritten glyphs
                 layerGlyph.markColor = color
+
+                # Marking glyphs to fix while copying from mono to sans
+
+                if layerGlyph.name in narrowPunctuation and protectPunctuation is False:
+                    layerGlyph.markColor = (1,0,0,1)
+                
+                if layerGlyph.name in monoFormsToCopyAndMark and protectNonNormalGlyphs is False:
+                    layerGlyph.markColor = (1,0,0,1)
 
                 # also copy anchors
 
