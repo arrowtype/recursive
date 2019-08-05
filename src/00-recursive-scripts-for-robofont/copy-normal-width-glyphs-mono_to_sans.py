@@ -118,7 +118,10 @@ wideGlyphs = [
     "at",
     "AE",
     "OE",
-    # "Oslash"
+    "ae",
+    "oe"
+    "Oslash",
+    "oslash"
 ]
 
 newItalicGlyphs = [
