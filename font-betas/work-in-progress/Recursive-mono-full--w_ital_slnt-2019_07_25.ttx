@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="3.41">
+
+  <fvar>
+
+    <!-- Weight -->
+    <Axis>
+      <AxisTag>wght</AxisTag>
+      <Flags>0x0</Flags>
+      <MinValue>300.0</MinValue>
+      <DefaultValue>800.0</DefaultValue>
+      <MaxValue>900.0</MaxValue>
+      <AxisNameID>256</AxisNameID>
+    </Axis>
+
+    <!-- Slant -->
+    <Axis>
+      <AxisTag>slnt</AxisTag>
+      <Flags>0x0</Flags>
+      <MinValue>-15.0</MinValue>
+      <DefaultValue>0.0</DefaultValue>
+      <MaxValue>0.0</MaxValue>
+      <AxisNameID>257</AxisNameID>
+    </Axis>
+
+    <!-- Italic -->
+    <Axis>
+      <AxisTag>ital</AxisTag>
+      <Flags>0x0</Flags>
+      <MinValue>0.0</MinValue>
+      <DefaultValue>0.5</DefaultValue>
+      <MaxValue>1.0</MaxValue>
+      <AxisNameID>258</AxisNameID>
+    </Axis>
+
+    <!-- Expression -->
+    <Axis>
+      <AxisTag>XPRN</AxisTag>
+      <Flags>0x0</Flags>
+      <MinValue>0.0</MinValue>
+      <DefaultValue>0.0</DefaultValue>
+      <MaxValue>1.0</MaxValue>
+      <AxisNameID>259</AxisNameID>
+    </Axis>
+
+    <!-- Light -->
+    <NamedInstance flags="0x0" subfamilyNameID="260">
+      <coord axis="wght" value="350.0"/>
+      <coord axis="slnt" value="0.0"/>
+      <coord axis="ital" value="0.5"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- Light ExtraItalic -->
+    <NamedInstance flags="0x0" subfamilyNameID="261">
+      <coord axis="wght" value="350.0"/>
+      <coord axis="slnt" value="-15.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- Light Italic -->
+    <NamedInstance flags="0x0" subfamilyNameID="262">
+      <coord axis="wght" value="350.0"/>
+      <coord axis="slnt" value="-9.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- Casual Light -->
+    <NamedInstance flags="0x0" subfamilyNameID="263">
+      <coord axis="wght" value="350.0"/>
+      <coord axis="slnt" value="0.0"/>
+      <coord axis="ital" value="0.5"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- Casual Light Italic -->
+    <NamedInstance flags="0x0" subfamilyNameID="264">
+      <coord axis="wght" value="350.0"/>
+      <coord axis="slnt" value="-9.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- Casual Light ExtraItalic -->
+    <NamedInstance flags="0x0" subfamilyNameID="265">
+      <coord axis="wght" value="350.0"/>
+      <coord axis="slnt" value="-15.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- Regular -->
+    <NamedInstance flags="0x0" subfamilyNameID="266">
+      <coord axis="wght" value="433.33333"/>
+      <coord axis="slnt" value="0.0"/>
+      <coord axis="ital" value="0.5"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- ExtraItalic -->
+    <NamedInstance flags="0x0" subfamilyNameID="267">
+      <coord axis="wght" value="433.33333"/>
+      <coord axis="slnt" value="-15.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- Italic -->
+    <NamedInstance flags="0x0" subfamilyNameID="268">
+      <coord axis="wght" value="433.33333"/>
+      <coord axis="slnt" value="-9.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- Casual Regular -->
+    <NamedInstance flags="0x0" subfamilyNameID="269">
+      <coord axis="wght" value="433.33333"/>
+      <coord axis="slnt" value="0.0"/>
+      <coord axis="ital" value="0.5"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- Casual Italic -->
+    <NamedInstance flags="0x0" subfamilyNameID="270">
+      <coord axis="wght" value="433.33333"/>
+      <coord axis="slnt" value="-9.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- Casual ExtraItalic -->
+    <NamedInstance flags="0x0" subfamilyNameID="271">
+      <coord axis="wght" value="433.33333"/>
+      <coord axis="slnt" value="-15.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- Medium -->
+    <NamedInstance flags="0x0" subfamilyNameID="272">
+      <coord axis="wght" value="500.0"/>
+      <coord axis="slnt" value="0.0"/>
+      <coord axis="ital" value="0.5"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- Medium ExtraItalic -->
+    <NamedInstance flags="0x0" subfamilyNameID="273">
+      <coord axis="wght" value="500.0"/>
+      <coord axis="slnt" value="-15.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- Medium Italic -->
+    <NamedInstance flags="0x0" subfamilyNameID="274">
+      <coord axis="wght" value="500.0"/>
+      <coord axis="slnt" value="-9.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- Casual Medium -->
+    <NamedInstance flags="0x0" subfamilyNameID="275">
+      <coord axis="wght" value="500.0"/>
+      <coord axis="slnt" value="0.0"/>
+      <coord axis="ital" value="0.5"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- Casual Medium Italic -->
+    <NamedInstance flags="0x0" subfamilyNameID="276">
+      <coord axis="wght" value="500.0"/>
+      <coord axis="slnt" value="-9.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- Casual Medium ExtraItalic -->
+    <NamedInstance flags="0x0" subfamilyNameID="277">
+      <coord axis="wght" value="500.0"/>
+      <coord axis="slnt" value="-15.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- SemiBold -->
+    <NamedInstance flags="0x0" subfamilyNameID="278">
+      <coord axis="wght" value="600.0"/>
+      <coord axis="slnt" value="0.0"/>
+      <coord axis="ital" value="0.5"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- SemiBold ExtraItalic -->
+    <NamedInstance flags="0x0" subfamilyNameID="279">
+      <coord axis="wght" value="600.0"/>
+      <coord axis="slnt" value="-15.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- SemiBold Italic -->
+    <NamedInstance flags="0x0" subfamilyNameID="280">
+      <coord axis="wght" value="600.0"/>
+      <coord axis="slnt" value="-9.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- Casual SemiBold -->
+    <NamedInstance flags="0x0" subfamilyNameID="281">
+      <coord axis="wght" value="600.0"/>
+      <coord axis="slnt" value="0.0"/>
+      <coord axis="ital" value="0.5"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- Casual SemiBold Italic -->
+    <NamedInstance flags="0x0" subfamilyNameID="282">
+      <coord axis="wght" value="600.0"/>
+      <coord axis="slnt" value="-9.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- Casual SemiBold ExtraItalic -->
+    <NamedInstance flags="0x0" subfamilyNameID="283">
+      <coord axis="wght" value="600.0"/>
+      <coord axis="slnt" value="-15.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- Bold -->
+    <NamedInstance flags="0x0" subfamilyNameID="284">
+      <coord axis="wght" value="700.0"/>
+      <coord axis="slnt" value="0.0"/>
+      <coord axis="ital" value="0.5"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- Bold ExtraItalic -->
+    <NamedInstance flags="0x0" subfamilyNameID="285">
+      <coord axis="wght" value="700.0"/>
+      <coord axis="slnt" value="-15.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- Bold Italic -->
+    <NamedInstance flags="0x0" subfamilyNameID="286">
+      <coord axis="wght" value="700.0"/>
+      <coord axis="slnt" value="-9.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- Casual Bold -->
+    <NamedInstance flags="0x0" subfamilyNameID="287">
+      <coord axis="wght" value="700.0"/>
+      <coord axis="slnt" value="0.0"/>
+      <coord axis="ital" value="0.5"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- Casual Bold Italic -->
+    <NamedInstance flags="0x0" subfamilyNameID="288">
+      <coord axis="wght" value="700.0"/>
+      <coord axis="slnt" value="-9.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- Casual Bold ExtraItalic -->
+    <NamedInstance flags="0x0" subfamilyNameID="289">
+      <coord axis="wght" value="700.0"/>
+      <coord axis="slnt" value="-15.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- ExtraBold -->
+    <NamedInstance flags="0x0" subfamilyNameID="290">
+      <coord axis="wght" value="800.0"/>
+      <coord axis="slnt" value="0.0"/>
+      <coord axis="ital" value="0.5"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- ExtraBold ExtraItalic -->
+    <NamedInstance flags="0x0" subfamilyNameID="291">
+      <coord axis="wght" value="800.0"/>
+      <coord axis="slnt" value="-15.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- ExtraBold Italic -->
+    <NamedInstance flags="0x0" subfamilyNameID="292">
+      <coord axis="wght" value="800.0"/>
+      <coord axis="slnt" value="-9.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- Casual ExtraBold -->
+    <NamedInstance flags="0x0" subfamilyNameID="293">
+      <coord axis="wght" value="800.0"/>
+      <coord axis="slnt" value="0.0"/>
+      <coord axis="ital" value="0.5"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- Casual ExtraBold Italic -->
+    <NamedInstance flags="0x0" subfamilyNameID="294">
+      <coord axis="wght" value="800.0"/>
+      <coord axis="slnt" value="-9.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- Casual ExtraBold ExtraItalic -->
+    <NamedInstance flags="0x0" subfamilyNameID="295">
+      <coord axis="wght" value="800.0"/>
+      <coord axis="slnt" value="-15.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- Black -->
+    <NamedInstance flags="0x0" subfamilyNameID="296">
+      <coord axis="wght" value="850.0"/>
+      <coord axis="slnt" value="0.0"/>
+      <coord axis="ital" value="0.5"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- Black ExtraItalic -->
+    <NamedInstance flags="0x0" subfamilyNameID="297">
+      <coord axis="wght" value="850.0"/>
+      <coord axis="slnt" value="-15.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- Black Italic -->
+    <NamedInstance flags="0x0" subfamilyNameID="298">
+      <coord axis="wght" value="850.0"/>
+      <coord axis="slnt" value="-9.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- Casual Black -->
+    <NamedInstance flags="0x0" subfamilyNameID="299">
+      <coord axis="wght" value="850.0"/>
+      <coord axis="slnt" value="0.0"/>
+      <coord axis="ital" value="0.5"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- Casual Black Italic -->
+    <NamedInstance flags="0x0" subfamilyNameID="300">
+      <coord axis="wght" value="850.0"/>
+      <coord axis="slnt" value="-9.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- Casual Black ExtraItalic -->
+    <NamedInstance flags="0x0" subfamilyNameID="301">
+      <coord axis="wght" value="850.0"/>
+      <coord axis="slnt" value="-15.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- Heavy -->
+    <NamedInstance flags="0x0" subfamilyNameID="302">
+      <coord axis="wght" value="900.0"/>
+      <coord axis="slnt" value="0.0"/>
+      <coord axis="ital" value="0.5"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- Heavy ExtraItalic -->
+    <NamedInstance flags="0x0" subfamilyNameID="303">
+      <coord axis="wght" value="900.0"/>
+      <coord axis="slnt" value="-15.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- Heavy Italic -->
+    <NamedInstance flags="0x0" subfamilyNameID="304">
+      <coord axis="wght" value="900.0"/>
+      <coord axis="slnt" value="-9.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="0.0"/>
+    </NamedInstance>
+
+    <!-- Casual Heavy -->
+    <NamedInstance flags="0x0" subfamilyNameID="305">
+      <coord axis="wght" value="900.0"/>
+      <coord axis="slnt" value="0.0"/>
+      <coord axis="ital" value="0.5"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- Casual Heavy Italic -->
+    <NamedInstance flags="0x0" subfamilyNameID="306">
+      <coord axis="wght" value="900.0"/>
+      <coord axis="slnt" value="-9.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+
+    <!-- Casual Heavy ExtraItalic -->
+    <NamedInstance flags="0x0" subfamilyNameID="307">
+      <coord axis="wght" value="900.0"/>
+      <coord axis="slnt" value="-15.0"/>
+      <coord axis="ital" value="1.0"/>
+      <coord axis="XPRN" value="1.0"/>
+    </NamedInstance>
+  </fvar>
+
+</ttFont>

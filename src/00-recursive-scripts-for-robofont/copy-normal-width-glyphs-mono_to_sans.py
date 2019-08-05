@@ -88,6 +88,8 @@ narrowGlyphs = [
     "z",
     "i.ss01",
     "l.ss01",
+    "ldot", 
+    "lslash"
 ]
 
 
@@ -113,7 +115,10 @@ wideGlyphs = [
     "fi",
     "fl",
     "ffl",
-    "at"
+    "at",
+    "AE",
+    "OE",
+    # "Oslash"
 ]
 
 newItalicGlyphs = [
