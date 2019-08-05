@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="hungarumlautcomb.case" format="2">
-	<advance width="500"/>
+	<outline>
+		<component base="acutecomb.case" xOffset="-70"/>
+		<component base="acutecomb.case" xOffset="140"/>
+	</outline>
+	<anchor name="_top" x="112" y="711"/>
 </glyph>

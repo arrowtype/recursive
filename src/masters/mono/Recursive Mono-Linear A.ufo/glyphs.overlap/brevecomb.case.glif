@@ -38,6 +38,43 @@
 			<point x="149" y="935"/>
 			<point x="138" y="935"/>
 		</contour>
+		<contour>
+			<point x="-127" y="935" type="curve"/>
+			<point x="-138" y="935"/>
+			<point x="-149" y="935"/>
+			<point x="-160" y="935" type="curve"/>
+			<point x="-173" y="935"/>
+			<point x="-176" y="927"/>
+			<point x="-171" y="912" type="curve" smooth="yes"/>
+			<point x="-148" y="845"/>
+			<point x="-86" y="805"/>
+			<point x="-7" y="805" type="curve" smooth="yes"/>
+			<point x="0" y="805" type="line"/>
+			<point x="4" y="805"/>
+			<point x="8" y="812"/>
+			<point x="0" y="856" type="curve"/>
+			<point x="-63" y="856"/>
+			<point x="-95" y="874"/>
+		</contour>
+		<contour>
+			<point x="127" y="935" type="curve"/>
+			<point x="95" y="874"/>
+			<point x="63" y="856"/>
+			<point x="0" y="856" type="curve"/>
+			<point x="-8" y="812"/>
+			<point x="-4" y="805"/>
+			<point x="0" y="805" type="curve"/>
+			<point x="7" y="805" type="line" smooth="yes"/>
+			<point x="86" y="805"/>
+			<point x="148" y="845"/>
+			<point x="171" y="912" type="curve" smooth="yes"/>
+			<point x="176" y="927"/>
+			<point x="173" y="935"/>
+			<point x="160" y="935" type="curve"/>
+			<point x="149" y="935"/>
+			<point x="138" y="935"/>
+		</contour>
 	</outline>
+	<anchor name="_top" x="0" y="711"/>
 	<anchor name="_top" x="0" y="711"/>
 </glyph>
