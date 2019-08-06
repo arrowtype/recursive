@@ -1,9 +1,21 @@
+```
+    Script to add a dictionary of unicodes into selected fonts. 
+```
+
+##### use the below code to print the unicodes of selected glyphs in a trusted font, e.g. IBM Plex
+### import pprint
+### font = CurrentFont()
+### glyphs = font.selectedGlyphNames
+### glyphUnicodes = {}
+### for name in glyphs:
+###     glyphUnicodes[name] = font[name].unicodes
+### pp = pprint.PrettyPrinter(width=80, compact=False)
+### pp.pprint(glyphUnicodes)
+
+
 from vanilla.dialogs import *
 
 
-unicodesToAdd = {
-    
-}
 
 unicodesToAdd = {
     'eightinferior': (8328,),
