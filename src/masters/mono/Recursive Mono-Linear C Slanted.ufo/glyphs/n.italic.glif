@@ -3,15 +3,6 @@
 	<advance width="600"/>
 	<outline>
 		<contour>
-			<point x="180" y="0" type="curve"/>
-			<point x="225" y="179"/>
-			<point x="271" y="360"/>
-			<point x="315" y="539" type="curve" smooth="yes"/>
-			<point x="317" y="546"/>
-			<point x="314" y="550"/>
-			<point x="307" y="550" type="curve" smooth="yes"/>
-			<point x="258" y="550"/>
-			<point x="152" y="550"/>
 			<point x="93" y="550" type="curve"/>
 			<point x="86" y="522"/>
 			<point x="78" y="488"/>
@@ -24,15 +15,23 @@
 			<point x="-34" y="0" type="curve" smooth="yes"/>
 			<point x="19" y="0"/>
 			<point x="126" y="0"/>
+			<point x="180" y="0" type="curve"/>
+			<point x="225" y="179"/>
+			<point x="271" y="360"/>
+			<point x="315" y="539" type="curve" smooth="yes"/>
+			<point x="317" y="546"/>
+			<point x="314" y="550"/>
+			<point x="307" y="550" type="curve" smooth="yes"/>
+			<point x="258" y="550"/>
+			<point x="152" y="550"/>
 		</contour>
 		<contour>
-			<point x="492" y="560" type="curve"/>
-			<point x="411" y="560"/>
-			<point x="352" y="521"/>
-			<point x="287" y="426" type="curve" smooth="yes"/>
-			<point x="272" y="403"/>
-			<point x="255" y="375"/>
-			<point x="240" y="334" type="curve"/>
+			<point x="492" y="560" type="curve" smooth="yes"/>
+			<point x="423" y="560"/>
+			<point x="370" y="532"/>
+			<point x="316" y="465" type="curve"/>
+			<point x="262" y="465" type="line"/>
+			<point x="240" y="334" type="line"/>
 			<point x="282" y="362"/>
 			<point x="305" y="370"/>
 			<point x="328" y="370" type="curve" smooth="yes"/>
@@ -70,13 +69,10 @@
 			<point x="611" y="500"/>
 			<point x="578" y="560"/>
 		</contour>
-		<contour>
-			<point x="277" y="465" type="line"/>
-			<point x="203" y="334" type="line"/>
-			<point x="226" y="331" type="line"/>
-			<point x="333" y="465" type="line"/>
-		</contour>
 	</outline>
+	<anchor name="top" x="357" y="551"/>
+	<anchor name="bottom" x="225" y="-1"/>
+	<anchor name="caronslovak" x="172" y="711"/>
 	<lib>
 		<dict>
 			<key>com.rafalbuchner.mirroringDrawingLocal</key>

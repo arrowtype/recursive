@@ -10,9 +10,10 @@
 			<point x="80" y="707"/>
 			<point x="84" y="703"/>
 			<point x="91" y="703" type="curve" smooth="yes"/>
-			<point x="154" y="703"/>
-			<point x="217" y="703"/>
-			<point x="280" y="703" type="curve"/>
+			<point x="150" y="703"/>
+			<point x="208" y="703"/>
+			<point x="267" y="703" type="curve"/>
+			<point x="280" y="703" type="line"/>
 			<point x="280" y="586"/>
 			<point x="280" y="244"/>
 			<point x="280" y="127" type="curve" smooth="yes"/>
@@ -24,7 +25,7 @@
 			<point x="509" y="0" type="curve" smooth="yes"/>
 			<point x="516" y="0"/>
 			<point x="520" y="4"/>
-			<point x="520" y="11" type="curve"/>
+			<point x="520" y="11" type="curve" smooth="yes"/>
 			<point x="520" y="23"/>
 			<point x="520" y="35"/>
 			<point x="520" y="47" type="curve"/>
@@ -43,17 +44,15 @@
 			<point x="330" y="739" type="curve" smooth="yes"/>
 			<point x="330" y="746"/>
 			<point x="326" y="750"/>
-			<point x="319" y="750" type="curve"/>
+			<point x="319" y="750" type="curve" smooth="yes"/>
 			<point x="239" y="750"/>
 			<point x="160" y="750"/>
 		</contour>
-		<contour>
-			<point x="293" y="694" type="line"/>
-			<point x="308" y="718" type="line"/>
-			<point x="293" y="721" type="line"/>
-			<point x="268" y="717" type="line"/>
-		</contour>
 	</outline>
+	<anchor name="top" x="255" y="730"/>
+	<anchor name="bottom" x="408" y="-1"/>
+	<anchor name="dot" x="475" y="400"/>
+	<anchor name="caronslovak" x="470" y="671"/>
 	<lib>
 		<dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>

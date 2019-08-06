@@ -3,15 +3,6 @@
 	<advance width="600"/>
 	<outline>
 		<contour>
-			<point x="137" y="-2" type="curve"/>
-			<point x="127" y="119"/>
-			<point x="191" y="259"/>
-			<point x="223" y="374" type="curve" smooth="yes"/>
-			<point x="265" y="527"/>
-			<point x="204" y="560"/>
-			<point x="146" y="560" type="curve"/>
-			<point x="122" y="560"/>
-			<point x="100" y="555"/>
 			<point x="76" y="550" type="curve"/>
 			<point x="78" y="512"/>
 			<point x="73" y="467"/>
@@ -24,21 +15,23 @@
 			<point x="98" y="-7" type="curve" smooth="yes"/>
 			<point x="109" y="-7"/>
 			<point x="123" y="-6"/>
+			<point x="137" y="-2" type="curve"/>
+			<point x="127" y="119"/>
+			<point x="191" y="259"/>
+			<point x="223" y="374" type="curve" smooth="yes"/>
+			<point x="265" y="527"/>
+			<point x="204" y="560"/>
+			<point x="146" y="560" type="curve" smooth="yes"/>
+			<point x="122" y="560"/>
+			<point x="100" y="555"/>
 		</contour>
 		<contour>
-			<point x="308" y="0" type="curve"/>
-			<point x="297" y="110"/>
-			<point x="353" y="290"/>
-			<point x="391" y="420" type="curve" smooth="yes"/>
-			<point x="412" y="499"/>
-			<point x="388" y="560"/>
-			<point x="358" y="560" type="curve"/>
-			<point x="340" y="560"/>
-			<point x="320" y="553"/>
-			<point x="277" y="489" type="curve" smooth="yes"/>
-			<point x="237" y="433"/>
-			<point x="200" y="349"/>
-			<point x="199" y="310" type="curve"/>
+			<point x="358" y="560" type="curve" smooth="yes"/>
+			<point x="334.8165366131" y="560"/>
+			<point x="290.1983984881" y="522.9242152955"/>
+			<point x="241" y="429" type="curve"/>
+			<point x="209" y="429" type="line"/>
+			<point x="199" y="310" type="line"/>
 			<point x="217" y="339"/>
 			<point x="244" y="350"/>
 			<point x="265" y="350" type="curve" smooth="yes"/>
@@ -50,11 +43,31 @@
 			<point x="199" y="100" type="curve" smooth="yes"/>
 			<point x="186" y="36"/>
 			<point x="202" y="-5"/>
-			<point x="265" y="-5" type="curve"/>
+			<point x="265" y="-5" type="curve" smooth="yes"/>
 			<point x="276" y="-5"/>
 			<point x="297" y="-3"/>
+			<point x="308" y="0" type="curve"/>
+			<point x="297" y="110"/>
+			<point x="353" y="290"/>
+			<point x="391" y="420" type="curve" smooth="yes"/>
+			<point x="412" y="499"/>
+			<point x="388" y="560"/>
 		</contour>
 		<contour>
+			<point x="544" y="560" type="curve" smooth="yes"/>
+			<point x="497.5567704137" y="560"/>
+			<point x="463.1858108713" y="526.7334835776"/>
+			<point x="401" y="430" type="curve"/>
+			<point x="362" y="430" type="line"/>
+			<point x="356" y="312" type="line"/>
+			<point x="370" y="338"/>
+			<point x="390" y="350"/>
+			<point x="423" y="350" type="curve" smooth="yes"/>
+			<point x="431" y="350"/>
+			<point x="437" y="348"/>
+			<point x="443" y="345" type="curve"/>
+			<point x="404" y="262"/>
+			<point x="382" y="208"/>
 			<point x="367" y="147" type="curve" smooth="yes"/>
 			<point x="348" y="59"/>
 			<point x="387" y="-10"/>
@@ -83,33 +96,6 @@
 			<point x="593" y="376" type="curve" smooth="yes"/>
 			<point x="615" y="468"/>
 			<point x="591" y="560"/>
-			<point x="544" y="560" type="curve"/>
-			<point x="511" y="560"/>
-			<point x="481" y="540"/>
-			<point x="450" y="500" type="curve" smooth="yes"/>
-			<point x="419" y="460"/>
-			<point x="352" y="363"/>
-			<point x="356" y="312" type="curve"/>
-			<point x="370" y="338"/>
-			<point x="390" y="350"/>
-			<point x="423" y="350" type="curve" smooth="yes"/>
-			<point x="431" y="350"/>
-			<point x="437" y="348"/>
-			<point x="443" y="345" type="curve"/>
-			<point x="404" y="262"/>
-			<point x="382" y="208"/>
-		</contour>
-		<contour>
-			<point x="223" y="434" type="line"/>
-			<point x="176" y="308" type="line"/>
-			<point x="197" y="298" type="line"/>
-			<point x="249" y="427" type="line"/>
-		</contour>
-		<contour>
-			<point x="381" y="434" type="line"/>
-			<point x="328" y="303" type="line"/>
-			<point x="350" y="293" type="line"/>
-			<point x="407" y="427" type="line"/>
 		</contour>
 	</outline>
 	<guideline x="607" y="203" angle="90" identifier="cVQ1a5irNs"/>
