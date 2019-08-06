@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<designspace format="4.0">
+    <axes>
+        <axis tag="PROP" name="Proportion" minimum="0" maximum="1" default="0">
+            <labelname xml:lang="en">Proportion</labelname>
+        </axis>
+        <axis tag="slnt" name="Slant" minimum="0" maximum="14" default="0">
+            <labelname xml:lang="en">Slant</labelname>
+        </axis>
+        <axis tag="ital" name="Italic" minimum="0" maximum="1" default="0.500000">
+            <labelname xml:lang="en">Italic</labelname>
+        </axis>
+    </axes>
+    <rules>
+
+        <rule name="mono">
+            <conditionset>
+                <condition name="Proportion" minimum="0" maximum="0.510000" />
+            </conditionset>
+            <sub name="f" with="f.mono" />
+            <sub name="g" with="g.mono" />
+            <sub name="i" with="i.mono" />
+            <sub name="l" with="l.mono" />
+            <sub name="r" with="r.mono" />
+        </rule>
+        <rule name="sans">
+            <conditionset>
+                <condition name="Proportion" minimum="0.510000" maximum="1" />
+            </conditionset>
+            <sub name="l" with="l.sans" />
+        </rule>
+
+        <!-- <rule name="autoitalic">
+            <conditionset>
+                <condition name="Slant" minimum="-15" maximum="-7.5" />
+                <condition name="Italic" minimum="0.1" maximum="1" />
+            </conditionset>
+            <sub name="a" with="a.italic" />
+            <sub name="f" with="f.italic" />
+            <sub name="f.mono" with="f.italic" />
+            <sub name="g" with="g.italic" />
+            <sub name="g.mono" with="g.italic" />
+            <sub name="i" with="i.italic" />
+            <sub name="i.mono" with="i.italic" />
+            <sub name="r" with="r.italic" />
+            <sub name="r.mono" with="r.italic" />
+            <sub name="y" with="y.italic" />
+            <sub name="d" with="d.italic" />
+            <sub name="e" with="e.italic" />
+            <sub name="h" with="h.italic" />
+            <sub name="j" with="j.italic" />
+            <sub name="m" with="m.italic" />
+            <sub name="n" with="n.italic" />
+            <sub name="u" with="u.italic" />
+            <sub name="c" with="c.italic" />
+            <sub name="k" with="k.italic" />
+            <sub name="s" with="s.italic" />
+            <sub name="v" with="v.italic" />
+            <sub name="w" with="w.italic" />
+            <sub name="x" with="x.italic" />
+            <sub name="z" with="z.italic" />
+        </rule>
+        <rule name="italic">
+            <conditionset>
+                <condition name="Italic" minimum="0.9" maximum="1" />
+            </conditionset>
+            <sub name="a" with="a.italic" />
+            <sub name="f" with="f.italic" />
+            <sub name="f.mono" with="f.italic" />
+            <sub name="g" with="g.italic" />
+            <sub name="g.mono" with="g.italic" />
+            <sub name="i" with="i.italic" />
+            <sub name="i.mono" with="i.italic" />
+            <sub name="r" with="r.italic" />
+            <sub name="r.mono" with="r.italic" />
+            <sub name="y" with="y.italic" />
+            <sub name="d" with="d.italic" />
+            <sub name="e" with="e.italic" />
+            <sub name="h" with="h.italic" />
+            <sub name="j" with="j.italic" />
+            <sub name="m" with="m.italic" />
+            <sub name="n" with="n.italic" />
+            <sub name="u" with="u.italic" />
+            <sub name="c" with="c.italic" />
+            <sub name="k" with="k.italic" />
+            <sub name="s" with="s.italic" />
+            <sub name="v" with="v.italic" />
+            <sub name="w" with="w.italic" />
+            <sub name="x" with="x.italic" />
+            <sub name="z" with="z.italic" />
+        </rule> -->
+    </rules>
+    <sources>
+        <source filename="../Recursive Sans-Casual B Slanted.ufo" familyname="Recursive Sans" stylename="Casual B Slanted">
+            <location>
+                <dimension name="Proportion" xvalue="1" />
+                <dimension name="Slant" xvalue="14" />
+                <dimension name="Italic" xvalue="0.500000" />
+            </location>
+        </source>
+        <source filename="../Recursive Sans-Casual B.ufo" familyname="Recursive Sans" stylename="Casual B">
+            <location>
+                <dimension name="Proportion" xvalue="1" />
+                <dimension name="Slant" xvalue="0" />
+                <dimension name="Italic" xvalue="0.500000" />
+            </location>
+        </source>
+        <source filename="../../mono/Recursive Mono-Casual B Slanted.ufo" familyname="Recursive Mono" stylename="Casual B Slanted">
+            <location>
+                <dimension name="Proportion" xvalue="0" />
+                <dimension name="Slant" xvalue="14" />
+                <dimension name="Italic" xvalue="0.500000" />
+            </location>
+        </source>
+        <source filename="../../mono/Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B">
+            <location>
+                <dimension name="Proportion" xvalue="0" />
+                <dimension name="Slant" xvalue="0" />
+                <dimension name="Italic" xvalue="0.500000" />
+            </location>
+        </source>
+    </sources>
+    <lib>
+        <dict>
+            <key>com.letterror.skateboard.interactionSources</key>
+            <dict>
+                <key>horizontal</key>
+                <array>
+                    <string>Slant</string>
+                </array>
+                <key>ignore</key>
+                <array>
+                    <string>Proportion</string>
+                    <string>Italic</string>
+                </array>
+                <key>vertical</key>
+                <array />
+            </dict>
+            <key>com.letterror.skateboard.previewLocation</key>
+            <dict>
+                <key>Italic</key>
+                <real>0.5</real>
+                <key>Proportion</key>
+                <real>0.0</real>
+                <key>Slant</key>
+                <real>0.0</real>
+            </dict>
+            <key>com.letterror.skateboard.previewText</key>
+            <string>ilfrg/i.mono/l.mono/f.mono/r.mono/g.mono</string>
+        </dict>
+    </lib>
+</designspace>
