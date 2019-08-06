@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="wgrave" format="2">
 	<unicode hex="1E81"/>
-	<advance width="800"/>
+	<advance width="600"/>
 	<outline>
 		<component base="w"/>
-		<component base="gravecomb" xOffset="398" yOffset="12"/>
+		<component base="gravecomb" xOffset="299" yOffset="12"/>
 	</outline>
 	<lib>
 		<dict>
 			<key>public.markColor</key>
-			<string>0.75,0.75,0.75,1</string>
+			<string>0,0,0,0.25</string>
 		</dict>
 	</lib>
 </glyph>

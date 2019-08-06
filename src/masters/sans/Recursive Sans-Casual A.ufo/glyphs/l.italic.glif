@@ -1,73 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="l.italic" format="2">
-	<advance width="300"/>
+	<advance width="600"/>
 	<outline>
 		<contour>
-			<point x="17" y="750" type="curve"/>
-			<point x="15" y="745"/>
-			<point x="14" y="739"/>
-			<point x="14" y="732" type="curve" smooth="yes"/>
-			<point x="14" y="713"/>
-			<point x="22" y="700"/>
-			<point x="37" y="700" type="curve" smooth="yes"/>
-			<point x="45.6166666667" y="700"/>
-			<point x="76.95" y="710"/>
-			<point x="131" y="710" type="curve"/>
-			<point x="131" y="746"/>
-			<point x="126" y="760"/>
-			<point x="108" y="760" type="curve" smooth="yes"/>
-			<point x="82.3333333333" y="760"/>
-			<point x="51.5779605822" y="756.286901924"/>
+			<point x="53" y="730" type="curve"/>
+			<point x="51" y="725"/>
+			<point x="50" y="719"/>
+			<point x="50" y="712" type="curve" smooth="yes"/>
+			<point x="50" y="693"/>
+			<point x="58" y="680"/>
+			<point x="73" y="680" type="curve" smooth="yes"/>
+			<point x="98" y="680"/>
+			<point x="158" y="704"/>
+			<point x="263" y="719" type="curve"/>
+			<point x="263" y="526.5436619718"/>
+			<point x="263" y="332.4563380282"/>
+			<point x="263" y="140" type="curve" smooth="yes"/>
+			<point x="263" y="33"/>
+			<point x="318.7142857143" y="-20"/>
+			<point x="413" y="-20" type="curve" smooth="yes"/>
+			<point x="456" y="-20"/>
+			<point x="495" y="-9"/>
+			<point x="515" y="11" type="curve" smooth="yes"/>
+			<point x="526" y="22"/>
+			<point x="531" y="37"/>
+			<point x="531" y="54" type="curve" smooth="yes"/>
+			<point x="531" y="62"/>
+			<point x="530" y="70"/>
+			<point x="529" y="75" type="curve"/>
+			<point x="523" y="75" type="line"/>
+			<point x="496" y="45"/>
+			<point x="460" y="30"/>
+			<point x="416" y="30" type="curve" smooth="yes"/>
+			<point x="378.875" y="30"/>
+			<point x="347.4173214352" y="34.7244107083"/>
+			<point x="326" y="54" type="curve"/>
+			<point x="316" y="77"/>
+			<point x="313" y="102"/>
+			<point x="313" y="152" type="curve"/>
+			<point x="313" y="346.459833795"/>
+			<point x="313" y="542.540166205"/>
+			<point x="313" y="737" type="curve" smooth="yes"/>
+			<point x="313" y="755"/>
+			<point x="293" y="760"/>
+			<point x="266" y="760" type="curve" smooth="yes"/>
+			<point x="215" y="760"/>
+			<point x="146" y="752"/>
 		</contour>
 		<contour>
-			<point x="153" y="749" type="curve" smooth="yes"/>
-			<point x="145" y="757"/>
-			<point x="131" y="760"/>
-			<point x="115" y="760" type="curve" smooth="yes"/>
-			<point x="108" y="760" type="line"/>
-			<point x="108" y="110" type="line" smooth="yes"/>
-			<point x="108" y="21"/>
-			<point x="173" y="-3"/>
-			<point x="208" y="14" type="curve"/>
-			<point x="170" y="50"/>
-			<point x="158" y="61"/>
-			<point x="158" y="122" type="curve" smooth="yes"/>
-			<point x="158" y="737" type="line" smooth="yes"/>
-			<point x="158" y="742"/>
-			<point x="156" y="746"/>
-		</contour>
-		<contour>
-			<point x="288" y="47" type="curve"/>
-			<point x="284" y="47" type="line"/>
-			<point x="267" y="34"/>
-			<point x="253" y="30"/>
-			<point x="227" y="30" type="curve" smooth="yes"/>
-			<point x="180" y="30"/>
-			<point x="135" y="64"/>
-			<point x="135" y="138" type="curve"/>
-			<point x="116" y="138"/>
-			<point x="108" y="121"/>
-			<point x="108" y="110" type="curve" smooth="yes"/>
-			<point x="108" y="43"/>
-			<point x="139" y="-20"/>
-			<point x="226" y="-20" type="curve" smooth="yes"/>
-			<point x="231" y="-20" type="line" smooth="yes"/>
-			<point x="251" y="-20"/>
-			<point x="270" y="-16"/>
-			<point x="280" y="-6" type="curve" smooth="yes"/>
-			<point x="288" y="2"/>
-			<point x="290" y="10"/>
-			<point x="290" y="26" type="curve" smooth="yes"/>
-			<point x="290" y="34"/>
-			<point x="289" y="42"/>
+			<point x="275" y="703" type="line"/>
+			<point x="291" y="730" type="line"/>
+			<point x="276" y="733" type="line"/>
+			<point x="249" y="728" type="line"/>
 		</contour>
 	</outline>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
 			<string>needsFixing</string>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>public.markColor</key>
-			<string>1,0.45,0.45,0.75</string>
+			<string>0,0,0,0.25</string>
 		</dict>
 	</lib>
 </glyph>

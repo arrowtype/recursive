@@ -992,6 +992,23 @@
 			<string>onequarter</string>
 			<string>onehalf</string>
 			<string>threequarters</string>
+			<string>zerosuperior</string>
+			<string>foursuperior</string>
+			<string>fivesuperior</string>
+			<string>sixsuperior</string>
+			<string>sevensuperior</string>
+			<string>eightsuperior</string>
+			<string>ninesuperior</string>
+			<string>zeroinferior</string>
+			<string>oneinferior</string>
+			<string>twoinferior</string>
+			<string>threeinferior</string>
+			<string>fourinferior</string>
+			<string>fiveinferior</string>
+			<string>sixinferior</string>
+			<string>seveninferior</string>
+			<string>eightinferior</string>
+			<string>nineinferior</string>
 			<string>onethird</string>
 			<string>twothirds</string>
 			<string>oneeighth</string>
@@ -1247,14 +1264,8 @@
 			<string>edotaccent</string>
 			<string>edotbelow</string>
 			<string>egrave</string>
-			<string>eightinferior</string>
-			<string>eightsuperior</string>
 			<string>emacron</string>
 			<string>etilde</string>
-			<string>fiveinferior</string>
-			<string>fivesuperior</string>
-			<string>fourinferior</string>
-			<string>foursuperior</string>
 			<string>gbreve</string>
 			<string>gcaron</string>
 			<string>gcircumflex</string>
@@ -1279,8 +1290,7 @@
 			<string>napostrophe</string>
 			<string>ncaron</string>
 			<string>ncommaaccent</string>
-			<string>nineinferior</string>
-			<string>ninesuperior</string>
+			<string>notdef</string>
 			<string>ntilde</string>
 			<string>oacute</string>
 			<string>obreve</string>
@@ -1290,7 +1300,6 @@
 			<string>ograve</string>
 			<string>ohungarumlaut</string>
 			<string>omacron</string>
-			<string>oneinferior</string>
 			<string>oogonek</string>
 			<string>oslashacute</string>
 			<string>otilde</string>
@@ -1304,13 +1313,7 @@
 			<string>scedilla</string>
 			<string>scircumflex</string>
 			<string>scommaaccent</string>
-			<string>seveninferior</string>
-			<string>sevensuperior</string>
-			<string>sixinferior</string>
-			<string>sixsuperior</string>
 			<string>tcaron</string>
-			<string>threeinferior</string>
-			<string>twoinferior</string>
 			<string>uacute</string>
 			<string>ubreve</string>
 			<string>ucircumflex</string>
@@ -1335,8 +1338,7 @@
 			<string>zacute</string>
 			<string>zcaron</string>
 			<string>zdotaccent</string>
-			<string>zeroinferior</string>
-			<string>zerosuperior</string>
+			<string>fl</string>
 			<string>gravecomb.case</string>
 			<string>acutecomb.case</string>
 			<string>circumflexcomb.case</string>
@@ -1396,6 +1398,9 @@
 			<string>i.mono</string>
 			<string>l.mono</string>
 			<string>r.mono</string>
+			<string>lacute.mono</string>
+			<string>lcommaaccent.mono</string>
+			<string>fl.mono</string>
 			<string>L.noserif</string>
 			<string>Z.noserif</string>
 			<string>f.simple_italic</string>
@@ -1406,16 +1411,11 @@
 			<string>l.sans</string>
 			<string>zero.sans</string>
 			<string>one.sans</string>
+			<string>lacute.sans</string>
+			<string>lcommaaccent.sans</string>
 			<string>a.ss01</string>
 			<string>g.ss01</string>
 			<string>zero.ss01</string>
-			<string>notdef</string>
-			<string>fl</string>
-			<string>fl.mono</string>
-			<string>lacute.sans</string>
-			<string>lacute.mono</string>
-			<string>lcommaaccent.sans</string>
-			<string>lcommaaccent.mono</string>
 		</array>
 	</dict>
 </plist>

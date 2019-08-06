@@ -302,6 +302,26 @@
 			<string>y</string>
 			<string>z</string>
 			<string>germandbls</string>
+			<string>pi</string>
+			<string>ordfeminine</string>
+			<string>ordmasculine</string>
+			<string>gravecomb</string>
+			<string>acutecomb</string>
+			<string>circumflexcomb</string>
+			<string>tildecomb</string>
+			<string>macroncomb</string>
+			<string>brevecomb</string>
+			<string>dotaccentcomb</string>
+			<string>dieresiscomb</string>
+			<string>ringcomb</string>
+			<string>hungarumlautcomb</string>
+			<string>caroncomb</string>
+			<string>commaturnedabovecomb</string>
+			<string>commaaboverightcomb</string>
+			<string>dotbelowcomb</string>
+			<string>commaaccentcomb</string>
+			<string>cedillacomb</string>
+			<string>ogonekcomb</string>
 			<string>zero</string>
 			<string>one</string>
 			<string>two</string>
@@ -318,12 +338,30 @@
 			<string>onequarter</string>
 			<string>onehalf</string>
 			<string>threequarters</string>
+			<string>zerosuperior</string>
+			<string>foursuperior</string>
+			<string>fivesuperior</string>
+			<string>sixsuperior</string>
+			<string>sevensuperior</string>
+			<string>eightsuperior</string>
+			<string>ninesuperior</string>
+			<string>zeroinferior</string>
+			<string>oneinferior</string>
+			<string>twoinferior</string>
+			<string>threeinferior</string>
+			<string>fourinferior</string>
+			<string>fiveinferior</string>
+			<string>sixinferior</string>
+			<string>seveninferior</string>
+			<string>eightinferior</string>
+			<string>nineinferior</string>
 			<string>onethird</string>
 			<string>twothirds</string>
 			<string>oneeighth</string>
 			<string>threeeighths</string>
 			<string>fiveeighths</string>
 			<string>seveneighths</string>
+			<string>underscore</string>
 			<string>parenleft</string>
 			<string>parenright</string>
 			<string>bracketleft</string>
@@ -334,15 +372,44 @@
 			<string>quotedblright</string>
 			<string>guilsinglleft</string>
 			<string>guilsinglright</string>
+			<string>guillemotleft</string>
+			<string>guillemotright</string>
 			<string>ampersand</string>
+			<string>section</string>
+			<string>paragraph</string>
+			<string>litre</string>
 			<string>asterisk</string>
+			<string>period</string>
 			<string>question</string>
 			<string>questiondown</string>
+			<string>periodcentered</string>
+			<string>bullet</string>
+			<string>overline</string>
+			<string>plus</string>
+			<string>minus</string>
+			<string>plusminus</string>
+			<string>divide</string>
+			<string>multiply</string>
+			<string>equal</string>
+			<string>less</string>
+			<string>greater</string>
+			<string>lessequal</string>
+			<string>greaterequal</string>
+			<string>approxequal</string>
+			<string>notequal</string>
+			<string>logicalnot</string>
 			<string>fraction</string>
 			<string>arrowleft</string>
 			<string>arrowup</string>
 			<string>arrowright</string>
 			<string>arrowdown</string>
+			<string>increment</string>
+			<string>product</string>
+			<string>summation</string>
+			<string>radical</string>
+			<string>infinity</string>
+			<string>integral</string>
+			<string>equivalence</string>
 			<string>dollar</string>
 			<string>cent</string>
 			<string>sterling</string>
@@ -365,113 +432,6 @@
 			<string>tenge</string>
 			<string>manat</string>
 			<string>ruble</string>
-			<string>bitcoin</string>
-			<string>.arrowhead</string>
-			<string>eightinferior</string>
-			<string>eightsuperior</string>
-			<string>fiveinferior</string>
-			<string>fivesuperior</string>
-			<string>fourinferior</string>
-			<string>foursuperior</string>
-			<string>guillemotleft</string>
-			<string>guillemotright</string>
-			<string>liraTurkish</string>
-			<string>nineinferior</string>
-			<string>ninesuperior</string>
-			<string>oneinferior</string>
-			<string>rupeeIndian</string>
-			<string>seveninferior</string>
-			<string>sevensuperior</string>
-			<string>sixinferior</string>
-			<string>sixsuperior</string>
-			<string>threeinferior</string>
-			<string>twoinferior</string>
-			<string>zeroinferior</string>
-			<string>zerosuperior</string>
-			<string>a.italic</string>
-			<string>c.italic</string>
-			<string>d.italic</string>
-			<string>e.italic</string>
-			<string>f.italic</string>
-			<string>g.italic</string>
-			<string>h.italic</string>
-			<string>i.italic</string>
-			<string>j.italic</string>
-			<string>k.italic</string>
-			<string>l.italic</string>
-			<string>m.italic</string>
-			<string>n.italic</string>
-			<string>r.italic</string>
-			<string>s.italic</string>
-			<string>u.italic</string>
-			<string>v.italic</string>
-			<string>w.italic</string>
-			<string>x.italic</string>
-			<string>y.italic</string>
-			<string>z.italic</string>
-			<string>f.mono</string>
-			<string>g.mono</string>
-			<string>i.mono</string>
-			<string>l.mono</string>
-			<string>r.mono</string>
-			<string>l.sans</string>
-			<string>zero.sans</string>
-			<string>one.sans</string>
-			<string>pi</string>
-			<string>ordmasculine</string>
-			<string>paragraph</string>
-			<string>litre</string>
-			<string>less</string>
-			<string>greater</string>
-			<string>lessequal</string>
-			<string>greaterequal</string>
-			<string>notequal</string>
-			<string>increment</string>
-			<string>product</string>
-			<string>summation</string>
-			<string>radical</string>
-			<string>integral</string>
-			<string>copyright</string>
-			<string>registered</string>
-			<string>trademark</string>
-			<string>lozenge</string>
-			<string>equal</string>
-			<string>ordfeminine</string>
-			<string>underscore</string>
-			<string>period</string>
-			<string>section</string>
-			<string>periodcentered</string>
-			<string>bullet</string>
-			<string>overline</string>
-			<string>plus</string>
-			<string>minus</string>
-			<string>plusminus</string>
-			<string>divide</string>
-			<string>multiply</string>
-			<string>approxequal</string>
-			<string>logicalnot</string>
-			<string>infinity</string>
-			<string>equivalence</string>
-			<string>degree</string>
-			<string>estimated</string>
-			<string>notdef</string>
-			<string>gravecomb</string>
-			<string>acutecomb</string>
-			<string>circumflexcomb</string>
-			<string>tildecomb</string>
-			<string>macroncomb</string>
-			<string>brevecomb</string>
-			<string>dotaccentcomb</string>
-			<string>dieresiscomb</string>
-			<string>ringcomb</string>
-			<string>hungarumlautcomb</string>
-			<string>caroncomb</string>
-			<string>commaturnedabovecomb</string>
-			<string>commaaboverightcomb</string>
-			<string>dotbelowcomb</string>
-			<string>commaaccentcomb</string>
-			<string>cedillacomb</string>
-			<string>ogonekcomb</string>
 			<string>asciicircum</string>
 			<string>asciitilde</string>
 			<string>acute</string>
@@ -487,7 +447,18 @@
 			<string>ring</string>
 			<string>cedilla</string>
 			<string>ogonek</string>
+			<string>copyright</string>
+			<string>registered</string>
+			<string>trademark</string>
+			<string>degree</string>
+			<string>estimated</string>
+			<string>lozenge</string>
+			<string>bitcoin</string>
+			<string>.arrowhead</string>
+			<string>liraTurkish</string>
+			<string>notdef</string>
 			<string>ringacute</string>
+			<string>rupeeIndian</string>
 			<string>gravecomb.case</string>
 			<string>acutecomb.case</string>
 			<string>circumflexcomb.case</string>
@@ -709,6 +680,35 @@
 			<string>Otilde</string>
 			<string>Utilde</string>
 			<string>Ytilde</string>
+			<string>a.italic</string>
+			<string>c.italic</string>
+			<string>d.italic</string>
+			<string>e.italic</string>
+			<string>f.italic</string>
+			<string>g.italic</string>
+			<string>h.italic</string>
+			<string>i.italic</string>
+			<string>j.italic</string>
+			<string>k.italic</string>
+			<string>l.italic</string>
+			<string>m.italic</string>
+			<string>n.italic</string>
+			<string>r.italic</string>
+			<string>s.italic</string>
+			<string>u.italic</string>
+			<string>v.italic</string>
+			<string>w.italic</string>
+			<string>x.italic</string>
+			<string>y.italic</string>
+			<string>z.italic</string>
+			<string>f.mono</string>
+			<string>g.mono</string>
+			<string>i.mono</string>
+			<string>l.mono</string>
+			<string>r.mono</string>
+			<string>l.sans</string>
+			<string>zero.sans</string>
+			<string>one.sans</string>
 		</array>
 	</dict>
 </plist>

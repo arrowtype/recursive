@@ -53,7 +53,6 @@
 					<string>Gcircumflex</string>
 					<string>Gbreve</string>
 					<string>Gdotaccent</string>
-					<string>Gcommaaccent</string>
 					<string>Gcaron</string>
 					<string>H</string>
 					<string>Hcircumflex</string>
@@ -71,16 +70,13 @@
 					<string>J</string>
 					<string>Jcircumflex</string>
 					<string>K</string>
-					<string>Kcommaaccent</string>
 					<string>L</string>
 					<string>Lacute</string>
-					<string>Lcommaaccent</string>
 					<string>Lcaron</string>
 					<string>M</string>
 					<string>N</string>
 					<string>Ntilde</string>
 					<string>Nacute</string>
-					<string>Ncommaaccent</string>
 					<string>Ncaron</string>
 					<string>O</string>
 					<string>Ograve</string>
@@ -97,7 +93,6 @@
 					<string>Q</string>
 					<string>R</string>
 					<string>Racute</string>
-					<string>Rcommaaccent</string>
 					<string>Rcaron</string>
 					<string>S</string>
 					<string>Sacute</string>
@@ -195,7 +190,6 @@
 					<string>gcircumflex</string>
 					<string>gbreve</string>
 					<string>gdotaccent</string>
-					<string>gcommaaccent</string>
 					<string>gcaron</string>
 					<string>h</string>
 					<string>hcircumflex</string>
@@ -212,16 +206,13 @@
 					<string>j</string>
 					<string>jcircumflex</string>
 					<string>k</string>
-					<string>kcommaaccent</string>
 					<string>l</string>
 					<string>lacute</string>
-					<string>lcommaaccent</string>
 					<string>lcaron</string>
 					<string>m</string>
 					<string>n</string>
 					<string>ntilde</string>
 					<string>nacute</string>
-					<string>ncommaaccent</string>
 					<string>ncaron</string>
 					<string>o</string>
 					<string>ograve</string>
@@ -238,7 +229,6 @@
 					<string>q</string>
 					<string>r</string>
 					<string>racute</string>
-					<string>rcommaaccent</string>
 					<string>rcaron</string>
 					<string>s</string>
 					<string>sacute</string>
@@ -337,6 +327,23 @@
 					<string>onequarter</string>
 					<string>onehalf</string>
 					<string>threequarters</string>
+					<string>zerosuperior</string>
+					<string>foursuperior</string>
+					<string>fivesuperior</string>
+					<string>sixsuperior</string>
+					<string>sevensuperior</string>
+					<string>eightsuperior</string>
+					<string>ninesuperior</string>
+					<string>zeroinferior</string>
+					<string>oneinferior</string>
+					<string>twoinferior</string>
+					<string>threeinferior</string>
+					<string>fourinferior</string>
+					<string>fiveinferior</string>
+					<string>sixinferior</string>
+					<string>seveninferior</string>
+					<string>eightinferior</string>
+					<string>nineinferior</string>
 					<string>onethird</string>
 					<string>twothirds</string>
 					<string>oneeighth</string>
@@ -467,27 +474,21 @@
 					<string>IJacute</string>
 					<string>bitcoin</string>
 					<string>.arrowhead</string>
+					<string>Gcommaaccent</string>
+					<string>Kcommaaccent</string>
+					<string>Lcommaaccent</string>
+					<string>Ncommaaccent</string>
+					<string>Rcommaaccent</string>
 					<string>dotlessij</string>
-					<string>eightinferior</string>
-					<string>eightsuperior</string>
-					<string>fiveinferior</string>
-					<string>fivesuperior</string>
-					<string>fourinferior</string>
-					<string>foursuperior</string>
+					<string>gcommaaccent</string>
+					<string>kcommaaccent</string>
+					<string>lcommaaccent</string>
 					<string>liraTurkish</string>
-					<string>nineinferior</string>
-					<string>ninesuperior</string>
-					<string>oneinferior</string>
+					<string>ncommaaccent</string>
+					<string>notdef</string>
+					<string>rcommaaccent</string>
 					<string>ringacute</string>
 					<string>rupeeIndian</string>
-					<string>seveninferior</string>
-					<string>sevensuperior</string>
-					<string>sixinferior</string>
-					<string>sixsuperior</string>
-					<string>threeinferior</string>
-					<string>twoinferior</string>
-					<string>zeroinferior</string>
-					<string>zerosuperior</string>
 					<string>gravecomb.case</string>
 					<string>acutecomb.case</string>
 					<string>circumflexcomb.case</string>
@@ -530,19 +531,22 @@
 					<string>x.italic</string>
 					<string>y.italic</string>
 					<string>z.italic</string>
-					<string>g.ss01</string>
 					<string>f.mono</string>
 					<string>g.mono</string>
 					<string>i.mono</string>
 					<string>l.mono</string>
+					<string>lacute.mono</string>
 					<string>r.mono</string>
+					<string>lcommaaccent.mono</string>
 					<string>mu.math</string>
+					<string>g.ss01</string>
 					<string>R.trap</string>
 					<string>g.compact_desc</string>
 					<string>l.sans</string>
+					<string>lacute.sans</string>
 					<string>zero.sans</string>
 					<string>one.sans</string>
-					<string>notdef</string>
+					<string>lcommaaccent.sans</string>
 				</array>
 				<key>type</key>
 				<string>glyphList</string>
@@ -704,7 +708,6 @@
 			<string>Gcircumflex</string>
 			<string>Gbreve</string>
 			<string>Gdotaccent</string>
-			<string>Gcommaaccent</string>
 			<string>Gcaron</string>
 			<string>H</string>
 			<string>Hcircumflex</string>
@@ -722,16 +725,13 @@
 			<string>J</string>
 			<string>Jcircumflex</string>
 			<string>K</string>
-			<string>Kcommaaccent</string>
 			<string>L</string>
 			<string>Lacute</string>
-			<string>Lcommaaccent</string>
 			<string>Lcaron</string>
 			<string>M</string>
 			<string>N</string>
 			<string>Ntilde</string>
 			<string>Nacute</string>
-			<string>Ncommaaccent</string>
 			<string>Ncaron</string>
 			<string>O</string>
 			<string>Ograve</string>
@@ -748,7 +748,6 @@
 			<string>Q</string>
 			<string>R</string>
 			<string>Racute</string>
-			<string>Rcommaaccent</string>
 			<string>Rcaron</string>
 			<string>S</string>
 			<string>Sacute</string>
@@ -846,7 +845,6 @@
 			<string>gcircumflex</string>
 			<string>gbreve</string>
 			<string>gdotaccent</string>
-			<string>gcommaaccent</string>
 			<string>gcaron</string>
 			<string>h</string>
 			<string>hcircumflex</string>
@@ -863,16 +861,13 @@
 			<string>j</string>
 			<string>jcircumflex</string>
 			<string>k</string>
-			<string>kcommaaccent</string>
 			<string>l</string>
 			<string>lacute</string>
-			<string>lcommaaccent</string>
 			<string>lcaron</string>
 			<string>m</string>
 			<string>n</string>
 			<string>ntilde</string>
 			<string>nacute</string>
-			<string>ncommaaccent</string>
 			<string>ncaron</string>
 			<string>o</string>
 			<string>ograve</string>
@@ -889,7 +884,6 @@
 			<string>q</string>
 			<string>r</string>
 			<string>racute</string>
-			<string>rcommaaccent</string>
 			<string>rcaron</string>
 			<string>s</string>
 			<string>sacute</string>
@@ -988,6 +982,23 @@
 			<string>onequarter</string>
 			<string>onehalf</string>
 			<string>threequarters</string>
+			<string>zerosuperior</string>
+			<string>foursuperior</string>
+			<string>fivesuperior</string>
+			<string>sixsuperior</string>
+			<string>sevensuperior</string>
+			<string>eightsuperior</string>
+			<string>ninesuperior</string>
+			<string>zeroinferior</string>
+			<string>oneinferior</string>
+			<string>twoinferior</string>
+			<string>threeinferior</string>
+			<string>fourinferior</string>
+			<string>fiveinferior</string>
+			<string>sixinferior</string>
+			<string>seveninferior</string>
+			<string>eightinferior</string>
+			<string>nineinferior</string>
 			<string>onethird</string>
 			<string>twothirds</string>
 			<string>oneeighth</string>
@@ -1118,27 +1129,21 @@
 			<string>IJacute</string>
 			<string>bitcoin</string>
 			<string>.arrowhead</string>
+			<string>Gcommaaccent</string>
+			<string>Kcommaaccent</string>
+			<string>Lcommaaccent</string>
+			<string>Ncommaaccent</string>
+			<string>Rcommaaccent</string>
 			<string>dotlessij</string>
-			<string>eightinferior</string>
-			<string>eightsuperior</string>
-			<string>fiveinferior</string>
-			<string>fivesuperior</string>
-			<string>fourinferior</string>
-			<string>foursuperior</string>
+			<string>gcommaaccent</string>
+			<string>kcommaaccent</string>
+			<string>lcommaaccent</string>
 			<string>liraTurkish</string>
-			<string>nineinferior</string>
-			<string>ninesuperior</string>
-			<string>oneinferior</string>
+			<string>ncommaaccent</string>
+			<string>notdef</string>
+			<string>rcommaaccent</string>
 			<string>ringacute</string>
 			<string>rupeeIndian</string>
-			<string>seveninferior</string>
-			<string>sevensuperior</string>
-			<string>sixinferior</string>
-			<string>sixsuperior</string>
-			<string>threeinferior</string>
-			<string>twoinferior</string>
-			<string>zeroinferior</string>
-			<string>zerosuperior</string>
 			<string>gravecomb.case</string>
 			<string>acutecomb.case</string>
 			<string>circumflexcomb.case</string>
@@ -1181,23 +1186,22 @@
 			<string>x.italic</string>
 			<string>y.italic</string>
 			<string>z.italic</string>
-			<string>g.ss01</string>
 			<string>f.mono</string>
 			<string>g.mono</string>
 			<string>i.mono</string>
 			<string>l.mono</string>
+			<string>lacute.mono</string>
 			<string>r.mono</string>
+			<string>lcommaaccent.mono</string>
 			<string>mu.math</string>
+			<string>g.ss01</string>
 			<string>R.trap</string>
 			<string>g.compact_desc</string>
 			<string>l.sans</string>
+			<string>lacute.sans</string>
 			<string>zero.sans</string>
 			<string>one.sans</string>
-			<string>notdef</string>
-			<string>lacute.sans</string>
-			<string>lacute.mono</string>
 			<string>lcommaaccent.sans</string>
-			<string>lcommaaccent.mono</string>
 		</array>
 	</dict>
 </plist>

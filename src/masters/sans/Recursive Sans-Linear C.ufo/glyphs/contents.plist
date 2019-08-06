@@ -2,10 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 	<dict>
+		<key>.arrowhead</key>
+		<string>_arrowhead.glif</string>
 		<key>A</key>
 		<string>A_.glif</string>
-		<key>A.replaced_with_replaced_with_trad_contrast</key>
-		<string>A_.replaced_with_replaced_with_trad_contrast.glif</string>
 		<key>AE</key>
 		<string>A_E_.glif</string>
 		<key>AEacute</key>
@@ -152,16 +152,12 @@
 		<string>L_slash.glif</string>
 		<key>M</key>
 		<string>M_.glif</string>
-		<key>M.replaced_with_replaced_with_trad_contrast</key>
-		<string>M_.replaced_with_replaced_with_trad_contrast.glif</string>
+		<key>M.tighttaper</key>
+		<string>M_.tighttaper.glif</string>
 		<key>N</key>
 		<string>N_.glif</string>
-		<key>N.replaced_with_replaced_with_trad_contrast</key>
-		<string>N_.replaced_with_replaced_with_trad_contrast.glif</string>
-		<key>N.trad_contrast_wide</key>
-		<string>N_.trad_contrast_wide.glif</string>
-		<key>N.wide</key>
-		<string>N_.wide.glif</string>
+		<key>N.tighttaper</key>
+		<string>N_.tighttaper.glif</string>
 		<key>Nacute</key>
 		<string>N_acute.glif</string>
 		<key>Ncaron</key>
@@ -264,12 +260,8 @@
 		<string>U_tilde.glif</string>
 		<key>V</key>
 		<string>V_.glif</string>
-		<key>V.replaced_with_replaced_with_trad_contrast</key>
-		<string>V_.replaced_with_replaced_with_trad_contrast.glif</string>
 		<key>W</key>
 		<string>W_.glif</string>
-		<key>W.replaced_with_replaced_with_trad_contrast</key>
-		<string>W_.replaced_with_replaced_with_trad_contrast.glif</string>
 		<key>Wacute</key>
 		<string>W_acute.glif</string>
 		<key>Wcircumflex</key>
@@ -282,8 +274,6 @@
 		<string>X_.glif</string>
 		<key>Y</key>
 		<string>Y_.glif</string>
-		<key>Y.replaced_with_replaced_with_trad_contrast</key>
-		<string>Y_.replaced_with_replaced_with_trad_contrast.glif</string>
 		<key>Yacute</key>
 		<string>Y_acute.glif</string>
 		<key>Ycircumflex</key>
@@ -308,12 +298,6 @@
 		<string>a.glif</string>
 		<key>a.italic</key>
 		<string>a.italic.glif</string>
-		<key>a.italic_curl</key>
-		<string>a.italic_curl.glif</string>
-		<key>a.replaced_with_flatbar</key>
-		<string>a.replaced_with_flatbar.glif</string>
-		<key>a.roman</key>
-		<string>a.roman.glif</string>
 		<key>aacute</key>
 		<string>aacute.glif</string>
 		<key>abreve</key>
@@ -364,6 +348,8 @@
 		<string>asterisk.glif</string>
 		<key>at</key>
 		<string>at.glif</string>
+		<key>at.simple</key>
+		<string>at.simple.glif</string>
 		<key>atilde</key>
 		<string>atilde.glif</string>
 		<key>b</key>
@@ -396,8 +382,6 @@
 		<string>c.glif</string>
 		<key>c.italic</key>
 		<string>c.italic.glif</string>
-		<key>c.ss01</key>
-		<string>c.ss01.glif</string>
 		<key>cacute</key>
 		<string>cacute.glif</string>
 		<key>caron</key>
@@ -460,8 +444,6 @@
 		<string>dagger.glif</string>
 		<key>daggerdbl</key>
 		<string>daggerdbl.glif</string>
-		<key>dcaron</key>
-		<string>dcaron.glif</string>
 		<key>dcroat</key>
 		<string>dcroat.glif</string>
 		<key>degree</key>
@@ -522,8 +504,6 @@
 		<string>eightinferior.glif</string>
 		<key>eightsuperior</key>
 		<string>eightsuperior.glif</string>
-		<key>ellipses</key>
-		<string>ellipses.glif</string>
 		<key>ellipsis</key>
 		<string>ellipsis.glif</string>
 		<key>emacron</key>
@@ -534,8 +514,6 @@
 		<string>endash.glif</string>
 		<key>eng</key>
 		<string>eng.glif</string>
-		<key>eogonek</key>
-		<string>eogonek.glif</string>
 		<key>equal</key>
 		<string>equal.glif</string>
 		<key>equivalence</key>
@@ -554,8 +532,8 @@
 		<string>f.glif</string>
 		<key>f.italic</key>
 		<string>f.italic.glif</string>
-		<key>f.roman</key>
-		<string>f.roman.glif</string>
+		<key>f.mono</key>
+		<string>f.mono.glif</string>
 		<key>fi</key>
 		<string>fi.glif</string>
 		<key>five</key>
@@ -566,14 +544,8 @@
 		<string>fiveinferior.glif</string>
 		<key>fivesuperior</key>
 		<string>fivesuperior.glif</string>
-		<key>fj</key>
-		<string>fj.glif</string>
 		<key>fl</key>
 		<string>fl.glif</string>
-		<key>flatg</key>
-		<string>flatg.glif</string>
-		<key>flatg.copy_1</key>
-		<string>flatg.copy_1.glif</string>
 		<key>florin</key>
 		<string>florin.glif</string>
 		<key>four</key>
@@ -584,16 +556,14 @@
 		<string>foursuperior.glif</string>
 		<key>fraction</key>
 		<string>fraction.glif</string>
-		<key>franc</key>
-		<string>franc.glif</string>
 		<key>g</key>
 		<string>g.glif</string>
 		<key>g.italic</key>
 		<string>g.italic.glif</string>
 		<key>g.long_desc</key>
 		<string>g.long_desc.glif</string>
-		<key>g.roman</key>
-		<string>g.roman.glif</string>
+		<key>g.mono</key>
+		<string>g.mono.glif</string>
 		<key>g.ss01</key>
 		<string>g.ss01.glif</string>
 		<key>gbreve</key>
@@ -652,8 +622,8 @@
 		<string>i.glif</string>
 		<key>i.italic</key>
 		<string>i.italic.glif</string>
-		<key>i.roman</key>
-		<string>i.roman.glif</string>
+		<key>i.mono</key>
+		<string>i.mono.glif</string>
 		<key>i.ss01</key>
 		<string>i.ss01.glif</string>
 		<key>iacute</key>
@@ -704,14 +674,14 @@
 		<string>l.glif</string>
 		<key>l.italic</key>
 		<string>l.italic.glif</string>
-		<key>l.roman</key>
-		<string>l.roman.glif</string>
+		<key>l.mono</key>
+		<string>l.mono.glif</string>
+		<key>l.sans</key>
+		<string>l.sans.glif</string>
 		<key>l.ss01</key>
 		<string>l.ss01.glif</string>
 		<key>lacute</key>
 		<string>lacute.glif</string>
-		<key>lcaron</key>
-		<string>lcaron.glif</string>
 		<key>lcommaaccent</key>
 		<string>lcommaaccent.glif</string>
 		<key>ldot</key>
@@ -720,8 +690,6 @@
 		<string>less.glif</string>
 		<key>lessequal</key>
 		<string>lessequal.glif</string>
-		<key>lira</key>
-		<string>lira.glif</string>
 		<key>liraTurkish</key>
 		<string>liraT_urkish.glif</string>
 		<key>litre</key>
@@ -764,6 +732,8 @@
 		<string>ncaron.glif</string>
 		<key>ncommaaccent</key>
 		<string>ncommaaccent.glif</string>
+		<key>newsheqel</key>
+		<string>newsheqel.glif</string>
 		<key>nhookleft</key>
 		<string>nhookleft.glif</string>
 		<key>nine</key>
@@ -772,6 +742,8 @@
 		<string>nineinferior.glif</string>
 		<key>ninesuperior</key>
 		<string>ninesuperior.glif</string>
+		<key>notdef</key>
+		<string>notdef.glif</string>
 		<key>notequal</key>
 		<string>notequal.glif</string>
 		<key>ntilde</key>
@@ -854,8 +826,6 @@
 		<string>periodcentered.glif</string>
 		<key>perthousand</key>
 		<string>perthousand.glif</string>
-		<key>peseta</key>
-		<string>peseta.glif</string>
 		<key>peso</key>
 		<string>peso.glif</string>
 		<key>pi</key>
@@ -892,10 +862,8 @@
 		<string>r.glif</string>
 		<key>r.italic</key>
 		<string>r.italic.glif</string>
-		<key>r.replaced_with_curve</key>
-		<string>r.replaced_with_curve.glif</string>
-		<key>r.roman</key>
-		<string>r.roman.glif</string>
+		<key>r.mono</key>
+		<string>r.mono.glif</string>
 		<key>racute</key>
 		<string>racute.glif</string>
 		<key>radical</key>
@@ -918,6 +886,8 @@
 		<string>ringcomb.case.glif</string>
 		<key>ruble</key>
 		<string>ruble.glif</string>
+		<key>rupee</key>
+		<string>rupee.glif</string>
 		<key>rupeeIndian</key>
 		<string>rupeeI_ndian.glif</string>
 		<key>s</key>
@@ -974,6 +944,8 @@
 		<string>tcommaaccent.glif</string>
 		<key>tenge</key>
 		<string>tenge.glif</string>
+		<key>thai:baht</key>
+		<string>thai_baht.glif</string>
 		<key>thorn</key>
 		<string>thorn.glif</string>
 		<key>three</key>
@@ -1056,8 +1028,6 @@
 		<string>y.glif</string>
 		<key>y.italic</key>
 		<string>y.italic.glif</string>
-		<key>y.roman</key>
-		<string>y.roman.glif</string>
 		<key>yacute</key>
 		<string>yacute.glif</string>
 		<key>ycircumflex</key>
@@ -1074,8 +1044,6 @@
 		<string>ytilde.glif</string>
 		<key>z</key>
 		<string>z.glif</string>
-		<key>z.altdiagonal</key>
-		<string>z.altdiagonal.glif</string>
 		<key>z.italic</key>
 		<string>z.italic.glif</string>
 		<key>zacute</key>
@@ -1086,6 +1054,8 @@
 		<string>zdotaccent.glif</string>
 		<key>zero</key>
 		<string>zero.glif</string>
+		<key>zero.sans</key>
+		<string>zero.sans.glif</string>
 		<key>zeroinferior</key>
 		<string>zeroinferior.glif</string>
 		<key>zerosuperior</key>

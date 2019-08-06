@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="semicolon" format="2">
 	<unicode hex="003B"/>
-	<advance width="350"/>
+	<advance width="600"/>
 	<outline>
-		<component base="period" xOffset="20" yOffset="305"/>
-		<component base="comma"/>
+		<component base="period" yOffset="305"/>
+		<component base="comma" xOffset="-20"/>
 	</outline>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
 			<string>fromComponents</string>
 			<key>public.markColor</key>
-			<string>0,0,0,0.25</string>
+			<string>1,0,0,1</string>
 		</dict>
 	</lib>
 </glyph>

@@ -19,9 +19,9 @@
 			<point x="35" y="698"/>
 			<point x="35" y="659" type="curve" smooth="yes"/>
 			<point x="35" y="-189" type="line" smooth="yes"/>
-			<point x="35" y="-195"/>
-			<point x="40" y="-200"/>
-			<point x="46" y="-200" type="curve"/>
+			<point x="35" y="-196"/>
+			<point x="39" y="-200"/>
+			<point x="46" y="-200" type="curve" smooth="yes"/>
 			<point x="98" y="-200"/>
 			<point x="208" y="-200"/>
 		</contour>
@@ -79,7 +79,7 @@
 			<key>com.arrowtype.glyphMarkStatus</key>
 			<string>fromComponents</string>
 			<key>public.markColor</key>
-			<string>0.75,0.75,0.75,1</string>
+			<string>0,0,0,0.25</string>
 		</dict>
 	</lib>
 </glyph>

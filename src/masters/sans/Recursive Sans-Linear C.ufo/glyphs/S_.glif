@@ -4,15 +4,15 @@
 	<advance width="600"/>
 	<outline>
 		<contour>
-			<point x="315" y="720" type="curve" smooth="yes"/>
-			<point x="154" y="720"/>
+			<point x="326" y="720" type="curve" smooth="yes"/>
+			<point x="146" y="720"/>
 			<point x="35" y="637"/>
-			<point x="35" y="512" type="curve"/>
-			<point x="35" y="470" type="line" smooth="yes"/>
-			<point x="35" y="358"/>
-			<point x="88" y="306"/>
-			<point x="233" y="276" type="curve" smooth="yes"/>
-			<point x="319" y="258" type="line" smooth="yes"/>
+			<point x="35" y="513" type="curve" smooth="yes"/>
+			<point x="35" y="468" type="line" smooth="yes"/>
+			<point x="35" y="378"/>
+			<point x="54" y="314"/>
+			<point x="226" y="278" type="curve" smooth="yes"/>
+			<point x="317" y="258" type="line" smooth="yes"/>
 			<point x="351" y="251"/>
 			<point x="360" y="237"/>
 			<point x="360" y="224" type="curve" smooth="yes"/>
@@ -30,19 +30,19 @@
 			<point x="30" y="39"/>
 			<point x="31" y="36"/>
 			<point x="33" y="34" type="curve" smooth="yes"/>
-			<point x="68" y="-1"/>
-			<point x="175" y="-20"/>
+			<point x="56" y="11"/>
+			<point x="160" y="-20"/>
 			<point x="276" y="-20" type="curve" smooth="yes"/>
 			<point x="456" y="-20"/>
 			<point x="570" y="47"/>
-			<point x="570" y="166" type="curve" smooth="yes"/>
-			<point x="570" y="226" type="line" smooth="yes"/>
-			<point x="570" y="338"/>
-			<point x="523" y="399"/>
-			<point x="385" y="427" type="curve" smooth="yes"/>
-			<point x="287" y="447" type="line" smooth="yes"/>
-			<point x="256" y="453"/>
-			<point x="245" y="463"/>
+			<point x="570" y="185" type="curve" smooth="yes"/>
+			<point x="570" y="237" type="line" smooth="yes"/>
+			<point x="570" y="349"/>
+			<point x="534" y="397"/>
+			<point x="390" y="426" type="curve" smooth="yes"/>
+			<point x="288" y="447" type="line" smooth="yes"/>
+			<point x="251" y="454"/>
+			<point x="245" y="466"/>
 			<point x="245" y="485" type="curve" smooth="yes"/>
 			<point x="245" y="495" type="line" smooth="yes"/>
 			<point x="245" y="527"/>
@@ -62,13 +62,13 @@
 			<point x="498" y="485"/>
 			<point x="560" y="485" type="curve"/>
 			<point x="560" y="543"/>
-			<point x="560" y="601"/>
-			<point x="560" y="659" type="curve"/>
-			<point x="560" y="668"/>
-			<point x="559" y="671"/>
-			<point x="554" y="676" type="curve"/>
-			<point x="536" y="694"/>
-			<point x="452" y="720"/>
+			<point x="560" y="598"/>
+			<point x="560" y="656" type="curve"/>
+			<point x="560" y="665"/>
+			<point x="559" y="668"/>
+			<point x="554" y="673" type="curve"/>
+			<point x="537" y="690"/>
+			<point x="453" y="720"/>
 		</contour>
 	</outline>
 	<anchor name="top" x="300" y="711"/>
@@ -162,7 +162,7 @@
 			<key>com.typemytype.robofont.guideline.magnetic.yoDVbLizga</key>
 			<integer>10</integer>
 			<key>public.markColor</key>
-			<string>0.75,0.75,0.75,1</string>
+			<string>0,0,0,0.25</string>
 		</dict>
 	</lib>
 </glyph>
