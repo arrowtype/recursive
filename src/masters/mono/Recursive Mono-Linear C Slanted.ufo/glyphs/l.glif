@@ -11,9 +11,10 @@
 			<point x="80" y="547"/>
 			<point x="83" y="543"/>
 			<point x="90" y="543" type="curve" smooth="yes"/>
-			<point x="141.3311688312" y="543"/>
-			<point x="193" y="543"/>
-			<point x="245" y="543" type="curve"/>
+			<point x="133" y="543"/>
+			<point x="177" y="543"/>
+			<point x="221" y="543" type="curve"/>
+			<point x="245" y="543" type="line"/>
 			<point x="216" y="427"/>
 			<point x="186" y="312"/>
 			<point x="157" y="196" type="curve"/>
@@ -48,15 +49,11 @@
 			<point x="384" y="750"/>
 			<point x="257" y="750"/>
 		</contour>
-		<contour>
-			<point x="262" y="538" type="line"/>
-			<point x="299" y="598" type="line"/>
-			<point x="285" y="601" type="line"/>
-			<point x="239" y="548" type="line"/>
-		</contour>
 	</outline>
 	<anchor name="top" x="391" y="730"/>
 	<anchor name="bottom" x="308" y="-1"/>
+	<anchor name="dot" x="549" y="400"/>
+	<anchor name="caronslovak" x="629" y="671"/>
 	<guideline x="-69" y="0" angle="75.96" identifier="QYARO5tYrm"/>
 	<guideline x="-19" y="0" angle="75.96" identifier="BvqBIGb019"/>
 	<guideline x="31" y="0" angle="75.96" identifier="kCDaFo0hPZ"/>
