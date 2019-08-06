@@ -8,7 +8,7 @@ import random
 
 protectPunctuation = False
 
-protectNonNormalGlyphs = False
+protectNonNormalGlyphsTrueFalse = False
 
 monoFormsToCopyAndMark = [
     "f.italic",
@@ -150,7 +150,7 @@ def protectNonNormalGlyphs(masterToSendTo):
             nonNormalGlyphs.append(g.name)
             print(f"{g.name} is {g.width}")
                 
-    if protectNonNormalGlyphs is True:
+    if protectNonNormalGlyphsTrueFalse is True:
          glyphsToNotMove = glyphsToNotMove + nonNormalGlyphs
          print("Protecting non-600 unit glyphs.")
     else:
@@ -266,7 +266,7 @@ def clearThenCopyGlyphs(masterToCopyFrom, masterToSendTo, userConfirmation):
                 if layerGlyph.name in narrowPunctuation and protectPunctuation is False:
                     layerGlyph.markColor = (1,0,0,1)
                 
-                if layerGlyph.name in monoFormsToCopyAndMark and protectNonNormalGlyphs is False:
+                if layerGlyph.name in monoFormsToCopyAndMark and protectNonNormalGlyphsTrueFalse is False:
                     layerGlyph.markColor = (1,0,0,1)
 
                 # also copy anchors

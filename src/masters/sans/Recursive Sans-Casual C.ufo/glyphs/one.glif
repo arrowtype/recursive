@@ -16,15 +16,15 @@
 			<point x="64" y="366"/>
 			<point x="109" y="366" type="curve" smooth="yes"/>
 			<point x="136" y="366"/>
-			<point x="155" y="375"/>
-			<point x="175" y="413" type="curve" smooth="yes"/>
-			<point x="195" y="451"/>
-			<point x="209" y="487"/>
-			<point x="228" y="558" type="curve"/>
-			<point x="190" y="529" type="line"/>
-			<point x="256" y="529" type="line"/>
-			<point x="226" y="559" type="line"/>
-			<point x="226" y="480"/>
+			<point x="155" y="377"/>
+			<point x="175" y="409" type="curve" smooth="yes"/>
+			<point x="197" y="445"/>
+			<point x="209" y="470"/>
+			<point x="228" y="541" type="curve"/>
+			<point x="190" y="512" type="line"/>
+			<point x="256" y="512" type="line"/>
+			<point x="226" y="542" type="line"/>
+			<point x="226" y="463"/>
 			<point x="226" y="326"/>
 			<point x="226" y="297" type="curve" smooth="yes"/>
 			<point x="226" y="259"/>
@@ -69,6 +69,16 @@
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
 			<string>fromComponents</string>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
 			<integer>0</integer>
 			<key>com.typemytype.robofont.Image.Contrast</key>

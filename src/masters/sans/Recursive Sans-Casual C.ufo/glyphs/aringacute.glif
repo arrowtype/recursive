@@ -2,6 +2,10 @@
 <glyph name="aringacute" format="2">
 	<unicode hex="01FB"/>
 	<advance width="600"/>
+	<outline>
+		<component base="a"/>
+		<component base="ringacute" xOffset="306"/>
+	</outline>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>

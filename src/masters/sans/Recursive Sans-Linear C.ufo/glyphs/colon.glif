@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="colon" format="2">
 	<unicode hex="003A"/>
-	<advance width="300"/>
+	<advance width="600"/>
 	<outline>
 		<component base="period" yOffset="325"/>
 		<component base="period"/>
@@ -13,7 +13,7 @@
 			<key>com.arrowtype.numberOfIterations</key>
 			<integer>1</integer>
 			<key>public.markColor</key>
-			<string>0,0.25,1,0.1</string>
+			<string>1,0,0,1</string>
 		</dict>
 	</lib>
 </glyph>

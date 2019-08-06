@@ -2,9 +2,9 @@ from vanilla.dialogs import *
 import os
 from mojo.UI import AskString
 
-files =  getFile("Select files to update", allowsMultipleSelection=True, fileTypes=["ufo"])
+newLayer = AskString('Layer to copy selected glyphs to, e.g. "overlap"')
 
-newLayer = AskString('Layer to copy all existing glyphs to, e.g. "overlap"')
+files =  getFile("Select files to update", allowsMultipleSelection=True, fileTypes=["ufo"])
 
 font = CurrentFont()
 
