@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="seveninferior" format="2">
+	<unicode hex="2087"/>
 	<advance width="600"/>
 	<outline>
 		<component base="sevensuperior" yOffset="-399"/>
 	</outline>
 	<lib>
 		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
 			<key>public.markColor</key>
 			<string>0.1278,0.9998,0.999,1</string>
 		</dict>

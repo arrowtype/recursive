@@ -50,7 +50,9 @@ for file in files:
 
     for figure in unicodesToAdd.keys():
         if figure in font.keys():
+            print(f"{figure} had unicodes '{font[figure].unicodes}'")
             font[figure].unicodes = unicodesToAdd[figure]
+            print(f"...& is now '{unicodesToAdd[figure]}'\n")
 
     newGlyphOrder = font.naked().unicodeData.sortGlyphNames(font.templateGlyphOrder, sortDescriptors=[
                     dict(type="cannedDesign", ascending=True, allowPseudoUnicode=True)])
@@ -58,4 +60,4 @@ for file in files:
     font.templateGlyphOrder = newGlyphOrder
 
     font.save()
-    # font.close()
+    font.close()
