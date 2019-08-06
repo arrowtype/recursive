@@ -65,14 +65,14 @@
 			<point x="490" y="101" type="curve" smooth="yes"/>
 			<point x="490" y="198"/>
 			<point x="490" y="296"/>
-			<point x="490" y="395" type="curve"/>
+			<point x="490" y="395" type="curve" smooth="yes"/>
 			<point x="490" y="476"/>
 			<point x="446" y="536"/>
 		</contour>
 	</outline>
 	<anchor name="top" x="299" y="537"/>
 	<anchor name="bottom" x="309" y="-1"/>
-	<anchor name="caronslovak" x="435" y="711"/>
+	<anchor name="caronslovak" x="102" y="711"/>
 	<lib>
 		<dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
