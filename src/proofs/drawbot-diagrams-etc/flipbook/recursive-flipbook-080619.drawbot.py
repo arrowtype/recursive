@@ -12,8 +12,10 @@ pixels = DPI*bookSize
 
 
 
-
 W, H = pixels, pixels # size is 72 dpi * bookSize
+
+
+
 
 frames = 80
 
@@ -59,83 +61,55 @@ for frame in range(frames):
     
     fill(1)
     
+    completionOnCurve = y / pixels
+    
     # completionOnCurve = ease(t)
     
     # if in first half of frames
-    # if frame < frames*0.5:
-    #     minWeight = 300.01
-    #     maxWeight = 800
+    if frame <= frames*0.5:
+        minWeight = 300.01
+        maxWeight = 800.01
         
-    #     completionOnCurve = completionOnCurve / W /2
+        # completionOnCurve = y / H * 0.5
+        completionOnCurve = y / pixels * 2
         
-    # else:
-    #     minWeight = 800
-    #     maxWeight = 900
         
-    #     completionOnCurve = completionOnCurve
+        
+    else:
+        minWeight = 800.01
+        maxWeight = 900 - 0.01
+        
+        completionOnCurve = (y - 0.5) / pixels * 2 -1
     
-    completionOnCurve = y / pixels
+    
     
     currentWeight = interp(minWeight, maxWeight, completionOnCurve)
     
     fontVariations(
         wght=currentWeight
         )
-        
+    
+    print(str(frame).ljust(3), " | factor: ", str(round(completionOnCurve, 3)).ljust(5)," | t: ", str(round(t, 3)).ljust(5), " | wght: ", currentWeight)
+    
     fontSize(W/1.4)
     text("rw", (W/16, H/12))
     
     fontSize(W/20)
-    text(str(round(currentWeight)), ((W*0.1)+(W*completionOnCurve*0.7), H*.7))
     
+    padding = 0.1
+    # text(str(round(currentWeight)), (((W*0.1)+(W*completionOnCurve * 0.7)), H *0.7))
+    text(str(round(currentWeight)), (((W*0.5)), H *0.7))    
     
     if debug:
         size = pixels/pixels * 2
         rect(0,H*.66, W*y/W, size)      # y - curved
-        # rect(0,H*.33, W*t, 10)             # t – linear
-        print("frame: ".ljust(10), frame)
-        print("t: ".ljust(10), t)
-        print("y: ".ljust(10), y, "\n")
+
         for frame in range(frames):
             t = frame / frames
-            # split = splitCubicAtT(*easingCurve, t)    
-            # loc = split[0][-1]
-            
+
             oval(loc[0]-size/2, y-size/2, size, size)
 
-# interpolate axis function
 
-# for page in range(0,pages):
-#     newPage(W, H)
-    
-#     t = page/pages
-    
-    
-#     # currentWeight = weights[page]
-#     # currentExpression = expressions[page]*0.001 + 0.001
-
-#     currentRate = 360 * t
-    
-#     angle = 360 * t
-
-#     angle += t * 360
-
-#     y = 250 + amplitude * sin(radians(angle))
-
-#     print("page: ".ljust(10), page)
-#     print("t: ".ljust(10), t)
-#     print("angle: ".ljust(10), angle)
-#     print("y: ".ljust(10), y, "\n")
-#     rect(100, y/2, 10, 10)
-    
-#     fontVariations(
-#         wght=currentWeight, 
-#         XPRN=currentExpression,
-#         slnt=-15*currentExpression
-#         )
-#     text("rw", (W/16, H/12))
-
-
-now = datetime.datetime.now().strftime("%Y_%m_%d-%H_%M")
+now = datetime.datetime.now().strftime("%Y_%m_%d") # -%H_%M_%S
 
 saveImage("./exports/recursive-flipbook-" + now + ".gif")
