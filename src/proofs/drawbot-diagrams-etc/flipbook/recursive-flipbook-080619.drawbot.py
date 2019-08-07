@@ -4,6 +4,12 @@
 import datetime
 from fontTools.misc.bezierTools import splitCubicAtT
 
+
+fontFam = "Rec Mono Beta013 Var"
+frames = 100
+format = "gif"
+
+frontmatter = False
 debug = True
 
 bookSize = 3.5
@@ -15,9 +21,6 @@ pixels = DPI*bookSize
 W, H = pixels, pixels # size is 72 dpi * bookSize
 
 
-
-
-frames = 200
 
 minWeight = 300.01
 maxWeight = 899.99
@@ -40,14 +43,64 @@ minSlant = -15
 def interp(a, b, t):
     distance = b-a
     return(a + distance * t)
+    
+# # ---------------------------------------------------------
+# # FRONTMATTER ---------------------------------------------
+
+if frontmatter:
+
+    textSize = H/40
+    lineSize = textSize * 1.5
+
+    newPage(W, H)
+    fill(0)
+    rect(0,0,W,H)
+
+    font(fontFam)
+    fontSize(textSize)
+    lineHeight(lineSize)
+    fontVariations(wght=500)
+
+    fill(1)
+    textBox("\
+Recursive is a versatile new variable font from Arrow Type & Google Fonts, inspired by single-stroke casual signpainting but designed for screens. Five variation axes (Proportion, Expression, Weight, Slant, & Italic) allow extreme customizability, while named instances offer predetermined styles for ease of use. \n\n\
+The Proportion axis allows selection between two subfamilies: Mono & Sans (or anything in between). All other axes allow control over font styles without changing the width of glyphs. This allows smooth typographic transitions without affecting line length, enabling new levels of typographic flexibility & interaction.\n\n\
+Recursive is licensed under the SIL Open Font License, making it free & easy to use in any project.\
+    ", (W*0.1, H*0.1, W*0.8, H*0.75))
+
+    # PAGE TWO
+
+    newPage(W, H)
+    fill(0)
+    rect(0,0,W,H)
+
+    font(fontFam)
+    fontSize(textSize)
+    lineHeight(lineSize)
+    fontVariations(wght=500)
+
+    fill(1)
+    textBox("\
+Type design by Stephen Nixon, with contributions from Katja Schimmel, Lisa Huang, and Rafał Buchner, plus early guidance from faculty and visiting instructors at KABK TypeMedia. Type mastering by Ben Kiel.\n\n\
+Started at TypeMedia, 2018. Sponsored by Google Fonts, 2019.\n\n\
+Book design by Math Practice.\n\
+Typeset with Drawbot by Stephen Nixon.\n\n\
+https://recursive.design\n\n\
+Made by friends of Google Fonts (logo)\n\n\
+Recursive Sans \t Arrow Type\
+    ", (W*0.1, H*0.1, W*0.8, H*0.75))
+
+# ---------------------------------------------------------
+# ANIMATION -----------------------------------------------
 
 for frame in range(frames):
     
     newPage(W, H)
-    
+    font(fontFam)
     # font("fonts/Recursive-mono-full--w_ital_slnt-2019_07_24.ttf")
-    font("Rec Mono Beta013 Var")
+    
     frameDuration(1/60)
+    fill(0)
     rect(0,0,W,H)
     t = frame / frames
     # split = splitCubicAtT(*easingCurve, t)
@@ -117,7 +170,7 @@ for frame in range(frames):
     print(str(frame).ljust(3), " | factor: ", str(round(completionOnCurve, 3)).ljust(5)," | t: ", str(round(t, 3)).ljust(5), " | wght: ", currentWeight)
     
     fontSize(W/1.4)
-    text("rw", (W/16, H/12))
+    text("rw", (W/15, H/12))
     
     fontSize(W/30)
     
@@ -138,9 +191,9 @@ for frame in range(frames):
         for frame in range(frames):
             t = frame / frames
             size = pixels/pixels * 4
-            oval(loc[0]-size/2, y-size/2, size, size)
+            oval(loc[0]-size/2, (y/2)+(H/12)-(size/2), size, size)
 
 
 now = datetime.datetime.now().strftime("%Y_%m_%d") # -%H_%M_%S
 
-saveImage("./exports/recursive-flipbook-" + now + ".gif")
+saveImage("./exports/recursive-flipbook-" + now + "." + format)
