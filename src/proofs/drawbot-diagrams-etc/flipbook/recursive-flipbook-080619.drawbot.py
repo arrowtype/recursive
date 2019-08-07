@@ -17,7 +17,7 @@ W, H = pixels, pixels # size is 72 dpi * bookSize
 
 
 
-frames = 80
+frames = 200
 
 minWeight = 300.01
 maxWeight = 899.99
@@ -67,26 +67,51 @@ for frame in range(frames):
     
     # if in first half of frames
     if frame <= frames*0.5:
+        
+        minXprn = 0.01
+        maxXprn = 1
+        
         minWeight = 300.01
         maxWeight = 800.01
         
+        minSlnt = 0.01
+        maxSlnt = -15
+        
+        currentItal = 0
+                
         # completionOnCurve = y / H * 0.5
         completionOnCurve = y / pixels * 2
         
         
         
-    else:
+    if frame > frames*0.5:
+        minXprn = 1
+        maxXprn = 0
+        
         minWeight = 800.01
         maxWeight = 900 - 0.01
         
+        minSlnt = -15
+        maxSlnt = 0
+        
+        currentItal = 0
+        
         completionOnCurve = (y - 0.5) / pixels * 2 -1
+        
+    if frame > frames * 0.75:
+        
+        currentItal = 0.5
     
     
-    
+    currentXprn = interp(minXprn, maxXprn, completionOnCurve)
     currentWeight = interp(minWeight, maxWeight, completionOnCurve)
+    currentSlnt = interp(minSlnt, maxSlnt, completionOnCurve)
     
     fontVariations(
-        wght=currentWeight
+        wght=currentWeight,
+        XPRN=currentXprn,
+        slnt=currentSlnt,
+        ital=currentItal
         )
     
     print(str(frame).ljust(3), " | factor: ", str(round(completionOnCurve, 3)).ljust(5)," | t: ", str(round(t, 3)).ljust(5), " | wght: ", currentWeight)
@@ -94,19 +119,25 @@ for frame in range(frames):
     fontSize(W/1.4)
     text("rw", (W/16, H/12))
     
-    fontSize(W/20)
+    fontSize(W/30)
     
     padding = 0.1
     # text(str(round(currentWeight)), (((W*0.1)+(W*completionOnCurve * 0.7)), H *0.7))
-    text(str(round(currentWeight)), (((W*0.5)), H *0.7))    
     
+    x = str('{:4.2f}'.format(currentXprn))
+    w = str('{:3.0f}'.format(currentWeight))
+    s = str('{:4.2f}'.format(currentSlnt))
+    i = str('{:4.2f}'.format(currentItal))
+    text(f"p {str(0)}   x {x}   w {w}   s {s}   i {i}", (((W*0.025)), H *0.025))  
+
     if debug:
+        fill(1,0,1,1)
         size = pixels/pixels * 2
         rect(0,H*.66, W*y/W, size)      # y - curved
 
         for frame in range(frames):
             t = frame / frames
-
+            size = pixels/pixels * 4
             oval(loc[0]-size/2, y-size/2, size, size)
 
 
