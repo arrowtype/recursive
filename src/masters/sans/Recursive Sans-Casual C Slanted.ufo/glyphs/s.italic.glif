@@ -3,6 +3,19 @@
 	<advance width="600"/>
 	<outline>
 		<contour>
+			<point x="387" y="552" type="curve"/>
+			<point x="212" y="552"/>
+			<point x="92" y="493"/>
+			<point x="66" y="390" type="curve" smooth="yes"/>
+			<point x="43" y="298"/>
+			<point x="87" y="251"/>
+			<point x="213" y="229" type="curve" smooth="yes"/>
+			<point x="286" y="216" type="line" smooth="yes"/>
+			<point x="310" y="212"/>
+			<point x="324" y="199"/>
+			<point x="318" y="186" type="curve"/>
+			<point x="299" y="179"/>
+			<point x="271" y="176"/>
 			<point x="239" y="176" type="curve"/>
 			<point x="152" y="176"/>
 			<point x="104.4243924405" y="189.5112792522"/>
@@ -49,23 +62,10 @@
 			<point x="554" y="505" type="curve" smooth="yes"/>
 			<point x="520.9186849779" y="539.0542948757"/>
 			<point x="476" y="552"/>
-			<point x="387" y="552" type="curve"/>
-			<point x="212" y="552"/>
-			<point x="92" y="493"/>
-			<point x="66" y="390" type="curve" smooth="yes"/>
-			<point x="43" y="298"/>
-			<point x="87" y="251"/>
-			<point x="213" y="229" type="curve" smooth="yes"/>
-			<point x="286" y="216" type="line" smooth="yes"/>
-			<point x="310" y="212"/>
-			<point x="324" y="199"/>
-			<point x="318" y="186" type="curve"/>
-			<point x="299" y="179"/>
-			<point x="271" y="176"/>
 		</contour>
 	</outline>
-	<anchor name="top" x="318" y="551"/>
-	<anchor name="bottom" x="300" y="-1"/>
+	<anchor name="top" x="398" y="551"/>
+	<anchor name="bottom" x="222" y="-1"/>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
