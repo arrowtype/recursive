@@ -95,6 +95,17 @@ Recursive Sans \t Arrow Type\
 # ---------------------------------------------------------
 # ANIMATION -----------------------------------------------
 
+curve = {}
+
+for frame in range(frames):
+    t = frame / frames
+    easingCurve = ((0,0), (pixels/2,0), (pixels/2,pixels), (pixels,pixels))
+    split = splitCubicAtT(*easingCurve, t)
+    loc = split[0][-1]
+    y = loc[1]
+    
+    curve[t] = y
+
 for frame in range(frames):
     
     newPage(W, H)
@@ -107,10 +118,10 @@ for frame in range(frames):
     t = frame / frames
     # split = splitCubicAtT(*easingCurve, t)
     
-    easingCurve = ((0,0), (pixels/2,0), (pixels/2,pixels), (pixels,pixels))
-    split = splitCubicAtT(*easingCurve, t)
-    loc = split[0][-1]
-    y = loc[1]
+    # easingCurve = ((0,0), (pixels/2,0), (pixels/2,pixels), (pixels,pixels))
+    # split = splitCubicAtT(*easingCurve, t)
+    # loc = split[0][-1]
+    y = curve[t]
     
     # loc = split[0][-1]
     
@@ -193,9 +204,25 @@ for frame in range(frames):
         rect(0,H*.66, W*y/W, size)      # y - curved
 
         for frame in range(frames):
+            
+                
+            fill(1,0,1,1)
             t = frame / frames
             size = pixels/pixels * 4
-            oval(loc[0]-size/2, (y/2)+(H/12)-(size/2), size, size)
+            oval(loc[0]-size/2, (y*0.375)+(H/12)-(size/2), size, size)
+            
+            for frame in range(frames):
+                t = frame / frames
+                # easingCurve = ((0,0), (pixels/2,0), (pixels/2,pixels), (pixels,pixels))
+                # split = splitCubicAtT(*easingCurve, t)
+                # loc = split[0][-1]
+                # y = loc[1]
+                y = curve[t]
+                size = pixels/pixels * 4
+                fill(1,1,1,0.125)
+                oval(loc[0]-size/2, (y*0.375)+(H/12)-(size/2), size, size)
+            
+            
 
 
 now = datetime.datetime.now().strftime("%Y_%m_%d-%H_%M") # -%H_%M_%S
