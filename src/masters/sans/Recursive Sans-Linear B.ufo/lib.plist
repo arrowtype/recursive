@@ -914,35 +914,9 @@
 			<string>seven</string>
 			<string>eight</string>
 			<string>nine</string>
-			<string>onesuperior</string>
-			<string>twosuperior</string>
-			<string>threesuperior</string>
 			<string>onequarter</string>
 			<string>onehalf</string>
 			<string>threequarters</string>
-			<string>zerosuperior</string>
-			<string>foursuperior</string>
-			<string>fivesuperior</string>
-			<string>sixsuperior</string>
-			<string>sevensuperior</string>
-			<string>eightsuperior</string>
-			<string>ninesuperior</string>
-			<string>zeroinferior</string>
-			<string>oneinferior</string>
-			<string>twoinferior</string>
-			<string>threeinferior</string>
-			<string>fourinferior</string>
-			<string>fiveinferior</string>
-			<string>sixinferior</string>
-			<string>seveninferior</string>
-			<string>eightinferior</string>
-			<string>nineinferior</string>
-			<string>onethird</string>
-			<string>twothirds</string>
-			<string>oneeighth</string>
-			<string>threeeighths</string>
-			<string>fiveeighths</string>
-			<string>seveneighths</string>
 			<string>underscore</string>
 			<string>hyphen</string>
 			<string>endash</string>
@@ -1060,8 +1034,15 @@
 			<string>dong</string>
 			<string>dotlessij</string>
 			<string>dotlessj</string>
+			<string>eightinferior</string>
+			<string>eightsuperior</string>
+			<string>fiveeighths</string>
+			<string>fiveinferior</string>
+			<string>fivesuperior</string>
 			<string>fj</string>
 			<string>flatg</string>
+			<string>fourinferior</string>
+			<string>foursuperior</string>
 			<string>franc</string>
 			<string>guarani</string>
 			<string>kip</string>
@@ -1070,12 +1051,31 @@
 			<string>manat</string>
 			<string>naira</string>
 			<string>nhookleft</string>
+			<string>nineinferior</string>
+			<string>ninesuperior</string>
+			<string>oneeighth</string>
+			<string>oneinferior</string>
+			<string>onesuperior</string>
+			<string>onethird</string>
 			<string>peseta</string>
 			<string>peso</string>
 			<string>ringacute</string>
 			<string>ruble</string>
 			<string>rupeeIndian</string>
+			<string>seveneighths</string>
+			<string>seveninferior</string>
+			<string>sevensuperior</string>
+			<string>sixinferior</string>
+			<string>sixsuperior</string>
+			<string>threeeighths</string>
+			<string>threeinferior</string>
+			<string>threesuperior</string>
+			<string>twoinferior</string>
+			<string>twosuperior</string>
+			<string>twothirds</string>
 			<string>won</string>
+			<string>zeroinferior</string>
+			<string>zerosuperior</string>
 			<string>fi</string>
 			<string>fl</string>
 			<string>gravecomb.case</string>
@@ -1103,7 +1103,6 @@
 			<string>ampersand.code_experimental_2</string>
 			<string>ampersand.code_experimental_3</string>
 			<string>sterling.replaced_with_flat</string>
-			<string>one.sans</string>
 			<string>one.flatflag</string>
 			<string>seven.upward-trap</string>
 			<string>two.replaced_with_rounder</string>
@@ -1167,6 +1166,8 @@
 			<string>G.replaced_with_morph</string>
 			<string>a.replaced_with_flatbar</string>
 			<string>e.replaced_with_romaner</string>
+			<string>one.sans</string>
+			<string>zero.sans</string>
 		</array>
 	</dict>
 </plist>
