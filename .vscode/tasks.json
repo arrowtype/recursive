@@ -10,6 +10,13 @@
         "kind": "build",
         "isDefault": true
       }
+    },
+    {
+      "label": "Run Current Python File",
+      "type": "shell",
+      "command": "python",
+      "args": ["${file}"],
     }
+  ]
   ]
 }
