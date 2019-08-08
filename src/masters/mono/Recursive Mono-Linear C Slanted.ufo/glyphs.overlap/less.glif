@@ -20,10 +20,12 @@
 			<point x="498" y="193"/>
 			<point x="496" y="199"/>
 			<point x="486" y="202" type="curve" smooth="yes"/>
-			<point x="410.5448056541" y="225.5024375832"/>
-			<point x="326" y="252"/>
-			<point x="255" y="276" type="curve"/>
-			<point x="275" y="238" type="line"/>
+			<point x="425" y="221"/>
+			<point x="357" y="242"/>
+			<point x="299" y="261" type="curve" smooth="yes"/>
+			<point x="287" y="265"/>
+			<point x="284" y="272"/>
+			<point x="287" y="285" type="curve" smooth="yes"/>
 			<point x="302" y="346" type="line"/>
 			<point x="261" y="297" type="line"/>
 			<point x="377" y="331"/>
@@ -42,12 +44,4 @@
 			<point x="277" y="499"/>
 		</contour>
 	</outline>
-	<lib>
-		<dict>
-			<key>com.arrowtype.glyphMarkStatus</key>
-			<string>check</string>
-			<key>public.markColor</key>
-			<string>1,1,0,1</string>
-		</dict>
-	</lib>
 </glyph>
