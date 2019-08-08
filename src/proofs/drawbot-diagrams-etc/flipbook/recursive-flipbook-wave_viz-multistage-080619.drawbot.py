@@ -123,7 +123,7 @@ for frame in range(frames):
         # completionOnCurve = y / H * 0.5
         # factor = y / pixels * 2 
         # factor = y / pixels * 1 / (curveDict[0.5][1]/H)
-        factor = y / pixels * 1 / (curveDict[0.5][1]/H)
+        factor = y / pixels * 1/ .484285714 # ((H-curveDict[0.5][1])/H)
         
         
         
@@ -140,7 +140,7 @@ for frame in range(frames):
         currentItal = 1
         
         # factor = (y - 0.5) / pixels * 2 - 1
-        factor = (y - 0.5) / pixels * 1/(curveDict[0.75][1]/H)
+        factor = (y - 0.5) / pixels * 1/ .150357143 # ((H-curveDict[0.75][1])/H)
         
     if frame > frames*0.75:
         minXprn = 1
