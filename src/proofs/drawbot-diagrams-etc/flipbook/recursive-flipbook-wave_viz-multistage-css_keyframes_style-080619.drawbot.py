@@ -13,35 +13,32 @@ newDrawing()
 # fontFam = "Rec Mono Beta013 Var"
 
 fontFam = "/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/fonts/Recursive-mono-full--w_ital_slnt-2019_07_25.ttf"
-frames = 200
+frames = 100
 format = "gif"
-
 
 frontmatter = False
 debug = True
 
-bookSize = 3.5
-DPI = 150
-pixels = DPI*bookSize
+# bookSize = 3.5
+# DPI = 150
+# pixels = DPI*bookSize
 
-# pixels = 1000
+pixels = 1000
+
+
+
 W, H = pixels, pixels # size is 72 dpi * bookSize
 
 
 
+minWeight = 300.01
+maxWeight = 899.99
 
-textSize = W/30
-rwSize = W/1.4
+minExpression = 0.01
+maxExpression = 1
 
-
-# minWeight = 300.01
-# maxWeight = 899.99
-
-# minExpression = 0.01
-# maxExpression = 1
-
-# maxSlant = 0
-# minSlant = -15
+maxSlant = 0
+minSlant = -15
     
 
 def interp(a, b, t):
@@ -51,6 +48,45 @@ def interp(a, b, t):
 
 # ---------------------------------------------------------
 # ANIMATION -----------------------------------------------
+
+# keyframes for axes
+
+keyframes = {
+    0.0: {
+        xprn: 0,
+        wght: 300,
+        slnt: 0,
+        ital: 0
+    },
+    0.25: {
+        xprn: 0.5,
+        wght: 800,
+        slnt: -7.5,
+        ital: 0
+    },
+    0.5: {
+        xprn: 1,
+        wght: 900,
+        slnt: -15,
+        ital: 0 # this is better to come on instantly, though
+    },
+    0.75 {
+        xprn: 0.5,
+        wght: 800,
+        slnt: -7.5,
+        ital: 1
+    },
+    1.00 {
+        xprn: 0.0,
+        wght: 300,
+        slnt: 0,
+        ital: 1
+    }
+}
+
+for keyframe in keyframes.keys():
+
+
 
 curviness = 0.7
         
@@ -74,6 +110,7 @@ if debug:
     pp = pprint.PrettyPrinter(width=80, compact=False)
     pp.pprint(curveDict)
 
+
 for frame in range(frames):
     # frame = frame + 1
     
@@ -91,6 +128,9 @@ for frame in range(frames):
     fill(1)
     
     factor = y / pixels
+
+    if t in keyframes.keys():
+        xprn = (keyframes[t]["xprn"], )
     
 
     if frame >= frames*0 and frame <= frames*0.25:
@@ -168,122 +208,99 @@ for frame in range(frames):
     
     # padding = 0.1
     # text(str(round(currentWght)), (((W*0.1)+(W*completionOnCurve * 0.7)), H *0.7))
-
-    currentProp = 0
     
     x = str('{:4.2f}'.format(currentXprn))
-    w = str('{:3.2f}'.format(currentWght))
-    s = str('{:05.2f}'.format(abs(currentSlnt)))
+    w = str('{:3.0f}'.format(currentWght))
+    s = str('{:5.2f}'.format(abs(currentSlnt)))
     i = str('{:4.2f}'.format(currentItal))
-    p = str('{:4.2f}'.format(currentProp))
     # text(f"prop {str(0)}   xprn {x}   wght {w}   slnt -{s}   ital {i}   {frame+1}", (((W*0.025)), H *0.025))
 
-    # ----------------------------------------------------------------------
-    # BAR CHARTS / SLIDERS FOR AXES ----------------------------------------
+    # BAR CHARTS FOR AXES
 
     # minVal, maxVal, currentVal
 
-    xprnVal = currentXprn
+    minXprn, maxXprn = 0, 1
+    xprnVal = interp(minXprn, maxXprn, currentXprn)
     minWght, maxWght = 300, 900
-    wghtVal = (currentWght - minWght) / (maxWght - minWght)
+    wghtVal = interp(minWght, maxWght, currentWght)
     minSlnt, maxSlnt = 0, -15
-    slntVal = abs(((currentSlnt - minSlnt) / (minSlnt - maxSlnt)))
+    slntVal = interp(minSlnt, maxSlnt, currentSlnt)
     minItal, maxItal = 0, 1
-    italVal = currentItal
+    italVal = interp(minItal, maxItal, currentItal)
+
+
+    currentProp = 0
+    minProp, maxProp = 0, 1
+    propVal = interp(minProp, maxProp, currentProp)
+
 
     infoSpacing = H * 0.075
 
     infoHeight = H * 0.5
 
-    # print(f"slntVal: {slntVal}")
-
-    trackSize = padding*0.125
-    ovalSize = padding*0.675
-
-    fill(0.5,0.5,0.5,1)
-    rect(padding, infoHeight, (W- (padding*2)), trackSize)
-    fill(1)
-    oval(((W - (padding*2)) * italVal) -(ovalSize/2) + padding, infoHeight-(ovalSize/2)+(trackSize/2), ovalSize, ovalSize)
-    textBox(f"ital", (padding, infoHeight + padding*0.25, (W- (padding*2)), textSize*1.5))
-    textBox(f"{i}", (padding, infoHeight + padding*0.25, (W- (padding*2)), textSize*1.5), align="right")
+    ovalSize = padding
+    rect(padding, infoHeight, (W- (padding*2)) * italVal/maxItal, 2)
+    text(f"ital {i}", (((W*0.025)), infoHeight + padding))
 
     infoHeight += infoSpacing
-    fill(0.5,0.5,0.5,1)
-    rect(padding, infoHeight, (W- (padding*2)), trackSize)
-    fill(1)
-    oval(((W - (padding*2)) * slntVal) -(ovalSize/2) + padding, infoHeight-(ovalSize/2)+(trackSize/2), ovalSize, ovalSize)
-    textBox(f"slnt", (padding, infoHeight + padding*0.25, (W- (padding*2)), textSize*1.5))
-    textBox(f"-{s}", (padding, infoHeight + padding*0.25, (W- (padding*2)), textSize*1.5), align="right")
+    rect(padding, infoHeight, (W- (padding*2)) * slntVal/maxSlnt, 2)
+    text(f"slnt -{s}", (((W*0.025)), infoHeight + padding))
 
     infoHeight += infoSpacing
-    fill(0.5,0.5,0.5,1)
-    rect(padding, infoHeight, (W- (padding*2)), trackSize)
-    fill(1)
-    oval(((W - (padding*2)) * wghtVal) -(ovalSize/2) + padding, infoHeight-(ovalSize/2)+(trackSize/2), ovalSize, ovalSize)
-    textBox(f"wght", (padding, infoHeight + padding*0.25, (W- (padding*2)), textSize*1.5))
-    textBox(f"{w}", (padding, infoHeight + padding*0.25, (W- (padding*2)), textSize*1.5), align="right")
+    rect(padding, infoHeight, (W- (padding*2)) * wghtVal/maxWght, 2)
+    text(f"wght {w}", (((W*0.025)), infoHeight + padding))
 
     infoHeight += infoSpacing
+    # rect(padding, infoHeight, (W- (padding*2)) * xprnVal/maxXprn, 2)
     fill(0.5,0.5,0.5,1)
-    rect(padding, infoHeight, (W- (padding*2)), trackSize)
+    rect(padding, infoHeight, (W- (padding*2)), 2)
     fill(1)
-    oval(((W - (padding*2)) * xprnVal) -(ovalSize/2) + padding, infoHeight-(ovalSize/2)+(trackSize/2), ovalSize, ovalSize)
-    textBox(f"XPRN", (padding, infoHeight + padding*0.25, (W- (padding*2)), textSize*1.5))
-    textBox(f"{x}", (padding, infoHeight + padding*0.25, (W- (padding*2)), textSize*1.5), align="right")
+    oval(((W- (padding*2)) * xprnVal/maxXprn) -(ovalSize/2)  + padding, infoHeight-(ovalSize/2), ovalSize, ovalSize)
+    text(f"xprn {x}", (((W*0.025)), infoHeight + padding))
+
 
     currentProp = 0
     infoHeight += infoSpacing
-    fill(0.5,0.5,0.5,1)
-    rect(padding, infoHeight, (W- (padding*2)), trackSize)
-    fill(1)
-    oval(((W - (padding*2)) * currentProp) -(ovalSize/2) + padding, infoHeight-(ovalSize/2)+(trackSize/2), ovalSize, ovalSize)
-    textBox(f"PROP", (padding, infoHeight + padding*0.25, (W- (padding*2)), textSize*1.5))
-    textBox(f"{p}", (padding, infoHeight + padding*0.25, (W- (padding*2)), textSize*1.5), align="right")
+    rect(padding, infoHeight, (W- (padding*2)) * propVal/maxProp, 2)
+    text(f"prop {currentProp}", (((W*0.025)), infoHeight + padding))
 
-    # page number
+    # currentXprn = interp(xprn[0], xprn[1], factor)
+    # currentWght = interp(wght[0], wght[1], factor)
+    # currentSlnt = interp(slnt[0], slnt[1], factor)
 
-    textBox(str(frame + 1), (padding, padding*0.5, (W- (padding*2)), textSize*1.5), align="right")
+
+    print("*", end=" ")
 
     if debug:
 
         print(str(frame).ljust(3), " | factor: ", str(round(factor, 3)).ljust(5)," | t: ", str(round(t, 3)).ljust(5), " | wght: ", str(round(currentWght, 0)).ljust(5),\
         " | y: ", str(round(y, 3)))
 
-        size = padding * 0.15
+        ## visual of each stage along curve
+        # fill(0,1,0,1)
+        # quarter = curveDict[0.25][0]
+        # rect(quarter, 0, 2, H)
+        # half = curveDict[0.5][0]
+        # rect(half, 0, 2, H)
+        # threequarters = curveDict[0.75][0]
+        # rect(threequarters, 0, 2, H)
 
-        # visual of each stage along curve
-        fill(0,1,1,0.25)
-        quarter = curveDict[0.25][0]
-        rect(quarter, 0, size, H)
-        half = curveDict[0.5][0]
-        rect(half, 0, size, H)
-        threequarters = curveDict[0.75][0]
-        rect(threequarters, 0, size, H)
-
-        
-        fill(0,1,1,1)
-        fontSize(textSize*0.625)
-        text("t 0.25", quarter + padding*0.5, H - padding)
-        text("t 0.50", half + padding*0.5, H - padding)
-        text("t 0.75", threequarters + padding*0.5, H - padding)
-
-        # overall y value progress bar
-        fill(1,0,1,1)
-        
-        rect(W-size,0, size, H*y/H )      # y - curved
-        rect(0,0, size, H*y/H )      # y - curved
+        ## overall y value progress bar
+        # fill(1,0,1,1)
+        # size = pixels/pixels * 2
+        # rect(0,H*.66, W*y/W, size)      # y - curved
 
 
         
 
         for i in range(frames):
             
-            fill(0.6,0.6,0.6,0.375)
+            fill(0.6,0.6,0.6,0.25)
             t = i / frames
 
             x,y = getCurveXY(t)
             
-            size = padding * 0.375
+            size = pixels/pixels * 4
             # oval(x-size/2, (y*0.375)+(H/12)-(size/2), size, size) # covering letters
             oval(x-size/2, (y)-(size/2), size, size)
             
@@ -292,12 +309,12 @@ for frame in range(frames):
         
         x,y = getCurveXY(t)
                 
-        size = padding * 0.5
+        size = pixels/pixels * 6
         # oval(x-size/2, (y*0.375)+(H/12)-(size/2), size, size) # covering letters
         oval(x-size/2, (y)-(size/2), size, size)
 
 
-now = datetime.datetime.now().strftime("%Y_%m_%d-%H_%M") # -%H_%M_%S
+now = datetime.datetime.now().strftime("%Y_%m_%d-%H") # -%H_%M_%S
 
 saveImage("/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/exports/recursive-flipbook-axes-" + now + "." + format)
 
