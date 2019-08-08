@@ -1,13 +1,14 @@
 # make flipbook pages for an animated specimen
 # https://codepen.io/thundernixon/pen/wVypxe?editors=1100
 
+from drawBot import * # requires drawbot to be installed as module
 import datetime
 from fontTools.misc.bezierTools import splitCubicAtT
 
 
 # fontFam = "Rec Mono Beta013 Var"
 
-fontFam = "./fonts/Recursive-mono-full--w_ital_slnt-2019_07_25.ttf"
+fontFam = "/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/fonts/Recursive-mono-full--w_ital_slnt-2019_07_25.ttf"
 frames = 100
 format = "gif"
 
@@ -42,17 +43,6 @@ def interp(a, b, t):
 # ---------------------------------------------------------
 # ANIMATION -----------------------------------------------
 
-# currrveDict = {}
-
-# for frame in range(frames):
-#     t = frame / frames
-#     currrve = ((0,0), (15062, 22), (0,pixels), (pixels,pixels))
-#     split = splitCubicAtT(*currrve, t)
-#     loc = split[0][-1]
-#     y = loc[1]
-    
-#     currrveDict[t] = y
-
 curviness = 0.7
         
 def getCurveXY(t):
@@ -61,6 +51,17 @@ def getCurveXY(t):
     x,y = split[0][-1][0], split[0][-1][1]
     return(x,y)
 
+curveDict = {}
+
+for frame in range(frames+1):
+    t = frame / frames    
+    x,y = getCurveXY(t)
+
+    curveDict[t] = (x,y)
+
+import pprint
+pp = pprint.PrettyPrinter(width=80, compact=False)
+pp.pprint(curveDict)
 
 for frame in range(frames):
     
@@ -77,32 +78,71 @@ for frame in range(frames):
     
     fill(1)
     
-    completionOnCurve = y / pixels
+    factor = y / pixels
     
     # completionOnCurve = ease(t)
     
     # TODO: split into quarters for smoother weight progression
     
     # if in first half of frames
-    if frame <= frames*0.5:
-        
-        minXprn = 0.01
-        maxXprn = 1
-        
+
+    if frame <= frames*0.25:
+
+        minXprn = 0.001
+        maxXprn = 0.5
+
         minWeight = 300.01
         maxWeight = 800 - 0.01
-        
+
         minSlnt = 0.01
+        maxSlnt = -7.5
+
+        currentItal = 0
+
+        # keyframe = frames*0.25
+
+        # factor = y / pixels * 1 / (curveDict[0.25][1]/H) # 0.17392
+        factor = y / pixels * 1 / (curveDict[0.25][1]/H) # 0.17392
+
+        # print(curveDict["0.25"][1] / curveDict["1.0"][1])
+
+    if frame > frames*0.25 and frame <= frames*0.5:
+    # if frame <= frames*0.5:
+        
+        minXprn = 0.5
+        maxXprn = 1
+        
+        minWeight = 800.01
+        maxWeight = 900 - 0.01
+        
+        minSlnt = -7.5
         maxSlnt = -15
         
         currentItal = 0
                 
         # completionOnCurve = y / H * 0.5
-        completionOnCurve = y / pixels * 2
+        # factor = y / pixels * 2 
+        # factor = y / pixels * 1 / (curveDict[0.5][1]/H)
+        factor = y / pixels * 1 / (curveDict[0.5][1]/H)
         
         
         
-    if frame > frames*0.5:
+    if frame > frames*0.5 and frame <= frames * 0.75:
+        minXprn = 1
+        maxXprn = 0
+        
+        minWeight = 900 - .01
+        maxWeight = 800 + 0.01
+        
+        minSlnt = -15
+        maxSlnt = 0
+        
+        currentItal = 1
+        
+        # factor = (y - 0.5) / pixels * 2 - 1
+        factor = (y - 0.5) / pixels * 1/(curveDict[0.75][1]/H)
+        
+    if frame > frames*0.75:
         minXprn = 1
         maxXprn = 0
         
@@ -114,16 +154,17 @@ for frame in range(frames):
         
         currentItal = 1
         
-        completionOnCurve = (y - 0.5) / pixels * 2 -1
+        # factor = (y - 0.5) / pixels * 2 -1
+        factor = y / pixels * 1/(curveDict[1.0][1]/H)
         
     # if frame > frames * 0.6:
         
     #     currentItal = 1
     
     
-    currentXprn = interp(minXprn, maxXprn, completionOnCurve)
-    currentWeight = interp(minWeight, maxWeight, completionOnCurve)
-    currentSlnt = interp(minSlnt, maxSlnt, completionOnCurve)
+    currentXprn = interp(minXprn, maxXprn, factor)
+    currentWeight = interp(minWeight, maxWeight, factor)
+    currentSlnt = interp(minSlnt, maxSlnt, factor)
     
     fontVariations(
         wght=currentWeight,
@@ -132,7 +173,7 @@ for frame in range(frames):
         ital=currentItal
         )
     
-    print(str(frame).ljust(3), " | factor: ", str(round(completionOnCurve, 3)).ljust(5)," | t: ", str(round(t, 3)).ljust(5), " | wght: ", currentWeight)
+    print(str(frame).ljust(3), " | factor: ", str(round(factor, 3)).ljust(5)," | t: ", str(round(t, 3)).ljust(5), " | wght: ", currentWeight)
     
     fontSize(W/1.4)
     text("rw", (W/15, H/12))
@@ -146,19 +187,16 @@ for frame in range(frames):
     w = str('{:3.0f}'.format(currentWeight))
     s = str('{:5.2f}'.format(abs(currentSlnt)))
     i = str('{:4.2f}'.format(currentItal))
-    text(f"p {str(0)}   x {x}   w {w}   s -{s}   i {i}", (((W*0.025)), H *0.025))  
+    text(f"p {str(0)}   x {x}   w {w}   s -{s}   i {i}", (((W*0.025)), H *0.025))
+
+    print("*", end=" ")
 
     if debug:
         fill(1,0,1,1)
         size = pixels/pixels * 2
         # rect(0,H*.66, W*y/W, size)      # y - curved
-        
-        
-        
 
         for i in range(frames):
-            
-                
             
             fill(0.6,0.6,0.6,0.25)
             t = i / frames
@@ -178,9 +216,7 @@ for frame in range(frames):
         oval(x-size/2, (y*0.375)+(H/12)-(size/2), size, size)
         # oval(x-size/2, (y)-(size/2), size, size)
 
-            
 
+now = datetime.datetime.now().strftime("%Y_%m_%d-%H") # -%H_%M_%S
 
-now = datetime.datetime.now().strftime("%Y_%m_%d-%H_%M") # -%H_%M_%S
-
-saveImage("./exports/recursive-flipbook-" + now + "." + format)
+saveImage("/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/exports/recursive-flipbook-" + now + "." + format)
