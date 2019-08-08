@@ -56,16 +56,19 @@ def getCurveXY(t):
 curveDict = {}
 
 for frame in range(frames+1):
+    # frame = frame + 1
     t = frame / frames    
     x,y = getCurveXY(t)
 
     curveDict[t] = (x,y)
 
-import pprint
-pp = pprint.PrettyPrinter(width=80, compact=False)
-pp.pprint(curveDict)
+if debug:
+    import pprint
+    pp = pprint.PrettyPrinter(width=80, compact=False)
+    pp.pprint(curveDict)
 
 for frame in range(frames):
+    # frame = frame + 1
     
     newPage(W, H)
     font(fontFam)
@@ -75,7 +78,7 @@ for frame in range(frames):
     fill(0)
     rect(0,0,W,H)
     
-    t = frame / frames    
+    t = frame / frames 
     x,y = getCurveXY(t)
     
     fill(1)
@@ -83,15 +86,12 @@ for frame in range(frames):
     factor = y / pixels
     
 
-    if frame <= frames*0.25:
+    if frame >= frames*0 and frame <= frames*0.25:
 
         xprn = (0.001,  0.5)
         wght = (300.01, 800 - 0.01)
         slnt = (0.01,   -7.5)
         currentItal = 0
-
-        # factor = y / pixels * 1 / (curveDict[0.25][1]/H) # 0.17392
-        # factor = y / pixels * 1 / (curveDict[0.25][1]/H) # 0.17392
 
         startPos = curveDict[0.0][1]
         endPos = curveDict[0.25][1]
@@ -100,25 +100,11 @@ for frame in range(frames):
 
         factor = (y - startPos ) / stepRange
 
-        
-
-        # print(curveDict["0.25"][1] / curveDict["1.0"][1])
-
     if frame > frames*0.25 and frame <= frames*0.5:
         xprn = (0.5, 1)
         wght = (800.01, 900 - 0.01)
         slnt = (-7.5, -15)
         currentItal = 0
-
-        # factor = y / pixels * 2 
-        # factor = y / pixels * 1 / (curveDict[0.5][1]/H)
-        # factor = y / pixels * 1/ .484285714 # ((H-curveDict[0.5][1])/H)
-        # factor = 0 # test
-
-        # range = y2 - y1
-        # stepRange = curveDict[0.5][1] - curveDict[0.25][1]
-
-        # factor = (y - stepRange) / stepRange
 
         startPos = curveDict[0.25][1]
         endPos = curveDict[0.5][1]
@@ -133,20 +119,6 @@ for frame in range(frames):
         wght = (900 - .01, 800 + 0.01)
         slnt = (-15, -7.5)
         currentItal = 1
-        
-        # factor = (y - 0.5) / pixels * 2 - 1
-        # factor = (y - 0.5) / pixels * 1/ .150357143 # ((H-curveDict[0.75][1])/H)
-
-        # factor = y / pixels * 1 / (curveDict[0.25][1]/H)
-        # factor = 0 # test
-
-        # stepRange = curveDict[0.75][1] - curveDict[0.5][1]
-
-        # factor = (y - stepRange) / stepRange
-
-        # stepRange = curveDict[0.75][1] - curveDict[0.5][1]
-
-        # factor = (y - curveDict[0.5][1] ) / stepRange
 
         startPos = curveDict[0.5][1]
         endPos = curveDict[0.75][1]
@@ -154,22 +126,12 @@ for frame in range(frames):
         stepRange = endPos - startPos
 
         factor = (y - startPos ) / stepRange
-
-        # print("y:", y, " | ", abs(curveDict[0.5][1] - curveDict[0.75][1]))
         
-    # if frame > frames*0.75:
     if frame > frames*0.75 and frame <= frames * 1.0:
-    # if frame > frames*0.5:
         xprn = (0.5, 0)
         wght = (800 - .01, 300 + 0.01)
         slnt = (-7.5, 0)
         currentItal = 1
-        
-        # factor = (y - 0.5) / pixels * 2 -1
-        # factor = y / pixels * 1/(curveDict[1.0][1]/H)
-        # factor = y / pixels * 1 / (curveDict[0.25][1]/H)
-        factor = 1
-        # print("y:", y, " | ", curveDict[0.25][1])
 
         startPos = curveDict[0.75][1]
         endPos = curveDict[1.0][1]
@@ -189,8 +151,7 @@ for frame in range(frames):
         ital=currentItal
         )
     
-    print(str(frame).ljust(3), " | factor: ", str(round(factor, 3)).ljust(5)," | t: ", str(round(t, 3)).ljust(5), " | wght: ", str(round(currentWeight, 0)).ljust(5),\
-        " | y: ", str(round(y, 3)))
+    
     
     fontSize(W/1.4)
     text("rw", (W/15, H/12))
@@ -202,25 +163,48 @@ for frame in range(frames):
     
     x = str('{:4.2f}'.format(currentXprn))
     w = str('{:3.0f}'.format(currentWeight))
-    s = str('{:5.2f}'.format(abs(currentSlnt)))
+    s = str('{:5.2f}'.format(abs(currentSlnt))).rjust(6, "0")
     i = str('{:4.2f}'.format(currentItal))
-    text(f"p {str(0)}   x {x}   w {w}   s -{s}   i {i}", (((W*0.025)), H *0.025))
+    text(f"prop {str(0)}   xprn {x}   wght {w}   slnt -{s}   ital {i}   {frame+1}", (((W*0.025)), H *0.025))
+
+    # BAR CHARTS FOR AXES
+
+    # minVal, maxVal, currentVal
+
+    minXprn = 0
+    maxXprn = 1
+    xprnVal = interp(minXprn, maxXprn, currentXprn)
+
+    fill(1)
+    text(f"xprn {x}", (((W*0.025)), H *0.55))
+    rect(0, H * 0.5, W * xprnVal/maxXprn, 2)
+
+    currentXprn = interp(xprn[0], xprn[1], factor)
+    currentWeight = interp(wght[0], wght[1], factor)
+    currentSlnt = interp(slnt[0], slnt[1], factor)
+
 
     print("*", end=" ")
 
     if debug:
 
-        fill(0,1,0,1)
-        quarter = curveDict[0.25][0]
-        rect(quarter, 0, 2, H)
-        half = curveDict[0.5][0]
-        rect(half, 0, 2, H)
-        threequarters = curveDict[0.75][0]
-        rect(threequarters, 0, 2, H)
+        print(str(frame).ljust(3), " | factor: ", str(round(factor, 3)).ljust(5)," | t: ", str(round(t, 3)).ljust(5), " | wght: ", str(round(currentWeight, 0)).ljust(5),\
+        " | y: ", str(round(y, 3)))
+
+        # fill(0,1,0,1)
+        # quarter = curveDict[0.25][0]
+        # rect(quarter, 0, 2, H)
+        # half = curveDict[0.5][0]
+        # rect(half, 0, 2, H)
+        # threequarters = curveDict[0.75][0]
+        # rect(threequarters, 0, 2, H)
 
         fill(1,0,1,1)
         size = pixels/pixels * 2
-        # rect(0,H*.66, W*y/W, size)      # y - curved
+        rect(0,H*.66, W*y/W, size)      # y - curved
+
+
+        
 
         for i in range(frames):
             
