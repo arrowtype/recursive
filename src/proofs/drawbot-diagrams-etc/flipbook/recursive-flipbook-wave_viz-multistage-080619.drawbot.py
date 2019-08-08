@@ -5,7 +5,7 @@ from drawBot import * # requires drawbot to be installed as module
 import datetime
 from fontTools.misc.bezierTools import splitCubicAtT
 
-
+newDrawing()
 # fontFam = "Rec Mono Beta013 Var"
 
 fontFam = "/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/fonts/Recursive-mono-full--w_ital_slnt-2019_07_25.ttf"
@@ -91,7 +91,14 @@ for frame in range(frames):
         currentItal = 0
 
         # factor = y / pixels * 1 / (curveDict[0.25][1]/H) # 0.17392
-        factor = y / pixels * 1 / (curveDict[0.25][1]/H) # 0.17392
+        # factor = y / pixels * 1 / (curveDict[0.25][1]/H) # 0.17392
+
+        startPos = curveDict[0.0][1]
+        endPos = curveDict[0.25][1]
+
+        stepRange = endPos - startPos
+
+        factor = (y - startPos ) / stepRange
 
         
 
@@ -109,15 +116,22 @@ for frame in range(frames):
         # factor = 0 # test
 
         # range = y2 - y1
-        stepRange = curveDict[0.5][1] - curveDict[0.25][1]
+        # stepRange = curveDict[0.5][1] - curveDict[0.25][1]
 
-        factor = (y - stepRange) / stepRange
+        # factor = (y - stepRange) / stepRange
+
+        startPos = curveDict[0.25][1]
+        endPos = curveDict[0.5][1]
+
+        stepRange = endPos - startPos
+
+        factor = (y - startPos ) / stepRange
         
         
     if frame > frames*0.5 and frame <= frames * 0.75:
-        xprn = (1, 0)
+        xprn = (1, 0.5)
         wght = (900 - .01, 800 + 0.01)
-        slnt = (-15, 0)
+        slnt = (-15, -7.5)
         currentItal = 1
         
         # factor = (y - 0.5) / pixels * 2 - 1
@@ -126,23 +140,43 @@ for frame in range(frames):
         # factor = y / pixels * 1 / (curveDict[0.25][1]/H)
         # factor = 0 # test
 
-        stepRange = curveDict[0.75][1] - curveDict[0.5][1]
+        # stepRange = curveDict[0.75][1] - curveDict[0.5][1]
 
-        factor = (y - stepRange) / stepRange
+        # factor = (y - stepRange) / stepRange
+
+        # stepRange = curveDict[0.75][1] - curveDict[0.5][1]
+
+        # factor = (y - curveDict[0.5][1] ) / stepRange
+
+        startPos = curveDict[0.5][1]
+        endPos = curveDict[0.75][1]
+
+        stepRange = endPos - startPos
+
+        factor = (y - startPos ) / stepRange
 
         # print("y:", y, " | ", abs(curveDict[0.5][1] - curveDict[0.75][1]))
         
-    if frame > frames*0.75:
-        xprn = (1, 0)
+    # if frame > frames*0.75:
+    if frame > frames*0.75 and frame <= frames * 1.0:
+    # if frame > frames*0.5:
+        xprn = (0.5, 0)
         wght = (800 - .01, 300 + 0.01)
-        slnt = (-15, 0)
+        slnt = (-7.5, 0)
         currentItal = 1
         
         # factor = (y - 0.5) / pixels * 2 -1
         # factor = y / pixels * 1/(curveDict[1.0][1]/H)
         # factor = y / pixels * 1 / (curveDict[0.25][1]/H)
-        factor = 0
+        factor = 1
         # print("y:", y, " | ", curveDict[0.25][1])
+
+        startPos = curveDict[0.75][1]
+        endPos = curveDict[1.0][1]
+
+        stepRange = endPos - startPos
+
+        factor = (y - startPos ) / stepRange
     
     currentXprn = interp(xprn[0], xprn[1], factor)
     currentWeight = interp(wght[0], wght[1], factor)
@@ -212,3 +246,5 @@ for frame in range(frames):
 now = datetime.datetime.now().strftime("%Y_%m_%d-%H") # -%H_%M_%S
 
 saveImage("/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/exports/recursive-flipbook-" + now + "." + format)
+
+endDrawing()
