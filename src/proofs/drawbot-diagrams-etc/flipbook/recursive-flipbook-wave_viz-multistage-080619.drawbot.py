@@ -15,9 +15,11 @@ format = "gif"
 frontmatter = False
 debug = True
 
-bookSize = 3.5
-DPI = 150
-pixels = DPI*bookSize
+# bookSize = 3.5
+# DPI = 150
+# pixels = DPI*bookSize
+
+pixels = 1000
 
 
 
@@ -80,91 +82,71 @@ for frame in range(frames):
     
     factor = y / pixels
     
-    # completionOnCurve = ease(t)
-    
-    # TODO: split into quarters for smoother weight progression
-    
-    # if in first half of frames
 
     if frame <= frames*0.25:
 
-        minXprn = 0.001
-        maxXprn = 0.5
-
-        minWeight = 300.01
-        maxWeight = 800 - 0.01
-
-        minSlnt = 0.01
-        maxSlnt = -7.5
-
+        xprn = (0.001,  0.5)
+        wght = (300.01, 800 - 0.01)
+        slnt = (0.01,   -7.5)
         currentItal = 0
-
-        # keyframe = frames*0.25
 
         # factor = y / pixels * 1 / (curveDict[0.25][1]/H) # 0.17392
         factor = y / pixels * 1 / (curveDict[0.25][1]/H) # 0.17392
 
+        
+
         # print(curveDict["0.25"][1] / curveDict["1.0"][1])
 
     if frame > frames*0.25 and frame <= frames*0.5:
-    # if frame <= frames*0.5:
-        
-        minXprn = 0.5
-        maxXprn = 1
-        
-        minWeight = 800.01
-        maxWeight = 900 - 0.01
-        
-        minSlnt = -7.5
-        maxSlnt = -15
-        
+        xprn = (0.5, 1)
+        wght = (800.01, 900 - 0.01)
+        slnt = (-7.5, -15)
         currentItal = 0
-                
-        # completionOnCurve = y / H * 0.5
+
         # factor = y / pixels * 2 
         # factor = y / pixels * 1 / (curveDict[0.5][1]/H)
-        factor = y / pixels * 1/ .484285714 # ((H-curveDict[0.5][1])/H)
-        
+        # factor = y / pixels * 1/ .484285714 # ((H-curveDict[0.5][1])/H)
+        # factor = 0 # test
+
+        # range = y2 - y1
+        stepRange = curveDict[0.5][1] - curveDict[0.25][1]
+
+        factor = (y - stepRange) / stepRange
         
         
     if frame > frames*0.5 and frame <= frames * 0.75:
-        minXprn = 1
-        maxXprn = 0
-        
-        minWeight = 900 - .01
-        maxWeight = 800 + 0.01
-        
-        minSlnt = -15
-        maxSlnt = 0
-        
+        xprn = (1, 0)
+        wght = (900 - .01, 800 + 0.01)
+        slnt = (-15, 0)
         currentItal = 1
         
         # factor = (y - 0.5) / pixels * 2 - 1
-        factor = (y - 0.5) / pixels * 1/ .150357143 # ((H-curveDict[0.75][1])/H)
+        # factor = (y - 0.5) / pixels * 1/ .150357143 # ((H-curveDict[0.75][1])/H)
+
+        # factor = y / pixels * 1 / (curveDict[0.25][1]/H)
+        # factor = 0 # test
+
+        stepRange = curveDict[0.75][1] - curveDict[0.5][1]
+
+        factor = (y - stepRange) / stepRange
+
+        # print("y:", y, " | ", abs(curveDict[0.5][1] - curveDict[0.75][1]))
         
     if frame > frames*0.75:
-        minXprn = 1
-        maxXprn = 0
-        
-        minWeight = 800 - .01
-        maxWeight = 300 + 0.01
-        
-        minSlnt = -15
-        maxSlnt = 0
-        
+        xprn = (1, 0)
+        wght = (800 - .01, 300 + 0.01)
+        slnt = (-15, 0)
         currentItal = 1
         
         # factor = (y - 0.5) / pixels * 2 -1
-        factor = y / pixels * 1/(curveDict[1.0][1]/H)
-        
-    # if frame > frames * 0.6:
-        
-    #     currentItal = 1
+        # factor = y / pixels * 1/(curveDict[1.0][1]/H)
+        # factor = y / pixels * 1 / (curveDict[0.25][1]/H)
+        factor = 0
+        # print("y:", y, " | ", curveDict[0.25][1])
     
-    
-    currentXprn = interp(minXprn, maxXprn, factor)
-    currentWeight = interp(minWeight, maxWeight, factor)
-    currentSlnt = interp(minSlnt, maxSlnt, factor)
+    currentXprn = interp(xprn[0], xprn[1], factor)
+    currentWeight = interp(wght[0], wght[1], factor)
+    currentSlnt = interp(slnt[0], slnt[1], factor)
     
     fontVariations(
         wght=currentWeight,
@@ -173,7 +155,8 @@ for frame in range(frames):
         ital=currentItal
         )
     
-    print(str(frame).ljust(3), " | factor: ", str(round(factor, 3)).ljust(5)," | t: ", str(round(t, 3)).ljust(5), " | wght: ", currentWeight)
+    print(str(frame).ljust(3), " | factor: ", str(round(factor, 3)).ljust(5)," | t: ", str(round(t, 3)).ljust(5), " | wght: ", str(round(currentWeight, 0)).ljust(5),\
+        " | y: ", str(round(y, 3)))
     
     fontSize(W/1.4)
     text("rw", (W/15, H/12))
@@ -192,6 +175,15 @@ for frame in range(frames):
     print("*", end=" ")
 
     if debug:
+
+        fill(0,1,0,1)
+        quarter = curveDict[0.25][0]
+        rect(quarter, 0, 2, H)
+        half = curveDict[0.5][0]
+        rect(half, 0, 2, H)
+        threequarters = curveDict[0.75][0]
+        rect(threequarters, 0, 2, H)
+
         fill(1,0,1,1)
         size = pixels/pixels * 2
         # rect(0,H*.66, W*y/W, size)      # y - curved
