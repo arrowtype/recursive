@@ -226,7 +226,6 @@
 					<string>infinity</string>
 					<string>ordfeminine</string>
 					<string>degree</string>
-					<string>notdef</string>
 					<string>period</string>
 					<string>underscore</string>
 					<string>estimated</string>
@@ -281,6 +280,7 @@
 					<string>cedillacomb.case</string>
 					<string>ogonekcomb.case</string>
 					<string>ringacute.case</string>
+					<string>.notdef</string>
 				</array>
 				<key>type</key>
 				<string>glyphList</string>
@@ -816,6 +816,11 @@
 			<string>lcommaaccent.sans</string>
 			<string>ae</string>
 			<string>oslash</string>
+			<string>IJacute</string>
+			<string>dotlessi.italic</string>
+			<string>dotlessj.italic</string>
+			<string>dotlessi.mono</string>
+			<string>notdef</string>
 		</array>
 	</dict>
 </plist>
