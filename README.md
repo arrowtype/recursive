@@ -12,13 +12,13 @@ Recursive Sans borrows glyphs from its parent mono but adjusts the widths of man
 
 Recursive is still being built, but it will have the following axes:
 
-| Axis       | Tag  | Range        | Default | Description                                                     |
-| ---------- | ---- | ------------ | ------- | --------------------------------------------------------------- |
-| Proportion | PROP | 0 to 1       | 0       | Fixed-width or Natural-width (or something in between)          |
-| Expression | XPRN | 0 to 1       | 0       | Linear to Casual                                                |
-| Weight     | wght | 300 to 900   | 300     | Light to Heavy. Can be defined with usual font-weight property. |
-| Slant      | slnt | 0 to -15     | 0       | Upright (0°) to Slanted (about 15°)                             |
-| Italic     | ital | 0, 0.5, or 1 | 0.5     | Always roman (0), auto (0.5), or always italic (1)              |
+| Axis       | Tag    | Range        | Default | Description                                                     |
+| ---------- | ------ | ------------ | ------- | --------------------------------------------------------------- |
+| Proportion | `PROP` | 0 to 1       | 0       | Fixed-width or Natural-width (or something in between)          |
+| Expression | `XPRN` | 0 to 1       | 0       | Linear to Casual                                                |
+| Weight     | `wght` | 300 to 900   | 300     | Light to Heavy. Can be defined with usual font-weight property. |
+| Slant      | `slnt` | 0 to -15     | 0       | Upright (0°) to Slanted (about 15°)                             |
+| Italic     | `ital` | 0, 0.5, or 1 | 0.5     | Always roman (0), auto (0.5), or always italic (1)              |
 
 Note: `PROP` and `XPRN` are "unregistered" axes (not currently in Microsoft's official listing of variation axes and specs), so these tags must be used in all-caps in CSS, etc.
 
