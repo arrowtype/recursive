@@ -23,11 +23,13 @@ debug = True # overlays curve visualizations
 fontFam = "/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/fonts/Recursive-mono-full--w_ital_slnt-2019_07_25.ttf"
 
 frames = 200 # currently must be in units of 100
-format = "mp4" # pdf, gif, or mp4
+format = "gif" # pdf, gif, or mp4
 
 bookSize = 3.5 # inches
 DPI = 144 # dots per inch
 pixels = DPI*bookSize
+
+W, H = pixels, pixels # do not edit this
 
 textSize = W/30
 rwSize = W/1.4
@@ -38,7 +40,6 @@ curviness = 0.7 # amount of easing steepness. 0 to 1.
 # ---------------------------------------------------------
 # ANIMATION -----------------------------------------------
 
-W, H = pixels, pixels 
 
 def interp(a, b, t):
     distance = b-a
