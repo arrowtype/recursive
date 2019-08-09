@@ -203,6 +203,12 @@ Ydieresis=Y+dieresiscomb.case@top
 
 # dotaccent
 
+i=dotlessi+dotaccentcomb@top
+i.mono=dotlessi.mono+dotaccentcomb@top
+i.italic=dotlessi.italic+dotaccentcomb@top
+j=dotlessj+dotaccentcomb@top
+j.italic=dotlessj.italic+dotaccentcomb@top
+
 cdotaccent=c+dotaccentcomb@top
 edotaccent=e+dotaccentcomb@top
 gdotaccent=g+dotaccentcomb@top
