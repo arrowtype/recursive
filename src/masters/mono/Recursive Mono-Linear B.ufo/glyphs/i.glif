@@ -3,59 +3,9 @@
 	<unicode hex="0069"/>
 	<advance width="600"/>
 	<outline>
-		<contour>
-			<point x="464" y="650" type="curve"/>
-			<point x="464" y="789" type="line" smooth="yes"/>
-			<point x="464" y="796"/>
-			<point x="460" y="800"/>
-			<point x="453" y="800" type="curve"/>
-			<point x="397" y="800"/>
-			<point x="340" y="800"/>
-			<point x="284" y="800" type="curve"/>
-			<point x="284" y="661" type="line" smooth="yes"/>
-			<point x="284" y="654"/>
-			<point x="288" y="650"/>
-			<point x="295" y="650" type="curve"/>
-			<point x="351" y="650"/>
-			<point x="408" y="650"/>
-		</contour>
-		<contour>
-			<point x="300" y="11" type="curve"/>
-			<point x="300" y="4"/>
-			<point x="304" y="0"/>
-			<point x="311" y="0" type="curve"/>
-			<point x="361" y="0"/>
-			<point x="400" y="0"/>
-			<point x="450" y="0" type="curve"/>
-			<point x="450" y="33"/>
-			<point x="450" y="66"/>
-			<point x="450" y="99" type="curve"/>
-			<point x="450" y="223"/>
-			<point x="450" y="405"/>
-			<point x="450" y="529" type="curve" smooth="yes"/>
-			<point x="450" y="536"/>
-			<point x="446" y="540"/>
-			<point x="439" y="540" type="curve" smooth="yes"/>
-			<point x="320" y="540"/>
-			<point x="199" y="540"/>
-			<point x="80" y="540" type="curve"/>
-			<point x="80" y="500"/>
-			<point x="80" y="461"/>
-			<point x="80" y="421" type="curve" smooth="yes"/>
-			<point x="80" y="414"/>
-			<point x="84" y="410"/>
-			<point x="91" y="410" type="curve" smooth="yes"/>
-			<point x="157" y="410"/>
-			<point x="214" y="410"/>
-			<point x="280" y="410" type="curve"/>
-			<point x="300" y="410" type="line"/>
-			<point x="300" y="329"/>
-			<point x="300" y="90"/>
-		</contour>
+		<component base="dotlessi"/>
+		<component base="dotaccentcomb" xOffset="300" yOffset="2"/>
 	</outline>
-	<anchor name="bottom" x="376" y="2"/>
-	<anchor name="ogonek" x="451" y="2"/>
-	<guideline x="380" y="157" angle="90" identifier="NTONsX97ng"/>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
@@ -203,7 +153,7 @@
 			<key>com.typemytype.robofont.guideline.magnetic.zwDuumU3YI</key>
 			<integer>0</integer>
 			<key>public.markColor</key>
-			<string>0,0.25,1,0.1</string>
+			<string>0,0,0,0.1505</string>
 		</dict>
 	</lib>
 </glyph>

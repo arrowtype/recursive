@@ -429,7 +429,6 @@
 					<string>ncommaaccent</string>
 					<string>nineinferior</string>
 					<string>ninesuperior</string>
-					<string>notdef</string>
 					<string>ntilde</string>
 					<string>oacute</string>
 					<string>obreve</string>
@@ -530,13 +529,19 @@
 					<string>i.mono</string>
 					<string>l.mono</string>
 					<string>r.mono</string>
-					<string>M.tighttaper</string>
-					<string>N.tighttaper</string>
 					<string>mu.math</string>
 					<string>g.long_desc</string>
 					<string>l.sans</string>
 					<string>zero.sans</string>
 					<string>one.sans</string>
+					<string>lacute.sans</string>
+					<string>lacute.mono</string>
+					<string>lcommaaccent.sans</string>
+					<string>lcommaaccent.mono</string>
+					<string>.notdef</string>
+					<string>dotlessi.mono</string>
+					<string>dotlessi.italic</string>
+					<string>dotlessj.italic</string>
 				</array>
 				<key>type</key>
 				<string>glyphList</string>
@@ -1025,7 +1030,6 @@
 			<string>ncommaaccent</string>
 			<string>nineinferior</string>
 			<string>ninesuperior</string>
-			<string>notdef</string>
 			<string>ntilde</string>
 			<string>oacute</string>
 			<string>obreve</string>
@@ -1126,8 +1130,6 @@
 			<string>i.mono</string>
 			<string>l.mono</string>
 			<string>r.mono</string>
-			<string>M.tighttaper</string>
-			<string>N.tighttaper</string>
 			<string>mu.math</string>
 			<string>g.long_desc</string>
 			<string>l.sans</string>

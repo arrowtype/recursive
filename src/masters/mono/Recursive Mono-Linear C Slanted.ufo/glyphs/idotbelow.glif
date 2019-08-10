@@ -3,8 +3,9 @@
 	<unicode hex="1ECB"/>
 	<advance width="600"/>
 	<outline>
-		<component base="i"/>
-		<component base="dotbelowcomb" xOffset="358"/>
+		<component base="dotlessi"/>
+		<component base="dotaccentcomb" xOffset="365" yOffset="1"/>
+		<component base="dotbelowcomb" xOffset="365" yOffset="1"/>
 	</outline>
 	<lib>
 		<dict>
