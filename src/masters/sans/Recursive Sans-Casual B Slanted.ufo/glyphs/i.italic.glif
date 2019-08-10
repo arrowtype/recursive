@@ -2,71 +2,9 @@
 <glyph name="i.italic" format="2">
 	<advance width="350"/>
 	<outline>
-		<contour>
-			<point x="104" y="540" type="curve"/>
-			<point x="92" y="518"/>
-			<point x="86" y="501"/>
-			<point x="81" y="482" type="curve" smooth="yes"/>
-			<point x="63.5341652419" y="410.1960126612"/>
-			<point x="80" y="381"/>
-			<point x="103" y="381" type="curve" smooth="yes"/>
-			<point x="120.2307692308" y="381"/>
-			<point x="133.5289870195" y="383.5718063814"/>
-			<point x="145" y="394" type="curve"/>
-			<point x="150" y="391" type="line"/>
-			<point x="129.9525203049" y="309.8077072348"/>
-			<point x="84.0061446757" y="235.0525090467"/>
-			<point x="73" y="141" type="curve" smooth="yes"/>
-			<point x="60" y="37"/>
-			<point x="125" y="-10"/>
-			<point x="183" y="-10" type="curve" smooth="yes"/>
-			<point x="220" y="-10"/>
-			<point x="245" y="-2"/>
-			<point x="265" y="18" type="curve" smooth="yes"/>
-			<point x="282" y="35"/>
-			<point x="287.1079795808" y="49.4319183232"/>
-			<point x="293" y="73" type="curve" smooth="yes"/>
-			<point x="302" y="112"/>
-			<point x="302" y="145"/>
-			<point x="300" y="166" type="curve"/>
-			<point x="294" y="166" type="line"/>
-			<point x="275" y="148"/>
-			<point x="259.975308642" y="140"/>
-			<point x="241" y="140" type="curve" smooth="yes"/>
-			<point x="231.6666666667" y="140"/>
-			<point x="222" y="141"/>
-			<point x="213" y="143" type="curve"/>
-			<point x="214" y="158"/>
-			<point x="217.3149124735" y="172.3383780123"/>
-			<point x="221" y="188" type="curve"/>
-			<point x="244.3535885098" y="281.4143540391"/>
-			<point x="280.7088448683" y="340.3729566169"/>
-			<point x="298" y="437" type="curve"/>
-			<point x="309.0131546882" y="497.0717528449"/>
-			<point x="263.7398373984" y="550"/>
-			<point x="212" y="550" type="curve" smooth="yes"/>
-			<point x="178" y="550"/>
-			<point x="137" y="546"/>
-		</contour>
-		<contour>
-			<point x="234" y="774" type="curve"/>
-			<point x="220" y="721" type="line" smooth="yes"/>
-			<point x="201" y="650"/>
-			<point x="250" y="612"/>
-			<point x="362" y="612" type="curve" smooth="yes"/>
-			<point x="372" y="612"/>
-			<point x="384" y="613"/>
-			<point x="390" y="615" type="curve"/>
-			<point x="411" y="698" type="line" smooth="yes"/>
-			<point x="422" y="742"/>
-			<point x="397" y="781"/>
-			<point x="313" y="781" type="curve" smooth="yes"/>
-			<point x="290" y="781"/>
-			<point x="260" y="778"/>
-		</contour>
+		<component base="dotlessi.italic"/>
+		<component base="dotaccentcomb" xOffset="152" yOffset="-10"/>
 	</outline>
-	<anchor name="bottom" x="113" y="0"/>
-	<anchor name="ogonek" x="231" y="0"/>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
@@ -80,7 +18,7 @@
 			<key>com.typemytype.robofont.Image.Sharpness</key>
 			<real>0.4</real>
 			<key>public.markColor</key>
-			<string>1,0,0,1</string>
+			<string>0,0,0,0.1505</string>
 		</dict>
 	</lib>
 </glyph>
