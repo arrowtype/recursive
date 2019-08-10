@@ -4,7 +4,7 @@ g = CurrentGlyph()
 
 OutputWindow().show()
 
-firstColWidth = 18
+firstColWidth = 20
 
 print("")
 print("FONT".ljust(firstColWidth + 1), end=" ")
