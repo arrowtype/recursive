@@ -135,7 +135,7 @@ for glyphName in sorted(problemGlyphs):
                 print("\t",fontName)
 
 if len(glyphsWithUnevenPoints) >= 1:
-    print("️\n\nGlyphs with unequal points between fonts:")
+    print("️\n\nGlyphs with unequal points between fonts:\n")
     print("\t", end=" ")
     for glyphName in sorted(glyphsWithUnevenPoints):
         # print(" - [ ] ", glyphName)
@@ -144,7 +144,7 @@ if len(glyphsWithUnevenPoints) >= 1:
 
 
 if len(glyphsNotInAllFonts) >= 1:
-    print("\n\nGlyphs that aren't in all fonts:")
+    print("\n\nGlyphs that aren't in all fonts:\n")
     print("\t", end=" ")
     for glyphName in sorted(glyphsNotInAllFonts):
         # print(" - [ ] ", glyphName)
