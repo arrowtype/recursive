@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Oslashacute" format="2">
-	<advance width="600"/>
+	<unicode hex="01FE"/>
+	<advance width="650"/>
 	<outline>
 		<component base="Oslash"/>
 		<component base="acutecomb.case" xOffset="300" yOffset="-1"/>
@@ -8,7 +9,7 @@
 	<lib>
 		<dict>
 			<key>public.markColor</key>
-			<string>0.6674,0.6619,0.6727,1</string>
+			<string>0,0,0,0.1505</string>
 		</dict>
 	</lib>
 </glyph>

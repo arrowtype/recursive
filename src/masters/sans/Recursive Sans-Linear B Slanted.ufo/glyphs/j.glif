@@ -1,70 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="j" format="2">
 	<unicode hex="006A"/>
-	<advance width="350"/>
+	<advance width="600"/>
 	<outline>
-		<contour>
-			<point x="406.4473250362" y="641.663049376" type="curve"/>
-			<point x="441.7339616953" y="781.8540423223" type="line" smooth="yes"/>
-			<point x="443.2571258676" y="787.8540423223"/>
-			<point x="439.5264293446" y="792.8540423223"/>
-			<point x="433.5264293446" y="792.8540423223" type="curve" smooth="yes"/>
-			<point x="377.5264293446" y="792.8540423223"/>
-			<point x="303.8525280966" y="792.8540423223"/>
-			<point x="247.8525280966" y="792.8540423223" type="curve"/>
-			<point x="212.5658914375" y="652.663049376" type="line" smooth="yes"/>
-			<point x="211.0427272652" y="646.663049376"/>
-			<point x="214.7734237882" y="641.663049376"/>
-			<point x="220.7734237882" y="641.663049376" type="curve" smooth="yes"/>
-			<point x="276.7734237882" y="641.663049376"/>
-			<point x="350.4473250362" y="641.663049376"/>
-		</contour>
-		<contour>
-			<point x="352" y="540" type="curve" smooth="yes"/>
-			<point x="276" y="540"/>
-			<point x="199" y="540"/>
-			<point x="123" y="540" type="curve"/>
-			<point x="112" y="496"/>
-			<point x="99" y="441"/>
-			<point x="87" y="397" type="curve" smooth="yes"/>
-			<point x="86" y="391"/>
-			<point x="90" y="386"/>
-			<point x="96" y="386" type="curve" smooth="yes"/>
-			<point x="110" y="386"/>
-			<point x="123" y="386"/>
-			<point x="137" y="386" type="curve"/>
-			<point x="156" y="386" type="line"/>
-			<point x="121" y="246"/>
-			<point x="85" y="107"/>
-			<point x="50" y="-33" type="curve" smooth="yes"/>
-			<point x="45" y="-54"/>
-			<point x="39" y="-72"/>
-			<point x="33" y="-88" type="curve"/>
-			<point x="18" y="-94"/>
-			<point x="4" y="-96"/>
-			<point x="-12" y="-96" type="curve" smooth="yes"/>
-			<point x="-35" y="-96"/>
-			<point x="-49" y="-92"/>
-			<point x="-64" y="-83" type="curve"/>
-			<point x="-84" y="-83" type="line"/>
-			<point x="-94" y="-127"/>
-			<point x="-103" y="-172"/>
-			<point x="-114" y="-217" type="curve" smooth="yes"/>
-			<point x="-115" y="-220"/>
-			<point x="-114" y="-223"/>
-			<point x="-112" y="-226" type="curve" smooth="yes"/>
-			<point x="-108" y="-233"/>
-			<point x="-82" y="-250"/>
-			<point x="-30" y="-250" type="curve" smooth="yes"/>
-			<point x="108" y="-250"/>
-			<point x="178" y="-192"/>
-			<point x="219" y="-30" type="curve" smooth="yes"/>
-			<point x="266" y="156"/>
-			<point x="313" y="343"/>
-			<point x="360" y="529" type="curve" smooth="yes"/>
-			<point x="361.790569415" y="534.3717082451"/>
-			<point x="359" y="540"/>
-		</contour>
+		<component base="dotlessj"/>
+		<component base="dotaccentcomb" xOffset="371" yOffset="-14"/>
 	</outline>
 	<lib>
 		<dict>
@@ -145,7 +85,7 @@
 			<key>com.typemytype.robofont.guideline.magnetic.yBms4dR05n</key>
 			<integer>10</integer>
 			<key>public.markColor</key>
-			<string>1,0.45,0.45,0.75</string>
+			<string>0,0,0,0.1505</string>
 		</dict>
 	</lib>
 </glyph>
