@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="J" format="2">
+	<unicode hex="004A"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="153" y="700" type="line"/>
+			<point x="151" y="696"/>
+			<point x="150" y="690"/>
+			<point x="150" y="684" type="curve" smooth="yes"/>
+			<point x="150" y="665"/>
+			<point x="159" y="650"/>
+			<point x="175" y="650" type="curve" smooth="yes"/>
+			<point x="608" y="650" type="line"/>
+			<point x="609" y="654"/>
+			<point x="610" y="660"/>
+			<point x="610" y="664" type="curve" smooth="yes"/>
+			<point x="610" y="688"/>
+			<point x="602" y="700"/>
+			<point x="587" y="700" type="curve" smooth="yes"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
+		</dict>
+	</lib>
+</glyph>
