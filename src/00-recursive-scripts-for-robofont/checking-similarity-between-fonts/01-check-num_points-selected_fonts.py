@@ -12,6 +12,7 @@ glyphsToIgnore = "R.trap Z.noserif ampersand.code_experimental_2 ampersand.code_
 
 ####################################################################################
 
+debug = False # will print full dictionaries
 
 files = getFile("Select files to check for anchor similarity", allowsMultipleSelection=True, fileTypes=["ufo"])
 
@@ -58,9 +59,9 @@ for fontName in fonts:
     print("• ", fontName)
 print("")
 
-# uncomment below to see full dictionary printed
-# pp = pprint.PrettyPrinter(indent=2, width=200)
-# pp.pprint(pointsDict)
+if debug:
+    pp = pprint.PrettyPrinter(indent=2, width=200)
+    pp.pprint(pointsDict)
 
 glyphsNotInAllFonts = []
 
@@ -95,8 +96,10 @@ for glyphName in sorted(glyphsWithUnevenPoints):
     for index,pointCount in enumerate(iconDict[glyphName].keys()):
         iconDict[glyphName][pointCount] = alertEmoji[index]
 
-# pp = pprint.PrettyPrinter(indent=2, width=200)
-# pp.pprint(iconDict)
+
+if debug:
+    pp = pprint.PrettyPrinter(indent=2, width=200)
+    pp.pprint(iconDict)
 
 problemGlyphs = glyphsNotInAllFonts + glyphsWithUnevenPoints
 

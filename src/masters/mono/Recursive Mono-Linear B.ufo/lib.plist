@@ -521,6 +521,7 @@
 					<string>i.italic</string>
 					<string>j.italic</string>
 					<string>k.italic</string>
+					<string>l.italic</string>
 					<string>m.italic</string>
 					<string>n.italic</string>
 					<string>r.italic</string>
@@ -531,12 +532,15 @@
 					<string>x.italic</string>
 					<string>y.italic</string>
 					<string>z.italic</string>
+					<string>dotlessi.italic</string>
+					<string>dotlessj.italic</string>
 					<string>f.mono</string>
 					<string>g.mono</string>
 					<string>i.mono</string>
 					<string>l.mono</string>
 					<string>lacute.mono</string>
 					<string>r.mono</string>
+					<string>dotlessi.mono</string>
 					<string>lcommaaccent.mono</string>
 					<string>mu.math</string>
 					<string>g.ss01</string>
@@ -547,6 +551,7 @@
 					<string>zero.sans</string>
 					<string>one.sans</string>
 					<string>lcommaaccent.sans</string>
+					<string>.notdef</string>
 				</array>
 				<key>type</key>
 				<string>glyphList</string>
@@ -1176,6 +1181,7 @@
 			<string>i.italic</string>
 			<string>j.italic</string>
 			<string>k.italic</string>
+			<string>l.italic</string>
 			<string>m.italic</string>
 			<string>n.italic</string>
 			<string>r.italic</string>
@@ -1186,12 +1192,15 @@
 			<string>x.italic</string>
 			<string>y.italic</string>
 			<string>z.italic</string>
+			<string>dotlessi.italic</string>
+			<string>dotlessj.italic</string>
 			<string>f.mono</string>
 			<string>g.mono</string>
 			<string>i.mono</string>
 			<string>l.mono</string>
 			<string>lacute.mono</string>
 			<string>r.mono</string>
+			<string>dotlessi.mono</string>
 			<string>lcommaaccent.mono</string>
 			<string>mu.math</string>
 			<string>g.ss01</string>
@@ -1202,11 +1211,7 @@
 			<string>zero.sans</string>
 			<string>one.sans</string>
 			<string>lcommaaccent.sans</string>
-			<string>l.italic</string>
 			<string>.notdef</string>
-			<string>dotlessi.mono</string>
-			<string>dotlessi.italic</string>
-			<string>dotlessj.italic</string>
 		</array>
 	</dict>
 </plist>
