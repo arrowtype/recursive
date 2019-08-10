@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <designspace format="4.0">
   <axes>
-    <axis tag="wght" name="Weight" minimum="300" maximum="900" default="250">
+    <axis tag="wght" name="Weight" minimum="300" maximum="900" default="300">
       <labelname xml:lang="en">Weight</labelname>
       <map input="300" output="250" />
       <map input="400" output="350" />
@@ -22,6 +22,20 @@
     </axis>
   </axes>
   <rules>
+    <rule name="mono">
+      <conditionset>
+        <condition name="Slant" minimum="-7.49" maximum="0" />
+        <condition name="Italic" minimum="0" maximum="0.89" />
+      </conditionset>
+      <sub name="f" with="f.mono" />
+      <sub name="g" with="g.mono" />
+      <sub name="i" with="i.mono" />
+      <sub name="l" with="l.mono" />
+      <sub name="lacute" with="lacute.mono" />
+      <sub name="r" with="r.mono" />
+      <sub name="dotlessi" with="dotlessi.mono" />
+      <sub name="lcommaaccent" with="lcommaaccent.mono" />
+    </rule>
     <rule name="autoitalic">
       <conditionset>
         <condition name="Slant" minimum="-15" maximum="-7.500000" />
