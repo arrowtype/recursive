@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <designspace format="4.0">
   <axes>
-    <axis tag="wght" name="Weight" minimum="300" maximum="900" default="800">
+    <axis tag="wght" name="Weight" minimum="300" maximum="900" default="250">
       <labelname xml:lang="en">Weight</labelname>
       <map input="300" output="250" />
       <map input="400" output="350" />
@@ -77,7 +77,7 @@
     </rule>
   </rules>
   <sources>
-    <source filename="Recursive Mono-Casual A Slanted.ufo" familyname="Recursive Mono" stylename="Casual A SemiItalic">
+    <source filename="Recursive Mono-Casual A Slanted.ufo" familyname="Recursive Mono" stylename="Casual A Slanted">
       <location>
         <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="-15" />
@@ -93,7 +93,7 @@
         <dimension name="Expression" xvalue="1" />
       </location>
     </source>
-    <source filename="Recursive Mono-Casual B Slanted.ufo" familyname="Recursive Mono" stylename="Casual B SemiItalic">
+    <source filename="Recursive Mono-Casual B Slanted.ufo" familyname="Recursive Mono" stylename="Casual B Slanted">
       <location>
         <dimension name="Weight" xvalue="800" />
         <dimension name="Slant" xvalue="-15" />
@@ -109,7 +109,7 @@
         <dimension name="Expression" xvalue="1" />
       </location>
     </source>
-    <source filename="Recursive Mono-Casual C Slanted.ufo" familyname="Recursive Mono" stylename="Casual C SemiItalic">
+    <source filename="Recursive Mono-Casual C Slanted.ufo" familyname="Recursive Mono" stylename="Casual C Slanted">
       <location>
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="-15" />
@@ -125,6 +125,14 @@
         <dimension name="Expression" xvalue="1" />
       </location>
     </source>
+    <source filename="Recursive Mono-Casual B Slanted.ufo" familyname="Recursive Mono" stylename="Casual B" layer="support.w.middle">
+      <location>
+        <dimension name="Weight" xvalue="500" />
+        <dimension name="Slant" xvalue="-15" />
+        <dimension name="Italic" xvalue="0.5" />
+        <dimension name="Expression" xvalue="1" />
+      </location>
+    </source>
     <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B" layer="support.w.middle">
       <location>
         <dimension name="Weight" xvalue="500" />
@@ -133,7 +141,7 @@
         <dimension name="Expression" xvalue="1" />
       </location>
     </source>
-    <source filename="Recursive Mono-Linear A Slanted.ufo" familyname="Recursive Mono" stylename="Linear A 14 SemiItalic">
+    <source filename="Recursive Mono-Linear A Slanted.ufo" familyname="Recursive Mono" stylename="Linear A Slanted">
       <location>
         <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="-15" />
@@ -142,6 +150,10 @@
       </location>
     </source>
     <source filename="Recursive Mono-Linear A.ufo" familyname="Recursive Mono" stylename="Linear A">
+      <lib copy="1" />
+      <groups copy="1" />
+      <features copy="1" />
+      <info copy="1" />
       <location>
         <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="0" />
@@ -149,7 +161,7 @@
         <dimension name="Expression" xvalue="0" />
       </location>
     </source>
-    <source filename="Recursive Mono-Linear B Slanted.ufo" familyname="Recursive Mono" stylename="Linear B 14 SemiItalic">
+    <source filename="Recursive Mono-Linear B Slanted.ufo" familyname="Recursive Mono" stylename="Linear B Slanted">
       <location>
         <dimension name="Weight" xvalue="800" />
         <dimension name="Slant" xvalue="-15" />
@@ -158,10 +170,6 @@
       </location>
     </source>
     <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear B">
-      <lib copy="1" />
-      <groups copy="1" />
-      <features copy="1" />
-      <info copy="1" />
       <location>
         <dimension name="Weight" xvalue="800" />
         <dimension name="Slant" xvalue="0" />
@@ -169,7 +177,7 @@
         <dimension name="Expression" xvalue="0" />
       </location>
     </source>
-    <source filename="Recursive Mono-Linear C Slanted.ufo" familyname="Recursive Mono" stylename="Linear C SemiItalic">
+    <source filename="Recursive Mono-Linear C Slanted.ufo" familyname="Recursive Mono" stylename="Linear C Slanted">
       <location>
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="-15" />
@@ -181,6 +189,14 @@
       <location>
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="0" />
+        <dimension name="Italic" xvalue="0.5" />
+        <dimension name="Expression" xvalue="0" />
+      </location>
+    </source>
+    <source filename="Recursive Mono-Linear B Slanted.ufo" familyname="Recursive Mono" stylename="Linear B" layer="support.w.middle">
+      <location>
+        <dimension name="Weight" xvalue="500" />
+        <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="0" />
       </location>
