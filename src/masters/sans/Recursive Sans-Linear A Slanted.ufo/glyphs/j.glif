@@ -3,68 +3,8 @@
 	<unicode hex="006A"/>
 	<advance width="350"/>
 	<outline>
-		<contour>
-			<point x="366" y="676" type="curve"/>
-			<point x="384" y="745" type="line" smooth="yes"/>
-			<point x="385" y="751"/>
-			<point x="381" y="756"/>
-			<point x="375" y="756" type="curve" smooth="yes"/>
-			<point x="352" y="756"/>
-			<point x="329" y="756"/>
-			<point x="306" y="756" type="curve"/>
-			<point x="289" y="687" type="line" smooth="yes"/>
-			<point x="287" y="681"/>
-			<point x="291" y="676"/>
-			<point x="297" y="676" type="curve" smooth="yes"/>
-			<point x="320" y="676"/>
-			<point x="343" y="676"/>
-		</contour>
-		<contour>
-			<point x="302" y="526" type="curve" smooth="yes"/>
-			<point x="223" y="526"/>
-			<point x="158" y="526"/>
-			<point x="108" y="526" type="curve"/>
-			<point x="105" y="515"/>
-			<point x="102" y="504"/>
-			<point x="99" y="493" type="curve" smooth="yes"/>
-			<point x="97" y="486"/>
-			<point x="100" y="482"/>
-			<point x="106" y="482" type="curve" smooth="yes"/>
-			<point x="142" y="482"/>
-			<point x="196" y="482"/>
-			<point x="243" y="482" type="curve"/>
-			<point x="252" y="482" type="line"/>
-			<point x="211" y="321"/>
-			<point x="171" y="159"/>
-			<point x="129" y="-2" type="curve" smooth="yes"/>
-			<point x="103" y="-102"/>
-			<point x="78" y="-156"/>
-			<point x="56" y="-178" type="curve" smooth="yes"/>
-			<point x="34" y="-200"/>
-			<point x="18" y="-204"/>
-			<point x="-8" y="-204" type="curve" smooth="yes"/>
-			<point x="-41" y="-204"/>
-			<point x="-66" y="-198"/>
-			<point x="-87" y="-185" type="curve"/>
-			<point x="-99" y="-185" type="line"/>
-			<point x="-102" y="-197"/>
-			<point x="-105" y="-208"/>
-			<point x="-108" y="-219" type="curve" smooth="yes"/>
-			<point x="-109" y="-223"/>
-			<point x="-110" y="-225"/>
-			<point x="-106" y="-228" type="curve" smooth="yes"/>
-			<point x="-89" y="-240"/>
-			<point x="-52" y="-250"/>
-			<point x="-10" y="-250" type="curve" smooth="yes"/>
-			<point x="70" y="-250"/>
-			<point x="120" y="-215"/>
-			<point x="179" y="0" type="curve" smooth="yes"/>
-			<point x="225" y="169"/>
-			<point x="266" y="344"/>
-			<point x="310" y="515" type="curve" smooth="yes"/>
-			<point x="312" y="521"/>
-			<point x="308" y="526"/>
-		</contour>
+		<component base="dotlessj"/>
+		<component base="dotaccentcomb" xOffset="183" yOffset="-12"/>
 	</outline>
 	<lib>
 		<dict>
@@ -143,7 +83,7 @@
 			<key>com.typemytype.robofont.guideline.magnetic.yBms4dR05n</key>
 			<integer>10</integer>
 			<key>public.markColor</key>
-			<string>1,0.45,0.45,0.75</string>
+			<string>0,0,0,0.1505</string>
 		</dict>
 	</lib>
 </glyph>
