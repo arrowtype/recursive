@@ -3,15 +3,16 @@
 	<unicode hex="1ECB"/>
 	<advance width="350"/>
 	<outline>
-		<component base="i"/>
-		<component base="dotbelowcomb" xOffset="202" yOffset="10"/>
+		<component base="dotlessi"/>
+		<component base="dotaccentcomb" xOffset="197" yOffset="2"/>
+		<component base="dotbelowcomb" xOffset="197" yOffset="13"/>
 	</outline>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
 			<string>fromComponents</string>
 			<key>public.markColor</key>
-			<string>0.8206,0.8138,0.8271,1</string>
+			<string>0,0,0,0.1505</string>
 		</dict>
 	</lib>
 </glyph>

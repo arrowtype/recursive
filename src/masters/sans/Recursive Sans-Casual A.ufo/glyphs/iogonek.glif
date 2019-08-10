@@ -3,7 +3,8 @@
 	<unicode hex="012F"/>
 	<advance width="350"/>
 	<outline>
-		<component base="i"/>
+		<component base="dotlessi"/>
+		<component base="dotaccentcomb" xOffset="197" yOffset="2"/>
 		<component base="ogonekcomb" xOffset="214" yOffset="-6"/>
 	</outline>
 	<lib>
@@ -11,7 +12,7 @@
 			<key>com.arrowtype.glyphMarkStatus</key>
 			<string>fromComponents</string>
 			<key>public.markColor</key>
-			<string>0.8206,0.8138,0.8271,1</string>
+			<string>0,0,0,0.1505</string>
 		</dict>
 	</lib>
 </glyph>
