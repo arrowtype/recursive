@@ -47,17 +47,17 @@ print("")
 # pp = pprint.PrettyPrinter(indent=2, width=200)
 # pp.pprint(glyphs)
 
-# problemGlyphs = []
+problemGlyphs = []
 
-# for glyphName in glyphs.keys():
-#     if len(glyphs[glyph.name]) < len(fonts):
-#         if glyphName not in problemGlyphs and glyphName not in glyphsToIgnore.split(" "):
-#             problemGlyphs.append(glyphName)
+for glyphName in glyphs.keys():
+    if len(glyphs[glyph.name]) < len(fonts):
+        if glyphName not in problemGlyphs and glyphName not in glyphsToIgnore.split(" "):
+            problemGlyphs.append(glyphName)
 
-# print(sorted(problemGlyphs))
+print(sorted(problemGlyphs))
 
 ## if you want to check specific glyphs, add them here as a space-separated list
-problemGlyphs = "i.mono l.mono f.mono r.mono l.sans f.italic r.italic i.italic l.italic fl.mono fl.sans".split(" ")
+# problemGlyphs = "i.mono l.mono f.mono r.mono l.sans f.italic r.italic i.italic l.itali".split(" ")
 
 
 
