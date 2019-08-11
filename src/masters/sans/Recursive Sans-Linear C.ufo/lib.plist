@@ -791,7 +791,6 @@
 			<string>Gcircumflex</string>
 			<string>Gbreve</string>
 			<string>Gdotaccent</string>
-			<string>Gcommaaccent</string>
 			<string>Gcaron</string>
 			<string>H</string>
 			<string>Hcircumflex</string>
@@ -809,16 +808,13 @@
 			<string>J</string>
 			<string>Jcircumflex</string>
 			<string>K</string>
-			<string>Kcommaaccent</string>
 			<string>L</string>
 			<string>Lacute</string>
-			<string>Lcommaaccent</string>
 			<string>Lcaron</string>
 			<string>M</string>
 			<string>N</string>
 			<string>Ntilde</string>
 			<string>Nacute</string>
-			<string>Ncommaaccent</string>
 			<string>Ncaron</string>
 			<string>O</string>
 			<string>Ograve</string>
@@ -835,7 +831,6 @@
 			<string>Q</string>
 			<string>R</string>
 			<string>Racute</string>
-			<string>Rcommaaccent</string>
 			<string>Rcaron</string>
 			<string>S</string>
 			<string>Sacute</string>
@@ -930,7 +925,6 @@
 			<string>gcircumflex</string>
 			<string>gbreve</string>
 			<string>gdotaccent</string>
-			<string>gcommaaccent</string>
 			<string>gcaron</string>
 			<string>h</string>
 			<string>hcircumflex</string>
@@ -947,15 +941,12 @@
 			<string>j</string>
 			<string>jcircumflex</string>
 			<string>k</string>
-			<string>kcommaaccent</string>
 			<string>l</string>
 			<string>lacute</string>
-			<string>lcommaaccent</string>
 			<string>m</string>
 			<string>n</string>
 			<string>ntilde</string>
 			<string>nacute</string>
-			<string>ncommaaccent</string>
 			<string>ncaron</string>
 			<string>o</string>
 			<string>ograve</string>
@@ -972,7 +963,6 @@
 			<string>q</string>
 			<string>r</string>
 			<string>racute</string>
-			<string>rcommaaccent</string>
 			<string>rcaron</string>
 			<string>s</string>
 			<string>sacute</string>
@@ -1032,6 +1022,7 @@
 			<string>eng</string>
 			<string>oe</string>
 			<string>tbar</string>
+			<string>dotlessj</string>
 			<string>schwa</string>
 			<string>pi</string>
 			<string>ordfeminine</string>
@@ -1201,23 +1192,36 @@
 			<string>hyphensoft</string>
 			<string>ijacute</string>
 			<string>IJacute</string>
+			<string>.arrowhead</string>
+			<string>Gcommaaccent</string>
+			<string>Kcommaaccent</string>
+			<string>Lcommaaccent</string>
+			<string>Ncommaaccent</string>
 			<string>Nhookleft</string>
+			<string>Rcommaaccent</string>
 			<string>bitcoin</string>
 			<string>cedi</string>
 			<string>colonmonetary</string>
 			<string>dong</string>
 			<string>dotlessij</string>
-			<string>dotlessj</string>
+			<string>gcommaaccent</string>
 			<string>guarani</string>
+			<string>kcommaaccent</string>
 			<string>kip</string>
+			<string>lcommaaccent</string>
 			<string>liraTurkish</string>
 			<string>manat</string>
 			<string>naira</string>
+			<string>ncommaaccent</string>
+			<string>newsheqel</string>
 			<string>nhookleft</string>
 			<string>peso</string>
+			<string>rcommaaccent</string>
 			<string>ringacute</string>
 			<string>ruble</string>
+			<string>rupee</string>
 			<string>rupeeIndian</string>
+			<string>thai:baht</string>
 			<string>won</string>
 			<string>fi</string>
 			<string>fl</string>
@@ -1239,7 +1243,7 @@
 			<string>cedillacomb.case</string>
 			<string>ogonekcomb.case</string>
 			<string>ringacute.case</string>
-			<string>one.sans</string>
+			<string>at.simple</string>
 			<string>a.italic</string>
 			<string>c.italic</string>
 			<string>d.italic</string>
@@ -1261,33 +1265,29 @@
 			<string>x.italic</string>
 			<string>y.italic</string>
 			<string>z.italic</string>
+			<string>dotlessi.italic</string>
+			<string>dotlessj.italic</string>
+			<string>f.mono</string>
+			<string>g.mono</string>
+			<string>i.mono</string>
+			<string>l.mono</string>
+			<string>lacute.mono</string>
+			<string>r.mono</string>
+			<string>dotlessi.mono</string>
+			<string>lcommaaccent.mono</string>
 			<string>g.ss01</string>
 			<string>i.ss01</string>
 			<string>l.ss01</string>
+			<string>M.tighttaper</string>
+			<string>N.tighttaper</string>
 			<string>mu.math</string>
 			<string>g.long_desc</string>
-			<string>newsheqel</string>
-			<string>r.mono</string>
-			<string>zero.sans</string>
-			<string>g.mono</string>
-			<string>l.mono</string>
 			<string>l.sans</string>
-			<string>thai:baht</string>
-			<string>.arrowhead</string>
-			<string>N.tighttaper</string>
-			<string>rupee</string>
-			<string>at.simple</string>
-			<string>f.mono</string>
-			<string>i.mono</string>
-			<string>M.tighttaper</string>
-			<string>.notdef</string>
-			<string>dotlessi.italic</string>
-			<string>dotlessi.mono</string>
-			<string>dotlessj.italic</string>
 			<string>lacute.sans</string>
-			<string>lacute.mono</string>
+			<string>zero.sans</string>
+			<string>one.sans</string>
 			<string>lcommaaccent.sans</string>
-			<string>lcommaaccent.mono</string>
+			<string>.notdef</string>
 		</array>
 	</dict>
 </plist>
