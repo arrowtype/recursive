@@ -32,6 +32,11 @@ monoSansSwitchingForms = [
     "fi",
     "fl",
     "one.sans",
+    "dotlessi", 
+    "dotlessj",
+    "dotlessi.italic", 
+    "dotlessj.italic",
+    "dotlessi.mono", 
    
 ]
 
