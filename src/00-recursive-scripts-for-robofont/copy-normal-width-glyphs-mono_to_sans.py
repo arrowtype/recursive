@@ -11,14 +11,14 @@ protectPunctuation = False
 protectNonNormalGlyphsTrueFalse = False
 
 monoFormsToCopyAndMark = [
-    "f.italic",
-    "r.italic",
-    "i.italic",
-    "l.italic",
-    "i.mono",
-    "l.sans",
-    "f.mono",
-    "l.mono"
+    # "f.italic",
+    # "r.italic",
+    # "i.italic",
+    # "l.italic",
+    # "i.mono",
+    # "l.sans",
+    # "f.mono",
+    # "l.mono"
 ]
 
 ##############################################
