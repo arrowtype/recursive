@@ -160,22 +160,25 @@ def protectNonNormalGlyphs(masterToSendTo):
 
 
 def setMarkColor():
-    userColor = AskString("Mark copied glyphs as r, b, or gray?", "gray")
+    # userColor = AskString("Mark copied glyphs as r, b, or gray?", "gray")
 
-    if userColor == "r":
-        markColor = (1, .45, .45, .75)
-    elif userColor == "gray":
-        # markColor = (.45, 1, .55, .75)
-        markColor = (0, 0, 0, 0.25)
+    # if userColor == "r":
+    #     markColor = (1, .45, .45, .75)
+    # elif userColor == "gray":
+    #     # markColor = (.45, 1, .55, .75)
+    #     markColor = (0, 0, 0, 0.25)
 
-    elif userColor == "b":
-        markColor = (.45, .73, 1, .75)
-    else:
-        markColor = (1*random.random(), 1*random.random(),
-                     1*random.random(), 0.5)
-        print("no color set; using rgba" + str(markColor))
+    # elif userColor == "b":
+    #     markColor = (.45, .73, 1, .75)
+    # else:
+    #     markColor = (1*random.random(), 1*random.random(),
+    #                  1*random.random(), 0.5)
+    #     print("no color set; using rgba" + str(markColor))
 
-    return markColor
+    # return markColor
+
+    ## Fuck it, just do Gray
+    return (0, 0, 0, 0.25)
 
 def getMasterToCopyFrom():
     # let user select masterToCopyFrom

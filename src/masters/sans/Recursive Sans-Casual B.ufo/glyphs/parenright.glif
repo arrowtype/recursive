@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="parenright" format="2">
 	<unicode hex="0029"/>
-	<advance width="400"/>
+	<advance width="600"/>
 	<outline>
-		<component base="parenleft" xScale="-1" yScale="-1" xOffset="400" yOffset="601"/>
+		<component base="parenleft" xScale="-1" yScale="-1" xOffset="600" yOffset="597"/>
 	</outline>
 	<lib>
 		<dict>
@@ -15,6 +15,8 @@
 			<integer>1</integer>
 			<key>com.typemytype.robofont.Image.Sharpness</key>
 			<real>0.4</real>
+			<key>public.markColor</key>
+			<string>1,0,0,1</string>
 		</dict>
 	</lib>
 </glyph>
