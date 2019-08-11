@@ -8,7 +8,7 @@ import random
 
 protectPunctuation = False
 
-protectNonNormalGlyphsTrueFalse = False
+protectNonNormalGlyphsTrueFalse = True
 
 monoFormsToCopyAndMark = [
     # "f.italic",
