@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Ncaron" format="2">
 	<unicode hex="0147"/>
-	<advance width="600"/>
+	<advance width="650"/>
 	<outline>
 		<component base="N"/>
-		<component base="caroncomb.case" xOffset="300.5494605425" yOffset="-2"/>
+		<component base="caroncomb.case" xOffset="325" yOffset="-2"/>
 	</outline>
 	<lib>
 		<dict>
 			<key>public.markColor</key>
-			<string>0,0,0,0.25</string>
+			<string>0,0,0,0.1505</string>
 		</dict>
 	</lib>
 </glyph>
