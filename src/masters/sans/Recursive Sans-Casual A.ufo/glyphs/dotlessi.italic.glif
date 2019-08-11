@@ -13,9 +13,9 @@
 			<point x="108" y="456"/>
 			<point x="164" y="479"/>
 			<point x="269" y="494" type="curve"/>
-			<point x="273" y="490" type="line"/>
+			<point x="273" y="491" type="line"/>
 			<point x="273" y="374"/>
-			<point x="273" y="256"/>
+			<point x="273" y="257"/>
 			<point x="273" y="140" type="curve" smooth="yes"/>
 			<point x="273" y="33"/>
 			<point x="325" y="-20"/>
@@ -51,5 +51,11 @@
 	</outline>
 	<anchor name="bottom" x="323" y="0"/>
 	<anchor name="ogonek" x="496" y="0"/>
-	<anchor name="top" x="299" y="537"/>
+	<anchor name="top" x="299" y="525"/>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0,0,0,0.25</string>
+		</dict>
+	</lib>
 </glyph>
