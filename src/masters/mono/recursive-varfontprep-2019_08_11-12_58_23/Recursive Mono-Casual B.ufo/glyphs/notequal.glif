@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="notequal" format="2">
+	<unicode hex="2260"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="490" y="622" type="curve"/>
+			<point x="467" y="629"/>
+			<point x="436" y="634"/>
+			<point x="408" y="634" type="curve" smooth="yes"/>
+			<point x="356" y="634"/>
+			<point x="333" y="612"/>
+			<point x="326" y="583" type="curve" smooth="yes"/>
+			<point x="281" y="385"/>
+			<point x="213" y="207"/>
+			<point x="120" y="42" type="curve" smooth="yes"/>
+			<point x="104" y="13"/>
+			<point x="94" y="-2"/>
+			<point x="78" y="-24" type="curve"/>
+			<point x="96" y="-34"/>
+			<point x="123" y="-40"/>
+			<point x="157" y="-40" type="curve" smooth="yes"/>
+			<point x="213" y="-40"/>
+			<point x="235" y="-24"/>
+			<point x="259" y="16" type="curve" smooth="yes"/>
+			<point x="362" y="191"/>
+			<point x="440" y="394"/>
+		</contour>
+		<component base="equal"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>check</string>
+			<key>public.markColor</key>
+			<string>1,1,0,1</string>
+		</dict>
+	</lib>
+</glyph>

@@ -80,7 +80,7 @@ for glyphName in pointsDict.keys():
 maxFontNameLength = len(max(fonts, key=len))
 
 
-alertEmoji = "🍇 🍋 🍉 🍊 🥑 🍑 🍌 🍒 🌽 🍈 🐶 🐱 🐭 🐰 🦊 🐻 🐯 🦁 🐮 🐷 🐸 🐵 🐔 🐣".split(" ")
+alertEmoji = "🍇 🥑 🍉 🍊 🥑 🍑 🍌 🍒 🌽 🍈 🐶 🐱 🐭 🐰 🦊 🐻 🐯 🦁 🐮 🐷 🐸 🐵 🐔 🐣".split(" ")
 iconDict = {}
 
 for glyphName in sorted(glyphsWithUnevenPoints):
