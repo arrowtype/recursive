@@ -230,7 +230,7 @@ Zdotaccent=Z+dotaccentcomb.case@top
 
 adotbelow=a+dotbelowcomb@bottom
 edotbelow=e+dotbelowcomb@bottom
-idotbelow=dotlessi+dotaccentcomb@top+dotbelowcomb@bottom
+idotbelow=dotlessi+dotbelowcomb@bottom+dotaccentcomb@dotlessi:top
 odotbelow=o+dotbelowcomb@bottom
 udotbelow=u+dotbelowcomb@bottom
 
@@ -255,7 +255,7 @@ Uhungarumlaut=U+hungarumlautcomb.case@top
 
 aogonek=a+ogonekcomb@ogonek
 # eogonek=e+ogonekcomb@ogonek
-iogonek=dotlessi+dotaccentcomb@top+ogonekcomb@ogonek
+iogonek = dotlessi + ogonekcomb@ogonek + dotaccentcomb@dotlessi:top
 oogonek=o+ogonekcomb@ogonek
 uogonek=u+ogonekcomb@ogonek
 
