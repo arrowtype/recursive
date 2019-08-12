@@ -107,7 +107,7 @@ print("\nglyph".ljust(nameLength), end="")
 
 print("\n--------------------------------------------------------------------------------------")
 
-glyphsToCheck = "A B C D E F G H I J K L M N O P R S T U V W X Y Z a b c d e f g h k l m n o p q r s t u v w x y z germandbls at ampersand a.italic c.italic d.italic e.italic f.italic g.italic h.italic k.italic l.italic m.italic n.italic r.italic s.italic u.italic v.italic w.italic x.italic y.italic z.italic dotlessi.italic dotlessj.italic l.sans one.sans f.mono i.mono l.mono r.mono".split(" ")
+# glyphsToCheck = "A B C D E F G H I J K L M N O P R S T U V W X Y Z a b c d e f g h k l m n o p q r s t u v w x y z germandbls at ampersand a.italic c.italic d.italic e.italic f.italic g.italic h.italic k.italic l.italic m.italic n.italic r.italic s.italic u.italic v.italic w.italic x.italic y.italic z.italic dotlessi.italic dotlessj.italic l.sans one.sans f.mono i.mono l.mono r.mono".split(" ")
 
 # for glyphName in sorted(glyphWidthDict.keys()):
 #     if glyphName in glyphsToCheck:
@@ -115,8 +115,8 @@ glyphsToCheck = "A B C D E F G H I J K L M N O P R S T U V W X Y Z a b c d e f g
 
 if duplexing.lower() == "y":
     for glyphName in sorted(glyphWidthDict.keys()):
-        if glyphName in glyphsToCheck and len(set(glyphWidthDict[glyphName])) > 1:
-        # if i in glyphsToCheck:
+        # if glyphName in glyphsToCheck and len(set(glyphWidthDict[glyphName])) > 1:
+        if len(set(glyphWidthDict[glyphName])) > 1:
             print(glyphName.ljust(nameLength), end="")
             for glyphWidth in glyphWidthDict[glyphName]:
                 print(glyphWidth.rjust(abbrevLength), end="")

@@ -16,7 +16,7 @@ glyphsToIgnore = ""
 
 debug = False # will print full dictionaries
 
-files = getFile("Select files to check for anchor similarity", allowsMultipleSelection=True, fileTypes=["ufo"])
+files = getFile("Select files to check for point count similarity", allowsMultipleSelection=True, fileTypes=["ufo"])
 
 fonts = []
 pointsDict = {}
@@ -82,7 +82,7 @@ for glyphName in pointsDict.keys():
 maxFontNameLength = len(max(fonts, key=len))
 
 
-alertEmoji = "🍇 🥑 🍉 🍊 🥑 🍑 🍌 🍒 🌽 🍈 🐶 🐱 🐭 🐰 🦊 🐻 🐯 🦁 🐮 🐷 🐸 🐵 🐔 🐣".split(" ")
+alertEmoji = "🍇 🥑 🍉 🍊 🍑 🍌 🍒 🌽 🍈 🐶 🐱 🐭 🐰 🦊 🐻 🐯 🦁 🐮 🐷 🐸 🐵 🐔 🐣".split(" ")
 iconDict = {}
 
 for glyphName in sorted(glyphsWithUnevenPoints):

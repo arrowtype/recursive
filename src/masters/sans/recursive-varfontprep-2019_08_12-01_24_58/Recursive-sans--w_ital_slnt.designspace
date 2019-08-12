@@ -20,52 +20,21 @@
     <axis tag="XPRN" name="Expression" minimum="0" maximum="1" default="0">
       <labelname xml:lang="en">Expression</labelname>
     </axis>
-
   </axes>
   <rules>
-    <!-- <rule name="mono">
+    <rule name="sans">
       <conditionset>
         <condition name="Slant" minimum="-7.49" maximum="0" />
         <condition name="Italic" minimum="0" maximum="0.89" />
       </conditionset>
-      <sub name="f" with="f.mono" />
-      <sub name="g" with="g.mono" />
-      <sub name="i" with="i.mono" />
-      <sub name="l" with="l.mono" />
-      <sub name="lacute" with="lacute.mono" />
-      <sub name="r" with="r.mono" />
-      <sub name="dotlessi" with="dotlessi.mono" />
-      <sub name="lcommaaccent" with="lcommaaccent.mono" />
+      <sub name="l" with="l.sans" />
     </rule>
-    <rule name="mono roman">
+    <rule name="sans roman">
       <conditionset>
         <condition name="Italic" minimum="0" maximum="0.090000" />
       </conditionset>
-      <sub name="f" with="f.mono" />
-      <sub name="g" with="g.mono" />
-      <sub name="i" with="i.mono" />
-      <sub name="l" with="l.mono" />
-      <sub name="lacute" with="lacute.mono" />
-      <sub name="r" with="r.mono" />
-      <sub name="dotlessi" with="dotlessi.mono" />
-      <sub name="lcommaaccent" with="lcommaaccent.mono" />
-    </rule> -->
-
-    <rule name="sans">
-      <conditionset>
-        <condition name="Slant" minimum="-7.49" maximum="0" />
-        <condition name="Italic" minimum="0" maximum="0.89" />
-      </conditionset>
       <sub name="l" with="l.sans" />
     </rule>
-
-    <rule name="sans">
-      <conditionset>
-        <condition name="Italic" minimum="0" maximum="0.9" />
-      </conditionset>
-      <sub name="l" with="l.sans" />
-    </rule>
-
     <rule name="autoitalic">
       <conditionset>
         <condition name="Slant" minimum="-15" maximum="-7.500000" />
@@ -75,7 +44,6 @@
       <sub name="f" with="f.italic" />
       <sub name="g" with="g.italic" />
       <sub name="i" with="i.italic" />
-      <sub name="l" with="l.italic" />
       <sub name="r" with="r.italic" />
       <sub name="y" with="y.italic" />
       <sub name="d" with="d.italic" />
@@ -101,7 +69,6 @@
       <sub name="f" with="f.italic" />
       <sub name="g" with="g.italic" />
       <sub name="i" with="i.italic" />
-      <sub name="l" with="l.italic" />
       <sub name="r" with="r.italic" />
       <sub name="y" with="y.italic" />
       <sub name="d" with="d.italic" />
@@ -123,7 +90,7 @@
   <sources>
     <source filename="Recursive Sans-Casual A Slanted.ufo" familyname="Recursive Sans" stylename="Casual A Slanted">
       <location>
-        <dimension name="Weight" xvalue="300" />
+        <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="1" />
@@ -131,7 +98,7 @@
     </source>
     <source filename="Recursive Sans-Casual A.ufo" familyname="Recursive Sans" stylename="Casual A">
       <location>
-        <dimension name="Weight" xvalue="300" />
+        <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="1" />
@@ -169,25 +136,9 @@
         <dimension name="Expression" xvalue="1" />
       </location>
     </source>
-    <!-- <source filename="Recursive Sans-Casual B Slanted.ufo" familyname="Recursive Sans" stylename="Casual B" layer="support.w.middle">
-      <location>
-        <dimension name="Weight" xvalue="500" />
-        <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.5" />
-        <dimension name="Expression" xvalue="1" />
-      </location>
-    </source>
-    <source filename="Recursive Sans-Casual B.ufo" familyname="Recursive Sans" stylename="Casual B" layer="support.w.middle">
-      <location>
-        <dimension name="Weight" xvalue="500" />
-        <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.5" />
-        <dimension name="Expression" xvalue="1" />
-      </location>
-    </source> -->
     <source filename="Recursive Sans-Linear A Slanted.ufo" familyname="Recursive Sans" stylename="Linear A Slanted">
       <location>
-        <dimension name="Weight" xvalue="300" />
+        <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="0" />
@@ -199,7 +150,7 @@
       <features copy="1" />
       <info copy="1" />
       <location>
-        <dimension name="Weight" xvalue="300" />
+        <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.5" />
         <dimension name="Expression" xvalue="0" />
@@ -237,22 +188,6 @@
         <dimension name="Expression" xvalue="0" />
       </location>
     </source>
-    <!-- <source filename="Recursive Sans-Linear B Slanted.ufo" familyname="Recursive Sans" stylename="Linear B" layer="support.w.middle">
-      <location>
-        <dimension name="Weight" xvalue="500" />
-        <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.5" />
-        <dimension name="Expression" xvalue="0" />
-      </location>
-    </source>
-    <source filename="Recursive Sans-Linear B.ufo" familyname="Recursive Sans" stylename="Linear B" layer="support.w.middle">
-      <location>
-        <dimension name="Weight" xvalue="500" />
-        <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.5" />
-        <dimension name="Expression" xvalue="0" />
-      </location>
-    </source> -->
   </sources>
   <instances>
     <instance familyname="Recursive Sans" stylename="Light" filename="instances/Recursive Sans-Linear Light.ufo">
