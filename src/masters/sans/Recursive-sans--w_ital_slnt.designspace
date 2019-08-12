@@ -23,39 +23,20 @@
 
   </axes>
   <rules>
-    <!-- <rule name="mono">
+    <rule name="sans">
       <conditionset>
         <condition name="Slant" minimum="-7.49" maximum="0" />
         <condition name="Italic" minimum="0" maximum="0.89" />
       </conditionset>
-      <sub name="f" with="f.mono" />
-      <sub name="g" with="g.mono" />
-      <sub name="i" with="i.mono" />
-      <sub name="l" with="l.mono" />
-      <sub name="lacute" with="lacute.mono" />
-      <sub name="r" with="r.mono" />
-      <sub name="dotlessi" with="dotlessi.mono" />
-      <sub name="lcommaaccent" with="lcommaaccent.mono" />
+      <sub name="l" with="l.sans" />
+      <sub name="lslash" with="lslash.sans" />
     </rule>
-    <rule name="mono roman">
+    <rule name="sans roman">
       <conditionset>
         <condition name="Italic" minimum="0" maximum="0.090000" />
       </conditionset>
-      <sub name="f" with="f.mono" />
-      <sub name="g" with="g.mono" />
-      <sub name="i" with="i.mono" />
-      <sub name="l" with="l.mono" />
-      <sub name="lacute" with="lacute.mono" />
-      <sub name="r" with="r.mono" />
-      <sub name="dotlessi" with="dotlessi.mono" />
-      <sub name="lcommaaccent" with="lcommaaccent.mono" />
-    </rule> -->
-
-    <rule name="sans">
-      <conditionset>
-        <condition name="Italic" minimum="0" maximum="0.9" />
-      </conditionset>
       <sub name="l" with="l.sans" />
+      <sub name="lslash" with="lslash.sans" />
     </rule>
 
     <rule name="autoitalic">
@@ -67,7 +48,6 @@
       <sub name="f" with="f.italic" />
       <sub name="g" with="g.italic" />
       <sub name="i" with="i.italic" />
-      <sub name="l" with="l.italic" />
       <sub name="r" with="r.italic" />
       <sub name="y" with="y.italic" />
       <sub name="d" with="d.italic" />
@@ -93,7 +73,6 @@
       <sub name="f" with="f.italic" />
       <sub name="g" with="g.italic" />
       <sub name="i" with="i.italic" />
-      <sub name="l" with="l.italic" />
       <sub name="r" with="r.italic" />
       <sub name="y" with="y.italic" />
       <sub name="d" with="d.italic" />

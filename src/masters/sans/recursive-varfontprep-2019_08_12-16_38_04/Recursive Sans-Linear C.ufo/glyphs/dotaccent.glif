@@ -3,7 +3,22 @@
 	<unicode hex="02D9"/>
 	<advance width="600"/>
 	<outline>
-		<component base="dotaccentcomb" xOffset="301"/>
+		<contour>
+			<point x="171" y="800" type="curve"/>
+			<point x="171" y="626" type="line" smooth="yes"/>
+			<point x="171" y="619"/>
+			<point x="175" y="615"/>
+			<point x="182" y="615" type="curve" smooth="yes"/>
+			<point x="238" y="615"/>
+			<point x="375" y="615"/>
+			<point x="431" y="615" type="curve"/>
+			<point x="431" y="789" type="line" smooth="yes"/>
+			<point x="431" y="796"/>
+			<point x="427" y="800"/>
+			<point x="420" y="800" type="curve" smooth="yes"/>
+			<point x="364" y="800"/>
+			<point x="227" y="800"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>

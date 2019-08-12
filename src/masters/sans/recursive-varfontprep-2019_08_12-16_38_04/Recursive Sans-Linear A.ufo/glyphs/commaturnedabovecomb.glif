@@ -2,9 +2,27 @@
 <glyph name="commaturnedabovecomb" format="2">
 	<unicode hex="0312"/>
 	<outline>
-		<component base="commaaboverightcomb" xScale="-1" yScale="-1" yOffset="1335"/>
+		<contour>
+			<point x="-30" y="634" type="curve" smooth="yes"/>
+			<point x="-14" y="634"/>
+			<point x="-9" y="634"/>
+			<point x="10" y="634" type="curve"/>
+			<point x="17" y="690"/>
+			<point x="22" y="727"/>
+			<point x="31" y="796" type="curve"/>
+			<point x="22" y="796"/>
+			<point x="17" y="796"/>
+			<point x="4" y="796" type="curve" smooth="yes"/>
+			<point x="-6" y="796"/>
+			<point x="-9" y="791"/>
+			<point x="-11" y="786" type="curve" smooth="yes"/>
+			<point x="-27" y="719"/>
+			<point x="-29" y="711"/>
+			<point x="-44" y="649" type="curve" smooth="yes"/>
+			<point x="-46" y="641"/>
+			<point x="-43" y="634"/>
+		</contour>
 	</outline>
-	<anchor name="_top" x="0" y="537"/>
 	<lib>
 		<dict>
 			<key>public.markColor</key>

@@ -26,7 +26,22 @@
 			<point x="130" y="290"/>
 			<point x="134" y="290" type="curve"/>
 		</contour>
-		<component base="period" xOffset="-2"/>
+		<contour>
+			<point x="205" y="0" type="curve"/>
+			<point x="252" y="189" type="line" smooth="yes"/>
+			<point x="254" y="196"/>
+			<point x="251" y="200"/>
+			<point x="244" y="200" type="curve"/>
+			<point x="181" y="200"/>
+			<point x="118" y="200"/>
+			<point x="55" y="200" type="curve"/>
+			<point x="8" y="11" type="line" smooth="yes"/>
+			<point x="6" y="4"/>
+			<point x="9" y="0"/>
+			<point x="16" y="0" type="curve"/>
+			<point x="79" y="0"/>
+			<point x="142" y="0"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>

@@ -3,7 +3,46 @@
 	<unicode hex="201D"/>
 	<advance width="600"/>
 	<outline>
-		<component base="quotedblleft" xScale="-1" yScale="-1" xOffset="743" yOffset="1122"/>
+		<contour>
+			<point x="345" y="443" type="curve"/>
+			<point x="373" y="414"/>
+			<point x="407" y="402"/>
+			<point x="453" y="402" type="curve" smooth="yes"/>
+			<point x="498" y="402"/>
+			<point x="522" y="408"/>
+			<point x="545" y="432" type="curve" smooth="yes"/>
+			<point x="583" y="472"/>
+			<point x="639" y="555"/>
+			<point x="660" y="633" type="curve" smooth="yes"/>
+			<point x="677" y="697"/>
+			<point x="641" y="720"/>
+			<point x="574" y="720" type="curve" smooth="yes"/>
+			<point x="540" y="720"/>
+			<point x="505" y="717"/>
+			<point x="470" y="712" type="curve"/>
+			<point x="445" y="613"/>
+			<point x="392" y="502"/>
+		</contour>
+		<contour>
+			<point x="62" y="443" type="curve"/>
+			<point x="90" y="414"/>
+			<point x="124" y="402"/>
+			<point x="170" y="402" type="curve" smooth="yes"/>
+			<point x="215" y="402"/>
+			<point x="239" y="408"/>
+			<point x="262" y="432" type="curve" smooth="yes"/>
+			<point x="300" y="472"/>
+			<point x="356" y="555"/>
+			<point x="377" y="633" type="curve" smooth="yes"/>
+			<point x="394" y="697"/>
+			<point x="358" y="720"/>
+			<point x="291" y="720" type="curve" smooth="yes"/>
+			<point x="257" y="720"/>
+			<point x="221" y="717"/>
+			<point x="186" y="712" type="curve"/>
+			<point x="161" y="613"/>
+			<point x="109" y="502"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>

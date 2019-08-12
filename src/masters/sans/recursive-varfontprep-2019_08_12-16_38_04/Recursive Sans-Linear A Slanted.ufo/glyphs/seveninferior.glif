@@ -3,7 +3,60 @@
 	<unicode hex="2087"/>
 	<advance width="600"/>
 	<outline>
-		<component base="sevensuperior" xOffset="-99" yOffset="-394"/>
+		<contour>
+			<point x="183" y="326" type="curve"/>
+			<point x="174" y="290"/>
+			<point x="157" y="229"/>
+			<point x="154" y="216" type="curve" smooth="yes"/>
+			<point x="152" y="209"/>
+			<point x="155" y="205"/>
+			<point x="162" y="205" type="curve" smooth="yes"/>
+			<point x="172" y="205"/>
+			<point x="182" y="205"/>
+			<point x="192" y="205" type="curve"/>
+			<point x="196" y="220"/>
+			<point x="212" y="274"/>
+			<point x="218" y="296" type="curve" smooth="yes"/>
+			<point x="222" y="311"/>
+			<point x="217" y="326"/>
+		</contour>
+		<contour>
+			<point x="403" y="307" type="line"/>
+			<point x="378" y="285"/>
+			<point x="351" y="245"/>
+			<point x="278" y="140" type="curve" smooth="yes"/>
+			<point x="220" y="57"/>
+			<point x="180" y="1"/>
+			<point x="178" y="-7" type="curve" smooth="yes"/>
+			<point x="176" y="-14"/>
+			<point x="178" y="-17"/>
+			<point x="185" y="-17" type="curve" smooth="yes"/>
+			<point x="195" y="-17"/>
+			<point x="212" y="-17"/>
+			<point x="222" y="-17" type="curve"/>
+			<point x="237" y="4"/>
+			<point x="268" y="51"/>
+			<point x="314" y="117" type="curve" smooth="yes"/>
+			<point x="370" y="197"/>
+			<point x="426" y="278"/>
+			<point x="426" y="280" type="curve" smooth="yes"/>
+			<point x="435" y="315" type="line" smooth="yes"/>
+			<point x="437" y="322"/>
+			<point x="434" y="326"/>
+			<point x="427" y="326" type="curve" smooth="yes"/>
+			<point x="417" y="326"/>
+			<point x="198" y="326"/>
+			<point x="183" y="326" type="curve"/>
+			<point x="176" y="300"/>
+			<point x="188" y="286"/>
+			<point x="214" y="286" type="curve" smooth="yes"/>
+			<point x="278" y="286" type="line" smooth="yes"/>
+			<point x="311" y="286"/>
+			<point x="357" y="286"/>
+			<point x="400" y="286" type="curve"/>
+			<point x="381" y="302" type="line"/>
+			<point x="371" y="265" type="line"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>

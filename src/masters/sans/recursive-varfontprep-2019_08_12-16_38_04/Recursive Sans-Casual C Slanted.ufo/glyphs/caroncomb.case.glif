@@ -1,9 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="caroncomb.case" format="2">
 	<outline>
-		<component base="circumflexcomb.case" xScale="-1" yScale="-0.9330614207" xOffset="293" yOffset="1663"/>
+		<contour>
+			<point x="187" y="766.3279747073" type="curve"/>
+			<point x="237" y="787.7883873834"/>
+			<point x="296" y="826.0439056321"/>
+			<point x="335" y="863.3663624601" type="curve" smooth="yes"/>
+			<point x="357" y="884.8267751362"/>
+			<point x="367" y="903.4880035502"/>
+			<point x="370" y="915.6178020193" type="curve" smooth="yes"/>
+			<point x="376" y="938.0112761161"/>
+			<point x="354" y="957.6055659508"/>
+			<point x="246" y="957.6055659508" type="curve" smooth="yes"/>
+			<point x="240" y="957.6055659508" type="line"/>
+			<point x="219" y="933.3459690126"/>
+			<point x="184" y="897.889635026"/>
+			<point x="124" y="863.3663624601" type="curve"/>
+			<point x="184" y="882.0275908741" type="line"/>
+			<point x="162" y="882.0275908741"/>
+			<point x="135" y="882.0275908741"/>
+			<point x="119" y="882.0275908741" type="curve"/>
+			<point x="169" y="863.3663624601" type="line"/>
+			<point x="137" y="889.4920822397"/>
+			<point x="124" y="907.220249233"/>
+			<point x="111" y="927.7476004884" type="curve" smooth="yes"/>
+			<point x="97" y="950.1410745852"/>
+			<point x="87" y="961.3378116336"/>
+			<point x="60" y="961.3378116336" type="curve" smooth="yes"/>
+			<point x="26" y="961.3378116336"/>
+			<point x="-2" y="953.873320268"/>
+			<point x="-41" y="935.212091854" type="curve"/>
+			<point x="-22" y="877.3622837706"/>
+			<point x="7" y="833.5083969977"/>
+			<point x="42" y="798.0520630111" type="curve" smooth="yes"/>
+			<point x="74" y="766.3279747073"/>
+			<point x="99" y="762.5957290245"/>
+			<point x="140" y="762.5957290245" type="curve" smooth="yes"/>
+			<point x="150" y="762.5957290245"/>
+			<point x="173" y="764.4618518659"/>
+		</contour>
 	</outline>
-	<anchor name="_top" x="109" y="712"/>
 	<lib>
 		<dict>
 			<key>public.markColor</key>

@@ -3,8 +3,106 @@
 	<unicode hex="0147"/>
 	<advance width="650"/>
 	<outline>
-		<component base="N"/>
-		<component base="caroncomb.case" xOffset="325"/>
+		<contour>
+			<point x="197" y="-2" type="curve"/>
+			<point x="190" y="55"/>
+			<point x="195" y="108"/>
+			<point x="205" y="164" type="curve" smooth="yes"/>
+			<point x="224" y="271"/>
+			<point x="238" y="347"/>
+			<point x="244" y="430" type="curve"/>
+			<point x="228" y="380" type="line"/>
+			<point x="255" y="390" type="line"/>
+			<point x="245" y="430" type="line"/>
+			<point x="259" y="264"/>
+			<point x="327" y="88"/>
+			<point x="367" y="35" type="curve" smooth="yes"/>
+			<point x="389" y="6"/>
+			<point x="424" y="-10"/>
+			<point x="489" y="-10" type="curve"/>
+			<point x="509" y="-10"/>
+			<point x="533" y="-6"/>
+			<point x="550" y="0" type="curve"/>
+			<point x="548" y="14"/>
+			<point x="551" y="51"/>
+			<point x="556" y="79" type="curve" smooth="yes"/>
+			<point x="588" y="249"/>
+			<point x="669" y="426"/>
+			<point x="693" y="585" type="curve" smooth="yes"/>
+			<point x="705" y="665"/>
+			<point x="659" y="710"/>
+			<point x="569" y="710" type="curve" smooth="yes"/>
+			<point x="547" y="710"/>
+			<point x="517" y="707"/>
+			<point x="498" y="701" type="curve"/>
+			<point x="497" y="647"/>
+			<point x="487" y="575"/>
+			<point x="476" y="513" type="curve" smooth="yes"/>
+			<point x="459" y="420"/>
+			<point x="438" y="321"/>
+			<point x="438" y="260" type="curve"/>
+			<point x="460" y="303" type="line"/>
+			<point x="423" y="293" type="line"/>
+			<point x="440" y="261" type="line"/>
+			<point x="407" y="343"/>
+			<point x="380" y="452"/>
+			<point x="362" y="604" type="curve" smooth="yes"/>
+			<point x="354" y="675"/>
+			<point x="315" y="710"/>
+			<point x="220" y="710" type="curve"/>
+			<point x="188" y="710"/>
+			<point x="154" y="706"/>
+			<point x="129" y="701" type="curve"/>
+			<point x="129" y="665"/>
+			<point x="129" y="630"/>
+			<point x="122" y="589" type="curve" smooth="yes"/>
+			<point x="89" y="409"/>
+			<point x="19" y="277"/>
+			<point x="-4" y="120" type="curve" smooth="yes"/>
+			<point x="-16" y="42"/>
+			<point x="31" y="-9"/>
+			<point x="117" y="-9" type="curve"/>
+			<point x="144.6923076923" y="-9"/>
+			<point x="171.6112581951" y="-6.8824503471"/>
+		</contour>
+		<contour>
+			<point x="512" y="766.3279747073" type="curve"/>
+			<point x="562" y="787.7883873834"/>
+			<point x="621" y="826.0439056321"/>
+			<point x="660" y="863.3663624601" type="curve" smooth="yes"/>
+			<point x="682" y="884.8267751362"/>
+			<point x="692" y="903.4880035502"/>
+			<point x="695" y="915.6178020193" type="curve" smooth="yes"/>
+			<point x="701" y="938.0112761161"/>
+			<point x="679" y="957.6055659508"/>
+			<point x="571" y="957.6055659508" type="curve" smooth="yes"/>
+			<point x="565" y="957.6055659508" type="line"/>
+			<point x="544" y="933.3459690126"/>
+			<point x="509" y="897.889635026"/>
+			<point x="449" y="863.3663624601" type="curve"/>
+			<point x="509" y="882.0275908741" type="line"/>
+			<point x="487" y="882.0275908741"/>
+			<point x="460" y="882.0275908741"/>
+			<point x="444" y="882.0275908741" type="curve"/>
+			<point x="494" y="863.3663624601" type="line"/>
+			<point x="462" y="889.4920822397"/>
+			<point x="449" y="907.220249233"/>
+			<point x="436" y="927.7476004884" type="curve" smooth="yes"/>
+			<point x="422" y="950.1410745852"/>
+			<point x="412" y="961.3378116336"/>
+			<point x="385" y="961.3378116336" type="curve" smooth="yes"/>
+			<point x="351" y="961.3378116336"/>
+			<point x="323" y="953.873320268"/>
+			<point x="284" y="935.212091854" type="curve"/>
+			<point x="303" y="877.3622837706"/>
+			<point x="332" y="833.5083969977"/>
+			<point x="367" y="798.0520630111" type="curve" smooth="yes"/>
+			<point x="399" y="766.3279747073"/>
+			<point x="424" y="762.5957290245"/>
+			<point x="465" y="762.5957290245" type="curve" smooth="yes"/>
+			<point x="475" y="762.5957290245"/>
+			<point x="498" y="764.4618518659"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>

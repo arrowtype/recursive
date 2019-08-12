@@ -1,10 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="hungarumlautcomb.case" format="2">
 	<outline>
-		<component base="acutecomb.case" xOffset="-150"/>
-		<component base="acutecomb.case" xOffset="100"/>
+		<contour>
+			<point x="-111" y="934" type="curve"/>
+			<point x="-132" y="869"/>
+			<point x="-171" y="822"/>
+			<point x="-232" y="774" type="curve"/>
+			<point x="-201" y="762"/>
+			<point x="-175" y="758"/>
+			<point x="-142" y="758" type="curve" smooth="yes"/>
+			<point x="-105" y="758"/>
+			<point x="-85" y="760"/>
+			<point x="-61" y="774" type="curve" smooth="yes"/>
+			<point x="-19" y="799"/>
+			<point x="8" y="826"/>
+			<point x="25" y="873" type="curve" smooth="yes"/>
+			<point x="32" y="894"/>
+			<point x="29" y="912"/>
+			<point x="10" y="919" type="curve" smooth="yes"/>
+			<point x="-21" y="929"/>
+			<point x="-57" y="934"/>
+		</contour>
+		<contour>
+			<point x="139" y="934" type="curve"/>
+			<point x="118" y="869"/>
+			<point x="79" y="822"/>
+			<point x="18" y="774" type="curve"/>
+			<point x="49" y="762"/>
+			<point x="75" y="758"/>
+			<point x="108" y="758" type="curve" smooth="yes"/>
+			<point x="145" y="758"/>
+			<point x="165" y="760"/>
+			<point x="189" y="774" type="curve" smooth="yes"/>
+			<point x="231" y="799"/>
+			<point x="258" y="826"/>
+			<point x="275" y="873" type="curve" smooth="yes"/>
+			<point x="282" y="894"/>
+			<point x="279" y="912"/>
+			<point x="260" y="919" type="curve" smooth="yes"/>
+			<point x="229" y="929"/>
+			<point x="193" y="934"/>
+		</contour>
 	</outline>
-	<anchor name="_top" x="0" y="712"/>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>

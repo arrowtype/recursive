@@ -3,8 +3,60 @@
 	<unicode hex="014C"/>
 	<advance width="650"/>
 	<outline>
-		<component base="O"/>
-		<component base="macroncomb.case" xOffset="325" yOffset="-1"/>
+		<contour>
+			<point x="327" y="720" type="curve" smooth="yes"/>
+			<point x="131" y="720"/>
+			<point x="20" y="581"/>
+			<point x="20" y="360" type="curve" smooth="yes"/>
+			<point x="20" y="340" type="line" smooth="yes"/>
+			<point x="20" y="104"/>
+			<point x="111" y="-20"/>
+			<point x="323" y="-20" type="curve" smooth="yes"/>
+			<point x="519" y="-20"/>
+			<point x="630" y="120"/>
+			<point x="630" y="340" type="curve" smooth="yes"/>
+			<point x="630" y="360" type="line" smooth="yes"/>
+			<point x="630" y="597"/>
+			<point x="539" y="720"/>
+		</contour>
+		<contour>
+			<point x="248" y="347" type="curve" smooth="yes"/>
+			<point x="248" y="360" type="line" smooth="yes"/>
+			<point x="248" y="462"/>
+			<point x="277" y="510"/>
+			<point x="333" y="510" type="curve" smooth="yes"/>
+			<point x="352" y="510"/>
+			<point x="367" y="509"/>
+			<point x="381" y="506" type="curve"/>
+			<point x="396" y="478"/>
+			<point x="402" y="436"/>
+			<point x="402" y="373" type="curve" smooth="yes"/>
+			<point x="402" y="360" type="line" smooth="yes"/>
+			<point x="402" y="244"/>
+			<point x="374" y="190"/>
+			<point x="317" y="190" type="curve" smooth="yes"/>
+			<point x="300" y="190"/>
+			<point x="285" y="191"/>
+			<point x="272" y="194" type="curve"/>
+			<point x="255" y="224"/>
+			<point x="248" y="272"/>
+		</contour>
+		<contour>
+			<point x="110" y="932" type="line"/>
+			<point x="110" y="926"/>
+			<point x="110" y="916"/>
+			<point x="110" y="909" type="curve" smooth="yes"/>
+			<point x="110" y="831"/>
+			<point x="119" y="779"/>
+			<point x="236" y="779" type="curve" smooth="yes"/>
+			<point x="531" y="779" type="line"/>
+			<point x="534" y="793"/>
+			<point x="538" y="810"/>
+			<point x="538" y="846" type="curve" smooth="yes"/>
+			<point x="538" y="909"/>
+			<point x="511" y="932"/>
+			<point x="455" y="932" type="curve" smooth="yes"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>

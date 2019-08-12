@@ -2,9 +2,27 @@
 <glyph name="commaturnedabovecomb" format="2">
 	<unicode hex="0312"/>
 	<outline>
-		<component base="commaaboverightcomb" xScale="-1" yScale="-1" xOffset="5" yOffset="1335"/>
+		<contour>
+			<point x="1" y="622" type="curve" smooth="yes"/>
+			<point x="30" y="622"/>
+			<point x="50" y="625"/>
+			<point x="75" y="633" type="curve"/>
+			<point x="75" y="724"/>
+			<point x="78" y="759"/>
+			<point x="91" y="832" type="curve"/>
+			<point x="78" y="837"/>
+			<point x="60" y="844"/>
+			<point x="35" y="844" type="curve" smooth="yes"/>
+			<point x="5" y="844"/>
+			<point x="-16" y="839"/>
+			<point x="-33" y="822" type="curve" smooth="yes"/>
+			<point x="-69" y="786"/>
+			<point x="-91" y="736"/>
+			<point x="-91" y="678" type="curve" smooth="yes"/>
+			<point x="-91" y="638"/>
+			<point x="-63" y="622"/>
+		</contour>
 	</outline>
-	<anchor name="_top" x="0" y="549"/>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>

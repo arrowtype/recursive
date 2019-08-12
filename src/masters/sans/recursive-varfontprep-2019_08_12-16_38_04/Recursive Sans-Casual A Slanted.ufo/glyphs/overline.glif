@@ -2,7 +2,22 @@
 <glyph name="overline" format="2">
 	<advance width="600"/>
 	<outline>
-		<component base="underscore" xOffset="237" yOffset="950"/>
+		<contour>
+			<point x="209" y="850" type="line"/>
+			<point x="206" y="843"/>
+			<point x="204" y="838"/>
+			<point x="202" y="832" type="curve" smooth="yes"/>
+			<point x="196" y="812"/>
+			<point x="200" y="800"/>
+			<point x="217" y="800" type="curve" smooth="yes"/>
+			<point x="673" y="800" type="line"/>
+			<point x="674" y="803"/>
+			<point x="675" y="807"/>
+			<point x="676" y="810" type="curve" smooth="yes"/>
+			<point x="684" y="835"/>
+			<point x="679" y="850"/>
+			<point x="663" y="850" type="curve" smooth="yes"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>

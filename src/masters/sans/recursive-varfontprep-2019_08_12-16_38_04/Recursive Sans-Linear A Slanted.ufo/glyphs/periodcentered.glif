@@ -3,7 +3,22 @@
 	<unicode hex="00B7"/>
 	<advance width="300"/>
 	<outline>
-		<component base="period" xOffset="66" yOffset="246"/>
+		<contour>
+			<point x="206" y="241" type="curve"/>
+			<point x="233" y="350" type="line" smooth="yes"/>
+			<point x="235" y="357"/>
+			<point x="232" y="361"/>
+			<point x="225" y="361" type="curve"/>
+			<point x="195" y="361"/>
+			<point x="142" y="361"/>
+			<point x="112" y="361" type="curve"/>
+			<point x="85" y="252" type="line" smooth="yes"/>
+			<point x="83" y="245"/>
+			<point x="86" y="241"/>
+			<point x="93" y="241" type="curve" smooth="yes"/>
+			<point x="123" y="241"/>
+			<point x="176" y="241"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>

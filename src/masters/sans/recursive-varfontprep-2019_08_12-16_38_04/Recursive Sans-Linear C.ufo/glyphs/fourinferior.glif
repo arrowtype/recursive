@@ -3,7 +3,59 @@
 	<unicode hex="2084"/>
 	<advance width="600"/>
 	<outline>
-		<component base="foursuperior" yOffset="-419"/>
+		<contour>
+			<point x="415" y="-52" type="curve"/>
+			<point x="415" y="-42"/>
+			<point x="415" y="-11"/>
+			<point x="415" y="-1" type="curve" smooth="yes"/>
+			<point x="415" y="208" type="line" smooth="yes"/>
+			<point x="415" y="215"/>
+			<point x="412" y="219"/>
+			<point x="404" y="219" type="curve" smooth="yes"/>
+			<point x="342" y="219" type="line"/>
+			<point x="338" y="208"/>
+			<point x="302" y="135"/>
+			<point x="302" y="129" type="curve" smooth="yes"/>
+			<point x="302" y="-41" type="line" smooth="yes"/>
+			<point x="302" y="-49"/>
+			<point x="306" y="-52"/>
+			<point x="313" y="-52" type="curve" smooth="yes"/>
+			<point x="323" y="-52"/>
+			<point x="405" y="-52"/>
+		</contour>
+		<contour>
+			<point x="459" y="17" type="line"/>
+			<point x="459" y="27"/>
+			<point x="459" y="116"/>
+			<point x="459" y="126" type="curve" smooth="yes"/>
+			<point x="459" y="133"/>
+			<point x="455" y="137"/>
+			<point x="448" y="137" type="curve" smooth="yes"/>
+			<point x="364" y="137" type="line" smooth="yes"/>
+			<point x="302" y="137"/>
+			<point x="260" y="123"/>
+			<point x="223" y="104" type="curve"/>
+			<point x="241" y="97" type="line"/>
+			<point x="241" y="153" type="line"/>
+			<point x="225" y="109" type="line"/>
+			<point x="246" y="140"/>
+			<point x="362" y="308"/>
+			<point x="373" y="326" type="curve"/>
+			<point x="373" y="338" type="line"/>
+			<point x="363" y="338"/>
+			<point x="238" y="338"/>
+			<point x="228" y="338" type="curve" smooth="yes"/>
+			<point x="223" y="338"/>
+			<point x="217" y="337"/>
+			<point x="214" y="330" type="curve" smooth="yes"/>
+			<point x="209" y="319"/>
+			<point x="120" y="115"/>
+			<point x="120" y="113" type="curve" smooth="yes"/>
+			<point x="120" y="28" type="line" smooth="yes"/>
+			<point x="120" y="21"/>
+			<point x="124" y="17"/>
+			<point x="131" y="17" type="curve" smooth="yes"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>

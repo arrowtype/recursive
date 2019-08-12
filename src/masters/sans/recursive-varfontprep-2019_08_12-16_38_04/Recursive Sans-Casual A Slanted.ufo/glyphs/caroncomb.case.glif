@@ -1,9 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="caroncomb.case" format="2">
 	<outline>
-		<component base="circumflexcomb.case" xScale="-1" yScale="-1" xOffset="300" yOffset="1724"/>
+		<contour>
+			<point x="144" y="790" type="curve"/>
+			<point x="207" y="810"/>
+			<point x="266" y="848"/>
+			<point x="316" y="890" type="curve" smooth="yes"/>
+			<point x="344" y="913"/>
+			<point x="355" y="930"/>
+			<point x="357" y="937" type="curve" smooth="yes"/>
+			<point x="359" y="947"/>
+			<point x="355" y="953"/>
+			<point x="335" y="953" type="curve" smooth="yes"/>
+			<point x="323" y="953" type="line"/>
+			<point x="280" y="906"/>
+			<point x="213" y="856"/>
+			<point x="116" y="821" type="curve"/>
+			<point x="177" y="833" type="line"/>
+			<point x="155" y="833"/>
+			<point x="133" y="833"/>
+			<point x="111" y="833" type="curve"/>
+			<point x="167" y="820" type="line"/>
+			<point x="101" y="851"/>
+			<point x="60" y="887"/>
+			<point x="33" y="927" type="curve" smooth="yes"/>
+			<point x="21" y="946"/>
+			<point x="16" y="950"/>
+			<point x="4" y="950" type="curve" smooth="yes"/>
+			<point x="-8" y="950"/>
+			<point x="-11" y="948"/>
+			<point x="-21" y="942" type="curve"/>
+			<point x="1" y="883"/>
+			<point x="51" y="837"/>
+			<point x="85" y="812" type="curve" smooth="yes"/>
+			<point x="115" y="791"/>
+			<point x="126" y="790"/>
+			<point x="135" y="790" type="curve" smooth="yes"/>
+			<point x="138" y="790"/>
+			<point x="141" y="790"/>
+		</contour>
 	</outline>
-	<anchor name="_top" x="112" y="711"/>
 	<lib>
 		<dict>
 			<key>public.markColor</key>

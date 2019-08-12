@@ -3,7 +3,26 @@
 	<unicode hex="01FD"/>
 	<advance width="850"/>
 	<outline>
-		<component base="acutecomb" xOffset="425" yOffset="12"/>
+		<contour>
+			<point x="443" y="826" type="curve"/>
+			<point x="418" y="750"/>
+			<point x="393" y="703"/>
+			<point x="331" y="639" type="curve"/>
+			<point x="363" y="626"/>
+			<point x="412" y="623"/>
+			<point x="441" y="623" type="curve" smooth="yes"/>
+			<point x="473" y="623"/>
+			<point x="500" y="630"/>
+			<point x="516" y="639" type="curve" smooth="yes"/>
+			<point x="568" y="667"/>
+			<point x="594" y="701"/>
+			<point x="616" y="763" type="curve" smooth="yes"/>
+			<point x="622" y="779"/>
+			<point x="618" y="798"/>
+			<point x="597" y="806" type="curve" smooth="yes"/>
+			<point x="550" y="824"/>
+			<point x="489" y="826"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>
