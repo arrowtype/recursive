@@ -20,9 +20,14 @@ newDrawing() # for drawbot module
 
 debug = True # overlays curve visualizations
 
-fontFam = "/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/fonts/Recursive-mono-full--w_ital_slnt-2019_07_25.ttf"
+prop = 1
 
-frames = 200 # currently must be in units of 100
+if prop is 1:
+    fontFam = "/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/fonts/Recursive-sans--w_ital_slnt-2019_08_12.ttf"
+else:
+    fontFam = "/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/fonts/Recursive-mono-full--w_ital_slnt-2019_07_25.ttf"
+
+frames = 100 # currently must be in units of 100
 format = "gif" # pdf, gif, or mp4
 
 bookSize = 3.5 # inches
