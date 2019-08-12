@@ -13,7 +13,21 @@ The main part of ligature's name is build with source glyphs' names separated by
 - _example:_
   glyph constructed out of `slash` and `asterix` will be named `slash_asterix.code`
 
-#`maybe this should be truth only for the operators? in other situations we would't use underscores?`
+## Multiple levels of ligatures? "On by default" vs "user activated"
+
+Some strings will look better with ligatures and won't changing the overall look of glyphs. Examples:
+- `//`
+- `!!`
+- `##` if we don't connect the horizontals
+
+
+Some ligatures are more "aggressive" and change form to a seemingly different unicode character, which tends to be the divisive aspect of code ligatures. Examples:
+- `==` connected
+- `===` connected in three bars
+- `!=` and `!==` with a slash
+- `<=` and `>=` which stack into a large `≤` or `≥`.
+
+It looks like Fira Code uses "standard ligatures" for all of its "aggressive" code ligatures. Potentially, the less-aggressive ligatures could be placed into "Contextual ligatures" ([MS OT spec](https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/opentype-font-features)). I need to check/test whether common text editors (VS Code, Sublime, Atom) use contextual ligatures by default.
 
 ## Planning work
 
