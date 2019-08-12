@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ringcomb.case" format="2">
+	<outline>
+		<contour>
+			<point x="3" y="903" type="curve" smooth="yes"/>
+			<point x="-99" y="903"/>
+			<point x="-173" y="842"/>
+			<point x="-173" y="752" type="curve" smooth="yes"/>
+			<point x="-173" y="746" type="line" smooth="yes"/>
+			<point x="-173" y="664"/>
+			<point x="-101" y="611"/>
+			<point x="-3" y="611" type="curve" smooth="yes"/>
+			<point x="99" y="611"/>
+			<point x="173" y="668"/>
+			<point x="173" y="751" type="curve" smooth="yes"/>
+			<point x="173" y="757" type="line" smooth="yes"/>
+			<point x="173" y="846"/>
+			<point x="101" y="903"/>
+		</contour>
+		<contour>
+			<point x="6" y="813" type="curve" smooth="yes"/>
+			<point x="16" y="813"/>
+			<point x="26" y="812"/>
+			<point x="35" y="811" type="curve"/>
+			<point x="52" y="799"/>
+			<point x="61" y="781"/>
+			<point x="61" y="757" type="curve" smooth="yes"/>
+			<point x="61" y="751" type="line" smooth="yes"/>
+			<point x="61" y="719"/>
+			<point x="38" y="701"/>
+			<point x="-6" y="701" type="curve" smooth="yes"/>
+			<point x="-17" y="701"/>
+			<point x="-28" y="702"/>
+			<point x="-39" y="704" type="curve"/>
+			<point x="-53" y="713"/>
+			<point x="-61" y="728"/>
+			<point x="-61" y="746" type="curve" smooth="yes"/>
+			<point x="-61" y="752" type="line" smooth="yes"/>
+			<point x="-61" y="790"/>
+			<point x="-38" y="813"/>
+		</contour>
+	</outline>
+	<anchor name="_ring" x="0" y="700"/>
+	<anchor name="top" x="0" y="892"/>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+		</dict>
+	</lib>
+</glyph>
