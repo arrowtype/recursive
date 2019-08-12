@@ -6,13 +6,17 @@ for file in files:
     
     print("\n",f.info.styleName)
     
-    ## commaaccentcomb
-    if "commaaccentcomb" in f.keys():
-        print(f["commaaccentcomb"].unicodes)       
+    ## bar
+    if "bar" in f.keys():
+        print(f["bar"].unicodes)   
+    
+    # ## commaaccentcomb
+    # if "commaaccentcomb" in f.keys():
+    #     print(f["commaaccentcomb"].unicodes)       
 
-    if f["commaaccentcomb"].unicodes is not (806,):
-        f["commaaccentcomb"].unicodes = (806,) 
-        print("unicode added to /commaaccentcomb")
+    # if f["commaaccentcomb"].unicodes is not (806,):
+    #     f["commaaccentcomb"].unicodes = (806,) 
+    #     print("unicode added to /commaaccentcomb")
          
     
     # ## dotbelowcomb
@@ -58,5 +62,5 @@ for file in files:
     # if f["cedillacomb"].unicodes is not (807,):
     #     f["cedillacomb"].unicodes = (807,)
         
-    f.save()
-    f.close()
+    # f.save()
+    # f.close()
