@@ -46,6 +46,11 @@ for fontName in fonts:
     print("• ", fontName)
 print("")
 
+print("Anchors found:")
+for anchor in sorted(anchors.keys()):
+    print("• ", anchor)
+print("")
+
 ## uncomment below to see full dictionary printed
 # pp = pprint.PrettyPrinter(indent=2, width=200)
 # pp.pprint(anchors)

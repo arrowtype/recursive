@@ -8,7 +8,9 @@ import pprint
 
 ### SET THIS TO IGNORE GLYPHS YOU WANT TO LEAVE ALONE (e.g. experimental glyphs) ###
 
-glyphsToIgnore = "R.trap Z.noserif ampersand.code_experimental_2 ampersand.code_experimental_3 ampersand.crossbar at.simple at.short at.replaced_with_prop dagger.daggery g.extra g.long_desc g.longtail g.ss01 onehalf.v1 perthousand r.simple_italic sterling.replaced_with_flat two.replaced_with_rounder zero.ss01 one.flatflag"
+glyphsToIgnore = ""
+
+# R.trap Z.noserif ampersand.code_experimental_2 ampersand.code_experimental_3 ampersand.crossbar at.simple at.short at.replaced_with_prop dagger.daggery g.extra g.long_desc g.longtail g.ss01 onehalf.v1 perthousand r.simple_italic sterling.replaced_with_flat two.replaced_with_rounder zero.ss01 one.flatflag
 
 ####################################################################################
 
@@ -156,7 +158,7 @@ if len(glyphsNotInAllFonts) >= 1:
 
 if len(problemGlyphs) is 0:
     print("🤖🤖🤖\n")
-    print("Looks like all glyphs have the same anchors – nice work! \n")
+    print("Looks like all glyphs have the same point counts – nice work! \n")
     print("🎉🎉🎉\n")
 
 

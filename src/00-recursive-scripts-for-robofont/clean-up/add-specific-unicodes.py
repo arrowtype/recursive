@@ -6,16 +6,30 @@ for file in files:
     
     print("\n",f.info.styleName)
     
-    ## dotbelowcomb
-    if "dotbelowcomb" in f.keys():
-        print(f["dotbelowcomb"].unicodes)       
-    if "dotbelowcmb" in f.keys():
-        print("dotbelowcmb")
-        print(f["dotbelowcmb"].unicodes)
-        f["dotbelowcomb"].name = "dotbelowcomb"
+    ## commaaccentcomb
+    if "commaaccentcomb" in f.keys():
+        print(f["commaaccentcomb"].unicodes)       
+
+    if f["commaaccentcomb"].unicodes is not (806,):
+        f["commaaccentcomb"].unicodes = (806,) 
+        print("unicode added to /commaaccentcomb")
+         
     
-    if f["dotbelowcomb"].unicodes is not (803,):
-        f["dotbelowcomb"].unicodes = (803,) 
+    # ## dotbelowcomb
+    # if "dotbelowcomb" in f.keys():
+    #     print(f["dotbelowcomb"].unicodes)       
+    
+    # if f["dotbelowcomb"].unicodes is not (803,):
+    #     f["dotbelowcomb"].unicodes = (803,) 
+    #     print("unicode added to /dotbelowcomb")
+        
+    # for g in f:
+    #     for comp in g.components:
+    #         # print(comp)
+    #         if comp.baseGlyph == "dotaccentcmb":
+    #             print(comp.baseGlyph)
+    #             comp.baseGlyph = "dotaccentcomb"
+    #             print(comp.baseGlyph)
 
     # ## DOTACCENTCOMB
     # if "dotaccentcomb" in f.keys():
