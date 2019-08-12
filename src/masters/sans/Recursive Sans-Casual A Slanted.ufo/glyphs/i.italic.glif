@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="i.italic" format="2">
-	<advance width="600"/>
+	<advance width="350"/>
 	<outline>
 		<component base="dotlessi.italic"/>
-		<component base="dotaccentcomb" xOffset="294" yOffset="-10"/>
+		<component base="dotaccentcomb" xOffset="169" yOffset="-10"/>
 	</outline>
 	<lib>
 		<dict>
@@ -18,7 +18,7 @@
 			<key>com.typemytype.robofont.Image.Sharpness</key>
 			<real>0.4</real>
 			<key>public.markColor</key>
-			<string>0,0,0,0.1505</string>
+			<string>0.8206,0.8138,0.8271,1</string>
 		</dict>
 	</lib>
 </glyph>

@@ -790,6 +790,8 @@
 			<string>oslash</string>
 			<string>oslashacute</string>
 			<string>napostrophe</string>
+			<string>dotaccentcomb</string>
+			<string>cedillacomb</string>
 			<string>zero</string>
 			<string>one</string>
 			<string>two</string>
@@ -875,7 +877,6 @@
 			<string>caroncomb</string>
 			<string>cedi</string>
 			<string>cedilla</string>
-			<string>cedillacomb</string>
 			<string>cent</string>
 			<string>circumflex</string>
 			<string>circumflexcomb</string>
@@ -894,7 +895,6 @@
 			<string>dollar</string>
 			<string>dong</string>
 			<string>dotaccent</string>
-			<string>dotaccentcomb</string>
 			<string>dotbelowcomb</string>
 			<string>dotlessi</string>
 			<string>dotlessj</string>
@@ -990,16 +990,17 @@
 			<string>underscore</string>
 			<string>won</string>
 			<string>yen</string>
+			<string>sterling.replaced_with_flat</string>
+			<string>dotaccentcomb.case</string>
+			<string>cedillacomb.case</string>
 			<string>acutecomb.case</string>
 			<string>brevecomb.case</string>
 			<string>caroncomb.case</string>
-			<string>cedillacomb.case</string>
 			<string>circumflexcomb.case</string>
 			<string>commaaboverightcomb.case</string>
 			<string>commaaccentcomb.case</string>
 			<string>commaturnedabovecomb.case</string>
 			<string>dieresiscomb.case</string>
-			<string>dotaccentcomb.case</string>
 			<string>dotbelowcomb.case</string>
 			<string>gravecomb.case</string>
 			<string>hungarumlautcomb.case</string>
@@ -1008,7 +1009,6 @@
 			<string>ringacute.case</string>
 			<string>ringcomb.case</string>
 			<string>tildecomb.case</string>
-			<string>sterling.replaced_with_flat</string>
 			<string>one.flatflag</string>
 			<string>two.replaced_with_rounder</string>
 			<string>a.italic</string>

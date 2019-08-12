@@ -27,7 +27,6 @@ for file in files:
     fonts.append(fontName)
 
     for glyph in font:
-        print(glyph.name)
         for anchor in glyph.anchors:
 
             # if the anchor doesn't yet have an entry, make one
