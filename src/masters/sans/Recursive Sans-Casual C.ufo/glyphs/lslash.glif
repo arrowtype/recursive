@@ -3,36 +3,13 @@
 	<unicode hex="0142"/>
 	<advance width="350"/>
 	<outline>
-		<contour>
-			<point x="333" y="583" type="curve"/>
-			<point x="205" y="514" type="line" smooth="yes"/>
-			<point x="179" y="500"/>
-			<point x="139" y="524"/>
-			<point x="113" y="511" type="curve" smooth="yes"/>
-			<point x="43" y="474" type="line" smooth="yes"/>
-			<point x="13.4727910153" y="458.3927609652"/>
-			<point x="3" y="440.6071428571"/>
-			<point x="3" y="389" type="curve" smooth="yes"/>
-			<point x="3" y="354.4487179487"/>
-			<point x="4.9833684045" y="336.0498947865"/>
-			<point x="13" y="312" type="curve"/>
-			<point x="117" y="368" type="line" smooth="yes"/>
-			<point x="146" y="384"/>
-			<point x="188" y="359"/>
-			<point x="217" y="375" type="curve" smooth="yes"/>
-			<point x="292" y="416" type="line" smooth="yes"/>
-			<point x="332" y="438"/>
-			<point x="346" y="462.6886792453"/>
-			<point x="346" y="517" type="curve" smooth="yes"/>
-			<point x="346" y="544"/>
-			<point x="342" y="563"/>
-		</contour>
-		<component base="l" xOffset="25" yOffset="3"/>
+		<component base="l"/>
+		<component base="slashcomb" xOffset="-31"/>
 	</outline>
 	<lib>
 		<dict>
 			<key>public.markColor</key>
-			<string>1,0.45,0.45,0.75</string>
+			<string>1,0.9999,0.041,1</string>
 		</dict>
 	</lib>
 </glyph>
