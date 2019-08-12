@@ -802,8 +802,6 @@
 			<string>oslashacute</string>
 			<string>dotlessj</string>
 			<string>dotaccentcomb</string>
-			<string>dotbelowcomb</string>
-			<string>commaaccentcomb</string>
 			<string>cedillacomb</string>
 			<string>zero</string>
 			<string>one</string>
@@ -927,6 +925,7 @@
 			<string>colon</string>
 			<string>comma</string>
 			<string>commaaboverightcomb</string>
+			<string>commaaccentcomb</string>
 			<string>commaturnedabovecomb</string>
 			<string>copyright</string>
 			<string>degree</string>
@@ -934,6 +933,7 @@
 			<string>dieresiscomb</string>
 			<string>divide</string>
 			<string>dotaccent</string>
+			<string>dotbelowcomb</string>
 			<string>ellipsis</string>
 			<string>endash</string>
 			<string>equal</string>
@@ -1015,16 +1015,16 @@
 			<string>trademark</string>
 			<string>underscore</string>
 			<string>dotaccentcomb.case</string>
-			<string>dotbelowcomb.case</string>
-			<string>commaaccentcomb.case</string>
 			<string>cedillacomb.case</string>
 			<string>acutecomb.case</string>
 			<string>brevecomb.case</string>
 			<string>caroncomb.case</string>
 			<string>circumflexcomb.case</string>
 			<string>commaaboverightcomb.case</string>
+			<string>commaaccentcomb.case</string>
 			<string>commaturnedabovecomb.case</string>
 			<string>dieresiscomb.case</string>
+			<string>dotbelowcomb.case</string>
 			<string>gravecomb.case</string>
 			<string>hungarumlautcomb.case</string>
 			<string>macroncomb.case</string>
@@ -1069,6 +1069,9 @@
 			<string>one.sans</string>
 			<string>lcommaaccent.sans</string>
 			<string>.notdef</string>
+			<string>slashcomb</string>
+			<string>lslash.mono</string>
+			<string>lslash.sans</string>
 		</array>
 	</dict>
 </plist>
