@@ -6,12 +6,44 @@ newDrawing() # for drawbot module
 # ---------------------------------------------------------
 # CONFIGURATION -------------------------------------------
 
-save = True
+prop = 0 # 0 for mono, 1 for sans
+
+export = True
 autoOpen = True
 book = True
 debug = False # overlays curve visualizations
 
-prop = 0 # 0 for mono, 1 for sans
+frames = 0 # 192
+frameRate = 1/30 # only applicable to mp4
+format = "mp4" # pdf, gif, or mp4
+
+endPages = 0
+
+
+bookSize = 3.5 # inches
+marginSize = 0.25 # inches
+
+
+textPts = 7
+rwPts =  152
+
+# ---------------------------------------------------------
+
+recursiveVersion="Beta v1.014"
+
+DPI = 300 # dots per inch
+pixels = DPI*bookSize
+
+padding = DPI*marginSize
+
+W, H = pixels, pixels # do not edit this
+
+
+def computeFontSizePoints(pts):
+    return W * (pts / (bookSize * 72))
+    
+textSize = computeFontSizePoints(textPts)
+rwSize =  computeFontSizePoints(rwPts)
 
 if prop is 0:
     fontFam = "/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/fonts/Recursive-mono--w_ital_slnt-2019_08_13.ttf"
@@ -23,28 +55,6 @@ else:
     foreground = 0
     background = 1
     docTitle = "recursive-sans-flipbook_side_2"
-    
-frames = 6 # 192
-frameRate = 1/60 # only applicable to mp4
-format = "pdf" # pdf, gif, or mp4
-
-bookSize = 3.5 # inches
-DPI = 72 # dots per inch
-pixels = DPI*bookSize
-
-W, H = pixels, pixels # do not edit this
-
-
-def computeFontSizePoints(pts):
-    return W * (pts / (bookSize * 72))
-    
-textSize = computeFontSizePoints(7)
-
-rwSize =  computeFontSizePoints(152)
-
-padding = DPI*0.25
-
-endPages = 3
 
 # this will draw cyan guides to help align content
 def drawMargins():
@@ -66,56 +76,18 @@ def drawMargins():
 # ---------------------------------------------------------
 # FRONTMATTER ---------------------------------------------
 
-newPage(W, H)
-fill(background)
-rect(0,0,W, H)
-
-# CREDITS ---------------------------------------------
-
-newPage(W, H)
-fill(background)
-rect(0,0,W, H)
-
-credits="""\
-Recursive (Aug 2019, d430fa628c)
+credits=f"""\
+Recursive ({recursiveVersion}, Aug 2019,  d430fa628c)
 
 Made by Arrow Type. Type design by Stephen Nixon, with contributions from Katja Schimmel, Lisa Huang, and Rafał Buchner, plus early guidance from faculty and instructors for KABK TypeMedia 2018. Type mastering by Ben Kiel.
 
 Book design by Math Practice.
 Typeset with DrawBot by Stephen Nixon.
 
-https://recursive.design
+→ https://recursive.design
 
 Recursive has been sponsored by Google Fonts, through which it will soon be released. Recursive is released under the SIL Open Font License and can be freely used in or adapted for any project.
 """
-fill(foreground)
-
-font(fontFam)
-fontSize(textSize)
-fontVariations(wght=450, XPRN=0.001, slnt=0, ital=0)
-
-textBox(credits, (padding,H - 2.86*DPI,W - padding * 2, textSize * 22))
-
-
-# logo
-
-googleLogoSize = computeFontSizePoints(15)
-
-font("Google Sans")
-
-fontSize(googleLogoSize)
-
-text("google_logo", (padding,padding+padding*0.15))
-
-
-# drawMargins()
-
-
-# DESCRIPTION ---------------------------------------------
-
-newPage(W, H)
-fill(background)
-rect(0,0,W, H)
 
 tagline = "A highly customizable variable font\nfor design, code, and UI."
 
@@ -127,23 +99,79 @@ Recursive offers a range of personality, from a sturdy, rational Linear to a fri
 Flip the pages to see Recursive in motion!
 """
 
-margins = (0.75, 0.25, 0.25, 0.25)
 
-taglineSize = computeFontSizePoints(10)
+if book:
+    newPage(W, H)
+    fill(background)
+    rect(0,0,W, H)
 
-font(fontFam)
+    # CREDITS ---------------------------------------------
 
-fill(foreground)
+    newPage(W, H)
+    fill(background)
+    rect(0,0,W, H)
 
-fontSize(taglineSize)
-fontVariations(wght=850, XPRN=1, slnt=-14.999, ital=1)
+    
+    fill(foreground)
 
-textBox(tagline, (padding,H - 1.05*DPI,W - padding * 2, taglineSize * 2.5))
+    font(fontFam)
+    fontSize(textSize)
+    fontVariations(wght=450, XPRN=0.001, slnt=0, ital=0)
 
-fontSize(textSize)
-fontVariations(wght=450, XPRN=0.001, slnt=0, ital=0)
+    if prop is 0:
+        textBox(credits, (padding,H - 2.86*DPI,W - (padding * 2), textSize * 22))
+    else:
+        textBox(credits, (padding,H - 2.86*DPI,W - (padding * 4.0), textSize * 22))
 
-textBox(description, (padding,H - 3.28*DPI,W - padding * 2, textSize * 22))
+
+
+    # logo
+
+    googleLogoSize = computeFontSizePoints(15)
+
+    font("Google Sans")
+
+    fontSize(googleLogoSize)
+
+    text("google_logo", (padding,padding*1.05))
+
+    if debug:
+        drawMargins()
+
+
+    # DESCRIPTION ---------------------------------------------
+
+    newPage(W, H)
+    fill(background)
+    rect(0,0,W, H)
+
+    
+
+    margins = (0.75, 0.25, 0.25, 0.25)
+
+    taglineSize = computeFontSizePoints(10)
+
+    font(fontFam)
+
+    fill(foreground)
+
+    fontSize(taglineSize)
+    fontVariations(wght=850, XPRN=1, slnt=-14.999, ital=1)
+
+    textBox(tagline, (padding,H - 1.05*DPI,W - padding * 2, taglineSize * 2.5))
+
+    fontSize(textSize)
+    fontVariations(wght=450, XPRN=0.001, slnt=0, ital=0)
+
+
+    if prop is 0:
+        textBox(description, (padding,H - 3.42*DPI, W - (padding * 2), textSize * 22))
+    else:
+        # textBox(description, (padding,H - 2.86*DPI, W - (padding * 4.0), textSize * 22))
+        textBox(description, (padding,H - (3.42*DPI), W - (padding * 4.0), textSize * 22))
+        
+    if debug:
+        drawMargins()
 
 
 # ---------------------------------------------------------
@@ -296,7 +324,6 @@ for frame in range(frames):
 
     if prop == 0:
         
-        trackFill = "*"
         maxLength = 61
         def showAxisVals(label, value, valueString, infoHeight):
 
@@ -317,7 +344,7 @@ for frame in range(frames):
                 textBox("".ljust(floor(maxLength), "·"), (padding, infoHeight-textSize, (W- (padding*2)), textSize*1.625))
                 
                 fill(foreground,foreground,foreground,0.625)
-                textBox("".ljust(floor(maxLength*value), trackFill), (padding, infoHeight-textSize, (W- (padding*2)), textSize*1.625))
+                textBox("".ljust(floor(maxLength*value), "•"), (padding, infoHeight-textSize, (W- (padding*2)), textSize*1.625))
 
             # reset this
             # fontVariations(wght=wghtVals[0], XPRN=xprnVals[0], slnt=slntVals, ital=italVals)
@@ -377,21 +404,24 @@ for frame in range(frames):
     # ----------------------------------------------------------------------
     # PAGE NUMBER ----------------------------------------------------------
     
-    footerHeight = padding*0.84
+    with savedState():
+        fontVariations(wght=400, XPRN=xprnVals[0], slnt=0, ital=0)
 
-    if prop == 0:
-        textBox("Recursive Mono", (padding, footerHeight, (W- (padding*2)), textSize*1.5), align="left")
-    else:
-        textBox("Recursive Sans", (padding, footerHeight, (W- (padding*2)), textSize*1.5), align="left")
+        footerHeight = padding*0.84
 
-    # foundry name, nudged to the right just slightly
-    textBox("Arrow Type", (W/2+padding*0.15, footerHeight, (W- (padding*2)), textSize*1.5), align="left")
-    # page number
+        if prop == 0:
+            textBox("Recursive Mono", (padding, footerHeight, (W- (padding*2)), textSize*1.5), align="left")
+        else:
+            textBox("Recursive Sans", (padding, footerHeight, (W- (padding*2)), textSize*1.5), align="left")
 
-    if book:
-        textBox(str(frames-(frame)), (padding, footerHeight, (W- (padding*2)), textSize*1.5), align="right") # reverse
-    else:
-        textBox(str(frame + 1), (padding, footerHeight, (W- (padding*2)), textSize*1.5), align="right") # forward
+        # foundry name, nudged to the right just slightly
+        textBox("Arrow Type", (W/2+padding*0.15, footerHeight, (W- (padding*2)), textSize*1.5), align="left")
+        # page number
+
+        if book:
+            textBox(str(frames-(frame)), (padding, footerHeight, (W- (padding*2)), textSize*1.5), align="right") # reverse
+        else:
+            textBox(str(frame + 1), (padding, footerHeight, (W- (padding*2)), textSize*1.5), align="right") # forward
 
 
 
@@ -444,11 +474,11 @@ for frame in range(frames):
 # -----------------------------------------------------------------------------
 # END PAGES -------------------------------------------------------------------
 
-
-for page in range(endPages):
-    newPage(W, H)
-    fill(background)
-    rect(0,0,W, H)
+if book:
+    for page in range(endPages):
+        newPage(W, H)
+        fill(background)
+        rect(0,0,W, H)
 
 
 endDrawing()
