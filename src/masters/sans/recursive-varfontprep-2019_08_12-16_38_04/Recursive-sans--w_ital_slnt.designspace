@@ -24,6 +24,12 @@
   <rules>
     <rule name="sans">
       <conditionset>
+        <condition name="Slant" minimum="-15" maximum="0" />
+      </conditionset>
+      <sub name="zero" with="zero.sans" />
+    </rule>
+    <rule name="sans autoroman">
+      <conditionset>
         <condition name="Slant" minimum="-7.49" maximum="0" />
         <condition name="Italic" minimum="0" maximum="0.89" />
       </conditionset>

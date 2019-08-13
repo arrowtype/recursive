@@ -25,6 +25,12 @@
   <rules>
     <rule name="sans">
       <conditionset>
+        <condition name="Slant" minimum="-15" maximum="0" />
+      </conditionset>
+      <sub name="zero" with="zero.sans" />
+    </rule>
+    <rule name="sans autoroman">
+      <conditionset>
         <condition name="Slant" minimum="-7.49" maximum="0" />
         <condition name="Italic" minimum="0" maximum="0.89" />
       </conditionset>
@@ -38,57 +44,54 @@
       <sub name="l" with="l.sans" />
       <sub name="lslash" with="lslash.sans" />
     </rule>
-
     <rule name="autoitalic">
       <conditionset>
         <condition name="Slant" minimum="-15" maximum="-7.500000" />
         <condition name="Italic" minimum="0.100000" maximum="1" />
       </conditionset>
       <sub name="a" with="a.italic" />
-      <sub name="f" with="f.italic" />
+      <!-- <sub name="f" with="f.italic" /> -->
       <sub name="g" with="g.italic" />
       <sub name="i" with="i.italic" />
-      <sub name="r" with="r.italic" />
+      <!-- <sub name="r" with="r.italic" /> -->
       <sub name="y" with="y.italic" />
       <sub name="d" with="d.italic" />
       <sub name="e" with="e.italic" />
       <sub name="h" with="h.italic" />
-      <sub name="j" with="j.italic" />
-      <sub name="m" with="m.italic" />
+      <!-- <sub name="j" with="j.italic" /> -->
       <sub name="n" with="n.italic" />
       <sub name="u" with="u.italic" />
       <sub name="c" with="c.italic" />
       <sub name="k" with="k.italic" />
-      <sub name="s" with="s.italic" />
+      <!-- <sub name="s" with="s.italic" /> -->
       <sub name="v" with="v.italic" />
       <sub name="w" with="w.italic" />
       <sub name="x" with="x.italic" />
-      <sub name="z" with="z.italic" />
+      <!-- <sub name="z" with="z.italic" /> -->
     </rule>
     <rule name="italic">
       <conditionset>
         <condition name="Italic" minimum="0.900000" maximum="1" />
       </conditionset>
       <sub name="a" with="a.italic" />
-      <sub name="f" with="f.italic" />
+      <!-- <sub name="f" with="f.italic" /> -->
       <sub name="g" with="g.italic" />
       <sub name="i" with="i.italic" />
-      <sub name="r" with="r.italic" />
+      <!-- <sub name="r" with="r.italic" /> -->
       <sub name="y" with="y.italic" />
       <sub name="d" with="d.italic" />
       <sub name="e" with="e.italic" />
       <sub name="h" with="h.italic" />
-      <sub name="j" with="j.italic" />
-      <sub name="m" with="m.italic" />
+      <!-- <sub name="j" with="j.italic" /> -->
       <sub name="n" with="n.italic" />
       <sub name="u" with="u.italic" />
       <sub name="c" with="c.italic" />
       <sub name="k" with="k.italic" />
-      <sub name="s" with="s.italic" />
+      <!-- <sub name="s" with="s.italic" /> -->
       <sub name="v" with="v.italic" />
       <sub name="w" with="w.italic" />
       <sub name="x" with="x.italic" />
-      <sub name="z" with="z.italic" />
+      <!-- <sub name="z" with="z.italic" /> -->
     </rule>
   </rules>
   <sources>

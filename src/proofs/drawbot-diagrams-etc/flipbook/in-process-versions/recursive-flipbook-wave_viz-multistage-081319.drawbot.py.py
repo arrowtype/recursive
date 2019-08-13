@@ -6,6 +6,8 @@ newDrawing() # for drawbot module
 # ---------------------------------------------------------
 # CONFIGURATION -------------------------------------------
 
+save = True
+
 debug = False # overlays curve visualizations
 
 prop = 1
@@ -19,33 +21,36 @@ else:
     foreground = 1
     background = 0
     
-frames = 60 # 192
+frames = 4 # 192
 frameRate = 1/60 # only applicable to mp4
-format = "mp4" # pdf, gif, or mp4
+format = "pdf" # pdf, gif, or mp4
 
 bookSize = 3.5 # inches
-DPI = 300 # dots per inch
+DPI = 72 # dots per inch
 pixels = DPI*bookSize
 
 W, H = pixels, pixels # do not edit this
 # textSize = W/60
-textSize = W*.023809524 # 6pt / 8 px
+# textSize = W*.023809524 # 6pt / 8 px # booksize / 72 = points * 6
+textSize = W * (7 / (bookSize * 72)) # 6pt / 8 px # booksize / 72 = points * 6
 
 # W, H = 1080, 1920   # instagram story format
 # textSize = W/10     # instagram story format
 
-rwSize = W/1.4
+# rwSize = W/1.4
+rwSize = W/1.5
 
 # curviness = 0.7 # amount of easing steepness. 0 to 1.
 
-padding = W*0.085714286 # 0.3 inches
+# padding = W*0.085714286 # 0.3 inches
+padding = DPI*0.25 # 0.3 inches
 
 # ---------------------------------------------------------
 # ANIMATION -----------------------------------------------
 
 def drawMargins():
     # top, right, bottom, left
-    margins = (0.75, 0.3, 0.3, 0.3)
+    margins = (0.75, 0.25, 0.25, 0.25)
     thickness = 1
     fill(0,1,1)
 
@@ -132,8 +137,8 @@ def getWeightValue(t, curviness, axMin, axMax):
 def getItalValue(t):
     if t <= 0.5:
         value = 0
-    elif t > 0.5 and t <= 0.625:
-        value = 0.5
+    # elif t > 0.5 and t <= 0.625:
+    #     value = 0.5
     else:
         value = 1
     return value
@@ -172,7 +177,7 @@ for frame in range(frames):
     fill(foreground)
     
     fontSize(rwSize)
-    overflow = textBox("rw", (0, padding - rwSize*0.3, W, rwSize*1.25), align="center")
+    overflow = textBox("rw", (0, padding - rwSize*0.23, W, rwSize*1.25), align="center")
     # a text box returns text overflow
     # text that did not make it into the box
     print(overflow)
@@ -210,18 +215,18 @@ for frame in range(frames):
             
             fill(foreground)
             
-            textBox(label, (padding, infoHeight, (W- (padding*2)), textSize*1.75))
+            textBox(label, (padding, infoHeight, (W- (padding*2)), textSize*1.625))
             
-            textBox(valueString,(padding, infoHeight, (W- (padding*2)), textSize*1.75), align="right")
+            textBox(valueString,(padding, infoHeight, (W- (padding*2)), textSize*1.625), align="right")
 
             with savedState():
                 
                 fontVariations(wght=500, XPRN=xprnVals[0], slnt=0)
                 fill(foreground,foreground,foreground,0.25)
-                textBox("".ljust(floor(maxLength), trackFill), (padding, infoHeight-textSize, (W- (padding*2)), textSize*1.75))
+                textBox("".ljust(floor(maxLength), "·"), (padding, infoHeight-textSize, (W- (padding*2)), textSize*1.625))
                 
                 fill(foreground,foreground,foreground,0.625)
-                textBox("".ljust(floor(maxLength*value), trackFill), (padding, infoHeight-textSize, (W- (padding*2)), textSize*1.75))
+                textBox("".ljust(floor(maxLength*value), trackFill), (padding, infoHeight-textSize, (W- (padding*2)), textSize*1.625))
 
             # reset this
             # fontVariations(wght=wghtVals[0], XPRN=xprnVals[0], slnt=slntVals, ital=italVals)
@@ -246,18 +251,19 @@ for frame in range(frames):
         
 
     else: # if proportion is sans
-        trackSize = padding*0.025
-        ovalSize = padding*0.1875
+        trackSize = padding*0.05
+        ovalSize = padding*0.2 # 0.1875
 
         def showAxisVals(label, value, valueString, infoHeight):
             fill(foreground,foreground,foreground,0.25)
             rect(padding, infoHeight, (W- (padding*2)), trackSize)
             fill(foreground)
-            oval(((W - (padding*2)) * value) -(ovalSize/2) + padding,infoHeight-(ovalSize/2)+(trackSize/2), ovalSize, ovalSize)
+            # oval(((W - (padding*2)) * value) -(ovalSize/2) + padding,infoHeight-(ovalSize/2)+(trackSize/2), ovalSize, ovalSize)
+            oval(((W - (padding*2) - ovalSize) * value) + padding,infoHeight-(ovalSize/2)+(trackSize/2), ovalSize, ovalSize)
 
-            textBox(label, (padding, infoHeight, (W- (padding*2)), textSize*1.75))
+            textBox(label, (padding, infoHeight, (W- (padding*2)), textSize*1.625))
                 
-            textBox(valueString,(padding, infoHeight, (W- (padding*2)), textSize*1.75), align="right")
+            textBox(valueString,(padding, infoHeight, (W- (padding*2)), textSize*1.625), align="right")
             
         infoSpacing = H * 0.056
         infoHeight = H * 0.5 + textSize
@@ -279,9 +285,17 @@ for frame in range(frames):
 
     # ----------------------------------------------------------------------
     # PAGE NUMBER ----------------------------------------------------------
+    
+    footerHeight = padding*0.84
+
+    if prop == 0:
+        textBox("Recursive Mono", (padding, footerHeight, (W- (padding*2)), textSize*1.5), align="left")
+    else:
+        textBox("Recursive Sans", (padding, footerHeight, (W- (padding*2)), textSize*1.5), align="left")
 
     # page number
-    textBox(str(frame + 1), (padding, padding*0.5, (W- (padding*2)), textSize*1.5), align="right")
+    textBox("Arrow Type", (W/2, footerHeight, (W- (padding*2)), textSize*1.5), align="left")
+    textBox(str(frame + 1), (padding, footerHeight, (W- (padding*2)), textSize*1.5), align="right")
 
 
     
@@ -330,8 +344,9 @@ for frame in range(frames):
     #     oval(x-size/2, (y)-(size/2), size, size)
 
 
-now = datetime.datetime.now().strftime("%Y_%m_%d-%H") # -%H_%M_%S
+if save:
+    now = datetime.datetime.now().strftime("%Y_%m_%d-%H_%M") # -%H_%M_%S
 
-saveImage(f"/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/exports/multi-timing-curves-prop_{prop}-{now}.{format}")
+    saveImage(f"/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/exports/multi-timing-curves-prop_{prop}-{now}.{format}")
 
 endDrawing()
