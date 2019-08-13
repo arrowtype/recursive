@@ -10,14 +10,14 @@ prop = 0 # 0 for mono, 1 for sans
 
 export = True
 autoOpen = True
-book = True
-debug = True # overlays curve visualizations
+book = False
+debug = False # overlays curve visualizations
 
-frames = 2 # 192
+frames = 100 # 192
 frameRate = 1/30 # only applicable to mp4
-format = "pdf" # pdf, gif, or mp4
+format = "gif" # pdf, gif, or mp4
 
-DPI = 72 # dots per inch – must be 72 to print at dimensions set in inches
+DPI = 144 # dots per inch – must be 72 to print at dimensions set in inches
 
 endPages = 0
 
@@ -34,7 +34,7 @@ margins = (0.75, 0.3, 0.2, 0.3)
 
 textPts = 6.75
 textLineHeight = 1.25
-rwPts =  152
+rwPts =  170 # 152
 
 # ---------------------------------------------------------
 
@@ -61,13 +61,16 @@ def computeFontSizePoints(pts):
 textSize = computeFontSizePoints(textPts)
 rwSize =  computeFontSizePoints(rwPts)
 
+mono = "/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/fonts/Recursive-mono--w_ital_slnt-2019_08_13.ttf"
+sans = "/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/fonts/Recursive-sans--w_ital_slnt-2019_08_13.ttf"
+
 if prop is 0:
-    fontFam = "/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/fonts/Recursive-mono--w_ital_slnt-2019_08_13.ttf"
+    fontFam = mono
     foreground = 0
     background = 1
     docTitle = "recursive-mono-flipbook_side_1"
 else:
-    fontFam = "/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/fonts/Recursive-sans--w_ital_slnt-2019_08_13.ttf"
+    fontFam = sans
     foreground = 0
     background = 1
     docTitle = "recursive-sans-flipbook_side_2"
@@ -86,7 +89,7 @@ def drawMargins():
     rect(0, margins[2]*DPI, W, thickness)  # bottom
     rect(margins[3]*DPI, 0, thickness, H)      # left
     
-    fill(0,1,1,0.5)
+    fill(1,0,1,0.5)
     rect(0, H*0.5, W, thickness)      # middle
     rect(W*0.5, 0, thickness, H)      # center
 
@@ -334,37 +337,43 @@ for frame in range(frames):
     italVal = italVals
 
     fontSize(textSize)
-    
+    infoSpacing = textSize * 1.5 # textLineHeight 
+    infoHeight = H * 0.55 + textSize
 
     if prop == 0:
         
-        maxLength = 61
+        # maxLength = 40
+
+        maxLength = (W- (marginLeft*2)) / (textSize * 0.6) - 16
+
         def showAxisVals(label, value, valueString, infoHeight):
 
             # fontVariations(wght=wghtVals[0], XPRN=xprnVals[0], slnt=slntVals, ital=italVals)
             
-            fill(foreground)
-            
-            textBox(label, (padding, infoHeight, (W- (padding*2)), textSize*1.625))
-            
-            textBox(valueString,(padding, infoHeight, (W- (padding*2)), textSize*1.625), align="right")
-
             with savedState():
-                
-                scale(1.008) # hack to make the asterisk metrics match the label/value text above
-                
-                fontVariations(wght=500, XPRN=xprnVals[0], slnt=0)
-                fill(foreground,foreground,foreground,0.25)
-                textBox("".ljust(floor(maxLength), "·"), (padding, infoHeight-textSize, (W- (padding*2)), textSize*1.625))
-                
-                fill(foreground,foreground,foreground,0.625)
-                textBox("".ljust(floor(maxLength*value), "•"), (padding, infoHeight-textSize, (W- (padding*2)), textSize*1.625))
+                fill(foreground)
+                # fontVariations(wght=500, XPRN=xprnVals[0], slnt=0, ital=0)
+                # textBox(f"{label} {valueString.rjust(7)}  {'{}'.rjust(floor(maxLength*value), ' ')}", (marginLeft, infoHeight, (W- (marginLeft*2)), textSize*1.625))
 
-            # reset this
-            # fontVariations(wght=wghtVals[0], XPRN=xprnVals[0], slnt=slntVals, ital=italVals)
+                txt = FormattedString()
+                txt.font(mono)
+                txt.fontSize(textSize)
+
+                txt.fontVariations(wght=500, XPRN=xprnVals[0], slnt=0, ital=0)
+                txt.append(f"{label} {valueString.rjust(7)}")
+                txt.append("  ")
+
+                txt.fontVariations(wght=300, XPRN=0, slnt=0, ital=0)
+                txt.append("".rjust(floor(maxLength*value), "·"))
+
+                txt.fontVariations(wght=800, XPRN=xprnVals[0], slnt=0, ital=0)
+                txt.append("*")
+
+                textBox(txt, (marginLeft, infoHeight, (W- (marginLeft*2)), textSize*1.625))
+                
+
             
-        infoSpacing = H * 0.056
-        infoHeight = H * 0.5 + textSize
+        
         showAxisVals("ital", italVal, i, infoHeight)
 
         infoHeight += infoSpacing
@@ -381,38 +390,52 @@ for frame in range(frames):
         showAxisVals("PROP", propVal, p, infoHeight)
 
         
-
-    else: # if proportion is sans
+    # SANS, prop = 1
+    else: 
         trackSize = padding*0.05
         ovalSize = padding*0.2 # 0.1875
 
         def showAxisVals(label, value, valueString, infoHeight):
-            fill(foreground,foreground,foreground,0.25)
-            rect(padding, infoHeight, (W- (padding*2)), trackSize)
-            fill(foreground)
-            # oval(((W - (padding*2)) * value) -(ovalSize/2) + padding,infoHeight-(ovalSize/2)+(trackSize/2), ovalSize, ovalSize)
-            oval(((W - (padding*2) - ovalSize) * value) + padding,infoHeight-(ovalSize/2)+(trackSize/2), ovalSize, ovalSize)
+            # fill(foreground,foreground,foreground,0.25)
+            # rect(padding, infoHeight, (W- (padding*2)), trackSize)
+            with savedState():
 
-            textBox(label, (padding, infoHeight, (W- (padding*2)), textSize*1.625))
-                
-            textBox(valueString,(padding, infoHeight, (W- (padding*2)), textSize*1.625), align="right")
+                font(mono)
+                fontVariations(wght=500, XPRN=xprnVals[0], slnt=0, ital=0)
+
+                fill(foreground)
+                # oval(((W - (padding*2)) * value) -(ovalSize/2) + padding,infoHeight-(ovalSize/2)+(trackSize/2), ovalSize, ovalSize)
+                # oval(((W - (padding*2) - ovalSize) * value) + padding,infoHeight-(ovalSize/2)+(trackSize/2), ovalSize, ovalSize)
+
+                labelWidth = W * 0.125
+                # x = (W - (padding*2)) * value + padding
+                x = ((W - (padding*2) - labelWidth) * value) + padding
+                y = infoHeight
+                w = labelWidth
+                h = textSize*1.625
+
+                textBox(label, (x,y,w,h))
+
+                font(sans)
+                    
+                textBox(valueString,((x,y,w,h)), align="right")
             
-        infoSpacing = H * 0.056
-        infoHeight = H * 0.5 + textSize
-        showAxisVals("Italic", italVal, i, infoHeight)
+        # infoSpacing = H * 0.056
+        # infoHeight = H * 0.5 + textSize
+        showAxisVals("i", italVal, i, infoHeight)
 
         infoHeight += infoSpacing
-        showAxisVals("Slant", -slntVal, s, infoHeight)
+        showAxisVals("s", -slntVal, s, infoHeight)
 
         infoHeight += infoSpacing
-        showAxisVals("Weight", wghtVal, w, infoHeight)
+        showAxisVals("w", wghtVal, w, infoHeight)
 
         infoHeight += infoSpacing
-        showAxisVals("Expression", xprnVal, x, infoHeight)
+        showAxisVals("x", xprnVal, x, infoHeight)
 
         propVal = prop
         infoHeight += infoSpacing
-        showAxisVals("Proportion", propVal, p, infoHeight)
+        showAxisVals("p", propVal, p, infoHeight)
 
 
     # ----------------------------------------------------------------------
@@ -456,36 +479,6 @@ for frame in range(frames):
         print('')
 
         drawMargins()
-        
-        # fill(1,0,1)
-        # fontSize(textSize/2)
-        # # text("t" + str(round(abs(t), 2)), (W*t, padding))
-        # text("@", (W*t, padding))
-        # text("s" + str(round(abs(slntVals), 2)), (slntVals[1]-W/10, slntVals[2]+textSize))
-        # text("w" + str(round(wghtVals[0], 0)), (wghtVals[1]-W/10, wghtVals[2]))
-        # text("x" + str(round(xprnVals[0], 2)), (xprnVals[1]-W/10, xprnVals[2]-textSize))
-
-        
-        # size = padding * 0.15
-        # x8 = getCurveValue(t, 0.8, 0, W, loop="nope")[0]
-        # # oval(x8-size/2, (padding/2)-(size/2), size, size)
-        # text("0.8", (x8-size/2, (padding/2)-(size/2)))
-        
-        # x3 = getCurveValue(t, 0.3, 0, W, loop="nope")[0]
-        # text("0.3", (x8-size/2, (padding/2)-(size*1.5)))
-
-
-    
-    # for i in range(frames):
-    #     fill(0.6,0.6,0.6,0.375)  
-    #     t = i / (frames - 1)
-    
-    #     slntVal = getSlntValue(t)
-    
-    
-    #     x,y = getCurveXY(t)
-    #     oval(x-size/2, (y)-(size/2), size, size)
-
 
 # -----------------------------------------------------------------------------
 # END PAGES -------------------------------------------------------------------
@@ -510,6 +503,7 @@ if save:
 
     if autoOpen:
         import os
-        os.system(f"open --background -a Preview {path}")
+        # os.system(f"open --background -a Preview {path}")
+        os.system(f"open -a Preview {path}")
 
 
