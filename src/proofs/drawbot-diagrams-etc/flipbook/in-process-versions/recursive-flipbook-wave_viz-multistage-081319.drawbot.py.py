@@ -6,9 +6,9 @@ newDrawing() # for drawbot module
 # ---------------------------------------------------------
 # CONFIGURATION -------------------------------------------
 
-debug = True # overlays curve visualizations
+debug = False # overlays curve visualizations
 
-prop = 0
+prop = 1
 
 if prop is 1:
     fontFam = "/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/fonts/Recursive-sans--w_ital_slnt-2019_08_13.ttf"
@@ -19,7 +19,7 @@ else:
     foreground = 1
     background = 0
     
-frames = 4 # 192
+frames = 60 # 192
 frameRate = 1/60 # only applicable to mp4
 format = "mp4" # pdf, gif, or mp4
 
@@ -132,6 +132,8 @@ def getWeightValue(t, curviness, axMin, axMax):
 def getItalValue(t):
     if t <= 0.5:
         value = 0
+    elif t > 0.5 and t <= 0.625:
+        value = 0.5
     else:
         value = 1
     return value
@@ -181,7 +183,8 @@ for frame in range(frames):
     
     x = str('{:4.2f}'.format(xprnVals[0]))
     w = str('{:3.2f}'.format(wghtVals[0]))
-    s = str('{:05.2f}'.format(abs(slntVals)))
+    # s = str('{:05.2f}'.format(abs(slntVals)))
+    s = str('{:5.2f}'.format(slntVals))
     i = str('{:4.2f}'.format(italVals))
     p = str('{:4.2f}'.format(prop))
 
@@ -189,7 +192,8 @@ for frame in range(frames):
     minWght, maxWght = 300, 900
     wghtVal = (wghtVals[0] - minWght) / (maxWght - minWght)
     minSlnt, maxSlnt = 0, -15
-    slntVal = abs(((slntVals - minSlnt) / (minSlnt - maxSlnt)))
+    # slntVal = abs(((slntVals - minSlnt) / (minSlnt - maxSlnt)))
+    slntVal = ((slntVals - minSlnt) / (minSlnt - maxSlnt))
     minItal, maxItal = 0, 1
     italVal = italVals
 
@@ -198,22 +202,36 @@ for frame in range(frames):
 
     if prop == 0:
         
+        trackFill = "*"
+        maxLength = 61
         def showAxisVals(label, value, valueString, infoHeight):
-            fill(foreground,foreground,foreground,0.25)
-            # rect(padding, infoHeight, (W- (padding*2)), trackSize)
-            fill(foreground)
-            # oval(((W - (padding*2)) * value) -(ovalSize/2) + padding,infoHeight-(ovalSize/2)+(trackSize/2), ovalSize, ovalSize)
 
+            # fontVariations(wght=wghtVals[0], XPRN=xprnVals[0], slnt=slntVals, ital=italVals)
+            
+            fill(foreground)
+            
             textBox(label, (padding, infoHeight, (W- (padding*2)), textSize*1.75))
-                
+            
             textBox(valueString,(padding, infoHeight, (W- (padding*2)), textSize*1.75), align="right")
+
+            with savedState():
+                
+                fontVariations(wght=500, XPRN=xprnVals[0], slnt=0)
+                fill(foreground,foreground,foreground,0.25)
+                textBox("".ljust(floor(maxLength), trackFill), (padding, infoHeight-textSize, (W- (padding*2)), textSize*1.75))
+                
+                fill(foreground,foreground,foreground,0.625)
+                textBox("".ljust(floor(maxLength*value), trackFill), (padding, infoHeight-textSize, (W- (padding*2)), textSize*1.75))
+
+            # reset this
+            # fontVariations(wght=wghtVals[0], XPRN=xprnVals[0], slnt=slntVals, ital=italVals)
             
         infoSpacing = H * 0.056
         infoHeight = H * 0.5 + textSize
         showAxisVals("ital", italVal, i, infoHeight)
 
         infoHeight += infoSpacing
-        showAxisVals("slnt", slntVal, f"-{s}", infoHeight)
+        showAxisVals("slnt", -slntVal, s, infoHeight)
 
         infoHeight += infoSpacing
         showAxisVals("wght", wghtVal, w, infoHeight)
@@ -224,6 +242,8 @@ for frame in range(frames):
         propVal = prop
         infoHeight += infoSpacing
         showAxisVals("PROP", propVal, p, infoHeight)
+
+        
 
     else: # if proportion is sans
         trackSize = padding*0.025
@@ -244,7 +264,7 @@ for frame in range(frames):
         showAxisVals("Italic", italVal, i, infoHeight)
 
         infoHeight += infoSpacing
-        showAxisVals("Slant", slntVal, s, infoHeight)
+        showAxisVals("Slant", -slntVal, s, infoHeight)
 
         infoHeight += infoSpacing
         showAxisVals("Weight", wghtVal, w, infoHeight)
@@ -266,11 +286,11 @@ for frame in range(frames):
 
     
     
-    
+    print("T: " + str(t))
     # ----------------------------------------------------------------------
     # DEBUGGING VISUALS ----------------------------------------------------
     if debug:
-        print("T: " + str(t))
+        
         print("-------------------------------------")
         print("#: " + str(frame))
         print("x: " + str(round(abs(xprnVals[0]), 0)))
