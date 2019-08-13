@@ -6,11 +6,11 @@ newDrawing() # for drawbot module
 # ---------------------------------------------------------
 # CONFIGURATION -------------------------------------------
 
-save = True
+save = False
 
-debug = False # overlays curve visualizations
+debug = True # overlays curve visualizations
 
-prop = 1
+prop = 0
 
 if prop is 1:
     fontFam = "/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/fonts/Recursive-sans--w_ital_slnt-2019_08_13.ttf"
@@ -21,32 +21,25 @@ else:
     foreground = 1
     background = 0
     
-frames = 4 # 192
+frames = 0 # 192
 frameRate = 1/60 # only applicable to mp4
-format = "pdf" # pdf, gif, or mp4
+format = "gif" # pdf, gif, or mp4
 
 bookSize = 3.5 # inches
 DPI = 72 # dots per inch
 pixels = DPI*bookSize
 
 W, H = pixels, pixels # do not edit this
-# textSize = W/60
-# textSize = W*.023809524 # 6pt / 8 px # booksize / 72 = points * 6
-textSize = W * (7 / (bookSize * 72)) # 6pt / 8 px # booksize / 72 = points * 6
 
-# W, H = 1080, 1920   # instagram story format
-# textSize = W/10     # instagram story format
 
-# rwSize = W/1.4
-rwSize = W/1.5
+def computeFontSizePoints(pts):
+    return W * (pts / (bookSize * 72))
+    
+textSize = computeFontSizePoints(7)
 
-# curviness = 0.7 # amount of easing steepness. 0 to 1.
+rwSize =  computeFontSizePoints(152)
 
-# padding = W*0.085714286 # 0.3 inches
-padding = DPI*0.25 # 0.3 inches
-
-# ---------------------------------------------------------
-# ANIMATION -----------------------------------------------
+padding = DPI*0.25
 
 def drawMargins():
     # top, right, bottom, left
@@ -63,6 +56,66 @@ def drawMargins():
     fill(0,1,1,0.5)
     rect(0, H*0.5, W, thickness)      # middle
     rect(W*0.5, 0, thickness, H)      # center
+
+# ---------------------------------------------------------
+# FRONTMATTER ---------------------------------------------
+
+newPage(W, H)
+rect(0,0,W, H)
+
+# DESCRIPTION ---------------------------------------------
+
+newPage(W, H)
+rect(0,0,W, H)
+
+tagline = "A highly customizable variable font for design, code, and UI."
+
+description = """\Recursive is a versatile new variable font with five stylistic axes. These variation axes enable customizable control within five stylistic ranges: Proportion, Expression, Weight, Slant, and Italic. Carefully-planned named instances also allow selection within a set of predefined styles.Recursive offers a range of personality, from a sturdy, rational Linear to a friendly, energetic Casual. It comes in two subfamilies: Mono & Sans. Within these subfamilies, characters maintain the exact same width across all font styles. This allows for smooth stylistic transitions without affecting line length, enabling new levels of typographic flexibility & interactivity.Flip the pages to see Recursive in action!
+"""
+
+margins = (0.75, 0.25, 0.25, 0.25)
+
+taglineSize = computeFontSizePoints(9.75)
+
+font(fontFam)
+
+fill(foreground)
+
+fontSize(taglineSize)
+fontVariations(wght=850, XPRN=1, slnt=-14.999, ital=1)
+
+textBox(tagline, (padding,H - 1.05*DPI,W - padding * 2, taglineSize * 2.5))
+
+fontSize(textSize)
+fontVariations(wght=450, XPRN=0.001, slnt=0, ital=0)
+
+textBox(description, (padding,H - 3.28*DPI,W - padding * 2, textSize * 22))
+
+
+# CREDITS ---------------------------------------------
+
+newPage(W, H)
+rect(0,0,W, H)
+
+credits="""\
+Recursive (Aug 2019, 220cc2f41)Made by Arrow Type. Type design by Stephen Nixon with contributions from Katja Schimmel, Lisa Huang, and Rafał Buchner, plus early guidance from faculty and instructors for KABK TypeMedia 2018. Type mastering by Ben Kiel.Book design by Math Practice.Typeset with Drawbot by Stephen Nixon.https://recursive.designRecursive has been sponsored by Google Fonts, through which it will soon be released. Recursive is released under the SIL Open Font License and can be freely used in or adapted for any project.
+"""
+fill(foreground)
+
+font(fontFam)
+fontSize(textSize)
+fontVariations(wght=450, XPRN=0.001, slnt=0, ital=0)
+
+textBox(credits, (padding,H - 2.86*DPI,W - padding * 2, textSize * 22))
+
+
+# drawMargins()
+
+
+# ---------------------------------------------------------
+# ANIMATION -----------------------------------------------
+
+
 
 
 def interpolate(a, b, t):
@@ -177,7 +230,7 @@ for frame in range(frames):
     fill(foreground)
     
     fontSize(rwSize)
-    overflow = textBox("rw", (0, padding - rwSize*0.23, W, rwSize*1.25), align="center")
+    overflow = textBox("rw", (0, padding - rwSize*0.20, W, rwSize*1.25), align="center")
     # a text box returns text overflow
     # text that did not make it into the box
     print(overflow)
@@ -220,6 +273,8 @@ for frame in range(frames):
             textBox(valueString,(padding, infoHeight, (W- (padding*2)), textSize*1.625), align="right")
 
             with savedState():
+                
+                scale(1.008) # hack to make the asterisk metrics match the label/value text above
                 
                 fontVariations(wght=500, XPRN=xprnVals[0], slnt=0)
                 fill(foreground,foreground,foreground,0.25)
@@ -293,8 +348,9 @@ for frame in range(frames):
     else:
         textBox("Recursive Sans", (padding, footerHeight, (W- (padding*2)), textSize*1.5), align="left")
 
+    # foundry name, nudged to the right just slightly
+    textBox("Arrow Type", (W/2+padding*0.15, footerHeight, (W- (padding*2)), textSize*1.5), align="left")
     # page number
-    textBox("Arrow Type", (W/2, footerHeight, (W- (padding*2)), textSize*1.5), align="left")
     textBox(str(frame + 1), (padding, footerHeight, (W- (padding*2)), textSize*1.5), align="right")
 
 
