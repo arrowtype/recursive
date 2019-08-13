@@ -30,5 +30,12 @@ fontmake -m $DS -o variable --output-path $outputDir/$fontName-$date.ttf
 woff2_compress $outputDir/$fontName-$date.ttf
 
 # add base64 of woff2 for testing in CodePen, etc
-
 base64 $outputDir/$fontName-$date.woff2 > $outputDir/$fontName-$date.base64
+
+# ---------------------------------------------------------
+# Statics -------------------------------------------------
+
+# if [[ $2 = "-s" ]] ; then
+#   # mkDir = $outputDir/statics-$date
+#   fontmake -m $DS -o ttf -i # --output-path $outputDir/statics-$date #### fontmake: error: MutatorMath doesn't support DesignSpace sources with 'layer' attribute
+# fi
