@@ -83,7 +83,11 @@ def main():
 
         # VERSION, ID 5 (e.g. "Version 1.005")
 
-        newVersion = f"Version {projectVersion}"
+        if "Beta" in projectVersion:
+            newVersion = f"Version {projectVersion.replace('Beta ','')}"
+        else:
+            newVersion = f"Version {projectVersion}"
+
         setFontNameID(ttfont, 5, newVersion)
 
         # FULL FONT NAME, ID 4

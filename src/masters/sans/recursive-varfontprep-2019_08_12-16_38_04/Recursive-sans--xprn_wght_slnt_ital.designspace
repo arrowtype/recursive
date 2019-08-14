@@ -196,9 +196,9 @@
     </source>
   </sources>
   <instances>
-    <instance familyname="Recursive Sans" stylename="Light" filename="instances/Recursive Sans-Linear Light.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear Light" filename="instances/Recursive Sans-Linear Light.ufo">
       <location>
-        <dimension name="Weight" xvalue="250" />
+        <dimension name="Weight" xvalue="300" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0" />
         <dimension name="Expression" xvalue="0" />
@@ -206,9 +206,9 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Sans" stylename="Light Italic" filename="instances/Recursive Sans-Linear Light Italic.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear Light Italic" filename="instances/Recursive Sans-Linear Light Italic.ufo">
       <location>
-        <dimension name="Weight" xvalue="250" />
+        <dimension name="Weight" xvalue="300" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
         <dimension name="Expression" xvalue="0" />
@@ -216,9 +216,9 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Sans" stylename="Light SemiItalic" filename="instances/Recursive Sans-Linear Light SemiItalic.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear Light SemiItalic" filename="instances/Recursive Sans-Linear Light SemiItalic.ufo">
       <location>
-        <dimension name="Weight" xvalue="250" />
+        <dimension name="Weight" xvalue="300" />
         <dimension name="Slant" xvalue="-9" />
         <dimension name="Italic" xvalue="1" />
         <dimension name="Expression" xvalue="0" />
@@ -228,7 +228,7 @@
     </instance>
     <instance familyname="Recursive Sans" stylename="Casual Light" filename="instances/Recursive Sans-Casual Light.ufo">
       <location>
-        <dimension name="Weight" xvalue="250" />
+        <dimension name="Weight" xvalue="300" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0" />
         <dimension name="Expression" xvalue="1" />
@@ -238,7 +238,7 @@
     </instance>
     <instance familyname="Recursive Sans" stylename="Casual Light SemiItalic" filename="instances/Recursive Sans-Casual Light SemiItalic.ufo">
       <location>
-        <dimension name="Weight" xvalue="250" />
+        <dimension name="Weight" xvalue="300" />
         <dimension name="Slant" xvalue="-9" />
         <dimension name="Italic" xvalue="1" />
         <dimension name="Expression" xvalue="1" />
@@ -248,7 +248,7 @@
     </instance>
     <instance familyname="Recursive Sans" stylename="Casual Light Italic" filename="instances/Recursive Sans-Casual Light Italic.ufo">
       <location>
-        <dimension name="Weight" xvalue="250" />
+        <dimension name="Weight" xvalue="300" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
         <dimension name="Expression" xvalue="1" />
@@ -256,7 +256,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Sans" stylename="Regular" filename="instances/Recursive Sans-Linear Regular.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear Regular" filename="instances/Recursive Sans-Linear Regular.ufo">
       <location>
         <dimension name="Weight" xvalue="400" />
         <dimension name="Slant" xvalue="0" />
@@ -265,21 +265,21 @@
       </location>
       <kerning />
       <info />
+      <instance familyname="Recursive Sans" stylename="Linear SemiItalic" filename="instances/Recursive Sans-Linear SemiItalic.ufo">
+        <location>
+          <dimension name="Weight" xvalue="400" />
+          <dimension name="Slant" xvalue="-9" />
+          <dimension name="Italic" xvalue="1" />
+          <dimension name="Expression" xvalue="0" />
+        </location>
+        <kerning />
+        <info />
+      </instance>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Italic" filename="instances/Recursive Sans-Linear Italic.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear Italic" filename="instances/Recursive Sans-Linear Italic.ufo">
       <location>
         <dimension name="Weight" xvalue="400" />
         <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="1" />
-        <dimension name="Expression" xvalue="0" />
-      </location>
-      <kerning />
-      <info />
-    </instance>
-    <instance familyname="Recursive Sans" stylename="Italic" filename="instances/Recursive Sans-Linear SemiItalic.ufo">
-      <location>
-        <dimension name="Weight" xvalue="400" />
-        <dimension name="Slant" xvalue="-9" />
         <dimension name="Italic" xvalue="1" />
         <dimension name="Expression" xvalue="0" />
       </location>
@@ -316,7 +316,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Sans" stylename="Medium" filename="instances/Recursive Sans-Linear Medium.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear Medium" filename="instances/Recursive Sans-Linear Medium.ufo">
       <location>
         <dimension name="Weight" xvalue="500" />
         <dimension name="Slant" xvalue="0" />
@@ -326,7 +326,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Sans" stylename="Medium Italic" filename="instances/Recursive Sans-Linear Medium Italic.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear Medium Italic" filename="instances/Recursive Sans-Linear Medium Italic.ufo">
       <location>
         <dimension name="Weight" xvalue="500" />
         <dimension name="Slant" xvalue="-15" />
@@ -336,7 +336,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Sans" stylename="Medium SemiItalic" filename="instances/Recursive Sans-Linear Medium SemiItalic.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear Medium SemiItalic" filename="instances/Recursive Sans-Linear Medium SemiItalic.ufo">
       <location>
         <dimension name="Weight" xvalue="500" />
         <dimension name="Slant" xvalue="-9" />
@@ -376,7 +376,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Sans" stylename="SemiBold" filename="instances/Recursive Sans-Linear SemiBold.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear SemiBold" filename="instances/Recursive Sans-Linear SemiBold.ufo">
       <location>
         <dimension name="Weight" xvalue="600" />
         <dimension name="Slant" xvalue="0" />
@@ -386,7 +386,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Sans" stylename="SemiBold Italic" filename="instances/Recursive Sans-Linear SemiBold Italic.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear SemiBold Italic" filename="instances/Recursive Sans-Linear SemiBold Italic.ufo">
       <location>
         <dimension name="Weight" xvalue="600" />
         <dimension name="Slant" xvalue="-15" />
@@ -396,7 +396,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Sans" stylename="SemiBold SemiItalic" filename="instances/Recursive Sans-Linear SemiBold SemiItalic.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear SemiBold SemiItalic" filename="instances/Recursive Sans-Linear SemiBold SemiItalic.ufo">
       <location>
         <dimension name="Weight" xvalue="600" />
         <dimension name="Slant" xvalue="-9" />
@@ -436,7 +436,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Sans" stylename="Bold" filename="instances/Recursive Sans-Linear Bold.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear Bold" filename="instances/Recursive Sans-Linear Bold.ufo">
       <location>
         <dimension name="Weight" xvalue="700" />
         <dimension name="Slant" xvalue="0" />
@@ -446,7 +446,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Sans" stylename="Bold Italic" filename="instances/Recursive Sans-Linear Bold Italic.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear Bold Italic" filename="instances/Recursive Sans-Linear Bold Italic.ufo">
       <location>
         <dimension name="Weight" xvalue="700" />
         <dimension name="Slant" xvalue="-15" />
@@ -456,7 +456,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Sans" stylename="Bold SemiItalic" filename="instances/Recursive Sans-Linear Bold SemiItalic.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear Bold SemiItalic" filename="instances/Recursive Sans-Linear Bold SemiItalic.ufo">
       <location>
         <dimension name="Weight" xvalue="700" />
         <dimension name="Slant" xvalue="-9" />
@@ -496,7 +496,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Sans" stylename="ExtraBold" filename="instances/Recursive Sans-Linear ExtraBold.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear ExtraBold" filename="instances/Recursive Sans-Linear ExtraBold.ufo">
       <location>
         <dimension name="Weight" xvalue="800" />
         <dimension name="Slant" xvalue="0" />
@@ -506,7 +506,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Sans" stylename="ExtraBold Italic" filename="instances/Recursive Sans-Linear ExtraBold Italic.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear ExtraBold Italic" filename="instances/Recursive Sans-Linear ExtraBold Italic.ufo">
       <location>
         <dimension name="Weight" xvalue="800" />
         <dimension name="Slant" xvalue="-15" />
@@ -516,7 +516,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Sans" stylename="ExtraBold SemiItalic" filename="instances/Recursive Sans-Linear ExtraBold SemiItalic.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear ExtraBold SemiItalic" filename="instances/Recursive Sans-Linear ExtraBold SemiItalic.ufo">
       <location>
         <dimension name="Weight" xvalue="800" />
         <dimension name="Slant" xvalue="-9" />
@@ -556,7 +556,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Sans" stylename="Black" filename="instances/Recursive Sans-Linear Black.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear Black" filename="instances/Recursive Sans-Linear Black.ufo">
       <location>
         <dimension name="Weight" xvalue="850" />
         <dimension name="Slant" xvalue="0" />
@@ -566,7 +566,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Sans" stylename="Black Italic" filename="instances/Recursive Sans-Linear Black Italic.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear Black Italic" filename="instances/Recursive Sans-Linear Black Italic.ufo">
       <location>
         <dimension name="Weight" xvalue="850" />
         <dimension name="Slant" xvalue="-15" />
@@ -576,7 +576,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Sans" stylename="Black SemiItalic" filename="instances/Recursive Sans-Linear Black SemiItalic.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear Black SemiItalic" filename="instances/Recursive Sans-Linear Black SemiItalic.ufo">
       <location>
         <dimension name="Weight" xvalue="850" />
         <dimension name="Slant" xvalue="-9" />
@@ -616,7 +616,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Sans" stylename="Heavy" filename="instances/Recursive Sans-Linear Heavy.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear Heavy" filename="instances/Recursive Sans-Linear Heavy.ufo">
       <location>
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="0" />
@@ -626,7 +626,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Sans" stylename="Heavy Italic" filename="instances/Recursive Sans-Linear Heavy Italic.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear Heavy Italic" filename="instances/Recursive Sans-Linear Heavy Italic.ufo">
       <location>
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="-15" />
@@ -636,7 +636,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive Sans" stylename="Heavy SemiItalic" filename="instances/Recursive Sans-Linear Heavy SemiItalic.ufo">
+    <instance familyname="Recursive Sans" stylename="Linear Heavy SemiItalic" filename="instances/Recursive Sans-Linear Heavy SemiItalic.ufo">
       <location>
         <dimension name="Weight" xvalue="900" />
         <dimension name="Slant" xvalue="-9" />
