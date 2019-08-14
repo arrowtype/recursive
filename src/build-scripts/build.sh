@@ -25,18 +25,18 @@ timestamp() {
 
 date=$(timestamp)
 
-fontmake -m $DS -o variable --output-path $outputDir/$fontName-$date.ttf
+fontmake -m $DS -o variable --output-path $outputDir/$fontName--$date.ttf
 
 # version the font name
-python src/build-scripts/set-versioned-font-names.py $outputDir/$fontName-$date.ttf
+python src/build-scripts/set-versioned-font-names.py $outputDir/$fontName--$date.ttf
 
-mv $outputDir/$fontName-$date.ttf.fix $outputDir/$fontName-$date.ttf
+mv $outputDir/$fontName--$date.ttf.fix $outputDir/$fontName--$date.ttf
 
 # make woff2
-woff2_compress $outputDir/$fontName-$date.ttf
+woff2_compress $outputDir/$fontName--$date.ttf
 
 # add base64 of woff2 for testing in CodePen, etc
-base64 $outputDir/$fontName-$date.woff2 > $outputDir/$fontName-$date.base64
+base64 $outputDir/$fontName--$date.woff2 > $outputDir/$fontName--$date.base64
 
 # ---------------------------------------------------------
 # Statics -------------------------------------------------
