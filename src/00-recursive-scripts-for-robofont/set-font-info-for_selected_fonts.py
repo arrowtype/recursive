@@ -13,7 +13,7 @@ for fontPath in inputFonts:
 
     print(font.info.familyName + "\n " + font.info.styleName)
     
-    font.info.familyName = "Recursive Sans"
+    # font.info.familyName = "Recursive Sans"
 
     # f.info.openTypeOS2VendorID = "ARRW"
     # if prop in font.info.familyName:
@@ -28,12 +28,15 @@ for fontPath in inputFonts:
     
         # font.info.copyright = "Copyright 2019 The Recursive Project Authors (github.com/thundernixon/recursive)"
 
-    if "Sans" in font.info.styleName:
-        font.info.styleName = font.info.styleName.replace("Sans ", "")
-    if "Mono" in font.info.styleName:
-        font.info.styleName = font.info.styleName.replace("Mono ", "")
+    # if "Sans" in font.info.styleName:
+    #     font.info.styleName = font.info.styleName.replace("Sans ", "")
+    # if "Mono" in font.info.styleName:
+    #     font.info.styleName = font.info.styleName.replace("Mono ", "")
+
+    font.info.copyright = "Copyright 2019 The Recursive Project Authors (github.com/arrowtype/recursive)"
 
     print("→ " + font.info.familyName + "\n→ " + font.info.styleName)
+    print("copyright updated")
     print("")
 
     font.save()
