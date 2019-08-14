@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="tcaron" format="2">
-	<advance width="600"/>
+	<unicode hex="0165"/>
+	<advance width="500"/>
 	<outline>
 		<component base="t"/>
-		<component base="commaaboverightcomb" xOffset="448.0487639151" yOffset="71"/>
+		<component base="commaaboverightcomb" xOffset="377" yOffset="82"/>
 	</outline>
 	<lib>
 		<dict>
 			<key>public.markColor</key>
-			<string>0,0,0,0.25</string>
+			<string>0,0,0,0.1505</string>
 		</dict>
 	</lib>
 </glyph>

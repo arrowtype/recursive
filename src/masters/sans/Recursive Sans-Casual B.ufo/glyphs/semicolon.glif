@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="semicolon" format="2">
 	<unicode hex="003B"/>
-	<advance width="350"/>
+	<advance width="400"/>
 	<outline>
-		<component base="period" xOffset="20" yOffset="344"/>
-		<component base="comma" xOffset="-30"/>
+		<component base="period" xOffset="-83" yOffset="344"/>
+		<component base="comma" xOffset="-83"/>
 	</outline>
 	<lib>
 		<dict>
@@ -85,7 +85,7 @@
 			<key>com.typemytype.robofont.guideline.magnetic.xRDXJ0UxSP</key>
 			<integer>10</integer>
 			<key>public.markColor</key>
-			<string>1,0.45,0.45,0.75</string>
+			<string>1,0,0,1</string>
 		</dict>
 	</lib>
 </glyph>

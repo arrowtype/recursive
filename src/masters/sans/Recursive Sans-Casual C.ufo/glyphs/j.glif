@@ -3,102 +3,9 @@
 	<unicode hex="006A"/>
 	<advance width="350"/>
 	<outline>
-		<contour>
-			<point x="315" y="622" type="curve"/>
-			<point x="315" y="718" type="line"/>
-			<point x="315" y="778"/>
-			<point x="249" y="787"/>
-			<point x="163" y="787" type="curve" smooth="yes"/>
-			<point x="128" y="787"/>
-			<point x="83" y="783"/>
-			<point x="45" y="777" type="curve"/>
-			<point x="45" y="711" type="line"/>
-			<point x="45" y="625"/>
-			<point x="111" y="612"/>
-			<point x="197" y="612" type="curve" smooth="yes"/>
-			<point x="232" y="612"/>
-			<point x="277" y="616"/>
-		</contour>
-		<contour>
-			<point x="108" y="560" type="curve" smooth="yes"/>
-			<point x="79" y="560"/>
-			<point x="54" y="558"/>
-			<point x="31" y="555" type="curve"/>
-			<point x="25" y="532"/>
-			<point x="20" y="504"/>
-			<point x="20" y="474" type="curve" smooth="yes"/>
-			<point x="20" y="380"/>
-			<point x="41" y="328"/>
-			<point x="66" y="328" type="curve" smooth="yes"/>
-			<point x="73" y="328"/>
-			<point x="81" y="330"/>
-			<point x="89" y="332" type="curve"/>
-			<point x="80" y="332" type="line"/>
-			<point x="80" y="246"/>
-			<point x="80" y="144"/>
-			<point x="80" y="75" type="curve" smooth="yes"/>
-			<point x="80" y="29"/>
-			<point x="80" y="-12"/>
-			<point x="76" y="-35" type="curve"/>
-			<point x="74" y="-35"/>
-			<point x="72" y="-35"/>
-			<point x="70" y="-35" type="curve" smooth="yes"/>
-			<point x="57" y="-35"/>
-			<point x="37" y="-32"/>
-			<point x="14" y="-21" type="curve"/>
-			<point x="8" y="-21" type="line"/>
-			<point x="0" y="-44"/>
-			<point x="-6" y="-83"/>
-			<point x="-6" y="-112" type="curve" smooth="yes"/>
-			<point x="-6" y="-142"/>
-			<point x="-1" y="-186"/>
-			<point x="13" y="-209" type="curve" smooth="yes"/>
-			<point x="27" y="-232"/>
-			<point x="50" y="-250"/>
-			<point x="110" y="-250" type="curve" smooth="yes"/>
-			<point x="199" y="-250"/>
-			<point x="300" y="-154"/>
-			<point x="300" y="-18" type="curve" smooth="yes"/>
-			<point x="300" y="161"/>
-			<point x="300" y="346"/>
-			<point x="300" y="490" type="curve" smooth="yes"/>
-			<point x="300" y="538"/>
-			<point x="241" y="560"/>
-		</contour>
+		<component base="dotlessj"/>
+		<component base="dotaccentcomb" xOffset="178" yOffset="12"/>
 	</outline>
-	<guideline x="0" y="0" angle="90" identifier="qRzM97o5uM"/>
-	<guideline x="50" y="0" angle="90" identifier="J8Wc6O0pyx"/>
-	<guideline x="100" y="0" angle="90" identifier="YA5vi1D9us"/>
-	<guideline x="150" y="0" angle="90" identifier="rIf9ydRKDI"/>
-	<guideline x="200" y="0" angle="90" identifier="e2eAl4BAct"/>
-	<guideline x="250" y="0" angle="90" identifier="fT8i0GrARe"/>
-	<guideline x="300" y="0" angle="90" identifier="oSQTpD445e"/>
-	<guideline x="350" y="0" angle="90" identifier="hR1j1HcR43"/>
-	<guideline x="400" y="0" angle="90" identifier="oBr4JzJwQA"/>
-	<guideline x="450" y="0" angle="90" identifier="rMQrzwHo66"/>
-	<guideline x="500" y="0" angle="90" identifier="QXLN4m1pvH"/>
-	<guideline x="550" y="0" angle="90" identifier="LRzdVrbY7k"/>
-	<guideline x="600" y="0" angle="90" identifier="Qd2DsqPJ4D"/>
-	<guideline x="0" y="-250" angle="0" identifier="qvh6XOwZPF"/>
-	<guideline x="0" y="-200" angle="0" identifier="mr9rlutBI9"/>
-	<guideline x="0" y="-150" angle="0" identifier="sArpS2t3xi"/>
-	<guideline x="0" y="-100" angle="0" identifier="mJYN8hiwMn"/>
-	<guideline x="0" y="-50" angle="0" identifier="JiK4alXN8l"/>
-	<guideline x="0" y="0" angle="0" identifier="aIPvtssOmU"/>
-	<guideline x="0" y="50" angle="0" identifier="AP9elWov1f"/>
-	<guideline x="223" y="-27" angle="0" identifier="0zB07TSji3"/>
-	<guideline x="0" y="150" angle="0" identifier="O4la5NKRRi"/>
-	<guideline x="0" y="200" angle="0" identifier="0563jmsiaV"/>
-	<guideline x="0" y="250" angle="0" identifier="uUTMJd7Bkm"/>
-	<guideline x="0" y="300" angle="0" identifier="uQQVMmL2UV"/>
-	<guideline x="0" y="350" angle="0" identifier="HdM7kPMWtX"/>
-	<guideline x="0" y="400" angle="0" identifier="oYaYhgxD8f"/>
-	<guideline x="0" y="450" angle="0" identifier="oGk5AwyF3l"/>
-	<guideline x="0" y="500" angle="0" identifier="4VkCNInwQs"/>
-	<guideline x="0" y="550" angle="0" identifier="S8Y5mZJtHV"/>
-	<guideline x="0" y="600" angle="0" identifier="yUZgzgBbFe"/>
-	<guideline x="0" y="650" angle="0" identifier="B6B33cZB39"/>
-	<guideline x="0" y="700" angle="0" identifier="3nzMdEHqiR"/>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
@@ -180,7 +87,7 @@
 			<key>com.typemytype.robofont.guideline.magnetic.yUZgzgBbFe</key>
 			<integer>0</integer>
 			<key>public.markColor</key>
-			<string>0,0.25,1,0.1</string>
+			<string>0.8206,0.8138,0.8271,1</string>
 		</dict>
 	</lib>
 </glyph>

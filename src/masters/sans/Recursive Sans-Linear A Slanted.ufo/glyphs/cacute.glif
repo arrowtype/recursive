@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="cacute" format="2">
-	<advance width="600"/>
+	<unicode hex="0107"/>
+	<advance width="500"/>
 	<outline>
 		<component base="c"/>
-		<component base="acutecomb" xOffset="324.5374785519" yOffset="1"/>
+		<component base="acutecomb" xOffset="302"/>
 	</outline>
 	<lib>
 		<dict>
 			<key>public.markColor</key>
-			<string>0,0,0,0.25</string>
+			<string>0,0,0,0.1505</string>
 		</dict>
 	</lib>
 </glyph>

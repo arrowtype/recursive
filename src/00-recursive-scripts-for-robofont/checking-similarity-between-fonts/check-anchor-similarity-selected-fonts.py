@@ -27,7 +27,6 @@ for file in files:
     fonts.append(fontName)
 
     for glyph in font:
-        print(glyph.name)
         for anchor in glyph.anchors:
 
             # if the anchor doesn't yet have an entry, make one
@@ -45,6 +44,11 @@ for file in files:
 print("Checking fonts:")
 for fontName in fonts:
     print("• ", fontName)
+print("")
+
+print("Anchors found:")
+for anchor in sorted(anchors.keys()):
+    print("• ", anchor)
 print("")
 
 ## uncomment below to see full dictionary printed

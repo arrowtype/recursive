@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="gcommaaccent" format="2">
-	<unicode hex="0123"/>
 	<advance width="600"/>
 	<outline>
-		<component base="g.flatear"/>
-		<component base="uni0312" xOffset="304" yOffset="551"/>
+		<component base="g"/>
+		<component base="commaturnedabovecomb" xOffset="324" yOffset="2"/>
 	</outline>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
 			<string>fromComponents</string>
 			<key>public.markColor</key>
-			<string>0,0,0,0.25</string>
+			<string>0,0,0,0.1505</string>
 		</dict>
 	</lib>
 	<note>

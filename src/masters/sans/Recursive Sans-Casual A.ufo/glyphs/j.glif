@@ -3,96 +3,9 @@
 	<unicode hex="006A"/>
 	<advance width="350"/>
 	<outline>
-		<contour>
-			<point x="261" y="634" type="curve"/>
-			<point x="261" y="683" type="line" smooth="yes"/>
-			<point x="261" y="708"/>
-			<point x="242" y="721"/>
-			<point x="208" y="721" type="curve" smooth="yes"/>
-			<point x="196" y="721"/>
-			<point x="186" y="720"/>
-			<point x="178" y="718" type="curve"/>
-			<point x="178" y="688" type="line" smooth="yes"/>
-			<point x="178" y="653"/>
-			<point x="202" y="632"/>
-			<point x="243" y="632" type="curve" smooth="yes"/>
-			<point x="250" y="632"/>
-			<point x="256" y="633"/>
-		</contour>
-		<contour>
-			<point x="200" y="536" type="curve" smooth="yes"/>
-			<point x="170" y="536"/>
-			<point x="109" y="532"/>
-			<point x="53" y="526" type="curve"/>
-			<point x="51" y="521"/>
-			<point x="50" y="515"/>
-			<point x="50" y="508" type="curve" smooth="yes"/>
-			<point x="50" y="489"/>
-			<point x="59" y="474"/>
-			<point x="74" y="474" type="curve" smooth="yes"/>
-			<point x="96" y="474"/>
-			<point x="150" y="482"/>
-			<point x="195" y="490" type="curve"/>
-			<point x="200" y="485" type="line"/>
-			<point x="200" y="324"/>
-			<point x="200" y="163"/>
-			<point x="200" y="-26" type="curve" smooth="yes"/>
-			<point x="200" y="-99"/>
-			<point x="191" y="-142"/>
-			<point x="163" y="-175" type="curve"/>
-			<point x="144" y="-192"/>
-			<point x="123" y="-200"/>
-			<point x="94" y="-200" type="curve" smooth="yes"/>
-			<point x="61" y="-200"/>
-			<point x="45" y="-195"/>
-			<point x="16" y="-176" type="curve"/>
-			<point x="12" y="-176" type="line"/>
-			<point x="11" y="-181"/>
-			<point x="10" y="-190"/>
-			<point x="10" y="-197" type="curve" smooth="yes"/>
-			<point x="10" y="-211"/>
-			<point x="14" y="-221"/>
-			<point x="20" y="-229" type="curve" smooth="yes"/>
-			<point x="29" y="-240"/>
-			<point x="50" y="-250"/>
-			<point x="86" y="-250" type="curve" smooth="yes"/>
-			<point x="200" y="-250"/>
-			<point x="250" y="-174"/>
-			<point x="250" y="-29" type="curve" smooth="yes"/>
-			<point x="250" y="171"/>
-			<point x="250" y="337"/>
-			<point x="250" y="513" type="curve" smooth="yes"/>
-			<point x="250" y="531"/>
-			<point x="227" y="536"/>
-		</contour>
+		<component base="dotlessj"/>
+		<component base="dotaccentcomb" xOffset="209" yOffset="2"/>
 	</outline>
-	<guideline x="0" y="0" angle="90" identifier="jAs656jmL7"/>
-	<guideline x="50" y="0" angle="90" identifier="R0YQBRbOYy"/>
-	<guideline x="100" y="0" angle="90" identifier="AWCsFaaIeR"/>
-	<guideline x="150" y="0" angle="90" identifier="GB7jSGv1BY"/>
-	<guideline x="200" y="0" angle="90" identifier="Gaot9tGUYM"/>
-	<guideline x="250" y="0" angle="90" identifier="NJyg7xfrTT"/>
-	<guideline x="300" y="-126" angle="90" identifier="OsUZw1OWIV"/>
-	<guideline x="0" y="-250" angle="0" identifier="ZOpDRYYFry"/>
-	<guideline x="0" y="-200" angle="0" identifier="eZ2uxNI2f5"/>
-	<guideline x="0" y="-150" angle="0" identifier="alYRtCNk6j"/>
-	<guideline x="0" y="-100" angle="0" identifier="N0wFEmmvmE"/>
-	<guideline x="0" y="-50" angle="0" identifier="HybNVKZe1b"/>
-	<guideline x="0" y="0" angle="0" identifier="Gf0BLhH1Gp"/>
-	<guideline x="0" y="50" angle="0" identifier="Cbr1diAA0Z"/>
-	<guideline x="0" y="100" angle="0" identifier="KMtpWtOBoC"/>
-	<guideline x="0" y="150" angle="0" identifier="9Dd4fvgoz9"/>
-	<guideline x="0" y="200" angle="0" identifier="rG0Xxb5CP1"/>
-	<guideline x="0" y="250" angle="0" identifier="R5OzilDhW0"/>
-	<guideline x="0" y="300" angle="0" identifier="oN5gjervbN"/>
-	<guideline x="0" y="350" angle="0" identifier="DglLgtlVY8"/>
-	<guideline x="0" y="400" angle="0" identifier="gJ1Q7YjEqr"/>
-	<guideline x="0" y="450" angle="0" identifier="RDHTxWfqoJ"/>
-	<guideline x="0" y="500" angle="0" identifier="lpLHnqr7jX"/>
-	<guideline x="0" y="550" angle="0" identifier="oLsvOyGBym"/>
-	<guideline x="0" y="600" angle="0" identifier="1VgzhD3IDm"/>
-	<guideline x="0" y="650" angle="0" identifier="r8FtNGWXDp"/>
-	<guideline x="0" y="700" angle="0" identifier="lfnZAUIDRO"/>
 	<lib>
 		<dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
@@ -158,7 +71,7 @@
 			<key>com.typemytype.robofont.guideline.magnetic.rG0Xxb5CP1</key>
 			<integer>10</integer>
 			<key>public.markColor</key>
-			<string>1,0.45,0.45,0.75</string>
+			<string>0.8206,0.8138,0.8271,1</string>
 		</dict>
 	</lib>
 </glyph>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="dotaccentcomb" format="2">
+	<unicode hex="0307"/>
 	<outline>
 		<contour>
 			<point x="83" y="756" type="curve"/>
@@ -20,6 +21,8 @@
 	</outline>
 	<anchor name="_dot" x="113" y="716"/>
 	<anchor name="_top" x="68" y="537"/>
+	<anchor name="bottom" x="-66" y="0"/>
+	<anchor name="ogonek" x="-37" y="11"/>
 	<lib>
 		<dict>
 			<key>public.markColor</key>

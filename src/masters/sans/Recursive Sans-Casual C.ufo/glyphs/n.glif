@@ -13,7 +13,7 @@
 			<point x="565" y="356" type="curve" smooth="yes"/>
 			<point x="565" y="454"/>
 			<point x="495" y="564"/>
-			<point x="432" y="564" type="curve"/>
+			<point x="432" y="564" type="curve" smooth="yes"/>
 			<point x="363" y="564"/>
 			<point x="292" y="510"/>
 			<point x="261" y="427" type="curve"/>
@@ -60,7 +60,7 @@
 	</outline>
 	<anchor name="top" x="300" y="561"/>
 	<anchor name="bottom" x="300" y="-1"/>
-	<anchor name="caronslovak" x="110" y="711"/>
+	<anchor name="caronslovak" x="76" y="711"/>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>

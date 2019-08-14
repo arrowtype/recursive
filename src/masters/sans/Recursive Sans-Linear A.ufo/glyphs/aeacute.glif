@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="aeacute" format="2">
 	<unicode hex="01FD"/>
-	<advance width="600"/>
+	<advance width="850"/>
 	<outline>
 		<component base="ae"/>
-		<component base="acutecomb" xOffset="300"/>
+		<component base="acutecomb" xOffset="425" yOffset="-10"/>
 	</outline>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
 			<string>fromComponents</string>
 			<key>public.markColor</key>
-			<string>0,0,0,0.25</string>
+			<string>0,0,0,0.1505</string>
 		</dict>
 	</lib>
 </glyph>

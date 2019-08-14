@@ -8,12 +8,15 @@ import pprint
 
 ### SET THIS TO IGNORE GLYPHS YOU WANT TO LEAVE ALONE (e.g. experimental glyphs) ###
 
-glyphsToIgnore = "R.trap Z.noserif ampersand.code_experimental_2 ampersand.code_experimental_3 ampersand.crossbar at.simple at.short at.replaced_with_prop dagger.daggery g.extra g.long_desc g.longtail g.ss01 onehalf.v1 perthousand r.simple_italic sterling.replaced_with_flat two.replaced_with_rounder zero.ss01 one.flatflag"
+glyphsToIgnore = ""
+
+# R.trap Z.noserif ampersand.code_experimental_2 ampersand.code_experimental_3 ampersand.crossbar at.simple at.short at.replaced_with_prop dagger.daggery g.extra g.long_desc g.longtail g.ss01 onehalf.v1 perthousand r.simple_italic sterling.replaced_with_flat two.replaced_with_rounder zero.ss01 one.flatflag
 
 ####################################################################################
 
+debug = False # will print full dictionaries
 
-files = getFile("Select files to check for anchor similarity", allowsMultipleSelection=True, fileTypes=["ufo"])
+files = getFile("Select files to check for point count similarity", allowsMultipleSelection=True, fileTypes=["ufo"])
 
 fonts = []
 pointsDict = {}
@@ -58,9 +61,9 @@ for fontName in fonts:
     print("• ", fontName)
 print("")
 
-# uncomment below to see full dictionary printed
-# pp = pprint.PrettyPrinter(indent=2, width=200)
-# pp.pprint(pointsDict)
+if debug:
+    pp = pprint.PrettyPrinter(indent=2, width=200)
+    pp.pprint(pointsDict)
 
 glyphsNotInAllFonts = []
 
@@ -79,7 +82,7 @@ for glyphName in pointsDict.keys():
 maxFontNameLength = len(max(fonts, key=len))
 
 
-alertEmoji = "🍇 🍋 🍉 🍊 🥑 🍑 🍌 🍒 🌽 🍈 🐶 🐱 🐭 🐰 🦊 🐻 🐯 🦁 🐮 🐷 🐸 🐵 🐔 🐣".split(" ")
+alertEmoji = "🍇 🥑 🍉 🍊 🍑 🍌 🍒 🌽 🍈 🐶 🐱 🐭 🐰 🦊 🐻 🐯 🦁 🐮 🐷 🐸 🐵 🐔 🐣".split(" ")
 iconDict = {}
 
 for glyphName in sorted(glyphsWithUnevenPoints):
@@ -95,8 +98,10 @@ for glyphName in sorted(glyphsWithUnevenPoints):
     for index,pointCount in enumerate(iconDict[glyphName].keys()):
         iconDict[glyphName][pointCount] = alertEmoji[index]
 
-# pp = pprint.PrettyPrinter(indent=2, width=200)
-# pp.pprint(iconDict)
+
+if debug:
+    pp = pprint.PrettyPrinter(indent=2, width=200)
+    pp.pprint(iconDict)
 
 problemGlyphs = glyphsNotInAllFonts + glyphsWithUnevenPoints
 
@@ -135,7 +140,7 @@ for glyphName in sorted(problemGlyphs):
                 print("\t",fontName)
 
 if len(glyphsWithUnevenPoints) >= 1:
-    print("️\n\nGlyphs with unequal points between fonts:")
+    print("️\n\nGlyphs with unequal points between fonts:\n")
     print("\t", end=" ")
     for glyphName in sorted(glyphsWithUnevenPoints):
         # print(" - [ ] ", glyphName)
@@ -144,7 +149,7 @@ if len(glyphsWithUnevenPoints) >= 1:
 
 
 if len(glyphsNotInAllFonts) >= 1:
-    print("\n\nGlyphs that aren't in all fonts:")
+    print("\n\nGlyphs that aren't in all fonts:\n")
     print("\t", end=" ")
     for glyphName in sorted(glyphsNotInAllFonts):
         # print(" - [ ] ", glyphName)
@@ -153,7 +158,7 @@ if len(glyphsNotInAllFonts) >= 1:
 
 if len(problemGlyphs) is 0:
     print("🤖🤖🤖\n")
-    print("Looks like all glyphs have the same anchors – nice work! \n")
+    print("Looks like all glyphs have the same point counts – nice work! \n")
     print("🎉🎉🎉\n")
 
 

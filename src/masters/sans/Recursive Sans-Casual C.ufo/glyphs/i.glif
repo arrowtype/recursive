@@ -3,58 +3,9 @@
 	<unicode hex="0069"/>
 	<advance width="350"/>
 	<outline>
-		<contour>
-			<point x="317" y="623" type="curve"/>
-			<point x="317" y="719" type="line"/>
-			<point x="317" y="779"/>
-			<point x="271" y="788"/>
-			<point x="185" y="788" type="curve" smooth="yes"/>
-			<point x="150" y="788"/>
-			<point x="105" y="784"/>
-			<point x="67" y="778" type="curve"/>
-			<point x="67" y="712" type="line"/>
-			<point x="67" y="626"/>
-			<point x="113" y="613"/>
-			<point x="199" y="613" type="curve" smooth="yes"/>
-			<point x="234" y="613"/>
-			<point x="279" y="617"/>
-		</contour>
-		<contour>
-			<point x="80" y="59" type="curve" smooth="yes"/>
-			<point x="80" y="6"/>
-			<point x="116" y="-10"/>
-			<point x="214" y="-10" type="curve" smooth="yes"/>
-			<point x="255" y="-10"/>
-			<point x="279" y="-7"/>
-			<point x="315" y="0" type="curve"/>
-			<point x="306" y="50"/>
-			<point x="304" y="107"/>
-			<point x="304" y="175" type="curve"/>
-			<point x="304" y="276"/>
-			<point x="304" y="390"/>
-			<point x="304" y="481" type="curve" smooth="yes"/>
-			<point x="304" y="532"/>
-			<point x="264" y="561"/>
-			<point x="106" y="561" type="curve" smooth="yes"/>
-			<point x="88" y="561"/>
-			<point x="56" y="560"/>
-			<point x="31" y="556" type="curve"/>
-			<point x="23" y="531"/>
-			<point x="20" y="507"/>
-			<point x="20" y="475" type="curve" smooth="yes"/>
-			<point x="20" y="363"/>
-			<point x="49" y="328"/>
-			<point x="64" y="328" type="curve"/>
-			<point x="69" y="328"/>
-			<point x="81" y="330"/>
-			<point x="92" y="333" type="curve"/>
-			<point x="80" y="337" type="line"/>
-			<point x="80" y="269"/>
-			<point x="80" y="182"/>
-		</contour>
+		<component base="dotlessi"/>
+		<component base="dotaccentcomb" xOffset="190" yOffset="12"/>
 	</outline>
-	<anchor name="bottom" x="198" y="-1"/>
-	<anchor name="ogonek" x="317" y="-5"/>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
@@ -70,7 +21,7 @@
 			<key>com.typemytype.robofont.Image.Sharpness</key>
 			<real>0.4</real>
 			<key>public.markColor</key>
-			<string>1,0.65,0.65,1</string>
+			<string>0.8206,0.8138,0.8271,1</string>
 		</dict>
 	</lib>
 </glyph>

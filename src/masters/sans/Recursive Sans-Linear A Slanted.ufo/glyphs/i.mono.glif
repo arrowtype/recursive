@@ -1,75 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="i.mono" format="2">
-	<advance width="600"/>
+	<advance width="350"/>
 	<outline>
-		<contour>
-			<point x="223" y="34" type="line"/>
-			<point x="273" y="34" type="line"/>
-			<point x="314" y="198"/>
-			<point x="354" y="351"/>
-			<point x="395" y="515" type="curve"/>
-			<point x="397" y="523"/>
-			<point x="393" y="526"/>
-			<point x="387" y="526" type="curve" smooth="yes"/>
-			<point x="311" y="526"/>
-			<point x="234" y="526"/>
-			<point x="158" y="526" type="curve"/>
-			<point x="155" y="514"/>
-			<point x="152" y="504"/>
-			<point x="149" y="492" type="curve" smooth="yes"/>
-			<point x="148" y="486"/>
-			<point x="151" y="481"/>
-			<point x="157" y="481" type="curve"/>
-			<point x="214" y="481"/>
-			<point x="267" y="481"/>
-			<point x="324" y="481" type="curve" smooth="yes"/>
-			<point x="336" y="481" type="line"/>
-			<point x="308" y="370"/>
-			<point x="281" y="260"/>
-			<point x="253" y="150" type="curve" smooth="yes"/>
-			<point x="245" y="119"/>
-			<point x="237" y="87"/>
-			<point x="229" y="56" type="curve" smooth="yes"/>
-		</contour>
-		<contour>
-			<point x="26" y="45" type="line"/>
-			<point x="23" y="33"/>
-			<point x="20" y="23"/>
-			<point x="17" y="12" type="curve"/>
-			<point x="15" y="4"/>
-			<point x="19" y="0"/>
-			<point x="27" y="0" type="curve"/>
-			<point x="464" y="0" type="line"/>
-			<point x="467" y="12"/>
-			<point x="470" y="22"/>
-			<point x="473" y="34" type="curve" smooth="yes"/>
-			<point x="475" y="40"/>
-			<point x="471" y="45"/>
-			<point x="465" y="45" type="curve"/>
-		</contour>
-		<contour>
-			<point x="451" y="676" type="curve"/>
-			<point x="469" y="745" type="line" smooth="yes"/>
-			<point x="470" y="751"/>
-			<point x="466" y="756"/>
-			<point x="460" y="756" type="curve" smooth="yes"/>
-			<point x="437" y="756"/>
-			<point x="414" y="756"/>
-			<point x="391" y="756" type="curve"/>
-			<point x="374" y="687" type="line" smooth="yes"/>
-			<point x="372" y="681"/>
-			<point x="376" y="676"/>
-			<point x="382" y="676" type="curve" smooth="yes"/>
-			<point x="405" y="676"/>
-			<point x="428" y="676"/>
-		</contour>
+		<component base="dotlessi.mono"/>
+		<component base="dotaccentcomb" xOffset="183" yOffset="-12"/>
 	</outline>
-	<anchor name="bottom" x="238.7499303373" y="-1"/>
-	<anchor name="ogonek" x="463.7499303373" y="-1"/>
 	<lib>
 		<dict>
 			<key>public.markColor</key>
-			<string>0,0,0,0.25</string>
+			<string>0.8206,0.8138,0.8271,1</string>
 		</dict>
 	</lib>
 </glyph>

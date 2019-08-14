@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.0">
+  <axes>
+    <axis tag="GNRE" name="genre" minimum="0" maximum="1" default="0">
+      <labelname xml:lang="en">GNRE</labelname>
+    </axis>
+    <axis tag="WGHT" name="weight" minimum="300" maximum="900" default="300">
+      <labelname xml:lang="en">WGHT</labelname>
+    </axis>
+  </axes>
+  <sources>
+    <source filename="../Recursive Sans-Linear C Slanted.ufo" familyname="Recursive" stylename="Sans Linear C Slanted">
+      <location>
+        <dimension name="genre" xvalue="0"/>
+        <dimension name="weight" xvalue="900"/>
+      </location>
+    </source>
+    <source filename="../Recursive Sans-Casual A Slanted.ufo" familyname="Recursive" stylename="Sans Casual A Slanted">
+      <location>
+        <dimension name="genre" xvalue="1"/>
+        <dimension name="weight" xvalue="300"/>
+      </location>
+    </source>
+    <source filename="../Recursive Sans-Linear B Slanted.ufo" familyname="Recursive" stylename="Sans Linear B Slanted">
+      <location>
+        <dimension name="genre" xvalue="0"/>
+        <dimension name="weight" xvalue="700"/>
+      </location>
+    </source>
+    <source filename="../Recursive Sans-Linear A Slanted.ufo" familyname="Recursive" stylename="Sans Linear A Slanted">
+      <location>
+        <dimension name="genre" xvalue="0"/>
+        <dimension name="weight" xvalue="300"/>
+      </location>
+    </source>
+    <source filename="../Recursive Sans-Casual C Slanted.ufo" familyname="Recursive" stylename="Sans Casual C Slanted">
+      <location>
+        <dimension name="genre" xvalue="1"/>
+        <dimension name="weight" xvalue="900"/>
+      </location>
+    </source>
+    <source filename="../Recursive Sans-Casual B Slanted.ufo" familyname="Recursive" stylename="Sans Casual B Slanted">
+      <location>
+        <dimension name="genre" xvalue="1"/>
+        <dimension name="weight" xvalue="700"/>
+      </location>
+    </source>
+  </sources>
+</designspace>
