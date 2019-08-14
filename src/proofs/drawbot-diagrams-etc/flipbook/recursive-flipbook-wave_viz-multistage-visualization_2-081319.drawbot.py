@@ -11,16 +11,18 @@ prop = 0 # 0 for mono, 1 for sans
 export = True
 autoOpen = True
 book = True
-debug = True # overlays curve visualizations
+debug = False # overlays curve visualizations
 
-frames = 0 # 192
+frames = 2 # 192
 frameRate = 1/30 # only applicable to mp4
-format = "gif" # pdf, gif, or mp4
+format = "pdf" # pdf, gif, or mp4
 
-DPI = 300 # dots per inch – must be 72 to print at dimensions set in inches
+DPI = 72 # dots per inch – must be 72 to print at dimensions set in inches
 
-endPages = 0
-
+if book:
+    endPages = 4 #4
+else:
+    endPages = 0
 
 bookSize = 3.5 # inches
 marginSize = 0.25 # inches
@@ -48,8 +50,6 @@ pixels = DPI*bookSize
 marginTop, marginRight, marginBottom, marginLeft = margins[0]*DPI, margins[1]*DPI, margins[2]*DPI, margins[3]*DPI
 
 padding = marginRight
-
-
 
 paddingSides = marginRight
 paddingBottom = marginBottom
@@ -108,17 +108,23 @@ credits.lineHeight(textSize * textLineHeight)
 credits.fontVariations(wght=800.01, XPRN=0.001, slnt=0, ital=0)
 credits.append("Recursive")
 
-credits.fontVariations(wght=450, XPRN=0.001, slnt=0, ital=0)
-credits.append("""(Aug 2019,  d430fa628c)
+credits.fontVariations(wght=500, XPRN=0.001, slnt=0, ital=0)
+credits.append(f""" ({recursiveVersion}, Aug 2019,  d430fa628c)
 Made by Arrow Type. Type design by Stephen Nixon, with contributions from Katja Schimmel, Lisa Huang, and Rafał Buchner, plus early guidance from faculty and instructors for KABK TypeMedia 2018. Type mastering by Ben Kiel.
 
 Book design by Math Practice.
 Typeset with DrawBot by Stephen Nixon.
 """)
 
-credits.fontVariations(wght=800.01, XPRN=0.001, slnt=0, ital=0)
-credits.append("""
-https://recursive.design""")
+# URL ----------------------------
+
+url = FormattedString()
+url.font(fontFam)
+url.fontSize(textSize)
+url.lineHeight(textSize * textLineHeight)
+url.fontVariations(wght=800.01, XPRN=0.001, slnt=0, ital=0)
+url.fontVariations(wght=800.01, XPRN=0.001, slnt=0, ital=0)
+url.append("https://recursive.design")
 
 if book:
     newPage(W, H)
@@ -132,22 +138,20 @@ if book:
     rect(0,0,W, H)
 
     
+    if debug:
+        drawMargins()
+    
     fill(foreground)
 
     font(fontFam)
     fontSize(textSize)
-    fontVariations(wght=450, XPRN=0.001, slnt=0, ital=0)
+    fontVariations(wght=500, XPRN=0.001, slnt=0, ital=0)
 
-    if prop is 0:
-        # textBox(credits, (marginLeft,H - 3.86*DPI, W - (marginLeft * 2), textSize * 22))
-        textBox(credits, (marginLeft,marginBottom - textSize * 0.5, W - (marginLeft * 2), H * 0.52 - marginBottom))
-    else:
-        # textBox(credits, (marginLeft,H - 2.86*DPI,W - (marginLeft * 3), textSize * 22))
-        textBox(credits, (marginLeft,marginBottom - textSize * 0.5, W - (marginLeft * 2), H * 0.52 - marginBottom))
-
-    if debug:
-        drawMargins()
+    textBox(credits, (marginLeft,marginBottom - textSize * 0.5, W - (marginLeft * 2), H * 0.52 - marginBottom))
     
+    textBox(url, (marginLeft,marginBottom - textSize* 0.35 , W - (marginLeft * 2), textSize * textLineHeight))
+    
+
 
 
 description = FormattedString()
@@ -157,28 +161,30 @@ description.fontVariations(wght=500, XPRN=0.999, slnt=-14.99, ital=0.99)
 description.fontSize(headerSize)
 description.lineHeight(headerSize * headerLineHeight)
 description.append("A highly customizable variable font for design, code, and UI.")
-description.fontVariations(wght=450, XPRN=0.01, slnt=0, ital=0)
+description.fontVariations(wght=500, XPRN=0.01, slnt=0, ital=0)
 description.fontSize(textSize)
 description.lineHeight(textSize * textLineHeight)
 description.append("""\n
 Recursive is a versatile new variable font with five stylistic axes. These variation axes enable customizable control within five stylistic ranges: Proportion, Expression, Weight, Slant, and Italic. Carefully-planned named instances also allow selection within a set of predefined styles.
 
-Recursive offers a range of personality, from a sturdy, rational Linear to a friendly, energetic Casual. It comes in two subfamilies: Mono & Sans. Within these subfamilies, characters maintain the exact same width across all font styles. This allows for smooth stylistic transitions without affecting line length, enabling new levels of typographic flexibility & interactivity.
-
-Recursive has been sponsored by Google Fonts, through which it will soon be released.
-
-Recursive is released under the SIL Open Font License and can be freely used in or adapted for any project.
+Recursive offers a range of personality, from a sturdy, rational Linear to a friendly, energetic Casual. It comes in two subfamilies:\u00A0Mono & Sans. Within these subfamilies, characters maintain the exact same width across all font styles. This allows for smooth stylistic transitions without affecting line length, enabling new levels of typographic flexibility & interactivity.
 
 Flip the pages to see Recursive in motion!
-
-
-
 """)
 
-description.font("Google Sans")
-description.fontSize(computeFontSizePoints(14))
-description.lineHeight(computeFontSizePoints(14) * 0.5)
-description.append("google_logo")
+
+description.fontVariations(wght=500, XPRN=0.999, slnt=-9, ital=0.999)
+description.append("""
+Recursive has been sponsored by Google Fonts, through which it will soon be released. Recursive is available under the SIL Open Font License and can be freely used in or adapted for any project.
+""")
+
+
+
+googleLogo = FormattedString()
+googleLogo.font("Google Sans")
+googleLogo.fontSize(computeFontSizePoints(16.5))
+googleLogo.lineHeight(computeFontSizePoints(16.5) * 0.5)
+googleLogo.append("google_logo")
 
 
 
@@ -193,28 +199,22 @@ if book:
     
     if debug:
         drawMargins()
+
+    overflow = textBox(description, (marginLeft,marginBottom - textSize * 0.85 + (H * 0.05), W - (marginLeft * 2)- marginLeft * 0.4, H * 0.75 - marginBottom))
+
+    print(overflow)
+    
+    newPage(W, H)
+    fill(background)
+    rect(0,0,W, H)
+
+    textBox(overflow, (marginLeft,marginBottom - textSize *0.125, W - (marginLeft * 2) - marginLeft * 0.4, H * 0.8 - marginBottom))
     
 
+    textBox(googleLogo,(marginLeft,marginBottom + textSize * 0.85, W - (marginLeft * 2), headerSize))
 
-    if prop is 0:
-        # textBox(description, (marginLeft,H - 3.36*DPI, W - (marginLeft * 2), textSize * 22))
-        overflow = textBox(description, (marginLeft,marginBottom - textSize * 0.5 - (textPts * 1.3), W - (marginLeft * 2), H * 0.8 - marginBottom))
-
-        print(overflow)
-        
-        if overflow:
-            newPage(W, H)
-            fill(background)
-            rect(0,0,W, H)
-
-            textBox(overflow, (marginLeft,marginBottom - textSize * 0.5 + (textPts*2), W - (marginLeft * 2), H * 0.8 - marginBottom))
-
-            if debug:
-                drawMargins()
-
-    else:
-        # textBox(description, (padding,H - 2.86*DPI, W - (padding * 4.0), textSize * 22))
-        textBox(description, (marginLeft,H - (3.475*DPI), W - (marginLeft * 3.0), textSize * 22))
+    if debug:
+        drawMargins()
         
     
 
@@ -339,7 +339,7 @@ for frame in range(frames):
     fill(foreground)
     
     fontSize(rwSize)
-    overflow = textBox("rw", (0, padding - rwSize*0.20, W, rwSize*1.25), align="center")
+    overflow = textBox("rw", (0, padding - rwSize*0.21, W, rwSize*1.25), align="center")
     # a text box returns text overflow
     # text that did not make it into the box
     print(overflow)
@@ -469,26 +469,26 @@ for frame in range(frames):
     # ----------------------------------------------------------------------
     # PAGE NUMBER ----------------------------------------------------------
     
-    with savedState():
-        fontVariations(wght=400, XPRN=xprnVals[0], slnt=0, ital=0)
+    # with savedState():
+    #     fontVariations(wght=400, XPRN=xprnVals[0], slnt=0, ital=0)
 
-        footerHeight = marginBottom*0.84
-        
-        print(marginLeft)
+    footerHeight = marginBottom*0.75
+    
+    print(marginLeft)
 
-        if prop == 0:
-            textBox("Recursive Mono", (marginLeft, footerHeight, (W- (marginLeft*2)), textSize*1.5), align="left")
-        else:
-            textBox("Recursive Sans", (marginLeft, footerHeight, (W- (marginLeft*2)), textSize*1.5), align="left")
+    if prop == 0:
+        textBox("Recursive Mono", (marginLeft, footerHeight, (W- (marginLeft*2)), textSize*1.5), align="left")
+    else:
+        textBox("Recursive Sans", (marginLeft, footerHeight, (W- (marginLeft*2)), textSize*1.5), align="left")
 
-        # foundry name, nudged to the right just slightly
-        textBox("Arrow Type", (W/2, footerHeight, (W- (padding*2)), textSize*1.5), align="left")
-        # page number
+    # foundry name, nudged to the right just slightly
+    textBox("Arrow Type", (W/2, footerHeight, (W- (padding*2)), textSize*1.5), align="left")
+    # page number
 
-        if book:
-            textBox(str(frames-(frame)), (marginLeft, footerHeight, (W- (marginLeft*2)), textSize*1.5), align="right") # reverse
-        else:
-            textBox(str(frame + 1), (marginLeft, footerHeight, (W- (marginLeft*2)), textSize*1.5), align="right") # forward
+    if book:
+        textBox(str(frames-(frame)), (marginLeft, footerHeight, (W- (marginLeft*2)), textSize*1.5), align="right") # reverse
+    else:
+        textBox(str(frame + 1), (marginLeft, footerHeight, (W- (marginLeft*2)), textSize*1.5), align="right") # forward
 
 
 
@@ -511,11 +511,10 @@ for frame in range(frames):
 # -----------------------------------------------------------------------------
 # END PAGES -------------------------------------------------------------------
 
-if book:
-    for page in range(endPages):
-        newPage(W, H)
-        fill(background)
-        rect(0,0,W, H)
+for page in range(endPages):
+    newPage(W, H)
+    fill(background)
+    rect(0,0,W, H)
 
 
 endDrawing()
