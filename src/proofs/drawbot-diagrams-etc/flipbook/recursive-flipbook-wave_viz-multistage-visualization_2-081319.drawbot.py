@@ -6,14 +6,14 @@ newDrawing() # for drawbot module
 # ---------------------------------------------------------
 # CONFIGURATION -------------------------------------------
 
-prop = 0 # 0 for mono, 1 for sans
+prop = 1 # 0 for mono, 1 for sans
 
 export = True
 autoOpen = True
 book = True
 debug = False # overlays curve visualizations
 
-frames = 2 # 192
+frames = 92 # 192
 frameRate = 1/30 # only applicable to mp4
 format = "pdf" # pdf, gif, or mp4
 
@@ -109,7 +109,7 @@ credits.fontVariations(wght=800.01, XPRN=0.001, slnt=0, ital=0)
 credits.append("Recursive")
 
 credits.fontVariations(wght=500, XPRN=0.001, slnt=0, ital=0)
-credits.append(f""" ({recursiveVersion}, Aug 2019,  d430fa628c)
+credits.append(f""" ({recursiveVersion}, Aug 2019,  3da10a84)
 Made by Arrow Type. Type design by Stephen Nixon, with contributions from Katja Schimmel, Lisa Huang, and Rafał Buchner, plus early guidance from faculty and instructors for KABK TypeMedia 2018. Type mastering by Ben Kiel.
 
 Book design by Math Practice.
@@ -167,7 +167,7 @@ description.lineHeight(textSize * textLineHeight)
 description.append("""\n
 Recursive is a versatile new variable font with five stylistic axes. These variation axes enable customizable control within five stylistic ranges: Proportion, Expression, Weight, Slant, and Italic. Carefully-planned named instances also allow selection within a set of predefined styles.
 
-Recursive offers a range of personality, from a sturdy, rational Linear to a friendly, energetic Casual. It comes in two subfamilies:\u00A0Mono & Sans. Within these subfamilies, characters maintain the exact same width across all font styles. This allows for smooth stylistic transitions without affecting line length, enabling new levels of typographic flexibility & interactivity.
+Recursive offers a range of personality, from a\u00A0sturdy, rational Linear to a friendly, energetic Casual. It comes in two subfamilies:\u00A0Mono & Sans. Within these subfamilies, characters maintain the exact same width across all font styles. This allows for smooth stylistic transitions without affecting line length, enabling new levels of typographic flexibility & interactivity.
 
 Flip the pages to see Recursive in motion!
 """)
@@ -522,7 +522,7 @@ endDrawing()
 if save:
     now = datetime.datetime.now().strftime("%Y_%m_%d-%H") # -%H_%M_%S
 
-    path = f"/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/exports/{docTitle}-{now}.{format}"
+    path = f"/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/exports/{docTitle}-{frames + 8}_pages-{now}.{format}"
 
     print("saved to ", path)
 
