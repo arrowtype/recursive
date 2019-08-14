@@ -6,7 +6,7 @@ newDrawing() # for drawbot module
 # ---------------------------------------------------------
 # CONFIGURATION -------------------------------------------
 
-prop = 0 # 0 for mono, 1 for sans
+prop = 1 # 0 for mono, 1 for sans
 
 export = True
 autoOpen = True
@@ -15,7 +15,7 @@ debug = False # overlays curve visualizations
 
 frames = 96 # 96 for full animation
 frameRate = 1/30 # only applicable to mp4
-format = "pdf" # pdf, gif, or mp4
+exportFormat = "bmp" # pdf, gif, mp4, or bmp
 
 DPI = 72 # dots per inch – must be 72 to print at dimensions set in inches
 
@@ -32,18 +32,19 @@ marginSize = 0.25 # inches
 
 margins = (0.75, 0.3, 0.2, 0.3)
 
-
-
 textPts = 7 # 6.75
 textLineHeight = 1.5
 headerPts = 14
 headerLineHeight = 1.125
 rwPts =  170 # 152
 
+recursiveVersion="Beta v1.014"
+now = datetime.datetime.now().strftime("%Y_%m_%d-%H_%M") # -%H_%M_%S
+parentDir = "/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook"
+
 # ---------------------------------------------------------
 
-recursiveVersion="Beta v1.014"
-
+pageNum = 0
 
 pixels = DPI*bookSize
 
@@ -78,10 +79,13 @@ else:
     background = 1
     docTitle = "recursive-sans-flipbook_side_2"
 
-def whitePagePlz():
+def newPagePlz(pageNum):
+    pageNum += 1
     newPage(W, H)
     fill(background)
     rect(0,0,W, H)
+
+    return pageNum
 
 # this will draw cyan guides to help align content
 def drawMargins():
@@ -101,8 +105,24 @@ def drawMargins():
     rect(0, H*0.5, W, thickness)      # middle
     rect(W*0.5, 0, thickness, H)      # center
 
+
+def ifBitmapSaveBitmap(pageNum):
+    # exportFolder = f"{parentDir}/exports/{docTitle}-bitmaps-{now}"
+    exportFolder = f"/Users/stephennixon/Dropbox/KABK_netherlands/type_media/000-casual-mono/000-googlefonts-minisite_and_specimens-support/flipbook/{docTitle}-bitmaps-{now}"
+    import os
+    os.system(f"mkdir -p {exportFolder}")
+
+    if save and exportFormat == "bmp":
+
+        page = str(pageNum).rjust(3, "0")
+
+        path = f"{exportFolder}/{page}-{docTitle}.bmp"
+        saveImage(path, imageResolution=2400)
+        print("saved bitmap: ", path)
+
 # ---------------------------------------------------------
 # FRONTMATTER ---------------------------------------------
+
 
 
 credits = FormattedString()
@@ -132,11 +152,13 @@ url.fontVariations(wght=800.01, XPRN=0.001, slnt=0, ital=0)
 url.append("https://recursive.design")
 
 if book:
-    whitePagePlz()
+    pageNum = newPagePlz(pageNum)
+    ifBitmapSaveBitmap(pageNum)
 
     # CREDITS ---------------------------------------------
 
-    whitePagePlz()
+
+    pageNum = newPagePlz(pageNum)
 
     
     if debug:
@@ -156,6 +178,7 @@ if book:
 
     drawPath(textPath)
     
+    ifBitmapSaveBitmap(pageNum)
 
 
 
@@ -198,8 +221,8 @@ if book:
     
     # DESCRIPTION ---------------------------------------------
     
-    whitePagePlz()
-    
+    pageNum = newPagePlz(pageNum)
+    # pageNum += 1
 
     if debug:
         drawMargins()
@@ -213,9 +236,12 @@ if book:
 
     drawPath(textPath)
 
+    ifBitmapSaveBitmap(pageNum)
+
     # second page ---------------------------------------------
     
-    whitePagePlz()
+    pageNum = newPagePlz(pageNum)
+    # pageNum += 1
 
     textPath = BezierPath()
     
@@ -235,8 +261,8 @@ if book:
 
     if debug:
         drawMargins()
-        
     
+    ifBitmapSaveBitmap(pageNum)
 
 
 # ---------------------------------------------------------
@@ -326,10 +352,7 @@ def getItalValue(t):
 
 for frame in range(frames):
 
-    whitePagePlz()
-    
-
-    
+    pageNum = newPagePlz(pageNum)
 
     frameDuration(frameRate)
     
@@ -558,7 +581,7 @@ for frame in range(frames):
     drawPath(path)
 
 
-
+    ifBitmapSaveBitmap(pageNum)
     
     
     print("T: " + str(t))
@@ -579,15 +602,15 @@ for frame in range(frames):
 # END PAGES -------------------------------------------------------------------
 
 for page in range(endPages):
-    whitePagePlz()
+    pageNum = newPagePlz(pageNum)
 
+    ifBitmapSaveBitmap(pageNum)
 
 endDrawing()
 
-if save:
-    now = datetime.datetime.now().strftime("%Y_%m_%d-%H") # -%H_%M_%S
+if save and exportFormat is not "bmp":
 
-    path = f"/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/exports/{docTitle}-{frames + 8}_pages-{now}.{format}"
+    path = f"/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/exports/{docTitle}-{frames + 8}_pages-{now}.{exportFormat}"
 
     print("saved to ", path)
 
