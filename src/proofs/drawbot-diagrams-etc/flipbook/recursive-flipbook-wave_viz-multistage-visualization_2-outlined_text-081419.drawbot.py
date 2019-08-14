@@ -6,14 +6,14 @@ newDrawing() # for drawbot module
 # ---------------------------------------------------------
 # CONFIGURATION -------------------------------------------
 
-prop = 1 # 0 for mono, 1 for sans
+prop = 0 # 0 for mono, 1 for sans
 
 export = True
 autoOpen = True
 book = True
 debug = False # overlays curve visualizations
 
-frames = 2 # 192
+frames = 96 # 96 for full animation
 frameRate = 1/30 # only applicable to mp4
 format = "pdf" # pdf, gif, or mp4
 
@@ -149,8 +149,6 @@ if book:
     fontVariations(wght=500, XPRN=0.001, slnt=0, ital=0)
 
     textPath = BezierPath()
-    # overflow = textPath.textBox(txt, (x, y, w, h))
-
     
     textPath.textBox(credits, (marginLeft,marginBottom - textSize * 0.5, W - (marginLeft * 2), H * 0.52 - marginBottom))
     
@@ -201,26 +199,35 @@ if book:
     # DESCRIPTION ---------------------------------------------
     
     whitePagePlz()
+    
 
     if debug:
         drawMargins()
 
     textPath = BezierPath()
 
-    # overflow = textPath.textBox(description, (marginLeft,marginBottom - textSize * 0.85 + (H * 0.05), W - (marginLeft * 2)- marginLeft * 0.4, H * 0.75 - marginBottom))
-    textPath.textBox(description, (marginLeft,marginBottom - textSize * 0.85 + (H * 0.05), W - (marginLeft * 2)- marginLeft * 0.4, H * 0.75 - marginBottom))
+    fill(foreground)
+
+    overflow = textPath.textBox(description, (marginLeft,marginBottom - textSize * 0.85 + (H * 0.05), W - (marginLeft * 2)- marginLeft * 0.4, H * 0.75 - marginBottom))
+    # textPath.textBox(description, (marginLeft,marginBottom - textSize * 0.85 + (H * 0.05), W - (marginLeft * 2)- marginLeft * 0.4, H * 0.75 - marginBottom))
 
     drawPath(textPath)
+
     # second page ---------------------------------------------
     
     whitePagePlz()
+
+    textPath = BezierPath()
     
     # continued from overflow above
     textPath.textBox(overflow, (marginLeft,marginBottom - textSize *0.125, W - (marginLeft * 2) - marginLeft * 0.4, H * 0.8 - marginBottom))
     
+    fill(foreground)
     drawPath(textPath)
     
     textPath = BezierPath()
+
+    fill(foreground)
     
     textPath.textBox(googleLogo,(marginLeft,marginBottom + textSize * 0.85, W - (marginLeft * 2), headerSize))
     
@@ -320,42 +327,41 @@ def getItalValue(t):
 for frame in range(frames):
 
     whitePagePlz()
+    
 
-    font(fontFam)
-    fontSize(textSize)
+    
 
     frameDuration(frameRate)
     
     if book:
         t = 1 - (frame / (frames - 1)) # reverse
     else:
-        t = frame / (frames - 1) # forward
-
-    print(t)
+        t = frame / (frames - 1) # forward    
 
     xprnVals = getCurveValue(t, 0.5, 0.001, 0.999)
     wghtVals = getWeightValue(t, 0.7, 300.001, 899.999)
     slntVals = getSlantValue(t, 0.001, -14.999)
     italVals = getItalValue(t)
-
-    fontVariations(wght=wghtVals[0], XPRN=xprnVals[0], slnt=slntVals, ital=italVals)
-
-    
-
-    # print(round(slntVal, 2), round(wghtVal, 2))
     
     size = padding * 0.375
 
-    # fill(1,0,0)
+    rw = FormattedString()
 
-    # rect(0,0,100,100)
-    fill(foreground)
+    rw.fontSize(rwSize)
+    rw.fill(foreground)
+    rw.font(fontFam)
+    rw.fontVariations(wght=wghtVals[0], XPRN=xprnVals[0], slnt=slntVals, ital=italVals)
+    rw.align("center")
+
+    rw.append("rw")
+
+    textPath = BezierPath()
+
+    # continued from overflow above
+    textPath.textBox(rw, (0, padding - rwSize*0.21, W, rwSize*1.25))
     
-    fontSize(rwSize)
-    overflow = textBox("rw", (0, padding - rwSize*0.21, W, rwSize*1.25), align="center")
-    # a text box returns text overflow
-    # text that did not make it into the box
-    print(overflow)
+    fill(foreground) # fill must come before drawPath, not in FormattedString object
+    drawPath(textPath)
 
 
     # ----------------------------------------------------------------------
@@ -410,7 +416,12 @@ for frame in range(frames):
                 txt.fontVariations(wght=800, XPRN=xprnVals[0], slnt=0, ital=0)
                 txt.append("*")
 
-                textBox(txt, (marginLeft, infoHeight, (W- (marginLeft*2)), textSize*1.625))
+                textPath = BezierPath()
+
+                textPath.textBox(txt, (marginLeft, infoHeight, (W- (marginLeft*2)), textSize*1.625))
+
+                fill(foreground)
+                drawPath(textPath)
                 
 
             
@@ -437,32 +448,43 @@ for frame in range(frames):
         ovalSize = padding*0.2 # 0.1875
 
         def showAxisVals(label, value, valueString, infoHeight):
-            # fill(foreground,foreground,foreground,0.25)
-            # rect(padding, infoHeight, (W- (padding*2)), trackSize)
             with savedState():
 
-                font(mono)
-                fontVariations(wght=500, XPRN=xprnVals[0], slnt=0, ital=0)
+                # axis label ---------------
 
-                fill(foreground)
-                # oval(((W - (padding*2)) * value) -(ovalSize/2) + padding,infoHeight-(ovalSize/2)+(trackSize/2), ovalSize, ovalSize)
-                # oval(((W - (padding*2) - ovalSize) * value) + padding,infoHeight-(ovalSize/2)+(trackSize/2), ovalSize, ovalSize)
+                txt = FormattedString()
+                txt.font(mono)
+                txt.fontVariations(wght=500, XPRN=xprnVals[0], slnt=0, ital=0)
+                txt.fontSize(textSize)
+                txt.append(label)
+
+                
+                textPath = BezierPath()
 
                 labelWidth = W * 0.125
-                # x = (W - (padding*2)) * value + padding
                 x = ((W - (padding*2) - labelWidth) * value) + padding
                 y = infoHeight
                 w = labelWidth
                 h = textSize*1.625
+                textPath.textBox(txt, (x,y,w,h))
 
-                textBox(label, (x,y,w,h))
+                fill(foreground)
+                drawPath(textPath)
 
-                font(sans)
-                    
-                textBox(valueString,((x,y,w,h)), align="right")
+                # axis value ---------------
+
+                txt = FormattedString()
+                txt.font(sans)                                                     # MUST be here
+                txt.fontSize(textSize)                                             # MUST be here
+                txt.fontVariations(wght=500, XPRN=xprnVals[0], slnt=0, ital=0)     # styling
+                txt.align("right")                                                 # styling
+                txt.append(valueString)
+
+                valueTextPath = BezierPath()
+                fill(foreground)                                                   # MUST be here between BezierPath() setup and drawPath(), *not* in formatted string,
+                valueTextPath.textBox(txt,((x,y,w,h)))
+                drawPath(valueTextPath)
             
-        # infoSpacing = H * 0.056
-        # infoHeight = H * 0.5 + textSize
         showAxisVals("i", italVal, i, infoHeight)
 
         infoHeight += infoSpacing
@@ -486,22 +508,54 @@ for frame in range(frames):
     #     fontVariations(wght=400, XPRN=xprnVals[0], slnt=0, ital=0)
 
     footerHeight = marginBottom*0.75
-    
-    print(marginLeft)
+
+    txt = FormattedString()
+    txt.font(sans)                                                     # MUST be here
+    txt.fontSize(textSize)                                             # MUST be here
+    txt.fontVariations(wght=500, XPRN=xprnVals[0], slnt=0, ital=0)     # styling
+    txt.align("left")                                                 # styling
 
     if prop == 0:
-        textBox("Recursive Mono", (marginLeft, footerHeight, (W- (marginLeft*2)), textSize*1.5), align="left")
+        # textBox("Recursive Mono", (marginLeft, footerHeight, (W- (marginLeft*2)), textSize*1.5), align="left")
+        txt.append("Recursive Mono")
     else:
-        textBox("Recursive Sans", (marginLeft, footerHeight, (W- (marginLeft*2)), textSize*1.5), align="left")
+        # textBox("Recursive Sans", (marginLeft, footerHeight, (W- (marginLeft*2)), textSize*1.5), align="left")
+        txt.append("Recursive Sans")
 
-    # foundry name, nudged to the right just slightly
-    textBox("Arrow Type", (W/2, footerHeight, (W- (padding*2)), textSize*1.5), align="left")
+    path = BezierPath()
+    fill(foreground)                                                   # MUST be here between BezierPath() setup and drawPath(), *not* in formatted string,
+    path.textBox(txt,(marginLeft, footerHeight, (W- (marginLeft*2)), textSize*1.5))
+    drawPath(path)
+
+    txt = FormattedString()
+    txt.font(sans)                                                     # MUST be here
+    txt.fontSize(textSize)                                             # MUST be here
+    txt.fontVariations(wght=500, XPRN=xprnVals[0], slnt=0, ital=0)     # styling
+    txt.align("left")  
+    txt.append("Arrow Type")
+
+    path = BezierPath()
+    fill(foreground)                                                   # MUST be here between BezierPath() setup and drawPath(), *not* in formatted string,
+    path.textBox(txt,(W/2, footerHeight, (W- (padding*2)), textSize*1.5))
+    drawPath(path)
+
+
     # page number
+    txt = FormattedString()
+    txt.font(sans)                                                     # MUST be here
+    txt.fontSize(textSize)                                             # MUST be here
+    txt.fontVariations(wght=500, XPRN=xprnVals[0], slnt=0, ital=0)     # styling
+    txt.align("right")  
 
     if book:
-        textBox(str(frames-(frame)), (marginLeft, footerHeight, (W- (marginLeft*2)), textSize*1.5), align="right") # reverse
+        txt.append(str(frames-(frame))) # current page number
     else:
-        textBox(str(frame + 1), (marginLeft, footerHeight, (W- (marginLeft*2)), textSize*1.5), align="right") # forward
+        txt.append(str(frame + 1)) # current page number
+
+    path = BezierPath()
+    fill(foreground)                                                   # MUST be here between BezierPath() setup and drawPath(), *not* in formatted string,
+    path.textBox(txt,(marginLeft, footerHeight, (W- (marginLeft*2)), textSize*1.5))
+    drawPath(path)
 
 
 
