@@ -21,7 +21,7 @@ def setFontNameID(font, ID, newName, platformID=3, platEncID=1, langID=0x409):
     font['name'].setName(newName, ID, platformID, platEncID, langID)
 
 
-    print(f"• name {ID}: '{oldName}' → '{newName}'")
+    print(f"\n\t• name {ID}: '{oldName}' → '{newName}'")
 
 
 
@@ -38,25 +38,11 @@ namesToVersion = {
 NAME_IDS = {
     1: 'familyName',    # Recursive Sans Linear A
     3: 'uniqueID',      # 1.005;ARRW;RecursiveSans-LinearA
+    4: 'fullName',      # Recursive Sans Linear A
     5: 'version',       # Version 1.005
     6: 'psName',        # RecursiveSans-LinearA
     16: 'typeFamily'    # Recursive Sans
 }
-
-# name 16
-    # get it
-
-# name 6
-    # split on "-"
-    # replace last part with "Beta{version}"
-
-# name 3 
-    # split on ";"
-    # replace first part with {version}
-    # replace last part with new nameID 6
-
-# name 1 
-    # keep name16, replace rest with version "Beta v{version}"
 
 def main():
     args = parser.parse_args()
@@ -68,20 +54,42 @@ def main():
         for nameID in NAME_IDS:
             print(f"{NAME_IDS[nameID].ljust(10)}: {getFontNameID(ttfont, nameID)}")
 
+        # Update typographic family name
         famName = getFontNameID(ttfont, 16)
+        newFamName = f"{famName} Beta {projectVersion}"
 
-        # get last part of postScript font name, e.g. "LinearA" from "RecursiveMono-LinearA"
+        setFontNameID(ttfont, 16, newFamName)
+
+        # UPDATE NAME ID 6
+        # replace last part of postScript font name, e.g. "LinearA" from "RecursiveMono-LinearA"
         psName = str(getFontNameID(ttfont, 6))
         psStyle = psName.split("-")[-1]
-
-        newPsName = psName.replace(psStyle, f"Beta{projectVersion.replace('.','_')}")
-
+        newPsName = psName.replace(psStyle, f"Beta_{projectVersion.replace('.','_')}")
+        # set new ps name
         setFontNameID(ttfont, 6, newPsName)
 
+        # VERSION, ID 5 (e.g. "Version 1.005")
+
+        newVersion = f"Version {projectVersion}"
+
+        setFontNameID(ttfont, 5, newVersion)
+
+        # FULL FONT NAME, ID 4
+
+        setFontNameID(ttfont, 4, newFamName)
+
+        # UNIQUE FONT NAME, ID 3 (e.g. 1.005;ARRW;RecursiveSans-LinearA)
+
+        oldUniqueID = str(getFontNameID(ttfont, 3))
+        oldUniqueIDParts = oldUniqueID.split(";")
+        newUniqueID = f"{projectVersion};{oldUniqueIDParts[1]};{newPsName}"
+        setFontNameID(ttfont, 3, newUniqueID)
+
+        # UPDATE BASIC FONT NAME, id 1
+        setFontNameID(ttfont, 1, newFamName)
+
+        # SAVE FONT
         ttfont.save(font_path + '.fix')
-
-    
-
 
 
 if __name__ == '__main__':
