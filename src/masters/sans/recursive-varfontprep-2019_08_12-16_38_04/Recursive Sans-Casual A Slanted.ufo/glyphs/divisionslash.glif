@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="divisionslash" format="2">
+	<unicode hex="2215"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="504" y="750" type="curve"/>
+			<point x="497" y="754"/>
+			<point x="490" y="756"/>
+			<point x="479" y="756" type="curve" smooth="yes"/>
+			<point x="466" y="756"/>
+			<point x="449" y="753"/>
+			<point x="444" y="734" type="curve" smooth="yes"/>
+			<point x="370" y="445"/>
+			<point x="266" y="178"/>
+			<point x="129" y="-62" type="curve" smooth="yes"/>
+			<point x="111" y="-93"/>
+			<point x="98" y="-113"/>
+			<point x="79" y="-133" type="curve"/>
+			<point x="88" y="-137"/>
+			<point x="97" y="-139"/>
+			<point x="109" y="-139" type="curve" smooth="yes"/>
+			<point x="130" y="-139"/>
+			<point x="145" y="-134"/>
+			<point x="157" y="-114" type="curve" smooth="yes"/>
+			<point x="307" y="136"/>
+			<point x="423" y="424"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>fix</string>
+			<key>public.markColor</key>
+			<string>1,0.65,0.65,1</string>
+		</dict>
+	</lib>
+</glyph>

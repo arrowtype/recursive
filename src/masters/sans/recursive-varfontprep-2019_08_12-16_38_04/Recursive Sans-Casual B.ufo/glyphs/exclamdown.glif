@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="exclamdown" format="2">
+	<unicode hex="00A1"/>
+	<advance width="350"/>
+	<outline>
+		<contour>
+			<point x="115" y="245" type="line"/>
+			<point x="99" y="180"/>
+			<point x="85" y="72"/>
+			<point x="85" y="6" type="curve"/>
+			<point x="85" y="-106" type="line" smooth="yes"/>
+			<point x="85" y="-154"/>
+			<point x="141" y="-175"/>
+			<point x="211" y="-175" type="curve" smooth="yes"/>
+			<point x="236" y="-175"/>
+			<point x="255" y="-174"/>
+			<point x="278" y="-168" type="curve"/>
+			<point x="269" y="-132"/>
+			<point x="265" y="-95"/>
+			<point x="265" y="-55" type="curve" smooth="yes"/>
+			<point x="265" y="0" type="line" smooth="yes"/>
+			<point x="265" y="79"/>
+			<point x="252" y="192"/>
+			<point x="230" y="214" type="curve" smooth="yes"/>
+			<point x="211" y="233"/>
+			<point x="178" y="245"/>
+			<point x="130" y="245" type="curve"/>
+		</contour>
+		<contour>
+			<point x="71" y="535" type="curve"/>
+			<point x="71" y="424" type="line" smooth="yes"/>
+			<point x="71" y="343"/>
+			<point x="135" y="329"/>
+			<point x="182" y="329" type="curve"/>
+			<point x="219" y="329"/>
+			<point x="251" y="337"/>
+			<point x="279" y="353" type="curve"/>
+			<point x="279" y="464" type="line" smooth="yes"/>
+			<point x="279" y="536"/>
+			<point x="215" y="546"/>
+			<point x="159" y="546" type="curve" smooth="yes"/>
+			<point x="133" y="546"/>
+			<point x="99" y="543"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>needsFixing</string>
+			<key>public.markColor</key>
+			<string>1,0,0,1</string>
+		</dict>
+	</lib>
+</glyph>
