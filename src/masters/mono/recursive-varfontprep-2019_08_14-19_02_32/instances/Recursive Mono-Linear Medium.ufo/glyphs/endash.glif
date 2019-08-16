@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="endash" format="2">
+  <advance width="600.0"/>
+  <unicode hex="2013"/>
+  <outline>
+    <contour>
+      <point x="50.0" y="348.0" type="line"/>
+      <point x="50.0" y="318.5"/>
+      <point x="50.0" y="292.0"/>
+      <point x="50.0" y="262.5" type="curve" smooth="yes"/>
+      <point x="50.0" y="255.5"/>
+      <point x="54.0" y="251.5"/>
+      <point x="61.0" y="251.5" type="curve" smooth="yes"/>
+      <point x="550.0" y="251.5" type="line"/>
+      <point x="550.0" y="281.0"/>
+      <point x="550.0" y="307.5"/>
+      <point x="550.0" y="337.0" type="curve"/>
+      <point x="550.0" y="344.0"/>
+      <point x="546.0" y="348.0"/>
+      <point x="539.0" y="348.0" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,1,0,1</string>
+    </dict>
+  </lib>
+</glyph>

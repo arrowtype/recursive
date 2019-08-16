@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hyphen" format="2">
+  <advance width="600.0"/>
+  <unicode hex="002D"/>
+  <outline>
+    <contour>
+      <point x="137.33333333333334" y="355.6666666666667" type="line"/>
+      <point x="128.33333333333334" y="320.6666666666667"/>
+      <point x="120.66666666666667" y="289.6666666666667"/>
+      <point x="112.0" y="254.66666666666666" type="curve" smooth="yes"/>
+      <point x="110.33333333333334" y="247.66666666666666"/>
+      <point x="113.33333333333334" y="243.66666666666666"/>
+      <point x="120.33333333333334" y="243.66666666666666" type="curve"/>
+      <point x="478.6666666666667" y="243.66666666666666" type="line"/>
+      <point x="487.0" y="278.6666666666667"/>
+      <point x="495.3333333333333" y="309.6666666666667"/>
+      <point x="504.0" y="344.6666666666667" type="curve" smooth="yes"/>
+      <point x="505.6666666666667" y="351.6666666666667"/>
+      <point x="502.6666666666667" y="355.6666666666667"/>
+      <point x="495.6666666666667" y="355.6666666666667" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+      <key>public.markColor</key>
+      <string>1,1,0,1</string>
+    </dict>
+  </lib>
+</glyph>

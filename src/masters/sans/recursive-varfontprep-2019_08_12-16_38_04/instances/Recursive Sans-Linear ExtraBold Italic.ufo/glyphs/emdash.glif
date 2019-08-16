@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="emdash" format="2">
+  <advance width="600"/>
+  <unicode hex="2014"/>
+  <outline>
+    <contour>
+      <point x="13.775844875" y="371" type="line"/>
+      <point x="2.2726403892" y="325"/>
+      <point x="-7.730146120300001" y="285"/>
+      <point x="-19.2333506061" y="239" type="curve" smooth="yes"/>
+      <point x="-20.9838382453" y="232"/>
+      <point x="-17.9841168962" y="228"/>
+      <point x="-10.9841168962" y="228" type="curve" smooth="yes"/>
+      <point x="600.0158831038" y="228" type="line"/>
+      <point x="611.5190875896" y="274"/>
+      <point x="621.5218740991" y="314"/>
+      <point x="633.0250785849" y="360" type="curve" smooth="yes"/>
+      <point x="634.7755662241" y="367"/>
+      <point x="631.775844875" y="371"/>
+      <point x="624.775844875" y="371" type="curve"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.arrowtype.glyphMarkStatus</key>
+      <string>fix</string>
+      <key>public.markColor</key>
+      <string>1,0.65,0.65,1</string>
+    </dict>
+  </lib>
+</glyph>

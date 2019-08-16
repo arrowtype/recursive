@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="E" format="2">
+  <advance width="550"/>
+  <unicode hex="0045"/>
+  <outline>
+    <contour>
+      <point x="35" y="700" type="line"/>
+      <point x="32" y="681"/>
+      <point x="30" y="662"/>
+      <point x="30" y="645" type="curve"/>
+      <point x="30" y="600"/>
+      <point x="41" y="550"/>
+      <point x="76" y="550" type="curve"/>
+      <point x="503" y="550" type="line"/>
+      <point x="508" y="564"/>
+      <point x="510" y="583"/>
+      <point x="510" y="604" type="curve"/>
+      <point x="510" y="636"/>
+      <point x="498" y="700"/>
+      <point x="439" y="700" type="curve"/>
+    </contour>
+    <contour>
+      <point x="190" y="400" type="line"/>
+      <point x="190" y="270" type="line"/>
+      <point x="457" y="270" type="line"/>
+      <point x="459" y="280"/>
+      <point x="460" y="289"/>
+      <point x="460" y="304" type="curve" smooth="yes"/>
+      <point x="460" y="352"/>
+      <point x="437" y="400"/>
+      <point x="379" y="400" type="curve"/>
+    </contour>
+    <contour>
+      <point x="190" y="0" type="curve" smooth="yes"/>
+      <point x="504" y="0" type="line"/>
+      <point x="508" y="15"/>
+      <point x="510" y="37"/>
+      <point x="510" y="58" type="curve"/>
+      <point x="510" y="124"/>
+      <point x="477" y="150"/>
+      <point x="398" y="150" type="curve" smooth="yes"/>
+      <point x="235" y="150" type="line"/>
+      <point x="235" y="252"/>
+      <point x="235" y="355"/>
+      <point x="235" y="457" type="curve" smooth="yes"/>
+      <point x="235" y="499"/>
+      <point x="224" y="527"/>
+      <point x="197" y="544" type="curve"/>
+      <point x="206" y="573" type="line"/>
+      <point x="75" y="573" type="line"/>
+      <point x="75" y="426"/>
+      <point x="75" y="279"/>
+      <point x="75" y="132" type="curve"/>
+      <point x="75" y="70"/>
+      <point x="135" y="0"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.arrowtype.glyphMarkStatus</key>
+      <string>check</string>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+      <key>public.markColor</key>
+      <string>1,1,0,1</string>
+    </dict>
+  </lib>
+</glyph>

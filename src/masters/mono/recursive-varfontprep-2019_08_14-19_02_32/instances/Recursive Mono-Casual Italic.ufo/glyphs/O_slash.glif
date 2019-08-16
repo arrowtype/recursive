@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Oslash" format="2">
+  <advance width="600.0"/>
+  <unicode hex="00D8"/>
+  <anchor x="411.5" y="711.25" name="top"/>
+  <outline>
+    <contour>
+      <point x="588.5" y="770.5" type="curve"/>
+      <point x="578.75" y="775.75"/>
+      <point x="569.5" y="778.25"/>
+      <point x="557.0" y="778.25" type="curve" smooth="yes"/>
+      <point x="529.25" y="778.25"/>
+      <point x="518.75" y="770.25"/>
+      <point x="498.5" y="726.0" type="curve"/>
+      <point x="492.0" y="711.5"/>
+      <point x="485.0" y="697.0"/>
+      <point x="477.5" y="682.0" type="curve"/>
+      <point x="474.5" y="675.75"/>
+      <point x="470.75" y="669.25"/>
+      <point x="467.75" y="663.5" type="curve"/>
+      <point x="382.0" y="483.5"/>
+      <point x="304.0" y="352.5"/>
+      <point x="224.5" y="250.75" type="curve"/>
+      <point x="187.75" y="198.75"/>
+      <point x="159.5" y="155.75"/>
+      <point x="142.0" y="118.0" type="curve"/>
+      <point x="160.75" y="133.5" type="line"/>
+      <point x="128.0" y="133.5" type="line"/>
+      <point x="98.5" y="87.5" type="line"/>
+      <point x="54.25" y="39.75"/>
+      <point x="-18.5" y="-23.25"/>
+      <point x="-62.0" y="-53.25" type="curve"/>
+      <point x="-52.75" y="-61.0"/>
+      <point x="-37.25" y="-65.25"/>
+      <point x="-17.0" y="-65.25" type="curve" smooth="yes"/>
+      <point x="0.0" y="-65.25"/>
+      <point x="14.5" y="-61.75"/>
+      <point x="25.5" y="-53.5" type="curve"/>
+      <point x="63.0" y="-24.5"/>
+      <point x="102.5" y="9.25"/>
+      <point x="140.0" y="48.5" type="curve"/>
+      <point x="145.25" y="53.75"/>
+      <point x="149.5" y="58.5"/>
+      <point x="154.75" y="64.0" type="curve" smooth="yes"/>
+      <point x="260.5" y="175.25"/>
+      <point x="359.0" y="316.75"/>
+      <point x="438.5" y="471.5" type="curve"/>
+      <point x="463.25" y="517.75"/>
+      <point x="481.0" y="564.0"/>
+      <point x="487.75" y="600.5" type="curve"/>
+      <point x="470.75" y="585.25" type="line"/>
+      <point x="517.25" y="585.25" type="line"/>
+      <point x="520.5" y="629.0" type="line"/>
+      <point x="543.25" y="675.25"/>
+      <point x="566.0" y="722.25"/>
+    </contour>
+    <component base="O" yOffset="-0.25"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+      <key>public.markColor</key>
+      <string>1,1,0,1</string>
+    </dict>
+  </lib>
+</glyph>
