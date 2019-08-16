@@ -615,7 +615,6 @@
 			<string>Gcircumflex</string>
 			<string>Gbreve</string>
 			<string>Gdotaccent</string>
-			<string>Gcommaaccent</string>
 			<string>Gcaron</string>
 			<string>H</string>
 			<string>Hcircumflex</string>
@@ -633,16 +632,13 @@
 			<string>J</string>
 			<string>Jcircumflex</string>
 			<string>K</string>
-			<string>Kcommaaccent</string>
 			<string>L</string>
 			<string>Lacute</string>
-			<string>Lcommaaccent</string>
 			<string>Lcaron</string>
 			<string>M</string>
 			<string>N</string>
 			<string>Ntilde</string>
 			<string>Nacute</string>
-			<string>Ncommaaccent</string>
 			<string>Ncaron</string>
 			<string>O</string>
 			<string>Ograve</string>
@@ -659,7 +655,6 @@
 			<string>Q</string>
 			<string>R</string>
 			<string>Racute</string>
-			<string>Rcommaaccent</string>
 			<string>Rcaron</string>
 			<string>S</string>
 			<string>Sacute</string>
@@ -756,7 +751,6 @@
 			<string>gcircumflex</string>
 			<string>gbreve</string>
 			<string>gdotaccent</string>
-			<string>gcommaaccent</string>
 			<string>gcaron</string>
 			<string>h</string>
 			<string>hcircumflex</string>
@@ -773,16 +767,13 @@
 			<string>j</string>
 			<string>jcircumflex</string>
 			<string>k</string>
-			<string>kcommaaccent</string>
 			<string>l</string>
 			<string>lacute</string>
-			<string>lcommaaccent</string>
 			<string>lcaron</string>
 			<string>m</string>
 			<string>n</string>
 			<string>ntilde</string>
 			<string>nacute</string>
-			<string>ncommaaccent</string>
 			<string>ncaron</string>
 			<string>o</string>
 			<string>ograve</string>
@@ -799,7 +790,6 @@
 			<string>q</string>
 			<string>r</string>
 			<string>racute</string>
-			<string>rcommaaccent</string>
 			<string>rcaron</string>
 			<string>s</string>
 			<string>sacute</string>
@@ -1000,8 +990,6 @@
 			<string>sterling</string>
 			<string>currency</string>
 			<string>yen</string>
-			<string>colonmonetary</string>
-			<string>dong</string>
 			<string>Euro</string>
 			<string>florin</string>
 			<string>hryvnia</string>
@@ -1031,25 +1019,36 @@
 			<string>ijacute</string>
 			<string>IJacute</string>
 			<string>.arrowhead</string>
+			<string>Gcommaaccent</string>
+			<string>Kcommaaccent</string>
+			<string>Lcommaaccent</string>
+			<string>Ncommaaccent</string>
 			<string>Nhookleft</string>
+			<string>Rcommaaccent</string>
 			<string>bitcoin</string>
 			<string>cedi</string>
+			<string>colonmonetary</string>
+			<string>dong</string>
 			<string>dotlessij</string>
 			<string>dotlessj</string>
 			<string>fj</string>
+			<string>gcommaaccent</string>
 			<string>guarani</string>
+			<string>kcommaaccent</string>
 			<string>kip</string>
+			<string>lcommaaccent</string>
 			<string>liraTurkish</string>
 			<string>manat</string>
 			<string>naira</string>
+			<string>ncommaaccent</string>
 			<string>newsheqel</string>
 			<string>nhookleft</string>
 			<string>peso</string>
+			<string>rcommaaccent</string>
 			<string>ringacute</string>
 			<string>ruble</string>
 			<string>rupee</string>
 			<string>rupeeIndian</string>
-			<string>slashcomb</string>
 			<string>thai:baht</string>
 			<string>won</string>
 			<string>fi</string>
@@ -1106,21 +1105,38 @@
 			<string>i.mono</string>
 			<string>l.mono</string>
 			<string>lacute.mono</string>
-			<string>lcommaaccent.mono</string>
 			<string>r.mono</string>
 			<string>dotlessi.mono</string>
-			<string>lslash.mono</string>
+			<string>lcommaaccent.mono</string>
 			<string>mu.math</string>
 			<string>g.ss01</string>
 			<string>R.trap</string>
 			<string>g.compact_desc</string>
 			<string>l.sans</string>
 			<string>lacute.sans</string>
-			<string>lcommaaccent.sans</string>
-			<string>lslash.sans</string>
 			<string>zero.sans</string>
 			<string>one.sans</string>
+			<string>lcommaaccent.sans</string>
 			<string>.notdef</string>
+			<string>slashcomb</string>
+			<string>lslash.mono</string>
+			<string>lslash.sans</string>
+			<string>parenleft.case</string>
+			<string>parenright.case</string>
+			<string>bracketleft.case</string>
+			<string>bracketright.case</string>
+			<string>braceleft.case</string>
+			<string>braceright.case</string>
+			<string>guilsinglleft.case</string>
+			<string>guilsinglright.case</string>
+			<string>guillemotleft.case</string>
+			<string>guillemotright.case</string>
+			<string>slash.case</string>
+			<string>backslash.case</string>
+			<string>periodcentered.case</string>
+			<string>bullet.case</string>
+			<string>questiondown.case</string>
+			<string>exclamdown.case</string>
 		</array>
 	</dict>
 </plist>
