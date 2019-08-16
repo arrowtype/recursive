@@ -106,7 +106,7 @@
   <sources>
     <source filename="Recursive Mono-Casual A Slanted.ufo" familyname="Recursive Mono" stylename="Casual A Slanted">
       <location>
-        <!-- <dimension name="Weight" xvalue="250" /> -->
+        <dimension name="Weight" xvalue="250" />
         <dimension name="Weight" xvalue="300" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="0.500000" />
@@ -115,7 +115,7 @@
     </source>
     <source filename="Recursive Mono-Casual A.ufo" familyname="Recursive Mono" stylename="Casual A">
       <location>
-        <!-- <dimension name="Weight" xvalue="250" /> -->
+        <dimension name="Weight" xvalue="250" />
         <dimension name="Weight" xvalue="300" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
@@ -154,25 +154,25 @@
         <dimension name="Expression" xvalue="1" />
       </location>
     </source>
-    <!-- <source filename="Recursive Mono-Casual B Slanted.ufo" familyname="Recursive Mono" stylename="Casual B" layer="support.w.middle">
+    <source filename="Recursive Mono-Casual B Slanted.ufo" familyname="Recursive Mono" stylename="Casual B" layer="support.w.middle">
       <location>
         <dimension name="Weight" xvalue="500" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="0.500000" />
         <dimension name="Expression" xvalue="1" />
       </location>
-    </source> -->
-    <!-- <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B" layer="support.w.middle">
+    </source>
+    <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B" layer="support.w.middle">
       <location>
         <dimension name="Weight" xvalue="500" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
         <dimension name="Expression" xvalue="1" />
       </location>
-    </source> -->
+    </source>
     <source filename="Recursive Mono-Linear A Slanted.ufo" familyname="Recursive Mono" stylename="Linear A Slanted">
       <location>
-        <!-- <dimension name="Weight" xvalue="250" /> -->
+        <dimension name="Weight" xvalue="250" />
         <dimension name="Weight" xvalue="300" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="0.500000" />
@@ -185,7 +185,7 @@
       <features copy="1" />
       <info copy="1" />
       <location>
-        <!-- <dimension name="Weight" xvalue="250" /> -->
+        <dimension name="Weight" xvalue="250" />
         <dimension name="Weight" xvalue="300" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
@@ -224,22 +224,22 @@
         <dimension name="Expression" xvalue="0" />
       </location>
     </source>
-    <!-- <source filename="Recursive Mono-Linear B Slanted.ufo" familyname="Recursive Mono" stylename="Linear B" layer="support.w.middle">
+    <source filename="Recursive Mono-Linear B Slanted.ufo" familyname="Recursive Mono" stylename="Linear B" layer="support.w.middle">
       <location>
         <dimension name="Weight" xvalue="500" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="0.500000" />
         <dimension name="Expression" xvalue="0" />
       </location>
-    </source> -->
-    <!-- <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear B" layer="support.w.middle">
+    </source>
+    <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear B" layer="support.w.middle">
       <location>
         <dimension name="Weight" xvalue="500" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
         <dimension name="Expression" xvalue="0" />
       </location>
-    </source> -->
+    </source>
   </sources>
   <instances>
     <instance familyname="Recursive Mono" stylename="Linear Light" filename="instances/Recursive Mono-Linear Light.ufo">
