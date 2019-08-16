@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <designspace format="4.0">
   <axes>
-    <axis tag="wght" name="Weight" minimum="300" maximum="900" default="300">
+    <axis tag="wght" name="Weight" minimum="300" maximum="900" default="800">
       <labelname xml:lang="en">Weight</labelname>
       <map input="300" output="250" />
       <map input="400" output="350" />
@@ -106,7 +106,8 @@
   <sources>
     <source filename="Recursive Mono-Casual A Slanted.ufo" familyname="Recursive Mono" stylename="Casual A Slanted">
       <location>
-        <dimension name="Weight" xvalue="250" />
+        <!-- <dimension name="Weight" xvalue="250" /> -->
+        <dimension name="Weight" xvalue="300" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="0.500000" />
         <dimension name="Expression" xvalue="1" />
@@ -114,7 +115,8 @@
     </source>
     <source filename="Recursive Mono-Casual A.ufo" familyname="Recursive Mono" stylename="Casual A">
       <location>
-        <dimension name="Weight" xvalue="250" />
+        <!-- <dimension name="Weight" xvalue="250" /> -->
+        <dimension name="Weight" xvalue="300" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
         <dimension name="Expression" xvalue="1" />
@@ -170,7 +172,8 @@
     </source> -->
     <source filename="Recursive Mono-Linear A Slanted.ufo" familyname="Recursive Mono" stylename="Linear A Slanted">
       <location>
-        <dimension name="Weight" xvalue="250" />
+        <!-- <dimension name="Weight" xvalue="250" /> -->
+        <dimension name="Weight" xvalue="300" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="0.500000" />
         <dimension name="Expression" xvalue="0" />
@@ -182,7 +185,8 @@
       <features copy="1" />
       <info copy="1" />
       <location>
-        <dimension name="Weight" xvalue="250" />
+        <!-- <dimension name="Weight" xvalue="250" /> -->
+        <dimension name="Weight" xvalue="300" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
         <dimension name="Expression" xvalue="0" />
