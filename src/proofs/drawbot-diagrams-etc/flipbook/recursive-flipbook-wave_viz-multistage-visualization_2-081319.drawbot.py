@@ -6,18 +6,18 @@ newDrawing() # for drawbot module
 # ---------------------------------------------------------
 # CONFIGURATION -------------------------------------------
 
-prop = 1 # 0 for mono, 1 for sans
+prop = 0 # 0 for mono, 1 for sans
 
 export = True
 autoOpen = True
-book = True
+book = False
 debug = False # overlays curve visualizations
 
-frames = 92 # 192
-frameRate = 1/30 # only applicable to mp4
-format = "pdf" # pdf, gif, or mp4
+frames = 96 # 192
+frameRate = 1/15 # only applicable to mp4
+format = "mp4" # pdf, gif, or mp4
 
-DPI = 72 # dots per inch – must be 72 to print at dimensions set in inches
+DPI = 300 # dots per inch – must be 72 to printed at dimensions set in inches, 300 is nicer for screen display
 
 if book:
     endPages = 4 #4
@@ -519,7 +519,7 @@ for page in range(endPages):
 
 endDrawing()
 
-if save:
+if export:
     now = datetime.datetime.now().strftime("%Y_%m_%d-%H") # -%H_%M_%S
 
     path = f"/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/exports/{docTitle}-{frames + 8}_pages-{now}.{format}"

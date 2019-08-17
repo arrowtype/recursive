@@ -98,7 +98,7 @@ def main():
 
         oldUniqueID = str(getFontNameID(ttfont, 3))
         oldUniqueIDParts = oldUniqueID.split(";")
-        newUniqueID = f"{projectVersion};{oldUniqueIDParts[1]};{newPsName}"
+        newUniqueID = f"{projectVersion.replace('Beta ','')};{oldUniqueIDParts[1]};{newPsName}"
         setFontNameID(ttfont, 3, newUniqueID)
 
         # UPDATE BASIC FONT NAME, id 1
