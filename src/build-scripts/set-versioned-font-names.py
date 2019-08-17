@@ -32,15 +32,24 @@ def getFontNameID(font, ID, platformID=3, platEncID=1):
 
 def setFontNameID(font, ID, newName, platformID=3, platEncID=1, langID=0x409):
 
+    print(f"\n\t• name {ID}:")
     oldName = font['name'].getName(ID, platformID, platEncID)
+    print(f"\n\t\t 🗑 '{oldName}'")
     font['name'].setName(newName, ID, platformID, platEncID, langID)
+    print(f"\n\t\t → '{newName}'")
 
 
-    print(f"\n\t• name {ID}: '{oldName}' → '{newName}'")
 
 parser = argparse.ArgumentParser(description='Print out nameID strings of the fonts')
 
 parser.add_argument('fonts', nargs="+")
+
+parser.add_argument(
+        "-s",
+        "--static",
+        action='store_false',
+        help="Is font static? If so, this will update its versions differently.",
+    )  # xprn
 
 # parser.add_argument('--id', '-i', default='all')
 
@@ -57,6 +66,22 @@ NAME_IDS = {
     16: 'typeFamily'    # Recursive Sans
 }
 
+# important for Name ID 6, which must be less than about 30 characters
+NAME_ABBR = {
+    'Beta': 'B',
+    'Casual': 'Csl',
+    'Linear': 'Lnr',
+    'Italic': 'It',
+    'Light': 'Lt',
+    'Regular': 'Rg',
+    'Medium': 'Md',
+    'SemiBold': 'SBd',
+    'Bold': 'Bd',
+    'ExtraBold': 'XBd',
+    'Black': 'Bk',
+    'Heavy': 'Hv'
+}
+
 def main():
     args = parser.parse_args()
     projectVersion = getVersion()
@@ -67,6 +92,11 @@ def main():
         for nameID in NAME_IDS:
             print(f"{NAME_IDS[nameID].ljust(10)}: {getFontNameID(ttfont, nameID)}")
 
+        # GET NAME ID 17, typographic style name
+
+        styleName = getFontNameID(ttfont, 17)
+        styleNames = styleName.split(' ')
+
         # UPDATE NAME ID 16, typographic family name
         famName = getFontNameID(ttfont, 16)
         newFamName = f"{famName} {projectVersion}"
@@ -75,11 +105,25 @@ def main():
 
         # UPDATE NAME ID 6
         # replace last part of postScript font name, e.g. "LinearA" from "RecursiveMono-LinearA"
-        psName = str(getFontNameID(ttfont, 6))
-        psStyle = psName.split("-")[-1]
-        newPsName = psName.replace(psStyle, f"{projectVersion.replace(' ','_').replace('.','_')}")
+
+        if args.static:
+            print("Static font")
+            psName = str(getFontNameID(ttfont, 6))
+            psStyle = psName.split("-")[-1]
+            newPsName = psName.replace(psStyle, f"{projectVersion.replace(' ','_').replace('1.','_')}")
+
+            for word in styleNames:
+                if word in NAME_ABBR.keys():
+                    newPsName.replace(word, NAME_ABBR[word])
+        else:
+            print("Variable font")
+            psName = str(getFontNameID(ttfont, 6))
+            psFam = psName.split("-")[0]
+            newPsName = psName.replace(psFam, psFam + projectVersion.replace(' ','_').replace('.','_'))
+
         # set new ps name
         setFontNameID(ttfont, 6, newPsName)
+
 
         # VERSION, ID 5 (e.g. "Version 1.005")
 
@@ -92,7 +136,12 @@ def main():
 
         # FULL FONT NAME, ID 4
 
-        setFontNameID(ttfont, 4, newFamName)
+        if args.static:
+            newFamName = newFamName + " " + styleName
+            setFontNameID(ttfont, 4, newFamName)
+        else:
+            setFontNameID(ttfont, 4, newFamName)
+
 
         # UNIQUE FONT NAME, ID 3 (e.g. 1.005;ARRW;RecursiveSans-LinearA)
 
