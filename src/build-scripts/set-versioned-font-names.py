@@ -40,7 +40,7 @@ def setFontNameID(font, ID, newName, platformID=3, platEncID=1, langID=0x409):
 
 # PARSE ARGUMENTS
 
-parser = argparse.ArgumentParser(description='Print out nameID strings of the fonts')
+parser = argparse.ArgumentParser(description='Add version numbering to font name IDs')
 
 parser.add_argument('fonts', nargs="+")
 
@@ -49,6 +49,13 @@ parser.add_argument(
         "--static",
         action='store_false',
         help="Is font static? If so, this will update its versions differently.",
+    )
+
+parser.add_argument(
+        "-i",
+        "--inplace",
+        action='store_false',
+        help="Edit fonts and save under the same filepath, without an added suffix.",
     )  # xprn
 
 NAME_IDS = {
@@ -81,6 +88,8 @@ def main():
     projectVersion = getVersion()
 
     for font_path in args.fonts:
+        print("\n-----------------------------------------\n")
+        print(font_path)
         ttfont = TTFont(font_path)
 
         if args.static is not None:
@@ -96,7 +105,11 @@ def main():
 
         # UPDATE NAME ID 16, typographic family name
         famName = getFontNameID(ttfont, 16)
-        newFamName = f"{famName} {projectVersion}"
+
+        if args.static is not None:
+            newFamName = f"{famName} Static {projectVersion}"
+        else:
+            newFamName = f"{famName} {projectVersion}"
 
         setFontNameID(ttfont, 16, newFamName)
 
@@ -154,7 +167,10 @@ def main():
         setFontNameID(ttfont, 1, newFamName)
 
         # SAVE FONT
-        ttfont.save(font_path + '.fix')
+        if args.inplace is not None:
+            ttfont.save(font_path)
+        else:
+            ttfont.save(font_path + '.fix')
 
 
 if __name__ == '__main__':
