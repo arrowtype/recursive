@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 	<dict>
@@ -514,17 +514,17 @@
 			</dict>
 		</array>
 		<key>com.typemytype.robofont.compileSettings.autohint</key>
-		<true/>
+		<true />
 		<key>com.typemytype.robofont.compileSettings.checkOutlines</key>
-		<false/>
+		<false />
 		<key>com.typemytype.robofont.compileSettings.createDummyDSIG</key>
-		<true/>
+		<true />
 		<key>com.typemytype.robofont.compileSettings.decompose</key>
-		<false/>
+		<false />
 		<key>com.typemytype.robofont.compileSettings.generateFormat</key>
 		<integer>0</integer>
 		<key>com.typemytype.robofont.compileSettings.releaseMode</key>
-		<false/>
+		<false />
 		<key>com.typemytype.robofont.italicSlantOffset</key>
 		<integer>-68</integer>
 		<key>com.typemytype.robofont.segmentType</key>
@@ -1085,6 +1085,44 @@
 			<string>zero.sans</string>
 			<string>one.sans</string>
 			<string>.notdef</string>
+			<string>emdash</string>
+			<string>numbersign</string>
+			<string>perthousand</string>
+			<string>quotesinglbase</string>
+			<string>quotedblbase</string>
+			<string>dagger</string>
+			<string>daggerdbl</string>
+			<string>exclam</string>
+			<string>exclamdown</string>
+			<string>backslash</string>
+			<string>brokenbar</string>
+			<string>partialdiff</string>
+			<string>divisionslash</string>
+			<string>slashcomb</string>
+			<string>exclam.copy_1</string>
+			<string>divisionslash.copy_1</string>
+			<string>lslash.mono</string>
+			<string>mu.math</string>
+			<string>lslash.sans</string>
+			<string>parenleft.case</string>
+			<string>parenright.case</string>
+			<string>bracketleft.case</string>
+			<string>bracketright.case</string>
+			<string>braceleft.case</string>
+			<string>braceright.case</string>
+			<string>guilsinglleft.case</string>
+			<string>guilsinglright.case</string>
+			<string>guillemotleft.case</string>
+			<string>guillemotright.case</string>
+			<string>slash.case</string>
+			<string>backslash.case</string>
+			<string>periodcentered.case</string>
+			<string>bullet.case</string>
+			<string>questiondown.case</string>
+			<string>exclamdown.case</string>
+			<string>oe</string>
+			<string>lcaron</string>
+			<string>Ldot</string>
 		</array>
 	</dict>
 </plist>

@@ -868,7 +868,6 @@
 			<string>Gcircumflex</string>
 			<string>Gbreve</string>
 			<string>Gdotaccent</string>
-			<string>Gcommaaccent</string>
 			<string>Gcaron</string>
 			<string>H</string>
 			<string>Hcircumflex</string>
@@ -886,16 +885,13 @@
 			<string>J</string>
 			<string>Jcircumflex</string>
 			<string>K</string>
-			<string>Kcommaaccent</string>
 			<string>L</string>
 			<string>Lacute</string>
-			<string>Lcommaaccent</string>
 			<string>Lcaron</string>
 			<string>M</string>
 			<string>N</string>
 			<string>Ntilde</string>
 			<string>Nacute</string>
-			<string>Ncommaaccent</string>
 			<string>Ncaron</string>
 			<string>O</string>
 			<string>Ograve</string>
@@ -912,7 +908,6 @@
 			<string>Q</string>
 			<string>R</string>
 			<string>Racute</string>
-			<string>Rcommaaccent</string>
 			<string>Rcaron</string>
 			<string>S</string>
 			<string>Sacute</string>
@@ -1010,7 +1005,6 @@
 			<string>gcircumflex</string>
 			<string>gbreve</string>
 			<string>gdotaccent</string>
-			<string>gcommaaccent</string>
 			<string>gcaron</string>
 			<string>h</string>
 			<string>hcircumflex</string>
@@ -1027,16 +1021,13 @@
 			<string>j</string>
 			<string>jcircumflex</string>
 			<string>k</string>
-			<string>kcommaaccent</string>
 			<string>l</string>
 			<string>lacute</string>
-			<string>lcommaaccent</string>
 			<string>lcaron</string>
 			<string>m</string>
 			<string>n</string>
 			<string>ntilde</string>
 			<string>nacute</string>
-			<string>ncommaaccent</string>
 			<string>ncaron</string>
 			<string>o</string>
 			<string>ograve</string>
@@ -1053,7 +1044,6 @@
 			<string>q</string>
 			<string>r</string>
 			<string>racute</string>
-			<string>rcommaaccent</string>
 			<string>rcaron</string>
 			<string>s</string>
 			<string>sacute</string>
@@ -1299,8 +1289,19 @@
 			<string>IJacute</string>
 			<string>bitcoin</string>
 			<string>.arrowhead</string>
+			<string>Gcommaaccent</string>
+			<string>Kcommaaccent</string>
+			<string>Lcommaaccent</string>
+			<string>Ncommaaccent</string>
+			<string>Rcommaaccent</string>
 			<string>dotlessij</string>
+			<string>gcommaaccent</string>
+			<string>kcommaaccent</string>
+			<string>lcommaaccent</string>
 			<string>liraTurkish</string>
+			<string>ncommaaccent</string>
+			<string>notdef</string>
+			<string>rcommaaccent</string>
 			<string>ringacute</string>
 			<string>rupeeIndian</string>
 			<string>gravecomb.case</string>
@@ -1334,6 +1335,7 @@
 			<string>i.italic</string>
 			<string>j.italic</string>
 			<string>k.italic</string>
+			<string>l.italic</string>
 			<string>m.italic</string>
 			<string>n.italic</string>
 			<string>r.italic</string>
@@ -1351,9 +1353,9 @@
 			<string>i.mono</string>
 			<string>l.mono</string>
 			<string>lacute.mono</string>
-			<string>lcommaaccent.mono</string>
 			<string>r.mono</string>
 			<string>dotlessi.mono</string>
+			<string>lcommaaccent.mono</string>
 			<string>mu.math</string>
 			<string>g.ss01</string>
 			<string>Z.noserif</string>
@@ -1361,15 +1363,13 @@
 			<string>r.simple_italic</string>
 			<string>l.sans</string>
 			<string>lacute.sans</string>
-			<string>lcommaaccent.sans</string>
 			<string>zero.sans</string>
 			<string>one.sans</string>
+			<string>lcommaaccent.sans</string>
 			<string>.notdef</string>
 			<string>slashcomb</string>
 			<string>lslash.mono</string>
 			<string>lslash.sans</string>
-			<string>l.italic</string>
-			<string>notdef</string>
 		</array>
 	</dict>
 </plist>

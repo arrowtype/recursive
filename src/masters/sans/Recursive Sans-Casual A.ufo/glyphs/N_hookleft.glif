@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Nhookleft" format="2">
 	<unicode hex="019D"/>
-	<advance width="600"/>
+	<advance width="650"/>
 	<outline>
 		<contour>
 			<point x="4" y="-90" type="curve" smooth="yes"/>
@@ -30,7 +30,7 @@
 			<point x="80" y="-66"/>
 			<point x="52" y="-90"/>
 		</contour>
-		<component base="N"/>
+		<component base="N" xOffset="-10"/>
 	</outline>
 	<lib>
 		<dict>

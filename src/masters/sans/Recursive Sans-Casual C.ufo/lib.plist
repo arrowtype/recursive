@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 	<dict>
@@ -575,17 +575,17 @@
 			</dict>
 		</array>
 		<key>com.typemytype.robofont.compileSettings.autohint</key>
-		<true/>
+		<true />
 		<key>com.typemytype.robofont.compileSettings.checkOutlines</key>
-		<false/>
+		<false />
 		<key>com.typemytype.robofont.compileSettings.createDummyDSIG</key>
-		<true/>
+		<true />
 		<key>com.typemytype.robofont.compileSettings.decompose</key>
-		<false/>
+		<false />
 		<key>com.typemytype.robofont.compileSettings.generateFormat</key>
 		<integer>0</integer>
 		<key>com.typemytype.robofont.compileSettings.releaseMode</key>
-		<false/>
+		<false />
 		<key>com.typemytype.robofont.italicSlantOffset</key>
 		<integer>0</integer>
 		<key>com.typemytype.robofont.segmentType</key>
@@ -1335,6 +1335,26 @@
 			<string>zero.sans</string>
 			<string>one.sans</string>
 			<string>.notdef</string>
+			<string>slashcomb</string>
+			<string>lslash.mono</string>
+			<string>lslash.sans</string>
+			<string>parenleft.case</string>
+			<string>parenright.case</string>
+			<string>bracketleft.case</string>
+			<string>bracketright.case</string>
+			<string>braceleft.case</string>
+			<string>braceright.case</string>
+			<string>guilsinglleft.case</string>
+			<string>guilsinglright.case</string>
+			<string>guillemotleft.case</string>
+			<string>guillemotright.case</string>
+			<string>slash.case</string>
+			<string>backslash.case</string>
+			<string>periodcentered.case</string>
+			<string>bullet.case</string>
+			<string>questiondown.case</string>
+			<string>exclamdown.case</string>
+			<string>lcaron</string>
 		</array>
 	</dict>
 </plist>
