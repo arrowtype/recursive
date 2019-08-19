@@ -25,28 +25,38 @@ def getVersion():
         return currentVersion
 
 def getFontNameID(font, ID, platformID=3, platEncID=1):
-    name = font['name'].getName(ID, platformID, platEncID)
+    name = str(font['name'].getName(ID, platformID, platEncID))
     return name
 
 # setName(self, string, nameID, platformID, platEncID, langID)
 
 def setFontNameID(font, ID, newName, platformID=3, platEncID=1, langID=0x409):
-
+    print(f"\n\t• name {ID}:")
     oldName = font['name'].getName(ID, platformID, platEncID)
+    print(f"\n\t\t was '{oldName}'")
     font['name'].setName(newName, ID, platformID, platEncID, langID)
+    print(f"\n\t\t now '{newName}'")
 
 
-    print(f"\n\t• name {ID}: '{oldName}' → '{newName}'")
+# PARSE ARGUMENTS
 
-parser = argparse.ArgumentParser(description='Print out nameID strings of the fonts')
+parser = argparse.ArgumentParser(description='Add version numbering to font name IDs')
 
 parser.add_argument('fonts', nargs="+")
 
-# parser.add_argument('--id', '-i', default='all')
+parser.add_argument(
+        "-s",
+        "--static",
+        action='store_false',
+        help="Is font static? If so, this will update its versions differently.",
+    )
 
-namesToVersion = {
-    1
-}
+parser.add_argument(
+        "-i",
+        "--inplace",
+        action='store_false',
+        help="Edit fonts and save under the same filepath, without an added suffix.",
+    )  # xprn
 
 NAME_IDS = {
     1: 'familyName',    # Recursive Sans Linear A
@@ -57,29 +67,76 @@ NAME_IDS = {
     16: 'typeFamily'    # Recursive Sans
 }
 
+# important for Name ID 6, which must be less than about 30 characters
+NAME_ABBR = {
+    'Beta': 'B',
+    'Casual': 'Csl',
+    'Linear': 'Lnr',
+    'Italic': 'It',
+    'Light': 'Lt',
+    'Regular': 'Rg',
+    'Medium': 'Md',
+    'SemiBold': 'SBd',
+    'Bold': 'Bd',
+    'ExtraBold': 'XBd',
+    'Black': 'Bk',
+    'Heavy': 'Hv'
+}
+
 def main():
     args = parser.parse_args()
     projectVersion = getVersion()
 
     for font_path in args.fonts:
+        print("\n-----------------------------------------\n")
+        print(font_path)
         ttfont = TTFont(font_path)
+
+        if args.static is not None:
+            print("NOTE: treating as a static font due to --static option")
 
         for nameID in NAME_IDS:
             print(f"{NAME_IDS[nameID].ljust(10)}: {getFontNameID(ttfont, nameID)}")
 
+        # GET NAME ID 17, typographic style name, to use in name ID 6
+
+        styleName = getFontNameID(ttfont, 17)
+        styleNames = str(styleName).split(' ')
+
         # UPDATE NAME ID 16, typographic family name
         famName = getFontNameID(ttfont, 16)
-        newFamName = f"{famName} {projectVersion}"
+
+        if args.static is not None:
+            newFamName = f"{famName} Static {projectVersion}"
+        else:
+            newFamName = f"{famName} {projectVersion}"
 
         setFontNameID(ttfont, 16, newFamName)
 
         # UPDATE NAME ID 6
         # replace last part of postScript font name, e.g. "LinearA" from "RecursiveMono-LinearA"
-        psName = str(getFontNameID(ttfont, 6))
-        psStyle = psName.split("-")[-1]
-        newPsName = psName.replace(psStyle, f"{projectVersion.replace(' ','_').replace('.','_')}")
+
+        if args.static is not None:
+            psName = str(getFontNameID(ttfont, 6))
+            # psStyle = psName.split("-")[-1]
+            psFam = psName.split("-")[0]
+            newPsName = psName.replace(psFam, f"{psFam}{projectVersion.replace(' ','').replace('1.','_')}")
+
+            for word in styleNames:
+                if word in NAME_ABBR.keys():
+                    newPsName = newPsName.replace(word, NAME_ABBR[word])
+
+            if 'Beta' in newPsName:
+                newPsName = newPsName.replace('Beta', NAME_ABBR['Beta'])
+        else:
+            print("Variable font")
+            psName = str(getFontNameID(ttfont, 6))
+            psFam = psName.split("-")[0]
+            newPsName = psName.replace(psFam, psFam + projectVersion.replace(' ','_').replace('.','_'))
+
         # set new ps name
         setFontNameID(ttfont, 6, newPsName)
+
 
         # VERSION, ID 5 (e.g. "Version 1.005")
 
@@ -92,7 +149,12 @@ def main():
 
         # FULL FONT NAME, ID 4
 
-        setFontNameID(ttfont, 4, newFamName)
+        if args.static is not None:
+            newFamName = newFamName + " " + styleName
+            setFontNameID(ttfont, 4, newFamName)
+        else:
+            setFontNameID(ttfont, 4, newFamName)
+
 
         # UNIQUE FONT NAME, ID 3 (e.g. 1.005;ARRW;RecursiveSans-LinearA)
 
@@ -105,7 +167,10 @@ def main():
         setFontNameID(ttfont, 1, newFamName)
 
         # SAVE FONT
-        ttfont.save(font_path + '.fix')
+        if args.inplace is not None:
+            ttfont.save(font_path)
+        else:
+            ttfont.save(font_path + '.fix')
 
 
 if __name__ == '__main__':
