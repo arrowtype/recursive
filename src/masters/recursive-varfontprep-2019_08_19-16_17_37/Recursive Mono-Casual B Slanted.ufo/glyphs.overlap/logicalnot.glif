@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="logicalnot" format="2">
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="48" y="455" type="line"/>
+			<point x="48" y="449"/>
+			<point x="48" y="443"/>
+			<point x="48" y="436" type="curve" smooth="yes"/>
+			<point x="48" y="385"/>
+			<point x="56" y="358"/>
+			<point x="74" y="340" type="curve" smooth="yes"/>
+			<point x="89" y="325"/>
+			<point x="109" y="320"/>
+			<point x="155" y="320" type="curve"/>
+			<point x="540" y="320" type="line"/>
+			<point x="540" y="333" type="line"/>
+			<point x="540" y="418"/>
+			<point x="520" y="455"/>
+			<point x="467" y="455" type="curve" smooth="yes"/>
+		</contour>
+		<contour>
+			<point x="540" y="138" type="curve"/>
+			<point x="540" y="333" type="line" smooth="yes"/>
+			<point x="540" y="363"/>
+			<point x="495" y="375"/>
+			<point x="409" y="375" type="curve"/>
+			<point x="390" y="375" type="line"/>
+			<point x="390" y="194" type="line"/>
+			<point x="390" y="140"/>
+			<point x="425" y="132"/>
+			<point x="482" y="132" type="curve" smooth="yes"/>
+			<point x="505" y="132"/>
+			<point x="525" y="134"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

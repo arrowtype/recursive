@@ -38,7 +38,28 @@ unicodeNameMatches = {
     "Oogonek":          "01EA",
     "schwa":            "0259",
     "Schwa":            "018F",
-    
+    "Germandbls":       "1e9e",
+    "Nhookleft":        "19d",
+    "bitcoin":          "20bf",
+    "cedi":             "20b5",
+    "dotlessj":         "237",
+    "guarani":          "20b2",
+    "hryvnia":          "20b4",
+    "increment":        "2206",
+    "kip":              "20ad",
+    "litre":            "2113",
+    "manat":            "20bc",
+    "naira":            "20a6",
+    "newsheqel":        "20aa",
+    "ohm":              "2126",
+    "overline":         "203e",
+    "peso":             "20b1",
+    "ruble":            "20bd",
+    "rupee":            "20a8",
+    "tenge":            "20b8",
+    "thai:baht":        "e3f",
+    "won":              "20a9",
+
     # combining accents
     "gravecomb":                "0300",
     "acutecomb":                "0301",
@@ -77,9 +98,9 @@ def addUnicodeForGlyph(g):
                     
 def addUnicodeForTrickyGlyphs(g):
     if g.unicodes == ():
-        uni = unicodeNameMatches.get(g.name, "noUnicode")
+        uni = unicodeNameMatches.get(g.name, "unicode")
         
-        if uni != "noUnicode":
+        if uni != "unicode":
             print(g.name, uni)
             g.unicode = uni
 

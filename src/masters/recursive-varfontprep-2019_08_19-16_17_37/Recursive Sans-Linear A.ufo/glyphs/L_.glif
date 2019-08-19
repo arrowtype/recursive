@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="L" format="2">
+	<unicode hex="004C"/>
+	<advance width="550"/>
+	<outline>
+		<contour>
+			<point x="101" y="0" type="curve" smooth="yes"/>
+			<point x="490" y="0" type="line"/>
+			<point x="490" y="18"/>
+			<point x="477" y="47"/>
+			<point x="459" y="47" type="curve" smooth="yes"/>
+			<point x="140" y="47" type="line"/>
+			<point x="140" y="261"/>
+			<point x="140" y="475"/>
+			<point x="140" y="689" type="curve" smooth="yes"/>
+			<point x="140" y="695"/>
+			<point x="136" y="700"/>
+			<point x="129" y="700" type="curve"/>
+			<point x="116" y="700"/>
+			<point x="103" y="700"/>
+			<point x="90" y="700" type="curve"/>
+			<point x="90" y="667"/>
+			<point x="90" y="633"/>
+			<point x="90" y="600" type="curve"/>
+			<point x="90" y="504"/>
+			<point x="90" y="237"/>
+			<point x="90" y="11" type="curve" smooth="yes"/>
+			<point x="90" y="4"/>
+			<point x="94" y="0"/>
+		</contour>
+		<contour>
+			<point x="440" y="165" type="curve"/>
+			<point x="440" y="123"/>
+			<point x="440" y="73"/>
+			<point x="440" y="31" type="curve"/>
+			<point x="440" y="8"/>
+			<point x="450" y="0"/>
+			<point x="490" y="0" type="curve"/>
+			<point x="490" y="49"/>
+			<point x="490" y="105"/>
+			<point x="490" y="154" type="curve"/>
+			<point x="490" y="160"/>
+			<point x="485" y="165"/>
+			<point x="479" y="165" type="curve" smooth="yes"/>
+			<point x="466" y="165"/>
+			<point x="453" y="165"/>
+		</contour>
+	</outline>
+	<anchor name="top" x="117" y="711"/>
+	<anchor name="bottom" x="290" y="-1"/>
+	<anchor name="dot" x="440" y="400"/>
+	<anchor name="caronslovak" x="380" y="550"/>
+	<lib>
+		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>check</string>
+			<key>public.markColor</key>
+			<string>1,1,0,1</string>
+		</dict>
+	</lib>
+</glyph>

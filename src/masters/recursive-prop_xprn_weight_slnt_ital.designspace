@@ -25,27 +25,43 @@
         </axis>
     </axes>
     <rules>
-        <rules>
-            <rule name="mono">
-                <conditionset>
-                    <condition name="Proportion" minimum="0" maximum="0.510000" />
-                </conditionset>
-                <sub name="f" with="f.mono" />
-                <sub name="g" with="g.mono" />
-                <sub name="i" with="i.mono" />
-                <sub name="l" with="l.mono" />
-                <sub name="r" with="r.mono" />
-                <sub name="fl" with="fl.mono" />
-            </rule>
-            <rule name="sans">
-                <conditionset>
-                    <condition name="Proportion" minimum="0.510000" maximum="1" />
-                </conditionset>
-                <sub name="l" with="l.sans" />
-            </rule>
-        </rules>
-        <rule name="autoitalic">
+        <rule name="mono">
             <conditionset>
+                <condition name="Proportion" minimum="0" maximum="0.510000" />
+                <condition name="Slant" minimum="-7.490000" maximum="0" />
+                <condition name="Italic" minimum="0" maximum="0.890000" />
+            </conditionset>
+            <sub name="f" with="f.mono" />
+            <sub name="g" with="g.mono" />
+            <sub name="i" with="i.mono" />
+            <sub name="l" with="l.mono" />
+            <sub name="r" with="r.mono" />
+            <!-- <sub name="fl" with="fl.mono" /> -->
+            <sub name="lslash" with="lslash.mono" />
+            <sub name="lacute" with="lacute.mono" />
+            <sub name="r" with="r.mono" />
+            <sub name="dotlessi" with="dotlessi.mono" />
+            <sub name="lcommaaccent" with="lcommaaccent.mono" />
+        </rule>
+        <rule name="mono roman">
+            <conditionset>
+                <condition name="Proportion" minimum="0" maximum="0.510000" />
+                <condition name="Italic" minimum="0" maximum="0.090000" />
+            </conditionset>
+            <sub name="f" with="f.mono" />
+            <sub name="g" with="g.mono" />
+            <sub name="i" with="i.mono" />
+            <sub name="l" with="l.mono" />
+            <sub name="lslash" with="lslash.mono" />
+            <sub name="lacute" with="lacute.mono" />
+            <sub name="r" with="r.mono" />
+            <sub name="dotlessi" with="dotlessi.mono" />
+            <sub name="lcommaaccent" with="lcommaaccent.mono" />
+        </rule>
+
+        <rule name="mono autoitalic">
+            <conditionset>
+                <condition name="Proportion" minimum="0" maximum="0.510000" />
                 <condition name="Slant" minimum="-15" maximum="-7.500000" />
                 <condition name="Italic" minimum="0.100000" maximum="1" />
             </conditionset>
@@ -53,7 +69,6 @@
             <sub name="f" with="f.italic" />
             <sub name="g" with="g.italic" />
             <sub name="i" with="i.italic" />
-            <sub name="l" with="l.italic" />
             <sub name="r" with="r.italic" />
             <sub name="y" with="y.italic" />
             <sub name="d" with="d.italic" />
@@ -71,15 +86,15 @@
             <sub name="x" with="x.italic" />
             <sub name="z" with="z.italic" />
         </rule>
-        <rule name="italic">
+        <rule name="mono italic">
             <conditionset>
+                <condition name="Proportion" minimum="0" maximum="0.510000" />
                 <condition name="Italic" minimum="0.900000" maximum="1" />
             </conditionset>
             <sub name="a" with="a.italic" />
             <sub name="f" with="f.italic" />
             <sub name="g" with="g.italic" />
             <sub name="i" with="i.italic" />
-            <sub name="l" with="l.italic" />
             <sub name="r" with="r.italic" />
             <sub name="y" with="y.italic" />
             <sub name="d" with="d.italic" />
@@ -97,9 +112,86 @@
             <sub name="x" with="x.italic" />
             <sub name="z" with="z.italic" />
         </rule>
+
+        <!-- SANS RULES -->
+        <rule name="sans">
+            <conditionset>
+                <condition name="Proportion" minimum="0.510000" maximum="1" />
+                <condition name="Slant" minimum="-15" maximum="0" />
+            </conditionset>
+            <sub name="zero" with="zero.sans" />
+        </rule>
+        <rule name="sans autoroman">
+            <conditionset>
+                <condition name="Proportion" minimum="0.510000" maximum="1" />
+                <condition name="Slant" minimum="-7.49" maximum="0" />
+                <condition name="Italic" minimum="0" maximum="0.89" />
+            </conditionset>
+            <sub name="l" with="l.sans" />
+            <sub name="lslash" with="lslash.sans" />
+        </rule>
+        <rule name="sans roman">
+            <conditionset>
+                <condition name="Proportion" minimum="0.510000" maximum="1" />
+                <condition name="Italic" minimum="0" maximum="0.090000" />
+            </conditionset>
+            <sub name="l" with="l.sans" />
+            <sub name="lslash" with="lslash.sans" />
+        </rule>
+        <rule name="sans autoitalic">
+            <conditionset>
+                <condition name="Proportion" minimum="0.52" maximum="1.0" />
+                <condition name="Slant" minimum="-15" maximum="-7.500000" />
+                <condition name="Italic" minimum="0.100000" maximum="1" />
+            </conditionset>
+            <sub name="a" with="a.italic" />
+            <!-- <sub name="f" with="f.italic" /> -->
+            <sub name="g" with="g.italic" />
+            <sub name="i" with="i.italic" />
+            <!-- <sub name="r" with="r.italic" /> -->
+            <sub name="y" with="y.italic" />
+            <sub name="d" with="d.italic" />
+            <sub name="e" with="e.italic" />
+            <sub name="h" with="h.italic" />
+            <!-- <sub name="j" with="j.italic" /> -->
+            <sub name="n" with="n.italic" />
+            <sub name="u" with="u.italic" />
+            <sub name="c" with="c.italic" />
+            <sub name="k" with="k.italic" />
+            <!-- <sub name="s" with="s.italic" /> -->
+            <sub name="v" with="v.italic" />
+            <sub name="w" with="w.italic" />
+            <sub name="x" with="x.italic" />
+            <!-- <sub name="z" with="z.italic" /> -->
+        </rule>
+        <rule name="italic">
+            <conditionset>
+                <condition name="Proportion" minimum="0.52" maximum="1.0" />
+                <condition name="Italic" minimum="0.900000" maximum="1" />
+            </conditionset>
+            <sub name="a" with="a.italic" />
+            <!-- <sub name="f" with="f.italic" /> -->
+            <sub name="g" with="g.italic" />
+            <sub name="i" with="i.italic" />
+            <!-- <sub name="r" with="r.italic" /> -->
+            <sub name="y" with="y.italic" />
+            <sub name="d" with="d.italic" />
+            <sub name="e" with="e.italic" />
+            <sub name="h" with="h.italic" />
+            <!-- <sub name="j" with="j.italic" /> -->
+            <sub name="n" with="n.italic" />
+            <sub name="u" with="u.italic" />
+            <sub name="c" with="c.italic" />
+            <sub name="k" with="k.italic" />
+            <!-- <sub name="s" with="s.italic" /> -->
+            <sub name="v" with="v.italic" />
+            <sub name="w" with="w.italic" />
+            <sub name="x" with="x.italic" />
+            <!-- <sub name="z" with="z.italic" /> -->
+        </rule>
     </rules>
     <sources>
-        <source filename="Recursive Mono-Casual A Slanted.ufo" familyname="Recursive Mono" stylename="Casual A Italic">
+        <source filename="mono/Recursive Mono-Casual A Slanted.ufo" familyname="Recursive Mono" stylename="Casual A Italic">
             <location>
                 <dimension name="Proportion" xvalue="0" />
                 <dimension name="Expression" xvalue="1" />
@@ -108,7 +200,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Mono-Casual A.ufo" familyname="Recursive Mono" stylename="Casual A">
+        <source filename="mono/Recursive Mono-Casual A.ufo" familyname="Recursive Mono" stylename="Casual A">
             <location>
                 <dimension name="Proportion" xvalue="0" />
                 <dimension name="Expression" xvalue="1" />
@@ -117,7 +209,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Mono-Casual B Slanted.ufo" familyname="Recursive Mono" stylename="Casual B Italic">
+        <source filename="mono/Recursive Mono-Casual B Slanted.ufo" familyname="Recursive Mono" stylename="Casual B Italic">
             <location>
                 <dimension name="Proportion" xvalue="0" />
                 <dimension name="Expression" xvalue="1" />
@@ -126,7 +218,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B">
+        <source filename="mono/Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B">
             <location>
                 <dimension name="Proportion" xvalue="0" />
                 <dimension name="Expression" xvalue="1" />
@@ -135,7 +227,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Mono-Casual C Slanted.ufo" familyname="Recursive Mono" stylename="Casual C Italic">
+        <source filename="mono/Recursive Mono-Casual C Slanted.ufo" familyname="Recursive Mono" stylename="Casual C Italic">
             <location>
                 <dimension name="Proportion" xvalue="0" />
                 <dimension name="Expression" xvalue="1" />
@@ -144,7 +236,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Mono-Casual C.ufo" familyname="Recursive Mono" stylename="Casual C">
+        <source filename="mono/Recursive Mono-Casual C.ufo" familyname="Recursive Mono" stylename="Casual C">
             <location>
                 <dimension name="Proportion" xvalue="0" />
                 <dimension name="Expression" xvalue="1" />
@@ -153,7 +245,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B" layer="support.w.middle">
+        <source filename="mono/Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B" layer="support.w.middle">
             <location>
                 <dimension name="Proportion" xvalue="0" />
                 <dimension name="Expression" xvalue="1" />
@@ -162,7 +254,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Mono-Linear A Slanted.ufo" familyname="Recursive Mono" stylename="Linear A 14 Italic">
+        <source filename="mono/Recursive Mono-Linear A Slanted.ufo" familyname="Recursive Mono" stylename="Linear A 14 Italic">
             <location>
                 <dimension name="Proportion" xvalue="0" />
                 <dimension name="Expression" xvalue="0" />
@@ -171,7 +263,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Mono-Linear A.ufo" familyname="Recursive Mono" stylename="Linear A">
+        <source filename="mono/Recursive Mono-Linear A.ufo" familyname="Recursive Mono" stylename="Linear A">
             <location>
                 <dimension name="Proportion" xvalue="0" />
                 <dimension name="Expression" xvalue="0" />
@@ -180,7 +272,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Mono-Linear B Slanted.ufo" familyname="Recursive Mono" stylename="Linear B 14 Italic">
+        <source filename="mono/Recursive Mono-Linear B Slanted.ufo" familyname="Recursive Mono" stylename="Linear B 14 Italic">
             <location>
                 <dimension name="Proportion" xvalue="0" />
                 <dimension name="Expression" xvalue="0" />
@@ -189,7 +281,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear B">
+        <source filename="mono/Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear B">
             <lib copy="1" />
             <groups copy="1" />
             <features copy="1" />
@@ -202,7 +294,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Mono-Linear C Slanted.ufo" familyname="Recursive Mono" stylename="Linear C Italic">
+        <source filename="mono/Recursive Mono-Linear C Slanted.ufo" familyname="Recursive Mono" stylename="Linear C Italic">
             <location>
                 <dimension name="Proportion" xvalue="0" />
                 <dimension name="Expression" xvalue="0" />
@@ -211,7 +303,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Mono-Linear C.ufo" familyname="Recursive Mono" stylename="Linear C">
+        <source filename="mono/Recursive Mono-Linear C.ufo" familyname="Recursive Mono" stylename="Linear C">
             <location>
                 <dimension name="Proportion" xvalue="0" />
                 <dimension name="Expression" xvalue="0" />
@@ -220,7 +312,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear B" layer="support.w.middle">
+        <source filename="mono/Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear B" layer="support.w.middle">
             <location>
                 <dimension name="Proportion" xvalue="0" />
                 <dimension name="Expression" xvalue="0" />
@@ -235,7 +327,7 @@
         <!-- SANS ============================================================================ -->
 
 
-        <source filename="Recursive Sans-Casual A Slanted.ufo" familyname="Recursive Sans" stylename="Casual A Italic">
+        <source filename="sans/Recursive Sans-Casual A Slanted.ufo" familyname="Recursive Sans" stylename="Casual A Italic">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />
@@ -244,7 +336,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Sans-Casual A.ufo" familyname="Recursive Sans" stylename="Casual A">
+        <source filename="sans/Recursive Sans-Casual A.ufo" familyname="Recursive Sans" stylename="Casual A">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />
@@ -253,7 +345,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Sans-Casual B Slanted.ufo" familyname="Recursive Sans" stylename="Casual B Italic">
+        <source filename="sans/Recursive Sans-Casual B Slanted.ufo" familyname="Recursive Sans" stylename="Casual B Italic">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />
@@ -262,7 +354,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Sans-Casual B.ufo" familyname="Recursive Sans" stylename="Casual B">
+        <source filename="sans/Recursive Sans-Casual B.ufo" familyname="Recursive Sans" stylename="Casual B">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />
@@ -271,7 +363,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Sans-Casual C Slanted.ufo" familyname="Recursive Sans" stylename="Casual C Italic">
+        <source filename="sans/Recursive Sans-Casual C Slanted.ufo" familyname="Recursive Sans" stylename="Casual C Italic">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />
@@ -280,7 +372,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Sans-Casual C.ufo" familyname="Recursive Sans" stylename="Casual C">
+        <source filename="sans/Recursive Sans-Casual C.ufo" familyname="Recursive Sans" stylename="Casual C">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />
@@ -289,7 +381,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Sans-Casual B.ufo" familyname="Recursive Sans" stylename="Casual B" layer="support.w.middle">
+        <source filename="sans/Recursive Sans-Casual B.ufo" familyname="Recursive Sans" stylename="Casual B" layer="support.w.middle">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />
@@ -298,7 +390,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Sans-Linear A Slanted.ufo" familyname="Recursive Sans" stylename="Linear A 14 Italic">
+        <source filename="sans/Recursive Sans-Linear A Slanted.ufo" familyname="Recursive Sans" stylename="Linear A 14 Italic">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="0" />
@@ -307,7 +399,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Sans-Linear A.ufo" familyname="Recursive Sans" stylename="Linear A">
+        <source filename="sans/Recursive Sans-Linear A.ufo" familyname="Recursive Sans" stylename="Linear A">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="0" />
@@ -316,7 +408,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Sans-Linear B Slanted.ufo" familyname="Recursive Sans" stylename="Linear B 14 Italic">
+        <source filename="sans/Recursive Sans-Linear B Slanted.ufo" familyname="Recursive Sans" stylename="Linear B 14 Italic">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="0" />
@@ -325,7 +417,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Sans-Linear B.ufo" familyname="Recursive Sans" stylename="Linear B">
+        <source filename="sans/Recursive Sans-Linear B.ufo" familyname="Recursive Sans" stylename="Linear B">
             <lib copy="1" />
             <groups copy="1" />
             <features copy="1" />
@@ -338,7 +430,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Sans-Linear C Slanted.ufo" familyname="Recursive Sans" stylename="Linear C Italic">
+        <source filename="sans/Recursive Sans-Linear C Slanted.ufo" familyname="Recursive Sans" stylename="Linear C Italic">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="0" />
@@ -347,7 +439,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Sans-Linear C.ufo" familyname="Recursive Sans" stylename="Linear C">
+        <source filename="sans/Recursive Sans-Linear C.ufo" familyname="Recursive Sans" stylename="Linear C">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="0" />
@@ -356,7 +448,7 @@
                 <dimension name="Italic" xvalue="0.5" />
             </location>
         </source>
-        <source filename="Recursive Sans-Linear B.ufo" familyname="Recursive Sans" stylename="Linear B" layer="support.w.middle">
+        <source filename="sans/Recursive Sans-Linear B.ufo" familyname="Recursive Sans" stylename="Linear B" layer="support.w.middle">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="0" />
@@ -378,23 +470,12 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Mono" stylename="Light ExtraItalic" filename="instances/Recursive Mono-Linear Light ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="0" />
-                <dimension name="Expression" xvalue="0" />
-                <dimension name="Weight" xvalue="300" />
-                <dimension name="Slant" xvalue="-15" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
         <instance familyname="Recursive Mono" stylename="Light Italic" filename="instances/Recursive Mono-Linear Light Italic.ufo">
             <location>
                 <dimension name="Proportion" xvalue="0" />
                 <dimension name="Expression" xvalue="0" />
                 <dimension name="Weight" xvalue="300" />
-                <dimension name="Slant" xvalue="-9" />
+                <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
             <kerning />
@@ -416,17 +497,6 @@
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />
                 <dimension name="Weight" xvalue="300" />
-                <dimension name="Slant" xvalue="-9" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Recursive Mono" stylename="Casual Light ExtraItalic" filename="instances/Recursive Mono-Casual Light ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="1" />
-                <dimension name="Weight" xvalue="300" />
                 <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
@@ -444,23 +514,12 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Mono" stylename="ExtraItalic" filename="instances/Recursive Mono-Linear ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="0" />
-                <dimension name="Expression" xvalue="0" />
-                <dimension name="Weight" xvalue="400" />
-                <dimension name="Slant" xvalue="-15" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
         <instance familyname="Recursive Mono" stylename="Italic" filename="instances/Recursive Mono-Linear Italic.ufo">
             <location>
                 <dimension name="Proportion" xvalue="0" />
                 <dimension name="Expression" xvalue="0" />
                 <dimension name="Weight" xvalue="400" />
-                <dimension name="Slant" xvalue="-9" />
+                <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
             <kerning />
@@ -482,17 +541,6 @@
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />
                 <dimension name="Weight" xvalue="400" />
-                <dimension name="Slant" xvalue="-9" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Recursive Mono" stylename="Casual ExtraItalic" filename="instances/Recursive Mono-Casual ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="1" />
-                <dimension name="Weight" xvalue="400" />
                 <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
@@ -510,23 +558,12 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Mono" stylename="Medium ExtraItalic" filename="instances/Recursive Mono-Linear Medium ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="0" />
-                <dimension name="Expression" xvalue="0" />
-                <dimension name="Weight" xvalue="500" />
-                <dimension name="Slant" xvalue="-15" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
         <instance familyname="Recursive Mono" stylename="Medium Italic" filename="instances/Recursive Mono-Linear Medium Italic.ufo">
             <location>
                 <dimension name="Proportion" xvalue="0" />
                 <dimension name="Expression" xvalue="0" />
                 <dimension name="Weight" xvalue="500" />
-                <dimension name="Slant" xvalue="-9" />
+                <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
             <kerning />
@@ -548,17 +585,6 @@
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />
                 <dimension name="Weight" xvalue="500" />
-                <dimension name="Slant" xvalue="-9" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Recursive Mono" stylename="Casual Medium ExtraItalic" filename="instances/Recursive Mono-Casual Medium ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="1" />
-                <dimension name="Weight" xvalue="500" />
                 <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
@@ -576,23 +602,12 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Mono" stylename="SemiBold ExtraItalic" filename="instances/Recursive Mono-Linear SemiBold ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="0" />
-                <dimension name="Expression" xvalue="0" />
-                <dimension name="Weight" xvalue="600" />
-                <dimension name="Slant" xvalue="-15" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
         <instance familyname="Recursive Mono" stylename="SemiBold Italic" filename="instances/Recursive Mono-Linear SemiBold Italic.ufo">
             <location>
                 <dimension name="Proportion" xvalue="0" />
                 <dimension name="Expression" xvalue="0" />
                 <dimension name="Weight" xvalue="600" />
-                <dimension name="Slant" xvalue="-9" />
+                <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
             <kerning />
@@ -614,17 +629,6 @@
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />
                 <dimension name="Weight" xvalue="600" />
-                <dimension name="Slant" xvalue="-9" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Recursive Mono" stylename="Casual SemiBold ExtraItalic" filename="instances/Recursive Mono-Casual SemiBold ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="1" />
-                <dimension name="Weight" xvalue="600" />
                 <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
@@ -642,23 +646,12 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Mono" stylename="Bold ExtraItalic" filename="instances/Recursive Mono-Linear Bold ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="0" />
-                <dimension name="Expression" xvalue="0" />
-                <dimension name="Weight" xvalue="700" />
-                <dimension name="Slant" xvalue="-15" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
         <instance familyname="Recursive Mono" stylename="Bold Italic" filename="instances/Recursive Mono-Linear Bold Italic.ufo">
             <location>
                 <dimension name="Proportion" xvalue="0" />
                 <dimension name="Expression" xvalue="0" />
                 <dimension name="Weight" xvalue="700" />
-                <dimension name="Slant" xvalue="-9" />
+                <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
             <kerning />
@@ -680,17 +673,6 @@
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />
                 <dimension name="Weight" xvalue="700" />
-                <dimension name="Slant" xvalue="-9" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Recursive Mono" stylename="Casual Bold ExtraItalic" filename="instances/Recursive Mono-Casual Bold ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="1" />
-                <dimension name="Weight" xvalue="700" />
                 <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
@@ -708,23 +690,12 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Mono" stylename="ExtraBold ExtraItalic" filename="instances/Recursive Mono-Linear ExtraBold ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="0" />
-                <dimension name="Expression" xvalue="0" />
-                <dimension name="Weight" xvalue="800" />
-                <dimension name="Slant" xvalue="-15" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
         <instance familyname="Recursive Mono" stylename="ExtraBold Italic" filename="instances/Recursive Mono-Linear ExtraBold Italic.ufo">
             <location>
                 <dimension name="Proportion" xvalue="0" />
                 <dimension name="Expression" xvalue="0" />
                 <dimension name="Weight" xvalue="800" />
-                <dimension name="Slant" xvalue="-9" />
+                <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
             <kerning />
@@ -746,17 +717,6 @@
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />
                 <dimension name="Weight" xvalue="800" />
-                <dimension name="Slant" xvalue="-9" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Recursive Mono" stylename="Casual ExtraBold ExtraItalic" filename="instances/Recursive Mono-Casual ExtraBold ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="1" />
-                <dimension name="Weight" xvalue="800" />
                 <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
@@ -774,23 +734,12 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Mono" stylename="Black ExtraItalic" filename="instances/Recursive Mono-Linear Black ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="0" />
-                <dimension name="Expression" xvalue="0" />
-                <dimension name="Weight" xvalue="850" />
-                <dimension name="Slant" xvalue="-15" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
         <instance familyname="Recursive Mono" stylename="Black Italic" filename="instances/Recursive Mono-Linear Black Italic.ufo">
             <location>
                 <dimension name="Proportion" xvalue="0" />
                 <dimension name="Expression" xvalue="0" />
                 <dimension name="Weight" xvalue="850" />
-                <dimension name="Slant" xvalue="-9" />
+                <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
             <kerning />
@@ -812,17 +761,6 @@
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />
                 <dimension name="Weight" xvalue="850" />
-                <dimension name="Slant" xvalue="-9" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Recursive Mono" stylename="Casual Black ExtraItalic" filename="instances/Recursive Mono-Casual Black ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="1" />
-                <dimension name="Weight" xvalue="850" />
                 <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
@@ -840,23 +778,12 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Mono" stylename="Heavy ExtraItalic" filename="instances/Recursive Mono-Linear Heavy ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="0" />
-                <dimension name="Expression" xvalue="0" />
-                <dimension name="Weight" xvalue="900" />
-                <dimension name="Slant" xvalue="-15" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
         <instance familyname="Recursive Mono" stylename="Heavy Italic" filename="instances/Recursive Mono-Linear Heavy Italic.ufo">
             <location>
                 <dimension name="Proportion" xvalue="0" />
                 <dimension name="Expression" xvalue="0" />
                 <dimension name="Weight" xvalue="900" />
-                <dimension name="Slant" xvalue="-9" />
+                <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
             <kerning />
@@ -874,17 +801,6 @@
             <info />
         </instance>
         <instance familyname="Recursive Mono" stylename="Casual Heavy Italic" filename="instances/Recursive Mono-Casual Heavy Italic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="1" />
-                <dimension name="Weight" xvalue="900" />
-                <dimension name="Slant" xvalue="-9" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Recursive Mono" stylename="Casual Heavy ExtraItalic" filename="instances/Recursive Mono-Casual Heavy ExtraItalic.ufo">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />
@@ -911,23 +827,12 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" stylename="Light ExtraItalic" filename="instances/Recursive Sans-Linear Light ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="0" />
-                <dimension name="Weight" xvalue="300" />
-                <dimension name="Slant" xvalue="-15" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
         <instance familyname="Recursive Sans" stylename="Light Italic" filename="instances/Recursive Sans-Linear Light Italic.ufo">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="0" />
                 <dimension name="Weight" xvalue="300" />
-                <dimension name="Slant" xvalue="-9" />
+                <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
             <kerning />
@@ -949,17 +854,6 @@
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />
                 <dimension name="Weight" xvalue="300" />
-                <dimension name="Slant" xvalue="-9" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Recursive Sans" stylename="Casual Light ExtraItalic" filename="instances/Recursive Sans-Casual Light ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="1" />
-                <dimension name="Weight" xvalue="300" />
                 <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
@@ -977,23 +871,12 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" stylename="ExtraItalic" filename="instances/Recursive Sans-Linear ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="0" />
-                <dimension name="Weight" xvalue="400" />
-                <dimension name="Slant" xvalue="-15" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
         <instance familyname="Recursive Sans" stylename="Italic" filename="instances/Recursive Sans-Linear Italic.ufo">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="0" />
                 <dimension name="Weight" xvalue="400" />
-                <dimension name="Slant" xvalue="-9" />
+                <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
             <kerning />
@@ -1015,17 +898,6 @@
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />
                 <dimension name="Weight" xvalue="400" />
-                <dimension name="Slant" xvalue="-9" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Recursive Sans" stylename="Casual ExtraItalic" filename="instances/Recursive Sans-Casual ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="1" />
-                <dimension name="Weight" xvalue="400" />
                 <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
@@ -1043,23 +915,12 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" stylename="Medium ExtraItalic" filename="instances/Recursive Sans-Linear Medium ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="0" />
-                <dimension name="Weight" xvalue="500" />
-                <dimension name="Slant" xvalue="-15" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
         <instance familyname="Recursive Sans" stylename="Medium Italic" filename="instances/Recursive Sans-Linear Medium Italic.ufo">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="0" />
                 <dimension name="Weight" xvalue="500" />
-                <dimension name="Slant" xvalue="-9" />
+                <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
             <kerning />
@@ -1081,17 +942,6 @@
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />
                 <dimension name="Weight" xvalue="500" />
-                <dimension name="Slant" xvalue="-9" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Recursive Sans" stylename="Casual Medium ExtraItalic" filename="instances/Recursive Sans-Casual Medium ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="1" />
-                <dimension name="Weight" xvalue="500" />
                 <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
@@ -1109,23 +959,12 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" stylename="SemiBold ExtraItalic" filename="instances/Recursive Sans-Linear SemiBold ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="0" />
-                <dimension name="Weight" xvalue="600" />
-                <dimension name="Slant" xvalue="-15" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
         <instance familyname="Recursive Sans" stylename="SemiBold Italic" filename="instances/Recursive Sans-Linear SemiBold Italic.ufo">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="0" />
                 <dimension name="Weight" xvalue="600" />
-                <dimension name="Slant" xvalue="-9" />
+                <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
             <kerning />
@@ -1147,17 +986,6 @@
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />
                 <dimension name="Weight" xvalue="600" />
-                <dimension name="Slant" xvalue="-9" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Recursive Sans" stylename="Casual SemiBold ExtraItalic" filename="instances/Recursive Sans-Casual SemiBold ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="1" />
-                <dimension name="Weight" xvalue="600" />
                 <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
@@ -1175,23 +1003,12 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" stylename="Bold ExtraItalic" filename="instances/Recursive Sans-Linear Bold ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="0" />
-                <dimension name="Weight" xvalue="700" />
-                <dimension name="Slant" xvalue="-15" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
         <instance familyname="Recursive Sans" stylename="Bold Italic" filename="instances/Recursive Sans-Linear Bold Italic.ufo">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="0" />
                 <dimension name="Weight" xvalue="700" />
-                <dimension name="Slant" xvalue="-9" />
+                <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
             <kerning />
@@ -1213,17 +1030,6 @@
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />
                 <dimension name="Weight" xvalue="700" />
-                <dimension name="Slant" xvalue="-9" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Recursive Sans" stylename="Casual Bold ExtraItalic" filename="instances/Recursive Sans-Casual Bold ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="1" />
-                <dimension name="Weight" xvalue="700" />
                 <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
@@ -1241,23 +1047,12 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" stylename="ExtraBold ExtraItalic" filename="instances/Recursive Sans-Linear ExtraBold ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="0" />
-                <dimension name="Weight" xvalue="800" />
-                <dimension name="Slant" xvalue="-15" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
         <instance familyname="Recursive Sans" stylename="ExtraBold Italic" filename="instances/Recursive Sans-Linear ExtraBold Italic.ufo">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="0" />
                 <dimension name="Weight" xvalue="800" />
-                <dimension name="Slant" xvalue="-9" />
+                <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
             <kerning />
@@ -1279,17 +1074,6 @@
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />
                 <dimension name="Weight" xvalue="800" />
-                <dimension name="Slant" xvalue="-9" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Recursive Sans" stylename="Casual ExtraBold ExtraItalic" filename="instances/Recursive Sans-Casual ExtraBold ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="1" />
-                <dimension name="Weight" xvalue="800" />
                 <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
@@ -1307,23 +1091,12 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" stylename="Black ExtraItalic" filename="instances/Recursive Sans-Linear Black ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="0" />
-                <dimension name="Weight" xvalue="850" />
-                <dimension name="Slant" xvalue="-15" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
         <instance familyname="Recursive Sans" stylename="Black Italic" filename="instances/Recursive Sans-Linear Black Italic.ufo">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="0" />
                 <dimension name="Weight" xvalue="850" />
-                <dimension name="Slant" xvalue="-9" />
+                <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
             <kerning />
@@ -1345,17 +1118,6 @@
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />
                 <dimension name="Weight" xvalue="850" />
-                <dimension name="Slant" xvalue="-9" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Recursive Sans" stylename="Casual Black ExtraItalic" filename="instances/Recursive Sans-Casual Black ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="1" />
-                <dimension name="Weight" xvalue="850" />
                 <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
@@ -1373,23 +1135,12 @@
             <kerning />
             <info />
         </instance>
-        <instance familyname="Recursive Sans" stylename="Heavy ExtraItalic" filename="instances/Recursive Sans-Linear Heavy ExtraItalic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="0" />
-                <dimension name="Weight" xvalue="900" />
-                <dimension name="Slant" xvalue="-15" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
         <instance familyname="Recursive Sans" stylename="Heavy Italic" filename="instances/Recursive Sans-Linear Heavy Italic.ufo">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="0" />
                 <dimension name="Weight" xvalue="900" />
-                <dimension name="Slant" xvalue="-9" />
+                <dimension name="Slant" xvalue="-15" />
                 <dimension name="Italic" xvalue="1" />
             </location>
             <kerning />
@@ -1407,17 +1158,6 @@
             <info />
         </instance>
         <instance familyname="Recursive Sans" stylename="Casual Heavy Italic" filename="instances/Recursive Sans-Casual Heavy Italic.ufo">
-            <location>
-                <dimension name="Proportion" xvalue="1" />
-                <dimension name="Expression" xvalue="1" />
-                <dimension name="Weight" xvalue="900" />
-                <dimension name="Slant" xvalue="-9" />
-                <dimension name="Italic" xvalue="1" />
-            </location>
-            <kerning />
-            <info />
-        </instance>
-        <instance familyname="Recursive Sans" stylename="Casual Heavy ExtraItalic" filename="instances/Recursive Sans-Casual Heavy ExtraItalic.ufo">
             <location>
                 <dimension name="Proportion" xvalue="1" />
                 <dimension name="Expression" xvalue="1" />

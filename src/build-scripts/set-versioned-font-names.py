@@ -47,14 +47,14 @@ parser.add_argument('fonts', nargs="+")
 parser.add_argument(
         "-s",
         "--static",
-        action='store_false',
+        action='store_true',
         help="Is font static? If so, this will update its versions differently.",
     )
 
 parser.add_argument(
         "-i",
         "--inplace",
-        action='store_false',
+        action='store_true',
         help="Edit fonts and save under the same filepath, without an added suffix.",
     )  # xprn
 
@@ -92,7 +92,7 @@ def main():
         print(font_path)
         ttfont = TTFont(font_path)
 
-        if args.static is not None:
+        if args.static:
             print("NOTE: treating as a static font due to --static option")
 
         for nameID in NAME_IDS:
@@ -106,7 +106,7 @@ def main():
         # UPDATE NAME ID 16, typographic family name
         famName = getFontNameID(ttfont, 16)
 
-        if args.static is not None:
+        if args.static:
             newFamName = f"{famName} Static {projectVersion}"
         else:
             newFamName = f"{famName} {projectVersion}"
@@ -116,7 +116,7 @@ def main():
         # UPDATE NAME ID 6
         # replace last part of postScript font name, e.g. "LinearA" from "RecursiveMono-LinearA"
 
-        if args.static is not None:
+        if args.static:
             psName = str(getFontNameID(ttfont, 6))
             # psStyle = psName.split("-")[-1]
             psFam = psName.split("-")[0]
@@ -149,7 +149,7 @@ def main():
 
         # FULL FONT NAME, ID 4
 
-        if args.static is not None:
+        if args.static:
             newFamName = newFamName + " " + styleName
             setFontNameID(ttfont, 4, newFamName)
         else:
@@ -167,7 +167,7 @@ def main():
         setFontNameID(ttfont, 1, newFamName)
 
         # SAVE FONT
-        if args.inplace is not None:
+        if args.inplace:
             ttfont.save(font_path)
         else:
             ttfont.save(font_path + '.fix')

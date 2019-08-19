@@ -10,16 +10,16 @@ source venv/bin/activate
 
 echo hello
 
-UFOs=$1
+UFOsDir=$1
 
-find $UFOs/* -name '*kerning.plist' -exec sh -c '
+find $UFOsDir/* -name '*kerning.plist' -exec sh -c '
     for file do
         rm "$file"
         echo 🔥 removed "$file"
     done
 ' sh {} +
 
-find $UFOs/* -name '*groups.plist' -exec sh -c '
+find $UFOsDir/* -name '*groups.plist' -exec sh -c '
     for file do
         rm "$file"
         echo 🔥 removed "$file"

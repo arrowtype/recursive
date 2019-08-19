@@ -36,7 +36,7 @@ woff2_compress $outputDir/$fontName--$date.ttf
 
 # add subset base64 of woff2 for testing in CodePen, etc
 
-pyftsubset $outputDir/$fontName--$date--subset.ttf --unicodes="U+0020-007F" --flavor="woff2" --output-file="$outputDir/$fontName--$date--subset.woff2"
+pyftsubset $outputDir/$fontName--$date.ttf --unicodes="U+0020-007F" --flavor="woff2" --output-file="$outputDir/$fontName--$date--subset.woff2"
 
 base64 "$outputDir/$fontName--$date--subset.woff2" > "$outputDir/$fontName--$date--subset.base64"
 
