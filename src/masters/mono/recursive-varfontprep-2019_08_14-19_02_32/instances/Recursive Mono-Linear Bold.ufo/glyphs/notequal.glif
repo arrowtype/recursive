@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="notequal" format="2">
+  <advance width="600.0"/>
+  <unicode hex="2260"/>
+  <outline>
+    <contour>
+      <point x="475.6" y="616.0" type="curve"/>
+      <point x="438.2" y="616.0"/>
+      <point x="402.0" y="616.0"/>
+      <point x="364.6" y="616.0" type="curve" smooth="yes"/>
+      <point x="358.6" y="616.0"/>
+      <point x="354.6" y="614.0"/>
+      <point x="352.6" y="609.0" type="curve" smooth="yes"/>
+      <point x="286.6" y="429.0"/>
+      <point x="228.8" y="270.6"/>
+      <point x="161.8" y="90.6" type="curve" smooth="yes"/>
+      <point x="147.8" y="54.6"/>
+      <point x="133.8" y="17.6"/>
+      <point x="120.8" y="-18.4" type="curve"/>
+      <point x="158.2" y="-18.4"/>
+      <point x="193.4" y="-18.4"/>
+      <point x="230.8" y="-18.4" type="curve" smooth="yes"/>
+      <point x="236.8" y="-18.4"/>
+      <point x="242.8" y="-15.399999999999999"/>
+      <point x="245.8" y="-7.399999999999999" type="curve" smooth="yes"/>
+      <point x="324.8" y="207.6"/>
+      <point x="396.6" y="401.0"/>
+    </contour>
+    <component base="equal"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.arrowtype.glyphMarkStatus</key>
+      <string>check</string>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+      <key>public.markColor</key>
+      <string>1,1,0,1</string>
+    </dict>
+  </lib>
+</glyph>

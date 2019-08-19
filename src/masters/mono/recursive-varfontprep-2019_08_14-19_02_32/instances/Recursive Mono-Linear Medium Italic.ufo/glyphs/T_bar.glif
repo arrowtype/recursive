@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Tbar" format="2">
+  <advance width="600.0"/>
+  <unicode hex="0166"/>
+  <outline>
+    <contour>
+      <point x="103.0" y="365.0" type="line"/>
+      <point x="96.8" y="340.6"/>
+      <point x="91.4" y="320.2"/>
+      <point x="85.2" y="295.4" type="curve" smooth="yes"/>
+      <point x="83.2" y="288.4"/>
+      <point x="85.6" y="284.4"/>
+      <point x="93.2" y="284.4" type="curve" smooth="yes"/>
+      <point x="542.2" y="284.4" type="line"/>
+      <point x="548.4" y="308.79999999999995"/>
+      <point x="553.8" y="329.2"/>
+      <point x="560.0" y="354.0" type="curve" smooth="yes"/>
+      <point x="562.0" y="361.0"/>
+      <point x="559.6" y="365.0"/>
+      <point x="552.0" y="365.0" type="curve"/>
+    </contour>
+    <component base="T"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,1,0,1</string>
+    </dict>
+  </lib>
+</glyph>

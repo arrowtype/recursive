@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="gcommaaccent" format="2">
+  <advance width="600.0"/>
+  <unicode hex="0123"/>
+  <note>
+turned comma accent above
+</note>
+  <outline>
+    <component base="g.italic"/>
+    <component base="commaturnedabovecomb" xOffset="279.2" yOffset="-11.0"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0,0,0.1505</string>
+    </dict>
+  </lib>
+</glyph>

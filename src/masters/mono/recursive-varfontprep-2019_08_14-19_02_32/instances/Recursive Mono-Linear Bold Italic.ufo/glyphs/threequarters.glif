@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="threequarters" format="2">
+  <advance width="600.0"/>
+  <unicode hex="00BE"/>
+  <outline>
+    <contour>
+      <point x="402.8" y="405.0" type="curve"/>
+      <point x="422.2" y="405.0"/>
+      <point x="452.0" y="405.0"/>
+      <point x="483.4" y="405.0" type="curve" smooth="yes"/>
+      <point x="488.4" y="405.0"/>
+      <point x="490.4" y="406.0"/>
+      <point x="494.4" y="412.0" type="curve" smooth="yes"/>
+      <point x="558.2" y="505.4"/>
+      <point x="623.0" y="600.4"/>
+      <point x="688.4" y="697.0" type="curve" smooth="yes"/>
+      <point x="693.6" y="705.0"/>
+      <point x="691.4" y="710.0"/>
+      <point x="683.4" y="710.0" type="curve" smooth="yes"/>
+      <point x="642.0" y="710.0"/>
+      <point x="611.5999999999999" y="710.0"/>
+      <point x="563.4" y="710.0" type="curve"/>
+      <point x="511.40000000000003" y="611.1999999999999"/>
+      <point x="457.20000000000005" y="507.8"/>
+    </contour>
+    <contour>
+      <point x="238.0" y="296.0" type="curve"/>
+      <point x="218.6" y="296.0"/>
+      <point x="188.79999999999998" y="296.0"/>
+      <point x="157.4" y="296.0" type="curve" smooth="yes"/>
+      <point x="152.4" y="296.0"/>
+      <point x="149.6" y="295.0"/>
+      <point x="145.4" y="289.0" type="curve" smooth="yes"/>
+      <point x="81.80000000000001" y="193.2"/>
+      <point x="17.0" y="97.39999999999999"/>
+      <point x="-47.6" y="4.0" type="curve" smooth="yes"/>
+      <point x="-53.6" y="-4.0"/>
+      <point x="-50.6" y="-9.0"/>
+      <point x="-42.6" y="-9.0" type="curve" smooth="yes"/>
+      <point x="-1.1999999999999988" y="-9.0"/>
+      <point x="29.19999999999999" y="-9.0"/>
+      <point x="77.4" y="-9.0" type="curve"/>
+      <point x="130.8" y="93.0"/>
+      <point x="184.4" y="194.0"/>
+    </contour>
+    <component base="threesuperior" xOffset="-128.0"/>
+    <component base="fourinferior" xOffset="116.0"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+      <key>public.markColor</key>
+      <string>0.1278,0.9998,0.999,1</string>
+    </dict>
+  </lib>
+</glyph>
