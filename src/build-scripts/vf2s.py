@@ -21,26 +21,31 @@ import argparse
 from fontTools.ttLib import TTFont
 from fontTools.varLib.mutator import instantiateVariableFont
 
-SCRIPT_VERSION = "v0.6.0"
+SCRIPT_VERSION = "v0.6.1"
 
 # Define font name for font path and name table re-writes
 
-FONTNAME = "Iterative SemiCasual"
+FONTNAME = "Recursive SemiCasual"
 
 # Default axis values (when not explicitly included on the command line)
+DEFAULT_EXPRESSION = 0.0
 DEFAULT_WEIGHT = 400
 DEFAULT_SLANT = 0.0
-DEFAULT_EXPRESSION = 0.0
+DEFAULT_ITALIC = 0.5
 
 # Min/Max of design axis range values for validity checking command line entries
-WEIGHT_MIN = 300
-WEIGHT_MAX = 1100
-
-SLANT_MIN = 0.0
-SLANT_MAX = 14.04
-
 EXPRESSION_MIN = 0
 EXPRESSION_MAX = 1
+
+WEIGHT_MIN = 300
+WEIGHT_MAX = 900
+
+SLANT_MIN = 0.0
+SLANT_MAX = -15.0
+
+ITALIC_MIN = 0.0
+ITALIC_MAX = 1.0
+
 
 # macOS rendering bit
 # used for workaround fix for fontTools varLib.mutator bug
@@ -63,6 +68,13 @@ def main():
         description="A variable font to static instance generator."
     )
     parser.add_argument(
+        "-x",
+        "--expression",
+        default=DEFAULT_EXPRESSION,
+        type=float,
+        help="Expression axis value ({}-{})".format(EXPRESSION_MIN, EXPRESSION_MAX),
+    )  # xprn
+    parser.add_argument(
         "-w",
         "--weight",
         default=DEFAULT_WEIGHT,
@@ -77,11 +89,11 @@ def main():
         help="Slant axis value ({}-{})".format(SLANT_MIN, SLANT_MAX),
     )  # slnt
     parser.add_argument(
-        "-x",
-        "--expression",
-        default=DEFAULT_EXPRESSION,
+        "-i",
+        "--italic",
+        default=DEFAULT_SLANT,
         type=float,
-        help="Expression axis value ({}-{})".format(EXPRESSION_MIN, EXPRESSION_MAX),
+        help="Italic axis value ({}-{})".format(ITALIC_MIN, ITALIC_MAX),
     )  # slnt
     parser.add_argument(
         "-v",
@@ -112,16 +124,6 @@ def main():
             sys.exit(1)
         else:
             instance_location["wght"] = args.weight
-    if args.slant is not None:
-        if args.slant < SLANT_MIN or args.slant > SLANT_MAX:
-            sys.stderr.write(
-                "Slant axis value must be in the range {} - {}{}".format(
-                    SLANT_MIN, SLANT_MAX, os.linesep
-                )
-            )
-            sys.exit(1)
-        else:
-            instance_location["slnt"] = args.slant
     if args.expression is not None:
         if args.expression < EXPRESSION_MIN or args.expression > EXPRESSION_MAX:
             sys.stderr.write(
@@ -132,6 +134,30 @@ def main():
             sys.exit(1)
         else:
             instance_location["XPRN"] = args.expression
+    if args.slant is not None:
+        # slant is negative, 0 to -15
+        # SLANT_MIN = 0.0
+        # SLANT_MAX = -15.0
+        if args.slant > SLANT_MIN or args.slant < SLANT_MAX:
+            sys.stderr.write(
+                "Slant axis value must be in the range {} - {}{}".format(
+                    SLANT_MIN, SLANT_MAX, os.linesep
+                )
+            )
+            sys.exit(1)
+        else:
+            instance_location["slnt"] = args.slant
+        instance_location["slnt"] = args.slant
+    if args.italic is not None:
+        if args.italic < ITALIC_MIN or args.italic > ITALIC_MAX:
+            sys.stderr.write(
+                "Italic axis value must be in the range {} - {}{}".format(
+                    ITALIC_MIN, ITALIC_MAX, os.linesep
+                )
+            )
+            sys.exit(1)
+        else:
+            instance_location["ital"] = args.italic
 
     # variable font path check
     if not os.path.exists(args.path):
@@ -159,9 +185,10 @@ def main():
         axis_param_string += "{}{}".format(axis_value, instance_location[axis_value])
 
     # map axis name to an abbreviation in font path and name table record string values
+    axis_param_string = axis_param_string.replace("XPRN", "xp")
     axis_param_string = axis_param_string.replace("wght", "wg")
     axis_param_string = axis_param_string.replace("slnt", "sl")
-    axis_param_string = axis_param_string.replace("XPRN", "xp")
+    axis_param_string = axis_param_string.replace("ital", "it")
 
     # name definitions (NEEDS TO BE MODIFIED TO SUPPORT STYLES OTHER THAN REGULAR)
     nameID1_name = "{}".format(FONTNAME)
@@ -172,6 +199,8 @@ def main():
     outfont_path = os.path.join(
         os.path.dirname(os.path.abspath(args.path)), outfont_name.replace(" ", "_")
     )
+
+    # TODO: update unique font identifier, name 3
 
     for record in namerecord_list:
         if record.nameID == 1:

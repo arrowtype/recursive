@@ -10,11 +10,23 @@ Extract frames to jpg:
 
 '''
 
+from drawBot import * # requires drawbot to be installed as module
+import datetime
 import os
+newDrawing() # for drawbot module
 
 # newPage()
 
-folderOfFrames = "~/Downloads/bike-stills/"
+prop = 0
+export=True
+autoOpen = True
+
+if prop is 0:
+    folderOfFrames = "src/proofs/drawbot-diagrams-etc/filmFrames2grid/mono-stills"
+    outputName = "flipbook-frames-mono"
+else:
+    folderOfFrames = "src/proofs/drawbot-diagrams-etc/filmFrames2grid/sans-stills"
+    outputName = "flipbook-frames-sans"
 
 W = 6 * 72
 H = 8.5 * 72
@@ -43,10 +55,24 @@ print(imageScale)
 padding = 8
 
 #TODO: figure out how to properly size the image grid based on page size. scale() is just a temporary hack for this. 
-scale(0.9)
 
 stillSize = W/(cols) - (padding/W * (cols + 1))
 print(stillSize)
+
+# fill(0,0.1,1)
+fill(0)
+rect(0,0,W,H)
+
+bg = ImageObject()
+with bg:
+    # set a size for the image
+    size(1100, 1100)
+    # draw something
+    # fill(0.1, 0.2, 1)
+    fill(0)
+    rect(0, 0, width(), height())
+
+scale(0.85)
     
 for currentRow in range(rows):
     
@@ -58,8 +84,12 @@ for currentRow in range(rows):
         x = (stillSize * currentCol) + (padding*currentCol) + padding
         
         im = ImageObject(stillsList[still])
+
+        
         
         print(still)
+
+        
         
         with savedState():
             scale(imageScale)
@@ -67,6 +97,9 @@ for currentRow in range(rows):
             print(x,y)
             
             stroke(1,1,0)            
+            # im.vibrance(-1)
+            # im.colorControls(saturation=0.001)
+            im.screenBlendMode(backgroundImage=bg)
             # rect(x* (1/imageScale), y* (1/imageScale), 1080, 1080) 
             image(im, (x* (1/imageScale),y* (1/imageScale)))
 
@@ -75,5 +108,20 @@ for currentRow in range(rows):
         still = still + 1
         
 
-saveImage("exports/grid-of-frames--test-2.png")
         
+endDrawing()
+
+if export:
+    now = datetime.datetime.now().strftime("%Y_%m_%d-%H_%M") # -%H_%M_%S
+
+    path = f"src/proofs/drawbot-diagrams-etc/filmFrames2grid/exports/{outputName}-{now}.pdf"
+
+    print("saved to ", path)
+
+    saveImage(path)
+
+    if autoOpen:
+        import os
+        # os.system(f"open --background -a Preview {path}")
+        os.system(f"open -a Preview {path}")
+
