@@ -8,12 +8,12 @@ newDrawing() # for drawbot module
 
 prop = 0 # 0 for mono, 1 for sans
 
-export = True
-autoOpen = True
+export = False
+autoOpen = False
 book = False
 debug = False # overlays curve visualizations
 
-frames = 96 # 192
+frames = 48         # 192
 frameRate = 1/15 # only applicable to mp4
 format = "mp4" # pdf, gif, or mp4
 
@@ -201,8 +201,6 @@ if book:
         drawMargins()
 
     overflow = textBox(description, (marginLeft,marginBottom - textSize * 0.85 + (H * 0.05), W - (marginLeft * 2)- marginLeft * 0.4, H * 0.75 - marginBottom))
-
-    print(overflow)
     
     newPage(W, H)
     fill(background)
@@ -326,31 +324,19 @@ for frame in range(frames):
     italVals = getItalValue(t)
 
     fontVariations(wght=wghtVals[0], XPRN=xprnVals[0], slnt=slntVals, ital=italVals)
-
-    
-
-    # print(round(slntVal, 2), round(wghtVal, 2))
     
     size = padding * 0.375
 
-    # fill(1,0,0)
-
-    # rect(0,0,100,100)
     fill(foreground)
     
     fontSize(rwSize)
     overflow = textBox("rw", (0, padding - rwSize*0.21, W, rwSize*1.25), align="center")
-    # a text box returns text overflow
-    # text that did not make it into the box
-    print(overflow)
-
 
     # ----------------------------------------------------------------------
     # BAR CHARTS / SLIDERS FOR AXES ----------------------------------------
     
     x = str('{:4.2f}'.format(xprnVals[0]))
-    w = str('{:3.2f}'.format(wghtVals[0]))
-    # s = str('{:05.2f}'.format(abs(slntVals)))
+    w = str('{:3.2f}'.format(wghtVals[0]))    
     s = str('{:5.2f}'.format(slntVals))
     i = str('{:4.2f}'.format(italVals))
     p = str('{:4.2f}'.format(prop))
@@ -473,8 +459,6 @@ for frame in range(frames):
     #     fontVariations(wght=400, XPRN=xprnVals[0], slnt=0, ital=0)
 
     footerHeight = marginBottom*0.75
-    
-    print(marginLeft)
 
     if prop == 0:
         textBox("Recursive Mono", (marginLeft, footerHeight, (W- (marginLeft*2)), textSize*1.5), align="left")
@@ -489,10 +473,6 @@ for frame in range(frames):
         textBox(str(frames-(frame)), (marginLeft, footerHeight, (W- (marginLeft*2)), textSize*1.5), align="right") # reverse
     else:
         textBox(str(frame + 1), (marginLeft, footerHeight, (W- (marginLeft*2)), textSize*1.5), align="right") # forward
-
-
-
-    
     
     print("T: " + str(t))
     # ----------------------------------------------------------------------

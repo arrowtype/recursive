@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="degree" format="2">
+  <advance width="600.0"/>
+  <unicode hex="00B0"/>
+  <outline>
+    <contour>
+      <point x="300.0" y="710.0" type="curve" smooth="yes"/>
+      <point x="193.0" y="710.0"/>
+      <point x="125.0" y="654.0"/>
+      <point x="125.0" y="566.0" type="curve" smooth="yes"/>
+      <point x="125.0" y="504.0" type="line" smooth="yes"/>
+      <point x="125.0" y="415.0"/>
+      <point x="193.0" y="359.0"/>
+      <point x="300.0" y="359.0" type="curve"/>
+      <point x="407.0" y="359.0"/>
+      <point x="475.0" y="415.0"/>
+      <point x="475.0" y="504.0" type="curve" smooth="yes"/>
+      <point x="475.0" y="566.0" type="line" smooth="yes"/>
+      <point x="475.0" y="654.0"/>
+      <point x="407.0" y="710.0"/>
+    </contour>
+    <contour>
+      <point x="300.0" y="456.0" type="curve" smooth="yes"/>
+      <point x="273.0" y="456.0"/>
+      <point x="252.0" y="463.0"/>
+      <point x="240.0" y="475.0" type="curve" smooth="yes"/>
+      <point x="230.0" y="485.0"/>
+      <point x="225.0" y="497.0"/>
+      <point x="225.0" y="513.0" type="curve" smooth="yes"/>
+      <point x="225.0" y="556.0" type="line" smooth="yes"/>
+      <point x="225.0" y="593.0"/>
+      <point x="253.0" y="613.0"/>
+      <point x="300.0" y="613.0" type="curve" smooth="yes"/>
+      <point x="328.0" y="613.0"/>
+      <point x="349.0" y="606.0"/>
+      <point x="361.0" y="593.0" type="curve" smooth="yes"/>
+      <point x="370.0" y="584.0"/>
+      <point x="375.0" y="572.0"/>
+      <point x="375.0" y="556.0" type="curve" smooth="yes"/>
+      <point x="375.0" y="513.0" type="line" smooth="yes"/>
+      <point x="375.0" y="477.0"/>
+      <point x="347.0" y="456.0"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+      <key>public.markColor</key>
+      <string>1,1,0,1</string>
+    </dict>
+  </lib>
+</glyph>

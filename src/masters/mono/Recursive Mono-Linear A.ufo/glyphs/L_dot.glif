@@ -3,28 +3,7 @@
 	<unicode hex="013F"/>
 	<advance width="600"/>
 	<outline>
-		<contour>
-			<point x="415" y="357" type="curve"/>
-			<point x="415" y="431" type="line" smooth="yes"/>
-			<point x="415" y="438"/>
-			<point x="411" y="442"/>
-			<point x="404" y="442" type="curve"/>
-			<point x="379" y="442"/>
-			<point x="355" y="442"/>
-			<point x="330" y="442" type="curve"/>
-			<point x="330" y="368" type="line" smooth="yes"/>
-			<point x="330" y="361"/>
-			<point x="334" y="357"/>
-			<point x="341" y="357" type="curve" smooth="yes"/>
-			<point x="366" y="357"/>
-			<point x="390" y="357"/>
-		</contour>
 		<component base="L"/>
+		<component base="dotaccentcomb" xOffset="430" yOffset="-316"/>
 	</outline>
-	<lib>
-		<dict>
-			<key>public.markColor</key>
-			<string>1,0.7179,0,1</string>
-		</dict>
-	</lib>
 </glyph>

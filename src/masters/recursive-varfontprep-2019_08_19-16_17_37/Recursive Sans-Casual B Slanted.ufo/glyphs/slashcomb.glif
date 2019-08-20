@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="slashcomb" format="2">
+	<outline>
+		<contour>
+			<point x="413" y="562" type="curve"/>
+			<point x="256" y="488" type="line" smooth="yes"/>
+			<point x="227" y="474"/>
+			<point x="195" y="477"/>
+			<point x="164" y="463" type="curve" smooth="yes"/>
+			<point x="91" y="431" type="line" smooth="yes"/>
+			<point x="34" y="406"/>
+			<point x="15" y="383"/>
+			<point x="2" y="333" type="curve" smooth="yes"/>
+			<point x="-3" y="314"/>
+			<point x="-5" y="293"/>
+			<point x="-6" y="274" type="curve"/>
+			<point x="130" y="337" type="line" smooth="yes"/>
+			<point x="163" y="352"/>
+			<point x="198" y="351"/>
+			<point x="232" y="366" type="curve" smooth="yes"/>
+			<point x="276" y="386" type="line" smooth="yes"/>
+			<point x="372" y="430"/>
+			<point x="393" y="453"/>
+			<point x="408" y="513" type="curve" smooth="yes"/>
+			<point x="412" y="529"/>
+			<point x="414" y="546"/>
+		</contour>
+	</outline>
+	<anchor name="_slash" x="200" y="416"/>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>1,1,0,1</string>
+		</dict>
+	</lib>
+</glyph>

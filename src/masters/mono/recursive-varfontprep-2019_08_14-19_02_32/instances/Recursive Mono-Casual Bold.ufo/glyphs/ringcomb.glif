@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ringcomb" format="2">
+  <unicode hex="030A"/>
+  <anchor x="0.0" y="546.2" name="_top"/>
+  <anchor x="0.0" y="841.8" name="top"/>
+  <outline>
+    <contour>
+      <point x="3.0" y="858.4" type="curve" smooth="yes"/>
+      <point x="-75.80000000000001" y="858.4"/>
+      <point x="-133.0" y="804.8000000000001"/>
+      <point x="-133.0" y="727.5999999999999" type="curve" smooth="yes"/>
+      <point x="-133.0" y="720.8" type="line" smooth="yes"/>
+      <point x="-133.0" y="645.0"/>
+      <point x="-77.80000000000001" y="594.8000000000001"/>
+      <point x="-3.0" y="594.8000000000001" type="curve" smooth="yes"/>
+      <point x="75.80000000000001" y="594.8000000000001"/>
+      <point x="133.0" y="649.1999999999999"/>
+      <point x="133.0" y="726.4" type="curve" smooth="yes"/>
+      <point x="133.0" y="733.1999999999999" type="line" smooth="yes"/>
+      <point x="133.0" y="808.2"/>
+      <point x="78.2" y="858.4"/>
+    </contour>
+    <contour>
+      <point x="3.4" y="784.1999999999999" type="curve" smooth="yes"/>
+      <point x="18.599999999999998" y="784.1999999999999"/>
+      <point x="29.2" y="780.6"/>
+      <point x="40.0" y="771.0" type="curve"/>
+      <point x="47.8" y="762.2"/>
+      <point x="51.4" y="750.8"/>
+      <point x="51.4" y="737.0" type="curve" smooth="yes"/>
+      <point x="51.4" y="730.1999999999999" type="line" smooth="yes"/>
+      <point x="51.4" y="701.0"/>
+      <point x="30.599999999999998" y="681.0"/>
+      <point x="-1.0" y="681.0" type="curve" smooth="yes"/>
+      <point x="-17.8" y="681.0"/>
+      <point x="-30.799999999999997" y="683.8000000000001"/>
+      <point x="-43.199999999999996" y="694.2" type="curve"/>
+      <point x="-48.6" y="702.1999999999999"/>
+      <point x="-51.4" y="713.5999999999999"/>
+      <point x="-51.4" y="725.0" type="curve" smooth="yes"/>
+      <point x="-51.4" y="731.8" type="line" smooth="yes"/>
+      <point x="-51.4" y="765.0"/>
+      <point x="-31.199999999999996" y="784.1999999999999"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+    </dict>
+  </lib>
+</glyph>

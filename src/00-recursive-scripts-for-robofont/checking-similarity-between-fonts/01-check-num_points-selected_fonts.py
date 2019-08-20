@@ -110,7 +110,6 @@ for glyphName in sorted(problemGlyphs):
     print(f"{glyphName}\n")
 
     # If glyph has different point counts in different fonts, report
-    # if len(set(pointsDict[glyphName].keys())) != 1:
     if glyphName in glyphsWithUnevenPoints:
 
         print(f"\t{'Font'.ljust(maxFontNameLength + 1)} |  Pts | 📊") # add contour count? segment count?
@@ -124,7 +123,6 @@ for glyphName in sorted(problemGlyphs):
         print("")
 
     # If glyph is not in all fonts, report
-    # if len(pointsDict[glyphName]) != len(fonts):
     if glyphName in glyphsNotInAllFonts:
         # print("\tGlyph is not in all fonts.\n")
         print("\tIs in:\n\t------------------")
