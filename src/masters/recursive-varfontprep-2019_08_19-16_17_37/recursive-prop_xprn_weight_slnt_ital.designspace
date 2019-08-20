@@ -136,7 +136,7 @@
     </rule>
     <rule name="sans autoitalic">
       <conditionset>
-        <condition name="Proportion" minimum="0.520000" maximum="1" />
+        <condition name="Proportion" minimum="0.510000" maximum="1" />
         <condition name="Slant" minimum="-15" maximum="-7.500000" />
         <condition name="Italic" minimum="0.100000" maximum="1" />
       </conditionset>
@@ -157,7 +157,7 @@
     </rule>
     <rule name="italic">
       <conditionset>
-        <condition name="Proportion" minimum="0.520000" maximum="1" />
+        <condition name="Proportion" minimum="0.510000" maximum="1" />
         <condition name="Italic" minimum="0.900000" maximum="1" />
       </conditionset>
       <sub name="a" with="a.italic" />
