@@ -1,6 +1,6 @@
 # !/bin/bash
 
-set -ex
+set -e
 source venv/bin/activate
 
 # use designspace as argument
@@ -15,7 +15,7 @@ fi
 # ---------------------------------------------------------
 # FontMake ------------------------------------------------
 
-outputDir="font-betas/work-in-progress"
+outputDir="font-betas"
 dsName=$(basename $DS)
 fontName=${dsName/".designspace"/""}
 
