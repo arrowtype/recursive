@@ -23,15 +23,11 @@ parser = argparse.ArgumentParser(description='Add version numbering to font name
 
 parser.add_argument('fonts', nargs="+")
 
-def saveToJSON(fontPath, widthDict):
-    filename, file_extension = os.path.splitext(fontPath)
+def saveToJSON(dictionary, path):
+    with open(path, 'w') as fp:
+        json.dump(dictionary, fp, indent=4, sort_keys=True)
 
-    jsonPath = f'{filename}-glyph_widths.json'
-
-    with open(jsonPath, 'w') as fp:
-        json.dump(widthDict, fp, indent=4, sort_keys=True)
-
-    print(f'Glyph width data saved to {jsonPath}')
+    print(f'Glyph width data saved to "{path}"')
 
 
 
@@ -46,20 +42,35 @@ def main():
         print(font_path)
         ttfont = TTFont(font_path)
 
-        for glyphName in ttfont.getGlyphNames():
-            print(".")
+        print(type(ttfont["cmap"].getBestCmap()))
 
-            if ttfont['hmtx'][glyphName][0] != 600:
+        unicodesDict = {}
+
+        for key in ttfont["cmap"].getBestCmap().keys():
+            glyphName = ttfont["cmap"].getBestCmap()[key]
+            unicodesDict[glyphName] = key
+
+        print(unicodesDict)
+
+        for glyphName in ttfont.getGlyphNames():
+
+            if ttfont['hmtx'][glyphName][0] == 600:
+                print(".")
+            else:
                 print(glyphName)
                 print(ttfont['hmtx'][glyphName][0])
-                glyphWidths[glyphName] = ttfont['hmtx'][glyphName][0]
 
-
-        saveToJSON(font_path, glyphWidths)
+                if glyphName in unicodesDict.keys():
+                    glyphUnicode = str(unicodesDict[glyphName])
+                    glyphWidths[glyphUnicode] = [ttfont['hmtx'][glyphName][0], glyphName]
+                else:
+                    glyphWidths[glyphName] = [ttfont['hmtx'][glyphName][0]]
 
         
+        filename, file_extension = os.path.splitext(font_path)
+        jsonPath = f'{filename}-glyph_widths.json'
+        saveToJSON(glyphWidths, jsonPath)
 
-        
 
 
 

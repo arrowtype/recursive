@@ -10,8 +10,6 @@ import pprint
 
 glyphsToIgnore = ""
 
-# R.trap Z.noserif ampersand.code_experimental_2 ampersand.code_experimental_3 ampersand.crossbar at.simple at.short at.replaced_with_prop dagger.daggery g.extra g.long_desc g.longtail g.ss01 onehalf.v1 perthousand r.simple_italic sterling.replaced_with_flat two.replaced_with_rounder zero.ss01 one.flatflag
-
 ####################################################################################
 
 debug = False # will print full dictionaries
@@ -83,7 +81,7 @@ maxFontNameLength = len(max(fonts, key=len))
 
 
 alertEmoji = "🍇 🥑 🍉 🍊 🍑 🍌 🍒 🌽 🍈 🐶 🐱 🐭 🐰 🦊 🐻 🐯 🦁 🐮 🐷 🐸 🐵 🐔 🐣".split(" ")
-iconDict = {}
+iconDict = {}b
 
 for glyphName in sorted(glyphsWithUnevenPoints):
     iconDict[glyphName] = {}
