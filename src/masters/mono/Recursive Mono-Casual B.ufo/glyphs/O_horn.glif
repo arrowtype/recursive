@@ -4,6 +4,12 @@
 	<advance width="600"/>
 	<outline>
 		<component base="O"/>
-		<component base="horncomb.case" xOffset="393" yOffset="-10"/>
+		<component base="horncomb.case" xOffset="413" yOffset="-20"/>
 	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0,0,0,0.1505</string>
+		</dict>
+	</lib>
 </glyph>
