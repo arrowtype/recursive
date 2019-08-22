@@ -340,65 +340,65 @@ Uhorn=U+horncomb.case@horn
 
 # horn and acute
 
-ohornacute
-uhornacute
+ohornacute=o+horncomb@horn+acutecomb@top
+uhornacute=u+horncomb@horn+acutecomb@top
 
-Ohornacute
-Uhornacute
+Ohornacute=O+horncomb.case@horn+acutecomb.case@top
+Uhornacute=U+horncomb.case@horn+acutecomb.case@top
 
 ############################
 
 # horn and grave
 
-# ohorngrave
-# uhorngrave
+# ohorngrave=o+horncomb@horn+gravecomb@top
+# uhorngrave=u+horncomb@horn+gravecomb@top
 
-# Ohorngrave
-# Uhorngrave
+# Ohorngrave=O+horncomb.case@horn+gravecomb.case@top
+# Uhorngrave=U+horncomb.case@horn+gravecomb.case@top
 
 ############################
 
 # horn and hook
 
-# ohornhook
-# uhornhook
+# ohornhook=o+horncomb@horn+hookcomb@hook
+# uhornhook=u+horncomb@horn+hookcomb@hook
 
-# Ohornhook
-# Uhornhook
+# Ohornhook=O+horncomb.case@horn+hookcomb.case@hook
+# Uhornhook=U+horncomb.case@horn+hookcomb.case@hook
 
 ############################
 
 # horn and tilde
 
-# ohorntilde
-# uhorntilde
+# ohorntilde=o+horncomb@horn+tildecomb@o:top
+# uhorntilde=u+horncomb@horn+tildecomb@u:top
 
-# Ohorntilde
-# Uhorntilde
+# Ohorntilde=O+horncomb.case@horn+tildecomb.case@O:top
+# Uhorntilde=U+horncomb.case@horn+tildecomb.case@U:top
 
 ############################
 
-# horn and dot
+# horn and dot (below)
 
-# ohorndot
-# uhorndot
+# ohorndot=o+horncomb@horn+dotaccentcomb@bottom
+# uhorndot=u+horncomb@horn+dotaccentcomb@bottom
 
-# Ohorndot
-# Uhorndot
+# Ohorndot=O+horncomb.case@horn+dotaccentcomb.case@bottom
+# Uhorndot=U+horncomb.case@horn+dotaccentcomb.case@bottom
 
 ############################
 
 # hook
 
 # ahook=a+hookcomb@hook
-# ehook
-# ihook
+# ehook=e+hookcomb@hook
+# ihook=dotlessi+hookcomb@hook
 ohook=o+hookcomb@hook
 uhook=u+hookcomb@hook
 
 # Ahook=A+hookcomb.case@hook
-# Ehook
-# Ihook
+# Ehook=E+hookcomb.case@hook
+# Ihook=I+hookcomb.case@hook
 Ohook=O+hookcomb.case@hook
 Uhook=U+hookcomb.case@hook
 
@@ -406,111 +406,111 @@ Uhook=U+hookcomb.case@hook
 
 # circumflexcomb_acutecomb
 
-# acircumflexacute
-# ecircumflexacute
-# ocircumflexacute
+# acircumflexacute=a+circumflexcomb@top+acutecomb@top
+# ecircumflexacute=e+circumflexcomb@top+acutecomb@top
+# ocircumflexacute=o+circumflexcomb@top+acutecomb@top
 
-# Acircumflexacute
-# Ecircumflexacute
-# Ocircumflexacute
+# Acircumflexacute=A+circumflexcomb.case@top+acutecomb.case@top
+# Ecircumflexacute=E+circumflexcomb.case@top+acutecomb.case@top
+# Ocircumflexacute=O+circumflexcomb.case@top+acutecomb.case@top
 
 ############################
 
 # circumflexcomb_gravecomb
 
-# acircumflexgrave
-# ecircumflexgrave
-# ocircumflexgrave
+# acircumflexgrave=a+circumflexcomb@top+gravecomb@top
+# ecircumflexgrave=e+circumflexcomb@top+gravecomb@top
+# ocircumflexgrave=o+circumflexcomb@top+gravecomb@top
 
-# Acircumflexgrave
-# Ecircumflexgrave
-# Ocircumflexgrave
+# Acircumflexgrave=A+circumflexcomb.case@top+gravecomb.case@top
+# Ecircumflexgrave=E+circumflexcomb.case@top+gravecomb.case@top
+# Ocircumflexgrave=O+circumflexcomb.case@top+gravecomb.case@top
 
 ############################
 
 # circumflexcomb_hookabovecomb
 
-# acircumflexhook
-# ecircumflexhook
-# ocircumflexhook
+# acircumflexhook=a+circumflexcomb@top+hookcomb@top
+# ecircumflexhook=e+circumflexcomb@top+hookcomb@top
+# ocircumflexhook=o+circumflexcomb@top+hookcomb@top
 
-# Acircumflexhook
-# Ecircumflexhook
-# Ocircumflexhook
+# Acircumflexhook=A+circumflexcomb.case@top+hookcomb.case@top
+# Ecircumflexhook=E+circumflexcomb.case@top+hookcomb.case@top
+# Ocircumflexhook=O+circumflexcomb.case@top+hookcomb.case@top
 
 ############################
 
 # circumflexcomb_tildecomb
 
-# acircumflextilde
-# ecircumflextilde
-# ocircumflextilde
+# acircumflextilde=a+circumflexcomb@top+tildecomb@top
+# ecircumflextilde=e+circumflexcomb@top+tildecomb@top
+# ocircumflextilde=o+circumflexcomb@top+tildecomb@top
 
-# Acircumflextilde
-# Ecircumflextilde
-# Ocircumflextilde
+# Acircumflextilde=A+circumflexcomb.case@top+tildecomb.case@top
+# Ecircumflextilde=E+circumflexcomb.case@top+tildecomb.case@top
+# Ocircumflextilde=O+circumflexcomb.case@top+tildecomb.case@top
 
 ############################
 
 # circumflex and dot (below)
 
-# acircumflexdot
-# ecircumflexdot
-# ocircumflexdot
+# acircumflexdot=a+circumflexcomb@top+dotaccentcomb@a:bottom
+# ecircumflexdot=e+circumflexcomb@top+dotaccentcomb@e:bottom
+# ocircumflexdot=o+circumflexcomb@top+dotaccentcomb@o:bottom
 
-# Acircumflexdot
-# Ecircumflexdot
-# Ocircumflexdot
+# Acircumflexdot=A+circumflexcomb.case@top+dotaccentcomb.case@A:bottom
+# Ecircumflexdot=E+circumflexcomb.case@top+dotaccentcomb.case@E:bottom
+# Ocircumflexdot=O+circumflexcomb.case@top+dotaccentcomb.case@O:bottom
 
 ############################
 
 # breve and acute
 
-# abreveacute
+# abreveacute=a+brevecomb@top+acutecomb@top
 
 
-# Abreveacute
+# Abreveacute=A+brevecomb.case@top+acutecomb.case@top
 
 
 ############################
 
 # breve and grave
 
-# abrevegrave
+# abrevegrave=a+brevecomb@top+gravecomb@top
 
 
-# Abrevegrave
+# Abrevegrave=A+brevecomb.case@top+gravecomb.case@top
 
 
 ############################
 
 # breve and hook
 
-# abrevehook
+# abrevehook=a+brevecomb@top+hookcomb@top
 
 
-# Abrevehook
+# Abrevehook=A+brevecomb.case@top+hookcomb.case@top
 
 
 ############################
 
 # breve and tilde
 
-# abrevetilde
+# abrevetilde=a+brevecomb@top+tildecomb@top
 
 
-# Abrevetilde
+# Abrevetilde=A+brevecomb.case@top+tildecomb.case@top
 
 
 ############################
 
 # breve and dot
 
-# abrevedot
-# ebrevedot
+# abrevedot=a+brevecomb@top+dotaccentcomb@a:bottom
+# ebrevedot=e+brevecomb@top+dotaccentcomb@e:bottom
 
-# Abrevedot
-# Ebrevedot
+# Abrevedot=A+brevecomb.case@top+dotaccentcomb.case@A:bottom
+# Ebrevedot=E+brevecomb.case@top+dotaccentcomb.case@E:bottom
 
 ############################
 
