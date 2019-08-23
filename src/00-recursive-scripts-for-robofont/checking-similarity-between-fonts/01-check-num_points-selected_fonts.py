@@ -27,7 +27,7 @@ print("\nCOMPATIBILITY CHECK: GLYPH CONSISTENCY & POINT COUNTS\n\n")
 print("""\
     📊 Emoji are present to help you spot point number differences more quickly. 
     Specific emoji have no meaning as to which numbers are correct or incorrect.
-    The first count will be marked with 🍇, the next with 🍋, and so on.\n
+    The first count will be marked with 🍇, the next with 🥑, and so on.\n
 """)
 
 for file in files:
@@ -81,7 +81,7 @@ maxFontNameLength = len(max(fonts, key=len))
 
 
 alertEmoji = "🍇 🥑 🍉 🍊 🍑 🍌 🍒 🌽 🍈 🐶 🐱 🐭 🐰 🦊 🐻 🐯 🦁 🐮 🐷 🐸 🐵 🐔 🐣".split(" ")
-iconDict = {}b
+iconDict = {} # was {}b, but i think it was a syntax error
 
 for glyphName in sorted(glyphsWithUnevenPoints):
     iconDict[glyphName] = {}
