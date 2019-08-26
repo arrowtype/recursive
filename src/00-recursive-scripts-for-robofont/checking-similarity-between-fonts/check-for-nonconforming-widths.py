@@ -1,62 +1,74 @@
-'''
-    Lets you check that glyphs maintain a similar width unit between all selected UFOs.
-    Assumes you want each glyph to keep the same width between all selected UFOs.
-'''
-
-
-# get filename, check if "mono" or "sans"
-from mojo.UI import OutputWindow
 from vanilla.dialogs import *
-import os
 from mojo.UI import AskString
+from mojo.UI import OutputWindow
 import pprint
+
+# TODO: ignore glyphs marked as "experimental" with robofont marx
+# TODO: allow user to paste space-separated string of glyphs to limit check to
+
+### SET THIS TO IGNORE GLYPHS YOU WANT TO LEAVE ALONE (e.g. experimental glyphs) ###
+
+glyphsToIgnore = "L.noserif Z.noserif .contrast-circles ampersand.code_experimental ampersand.code_experimental_2 ampersand.code_experimental_3 ampersand.crossbar at.monolinear at.replaced_with_prop at.short braceleft.asymmetrical dagger.daggery dollar.lower g.compact_desc g.extra g.ss01 hyphen.simple one.flatflag r.simple_italic zero.ss01 y.longtail two.replaced_with_rounder sterling.replaced_with_flat onehalf.v1 l.ss01 R.trap a.italic_curl ampersand_ampersand.code at.prop at.simple  braceright.asymmetrical divisionslash.copy_1 exclam.copy_1 g.long_desc g.longtail i.ss01 j.longtail fi fj fl fl.mono" 
+
+# save these soon: fi fj fl fl.mono
+
+####################################################################################
 
 debug = False # will print full dictionaries
 
 widthUnit = AskString('Width unit to check for (e.g. 600, 50, 10)')
 
-duplexing = AskString('Check that widths are duplexed between all files? (y/n)')
-
-files = getFile(f"Select files to check glyph widths for units of {widthUnit}",
-                allowsMultipleSelection=True, fileTypes=["ufo"])
+files = getFile(f"Select files to check glyph widths for units of {widthUnit}", allowsMultipleSelection=True, fileTypes=["ufo"])
 
 fonts = []
+widthsDict = {}
+badWidthGlyphs = {}
 
 OutputWindow().show()
 OutputWindow().clear()
 
-print("\nSUPERPLEXING REPORT: GLYPH WIDTH SIMILIARITY\n\n")
+print("\nCOMPATIBILITY CHECK: GLYPH CONSISTENCY & WIDTHS\n\n")
 
-fonts=[]
-badWidthGlyphs = {}
-glyphWidthDict = {}
+print("""\
+    📊 Emoji are present to help you spot width differences more quickly. 
+    Specific emoji have no meaning as to which widths are correct or incorrect.
+    You must use your best judgement to decide, or file an issue/ask.
+    The first count will be marked with 🍇, the next with 🥑, and so on.\n
+""")
+
+
+
 
 for file in files:
     font = OpenFont(file, showInterface=False)
-    fontName = f"{font.info.styleName}"
-    badWidthGlyphs[fontName] = {}
+
+    # fontName = (font.info.styleName).transl ate({ord(c): None for c in 'aeiou'}) # remove vowels to shorten
+    fontName = (font.info.styleName)
 
     fonts.append(fontName)
+    badWidthGlyphs[fontName] = {}
 
     for glyph in font:
         if glyph.width % int(widthUnit) != 0:
             badWidthGlyphs[fontName][glyph.name] = glyph.width
 
-    if duplexing.lower() == "y":
-        for glyph in font:
-            if glyph.name not in glyphWidthDict:
-                glyphWidthDict[glyph.name] = []
-            if glyph.name in glyphWidthDict:
-                glyphWidthDict[glyph.name].append(str(glyph.width))
+    for glyph in font:
+        if glyph.name not in widthsDict:
+            widthsDict[glyph.name] = {}
+        
+        if fontName not in widthsDict[glyph.name]:
+            widthsDict[glyph.name][fontName] = 0
+
+        widthsDict[glyph.name][fontName] = glyph.width
 
     font.close()
 
 print("Checking fonts:")
-
 for fontName in fonts:
     print("• ", fontName)
-
 print("")
+
+# --------------------------------------------------------------------
 
 # check if there are problem-width glyphs, print to markdown-ready tables
 for i in sorted(badWidthGlyphs.keys()):
@@ -75,57 +87,114 @@ if debug:
     print("bad width glyphs")
     pp.pprint(badWidthGlyphs)
     print("glyph widths")
-    pp.pprint(glyphWidthDict)
+    pp.pprint(widthsDict)
 
-fontInitials = []
+# --------------------------------------------------------------------
 
-for fontName in sorted(fonts):
-    fontWords = fontName.split()
-    letters = [word[0] for word in fontWords]
-    
-    # make "s" lowercase for "Slanted"
-    if letters[-1] is "S":
-        letters[-1] = "s"
+if debug:
+    pp = pprint.PrettyPrinter(indent=2, width=200)
+    pp.pprint(widthsDict)
 
-    # remove "M" for "Mono" or "S" for "Sans"
-    if letters[0] is "M" or letters[0] is "S":
-        letters.pop(0)
-    fontInitials.append("".join(letters))
+glyphsNotInAllFonts = []
 
-# table headers for master names: LA LAi LB LBi LC LCi CA CAi CB CBi CC CCi
-# take first initials of style name
-nameLength = 20  # max(map(len, glyphWidthDict))
-abbrevLength = 5
+for glyphName in widthsDict.keys():
+    if len(widthsDict[glyphName]) < len(fonts):
+        if glyphName not in glyphsNotInAllFonts and glyphName not in glyphsToIgnore.split(" "):
+            glyphsNotInAllFonts.append(glyphName)
 
+glyphsWithUnevenWidths = []
 
-
-print("\nglyph".ljust(nameLength), end="")
-
-## TODO: probably, flip the axis here and just print a clearer list with each glyph.
-# for name in fontInitials:
-#     print(name.rjust(abbrevLength), end="")
-
-print("\n--------------------------------------------------------------------------------------")
-
-# glyphsToCheck = "A B C D E F G H I J K L M N O P R S T U V W X Y Z a b c d e f g h k l m n o p q r s t u v w x y z germandbls at ampersand a.italic c.italic d.italic e.italic f.italic g.italic h.italic k.italic l.italic m.italic n.italic r.italic s.italic u.italic v.italic w.italic x.italic y.italic z.italic dotlessi.italic dotlessj.italic l.sans one.sans f.mono i.mono l.mono r.mono".split(" ")
-
-# for glyphName in sorted(glyphWidthDict.keys()):
-#     if glyphName in glyphsToCheck:
-#         if set(glyphWidthDict[glyphName].keys()) > 1:
-
-if duplexing.lower() == "y":
-    for glyphName in sorted(glyphWidthDict.keys()):
-        # if glyphName in glyphsToCheck and len(set(glyphWidthDict[glyphName])) > 1:
-        if len(set(glyphWidthDict[glyphName])) > 1:
-            print(glyphName.ljust(nameLength), end="")
-            for glyphWidth in glyphWidthDict[glyphName]:
-                print(glyphWidth.rjust(abbrevLength), end="")
-            print("\n")
-    #     if len(glyphWidthDict[i].keys()) != 0:
-    #         print(f"\n### {i} – glyphs with different widths between masters\n")
+for glyphName in widthsDict.keys():
+    if len(set(widthsDict[glyphName].values())) > 1:
+        if glyphName not in glyphsWithUnevenWidths and glyphName not in glyphsToIgnore.split(" "):
+            glyphsWithUnevenWidths.append(glyphName)
+            
+maxFontNameLength = len(max(fonts, key=len))
 
 
-# TODO: check for widths that different in a glyph, between masters
-    # note... this script might be already written
+alertEmoji = "🍇 🥑 🍉 🍊 🍒 🍑 🌽 🍈 🍌 🐶 🐱 🐭 🦊".split(" ")
+iconDict = {}
 
-# TODO: write checks for kerning units (in this or a separate script)
+for glyphName in sorted(glyphsWithUnevenWidths):
+    iconDict[glyphName] = {}
+    # for font with this glyph
+    for fontName in widthsDict[glyphName].keys():
+        # if glyph width count not already in icon dict under glyph
+        if widthsDict[glyphName][fontName] not in iconDict[glyphName].keys():
+            count  = str(widthsDict[glyphName][fontName])
+            iconDict[glyphName][count] = ""
+
+    # go through each glyph:font combo in iconDict and assing emoji to diff counts
+    for index,width in enumerate(iconDict[glyphName].keys()):
+        iconDict[glyphName][width] = alertEmoji[index]
+
+
+if debug:
+    pp = pprint.PrettyPrinter(indent=2, width=200)
+    pp.pprint(iconDict)
+
+problemGlyphs = glyphsNotInAllFonts + glyphsWithUnevenWidths
+
+for glyphName in sorted(problemGlyphs):
+    print("\n--------------------------------------------------------------\n")
+    print(f"{glyphName}\n")
+
+    # If glyph has different width counts in different fonts, report
+    if glyphName in glyphsWithUnevenWidths:
+
+        print(f"\t{'Font'.ljust(maxFontNameLength + 1)} | Wdth | 📊") # add contour count? segment count?
+        print(f"\t{''.ljust(maxFontNameLength + 1, '-')} | ---- | --")
+
+        for fontName in widthsDict[glyphName].keys():
+            
+            width = str(widthsDict[glyphName][fontName])
+            print(f"\t{fontName.ljust(maxFontNameLength + 1)} | {str(widthsDict[glyphName][fontName]).rjust(4)} | {iconDict[glyphName][width]}")
+            
+        print("")
+
+    # If glyph is not in all fonts, report
+    if glyphName in glyphsNotInAllFonts:
+        # print("\tGlyph is not in all fonts.\n")
+        print("\tIs in:\n\t------------------")
+        for fontName in sorted(fonts):
+            if fontName in widthsDict[glyphName]:
+                print("\t",fontName)
+        
+        print("\n")
+
+        print("\tNot in:\n\t------------------")
+        for fontName in sorted(fonts):
+            if fontName not in widthsDict[glyphName]:
+                print("\t",fontName)
+
+if len(glyphsWithUnevenWidths) >= 1:
+    print("️\n\nGlyphs with unequal widths between fonts:\n")
+    print("\t", end=" ")
+    for glyphName in sorted(glyphsWithUnevenWidths):
+        # print(" - [ ] ", glyphName)
+        print(glyphName, end=" ")
+    print("")
+
+
+if len(glyphsNotInAllFonts) >= 1:
+    print("\n\nGlyphs that aren't in all fonts:\n")
+    print("\t", end=" ")
+    for glyphName in sorted(glyphsNotInAllFonts):
+        # print(" - [ ] ", glyphName)
+        print(glyphName, end=" ")
+    print("")
+
+if len(problemGlyphs) is 0:
+    print("🤖🤖🤖\n")
+    print("Looks like all glyphs have the same width counts – nice work! \n")
+    print("🎉🎉🎉\n")
+
+
+if glyphsToIgnore is not "" and len(glyphsToIgnore.split(" ")) > 0:
+    print("\n--------------------------------------------------------------\n")
+    print("NOTE: ignored the following glyphs (they are experiments or currently low-priority)")
+    print("(edit script to adjust these)")
+    for name in glyphsToIgnore.split(" "):
+        print(name, end=" ")
+
+print("\n")

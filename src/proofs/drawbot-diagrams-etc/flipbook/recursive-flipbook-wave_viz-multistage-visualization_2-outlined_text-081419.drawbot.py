@@ -13,14 +13,17 @@ autoOpen = True
 book = True
 debug = False # overlays curve visualizations
 
-frames = 96 # 96 for full animation
+frames = 0 # 96 for full animation
 frameRate = 1/30 # only applicable to mp4
-exportFormat = "bmp" # pdf, gif, mp4, or bmp
+exportFormat = "pdf" # pdf, gif, mp4, or bmp
 
 DPI = 72 # dots per inch – must be 72 to print at dimensions set in inches
 
+blankStart = False
+
 if book:
-    endPages = 4 #4
+    # endPages = 4 #4
+    endPages = 0
 else:
     endPages = 0
 
@@ -30,7 +33,14 @@ marginSize = 0.25 # inches
 # marginSides = 0.3
 # marginBottom = 0.2
 
-margins = (0.75, 0.3, 0.2, 0.3)
+## top, right, bottom, left
+# margins = (0.75, 0.3, 0.2, 0.3)
+margins = (0.75, 0.25, 0.2, 0.3)
+
+if prop is 0:
+    indent = "    "
+else:
+    indent = "\n"
 
 textPts = 7 # 6.75
 textLineHeight = 1.5
@@ -89,9 +99,6 @@ def newPagePlz(pageNum):
 
 # this will draw cyan guides to help align content
 def drawMargins():
-    # top, right, bottom, left
-    # margins = (0.75, 0.25, 0.25, 0.25)
-    margins = (0.75, 0.3, 0.2, 0.3)
     thickness = 1
     fill(0,1,1)
 
@@ -152,8 +159,9 @@ url.fontVariations(wght=800.01, XPRN=0.001, slnt=0, ital=0)
 url.append("https://recursive.design")
 
 if book:
-    pageNum = newPagePlz(pageNum)
-    ifBitmapSaveBitmap(pageNum)
+    if blankStart:
+        pageNum = newPagePlz(pageNum)
+        ifBitmapSaveBitmap(pageNum)
 
     # CREDITS ---------------------------------------------
 
@@ -188,22 +196,35 @@ description.font(fontFam)
 description.fontVariations(wght=500, XPRN=0.999, slnt=-14.99, ital=0.99)
 description.fontSize(headerSize)
 description.lineHeight(headerSize * headerLineHeight)
-description.append("A highly customizable variable font for design, code, and UI.")
+description.append("A highly customizable variable font for code and design")
 description.fontVariations(wght=500, XPRN=0.01, slnt=0, ital=0)
 description.fontSize(textSize)
 description.lineHeight(textSize * textLineHeight)
-description.append("""\n
-Recursive is a versatile new variable font with five stylistic axes. These variation axes enable customizable control within five stylistic ranges: Proportion, Expression, Weight, Slant, and Italic. Carefully-planned named instances also allow selection within a set of predefined styles.
+description.append(f"""\n
+Recursive is a versatile variable font with five stylistic axes (Weight, Slant, Italic, Proportion, and Expression) so you can customize your typography. It also comes with a curated selection of predefined styles to get you up and running. 
+{indent}It offers a novel range of personality along the Expression axis, from a sturdy and rational """)
 
-Recursive offers a range of personality, from a\u00A0sturdy, rational Linear to a friendly, energetic Casual. It comes in two subfamilies:\u00A0Mono & Sans. Within these subfamilies, characters maintain the exact same width across all font styles. This allows for smooth stylistic transitions without affecting line length, enabling new levels of typographic flexibility & interactivity.
+# add italic words
+description.fontVariations(wght=500, XPRN=0.01, slnt=-9, ital=0.99)
+description.append("Linear ")
+description.fontVariations(wght=500, XPRN=0.01, slnt=0, ital=0)
+description.append("to a friendly and energetic ")
+description.fontVariations(wght=500, XPRN=0.01, slnt=-9, ital=0.99)
+description.append("Casual. ")
 
-Flip the pages to see Recursive in motion!
+# back to normal
+description.fontVariations(wght=500, XPRN=0.01, slnt=0, ital=0)
+description.append(f"""\
+With the Proportion axis, you can adjust the monospace design into a natural-width sans serif that is intended to be more readable in text and interface elements.
+{indent}Along the Proportion axis, every glyph is carefully designed to maintain the exact same width through changes in every other axis. This allows smooth stylistic transitions without affecting line length – enabling new levels of typographic flexibility & interactivity.
 """)
+
+# \u00A0 = non-breaking space, to help control text wrap
 
 
 description.fontVariations(wght=500, XPRN=0.999, slnt=-9, ital=0.999)
-description.append("""
-Recursive has been sponsored by Google Fonts, through which it will soon be released. Recursive is available under the SIL Open Font License and can be freely used in or adapted for any project.
+description.append(f"""
+Google Fonts teamed up with Arrow Type to make Recursive available to be used and customized freely in any of your projects. Check out the source files and learn more at github.com/arrowtype/recursive
 """)
 
 
@@ -231,7 +252,14 @@ if book:
 
     fill(foreground)
 
-    overflow = textPath.textBox(description, (marginLeft,marginBottom - textSize * 0.85 + (H * 0.05), W - (marginLeft * 2)- marginLeft * 0.4, H * 0.75 - marginBottom))
+    overflow = textPath.textBox(
+        description,
+        (
+            marginLeft,
+            marginBottom - textSize * 0.85 + (H * 0.05),
+            W - (marginLeft + marginRight),
+            H * 0.75 - marginBottom)
+        )
     # textPath.textBox(description, (marginLeft,marginBottom - textSize * 0.85 + (H * 0.05), W - (marginLeft * 2)- marginLeft * 0.4, H * 0.75 - marginBottom))
 
     drawPath(textPath)
@@ -246,7 +274,14 @@ if book:
     textPath = BezierPath()
     
     # continued from overflow above
-    textPath.textBox(overflow, (marginLeft,marginBottom - textSize *0.125, W - (marginLeft * 2) - marginLeft * 0.4, H * 0.8 - marginBottom))
+    textPath.textBox(
+        overflow,
+        (
+        marginLeft,
+        marginBottom - textSize *0.125,
+        W - (marginLeft + marginRight),
+        H * 0.8 - marginBottom)
+        )
     
     fill(foreground)
     drawPath(textPath)
