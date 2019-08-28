@@ -26,7 +26,7 @@ else:
     
 frames = 6 # 192
 frameRate = 1/60 # only applicable to mp4
-format = "pdf" # pdf, gif, or mp4
+fileFormat = "pdf" # pdf, gif, or mp4
 
 bookSize = 3.5 # inches
 DPI = 72 # dots per inch
@@ -456,7 +456,7 @@ endDrawing()
 if save:
     now = datetime.datetime.now().strftime("%Y_%m_%d-%H_%M") # -%H_%M_%S
 
-    path = f"/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/exports/{docTitle}-{now}.{format}"
+    path = f"/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-diagrams-etc/flipbook/exports/{docTitle}-{now}.{fileFormat}"
 
     print("saved to ", path)
 
