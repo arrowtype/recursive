@@ -10,9 +10,9 @@
     <axis tag="wght" name="Weight" minimum="300" maximum="900" default="800">
       <labelname xml:lang="en">Weight</labelname>
       <map input="300" output="250" />
-      <map input="400" output="350" />
-      <map input="500" output="500" />
-      <map input="600" output="600" />
+      <map input="400" output="450" />
+      <map input="500" output="533" />
+      <map input="600" output="616" />
       <map input="700" output="700" />
       <map input="800" output="800" />
       <map input="900" output="900" />
@@ -235,7 +235,7 @@
       <location>
         <dimension name="Proportion" xvalue="0"/>
         <dimension name="Expression" xvalue="1"/>
-        <dimension name="Weight" xvalue="500"/>
+        <dimension name="Weight" xvalue="533"/>
         <dimension name="Slant" xvalue="0"/>
         <dimension name="Italic" xvalue="0.500000"/>
       </location>
@@ -302,7 +302,7 @@
       <location>
         <dimension name="Proportion" xvalue="0"/>
         <dimension name="Expression" xvalue="0"/>
-        <dimension name="Weight" xvalue="500"/>
+        <dimension name="Weight" xvalue="533"/>
         <dimension name="Slant" xvalue="0"/>
         <dimension name="Italic" xvalue="0.500000"/>
       </location>
@@ -365,7 +365,7 @@
       <location>
         <dimension name="Proportion" xvalue="1"/>
         <dimension name="Expression" xvalue="1"/>
-        <dimension name="Weight" xvalue="500"/>
+        <dimension name="Weight" xvalue="533"/>
         <dimension name="Slant" xvalue="0"/>
         <dimension name="Italic" xvalue="0.500000"/>
       </location>
@@ -432,7 +432,7 @@
       <location>
         <dimension name="Proportion" xvalue="1"/>
         <dimension name="Expression" xvalue="0"/>
-        <dimension name="Weight" xvalue="500"/>
+        <dimension name="Weight" xvalue="533"/>
         <dimension name="Slant" xvalue="0"/>
         <dimension name="Italic" xvalue="0.500000"/>
       </location>
@@ -443,7 +443,7 @@
       <location>
         <dimension name="Proportion" xvalue="0" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Weight" xvalue="300" />
+        <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -454,7 +454,7 @@
       <location>
         <dimension name="Proportion" xvalue="0" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Weight" xvalue="300" />
+        <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -465,7 +465,7 @@
       <location>
         <dimension name="Proportion" xvalue="0" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Weight" xvalue="300" />
+        <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -476,7 +476,7 @@
       <location>
         <dimension name="Proportion" xvalue="0" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Weight" xvalue="300" />
+        <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -487,7 +487,7 @@
       <location>
         <dimension name="Proportion" xvalue="0" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Weight" xvalue="400" />
+        <dimension name="Weight" xvalue="450" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -498,7 +498,7 @@
       <location>
         <dimension name="Proportion" xvalue="0" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Weight" xvalue="400" />
+        <dimension name="Weight" xvalue="450" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -509,7 +509,7 @@
       <location>
         <dimension name="Proportion" xvalue="0" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Weight" xvalue="400" />
+        <dimension name="Weight" xvalue="450" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -520,7 +520,7 @@
       <location>
         <dimension name="Proportion" xvalue="0" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Weight" xvalue="400" />
+        <dimension name="Weight" xvalue="450" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -531,7 +531,7 @@
       <location>
         <dimension name="Proportion" xvalue="0" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Weight" xvalue="500" />
+        <dimension name="Weight" xvalue="533" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -542,7 +542,7 @@
       <location>
         <dimension name="Proportion" xvalue="0" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Weight" xvalue="500" />
+        <dimension name="Weight" xvalue="533" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -553,7 +553,7 @@
       <location>
         <dimension name="Proportion" xvalue="0" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Weight" xvalue="500" />
+        <dimension name="Weight" xvalue="533" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -564,7 +564,7 @@
       <location>
         <dimension name="Proportion" xvalue="0" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Weight" xvalue="500" />
+        <dimension name="Weight" xvalue="533" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -575,7 +575,7 @@
       <location>
         <dimension name="Proportion" xvalue="0" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Weight" xvalue="600" />
+        <dimension name="Weight" xvalue="616" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -586,7 +586,7 @@
       <location>
         <dimension name="Proportion" xvalue="0" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Weight" xvalue="600" />
+        <dimension name="Weight" xvalue="616" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -597,7 +597,7 @@
       <location>
         <dimension name="Proportion" xvalue="0" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Weight" xvalue="600" />
+        <dimension name="Weight" xvalue="616" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -608,7 +608,7 @@
       <location>
         <dimension name="Proportion" xvalue="0" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Weight" xvalue="600" />
+        <dimension name="Weight" xvalue="616" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -795,7 +795,7 @@
       <location>
         <dimension name="Proportion" xvalue="1" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Weight" xvalue="300" />
+        <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -806,7 +806,7 @@
       <location>
         <dimension name="Proportion" xvalue="1" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Weight" xvalue="300" />
+        <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -817,7 +817,7 @@
       <location>
         <dimension name="Proportion" xvalue="1" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Weight" xvalue="300" />
+        <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -828,7 +828,7 @@
       <location>
         <dimension name="Proportion" xvalue="1" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Weight" xvalue="300" />
+        <dimension name="Weight" xvalue="250" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -839,7 +839,7 @@
       <location>
         <dimension name="Proportion" xvalue="1" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Weight" xvalue="400" />
+        <dimension name="Weight" xvalue="450" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -850,7 +850,7 @@
       <location>
         <dimension name="Proportion" xvalue="1" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Weight" xvalue="400" />
+        <dimension name="Weight" xvalue="450" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -861,7 +861,7 @@
       <location>
         <dimension name="Proportion" xvalue="1" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Weight" xvalue="400" />
+        <dimension name="Weight" xvalue="450" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -872,7 +872,7 @@
       <location>
         <dimension name="Proportion" xvalue="1" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Weight" xvalue="400" />
+        <dimension name="Weight" xvalue="450" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -883,7 +883,7 @@
       <location>
         <dimension name="Proportion" xvalue="1" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Weight" xvalue="500" />
+        <dimension name="Weight" xvalue="533" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -894,7 +894,7 @@
       <location>
         <dimension name="Proportion" xvalue="1" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Weight" xvalue="500" />
+        <dimension name="Weight" xvalue="533" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -905,7 +905,7 @@
       <location>
         <dimension name="Proportion" xvalue="1" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Weight" xvalue="500" />
+        <dimension name="Weight" xvalue="533" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -916,7 +916,7 @@
       <location>
         <dimension name="Proportion" xvalue="1" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Weight" xvalue="500" />
+        <dimension name="Weight" xvalue="533" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -927,7 +927,7 @@
       <location>
         <dimension name="Proportion" xvalue="1" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Weight" xvalue="600" />
+        <dimension name="Weight" xvalue="616" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -938,7 +938,7 @@
       <location>
         <dimension name="Proportion" xvalue="1" />
         <dimension name="Expression" xvalue="0" />
-        <dimension name="Weight" xvalue="600" />
+        <dimension name="Weight" xvalue="616" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -949,7 +949,7 @@
       <location>
         <dimension name="Proportion" xvalue="1" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Weight" xvalue="600" />
+        <dimension name="Weight" xvalue="616" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -960,7 +960,7 @@
       <location>
         <dimension name="Proportion" xvalue="1" />
         <dimension name="Expression" xvalue="1" />
-        <dimension name="Weight" xvalue="600" />
+        <dimension name="Weight" xvalue="616" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
