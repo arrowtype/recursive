@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <designspace format="4.0">
   <axes>
-    <axis tag="PROP" name="Proportion" minimum="0" maximum="1" default="0">
+    <axis tag="PROP" name="Proportion" minimum="0" maximum="1" default="1">
       <labelname xml:lang="en">Proportion</labelname>
     </axis>
     <axis tag="XPRN" name="Expression" minimum="0" maximum="1" default="0">
@@ -149,7 +149,7 @@
       <sub name="h" with="h.italic" />
       <sub name="n" with="n.italic" />
       <sub name="u" with="u.italic" />
-      <sub name="c" with="c.italic" />
+      <!-- <sub name="c" with="c.italic" /> -->
       <sub name="k" with="k.italic" />
       <sub name="v" with="v.italic" />
       <sub name="w" with="w.italic" />
@@ -169,7 +169,7 @@
       <sub name="h" with="h.italic" />
       <sub name="n" with="n.italic" />
       <sub name="u" with="u.italic" />
-      <sub name="c" with="c.italic" />
+      <!-- <sub name="c" with="c.italic" /> -->
       <sub name="k" with="k.italic" />
       <sub name="v" with="v.italic" />
       <sub name="w" with="w.italic" />
