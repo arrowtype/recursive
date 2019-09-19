@@ -104,7 +104,7 @@ text("more pages to come", (padding, padding))
 
 print("saving")
 # path = "/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-basic-proof/exports/" + now.strftime("%Y_%m_%d-%H_%M_%S") + ".pdf"
-path = "/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-basic-proof/exports/temp.pdf"
+path = f"/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-basic-proof/exports/temp-{timestamp}.pdf"
 saveImage(path)  # imageResolution=300
 
 # open(path)
