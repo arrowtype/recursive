@@ -3,6 +3,12 @@
 	<advance width="600"/>
 	<outline>
 		<component base="l.sans"/>
-		<component base="slashcomb" xOffset="-88"/>
+		<component base="slashcomb" xOffset="-88" yOffset="-20"/>
 	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0,0,0,0.1505</string>
+		</dict>
+	</lib>
 </glyph>
