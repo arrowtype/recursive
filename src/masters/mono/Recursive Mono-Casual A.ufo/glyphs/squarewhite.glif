@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="uni25A1" format="2">
+<glyph name="squarewhite" format="2">
 	<unicode hex="25A1"/>
 	<advance width="600"/>
 	<outline>
@@ -16,10 +16,13 @@
 			<point x="512" y="540" type="curve" smooth="yes"/>
 		</contour>
 		<contour>
-			<point x="115" y="490" type="line"/>
-			<point x="485" y="490" type="line"/>
-			<point x="485" y="120" type="line"/>
-			<point x="115" y="120" type="line"/>
+			<point x="110" y="495" type="line"/>
+			<point x="490" y="495" type="line"/>
+			<point x="490" y="112" type="line"/>
+			<point x="479" y="114"/>
+			<point x="468" y="115"/>
+			<point x="457" y="115" type="curve" smooth="yes"/>
+			<point x="110" y="115" type="line"/>
 		</contour>
 	</outline>
 </glyph>
