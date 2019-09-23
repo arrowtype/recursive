@@ -14,7 +14,7 @@ files = getFile("Select files to build glyphs in", allowsMultipleSelection=True,
 # }
 
 txt = '''\
-horn = horncomb ^ 600
+hook = hookcomb ^ 600
 '''
 constructions = ParseGlyphConstructionListFromString(txt)
 
@@ -31,8 +31,8 @@ def centerGlyph(f,g):
 for file in files:
     font = OpenFont(file, showInterface=False)
 
-    if "horncomb" in font.keys():
-        font["horncomb"].decompose()
+    if "hookcomb" in font.keys():
+        font["hookcomb"].decompose()
 
     for construction in constructions:
 

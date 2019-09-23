@@ -372,27 +372,23 @@ Uhornhook=U+horncomb.case@horn+hookcomb.case@U:hook
 
 # horn and tilde
 
-ohorntilde=o+horncomb@horn+tildecombviet.case@o:top
-uhorntilde=u+horncomb@horn+tildecombviet.case@u:top
-
-Ohorntilde=O+horncomb.case@horn+tildecombviet.case@O:top
-Uhorntilde=U+horncomb.case@horn+tildecombviet.case@U:top
+# ohorntilde=o+horncomb@horn+tildecombviet.case@o:top
+# uhorntilde=u+horncomb@horn+tildecombviet.case@u:top
+# Ohorntilde=O+horncomb.case@horn+tildecombviet.case@O:top
+# Uhorntilde=U+horncomb.case@horn+tildecombviet.case@U:top
 
 ## heavy upright masters
+$tildeVietLc = 50,620
+$tildeVietUc = 50,770
 
-# ohorntilde=o+horncomb@horn+tildecombviet.case@o:`top-50,620`
-# uhorntilde=u+horncomb@horn+tildecombviet.case@u:`top-50,620`
+## heavy upright slanted masters
+#$tildeVietLc = 240,620
+#$tildeVietUc = 150,770
 
-# Ohorntilde=O+horncomb.case@horn+tildecombviet.case@O:`top-50,770`
-# Uhorntilde=U+horncomb.case@horn+tildecombviet.case@U:`top-50,770`
-
-## heavy slanted masters
-
-# ohorntilde=o+horncomb@horn+tildecombviet.case@o:`top-240,620`
-# uhorntilde=u+horncomb@horn+tildecombviet.case@u:`top-240,620`
-
-# Ohorntilde=O+horncomb.case@horn+tildecombviet.case@O:`top-150,770`
-# Uhorntilde=U+horncomb.case@horn+tildecombviet.case@U:`top-150,770`
+ohorntilde=o+horncomb@horn+tildecombviet.case@o:`top-{tildeVietLc}`
+uhorntilde=u+horncomb@horn+tildecombviet.case@u:`top-{tildeVietLc}`
+Ohorntilde=O+horncomb.case@horn+tildecombviet.case@O:`top-{tildeVietUc}`
+Uhorntilde=U+horncomb.case@horn+tildecombviet.case@U:`top-{tildeVietUc}`
 
 ############################
 
@@ -485,8 +481,6 @@ Ocircumflexdot=O+circumflexcomb.case@top+dotbelowcomb.case@O:bottom
 # breve and acute
 
 abreveacute=a+brevecomb@top+acutecombviet.case@top
-
-
 Abreveacute=A+brevecomb.case@top+acutecombviet.case@top
 
 
@@ -495,8 +489,6 @@ Abreveacute=A+brevecomb.case@top+acutecombviet.case@top
 # breve and grave
 
 abrevegrave=a+brevecomb@top+gravecombviet.case@top
-
-
 Abrevegrave=A+brevecomb.case@top+gravecombviet.case@top
 
 
@@ -505,8 +497,6 @@ Abrevegrave=A+brevecomb.case@top+gravecombviet.case@top
 # breve and hook
 
 abrevehook=a+brevecomb@top+hookcomb.case@hook
-
-
 Abrevehook=A+brevecomb.case@top+hookcomb.case@hook
 
 
@@ -515,8 +505,6 @@ Abrevehook=A+brevecomb.case@top+hookcomb.case@hook
 # breve and tilde
 
 abrevetilde=a+brevecomb@top+tildecombviet.case@top
-
-
 Abrevetilde=A+brevecomb.case@top+tildecombviet.case@top
 
 
@@ -525,10 +513,7 @@ Abrevetilde=A+brevecomb.case@top+tildecombviet.case@top
 # breve and dot
 
 abrevedot=a+brevecomb@top+dotbelowcomb@a:bottom
-ebrevedot=e+brevecomb@top+dotbelowcomb@e:bottom
-
 Abrevedot=A+brevecomb.case@top+dotbelowcomb.case@A:bottom
-Ebrevedot=E+brevecomb.case@top+dotbelowcomb.case@E:bottom
 
 ############################
 

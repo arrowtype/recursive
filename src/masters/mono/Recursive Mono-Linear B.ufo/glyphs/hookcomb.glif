@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="hookcomb" format="2">
+	<unicode hex="0309"/>
 	<outline>
-		<component base="hook" xOffset="-283"/>
+		<contour>
+			<point x="-56" y="607" type="curve" smooth="yes"/>
+			<point x="-61" y="600"/>
+			<point x="-63" y="594"/>
+			<point x="-53" y="594" type="curve" smooth="yes"/>
+			<point x="-26" y="594"/>
+			<point x="6" y="594"/>
+			<point x="43" y="594" type="curve"/>
+			<point x="78" y="635"/>
+			<point x="131" y="699"/>
+			<point x="131" y="703" type="curve" smooth="yes"/>
+			<point x="131" y="796" type="line" smooth="yes"/>
+			<point x="131" y="804"/>
+			<point x="126" y="807"/>
+			<point x="119" y="807" type="curve" smooth="yes"/>
+			<point x="66" y="807"/>
+			<point x="-65" y="807"/>
+			<point x="-102" y="807" type="curve" smooth="yes"/>
+			<point x="-109" y="807"/>
+			<point x="-113" y="803"/>
+			<point x="-113" y="796" type="curve" smooth="yes"/>
+			<point x="-113" y="773"/>
+			<point x="-113" y="746"/>
+			<point x="-113" y="709" type="curve"/>
+			<point x="-91" y="709" type="line"/>
+			<point x="-74" y="709"/>
+			<point x="-39" y="709"/>
+			<point x="-27" y="709" type="curve" smooth="yes"/>
+			<point x="-15" y="709"/>
+			<point x="0" y="709"/>
+			<point x="10" y="709" type="curve"/>
+			<point x="10" y="703"/>
+			<point x="10" y="699"/>
+			<point x="10" y="697" type="curve"/>
+			<point x="-13" y="665"/>
+			<point x="-33" y="637"/>
+		</contour>
 	</outline>
 	<anchor name="_hook" x="0" y="584"/>
 	<anchor name="_side" x="0" y="573"/>
