@@ -1,5 +1,6 @@
 import os
 import shutil
+from plistlib import dump as plDump
 from ufoProcessor import DesignSpaceProcessor
 from fontParts.fontshell import RFont
 from fontTools.designspaceLib import DesignSpaceDocument
@@ -142,6 +143,106 @@ def buildFolders(designspace, root):
             os.makedirs(stylePath)
 
 
+def makeSTAT(directory):
+    """
+    Create a stylespace.plist for https://github.com/daltonmaag/statmake.
+    This is a bit more rational than dealing with TTX files for the STAT
+    table, though it still requires a bit of font specific logic in this
+    function, ideally one could parse more of the designspace file to get
+    the style information, but writing parsing code would take more effort,
+    and run into design specific challeges too, so this ends up a bit cleaner.
+
+    Put the axis specific information in the styles dictionary, let the rest
+    of the code be generic, save for the special sauce Recursive needs for
+    Italic.
+    """
+
+    # Style naming info
+    styles = {
+        "Weight":
+        {
+            300: "Light",
+            400: "Regular",
+            500: "Medium",
+            600: "SemiBold",
+            700: "Bold",
+            800: "ExtraBold",
+            850: "UltraBold",
+            900: "Black"
+        },
+        "Proportion":
+        {
+            0: "Sans",
+            1: "Mono"
+        },
+        "Expression":
+        {
+            0: "Normal",
+            1: "Casual"
+        },
+        "Slant":
+        {
+            0: "Upright",
+            -15: "Italic"
+        }
+    }
+
+    axes = []
+    for axis in doc.axes:
+        # Axes are in the order we want (Proportion, Expression, Weight,
+        # Slant/Italic), so we can just walk down the list and make a
+        # Stylespace file to use. If you need to change values, change the
+        # above dictorary of style naming info.
+        #
+        # Recursive is unusual in that it has both a Italic and Slant
+        # axis that need to be linked. This is dealt with at the end.
+        if axis.name not in ["Italic", "Slant"]:
+            a = {}
+            a["name"] = axis.name
+            a["tag"] = axis.tag
+            locations = []
+            if axis.name is "Weight":
+                for value, name in styles["Weight"]:
+                    if value != 400:
+                        locations.append({"name": name, "value": value})
+                    else:
+                        locations.append({"name": name,
+                                          "value": value,
+                                          "linked_value": 700,
+                                          "flags": ["ElidableAxisValueName"]
+                                          })
+            elif axis.name is "Proportion":
+                for value, name in styles["Proportion"]:
+                    locations.append({"name": name, "value": value})
+            elif axis.name is "Expression":
+                for value, name in styles["Expression"]:
+                    if value != 0:
+                        locations.append({"name": name, "value": value})
+                    else:
+                        locations.append({"name": name,
+                                          "value": value,
+                                          "flags": ["ElidableAxisValueName"]
+                                          })
+            else:
+                for value, name in styles["Slant"]:
+                    if value != 0:
+                        locations.append({"name": name, "value": value})
+                    else:
+                        locations.append({"name": name,
+                                          "value": value,
+                                          "flags": ["ElidableAxisValueName"]
+                                          })
+            a["locations"] = locations
+        else:
+            a = {"name": axis.name, "tag": axis.tag}
+        axes.append(a)
+
+    stat{"axes": axes, "locations": locations}
+    path = os.path.join(directory, "Recursive.stylespace")
+    with open(path, 'wb') as fp:
+        plDump(stat, fp)
+
+
 def main():
     root = os.path.join(os.getcwd(), "build")
 
@@ -170,13 +271,14 @@ def main():
         if axis.name == "Weight":
             axis.default = 300
 
-    # Make STAT table info
-
-
     # Still in memory, but need to save for other operations
     doc.write(src)
 
+    # Make STAT table
+    makeSTAT(src)
+
     # Sort glyph order
+
 
     #  Variable font build
     print("Building Variable fonts")
