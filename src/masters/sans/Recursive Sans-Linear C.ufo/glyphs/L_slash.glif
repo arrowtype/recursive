@@ -4,14 +4,14 @@
 	<advance width="550"/>
 	<outline>
 		<component base="L"/>
-		<component base="slashcomb" xOffset="-28" yOffset="-41"/>
+		<component base="slashcomb.case" xOffset="155" yOffset="-56"/>
 	</outline>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
 			<string>fromComponents</string>
 			<key>public.markColor</key>
-			<string>0,0,0,0.1505</string>
+			<string>1,0,0,1</string>
 		</dict>
 	</lib>
 </glyph>
