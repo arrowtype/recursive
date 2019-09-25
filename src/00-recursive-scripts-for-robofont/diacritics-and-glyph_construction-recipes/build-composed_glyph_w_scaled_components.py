@@ -6,8 +6,12 @@ from vanilla.dialogs import *
 from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstructionBuilder
 
 # define glyph constructions
+# acircumflexacute = a + acutecomb@0.8, 0, 0, 0.65, `a:top + 140`, `a:top +354` + circumflexcomb@0.9, 0, 0, 0.8, a:top, `a:top + 90`
 txt = '''\
-acircumflexacute = a + acutecomb@0.8, 0, 0, 0.65, `a:top + 140`, `a:top +354` + circumflexcomb@0.9, 0, 0, 0.8, a:top, `a:top + 90`
+ydotbelow=y+dotbelowcomb@dot
+Ydotbelow=Y+dotbelowcomb@bottom
+yhook=y+hookcomb@hook
+Yhook=Y+hookcomb.case@hook
 '''
 
 # get the actual glyph constructions from text
