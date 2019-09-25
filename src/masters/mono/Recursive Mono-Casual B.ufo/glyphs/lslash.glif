@@ -4,7 +4,7 @@
 	<advance width="600"/>
 	<outline>
 		<component base="l"/>
-		<component base="slashcomb" xOffset="255" yOffset="30"/>
+		<component base="slashcomb" xOffset="255"/>
 	</outline>
 	<lib>
 		<dict>
@@ -17,7 +17,7 @@
 			<key>com.typemytype.robofont.Image.Sharpness</key>
 			<real>0.4</real>
 			<key>public.markColor</key>
-			<string>0,0,0,0.1505</string>
+			<string>1,0,0,1</string>
 		</dict>
 	</lib>
 </glyph>
