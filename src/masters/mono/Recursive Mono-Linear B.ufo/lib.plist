@@ -1143,13 +1143,11 @@
 			<string>brevecomb</string>
 			<string>dotaccentcomb</string>
 			<string>dieresiscomb</string>
-			<string>hookcomb</string>
 			<string>ringcomb</string>
 			<string>hungarumlautcomb</string>
 			<string>caroncomb</string>
 			<string>commaturnedabovecomb</string>
 			<string>commaaboverightcomb</string>
-			<string>horncomb</string>
 			<string>dotbelowcomb</string>
 			<string>commaaccentcomb</string>
 			<string>cedillacomb</string>
@@ -1319,7 +1317,9 @@
 			<string>bitcoin</string>
 			<string>.arrowhead</string>
 			<string>dotlessij</string>
+			<string>hookcomb</string>
 			<string>horn</string>
+			<string>horncomb</string>
 			<string>liraTurkish</string>
 			<string>ringacute</string>
 			<string>rupeeIndian</string>
@@ -1332,26 +1332,26 @@
 			<string>brevecomb.case</string>
 			<string>dotaccentcomb.case</string>
 			<string>dieresiscomb.case</string>
-			<string>hookcomb.case</string>
 			<string>ringcomb.case</string>
 			<string>hungarumlautcomb.case</string>
 			<string>caroncomb.case</string>
 			<string>commaturnedabovecomb.case</string>
 			<string>commaaboverightcomb.case</string>
-			<string>horncomb.case</string>
 			<string>dotbelowcomb.case</string>
 			<string>commaaccentcomb.case</string>
 			<string>cedillacomb.case</string>
 			<string>ogonekcomb.case</string>
 			<string>acutecombviet.case</string>
 			<string>gravecombviet.case</string>
+			<string>hookcomb.case</string>
+			<string>horncomb.case</string>
 			<string>ringacute.case</string>
 			<string>tildecombviet.case</string>
 			<string>braceleft.cap</string>
 			<string>braceright.cap</string>
 			<string>at.cap</string>
 			<string>at.replaced_with_prop</string>
-			<string>ampersand.code_experimental_3</string>
+			<string>ampersand_ampersand.code</string>
 			<string>dollar.lower</string>
 			<string>one.flatflag</string>
 			<string>a.italic</string>
@@ -1406,6 +1406,8 @@
 			<string>zero.sans</string>
 			<string>one.sans</string>
 			<string>.notdef</string>
+			<string>notdef</string>
+			<string>slashcomb.case</string>
 			<string>ydotbelow</string>
 			<string>Ydotbelow</string>
 			<string>yhook</string>
