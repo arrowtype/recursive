@@ -10,7 +10,6 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 txt = '''\
 ydotbelow=y+dotbelowcomb@dot
 Ydotbelow=Y+dotbelowcomb@bottom
-
 yhook=y+hookcomb@hook
 Yhook=Y+hookcomb.case@hook
 '''
