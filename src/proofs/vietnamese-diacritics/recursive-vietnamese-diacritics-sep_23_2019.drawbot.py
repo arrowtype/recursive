@@ -1,8 +1,11 @@
 from drawBot import * # requires drawbot to be installed as module
 import datetime
 from fontTools.misc.bezierTools import splitCubicAtT
-newDrawing() # for drawbot module
+from fontTools.ttLib import TTFont
+import os
+import shutil
 
+newDrawing() # for drawbot module
 
 export = True
 autoOpen = True
@@ -17,9 +20,29 @@ timestamp = datetime.datetime.now().strftime("%Y-%m-%d, %H:%M")
 parentDir = "/Users/stephennixon/type-repos/recursive/src/proofs/vietnamese-diacritics"
 docTitle="recursive-vietnamese-diacritics"
 
-uninstallFont("/Users/stephennixon/type-repos/recursive/src/proofs/vietnamese-diacritics/recursive-mono--xprn_wght_slnt_ital--2019_09_23.ttf")
-
 fontFam = "/Users/stephennixon/type-repos/recursive/src/proofs/vietnamese-diacritics/recursive-mono--xprn_wght_slnt_ital--2019_09_26.ttf"
+
+# hack to avoid font cache: update nameID 6 (https://github.com/typemytype/drawbot/issues/112)
+ttfont = TTFont(fontFam)
+oldName6 = ttfont['name'].getName(6, 3, 1)
+tempName6 = f"tempFont-{now}"
+print(f"{oldName6} updated to {tempName6} to avoid cache")
+ttfont['name'].setName(tempName6, 6, 3, 1, 0x409)
+
+oldName3 = ttfont['name'].getName(3, 3, 1)
+tempName3 = str(oldName3).replace(str(oldName3).split(';')[-1],tempName6)
+print(f"{oldName3} updated to {tempName3} to avoid cache")
+ttfont['name'].setName(tempName3, 3, 3, 1, 0x409)
+
+tempFolder = os.path.split(fontFam)[0] + "/temp"
+
+if not os.path.exists(tempFolder):
+    os.makedirs(tempFolder)
+
+tempFile = tempFolder + "/" + os.path.split(fontFam)[1].replace(".ttf",f".temp.ttf")
+ttfont.save(tempFile)
+
+fontFam = tempFile
 
 variations = [
     {"wght": 300.01, "XPRN":0.01},
@@ -205,3 +228,6 @@ if export and exportFormat is not "bmp":
         import os
         # os.system(f"open --background -a Preview {path}")
         os.system(f"open -a Preview {path}")
+
+# remove earlier font hack
+shutil.rmtree(tempFolder)
