@@ -38,6 +38,6 @@ woff2_compress $outputDir/$fontName--$date.ttf
 
 pyftsubset $outputDir/$fontName--$date.ttf --unicodes="U+0020-007F" --flavor="woff2" --output-file="$outputDir/$fontName--$date--subset-0020_007F.woff2"
 
-base64 "$outputDir/$fontName--$date--subset-0020_007F.woff2" > "$outputDir/$fontName--$date--subset-0020_007F.base64"
+# base64 "$outputDir/$fontName--$date--subset-0020_007F.woff2" > "$outputDir/$fontName--$date--subset-0020_007F.base64"
 
 # rm "$outputDir/$fontName--$date--subset-0020_007F.woff2"
