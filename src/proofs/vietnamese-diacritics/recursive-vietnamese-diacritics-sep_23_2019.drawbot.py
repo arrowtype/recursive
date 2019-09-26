@@ -17,7 +17,9 @@ timestamp = datetime.datetime.now().strftime("%Y-%m-%d, %H:%M")
 parentDir = "/Users/stephennixon/type-repos/recursive/src/proofs/vietnamese-diacritics"
 docTitle="recursive-vietnamese-diacritics"
 
-fontFam = "/Users/stephennixon/type-repos/recursive/src/proofs/vietnamese-diacritics/recursive-mono--xprn_wght_slnt_ital--2019_09_23.ttf"
+uninstallFont("/Users/stephennixon/type-repos/recursive/src/proofs/vietnamese-diacritics/recursive-mono--xprn_wght_slnt_ital--2019_09_23.ttf")
+
+fontFam = "/Users/stephennixon/type-repos/recursive/src/proofs/vietnamese-diacritics/recursive-mono--xprn_wght_slnt_ital--2019_09_26.ttf"
 
 variations = [
     {"wght": 300.01, "XPRN":0.01},
