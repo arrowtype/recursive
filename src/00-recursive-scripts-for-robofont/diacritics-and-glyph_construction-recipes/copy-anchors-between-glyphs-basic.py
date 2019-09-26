@@ -1,37 +1,32 @@
 for f in AllFonts():
+    print(f)
     
-    # find location of bottom anchor in T
-    # add bottom anchor to Y
+    
+    fromGlyph = "I"
+    toGlyph = "Y"
+    anchorToCopy = "bottom"
+    
+    for a in f[fromGlyph].anchors:
+        if a.name == anchorToCopy:
+            anchorLoc = a.position
+            print(anchorLoc)
+    
+    toGlyphAnchors = []
+    print(f[toGlyph].anchors)
+    
+    for i, a in enumerate(f[toGlyph].anchors):
+        toGlyphAnchors.append(a.name)
+        
+        if a.name == anchorToCopy:
+            anchorToCopyIndex = i
+        
+    # replaces anchor if it already exists (but may be at incorrect location)
+    if anchorToCopy in toGlyphAnchors:
+        f[toGlyph].removeAnchor(f[toGlyph].anchors[anchorToCopyIndex])
+        f[toGlyph].appendAnchor(anchorToCopy, anchorLoc)
+  
+    # adds anchor if it doesn't exist
+    else:
+        f[toGlyph].appendAnchor(anchorToCopy, anchorLoc)
 
-    for a in f["T"].anchors:
-        if a.name == "bottom":
-            dotLoc = a.position
-            print(dotLoc)
     
-    Yanchors = []
-    print(f["Y"].anchors)
-    
-    for a in f["Y"].anchors:
-        Yanchors.append(a.name)
-  
-    print(Yanchors)  
-    if "bottom" not in Yanchors:
-       f["Y"].appendAnchor("bottom", dotLoc)
-    
-    # find location of hook anchor in O
-    # add hook anchor to Y
-    
-    for a in f["O"].anchors:
-        if a.name == "hook":
-            hookLoc = a.position
-            print(hookLoc)
-    
-    Yanchors = []
-    print(f["Y"].anchors)
-    
-    for a in f["Y"].anchors:
-        Yanchors.append(a.name)
-  
-    print(Yanchors)  
-    if "hook" not in Yanchors:
-       f["Y"].appendAnchor("hook", hookLoc)
