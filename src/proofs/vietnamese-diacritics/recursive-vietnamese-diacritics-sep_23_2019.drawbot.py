@@ -229,5 +229,5 @@ if export and exportFormat is not "bmp":
         # os.system(f"open --background -a Preview {path}")
         os.system(f"open -a Preview {path}")
 
-# remove earlier font hack
+# delete temp font from earlier font hack
 shutil.rmtree(tempFolder)
