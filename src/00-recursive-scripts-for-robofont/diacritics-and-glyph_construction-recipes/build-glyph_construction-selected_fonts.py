@@ -8,17 +8,11 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 # define glyph constructions
 # acircumflexacute = a + acutecomb@0.8, 0, 0, 0.65, `a:top + 140`, `a:top +354` + circumflexcomb@0.9, 0, 0, 0.8, a:top, `a:top + 90`
 txt = '''\
-ydotbelow=y+dotbelowcomb@dot
-Ydotbelow=Y+dotbelowcomb@bottom
-yhook=y+hookcomb@hook
-Yhook=Y+hookcomb.case@hook
+equal_equal.code = equal & equal
 '''
 
 # get the actual glyph constructions from text
 constructions = ParseGlyphConstructionListFromString(txt)
-
-# get the current font
-# font = CurrentFont()
 
 
 files = getFile("Select files to build glyphs in", allowsMultipleSelection=True, fileTypes=["ufo"])
@@ -49,7 +43,7 @@ for file in files:
         glyph.name = constructionGlyph.name
         glyph.unicode = constructionGlyph.unicode
         glyph.width = constructionGlyph.width
-        glyph.markColor = 1, 1, 0, 0.5
+        glyph.markColor = 0.25, 1, 1, 0.5
 
         # if no unicode was given, try to set it automatically
         if glyph.unicode is None:
