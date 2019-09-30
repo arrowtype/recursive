@@ -70,6 +70,8 @@ Including these because they should be relatively simple, and will be seen very 
 
 #### logic operators
 
+| ligature | name                    | usecase        |
+| -------- | ----------------------- | -------------- |
 | >=       | greater_equal.code      | JS, Python, C# |
 | <=       | less_equal.code         | JS, Python, C# |
 
