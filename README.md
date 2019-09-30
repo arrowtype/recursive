@@ -22,6 +22,29 @@ Recursive is still being built, but it will have the following axes:
 
 Note: `PROP` and `XPRN` are "unregistered" axes (not currently in Microsoft's official listing of variation axes and specs), so these tags must be used in all-caps in CSS, etc.
 
+## Using the project scripts in RoboFont
+
+1. Navigate to your robofont scripts folder in a terminal. 
+    1. In RoboFont's menu, go to *Scripts > Reveal Scripts Folder*
+    2. Open a terminal window.
+    3. Type `cd `, then copy-paste or drag-n-drop the scripts folder to get its full filepath. Hit return/enter.
+   
+2. Make a symbolic link or "symlink" to the Recursive project scripts folder, `src/00-recursive-scripts-for-robofont`
+    1. Still in the same terminal, type `ln -s `
+    2. Copy-paste or drag-n-drop the `src/00-recursive-scripts-for-robofont` from Finder to get its full path. Hit return/enter.
+    3. Check that it's there by running `ls` to list files. You should see ``src/00-recursive-scripts-for-robofont` as one of the items listed.
+
+3. Update your Scripts menu in RoboFont with *Scripts > Update Menu*
+    - If the Recursive scripts don't appear, you may need to restart RoboFont
+
+Now, you can run the Recursive project scripts directly from the Scripts menu, or by opening them in the Scripting Window. 
+
+**Standard disclaimers:**
+
+Like any Python scripts, read through them and be generally familiar with what they do before running them. Also, use Git and/or backups when you are using scripts to design. 
+
+Feel free to use/remix these scripts in other projects. I give no warrantees or guarantees of their quality, and your mileage may vary.
+
 <!-- 
 ## Build
 
