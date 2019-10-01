@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <designspace format="4.0">
   <axes>
-    <axis tag="MONO" name="Monospace" minimum="0" maximum="1" default="1">
+    <axis tag="MONO" name="Monospace" minimum="0" maximum="1" default="0">
       <labelname xml:lang="en">Monospace</labelname>
     </axis>
     <axis tag="XPRN" name="Expression" minimum="0" maximum="1" default="0">
@@ -177,7 +177,7 @@
     </rule>
   </rules>
   <sources>
-    <source filename="Recursive Mono-Casual A Slanted.ufo" familyname="Recursive Mono" stylename="Casual A Italic">
+    <source filename="Recursive Mono-Casual A Slanted.ufo" familyname="Recursive" stylename="Mono Casual A Italic">
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Expression" xvalue="1" />
@@ -186,7 +186,7 @@
         <dimension name="Italic" xvalue="0.500000" />
       </location>
     </source>
-    <source filename="Recursive Mono-Casual A.ufo" familyname="Recursive Mono" stylename="Casual A">
+    <source filename="Recursive Mono-Casual A.ufo" familyname="Recursive" stylename="Mono Casual A">
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Expression" xvalue="1" />
@@ -195,7 +195,7 @@
         <dimension name="Italic" xvalue="0.500000" />
       </location>
     </source>
-    <source filename="Recursive Mono-Casual B Slanted.ufo" familyname="Recursive Mono" stylename="Casual B Italic">
+    <source filename="Recursive Mono-Casual B Slanted.ufo" familyname="Recursive" stylename="Mono Casual B Italic">
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Expression" xvalue="1" />
@@ -204,7 +204,7 @@
         <dimension name="Italic" xvalue="0.500000" />
       </location>
     </source>
-    <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B">
+    <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive" stylename="Mono Casual B">
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Expression" xvalue="1" />
@@ -213,7 +213,7 @@
         <dimension name="Italic" xvalue="0.500000" />
       </location>
     </source>
-    <source filename="Recursive Mono-Casual C Slanted.ufo" familyname="Recursive Mono" stylename="Casual C Italic">
+    <source filename="Recursive Mono-Casual C Slanted.ufo" familyname="Recursive" stylename="Mono Casual C Italic">
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Expression" xvalue="1" />
@@ -222,7 +222,7 @@
         <dimension name="Italic" xvalue="0.500000" />
       </location>
     </source>
-    <source filename="Recursive Mono-Casual C.ufo" familyname="Recursive Mono" stylename="Casual C">
+    <source filename="Recursive Mono-Casual C.ufo" familyname="Recursive" stylename="Mono Casual C">
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Expression" xvalue="1" />
@@ -231,7 +231,7 @@
         <dimension name="Italic" xvalue="0.500000" />
       </location>
     </source>
-    <!-- <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive Mono" stylename="Casual B" layer="support.w.middle">
+    <!-- <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive" stylename="Mono Casual B" layer="support.w.middle">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Expression" xvalue="1"/>
@@ -240,7 +240,7 @@
         <dimension name="Italic" xvalue="0.500000"/>
       </location>
     </source> -->
-    <source filename="Recursive Mono-Linear A Slanted.ufo" familyname="Recursive Mono" stylename="Linear A 14 Italic">
+    <source filename="Recursive Mono-Linear A Slanted.ufo" familyname="Recursive" stylename="Mono Linear A 14 Italic">
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Expression" xvalue="0" />
@@ -249,7 +249,7 @@
         <dimension name="Italic" xvalue="0.500000" />
       </location>
     </source>
-    <source filename="Recursive Mono-Linear A.ufo" familyname="Recursive Mono" stylename="Linear A">
+    <source filename="Recursive Mono-Linear A.ufo" familyname="Recursive" stylename="Mono Linear A">
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Expression" xvalue="0" />
@@ -258,7 +258,7 @@
         <dimension name="Italic" xvalue="0.500000" />
       </location>
     </source>
-    <source filename="Recursive Mono-Linear B Slanted.ufo" familyname="Recursive Mono" stylename="Linear B 14 Italic">
+    <source filename="Recursive Mono-Linear B Slanted.ufo" familyname="Recursive" stylename="Mono Linear B 14 Italic">
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Expression" xvalue="0" />
@@ -267,7 +267,7 @@
         <dimension name="Italic" xvalue="0.500000" />
       </location>
     </source>
-    <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear B">
+    <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive" stylename="Mono Linear B">
       <lib copy="1" />
       <groups copy="1" />
       <features copy="1" />
@@ -280,7 +280,7 @@
         <dimension name="Italic" xvalue="0.500000" />
       </location>
     </source>
-    <source filename="Recursive Mono-Linear C Slanted.ufo" familyname="Recursive Mono" stylename="Linear C Italic">
+    <source filename="Recursive Mono-Linear C Slanted.ufo" familyname="Recursive" stylename="Mono Linear C Italic">
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Expression" xvalue="0" />
@@ -289,7 +289,7 @@
         <dimension name="Italic" xvalue="0.500000" />
       </location>
     </source>
-    <source filename="Recursive Mono-Linear C.ufo" familyname="Recursive Mono" stylename="Linear C">
+    <source filename="Recursive Mono-Linear C.ufo" familyname="Recursive" stylename="Mono Linear C">
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Expression" xvalue="0" />
@@ -298,7 +298,7 @@
         <dimension name="Italic" xvalue="0.500000" />
       </location>
     </source>
-    <!-- <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive Mono" stylename="Linear B" layer="support.w.middle">
+    <!-- <source filename="Recursive Mono-Linear B.ufo" familyname="Recursive" stylename="Mono Linear B" layer="support.w.middle">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Expression" xvalue="0"/>
