@@ -15,7 +15,7 @@ fi
 # ---------------------------------------------------------
 # FontMake ------------------------------------------------
 
-outputDir="font-betas"
+outputDir="font_betas"
 dsName=$(basename $DS)
 fontName=${dsName/".designspace"/""}
 

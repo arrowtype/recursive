@@ -14,30 +14,37 @@ if [[ -z "$DS" || $DS = "--help" || -z "$fontFormat" ]] ; then
     exit 2
 fi
 
-outputDir="font-betas/work-in-progress"
-dsName=$(basename $DS)
-fontName=${dsName/".designspace"/""}
-
-timestamp() {
-  date +"%Y_%m_%d"
-}
-
-date=$(timestamp)
-
-buildAndMove() {
-    fontFormat=$1
-    echo 🏗 Building static $fontFormat files
-
-    fontmake -m $DS -o $fontFormat -i
-    mv "instance_$fontFormat" "$outputDir/$fontName_$fontFormat"
-
-    for font in $outputDir/$fontName_$fontFormat/*; do
-        python src/build-scripts/set-versioned-font-names.py "$font" --static --inplace
-    done
-}
+# Sort out path naming
 
 if [[ $2 = "-o" || $2 = "--otf" ]] ; then
-    buildAndMove "otf"
+    fontFormat="otf"
 elif [[ $2 = "-t" || $2 = "--ttf" ]] ; then
-    buildAndMove "ttf"
+    fontFormat="ttf"
 fi
+
+outputDir="font_betas"
+dsName=$(basename $DS)
+fontName=${dsName/".designspace"/""}
+finalDirectory="${outputDir}/static_fonts/${fontName}-static_${fontFormat}"
+
+echo $fontName
+echo $finalDirectory
+
+mkdir -p $finalDirectory
+
+# Build
+echo 🏗 Building static $fontFormat files
+fontmake -m $DS -o $fontFormat -i
+
+# Move
+for font in "instance_${fontFormat}"/*; do
+    mv "${font}" ${finalDirectory}
+done
+
+rm -r "instance_${fontFormat}"
+
+# Set versioned names
+for font in $finalDirectory/*; do
+    python src/build-scripts/set-versioned-font-names.py "$font" --static --inplace
+done
+
