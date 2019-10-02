@@ -1,8 +1,11 @@
 from drawBot import * # requires drawbot to be installed as module
 import datetime
 from fontTools.misc.bezierTools import splitCubicAtT
-newDrawing() # for drawbot module
+from fontTools.ttLib import TTFont
+import os
+import shutil
 
+newDrawing() # for drawbot module
 
 export = True
 autoOpen = True
@@ -17,7 +20,34 @@ timestamp = datetime.datetime.now().strftime("%Y-%m-%d, %H:%M")
 parentDir = "/Users/stephennixon/type-repos/recursive/src/proofs/vietnamese-diacritics"
 docTitle="recursive-vietnamese-diacritics"
 
-fontFam = "/Users/stephennixon/type-repos/recursive/src/proofs/vietnamese-diacritics/recursive-mono--xprn_wght_slnt_ital--2019_09_23.ttf"
+fontFam = "/Users/stephennixon/type-repos/recursive/src/proofs/vietnamese-diacritics/recursive-mono--xprn_wght_slnt_ital--2019_09_26.ttf"
+# fontFam = "/Users/stephennixon/type-repos/recursive/src/proofs/vietnamese-diacritics/IBMPlexMono-Bold.otf"
+
+# # hack to avoid font cache: update nameID 6 (https://github.com/typemytype/drawbot/issues/112)
+
+def make_temp_font(timestamp, font_file):
+    '''
+    Make a temporary font file with unique PS name, because the same PS name
+    implies that the same font is seen throughout the PDF
+    '''
+    ttf = TTFont(os.path.abspath(font_file))
+    font_dir = os.path.dirname(font_file)
+    temp_font_name = os.path.splitext(os.path.basename(font_file))[0]
+    tempName6 = f"tempFont-{timestamp}"
+    temp_font_file = os.path.join(font_dir, f"{tempName6}.ttf")
+    ttf["name"].setName(tempName6, nameID=6, platformID=1, platEncID=0, langID=0)
+    ttf["name"].setName(tempName6, nameID=1, platformID=1, platEncID=0, langID=0)
+    ttf["name"].setName(tempName6, nameID=4, platformID=1, platEncID=0, langID=0)
+    ttf["name"].setName(tempName6, nameID=16, platformID=1, platEncID=0, langID=0)
+    oldName3 = ttf['name'].getName(3, 3, 1)
+    tempName3 = str(oldName3).replace(str(oldName3).split(';')[-1],tempName6)
+    ttf["name"].setName(tempName6, nameID=3, platformID=1, platEncID=0, langID=0)
+    ttf.save(temp_font_file)
+    return(temp_font_file)
+
+tempFile = make_temp_font(now, fontFam)
+
+print(fontFam)
 
 variations = [
     {"wght": 300.01, "XPRN":0.01},
@@ -38,14 +68,14 @@ pad = [i * DPI for i in padding]
 def newPagePlz(w,h, footer=True):
     newPage(w,h)
     if footer:
-        font(fontFam)
+        font(tempFile)
         fontSize(10 * DPI/72)
         text(f"Recursive Mono – Vietnamese Diacritics; {timestamp}", (pad[3], pad[2]*0.75))
 
 
 def printVariations(string, size, variations):
     text = FormattedString()
-    text.font(fontFam)
+    text.font(tempFile)
     fSize = size * DPI/72
     text.fontSize(fSize)
     text.lineHeight(fSize * 1.625)
@@ -63,7 +93,7 @@ def printVariations(string, size, variations):
 
 def serialPrint(string, size, variations):
     testText = FormattedString()
-    testText.font(fontFam)
+    testText.font(tempFile)
     for glyph in string:
         for var in variations:
             fSize = size * DPI/72
@@ -83,7 +113,7 @@ def serialPrint(string, size, variations):
 newPagePlz(pageW, pageH, footer=False)
 
 coverText = FormattedString()
-coverText.font(fontFam)
+coverText.font(tempFile)
 fSize = 16 * DPI/72
 coverText.fontSize(fSize)
 coverText.lineHeight(fSize * 1.625)
@@ -203,3 +233,6 @@ if export and exportFormat is not "bmp":
         import os
         # os.system(f"open --background -a Preview {path}")
         os.system(f"open -a Preview {path}")
+
+# delete temp font from earlier font hack
+os.remove(tempFile)

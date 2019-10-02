@@ -67,6 +67,14 @@ Including these because they should be relatively simple, and will be seen very 
 | ####     | numbersign_numbersign_numbersign_numbersign.code | Python, Markdown |
 | //       | slash_slash.code                                 | JS               |
 
+
+#### logic operators
+
+| ligature | name                    | usecase        |
+| -------- | ----------------------- | -------------- |
+| >=       | greater_equal.code      | JS, Python, C# |
+| <=       | less_equal.code         | JS, Python, C# |
+
 ### _priority 1_
 
 #### formatted strings
@@ -92,13 +100,11 @@ Including these because they should be relatively simple, and will be seen very 
 | <!\-\-   | less_exclam_hyphen_hyphen.code           | HTML    |
 | -->      | hyphen_hyphen_greater.code               | HTML    |
 
-#### logic operators
+#### more logic operators
 
 | ligature | name                    | usecase        |
 | -------- | ----------------------- | -------------- |
 | !=       | exclam_equal.code       | Python, JS     |
-| >=       | greater_equal.code      | JS, Python, C# |
-| <=       | less_equal.code         | JS, Python, C# |
 | !==      | exclam_equal_equal.code | JS             |
 | =/=      | equal_slash_equal.code  |
 | ?.       | question_period.code    |
