@@ -9,6 +9,14 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 # e.g. equal_equal.code = equal & equal
 txt = '''\
 equal_equal.code = equal & equal
+equal_equal_equal.code = equal & equal & equal
+percent_percent.code = percent & percent
+numbersign_numbersign_numbersign_numbersign.code = numbersign & numbersign & numbersign & numbersign
+slash_slash.code = slash & slash
+bar_bar.code = bar & bar
+exclam_exclam.code = exclam & exclam
+dollar_braceleft.code = dollar & braceleft
+question_question.code = question & question
 '''
 
 # get the actual glyph constructions from text
