@@ -2,8 +2,64 @@
 <glyph name="less_equal.code" format="2">
 	<advance width="1200"/>
 	<outline>
-		<component base="less"/>
-		<component base="equal" xOffset="600"/>
+		<contour>
+			<point x="242" y="224" type="curve"/>
+			<point x="241" y="219"/>
+			<point x="240" y="202"/>
+			<point x="240" y="194" type="curve" smooth="yes"/>
+			<point x="240" y="176"/>
+			<point x="245" y="166"/>
+			<point x="278" y="150" type="curve" smooth="yes"/>
+			<point x="455" y="63"/>
+			<point x="689" y="-2"/>
+			<point x="920" y="-30" type="curve"/>
+			<point x="920" y="-27"/>
+			<point x="920" y="-23"/>
+			<point x="920" y="-20" type="curve" smooth="yes"/>
+			<point x="920" y="8"/>
+			<point x="910" y="24"/>
+			<point x="887" y="27" type="curve" smooth="yes"/>
+			<point x="661" y="57"/>
+			<point x="451" y="118"/>
+		</contour>
+		<contour>
+			<point x="250" y="425" type="curve"/>
+			<point x="250" y="413"/>
+			<point x="250" y="400"/>
+			<point x="250" y="388" type="curve" smooth="yes"/>
+			<point x="250" y="370"/>
+			<point x="258" y="356"/>
+			<point x="280" y="343" type="curve" smooth="yes"/>
+			<point x="397" y="273"/>
+			<point x="649" y="176"/>
+			<point x="899" y="137" type="curve"/>
+			<point x="901" y="143"/>
+			<point x="902" y="149"/>
+			<point x="902" y="156" type="curve" smooth="yes"/>
+			<point x="902" y="173"/>
+			<point x="896" y="189"/>
+			<point x="883" y="192" type="curve" smooth="yes"/>
+			<point x="648" y="238"/>
+			<point x="424" y="304"/>
+			<point x="268" y="413" type="curve"/>
+			<point x="297" y="363" type="line"/>
+			<point x="297" y="427" type="line"/>
+			<point x="269" y="377" type="line"/>
+			<point x="396" y="485"/>
+			<point x="698" y="597"/>
+			<point x="902" y="631" type="curve"/>
+			<point x="902" y="636"/>
+			<point x="902" y="640"/>
+			<point x="902" y="645" type="curve" smooth="yes"/>
+			<point x="902" y="667"/>
+			<point x="891" y="678"/>
+			<point x="876" y="678" type="curve" smooth="yes"/>
+			<point x="860" y="678"/>
+			<point x="833" y="675"/>
+			<point x="786" y="663" type="curve" smooth="yes"/>
+			<point x="603" y="618"/>
+			<point x="385" y="522"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>
