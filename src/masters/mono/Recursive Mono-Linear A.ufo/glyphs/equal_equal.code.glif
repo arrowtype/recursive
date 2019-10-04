@@ -2,8 +2,20 @@
 <glyph name="equal_equal.code" format="2">
 	<advance width="1200"/>
 	<outline>
-		<component base="equal"/>
-		<component base="equal" xOffset="600"/>
+		<contour>
+			<point x="383" y="400" type="line"/>
+			<point x="827" y="400" type="line"/>
+			<point x="827" y="450" type="line"/>
+			<point x="383" y="450" type="line"/>
+		</contour>
+		<contour>
+			<point x="383" y="150" type="line"/>
+			<point x="827" y="150" type="line"/>
+			<point x="827" y="200" type="line"/>
+			<point x="383" y="200" type="line"/>
+		</contour>
+		<component base="equal" xOffset="40"/>
+		<component base="equal" xOffset="560"/>
 	</outline>
 	<lib>
 		<dict>

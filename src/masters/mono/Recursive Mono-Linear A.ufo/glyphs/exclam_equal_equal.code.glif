@@ -2,9 +2,9 @@
 <glyph name="exclam_equal_equal.code" format="2">
 	<advance width="1800"/>
 	<outline>
-		<component base="exclam"/>
-		<component base="equal" xOffset="600"/>
-		<component base="equal" xOffset="1200"/>
+		<component base="exclam" xOffset="22"/>
+		<component base="equal" xOffset="480" yOffset="1"/>
+		<component base="equal" xOffset="1080"/>
 	</outline>
 	<lib>
 		<dict>
