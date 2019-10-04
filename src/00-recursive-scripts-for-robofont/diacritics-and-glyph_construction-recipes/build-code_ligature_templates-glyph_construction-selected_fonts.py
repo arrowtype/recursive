@@ -8,17 +8,24 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 # define glyph constructions
 # e.g. equal_equal.code = equal & equal
 txt = '''\
-equal_equal.code = equal & equal
-equal_equal_equal.code = equal & equal & equal
-percent_percent.code = percent & percent
-numbersign_numbersign_numbersign_numbersign.code = numbersign & numbersign & numbersign & numbersign
 slash_slash.code = slash & slash
-bar_bar.code = bar & bar
 exclam_exclam.code = exclam & exclam
-dollar_braceleft.code = dollar & braceleft
+numbersign_numbersign.code = numbersign & numbersign
+?equal_equal.code = equal & equal
+?equal_equal_equal.code = equal & equal & equal
+exclam_equal.code = exclam & equal
+exclam_equal_equal.code = exclam & equal & equal
+less_equal.code = less & equal
+greater_equal.code = greater & equal
+equal_greater.code = equal & greater
 question_question.code = question & question
+?ampersand_ampersand.code = ampersand & ampersand
+percent_percent.code = percent & percent
+numbersign_numbersign_numbersign.code = numbersign & numbersign & numbersign
+numbersign_numbersign_numbersign_numbersign.code = numbersign & numbersign & numbersign & numbersign
+bar_bar.code = bar & bar
+dollar_braceleft.code = dollar & braceleft
 '''
-
 # get the actual glyph constructions from text
 constructions = ParseGlyphConstructionListFromString(txt)
 
