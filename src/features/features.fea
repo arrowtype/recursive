@@ -1,9 +1,11 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
 feature dlig {
     lookup equal_equal_equal {
-    ignore sub equal equal' equal equal;
-    ignore sub equal' equal equal equal;
-    sub LIG LIG equal' by equal_equal_equal.code;
-    sub LIG  equal' equal  by LIG;
-    sub equal'   equal  equal  by LIG;
+        # ignore sub equal' equal' equal' equal' equal';
+        # ignore sub equal' equal' equal' equal';
+        ignore sub equal' equal' equal' equal, equal equal' equal' equal';
+        sub equal' equal' equal' by equal_equal_equal.code;
     } equal_equal_equal;
 } dlig;
