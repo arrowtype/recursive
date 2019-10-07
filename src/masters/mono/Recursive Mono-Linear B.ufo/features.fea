@@ -7,12 +7,12 @@ languagesystem latn dflt;
 #         sub equal equal equal by equal_equal_equal.code;
 # } dlig;
 
-feature calt {
-    lookup equal_equal_equal {
-        ignore sub equal equal' equal equal;
-        ignore sub equal' equal equal equal;
-        sub LIG LIG equal' by equal_equal_equal.liga;
-        sub LIG  equal' equal  by LIG;
-        sub equal'   equal  equal  by LIG;
-    } equal_equal_equal;
-} calt;
+# feature calt {
+#     lookup equal_equal_equal {
+#         ignore sub equal equal' equal equal;
+#         ignore sub equal' equal equal equal;
+#         sub LIG LIG equal' by equal_equal_equal.liga;
+#         sub LIG  equal' equal  by LIG;
+#         sub equal'   equal  equal  by LIG;
+#     } equal_equal_equal;
+# } calt;
