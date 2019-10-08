@@ -49,6 +49,21 @@ Thing #3: it allows the user to easily place their cursor "inside" of ligatures.
 @tonsky: 
 > LIG is just an empty glyph, I invented the name for it myself. Why I need it is explained here https://www.patreon.com/posts/fira-code-inside-28074541.
 
+
+## Is the LIG hack required to allow users to "step into" ligatures?
+
+On the question of code ligatures and whether to use multi-width glyphs versus a `LIG LIG whatever.liga` approach similar to Fira Code:
+
+> Just tested Sublime Text 3, Intellij Idea, Text Edit, VS Code and Atom on macOS. Everyone except Atom can step inside ligatures, none needs caret instructions to do so. Atom ignores caret and can’t step into ligatures.
+
+source: https://github.com/tonsky/FiraCode/issues/854#issuecomment-539570736
+
+For context, about 13% of developers use Atom. This is either a large number or a small number, depending how you think about it.
+
+![Graph from the 2019 Stack Overflow survey of developers showing relative popularity of different code editors](assets/2019-10-08-11-42-48.png)
+
+https://insights.stackoverflow.com/survey/2019#technology-_-most-popular-development-environments
+
 ----------------------------------
 
 
@@ -80,3 +95,9 @@ Font in test: `docs/code-ligatures--implementation/assets/Recursive Mono-Linear 
 
 
 - (Make separate issue): What other features need to be written to make this font work well?
+
+
+## Resources
+
+- http://adobe-type-tools.github.io/afdko/OpenTypeFeatureFileSpecification.html
+- http://opentypecookbook.com/rules.html

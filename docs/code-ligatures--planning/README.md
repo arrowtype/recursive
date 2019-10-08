@@ -61,7 +61,7 @@ Including these because they should be relatively simple, and will be seen very 
 
 | ligature | name                                             | note             |
 | -------- | ------------------------------------------------ | ---------------- |
-| #        | numbersign.code                                  | Python, Markdown |
+| #        | numbersign.code                                  | Python, Markdown (but wait, is this even needed?) |
 | ##       | numbersign_numbersign.code                       | Python, Markdown |
 | ###      | numbersign_numbersign_numbersign.code            | Python, Markdown |
 | ####     | numbersign_numbersign_numbersign_numbersign.code | Python, Markdown |
