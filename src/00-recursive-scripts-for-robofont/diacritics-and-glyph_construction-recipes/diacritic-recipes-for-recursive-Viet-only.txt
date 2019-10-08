@@ -78,49 +78,49 @@ Ytilde=Y+tildecomb.case@top
 
 # horn
 
-ohorn=o+horncomb@horn
+ohorn=o+horncombo@horn
 uhorn=u+horncomb@horn
 
-Ohorn=O+horncomb.case@horn
+Ohorn=O+horncombo.case@horn
 Uhorn=U+horncomb.case@horn
 
 ############################
 
 # horn and acute
 
-ohornacute=o+horncomb@horn+acutecombviet.case@o:top
+ohornacute=o+horncombo@horn+acutecombviet.case@o:top
 uhornacute=u+horncomb@horn+acutecombviet.case@u:top
 
-Ohornacute=O+horncomb.case@horn+acutecombviet.case@O:top
+Ohornacute=O+horncombo.case@horn+acutecombviet.case@O:top
 Uhornacute=U+horncomb.case@horn+acutecombviet.case@U:top
 
 ############################
 
 # horn and grave
 
-ohorngrave=o+horncomb@horn+gravecombviet.case@o:top
+ohorngrave=o+horncomob@horn+gravecombviet.case@o:top
 uhorngrave=u+horncomb@horn+gravecombviet.case@u:top
 
-Ohorngrave=O+horncomb.case@horn+gravecombviet.case@O:top
+Ohorngrave=O+horncombo.case@horn+gravecombviet.case@O:top
 Uhorngrave=U+horncomb.case@horn+gravecombviet.case@U:top
 
 ############################
 
 # horn and hook
 
-ohornhook=o+horncomb@horn+hookcomb@o:hook
+ohornhook=o+horncombo@horn+hookcomb@o:hook
 uhornhook=u+horncomb@horn+hookcomb@u:hook
 
-Ohornhook=O+horncomb.case@horn+hookcomb.case@O:hook
+Ohornhook=O+horncombo.case@horn+hookcomb.case@O:hook
 Uhornhook=U+horncomb.case@horn+hookcomb.case@U:hook
 
 ############################
 
 # horn and tilde
 
-# ohorntilde=o+horncomb@horn+tildecombviet.case@o:top
+# ohorntilde=o+horncombo@horn+tildecombviet.case@o:top
 # uhorntilde=u+horncomb@horn+tildecombviet.case@u:top
-# Ohorntilde=O+horncomb.case@horn+tildecombviet.case@O:top
+# Ohorntilde=O+horncombo.case@horn+tildecombviet.case@O:top
 # Uhorntilde=U+horncomb.case@horn+tildecombviet.case@U:top
 
 ## heavy upright masters
@@ -131,19 +131,19 @@ Uhornhook=U+horncomb.case@horn+hookcomb.case@U:hook
 ## $tildeVietLc = 240,620
 ## $tildeVietUc = 150,770
 
-# ohorntilde=o+horncomb@horn+tildecombviet.case@o:`top-{tildeVietLc}`
+# ohorntilde=o+horncombo@horn+tildecombviet.case@o:`top-{tildeVietLc}`
 # uhorntilde=u+horncomb@horn+tildecombviet.case@u:`top-{tildeVietLc}`
-# Ohorntilde=O+horncomb.case@horn+tildecombviet.case@O:`top-{tildeVietUc}`
+# Ohorntilde=O+horncombo.case@horn+tildecombviet.case@O:`top-{tildeVietUc}`
 # Uhorntilde=U+horncomb.case@horn+tildecombviet.case@U:`top-{tildeVietUc}`
 
 ############################
 
 # horn and dot (below)
 
-ohorndot=o+horncomb@horn+dotbelowcomb@o:bottom
+ohorndot=o+horncombo@horn+dotbelowcomb@o:bottom
 uhorndot=u+horncomb@horn+dotbelowcomb@u:bottom
 
-Ohorndot=O+horncomb.case@horn+dotbelowcomb.case@O:bottom
+Ohorndot=O+horncombo.case@horn+dotbelowcomb.case@O:bottom
 Uhorndot=U+horncomb.case@horn+dotbelowcomb.case@U:bottom
 
 ############################
