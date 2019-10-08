@@ -31,7 +31,7 @@ Note: `MONO` and `XPRN` are "unregistered" axes (not currently in Microsoft's of
 
 This is a big topic, but a couple of good guides are [from MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide) and [from CSS-Tricks](https://css-tricks.com/one-file-many-options-using-variable-fonts-web/).
 
-In general, you should link in the font with `@font-face`, being sure to use `font-weight: 300 900;` to specify the font's range:
+In general, you should link in the font with `@font-face`, being sure to use `font-weight: 300 900;` to specify the font's weight range:
 
 ```
 @font-face {
@@ -61,9 +61,10 @@ In general, Recursive is intended for small-to-medium sized usage, particularly 
 
 
 Things to be aware of:
-- If you use weights 300–800 for large text, it may look good to slightly reduce letter-spacing (also called _tracking_)
-- The heaviest weights of Recursive are _really heavy_, so they need to be a little larger to remain legible
-- On screen, it can be useful to use a slightly bolder weight on light backgrounds than on dark backgrounds. For example, in VS Code on macOS, the `Regular` weight on a dark background looks similar to the `Medium` weight on a light background.
+- If you use weights 300–800 for large text, it may look good to slightly reduce letter-spacing (also called _tracking_).
+- The heaviest weights of Recursive are _really heavy_, so they need to be a little larger to remain legible.
+- Expression and Slant axes look great with intermediate values at text sizes, but they are mostly intended to be used at either fully "on or off" values, with intermediates available to allow animated stylistic transitions. If you are setting type at large sizes, avoid intermediate `XPRN` and `slnt` values. If you stick to named instances in design apps (e.g. `Mono Casual Bold Italic`, etc), this is handled for you automatically.
+- The Casual Italic instances are drawn to work well in text but are also the most expressive styles of the family – try them at large sizes to show off their wavy stems and really make a statement! 🏄‍♂️🏄‍♀️
 
 ### In Code Editors
 
@@ -77,6 +78,8 @@ In code editors like VS Code and Atom, you must use a string to set your preferr
 | Linear Medium   | `RecursiveMonoB_020-LnrMd`       | Light themes                                     |
 | Casual Regular  | `RecursiveMonoB_020-CslRg`       | General, with more personality (try in terminal) |
 | Casual Regular  | `RecursiveMonoB_020-CslRg`       | With more personality, Light themes              |
+
+The `B_020` in these name string represents the current beta release version. It's possible this has shifted (I am releasing often at this point), so check what the release notes say.
 
 ## Using the project scripts in RoboFont
 
