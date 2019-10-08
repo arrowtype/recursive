@@ -2,10 +2,32 @@ languagesystem DFLT dflt;
 languagesystem latn dflt;
 
 feature dlig {
+
+    lookup equal_equal {
+        ignore sub equal' equal' equal;
+        ignore sub equal equal' equal';
+        sub equal' equal' by equal_equal.code;
+    } equal_equal;
+    
     lookup equal_equal_equal {
-        # ignore sub equal' equal' equal' equal' equal';
-        # ignore sub equal' equal' equal' equal';
-        ignore sub equal' equal' equal' equal, equal equal' equal' equal';
+        ignore sub equal' equal' equal' equal;
+        ignore sub equal equal' equal' equal';
         sub equal' equal' equal' by equal_equal_equal.code;
     } equal_equal_equal;
+
+    # equal_equal_equal.code
+    # exclam_exclam.code
+    # question_question.code
+    # percent_percent.code
+    # ampersand_ampersand.code
+    # bar_bar.code
+    # equal_greater.code
+    # numbersign.code
+    # numbersign_numbersign.code
+    # numbersign_numbersign_numbersign.code
+    # numbersign_numbersign_numbersign_numbersign.code
+    # slash_slash.code
+    # greater_equal.code
+    # less_equal.code
+
 } dlig;
