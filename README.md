@@ -20,7 +20,6 @@ Recursive has the following axes:
 | Slant      | `slnt` | 0 to -15     | 0       | Upright (0°) to Slanted (about 15°)                             |
 | Italic     | `ital` | 0, 0.5, or 1 | 0.5     | Always roman (0), auto (0.5), or always italic (1)              |
 
-Note: `MONO` and `XPRN` are "unregistered" axes (not currently in Microsoft's official listing of variation axes and specs), so these tags must be used in all-caps in CSS, etc.
 
 ## Using the fonts
 
@@ -43,9 +42,11 @@ In general, you should link in the font with `@font-face`, being sure to use `fo
 
 Then, you can use the font with both `font-weight` and `font-variation-settings`! 
 
-One handy trick is to use CSS custom properties to more easily control `font-variation-settings` – see this [CodePen](https://codepen.io/thundernixon/pen/MPdwZL?css-preprocessor=none) for an example of this.
+Notes: 
 
-Note: you should be able to also use the property `font-style` to control `slnt` and `ital` axes, but these have some browser support issues at this point in time.
+- `MONO` and `XPRN` are "unregistered" axes (not currently in Microsoft's official listing of variation axes and specs), so these tags must be used in all-caps and controlled via `font-variation-settings`.
+- You will eventually be able to also use the property `font-style` to control `slnt` and `ital` axes, but these have some browser support issues (as of Oct 2019, but tools are rapidly evolving to better support variable fonts, so this will improve over time!) For now, these work best in `font-variation-settings`.
+- One weird trick: you can use CSS custom properties to more easily control `font-variation-settings` – see this [CodePen](https://codepen.io/thundernixon/pen/MPdwZL?css-preprocessor=none) for an example of this.
 
 
 ### Design recommendations
