@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="hookcomb" format="2">
 	<unicode hex="0309"/>
-	<advance width="600"/>
 	<outline>
 		<contour>
 			<point x="48" y="607" type="curve" smooth="yes"/>
@@ -11,8 +10,11 @@
 			<point x="63" y="594"/>
 			<point x="79" y="594"/>
 			<point x="93" y="594" type="curve"/>
-			<point x="131" y="634"/>
-			<point x="202" y="709"/>
+			<point x="107" y="609"/>
+			<point x="125" y="628"/>
+			<point x="143" y="647" type="curve" smooth="yes"/>
+			<point x="174" y="679"/>
+			<point x="202" y="710"/>
 			<point x="203" y="713" type="curve" smooth="yes"/>
 			<point x="210" y="740" type="line" smooth="yes"/>
 			<point x="212" y="748"/>
@@ -37,8 +39,11 @@
 			<point x="131" y="703"/>
 			<point x="130" y="699"/>
 			<point x="129" y="697" type="curve"/>
-			<point x="102" y="665"/>
-			<point x="76" y="637"/>
+			<point x="115" y="681"/>
+			<point x="101" y="665"/>
+			<point x="88" y="650" type="curve" smooth="yes"/>
+			<point x="75" y="636"/>
+			<point x="62" y="622"/>
 		</contour>
 	</outline>
 	<anchor name="_hook" x="79" y="584"/>
