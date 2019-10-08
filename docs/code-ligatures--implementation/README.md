@@ -80,3 +80,9 @@ Font in test: `docs/code-ligatures--implementation/assets/Recursive Mono-Linear 
 
 
 - (Make separate issue): What other features need to be written to make this font work well?
+
+
+## Resources
+
+- http://adobe-type-tools.github.io/afdko/OpenTypeFeatureFileSpecification.html
+- http://opentypecookbook.com/rules.html
