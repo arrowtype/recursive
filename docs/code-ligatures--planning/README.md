@@ -54,6 +54,8 @@ Ligatures to add to betas as early as possible – even just in the Upright A–
 | ligature | name               | usecase            |
 | -------- | ------------------ | ------------------ |
 | =>       | equal_greater.code | JS arrow functions |
+| ->      | hyphen_greater.code               | Haskell    |
+| <-           | less_hyphen.code                   | Haskell          |
 
 #### comments and others
 
@@ -90,7 +92,7 @@ Including these because they should be relatively simple, and will be seen very 
 
 | ligature | name                                     | note    |
 | -------- | ---------------------------------------- | ------- |
-| \_\_     | underscore_underscore.code               |
+| \_\_     | underscore_underscore.code               | keep the separation but move these together slightly |
 | /\*      | slash_asterix.code                       | C#, CSS |
 | \*/      | asterix_slash.code                       | C#, CSS |
 | ///      | slash_slash_slash.code                   | JS      |
@@ -98,6 +100,7 @@ Including these because they should be relatively simple, and will be seen very 
 | """      | quotedbl_quotedbl_quotedbl.code          | maybe?  |
 | \`\`\`   | grave_grave_grave.code                   | maybe?  |
 | <!\-\-   | less_exclam_hyphen_hyphen.code           | HTML    |
+
 | -->      | hyphen_hyphen_greater.code               | HTML    |
 
 #### more logic operators
@@ -137,9 +140,7 @@ Including these because they should be relatively simple, and will be seen very 
 | ------------ | ---------------------------------- | ---------------- |
 | &&&          | ampersand_ampersand_ampersand.code | Haskell          |
 | &#124;&#124; | bar_bar_bar.code                   | Haskell          |
-| ->           | hyphen_greater.code                | Haskell          |
 | >-           | greater_hyphen.code                | Haskell          |
-| <-           | less_hyphen.code                   | Haskell          |
 | -<           | hyphen_less.code                   | Haskell          |
 | ::           | colon_colon.code                   | Haskell          |
 | >>           | greater_greater.code               | Haskell          |
@@ -270,6 +271,10 @@ We could create the stylistic set that "emulates" mark down behaviour. With liga
 | **iter**   |      |
 | **repr**   |      |
 
+#### Other Programming Languages
+
+- [Coq](https://en.wikipedia.org/wiki/Coq)
+
 ## Syntax examples for testing
 
 ### Python
@@ -348,3 +353,16 @@ We could create the stylistic set that "emulates" mark down behaviour. With liga
 
 - https://wiki.haskell.org/Arrow_tutorial
 - https://en.wikibooks.org/wiki/Haskell/Understanding_arrows
+
+
+## Arguments against code ligatures (useful to answer)
+
+- ["LIGATURES IN PROGRAMMING FONTS: HELL NO"](https://practicaltypography.com/ligatures-in-programming-fonts-hell-no.html)
+  - **General response:** There is a tendency by type designers to reject the idea of code ligatures, and it's nice to see an essay that articulates some of the reasoning, even if it is a tad bit aggressive. Generally, I think this rejection has a few root causes:
+    - Type designers have to trust their knowledge and vision above trends and user requests, or they probably wouldn't make type that is good or interesting. However, this can lead type designers to ignore actual user desires.
+    - Type designers are (rightly) very concerned with typographic clarity, but haven't usually thought through *why* code ligatures are so popular (namely, positive reinforment from a "syntax-highlighting" type of mechanism).
+    - So far, code ligatures have appeared in fonts as something of a hack, using default ligature features (especially *contextual alternates*, or `calt`) which are not meant to make large visual transformations. It is my hope that Recursive can follow the OpenType spec more closely, to make more people happy.
+  - **Assertion:** "They contradict Unicode ... in a source file that uses Unicode characters, how would you know if you’re looking at a => ligature that’s shaped like ⇒ vs. Unicode character 0x21D2, which also looks like ⇒?
+    - **Response:** Code ligatures don't affect the actual unicode values of your code. Visually, the take up multiple with units, so I find them to present little ambiguity. That said, if you have three types of ⇒ in your javascript file, consider turning off code ligatures temporarily. If you are presenting code to a general audience (especially to beginners) who are likely to be retyping from sight, please *don't* use code ligatures – they can be difficult for the uninitiated to interpret.
+  - **Assertion:** "They’re guaranteed to be wrong sometimes. There are a lot of ways for a given sequence of characters, like “=>”, to end up in a source file. Depending on context, it doesn’t always mean the same thing."
+    - **Response:** How often would this appear, and how often would that be confusing? Further, how often would it appear without a `=` to the left, or a `>` to the right – scenarios that are ignored by the OpenType ligature code in both Fira Code and now Recursive. Seriously, if there are examples where you see some ambiguity, please file an issue, and it can most likely be resolved with an update. :)
