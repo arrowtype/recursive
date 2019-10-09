@@ -11,19 +11,12 @@ if f.mode == 'r':
     feaText = f.read()
     print(feaText)
 
-# feaText = """\
-# include(../../features/features.fea);
-# """ 
-
-
-
 def addFeatureCode(f):
     f.features.text = feaText
     
     
 for fontPath in inputFonts:
     f = OpenFont(fontPath, showInterface=False)
-    # addFeatureCode(f)
 
     f.features.text = feaText
 
