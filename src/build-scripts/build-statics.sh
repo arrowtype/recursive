@@ -32,21 +32,21 @@ echo $finalDirectory
 
 mkdir -p $finalDirectory
 
-# # Build
-# echo 🏗 Building static $fontFormat files
-# fontmake -m $DS -o $fontFormat -i
+# Build
+echo 🏗 Building static $fontFormat files
+fontmake -m $DS -o $fontFormat -i
 
-# # Move
-# for font in "instance_${fontFormat}"/*; do
-#     mv "${font}" ${finalDirectory}
-# done
+# Move
+for font in "instance_${fontFormat}"/*; do
+    mv "${font}" ${finalDirectory}
+done
 
-# rm -r "instance_${fontFormat}"
+rm -r "instance_${fontFormat}"
 
-# # Set versioned names
-# for font in $finalDirectory/*; do
-#     python src/build-scripts/set-versioned-font-names.py "$font" --static --inplace
-# done
+# Set versioned names
+for font in $finalDirectory/*; do
+    python src/build-scripts/set-versioned-font-names.py "$font" --static --inplace
+done
 
 # Make woff2 files
 

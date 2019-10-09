@@ -27,8 +27,6 @@ Some ligatures are more "aggressive" and change form to a seemingly different un
 - `!=` and `!==` with a slash
 - `<=` and `>=` which stack into a large `≤` or `≥`.
 
-It looks like Fira Code uses "standard ligatures" for all of its "aggressive" code ligatures. Potentially, the less-aggressive ligatures could be placed into "Contextual ligatures" ([MS OT spec](https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/opentype-font-features)). I need to check/test whether common text editors (VS Code, Sublime, Atom) use contextual ligatures by default.
-
 ## Planning work
 
 Work was divided into 3 stages that corresponds to different priority levels

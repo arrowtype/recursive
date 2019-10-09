@@ -1,7 +1,27 @@
 languagesystem DFLT dflt;
 languagesystem latn dflt;
 
+# feature locl {
+#     script latn;
+#         language NLD exclude_dflt;
+#             lookup DutchIJ {
+#                 sub I J by IJ;
+#             } DutchIJ;
+# } locl;
+
 feature dlig {
+    lookup exclam_equal {
+        ignore sub exclam exclam' equal';
+        ignore sub exclam' equal' equal;
+        sub exclam' equal' by exclam_equal.code;
+    } exclam_equal;
+    
+    lookup exclam_equal_equal {
+        ignore sub exclam exclam' equal' equal';
+        ignore sub exclam' equal' equal' equal;
+        sub exclam' equal' equal' by exclam_equal_equal.code;
+    } exclam_equal_equal;
+
     lookup equal_equal {
         ignore sub equal' equal' equal;
         ignore sub equal equal' equal';
@@ -47,9 +67,9 @@ feature dlig {
     # numbersign.code # is there any reason to have a single numbersign.code? Maybe it would be upright in italics? Not sure.
 
     lookup numbersign_numbersign {
-        ignore sub bar' bar' bar;
-        ignore sub bar bar' bar';
-        sub bar' bar' by numbersign_numbersign.code;
+        ignore sub numbersign' numbersign' numbersign;
+        ignore sub numbersign numbersign' numbersign';
+        sub numbersign' numbersign' by numbersign_numbersign.code;
     } numbersign_numbersign;
     
     lookup numbersign_numbersign_numbersign {
@@ -61,7 +81,7 @@ feature dlig {
     lookup numbersign_numbersign_numbersign_numbersign {
         ignore sub numbersign' numbersign' numbersign' numbersign' numbersign;
         ignore sub numbersign numbersign' numbersign' numbersign' numbersign';
-        sub numbersign' numbersign' numbersign' by numbersign_numbersign_numbersign_numbersign.code;
+        sub numbersign' numbersign' numbersign' numbersign' by numbersign_numbersign_numbersign_numbersign.code;
     } numbersign_numbersign_numbersign_numbersign;
     
     lookup slash_slash {
@@ -87,5 +107,23 @@ feature dlig {
         ignore sub less' equal' equal;
         sub less' equal' by less_equal.code;
     } less_equal;
+    
+    lookup dollar_braceleft {
+        ignore sub dollar dollar' braceleft';
+        ignore sub dollar' braceleft' braceleft;
+        sub dollar' braceleft' by dollar_braceleft.code;
+    } dollar_braceleft;
+    
+    lookup hyphen_greater {
+        ignore sub hyphen hyphen' greater';
+        ignore sub hyphen' greater' greater;
+        sub hyphen' greater' by hyphen_greater.code;
+    } hyphen_greater;
+    
+    lookup less_hyphen {
+        ignore sub less less' hyphen';
+        ignore sub less' hyphen' hyphen;
+        sub less' hyphen' by less_hyphen.code;
+    } less_hyphen;
 
 } dlig;

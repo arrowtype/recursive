@@ -91,7 +91,7 @@ Font in test: `docs/code-ligatures--implementation/assets/Recursive Mono-Linear 
 **Questions to answer:**
 
 - How can I write this code in a central location then import it in?
-  - 
+  - You can use `include()` with a feature file path, BUT this seems to stop working if you use FontMake to generate interpolated fonts.
 
 
 - (Make separate issue): What other features need to be written to make this font work well?
