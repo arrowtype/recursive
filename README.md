@@ -10,17 +10,77 @@ Recursive Sans borrows glyphs from its parent mono but adjusts the widths of man
 
 ## Variable Axes
 
-Recursive is still being built, but it will have the following axes:
+Recursive has the following axes:
 
 | Axis       | Tag    | Range        | Default | Description                                                     |
 | ---------- | ------ | ------------ | ------- | --------------------------------------------------------------- |
-| Proportion | `PROP` | 0 to 1       | 0       | Fixed-width or Natural-width (or something in between)          |
+| Monospace  | `MONO` | 0 to 1       | 0       | Sans (natural-width) to Mono (fixed-width)                      |
 | Expression | `XPRN` | 0 to 1       | 0       | Linear to Casual                                                |
 | Weight     | `wght` | 300 to 900   | 300     | Light to Heavy. Can be defined with usual font-weight property. |
 | Slant      | `slnt` | 0 to -15     | 0       | Upright (0°) to Slanted (about 15°)                             |
 | Italic     | `ital` | 0, 0.5, or 1 | 0.5     | Always roman (0), auto (0.5), or always italic (1)              |
 
-Note: `PROP` and `XPRN` are "unregistered" axes (not currently in Microsoft's official listing of variation axes and specs), so these tags must be used in all-caps in CSS, etc.
+
+## Using the fonts
+
+1. Download the latest fonts from the [Releases](https://github.com/arrowtype/recursive/releases)
+2. Install the fonts on your system
+
+### On the web
+
+This is a big topic, but a couple of good guides are [from MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide) and [from CSS-Tricks](https://css-tricks.com/one-file-many-options-using-variable-fonts-web/).
+
+In general, you should link in the font with `@font-face`, being sure to use `font-weight: 300 900;` to specify the font's weight range:
+
+```
+@font-face {
+ font-family: 'Recursive';
+ src: 'path/to/font/file/rec-mono_xprn_wght_slnt_ital--2019_09_30.woff2' format('woff2-variations');
+ font-weight: 300 900;
+}
+```
+
+Then, you can use the font with both `font-weight` and `font-variation-settings`! 
+
+Notes: 
+
+- `MONO` and `XPRN` are "unregistered" axes (not currently in Microsoft's official listing of variation axes and specs), so these tags must be used in all-caps and controlled via `font-variation-settings`.
+- You will eventually be able to also use the property `font-style` to control `slnt` and `ital` axes, but these have some browser support issues (as of Oct 2019, but tools are rapidly evolving to better support variable fonts, so this will improve over time!) For now, these work best in `font-variation-settings`.
+- One weird trick: you can use CSS custom properties to more easily control `font-variation-settings` – see this [CodePen](https://codepen.io/thundernixon/pen/MPdwZL?css-preprocessor=none) for an example of this.
+
+
+### Design recommendations
+
+In general, Recursive is intended for small-to-medium sized usage, particularly on screen. However, it is useful to understand which stylistic ranges work best in what contexts. A few guidelines worth knowing:
+
+| Style range                  | Recommended size                 | Recommended use case                                |
+| ---------------------------- | -------------------------------- | --------------------------------------------------- |
+| Expression 0 (Linear), Weight 300–800 (Light–ExtraBold)  | 8px to 72px   | General use (especially for longer text)   |
+| Expression 1 (Casual), Weight 300–800 (Light–ExtraBold)  | 14px to 72px  | General use (more personality)             |
+| Weights 801–900 (UltraBold–Black)      | 32px to 144px | Headlines, display typography              |
+| Intermediate values of Expression and Slant  | 10px to 40px  | Good in text, but may not look as good in display sizes |
+
+
+Things to be aware of:
+- If you use weights 300–800 for large text, it may look good to slightly reduce letter-spacing (also called _tracking_).
+- The heaviest weights of Recursive are _really heavy_, so they need to be a little larger to remain legible.
+- Expression and Slant axes look great with intermediate values at text sizes, but they are mostly intended to be used at either fully "on or off" values, with intermediates available to allow animated stylistic transitions. If you are setting type at large sizes, avoid intermediate `XPRN` and `slnt` values. If you stick to named instances in design apps (e.g. `Mono Casual Bold Italic`, etc), this is handled for you automatically.
+- The Casual Italic instances are drawn to work well in text but are also the most expressive styles of the family – try them at large sizes to show off their wavy stems and really make a statement! 🏄‍♂️🏄‍♀️
+
+### In Code Editors
+
+Currently, the static OTF fonts are the best fonts to use for code.
+
+In code editors like VS Code and Atom, you must use a string to set your preferred font. These strings work well with the font names as follows:
+
+| Style           | Font name for VS Code seetings   | Recommended use case                             |
+| --------------- | -------------------------------- | ------------------------------------------------ |
+| Linear Regular  | `RecursiveMonoB_020-LnrMd`       | General use                                      |
+| Linear Medium   | `RecursiveMonoB_020-LnrMd`       | Light themes                                     |
+| Casual Regular  | `RecursiveMonoB_020-CslRg`       | General, with more personality (try in terminal) |
+| Casual Regular  | `RecursiveMonoB_020-CslRg`       | With more personality, Light themes              |
+
+The `B_020` in these name string represents the current beta release version. It's possible this has shifted (I am releasing often at this point), so check what the release notes say.
 
 ## Using the project scripts in RoboFont
 
