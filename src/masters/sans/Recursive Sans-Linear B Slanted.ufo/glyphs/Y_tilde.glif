@@ -4,6 +4,12 @@
 	<advance width="650"/>
 	<outline>
 		<component base="Y"/>
-		<component base="tildecomb" xOffset="358" yOffset="162"/>
+		<component base="tildecomb.case" xOffset="315" yOffset="-1"/>
 	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0,0,0,0.1505</string>
+		</dict>
+	</lib>
 </glyph>
