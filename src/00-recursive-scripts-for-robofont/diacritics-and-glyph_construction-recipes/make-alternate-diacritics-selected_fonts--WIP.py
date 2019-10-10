@@ -11,13 +11,50 @@ from vanilla.dialogs import *
 
 files = getFile("Select files to build glyphs in", allowsMultipleSelection=True, fileTypes=["ufo"])
 
-for file in files:
-    font = OpenFont(file, showInterface=False)
 
-    ## ANCHORS
-    # make list of all alternates that are common between fonts
-    # make set of base glyphs baseGlyphs
-    # copy anchors to alternates, if not already present
+## ANCHORS
+# make list of all alternates that are common between fonts
+# make set of base glyphs baseGlyphs
+# copy anchors to alternates, if not already present
+alternates = []
+baseGlyphs = []
+
+# IF suffix is mono, italic, or sans
+
+def getAlts(f):
+    for g in f:
+        if "." in g.name and g.name not in alternates:
+            alternates.append(g.name)
+
+def getBases(f):
+    for alt in alternates:
+        base = alt.split(".")[0]
+        if base not in baseGlyphs and base in f.keys():
+            baseGlyphs.append(base)
+
+for file in files:
+    f = OpenFont(file, showInterface=False)
+
+    getAlts(f)
+    getBases(f)
+
+    f.save()
+    f.close()
+
+print("alternates:")
+print(alternates)
+print("")
+print("baseGlyphs:")
+print(baseGlyphs)
+
+    # for g in f:
+    #     if g not in alternates:
+    #         alternates.append(g)
+
+# for file in files:
+#     f = OpenFont(file, showInterface=False)
+#     for alt in alternates:
+#         if f[alt]
 
     ## GLYPH CONSTRUCTION
     # baseDiacritics = make list of all component glyphs that contain baseGlyphs
@@ -33,5 +70,6 @@ for file in files:
         # if referenced glyph in diacriticsDict.keys()
             # for each item in key list, duplicate rule for diacritic, but keep suffixes
 
-    font.save()
-    font.close()
+# for file in files:
+#     f.save()
+#     f.close()
