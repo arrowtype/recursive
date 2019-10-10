@@ -31,12 +31,12 @@ relevantAlts = "mono italic sans".split()
 
 # TODO: do these need to be in *all* fonts? check back on it
 def getAlts(f):
-    for g in f:
-        if "." in g.name and g.name not in alternates and g.name.split(".")[1] in relevantAlts:
-            alternates.append(g.name)
+    for g in recipeGlyphs:
+        if "." in f[g].name and f[g].name not in alternates and f[g].name.split(".")[1] in relevantAlts:
+            alternates.append(f[g].name)
 
-        if "." in g.name:
-            base, suffix = g.name.split(".")[0], g.name.split(".")[1]
+        if "." in f[g].name:
+            base, suffix = f[g].name.split(".")[0], f[g].name.split(".")[1]
             
             if base not in altsDict.keys() and suffix in relevantAlts:
                 altsDict[base] = []
@@ -51,35 +51,61 @@ def getDefaultGlyphs(f):
             defaultGlyphs.append(base)
 
 def getBaseGlyphs(f):
-    for g in f:
-        for comp in g.components:
+    for g in recipeGlyphs:
+        for comp in f[g].components:
             parent = comp.baseGlyph
             if parent in defaultGlyphs and parent not in defaultGlyphsWithDiacritics.keys():
                 defaultGlyphsWithDiacritics[parent] = []
-            if parent in defaultGlyphs and g.name not in diacriticsWithDefaultGlyphs:
-                defaultGlyphsWithDiacritics[parent].append(g.name)
+            if parent in defaultGlyphs and f[g].name not in diacriticsWithDefaultGlyphs:
+                defaultGlyphsWithDiacritics[parent].append(f[g].name)
 
 recipesToCopyForAlts = []
+recipeGlyphs = []
 
-def getRecipesToCopyForAlts(f):
+# actually, you should start with this
+def getRecipesToCopyForAlts():
     with open(recipeFile, 'r') as recipe:
         for line in recipe:
-            if \
-                '=' in line and \
-                '#' not in line and \
-                line.replace('?','').split('=')[0] in diacriticsWithDefaultGlyphs and \
-                line not in recipesToCopyForAlts:
+            line = line.replace(' ','')
+            if '=' in line and line[0] is not '#':
+                recipeGlyphs.append(line.replace('?','').split('=')[0])
+            # if \
+            #     '=' in line and \
+            #     '#' not in line[0] and \
+            #     line.replace('?','').split('=')[0] in diacriticsWithDefaultGlyphs and \
+            #     line not in recipesToCopyForAlts:
 
-                recipesToCopyForAlts.append(line)
+            #     recipeGlyphs.append(line.replace('?','').split('=')[0])
+
+                # recipesToCopyForAlts.append(line)
+
+getRecipesToCopyForAlts()
+
+print(recipeGlyphs)
+
+exit()
 
 for file in files:
     f = OpenFont(file, showInterface=False)
+
+
+
+    # have dict of recipe glyphs with empty lists
+        # go to the recipe glyph parents
+        # if those parents have alternates
+            # add those suffixes to the recipe glyphs as values
+
+    # for line in recipes
+        # for suffix in glyphRecipe[key] (if it has suffixes)
+            # duplicate line
+            # add suffix to glyphToBuild and to parent glyph
+
+
 
     getAlts(f)
     getDefaultGlyphs(f)
     getBaseGlyphs(f)
 
-    getRecipesToCopyForAlts(f)
 
     f.save()
     f.close()
@@ -146,12 +172,16 @@ for key in defaultGlyphsWithDiacritics:
     # line by line: if first word is in baseDiacritics
         # duplicate that line
         # add alt suffix to first word and to baseGlyph in recipe
+
+#   save new glyphrecipes file
     
     ## DESIGNSPACE RULES
     # diacriticsDict = dictionary of each baseGlyph with list of its diacritics
     # in rules table, line by line:
         # if referenced glyph in diacriticsDict.keys()
             # for each item in key list, duplicate rule for diacritic, but keep suffixes
+
+
 
 # for file in files:
 #     f.save()
