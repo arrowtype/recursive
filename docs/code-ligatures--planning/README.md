@@ -37,54 +37,73 @@ Ligatures to add to betas as early as possible – even just in the Upright A–
 
 #### logic operators
 
-| ligature     | name                     | usecase    |
-| ------------ | ------------------------ | ---------- |
-| ==           | equal_equal.code         | Python, JS |
-| ===          | equal_equal_equal.code   | JS         |
-| !!           | exclam_exclam.code       | JS         |
-| ??           | question_question.code   | C#         |
-| %%           | percent_percent.code     |
-| &&           | ampersand_ampersand.code |
-| &#124;&#124; | bar_bar.code             | JS         |
+| ligature     | name                     | usecase    | Done? |
+| ------------ | ------------------------ | ---------- | ----- |
+| ==           | equal_equal.code         | Python, JS | DONE  |
+| ===          | equal_equal_equal.code   | JS         | DONE  |
+| !!           | exclam_exclam.code       | JS         | DONE  |
+| ??           | question_question.code   | C#         | DONE  |
+| %%           | percent_percent.code     |            | DONE  |
+| &&           | ampersand_ampersand.code |            | DONE  |
+| &#124;&#124; | bar_bar.code             | JS         | DONE  |
 
 #### arrows & more
 
-| ligature | name               | usecase            |
-| -------- | ------------------ | ------------------ |
-| =>       | equal_greater.code | JS arrow functions |
-| ->      | hyphen_greater.code               | Haskell    |
-| <-           | less_hyphen.code                   | Haskell          |
+| ligature | name               | usecase            | Done? |
+| -------- | ------------------ | ------------------ | ----- |
+| =>       | equal_greater.code | JS arrow functions | DONE  |
+| ->      | hyphen_greater.code               | Haskell    | DONE  |
+| <-           | less_hyphen.code                   | Haskell          | DONE  |
 
 #### comments and others
 
 Including these because they should be relatively simple, and will be seen very frequently.
 
-| ligature | name                                             | note             |
-| -------- | ------------------------------------------------ | ---------------- |
+| ligature | name                                             | note             | Done? |
+| -------- | ------------------------------------------------ | ---------------- | ----- |
+| ##       | numbersign_numbersign.code                       | Python, Markdown | DONE  |
+| ###      | numbersign_numbersign_numbersign.code            | Python, Markdown | DONE  |
+| ####     | numbersign_numbersign_numbersign_numbersign.code | Python, Markdown | DONE  |
+| //       | slash_slash.code                                 | JS               | DONE  |
 | #        | numbersign.code                                  | Python, Markdown (but wait, is this even needed?) |
-| ##       | numbersign_numbersign.code                       | Python, Markdown |
-| ###      | numbersign_numbersign_numbersign.code            | Python, Markdown |
-| ####     | numbersign_numbersign_numbersign_numbersign.code | Python, Markdown |
-| //       | slash_slash.code                                 | JS               |
 
 
 #### logic operators
 
-| ligature | name                    | usecase        |
-| -------- | ----------------------- | -------------- |
-| >=       | greater_equal.code      | JS, Python, C# |
-| <=       | less_equal.code         | JS, Python, C# |
+| ligature | name                    | usecase        | Done? |
+| -------- | ----------------------- | -------------- | ----- |
+| >=       | greater_equal.code      | JS, Python, C# | DONE  |
+| <=       | less_equal.code         | JS, Python, C# | DONE  |
 
 ### _priority 1_
 
 #### formatted strings
 
-| ligature | name                  | note     |
-| -------- | --------------------- | -------- |
-| f"       | f_quote.code          | python   |
-| ${       | dollar_braceleft.code | JS, bash |
+| ligature | name                  | note     | Done? |
+| -------- | --------------------- | -------- | ----- |
+| f"       | f_quote.code          | python   | ?     |
+| ${       | dollar_braceleft.code | JS, bash | DONE  |
 
 
+#### more logic operators
+
+| ligature | name                    | usecase        | Done? |
+| -------- | ----------------------- | -------------- | ----- |
+| !=       | exclam_equal.code       | Python, JS     | DONE  |
+| !==      | exclam_equal_equal.code | JS             |
+| =/=      | equal_slash_equal.code  |
+| ?.       | question_period.code    |
+| ?:       | question_colon.code     |
+| ?:       | question_colon.code     |
+
+#### Haskell-specific ligatures
+
+| ligature     | name                               | usecase          |
+| ------------ | ---------------------------------- | ---------------- |
+| &&&          | ampersand_ampersand_ampersand.code | Haskell          |
+| &#124;&#124; | bar_bar_bar.code                   | Haskell          |
+
+### _prority 2_
 
 #### more comments
 
@@ -98,19 +117,23 @@ Including these because they should be relatively simple, and will be seen very 
 | """      | quotedbl_quotedbl_quotedbl.code          | maybe?  |
 | \`\`\`   | grave_grave_grave.code                   | maybe?  |
 | <!\-\-   | less_exclam_hyphen_hyphen.code           | HTML    |
-
 | -->      | hyphen_hyphen_greater.code               | HTML    |
 
-#### more logic operators
+#### More Haskell-specific ligatures
 
-| ligature | name                    | usecase        |
-| -------- | ----------------------- | -------------- |
-| !=       | exclam_equal.code       | Python, JS     |
-| !==      | exclam_equal_equal.code | JS             |
-| =/=      | equal_slash_equal.code  |
-| ?.       | question_period.code    |
-| ?:       | question_colon.code     |
-| ?:       | question_colon.code     |
+| ligature     | name                               | usecase          |
+| ------------ | ---------------------------------- | ---------------- |
+| >-           | greater_hyphen.code                | Haskell          |
+| -<           | hyphen_less.code                   | Haskell          |
+| ::           | colon_colon.code                   | Haskell          |
+| >>           | greater_greater.code               | Haskell          |
+| >>>          | greater_greater_greater.code       | Haskell          |
+| <<           | less_less.code                     | Haskell          |
+| <<<          | less_less_less.code                | Haskell          |
+| <            | less.code                          | (matching sizes) |
+| <            | greater.code                       | (matching sizes) |
+
+### _prority 3_
 
 #### math operators
 
@@ -130,23 +153,6 @@ Including these because they should be relatively simple, and will be seen very 
 | \*=      | asterisk_equal.code          | JS, SQL            |
 | /=       | slash_equal.code             | JS, SQL            |
 
-### _prority 2_
-
-#### Haskell-specific ligatures
-
-| ligature     | name                               | usecase          |
-| ------------ | ---------------------------------- | ---------------- |
-| &&&          | ampersand_ampersand_ampersand.code | Haskell          |
-| &#124;&#124; | bar_bar_bar.code                   | Haskell          |
-| >-           | greater_hyphen.code                | Haskell          |
-| -<           | hyphen_less.code                   | Haskell          |
-| ::           | colon_colon.code                   | Haskell          |
-| >>           | greater_greater.code               | Haskell          |
-| >>>          | greater_greater_greater.code       | Haskell          |
-| <<           | less_less.code                     | Haskell          |
-| <<<          | less_less_less.code                | Haskell          |
-| <            | less.code                          | (matching sizes) |
-| <            | greater.code                       | (matching sizes) |
 
 `# I'm still not sure about making special brackets`
 
@@ -184,7 +190,7 @@ Including these because they should be relatively simple, and will be seen very 
 | ((       | parenleft_parenleft.code       |
 | ))       | parenright_parenright.code     |
 
-- _priority 3_
+- _Priority "Maybe"_
 
 #### Powerline symbols
 
