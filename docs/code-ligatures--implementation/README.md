@@ -88,6 +88,13 @@ feature dlig {
 
 Font in test: `docs/code-ligatures--implementation/assets/Recursive Mono-Linear B - DLIG test 100719 4.otf`
 
+## Full (starter) set!
+
+![First round of code ligatures in Recursive Mono](assets/2019-10-11-09-40-05.png)
+
+Font in test:
+https://github.com/arrowtype/recursive/tree/6082c6a91962b3f6d0690361735b73985c137a60/font_betas/static_fonts/recursive_mono-static_otf
+
 **Questions to answer:**
 
 - How can I write this code in a central location then import it in?
