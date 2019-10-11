@@ -27,6 +27,12 @@ txt = '''\
 ?dollar_braceleft.code = dollar & braceleft
 ?less_hyphen.code = arrowleft & .arrowhead
 ?hyphen_greater.code = x & arrowright
+f_quote.code = f & quotedbl
+equal_slash_equal.code = equal & slash & equal
+question_period.code = question & period
+question_colon.code = question & colon
+ampersand_ampersand_ampersand.code = ampersand & ampersand & ampersand
+bar_bar_bar.code = bar & bar & bar
 '''
 # get the actual glyph constructions from text
 constructions = ParseGlyphConstructionListFromString(txt)
