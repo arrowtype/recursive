@@ -8,6 +8,7 @@ This script does three primary things:
 '''
 from vanilla.dialogs import *
 from mojo.UI import OutputWindow
+import re
 OutputWindow().show()
 OutputWindow().clear()
 
@@ -19,18 +20,22 @@ recipeFile = "/Users/stephennixon/type-repos/recursive/src/00-recursive-scripts-
 
 relevantSuffixes = "mono italic sans".split()
 
-recipesToCopyForAlts = []
 recipeGlyphs = {}
+
+def lineIsRecipe(line):
+    if '=' in line \
+        and line[0] is not '#' \
+        and line[0] is not '$' \
+        and '.' not in line.split('=')[0]:
+        
+        return True
 
 # actually, you should start with this
 def getRecipesToCopyForAlts():
     with open(recipeFile, 'r') as recipe:
         for line in recipe:
             line = line.replace(' ','')
-            if '=' in line \
-                and line[0] is not '#' \
-                and line[0] is not '$' \
-                and '.' not in line.split('=')[0]:
+            if lineIsRecipe(line):
                 
                 composedGlyph = line.replace('?','').split('=')[0]
 
@@ -43,16 +48,6 @@ def getRecipesToCopyForAlts():
                     }
 
                 recipeGlyphs[parentGlyph]['recipes'].append(composedGlyph)
-                # if composedGlyph not in recipeGlyphs.keys():
-                #     recipeGlyphs[composedGlyph] = {
-                #         'parentGlyph': f'{parentGlyph}',
-                #         'suffixes': []
-                #     }
-
-
-
-
-
 
 
 def getSuffixes(f):
@@ -87,6 +82,31 @@ for file in files:
 
 print("recipeGlyphs")
 print(recipeGlyphs)
+
+def duplicateRecipesForAlts():
+    with open(recipeFile, 'r') as recipe:
+        for line in recipe:
+            line = line.replace(' ','')
+            if lineIsRecipe(line):
+                composedGlyph = line.replace('?','').split('=')[0]
+                parentGlyph = line.split('=')[1].split('+')[0]
+
+                for suffix in recipeGlyphs[parentGlyph]['suffixes']:
+                    print(parentGlyph, suffix)
+
+                    # TODO: find a way to insert suffixes on at composed glyph name and parent glyph reference
+                    ## (not yet working)
+                    # recipeGlyph = line.split('=')[1].split('+')[0]
+                    altComposition = line.split('=')[0] + '.' + suffix
+                    altRecipe = re.sub('\=(.*?)\+', r"\1" + '.' + suffix + '+', '=' + line.split('=')[1])
+
+                    altLine = altComposition + '=' + altRecipe
+
+                    line = line + '\n' + altLine
+
+                    print(line)
+
+duplicateRecipesForAlts()
 
 
 ## TODO: COPY ANCHORS TO ALTS (if not present)
