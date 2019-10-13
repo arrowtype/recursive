@@ -63,12 +63,15 @@ for file in files:
     for baseGlyph in anchors:
         for altGlyph in anchors[baseGlyph]['anchorsInAlts']:
             if len(Diff(anchors[baseGlyph]['anchorsInBase'], anchors[baseGlyph]['anchorsInAlts'][altGlyph])) >= 1:
-                print(baseGlyph.ljust(20), anchors[baseGlyph]['anchorsInBase'])
-                print(altGlyph.ljust(20), anchors[baseGlyph]['anchorsInAlts'][altGlyph])
-                print(Diff(anchors[baseGlyph]['anchorsInBase'], anchors[baseGlyph]['anchorsInAlts'][altGlyph]))
+                print(baseGlyph.ljust(20), sorted(anchors[baseGlyph]['anchorsInBase']))
+                print(altGlyph.ljust(20), sorted(anchors[baseGlyph]['anchorsInAlts'][altGlyph]))
+                # print(Diff(anchors[baseGlyph]['anchorsInBase'], anchors[baseGlyph]['anchorsInAlts'][altGlyph]))
                 print("")
 
-                # TODO: should /g vs /g.mono be treated specially (because /g.mono already has an "accent" with its ear)?
+                # TODO: list things not to make alt diacritics of
+                    # ydot italic (wouldn't fit)
+                    # g.mono top accents (best with flat-top, "sans" form)
+                    # should /g vs /g.mono be treated specially (because /g.mono already has an "accent" with its ear)?
 
     
 
