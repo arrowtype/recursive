@@ -91,44 +91,45 @@ def duplicateRecipesForAlts():
                 composedGlyph = line.replace('?','').split('=')[0]
                 parentGlyph = line.split('=')[1].split('+')[0]
 
-                for suffix in recipeGlyphs[parentGlyph]['suffixes']:
-                    print(parentGlyph, suffix)
+                recipes = [line]
 
-                    # TODO: find a way to insert suffixes on at composed glyph name and parent glyph reference
-                    ## (not yet working)
-                    # recipeGlyph = line.split('=')[1].split('+')[0]
+                for suffix in recipeGlyphs[parentGlyph]['suffixes']:
+                    # print(parentGlyph, suffix)
+
                     altComposition = line.split('=')[0] + '.' + suffix
                     altRecipe = re.sub('\=(.*?)\+', r"\1" + '.' + suffix + '+', '=' + line.split('=')[1])
 
                     altLine = altComposition + '=' + altRecipe
 
-                    line = line + '\n' + altLine
+                    recipes.append(altLine)
 
-                    print(line)
+                # line = line + '\n' + altLine
+                line = '\n'.join(recipes)
+
+                print(line)
+
+                print('\n---------------------------\n')
 
 duplicateRecipesForAlts()
 
 
-## TODO: COPY ANCHORS TO ALTS (if not present)
-# make list of all alternates that are common between fonts
-# copy anchors to alternates, if not already present
+## TODO: (manually?) add 'top_viet' anchor to o and u, to avoid glyph construction transformations
 
+
+## TODO: COPY ANCHORS TO ALTS (if not present)
+    # maybe in a separate script?
+    # make list of all alternates that are common between fonts
+    # copy anchors to alternates, if not already present
 
 ## GLYPH CONSTRUCTION
-# baseDiacritics = make list of all component glyphs that contain baseGlyphs
-# eliminate glyphs that aren't common between fonts
-# read glyph construction recipes file (first: fix vietnamese weight-specific code?)
-# line by line: if first word is in baseDiacritics
-    # duplicate that line
-    # add alt suffix to first word and to baseGlyph in recipe
-
-#   save new glyphrecipes file
+    # duplicating lines DONE
+    # TODO: save new glyphrecipes file
 
 ## DESIGNSPACE RULES
-# diacriticsDict = dictionary of each baseGlyph with list of its diacritics
-# in rules table, line by line:
-    # if referenced glyph in diacriticsDict.keys()
-        # for each item in key list, duplicate rule for diacritic, but keep suffixes
+    # diacriticsDict = dictionary of each baseGlyph with list of its diacritics
+    # in rules table, line by line:
+        # if referenced glyph in diacriticsDict.keys()
+            # for each item in key list, duplicate rule for diacritic, but keep suffixes
 
 
 
