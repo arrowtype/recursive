@@ -68,7 +68,7 @@ for file in files:
                 # print(Diff(anchors[baseGlyph]['anchorsInBase'], anchors[baseGlyph]['anchorsInAlts'][altGlyph]))
                 print("")
 
-                # TODO: list things not to make alt diacritics of
+                # note: there are things to not make alt diacritics of
                     # ydot italic (wouldn't fit)
                     # g.mono top accents (best with flat-top, "sans" form)
                     # should /g vs /g.mono be treated specially (because /g.mono already has an "accent" with its ear)?
