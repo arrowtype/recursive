@@ -4,8 +4,18 @@
 	<advance width="600"/>
 	<outline>
 		<contour>
+			<point x="130" y="-10" type="curve" smooth="yes"/>
+			<point x="184" y="-10"/>
+			<point x="241" y="29"/>
+			<point x="310" y="116" type="curve"/>
+			<point x="317" y="114" type="line"/>
+			<point x="320" y="33"/>
+			<point x="362" y="-10"/>
+			<point x="446" y="-10" type="curve"/>
+			<point x="468" y="-10"/>
+			<point x="486" y="-8"/>
 			<point x="505" y="-3" type="curve"/>
-			<point x="502.0151707673" y="24.8584061721"/>
+			<point x="502" y="25"/>
 			<point x="501" y="65"/>
 			<point x="507" y="98" type="curve" smooth="yes"/>
 			<point x="543" y="293"/>
@@ -17,24 +27,11 @@
 			<point x="497" y="710"/>
 			<point x="467" y="707"/>
 			<point x="444" y="703" type="curve"/>
-			<point x="448" y="517"/>
-			<point x="346" y="331"/>
-			<point x="321" y="170" type="curve" smooth="yes"/>
-			<point x="304" y="53"/>
-			<point x="344" y="-10"/>
-			<point x="446" y="-10" type="curve"/>
-			<point x="468" y="-10"/>
-			<point x="486" y="-8"/>
-		</contour>
-		<contour>
-			<point x="130" y="-10" type="curve" smooth="yes"/>
-			<point x="184" y="-10"/>
-			<point x="241" y="29"/>
-			<point x="310" y="116" type="curve"/>
-			<point x="349" y="107" type="line"/>
-			<point x="394" y="305" type="line"/>
-			<point x="341" y="216"/>
-			<point x="295" y="194"/>
+			<point x="448" y="539"/>
+			<point x="368" y="375"/>
+			<point x="333" y="227" type="curve"/>
+			<point x="303" y="202"/>
+			<point x="273" y="194"/>
 			<point x="239" y="194" type="curve" smooth="yes"/>
 			<point x="232" y="194"/>
 			<point x="221" y="196"/>
@@ -64,6 +61,7 @@
 	<anchor name="ring" x="408.7995302052" y="711"/>
 	<anchor name="hook" x="420" y="770"/>
 	<anchor name="horn" x="606" y="700"/>
+	<anchor name="tildeviet" x="362" y="714"/>
 	<guideline x="-69" y="0" angle="75.96" identifier="TfRoupfMZr"/>
 	<guideline x="-19" y="0" angle="75.96" identifier="5CRMxJiYdA"/>
 	<guideline x="31" y="0" angle="75.96" identifier="SD67mskxtG"/>

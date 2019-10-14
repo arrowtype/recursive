@@ -5,6 +5,9 @@ This script does three primary things:
     → Copies anchors from base letters to alternates, if they are not yet added.
     → Uses Glyph Construction to build the alternate diacritics.
     → Generates designspace rules (this may be best to split into a separate script... TBD)
+
+BEFORE USING:
+    - Use 'src/00-recursive-scripts-for-robofont/checking-similarity-between-fonts/check-anchor-similarity-alt_glyphs-select_fonts.py' to make sure alt glyphs have similar anchors to defaults
 '''
 from vanilla.dialogs import *
 from mojo.UI import OutputWindow
@@ -83,6 +86,8 @@ for file in files:
 print("recipeGlyphs")
 print(recipeGlyphs)
 
+altRecipeFile = open(recipeFile.replace('.txt','-generated-with_alts.txt'),"w+")
+
 def duplicateRecipesForAlts():
     with open(recipeFile, 'r') as recipe:
         for line in recipe:
@@ -106,20 +111,25 @@ def duplicateRecipesForAlts():
                 # line = line + '\n' + altLine
                 line = '\n'.join(recipes)
 
+                altRecipeFile.write(line + '\n')
+
                 print(line)
 
                 print('\n---------------------------\n')
+            
+
 
 duplicateRecipesForAlts()
 
+altRecipeFile.close()
+
+# note: there are things to not make alt diacritics of
+                    # ydot italic (wouldn't fit)
+                    # g.mono top accents (best with flat-top, "sans" form)
+                    # should /g vs /g.mono be treated specially (because /g.mono already has an "accent" with its ear)?
+
 
 ## TODO: (manually?) add 'top_viet' anchor to o and u, to avoid glyph construction transformations
-
-
-## TODO: COPY ANCHORS TO ALTS (if not present)
-    # maybe in a separate script?
-    # make list of all alternates that are common between fonts
-    # copy anchors to alternates, if not already present
 
 ## GLYPH CONSTRUCTION
     # duplicating lines DONE

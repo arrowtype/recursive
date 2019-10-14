@@ -375,23 +375,10 @@ Uhornhook=U+horncomb.case@horn+hookcomb.case@U:hook
 
 # horn and tilde
 
-# ohorntilde=o+horncomb@horn+tildecombviet.case@o:top
-# uhorntilde=u+horncomb@horn+tildecombviet.case@u:top
-# Ohorntilde=O+horncomb.case@horn+tildecombviet.case@O:top
-# Uhorntilde=U+horncomb.case@horn+tildecombviet.case@U:top
-
-## heavy upright masters
-$tildeVietLc = 50,620
-$tildeVietUc = 50,770
-
-## heavy upright slanted masters
-#$tildeVietLc = 240,620
-#$tildeVietUc = 150,770
-
-ohorntilde=o+horncomb@horn+tildecombviet.case@o:`top-{tildeVietLc}`
-uhorntilde=u+horncomb@horn+tildecombviet.case@u:`top-{tildeVietLc}`
-Ohorntilde=O+horncomb.case@horn+tildecombviet.case@O:`top-{tildeVietUc}`
-Uhorntilde=U+horncomb.case@horn+tildecombviet.case@U:`top-{tildeVietUc}`
+ohorntilde=o+horncomb@horn+tildecombviet.case@o:tildeviet
+uhorntilde=u+horncomb@horn+tildecombviet.case@u:tildeviet
+Ohorntilde=O+horncomb.case@horn+tildecombviet.case@O:tildeviet
+Uhorntilde=U+horncomb.case@horn+tildecombviet.case@U:tildeviet
 
 ############################
 
