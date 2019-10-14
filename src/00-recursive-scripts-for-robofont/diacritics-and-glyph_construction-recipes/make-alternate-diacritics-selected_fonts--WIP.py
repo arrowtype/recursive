@@ -123,17 +123,15 @@ duplicateRecipesForAlts()
 
 altRecipeFile.close()
 
-# note: there are things to not make alt diacritics of
-                    # ydot italic (wouldn't fit)
-                    # g.mono top accents (best with flat-top, "sans" form)
-                    # should /g vs /g.mono be treated specially (because /g.mono already has an "accent" with its ear)?
+# TODO: there are things to not make alt diacritics of. How should these be handled?
+    # ydot italic (wouldn't fit)
+    # g.mono top accents (best with flat-top, "sans" form)
+    # should /g vs /g.mono be treated specially (because /g.mono already has an "accent" with its ear)?
 
 
 ## TODO: (manually?) add 'top_viet' anchor to o and u, to avoid glyph construction transformations
-
-## GLYPH CONSTRUCTION
-    # duplicating lines DONE
-    # TODO: save new glyphrecipes file
+    # Done in Mono
+    # TODO in Sans
 
 ## DESIGNSPACE RULES
     # diacriticsDict = dictionary of each baseGlyph with list of its diacritics
