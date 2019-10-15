@@ -426,6 +426,10 @@
 		<string>amacron.glif</string>
 		<key>ampersand</key>
 		<string>ampersand.glif</string>
+		<key>ampersand_ampersand.code</key>
+		<string>ampersand_ampersand.code.glif</string>
+		<key>ampersand_ampersand_ampersand.code</key>
+		<string>ampersand_ampersand_ampersand.code.glif</string>
 		<key>aogonek</key>
 		<string>aogonek.glif</string>
 		<key>apostrophemod</key>
@@ -436,14 +440,26 @@
 		<string>aring.glif</string>
 		<key>aringacute</key>
 		<string>aringacute.glif</string>
+		<key>arrowNE</key>
+		<string>arrowN_E_.glif</string>
+		<key>arrowNW</key>
+		<string>arrowN_W_.glif</string>
+		<key>arrowSE</key>
+		<string>arrowS_E_.glif</string>
+		<key>arrowSW</key>
+		<string>arrowS_W_.glif</string>
 		<key>arrowdown</key>
 		<string>arrowdown.glif</string>
 		<key>arrowleft</key>
 		<string>arrowleft.glif</string>
+		<key>arrowleftright</key>
+		<string>arrowleftright.glif</string>
 		<key>arrowright</key>
 		<string>arrowright.glif</string>
 		<key>arrowup</key>
 		<string>arrowup.glif</string>
+		<key>arrowupdown</key>
+		<string>arrowupdown.glif</string>
 		<key>asciicircum</key>
 		<string>asciicircum.glif</string>
 		<key>asciitilde</key>
@@ -468,6 +484,10 @@
 		<string>backslash.case.glif</string>
 		<key>bar</key>
 		<string>bar.glif</string>
+		<key>bar_bar.code</key>
+		<string>bar_bar.code.glif</string>
+		<key>bar_bar_bar.code</key>
+		<string>bar_bar_bar.code.glif</string>
 		<key>bitcoin</key>
 		<string>bitcoin.glif</string>
 		<key>braceleft</key>
@@ -586,6 +606,8 @@
 		<string>divisionslash.glif</string>
 		<key>dollar</key>
 		<string>dollar.glif</string>
+		<key>dollar_braceleft.code</key>
+		<string>dollar_braceleft.code.glif</string>
 		<key>dong</key>
 		<string>dong.glif</string>
 		<key>dotaccent</key>
@@ -662,6 +684,14 @@
 		<string>eogonek.glif</string>
 		<key>equal</key>
 		<string>equal.glif</string>
+		<key>equal_equal.code</key>
+		<string>equal_equal.code.glif</string>
+		<key>equal_equal_equal.code</key>
+		<string>equal_equal_equal.code.glif</string>
+		<key>equal_greater.code</key>
+		<string>equal_greater.code.glif</string>
+		<key>equal_slash_equal.code</key>
+		<string>equal_slash_equal.code.glif</string>
 		<key>equivalence</key>
 		<string>equivalence.glif</string>
 		<key>estimated</key>
@@ -672,6 +702,12 @@
 		<string>etilde.glif</string>
 		<key>exclam</key>
 		<string>exclam.glif</string>
+		<key>exclam_equal.code</key>
+		<string>exclam_equal.code.glif</string>
+		<key>exclam_equal_equal.code</key>
+		<string>exclam_equal_equal.code.glif</string>
+		<key>exclam_exclam.code</key>
+		<string>exclam_exclam.code.glif</string>
 		<key>exclamdown</key>
 		<string>exclamdown.glif</string>
 		<key>exclamdown.case</key>
@@ -682,6 +718,8 @@
 		<string>f.italic.glif</string>
 		<key>f.mono</key>
 		<string>f.mono.glif</string>
+		<key>f_quote.code</key>
+		<string>f_quote.code.glif</string>
 		<key>fi</key>
 		<string>fi.glif</string>
 		<key>five</key>
@@ -724,6 +762,10 @@
 		<string>gdotaccent.glif</string>
 		<key>germandbls</key>
 		<string>germandbls.glif</string>
+		<key>gmtr:diamondblack</key>
+		<string>gmtr_diamondblack.glif</string>
+		<key>gmtr:diamondwhite</key>
+		<string>gmtr_diamondwhite.glif</string>
 		<key>grave</key>
 		<string>grave.glif</string>
 		<key>gravecomb</key>
@@ -734,6 +776,8 @@
 		<string>gravecombviet.case.glif</string>
 		<key>greater</key>
 		<string>greater.glif</string>
+		<key>greater_equal.code</key>
+		<string>greater_equal.code.glif</string>
 		<key>greaterequal</key>
 		<string>greaterequal.glif</string>
 		<key>guarani</key>
@@ -762,6 +806,10 @@
 		<string>hbar.glif</string>
 		<key>hcircumflex</key>
 		<string>hcircumflex.glif</string>
+		<key>heartblack</key>
+		<string>heartblack.glif</string>
+		<key>heartwhite</key>
+		<string>heartwhite.glif</string>
 		<key>hook</key>
 		<string>hook.glif</string>
 		<key>hookcomb</key>
@@ -788,6 +836,8 @@
 		<string>hungarumlautcomb.case.glif</string>
 		<key>hyphen</key>
 		<string>hyphen.glif</string>
+		<key>hyphen_greater.code</key>
+		<string>hyphen_greater.code.glif</string>
 		<key>hyphensoft</key>
 		<string>hyphensoft.glif</string>
 		<key>i</key>
@@ -872,6 +922,10 @@
 		<string>ldot.glif</string>
 		<key>less</key>
 		<string>less.glif</string>
+		<key>less_equal.code</key>
+		<string>less_equal.code.glif</string>
+		<key>less_hyphen.code</key>
+		<string>less_hyphen.code.glif</string>
 		<key>lessequal</key>
 		<string>lessequal.glif</string>
 		<key>liraTurkish</key>
@@ -946,6 +1000,12 @@
 		<string>ntilde.glif</string>
 		<key>numbersign</key>
 		<string>numbersign.glif</string>
+		<key>numbersign_numbersign.code</key>
+		<string>numbersign_numbersign.code.glif</string>
+		<key>numbersign_numbersign_numbersign.code</key>
+		<string>numbersign_numbersign_numbersign.code.glif</string>
+		<key>numbersign_numbersign_numbersign_numbersign.code</key>
+		<string>numbersign_numbersign_numbersign_numbersign.code.glif</string>
 		<key>o</key>
 		<string>o.glif</string>
 		<key>oacute</key>
@@ -1044,6 +1104,8 @@
 		<string>partialdiff.glif</string>
 		<key>percent</key>
 		<string>percent.glif</string>
+		<key>percent_percent.code</key>
+		<string>percent_percent.code.glif</string>
 		<key>period</key>
 		<string>period.glif</string>
 		<key>periodcentered</key>
@@ -1066,6 +1128,12 @@
 		<string>q.glif</string>
 		<key>question</key>
 		<string>question.glif</string>
+		<key>question_colon.code</key>
+		<string>question_colon.code.glif</string>
+		<key>question_period.code</key>
+		<string>question_period.code.glif</string>
+		<key>question_question.code</key>
+		<string>question_question.code.glif</string>
 		<key>questiondown</key>
 		<string>questiondown.glif</string>
 		<key>questiondown.case</key>
@@ -1162,12 +1230,18 @@
 		<string>slash.glif</string>
 		<key>slash.case</key>
 		<string>slash.case.glif</string>
+		<key>slash_slash.code</key>
+		<string>slash_slash.code.glif</string>
 		<key>slashcomb</key>
 		<string>slashcomb.glif</string>
 		<key>slashcomb.case</key>
 		<string>slashcomb.case.glif</string>
 		<key>space</key>
 		<string>space.glif</string>
+		<key>squareblack</key>
+		<string>squareblack.glif</string>
+		<key>squarewhite</key>
+		<string>squarewhite.glif</string>
 		<key>sterling</key>
 		<string>sterling.glif</string>
 		<key>summation</key>
@@ -1208,6 +1282,22 @@
 		<string>tildecombviet.case.glif</string>
 		<key>trademark</key>
 		<string>trademark.glif</string>
+		<key>triangledownblack</key>
+		<string>triangledownblack.glif</string>
+		<key>triangledownwhite</key>
+		<string>triangledownwhite.glif</string>
+		<key>triangleleftblack</key>
+		<string>triangleleftblack.glif</string>
+		<key>triangleleftwhite</key>
+		<string>triangleleftwhite.glif</string>
+		<key>trianglerightblack</key>
+		<string>trianglerightblack.glif</string>
+		<key>trianglerightwhite</key>
+		<string>trianglerightwhite.glif</string>
+		<key>triangleupblack</key>
+		<string>triangleupblack.glif</string>
+		<key>triangleupwhite</key>
+		<string>triangleupwhite.glif</string>
 		<key>two</key>
 		<string>two.glif</string>
 		<key>twoinferior</key>
