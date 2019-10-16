@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Code Ligs Test</title>
+  </head>
+  <style>
+    @font-face {
+      font-family: "Recursive DLIG";
+      src: url("fonts/recursive_mono--code_ligs_test__dlig--2019_10_15.woff2");
+    }
+    @font-face {
+      font-family: "Recursive CALT";
+      src: url("fonts/recursive_mono--code_ligs_test__calt--2019_10_15.woff2");
+    }
+    @font-face {
+      font-family: "Recursive CALT CODE";
+      src: url("fonts/recursive_mono--calt_plus_CODE--2019_10_16.woff2");
+    }
+
+    html {
+      font-family: "Recursive DLIG", monospace;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-variation-settings: "XPRN" 1;
+    }
+
+    h2 {
+      font-size: 1.125rem;
+      margin: 0;
+    }
+
+    .code {
+      background-color: hsl(212, 100%, 90%);
+      font-variation-settings: "XPRN" 0;
+      display: inline-block;
+    }
+    h1 span.vs {
+      background-color: transparent;
+      font-variation-settings: "XPRN" 1, "slnt" -9;
+    }
+
+    .test-case {
+      border-top: 1px solid gray;
+      padding-top: 1rem;
+      margin-top: 4rem;
+    }
+
+    .test-labels {
+      display: grid;
+      grid-template-columns: 80% 20%;
+    }
+
+    .test-slider {
+      display: grid;
+      grid-template-columns: 90% 10%;
+      align-content: center;
+    }
+
+    .test-slider input {
+      margin-right: 0.5rem;
+    }
+
+    .radios {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+
+    p {
+      font-size: 2.4vw;
+    }
+
+    .dlig {
+      font-family: "Recursive DLIG", monospace;
+    }
+    .calt {
+      font-family: "Recursive CALT", monospace;
+    }
+    .calt_code {
+      font-family: "Recursive CALT CODE", monospace;
+    }
+  </style>
+  <body>
+    <h1>
+      Code Ligatures: <span class="code">dlig</span> <span class="vs">vs</span> <span class="code">calt</span> <span class="vs">vs</span>
+      <span class="code">calt+CODE</span>
+    </h1>
+
+    <div class="test-case">
+      <div class="test-labels">
+        <h2>Discretionary Ligatures <span class="code">dlig</span></h2>
+        <div class="radios">
+          <div>
+            <input type="radio" id="dlig-off" name="dlig" value="off" checked/>
+            <label for="dlig-off">Off</label>
+          </div>
+
+          <div>
+            <input type="radio" id="dlig-on" name="dlig" value="on" />
+            <label for="dlig-on">On</label>
+          </div>
+        </div>
+      </div>
+      <p class="dlig">
+        == === <= >= != !== -> ## ### #### // ${ => && &&& %% || ||| !! ??
+      </p>
+    </div>
+
+    <div class="test-case">
+      <div class="test-labels">
+        <h2>Contextual Alternates <span class="code">calt</span></h2>
+        <div class="radios">
+          <div>
+            <input type="radio" id="calt-off" name="calt" value="off" />
+            <label for="calt-off">Off</label>
+          </div>
+
+          <div>
+            <input type="radio" id="calt-on" name="calt" value="on" checked />
+            <label for="calt-on">On</label>
+          </div>
+        </div>
+      </div>
+      <p class="calt">
+        == === <= >= != !== -> ## ### #### // ${ => && &&& %% || ||| !! ??
+      </p>
+    </div>
+
+    <div class="test-case">
+      <div class="test-labels">
+        <h2>Contextual Alternates & “CODE” Axis <span class="code">calt+CODE</span></h2>
+        <div class="test-slider">
+          <input type="range" name="CODEaxis" id="code-axis-slider" min="0" max="1" value="0" step="0.01" />
+          <span id="currentCODEvalue"></span>
+        </div>
+      </div>
+      <p class="calt_code">
+        == === <= >= != !== -> ## ### #### // ${ => && &&& %% || ||| !! ??
+      </p>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
