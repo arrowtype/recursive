@@ -1,3 +1,5 @@
+let root = document.documentElement;
+
 // -------------------------------------------------------------
 // dlig --------------------------------------------------------
 
@@ -8,6 +10,7 @@ function handleDlig() {
         if (dligRadios[i].checked) {
             console.log(dligRadios[i].value);
             // TODO: set dlig CSS var
+            root.style.setProperty('--dlig', dligRadios[i].value);
             break;
         }
     }
@@ -30,6 +33,7 @@ function handleCalt() {
         if (caltRadios[i].checked) {
             console.log(caltRadios[i].value);
             // TODO: set calt CSS var
+            root.style.setProperty('--calt', caltRadios[i].value);
             break;
         }
     }
@@ -51,6 +55,7 @@ const currentCODEvalue = document.querySelector("#currentCODEvalue");
 function codeValUpdate(e) {
   console.log(e.target.value);
   currentCODEvalue.innerHTML = e.target.value;
+  root.style.setProperty('--CODE', e.target.value);
   // TODO: set CODE CSS var
 }
 

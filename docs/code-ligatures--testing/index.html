@@ -56,8 +56,9 @@
     }
 
     .test-slider {
-      display: grid;
-      grid-template-columns: 90% 10%;
+      /* display: grid; */
+      /* grid-template-columns: 70% 20%; */
+      display: flex;
       align-content: center;
     }
 
@@ -74,14 +75,23 @@
       font-size: 2.4vw;
     }
 
+    :root {
+        --dlig: 0;
+        --calt: 1;
+        --CODE: 0;
+    }
+
     .dlig {
       font-family: "Recursive DLIG", monospace;
+      font-feature-settings: "dlig" var(--dlig);
     }
     .calt {
       font-family: "Recursive CALT", monospace;
+      font-feature-settings: "calt" var(--calt);
     }
     .calt_code {
       font-family: "Recursive CALT CODE", monospace;
+      font-variation-settings: "CODE" var(--CODE);
     }
   </style>
   <body>
@@ -95,12 +105,11 @@
         <h2>Discretionary Ligatures <span class="code">dlig</span></h2>
         <div class="radios">
           <div>
-            <input type="radio" id="dlig-off" name="dlig" value="off" checked/>
+            <input type="radio" id="dlig-off" name="dlig" value="0" checked/>
             <label for="dlig-off">Off</label>
           </div>
-
           <div>
-            <input type="radio" id="dlig-on" name="dlig" value="on" />
+            <input type="radio" id="dlig-on" name="dlig" value="1" />
             <label for="dlig-on">On</label>
           </div>
         </div>
@@ -115,12 +124,11 @@
         <h2>Contextual Alternates <span class="code">calt</span></h2>
         <div class="radios">
           <div>
-            <input type="radio" id="calt-off" name="calt" value="off" />
+            <input type="radio" id="calt-off" name="calt" value="0" />
             <label for="calt-off">Off</label>
           </div>
-
           <div>
-            <input type="radio" id="calt-on" name="calt" value="on" checked />
+            <input type="radio" id="calt-on" name="calt" value="1" checked />
             <label for="calt-on">On</label>
           </div>
         </div>
