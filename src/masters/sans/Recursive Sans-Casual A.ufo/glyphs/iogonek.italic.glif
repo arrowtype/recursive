@@ -2,14 +2,37 @@
 <glyph name="iogonek.italic" format="2">
 	<advance width="350"/>
 	<outline>
+		<contour>
+			<point x="109" y="-150" type="curve" smooth="yes"/>
+			<point x="109" y="-212"/>
+			<point x="156" y="-250"/>
+			<point x="232" y="-250" type="curve" smooth="yes"/>
+			<point x="283" y="-250"/>
+			<point x="316" y="-231"/>
+			<point x="316" y="-199" type="curve" smooth="yes"/>
+			<point x="316" y="-190"/>
+			<point x="316" y="-184"/>
+			<point x="312" y="-177" type="curve"/>
+			<point x="308" y="-177" type="line"/>
+			<point x="287" y="-194"/>
+			<point x="262" y="-200"/>
+			<point x="235" y="-200" type="curve" smooth="yes"/>
+			<point x="182" y="-200"/>
+			<point x="159" y="-180"/>
+			<point x="159" y="-146" type="curve" smooth="yes"/>
+			<point x="159" y="-101"/>
+			<point x="190" y="-64"/>
+			<point x="272" y="-15" type="curve" smooth="yes"/>
+			<point x="304" y="5"/>
+			<point x="320" y="20"/>
+			<point x="321" y="51" type="curve"/>
+			<point x="314" y="47"/>
+			<point x="297" y="52"/>
+			<point x="256" y="26" type="curve" smooth="yes"/>
+			<point x="152" y="-40"/>
+			<point x="109" y="-77"/>
+		</contour>
 		<component base="dotlessi.italic"/>
-		<component base="ogonekcomb" xOffset="265" yOffset="5"/>
 		<component base="dotaccentcomb" xOffset="169" yOffset="2"/>
 	</outline>
-	<lib>
-		<dict>
-			<key>public.markColor</key>
-			<string>0,0,0,0.5</string>
-		</dict>
-	</lib>
 </glyph>
