@@ -1,37 +1,29 @@
 languagesystem DFLT dflt;
 languagesystem latn dflt;
 
-# feature locl {
-#     script latn;
-#         language NLD exclude_dflt;
-#             lookup DutchIJ {
-#                 sub I J by IJ;
-#             } DutchIJ;
-# } locl;
-
-feature dlig {
+feature calt {
     lookup exclam_equal {
-        ignore sub exclam exclam' equal';
-        ignore sub exclam' equal' equal;
-        sub exclam' equal' by exclam_equal.code;
+        ignore sub exclam exclam' equal.precode';
+        ignore sub exclam' equal.precode' equal.precode;
+        sub exclam' equal.precode' by exclam_equal.code_alt;
     } exclam_equal;
     
     lookup exclam_equal_equal {
-        ignore sub exclam exclam' equal' equal';
-        ignore sub exclam' equal' equal' equal;
-        sub exclam' equal' equal' by exclam_equal_equal.code;
+        ignore sub exclam exclam' equal.precode' equal.precode';
+        ignore sub exclam' equal.precode' equal.precode' equal.precode;
+        sub exclam' equal.precode' equal.precode' by exclam_equal_equal.code_alt;
     } exclam_equal_equal;
 
     lookup equal_equal {
-        ignore sub equal' equal' equal;
-        ignore sub equal equal' equal';
-        sub equal' equal' by equal_equal.code;
+        ignore sub equal.precode' equal.precode' equal.precode;
+        ignore sub equal.precode equal.precode' equal.precode';
+        sub equal.precode' equal.precode' by equal_equal.code_alt;
     } equal_equal;
     
     lookup equal_equal_equal {
-        ignore sub equal' equal' equal' equal;
-        ignore sub equal equal' equal' equal';
-        sub equal' equal' equal' by equal_equal_equal.code;
+        ignore sub equal.precode' equal.precode' equal.precode' equal.precode;
+        ignore sub equal.precode equal.precode' equal.precode' equal.precode';
+        sub equal.precode' equal.precode' equal.precode' by equal_equal_equal.code_alt;
     } equal_equal_equal;
     
     lookup exclam_exclam {
@@ -102,21 +94,21 @@ feature dlig {
     } slash_slash;
     
     lookup equal_greater {
-        ignore sub equal equal' greater';
-        ignore sub equal' greater' greater;
-        sub equal' greater' by equal_greater.code;
+        ignore sub equal.precode equal.precode' greater';
+        ignore sub equal.precode' greater' greater;
+        sub equal.precode' greater' by equal_greater.code_alt;
     } equal_greater;
     
     lookup greater_equal {
-        ignore sub greater greater' equal';
-        ignore sub greater' equal' equal;
-        sub greater' equal' by greater_equal.code;
+        ignore sub greater greater' equal.precode';
+        ignore sub greater' equal.precode' equal.precode;
+        sub greater' equal.precode' by greater_equal.code_alt;
     } greater_equal;
     
     lookup less_equal {
-        ignore sub less less' equal';
-        ignore sub less' equal' equal;
-        sub less' equal' by less_equal.code;
+        ignore sub less less' equal.precode';
+        ignore sub less' equal.precode' equal.precode;
+        sub less' equal.precode' by less_equal.code_alt;
     } less_equal;
     
     lookup dollar_braceleft {
@@ -126,15 +118,15 @@ feature dlig {
     } dollar_braceleft;
     
     lookup hyphen_greater {
-        ignore sub hyphen hyphen' greater';
-        ignore sub hyphen' greater' greater;
-        sub hyphen' greater' by hyphen_greater.code;
+        ignore sub hyphen.precode hyphen.precode' greater';
+        ignore sub hyphen.precode' greater' greater;
+        sub hyphen.precode' greater' by hyphen_greater.code_alt;
     } hyphen_greater;
     
     lookup less_hyphen {
-        ignore sub less less' hyphen';
-        ignore sub less' hyphen' hyphen;
-        sub less' hyphen' by less_hyphen.code;
+        ignore sub less less' hyphen.precode';
+        ignore sub less' hyphen.precode' hyphen.precode;
+        sub less' hyphen.precode' by less_hyphen.code_alt;
     } less_hyphen;
     
     lookup f_quote {
@@ -144,9 +136,9 @@ feature dlig {
     } f_quote;
     
     lookup equal_slash_equal {
-        ignore sub equal equal' slash' equal' equal;
-        ignore sub equal equal' slash' equal' equal;
-        sub equal' slash' equal' by equal_slash_equal.code;
+        ignore sub equal.precode equal.precode' slash' equal.precode' equal.precode;
+        ignore sub equal.precode equal.precode' slash' equal.precode' equal.precode;
+        sub equal.precode' slash' equal.precode' by equal_slash_equal.code_alt;
     } equal_slash_equal;
     
     lookup question_period {
@@ -161,4 +153,4 @@ feature dlig {
         sub question' colon' by question_colon.code;
     } question_colon;
 
-} dlig;
+} calt;

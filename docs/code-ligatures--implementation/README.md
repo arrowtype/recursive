@@ -101,6 +101,10 @@ https://github.com/arrowtype/recursive/tree/6082c6a91962b3f6d0690361735b73985c13
   - You can use `include()` with a feature file path, BUT this seems to stop working if you use FontMake to generate interpolated fonts.
 
 
+
+## Trying this with Contextual Alternates (calt)
+
+
 - (Make separate issue): What other features need to be written to make this font work well?
 
 
