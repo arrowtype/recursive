@@ -6,15 +6,15 @@
 		<contour>
 			<point x="346" y="570" type="curve"/>
 			<point x="194" y="570"/>
-			<point x="92" y="497"/>
-			<point x="54" y="349" type="curve" smooth="yes"/>
-			<point x="26" y="239" type="line"/>
-			<point x="-13" y="80"/>
+			<point x="90" y="497"/>
+			<point x="53" y="349" type="curve" smooth="yes"/>
+			<point x="26" y="241" type="line" smooth="yes"/>
+			<point x="-14" y="82"/>
 			<point x="68" y="-20"/>
 			<point x="250" y="-20" type="curve"/>
 			<point x="398" y="-20"/>
-			<point x="500" y="53"/>
-			<point x="546" y="201" type="curve"/>
+			<point x="513" y="50"/>
+			<point x="546" y="201" type="curve" smooth="yes"/>
 			<point x="570" y="311" type="line" smooth="yes"/>
 			<point x="605" y="470"/>
 			<point x="524" y="570"/>
@@ -44,10 +44,10 @@
 	</outline>
 	<anchor name="top" x="352" y="550"/>
 	<anchor name="bottom" x="251" y="-1"/>
-	<anchor name="ogonek" x="358" y="7"/>
 	<anchor name="horn" x="478" y="533"/>
 	<anchor name="hook" x="356" y="584"/>
 	<anchor name="tildeviet" x="282" y="550"/>
+	<anchor name="ogonek" x="436" y="31"/>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
