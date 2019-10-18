@@ -618,11 +618,25 @@
 				<real>0.0274341889</real>
 				<real>0.5</real>
 			</array>
+			<key>public.kern1.E_right</key>
+			<array>
+				<integer>1</integer>
+				<integer>0</integer>
+				<integer>1</integer>
+				<real>0.25</real>
+			</array>
 			<key>public.kern1.Fig0_right</key>
 			<array>
 				<integer>0</integer>
 				<integer>1</integer>
 				<integer>1</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern1.G_right</key>
+			<array>
+				<integer>1</integer>
+				<integer>0</integer>
+				<real>0.5</real>
 				<real>0.25</real>
 			</array>
 			<key>public.kern1.I_right</key>
@@ -667,6 +681,13 @@
 				<integer>1</integer>
 				<real>0.25</real>
 			</array>
+			<key>public.kern1.S_right</key>
+			<array>
+				<integer>1</integer>
+				<integer>0</integer>
+				<integer>0</integer>
+				<real>0.25</real>
+			</array>
 			<key>public.kern1.T_right</key>
 			<array>
 				<real>0.0001108646</real>
@@ -688,11 +709,32 @@
 				<integer>1</integer>
 				<real>0.25</real>
 			</array>
+			<key>public.kern1.Z_right</key>
+			<array>
+				<integer>1</integer>
+				<real>0.5</real>
+				<integer>0</integer>
+				<real>0.25</real>
+			</array>
 			<key>public.kern1.a_right</key>
 			<array>
 				<integer>1</integer>
 				<integer>0</integer>
 				<real>0.5</real>
+				<real>0.25</real>
+			</array>
+			<key>public.kern1.e_right</key>
+			<array>
+				<integer>1</integer>
+				<integer>1</integer>
+				<integer>0</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern1.g_right</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>0</integer>
 				<real>0.25</real>
 			</array>
 			<key>public.kern1.o_right</key>
@@ -708,6 +750,13 @@
 				<real>0.9996772408</real>
 				<real>0.0236240849</real>
 				<real>0.5</real>
+			</array>
+			<key>public.kern1.s_right</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>1</integer>
+				<real>0.25</real>
 			</array>
 			<key>public.kern1.v_right</key>
 			<array>
@@ -779,6 +828,13 @@
 				<integer>1</integer>
 				<real>0.25</real>
 			</array>
+			<key>public.kern2.S_left</key>
+			<array>
+				<integer>0</integer>
+				<real>0.5</real>
+				<integer>1</integer>
+				<real>0.25</real>
+			</array>
 			<key>public.kern2.T_left</key>
 			<array>
 				<integer>0</integer>
@@ -800,9 +856,30 @@
 				<real>0.1999999434</real>
 				<real>0.5</real>
 			</array>
+			<key>public.kern2.Z_left</key>
+			<array>
+				<integer>0</integer>
+				<integer>0</integer>
+				<integer>1</integer>
+				<real>0.25</real>
+			</array>
 			<key>public.kern2.a_left</key>
 			<array>
 				<real>0.5</real>
+				<integer>0</integer>
+				<integer>1</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern2.g_left</key>
+			<array>
+				<real>0.5</real>
+				<integer>0</integer>
+				<integer>1</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern2.i_left</key>
+			<array>
+				<integer>1</integer>
 				<integer>0</integer>
 				<integer>1</integer>
 				<real>0.25</real>
@@ -812,6 +889,13 @@
 				<integer>1</integer>
 				<integer>0</integer>
 				<integer>1</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern2.s_left</key>
+			<array>
+				<integer>1</integer>
+				<integer>0</integer>
+				<real>0.5</real>
 				<real>0.25</real>
 			</array>
 			<key>public.kern2.v_left</key>

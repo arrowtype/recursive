@@ -508,6 +508,21 @@
 			<string>Cdotaccent</string>
 			<string>colonmonetary</string>
 		</array>
+		<key>public.kern1.E_right</key>
+		<array>
+			<string>E</string>
+			<string>Eacute</string>
+			<string>Ebreve</string>
+			<string>Ecaron</string>
+			<string>Ecircumflex</string>
+			<string>Edieresis</string>
+			<string>Edotaccent</string>
+			<string>Edotbelow</string>
+			<string>Egrave</string>
+			<string>Emacron</string>
+			<string>Eogonek</string>
+			<string>Etilde</string>
+		</array>
 		<key>public.kern1.Fig0_right</key>
 		<array>
 			<string>zero</string>
@@ -515,6 +530,14 @@
 			<string>nine.ss01</string>
 			<string>zero.sans</string>
 			<string>zero.ss01</string>
+		</array>
+		<key>public.kern1.G_right</key>
+		<array>
+			<string>G</string>
+			<string>Gbreve</string>
+			<string>Gcaron</string>
+			<string>Gcircumflex</string>
+			<string>Gdotaccent</string>
 		</array>
 		<key>public.kern1.I_right</key>
 		<array>
@@ -607,6 +630,15 @@
 			<string>slash</string>
 			<string>slash.case</string>
 		</array>
+		<key>public.kern1.S_right</key>
+		<array>
+			<string>S</string>
+			<string>Sacute</string>
+			<string>Scaron</string>
+			<string>Scedilla</string>
+			<string>Scircumflex</string>
+			<string>Scommaaccent</string>
+		</array>
 		<key>public.kern1.T_right</key>
 		<array>
 			<string>T</string>
@@ -636,6 +668,13 @@
 			<string>Ytilde</string>
 			<string>Yhook</string>
 		</array>
+		<key>public.kern1.Z_right</key>
+		<array>
+			<string>Z</string>
+			<string>Zacute</string>
+			<string>Zcaron</string>
+			<string>Zdotaccent</string>
+		</array>
 		<key>public.kern1.a_right</key>
 		<array>
 			<string>a</string>
@@ -662,6 +701,29 @@
 			<string>acircumflexhook</string>
 			<string>ahook</string>
 			<string>a.italic</string>
+		</array>
+		<key>public.kern1.e_right</key>
+		<array>
+			<string>e</string>
+			<string>eacute</string>
+			<string>ebreve</string>
+			<string>ecaron</string>
+			<string>ecircumflex</string>
+			<string>edieresis</string>
+			<string>edotaccent</string>
+			<string>edotbelow</string>
+			<string>egrave</string>
+			<string>emacron</string>
+			<string>eogonek</string>
+			<string>etilde</string>
+		</array>
+		<key>public.kern1.g_right</key>
+		<array>
+			<string>g</string>
+			<string>gbreve</string>
+			<string>gcaron</string>
+			<string>gcircumflex</string>
+			<string>gdotaccent</string>
 		</array>
 		<key>public.kern1.o_right</key>
 		<array>
@@ -704,6 +766,15 @@
 			<string>r.simple_italic</string>
 			<string>r.italic</string>
 			<string>r.mono</string>
+		</array>
+		<key>public.kern1.s_right</key>
+		<array>
+			<string>s</string>
+			<string>sacute</string>
+			<string>scaron</string>
+			<string>scedilla</string>
+			<string>scircumflex</string>
+			<string>scommaaccent</string>
 		</array>
 		<key>public.kern1.v_right</key>
 		<array>
@@ -898,6 +969,15 @@
 			<string>backslash</string>
 			<string>backslash.case</string>
 		</array>
+		<key>public.kern2.S_left</key>
+		<array>
+			<string>S</string>
+			<string>Sacute</string>
+			<string>Scaron</string>
+			<string>Scedilla</string>
+			<string>Scircumflex</string>
+			<string>Scommaaccent</string>
+		</array>
 		<key>public.kern2.T_left</key>
 		<array>
 			<string>T</string>
@@ -927,6 +1007,13 @@
 			<string>Ytilde</string>
 			<string>Yhook</string>
 		</array>
+		<key>public.kern2.Z_left</key>
+		<array>
+			<string>Z</string>
+			<string>Zacute</string>
+			<string>Zcaron</string>
+			<string>Zdotaccent</string>
+		</array>
 		<key>public.kern2.a_left</key>
 		<array>
 			<string>a</string>
@@ -954,6 +1041,27 @@
 			<string>acircumflexdot</string>
 			<string>acircumflexhook</string>
 			<string>ahook</string>
+		</array>
+		<key>public.kern2.g_left</key>
+		<array>
+			<string>g</string>
+			<string>gbreve</string>
+			<string>gcaron</string>
+			<string>gcircumflex</string>
+			<string>gdotaccent</string>
+		</array>
+		<key>public.kern2.i_left</key>
+		<array>
+			<string>i</string>
+			<string>iacute</string>
+			<string>ibreve</string>
+			<string>icircumflex</string>
+			<string>idieresis</string>
+			<string>idotbelow</string>
+			<string>igrave</string>
+			<string>imacron</string>
+			<string>iogonek</string>
+			<string>itilde</string>
 		</array>
 		<key>public.kern2.o_left</key>
 		<array>
@@ -1015,6 +1123,15 @@
 			<string>ohook</string>
 			<string>ohorndot</string>
 			<string>ohornhook</string>
+		</array>
+		<key>public.kern2.s_left</key>
+		<array>
+			<string>s</string>
+			<string>sacute</string>
+			<string>scaron</string>
+			<string>scedilla</string>
+			<string>scircumflex</string>
+			<string>scommaaccent</string>
 		</array>
 		<key>public.kern2.v_left</key>
 		<array>
