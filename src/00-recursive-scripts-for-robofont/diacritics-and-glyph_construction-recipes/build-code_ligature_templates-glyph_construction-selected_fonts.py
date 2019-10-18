@@ -47,9 +47,13 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 # equal_slash_equal.code = equal&slash&equal
 #'''
 
+# txt='''\
+# equal.precode=equal
+# hyphen.precode=hyphen
+# '''
+
 txt='''\
-equal.precode=equal
-hyphen.precode=hyphen
+equal_equal.code = equal&equal
 '''
 
 # get the actual glyph constructions from text

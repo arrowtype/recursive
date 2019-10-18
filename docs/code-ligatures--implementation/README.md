@@ -1,5 +1,9 @@
 # Implementing Code Ligatures
 
+A summary of this also exists as a [Google Slides deck](https://docs.google.com/presentation/d/11POJKckoGBhDk1kyQu3DC1tNUNJWwqF2FigIV6Tfdwo/edit?usp=sharing).
+
+---
+
 There are three primary possible ways I see to implement code ligatures:
 
 1. Emulate Fira Code: use `calt` to make code ligatures default, and let people disable them if they want to.
@@ -104,8 +108,14 @@ https://github.com/arrowtype/recursive/tree/6082c6a91962b3f6d0690361735b73985c13
 
 ## Trying this with Contextual Alternates (calt)
 
+So, my first thought on how to achieve this was to:
 
-- (Make separate issue): What other features need to be written to make this font work well?
+1. Make ligatures that don't look like ligatures – just two components. E.g. /equal_equal_equal.no_lig
+2. Make ligatures that do look like ligatures, E.g. /equal_equal_equal.code
+3. Use a calt feature (or possibly liga feature) to do looks for applying /equal_equal_equal.no_lig
+4. Use designspace rules to swap from /equal_equal_equal.no_lig to /equal_equal_equal.code when a user turns up the CODE axis.
+
+To make this CODE axis work, I have to create a glyph like /equal.precode, and swap to that in my axis rules, and then use /equal.precode in the lookup for calt. So, it adds another extra glyph and an extra layer of logical complexity to the feature. It's not impossible, but definitely not ideal.
 
 
 ## Resources
