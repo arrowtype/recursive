@@ -1,11 +1,29 @@
 from vanilla.dialogs import *
 import metricsMachine
-font = metricsMachine.CurrentFont()
+from mojo.UI import OutputWindow
 
-print(font)
+copyFrom = getFile("Select file to copy from", allowsMultipleSelection=False, fileTypes=["ufo"])[0]
+importTo = getFile("Select files to copy to", allowsMultipleSelection=True, fileTypes=["ufo"])
 
-selectedFile = getFile("Select file to import", allowsMultipleSelection=False, fileTypes=["ufo"])
+OutputWindow().show()
+OutputWindow().clear()
 
-print(selectedFile)
+fontToCopyFrom = OpenFont(copyFrom, showInterface=False)
 
-font.kerning.importKerning(selectedFile[0])
+copyFrom = metricsMachine.MetricsMachineFont(fontToCopyFrom.naked())
+
+for fontPath in importTo:
+    if fontPath != copyFrom:
+        print(fontPath)
+
+        fontToOpen = OpenFont(fontPath, showInterface=False)
+        print(fontToOpen)
+        
+        copyTo = metricsMachine.MetricsMachineFont(fontToOpen.naked())
+        copyTo.kerning.importKerning(copyFrom)
+        
+        fontToOpen.save()
+        fontToOpen.close()
+
+
+# alternative: maybe this could instead export a feature file, and the others would just read that?
