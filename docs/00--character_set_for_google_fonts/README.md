@@ -33,6 +33,9 @@ This would be more useful as a script (https://github.com/arrowtype/recursive/is
 - Top anchors to combining accents
 
 **Digraphs**
+
+These should be one glyph-width (600 units) in Mono, and the added-up width of component glyphs in Sans.
+
 ```
 0x01C4 Ǆ LATIN CAPITAL LETTER DZ WITH CARON
 0x01C5 ǅ LATIN CAPITAL LETTER D WITH SMALL LETTER Z WITH CARON
@@ -46,6 +49,9 @@ This would be more useful as a script (https://github.com/arrowtype/recursive/is
 ```
 
 **Basic Latin Ligatures**
+
+These should be *two* glyph-widths (600 units) in Mono, and approximately the added-up width of component glyphs in Sans – but possibly improved for spacing.
+
 ```
 0xFB01 ﬁ LATIN SMALL LIGATURE FI
 0xFB02 ﬂ LATIN SMALL LIGATURE FL
@@ -89,8 +95,7 @@ f_f_l
 0x27E9 ⟩ MATHEMATICAL RIGHT ANGLE BRACKET
 0x2032 ′ PRIME
 0x2033 ″ DOUBLE PRIME
-0x2030 ‰ PER MILLE SIGN
-0x2116 № NUMERO SIGN
+0x2116 № NUMERO SIGN # one glyph-width in mono, more in Sans
 ```
 
 
