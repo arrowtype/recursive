@@ -81,7 +81,8 @@ Including these because they should be relatively simple, and will be seen very 
 
 | ligature | name                  | note     | Done? |
 | -------- | --------------------- | -------- | ----- |
-| f"       | f_quote.code          | python   | ?     |
+| f"       | f_quote.code          | python   | DONE  |
+| f'       | f_quote.code          | python   | ?     |
 | ${       | dollar_braceleft.code | JS, bash | DONE  |
 
 
