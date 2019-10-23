@@ -5,11 +5,13 @@
 		<key>F</key>
 		<dict>
 			<key>public.kern2.A_left</key>
-			<integer>-20</integer>
+			<integer>-30</integer>
 			<key>public.kern2.Punct_low_left</key>
-			<integer>-40</integer>
+			<integer>-50</integer>
 			<key>public.kern2.Punct_mid_left</key>
 			<integer>-30</integer>
+			<key>public.kern2.a_left</key>
+			<integer>-10</integer>
 			<key>public.kern2.o_left</key>
 			<integer>-20</integer>
 		</dict>
@@ -29,20 +31,22 @@
 			<key>M</key>
 			<integer>-10</integer>
 			<key>X</key>
-			<integer>-20</integer>
+			<integer>-30</integer>
 			<key>public.kern2.A_left</key>
 			<integer>-30</integer>
 			<key>public.kern2.I_left</key>
-			<integer>-20</integer>
+			<integer>-30</integer>
 			<key>public.kern2.O_left</key>
-			<integer>-10</integer>
+			<integer>-20</integer>
 			<key>public.kern2.Punct_low_left</key>
-			<integer>-50</integer>
+			<integer>-90</integer>
 			<key>public.kern2.Punct_mid_left</key>
 			<integer>-20</integer>
 			<key>public.kern2.T_left</key>
 			<integer>-30</integer>
 			<key>public.kern2.Z_left</key>
+			<integer>-20</integer>
+			<key>public.kern2.a_left</key>
 			<integer>-20</integer>
 			<key>public.kern2.o_left</key>
 			<integer>-10</integer>
@@ -59,7 +63,7 @@
 			<key>public.kern2.O_left</key>
 			<integer>-20</integer>
 			<key>public.kern2.Punct_low_left</key>
-			<integer>-30</integer>
+			<integer>-60</integer>
 			<key>public.kern2.Punct_mid_left</key>
 			<integer>-30</integer>
 			<key>public.kern2.o_left</key>
@@ -70,14 +74,9 @@
 			<key>public.kern2.A_left</key>
 			<integer>-20</integer>
 			<key>public.kern2.O_left</key>
-			<integer>-20</integer>
-			<key>public.kern2.o_left</key>
-			<integer>-10</integer>
-		</dict>
-		<key>k</key>
-		<dict>
-			<key>public.kern2.Punct_mid_left</key>
 			<integer>-40</integer>
+			<key>public.kern2.a_left</key>
+			<integer>-20</integer>
 			<key>public.kern2.o_left</key>
 			<integer>-10</integer>
 		</dict>
@@ -106,13 +105,13 @@
 			<key>public.kern2.T_left</key>
 			<integer>-70</integer>
 			<key>public.kern2.W_left</key>
-			<integer>-10</integer>
+			<integer>-20</integer>
 			<key>public.kern2.Y_left</key>
-			<integer>-40</integer>
+			<integer>-60</integer>
+			<key>public.kern2.t_left</key>
+			<integer>-20</integer>
 			<key>public.kern2.v_left</key>
 			<integer>-20</integer>
-			<key>t</key>
-			<integer>-10</integer>
 		</dict>
 		<key>public.kern1.B_right</key>
 		<dict>
@@ -128,7 +127,7 @@
 			<key>public.kern2.A_left</key>
 			<integer>-10</integer>
 			<key>public.kern2.Y_left</key>
-			<integer>-10</integer>
+			<integer>-40</integer>
 		</dict>
 		<key>public.kern1.I_right</key>
 		<dict>
@@ -148,13 +147,13 @@
 			<key>public.kern2.Punct_top_left</key>
 			<integer>-90</integer>
 			<key>public.kern2.T_left</key>
-			<integer>-60</integer>
+			<integer>-100</integer>
 			<key>public.kern2.W_left</key>
 			<integer>-20</integer>
 			<key>public.kern2.Y_left</key>
-			<integer>-60</integer>
+			<integer>-90</integer>
 			<key>public.kern2.v_left</key>
-			<integer>-40</integer>
+			<integer>-50</integer>
 			<key>public.kern2.w_left</key>
 			<integer>-20</integer>
 		</dict>
@@ -163,7 +162,7 @@
 			<key>V</key>
 			<integer>-10</integer>
 			<key>X</key>
-			<integer>-20</integer>
+			<integer>-30</integer>
 			<key>public.kern2.A_left</key>
 			<integer>-10</integer>
 			<key>public.kern2.Punct_low_left</key>
@@ -173,12 +172,12 @@
 			<key>public.kern2.T_left</key>
 			<integer>-20</integer>
 			<key>public.kern2.Y_left</key>
-			<integer>-20</integer>
+			<integer>-40</integer>
 		</dict>
 		<key>public.kern1.Punct_low_right</key>
 		<dict>
 			<key>public.kern2.v_left</key>
-			<integer>-40</integer>
+			<integer>-80</integer>
 		</dict>
 		<key>public.kern1.Punct_mid_right</key>
 		<dict>
@@ -196,7 +195,7 @@
 			<integer>-60</integer>
 			<key>public.kern2.Z_left</key>
 			<integer>-30</integer>
-			<key>x</key>
+			<key>public.kern2.x_left</key>
 			<integer>-40</integer>
 		</dict>
 		<key>public.kern1.Punct_top_right</key>
@@ -209,13 +208,13 @@
 		<key>public.kern1.T_right</key>
 		<dict>
 			<key>public.kern2.A_left</key>
-			<integer>-70</integer>
+			<integer>-80</integer>
 			<key>public.kern2.I_left</key>
 			<integer>-20</integer>
 			<key>public.kern2.O_left</key>
 			<integer>-30</integer>
 			<key>public.kern2.Punct_low_left</key>
-			<integer>-60</integer>
+			<integer>-80</integer>
 			<key>public.kern2.Punct_mid_left</key>
 			<integer>-40</integer>
 			<key>public.kern2.T_left</key>
@@ -223,37 +222,37 @@
 			<key>public.kern2.a_left</key>
 			<integer>-60</integer>
 			<key>public.kern2.g_left</key>
-			<integer>-60</integer>
+			<integer>-70</integer>
 			<key>public.kern2.o_left</key>
 			<integer>-60</integer>
 			<key>public.kern2.s_left</key>
-			<integer>-60</integer>
+			<integer>-70</integer>
 		</dict>
 		<key>public.kern1.W_right</key>
 		<dict>
 			<key>public.kern2.A_left</key>
 			<integer>-20</integer>
 			<key>public.kern2.Punct_low_left</key>
-			<integer>-30</integer>
+			<integer>-50</integer>
 		</dict>
 		<key>public.kern1.Y_right</key>
 		<dict>
 			<key>public.kern2.A_left</key>
-			<integer>-50</integer>
+			<integer>-80</integer>
 			<key>public.kern2.O_left</key>
-			<integer>-20</integer>
+			<integer>-40</integer>
 			<key>public.kern2.Punct_low_left</key>
-			<integer>-70</integer>
+			<integer>-120</integer>
 			<key>public.kern2.Punct_mid_left</key>
-			<integer>-50</integer>
+			<integer>-70</integer>
 			<key>public.kern2.a_left</key>
-			<integer>-40</integer>
+			<integer>-70</integer>
 			<key>public.kern2.g_left</key>
-			<integer>-40</integer>
+			<integer>-70</integer>
 			<key>public.kern2.o_left</key>
 			<integer>-50</integer>
 			<key>public.kern2.s_left</key>
-			<integer>-50</integer>
+			<integer>-70</integer>
 			<key>public.kern2.v_left</key>
 			<integer>-30</integer>
 			<key>z</key>
@@ -262,16 +261,16 @@
 		<key>public.kern1.Z_right</key>
 		<dict>
 			<key>public.kern2.O_left</key>
-			<integer>-10</integer>
-			<key>public.kern2.Punct_mid_left</key>
 			<integer>-30</integer>
+			<key>public.kern2.Punct_mid_left</key>
+			<integer>-40</integer>
 		</dict>
 		<key>public.kern1.a_right</key>
 		<dict>
+			<key>public.kern2.t_left</key>
+			<integer>-20</integer>
 			<key>public.kern2.v_left</key>
 			<integer>-30</integer>
-			<key>t</key>
-			<integer>-20</integer>
 		</dict>
 		<key>public.kern1.o_right</key>
 		<dict>
@@ -279,7 +278,7 @@
 			<integer>-20</integer>
 			<key>public.kern2.w_left</key>
 			<integer>-10</integer>
-			<key>x</key>
+			<key>public.kern2.x_left</key>
 			<integer>-10</integer>
 		</dict>
 		<key>public.kern1.r_right</key>
@@ -305,12 +304,14 @@
 			<key>public.kern2.a_left</key>
 			<integer>-20</integer>
 		</dict>
-		<key>seven</key>
+		<key>public.kern1.x_left</key>
 		<dict>
-			<key>four</key>
-			<integer>-30</integer>
+			<key>public.kern2.Punct_mid_left</key>
+			<integer>-40</integer>
+			<key>public.kern2.o_left</key>
+			<integer>-10</integer>
 		</dict>
-		<key>x</key>
+		<key>public.kern1.x_right</key>
 		<dict>
 			<key>public.kern2.Punct_mid_left</key>
 			<integer>-40</integer>

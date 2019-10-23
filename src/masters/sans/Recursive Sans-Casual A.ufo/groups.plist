@@ -237,6 +237,16 @@
 			<string>ahook</string>
 			<string>a.italic</string>
 		</array>
+		<key>public.kern1.c_right</key>
+		<array>
+			<string>c.italic</string>
+			<string>c</string>
+			<string>cacute</string>
+			<string>ccaron</string>
+			<string>ccedilla</string>
+			<string>ccircumflex</string>
+			<string>cdotaccent</string>
+		</array>
 		<key>public.kern1.e_right</key>
 		<array>
 			<string>e</string>
@@ -251,6 +261,9 @@
 			<string>emacron</string>
 			<string>eogonek</string>
 			<string>etilde</string>
+			<string>ae</string>
+			<string>aeacute</string>
+			<string>e.italic</string>
 		</array>
 		<key>public.kern1.g_right</key>
 		<array>
@@ -259,6 +272,7 @@
 			<string>gcaron</string>
 			<string>gcircumflex</string>
 			<string>gdotaccent</string>
+			<string>g.italic</string>
 		</array>
 		<key>public.kern1.o_right</key>
 		<array>
@@ -310,6 +324,14 @@
 			<string>scedilla</string>
 			<string>scircumflex</string>
 			<string>scommaaccent</string>
+			<string>s.italic</string>
+		</array>
+		<key>public.kern1.t_right</key>
+		<array>
+			<string>t</string>
+			<string>tcaron</string>
+			<string>tcedilla</string>
+			<string>tcommaaccent</string>
 		</array>
 		<key>public.kern1.v_right</key>
 		<array>
@@ -323,6 +345,8 @@
 			<string>ymacron</string>
 			<string>ytilde</string>
 			<string>yhook</string>
+			<string>v.italic</string>
+			<string>y.italic</string>
 		</array>
 		<key>public.kern1.w_right</key>
 		<array>
@@ -331,6 +355,16 @@
 			<string>wcircumflex</string>
 			<string>wdieresis</string>
 			<string>wgrave</string>
+			<string>w.italic</string>
+		</array>
+		<key>public.kern1.x_left</key>
+		<array>
+			<string>x</string>
+			<string>x.italic</string>
+		</array>
+		<key>public.kern1.x_right</key>
+		<array>
+			<string>k</string>
 		</array>
 		<key>public.kern2.A_left</key>
 		<array>
@@ -575,6 +609,7 @@
 			<string>acircumflexdot</string>
 			<string>acircumflexhook</string>
 			<string>ahook</string>
+			<string>a.italic</string>
 		</array>
 		<key>public.kern2.g_left</key>
 		<array>
@@ -644,7 +679,6 @@
 			<string>oslash</string>
 			<string>oslashacute</string>
 			<string>oe</string>
-			<string>a.italic</string>
 			<string>c.italic</string>
 			<string>d.italic</string>
 			<string>e.italic</string>
@@ -667,6 +701,15 @@
 			<string>scircumflex</string>
 			<string>scommaaccent</string>
 		</array>
+		<key>public.kern2.t_left</key>
+		<array>
+			<string>t</string>
+			<string>tcaron</string>
+			<string>tcedilla</string>
+			<string>tcommaaccent</string>
+			<string>f.italic</string>
+			<string>f</string>
+		</array>
 		<key>public.kern2.v_left</key>
 		<array>
 			<string>v</string>
@@ -679,6 +722,7 @@
 			<string>ymacron</string>
 			<string>ytilde</string>
 			<string>yhook</string>
+			<string>v.italic</string>
 		</array>
 		<key>public.kern2.w_left</key>
 		<array>
@@ -687,6 +731,12 @@
 			<string>wcircumflex</string>
 			<string>wdieresis</string>
 			<string>wgrave</string>
+			<string>w.italic</string>
+		</array>
+		<key>public.kern2.x_left</key>
+		<array>
+			<string>x.italic</string>
+			<string>x</string>
 		</array>
 	</dict>
 </plist>

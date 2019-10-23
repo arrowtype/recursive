@@ -18,6 +18,12 @@ I will continue to improve this flow, but for now, I am using a beta version of 
 - hard-coding the source paths, to make it a one-click script
 - maybe adding a separate script to display test strings for other masters
 
+### Matching kerning to alternates (.italic, .mono)
+
+This will be imperfect, but is necessary to maintain superplexing.
+
+- [ ] this may need a script to keep alternates in kerning groups with their bases?
+
 ### Some glyphs could get better kerning with shape adjustments ... but they are 600-unit glyphs
 
 - /a should be copied over from Mono, but will probably kern better with a bit less of a prominent hook (or at least, a more consistent amount of slope to the left side, across masters)
