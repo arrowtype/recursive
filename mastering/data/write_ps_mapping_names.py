@@ -13,12 +13,9 @@ with open('instance_names.csv', newline='') as csvfile:
 doc = DesignSpaceDocument()
 doc.read("../../src/masters/recursive-prop_xprn_weight_slnt_ital.designspace")
 for i in doc.instances:
-    out = f"""
-    [{i.postScriptFontName}]
-        f={i.familyName}
-        s={i.styleName}
-        l={i.styleMapFamilyName}
-        m=1,{i.styleMapFamilyName} {i.styleMapStyleName}
-
-    """
-    print(out)
+    k = (i.familyName, i.styleName)
+    ps, fm, sm = names[k]
+    i.postScriptFontName = ps
+    i.styleMapFamilyName = fm
+    i.styleMapStyleName = sm
+doc.save()
