@@ -233,12 +233,13 @@ edotbelow=e+dotbelowcomb@bottom
 idotbelow=dotlessi+dotbelowcomb@bottom+dotaccentcomb@dotlessi:top
 odotbelow=o+dotbelowcomb@bottom
 udotbelow=u+dotbelowcomb@bottom
+ydotbelow=y+dotbelowcomb@dot
 
 Adotbelow=A+dotbelowcomb@bottom
 Edotbelow=E+dotbelowcomb@bottom
 Idotbelow=I+dotbelowcomb@bottom
 Odotbelow=O+dotbelowcomb@bottom
-Udotbelow=U+dotbelowcomb@bottom
+Ydotbelow=Y+dotbelowcomb@dot
 
 ############################
 
@@ -256,13 +257,15 @@ Uhungarumlaut=U+hungarumlautcomb.case@top
 aogonek=a+ogonekcomb@ogonek
 # eogonek=e+ogonekcomb@ogonek
 iogonek = dotlessi + ogonekcomb@ogonek + dotaccentcomb@dotlessi:top
-oogonek=o+ogonekcomb@ogonek
+iogonek.mono = dotlessi.mono + ogonekcomb@ogonek + dotaccentcomb@dotlessi.mono:top
+# iogonek.italic = dotlessi.italic + ogonekcombo@ogonek + dotaccentcomb@dotlessi.italic:top
+oogonek=o+ogonekcombo@ogonek
 uogonek=u+ogonekcomb@ogonek
 
 Aogonek=A+ogonekcomb.case@ogonek
 Eogonek=E+ogonekcomb.case@ogonek
 Iogonek=I+ogonekcomb.case@ogonek
-Oogonek=O+ogonekcomb.case@ogonek
+Oogonek=O+ogonekcombo.case@ogonek
 Uogonek=U+ogonekcomb.case@ogonek
 
 ############################
@@ -306,7 +309,7 @@ lslash=l+slashcomb@slash
 lslash.mono=l.mono+slashcomb@slash
 lslash.sans=l.sans+slashcomb@slash
 lslash.italic=l.italic+slashcomb@slash
-Lslash=L+slashcomb@slash
+Lslash=L+slashcomb.case@slash
 
 ############################
 
@@ -372,18 +375,10 @@ Uhornhook=U+horncomb.case@horn+hookcomb.case@U:hook
 
 # horn and tilde
 
-ohorntilde=o+horncomb@horn+tildecombviet.case@o:top
-uhorntilde=u+horncomb@horn+tildecombviet.case@u:top
-
-Ohorntilde=O+horncomb.case@horn+tildecombviet.case@O:top
-Uhorntilde=U+horncomb.case@horn+tildecombviet.case@U:top
-
-
-# ohorntilde=o+horncomb@horn+tildecombviet.case@o:`top-50,620`
-# uhorntilde=u+horncomb@horn+tildecombviet.case@u:`top-50,620`
-# 
-# Ohorntilde=O+horncomb.case@horn+tildecombviet.case@O:`top-50,770`
-# Uhorntilde=U+horncomb.case@horn+tildecombviet.case@U:`top-50,770`
+ohorntilde=o+horncomb@horn+tildecombviet.case@o:tildeviet
+uhorntilde=u+horncomb@horn+tildecombviet.case@u:tildeviet
+Ohorntilde=O+horncomb.case@horn+tildecombviet.case@O:tildeviet
+Uhorntilde=U+horncomb.case@horn+tildecombviet.case@U:tildeviet
 
 ############################
 
@@ -404,12 +399,14 @@ ehook=e+hookcomb@hook
 ihook=dotlessi+hookcomb@hook
 ohook=o+hookcomb@hook
 uhook=u+hookcomb@hook
+yhook=y+hookcomb@hook
 
 Ahook=A+hookcomb.case@hook
 Ehook=E+hookcomb.case@hook
 Ihook=I+hookcomb.case@hook
 Ohook=O+hookcomb.case@hook
 Uhook=U+hookcomb.case@hook
+Yhook=Y+hookcomb.case@hook
 
 ############################
 
@@ -476,8 +473,6 @@ Ocircumflexdot=O+circumflexcomb.case@top+dotbelowcomb.case@O:bottom
 # breve and acute
 
 abreveacute=a+brevecomb@top+acutecombviet.case@top
-
-
 Abreveacute=A+brevecomb.case@top+acutecombviet.case@top
 
 
@@ -486,8 +481,6 @@ Abreveacute=A+brevecomb.case@top+acutecombviet.case@top
 # breve and grave
 
 abrevegrave=a+brevecomb@top+gravecombviet.case@top
-
-
 Abrevegrave=A+brevecomb.case@top+gravecombviet.case@top
 
 
@@ -496,8 +489,6 @@ Abrevegrave=A+brevecomb.case@top+gravecombviet.case@top
 # breve and hook
 
 abrevehook=a+brevecomb@top+hookcomb.case@hook
-
-
 Abrevehook=A+brevecomb.case@top+hookcomb.case@hook
 
 
@@ -506,8 +497,6 @@ Abrevehook=A+brevecomb.case@top+hookcomb.case@hook
 # breve and tilde
 
 abrevetilde=a+brevecomb@top+tildecombviet.case@top
-
-
 Abrevetilde=A+brevecomb.case@top+tildecombviet.case@top
 
 
@@ -516,10 +505,7 @@ Abrevetilde=A+brevecomb.case@top+tildecombviet.case@top
 # breve and dot
 
 abrevedot=a+brevecomb@top+dotbelowcomb@a:bottom
-ebrevedot=e+brevecomb@top+dotbelowcomb@e:bottom
-
 Abrevedot=A+brevecomb.case@top+dotbelowcomb.case@A:bottom
-Ebrevedot=E+brevecomb.case@top+dotbelowcomb.case@E:bottom
 
 ############################
 

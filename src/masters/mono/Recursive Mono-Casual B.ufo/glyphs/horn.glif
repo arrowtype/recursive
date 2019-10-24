@@ -2,35 +2,12 @@
 <glyph name="horn" format="2">
 	<advance width="600"/>
 	<outline>
-		<contour>
-			<point x="197" y="681" type="curve"/>
-			<point x="202" y="656"/>
-			<point x="203" y="635"/>
-			<point x="203" y="611" type="curve" smooth="yes"/>
-			<point x="203" y="577"/>
-			<point x="196" y="561"/>
-			<point x="184" y="554" type="curve" smooth="yes"/>
-			<point x="173" y="547"/>
-			<point x="161" y="545"/>
-			<point x="152" y="545" type="curve"/>
-			<point x="152" y="520"/>
-			<point x="152" y="506"/>
-			<point x="152" y="488" type="curve"/>
-			<point x="158" y="488"/>
-			<point x="164" y="488"/>
-			<point x="170" y="488" type="curve" smooth="yes"/>
-			<point x="205" y="488"/>
-			<point x="236" y="495"/>
-			<point x="271" y="516" type="curve" smooth="yes"/>
-			<point x="307" y="538"/>
-			<point x="328" y="574"/>
-			<point x="328" y="631" type="curve" smooth="yes"/>
-			<point x="328" y="671"/>
-			<point x="306" y="691"/>
-			<point x="260" y="691" type="curve" smooth="yes"/>
-			<point x="232" y="691"/>
-			<point x="212" y="687"/>
-		</contour>
+		<component base="horncomb" xOffset="211"/>
 	</outline>
-	<anchor name="_horn" x="151" y="540"/>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0,0,0,0.5</string>
+		</dict>
+	</lib>
 </glyph>
