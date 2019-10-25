@@ -6,6 +6,19 @@ from fontParts.fontshell import RFont
 from fontTools.designspaceLib import DesignSpaceDocument
 from defcon import Font
 
+# Family specific data
+
+weightMap = {
+             "Black": 900,
+             "UltraBold": 850,
+             "ExtraBold": 800,
+             "Bold": 700,
+             "SemiBold": 600,
+             "Medium": 500,
+             "Regular": 400,
+             "Light": 300,
+            }
+
 
 # Helper functions
 def getFiles(path, extension):
@@ -44,7 +57,7 @@ def printProgressBar(iteration, total, prefix='', suffix='',
     percent = ("{0:."+str(decimals)+"f}").format(100*(iteration/float(total)))
     filledLength = int(length * iteration // total)
     bar = fill * filledLength + '-' * (length - filledLength)
-    print('\r%s |%s| %s%% %s'%(prefix, bar, percent, suffix), end='\r')
+    print('\r%s |%s| %s%% %s' % (prefix, bar, percent, suffix), end='\r')
     # Print New Line on Complete
     if iteration == total:
         print()
@@ -64,13 +77,20 @@ def buildStatic(designspacePath, outputPath):
 
 
 def buildFontMenuDB(designspace, root):
+    """
+    Pulls the postscript, and the mapping names from the designspace.
+    Transforms the family name from "Recursive" to either "Recursive Sans"
+    or "Recursive Mono" for the static fonts.
+    """
 
     out = ""
 
     for i in designspace.instances:
+        fn = i.familyName + " " + i.styleName.split()[0]
+        sn = " ".join(i.styleName.split()[1:])
         out += f"[{i.postScriptFontName}]\n"
-        out += f"    f={i.familyName}\n"
-        out += f"    s={i.styleName}\n"
+        out += f"    f={fn}\n"
+        out += f"    s={sn}\n"
         out += f"    l={i.styleMapFamilyName}\n"
         out += f"    m=1,{i.styleMapFamilyName} {i.styleMapStyleName}\n\n"
 
@@ -91,6 +111,59 @@ def buildFeatures(font):
     pass
 
 
+def fillInPanoseValues(font):
+    """
+    Fills in the Panose values for a font based on the style name.
+    Uses the  panoseWeightMap to set weight values, the presense of
+    'Mono' to set if it's monospaced, and the presense of 'Italic' to
+    set if it's oblique. 'Casual' and 'Linear' trigger settings for
+    the style.
+    """
+
+    panoseWeightMap = {
+                       "Black": 11,
+                       "UltraBold": 10,
+                       "ExtraBold": 9,
+                       "Bold": 8,
+                       "SemiBold": 7,
+                       "Medium": 6,
+                       "Regular": 5,
+                       "Light": 4,
+                      }
+
+    names = font.info.styleName.split()
+
+    if names[0] == "Mono":
+        prop = 9
+    else:
+        prop = 4
+
+    if names[3]:
+        form = 11
+    else:
+        form = 4
+
+    wght = panoseWeightMap[names[2]]
+
+    if names[1] == "Casual":
+        font.info.openTypeOS2Panose = [2, 15, wght, prop, 5, 5, 2, form, 3, 4]
+    else:
+        font.info.openTypeOS2Panose = [2, 11, wght, prop, 4, 2, 2, form, 2, 4]
+
+
+def fixStandardStems(font):
+    from collections import OrderedDict
+    hStems = font.info.postscriptStemSnapH
+    newHStems = list(OrderedDict.fromkeys(hStems))
+    font.info.postscriptStemSnapH = newHStems
+    vStems = font.info.postscriptStemSnapV
+    if font.info.styleName.split()[3]:
+        font.info.postscriptStemSnapV = vStems[2]
+    else:
+        newVStems = list(OrderedDict.fromkeys(vStems))
+        font.info.postscriptStemSnapV = newVStems
+
+
 def buildInstances(designspacePath, root):
     doc = DesignSpaceProcessor()
     doc.useVarlib = True
@@ -104,21 +177,34 @@ def buildInstances(designspacePath, root):
         i.path = path
     print("Generating instance UFOs")
     doc.generateUFO()
+
     print("Decomposing and removing overlap")
     ufos = getFiles(root, ".ufo")
-    l = len(ufos)
-    printProgressBar(0, l, prefix='Progress:', suffix='Complete', length=50)
+    length = len(ufos)
+    printProgressBar(0, length, prefix='Progress:', suffix='Complete', length=50)
     for i, ufo in enumerate(ufos):
         font = RFont(ufo)
+
         for glyph in font:
             glyph.decompose()
         for glyph in font:
             glyph.removeOverlap()
-        printProgressBar(i + 1, l, prefix='Progress:', suffix='Complete', length=50)
 
+        font.save(ufo)
+        printProgressBar(i + 1, length, prefix='Progress:', suffix='Complete', length=50)
 
-def buildFeatures():
-    pass
+    print("Seting Panose, weight, and standard stems")
+    length = len(ufos)
+    printProgressBar(0, length, prefix='Progress:', suffix='Complete', length=50)
+    for i, ufo in enumerate(ufos):
+        font = RFont(ufo)
+        fillInPanoseValues(font)
+        font.info.openTypeOS2WeightClass = weightMap[font.info.styleName.split()[2]]
+        if font.info.styleName.split()[0] == "Mono":
+            font.info.postscriptIsFixedPitch = True
+        fixStandardStems(font)
+        font.save(ufo)
+        printProgressBar(i + 1, length, prefix='Progress:', suffix='Complete', length=50)
 
 
 def buildFolders(designspace, root):
@@ -143,7 +229,7 @@ def buildFolders(designspace, root):
             os.makedirs(stylePath)
 
 
-def makeSTAT(directory):
+def makeSTAT(directory, doc):
     """
     Create a stylespace.plist for https://github.com/daltonmaag/statmake.
     This is a bit more rational than dealing with TTX files for the STAT
@@ -237,7 +323,7 @@ def makeSTAT(directory):
             a = {"name": axis.name, "tag": axis.tag}
         axes.append(a)
 
-    stat{"axes": axes, "locations": locations}
+    stat = {"axes": axes, "locations": locations}
     path = os.path.join(directory, "Recursive.stylespace")
     with open(path, 'wb') as fp:
         plDump(stat, fp)
@@ -258,7 +344,7 @@ def main():
                                     "*varfontprep*",
                                     )
     shutil.copytree("../src/masters", os.path.join(root, "src"), ignore=ignore)
-    src = os.path.join(root, "src", "recursive-prop_xprn_weight_slnt_ital.designspace")
+    src = os.path.join(root, "src", "recursive-MONO_XPRN_wght_slnt_ital.designspace")
 
     static_root = os.path.join(root, "static")
     var_root = os.path.join(root, "var")
@@ -275,23 +361,23 @@ def main():
     doc.write(src)
 
     # Make STAT table
-    makeSTAT(src)
+    #makeSTAT(src, doc)
 
     # Sort glyph order
 
 
     #  Variable font build
-    print("Building Variable fonts")
+    #print("Building Variable fonts")
 
     # Fix default va
     # fontmake -m $DS -o variable --output-path $outputDir/$fontName--$date.ttf
 
 
     # Static font build
-#    print("Building Static fonts")
-#    buildFolders(doc, static_root)
-#    buildFontMenuDB(doc, static_root)
-#    buildInstances(src, static_root)
+    print("Building Static fonts")
+    buildFolders(doc, static_root)
+    buildFontMenuDB(doc, static_root)
+    buildInstances(src, static_root)
 
 
 if __name__ == "__main__":
