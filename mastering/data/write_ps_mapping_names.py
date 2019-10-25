@@ -11,11 +11,17 @@ with open('instance_names.csv', newline='') as csvfile:
                                                           row["stylemap"])
 
 doc = DesignSpaceDocument()
-doc.read("../../src/masters/recursive-prop_xprn_weight_slnt_ital.designspace")
+doc.read("../../src/masters/recursive-MONO_XPRN_wght_slnt_ital.designspace")
 for i in doc.instances:
     k = (i.familyName, i.styleName)
     ps, fm, sm = names[k]
     i.postScriptFontName = ps
     i.styleMapFamilyName = fm
     i.styleMapStyleName = sm
-doc.save()
+
+# Because re-writing the designspace removes all the comments, we save
+# a new one out to the data folder, then copy/paste into the working
+# designSpace file. Yes, this is dumb, but is the better solution to
+# save all the comments and formatting (for better git diffs) in the
+# working designSpace file.
+doc.write("../../src/masters/recursive-MONO_XPRN_wght_slnt_ital_names.designspace")
