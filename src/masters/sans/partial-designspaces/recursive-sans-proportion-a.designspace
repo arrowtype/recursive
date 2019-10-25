@@ -36,6 +36,8 @@
   </sources>
   <lib>
     <dict>
+      <key>com.letterror.mathModelPref</key>
+      <string>previewVarLib</string>
       <key>com.letterror.skateboard.interactionSources</key>
       <dict>
         <key>horizontal</key>
@@ -56,7 +58,7 @@
         <real>0.0</real>
       </dict>
       <key>com.letterror.skateboard.previewText</key>
-      <string>ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+      <string>@</string>
     </dict>
   </lib>
 </designspace>
