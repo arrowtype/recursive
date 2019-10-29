@@ -10,10 +10,10 @@
     <axis tag="wght" name="Weight" minimum="300" maximum="1000" default="300">
       <labelname xml:lang="en">Weight</labelname>
       <map input="300" output="40" />
-      <!-- <map input="400" output="158" />
+      <map input="400" output="158" />
       <map input="500" output="159" />
       <map input="600" output="160" />
-      <map input="700" output="161.0" /> -->
+      <map input="700" output="161.0" />
       <map input="800" output="100" />
       <map input="850" output="180" />
       <map input="900" output="197.5" />
