@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Recursive";
+  src: url("fonts/rec-mono_casl_wght_slnt_ital--stem_width_weights--2019_10_28.woff2");
+  font-weight: 200 900;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.font {
+  display: grid;
+  grid-template-rows: 60px repeat(8, 158px);
+  padding: 0.25rem;
+}
+
+.font div {
+  overflow: hidden;
+  line-height: 1.125rem;
+}
+
+.font-sf {
+  font-family: "SF Pro Text", fantasy;
+}
+
+.font-roboto {
+  font-family: "Roboto", fantasy;
+}
+
+.font-helvetica {
+  font-family: "Helvetica Neue", fantasy;
+}
+
+.font-recursive {
+  font-family: "Recursive", fantasy;
+}
+
+.font *:before {
+  font-family: "Recursive", fantasy;
+  display: block;
+  font-size: 8px;
+  font-weight: 500;
+  color: #777;
+}
+
+.w200 {
+  font-weight: 200;
+}
+.w200:before {
+  content: "200";
+}
+.w300 {
+  font-weight: 300;
+}
+.w300:before {
+  content: "300";
+}
+.w400 {
+  font-weight: 400;
+}
+.w400:before {
+  content: "400";
+}
+.w500 {
+  font-weight: 500;
+}
+.w500:before {
+  content: "500";
+}
+.w600 {
+  font-weight: 600;
+}
+.w600:before {
+  content: "600";
+}
+.w700 {
+  font-weight: 700;
+}
+.w700:before {
+  content: "700";
+}
+.w800 {
+  font-weight: 800;
+}
+.w800:before {
+  content: "800";
+}
+.w900 {
+  font-weight: 900;
+}
+.w900:before {
+  content: "900";
+}

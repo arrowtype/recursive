@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="bullet" format="2">
+	<unicode hex="2022"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="450" y="150" type="curve"/>
+			<point x="450" y="439" type="line" smooth="yes"/>
+			<point x="450" y="446"/>
+			<point x="446" y="450"/>
+			<point x="439" y="450" type="curve"/>
+			<point x="363" y="450"/>
+			<point x="226" y="450"/>
+			<point x="150" y="450" type="curve"/>
+			<point x="150" y="161" type="line" smooth="yes"/>
+			<point x="150" y="154"/>
+			<point x="154" y="150"/>
+			<point x="161" y="150" type="curve"/>
+			<point x="237" y="150"/>
+			<point x="374" y="150"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+			<key>public.markColor</key>
+			<string>1,1,0,1</string>
+		</dict>
+	</lib>
+</glyph>
