@@ -1,3 +1,5 @@
+## Simple script to calculate even steps
+
 ```
 valA = 84
 valB = 215
@@ -13,3 +15,7 @@ def getSteps(valA, valB, steps):
     
 getSteps(valA, valB, steps)
 ```
+
+## AVAR issue
+
+https://github.com/fonttools/fonttools/issues/1756
