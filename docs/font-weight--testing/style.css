@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "wtf-fix-3";
-  src: url("fonts/rec-mono_casl_wght_slnt_ital--stem_width_weights--2019_10_29-15_18.woff2");
+  font-family: "recsans";
+  src: url("fonts/rec-mono_casl_wght_slnt_ital--stem_width_weights--2019_10_29-16_24.woff2");
   font-weight: 300 1000;
 }
 
@@ -33,11 +33,11 @@ body {
 }
 
 .font-recursive {
-  font-family: "wtf-fix-3", fantasy;
+  font-family: "recsans", fantasy;
 }
 
 .font *:before {
-  font-family: "wtf-fix-3", fantasy;
+  font-family: "recsans", fantasy;
   display: block;
   font-size: 8px;
   font-weight: 500;
