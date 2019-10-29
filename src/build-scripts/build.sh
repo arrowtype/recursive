@@ -20,7 +20,7 @@ dsName=$(basename $DS)
 fontName=${dsName/".designspace"/""}
 
 timestamp() {
-  date +"%Y_%m_%d"
+  date +"%Y_%m_%d-%H_%M"
 }
 
 date=$(timestamp)

@@ -7,17 +7,17 @@
     <axis tag="CASL" name="Casual" minimum="0" maximum="1" default="0">
       <labelname xml:lang="en">Casual</labelname>
     </axis>
-    <axis tag="wght" name="Weight" minimum="200" maximum="900" default="200">
+    <axis tag="wght" name="Weight" minimum="300" maximum="1000" default="300">
       <labelname xml:lang="en">Weight</labelname>
-      <map input="200" output="50" />
-      <map input="300" output="67.5" />
-      <map input="400" output="85" />
-      <map input="500" output="105" />
-      <map input="600" output="119" />
-      <map input="700" output="133" />
-      <map input="800" output="146" />
-      <map input="850" output="180.5" />
-      <map input="900" output="215" />
+      <map input="300" output="40" />
+      <!-- <map input="400" output="158" />
+      <map input="500" output="159" />
+      <map input="600" output="160" />
+      <map input="700" output="161.0" /> -->
+      <map input="800" output="100" />
+      <map input="850" output="180" />
+      <map input="900" output="197.5" />
+      <map input="1000" output="215" />
     </axis>
     <axis tag="slnt" name="Slant" minimum="-15" maximum="0" default="0">
       <labelname xml:lang="en">Slant</labelname>
@@ -183,7 +183,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="50" />
+        <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -192,7 +192,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="50" />
+        <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -201,7 +201,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="146" />
+        <dimension name="Weight" xvalue="150" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -210,7 +210,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="146" />
+        <dimension name="Weight" xvalue="150" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -237,7 +237,7 @@
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
-        <dimension name="Weight" xvalue="105"/>
+        <dimension name="Weight" xvalue="159"/>
         <dimension name="Slant" xvalue="0"/>
         <dimension name="Italic" xvalue="0.500000"/>
       </location>
@@ -246,7 +246,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="50" />
+        <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -255,7 +255,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="50" />
+        <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -264,7 +264,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="146" />
+        <dimension name="Weight" xvalue="150" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -277,7 +277,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="146" />
+        <dimension name="Weight" xvalue="150" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -304,7 +304,7 @@
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
-        <dimension name="Weight" xvalue="105"/>
+        <dimension name="Weight" xvalue="159"/>
         <dimension name="Slant" xvalue="0"/>
         <dimension name="Italic" xvalue="0.500000"/>
       </location>
@@ -313,7 +313,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="50" />
+        <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -322,7 +322,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="50" />
+        <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -331,7 +331,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="146" />
+        <dimension name="Weight" xvalue="150" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -340,7 +340,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="146" />
+        <dimension name="Weight" xvalue="150" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -367,7 +367,7 @@
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
-        <dimension name="Weight" xvalue="105"/>
+        <dimension name="Weight" xvalue="159"/>
         <dimension name="Slant" xvalue="0"/>
         <dimension name="Italic" xvalue="0.500000"/>
       </location>
@@ -376,7 +376,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="50" />
+        <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -385,7 +385,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="50" />
+        <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -394,7 +394,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="146" />
+        <dimension name="Weight" xvalue="150" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -407,7 +407,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="146" />
+        <dimension name="Weight" xvalue="150" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -434,62 +434,18 @@
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
-        <dimension name="Weight" xvalue="105"/>
+        <dimension name="Weight" xvalue="159"/>
         <dimension name="Slant" xvalue="0"/>
         <dimension name="Italic" xvalue="0.500000"/>
       </location>
     </source> -->
   </sources>
   <instances>
-    <instance familyname="Recursive" stylename="Mono Linear ExtraLight" filename="instances/Recursive-Mono Linear ExtraLight.ufo">
-      <location>
-        <dimension name="Monospace" xvalue="1" />
-        <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="50" />
-        <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
-      </location>
-      <kerning />
-      <info />
-    </instance>
-    <instance familyname="Recursive" stylename="Mono Linear ExtraLight Italic" filename="instances/Recursive-Mono Linear ExtraLight Italic.ufo">
-      <location>
-        <dimension name="Monospace" xvalue="1" />
-        <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="50" />
-        <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="1" />
-      </location>
-      <kerning />
-      <info />
-    </instance>
-    <instance familyname="Recursive" stylename="Mono Casual ExtraLight" filename="instances/Recursive-Mono Casual ExtraLight.ufo">
-      <location>
-        <dimension name="Monospace" xvalue="1" />
-        <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="50" />
-        <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
-      </location>
-      <kerning />
-      <info />
-    </instance>
-    <instance familyname="Recursive" stylename="Mono Casual ExtraLight Italic" filename="instances/Recursive-Mono Casual ExtraLight Italic.ufo">
-      <location>
-        <dimension name="Monospace" xvalue="1" />
-        <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="50" />
-        <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="1" />
-      </location>
-      <kerning />
-      <info />
-    </instance>
     <instance familyname="Recursive" stylename="Mono Linear Light" filename="instances/Recursive-Mono Linear Light.ufo">
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="67.5" />
+        <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -500,7 +456,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="67.5" />
+        <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -511,7 +467,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="67.5" />
+        <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -522,7 +478,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="67.5" />
+        <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -533,7 +489,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="85" />
+        <dimension name="Weight" xvalue="158" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -544,7 +500,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="85" />
+        <dimension name="Weight" xvalue="158" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -555,7 +511,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="85" />
+        <dimension name="Weight" xvalue="158" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -566,7 +522,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="85" />
+        <dimension name="Weight" xvalue="158" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -577,7 +533,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="105" />
+        <dimension name="Weight" xvalue="159" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -588,7 +544,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="105" />
+        <dimension name="Weight" xvalue="159" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -599,7 +555,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="105" />
+        <dimension name="Weight" xvalue="159" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -610,7 +566,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="105" />
+        <dimension name="Weight" xvalue="159" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -621,7 +577,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="119" />
+        <dimension name="Weight" xvalue="160" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -632,7 +588,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="119" />
+        <dimension name="Weight" xvalue="160" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -643,7 +599,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="119" />
+        <dimension name="Weight" xvalue="160" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -654,7 +610,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="119" />
+        <dimension name="Weight" xvalue="160" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -665,7 +621,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="133" />
+        <dimension name="Weight" xvalue="129.5" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -676,7 +632,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="133" />
+        <dimension name="Weight" xvalue="129.5" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -687,7 +643,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="133" />
+        <dimension name="Weight" xvalue="129.5" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -698,7 +654,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="133" />
+        <dimension name="Weight" xvalue="129.5" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -709,7 +665,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="146" />
+        <dimension name="Weight" xvalue="150" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -720,7 +676,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="146" />
+        <dimension name="Weight" xvalue="150" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -731,7 +687,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="146" />
+        <dimension name="Weight" xvalue="150" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -742,7 +698,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="146" />
+        <dimension name="Weight" xvalue="150" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -753,7 +709,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="180.5" />
+        <dimension name="Weight" xvalue="180" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -764,7 +720,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="180.5" />
+        <dimension name="Weight" xvalue="180" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -775,7 +731,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="180.5" />
+        <dimension name="Weight" xvalue="180" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -786,7 +742,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="180.5" />
+        <dimension name="Weight" xvalue="180" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -797,7 +753,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="215" />
+        <dimension name="Weight" xvalue="197.5" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -808,7 +764,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="215" />
+        <dimension name="Weight" xvalue="197.5" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -819,7 +775,7 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="215" />
+        <dimension name="Weight" xvalue="197.5" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -830,6 +786,28 @@
       <location>
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
+        <dimension name="Weight" xvalue="197.5" />
+        <dimension name="Slant" xvalue="-15" />
+        <dimension name="Italic" xvalue="1" />
+      </location>
+      <kerning />
+      <info />
+    </instance>
+    <instance familyname="Recursive" stylename="Mono Linear Heavy" filename="instances/Recursive-Mono Linear Heavy.ufo">
+      <location>
+        <dimension name="Monospace" xvalue="1" />
+        <dimension name="Casual" xvalue="0" />
+        <dimension name="Weight" xvalue="215" />
+        <dimension name="Slant" xvalue="0" />
+        <dimension name="Italic" xvalue="0.500000" />
+      </location>
+      <kerning />
+      <info />
+    </instance>
+    <instance familyname="Recursive" stylename="Mono Linear Heavy Italic" filename="instances/Recursive-Mono Linear Heavy Italic.ufo">
+      <location>
+        <dimension name="Monospace" xvalue="1" />
+        <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="215" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
@@ -837,44 +815,22 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive" stylename="Sans Linear ExtraLight" filename="instances/Recursive-Sans Linear ExtraLight.ufo">
+    <instance familyname="Recursive" stylename="Mono Casual Heavy" filename="instances/Recursive-Mono Casual Heavy.ufo">
       <location>
-        <dimension name="Monospace" xvalue="0" />
-        <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="50" />
+        <dimension name="Monospace" xvalue="1" />
+        <dimension name="Casual" xvalue="1" />
+        <dimension name="Weight" xvalue="215" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
       <kerning />
       <info />
     </instance>
-    <instance familyname="Recursive" stylename="Sans Linear ExtraLight Italic" filename="instances/Recursive-Sans Linear ExtraLight Italic.ufo">
+    <instance familyname="Recursive" stylename="Mono Casual Heavy Italic" filename="instances/Recursive-Mono Casual Heavy Italic.ufo">
       <location>
-        <dimension name="Monospace" xvalue="0" />
-        <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="50" />
-        <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="1" />
-      </location>
-      <kerning />
-      <info />
-    </instance>
-    <instance familyname="Recursive" stylename="Sans Casual ExtraLight" filename="instances/Recursive-Sans Casual ExtraLight.ufo">
-      <location>
-        <dimension name="Monospace" xvalue="0" />
+        <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="50" />
-        <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
-      </location>
-      <kerning />
-      <info />
-    </instance>
-    <instance familyname="Recursive" stylename="Sans Casual ExtraLight Italic" filename="instances/Recursive-Sans Casual ExtraLight Italic.ufo">
-      <location>
-        <dimension name="Monospace" xvalue="0" />
-        <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="50" />
+        <dimension name="Weight" xvalue="215" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -885,7 +841,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="67.5" />
+        <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -896,7 +852,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="67.5" />
+        <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -907,7 +863,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="67.5" />
+        <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -918,7 +874,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="67.5" />
+        <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -929,7 +885,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="85" />
+        <dimension name="Weight" xvalue="158" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -940,7 +896,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="85" />
+        <dimension name="Weight" xvalue="158" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -951,7 +907,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="85" />
+        <dimension name="Weight" xvalue="158" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -962,7 +918,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="85" />
+        <dimension name="Weight" xvalue="158" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -973,7 +929,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="105" />
+        <dimension name="Weight" xvalue="159" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -984,7 +940,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="105" />
+        <dimension name="Weight" xvalue="159" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -995,7 +951,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="105" />
+        <dimension name="Weight" xvalue="159" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -1006,7 +962,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="105" />
+        <dimension name="Weight" xvalue="159" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -1017,7 +973,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="119" />
+        <dimension name="Weight" xvalue="160" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -1028,7 +984,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="119" />
+        <dimension name="Weight" xvalue="160" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -1039,7 +995,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="119" />
+        <dimension name="Weight" xvalue="160" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -1050,7 +1006,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="119" />
+        <dimension name="Weight" xvalue="160" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -1061,7 +1017,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="133" />
+        <dimension name="Weight" xvalue="129.5" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -1072,7 +1028,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="133" />
+        <dimension name="Weight" xvalue="129.5" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -1083,7 +1039,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="133" />
+        <dimension name="Weight" xvalue="129.5" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -1094,7 +1050,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="133" />
+        <dimension name="Weight" xvalue="129.5" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -1105,7 +1061,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="146" />
+        <dimension name="Weight" xvalue="150" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -1116,7 +1072,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="146" />
+        <dimension name="Weight" xvalue="150" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -1127,7 +1083,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="146" />
+        <dimension name="Weight" xvalue="150" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -1138,7 +1094,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="146" />
+        <dimension name="Weight" xvalue="150" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -1149,7 +1105,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="180.5" />
+        <dimension name="Weight" xvalue="180" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -1160,7 +1116,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="180.5" />
+        <dimension name="Weight" xvalue="180" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -1171,7 +1127,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="180.5" />
+        <dimension name="Weight" xvalue="180" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -1182,7 +1138,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="180.5" />
+        <dimension name="Weight" xvalue="180" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -1193,7 +1149,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="215" />
+        <dimension name="Weight" xvalue="197.5" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -1204,7 +1160,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
-        <dimension name="Weight" xvalue="215" />
+        <dimension name="Weight" xvalue="197.5" />
         <dimension name="Slant" xvalue="-15" />
         <dimension name="Italic" xvalue="1" />
       </location>
@@ -1215,7 +1171,7 @@
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
-        <dimension name="Weight" xvalue="215" />
+        <dimension name="Weight" xvalue="197.5" />
         <dimension name="Slant" xvalue="0" />
         <dimension name="Italic" xvalue="0.500000" />
       </location>
@@ -1223,6 +1179,50 @@
       <info />
     </instance>
     <instance familyname="Recursive" stylename="Sans Casual Black Italic" filename="instances/Recursive-Sans Casual Black Italic.ufo">
+      <location>
+        <dimension name="Monospace" xvalue="0" />
+        <dimension name="Casual" xvalue="1" />
+        <dimension name="Weight" xvalue="197.5" />
+        <dimension name="Slant" xvalue="-15" />
+        <dimension name="Italic" xvalue="1" />
+      </location>
+      <kerning />
+      <info />
+    </instance>
+    <instance familyname="Recursive" stylename="Sans Linear Heavy" filename="instances/Recursive-Sans Linear Heavy.ufo">
+      <location>
+        <dimension name="Monospace" xvalue="0" />
+        <dimension name="Casual" xvalue="0" />
+        <dimension name="Weight" xvalue="215" />
+        <dimension name="Slant" xvalue="0" />
+        <dimension name="Italic" xvalue="0.500000" />
+      </location>
+      <kerning />
+      <info />
+    </instance>
+    <instance familyname="Recursive" stylename="Sans Linear Heavy Italic" filename="instances/Recursive-Sans Linear Heavy Italic.ufo">
+      <location>
+        <dimension name="Monospace" xvalue="0" />
+        <dimension name="Casual" xvalue="0" />
+        <dimension name="Weight" xvalue="215" />
+        <dimension name="Slant" xvalue="-15" />
+        <dimension name="Italic" xvalue="1" />
+      </location>
+      <kerning />
+      <info />
+    </instance>
+    <instance familyname="Recursive" stylename="Sans Casual Heavy" filename="instances/Recursive-Sans Casual Heavy.ufo">
+      <location>
+        <dimension name="Monospace" xvalue="0" />
+        <dimension name="Casual" xvalue="1" />
+        <dimension name="Weight" xvalue="215" />
+        <dimension name="Slant" xvalue="0" />
+        <dimension name="Italic" xvalue="0.500000" />
+      </location>
+      <kerning />
+      <info />
+    </instance>
+    <instance familyname="Recursive" stylename="Sans Casual Heavy Italic" filename="instances/Recursive-Sans Casual Heavy Italic.ufo">
       <location>
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />

@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "Recursive";
-  src: url("fonts/rec-mono_casl_wght_slnt_ital--stem_width_weights--2019_10_28.woff2");
-  font-weight: 200 900;
+  font-family: "Recursive36sdfhj";
+  src: url("fonts/rec-mono_casl_wght_slnt_ital--stem_width_weights--2019_10_29-09_59.woff2");
+  font-weight: 300 1000;
 }
 
 body {
@@ -33,11 +33,11 @@ body {
 }
 
 .font-recursive {
-  font-family: "Recursive", fantasy;
+  font-family: "Recursive36sdfhj", fantasy;
 }
 
 .font *:before {
-  font-family: "Recursive", fantasy;
+  font-family: "Recursive36sdfhj", fantasy;
   display: block;
   font-size: 8px;
   font-weight: 500;
@@ -91,4 +91,12 @@ body {
 }
 .w900:before {
   content: "900";
+}
+.w1000 {
+    font-weight: 1000;
+    font-variation-settings: 'wght' 1000;
+}
+.w1000:before {
+    content: "1000";
+    font-variation-settings: 'wght' 500;
 }
