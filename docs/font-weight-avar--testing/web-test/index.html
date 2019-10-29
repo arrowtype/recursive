@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AVAR Test</title>
+  </head>
+  <style>
+    @font-face {
+      font-family: "avar-test-VF.ttf";
+      src: url("avar-test-VF.ttf");
+      font-weight: 100 900;
+    }
+
+    .label {
+        font-family: monospace;
+        margin-bottom: 0;
+    }
+    .avar-test {
+      font-family: "avar-test-VF.ttf", fantasy;
+      font-size: 15vw;
+      line-height: 1;
+      margin: 0 0 0.5em 0;
+    }
+
+    .font-weight-100 {
+      font-weight: 100;
+    }
+    .font-weight-400 {
+      font-weight: 400;
+    }
+    .font-weight-700 {
+      font-weight: 700;
+    }
+    .font-weight-900 {
+      font-weight: 900;
+    }
+  </style>
+  <body>
+      <p>If there is a non-linear progression of weight, AVAR is working as expected.</p>
+
+      <p class="label">100</p>
+      <p class="avar-test font-weight-100">a a a a</p>
+
+      <p class="label">400</p>
+      <p class="avar-test font-weight-400">a a a a</p>
+
+      <p class="label">700</p>
+      <p class="avar-test font-weight-700">a a a a</p>
+
+      <p class="label">900</p>
+    <p class="avar-test font-weight-900">a a a a</p>
+  </body>
+</html>
