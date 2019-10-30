@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900&display=swap');
+
+
 @font-face {
   font-family: "rec_wght_slnt";
   /* src: url("fonts/rec-mono_casl_wght_slnt_ital--stem_width_weights--2019_10_29-16_24.mono_wght.ttf"); */
@@ -12,7 +17,7 @@
 
 body {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .font {
@@ -26,16 +31,16 @@ body {
   line-height: 1.125rem;
 }
 
-.font-sf {
-  font-family: "SF Pro Text", fantasy;
+.font-system {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue", fantasy;
 }
 
 .font-roboto {
   font-family: "Roboto", fantasy;
 }
 
-.font-helvetica {
-  font-family: "Helvetica Neue", fantasy;
+.font-fira {
+  font-family: "Fira Sans", fantasy;
 }
 
 .font-recursive {
