@@ -42,13 +42,32 @@ Axis Definitions, Recursive
 
 - **Italic** `ital` – 0, 0.5, or 1. Controls the substitution of italic forms along the Slant axis. "Off" (0) maintains Roman letterforms, such as a "double story" `a` and `g`, "Auto" (0.5) allows for Italic substitution, and "On" (1) asserts italic forms even in upright text with a Slant of 0.
 
- *Recommended use:* Use Italic as a tertiary way to emphasize text, or as a way to have more control over animated text (e.g. a hyperlink that slants upon user interaction can by styled with Italic 0 or 1 to prevent the abrupt changes of glyph substitution).
+  *Recommended use:* Use Italic as a tertiary way to emphasize text, or as a way to have more control over animated text (e.g. a hyperlink that slants upon user interaction can by styled with Italic 0 or 1 to prevent the abrupt changes of glyph substitution).
 
 
 ## Using the fonts
 
-1. Download the latest fonts from the [Releases](https://github.com/arrowtype/recursive/releases)
+1. Download the latest fonts from the [Releases](https://github.com/arrowtype/recursive/releases) (Look under the "Assets" of the latest release, download the zip, and then open that zip)
 2. Install the fonts on your system
+
+### Installing fonts on your system
+
+#### Mac
+
+The easy way: open font files in Font Book, and click "Install Font".
+
+The nice way: 
+- In Finder, navigate to the folder `<yourusername>/Library/Fonts`
+- Drag this to the Finder sidebar, or while the folder is highlighted, use **File > Add to Sidebar** to do so
+- Now, you can manage new font files just like normal files! Drag in fonts. Enclose them in folders to more easily organize families. To deactivate fonts, you can either remove them from this folder or (if you might want them later) right click and "Compress" them into zip files.
+
+#### Windows
+
+Double-click the TTF file, then select "Install."
+
+To install many static font files (these may work better in apps such as Microsoft Word and PowerPoint):
+- Go into the `static_fonts` folder, then into the mono or sans `static_otf` folder. 
+- Open Font Settings, then drag-and-drop these font files into the Font Settings window.
 
 ### On the web
 
@@ -106,7 +125,12 @@ In code editors like VS Code and Atom, you must use a string to set your preferr
 
 The `B_020` in these name string represents the current beta release version. It's possible this has shifted (I am releasing often at this point), so check what the release notes say.
 
-## Using the project scripts in RoboFont
+
+## Using the resources in thiis project for type design
+
+This project has included a large amount of research (contained in `docs/`), and contains many small tools (contained in `src/00-recursive-scripts-for-robofont` that may help you if you are designing variable fonts with UFOs in RoboFont.
+
+### Using the project scripts in RoboFont
 
 1. Navigate to your robofont scripts folder in a terminal. 
     1. In RoboFont's menu, go to *Scripts > Reveal Scripts Folder*
