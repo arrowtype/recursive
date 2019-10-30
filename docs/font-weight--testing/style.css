@@ -1,6 +1,12 @@
 @font-face {
-  font-family: "recsans";
-  src: url("fonts/rec-mono_casl_wght_slnt_ital--stem_width_weights--2019_10_29-16_24.woff2");
+  font-family: "rec_wght_slnt";
+  /* src: url("fonts/rec-mono_casl_wght_slnt_ital--stem_width_weights--2019_10_29-16_24.mono_wght.ttf"); */
+  /* src: url("fonts/rec-mono_casl_wght_slnt_ital--stem_width_weights-VF.MONO_wght.ttf"); */
+  /* src: url("fonts/rec-mono_casl_wght_slnt_ital--stem_width_weights-VF.CASL_wght.ttf"); */
+  /* src: url("fonts/rec-mono_casl_wght_slnt_ital--stem_width_weights-VF.wght.ttf"); */
+  /* src: url("fonts/rec-mono_casl_wght_slnt_ital--stem_width_weights-VF.wght_slnt.ttf"); */
+  /* src: url("fonts/rec-mono_casl_wght_slnt_ital--stem_width_weights-VF.wght_ital.ttf"); */
+  src: url("fonts/rec-mono_casl_wght_slnt_ital--stem_width_weights-VF.wght_slnt_ital.ttf");
   font-weight: 300 1000;
 }
 
@@ -33,11 +39,11 @@ body {
 }
 
 .font-recursive {
-  font-family: "recsans", fantasy;
+  font-family: "rec_wght_slnt", fantasy;
 }
 
 .font *:before {
-  font-family: "recsans", fantasy;
+  font-family: "rec_wght_slnt", fantasy;
   display: block;
   font-size: 8px;
   font-weight: 500;
