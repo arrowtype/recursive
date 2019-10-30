@@ -14,7 +14,9 @@
       <blockquote>"values greater than or equal to 1 and less than or equal to 1000 are valid" <a href="https://drafts.csswg.org/css-fonts-4/#font-weight-numeric-values">source</a></a></blockquote>
       <p>However, this is not yet fully supported in Firefox or Safari.</p>
       <h2>A simple test</h2>
-      <p>The left column (red) uses <code>font-weight: 1000;</code>. The right column (blue) uses <code>font-variation-settings: 'wght' 1000;</code>. The middle column should perfectly overlap. If it doesn't, <code>font-weight: 1000;</code> doesn't work.</p>
+      <p>The left column (red) uses <code>font-weight: 1000;</code>.</p>
+        <p>The right column (blue) uses <code>font-variation-settings: 'wght' 1000;</code>.</p> 
+        <p>The middle column should perfectly overlap. If it doesn't, <code>font-weight: 1000;</code> doesn't work.</p>
       <h3>Test results as of Oct 30, 2019:</h3>
       <ul>
         <li>In Firefox 70 on macOS: <code>font-weight</code> above 900 is ignored and falls back to 900.</li>

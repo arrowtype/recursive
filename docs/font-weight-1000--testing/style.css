@@ -13,6 +13,8 @@ body {
 .intro {
   padding: 1rem;
   line-height: 1.75;
+  max-width: 90ch;
+  margin: 0 auto;
 }
 
 blockquote {
@@ -39,7 +41,7 @@ li {
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100vh;
+  /* grid-template-rows: 100vh; */
   font-size: 45vw;                                                                                                                                                                                                                                                                                   
 }
 
@@ -56,7 +58,7 @@ li {
 }
 
 .overlapping-test span {
-  line-height: .25em;
+  line-height: .75em;
 }
 
 .overlapping-test figure:nth-child(1) {
