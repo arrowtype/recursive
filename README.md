@@ -20,6 +20,30 @@ Recursive has the following axes:
 | Slant      | `slnt` | 0 to -15     | 0       | Upright (0°) to Slanted (about 15°)                             |
 | Italic     | `ital` | 0, 0.5, or 1 | 0.5     | Always roman (0), auto (0.5), or always italic (1)              |
 
+### Axis Definitions
+
+Axis Definitions, Recursive
+
+**Monospace** `MONO` - 0 to 1. Adjusts the glyph widths from proportional or “Sans” (0) to fixed-width or “Mono” (1).
+
+*Recommended use:* In general, the proportional design is more readable in text and UI, while the monospace design is more appropriate for code and .
+
+**Expression** `XPRN` - 0 to 1. Adjusts the expressive style or “genre” of the glyphs. In Recursive, this goes from from Linear (0) to Casual (1). 
+
+*Recommended use:* The Linear style shares a similar structure to fonts classified as *lineal*, merging aspects of humanist sans with rationalized, compact, flat-sided letterforms. This regular, familiar structure makes it appropriate for long-form text requiring focus (e.g. paragraphs, full code documents, and punchy headlines). The Casual style is inspired by single-stroke casual signpainting, but drawn for small sizes. It is most useful in shorter-form text where a warm and inviting tone is desired (e.g. blog post headlines, store signage, and computer terminals).
+
+**Weight** `wght` - 300 to 900. The overall thickness of letters and the darkness of text composed with them. Notably, in Recursive, the weight axis does not affect glyph width. A bold weight takes the same amount of space as a light weight, even at in proportional styles of the `MONO` axis.
+
+*Recommended use:* Differences in weight can provide emphasis in text, show user interaction, or adjust the tone of communication. For light text on dark backgrounds, 400 (“Regular”) tends to be appropriate for text and code. For dark text on a light background, it can be beneficial to adjust the weight upwards to 500 (“Medium”).
+
+**Slant** `slnt` – 0 to -15. The "forward lean" of letters. Note: `-15` (negative 15) corresponds to a 15° clockwise slant, due to type design's roots in geometry. If the Italic axis is at its default value, going past a slant of -7.5 will "italicize" letters, converting them to more-handwritten forms such as the simplified, "single story" `a` and `g`.
+
+*Recommended use:* Use Slant as a secondary way to emphasize text or vary typographic tone. In text, it can be useful to use a partial slant of around -9, while at display sizes, you can expect the most precise outlines at either 0 or -15.
+
+**Italic** `ital` – 0, 0.5, or 1. Controls the substitution of italic forms along the Slant axis. "Off" (0) maintains Roman letterforms, such as a "double story" `a` and `g`, "Auto" (0.5) allows for Italic substitution, and "On" (1) asserts italic forms even in upright text with a Slant of 0.
+
+*Recommended use:* Use Italic as a tertiary way to emphasize text, or as a way to have more control over animated text (e.g. a hyperlink that slants upon user interaction can by styled with Italic 0 or 1 to prevent the abrupt changes of glyph substitution).
+
 
 ## Using the fonts
 
