@@ -19,9 +19,9 @@
         <p>The middle column should perfectly overlap (it will look purple if it does). If it doesn't, <code>font-weight: 1000;</code> doesn't work.</p>
       <h3>Test results as of Oct 30, 2019:</h3>
       <ul>
-        <li>In Firefox 70 on macOS: <code>font-weight</code> above 900 is ignored and falls back to 900.</li>
+        <li>In Firefox 70 on macOS: <code>font-weight</code> values above 900 is ignored and falls back to 900.</li>
         <li>
-          In Safari on macOS: only weights up to <code>999</code> work (<code>font-weight: 1000;</code> is marked as invalid and weight changes to
+          In Safari on macOS: <code>font-weight</code> values up to <code>999</code> work, but <code>font-weight: 1000;</code> is marked as invalid and weight falls back to
           <code>400</code>)
         </li>
         <li>In Chrome 78 on macOS, this test works as intended.</li>
