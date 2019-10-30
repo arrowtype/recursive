@@ -26,7 +26,7 @@ Axis Definitions, Recursive
 
 - **Monospace** `MONO` - 0 to 1. Adjusts the glyph widths from proportional or “Sans” (0) to fixed-width or “Mono” (1).
 
-  *Recommended use:* In general, the proportional design is more readable in text and UI, while the monospace design is more appropriate for code and .
+  *Recommended use:* In general, the proportional design is more readable in text and UI, while the monospace design is more appropriate for code and text in which letter disambiguation is especially critical (e.g. passwords, ID numbers, tabular data, etc).
 
 - **Expression** `XPRN` - 0 to 1. Adjusts the expressive style or “genre” of the glyphs. In Recursive, this goes from from Linear (0) to Casual (1). 
 
