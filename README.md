@@ -8,6 +8,7 @@ In programming, “recursion” is when a function calls itself, using its own o
 
 Recursive Sans borrows glyphs from its parent mono but adjusts the widths of many key glyphs for comfortable readability. Its metrics are *superplexed* – every style takes up the exact same horizontal space, across all styles. In this 3-axis variable font, this allows for fluid transitions between weight, slant, and “expression” (casual to strict letterforms), all without text shifts or layout reflow. Not only does this allow for new interactive possibilities in UI, but it also makes for a uniquely fun typesetting experience.
 
+---
 
 ## Using the fonts
 
@@ -70,7 +71,7 @@ In code editors like VS Code and Atom, you must use a string to set your preferr
 
 The `B_020` in these name string represents the current beta release version. It's possible this has shifted (I am releasing often at this point), so check what the release notes say.
 
-
+---
 
 ## Variable Axes
 
@@ -130,9 +131,9 @@ Things to be aware of:
 
 
 
+--- 
 
-
-## Using the resources in thiis project for type design
+## Using the resources in this project for type design
 
 This project has included a large amount of research (contained in `docs/`), and contains many small tools (contained in `src/00-recursive-scripts-for-robofont` that may help you if you are designing variable fonts with UFOs in RoboFont.
 
