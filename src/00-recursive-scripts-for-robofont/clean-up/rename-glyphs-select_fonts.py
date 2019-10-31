@@ -7,8 +7,9 @@ for fontPath in inputFonts:
 
     oldName, newName = '.arrowhead', '_arrowhead'
 
-    for layer in font.layers:
-        layer.renameGlyph(oldName, newName, renameComponents=True, renameGroups=True, renameKerning=True, renameGlyphOrder=True)
+    for layer in f.layers:
+        if oldName in layer:
+            layer.renameGlyph(oldName, newName, renameComponents=True, renameGroups=True, renameKerning=True, renameGlyphOrder=True)
 
     print(f.info.styleName)
     print(f"{oldName} renamed to {newName}\n")
