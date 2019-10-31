@@ -522,6 +522,15 @@
 			<string>Emacron</string>
 			<string>Eogonek</string>
 			<string>Etilde</string>
+			<string>Ecircumflexacute</string>
+			<string>Ecircumflexdot</string>
+			<string>Ecircumflexgrave</string>
+			<string>Ecircumflexhook</string>
+			<string>Ecircumflextilde</string>
+			<string>Ehook</string>
+			<string>AE</string>
+			<string>AEacute</string>
+			<string>OE</string>
 		</array>
 		<key>public.kern1.Fig0_right</key>
 		<array>
@@ -590,6 +599,8 @@
 			<string>Ohook</string>
 			<string>Ohorndot</string>
 			<string>Ohornhook</string>
+			<string>Oslash</string>
+			<string>Oslashacute</string>
 		</array>
 		<key>public.kern1.Punct_low_right</key>
 		<array>
@@ -629,6 +640,8 @@
 			<string>quotesingle</string>
 			<string>slash</string>
 			<string>slash.case</string>
+			<string>minute</string>
+			<string>second</string>
 		</array>
 		<key>public.kern1.S_right</key>
 		<array>
@@ -729,6 +742,13 @@
 			<string>ae</string>
 			<string>aeacute</string>
 			<string>e.italic</string>
+			<string>ecircumflexacute</string>
+			<string>ecircumflexdot</string>
+			<string>ecircumflexgrave</string>
+			<string>ecircumflexhook</string>
+			<string>ecircumflextilde</string>
+			<string>ehook</string>
+			<string>oe</string>
 		</array>
 		<key>public.kern1.g_right</key>
 		<array>
@@ -738,6 +758,7 @@
 			<string>gcircumflex</string>
 			<string>gdotaccent</string>
 			<string>g.italic</string>
+			<string>gcommaaccent</string>
 		</array>
 		<key>public.kern1.o_right</key>
 		<array>
@@ -770,6 +791,7 @@
 			<string>ohook</string>
 			<string>ohorndot</string>
 			<string>ohornhook</string>
+			<string>ohorntilde</string>
 		</array>
 		<key>public.kern1.r_right</key>
 		<array>
@@ -830,6 +852,8 @@
 		<key>public.kern1.x_right</key>
 		<array>
 			<string>k</string>
+			<string>kcommaaccent</string>
+			<string>kgreenlandic</string>
 		</array>
 		<key>public.kern2.A_left</key>
 		<array>
@@ -893,6 +917,9 @@
 			<string>Ecircumflexdot</string>
 			<string>Ecircumflexhook</string>
 			<string>Ehook</string>
+			<string>DZcaron</string>
+			<string>Germandbls</string>
+			<string>bitcoin</string>
 		</array>
 		<key>public.kern2.Fig0_left</key>
 		<array>
@@ -1002,6 +1029,8 @@
 			<string>quotesingle</string>
 			<string>backslash</string>
 			<string>backslash.case</string>
+			<string>minute</string>
+			<string>second</string>
 		</array>
 		<key>public.kern2.S_left</key>
 		<array>
@@ -1084,6 +1113,7 @@
 			<string>gcaron</string>
 			<string>gcircumflex</string>
 			<string>gdotaccent</string>
+			<string>gcommaaccent</string>
 		</array>
 		<key>public.kern2.i_left</key>
 		<array>
@@ -1097,6 +1127,11 @@
 			<string>imacron</string>
 			<string>iogonek</string>
 			<string>itilde</string>
+			<string>ihook</string>
+			<string>dotlessi</string>
+			<string>i.italic</string>
+			<string>iogonek.italic</string>
+			<string>dotlessi.italic</string>
 		</array>
 		<key>public.kern2.o_left</key>
 		<array>
@@ -1157,6 +1192,8 @@
 			<string>ohook</string>
 			<string>ohorndot</string>
 			<string>ohornhook</string>
+			<string>ohorntilde</string>
+			<string>dzcaron</string>
 		</array>
 		<key>public.kern2.s_left</key>
 		<array>
