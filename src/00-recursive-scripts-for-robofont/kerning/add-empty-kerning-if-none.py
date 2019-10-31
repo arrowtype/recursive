@@ -9,9 +9,6 @@ files = getFile("Select file to copy from", allowsMultipleSelection=True, fileTy
 OutputWindow().show()
 OutputWindow().clear()
 
-
-components = {}
-
 for fontPath in files:
 
     f = OpenFont(fontPath, showInterface=False)
@@ -23,10 +20,8 @@ for fontPath in files:
     print(len(f.groups))
 
     if len(f.kerning) == 0:
-
-        blankKerning = metricsMachine.MetricsMachineFont(fontToOpen.naked(), showInterface=False)
-        blankKerning.save()
-        blankKerning.close()
+        f.kerning[("A", "A")] = 0
+        del f.kerning[("A","A")]
 
     print(len(f.groups))
 
