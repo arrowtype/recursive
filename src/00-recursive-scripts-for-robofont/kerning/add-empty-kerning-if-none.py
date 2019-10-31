@@ -13,15 +13,9 @@ for fontPath in files:
 
     f = OpenFont(fontPath, showInterface=False)
 
-    # groups = RKerning()
-
-    # f.groups = groups
-
-    print(len(f.groups))
-
     if len(f.kerning) == 0:
         f.kerning[("A", "A")] = 0
-        del f.kerning[("A","A")]
+        # del f.kerning[("A","A")]
 
     print(len(f.groups))
 
