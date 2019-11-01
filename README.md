@@ -141,6 +141,15 @@ Things to be aware of:
 
 --- 
 
+## Building the fonts
+
+TODO: add more detail here
+
+1. Font sources are prepped with https://github.com/arrowtype/varfont-prep
+2. The varfontprep sources are then built with scripts in `src/build-scripts`
+  - Variable fonts built in `src/build-scripts/build.sh`
+  - Static fonts currently built with `src/build-scripts/build-statics.sh`
+
 ## Using the resources in this project for type design
 
 This project has included a large amount of research (contained in `docs/`), and contains many small tools (contained in `src/00-recursive-scripts-for-robofont` that may help you if you are designing variable fonts with UFOs in RoboFont.
