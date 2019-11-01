@@ -7,15 +7,16 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 
 # define glyph constructions
 # e.g. equal_equal.code = equal & equal
+# i=dotlessi+dotaccentcomb@top
+# i.mono=dotlessi.mono+dotaccentcomb@top
+# i.italic=dotlessi.italic+dotaccentcomb@top
+# j=dotlessj+dotaccentcomb@top
+# j.italic=dotlessj.italic+dotaccentcomb@top
+# iogonek = dotlessi + ogonekcomb@ogonek + dotaccentcomb@dotlessi:top
+# iogonek.mono = dotlessi.mono + ogonekcomb@ogonek + dotaccentcomb@dotlessi.mono:top
+# iogonek.italic = dotlessi.italic + ogonekcomb@ogonek + dotaccentcomb@dotlessi.italic:top
 txt = '''\
-i=dotlessi+dotaccentcomb@top
-i.mono=dotlessi.mono+dotaccentcomb@top
-i.italic=dotlessi.italic+dotaccentcomb@top
-j=dotlessj+dotaccentcomb@top
-j.italic=dotlessj.italic+dotaccentcomb@top
-iogonek = dotlessi + ogonekcomb@ogonek + dotaccentcomb@dotlessi:top
-iogonek.mono = dotlessi.mono + ogonekcomb@ogonek + dotaccentcomb@dotlessi.mono:top
-iogonek.italic = dotlessi.italic + ogonekcomb@ogonek + dotaccentcomb@dotlessi.italic:top
+apple=.notdef|F8FF
 '''
 
 # get the actual glyph constructions from text

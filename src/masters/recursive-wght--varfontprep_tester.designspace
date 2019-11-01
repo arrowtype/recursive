@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<designspace format="4.0">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="300" maximum="800" default="300">
+      <labelname xml:lang="en">Weight</labelname>
+      <map input="300" output="40" />
+      <map input="400" output="84" />
+      <map input="500" output="99.5" />
+      <map input="600" output="115" />
+      <map input="700" output="130.5" />
+      <map input="800" output="146" />
+    </axis>
+  </axes>
+  <sources>
+    <source filename="mono/Recursive Mono-Casual A.ufo" familyname="Recursive" stylename="Mono Casual A">
+      <location>
+        <dimension name="Weight" xvalue="40" />
+      </location>
+    </source>
+    <source filename="mono/Recursive Mono-Casual B.ufo" familyname="Recursive" stylename="Mono Casual B">
+      <location>
+        <dimension name="Weight" xvalue="146" />
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance familyname="Recursive" stylename="Mono Casual Light" filename="instances/Recursive-Mono Casual Light.ufo">
+      <location>
+        <dimension name="Weight" xvalue="40" />
+      </location>
+      <kerning />
+      <info />
+    </instance>
+    <instance familyname="Recursive" stylename="Mono Casual Regular" filename="instances/Recursive-Mono Casual Regular.ufo">
+      <location>
+        <dimension name="Weight" xvalue="84" />
+      </location>
+      <kerning />
+      <info />
+    </instance>
+    <instance familyname="Recursive" stylename="Mono Casual ExtraBold" filename="instances/Recursive-Mono Casual ExtraBold.ufo">
+      <location>
+        <dimension name="Weight" xvalue="146" />
+      </location>
+      <kerning />
+      <info />
+    </instance>
+  </instances>
+</designspace>
