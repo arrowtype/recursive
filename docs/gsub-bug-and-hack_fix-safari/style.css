@@ -1,0 +1,242 @@
+@font-face {
+    font-family: "RecSubset";
+    font-weight: 300 1000;
+    src: url('./font/recursive-MONO_CASL_wght_slnt_ital--2019_10_31-23_25.woff2') format("woff2");
+  }
+
+html {
+    font-family: "RecSubset", fantasy;
+    padding-bottom: 5rem;
+}
+
+* {
+    font-weight: normal;
+    font-variation-settings: 'wght' var(--wght);
+}
+
+.column {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    --wght: 700;
+    /* font-weight: 700; */ /* `font-weight: 700;` also doesn't work correct in Safari. It adds spacing. */
+}
+
+h1{
+    max-width: 35ch;
+}
+
+h2 {
+    /* border-top: 1px solid #888; */
+    margin-top: 4rem;
+    padding-top: 1rem;
+}
+
+p,li {
+    max-width: 80ch;
+    line-height: 1.5;
+}
+
+hr {
+    margin: 2.5rem 0;
+}
+
+#skia-Q {
+    width: 100%;
+    max-width: 600px;
+}
+
+:root {
+    --slnt: 0;
+}
+
+.tests {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+}
+
+
+
+.test-case  {
+    border: 1px solid #444;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
+h3 {
+    font-size: 1rem;
+    max-width: 45ch;
+}
+
+.test-case:nth-child(1),
+.test-case:nth-child(2) {
+    border-right: none;
+}
+
+
+
+.example {
+    text-align: center;
+    font-variation-settings: 'slnt' var(--slnt), 'wght' 800, 'MONO' 1;
+    margin: 0 0 0.25em 0;
+    font-size: 20vw;
+    line-height: 1em;
+    pointer-events: none;
+}
+
+.note {
+    color: #444;
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    .tests {
+        grid-template-columns: 1fr;
+    }
+
+    .test-case:nth-child(1),
+    .test-case:nth-child(2) {
+        border-right: 1px solid #444;
+        border-bottom: none;
+    }
+    .example {
+        font-size: 50vw;
+    }
+}
+
+/* ------------------------------------------------------------- */
+/* slider */
+/* ------------------------------------------------------------- */
+
+.test-slider {
+    display: grid;
+    align-content: center;
+    grid-template-columns: 8ch 1fr 8ch;
+    height: 2rem;
+    background: #efefef;
+    border-radius: 4px;
+    padding: 0.25rem 1rem;
+    font-weight: normal;
+    /* font-weight: 700; */
+    font-variation-settings: 'wght' 700;
+}
+
+input {
+    transform: rotate(180deg);
+}
+
+#current_slnt {
+    text-align: right;
+    justify-self: end;
+    width: 8ch;
+}
+
+
+input[type=range] {
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 100%; /* Specific width is required for Firefox. */
+    background: transparent; /* Otherwise white in Chrome */
+  }
+  
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+  
+  input[type=range]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  }
+  
+  input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    /* Hides the slider so custom styles can be added */
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+  }
+
+  /* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 24px;
+    width: 24px;
+    border-radius: 99px;
+    background: #fff;
+    border: 2px solid #444;
+    cursor: pointer;
+    margin-top: -10px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    
+  }
+  
+  /* All the same stuff for Firefox */
+  input[type=range]::-moz-range-thumb {
+    height: 24px;
+    width: 24px;
+    border-radius: 99px;
+    background: #111;
+    cursor: pointer;
+  }
+  
+  /* All the same stuff for IE */
+  input[type=range]::-ms-thumb {
+    
+    border: 1px solid #000000;
+    height: 24px;
+    width: 24px;
+    border-radius: 99px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background:  #bbb;
+    border-radius: 12px;
+  }
+  
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #367ebd;
+  }
+  
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    
+    background: #3071a9;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+  }
+  
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #2a6495;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #3071a9;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #3071a9;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #367ebd;
+  }

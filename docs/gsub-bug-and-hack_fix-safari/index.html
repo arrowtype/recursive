@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WebKit GSBU/rvrn bug</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="column">
+        <h1>Safari/WebKit not rendering glyph substitution (GSUB) correctly</h1>
+
+        <p>
+            Move the slider to change Slant. The example letters below should shift to a "single story" version when Slant is greater than -7.5.
+        </p>
+        <p>
+            As of Nov 1, 2019, this test fails in:
+            <ul>
+                <li>Safari on macOS, Version 12.1.1 (14607.2.6.1.1)</li>
+                <li>Safari Technology Preview, Release 95 (Safari 13.1, WebKit 14609.1.7)</li>
+                <li>Safari in iOS 13.1.3</li>
+            </ul>
+        </p>
+        
+        <div class="test-slider">
+            <div>
+                Slant
+            </div>
+            <input type="range" name="slntAxis" id="slnt-axis-slider" min="-15" max="0" value="0" step="0.01" />
+                <span id="current_slnt">0</span>
+
+        </div>
+    </div>
+    <div class="tests">
+      <div class="test-case">
+          <p class="example multichar-string">
+              ag
+            </p>
+                    <div class="test-labels">
+                      <h3>GSUB working with multiple characters</h3>
+                    </div>
+      </div>
+      <div class="test-case">
+          <p class="example multichar-string">
+              a
+            </p>
+                    <div class="test-labels">
+                      <h3>GSUB *not* working with single character</h3>
+                    </div>
+      </div>
+      <div class="test-case">
+          <p class="example multichar-string">
+              a&#8203;
+            </p>
+                        <div class="test-labels">
+                          <h3>One weird trick: add 'ZERO WIDTH SPACE' (HTML &amp;#8203;) before or after the glyph</h3>
+                        </div>
+            <p class="note">(Obviously, this shouldn't be necessary, but is a useful hack until this bug is fixed in production Safari on iOS & macOS.</p>
+        </div>
+    </div>
+    <div class="column">
+            <h2>What is GSUB?</h2>
+    
+            <p>
+                Glyph substitution (GSUB) in variable fonts occurs when a character's shape is changed in a non-compatible way. Put simply, GSUB is when shape changes dramatically, rather than gradually, along an axis.
+            </p>
+            <p>
+                One example of this is the "Q" in Skia: its form simplifies in the bolder weights to retain readability.
+            </p>
+            <img id="skia-Q" src="img/skia_Q_opentype_spec-otvaroverview.png" alt="The Q of Skia is simplified in heavier weights">
+            <p>
+                For a full description of this, see the OpenType spec: <a href="https://docs.microsoft.com/en-us/typography/opentype/spec/features_pt#tag-rvrn">tag: rvrn</a>.
+            </p>
+        </div>
+    <div class="column">
+        <hr>
+        <p>Tested with <a href="https://github.com/arrowtype/recursive">Recursive Sans & Mono</a> by Arrow Type.</p>
+    </div>
+    
+    </div>
+
+  </body>
+  <script>
+      let root = document.documentElement;
+
+    function axisUpdate(e) {
+        current_slnt_value.innerHTML = e.target.value;
+        root.style.setProperty('--slnt', e.target.value);
+    }
+
+    const slnt_val = document.querySelector("#slnt-axis-slider");
+    const current_slnt_value = document.querySelector("#current_slnt");
+    slnt_val.addEventListener("input", axisUpdate);
+    current_slnt_value.innerHTML = slnt_val.value;
+  </script>
+</html>
