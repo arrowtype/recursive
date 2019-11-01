@@ -1,5 +1,5 @@
 <p align="center">
- <strong>Want (infrequent) updates on Recursive? Sign up for the <a href="https://arrowtype.com/" target="_blank">Arrow Type newsletter!</a></strong>
+📰💌 <strong>Want (infrequent) updates on Recursive? Sign up for the <a href="https://arrowtype.com/" target="_blank">Arrow Type newsletter!</a></strong> 💌📰
  </p>
 
 ---
@@ -140,6 +140,15 @@ Things to be aware of:
 
 
 --- 
+
+## Building the fonts
+
+TODO: add more detail here
+
+1. Font sources are prepped with https://github.com/arrowtype/varfont-prep
+2. The varfontprep sources are then built with scripts in `src/build-scripts`
+  - Variable fonts built in `src/build-scripts/build.sh`
+  - Static fonts currently built with `src/build-scripts/build-statics.sh`
 
 ## Using the resources in this project for type design
 
