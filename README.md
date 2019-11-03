@@ -1,10 +1,10 @@
 <p align="center">
-📰💌 <strong>Want (infrequent) updates on Recursive? Sign up for the <a href="https://arrowtype.com/" target="_blank">Arrow Type newsletter!</a></strong> 💌📰
+💌 <strong>Want (infrequent) updates on Recursive? Sign up for the <a href="https://arrowtype.com/" target="_blank">Arrow Type newsletter!</a></strong> 💌
  </p>
 
 ---
 
-# Recursive Mono & Sans
+# Recursive Sans & Mono
 
 ![](specimen.png)
 
