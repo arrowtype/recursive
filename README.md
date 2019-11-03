@@ -4,7 +4,7 @@
 
 ---
 
-# Recursive Mono & Sans
+# Recursive Sans & Mono
 
 ![](specimen.png)
 
