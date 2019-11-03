@@ -17,11 +17,7 @@ font = OpenFont(fontPath, showInterface=False)
 
 suffixes = ["italic", "mono", "sans"]
 
-for g in font:
-    if '.' in g.name and g.name.split('.')[1] in suffixes:
-        print(g)
 
-font.close()
 
 rules = {
     "mono": {
@@ -65,6 +61,13 @@ rules = {
         "Italic": ("0.900000", "1"),
     }
 }
+
+for g in font:
+    if '.' in g.name and g.name.split('.')[1] in suffixes:
+        # print(g)
+        print(f"<sub name="{g.name.split('.')[0]}" with="{g.name}" />")
+
+font.close()
 
 # go through glyph construction recipes and pull out all suffixed glyphs
 # OR go through the charset of a UFO and find all suffixes that have dict rules

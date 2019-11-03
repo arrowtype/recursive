@@ -15,9 +15,15 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 # iogonek = dotlessi + ogonekcomb@ogonek + dotaccentcomb@dotlessi:top
 # iogonek.mono = dotlessi.mono + ogonekcomb@ogonek + dotaccentcomb@dotlessi.mono:top
 # iogonek.italic = dotlessi.italic + ogonekcomb@ogonek + dotaccentcomb@dotlessi.italic:top
-txt = '''\
-apple=.notdef|F8FF
-'''
+# txt = '''\
+# apple=.notdef|F8FF
+# '''
+
+txt = ""
+recipeFile = "/Users/stephennixon/type-repos/recursive/src/00-recursive-scripts-for-robofont/diacritics-and-glyph_construction-recipes/diacritic-recipes-for-recursive-generated-with_alts.txt"
+with open(recipeFile, 'r') as recipe:
+    for line in recipe:
+        txt += '\n line'
 
 # get the actual glyph constructions from text
 constructions = ParseGlyphConstructionListFromString(txt)
