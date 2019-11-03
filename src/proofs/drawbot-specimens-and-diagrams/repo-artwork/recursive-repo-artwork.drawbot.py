@@ -11,7 +11,7 @@ export = True
 autoOpen = True
 exportFormat = "png" # pdf, gif, mp4, jpeg, png, or bmp
 # W,H = 1280, 640 # pixels
-W,H = 1800, 700 # pixels
+W,H = 1800, 900 # pixels
 
 now = datetime.datetime.now().strftime("%Y_%m_%d-%H_%M")
 timestamp = datetime.datetime.now().strftime("%Y-%m-%d, %H:%M")
@@ -82,7 +82,7 @@ for i in range(numOfRs):
 
     # fill(1, 1, 1, getCurrentOpacity(t)[0])
     # stroke(1,1, 1, getCurrentOpacity(t)[1])
-    stroke(getCurrentOpacity(t,0.6)[1], getCurrentOpacity(t,0.6)[1], 1, getCurrentOpacity(t,0.45)[1])
+    stroke(getCurrentOpacity(t,0.6)[1], getCurrentOpacity(t,0.6)[1], 1, getCurrentOpacity(t,0.5)[1])
 
     text(backgroundLetter, (((W - sizeOfFont*0.6)/numOfRs)*i - (sizeOfFont*0.02), H*0.075))
 
@@ -115,15 +115,15 @@ writeText(1, 0)
 # ------------------------------------------------
 # add logo ---------------------------------------
 
-# logoText = "@ArrowType"
-logoText = "@"
+logoText = "@ArrowType"
+# logoText = "@"
 
-# fontSizing = (W/len(logoText)*1.666666667) * 0.1
-fontSizing = (W/10*1.666666667) * 0.1
+fontSizing = (W/len(logoText)*1.666666667) * 0.1
+# fontSizing = (W/10*1.666666667) * 0.1
 fontSize(fontSizing)
 tracking(1)
-# fontVariations(wght=900.999, CASL=0.001, slnt=0, MONO=0.999)
-fontVariations(wght=300.999, CASL=0.001, MONO=0.001)
+fontVariations(wght=900.999, CASL=0.001, slnt=0, MONO=0.999)
+# fontVariations(wght=300.999, CASL=0.001, MONO=0.001)
 text(logoText, (W*0.5, H*0.1), align='center')
 
 # ------------------------------------------------
