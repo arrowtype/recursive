@@ -990,11 +990,6 @@
 		<key>public.glyphOrder</key>
 		<array>
 			<string>space</string>
-			<string>nbspace</string>
-			<string>figurespace</string>
-			<string>punctuationspace</string>
-			<string>thinspace</string>
-			<string>hairspace</string>
 			<string>A</string>
 			<string>Agrave</string>
 			<string>Aacute</string>
@@ -1007,17 +1002,6 @@
 			<string>Aogonek</string>
 			<string>Aringacute</string>
 			<string>Adotbelow</string>
-			<string>Ahook</string>
-			<string>Acircumflexacute</string>
-			<string>Acircumflexgrave</string>
-			<string>Acircumflexhook</string>
-			<string>Acircumflextilde</string>
-			<string>Acircumflexdot</string>
-			<string>Abreveacute</string>
-			<string>Abrevegrave</string>
-			<string>Abrevehook</string>
-			<string>Abrevetilde</string>
-			<string>Abrevedot</string>
 			<string>B</string>
 			<string>C</string>
 			<string>Ccedilla</string>
@@ -1038,13 +1022,7 @@
 			<string>Eogonek</string>
 			<string>Ecaron</string>
 			<string>Edotbelow</string>
-			<string>Ehook</string>
 			<string>Etilde</string>
-			<string>Ecircumflexacute</string>
-			<string>Ecircumflexgrave</string>
-			<string>Ecircumflexhook</string>
-			<string>Ecircumflextilde</string>
-			<string>Ecircumflexdot</string>
 			<string>F</string>
 			<string>G</string>
 			<string>Gcircumflex</string>
@@ -1064,7 +1042,6 @@
 			<string>Ibreve</string>
 			<string>Iogonek</string>
 			<string>Idotaccent</string>
-			<string>Ihook</string>
 			<string>Idotbelow</string>
 			<string>J</string>
 			<string>Jcircumflex</string>
@@ -1089,20 +1066,8 @@
 			<string>Omacron</string>
 			<string>Obreve</string>
 			<string>Ohungarumlaut</string>
-			<string>Ohorn</string>
 			<string>Oogonek</string>
 			<string>Odotbelow</string>
-			<string>Ohook</string>
-			<string>Ocircumflexacute</string>
-			<string>Ocircumflexgrave</string>
-			<string>Ocircumflexhook</string>
-			<string>Ocircumflextilde</string>
-			<string>Ocircumflexdot</string>
-			<string>Ohornacute</string>
-			<string>Ohorngrave</string>
-			<string>Ohornhook</string>
-			<string>Ohorntilde</string>
-			<string>Ohorndot</string>
 			<string>P</string>
 			<string>Q</string>
 			<string>R</string>
@@ -1130,14 +1095,7 @@
 			<string>Uring</string>
 			<string>Uhungarumlaut</string>
 			<string>Uogonek</string>
-			<string>Uhorn</string>
 			<string>Udotbelow</string>
-			<string>Uhook</string>
-			<string>Uhornacute</string>
-			<string>Uhorngrave</string>
-			<string>Uhornhook</string>
-			<string>Uhorntilde</string>
-			<string>Uhorndot</string>
 			<string>V</string>
 			<string>W</string>
 			<string>Wcircumflex</string>
@@ -1151,7 +1109,6 @@
 			<string>Ydieresis</string>
 			<string>Ymacron</string>
 			<string>Ygrave</string>
-			<string>Ydotbelow</string>
 			<string>Ytilde</string>
 			<string>Z</string>
 			<string>Zacute</string>
@@ -1173,10 +1130,6 @@
 			<string>Tbar</string>
 			<string>Schwa</string>
 			<string>Nhookleft</string>
-			<string>Yhook</string>
-			<string>DZcaron</string>
-			<string>LJ</string>
-			<string>NJ</string>
 			<string>Germandbls</string>
 			<string>ohm</string>
 			<string>a</string>
@@ -1191,17 +1144,6 @@
 			<string>aogonek</string>
 			<string>aringacute</string>
 			<string>adotbelow</string>
-			<string>ahook</string>
-			<string>acircumflexacute</string>
-			<string>acircumflexgrave</string>
-			<string>acircumflexhook</string>
-			<string>acircumflextilde</string>
-			<string>acircumflexdot</string>
-			<string>abreveacute</string>
-			<string>abrevegrave</string>
-			<string>abrevehook</string>
-			<string>abrevetilde</string>
-			<string>abrevedot</string>
 			<string>b</string>
 			<string>c</string>
 			<string>ccedilla</string>
@@ -1210,7 +1152,6 @@
 			<string>cdotaccent</string>
 			<string>ccaron</string>
 			<string>d</string>
-			<string>dcaron</string>
 			<string>e</string>
 			<string>egrave</string>
 			<string>eacute</string>
@@ -1219,16 +1160,9 @@
 			<string>emacron</string>
 			<string>ebreve</string>
 			<string>edotaccent</string>
-			<string>eogonek</string>
 			<string>ecaron</string>
 			<string>edotbelow</string>
-			<string>ehook</string>
 			<string>etilde</string>
-			<string>ecircumflexacute</string>
-			<string>ecircumflexgrave</string>
-			<string>ecircumflexhook</string>
-			<string>ecircumflextilde</string>
-			<string>ecircumflexdot</string>
 			<string>f</string>
 			<string>g</string>
 			<string>gcircumflex</string>
@@ -1247,7 +1181,6 @@
 			<string>imacron</string>
 			<string>ibreve</string>
 			<string>iogonek</string>
-			<string>ihook</string>
 			<string>idotbelow</string>
 			<string>j</string>
 			<string>jcircumflex</string>
@@ -1256,7 +1189,6 @@
 			<string>l</string>
 			<string>lacute</string>
 			<string>lcommaaccent</string>
-			<string>lcaron</string>
 			<string>m</string>
 			<string>n</string>
 			<string>ntilde</string>
@@ -1272,20 +1204,8 @@
 			<string>omacron</string>
 			<string>obreve</string>
 			<string>ohungarumlaut</string>
-			<string>ohorn</string>
 			<string>oogonek</string>
 			<string>odotbelow</string>
-			<string>ohook</string>
-			<string>ocircumflexacute</string>
-			<string>ocircumflexgrave</string>
-			<string>ocircumflexhook</string>
-			<string>ocircumflextilde</string>
-			<string>ocircumflexdot</string>
-			<string>ohornacute</string>
-			<string>ohorngrave</string>
-			<string>ohornhook</string>
-			<string>ohorntilde</string>
-			<string>ohorndot</string>
 			<string>p</string>
 			<string>q</string>
 			<string>r</string>
@@ -1313,14 +1233,7 @@
 			<string>uring</string>
 			<string>uhungarumlaut</string>
 			<string>uogonek</string>
-			<string>uhorn</string>
 			<string>udotbelow</string>
-			<string>uhook</string>
-			<string>uhornacute</string>
-			<string>uhorngrave</string>
-			<string>uhornhook</string>
-			<string>uhorntilde</string>
-			<string>uhorndot</string>
 			<string>v</string>
 			<string>w</string>
 			<string>wcircumflex</string>
@@ -1334,7 +1247,6 @@
 			<string>ycircumflex</string>
 			<string>ymacron</string>
 			<string>ygrave</string>
-			<string>ydotbelow</string>
 			<string>ytilde</string>
 			<string>z</string>
 			<string>zacute</string>
@@ -1358,27 +1270,10 @@
 			<string>eng</string>
 			<string>oe</string>
 			<string>tbar</string>
-			<string>yhook</string>
-			<string>dzcaron</string>
-			<string>lj</string>
-			<string>nj</string>
 			<string>dotlessj</string>
 			<string>schwa</string>
 			<string>pi</string>
-			<string>Dzcaron</string>
-			<string>Lj</string>
-			<string>Nj</string>
-			<string>primemod</string>
-			<string>primedblmod</string>
-			<string>commaturnedmod</string>
 			<string>apostrophemod</string>
-			<string>ringhalfrightmod</string>
-			<string>ringhalfleftmod</string>
-			<string>verticallinemod</string>
-			<string>macronmod</string>
-			<string>acutemod</string>
-			<string>gravemod</string>
-			<string>verticallinelowmod</string>
 			<string>ordfeminine</string>
 			<string>ordmasculine</string>
 			<string>gravecomb</string>
@@ -1389,19 +1284,15 @@
 			<string>brevecomb</string>
 			<string>dotaccentcomb</string>
 			<string>dieresiscomb</string>
-			<string>hookcomb</string>
 			<string>ringcomb</string>
 			<string>hungarumlautcomb</string>
 			<string>caroncomb</string>
 			<string>commaturnedabovecomb</string>
 			<string>commaaboverightcomb</string>
-			<string>horncomb</string>
 			<string>dotbelowcomb</string>
 			<string>commaaccentcomb</string>
 			<string>cedillacomb</string>
 			<string>ogonekcomb</string>
-			<string>belowbrevecmb</string>
-			<string>macronbelowcmb</string>
 			<string>zero</string>
 			<string>one</string>
 			<string>two</string>
@@ -1451,8 +1342,6 @@
 			<string>bracketright</string>
 			<string>braceleft</string>
 			<string>braceright</string>
-			<string>bracketangleleft</string>
-			<string>bracketangleright</string>
 			<string>numbersign</string>
 			<string>percent</string>
 			<string>perthousand</string>
@@ -1490,11 +1379,8 @@
 			<string>section</string>
 			<string>paragraph</string>
 			<string>litre</string>
-			<string>numero</string>
 			<string>periodcentered</string>
 			<string>bullet</string>
-			<string>minute</string>
-			<string>second</string>
 			<string>overline</string>
 			<string>plus</string>
 			<string>minus</string>
@@ -1513,7 +1399,6 @@
 			<string>arrowup</string>
 			<string>arrowright</string>
 			<string>arrowdown</string>
-			<string>arrowleftright</string>
 			<string>partialdiff</string>
 			<string>increment</string>
 			<string>product</string>
@@ -1523,8 +1408,6 @@
 			<string>infinity</string>
 			<string>integral</string>
 			<string>equivalence</string>
-			<string>trianglerightwhite</string>
-			<string>triangleleftwhite</string>
 			<string>dollar</string>
 			<string>cent</string>
 			<string>sterling</string>
@@ -1547,7 +1430,6 @@
 			<string>tenge</string>
 			<string>manat</string>
 			<string>ruble</string>
-			<string>bitcoin</string>
 			<string>asciicircum</string>
 			<string>asciitilde</string>
 			<string>acute</string>
@@ -1568,47 +1450,18 @@
 			<string>trademark</string>
 			<string>degree</string>
 			<string>estimated</string>
-			<string>arrowupdown</string>
-			<string>arrowNW</string>
-			<string>arrowNE</string>
-			<string>arrowSE</string>
-			<string>arrowSW</string>
-			<string>hook</string>
-			<string>squareblack</string>
-			<string>squarewhite</string>
-			<string>triangleupblack</string>
-			<string>triangleupwhite</string>
-			<string>trianglerightblack</string>
-			<string>triangledownblack</string>
-			<string>triangledownwhite</string>
-			<string>triangleleftblack</string>
-			<string>gmtr:diamondblack</string>
-			<string>gmtr:diamondwhite</string>
 			<string>lozenge</string>
-			<string>heartwhite</string>
-			<string>heartblack</string>
 			<string>hyphensoft</string>
-			<string>zerowidthspace</string>
 			<string>ijacute</string>
 			<string>IJacute</string>
-			<string>_arrowhead</string>
+			<string>bitcoin</string>
 			<string>dotlessij</string>
-			<string>horn</string>
-			<string>horncombo</string>
 			<string>liraTurkish</string>
 			<string>nhookleft</string>
-			<string>ogonekcombo</string>
 			<string>ringacute</string>
 			<string>rupeeIndian</string>
 			<string>slashcomb</string>
-			<string>f_f</string>
 			<string>fi</string>
-			<string>fl</string>
-			<string>f_f_i</string>
-			<string>f_f_l</string>
-			<string>braceleft.cap</string>
-			<string>braceright.cap</string>
-			<string>at.cap</string>
 			<string>at.simple</string>
 			<string>gravecomb.case</string>
 			<string>acutecomb.case</string>
@@ -1618,13 +1471,11 @@
 			<string>brevecomb.case</string>
 			<string>dotaccentcomb.case</string>
 			<string>dieresiscomb.case</string>
-			<string>hookcomb.case</string>
 			<string>ringcomb.case</string>
 			<string>hungarumlautcomb.case</string>
 			<string>caroncomb.case</string>
 			<string>commaturnedabovecomb.case</string>
 			<string>commaaboverightcomb.case</string>
-			<string>horncomb.case</string>
 			<string>dotbelowcomb.case</string>
 			<string>commaaccentcomb.case</string>
 			<string>cedillacomb.case</string>
@@ -1645,15 +1496,8 @@
 			<string>questiondown.case</string>
 			<string>periodcentered.case</string>
 			<string>bullet.case</string>
-			<string>acutecombviet.case</string>
-			<string>gravecombviet.case</string>
-			<string>horncombo.case</string>
-			<string>ogonekcombo.case</string>
 			<string>ringacute.case</string>
-			<string>slashcomb.case</string>
-			<string>tildecombviet.case</string>
 			<string>a.italic</string>
-			<string>b.italic</string>
 			<string>c.italic</string>
 			<string>d.italic</string>
 			<string>e.italic</string>
@@ -1661,10 +1505,8 @@
 			<string>g.italic</string>
 			<string>h.italic</string>
 			<string>i.italic</string>
-			<string>iogonek.italic</string>
 			<string>j.italic</string>
 			<string>k.italic</string>
-			<string>l.italic</string>
 			<string>m.italic</string>
 			<string>n.italic</string>
 			<string>r.italic</string>
@@ -1676,25 +1518,193 @@
 			<string>y.italic</string>
 			<string>z.italic</string>
 			<string>dotlessi.italic</string>
-			<string>lslash.italic</string>
 			<string>dotlessj.italic</string>
 			<string>f.mono</string>
 			<string>g.mono</string>
 			<string>i.mono</string>
-			<string>iogonek.mono</string>
 			<string>l.mono</string>
 			<string>lacute.mono</string>
 			<string>lcommaaccent.mono</string>
 			<string>r.mono</string>
 			<string>dotlessi.mono</string>
 			<string>lslash.mono</string>
+			<string>g.ss01</string>
+			<string>i.ss01</string>
+			<string>l.ss01</string>
 			<string>g.longtail</string>
 			<string>j.longtail</string>
 			<string>y.longtail</string>
 			<string>mu.math</string>
-			<string>Q.titl</string>
 			<string>g.long_desc</string>
 			<string>a.italic_curl</string>
+			<string>l.sans</string>
+			<string>lacute.sans</string>
+			<string>lcommaaccent.sans</string>
+			<string>lslash.sans</string>
+			<string>zero.sans</string>
+			<string>one.sans</string>
+			<string>.notdef</string>
+			<string>nbspace</string>
+			<string>figurespace</string>
+			<string>punctuationspace</string>
+			<string>thinspace</string>
+			<string>hairspace</string>
+			<string>Ahook</string>
+			<string>Acircumflexacute</string>
+			<string>Acircumflexgrave</string>
+			<string>Acircumflexhook</string>
+			<string>Acircumflextilde</string>
+			<string>Acircumflexdot</string>
+			<string>Abreveacute</string>
+			<string>Abrevegrave</string>
+			<string>Abrevehook</string>
+			<string>Abrevetilde</string>
+			<string>Abrevedot</string>
+			<string>Ehook</string>
+			<string>Ecircumflexacute</string>
+			<string>Ecircumflexgrave</string>
+			<string>Ecircumflexhook</string>
+			<string>Ecircumflextilde</string>
+			<string>Ecircumflexdot</string>
+			<string>Ihook</string>
+			<string>Ohorn</string>
+			<string>Ohook</string>
+			<string>Ocircumflexacute</string>
+			<string>Ocircumflexgrave</string>
+			<string>Ocircumflexhook</string>
+			<string>Ocircumflextilde</string>
+			<string>Ocircumflexdot</string>
+			<string>Ohornacute</string>
+			<string>Ohorngrave</string>
+			<string>Ohornhook</string>
+			<string>Ohorntilde</string>
+			<string>Ohorndot</string>
+			<string>Uhorn</string>
+			<string>Uhook</string>
+			<string>Uhornacute</string>
+			<string>Uhorngrave</string>
+			<string>Uhornhook</string>
+			<string>Uhorntilde</string>
+			<string>Uhorndot</string>
+			<string>Ydotbelow</string>
+			<string>Yhook</string>
+			<string>DZcaron</string>
+			<string>LJ</string>
+			<string>NJ</string>
+			<string>ahook</string>
+			<string>acircumflexacute</string>
+			<string>acircumflexgrave</string>
+			<string>acircumflexhook</string>
+			<string>acircumflextilde</string>
+			<string>acircumflexdot</string>
+			<string>abreveacute</string>
+			<string>abrevegrave</string>
+			<string>abrevehook</string>
+			<string>abrevetilde</string>
+			<string>abrevedot</string>
+			<string>dcaron</string>
+			<string>eogonek</string>
+			<string>ehook</string>
+			<string>ecircumflexacute</string>
+			<string>ecircumflexgrave</string>
+			<string>ecircumflexhook</string>
+			<string>ecircumflextilde</string>
+			<string>ecircumflexdot</string>
+			<string>ihook</string>
+			<string>lcaron</string>
+			<string>ohorn</string>
+			<string>ohook</string>
+			<string>ocircumflexacute</string>
+			<string>ocircumflexgrave</string>
+			<string>ocircumflexhook</string>
+			<string>ocircumflextilde</string>
+			<string>ocircumflexdot</string>
+			<string>ohornacute</string>
+			<string>ohorngrave</string>
+			<string>ohornhook</string>
+			<string>ohorntilde</string>
+			<string>ohorndot</string>
+			<string>uhorn</string>
+			<string>uhook</string>
+			<string>uhornacute</string>
+			<string>uhorngrave</string>
+			<string>uhornhook</string>
+			<string>uhorntilde</string>
+			<string>uhorndot</string>
+			<string>ydotbelow</string>
+			<string>yhook</string>
+			<string>dzcaron</string>
+			<string>lj</string>
+			<string>nj</string>
+			<string>Dzcaron</string>
+			<string>Lj</string>
+			<string>Nj</string>
+			<string>primemod</string>
+			<string>primedblmod</string>
+			<string>commaturnedmod</string>
+			<string>ringhalfrightmod</string>
+			<string>ringhalfleftmod</string>
+			<string>verticallinemod</string>
+			<string>macronmod</string>
+			<string>acutemod</string>
+			<string>gravemod</string>
+			<string>verticallinelowmod</string>
+			<string>hookcomb</string>
+			<string>horncomb</string>
+			<string>belowbrevecmb</string>
+			<string>macronbelowcmb</string>
+			<string>bracketangleleft</string>
+			<string>bracketangleright</string>
+			<string>numero</string>
+			<string>minute</string>
+			<string>second</string>
+			<string>arrowleftright</string>
+			<string>trianglerightwhite</string>
+			<string>triangleleftwhite</string>
+			<string>arrowupdown</string>
+			<string>arrowNW</string>
+			<string>arrowNE</string>
+			<string>arrowSE</string>
+			<string>arrowSW</string>
+			<string>hook</string>
+			<string>squareblack</string>
+			<string>squarewhite</string>
+			<string>triangleupblack</string>
+			<string>triangleupwhite</string>
+			<string>trianglerightblack</string>
+			<string>triangledownblack</string>
+			<string>triangledownwhite</string>
+			<string>triangleleftblack</string>
+			<string>gmtr:diamondblack</string>
+			<string>gmtr:diamondwhite</string>
+			<string>heartwhite</string>
+			<string>heartblack</string>
+			<string>zerowidthspace</string>
+			<string>_arrowhead</string>
+			<string>horn</string>
+			<string>horncombo</string>
+			<string>ogonekcombo</string>
+			<string>f_f</string>
+			<string>fl</string>
+			<string>f_f_i</string>
+			<string>f_f_l</string>
+			<string>braceleft.cap</string>
+			<string>braceright.cap</string>
+			<string>at.cap</string>
+			<string>hookcomb.case</string>
+			<string>horncomb.case</string>
+			<string>acutecombviet.case</string>
+			<string>gravecombviet.case</string>
+			<string>horncombo.case</string>
+			<string>ogonekcombo.case</string>
+			<string>slashcomb.case</string>
+			<string>tildecombviet.case</string>
+			<string>b.italic</string>
+			<string>iogonek.italic</string>
+			<string>l.italic</string>
+			<string>lslash.italic</string>
+			<string>iogonek.mono</string>
+			<string>Q.titl</string>
 			<string>f_quote.code</string>
 			<string>hyphen_greater.code</string>
 			<string>exclam_equal.code</string>
@@ -1720,22 +1730,12 @@
 			<string>less_hyphen.code</string>
 			<string>greater_equal.code</string>
 			<string>dollar_braceleft.code</string>
-			<string>g.ss01</string>
-			<string>i.ss01</string>
-			<string>l.ss01</string>
 			<string>six.ss01</string>
 			<string>nine.ss01</string>
 			<string>sixsuperior.ss01</string>
 			<string>ninesuperior.ss01</string>
 			<string>sixinferior.ss01</string>
 			<string>nineinferior.ss01</string>
-			<string>l.sans</string>
-			<string>lacute.sans</string>
-			<string>lcommaaccent.sans</string>
-			<string>lslash.sans</string>
-			<string>zero.sans</string>
-			<string>one.sans</string>
-			<string>.notdef</string>
 			<string>f_f.italic</string>
 			<string>f_f_i.italic</string>
 			<string>f_f_l.italic</string>
@@ -1752,6 +1752,7 @@
 			<string>Lj.italic</string>
 			<string>Nj.italic</string>
 			<string>apple</string>
+			<string>ydot.italic</string>
 		</array>
 	</dict>
 </plist>
