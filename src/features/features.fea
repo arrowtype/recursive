@@ -10,6 +10,11 @@ feature locl {
             } DutchIJ;
 } locl;
 
+feature liga {
+    sub f i by fi;
+    sub f l by fl;
+} liga;
+
 feature dlig {
     lookup exclam_equal {
         ignore sub exclam exclam' equal';
