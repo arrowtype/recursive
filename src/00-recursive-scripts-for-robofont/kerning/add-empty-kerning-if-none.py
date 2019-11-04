@@ -17,7 +17,9 @@ for fontPath in files:
         f.kerning[("A", "A")] = 0
         # del f.kerning[("A","A")]
 
-    print(len(f.groups))
+    print(f.info.styleName)
+    print("groups: " + str(len(f.groups)))
+    print("\n")
 
     f.save()
     f.close()
