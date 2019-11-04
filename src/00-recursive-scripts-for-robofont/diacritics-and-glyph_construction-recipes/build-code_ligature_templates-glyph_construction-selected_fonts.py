@@ -52,8 +52,26 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 # hyphen.precode=hyphen
 # '''
 
+# txt='''\
+# equal_equal.code = equal&equal
+# '''
+
 txt='''\
-equal_equal.code = equal&equal
+fi.mono = f.mono & i.mono
+fi.italic = f.italic & i.italic
+fl.mono = f.mono & l.mono
+fl.italic = f.italic & l.italic
+f_f.mono = f.mono & f.mono
+f_f.italic = f.italic & f.italic
+f_f_i.mono = f.mono & f.mono & i.mono
+f_f_i.italic = f.italic & f.italic & i.italic
+f_f_l.mono = f.mono & f.mono & l.mono
+f_f_l.italic = f.italic & f.italic & l.italic
+Lj.italic = L & j.italic
+lj.italic = l.italic & j.italic
+dzcaron.italic = d.italic & zcaron
+Nj.italic = N & j.italic
+nj.italic = n & j.italic
 '''
 
 # get the actual glyph constructions from text
