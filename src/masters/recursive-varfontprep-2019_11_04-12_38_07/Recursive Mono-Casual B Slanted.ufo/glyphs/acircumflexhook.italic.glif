@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="acircumflexhook.italic" format="2">
+	<advance width="600"/>
+	<outline>
+		<component base="a.italic"/>
+		<component base="circumflexcomb" xOffset="280" yOffset="2"/>
+		<component base="hookcomb.case" xOffset="470" yOffset="39"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0,0,0,0.5</string>
+		</dict>
+	</lib>
+</glyph>
