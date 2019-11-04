@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Abrevehook" format="2">
+	<unicode hex="1EB2"/>
+	<advance width="600"/>
+	<outline>
+		<component base="A"/>
+		<component base="brevecomb.case" xOffset="300" yOffset="-1"/>
+		<component base="hookcomb.case" xOffset="300" yOffset="207"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0,0,0,0.5</string>
+		</dict>
+	</lib>
+</glyph>
