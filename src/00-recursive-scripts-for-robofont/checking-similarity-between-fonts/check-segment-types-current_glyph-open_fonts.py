@@ -16,10 +16,10 @@ print(f"Contours & segments in /{g.name} {key}")
 
 print("".ljust(firstColWidth + 1, "-") + " | " + "".ljust(96, "-"))
 
-for i, f in enumerate(AllFonts()):
+for f in AllFonts():
     print(f.info.styleName.ljust(firstColWidth + 1), end=" ")
     print("|", end=" ")
-    for c in f[g.name]:
+    for i, c in enumerate(f[g.name]):
         print(f"C{str(i).rjust(2, '0')}", end=" ")
         print(f"[{len(c.segments)}]", end=" ")
         for s in c:
