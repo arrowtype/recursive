@@ -3,13 +3,13 @@
 	<advance width="600"/>
 	<outline>
 		<component base="dotlessi.mono"/>
-		<component base="ogonekcomb" xOffset="492"/>
+		<component base="ogonekcomb" xOffset="492" yOffset="-11"/>
 		<component base="dotaccentcomb" xOffset="305" yOffset="-1"/>
 	</outline>
 	<lib>
 		<dict>
 			<key>public.markColor</key>
-			<string>0,0,0,0.1505</string>
+			<string>0,0,0,0.5</string>
 		</dict>
 	</lib>
 </glyph>

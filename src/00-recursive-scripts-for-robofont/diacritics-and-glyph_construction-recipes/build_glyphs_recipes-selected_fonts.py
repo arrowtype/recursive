@@ -23,10 +23,14 @@ txt = ""
 recipeFile = "/Users/stephennixon/type-repos/recursive/src/00-recursive-scripts-for-robofont/diacritics-and-glyph_construction-recipes/diacritic-recipes-for-recursive-generated-with_alts.txt"
 with open(recipeFile, 'r') as recipe:
     for line in recipe:
-        txt += '\n line'
+        line = line.replace(' ','')
+        if len(line) > 1:
+            txt += line
 
+print(txt)
 # get the actual glyph constructions from text
 constructions = ParseGlyphConstructionListFromString(txt)
+
 
 
 files = getFile("Select files to build glyphs in", allowsMultipleSelection=True, fileTypes=["ufo"])
@@ -39,6 +43,7 @@ for file in files:
     # iterate over all glyph constructions
     for construction in constructions:
 
+        print(construction)
         # build a construction glyph
         constructionGlyph = GlyphConstructionBuilder(construction, font)
 

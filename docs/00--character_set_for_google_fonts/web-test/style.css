@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "RecWeb";
+    font-weight: 300 1000;
+    src: url('./recursive-MONO_CASL_wght_slnt_ital--2019_11_03-21_13.ttf') format("woff2");
+}
+
+* {
+    font-family: "RecWeb", fantasy;
+}
+
+.grid {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 3rem));
+    font-size: 2rem;
+    line-height: 1.5em;
+    text-align: center;
+}

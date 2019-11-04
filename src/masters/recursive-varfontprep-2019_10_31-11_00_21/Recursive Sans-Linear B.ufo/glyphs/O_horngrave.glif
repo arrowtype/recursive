@@ -4,13 +4,13 @@
 	<advance width="650"/>
 	<outline>
 		<component base="O"/>
-		<component base="horncombo.case" xOffset="476"/>
+		<component base="horncomb.case" xOffset="476" yOffset="-23"/>
 		<component base="gravecombviet.case" xOffset="325" yOffset="-1"/>
 	</outline>
 	<lib>
 		<dict>
 			<key>public.markColor</key>
-			<string>0,0,0,0.1505</string>
+			<string>0,0,0,0.5</string>
 		</dict>
 	</lib>
 </glyph>
