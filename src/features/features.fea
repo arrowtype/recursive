@@ -1,18 +1,20 @@
 languagesystem DFLT dflt;
 languagesystem latn dflt;
 
-feature locl {
-    script latn;
-        language NLD exclude_dflt;
-            lookup DutchIJ {
-                sub I J by IJ;
-                sub i j by ij;
-            } DutchIJ;
-} locl;
+# feature locl {
+#     script latn;
+#         language NLD exclude_dflt;
+#             lookup DutchIJ {
+#                 sub I J by IJ;
+#                 sub i j by ij;
+#             } DutchIJ;
+# } locl;
 
 feature liga {
     sub f i by fi;
+    sub f i.italic by fi;
     sub f l by fl;
+    sub f l.italic by fl;
 } liga;
 
 feature dlig {
