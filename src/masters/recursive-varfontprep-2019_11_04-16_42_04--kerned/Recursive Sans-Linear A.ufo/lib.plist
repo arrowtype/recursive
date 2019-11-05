@@ -886,13 +886,6 @@
 				<integer>1</integer>
 				<real>0.25</real>
 			</array>
-			<key>public.kern1.R_right</key>
-			<array>
-				<integer>1</integer>
-				<integer>0</integer>
-				<real>0.5</real>
-				<real>0.25</real>
-			</array>
 			<key>public.kern1.S_right</key>
 			<array>
 				<integer>1</integer>
@@ -949,24 +942,10 @@
 				<integer>0</integer>
 				<real>0.25</real>
 			</array>
-			<key>public.kern1.f_right</key>
-			<array>
-				<integer>1</integer>
-				<integer>1</integer>
-				<integer>0</integer>
-				<real>0.25</real>
-			</array>
 			<key>public.kern1.g_right</key>
 			<array>
 				<integer>0</integer>
 				<integer>1</integer>
-				<integer>0</integer>
-				<real>0.25</real>
-			</array>
-			<key>public.kern1.n_right</key>
-			<array>
-				<integer>1</integer>
-				<integer>0</integer>
 				<integer>0</integer>
 				<real>0.25</real>
 			</array>
@@ -1024,13 +1003,6 @@
 				<real>0.5</real>
 				<integer>0</integer>
 				<integer>1</integer>
-				<real>0.25</real>
-			</array>
-			<key>public.kern1.z_right</key>
-			<array>
-				<integer>1</integer>
-				<real>0.5</real>
-				<integer>0</integer>
 				<real>0.25</real>
 			</array>
 			<key>public.kern2.A_left</key>
@@ -1129,13 +1101,6 @@
 				<real>0.5</real>
 				<integer>0</integer>
 				<integer>1</integer>
-				<real>0.25</real>
-			</array>
-			<key>public.kern2.f_left</key>
-			<array>
-				<integer>1</integer>
-				<integer>1</integer>
-				<integer>0</integer>
 				<real>0.25</real>
 			</array>
 			<key>public.kern2.g_left</key>
@@ -2066,6 +2031,7 @@
 			<string>zero.sans</string>
 			<string>one.sans</string>
 			<string>.notdef</string>
+			<string>at.cap</string>
 		</array>
 	</dict>
 </plist>

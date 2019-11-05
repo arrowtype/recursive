@@ -1,2 +1,172 @@
-include(../../features/features.fea);
+languagesystem DFLT dflt;
+languagesystem latn dflt;
 
+# feature locl {
+#     script latn;
+#         language NLD exclude_dflt;
+#             lookup DutchIJ {
+#                 sub I J by IJ;
+#                 sub i j by ij;
+#             } DutchIJ;
+# } locl;
+
+feature liga {
+    sub f i by fi;
+    sub f i.italic by fi;
+    sub f l by fl;
+    sub f l.italic by fl;
+} liga;
+
+feature dlig {
+    lookup exclam_equal {
+        ignore sub exclam exclam' equal';
+        ignore sub exclam' equal' equal;
+        sub exclam' equal' by exclam_equal.code;
+    } exclam_equal;
+    
+    lookup exclam_equal_equal {
+        ignore sub exclam exclam' equal' equal';
+        ignore sub exclam' equal' equal' equal;
+        sub exclam' equal' equal' by exclam_equal_equal.code;
+    } exclam_equal_equal;
+
+    lookup equal_equal {
+        ignore sub equal' equal' equal;
+        ignore sub equal equal' equal';
+        sub equal' equal' by equal_equal.code;
+    } equal_equal;
+    
+    lookup equal_equal_equal {
+        ignore sub equal' equal' equal' equal;
+        ignore sub equal equal' equal' equal';
+        sub equal' equal' equal' by equal_equal_equal.code;
+    } equal_equal_equal;
+    
+    lookup exclam_exclam {
+        ignore sub exclam' exclam' exclam;
+        ignore sub exclam exclam' exclam';
+        sub exclam' exclam' by exclam_exclam.code;
+    } exclam_exclam;
+    
+    lookup question_question {
+        ignore sub question' question' question;
+        ignore sub question question' question';
+        sub question' question' by question_question.code;
+    } question_question;
+    
+    lookup percent_percent {
+        ignore sub percent' percent' percent;
+        ignore sub percent percent' percent';
+        sub percent' percent' by percent_percent.code;
+    } percent_percent;
+    
+    lookup ampersand_ampersand {
+        ignore sub ampersand' ampersand' ampersand;
+        ignore sub ampersand ampersand' ampersand';
+        sub ampersand' ampersand' by ampersand_ampersand.code;
+    } ampersand_ampersand;
+
+    lookup ampersand_ampersand_ampersand {
+        ignore sub ampersand' ampersand' ampersand' ampersand;
+        ignore sub ampersand ampersand' ampersand' ampersand';
+        sub ampersand' ampersand' ampersand' by ampersand_ampersand_ampersand.code;
+    } ampersand_ampersand_ampersand;
+    
+    lookup bar_bar {
+        ignore sub bar' bar' bar;
+        ignore sub bar bar' bar';
+        sub bar' bar' by bar_bar.code;
+    } bar_bar;
+    
+    lookup bar_bar_bar {
+        ignore sub bar' bar' bar' bar;
+        ignore sub bar bar' bar' bar';
+        sub bar' bar' bar' by bar_bar_bar.code;
+    } bar_bar_bar;
+    # numbersign.code # is there any reason to have a single numbersign.code? Maybe it would be upright in italics? Not sure.
+
+    lookup numbersign_numbersign {
+        ignore sub numbersign' numbersign' numbersign;
+        ignore sub numbersign numbersign' numbersign';
+        sub numbersign' numbersign' by numbersign_numbersign.code;
+    } numbersign_numbersign;
+    
+    lookup numbersign_numbersign_numbersign {
+        ignore sub numbersign' numbersign' numbersign' numbersign;
+        ignore sub numbersign numbersign' numbersign' numbersign';
+        sub numbersign' numbersign' numbersign' by numbersign_numbersign_numbersign.code;
+    } numbersign_numbersign_numbersign;
+    
+    lookup numbersign_numbersign_numbersign_numbersign {
+        ignore sub numbersign' numbersign' numbersign' numbersign' numbersign;
+        ignore sub numbersign numbersign' numbersign' numbersign' numbersign';
+        sub numbersign' numbersign' numbersign' numbersign' by numbersign_numbersign_numbersign_numbersign.code;
+    } numbersign_numbersign_numbersign_numbersign;
+    
+    lookup slash_slash {
+        ignore sub slash' slash' slash;
+        ignore sub slash slash' slash';
+        sub slash' slash' by slash_slash.code;
+    } slash_slash;
+    
+    lookup equal_greater {
+        ignore sub equal equal' greater';
+        ignore sub equal' greater' greater;
+        sub equal' greater' by equal_greater.code;
+    } equal_greater;
+    
+    lookup greater_equal {
+        ignore sub greater greater' equal';
+        ignore sub greater' equal' equal;
+        sub greater' equal' by greater_equal.code;
+    } greater_equal;
+    
+    lookup less_equal {
+        ignore sub less less' equal';
+        ignore sub less' equal' equal;
+        sub less' equal' by less_equal.code;
+    } less_equal;
+    
+    lookup dollar_braceleft {
+        ignore sub dollar dollar' braceleft';
+        ignore sub dollar' braceleft' braceleft;
+        sub dollar' braceleft' by dollar_braceleft.code;
+    } dollar_braceleft;
+    
+    lookup hyphen_greater {
+        ignore sub hyphen hyphen' greater';
+        ignore sub hyphen' greater' greater;
+        sub hyphen' greater' by hyphen_greater.code;
+    } hyphen_greater;
+    
+    lookup less_hyphen {
+        ignore sub less less' hyphen';
+        ignore sub less' hyphen' hyphen;
+        sub less' hyphen' by less_hyphen.code;
+    } less_hyphen;
+    
+    lookup f_quote {
+        ignore sub f f' quotedbl';
+        ignore sub f' quotedbl' quotedbl;
+        sub f' quotedbl' by f_quote.code;
+    } f_quote;
+    
+    lookup equal_slash_equal {
+        ignore sub equal equal' slash' equal' equal;
+        ignore sub equal equal' slash' equal' equal;
+        sub equal' slash' equal' by equal_slash_equal.code;
+    } equal_slash_equal;
+    
+    lookup question_period {
+        ignore sub question question' period';
+        ignore sub question' period' period;
+        sub question' period' by question_period.code;
+    } question_period;
+    
+    lookup question_colon {
+        ignore sub question question' colon';
+        ignore sub question' colon' colon;
+        sub question' colon' by question_colon.code;
+    } question_colon;
+
+} dlig;
