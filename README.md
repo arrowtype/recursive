@@ -72,10 +72,10 @@ In code editors like VS Code and Atom, you must use a string to set your preferr
 
 | Style           | Font name for VS Code seetings   | Recommended use case                             |
 | --------------- | -------------------------------- | ------------------------------------------------ |
-| Linear Regular  | `RecursiveMonoB_020-LnrMd`       | General use                                      |
-| Linear Medium   | `RecursiveMonoB_020-LnrMd`       | Light themes                                     |
-| Casual Regular  | `RecursiveMonoB_020-CslRg`       | General, with more personality (try in terminal) |
-| Casual Regular  | `RecursiveMonoB_020-CslRg`       | With more personality, Light themes              |
+| Linear Regular  | `RecursiveMonoB_022-LnrMd`       | General use                                      |
+| Linear Medium   | `RecursiveMonoB_022-LnrMd`       | Light themes                                     |
+| Casual Regular  | `RecursiveMonoB_022-CslRg`       | General, with more personality (try in terminal) |
+| Casual Regular  | `RecursiveMonoB_022-CslRg`       | With more personality, Light themes              |
 
 The `B_020` in these name string represents the current beta release version. It's possible this has shifted (I am releasing often at this point), so check what the release notes say.
 
@@ -89,7 +89,7 @@ Recursive has the following axes:
 | ---------- | ------ | ------------ | ------- | --------------------------------------------------------------- |
 | Monospace  | `MONO` | 0 to 1       | 0       | Sans (natural-width) to Mono (fixed-width)                      |
 | Casual     | `CASL` | 0 to 1       | 0       | Linear to Casual                                                |
-| Weight     | `wght` | 300 to 900   | 300     | Light to Heavy. Can be defined with usual font-weight property. |
+| Weight     | `wght` | 300 to 1000   | 300     | Light to ExtraBlack. Can be defined with usual font-weight property. |
 | Slant      | `slnt` | 0 to -15     | 0       | Upright (0°) to Slanted (about 15°)                             |
 | Italic     | `ital` | 0, 0.5, or 1 | 0.5     | Always roman (0), auto (0.5), or always italic (1)              |
 
@@ -105,7 +105,7 @@ Axis Definitions, Recursive
 
   *Recommended use:* The Linear style shares a similar structure to fonts classified as *lineal*, merging aspects of humanist sans with rationalized, compact, flat-sided letterforms. This regular, familiar structure makes it appropriate for long-form text requiring focus (e.g. paragraphs, full code documents, and punchy headlines). The Casual style is inspired by single-stroke casual signpainting, but drawn for small sizes. It is most useful in shorter-form text where a warm and inviting tone is desired (e.g. blog post headlines, store signage, and computer terminals).
 
-- **Weight** `wght` - 300 to 900. The overall thickness of letters and the darkness of text composed with them. Notably, in Recursive, the weight axis does not affect glyph width. A bold weight takes the same amount of space as a light weight, even at in proportional styles of the `MONO` axis.
+- **Weight** `wght` - 300 to 1000. The overall thickness of letters and the darkness of text composed with them. Notably, in Recursive, the weight axis does not affect glyph width. A bold weight takes the same amount of space as a light weight, even at in proportional styles of the `MONO` axis.
 
   *Recommended use:* Differences in weight can provide emphasis in text, show user interaction, or adjust the tone of communication. For light text on dark backgrounds, 400 (“Regular”) tends to be appropriate for text and code. For dark text on a light background, it can be beneficial to adjust the weight upwards to 500 (“Medium”).
 
