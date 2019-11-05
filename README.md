@@ -72,10 +72,10 @@ In code editors like VS Code and Atom, you must use a string to set your preferr
 
 | Style           | Font name for VS Code seetings   | Recommended use case                             |
 | --------------- | -------------------------------- | ------------------------------------------------ |
-| Linear Regular  | `RecursiveMonoB_022-LnrMd`       | General use                                      |
-| Linear Medium   | `RecursiveMonoB_022-LnrMd`       | Light themes                                     |
-| Casual Regular  | `RecursiveMonoB_022-CslRg`       | General, with more personality (try in terminal) |
-| Casual Regular  | `RecursiveMonoB_022-CslRg`       | With more personality, Light themes              |
+| Linear Regular  | `RecursiveMonoB_020-LnrMd`       | General use                                      |
+| Linear Medium   | `RecursiveMonoB_020-LnrMd`       | Light themes                                     |
+| Casual Regular  | `RecursiveMonoB_020-CslRg`       | General, with more personality (try in terminal) |
+| Casual Regular  | `RecursiveMonoB_020-CslRg`       | With more personality, Light themes              |
 
 The `B_020` in these name string represents the current beta release version. It's possible this has shifted (I am releasing often at this point), so check what the release notes say.
 
