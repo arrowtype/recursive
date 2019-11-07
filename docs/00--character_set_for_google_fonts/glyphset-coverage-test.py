@@ -34,7 +34,11 @@ def makeFile(data, fontPath):
         file.write(data)
         print('saved to ', str(path)) 
 
-# def convertUnicodeIntToHex(codepoint):
+def convertUnicodeIntToHex(codepoint):
+    hexString = str(hex(codepoint)).replace('0x','').upper()
+    print(hexString)
+    hexVal = f"0x{hexString.rjust(4,'0')}"
+    return hexVal
 
 
 def main():
@@ -58,21 +62,27 @@ def main():
             if int(codepoint,16) in cmap:
                 pass
             else:
-                missing = f"- [ ] `{codepoint}` {chr(int(codepoint,16))} {getUnicodeName(chr(int(codepoint,16)))}"
-                print(missing)
-                unicodeDiffs += f"{missing}\n"
+                if codepoint == '0x000D':
+                    missing = f"- [ ] `{codepoint}`   carriage return"
+                    print(missing)
+                    unicodeDiffs += f"{missing}\n"
+                else:
+                    missing = f"- [ ] `{codepoint}` {chr(int(codepoint,16))} {getUnicodeName(chr(int(codepoint,16)))}"
+                    print(missing)
+                    unicodeDiffs += f"{missing}\n"
 
-        # unicodeDiffs += "\n-----------------------------------------------\n"
-        # print("Unicodes created beyond GF Latin glyph sets:")
-        # unicodeDiffs += "Unicodes created beyond GF Latin glyph sets:\n"
-        # for codepoint in cmap:
-        #     codepointHex = convertUnicodeIntToHex(codepoint)
-        #     if codepointHex in unicodesRequired:
-        #         pass
-        #     else:
-        #         additional = f"→ `{codepointHex}` {chr(codepoint)} {getUnicodeName(chr(codepoint))}"
-        #         print(additional)
-        #         unicodeDiffs += f"{additional}\n"
+
+        unicodeDiffs += "\n-----------------------------------------------\n"
+        print("Unicodes created beyond GF Latin glyph sets:")
+        unicodeDiffs += "Unicodes created beyond GF Latin glyph sets:\n"
+        for codepoint in cmap:
+            codepointHex = convertUnicodeIntToHex(codepoint)
+            if codepointHex in unicodesRequired:
+                pass
+            else:
+                additional = f"✅ `{codepointHex}` {chr(codepoint)} {getUnicodeName(chr(codepoint))}"
+                print(additional)
+                unicodeDiffs += f"{additional}\n"
         
         makeFile(unicodeDiffs, font_path)
 
