@@ -5,7 +5,7 @@ inputFonts = getFile("select masters to add feature code to", allowsMultipleSele
 for fontPath in inputFonts:
     f = OpenFont(fontPath, showInterface=False)
 
-    oldName, newName = 'at.cap', 'at.alt'
+    oldName, newName = 'ydot.italic', 'ydotbelow.italic'
 
     for layer in f.layers:
         if oldName in f.keys():

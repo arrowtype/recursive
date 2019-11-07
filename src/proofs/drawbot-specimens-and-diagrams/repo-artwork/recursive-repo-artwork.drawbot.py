@@ -11,7 +11,8 @@ export = True
 autoOpen = True
 exportFormat = "png" # pdf, gif, mp4, jpeg, png, or bmp
 # W,H = 1280, 640 # pixels
-W,H = 1800, 900 # pixels
+# W,H = 1800, 900 # pixels
+W,H = 1200, 630 # pixels - opengraph image
 
 now = datetime.datetime.now().strftime("%Y_%m_%d-%H_%M")
 timestamp = datetime.datetime.now().strftime("%Y-%m-%d, %H:%M")
@@ -42,7 +43,7 @@ rect(0,0,W,H)
 font(fontFam)
 fill(1,1,1,0)
 
-strokeWidth(W * .00015)
+strokeWidth(W * .0025) # for larger images: 0.00015
 
 
 sizeOfFont = H*1.2
@@ -109,22 +110,23 @@ def writeText(fillColor, strokeThickness):
     fontVariations(wght=350.001, CASL=0.001, slnt=0, MONO=0.999)
     text(line2, (W/2, H/2-fontSizing*0.7), align="center")
 
-writeText(1, 4)
+writeText(1, W*0.008)
 writeText(1, 0)
 
 # ------------------------------------------------
 # add logo ---------------------------------------
 
-logoText = "@ArrowType"
-# logoText = "@"
+if W >= 1400:
+    logoText = "@ArrowType"
+    # logoText = "@"
 
-fontSizing = (W/len(logoText)*1.666666667) * 0.1
-# fontSizing = (W/10*1.666666667) * 0.1
-fontSize(fontSizing)
-tracking(1)
-fontVariations(wght=900.999, CASL=0.001, slnt=0, MONO=0.999)
-# fontVariations(wght=300.999, CASL=0.001, MONO=0.001)
-text(logoText, (W*0.5, H*0.1), align='center')
+    fontSizing = (W/len(logoText)*1.666666667) * 0.1
+    # fontSizing = (W/10*1.666666667) * 0.1
+    fontSize(fontSizing)
+    tracking(1)
+    fontVariations(wght=900.999, CASL=0.001, slnt=0, MONO=0.999)
+    # fontVariations(wght=300.999, CASL=0.001, MONO=0.001)
+    text(logoText, (W*0.5, H*0.1), align='center')
 
 # ------------------------------------------------
 # save result ------------------------------------

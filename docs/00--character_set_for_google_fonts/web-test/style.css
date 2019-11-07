@@ -1,7 +1,7 @@
 @font-face {
     font-family: "RecWeb";
     font-weight: 300 1000;
-    src: url('./recursive-MONO_CASL_wght_slnt_ital--2019_11_03-21_13.ttf') format("woff2");
+    src: url('./recursive-MONO_CASL_wght_slnt_ital--full_gsub--2019_11_05-00_13.woff2') format("woff2");
 }
 
 * {
@@ -9,6 +9,8 @@
 }
 
 .grid {
+    list-style: none;
+    padding: 0;
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(1rem, 3rem));
