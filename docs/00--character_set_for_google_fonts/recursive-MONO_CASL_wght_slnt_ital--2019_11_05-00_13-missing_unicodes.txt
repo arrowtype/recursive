@@ -122,8 +122,6 @@ Unicodes created beyond GF Latin glyph sets:
 ✅ `0x0133` ĳ latin small ligature ij
 ✅ `0x0149` ŉ latin small letter n preceded by apostrophe
 ✅ `0x019D` Ɲ latin capital letter n with left hook
-✅ `0x01B3` Ƴ latin capital letter y with hook
-✅ `0x01B4` ƴ latin small letter y with hook
 ✅ `0x0315` ̕ combining comma above right
 ✅ `0x0E3F` ฿ thai currency symbol baht
 ✅ `0x203E` ‾ overline
@@ -139,7 +137,6 @@ Unicodes created beyond GF Latin glyph sets:
 ✅ `0x2198` ↘ south east arrow
 ✅ `0x2199` ↙ south west arrow
 ✅ `0x2261` ≡ identical to
-✅ `0x2440` ⑀ ocr hook
 ✅ `0x2661` ♡ white heart suit
 ✅ `0x2665` ♥ black heart suit
 ✅ `0xE132`  (no unicode name)
@@ -148,3 +145,12 @@ Unicodes created beyond GF Latin glyph sets:
 ✅ `0xFB00` ﬀ latin small ligature ff
 ✅ `0xFB03` ﬃ latin small ligature ffi
 ✅ `0xFB04` ﬄ latin small ligature ffl
+
+## Glyphs to investigate
+
+❓ `0x01B3` Ƴ latin capital letter y with hook
+❓ `0x01B4` ƴ latin small letter y with hook
+
+## Glyphs to remove
+
+❌ `0x2440` ⑀ ocr hook
