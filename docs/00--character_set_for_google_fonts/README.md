@@ -1,103 +1,42 @@
-# Character Set for Google Fonts 
+# Character Set for Google Fonts
+
+Recursive will support the following [Google Fonts Glyph Sets](https://github.com/googlefonts/gftools/tree/ead41409bfe154e170dcde47626ce2d66a59878e/Lib/gftools/encodings/GF%20Glyph%20Sets#gf-latin-expert-271-for-984-total), with modifications as specified below:
+- Core
+- Plus
+- Pro
+- Expert
 
 ## Glyphs added that are not required
 
-- code ligatures
-- diagonal arrows
-- more prebuilt fractions
+- [Code ligatures](./code-ligatures--planning)
+- Additional currencies for many countries which use the Latin script ([more details](https://github.com/googlefonts/gftools/pull/145)) `฿ ₨ ₪ ₴ ₸ ₿`
+- Additional arrows `↔ ↕ ↖ ↗ ↘ ↙`
+- A few additional language-specific glyphs, such as Dutch ij and ijacute ligatures
+- A variable .notdef glyph (because it's cool)
 
-## Not doing
+## Glyphs that will be excluded
 
-Some glyphs will not be supported by Recursive, because they are not particularly useful in a font for code & UI. 
+Some glyphs will not be supported by Recursive because they are not useful in a font for code & UI. 
 
 - Small caps
+  - Reason: small caps are very seldom used on the web, and never used in code (that I am aware of)
 
 - Peseta, Lira, Franc
-  - outdated
+  - Reason: these currencies are outdated
 
 - Lining figures (`.lf` in Plus)
-  - All figures are lining
+  - Reason: All figures are lining, which are far more typical (and recognizable) in web & code
 
-- Traditional "discretionary ligatures"
-  - `T_h c_h c_t s_t`
-  - More useful as a decorative element in print
-  - May confuse users compared to the actual code ligatures in Recursive
+- Traditional discretionary ligatures: `T_h c_h c_t s_t`
+  - Reasion: More useful as a decorative element in print
+  - Reasion: may confuse users compared to the actual code ligatures in Recursive, which will be established under the `dlig` feature
 
+- Carriage Return
+  - Reason: [unecessary](https://github.com/googlefonts/fontbakery/issues/2677)
 
-## Known needed additions, as of Oct 21, 2019
-
-This would be more useful as a script (https://github.com/arrowtype/recursive/issues/168) ... it should be able to generate an on-the-fly report of selected fonts vs the character set we need.
-
-**Technical additions, partially-complete**
+## Technical additions, partially-complete
 - case-specific forms (need to specify an exact set)
 - Top anchors to combining accents
-
-**Digraphs**
-
-These should be one glyph-width (600 units) in Mono, and the added-up width of component glyphs in Sans.
-
-```
-0x01C4 Ǆ LATIN CAPITAL LETTER DZ WITH CARON
-0x01C5 ǅ LATIN CAPITAL LETTER D WITH SMALL LETTER Z WITH CARON
-0x01C6 ǆ LATIN SMALL LETTER DZ WITH CARON
-0x01C7 Ǉ LATIN CAPITAL LETTER LJ
-0x01C8 ǈ LATIN CAPITAL LETTER L WITH SMALL LETTER J
-0x01C9 ǉ LATIN SMALL LETTER LJ
-0x01CA Ǌ LATIN CAPITAL LETTER NJ
-0x01CB ǋ LATIN CAPITAL LETTER N WITH SMALL LETTER J
-0x01CC ǌ LATIN SMALL LETTER NJ
-```
-
-**Basic Latin Ligatures**
-
-These should be *two* glyph-widths (600 units) in Mono, and approximately the added-up width of component glyphs in Sans – but possibly improved for spacing.
-
-```
-0xFB01 ﬁ LATIN SMALL LIGATURE FI
-0xFB02 ﬂ LATIN SMALL LIGATURE FL
-f_f
-f_f_i
-f_f_l
-```
-
-**Modifiers**
-```
-0x02B9 ʹ MODIFIER LETTER PRIME
-0x02BA ʺ MODIFIER LETTER DOUBLE PRIME
-0x02BB ʻ MODIFIER LETTER TURNED COMMA
-0x02BE ʾ MODIFIER LETTER RIGHT HALF RING
-0x02BF ʿ MODIFIER LETTER LEFT HALF RING
-0x02C8 ˈ MODIFIER LETTER VERTICAL LINE
-0x02C9 ˉ MODIFIER LETTER MACRON
-0x02CA ˊ MODIFIER LETTER ACUTE ACCENT
-0x02CB ˋ MODIFIER LETTER GRAVE ACCENT
-0x02CC ˌ MODIFIER LETTER LOW VERTICAL LINE
-```
-
-**Spacing glyphs**
-```
-0x2007   FIGURE SPACE
-0x2008   PUNCTUATION SPACE
-0x2009   THIN SPACE
-0x200A   HAIR SPACE
-0x200B ​ ZERO WIDTH SPACE
-```
-
-**Accents below**
-```
-0x032E ̮ COMBINING BREVE BELOW
-0x0331 ̱ COMBINING MACRON BELOW
-```
-
-**Math / Misc Marks**
-```
-0x27E8 ⟨ MATHEMATICAL LEFT ANGLE BRACKET
-0x27E9 ⟩ MATHEMATICAL RIGHT ANGLE BRACKET
-0x2032 ′ PRIME
-0x2033 ″ DOUBLE PRIME
-0x2116 № NUMERO SIGN # one glyph-width in mono, more in Sans
-```
-
 
 ## Potential glyphs to consider adding
 
