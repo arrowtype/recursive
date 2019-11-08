@@ -149,7 +149,7 @@ unicodeNameMatches = {
     "Yacute":                "00DD",
     "Ydot":                  "1EF4",
     "Ygrave":                "1EF2",
-    "Yhook":                 "1EF6",
+    "Yhookabove":            "1EF6",
     "Ytilde":                "1EF8",
     "aacute":                "00E1",
     "abreve":                "0103",
@@ -216,7 +216,7 @@ unicodeNameMatches = {
     "yacute":                "00FD",
     "ydot":                  "1EF5",
     "ygrave":                "1EF3",
-    "yhook":                 "1EF7",
+    "yhookabove":            "1EF7",
     "ytilde":                "1EF9"
 }
 
@@ -237,7 +237,8 @@ def addUnicodeForGlyph(g):
                     print(g.name, g.unicodes, uni)
                     
 def addUnicodeForTrickyGlyphs(g):
-    if g.unicodes == ():
+    # if g.unicodes == ():
+    if g.unicodes != unicodeNameMatches.get(g.name, "unicode"):
         uni = unicodeNameMatches.get(g.name, "unicode")
         
         if uni != "unicode":

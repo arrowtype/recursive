@@ -1,21 +1,28 @@
 from vanilla.dialogs import *
     
 inputFonts = getFile("select masters to add feature code to", allowsMultipleSelection=True, fileTypes=["ufo"])
+
+renames = {
+    'Yhook': 'Yhookabove',
+    'yhook': 'yhookabove',
+    'yhook.italic': 'yhookabove.italic'
+}
     
 for fontPath in inputFonts:
     f = OpenFont(fontPath, showInterface=False)
 
-    oldName, newName = 'ydot.italic', 'ydotbelow.italic'
+    # oldName, newName = 'ydot.italic', 'ydotbelow.italic'
 
-    for layer in f.layers:
-        if oldName in f.keys():
-            layer.renameGlyph(oldName, newName, renameComponents=True, renameGroups=True, renameKerning=True, renameGlyphOrder=True)
+    for oldName, newName in renames.items():
+        for layer in f.layers:
+            if oldName in layer.keys():
+                layer.renameGlyph(oldName, newName, renameComponents=True, renameGroups=True, renameKerning=True, renameGlyphOrder=True)
 
-            print(f.info.styleName)
-            print(f"{oldName} renamed to {newName}\n")
-        else:
-            print(f.info.styleName)
-            print(f"{oldName} not in {f.info.styleName}\n")
+                print(f.info.styleName)
+                print(f"{oldName} renamed to {newName}\n")
+            else:
+                print(f.info.styleName)
+                print(f"{oldName} not in {f.info.styleName}, {layer.name}\n")
 
     f.save()
     f.close()
