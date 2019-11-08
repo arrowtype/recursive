@@ -966,10 +966,6 @@
 		<key>public.glyphOrder</key>
 		<array>
 			<string>space</string>
-			<string>figurespace</string>
-			<string>punctuationspace</string>
-			<string>thinspace</string>
-			<string>hairspace</string>
 			<string>A</string>
 			<string>Agrave</string>
 			<string>Aacute</string>
@@ -1149,9 +1145,6 @@
 			<string>Schwa</string>
 			<string>Nhookleft</string>
 			<string>Yhook</string>
-			<string>DZcaron</string>
-			<string>LJ</string>
-			<string>NJ</string>
 			<string>Germandbls</string>
 			<string>ohm</string>
 			<string>a</string>
@@ -1334,26 +1327,10 @@
 			<string>oe</string>
 			<string>tbar</string>
 			<string>yhook</string>
-			<string>dzcaron</string>
-			<string>lj</string>
-			<string>nj</string>
 			<string>dotlessj</string>
 			<string>schwa</string>
 			<string>nhookleft</string>
 			<string>pi</string>
-			<string>Dzcaron</string>
-			<string>Lj</string>
-			<string>Nj</string>
-			<string>primemod</string>
-			<string>primedblmod</string>
-			<string>commaturnedmod</string>
-			<string>ringhalfrightmod</string>
-			<string>ringhalfleftmod</string>
-			<string>verticallinemod</string>
-			<string>macronmod</string>
-			<string>acutemod</string>
-			<string>gravemod</string>
-			<string>verticallinelowmod</string>
 			<string>ordfeminine</string>
 			<string>ordmasculine</string>
 			<string>gravecomb</string>
@@ -1375,8 +1352,6 @@
 			<string>commaaccentcomb</string>
 			<string>cedillacomb</string>
 			<string>ogonekcomb</string>
-			<string>belowbrevecmb</string>
-			<string>macronbelowcmb</string>
 			<string>zero</string>
 			<string>one</string>
 			<string>two</string>
@@ -1426,8 +1401,6 @@
 			<string>bracketright</string>
 			<string>braceleft</string>
 			<string>braceright</string>
-			<string>bracketangleleft</string>
-			<string>bracketangleright</string>
 			<string>numbersign</string>
 			<string>percent</string>
 			<string>perthousand</string>
@@ -1465,11 +1438,8 @@
 			<string>section</string>
 			<string>paragraph</string>
 			<string>litre</string>
-			<string>numero</string>
 			<string>periodcentered</string>
 			<string>bullet</string>
-			<string>minute</string>
-			<string>second</string>
 			<string>overline</string>
 			<string>plus</string>
 			<string>minus</string>
@@ -1522,7 +1492,6 @@
 			<string>tenge</string>
 			<string>manat</string>
 			<string>ruble</string>
-			<string>bitcoin</string>
 			<string>asciicircum</string>
 			<string>asciitilde</string>
 			<string>acute</string>
@@ -1563,28 +1532,13 @@
 			<string>heartwhite</string>
 			<string>heartblack</string>
 			<string>hyphensoft</string>
-			<string>zerowidthspace</string>
 			<string>ijacute</string>
 			<string>IJacute</string>
-			<string>apple</string>
+			<string>bitcoin</string>
 			<string>dotlessij</string>
 			<string>horn</string>
-			<string>horncombo</string>
-			<string>liraTurkish</string>
-			<string>ogonekcombo</string>
 			<string>ringacute</string>
-			<string>rupeeIndian</string>
 			<string>slashcomb</string>
-			<string>f_f</string>
-			<string>fi</string>
-			<string>fl</string>
-			<string>f_f_i</string>
-			<string>f_f_l</string>
-			<string>_arrowhead</string>
-			<string>braceleft.cap</string>
-			<string>braceright.cap</string>
-			<string>at.alt</string>
-			<string>dollar.lower</string>
 			<string>gravecomb.case</string>
 			<string>acutecomb.case</string>
 			<string>circumflexcomb.case</string>
@@ -1609,8 +1563,11 @@
 			<string>ringacute.case</string>
 			<string>slashcomb.case</string>
 			<string>tildecombviet.case</string>
+			<string>braceleft.cap</string>
+			<string>braceright.cap</string>
 			<string>at.cap</string>
 			<string>ampersand_ampersand.code</string>
+			<string>dollar.lower</string>
 			<string>a.italic</string>
 			<string>b.italic</string>
 			<string>c.italic</string>
@@ -1662,6 +1619,49 @@
 			<string>zero.sans</string>
 			<string>one.sans</string>
 			<string>.notdef</string>
+			<string>figurespace</string>
+			<string>punctuationspace</string>
+			<string>thinspace</string>
+			<string>hairspace</string>
+			<string>DZcaron</string>
+			<string>LJ</string>
+			<string>NJ</string>
+			<string>dzcaron</string>
+			<string>lj</string>
+			<string>nj</string>
+			<string>Dzcaron</string>
+			<string>Lj</string>
+			<string>Nj</string>
+			<string>primemod</string>
+			<string>primedblmod</string>
+			<string>commaturnedmod</string>
+			<string>ringhalfrightmod</string>
+			<string>ringhalfleftmod</string>
+			<string>verticallinemod</string>
+			<string>macronmod</string>
+			<string>acutemod</string>
+			<string>gravemod</string>
+			<string>verticallinelowmod</string>
+			<string>belowbrevecmb</string>
+			<string>macronbelowcmb</string>
+			<string>bracketangleleft</string>
+			<string>bracketangleright</string>
+			<string>numero</string>
+			<string>minute</string>
+			<string>second</string>
+			<string>zerowidthspace</string>
+			<string>apple</string>
+			<string>horncombo</string>
+			<string>turkishlira</string>
+			<string>ogonekcombo</string>
+			<string>indianrupee</string>
+			<string>f_f</string>
+			<string>fi</string>
+			<string>fl</string>
+			<string>f_f_i</string>
+			<string>f_f_l</string>
+			<string>_arrowhead</string>
+			<string>at.alt</string>
 			<string>hyphen.case</string>
 			<string>endash.case</string>
 			<string>emdash.case</string>
@@ -1871,6 +1871,16 @@
 			<string>dollar_braceleft.code</string>
 			<string>ydot.italic</string>
 			<string>at.alt_case</string>
+			<string>gnrl:hyphen</string>
+			<string>bulletoperator</string>
+			<string>commercialminussign</string>
+			<string>figuredash</string>
+			<string>horizontalbar</string>
+			<string>emptyset</string>
+			<string>gravedoublecmb</string>
+			<string>invertedbrevecmb</string>
+			<string>dieresisbelowcmb</string>
+			<string>overlaystrokeshortcmb</string>
 		</array>
 	</dict>
 </plist>
