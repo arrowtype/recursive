@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="L" format="2">
+	<unicode hex="004C"/>
+	<advance width="550"/>
+	<outline>
+		<contour>
+			<point x="46" y="0" type="curve" smooth="yes"/>
+			<point x="520" y="0" type="line"/>
+			<point x="520" y="138"/>
+			<point x="457" y="210"/>
+			<point x="339" y="210" type="curve"/>
+			<point x="260" y="210" type="line"/>
+			<point x="260" y="366"/>
+			<point x="260" y="533"/>
+			<point x="260" y="689" type="curve"/>
+			<point x="260" y="696"/>
+			<point x="256" y="700"/>
+			<point x="249" y="700" type="curve"/>
+			<point x="174" y="700"/>
+			<point x="110" y="700"/>
+			<point x="35" y="700" type="curve"/>
+			<point x="35" y="667"/>
+			<point x="35" y="634"/>
+			<point x="35" y="601" type="curve"/>
+			<point x="35" y="405"/>
+			<point x="35" y="207"/>
+			<point x="35" y="11" type="curve" smooth="yes"/>
+			<point x="35" y="5"/>
+			<point x="40" y="0"/>
+		</contour>
+		<contour>
+			<point x="325" y="275" type="curve"/>
+			<point x="325" y="242.4273504274"/>
+			<point x="325" y="234"/>
+			<point x="325" y="201" type="curve"/>
+			<point x="325" y="76"/>
+			<point x="398" y="0"/>
+			<point x="520" y="0" type="curve"/>
+			<point x="520" y="114"/>
+			<point x="520" y="150.6862745098"/>
+			<point x="520" y="265" type="curve" smooth="yes"/>
+			<point x="520" y="271"/>
+			<point x="515" y="275"/>
+			<point x="509" y="275" type="curve" smooth="yes"/>
+			<point x="434" y="275"/>
+			<point x="400" y="275"/>
+		</contour>
+	</outline>
+	<anchor name="top" x="157" y="711"/>
+	<anchor name="bottom" x="277" y="-1"/>
+	<anchor name="dot" x="427" y="400"/>
+	<anchor name="caronslovak" x="427" y="600"/>
+	<anchor name="slash" x="156" y="365"/>
+	<lib>
+		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>workInProgress</string>
+			<key>com.arrowtype.numberOfIterations</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+			<key>public.markColor</key>
+			<string>0,0.25,1,0.1</string>
+		</dict>
+	</lib>
+</glyph>
