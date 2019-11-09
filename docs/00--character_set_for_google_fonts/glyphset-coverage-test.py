@@ -29,7 +29,7 @@ def getUnicodeName(c):
         return "(no unicode name)"
 
 def makeFile(data, fontPath):
-    path = fontPath.replace(".ttf","-missing_unicodes.txt")
+    path = fontPath.replace(".ttf","-missing_unicodes.txt").replace(" ", "_")
     with open(path, 'w') as file:
         file.write(data)
         print('saved to ', str(path)) 
