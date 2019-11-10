@@ -25,6 +25,6 @@ for glyphName in glyphsInGroups.keys():
 print(font.layers[0].keys())
 
 ## check quantities
-# for key, value in glyphsInGroups.items():
-#     if value > 0:
-#         print(key, value)
+for key, value in glyphsInGroups.items():
+    if value > 2:
+        print(key, value)
