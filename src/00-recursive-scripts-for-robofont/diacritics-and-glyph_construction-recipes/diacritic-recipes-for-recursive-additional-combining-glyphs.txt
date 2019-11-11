@@ -4,27 +4,26 @@
 
 # double grave
 
-agravedouble=a+gravedoublecmb@top
-egravedouble=e+gravedoublecmb@top
-igravedouble=dotlessi+gravedoublecmb@top
-ogravedouble=o+gravedoublecmb@top
-rgravedouble=r+gravedoublecmb@top
-ugravedouble=u+gravedoublecmb@top
-# egravedouble.italic=e.italic+gravedoublecmb@top
-# igravedouble.italic=dotlessi.italic+gravedoublecmb@top
-# igravedouble.mono=dotlessi.mono+gravedoublecmb@top
-# igravedouble.sans=dotlessi.sans+gravedoublecmb@top
-# rgravedouble.italic=r.italic+gravedoublecmb@top
-# ugravedouble.italic=u.italic+gravedoublecmb@top
-# rgravedouble.mono=r.mono+gravedoublecmb@top
+agravedbl=a+gravedoublecmb@top
+egravedbl=e+gravedoublecmb@top
+igravedbl=dotlessi+gravedoublecmb@top
+ogravedbl=o+gravedoublecmb@top
+rgravedbl=r+gravedoublecmb@top
+ugravedbl=u+gravedoublecmb@top
+egravedbl.italic=e.italic+gravedoublecmb@top
+igravedbl.italic=dotlessi.italic+gravedoublecmb@top
+igravedbl.mono=dotlessi.mono+gravedoublecmb@top
+rgravedbl.italic=r.italic+gravedoublecmb@top
+ugravedbl.italic=u.italic+gravedoublecmb@top
+rgravedbl.mono=r.mono+gravedoublecmb@top
 
 
-Agravedouble=A+gravedoublecmb.case@top
-Egravedouble=E+gravedoublecmb.case@top
-Igravedouble=I+gravedoublecmb.case@top
-Ogravedouble=O+gravedoublecmb.case@top
-Rgravedouble=R+gravedoublecmb.case@top
-Ugravedouble=U+gravedoublecmb.case@top
+Agravedbl=A+gravedoublecmb.case@top
+Egravedbl=E+gravedoublecmb.case@top
+Igravedbl=I+gravedoublecmb.case@top
+Ogravedbl=O+gravedoublecmb.case@top
+Rgravedbl=R+gravedoublecmb.case@top
+Ugravedbl=U+gravedoublecmb.case@top
 
 
 
@@ -38,13 +37,12 @@ iinvertedbreve=dotlessi+invertedbrevecmb@top
 oinvertedbreve=o+invertedbrevecmb@top
 rinvertedbreve=r+invertedbrevecmb@top
 uinvertedbreve=u+invertedbrevecmb@top
-# einvertedbreve.italic=e.italic+invertedbrevecmb@top
-# iinvertedbreve.italic=dotlessi.italic+invertedbrevecmb@top
-# iinvertedbreve.mono=dotlessi.mono+invertedbrevecmb@top
-# iinvertedbreve.sans=dotlessi.sans+invertedbrevecmb@top
-# rinvertedbreve.italic=r.italic+invertedbrevecmb@top
-# uinvertedbreve.italic=u.italic+invertedbrevecmb@top
-# rinvertedbreve.mono=r.mono+invertedbrevecmb@top
+einvertedbreve.italic=e.italic+invertedbrevecmb@top
+iinvertedbreve.italic=dotlessi.italic+invertedbrevecmb@top
+iinvertedbreve.mono=dotlessi.mono+invertedbrevecmb@top
+rinvertedbreve.italic=r.italic+invertedbrevecmb@top
+uinvertedbreve.italic=u.italic+invertedbrevecmb@top
+rinvertedbreve.mono=r.mono+invertedbrevecmb@top
 
 
 Ainvertedbreve=A+invertedbrevecmb.case@top
@@ -70,9 +68,8 @@ Odieresismacron=O+dieresiscomb.case@top+macroncomb.case@top
 # dieresis and acute
 
 idieresisacute=dotlessi+dieresiscomb@top+acutecomb.case@top
-# idieresisacute.italic=dotlessi.italic+dieresiscomb@top+acutecomb.case@top
-# idieresisacute.mono=dotlessi.mono+dieresiscomb@top+acutecomb.case@top
-# idieresisacute.sans=dotlessi.sans+dieresiscomb@top+acutecomb.case@top
+idieresisacute.italic=dotlessi.italic+dieresiscomb@top+acutecomb.case@top
+idieresisacute.mono=dotlessi.mono+dieresiscomb@top+acutecomb.case@top
 
 
 Idieresisacute=I+dieresiscomb.case@top+acutecomb.case@top
@@ -111,9 +108,9 @@ Otildedieresis=O+tildecomb.case@top+dieresiscomb.case@top
 
 # dot above and macron
 
-odotaccentmacron=o+dotaccentcomb@top+macroncomb@top
+odotmacron=o+dotaccentcomb@top+macroncomb@top
 
-Odotaccentmacron=O+dotaccentcomb.case@top+macroncomb.case@top
+Odotmacron=O+dotaccentcomb.case@top+macroncomb.case@top
 
 
 ############################
@@ -122,7 +119,7 @@ Odotaccentmacron=O+dotaccentcomb.case@top+macroncomb.case@top
 
 emacrongrave=e+macroncomb@top+gravecomb.case@top
 omacrongrave=o+macroncomb@top+gravecomb.case@top
-# emacrongrave.italic=e.italic+macroncomb@top+gravecomb.case@top
+emacrongrave.italic=e.italic+macroncomb@top+gravecomb.case@top
 
 Emacrongrave=E+macroncomb.case@top+gravecomb.case@top
 Omacrongrave=O+macroncomb.case@top+gravecomb.case@top
@@ -134,7 +131,7 @@ Omacrongrave=O+macroncomb.case@top+gravecomb.case@top
 
 emacronacute=e+macroncomb@top+acutecomb.case@top
 omacronacute=o+macroncomb@top+acutecomb.case@top
-# emacronacute.italic=e.italic+macroncomb@top+acutecomb.case@top
+emacronacute.italic=e.italic+macroncomb@top+acutecomb.case@top
 
 Emacronacute=E+macroncomb.case@top+acutecomb.case@top
 Omacronacute=O+macroncomb.case@top+acutecomb.case@top
@@ -164,31 +161,32 @@ Ccedillaacute=C+cedillacomb.case@bottom+acutecomb.case@C:top
 
 # cedilla and breve
 
-ecedillabreve=e+cedillacomb@bottom+brevecomb@c:top
-# ecedillabreve.italic=e.italic+cedillacomb@bottom+brevecomb@c:top
+ecedillabreve=e+cedillacomb@bottom+brevecomb@e:top
+ecedillabreve.italic=e.italic+cedillacomb@bottom+brevecomb@e.italic:top
 
 
-Ecedillabreve=E+cedillacomb.case@bottom+brevecomb.case@C:top
+Ecedillabreve=E+cedillacomb.case@bottom+brevecomb.case@E:top
 
 
 ############################
 
 # dot above
 
-ndotabove=n+dotaccentcomb@top
-sdotabove=s+dotaccentcomb@top
-ydotabove=y+dotaccentcomb@top
-idotaccent=dotlessi+dotaccentcomb@top
-# ndotabove.italic=n.italic+dotaccentcomb@top
-# sdotabove.italic=s.italic+dotaccentcomb@top
-# ydotabove.italic=y.italic+dotaccentcomb@top
-# idotaccent.italic=dotlessi.italic+dotaccentcomb@top
-# idotaccent.mono=dotlessi.mono+dotaccentcomb@top
-# idotaccent.sans=dotlessi.sans+dotaccentcomb@top
+ndot=n+dotaccentcomb@top
+sdot=s+dotaccentcomb@top
+ydot=y+dotaccentcomb@top
+idot=dotlessi+dotaccentcomb@top
+ndot.italic=n.italic+dotaccentcomb@top
+sdot.italic=s.italic+dotaccentcomb@top
+ydot.italic=y.italic+dotaccentcomb@top
+idot.italic=dotlessi.italic+dotaccentcomb@top
+idot.mono=dotlessi.mono+dotaccentcomb@top
 
 
-Ndotabove=N+dotaccentcomb.case@top
-Sdotabove=S+dotaccentcomb.case@top
+Ndot=N+dotaccentcomb.case@top
+Sdot=S+dotaccentcomb.case@top
+Ydot=Y+dotaccentcomb.case@top
+Idotabove=I+dotaccentcomb.case@top
 
 
 ############################
@@ -204,16 +202,16 @@ rdotbelow=r+dotbelowcomb@bottom
 sdotbelow=s+dotbelowcomb@bottom
 tdotbelow=t+dotbelowcomb@bottom
 zdotbelow=z+dotbelowcomb@bottom
-# ddotbelow.italic=d.italic+dotbelowcomb@bottom
-# hdotbelow.italic=h.italic+dotbelowcomb@bottom
-# ldotbelow.italic=l.italic+dotbelowcomb@bottom
-# ldotbelow.sans=l.sans+dotbelowcomb@bottom
-# ldotbelow.mono=l.mono+dotbelowcomb@bottom
-# mdotbelow.italic=m.italic+dotbelowcomb@bottom
-# ndotbelow.italic=n.italic+dotbelowcomb@bottom
-# rdotbelow.italic=r.italic+dotbelowcomb@bottom
-# sdotbelow.italic=s.italic+dotbelowcomb@bottom
-# zdotbelow.italic=z.italic+dotbelowcomb@bottom
+ddotbelow.italic=d.italic+dotbelowcomb@bottom
+hdotbelow.italic=h.italic+dotbelowcomb@bottom
+ldotbelow.italic=l.italic+dotbelowcomb@bottom
+ldotbelow.sans=l.sans+dotbelowcomb@bottom
+ldotbelow.mono=l.mono+dotbelowcomb@bottom
+mdotbelow.italic=m.italic+dotbelowcomb@bottom
+ndotbelow.italic=n.italic+dotbelowcomb@bottom
+rdotbelow.italic=r.italic+dotbelowcomb@bottom
+sdotbelow.italic=s.italic+dotbelowcomb@bottom
+zdotbelow.italic=z.italic+dotbelowcomb@bottom
 
 Ddotbelow=D+dotbelowcomb.case@bottom
 Hdotbelow=H+dotbelowcomb.case@bottom
@@ -235,12 +233,12 @@ llinebelow=l+macronbelowcmb@bottom
 nlinebelow=n+macronbelowcmb@bottom
 rlinebelow=r+macronbelowcmb@bottom
 tlinebelow=t+macronbelowcmb@bottom
-# dlinebelow.italic=d.italic+macronbelowcmb@bottom
-# llinebelow.italic=l.italic+macronbelowcmb@bottom
-# llinebelow.sans=l.sans+macronbelowcmb@bottom
-# llinebelow.mono=l.mono+macronbelowcmb@bottom
-# nlinebelow.italic=n.italic+macronbelowcmb@bottom
-# rlinebelow.italic=r.italic+macronbelowcmb@bottom
+dlinebelow.italic=d.italic+macronbelowcmb@bottom
+llinebelow.italic=l.italic+macronbelowcmb@bottom
+llinebelow.sans=l.sans+macronbelowcmb@bottom
+llinebelow.mono=l.mono+macronbelowcmb@bottom
+nlinebelow.italic=n.italic+macronbelowcmb@bottom
+rlinebelow.italic=r.italic+macronbelowcmb@bottom
 
 Dlinebelow=D+macronbelowcmb@bottom
 Llinebelow=L+macronbelowcmb@bottom
@@ -254,8 +252,8 @@ Tlinebelow=T+macronbelowcmb@bottom
 # macron
 
 gmacron=g+macroncomb@top
-# gmacron.italic=g.italic+macroncomb@top
-# gmacron.mono=g.mono+macroncomb@top
+gmacron.italic=g.italic+macroncomb@top
+gmacron.mono=g.mono+macroncomb@top
 
 Gmacron=G+macroncomb@top
 
@@ -264,10 +262,10 @@ Gmacron=G+macroncomb@top
 
 # breve below
 
-hbrevebelow=h+belowbrevecomb@bottom
-# hbrevebelow.italic=h.italic+belowbrevecomb@bottom
+hbrevebelow=h+belowbrevecmb@bottom
+hbrevebelow.italic=h.italic+belowbrevecmb@bottom
 
-Hbrevebelow=H+belowbrevecomb@bottom
+Hbrevebelow=H+belowbrevecmb@bottom
 
 
 ############################
@@ -283,18 +281,18 @@ Sacutedotaccent=S+acutecomb.case@dot+dotaccentcomb.case@dot
 
 # caron and dot above
 
-scarondotaccent=s+caroncomb@top+dotaccentcomb@dot
+scarondot=s+caroncomb@top+dotaccentcomb@dot
 
-Scarondotaccent=S+caroncomb.case@top+dotaccentcomb.case@dot
+Scarondot=S+caroncomb.case@top+dotaccentcomb.case@dot
 
 
 ############################
 
 # dot below and dot above
 
-sdotbelowdotaccent=s+dotbelowcomb@bottom+dotaccentcomb@s:top
+sdotbelowdotabove=s+dotbelowcomb@bottom+dotaccentcomb@s:top
 
-Sdotbelowdotaccent=S+dotbelowcomb.case@bottom+dotaccentcomb.case@S:top
+Sdotbelowdotabove=S+dotbelowcomb.case@bottom+dotaccentcomb.case@S:top
 
 ############################
 
