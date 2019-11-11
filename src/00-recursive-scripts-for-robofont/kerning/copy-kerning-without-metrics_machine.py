@@ -3,6 +3,8 @@
 
     python "<path>/copy-kerning-without-metrics_machine.py" "<path>/Recursive Sans-Casual B.ufo"
 
+    Required argument: UFO path to copy kerning & groups from
+
     Assumptions: 
         - You have a single group of UFOs
         - The UFO path you feed in contains both groups.plist and kerning.plist
@@ -14,9 +16,21 @@ import sys
 import os
 import shutil 
 
-ufoToCopyFrom = sys.argv[1]
+try:
+    ufoToCopyFrom = sys.argv[1]
+except IndexError:
+    print("At least one arg required: path of UFO to copy from")
 
-head, tail = os.path.split(ufoToCopyFrom)
+
+
+try:
+    if sys.argv[2]:
+        print("Copying from UFO to UFOs in another Directory")
+        dirToCopyTo = sys.argv[2]
+        ufosToCopyTo = next(os.walk(dirToCopyTo))[1]
+except IndexError:
+    print("Copying from UFO to UFOs in the same Directory")
+    head, tail = os.path.split(ufoToCopyFrom)
 
 ufosToCopyTo = next(os.walk(head))[1]
 
