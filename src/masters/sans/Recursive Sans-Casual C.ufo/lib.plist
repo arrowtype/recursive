@@ -999,6 +999,8 @@
 			<string>Abreve</string>
 			<string>Aogonek</string>
 			<string>Aringacute</string>
+			<string>Agravedbl</string>
+			<string>Ainvertedbreve</string>
 			<string>Adotbelow</string>
 			<string>Ahook</string>
 			<string>Acircumflexacute</string>
@@ -1018,8 +1020,11 @@
 			<string>Ccircumflex</string>
 			<string>Cdotaccent</string>
 			<string>Ccaron</string>
+			<string>Ccedillaacute</string>
 			<string>D</string>
 			<string>Dcaron</string>
+			<string>Ddotbelow</string>
+			<string>Dlinebelow</string>
 			<string>E</string>
 			<string>Egrave</string>
 			<string>Eacute</string>
@@ -1030,6 +1035,11 @@
 			<string>Edotaccent</string>
 			<string>Eogonek</string>
 			<string>Ecaron</string>
+			<string>Egravedbl</string>
+			<string>Einvertedbreve</string>
+			<string>Emacrongrave</string>
+			<string>Emacronacute</string>
+			<string>Ecedillabreve</string>
 			<string>Edotbelow</string>
 			<string>Ehook</string>
 			<string>Etilde</string>
@@ -1045,8 +1055,11 @@
 			<string>Gdotaccent</string>
 			<string>Gcommaaccent</string>
 			<string>Gcaron</string>
+			<string>Gmacron</string>
 			<string>H</string>
 			<string>Hcircumflex</string>
+			<string>Hdotbelow</string>
+			<string>Hbrevebelow</string>
 			<string>I</string>
 			<string>Igrave</string>
 			<string>Iacute</string>
@@ -1057,6 +1070,9 @@
 			<string>Ibreve</string>
 			<string>Iogonek</string>
 			<string>Idotaccent</string>
+			<string>Igravedbl</string>
+			<string>Iinvertedbreve</string>
+			<string>Idieresisacute</string>
 			<string>Ihook</string>
 			<string>Idotbelow</string>
 			<string>J</string>
@@ -1067,12 +1083,18 @@
 			<string>Lacute</string>
 			<string>Lcommaaccent</string>
 			<string>Lcaron</string>
+			<string>Ldotbelow</string>
+			<string>Llinebelow</string>
 			<string>M</string>
+			<string>Mdotbelow</string>
 			<string>N</string>
 			<string>Ntilde</string>
 			<string>Nacute</string>
 			<string>Ncommaaccent</string>
 			<string>Ncaron</string>
+			<string>Ndot</string>
+			<string>Ndotbelow</string>
+			<string>Nlinebelow</string>
 			<string>O</string>
 			<string>Ograve</string>
 			<string>Oacute</string>
@@ -1084,6 +1106,15 @@
 			<string>Ohungarumlaut</string>
 			<string>Ohorn</string>
 			<string>Oogonek</string>
+			<string>Ogravedbl</string>
+			<string>Oinvertedbreve</string>
+			<string>Odieresismacron</string>
+			<string>Otildemacron</string>
+			<string>Odotmacron</string>
+			<string>Otildeacute</string>
+			<string>Otildedieresis</string>
+			<string>Omacrongrave</string>
+			<string>Omacronacute</string>
 			<string>Odotbelow</string>
 			<string>Ohook</string>
 			<string>Ocircumflexacute</string>
@@ -1102,16 +1133,27 @@
 			<string>Racute</string>
 			<string>Rcommaaccent</string>
 			<string>Rcaron</string>
+			<string>Rgravedbl</string>
+			<string>Rinvertedbreve</string>
+			<string>Rdotbelow</string>
+			<string>Rlinebelow</string>
 			<string>S</string>
 			<string>Sacute</string>
 			<string>Scircumflex</string>
 			<string>Scedilla</string>
 			<string>Scaron</string>
 			<string>Scommaaccent</string>
+			<string>Sdot</string>
+			<string>Sdotbelow</string>
+			<string>Sacutedotaccent</string>
+			<string>Scarondot</string>
+			<string>Sdotbelowdotabove</string>
 			<string>T</string>
 			<string>Tcedilla</string>
 			<string>Tcaron</string>
 			<string>Tcommaaccent</string>
+			<string>Tdotbelow</string>
+			<string>Tlinebelow</string>
 			<string>U</string>
 			<string>Ugrave</string>
 			<string>Uacute</string>
@@ -1124,6 +1166,10 @@
 			<string>Uhungarumlaut</string>
 			<string>Uogonek</string>
 			<string>Uhorn</string>
+			<string>Ugravedbl</string>
+			<string>Uinvertedbreve</string>
+			<string>Utildeacute</string>
+			<string>Umacrondieresis</string>
 			<string>Udotbelow</string>
 			<string>Uhook</string>
 			<string>Uhornacute</string>
@@ -1143,6 +1189,7 @@
 			<string>Ycircumflex</string>
 			<string>Ydieresis</string>
 			<string>Ymacron</string>
+			<string>Ydot</string>
 			<string>Ygrave</string>
 			<string>Ydotbelow</string>
 			<string>Yhookabove</string>
@@ -1151,6 +1198,7 @@
 			<string>Zacute</string>
 			<string>Zdotaccent</string>
 			<string>Zcaron</string>
+			<string>Zdotbelow</string>
 			<string>AE</string>
 			<string>AEacute</string>
 			<string>Eth</string>
@@ -1183,6 +1231,8 @@
 			<string>abreve</string>
 			<string>aogonek</string>
 			<string>aringacute</string>
+			<string>agravedbl</string>
+			<string>ainvertedbreve</string>
 			<string>adotbelow</string>
 			<string>ahook</string>
 			<string>acircumflexacute</string>
@@ -1202,8 +1252,11 @@
 			<string>ccircumflex</string>
 			<string>cdotaccent</string>
 			<string>ccaron</string>
+			<string>ccedillaacute</string>
 			<string>d</string>
 			<string>dcaron</string>
+			<string>ddotbelow</string>
+			<string>dlinebelow</string>
 			<string>e</string>
 			<string>egrave</string>
 			<string>eacute</string>
@@ -1214,6 +1267,11 @@
 			<string>edotaccent</string>
 			<string>eogonek</string>
 			<string>ecaron</string>
+			<string>egravedbl</string>
+			<string>einvertedbreve</string>
+			<string>emacrongrave</string>
+			<string>emacronacute</string>
+			<string>ecedillabreve</string>
 			<string>edotbelow</string>
 			<string>ehook</string>
 			<string>etilde</string>
@@ -1229,8 +1287,11 @@
 			<string>gdotaccent</string>
 			<string>gcommaaccent</string>
 			<string>gcaron</string>
+			<string>gmacron</string>
 			<string>h</string>
 			<string>hcircumflex</string>
+			<string>hdotbelow</string>
+			<string>hbrevebelow</string>
 			<string>i</string>
 			<string>igrave</string>
 			<string>iacute</string>
@@ -1240,6 +1301,9 @@
 			<string>imacron</string>
 			<string>ibreve</string>
 			<string>iogonek</string>
+			<string>igravedbl</string>
+			<string>iinvertedbreve</string>
+			<string>idieresisacute</string>
 			<string>ihook</string>
 			<string>idotbelow</string>
 			<string>j</string>
@@ -1250,12 +1314,18 @@
 			<string>lacute</string>
 			<string>lcommaaccent</string>
 			<string>lcaron</string>
+			<string>ldotbelow</string>
+			<string>llinebelow</string>
 			<string>m</string>
+			<string>mdotbelow</string>
 			<string>n</string>
 			<string>ntilde</string>
 			<string>nacute</string>
 			<string>ncommaaccent</string>
 			<string>ncaron</string>
+			<string>ndot</string>
+			<string>ndotbelow</string>
+			<string>nlinebelow</string>
 			<string>o</string>
 			<string>ograve</string>
 			<string>oacute</string>
@@ -1267,6 +1337,15 @@
 			<string>ohungarumlaut</string>
 			<string>ohorn</string>
 			<string>oogonek</string>
+			<string>ogravedbl</string>
+			<string>oinvertedbreve</string>
+			<string>odieresismacron</string>
+			<string>otildemacron</string>
+			<string>odotmacron</string>
+			<string>otildeacute</string>
+			<string>otildedieresis</string>
+			<string>omacrongrave</string>
+			<string>omacronacute</string>
 			<string>odotbelow</string>
 			<string>ohook</string>
 			<string>ocircumflexacute</string>
@@ -1285,16 +1364,28 @@
 			<string>racute</string>
 			<string>rcommaaccent</string>
 			<string>rcaron</string>
+			<string>rgravedbl</string>
+			<string>rinvertedbreve</string>
+			<string>rdotbelow</string>
+			<string>rlinebelow</string>
 			<string>s</string>
 			<string>sacute</string>
 			<string>scircumflex</string>
 			<string>scedilla</string>
 			<string>scaron</string>
 			<string>scommaaccent</string>
+			<string>sdot</string>
+			<string>sdotbelow</string>
+			<string>sacutedotaccent</string>
+			<string>scarondot</string>
+			<string>sdotbelowdotabove</string>
 			<string>t</string>
 			<string>tcedilla</string>
 			<string>tcaron</string>
 			<string>tcommaaccent</string>
+			<string>tdotbelow</string>
+			<string>tlinebelow</string>
+			<string>tdieresis</string>
 			<string>u</string>
 			<string>ugrave</string>
 			<string>uacute</string>
@@ -1307,6 +1398,10 @@
 			<string>uhungarumlaut</string>
 			<string>uogonek</string>
 			<string>uhorn</string>
+			<string>ugravedbl</string>
+			<string>uinvertedbreve</string>
+			<string>utildeacute</string>
+			<string>umacrondieresis</string>
 			<string>udotbelow</string>
 			<string>uhook</string>
 			<string>uhornacute</string>
@@ -1326,6 +1421,7 @@
 			<string>ydieresis</string>
 			<string>ycircumflex</string>
 			<string>ymacron</string>
+			<string>ydot</string>
 			<string>ygrave</string>
 			<string>ydotbelow</string>
 			<string>yhookabove</string>
@@ -1334,6 +1430,7 @@
 			<string>zacute</string>
 			<string>zdotaccent</string>
 			<string>zcaron</string>
+			<string>zdotbelow</string>
 			<string>germandbls</string>
 			<string>ae</string>
 			<string>aeacute</string>
@@ -1598,9 +1695,12 @@
 			<string>ijacute</string>
 			<string>IJacute</string>
 			<string>apple</string>
+			<string>Idotabove</string>
 			<string>dotlessij</string>
 			<string>horn</string>
 			<string>horncombo</string>
+			<string>idot</string>
+			<string>nhookleft</string>
 			<string>ogonekcombo</string>
 			<string>ringacute</string>
 			<string>slashcomb</string>
@@ -1612,6 +1712,7 @@
 			<string>_arrowhead</string>
 			<string>braceleft.cap</string>
 			<string>braceright.cap</string>
+			<string>at.cap</string>
 			<string>at.alt</string>
 			<string>at.simple</string>
 			<string>at.alt_case</string>
@@ -1627,6 +1728,8 @@
 			<string>ringcomb.case</string>
 			<string>hungarumlautcomb.case</string>
 			<string>caroncomb.case</string>
+			<string>gravedoublecmb.case</string>
+			<string>invertedbrevecmb.case</string>
 			<string>commaturnedabovecomb.case</string>
 			<string>commaaboverightcomb.case</string>
 			<string>horncomb.case</string>
@@ -1689,6 +1792,8 @@
 			<string>cdotaccent.italic</string>
 			<string>ccaron.italic</string>
 			<string>d.italic</string>
+			<string>ddotbelow.italic</string>
+			<string>dlinebelow.italic</string>
 			<string>e.italic</string>
 			<string>egrave.italic</string>
 			<string>eacute.italic</string>
@@ -1698,6 +1803,11 @@
 			<string>ebreve.italic</string>
 			<string>edotaccent.italic</string>
 			<string>ecaron.italic</string>
+			<string>egravedbl.italic</string>
+			<string>einvertedbreve.italic</string>
+			<string>emacrongrave.italic</string>
+			<string>emacronacute.italic</string>
+			<string>ecedillabreve.italic</string>
 			<string>edotbelow.italic</string>
 			<string>ehook.italic</string>
 			<string>etilde.italic</string>
@@ -1713,8 +1823,11 @@
 			<string>gdotaccent.italic</string>
 			<string>gcommaaccent.italic</string>
 			<string>gcaron.italic</string>
+			<string>gmacron.italic</string>
 			<string>h.italic</string>
 			<string>hcircumflex.italic</string>
+			<string>hdotbelow.italic</string>
+			<string>hbrevebelow.italic</string>
 			<string>i.italic</string>
 			<string>igrave.italic</string>
 			<string>iacute.italic</string>
@@ -1724,6 +1837,9 @@
 			<string>imacron.italic</string>
 			<string>ibreve.italic</string>
 			<string>iogonek.italic</string>
+			<string>igravedbl.italic</string>
+			<string>iinvertedbreve.italic</string>
+			<string>idieresisacute.italic</string>
 			<string>ihook.italic</string>
 			<string>idotbelow.italic</string>
 			<string>j.italic</string>
@@ -1733,22 +1849,34 @@
 			<string>l.italic</string>
 			<string>lacute.italic</string>
 			<string>lcommaaccent.italic</string>
+			<string>ldotbelow.italic</string>
+			<string>llinebelow.italic</string>
 			<string>m.italic</string>
+			<string>mdotbelow.italic</string>
 			<string>n.italic</string>
 			<string>ntilde.italic</string>
 			<string>nacute.italic</string>
 			<string>ncommaaccent.italic</string>
 			<string>ncaron.italic</string>
+			<string>ndot.italic</string>
+			<string>ndotbelow.italic</string>
+			<string>nlinebelow.italic</string>
 			<string>r.italic</string>
 			<string>racute.italic</string>
 			<string>rcommaaccent.italic</string>
 			<string>rcaron.italic</string>
+			<string>rgravedbl.italic</string>
+			<string>rinvertedbreve.italic</string>
+			<string>rdotbelow.italic</string>
+			<string>rlinebelow.italic</string>
 			<string>s.italic</string>
 			<string>sacute.italic</string>
 			<string>scircumflex.italic</string>
 			<string>scedilla.italic</string>
 			<string>scaron.italic</string>
 			<string>scommaaccent.italic</string>
+			<string>sdot.italic</string>
+			<string>sdotbelow.italic</string>
 			<string>u.italic</string>
 			<string>ugrave.italic</string>
 			<string>uacute.italic</string>
@@ -1761,6 +1889,8 @@
 			<string>uhungarumlaut.italic</string>
 			<string>uogonek.italic</string>
 			<string>uhorn.italic</string>
+			<string>ugravedbl.italic</string>
+			<string>uinvertedbreve.italic</string>
 			<string>udotbelow.italic</string>
 			<string>uhook.italic</string>
 			<string>uhornacute.italic</string>
@@ -1780,6 +1910,7 @@
 			<string>ydieresis.italic</string>
 			<string>ycircumflex.italic</string>
 			<string>ymacron.italic</string>
+			<string>ydot.italic</string>
 			<string>ygrave.italic</string>
 			<string>ydotbelow.italic</string>
 			<string>yhookabove.italic</string>
@@ -1788,6 +1919,7 @@
 			<string>zacute.italic</string>
 			<string>zdotaccent.italic</string>
 			<string>zcaron.italic</string>
+			<string>zdotbelow.italic</string>
 			<string>dotlessi.italic</string>
 			<string>lslash.italic</string>
 			<string>napostrophe.italic</string>
@@ -1797,6 +1929,7 @@
 			<string>dotlessj.italic</string>
 			<string>Lj.italic</string>
 			<string>Nj.italic</string>
+			<string>idot.italic</string>
 			<string>f_f.italic</string>
 			<string>f_f_i.italic</string>
 			<string>f_f_l.italic</string>
@@ -1804,6 +1937,7 @@
 			<string>fl.italic</string>
 			<string>f.mono</string>
 			<string>g.mono</string>
+			<string>gmacron.mono</string>
 			<string>i.mono</string>
 			<string>igrave.mono</string>
 			<string>iacute.mono</string>
@@ -1813,17 +1947,25 @@
 			<string>imacron.mono</string>
 			<string>ibreve.mono</string>
 			<string>iogonek.mono</string>
+			<string>igravedbl.mono</string>
+			<string>iinvertedbreve.mono</string>
+			<string>idieresisacute.mono</string>
 			<string>ihook.mono</string>
 			<string>idotbelow.mono</string>
 			<string>l.mono</string>
 			<string>lacute.mono</string>
 			<string>lcommaaccent.mono</string>
+			<string>ldotbelow.mono</string>
+			<string>llinebelow.mono</string>
 			<string>r.mono</string>
 			<string>racute.mono</string>
 			<string>rcommaaccent.mono</string>
 			<string>rcaron.mono</string>
+			<string>rgravedbl.mono</string>
+			<string>rinvertedbreve.mono</string>
 			<string>dotlessi.mono</string>
 			<string>lslash.mono</string>
+			<string>idot.mono</string>
 			<string>f_f.mono</string>
 			<string>f_f_i.mono</string>
 			<string>f_f_l.mono</string>
@@ -1873,6 +2015,8 @@
 			<string>l.sans</string>
 			<string>lacute.sans</string>
 			<string>lcommaaccent.sans</string>
+			<string>ldotbelow.sans</string>
+			<string>llinebelow.sans</string>
 			<string>lslash.sans</string>
 			<string>zero.sans</string>
 			<string>one.sans</string>
