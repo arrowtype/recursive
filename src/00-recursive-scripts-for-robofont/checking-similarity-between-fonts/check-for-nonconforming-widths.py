@@ -51,6 +51,10 @@ for file in files:
     for glyph in font:
         if glyph.width % int(widthUnit) != 0:
             badWidthGlyphs[fontName][glyph.name] = glyph.width
+        if glyph.width < 0:
+            print("\nNegative-width glyph:")
+            print(fontName)
+            print(f"{glyph.name} | {glyph.width}")
 
     for glyph in font:
         if glyph.name not in widthsDict:
