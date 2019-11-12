@@ -301,3 +301,30 @@ Sdotbelowdotabove=S+dotbelowcomb.case@bottom+dotaccentcomb.case@S:top
 tdieresis=t+dieresiscomb.case@top
 
 
+############################
+
+# miscellaneous
+
+circumflexcomb_acutecomb=circumflexcomb.case+acutecombviet.case@side
+
+circumflexcomb_gravecomb=circumflexcomb.case+gravecombviet.case@side
+
+circumflexcomb_hookabovecomb=circumflexcomb.case+hookcomb.case@side
+
+circumflexcomb_tildecomb=circumflexcomb.case+tildecombviet.case@top
+
+brevecomb_acutecomb=brevecomb.case+acutecomb.case@top
+
+brevecomb_gravecomb=brevecomb.case+gravecomb.case@top
+
+brevecomb_hookabovecomb=brevecomb.case+hookcomb.case@hook
+
+brevecomb_tildecomb=brevecomb.case+tildecombviet.case@top
+
+idotaccent=dotlessi+dotaccentcomb@top
+idotaccent.italic=dotlessi.italic+dotaccentcomb@top
+idotaccent.mono=dotlessi.mono+dotaccentcomb@top
+
+caroncomb.alt=caroncomb
+
+periodcentered.loclCAT=periodcentered
