@@ -6,7 +6,7 @@ import pprint
 
 ### SET THIS TO IGNORE GLYPHS YOU WANT TO LEAVE ALONE (e.g. experimental glyphs) ###
 
-glyphsToIgnore = "L.noserif N.tighttaper R.trap"
+glyphsToIgnore = ""
 
 ####################################################################################
 

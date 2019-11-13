@@ -7,19 +7,30 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 
 # define glyph constructions
 # e.g. equal_equal.code = equal & equal
-txt = '''\
-i=dotlessi+dotaccentcomb@top
-i.mono=dotlessi.mono+dotaccentcomb@top
-i.italic=dotlessi.italic+dotaccentcomb@top
-j=dotlessj+dotaccentcomb@top
-j.italic=dotlessj.italic+dotaccentcomb@top
-iogonek = dotlessi + ogonekcomb@ogonek + dotaccentcomb@dotlessi:top
-iogonek.mono = dotlessi.mono + ogonekcomb@ogonek + dotaccentcomb@dotlessi.mono:top
-iogonek.italic = dotlessi.italic + ogonekcomb@ogonek + dotaccentcomb@dotlessi.italic:top
-'''
+# i=dotlessi+dotaccentcomb@top
+# i.mono=dotlessi.mono+dotaccentcomb@top
+# i.italic=dotlessi.italic+dotaccentcomb@top
+# j=dotlessj+dotaccentcomb@top
+# j.italic=dotlessj.italic+dotaccentcomb@top
+# iogonek = dotlessi + ogonekcomb@ogonek + dotaccentcomb@dotlessi:top
+# iogonek.mono = dotlessi.mono + ogonekcomb@ogonek + dotaccentcomb@dotlessi.mono:top
+# iogonek.italic = dotlessi.italic + ogonekcomb@ogonek + dotaccentcomb@dotlessi.italic:top
+# txt = '''\
+# apple=.notdef|F8FF
+# '''
 
+txt = ""
+recipeFile = "/Users/stephennixon/type-repos/recursive/src/00-recursive-scripts-for-robofont/diacritics-and-glyph_construction-recipes/diacritic-recipes-for-recursive-generated-with_alts.txt"
+with open(recipeFile, 'r') as recipe:
+    for line in recipe:
+        line = line.replace(' ','')
+        if len(line) > 1:
+            txt += line
+
+print(txt)
 # get the actual glyph constructions from text
 constructions = ParseGlyphConstructionListFromString(txt)
+
 
 
 files = getFile("Select files to build glyphs in", allowsMultipleSelection=True, fileTypes=["ufo"])
@@ -32,6 +43,7 @@ for file in files:
     # iterate over all glyph constructions
     for construction in constructions:
 
+        print(construction)
         # build a construction glyph
         constructionGlyph = GlyphConstructionBuilder(construction, font)
 

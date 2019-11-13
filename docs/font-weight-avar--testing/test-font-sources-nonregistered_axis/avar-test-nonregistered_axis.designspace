@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<designspace format="4.0">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="100" maximum="900" default="100">
+      <labelname xml:lang="en">Weight</labelname>
+      <map input="100" output="10" />
+      <map input="400" output="500" />
+      <map input="700" output="530" />
+      <map input="900" output="560" />
+    </axis>
+    <axis tag="TILT" name="Tilt" minimum="-15" maximum="0" default="0">
+      <labelname xml:lang="en">Tilt</labelname>
+    </axis>
+  </axes>
+  <sources>
+    <source filename="avar-test-light.ufo" familyname="AVAR Test" stylename="Light">
+      <lib copy="1" />
+      <groups copy="1" />
+      <features copy="1" />
+      <info copy="1" />
+      <location>
+        <dimension name="Weight" xvalue="10" />
+        <dimension name="Tilt" xvalue="0" />
+      </location>
+    </source>
+    <source filename="avar-test-heavy.ufo" familyname="AVAR Test" stylename="Heavy">
+      <location>
+        <dimension name="Weight" xvalue="560" />
+        <dimension name="Tilt" xvalue="0" />
+      </location>
+    </source>
+    <source filename="avar-test-light-tilted.ufo" familyname="AVAR Test" stylename="Light">
+      <location>
+        <dimension name="Weight" xvalue="10" />
+        <dimension name="Tilt" xvalue="-15" />
+      </location>
+    </source>
+    <source filename="avar-test-heavy-tilted.ufo" familyname="AVAR Test" stylename="Heavy">
+      <location>
+        <dimension name="Weight" xvalue="560" />
+        <dimension name="Tilt" xvalue="-15" />
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance familyname="AVAR Test" stylename="Thin" filename="instances/AVAR Test-Style_1.ufo">
+      <location>
+        <dimension name="Weight" xvalue="10" />
+        <dimension name="Tilt" xvalue="0" />
+      </location>
+      <kerning />
+      <info />
+    </instance>
+    <instance familyname="AVAR Test" stylename="Regular" filename="instances/AVAR Test-Style_2.ufo">
+      <location>
+        <dimension name="Weight" xvalue="500" />
+        <dimension name="Tilt" xvalue="0" />
+      </location>
+      <kerning />
+      <info />
+    </instance>
+    <instance familyname="AVAR Test" stylename="Bold" filename="instances/AVAR Test-Style_3.ufo">
+      <location>
+        <dimension name="Weight" xvalue="530" />
+        <dimension name="Tilt" xvalue="0" />
+      </location>
+      <kerning />
+      <info />
+    </instance>
+    <instance familyname="AVAR Test" stylename="Heavy" filename="instances/AVAR Test-Style_5.ufo">
+      <location>
+        <dimension name="Weight" xvalue="560" />
+        <dimension name="Tilt" xvalue="0" />
+      </location>
+      <kerning />
+      <info />
+    </instance>
+  </instances>
+  <lib>
+    <dict>
+      <key>com.letterror.mathModelPref</key>
+      <string>previewVarLib</string>
+    </dict>
+  </lib>
+</designspace>

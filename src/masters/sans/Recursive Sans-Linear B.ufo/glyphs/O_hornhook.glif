@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="Ohornhook" format="2">
+	<unicode hex="1EDE"/>
 	<advance width="650"/>
 	<outline>
 		<component base="O"/>
-		<component base="horncombo.case" xOffset="476"/>
+		<component base="horncomb.case" xOffset="476" yOffset="-23"/>
 		<component base="hookcomb.case" xOffset="323" yOffset="20"/>
 	</outline>
 	<lib>
 		<dict>
 			<key>public.markColor</key>
-			<string>0,0,0,0.1505</string>
+			<string>0,0,0,0.5</string>
 		</dict>
 	</lib>
 </glyph>

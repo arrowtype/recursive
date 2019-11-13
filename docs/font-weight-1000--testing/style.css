@@ -1,0 +1,118 @@
+
+@font-face {
+  font-family: "recursive";
+  src: url("fonts/rec-mono_casl_wght_slnt_ital--stem_width_weights--2019_10_29-16_24.woff2");
+  font-weight: 300 1000;
+}
+
+body {
+  font-family: "recursive", fantasy;
+  margin: 0;
+}
+
+.intro {
+  padding: 1rem;
+  line-height: 1.75;
+  max-width: 90ch;
+  margin: 0 auto;
+}
+
+blockquote {
+  font-variation-settings: 'slnt' -12;
+  border-left: 1px solid blue;
+  color: #444;
+}
+
+code {
+  font-family: "recursive", fantasy;
+  font-variation-settings: 'MONO' 1, 'CASL' 1;
+  background: hsl(221, 100%, 98%);
+  border: 1px solid hsl(221, 100%, 90%);
+  border-radius: 0.125em;
+  font-weight: inherit;
+  padding: 0.125em;
+}
+
+li {
+  line-height: 2em;
+}
+
+.overlapping-test {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 100vh; */
+  font-size: 45vw;                                                                                                                                                                                                                                                                                   
+}
+
+.overlapping-test figure {
+  height: 1em;
+  align-self: center;
+  text-align: center;
+  grid-row: 1;
+  mix-blend-mode: multiply;
+  -webkit-text-stroke-width: 1px;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0.5rem;
+}
+
+.overlapping-test span {
+  line-height: .75em;
+}
+
+.overlapping-test figure:nth-child(1) {
+  grid-column: 1;
+}
+.overlapping-test figure:nth-child(2) {
+  grid-column: 2;
+}
+.overlapping-test figure:nth-child(3) {
+  grid-column: 2;
+}
+.overlapping-test figure:nth-child(4) {
+  grid-column: 3;
+}
+
+.fontweight1000 {
+  font-weight: 1000;
+  color: rgba(255,0,0,0.6);
+  -webkit-text-stroke-color:rgba(255,0,0,1);
+}
+
+
+.wght1000 {
+  font-variation-settings: 'wght' 1000;
+  color: rgba(0,0,255,0.6);
+  -webkit-text-stroke-color:rgba(0,0,255,1);
+}
+
+figcaption {
+  font-size: 0.6rem;
+  font-variation-settings: 'wght' 500;
+  color: black;
+  -webkit-text-stroke-width: 0;
+  text-align: left;
+  color: rgba(255,0,0,1);
+  white-space: nowrap;
+}
+
+.wght1000 figcaption {
+  text-align: right;
+  color: rgba(0,0,255,1);
+}
+
+/* 
+.fontweight1000:before {
+  content: 'font-weight_1000';
+  width: 200px;
+  font-size: 10px;
+  color: rgba(255,0,0,1);
+  text-align: left;
+}
+
+.wght1000:before {
+  content: "font-variation-settings: 'wght' 1000;";
+  color: rgba(0,0,255,1);
+  text-align: right;
+} */

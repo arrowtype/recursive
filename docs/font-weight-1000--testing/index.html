@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Font Weight 1000 Tests</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="intro">
+      <h1>Tests for <code>font-weight: 1000;</code></h1>
+      <p>According to the CSS spec:</p>
+      <blockquote>"values greater than or equal to 1 and less than or equal to 1000 are valid" <a href="https://drafts.csswg.org/css-fonts-4/#font-weight-numeric-values">source</a></a></blockquote>
+      <p>However, this is not yet fully supported in Firefox or Safari.</p>
+      <h2>A simple test</h2>
+      <p>The left column (red) uses <code>font-weight: 1000;</code>.</p>
+        <p>The right column (blue) uses <code>font-variation-settings: 'wght' 1000;</code>.</p> 
+        <p>The middle column should perfectly overlap (it will look purple if it does). If it doesn't, <code>font-weight: 1000;</code> doesn't work.</p>
+      <h3>Test results as of Oct 30, 2019:</h3>
+      <ul>
+        <li>In Firefox 70 & 72 on macOS: <code>font-weight</code> values above 900 is ignored and falls back to 900.</li>
+        <li>
+          In Safari on macOS: <code>font-weight</code> values up to <code>999</code> work, but <code>font-weight: 1000;</code> is marked as invalid and weight falls back to
+          <code>400</code>). However, in the latest Safari Tech Preview (Release 95 (Safari 13.1, WebKit 14609.1.7), this test works as intended.
+        </li>
+        <li>In Chrome 78 on macOS, this test works as intended.</li>
+        <li>In Edge on Windows 10, this test works as intended.</li>
+      </ul>
+    </div>
+    <div class="overlapping-test font-recursive">
+      <figure class="fontweight1000">
+        <span>a</span>
+        <figcaption>font-weight: 1000;</figcaption>
+      </figure>
+      <figure class="fontweight1000">
+        <!-- <figcaption>font-weight: 1000;</figcaption> -->
+        <span>a</span>
+      </figure>
+      <figure class="wght1000">
+        <!-- <figcaption>font-variation-settings: 'wght' 1000;</figcaption> -->
+        <span>a</span>
+      </figure>
+      <figure class="wght1000">
+        <span>a</span>
+        <figcaption>font-variation-settings: 'wght' 1000;</figcaption>
+      </figure>
+    </div>
+    <div class="intro">
+        <p>Tested with <a href="https://github.com/arrowtype/recursive">Recursive Sans & Mono</a> by Arrow Type.</p>
+        </ul>
+      </div>
+  </body>
+</html>

@@ -25,7 +25,7 @@ SCRIPT_VERSION = "v0.6.1"
 
 # Define font name for font path and name table re-writes
 
-FONTNAME = "Recursive SemiCasual"
+FONTNAME = "Recursive"
 
 # Default axis values (when not explicitly included on the command line)
 DEFAULT_EXPRESSION = 0.0

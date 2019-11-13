@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ohorndot" format="2">
+	<advance width="600"/>
+	<outline>
+		<component base="o"/>
+		<component base="horncombo" xOffset="450"/>
+		<component base="dotbelowcomb" xOffset="300" yOffset="-1"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0,0,0,0.1505</string>
+		</dict>
+	</lib>
+</glyph>

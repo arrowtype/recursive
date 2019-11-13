@@ -33,7 +33,6 @@ def lineIsRecipe(line):
         
         return True
 
-# actually, you should start with this
 def getRecipesToCopyForAlts():
     with open(recipeFile, 'r') as recipe:
         for line in recipe:
@@ -69,19 +68,21 @@ def getSuffixes(f):
 
 getRecipesToCopyForAlts()
 
-print("recipeGlyphs")
-print(recipeGlyphs)
-
-
-
 # find suffixes needed for recipeGlyphs
-
 for file in files:
     f = OpenFont(file, showInterface=False)
 
     getSuffixes(f)
 
     f.close()
+
+
+# prevent g.mono from going into recipes, for Recursive
+for i, suffix in enumerate(recipeGlyphs['g']['suffixes']):
+    print(i, suffix)
+    if suffix == 'mono':
+        print("found g.mono", suffix)
+        recipeGlyphs['g']['suffixes'].pop(i)
 
 print("recipeGlyphs")
 print(recipeGlyphs)
@@ -109,13 +110,12 @@ def duplicateRecipesForAlts():
                     recipes.append(altLine)
 
                 # line = line + '\n' + altLine
-                line = '\n'.join(recipes)
+                line = ' '.join(recipes)
 
                 altRecipeFile.write(line + '\n')
 
-                print(line)
-
-                print('\n---------------------------\n')
+                # print(line)
+                # print('\n---------------------------\n')
             
 
 
@@ -125,8 +125,9 @@ altRecipeFile.close()
 
 # TODO: there are things to not make alt diacritics of. How should these be handled?
     # ydot italic (wouldn't fit)
-    # g.mono top accents (best with flat-top, "sans" form)
+    # g.mono top accents (best with flat-top, "sans" form) 
     # should /g vs /g.mono be treated specially (because /g.mono already has an "accent" with its ear)?
+        # conclusion: remove 'mono' from g suffixes
 
 
 ## TODO: (manually?) add 'top_viet' anchor to o and u, to avoid glyph construction transformations

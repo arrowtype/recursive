@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="abrevetilde" format="2">
+	<unicode hex="1EB5"/>
+	<advance width="600"/>
+	<outline>
+		<component base="a"/>
+		<component base="brevecomb" xOffset="284" yOffset="2"/>
+		<component base="tildecombviet.case" xOffset="287" yOffset="16"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0,0,0,0.5</string>
+		</dict>
+	</lib>
+</glyph>

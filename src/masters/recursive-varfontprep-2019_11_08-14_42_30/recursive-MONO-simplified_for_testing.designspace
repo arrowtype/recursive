@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.1">
+  <axes>
+    <axis tag="MONO" name="Monospace" minimum="0" maximum="1" default="0">
+      <labelname xml:lang="en">Monospace</labelname>
+    </axis>
+  </axes>
+  
+  <sources>
+    <source filename="Recursive Mono-Casual B.ufo" familyname="Recursive" stylename="Mono Casual B">
+      <location>
+        <dimension name="Monospace" xvalue="1"/>
+        <dimension name="Casual" xvalue="1"/>
+        <dimension name="Weight" xvalue="146"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Italic" xvalue="0.500000"/>
+      </location>
+    </source>
+    
+    <source filename="Recursive Sans-Casual B.ufo" familyname="Recursive" stylename="Sans Casual B">
+      <location>
+        <dimension name="Monospace" xvalue="0"/>
+        <dimension name="Casual" xvalue="1"/>
+        <dimension name="Weight" xvalue="146"/>
+        <dimension name="Slant" xvalue="0"/>
+        <dimension name="Italic" xvalue="0.500000"/>
+      </location>
+    </source>
+    
+  </sources>
+  
+</designspace>

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900&display=swap');
+
+
+@font-face {
+  font-family: "rec_wght_slnt";
+  /* src: url("fonts/rec-mono_casl_wght_slnt_ital--stem_width_weights--2019_10_29-16_24.mono_wght.ttf"); */
+  /* src: url("fonts/rec-mono_casl_wght_slnt_ital--stem_width_weights-VF.MONO_wght.ttf"); */
+  src: url("fonts/rec-mono_casl_wght_slnt_ital--stem_width_weights-VF.CASL_wght.ttf");
+  /* src: url("fonts/rec-mono_casl_wght_slnt_ital--stem_width_weights-VF.wght.ttf"); */
+  /* src: url("fonts/rec-mono_casl_wght_slnt_ital--stem_width_weights-VF.wght_slnt.ttf"); */
+  /* src: url("fonts/rec-mono_casl_wght_slnt_ital--stem_width_weights-VF.wght_ital.ttf"); */
+  /* src: url("fonts/rec-mono_casl_wght_slnt_ital--stem_width_weights-VF.wght_slnt_ital.ttf"); */
+  font-weight: 300 1000;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.font {
+  display: grid;
+  grid-template-rows: 60px repeat(8, 158px);
+  padding: 0.25rem;
+}
+
+.font div {
+  overflow: hidden;
+  line-height: 1.125rem;
+}
+
+.font-system {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue", fantasy;
+}
+
+.font-roboto {
+  font-family: "Roboto", fantasy;
+}
+
+.font-fira {
+  font-family: "Fira Sans", fantasy;
+}
+
+.font-recursive {
+  font-family: "rec_wght_slnt", fantasy;
+}
+
+.font *:before {
+  font-family: "rec_wght_slnt", fantasy;
+  display: block;
+  font-size: 8px;
+  font-weight: 500;
+  color: #777;
+}
+
+.w200 {
+  font-weight: 200;
+}
+.w200:before {
+  content: "200";
+}
+.w300 {
+  font-weight: 300;
+}
+.w300:before {
+  content: "300";
+}
+.w400 {
+  font-weight: 400;
+}
+.w400:before {
+  content: "400";
+}
+.w500 {
+  font-weight: 500;
+}
+.w500:before {
+  content: "500";
+}
+.w600 {
+  font-weight: 600;
+}
+.w600:before {
+  content: "600";
+}
+.w700 {
+  font-weight: 700;
+}
+.w700:before {
+  content: "700";
+}
+.w800 {
+  font-weight: 800;
+}
+.w800:before {
+  content: "800";
+}
+.w900 {
+  font-weight: 900;
+}
+.w900:before {
+  content: "900";
+}
+.w1000 {
+    font-weight: 1000;
+    font-variation-settings: 'wght' 1000;
+}
+.w1000:before {
+    content: "1000";
+    font-variation-settings: 'wght' 500;
+}

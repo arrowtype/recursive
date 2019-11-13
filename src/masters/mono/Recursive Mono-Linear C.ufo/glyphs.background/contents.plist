@@ -2,8 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 	<dict>
-		<key>.arrowhead</key>
-		<string>_arrowhead.glif</string>
+		<key>.notdef</key>
+		<string>_notdef.glif</string>
 		<key>A</key>
 		<string>A_.glif</string>
 		<key>AE</key>
@@ -56,6 +56,8 @@
 		<string>V_.glif</string>
 		<key>X</key>
 		<string>X_.glif</string>
+		<key>_arrowhead</key>
+		<string>_arrowhead.glif</string>
 		<key>a</key>
 		<string>a.glif</string>
 		<key>a.italic</key>
@@ -102,8 +104,18 @@
 		<string>eth.glif</string>
 		<key>f</key>
 		<string>f.glif</string>
+		<key>f_f</key>
+		<string>f_f.glif</string>
+		<key>f_f_i</key>
+		<string>f_f_i.glif</string>
+		<key>f_f_l</key>
+		<string>f_f_l.glif</string>
+		<key>fi</key>
+		<string>fi.glif</string>
 		<key>five</key>
 		<string>five.glif</string>
+		<key>fl</key>
+		<string>fl.glif</string>
 		<key>four</key>
 		<string>four.glif</string>
 		<key>fraction</key>
@@ -158,8 +170,6 @@
 		<string>n.italic.glif</string>
 		<key>nine</key>
 		<string>nine.glif</string>
-		<key>notdef</key>
-		<string>notdef.glif</string>
 		<key>o</key>
 		<string>o.glif</string>
 		<key>oe</key>

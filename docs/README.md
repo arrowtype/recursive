@@ -26,3 +26,9 @@ Important addition to VS Code settings:
     // put images pasted into markdown into an 'assets' folder in the same directory
     "pasteImage.path": "${currentFileDir}/assets",
 ```
+
+## Web tests
+
+Some of these docs are web tests. I link to these from here:
+
+https://arrowtype.github.io/recursive/

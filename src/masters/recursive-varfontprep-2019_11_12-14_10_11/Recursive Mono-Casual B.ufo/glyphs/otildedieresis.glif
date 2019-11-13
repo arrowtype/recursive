@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="otildedieresis" format="2">
+	<unicode hex="1E4F"/>
+	<advance width="600"/>
+	<outline>
+		<component base="o"/>
+		<component base="tildecomb" xOffset="300" yOffset="2"/>
+		<component base="dieresiscomb" xOffset="299" yOffset="232"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0,0,0,0.1505</string>
+		</dict>
+	</lib>
+</glyph>

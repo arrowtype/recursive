@@ -4,6 +4,12 @@
 	<advance width="650"/>
 	<outline>
 		<component base="Y"/>
-		<component base="dieresiscomb" xOffset="363" yOffset="174"/>
+		<component base="dieresiscomb.case" xOffset="319"/>
 	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0,0,0,0.5</string>
+		</dict>
+	</lib>
 </glyph>
