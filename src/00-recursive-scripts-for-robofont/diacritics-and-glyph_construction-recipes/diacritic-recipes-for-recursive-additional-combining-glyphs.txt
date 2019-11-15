@@ -8,13 +8,16 @@ agravedbl=a+gravedoublecmb@top
 egravedbl=e+gravedoublecmb@top
 igravedbl=dotlessi+gravedoublecmb@top
 ogravedbl=o+gravedoublecmb@top
-rgravedbl=r+gravedoublecmb@top
 ugravedbl=u+gravedoublecmb@top
+rgravedbl=r+gravedoublecmb@top
+
+agravedbl.italic=a.italic+gravedoublecmb@top
 egravedbl.italic=e.italic+gravedoublecmb@top
 igravedbl.italic=dotlessi.italic+gravedoublecmb@top
 igravedbl.mono=dotlessi.mono+gravedoublecmb@top
-rgravedbl.italic=r.italic+gravedoublecmb@top
+
 ugravedbl.italic=u.italic+gravedoublecmb@top
+rgravedbl.italic=r.italic+gravedoublecmb@top
 rgravedbl.mono=r.mono+gravedoublecmb@top
 
 
@@ -35,13 +38,16 @@ ainvertedbreve=a+invertedbrevecmb@top
 einvertedbreve=e+invertedbrevecmb@top
 iinvertedbreve=dotlessi+invertedbrevecmb@top
 oinvertedbreve=o+invertedbrevecmb@top
-rinvertedbreve=r+invertedbrevecmb@top
 uinvertedbreve=u+invertedbrevecmb@top
+rinvertedbreve=r+invertedbrevecmb@top
+
+ainvertedbreve.italic=a.italic+invertedbrevecmb@top
 einvertedbreve.italic=e.italic+invertedbrevecmb@top
 iinvertedbreve.italic=dotlessi.italic+invertedbrevecmb@top
 iinvertedbreve.mono=dotlessi.mono+invertedbrevecmb@top
-rinvertedbreve.italic=r.italic+invertedbrevecmb@top
+
 uinvertedbreve.italic=u.italic+invertedbrevecmb@top
+rinvertedbreve.italic=r.italic+invertedbrevecmb@top
 rinvertedbreve.mono=r.mono+invertedbrevecmb@top
 
 
@@ -68,6 +74,7 @@ Odieresismacron=O+dieresiscomb.case@top+macroncomb.case@top
 # dieresis and acute
 
 idieresisacute=dotlessi+dieresiscomb@top+acutecomb.case@top
+
 idieresisacute.italic=dotlessi.italic+dieresiscomb@top+acutecomb.case@top
 idieresisacute.mono=dotlessi.mono+dieresiscomb@top+acutecomb.case@top
 
@@ -90,6 +97,8 @@ Otildemacron=O+tildecomb.case@top+macroncomb.case@top
 
 otildeacute=o+tildecomb@top+acutecomb@top
 utildeacute=u+tildecomb@top+acutecomb@top
+
+utildeacute.italic=u.italic+tildecomb@top+acutecomb@top
 
 Otildeacute=O+tildecomb.case@top+acutecomb.case@top
 Utildeacute=U+tildecomb.case@top+acutecomb.case@top
@@ -119,6 +128,7 @@ Odotmacron=O+dotaccentcomb.case@top+macroncomb.case@top
 
 emacrongrave=e+macroncomb@top+gravecomb.case@top
 omacrongrave=o+macroncomb@top+gravecomb.case@top
+
 emacrongrave.italic=e.italic+macroncomb@top+gravecomb.case@top
 
 Emacrongrave=E+macroncomb.case@top+gravecomb.case@top
@@ -131,6 +141,7 @@ Omacrongrave=O+macroncomb.case@top+gravecomb.case@top
 
 emacronacute=e+macroncomb@top+acutecomb.case@top
 omacronacute=o+macroncomb@top+acutecomb.case@top
+
 emacronacute.italic=e.italic+macroncomb@top+acutecomb.case@top
 
 Emacronacute=E+macroncomb.case@top+acutecomb.case@top
@@ -142,6 +153,7 @@ Omacronacute=O+macroncomb.case@top+acutecomb.case@top
 # macron and dieresis
 
 umacrondieresis=u+macroncomb@top+dieresiscomb.case@top
+umacrondieresis.italic=u.italic+macroncomb@top+dieresiscomb.case@top
 
 Umacrondieresis=U+macroncomb.case@top+dieresiscomb.case@top
 
@@ -151,8 +163,8 @@ Umacrondieresis=U+macroncomb.case@top+dieresiscomb.case@top
 # cedilla and acute
 
 ccedillaacute=c+cedillacomb@bottom+acutecomb@c:top
-# ccedillaacute.italic=c.italic+cedillacomb@bottom+acutecomb@c:top
 
+ccedillaacute.italic=c.italic+cedillacomb@bottom+acutecomb@c:top
 
 Ccedillaacute=C+cedillacomb.case@bottom+acutecomb.case@C:top
 
@@ -162,8 +174,8 @@ Ccedillaacute=C+cedillacomb.case@bottom+acutecomb.case@C:top
 # cedilla and breve
 
 ecedillabreve=e+cedillacomb@bottom+brevecomb@e:top
-ecedillabreve.italic=e.italic+cedillacomb@bottom+brevecomb@e.italic:top
 
+ecedillabreve.italic=e.italic+cedillacomb@bottom+brevecomb@e.italic:top
 
 Ecedillabreve=E+cedillacomb.case@bottom+brevecomb.case@E:top
 
@@ -175,10 +187,13 @@ Ecedillabreve=E+cedillacomb.case@bottom+brevecomb.case@E:top
 ndot=n+dotaccentcomb@top
 sdot=s+dotaccentcomb@top
 ydot=y+dotaccentcomb@top
+
 idot=dotlessi+dotaccentcomb@top
+
 ndot.italic=n.italic+dotaccentcomb@top
 sdot.italic=s.italic+dotaccentcomb@top
 ydot.italic=y.italic+dotaccentcomb@top
+
 idot.italic=dotlessi.italic+dotaccentcomb@top
 idot.mono=dotlessi.mono+dotaccentcomb@top
 
@@ -202,14 +217,18 @@ rdotbelow=r+dotbelowcomb@bottom
 sdotbelow=s+dotbelowcomb@bottom
 tdotbelow=t+dotbelowcomb@bottom
 zdotbelow=z+dotbelowcomb@bottom
+
 ddotbelow.italic=d.italic+dotbelowcomb@bottom
 hdotbelow.italic=h.italic+dotbelowcomb@bottom
 ldotbelow.italic=l.italic+dotbelowcomb@bottom
 ldotbelow.sans=l.sans+dotbelowcomb@bottom
 ldotbelow.mono=l.mono+dotbelowcomb@bottom
+
 mdotbelow.italic=m.italic+dotbelowcomb@bottom
 ndotbelow.italic=n.italic+dotbelowcomb@bottom
 rdotbelow.italic=r.italic+dotbelowcomb@bottom
+rdotbelow.mono=r.mono+dotbelowcomb@bottom
+
 sdotbelow.italic=s.italic+dotbelowcomb@bottom
 zdotbelow.italic=z.italic+dotbelowcomb@bottom
 
@@ -233,12 +252,16 @@ llinebelow=l+macronbelowcmb@bottom
 nlinebelow=n+macronbelowcmb@bottom
 rlinebelow=r+macronbelowcmb@bottom
 tlinebelow=t+macronbelowcmb@bottom
+
 dlinebelow.italic=d.italic+macronbelowcmb@bottom
 llinebelow.italic=l.italic+macronbelowcmb@bottom
 llinebelow.sans=l.sans+macronbelowcmb@bottom
 llinebelow.mono=l.mono+macronbelowcmb@bottom
+
 nlinebelow.italic=n.italic+macronbelowcmb@bottom
 rlinebelow.italic=r.italic+macronbelowcmb@bottom
+rlinebelow.mono=r.mono+macronbelowcmb@bottom
+
 
 Dlinebelow=D+macronbelowcmb@bottom
 Llinebelow=L+macronbelowcmb@bottom
@@ -252,6 +275,7 @@ Tlinebelow=T+macronbelowcmb@bottom
 # macron
 
 gmacron=g+macroncomb@top
+
 gmacron.italic=g.italic+macroncomb@top
 gmacron.mono=g.mono+macroncomb@top
 
@@ -263,6 +287,7 @@ Gmacron=G+macroncomb@top
 # breve below
 
 hbrevebelow=h+belowbrevecmb@bottom
+
 hbrevebelow.italic=h.italic+belowbrevecmb@bottom
 
 Hbrevebelow=H+belowbrevecmb@bottom
@@ -274,6 +299,8 @@ Hbrevebelow=H+belowbrevecmb@bottom
 
 sacutedotaccent=s+acutecomb@dot+dotaccentcomb@dot
 
+sacutedotaccent.italic=s.italic+acutecomb@dot+dotaccentcomb@dot
+
 Sacutedotaccent=S+acutecomb.case@dot+dotaccentcomb.case@dot
 
 
@@ -283,6 +310,8 @@ Sacutedotaccent=S+acutecomb.case@dot+dotaccentcomb.case@dot
 
 scarondot=s+caroncomb@top+dotaccentcomb@dot
 
+scarondot.italic=s.italic+caroncomb@top+dotaccentcomb@dot
+
 Scarondot=S+caroncomb.case@top+dotaccentcomb.case@dot
 
 
@@ -291,6 +320,8 @@ Scarondot=S+caroncomb.case@top+dotaccentcomb.case@dot
 # dot below and dot above
 
 sdotbelowdotabove=s+dotbelowcomb@bottom+dotaccentcomb@s:top
+
+sdotbelowdotabove.italic=s.italic+dotbelowcomb@bottom+dotaccentcomb@s.italic:top
 
 Sdotbelowdotabove=S+dotbelowcomb.case@bottom+dotaccentcomb.case@S:top
 
@@ -322,6 +353,7 @@ brevecomb_hookabovecomb=brevecomb.case+hookcomb.case@hook
 brevecomb_tildecomb=brevecomb.case+tildecombviet.case@top
 
 idotaccent=dotlessi+dotaccentcomb@top
+
 idotaccent.italic=dotlessi.italic+dotaccentcomb@top
 idotaccent.mono=dotlessi.mono+dotaccentcomb@top
 
