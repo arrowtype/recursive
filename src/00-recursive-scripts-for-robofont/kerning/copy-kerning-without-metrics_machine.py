@@ -43,7 +43,7 @@ kerningPath = f"{ufoToCopyFrom}/kerning.plist"
 for ufo in sorted(ufosToCopyTo):
     ufoPath = f"{head}/{ufo}"
 
-    if ufoPath != ufoToCopyFrom:
+    if ufoPath != ufoToCopyFrom and 'features' not in ufo and 'instances' not in ufo:
         print(ufoPath)
         groupsDest = f"{ufoPath}/groups.plist"
         # good if mono or sans
@@ -52,3 +52,5 @@ for ufo in sorted(ufosToCopyTo):
         if 'Sans' in ufo:
             kerningDest = f"{ufoPath}/kerning.plist"
             shutil.copyfile(kerningPath, kerningDest)
+        else:
+            pass

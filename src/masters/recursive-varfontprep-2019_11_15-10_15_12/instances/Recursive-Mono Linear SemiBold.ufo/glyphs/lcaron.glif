@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="lcaron" format="2">
+  <advance width="600.0"/>
+  <unicode hex="013E"/>
+  <outline>
+    <contour>
+      <point x="541.3490566037735" y="569.188679245283" type="curve" smooth="yes"/>
+      <point x="550.6415094339623" y="569.188679245283"/>
+      <point x="555.0566037735848" y="573.4811320754717"/>
+      <point x="557.0566037735848" y="579.8962264150944" type="curve" smooth="yes"/>
+      <point x="576.5943396226414" y="651.1415094339623"/>
+      <point x="580.7169811320754" y="667.6320754716982"/>
+      <point x="599.254716981132" y="735.2924528301887" type="curve" smooth="yes"/>
+      <point x="601.254716981132" y="743.2924528301887"/>
+      <point x="596.8396226415094" y="750.2924528301887"/>
+      <point x="587.3773584905659" y="750.2924528301887" type="curve" smooth="yes"/>
+      <point x="547.3207547169811" y="750.2924528301887"/>
+      <point x="514.8018867924528" y="750.2924528301887"/>
+      <point x="478.8207547169811" y="750.2924528301887" type="curve"/>
+      <point x="476.7735849056604" y="674.6792452830189"/>
+      <point x="476.188679245283" y="645.7264150943396"/>
+      <point x="473.8490566037736" y="569.188679245283" type="curve"/>
+      <point x="502.66037735849056" y="569.188679245283"/>
+      <point x="518.4433962264151" y="569.188679245283"/>
+    </contour>
+    <component base="l.mono"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+      <key>public.markColor</key>
+      <string>0,0,0,0.25</string>
+    </dict>
+  </lib>
+</glyph>

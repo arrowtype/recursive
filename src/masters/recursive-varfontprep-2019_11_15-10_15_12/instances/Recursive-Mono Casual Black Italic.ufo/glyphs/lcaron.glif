@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="lcaron" format="2">
+  <advance width="600.0"/>
+  <unicode hex="013E"/>
+  <outline>
+    <contour>
+      <point x="573.3333333333333" y="544.6666666666665" type="curve" smooth="yes"/>
+      <point x="599.9999999999999" y="544.6666666666665"/>
+      <point x="619.0" y="550.3333333333334"/>
+      <point x="638.3333333333334" y="567.3333333333334" type="curve" smooth="yes"/>
+      <point x="678.0" y="600.6666666666667"/>
+      <point x="704.9999999999999" y="652.6666666666666"/>
+      <point x="716.0" y="708.6666666666666" type="curve" smooth="yes"/>
+      <point x="723.0" y="744.0000000000001"/>
+      <point x="706.9999999999999" y="761.6666666666666"/>
+      <point x="655.9999999999999" y="761.6666666666666" type="curve" smooth="yes"/>
+      <point x="631.6666666666666" y="761.6666666666666"/>
+      <point x="611.0000000000001" y="758.3333333333334"/>
+      <point x="585.0000000000001" y="751.3333333333333" type="curve"/>
+      <point x="567.3333333333334" y="663.6666666666666"/>
+      <point x="551.3333333333333" y="619.6666666666667"/>
+      <point x="519.9999999999999" y="556.6666666666666" type="curve"/>
+      <point x="535.0000000000001" y="549.3333333333333"/>
+      <point x="549.6666666666665" y="544.6666666666665"/>
+    </contour>
+    <component base="l.italic"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+      <key>public.markColor</key>
+      <string>0,0,0,0.25</string>
+    </dict>
+  </lib>
+</glyph>

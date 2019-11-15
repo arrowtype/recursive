@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="comma" format="2">
+  <advance width="600"/>
+  <unicode hex="002C"/>
+  <outline>
+    <contour>
+      <point x="264" y="-206" type="curve" smooth="yes"/>
+      <point x="304" y="-206"/>
+      <point x="323" y="-199"/>
+      <point x="348" y="-173" type="curve" smooth="yes"/>
+      <point x="400" y="-116"/>
+      <point x="455" y="5"/>
+      <point x="455" y="94" type="curve" smooth="yes"/>
+      <point x="455" y="174"/>
+      <point x="419" y="212"/>
+      <point x="287" y="212" type="curve" smooth="yes"/>
+      <point x="256" y="212"/>
+      <point x="229" y="208"/>
+      <point x="188" y="200" type="curve"/>
+      <point x="188" y="73"/>
+      <point x="170" y="-59"/>
+      <point x="121" y="-152" type="curve"/>
+      <point x="156" y="-191"/>
+      <point x="207" y="-206"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+      <key>public.markColor</key>
+      <string>1,1,0,1</string>
+    </dict>
+  </lib>
+</glyph>
