@@ -23,7 +23,7 @@ except IndexError:
 
 suffixes = ["italic", "mono", "sans"]
 
-italicsNotInSans = "c f r j s z".split()
+italicsNotInSans = "c f r j s z lj Lj Nj".split()
 
 rules = {
     "mono": {
