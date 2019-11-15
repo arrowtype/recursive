@@ -353,9 +353,9 @@ def main():
     doc.read(src)
 
     # Fix default value for weight axis in design space file
-    for axis in doc.axes:
-        if axis.name == "Weight":
-            axis.default = 300
+    #for axis in doc.axes:
+    #    if axis.name == "Weight":
+    #        axis.default = 300
 
     # Still in memory, but need to save for other operations
     doc.write(src)

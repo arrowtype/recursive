@@ -724,6 +724,7 @@
 		<key>public.glyphOrder</key>
 		<array>
 			<string>space</string>
+			<string>nbspace</string>
 			<string>figurespace</string>
 			<string>punctuationspace</string>
 			<string>thinspace</string>
@@ -1202,6 +1203,7 @@
 			<string>primemod</string>
 			<string>primedblmod</string>
 			<string>commaturnedmod</string>
+			<string>apostrophemod</string>
 			<string>ringhalfrightmod</string>
 			<string>ringhalfleftmod</string>
 			<string>verticallinemod</string>
@@ -1229,11 +1231,13 @@
 			<string>commaaboverightcomb</string>
 			<string>horncomb</string>
 			<string>dotbelowcomb</string>
+			<string>dieresisbelowcmb</string>
 			<string>commaaccentcomb</string>
 			<string>cedillacomb</string>
 			<string>ogonekcomb</string>
 			<string>belowbrevecmb</string>
 			<string>macronbelowcmb</string>
+			<string>overlaystrokeshortcmb</string>
 			<string>zero</string>
 			<string>one</string>
 			<string>two</string>
@@ -1276,8 +1280,10 @@
 			<string>underscore</string>
 			<string>hyphen</string>
 			<string>gnrl:hyphen</string>
+			<string>figuredash</string>
 			<string>endash</string>
 			<string>emdash</string>
+			<string>horizontalbar</string>
 			<string>parenleft</string>
 			<string>parenright</string>
 			<string>bracketleft</string>
@@ -1342,6 +1348,7 @@
 			<string>approxequal</string>
 			<string>notequal</string>
 			<string>logicalnot</string>
+			<string>commercialminussign</string>
 			<string>arrowleft</string>
 			<string>arrowup</string>
 			<string>arrowright</string>
@@ -1410,7 +1417,6 @@
 			<string>arrowNE</string>
 			<string>arrowSE</string>
 			<string>arrowSW</string>
-			<string>hook</string>
 			<string>squareblack</string>
 			<string>squarewhite</string>
 			<string>triangleupblack</string>
@@ -1425,13 +1431,13 @@
 			<string>heartwhite</string>
 			<string>heartblack</string>
 			<string>uni000D</string>
+			<string>hyphensoft</string>
 			<string>zerowidthspace</string>
 			<string>ijacute</string>
 			<string>IJacute</string>
 			<string>apple</string>
 			<string>Idotabove</string>
 			<string>dotlessij</string>
-			<string>horn</string>
 			<string>horncombo</string>
 			<string>idot</string>
 			<string>idotaccent</string>
@@ -1547,6 +1553,8 @@
 			<string>abreve.italic</string>
 			<string>aogonek.italic</string>
 			<string>aringacute.italic</string>
+			<string>agravedbl.italic</string>
+			<string>ainvertedbreve.italic</string>
 			<string>adotbelow.italic</string>
 			<string>ahook.italic</string>
 			<string>acircumflexacute.italic</string>
@@ -1566,6 +1574,7 @@
 			<string>ccircumflex.italic</string>
 			<string>cdotaccent.italic</string>
 			<string>ccaron.italic</string>
+			<string>ccedillaacute.italic</string>
 			<string>d.italic</string>
 			<string>ddotbelow.italic</string>
 			<string>dlinebelow.italic</string>
@@ -1652,6 +1661,9 @@
 			<string>scommaaccent.italic</string>
 			<string>sdot.italic</string>
 			<string>sdotbelow.italic</string>
+			<string>sacutedotaccent.italic</string>
+			<string>scarondot.italic</string>
+			<string>sdotbelowdotabove.italic</string>
 			<string>u.italic</string>
 			<string>ugrave.italic</string>
 			<string>uacute.italic</string>
@@ -1666,6 +1678,8 @@
 			<string>uhorn.italic</string>
 			<string>ugravedbl.italic</string>
 			<string>uinvertedbreve.italic</string>
+			<string>utildeacute.italic</string>
+			<string>umacrondieresis.italic</string>
 			<string>udotbelow.italic</string>
 			<string>uhook.italic</string>
 			<string>uhornacute.italic</string>
@@ -1739,6 +1753,8 @@
 			<string>rcaron.mono</string>
 			<string>rgravedbl.mono</string>
 			<string>rinvertedbreve.mono</string>
+			<string>rdotbelow.mono</string>
+			<string>rlinebelow.mono</string>
 			<string>dotlessi.mono</string>
 			<string>lslash.mono</string>
 			<string>idot.mono</string>
@@ -1785,14 +1801,6 @@
 			<string>zero.sans</string>
 			<string>one.sans</string>
 			<string>.notdef</string>
-			<string>hyphensoft</string>
-			<string>nbspace</string>
-			<string>apostrophemod</string>
-			<string>dieresisbelowcmb</string>
-			<string>overlaystrokeshortcmb</string>
-			<string>commercialminussign</string>
-			<string>figuredash</string>
-			<string>horizontalbar</string>
 		</array>
 	</dict>
 </plist>

@@ -617,6 +617,13 @@
 				<real>0.5</real>
 				<real>0.25</real>
 			</array>
+			<key>public.kern1.H_right</key>
+			<array>
+				<real>0.5</real>
+				<integer>0</integer>
+				<integer>1</integer>
+				<real>0.25</real>
+			</array>
 			<key>public.kern1.I_right</key>
 			<array>
 				<real>0.5000000596</real>
@@ -624,11 +631,25 @@
 				<real>0.5</real>
 				<real>0.5</real>
 			</array>
+			<key>public.kern1.K_right</key>
+			<array>
+				<integer>1</integer>
+				<integer>1</integer>
+				<integer>0</integer>
+				<real>0.25</real>
+			</array>
 			<key>public.kern1.L_right</key>
 			<array>
 				<integer>0</integer>
 				<integer>1</integer>
 				<integer>1</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern1.M_right</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>0</integer>
 				<real>0.25</real>
 			</array>
 			<key>public.kern1.O_right</key>
@@ -715,6 +736,13 @@
 				<integer>1</integer>
 				<real>0.25</real>
 			</array>
+			<key>public.kern1.ditalic_right</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>1</integer>
+				<real>0.25</real>
+			</array>
 			<key>public.kern1.e_right</key>
 			<array>
 				<integer>1</integer>
@@ -734,6 +762,20 @@
 				<integer>0</integer>
 				<integer>1</integer>
 				<integer>0</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern1.i_right</key>
+			<array>
+				<integer>1</integer>
+				<integer>0</integer>
+				<integer>1</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern1.l_right</key>
+			<array>
+				<integer>0</integer>
+				<integer>0</integer>
+				<integer>1</integer>
 				<real>0.25</real>
 			</array>
 			<key>public.kern1.n_right</key>
@@ -778,6 +820,13 @@
 				<integer>0</integer>
 				<real>0.25</real>
 			</array>
+			<key>public.kern1.vitalic_right</key>
+			<array>
+				<integer>0</integer>
+				<real>0.5</real>
+				<integer>1</integer>
+				<real>0.25</real>
+			</array>
 			<key>public.kern1.w_right</key>
 			<array>
 				<integer>0</integer>
@@ -820,11 +869,32 @@
 				<integer>0</integer>
 				<real>0.25</real>
 			</array>
+			<key>public.kern2.H_left</key>
+			<array>
+				<integer>0</integer>
+				<integer>0</integer>
+				<integer>1</integer>
+				<real>0.25</real>
+			</array>
 			<key>public.kern2.I_left</key>
 			<array>
 				<integer>0</integer>
 				<integer>1</integer>
 				<integer>0</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern2.M_left</key>
+			<array>
+				<integer>1</integer>
+				<integer>0</integer>
+				<integer>1</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern2.N_left</key>
+			<array>
+				<real>0.5</real>
+				<integer>0</integer>
+				<integer>1</integer>
 				<real>0.25</real>
 			</array>
 			<key>public.kern2.O_left</key>
@@ -869,6 +939,13 @@
 				<integer>1</integer>
 				<real>0.25</real>
 			</array>
+			<key>public.kern2.U_left</key>
+			<array>
+				<integer>1</integer>
+				<integer>0</integer>
+				<real>0.5</real>
+				<real>0.25</real>
+			</array>
 			<key>public.kern2.W_left</key>
 			<array>
 				<real>0.9904156923</real>
@@ -897,6 +974,13 @@
 				<integer>1</integer>
 				<real>0.25</real>
 			</array>
+			<key>public.kern2.e_left</key>
+			<array>
+				<integer>0</integer>
+				<real>0.5</real>
+				<integer>1</integer>
+				<real>0.25</real>
+			</array>
 			<key>public.kern2.f_left</key>
 			<array>
 				<integer>1</integer>
@@ -911,11 +995,32 @@
 				<integer>1</integer>
 				<real>0.25</real>
 			</array>
+			<key>public.kern2.h_left</key>
+			<array>
+				<integer>1</integer>
+				<integer>0</integer>
+				<integer>0</integer>
+				<real>0.25</real>
+			</array>
 			<key>public.kern2.i_left</key>
 			<array>
 				<integer>1</integer>
 				<integer>0</integer>
 				<integer>1</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern2.l_left</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>0</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern2.n_left</key>
+			<array>
+				<integer>1</integer>
+				<integer>1</integer>
+				<integer>0</integer>
 				<real>0.25</real>
 			</array>
 			<key>public.kern2.o_left</key>
@@ -939,6 +1044,13 @@
 				<integer>0</integer>
 				<real>0.25</real>
 			</array>
+			<key>public.kern2.u_left</key>
+			<array>
+				<integer>1</integer>
+				<real>0.5</real>
+				<integer>0</integer>
+				<real>0.25</real>
+			</array>
 			<key>public.kern2.v_left</key>
 			<array>
 				<integer>1</integer>
@@ -958,6 +1070,13 @@
 				<integer>1</integer>
 				<real>0.5</real>
 				<integer>0</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern2.z_left</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>1</integer>
 				<real>0.25</real>
 			</array>
 		</dict>
@@ -1657,7 +1776,6 @@
 			<string>arrowNE</string>
 			<string>arrowSE</string>
 			<string>arrowSW</string>
-			<string>hook</string>
 			<string>squareblack</string>
 			<string>squarewhite</string>
 			<string>triangleupblack</string>
@@ -1680,11 +1798,9 @@
 			<string>Idotabove</string>
 			<string>dotlessij</string>
 			<string>fj</string>
-			<string>horn</string>
 			<string>horncombo</string>
 			<string>idot</string>
 			<string>idotaccent</string>
-			<string>nhookleft</string>
 			<string>ogonekcombo</string>
 			<string>ringacute</string>
 			<string>slashcomb</string>
@@ -1771,6 +1887,8 @@
 			<string>abreve.italic</string>
 			<string>aogonek.italic</string>
 			<string>aringacute.italic</string>
+			<string>agravedbl.italic</string>
+			<string>ainvertedbreve.italic</string>
 			<string>adotbelow.italic</string>
 			<string>ahook.italic</string>
 			<string>acircumflexacute.italic</string>
@@ -1790,6 +1908,7 @@
 			<string>ccircumflex.italic</string>
 			<string>cdotaccent.italic</string>
 			<string>ccaron.italic</string>
+			<string>ccedillaacute.italic</string>
 			<string>d.italic</string>
 			<string>ddotbelow.italic</string>
 			<string>dlinebelow.italic</string>
@@ -1876,6 +1995,9 @@
 			<string>scommaaccent.italic</string>
 			<string>sdot.italic</string>
 			<string>sdotbelow.italic</string>
+			<string>sacutedotaccent.italic</string>
+			<string>scarondot.italic</string>
+			<string>sdotbelowdotabove.italic</string>
 			<string>u.italic</string>
 			<string>ugrave.italic</string>
 			<string>uacute.italic</string>
@@ -1890,6 +2012,8 @@
 			<string>uhorn.italic</string>
 			<string>ugravedbl.italic</string>
 			<string>uinvertedbreve.italic</string>
+			<string>utildeacute.italic</string>
+			<string>umacrondieresis.italic</string>
 			<string>udotbelow.italic</string>
 			<string>uhook.italic</string>
 			<string>uhornacute.italic</string>
@@ -1963,6 +2087,8 @@
 			<string>rcaron.mono</string>
 			<string>rgravedbl.mono</string>
 			<string>rinvertedbreve.mono</string>
+			<string>rdotbelow.mono</string>
+			<string>rlinebelow.mono</string>
 			<string>dotlessi.mono</string>
 			<string>lslash.mono</string>
 			<string>idot.mono</string>

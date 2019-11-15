@@ -1683,7 +1683,6 @@
 			<string>arrowNE</string>
 			<string>arrowSE</string>
 			<string>arrowSW</string>
-			<string>hook</string>
 			<string>squareblack</string>
 			<string>squarewhite</string>
 			<string>triangleupblack</string>
@@ -1704,7 +1703,6 @@
 			<string>apple</string>
 			<string>Idotabove</string>
 			<string>dotlessij</string>
-			<string>horn</string>
 			<string>horncombo</string>
 			<string>idot</string>
 			<string>idotaccent</string>
@@ -1822,6 +1820,8 @@
 			<string>abreve.italic</string>
 			<string>aogonek.italic</string>
 			<string>aringacute.italic</string>
+			<string>agravedbl.italic</string>
+			<string>ainvertedbreve.italic</string>
 			<string>adotbelow.italic</string>
 			<string>ahook.italic</string>
 			<string>acircumflexacute.italic</string>
@@ -1841,6 +1841,7 @@
 			<string>ccircumflex.italic</string>
 			<string>cdotaccent.italic</string>
 			<string>ccaron.italic</string>
+			<string>ccedillaacute.italic</string>
 			<string>d.italic</string>
 			<string>ddotbelow.italic</string>
 			<string>dlinebelow.italic</string>
@@ -1927,6 +1928,9 @@
 			<string>scommaaccent.italic</string>
 			<string>sdot.italic</string>
 			<string>sdotbelow.italic</string>
+			<string>sacutedotaccent.italic</string>
+			<string>scarondot.italic</string>
+			<string>sdotbelowdotabove.italic</string>
 			<string>u.italic</string>
 			<string>ugrave.italic</string>
 			<string>uacute.italic</string>
@@ -1941,6 +1945,8 @@
 			<string>uhorn.italic</string>
 			<string>ugravedbl.italic</string>
 			<string>uinvertedbreve.italic</string>
+			<string>utildeacute.italic</string>
+			<string>umacrondieresis.italic</string>
 			<string>udotbelow.italic</string>
 			<string>uhook.italic</string>
 			<string>uhornacute.italic</string>
@@ -2014,6 +2020,8 @@
 			<string>rcaron.mono</string>
 			<string>rgravedbl.mono</string>
 			<string>rinvertedbreve.mono</string>
+			<string>rdotbelow.mono</string>
+			<string>rlinebelow.mono</string>
 			<string>dotlessi.mono</string>
 			<string>lslash.mono</string>
 			<string>idot.mono</string>
@@ -2029,6 +2037,7 @@
 			<string>x.italic3</string>
 			<string>x.italic4</string>
 			<string>x.italic5</string>
+			<string>x.italic6</string>
 			<string>g.compact_desc</string>
 			<string>f_quote.code</string>
 			<string>hyphen_greater.code</string>
@@ -2064,7 +2073,6 @@
 			<string>zero.sans</string>
 			<string>one.sans</string>
 			<string>.notdef</string>
-			<string>x.italic6</string>
 		</array>
 	</dict>
 </plist>
