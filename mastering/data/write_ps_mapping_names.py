@@ -1,4 +1,7 @@
 # Read designspace file, write ps and style map names
+# Instance names come from this spreadsheet:
+# https://docs.google.com/spreadsheets/d/1vo9R9Xjt_FmNEE7VHzuvkhQ1KHRR9s-0drIZcmhW7ew
+# Exported as CSV
 import csv
 from fontTools.designspaceLib import DesignSpaceDocument
 
@@ -11,7 +14,7 @@ with open('instance_names.csv', newline='') as csvfile:
                                                           row["stylemap"])
 
 doc = DesignSpaceDocument()
-doc.read("../../src/masters/recursive-MONO_XPRN_wght_slnt_ital.designspace")
+doc.read("../../src/masters/recursive-MONO_CASL_wght_slnt_ital--full_gsub.designspace")
 for i in doc.instances:
     k = (i.familyName, i.styleName)
     ps, fm, sm = names[k]
@@ -24,4 +27,4 @@ for i in doc.instances:
 # designSpace file. Yes, this is dumb, but is the better solution to
 # save all the comments and formatting (for better git diffs) in the
 # working designSpace file.
-doc.write("../../src/masters/recursive-MONO_XPRN_wght_slnt_ital_names.designspace")
+doc.write("../../src/masters/recursive-MONO_CASL_wght_slnt_ital--full_gsub_ps_names.designspace")

@@ -1,4 +1,16 @@
 Family Name,Style Name,Combined Length,Style Length,postscript,ps length,familymap,stylemap,family_len,style_len,combined_len
+Recursive,Mono Casual SemiBold Italic,37,27,RecursiveMono-CslSmBdItalic,27,Recursive Mn Csl SmBd,Italic,21,6,28
+Recursive,Mono Casual SemiBold,30,20,RecursiveMono-CslSemiBd,23,Recursive Mn Csl SmBd,Regular,21,7,29
+Recursive,Mono Casual ExtraBold Italic,38,28,RecursiveMono-CslXBdItalic,26,Recursive Mn Csl XBd,Italic,20,6,27
+Recursive,Mono Casual ExtraBold,31,21,RecursiveMono-CslExtraBd,24,Recursive Mn Csl XBd,Regular,20,7,28
+Recursive,Mono Casual ExtraBlack Italic,39,29,RecursiveMono-CslXBlkItalic,27,Recursive Mn Csl XBlk,Italic,21,6,28
+Recursive,Mono Casual ExtraBlack,32,22,RecursiveMono-CslXBlk,21,Recursive Mn Csl XBlk,Regular,21,7,29
+Recursive,Mono Linear Light Italic,34,24,RecursiveMono-LnrLightItalic,28,Recursive Mn Lnr Lght,Italic,21,6,28
+Recursive,Mono Linear Light,27,17,RecursiveMono-LnrLight,22,Recursive Mn Lnr Lght,Regular,21,7,29
+Recursive,Mono Linear SemiBold Italic,37,27,RecursiveMono-LnrSemiBdItalic,29,Recursive Mn Lnr SmBd,Italic,21,6,28
+Recursive,Mono Linear SemiBold,30,20,RecursiveMono-LnrSemiBold,25,Recursive Mn Lnr SmBd,Regular,21,7,29
+Recursive,Mono Linear ExtraBlack Italic,39,29,RecursiveMono-LnrXBlkItalic,27,Recursive Mn Lnr XBlk,Italic,21,6,28
+Recursive,Mono Linear ExtraBlack,32,22,RecursiveMono-LnrXBlk,21,Recursive Mn Lnr XBlk,Regular,21,7,29
 Recursive,Mono Casual Bold,26,16,RecursiveMono-CslBold,21,Recursive Mono Csl,Bold,18,4,23
 Recursive,Mono Casual Italic,28,18,RecursiveMono-CslItalic,23,Recursive Mono Csl,Italic,18,6,25
 Recursive,Mono Casual Regular,29,19,RecursiveMono-CslRegular,24,Recursive Mono Csl,Regular,18,7,26
@@ -9,18 +21,6 @@ Recursive,Mono Casual Light Italic,34,24,RecursiveMono-CslLtItalic,25,Recursive 
 Recursive,Mono Casual Light,27,17,RecursiveMono-CslLight,22,Recursive Mono Csl Lt,Regular,21,7,29
 Recursive,Mono Casual Medium Italic,35,25,RecursiveMono-CslMedItalic,26,Recursive Mono Csl Md,Italic,21,6,28
 Recursive,Mono Casual Medium,28,18,RecursiveMono-CslMed,20,Recursive Mono Csl Md,Regular,21,7,29
-Recursive,Mono Casual SemiBold Italic,37,27,RecursiveMono-CslSmBdItalic,27,Recursive Mn Csl SmBd,Italic,21,6,28
-Recursive,Mono Casual SemiBold,30,20,RecursiveMono-CslSemiBd,23,Recursive Mn Csl SmBd,Regular,21,7,29
-Recursive,Mono Casual UltraBold Italic,38,28,RecursiveMono-CslUltBdItalic,28,Recursive Mn Csl UltBd,Italic,22,6,29
-Recursive,Mono Casual UltraBold,31,21,RecursiveMono-CslUltraBd,24,Recursive Mn Csl UltBd,Regular,22,7,30
-Recursive,Mono Casual ExtraBold Italic,38,28,RecursiveMono-CslXBdItalic,26,Recursive Mn Csl XBd,Italic,20,6,27
-Recursive,Mono Casual ExtraBold,31,21,RecursiveMono-CslExtraBd,24,Recursive Mn Csl XBd,Regular,20,7,28
-Recursive,Mono Linear Light Italic,34,24,RecursiveMono-LnrLightItalic,28,Recursive Mn Lnr Lght,Italic,21,6,28
-Recursive,Mono Linear Light,27,17,RecursiveMono-LnrLight,22,Recursive Mn Lnr Lght,Regular,21,7,29
-Recursive,Mono Linear SemiBold Italic,37,27,RecursiveMono-LnrSemiBdItalic,29,Recursive Mn Lnr SmBd,Italic,21,6,28
-Recursive,Mono Linear SemiBold,30,20,RecursiveMono-LnrSemiBold,25,Recursive Mn Lnr SmBd,Regular,21,7,29
-Recursive,Mono Linear UltraBold Italic,38,28,RecursiveMono-LnrUltraBdItalic,30,Recursive Mn Lnr UltBd,Italic,22,6,29
-Recursive,Mono Linear UltraBold,31,21,RecursiveMono-LnrUltraBold,26,Recursive Mn Lnr UltBd,Regular,22,7,30
 Recursive,Mono Linear Bold,26,16,RecursiveMono-LnrBold,21,Recursive Mono Lnr,Bold,18,4,23
 Recursive,Mono Linear Italic,28,18,RecursiveMono-LnrItalic,23,Recursive Mono Lnr,Italic,18,6,25
 Recursive,Mono Linear Regular,29,19,RecursiveMono-LnrRegular,24,Recursive Mono Lnr,Regular,18,7,26
@@ -55,11 +55,11 @@ Recursive,Sans Linear ExtraBold Italic,38,28,RecursiveSans-LnrExtraBdItalic,30,R
 Recursive,Sans Linear ExtraBold,31,21,RecursiveSans-LnrExtraBold,26,Recursive Sans Lnr XBd,Regular,22,7,30
 Recursive,Sans Casual SemiBold Italic,37,27,RecursiveSans-CslSmBdItalic,27,Recursive Sn Csl SmBd,Italic,21,6,28
 Recursive,Sans Casual SemiBold,30,20,RecursiveSans-CslSemiBd,23,Recursive Sn Csl SmBd,Regular,21,7,29
-Recursive,Sans Casual UltraBold Italic,38,28,RecursiveSans-CslUltBdItalic,28,Recursive Sn Csl UltBd,Italic,22,6,29
-Recursive,Sans Casual UltraBold,31,21,RecursiveSans-CslUltraBd,24,Recursive Sn Csl UltBd,Regular,22,7,30
+Recursive,Sans Casual ExtraBlack Italic,39,29,RecursiveSans-CslXBlkItalic,27,Recursive Sn Csl XBlk,Italic,21,6,28
+Recursive,Sans Casual ExtraBlack,32,22,RecursiveSans-CslXBlk,21,Recursive Sn Csl XBlk,Regular,21,7,29
 Recursive,Sans Linear Light Italic,34,24,RecursiveSans-LnrLightItalic,28,Recursive Sn Lnr Lght,Italic,21,6,28
 Recursive,Sans Linear Light,27,17,RecursiveSans-LnrLight,22,Recursive Sn Lnr Lght,Regular,21,7,29
 Recursive,Sans Linear SemiBold Italic,37,27,RecursiveSans-LnrSemiBdItalic,29,Recursive Sn Lnr SmBd,Italic,21,6,28
 Recursive,Sans Linear SemiBold,30,20,RecursiveSans-LnrSemiBold,25,Recursive Sn Lnr SmBd,Regular,21,7,29
-Recursive,Sans Linear UltraBold Italic,38,28,RecursiveSans-LnrUltraBdItalic,30,Recursive Sn Lnr UltBd,Italic,22,6,29
-Recursive,Sans Linear UltraBold,31,21,RecursiveSans-LnrUltraBold,26,Recursive Sn Lnr UltBd,Regular,22,7,30
+Recursive,Sans Linear ExtraBlack Italic,39,29,RecursiveSans-LnrXBlkItalic,27,Recursive Sn Lnr XBlk,Italic,21,6,28
+Recursive,Sans Linear ExtraBlack,32,22,RecursiveSans-LnrXBlk,21,Recursive Sn Lnr XBlk,Regular,21,7,29
