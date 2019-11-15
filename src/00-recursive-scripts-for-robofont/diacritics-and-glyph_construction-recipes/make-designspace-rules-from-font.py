@@ -6,6 +6,9 @@
 import os
 import sys
 from fontParts.world import OpenFont, RFont, RGlyph
+from datetime import datetime
+
+
 
 try:
     fontPath = (sys.argv[1])
@@ -14,6 +17,9 @@ except IndexError:
     fontPath = '/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual A.ufo'
 
 
+# timestamp = datetime.now().strftime("%Y-%m-%d")
+
+# textFileOutput = sys.argv[1].replace(".py", f"{timestamp}.txt")
 
 suffixes = ["italic", "mono", "sans"]
 
@@ -77,6 +83,8 @@ def printWrite(line):
 
 font = OpenFont(fontPath, showInterface=False)
 
+# TODO: add exclusion for g mono rules, e.g. gmacron
+
 def makeRules():
     for suffix in suffixes:
         printWrite(f'\n'.ljust(80,'-') + '\n')
@@ -87,7 +95,7 @@ def makeRules():
                 # print(g)
                 baseName = g.name.split('.')[0]
                 rule = f'<sub name="{baseName}" with="{g.name}" />'
-                printWrite(rule + '\n')
+                printWrite(rule)
 
 def makeSansItalicRules():
     printWrite(f'\n'.ljust(80,'-') + '\n')
@@ -100,7 +108,7 @@ def makeSansItalicRules():
 
             baseName = g.name.split('.')[0]
             rule = f'<sub name="{baseName}" with="{g.name}" />'
-            printWrite(rule + '\n')
+            printWrite(rule)
 
 makeRules()
 makeSansItalicRules()
