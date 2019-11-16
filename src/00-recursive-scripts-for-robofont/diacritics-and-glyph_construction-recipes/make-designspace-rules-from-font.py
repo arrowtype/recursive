@@ -23,7 +23,9 @@ except IndexError:
 
 suffixes = ["italic", "mono", "sans"]
 
-italicsNotInSans = "c f r j s z lj Lj Nj".split()
+# add glyphs that should be exluded based on their name's first letter
+# also add glyphs like Nj that would be missed by this filter
+italicsNotInSans = "c f r j lj Lj Nj s z".split()
 
 rules = {
     "mono": {
@@ -75,11 +77,11 @@ head, tail = os.path.split(fontPath)
 
 newPath = head + '/gsub-rules.txt'
 
-GSUBrules = open(newPath,"w+")
+rules = {}
 
 def printWrite(line):
-    print(line)
-    GSUBrules.write(line)
+    rules.append(line)
+    
 
 font = OpenFont(fontPath, showInterface=False)
 
@@ -87,35 +89,42 @@ font = OpenFont(fontPath, showInterface=False)
 
 def makeRules():
     for suffix in suffixes:
-        printWrite(f'\n'.ljust(80,'-') + '\n')
-        printWrite(f'{suffix} '.ljust(80,'-') + '\n')
-        printWrite('\n')
+        rules[suffix] = []
+
         for g in font:
             if '.' in g.name and g.name.split('.')[1] == suffix:
                 # print(g)
                 baseName = g.name.split('.')[0]
                 rule = f'<sub name="{baseName}" with="{g.name}" />'
-                printWrite(rule)
+                rules[suffix].append(rule)
 
 def makeSansItalicRules():
-    printWrite(f'\n'.ljust(80,'-') + '\n')
-    printWrite(f'sans italic '.ljust(80,'-') + '\n')
-    printWrite('\n')
+    rules['sans italic'] = []
     for g in font:
         if '.' in g.name and\
             g.name.split('.')[1] == 'italic' and\
+            g.name.split('.')[0] not in italicsNotInSans and\
             g.name.split('.')[0][0] not in italicsNotInSans:
 
             baseName = g.name.split('.')[0]
             rule = f'<sub name="{baseName}" with="{g.name}" />'
-            printWrite(rule)
+            rules['sans italic'].append(rule)
+
+def addSortedRules(rules):
+    with open(newPath,"w+") as GSUBrules:
+        for suffix in rules.keys():
+            GSUBrules.write(f'\n\n'.ljust(80,'-') + '\n')
+            GSUBrules.write(f'{suffix} '.ljust(80,'-') + '\n')
+
+            for rule in sorted(rules[suffix]):
+                GSUBrules.write(f'\n{rule}')
+
 
 makeRules()
 makeSansItalicRules()
+addSortedRules(rules)
 
 font.close()
-
-GSUBrules.close()
 
 # go through glyph construction recipes and pull out all suffixed glyphs
 # OR go through the charset of a UFO and find all suffixes that have dict rules
