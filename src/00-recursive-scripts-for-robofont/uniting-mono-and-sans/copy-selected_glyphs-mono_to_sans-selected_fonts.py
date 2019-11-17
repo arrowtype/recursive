@@ -18,58 +18,44 @@ from vanilla.dialogs import *
 import os
 from mojo.UI import AskString
 
-from vanilla import *
 
-class WindowDemo(object):
+# glyphsToCopy = CurrentFont().selection
 
-    def __init__(self):
-        self.w = Window((200, 70), "Window Demo")
-        self.w.myButton = Button((10, 10, -10, 20), "My Button")
-        self.w.myTextBox = TextBox((10, 40, -10, 17), "My Text Box")
-        self.w.open()
+glyphsToMakeDefault = AskString(
+    'Space-separated list of glyphs to copy Mono to Sans').split(" ")
 
-    def reportClick(self):
-        
+# if the user cancels or inputs an empty string, cancel the script
+if glyphsToMakeDefault == "":
+    print("canceled")
 
-WindowDemo()
+files = getFile("Select UFOs to copy glyphs between",
+                allowsMultipleSelection=True, fileTypes=["ufo"])
 
-# # glyphsToCopy = CurrentFont().selection
+# fonts = {
+#         "Casual A" = (monoFontCasualA, sansFontCasualA)
+# }
 
-# glyphsToMakeDefault = AskString(
-#     'Space-separated list of glyphs to copy Mono to Sans').split(" ")
+fonts = {}
 
-# # if the user cancels or inputs an empty string, cancel the script
-# if glyphsToMakeDefault == "":
-#     print("canceled")
+for path in files:
+    f = OpenFont(path, showInterface=False)
+    # style = f.info.styleName
+    variation = f.info.styleName.replace('Mono ','').replace('Sans ','')
+    if variation not in fonts.keys():
+        fonts[variation] = []
 
-# files = getFile("Select UFOs to copy glyphs between",
-#                 allowsMultipleSelection=True, fileTypes=["ufo"])
+    if fonts[variation] == []:
+        fonts[variation].append(f)
+    elif fonts[variation] != []:
+        # if 'Mono' already in list, put 'Sans' second
+        if 'Mono' in fonts[variation][0].info.styleName:
+            fonts[variation].append(f)
+        # else put 'Mono' first
+        else:
+            fonts[variation] = [f] + fonts[variation]
 
-# # fonts = {
-# #         "Casual A" = (monoFontCasualA, sansFontCasualA)
-# # }
-
-# fonts = {}
-
-# for path in files:
-#     f = OpenFont(path, showInterface=False)
-#     # style = f.info.styleName
-#     variation = f.info.styleName.replace('Mono ','').replace('Sans ','')
-#     if variation not in fonts.keys():
-#         fonts[variation] = []
-
-#     if fonts[variation] == []:
-#         fonts[variation].append(f)
-#     elif fonts[variation] != []:
-#         # if 'Mono' already in list, put 'Sans' second
-#         if 'Mono' in fonts[variation][0].info.styleName:
-#             fonts[variation].append(f)
-#         # else put 'Mono' first
-#         else:
-#             fonts[variation] = [f] + fonts[variation]
-
-# for variation in fonts.keys():
-#     print(variation)
-#     for f in fonts[variation]:
-#         print('\t', f)
-#         f.close()
+for variation in fonts.keys():
+    print(variation)
+    for f in fonts[variation]:
+        print('\t', f)
+        f.close()
