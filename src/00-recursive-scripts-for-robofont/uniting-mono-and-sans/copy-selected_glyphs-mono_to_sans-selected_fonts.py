@@ -18,39 +18,58 @@ from vanilla.dialogs import *
 import os
 from mojo.UI import AskString
 
-# glyphsToCopy = CurrentFont().selection
+from vanilla import *
 
-print("hello rf")
+class WindowDemo(object):
 
-files = getFile("Select UFOs to copy glyphs between",
-                allowsMultipleSelection=True, fileTypes=["ufo"])
+    def __init__(self):
+        self.w = Window((200, 70), "Window Demo")
+        self.w.myButton = Button((10, 10, -10, 20), "My Button")
+        self.w.myTextBox = TextBox((10, 40, -10, 17), "My Text Box")
+        self.w.open()
 
-# fonts = {
-#         "Casual A" = (monoFontCasualA, sansFontCasualA)
-# }
+    def reportClick(self):
+        
 
-fonts = {}
+WindowDemo()
 
-# TODO: strip 'Mono' or ''Sans from initial style name to keep mono&sans together in fonts dict
+# # glyphsToCopy = CurrentFont().selection
 
-for path in files:
-    f = OpenFont(path, showInterface=False)
-    style = f.info.styleName
-    if style not in fonts.keys():
-        fonts[style] = []
+# glyphsToMakeDefault = AskString(
+#     'Space-separated list of glyphs to copy Mono to Sans').split(" ")
 
-    if fonts[style] == []:
-        fonts[style].append(f)
-    elif fonts[style] != []:
-        # if 'Mono' already in list, put 'Sans' second
-        if 'Mono' in fonts[style][0].info.styleName:
-            fonts[style].append(f)
-        # else put 'Mono' first
-        else:
-            fonts[style] = [f] + fonts[style]
+# # if the user cancels or inputs an empty string, cancel the script
+# if glyphsToMakeDefault == "":
+#     print("canceled")
 
-print(fonts)
+# files = getFile("Select UFOs to copy glyphs between",
+#                 allowsMultipleSelection=True, fileTypes=["ufo"])
 
-for style in fonts.keys():
-    for f in fonts[style]:
-        f.close()
+# # fonts = {
+# #         "Casual A" = (monoFontCasualA, sansFontCasualA)
+# # }
+
+# fonts = {}
+
+# for path in files:
+#     f = OpenFont(path, showInterface=False)
+#     # style = f.info.styleName
+#     variation = f.info.styleName.replace('Mono ','').replace('Sans ','')
+#     if variation not in fonts.keys():
+#         fonts[variation] = []
+
+#     if fonts[variation] == []:
+#         fonts[variation].append(f)
+#     elif fonts[variation] != []:
+#         # if 'Mono' already in list, put 'Sans' second
+#         if 'Mono' in fonts[variation][0].info.styleName:
+#             fonts[variation].append(f)
+#         # else put 'Mono' first
+#         else:
+#             fonts[variation] = [f] + fonts[variation]
+
+# for variation in fonts.keys():
+#     print(variation)
+#     for f in fonts[variation]:
+#         print('\t', f)
+#         f.close()
