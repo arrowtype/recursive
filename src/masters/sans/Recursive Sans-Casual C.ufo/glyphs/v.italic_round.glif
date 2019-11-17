@@ -17,10 +17,12 @@
 			<point x="72" y="296"/>
 			<point x="72" y="220"/>
 			<point x="72" y="157" type="curve" smooth="yes"/>
-			<point x="72" y="69"/>
-			<point x="193" y="-9"/>
-			<point x="321" y="-9" type="curve" smooth="yes"/>
-			<point x="326" y="-9" type="line" smooth="yes"/>
+			<point x="72" y="125"/>
+			<point x="87" y="95"/>
+			<point x="113" y="69" type="curve" smooth="yes"/>
+			<point x="159" y="23"/>
+			<point x="239" y="-9"/>
+			<point x="326" y="-9" type="curve" smooth="yes"/>
 			<point x="476" y="-9"/>
 			<point x="572" y="140"/>
 			<point x="572" y="341" type="curve" smooth="yes"/>
@@ -42,7 +44,9 @@
 			<point x="360" y="213"/>
 			<point x="324" y="167"/>
 			<point x="279" y="159" type="curve"/>
-			<point x="273" y="159" type="line"/>
+			<point x="277" y="159"/>
+			<point x="275" y="159"/>
+			<point x="273" y="159" type="curve"/>
 			<point x="272" y="171"/>
 			<point x="272" y="183"/>
 			<point x="272" y="197" type="curve" smooth="yes"/>
@@ -61,7 +65,7 @@
 			<key>com.arrowtype.glyphMarkStatus</key>
 			<string>fromComponents</string>
 			<key>public.markColor</key>
-			<string>0,0,0,0.25</string>
+			<string>1,0.5,0,1</string>
 		</dict>
 	</lib>
 </glyph>
