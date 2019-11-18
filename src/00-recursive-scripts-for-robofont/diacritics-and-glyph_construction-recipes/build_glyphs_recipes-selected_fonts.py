@@ -19,13 +19,15 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 # apple=.notdef|F8FF
 # '''
 
-txt = ""
-recipeFile = "/Users/stephennixon/type-repos/recursive/src/00-recursive-scripts-for-robofont/diacritics-and-glyph_construction-recipes/diacritic-recipes-for-recursive-generated-with_alts.txt"
-with open(recipeFile, 'r') as recipe:
-    for line in recipe:
-        line = line.replace(' ','')
-        if len(line) > 1:
-            txt += line
+txt = '''\
+zero.ss03 = zero
+'''
+# recipeFile = "/Users/stephennixon/type-repos/recursive/src/00-recursive-scripts-for-robofont/diacritics-and-glyph_construction-recipes/diacritic-recipes-for-recursive-generated-with_alts.txt"
+# with open(recipeFile, 'r') as recipe:
+#     for line in recipe:
+#         line = line.replace(' ','')
+#         if len(line) > 1:
+#             txt += line
 
 print(txt)
 # get the actual glyph constructions from text

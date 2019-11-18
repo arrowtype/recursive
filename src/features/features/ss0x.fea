@@ -1,0 +1,89 @@
+feature ss01 {
+    featureNames {
+        # MS, unicode, English
+        name "Simplified 6 and 9";
+        # Apple, roman, unspecified
+        name 1 "Simplified 6 and 9";
+    };
+    sub six by six.ss01;
+    sub sixsuperior by sixsuperior.ss01;
+    sub sixinferior by sixinferior.ss01;
+    sub nine by nine.ss01;
+    sub ninesuperior by ninesuperior.ss01;
+    sub nineinferior by nineinferior.ss01;
+} ss01;
+
+feature ss03 {
+    featureNames {
+        # MS, unicode, English
+        name "Slashed Zero";
+        # Apple, roman, unspecified
+        name 1 "Slashed Zero";
+    };
+    sub zero by zero.ss03;
+    sub zero.sans by zero.ss03;
+} ss03;
+
+feature ss04 {
+    featureNames {
+        # MS, unicode, English
+        name "Simplified 'at' sign";
+        # Apple, roman, unspecified
+        name 1 "Simplified 'at' sign";
+    };
+    sub at by at.alt;
+    sub at.case by at.alt_case;
+} ss04;
+
+# character variants
+
+@romanA = [ a        aacute        abreve        abreveacute        abrevedot        abrevegrave        abrevehook        abrevetilde        acircumflex        acircumflexacute        acircumflexdot        acircumflexgrave        acircumflexhook        acircumflextilde        adieresis        adotbelow        agrave        ahook        amacron        aogonek        aring        aringacute        atilde        ];
+@italicA = [a.italic aacute.italic abreve.italic abreveacute.italic abrevedot.italic abrevegrave.italic abrevehook.italic abrevetilde.italic acircumflex.italic acircumflexacute.italic acircumflexdot.italic acircumflexgrave.italic acircumflexhook.italic acircumflextilde.italic adieresis.italic adotbelow.italic agrave.italic ahook.italic amacron.italic aogonek.italic aring.italic aringacute.italic atilde.italic ];
+
+feature ss05 {
+    featureNames {
+        # MS, unicode, English
+        name "Single-story 'a'";
+        # Apple, roman, unspecified
+        name 1 "Single-story 'a'";
+    };
+    sub @romanA by @italicA;
+} ss05;
+
+@romanG =     [g        gbreve        gcaron        gcircumflex        gcommaaccent        gdotaccent        ];
+@italicG =    [g.italic gbreve.italic gcaron.italic gcircumflex.italic gcommaaccent.italic gdotaccent.italic ];
+
+feature ss06 {
+    featureNames {
+        # MS, unicode, English
+        name "Single-story 'g'";
+        # Apple, roman, unspecified
+        name 1 "Single-story 'g'";
+    };
+    sub @romanG by @italicG;
+    sub g.mono by g.italic;
+} ss06;
+
+@sansI = [  i        iacute        ibreve        icircumflex        idieresis        idotbelow        igrave        ihook        imacron        iogonek        itilde       ];
+@italicI = [i.italic iacute.italic ibreve.italic icircumflex.italic idieresis.italic idotbelow.italic igrave.italic ihook.italic imacron.italic iogonek.italic itilde.italic];
+@monoI = [  i.mono   iacute.mono   ibreve.mono   icircumflex.mono   idieresis.mono   idotbelow.mono   igrave.mono   ihook.mono   imacron.mono   iogonek.mono   itilde.mono  ];
+
+feature ss07 {
+    featureNames {
+        # MS, unicode, English
+        name "Two-serif 'i'";
+        # Apple, roman, unspecified
+        name 1 "Two-serif 'i'";
+    };
+    sub @sansI by @italicI;
+} ss07;
+
+feature ss08 {
+    featureNames {
+        # MS, unicode, English
+        name "Sans-serif 'i'";
+        # Apple, roman, unspecified
+        name 1 "Sans-serif 'i'";
+    };
+    sub @monoI by @sansI;
+} ss08;
