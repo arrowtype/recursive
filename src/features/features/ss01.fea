@@ -1,4 +1,11 @@
 feature ss01 {
+    featureNames {
+        # MS, unicode, English
+        name "Simplified 6 and 9";
+
+        # Apple, roman, unspecified
+        name 1 "Simplified 6 and 9";
+    };
     sub six by six.ss01;
     sub sixsuperior by sixsuperior.ss01;
     sub sixinferior by sixinferior.ss01;
