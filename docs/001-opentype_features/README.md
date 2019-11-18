@@ -24,15 +24,18 @@ Tracking issue: https://github.com/arrowtype/recursive/issues/92
 - [ ] cpsc (added spacing for all-caps text – sans only)
   - [ ] Test: is this a good idea? it only has partial support, and may cause confusing problems between design & development
 - [ ] cv01–cv09+ (control of individual roman/italic alternates)
-- [ ] ss01 (dotted zero – default is slashed)
-- [-] ss02 (disambiguated forms for `6` and `9`)
+- [ ] ss01 (disambiguated forms for `6` and `9`)
   - [x] draw glyphs
   - [ ] implement
+- [ ] ss02 (dotted zero – default is slashed)
+- [ ] ss03 (slashed zero in sans – default is open)
+- [ ] zero (slashed zero for sans, where default is open)
+  - [ ] figure out how to coordinate this with the GSUB/rvrn taking place
+
 - [ ] pnum (proportional figures – figures are tabular, by default – makes a proportional `1`)
 - [ ] frac (arbitrary fractions)
 - [ ] ordn (ordinals – ª and º)
-- [ ] zero (slashed zero for sans, where default is open)
-  - [ ] figure out how to coordinate this with the GSUB/rvrn taking place
+
 
 ### Invalid
 - [x] ~ss01 (all-roman forms across slnt axis)~ Implemented as `ital` axis.
