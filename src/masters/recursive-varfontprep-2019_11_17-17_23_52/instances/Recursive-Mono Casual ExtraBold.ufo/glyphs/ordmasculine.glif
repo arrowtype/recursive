@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ordmasculine" format="2">
+  <advance width="600"/>
+  <unicode hex="00BA"/>
+  <outline>
+    <contour>
+      <point x="304" y="762" type="curve" smooth="yes"/>
+      <point x="183" y="762"/>
+      <point x="100" y="663"/>
+      <point x="100" y="518" type="curve" smooth="yes"/>
+      <point x="100" y="504" type="line" smooth="yes"/>
+      <point x="100" y="354"/>
+      <point x="190" y="286"/>
+      <point x="295" y="286" type="curve" smooth="yes"/>
+      <point x="416" y="286"/>
+      <point x="500" y="373"/>
+      <point x="500" y="502" type="curve" smooth="yes"/>
+      <point x="500" y="516" type="line" smooth="yes"/>
+      <point x="500" y="686"/>
+      <point x="408" y="762"/>
+    </contour>
+    <contour>
+      <point x="299" y="655" type="curve" smooth="yes"/>
+      <point x="323" y="655"/>
+      <point x="340" y="652"/>
+      <point x="355" y="645" type="curve"/>
+      <point x="366" y="619"/>
+      <point x="372" y="580"/>
+      <point x="372" y="521" type="curve" smooth="yes"/>
+      <point x="372" y="511" type="line" smooth="yes"/>
+      <point x="372" y="428"/>
+      <point x="346" y="396"/>
+      <point x="291" y="396" type="curve" smooth="yes"/>
+      <point x="269" y="396"/>
+      <point x="252" y="400"/>
+      <point x="236" y="406" type="curve"/>
+      <point x="229" y="427"/>
+      <point x="225" y="454"/>
+      <point x="225" y="492" type="curve" smooth="yes"/>
+      <point x="225" y="500" type="line" smooth="yes"/>
+      <point x="225" y="612"/>
+      <point x="250" y="655"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.arrowtype.glyphMarkStatus</key>
+      <string>check</string>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+      <key>public.markColor</key>
+      <string>1,1,0,1</string>
+    </dict>
+  </lib>
+</glyph>

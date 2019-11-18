@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="period" format="2">
+  <advance width="350"/>
+  <unicode hex="002E"/>
+  <outline>
+    <contour>
+      <point x="264" y="0" type="curve"/>
+      <point x="264" y="111" type="line" smooth="yes"/>
+      <point x="264" y="187"/>
+      <point x="229" y="206"/>
+      <point x="173" y="206" type="curve" smooth="yes"/>
+      <point x="139" y="206"/>
+      <point x="111" y="199"/>
+      <point x="86" y="188" type="curve"/>
+      <point x="86" y="93" type="line" smooth="yes"/>
+      <point x="86" y="4"/>
+      <point x="125" y="-11"/>
+      <point x="196" y="-11" type="curve" smooth="yes"/>
+      <point x="222" y="-11"/>
+      <point x="242" y="-8"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.arrowtype.glyphMarkStatus</key>
+      <string>needsFixing</string>
+      <key>public.markColor</key>
+      <string>1,0,0,1</string>
+    </dict>
+  </lib>
+</glyph>

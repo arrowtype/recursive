@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Hbar" format="2">
+  <advance width="600.0"/>
+  <unicode hex="0126"/>
+  <outline>
+    <contour>
+      <point x="20.0" y="590.7547169811321" type="line"/>
+      <point x="20.0" y="569.622641509434"/>
+      <point x="20.0" y="549.7358490566038"/>
+      <point x="20.0" y="528.6037735849056" type="curve" smooth="yes"/>
+      <point x="20.0" y="521.6037735849056"/>
+      <point x="24.0" y="517.6037735849056"/>
+      <point x="31.0" y="517.6037735849056" type="curve" smooth="yes"/>
+      <point x="580.0" y="517.6037735849056" type="line"/>
+      <point x="580.0" y="538.7358490566038"/>
+      <point x="580.0" y="558.622641509434"/>
+      <point x="580.0" y="579.7547169811321" type="curve" smooth="yes"/>
+      <point x="580.0" y="586.7547169811321"/>
+      <point x="576.0" y="590.7547169811321"/>
+      <point x="569.0" y="590.7547169811321" type="curve"/>
+    </contour>
+    <component base="H"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0,0,0.25</string>
+    </dict>
+  </lib>
+</glyph>
