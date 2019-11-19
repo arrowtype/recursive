@@ -15,12 +15,12 @@
 			<point x="280" y="490" type="line"/>
 			<point x="249" y="503" type="line"/>
 			<point x="263" y="325"/>
-			<point x="282" y="166"/>
-			<point x="301" y="8" type="curve"/>
-			<point x="301" y="1"/>
-			<point x="306" y="0"/>
-			<point x="310" y="0" type="curve"/>
-			<point x="352" y="1"/>
+			<point x="283" y="168"/>
+			<point x="301" y="37" type="curve" smooth="yes"/>
+			<point x="306" y="1"/>
+			<point x="312" y="0"/>
+			<point x="322" y="0" type="curve" smooth="yes"/>
+			<point x="364" y="0"/>
 			<point x="430" y="1"/>
 			<point x="472" y="0" type="curve"/>
 			<point x="480" y="33"/>
@@ -46,10 +46,10 @@
 			<point x="395" y="208" type="line"/>
 			<point x="379" y="427"/>
 			<point x="365" y="561"/>
-			<point x="353" y="690" type="curve"/>
+			<point x="355" y="670" type="curve" smooth="yes"/>
 			<point x="352" y="699"/>
 			<point x="350" y="700"/>
-			<point x="338" y="700" type="curve"/>
+			<point x="338" y="700" type="curve" smooth="yes"/>
 			<point x="293" y="700"/>
 			<point x="212" y="700"/>
 			<point x="167" y="700" type="curve"/>
