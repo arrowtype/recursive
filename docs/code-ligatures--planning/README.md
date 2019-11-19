@@ -104,7 +104,7 @@ Including these because they should be relatively simple, and will be seen very 
 | &&&          | ampersand_ampersand_ampersand.code | Haskell          |
 | &#124;&#124; | bar_bar_bar.code                   | Haskell          |
 
-### _prority 2_
+### _priority 2_
 
 #### more comments
 
@@ -134,7 +134,14 @@ Including these because they should be relatively simple, and will be seen very 
 | <            | less.code                          | (matching sizes) |
 | <            | greater.code                       | (matching sizes) |
 
-### _prority 3_
+
+#### Miscellaneous
+
+| ligature     | name                               | usecase          |
+| ------------ | ---------------------------------- | ---------------- |
+| ://          | colon_slash_slash.code             | URLs             |
+
+### _priority 3_
 
 #### math operators
 
