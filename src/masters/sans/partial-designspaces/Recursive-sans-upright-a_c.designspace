@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version='1.0' encoding='UTF-8'?>
 <designspace format="4.0">
   <axes>
     <axis tag="GNRE" name="genre" minimum="0" maximum="1" default="0">
@@ -11,141 +11,168 @@
   <sources>
     <source filename="../Recursive Sans-Linear C.ufo" familyname="Recursive" stylename="Sans Linear C">
       <location>
-        <dimension name="genre" xvalue="0" />
-        <dimension name="weight" xvalue="900" />
+        <dimension name="genre" xvalue="0"/>
+        <dimension name="weight" xvalue="900"/>
       </location>
     </source>
     <source filename="../Recursive Sans-Casual A.ufo" familyname="Recursive" stylename="Sans Casual A">
       <location>
-        <dimension name="genre" xvalue="1" />
-        <dimension name="weight" xvalue="300" />
+        <dimension name="genre" xvalue="1"/>
+        <dimension name="weight" xvalue="300"/>
       </location>
     </source>
     <source filename="../Recursive Sans-Linear B.ufo" familyname="Recursive" stylename="Sans Linear B">
       <location>
-        <dimension name="genre" xvalue="0" />
-        <dimension name="weight" xvalue="700" />
+        <dimension name="genre" xvalue="0"/>
+        <dimension name="weight" xvalue="700"/>
       </location>
     </source>
     <source filename="../Recursive Sans-Linear A.ufo" familyname="Recursive" stylename="Sans Linear A">
-      <lib copy="1" />
-      <groups copy="1" />
-      <features copy="1" />
-      <info copy="1" />
+      <lib copy="1"/>
+      <groups copy="1"/>
+      <features copy="1"/>
+      <info copy="1"/>
       <location>
-        <dimension name="genre" xvalue="0" />
-        <dimension name="weight" xvalue="300" />
+        <dimension name="genre" xvalue="0"/>
+        <dimension name="weight" xvalue="300"/>
       </location>
     </source>
     <source filename="../Recursive Sans-Casual C.ufo" familyname="Recursive" stylename="Sans Casual C">
       <location>
-        <dimension name="genre" xvalue="1" />
-        <dimension name="weight" xvalue="900" />
+        <dimension name="genre" xvalue="1"/>
+        <dimension name="weight" xvalue="900"/>
       </location>
     </source>
     <source filename="../Recursive Sans-Casual B.ufo" familyname="Recursive" stylename="Sans Casual B">
       <location>
-        <dimension name="genre" xvalue="1" />
-        <dimension name="weight" xvalue="700" />
+        <dimension name="genre" xvalue="1"/>
+        <dimension name="weight" xvalue="700"/>
       </location>
     </source>
   </sources>
   <instances>
     <instance familyname="Recursive Sans" stylename="Linear Regular" filename="instances/RecursiveSans-LinearRegular.ufo" postscriptfontname="RecursiveSans-LinearRegular" stylemapfamilyname="Recursive Sans Linear Regular" stylemapstylename="regular">
       <location>
-        <dimension name="genre" xvalue="0" />
-        <dimension name="weight" xvalue="400" />
+        <dimension name="genre" xvalue="0"/>
+        <dimension name="weight" xvalue="400"/>
       </location>
-      <kerning />
-      <info />
+      <kerning/>
+      <info/>
     </instance>
     <instance familyname="Recursive Sans" stylename="Linear Medium" filename="instances/RecursiveSans-LinearMedium.ufo" postscriptfontname="RecursiveSans-LinearMedium">
       <location>
-        <dimension name="genre" xvalue="0" />
-        <dimension name="weight" xvalue="500" />
+        <dimension name="genre" xvalue="0"/>
+        <dimension name="weight" xvalue="500"/>
       </location>
-      <kerning />
-      <info />
+      <kerning/>
+      <info/>
     </instance>
     <instance familyname="Recursive Sans" stylename="Linear SemiBold" filename="instances/RecursiveSans-LinearSemiBold.ufo" postscriptfontname="RecursiveSans-LinearSemiBold">
       <location>
-        <dimension name="genre" xvalue="0" />
-        <dimension name="weight" xvalue="600" />
+        <dimension name="genre" xvalue="0"/>
+        <dimension name="weight" xvalue="600"/>
       </location>
-      <kerning />
-      <info />
+      <kerning/>
+      <info/>
     </instance>
     <instance familyname="Recursive Sans" stylename="Linear ExtraBold" filename="instances/RecursiveSans-LinearExtraBold.ufo" postscriptfontname="RecursiveSans-LinearExtraBold">
       <location>
-        <dimension name="genre" xvalue="0" />
-        <dimension name="weight" xvalue="800" />
+        <dimension name="genre" xvalue="0"/>
+        <dimension name="weight" xvalue="800"/>
       </location>
-      <kerning />
-      <info />
+      <kerning/>
+      <info/>
     </instance>
     <instance familyname="Recursive Sans" stylename="Linear UltraBold" filename="instances/RecursiveSans-LinearUltraBold.ufo" postscriptfontname="RecursiveSans-LinearUltraBold">
       <location>
-        <dimension name="genre" xvalue="0" />
-        <dimension name="weight" xvalue="850" />
+        <dimension name="genre" xvalue="0"/>
+        <dimension name="weight" xvalue="850"/>
       </location>
-      <kerning />
-      <info />
+      <kerning/>
+      <info/>
     </instance>
     <instance familyname="Recursive Sans" stylename="Linear Black" filename="instances/RecursiveSans-LinearBlack.ufo" postscriptfontname="RecursiveSans-LinearBlack">
       <location>
-        <dimension name="genre" xvalue="0" />
-        <dimension name="weight" xvalue="900" />
+        <dimension name="genre" xvalue="0"/>
+        <dimension name="weight" xvalue="900"/>
       </location>
-      <kerning />
-      <info />
+      <kerning/>
+      <info/>
     </instance>
     <instance familyname="Recursive Sans" stylename="Casual Regular" filename="instances/RecursiveSans-CasualRegular.ufo" postscriptfontname="RecursiveSans-CasualRegular">
       <location>
-        <dimension name="genre" xvalue="1" />
-        <dimension name="weight" xvalue="400" />
+        <dimension name="genre" xvalue="1"/>
+        <dimension name="weight" xvalue="400"/>
       </location>
-      <kerning />
-      <info />
+      <kerning/>
+      <info/>
     </instance>
     <instance familyname="Recursive Sans" stylename="Casual Medium" filename="instances/RecursiveSans-CasualMedium.ufo" postscriptfontname="RecursiveSans-CasualMedium">
       <location>
-        <dimension name="genre" xvalue="1" />
-        <dimension name="weight" xvalue="500" />
+        <dimension name="genre" xvalue="1"/>
+        <dimension name="weight" xvalue="500"/>
       </location>
-      <kerning />
-      <info />
+      <kerning/>
+      <info/>
     </instance>
     <instance familyname="Recursive Sans" stylename="Casual SemiBold" filename="instances/RecursiveSans-CasualSemiBold.ufo" postscriptfontname="RecursiveSans-CasualSemiBold">
       <location>
-        <dimension name="genre" xvalue="1" />
-        <dimension name="weight" xvalue="600" />
+        <dimension name="genre" xvalue="1"/>
+        <dimension name="weight" xvalue="600"/>
       </location>
-      <kerning />
-      <info />
+      <kerning/>
+      <info/>
     </instance>
     <instance familyname="Recursive Sans" stylename="Casual ExtraBold" filename="instances/RecursiveSans-CasualExtraBold.ufo" postscriptfontname="RecursiveSans-CasualExtraBold">
       <location>
-        <dimension name="genre" xvalue="1" />
-        <dimension name="weight" xvalue="800" />
+        <dimension name="genre" xvalue="1"/>
+        <dimension name="weight" xvalue="800"/>
       </location>
-      <kerning />
-      <info />
+      <kerning/>
+      <info/>
     </instance>
     <instance familyname="Recursive Sans" stylename="Casual UltraBold" filename="instances/RecursiveSans-CasualUltraBold.ufo" postscriptfontname="RecursiveSans-CasualUltraBold">
       <location>
-        <dimension name="genre" xvalue="1" />
-        <dimension name="weight" xvalue="850" />
+        <dimension name="genre" xvalue="1"/>
+        <dimension name="weight" xvalue="850"/>
       </location>
-      <kerning />
-      <info />
+      <kerning/>
+      <info/>
     </instance>
     <instance familyname="Recursive Sans" stylename="Casual Black" filename="instances/RecursiveSans-CasualBlack.ufo" postscriptfontname="RecursiveSans-CasualBlack">
       <location>
-        <dimension name="genre" xvalue="1" />
-        <dimension name="weight" xvalue="900" />
+        <dimension name="genre" xvalue="1"/>
+        <dimension name="weight" xvalue="900"/>
       </location>
-      <kerning />
-      <info />
+      <kerning/>
+      <info/>
     </instance>
   </instances>
+  <lib>
+    <dict>
+      <key>com.letterror.mathModelPref</key>
+      <string>previewVarLib</string>
+      <key>com.letterror.skateboard.interactionSources</key>
+      <dict>
+        <key>horizontal</key>
+        <array/>
+        <key>ignore</key>
+        <array>
+          <string>genre</string>
+          <string>weight</string>
+        </array>
+        <key>vertical</key>
+        <array/>
+      </dict>
+      <key>com.letterror.skateboard.previewLocation</key>
+      <dict>
+        <key>genre</key>
+        <real>0.0</real>
+        <key>weight</key>
+        <real>300.0</real>
+      </dict>
+      <key>com.letterror.skateboard.previewText</key>
+      <string>SKATEBOARD</string>
+    </dict>
+  </lib>
 </designspace>
