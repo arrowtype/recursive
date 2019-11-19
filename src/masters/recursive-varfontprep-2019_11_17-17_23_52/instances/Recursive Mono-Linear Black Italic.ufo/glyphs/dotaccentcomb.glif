@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dotaccentcomb" format="2">
+  <unicode hex="0307"/>
+  <anchor x="69.0" y="549.0" name="_top"/>
+  <anchor x="106.66666666666666" y="715.0" name="_dot"/>
+  <anchor x="-68.66666666666667" y="0.0" name="bottom"/>
+  <anchor x="30.666666666666657" y="4.666666666666668" name="ogonek"/>
+  <anchor x="122.66666666666667" y="766.3333333333334" name="top"/>
+  <outline>
+    <contour>
+      <point x="14.333333333333337" y="800.0" type="curve"/>
+      <point x="-26.666666666666657" y="637.6666666666667" type="line" smooth="yes"/>
+      <point x="-28.666666666666657" y="630.6666666666667"/>
+      <point x="-24.999999999999993" y="626.6666666666667"/>
+      <point x="-17.999999999999993" y="626.6666666666667" type="curve" smooth="yes"/>
+      <point x="38.00000000000001" y="626.6666666666667"/>
+      <point x="149.66666666666666" y="626.6666666666667"/>
+      <point x="205.66666666666666" y="626.6666666666667" type="curve"/>
+      <point x="245.99999999999997" y="789.0" type="line" smooth="yes"/>
+      <point x="247.99999999999997" y="796.0"/>
+      <point x="244.99999999999997" y="800.0"/>
+      <point x="237.99999999999997" y="800.0" type="curve" smooth="yes"/>
+      <point x="181.99999999999997" y="800.0"/>
+      <point x="70.33333333333334" y="800.0"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0,0,0.25</string>
+    </dict>
+  </lib>
+</glyph>

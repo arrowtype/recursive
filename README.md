@@ -135,6 +135,54 @@ Things to be aware of:
 - The Casual Italic instances are drawn to work well in text but are also the most expressive styles of the family – try them at large sizes to show off their wavy stems and really make a statement! 🏄‍♂️🏄‍♀️
 
 
+## OpenType Features
+
+Recursive is built with a number of OpenType features that make it simple to control a few handy typographic features.
+
+ss01 - @
+ss02 - a
+ss03 - g
+ss04 - f
+ss04 - i
+ss05 - l
+ss06 - r
+ss07 - y
+ss08 - no-serif L and Z
+ss09 - alt 6 & 9
+ss10 - slashed zero
+ss11 - dotted zero
+
+
+### Activating OpenType Features in Code Editors
+
+**VS Code**
+
+In VS Code, you can activate OpenType features by searching for `fontLigatures`, then editing this in settings.json like this:
+
+```
+    "editor.fontLigatures": "'ss01','ss05','dlig'"
+```
+
+(The above would give you a simplied `6` & `9`, a single-story `a`, and activate code ligatures.)
+
+**Atom**
+
+Go to `Atom` -> `Stylesheet` and add in the following:
+
+```
+atom-text-editor {
+  font-family: 'RecursiveMonoB_023-CslRg';
+  font-feature-settings: "ss01", "ss05", "dlig";
+}
+```
+
+# Sublime Text
+
+Go to `Sublime Text` -> `Preferences` -> `Settings` and add:
+
+```json
+"font_options": ["ss01", "ss05", "dlig"]
+```
 
 
 --- 
