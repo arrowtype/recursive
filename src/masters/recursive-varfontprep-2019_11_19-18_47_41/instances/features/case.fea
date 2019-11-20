@@ -1,0 +1,6 @@
+@lowercasePunc = [parenleft      parenright      braceleft      braceright      guilsinglleft      guilsinglright      guillemotleft      guillemotright      slash      backslash      at      exclamdown      questiondown      periodcentered      bullet     ];
+@uppercasePunc = [parenleft.case parenright.case braceleft.case braceright.case guilsinglleft.case guilsinglright.case guillemotleft.case guillemotright.case slash.case backslash.case at.case exclamdown.case questiondown.case periodcentered.case bullet.case];
+
+feature case {
+    sub @lowercasePunc by @uppercasePunc;
+} case;

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Y" format="2">
+  <advance width="600"/>
+  <unicode hex="0059"/>
+  <anchor x="300" y="711" name="top"/>
+  <anchor x="300" y="730" name="hook"/>
+  <anchor x="300" y="-1" name="bottom"/>
+  <anchor x="300" y="-142" name="dot"/>
+  <outline>
+    <contour>
+      <point x="325" y="0" type="curve"/>
+      <point x="325" y="32"/>
+      <point x="325" y="65"/>
+      <point x="325" y="100" type="curve"/>
+      <point x="325" y="170"/>
+      <point x="325" y="250"/>
+      <point x="325" y="320" type="curve"/>
+      <point x="275" y="320" type="line"/>
+      <point x="275" y="217"/>
+      <point x="275" y="114"/>
+      <point x="275" y="11" type="curve" smooth="yes"/>
+      <point x="275" y="4"/>
+      <point x="279" y="0"/>
+      <point x="286" y="0" type="curve" smooth="yes"/>
+      <point x="299" y="0"/>
+      <point x="312" y="0"/>
+    </contour>
+    <contour>
+      <point x="41" y="700" type="curve"/>
+      <point x="120" y="560"/>
+      <point x="198" y="421"/>
+      <point x="277" y="281" type="curve"/>
+      <point x="280" y="278"/>
+      <point x="287" y="277"/>
+      <point x="321" y="277" type="curve"/>
+      <point x="398" y="413"/>
+      <point x="477" y="551"/>
+      <point x="554" y="687" type="curve"/>
+      <point x="557" y="694"/>
+      <point x="552" y="700"/>
+      <point x="548" y="700" type="curve"/>
+      <point x="534" y="700"/>
+      <point x="519" y="700"/>
+      <point x="505" y="700" type="curve"/>
+      <point x="417" y="542"/>
+      <point x="378" y="474"/>
+      <point x="284" y="296" type="curve"/>
+      <point x="324" y="345" type="line"/>
+      <point x="274" y="345" type="line"/>
+      <point x="313" y="299" type="line"/>
+      <point x="225" y="472"/>
+      <point x="190" y="538"/>
+      <point x="104" y="690" type="curve"/>
+      <point x="101" y="696"/>
+      <point x="98" y="700"/>
+      <point x="87" y="700" type="curve" smooth="yes"/>
+      <point x="72" y="700"/>
+      <point x="56" y="700"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.arrowtype.glyphMarkStatus</key>
+      <string>workInProgress</string>
+      <key>com.arrowtype.numberOfIterations</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+      <key>public.markColor</key>
+      <string>0,0.25,1,0.1</string>
+    </dict>
+  </lib>
+</glyph>
