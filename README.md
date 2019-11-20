@@ -75,6 +75,8 @@ In code editors like VS Code and Atom, you must use a string to set your preferr
 
 The `B_020` in these name string represents the current beta release version. It's possible this has shifted (I am releasing often at this point), so check what the release notes say.
 
+Note: as of Nov 20, this is not working as expected on Windows; will be fixed ASAP. See issue https://github.com/arrowtype/recursive/issues/255
+
 ---
 
 ## Variable Axes
