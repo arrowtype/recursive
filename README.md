@@ -14,8 +14,6 @@ In programming, “recursion” is when a function calls itself, using its own o
 
 Recursive Sans borrows glyphs from its parent mono but adjusts the widths of many key glyphs for comfortable readability. Its metrics are *superplexed* – every style takes up the exact same horizontal space, across all styles. In this 3-axis variable font, this allows for fluid transitions between weight, slant, and “expression” (casual to strict letterforms), all without text shifts or layout reflow. Not only does this allow for new interactive possibilities in UI, but it also makes for a uniquely fun typesetting experience.
 
-
-
 ---
 
 ## Using the fonts
@@ -139,19 +137,7 @@ Things to be aware of:
 
 Recursive is built with a number of OpenType features that make it simple to control a few handy typographic features.
 
-ss01 - @
-ss02 - a
-ss03 - g
-ss04 - f
-ss04 - i
-ss05 - l
-ss06 - r
-ss07 - y
-ss08 - no-serif L and Z
-ss09 - alt 6 & 9
-ss10 - slashed zero
-ss11 - dotted zero
-
+![OpenType Features in Recursive](docs/001-opentype_features/recursive-b024-ot_features.png)
 
 ### Activating OpenType Features in Code Editors
 
