@@ -141,6 +141,7 @@ Recursive is built with a number of OpenType features that make it simple to con
 
 -->
 
+<!--
 ### Activating OpenType Features in Code Editors
 
 **VS Code**
@@ -171,7 +172,7 @@ Go to `Sublime Text` -> `Preferences` -> `Settings` and add:
 ```json
 "font_options": ["ss01", "ss05", "dlig"]
 ```
-
+-->
 
 --- 
 
