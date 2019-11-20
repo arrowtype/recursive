@@ -132,12 +132,14 @@ Things to be aware of:
 - Casual and Slant axes look great with intermediate values at text sizes, but they are mostly intended to be used at either fully "on or off" values, with intermediates available to allow animated stylistic transitions. If you are setting type at large sizes, avoid intermediate `CASL` and `slnt` values. If you stick to named instances in design apps (e.g. `Mono Casual Bold Italic`, etc), this is handled for you automatically.
 - The Casual Italic instances are drawn to work well in text but are also the most expressive styles of the family – try them at large sizes to show off their wavy stems and really make a statement! 🏄‍♂️🏄‍♀️
 
-
+<!--
 ## OpenType Features
 
 Recursive is built with a number of OpenType features that make it simple to control a few handy typographic features.
 
 ![OpenType Features in Recursive](docs/001-opentype_features/recursive-b024-ot_features.png)
+
+-->
 
 ### Activating OpenType Features in Code Editors
 
