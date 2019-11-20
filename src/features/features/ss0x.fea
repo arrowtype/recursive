@@ -122,6 +122,16 @@ feature ss09 {
 } ss09;
 
 # TODO: add dotted zero as ss10
+feature ss10 {
+    featureNames {
+        # MS, unicode, English
+        name "Dotted Zero";
+        # Apple, roman, unspecified
+        name 1 "Dotted Zero";
+    };
+    sub zero by zero.dotted;
+    sub zero.sans by zero.dotted;
+} ss10;
 
 feature ss11 {
     featureNames {

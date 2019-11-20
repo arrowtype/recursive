@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="logicalnot" format="2">
+	<unicode hex="00AC"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="62" y="455" type="line"/>
+			<point x="55" y="423"/>
+			<point x="51" y="388"/>
+			<point x="51" y="359" type="curve" smooth="yes"/>
+			<point x="51" y="269"/>
+			<point x="80" y="243"/>
+			<point x="180" y="243" type="curve" smooth="yes"/>
+			<point x="396" y="243" type="line"/>
+			<point x="336" y="303" type="line"/>
+			<point x="336" y="277"/>
+			<point x="336" y="252"/>
+			<point x="336" y="226" type="curve" smooth="yes"/>
+			<point x="336" y="130"/>
+			<point x="367" y="103"/>
+			<point x="476" y="103" type="curve" smooth="yes"/>
+			<point x="502" y="103"/>
+			<point x="521" y="105"/>
+			<point x="548" y="110" type="curve"/>
+			<point x="548" y="159"/>
+			<point x="549" y="214"/>
+			<point x="548" y="257" type="curve" smooth="yes"/>
+			<point x="548" y="412"/>
+			<point x="518" y="455"/>
+			<point x="408" y="455" type="curve" smooth="yes"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>fromComponents</string>
+			<key>public.markColor</key>
+			<string>0,0,0,0.25</string>
+		</dict>
+	</lib>
+</glyph>

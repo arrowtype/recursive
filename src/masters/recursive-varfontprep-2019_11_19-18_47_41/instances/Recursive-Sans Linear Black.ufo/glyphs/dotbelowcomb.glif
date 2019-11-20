@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dotbelowcomb" format="2">
+  <unicode hex="0323"/>
+  <anchor x="0.0" y="0.0" name="_bottom"/>
+  <anchor x="0.0" y="-161.33333333333334" name="_dot"/>
+  <outline>
+    <contour>
+      <point x="-113.33333333333333" y="-80.0" type="curve"/>
+      <point x="-113.33333333333333" y="-242.33333333333334" type="line" smooth="yes"/>
+      <point x="-113.33333333333333" y="-249.33333333333334"/>
+      <point x="-109.33333333333333" y="-253.33333333333334"/>
+      <point x="-102.33333333333333" y="-253.33333333333334" type="curve" smooth="yes"/>
+      <point x="-46.33333333333333" y="-253.33333333333334"/>
+      <point x="57.33333333333333" y="-253.33333333333334"/>
+      <point x="113.33333333333333" y="-253.33333333333334" type="curve"/>
+      <point x="113.33333333333333" y="-91.0" type="line" smooth="yes"/>
+      <point x="113.33333333333333" y="-84.0"/>
+      <point x="109.33333333333333" y="-80.0"/>
+      <point x="102.33333333333333" y="-80.0" type="curve" smooth="yes"/>
+      <point x="46.33333333333333" y="-80.0"/>
+      <point x="-57.33333333333333" y="-80.0"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0,0,0.25</string>
+    </dict>
+  </lib>
+</glyph>

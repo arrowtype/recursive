@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="lcaron" format="2">
+  <advance width="600.0"/>
+  <unicode hex="013E"/>
+  <outline>
+    <contour>
+      <point x="563.0" y="585.0" type="curve" smooth="yes"/>
+      <point x="573.0" y="585.0"/>
+      <point x="581.0" y="587.0"/>
+      <point x="588.0" y="593.0" type="curve" smooth="yes"/>
+      <point x="621.0" y="622.0"/>
+      <point x="649.0" y="669.0"/>
+      <point x="662.0" y="724.0" type="curve" smooth="yes"/>
+      <point x="668.0" y="750.0"/>
+      <point x="659.0" y="759.0"/>
+      <point x="642.0" y="759.0" type="curve" smooth="yes"/>
+      <point x="631.0" y="759.0"/>
+      <point x="625.0" y="757.0"/>
+      <point x="618.0" y="754.0" type="curve"/>
+      <point x="605.0" y="686.0"/>
+      <point x="583.0" y="646.0"/>
+      <point x="542.0" y="593.0" type="curve"/>
+      <point x="547.0" y="589.0"/>
+      <point x="553.0" y="585.0"/>
+    </contour>
+    <component base="l.italic"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+      <key>public.markColor</key>
+      <string>0,0,0,0.25</string>
+    </dict>
+  </lib>
+</glyph>

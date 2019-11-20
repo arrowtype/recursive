@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Eng" format="2">
+  <advance width="600"/>
+  <unicode hex="014A"/>
+  <outline>
+    <contour>
+      <point x="278" y="-100" type="curve" smooth="yes"/>
+      <point x="239" y="-100"/>
+      <point x="212" y="-94"/>
+      <point x="181" y="-75" type="curve"/>
+      <point x="161" y="-75" type="line"/>
+      <point x="161" y="-120"/>
+      <point x="161" y="-166"/>
+      <point x="161" y="-211" type="curve"/>
+      <point x="161" y="-214"/>
+      <point x="162" y="-217"/>
+      <point x="164" y="-219" type="curve" smooth="yes"/>
+      <point x="178" y="-233"/>
+      <point x="242" y="-250"/>
+      <point x="316" y="-250" type="curve" smooth="yes"/>
+      <point x="465" y="-250"/>
+      <point x="540" y="-163.9344262295"/>
+      <point x="540" y="0" type="curve" smooth="yes"/>
+      <point x="540" y="21"/>
+      <point x="468" y="21"/>
+      <point x="363" y="21" type="curve"/>
+      <point x="363" y="-67"/>
+      <point x="343" y="-100"/>
+    </contour>
+    <component base="N"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+      <key>public.markColor</key>
+      <string>1,1,0,1</string>
+    </dict>
+  </lib>
+</glyph>

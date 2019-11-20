@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Nhookleft" format="2">
+	<unicode hex="019D"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="4" y="-90" type="curve" smooth="yes"/>
+			<point x="-27" y="-90"/>
+			<point x="-33" y="-83"/>
+			<point x="-53" y="-69" type="curve"/>
+			<point x="-59" y="-69" type="line"/>
+			<point x="-61" y="-75"/>
+			<point x="-62" y="-82"/>
+			<point x="-62" y="-89" type="curve" smooth="yes"/>
+			<point x="-62" y="-100"/>
+			<point x="-59" y="-113"/>
+			<point x="-51" y="-121" type="curve" smooth="yes"/>
+			<point x="-38" y="-134"/>
+			<point x="-17" y="-140"/>
+			<point x="4" y="-140" type="curve" smooth="yes"/>
+			<point x="9" y="-140" type="line" smooth="yes"/>
+			<point x="85" y="-140"/>
+			<point x="130" y="-87"/>
+			<point x="130" y="-10" type="curve" smooth="yes"/>
+			<point x="130" y="2" type="line" smooth="yes"/>
+			<point x="130" y="18"/>
+			<point x="118" y="22"/>
+			<point x="80" y="22" type="curve"/>
+			<point x="80" y="-4" type="line" smooth="yes"/>
+			<point x="80" y="-66"/>
+			<point x="52" y="-90"/>
+		</contour>
+		<component base="N"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+			<key>public.markColor</key>
+			<string>1,1,0,1</string>
+		</dict>
+	</lib>
+</glyph>
