@@ -91,18 +91,17 @@ Including these because they should be relatively simple, and will be seen very 
 | ligature | name                    | usecase        | Done? |
 | -------- | ----------------------- | -------------- | ----- |
 | !=       | exclam_equal.code       | Python, JS     | DONE  |
-| !==      | exclam_equal_equal.code | JS             |
-| =/=      | equal_slash_equal.code  |
-| ?.       | question_period.code    |
-| ?:       | question_colon.code     |
-| ?:       | question_colon.code     |
+| !==      | exclam_equal_equal.code | JS             | DONE  |
+| =/=      | equal_slash_equal.code  |                | DONE  |
+| ?.       | question_period.code    |                | DONE  |
+| ?:       | question_colon.code     |                | DONE  |
 
 #### Haskell-specific ligatures
 
-| ligature     | name                               | usecase          |
-| ------------ | ---------------------------------- | ---------------- |
-| &&&          | ampersand_ampersand_ampersand.code | Haskell          |
-| &#124;&#124; | bar_bar_bar.code                   | Haskell          |
+| ligature     | name                               | usecase          | Done? |
+| ------------ | ---------------------------------- | ---------------- | ----- |
+| &&&          | ampersand_ampersand_ampersand.code | Haskell          | DONE  |
+| &#124;&#124; | bar_bar_bar.code                   | Haskell          | DONE  |
 
 ### _priority 2_
 
