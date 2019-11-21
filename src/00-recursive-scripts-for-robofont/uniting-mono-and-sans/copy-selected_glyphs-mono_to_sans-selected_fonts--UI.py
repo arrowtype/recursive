@@ -10,9 +10,9 @@ class GlyphFax(object):
         '''Initialize the dialog.'''
         x = y = padding = 10
         buttonHeight = 20
-        windowWidth = 320
+        windowWidth = 400
         
-        rows = 4.5
+        rows = 5.5
         
         self.w = FloatingWindow((windowWidth, buttonHeight*rows + padding*(rows)), "Glyph Fax Machine")
 
@@ -28,10 +28,16 @@ class GlyphFax(object):
 
         y += buttonHeight*2 + padding*2
         
-        self.w.overwriteGlyphsCheckBox = CheckBox((x, y, -padding, buttonHeight), "Overwrite Glyphs", value=False)
-
-
+        self.w.overwriteGlyphsCheckBox = CheckBox((x, y, -padding, buttonHeight), "Overwrite Glyphs", value=False, callback=self.overwriteGlyphsOptions)
         self.w.colorWell = ColorWell((windowWidth*0.8, y, -padding, buttonHeight),color=NSColor.orangeColor())
+
+        y += buttonHeight + padding
+
+        self.w.overwriteNormalWidthGlyphsCheckBox = CheckBox((x,y, -padding, 10), "Overwrite 600-unit Glyphs", value=True, sizeStyle="small")
+        self.w.overwriteNormalWidthGlyphsCheckBox.show(False)
+
+        self.w.overwriteAdjustedWidthGlyphsCheckBox = CheckBox((windowWidth*0.45, y, -padding, 10), "Overwrite non-600-unit Glyphs", value=False, sizeStyle="small")
+        self.w.overwriteAdjustedWidthGlyphsCheckBox.show(False)
 
         y += buttonHeight + padding
 
@@ -56,12 +62,31 @@ class GlyphFax(object):
         if glyphName not in fontToSendTo:
             fontToSendTo.newGlyph(glyphName)
         else:
-            if self.w.overwriteGlyphsCheckBox.get() == True:
-                fontToSendTo[glyphCopyName].clear()
-            else:
+            overwrite = self.w.overwriteGlyphsCheckBox.get()
+            overwrite600 = self.w.overwriteNormalWidthGlyphsCheckBox.get()
+            overwriteNon600 = self.w.overwriteAdjustedWidthGlyphsCheckBox.get()
+
+            # default case: overwrite is false (overwrite 600 is true, overwrite non600 is false)
+            if overwrite == False:
                 glyphCopyName = glyphName + '.copy'
                 fontToSendTo.newGlyph(glyphCopyName)
-            # TODO: ask user whether to overwrite glyphs or add suffix to new glyph
+
+            elif overwrite == True and overwrite600 == True and overwriteNon600 == True:
+                fontToSendTo[glyphCopyName].clear()
+
+            elif overwrite == True and overwrite600 == False and overwriteNon600 == True:
+                if round(fontToSendTo[glyphCopyName].width, -1) == 600:
+                    glyphCopyName = glyphName + '.copy'
+                    fontToSendTo.newGlyph(glyphCopyName)
+                else:
+                    fontToSendTo[glyphCopyName].clear()
+
+            elif overwrite == True and overwrite600 == True and overwriteNon600 == False:
+                if round(fontToSendTo[glyphCopyName].width, -1) == 600:
+                    fontToSendTo[glyphCopyName].clear()
+                else:
+                    glyphCopyName = glyphName + '.copy'
+                    fontToSendTo.newGlyph(glyphCopyName)
 
         glyphToCopy = fontToCopyFrom[glyphName]
         layerGlyph = fontToSendTo[glyphCopyName].getLayer("foreground")
@@ -118,6 +143,20 @@ class GlyphFax(object):
                 f.close()
 
         self.w.close()
+
+    def overwriteGlyphsOptions(self, sender):
+        '''Show/hide overwriting options'''
+
+        if self.w.overwriteNormalWidthGlyphsCheckBox.isVisible() == False:
+            self.w.overwriteNormalWidthGlyphsCheckBox.show(True)
+        else:
+            self.w.overwriteNormalWidthGlyphsCheckBox.show(False)
+
+        if self.w.overwriteAdjustedWidthGlyphsCheckBox.isVisible() == False:
+            self.w.overwriteAdjustedWidthGlyphsCheckBox.show(True)
+        else:
+            self.w.overwriteAdjustedWidthGlyphsCheckBox.show(False)
+
 
 
     def mono2SansCallback(self, sender):
