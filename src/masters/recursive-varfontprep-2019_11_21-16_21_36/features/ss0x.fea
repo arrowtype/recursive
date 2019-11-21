@@ -1,0 +1,161 @@
+
+
+@dfltA = [ a        aacute        abreve        abreveacute        abrevedot        abrevegrave        abrevehook        abrevetilde        acircumflex        acircumflexacute        acircumflexdot        acircumflexgrave        acircumflexhook        acircumflextilde        adieresis        adotbelow        agrave        ahook        amacron        aogonek        aring        aringacute        atilde        ];
+@italicA = [a.italic aacute.italic abreve.italic abreveacute.italic abrevedot.italic abrevegrave.italic abrevehook.italic abrevetilde.italic acircumflex.italic acircumflexacute.italic acircumflexdot.italic acircumflexgrave.italic acircumflexhook.italic acircumflextilde.italic adieresis.italic adotbelow.italic agrave.italic ahook.italic amacron.italic aogonek.italic aring.italic aringacute.italic atilde.italic ];
+
+feature ss01 {
+    featureNames {
+        # MS, unicode, English
+        name "Extra-friendly 'a'";
+        # Apple, roman, unspecified
+        name 1 "Extra-friendly 'a'";
+    };
+    sub @dfltA by @italicA;
+} ss01;
+
+@dfltG =     [g        gbreve        gcaron        gcircumflex        gcommaaccent        gdotaccent        ];
+@italicG =    [g.italic gbreve.italic gcaron.italic gcircumflex.italic gcommaaccent.italic gdotaccent.italic ];
+
+feature ss02 {
+    featureNames {
+        # MS, unicode, English
+        name "Extra-friendly 'g'";
+        # Apple, roman, unspecified
+        name 1 "Extra-friendly 'g'";
+    };
+    sub @dfltG by @italicG;
+    sub g.mono by g.italic;
+} ss02;
+
+feature ss03 {
+    featureNames {
+        # MS, unicode, English
+        name "Simplified mono 'f'";
+        # Apple, roman, unspecified
+        name 1 "Simplified mono 'f'";
+    };
+    sub f.mono by f;
+} ss03;
+
+@sansI = [i        iacute        ibreve        icircumflex        idieresis        idotbelow        igrave        ihook        imacron        iogonek        itilde       ];
+@italI = [i.italic iacute.italic ibreve.italic icircumflex.italic idieresis.italic idotbelow.italic igrave.italic ihook.italic imacron.italic iogonek.italic itilde.italic];
+@monoI = [i.mono   iacute.mono   ibreve.mono   icircumflex.mono   idieresis.mono   idotbelow.mono   igrave.mono   ihook.mono   imacron.mono   iogonek.mono   itilde.mono  ];
+
+feature ss04 {
+    featureNames {
+        # MS, unicode, English
+        name "Simplified mono 'i'";
+        # Apple, roman, unspecified
+        name 1 "Simplified mono 'i'";
+    };
+    sub @sansI by @italI;
+    sub @monoI by @italI;
+} ss04;
+
+@sansL = [l.sans lacute.sans lcommaaccent.sans ldotbelow.sans llinebelow.sans lslash.sans ];
+@italL = [l      lacute      lcommaaccent      ldotbelow      llinebelow      lslash      ];
+@monoL = [l.mono lacute.mono lcommaaccent.mono ldotbelow.mono llinebelow.mono lslash.mono ];
+
+feature ss05 {
+    featureNames {
+        # MS, unicode, English
+        name "Simplified mono 'l'";
+        # Apple, roman, unspecified
+        name 1 "Simplified mono 'l'";
+    };
+    sub @monoL by @italL;
+    sub @sansL by @italL;
+} ss05;
+
+@sansR = [r        racute        rcaron        rcommaaccent        ];
+@monoR = [r.mono   racute.mono   rcaron.mono   rcommaaccent.mono   ];
+@italR = [r.italic racute.italic rcaron.italic rcommaaccent.italic ];
+
+feature ss06 {
+    featureNames {
+        # MS, unicode, English
+        name "Simplified mono 'r'";
+        # Apple, roman, unspecified
+        name 1 "Simplified mono 'r'";
+    };
+    sub @monoR by @italR;
+} ss06;
+
+# TODO: add to font, then feature: Lacute.sans Lcommaaccent.sans Lcaron.sans Ldotbelow.sans Llinebelow.sans Ldot.sans Lslash.sans
+# TODO: add to font, then feature: Zacute.sans Zdotaccent.sans Zcaron.sans Zdotbelow.sans 
+
+feature ss07 {
+    featureNames {
+        # MS, unicode, English
+        name "No-serif 'L' & 'Z'";
+        # Apple, roman, unspecified
+        name 1 "No-serif 'L' & 'Z'";
+    };
+    sub L by L.sans;
+    sub Z by Z.sans;
+} ss07;
+
+feature ss08 {
+    featureNames {
+        # MS, unicode, English
+        name "Simplified mono 'at' sign";
+        # Apple, roman, unspecified
+        name 1 "Simplified mono 'at' sign";
+    };
+    sub at by at.alt;
+    sub at.case by at.alt_case;
+} ss08;
+
+# TODO: change names of 'six.ss01', etc, in sources
+
+feature ss09 {
+    featureNames {
+        # MS, unicode, English
+        name "Simplified 6 and 9";
+        # Apple, roman, unspecified
+        name 1 "Simplified 6 and 9";
+    };
+    sub six by six.ss01;
+    sub sixsuperior by sixsuperior.ss01;
+    sub sixinferior by sixinferior.ss01;
+    sub nine by nine.ss01;
+    sub ninesuperior by ninesuperior.ss01;
+    sub nineinferior by nineinferior.ss01;
+} ss09;
+
+# TODO: add dotted zero as ss10
+feature ss10 {
+    featureNames {
+        # MS, unicode, English
+        name "Dotted Zero";
+        # Apple, roman, unspecified
+        name 1 "Dotted Zero";
+    };
+    sub zero by zero.dotted;
+    sub zero.sans by zero.dotted;
+    sub zerosuperior by zerosuperior.dotted;
+    sub zeroinferior by zeroinferior.dotted;
+    sub zerosuperior.sans by zerosuperior.dotted;
+    sub zeroinferior.sans by zeroinferior.dotted;
+} ss10;
+
+feature ss11 {
+    featureNames {
+        # MS, unicode, English
+        name "Simplified '1'";
+        # Apple, roman, unspecified
+        name 1 "Simplified '1'";
+    };
+    sub one by one.sans;
+} ss11;
+
+
+feature ss20 {
+    featureNames {
+        # MS, unicode, English
+        name "Slashed Zero in Sans";
+        # Apple, roman, unspecified
+        name 1 "Slashed Zero in Sans";
+    };
+    sub zero.sans by zero;
+} ss20;

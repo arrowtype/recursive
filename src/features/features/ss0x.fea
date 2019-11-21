@@ -6,9 +6,9 @@
 feature ss01 {
     featureNames {
         # MS, unicode, English
-        name "Extra-friendly 'a'";
+        name "Single-story 'a'";
         # Apple, roman, unspecified
-        name 1 "Extra-friendly 'a'";
+        name 1 "Single-story 'a'";
     };
     sub @dfltA by @italicA;
 } ss01;
@@ -19,9 +19,9 @@ feature ss01 {
 feature ss02 {
     featureNames {
         # MS, unicode, English
-        name "Extra-friendly 'g'";
+        name "Single-story 'g'";
         # Apple, roman, unspecified
-        name 1 "Extra-friendly 'g'";
+        name 1 "Single-story 'g'";
     };
     sub @dfltG by @italicG;
     sub g.mono by g.italic;
@@ -133,6 +133,10 @@ feature ss10 {
     };
     sub zero by zero.dotted;
     sub zero.sans by zero.dotted;
+    sub zerosuperior by zerosuperior.dotted;
+    sub zeroinferior by zeroinferior.dotted;
+    sub zerosuperior.sans by zerosuperior.dotted;
+    sub zeroinferior.sans by zeroinferior.dotted;
 } ss10;
 
 feature ss11 {
@@ -153,6 +157,7 @@ feature ss20 {
         # Apple, roman, unspecified
         name 1 "Slashed Zero in Sans";
     };
-    sub zero by zero.ss03;
-    sub zero.sans by zero.ss03;
+    sub zero.sans by zero;
+    #sub zero by zero.ss03;
+    #sub zero.sans by zero.ss03;
 } ss20;
