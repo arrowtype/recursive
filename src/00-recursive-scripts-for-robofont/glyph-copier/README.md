@@ -23,3 +23,7 @@ To use it:
    2. Copying is based on the style names. So, `Casual B` copies into `Casual B`. Therefore, this script will not copy glyphs between two Mono fonts, or between fonts with different style names. This makes it possible for the script to understand which UFOs are "paired" and copy between multiple pairs at once.
    3. With the relevant UFOs selected, click `Open` to run the copying.
 7. Check the results, and save if desired. Close out of a font if you don't like the changes in it (and do not save).
+
+## (Screencast: how to use Glyph Copier)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y70jO-oXQfU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
