@@ -34,10 +34,10 @@ mv $outputDir/$fontName--$date.ttf.fix $outputDir/$fontName--$date.ttf
 # make woff2
 woff2_compress $outputDir/$fontName--$date.ttf
 
-# add subset base64 of woff2 for testing in CodePen, etc
+## add subset base64 of woff2 for testing in CodePen, etc
+# pyftsubset $outputDir/$fontName--$date.ttf --unicodes="U+0020-007F" --flavor="woff2" --output-file="$outputDir/$fontName--$date--subset-0020_007F.woff2"
 
-pyftsubset $outputDir/$fontName--$date.ttf --unicodes="U+0020-007F" --flavor="woff2" --output-file="$outputDir/$fontName--$date--subset-0020_007F.woff2"
-
+## base64 version for CodePen, etc
 # base64 "$outputDir/$fontName--$date--subset-0020_007F.woff2" > "$outputDir/$fontName--$date--subset-0020_007F.base64"
 
 # rm "$outputDir/$fontName--$date--subset-0020_007F.woff2"
