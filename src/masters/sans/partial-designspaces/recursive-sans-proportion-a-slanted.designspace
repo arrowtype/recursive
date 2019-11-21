@@ -34,4 +34,31 @@
       </location>
     </source>
   </sources>
+  <lib>
+    <dict>
+      <key>com.letterror.mathModelPref</key>
+      <string>previewVarLib</string>
+      <key>com.letterror.skateboard.interactionSources</key>
+      <dict>
+        <key>horizontal</key>
+        <array/>
+        <key>ignore</key>
+        <array>
+          <string>Proportion</string>
+          <string>Expression</string>
+        </array>
+        <key>vertical</key>
+        <array/>
+      </dict>
+      <key>com.letterror.skateboard.previewLocation</key>
+      <dict>
+        <key>Expression</key>
+        <real>0.0</real>
+        <key>Proportion</key>
+        <real>0.0</real>
+      </dict>
+      <key>com.letterror.skateboard.previewText</key>
+      <string>/x.italic</string>
+    </dict>
+  </lib>
 </designspace>
