@@ -136,10 +136,10 @@ class GlyphFax(object):
             for glyphName in glyphsToCopy:
                 self.copyGlyph(glyphName, self.fonts[variation][0], self.fonts[variation][1])
 
-            for f in self.fonts[variation]:
-                # print('\t', f)
-                f.save()
-                f.close()
+            # for f in self.fonts[variation]:
+            #     # print('\t', f)
+            #     f.save()
+            #     f.close()
 
         self.w.close()
 
