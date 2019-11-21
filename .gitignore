@@ -1,9 +1,16 @@
 .DS_Store
 venv
 node_modules
+bin/*
+lib/*
+share/*
+pyvenv.cfg
 
 *.ttx
 
 mastering/build/*
 node_modules
+instances
+*/instances/*
+*/instances
 *glyph_widths.json
