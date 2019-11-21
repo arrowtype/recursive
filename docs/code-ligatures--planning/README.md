@@ -91,20 +91,19 @@ Including these because they should be relatively simple, and will be seen very 
 | ligature | name                    | usecase        | Done? |
 | -------- | ----------------------- | -------------- | ----- |
 | !=       | exclam_equal.code       | Python, JS     | DONE  |
-| !==      | exclam_equal_equal.code | JS             |
-| =/=      | equal_slash_equal.code  |
-| ?.       | question_period.code    |
-| ?:       | question_colon.code     |
-| ?:       | question_colon.code     |
+| !==      | exclam_equal_equal.code | JS             | DONE  |
+| =/=      | equal_slash_equal.code  |                | DONE  |
+| ?.       | question_period.code    |                | DONE  |
+| ?:       | question_colon.code     |                | DONE  |
 
 #### Haskell-specific ligatures
 
-| ligature     | name                               | usecase          |
-| ------------ | ---------------------------------- | ---------------- |
-| &&&          | ampersand_ampersand_ampersand.code | Haskell          |
-| &#124;&#124; | bar_bar_bar.code                   | Haskell          |
+| ligature     | name                               | usecase          | Done? |
+| ------------ | ---------------------------------- | ---------------- | ----- |
+| &&&          | ampersand_ampersand_ampersand.code | Haskell          | DONE  |
+| &#124;&#124; | bar_bar_bar.code                   | Haskell          | DONE  |
 
-### _prority 2_
+### _priority 2_
 
 #### more comments
 
@@ -134,7 +133,14 @@ Including these because they should be relatively simple, and will be seen very 
 | <            | less.code                          | (matching sizes) |
 | <            | greater.code                       | (matching sizes) |
 
-### _prority 3_
+
+#### Miscellaneous
+
+| ligature     | name                               | usecase          |
+| ------------ | ---------------------------------- | ---------------- |
+| ://          | colon_slash_slash.code             | URLs             |
+
+### _priority 3_
 
 #### math operators
 
@@ -191,7 +197,8 @@ Including these because they should be relatively simple, and will be seen very 
 | ((       | parenleft_parenleft.code       |
 | ))       | parenright_parenright.code     |
 
-- _Priority "Maybe"_
+### _Priority "Maybe"_
+
 
 #### Powerline symbols
 
@@ -209,6 +216,10 @@ We could create the stylistic set that "emulates" mark down behaviour. With liga
 | -------- | -------------------------------------------- | -------------------------- |
 | - [ ]    | hyphen_space_braceleft_space_braceright.code | markdown to-do, incomplete |
 | - [x]    | hyphen_space_braceleft_x_braceright.code     | markdown to-do, complete   |
+
+### _Priority "Probably don't do"_
+
+These are things to consider adding in the far future, maybe, but probably not.
 
 #### keywords
 

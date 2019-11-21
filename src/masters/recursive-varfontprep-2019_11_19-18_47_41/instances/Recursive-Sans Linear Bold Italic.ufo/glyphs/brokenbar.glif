@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="brokenbar" format="2">
+  <advance width="350.0"/>
+  <unicode hex="00A6"/>
+  <outline>
+    <contour>
+      <point x="225.60377358490567" y="760.0" type="curve"/>
+      <point x="217.60377358490567" y="727.0"/>
+      <point x="209.60377358490567" y="694.0"/>
+      <point x="200.60377358490567" y="661.0" type="curve" smooth="yes"/>
+      <point x="130.60377358490567" y="380.0" type="line" smooth="yes"/>
+      <point x="129.45283018867926" y="373.8490566037736"/>
+      <point x="132.45283018867923" y="369.0"/>
+      <point x="138.60377358490567" y="369.0" type="curve" smooth="yes"/>
+      <point x="182.16981132075472" y="369.0"/>
+      <point x="225.73584905660377" y="369.0"/>
+      <point x="271.0" y="369.0" type="curve"/>
+      <point x="366.0" y="749.0" type="line" smooth="yes"/>
+      <point x="367.0" y="752.0"/>
+      <point x="367.0" y="755.0"/>
+      <point x="365.0" y="757.0" type="curve" smooth="yes"/>
+      <point x="364.0" y="759.0"/>
+      <point x="361.0" y="760.0"/>
+      <point x="358.0" y="760.0" type="curve" smooth="yes"/>
+      <point x="312.7358490566038" y="760.0"/>
+      <point x="269.1698113207547" y="760.0"/>
+    </contour>
+    <contour>
+      <point x="93.60377358490568" y="231.0" type="curve"/>
+      <point x="-1.3962264150943215" y="-149.0" type="line"/>
+      <point x="-3.3962264150943215" y="-155.1509433962264"/>
+      <point x="0.4528301886792545" y="-160.0"/>
+      <point x="6.603773584905678" y="-160.0" type="curve" smooth="yes"/>
+      <point x="50.16981132075473" y="-160.0"/>
+      <point x="93.73584905660378" y="-160.0"/>
+      <point x="138.99999999999997" y="-160.0" type="curve"/>
+      <point x="233.99999999999997" y="220.0" type="line" smooth="yes"/>
+      <point x="235.99999999999997" y="227.0"/>
+      <point x="232.99999999999997" y="231.0"/>
+      <point x="225.99999999999997" y="231.0" type="curve"/>
+      <point x="180.73584905660377" y="231.0"/>
+      <point x="137.16981132075472" y="231.0"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+      <key>public.markColor</key>
+      <string>1,0,0,1</string>
+    </dict>
+  </lib>
+</glyph>

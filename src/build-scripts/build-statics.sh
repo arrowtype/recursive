@@ -53,7 +53,11 @@ done
 woff2Directory="${outputDir}/static_fonts/${fontName}-static_woff2"
 mkdir -p $woff2Directory
 
-for font in $finalDirectory/*.otf; do
+for font in $finalDirectory/*.*tf; do
+    python src/build-scripts/set-up-RIBBI-style_linking.py "$font" --inplace
+done
+
+for font in $finalDirectory/*.*tf; do
     woff2_compress "$font"
 done
 

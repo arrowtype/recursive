@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="ohorntilde" format="2">
+  <advance width="600"/>
+  <unicode hex="1EE1"/>
+  <outline>
+    <component base="o"/>
+    <component base="horncomb" xOffset="413" yOffset="-32"/>
+    <component base="tildecombviet.case" xOffset="276" yOffset="-173"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0,0,0.5</string>
+    </dict>
+  </lib>
+</glyph>

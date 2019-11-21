@@ -4,7 +4,7 @@
     {
       "label": "Run in RoboFont",
       "type": "shell",
-      "command": "robofont",
+      "command": "roboFont",
       "args": ["-p", "${file}"],
       "group": {
         "kind": "build",

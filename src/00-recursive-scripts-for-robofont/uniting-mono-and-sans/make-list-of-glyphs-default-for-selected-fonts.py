@@ -12,9 +12,8 @@ import datetime
 files = getFile("Select files to update",
                 allowsMultipleSelection=True, fileTypes=["ufo"])
 
-
 # get currently selected glyphs as a list
-glyphsToMakeDefault = AskString(
+glyphsToCopy = AskString(
     'Space-separated list of glyphs to make default').split(" ")
 
 # if the user cancels or inputs an empty string, cancel the script

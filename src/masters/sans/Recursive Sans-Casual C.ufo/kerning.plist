@@ -124,7 +124,7 @@
 		<key>one</key>
 		<dict>
 			<key>seven</key>
-			<integer>-60</integer>
+			<integer>-70</integer>
 		</dict>
 		<key>public.kern1.A_right</key>
 		<dict>
@@ -251,6 +251,8 @@
 		</dict>
 		<key>public.kern1.H_right</key>
 		<dict>
+			<key>public.kern2.Y_left</key>
+			<integer>-10</integer>
 			<key>public.kern2.h_left</key>
 			<integer>20</integer>
 			<key>public.kern2.n_left</key>
@@ -296,6 +298,8 @@
 		<dict>
 			<key>V</key>
 			<integer>-40</integer>
+			<key>public.kern2.E_left</key>
+			<integer>-20</integer>
 			<key>public.kern2.O_left</key>
 			<integer>-20</integer>
 			<key>public.kern2.Punct_mid_left</key>
@@ -305,7 +309,7 @@
 			<key>public.kern2.T_left</key>
 			<integer>-100</integer>
 			<key>public.kern2.W_left</key>
-			<integer>-20</integer>
+			<integer>-30</integer>
 			<key>public.kern2.Y_left</key>
 			<integer>-90</integer>
 			<key>public.kern2.i_left</key>
@@ -320,7 +324,7 @@
 		<key>public.kern1.M_right</key>
 		<dict>
 			<key>public.kern2.T_left</key>
-			<integer>-20</integer>
+			<integer>-30</integer>
 			<key>public.kern2.Y_left</key>
 			<integer>-50</integer>
 			<key>public.kern2.a_left</key>
@@ -411,6 +415,8 @@
 			<integer>-50</integer>
 			<key>public.kern2.O_left</key>
 			<integer>-30</integer>
+			<key>public.kern2.l_left</key>
+			<integer>20</integer>
 			<key>public.kern2.o_left</key>
 			<integer>-60</integer>
 			<key>public.kern2.s_left</key>
@@ -418,6 +424,10 @@
 		</dict>
 		<key>public.kern1.R_right</key>
 		<dict>
+			<key>public.kern2.T_left</key>
+			<integer>-20</integer>
+			<key>public.kern2.Y_left</key>
+			<integer>-40</integer>
 			<key>public.kern2.h_left</key>
 			<integer>10</integer>
 			<key>public.kern2.l_left</key>
@@ -435,6 +445,8 @@
 			<integer>-20</integer>
 			<key>public.kern2.W_left</key>
 			<integer>-10</integer>
+			<key>public.kern2.Y_left</key>
+			<integer>-30</integer>
 			<key>public.kern2.e_left</key>
 			<integer>-10</integer>
 			<key>public.kern2.v_left</key>
@@ -571,6 +583,8 @@
 			<integer>-30</integer>
 			<key>public.kern2.Punct_mid_left</key>
 			<integer>-40</integer>
+			<key>public.kern2.Y_left</key>
+			<integer>-20</integer>
 			<key>public.kern2.a_left</key>
 			<integer>-10</integer>
 			<key>public.kern2.e_left</key>
@@ -624,6 +638,8 @@
 		</dict>
 		<key>public.kern1.g_right</key>
 		<dict>
+			<key>public.kern2.a_left</key>
+			<integer>-10</integer>
 			<key>public.kern2.e_left</key>
 			<integer>-30</integer>
 			<key>public.kern2.o_left</key>
@@ -768,6 +784,10 @@
 			<integer>-20</integer>
 			<key>public.kern2.o_left</key>
 			<integer>-20</integer>
+			<key>public.kern2.v_left</key>
+			<integer>-20</integer>
+			<key>public.kern2.z_left</key>
+			<integer>-10</integer>
 		</dict>
 		<key>seven</key>
 		<dict>
