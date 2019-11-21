@@ -24,6 +24,12 @@ To use it:
    3. With the relevant UFOs selected, click `Open` to run the copying.
 7. Check the results, and save if desired. Close out of a font if you don't like the changes in it (and do not save).
 
-## (Screencast: how to use Glyph Copier)
+## Screencast: how to use Glyph Copier
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y70jO-oXQfU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+(Clicking the image below will open the video in a full-screen view.)
+
+<a href="https://www.youtube.com/embed/y70jO-oXQfU">
+
+![](assets/2019-11-21-15-17-10.png)
+
+</a>
