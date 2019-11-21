@@ -9,8 +9,8 @@ from defcon import Font
 # Family specific data
 
 weightMap = {
+             "ExtraBlack": 1000,
              "Black": 900,
-             "UltraBold": 850,
              "ExtraBold": 800,
              "Bold": 700,
              "SemiBold": 600,
@@ -36,6 +36,23 @@ def getFiles(path, extension):
         return [os.sep.join((dir, file)) for (dir, dirs, files)
                 in os.walk(path) for file in files if
                 file[-len(extension):] == extension]
+
+
+def buildNameMap():
+    """
+    To keep data in one place, we store how we want to break the static
+    familes apart in the instance_names.csv file. Read this to get the
+    corrent family and style names for the static fonts.
+    """
+    import csv
+    names = {}
+    with open('data/instance_names.csv', newline='') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            names[(row["Var Instance Family Name"],
+                   row["Var Instance Style Name"])] = (row["Static Family Name"],
+                                                       row["Static Style Name"])
+    return names
 
 
 def printProgressBar(iteration, total, prefix='', suffix='',
@@ -83,11 +100,11 @@ def buildFontMenuDB(designspace, root):
     or "Recursive Mono" for the static fonts.
     """
 
+    name_map = buildNameMap()
     out = ""
 
     for i in designspace.instances:
-        fn = i.familyName + " " + i.styleName.split()[0]
-        sn = " ".join(i.styleName.split()[1:])
+        fn, sn = name_map[(i.familyName, i.styleName)]
         out += f"[{i.postScriptFontName}]\n"
         out += f"    f={fn}\n"
         out += f"    s={sn}\n"
@@ -121,8 +138,8 @@ def fillInPanoseValues(font):
     """
 
     panoseWeightMap = {
-                       "Black": 11,
-                       "UltraBold": 10,
+                       "ExtraBlack": 11,
+                       "Black": 10,
                        "ExtraBold": 9,
                        "Bold": 8,
                        "SemiBold": 7,
@@ -253,8 +270,8 @@ def makeSTAT(directory, doc):
             600: "SemiBold",
             700: "Bold",
             800: "ExtraBold",
-            850: "UltraBold",
-            900: "Black"
+            900: "Black",
+            1000: "ExtraBlack"
         },
         "Proportion":
         {

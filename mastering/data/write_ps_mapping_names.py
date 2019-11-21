@@ -9,9 +9,10 @@ names = {}
 with open('instance_names.csv', newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
-        names[(row["Family Name"], row["Style Name"])] = (row["postscript"],
-                                                          row["familymap"],
-                                                          row["stylemap"])
+        names[(row["Var Instance Family Name"],
+               row["Var Instance Style Name"])] = (row["postscript"],
+                                                   row["familymap"],
+                                                   row["stylemap"])
 
 doc = DesignSpaceDocument()
 doc.read("../../src/masters/recursive-MONO_CASL_wght_slnt_ital--full_gsub.designspace")
