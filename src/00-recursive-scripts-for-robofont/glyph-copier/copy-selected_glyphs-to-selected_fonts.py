@@ -58,6 +58,7 @@ class GlyphFax(object):
         print(f"copying glyph /{glyphName} from \n\t{fontToCopyFrom} \n\tto \n\t{fontToSendTo}")
 
         glyphCopyName = glyphName
+        copyGlyph = True
 
         if glyphName not in fontToSendTo:
             fontToSendTo.newGlyph(glyphName)
@@ -67,16 +68,20 @@ class GlyphFax(object):
 
             # default case: overwrite is false (overwrite 600 is true, overwrite non600 is false)
             if overwrite600 == False and overwriteNon600 == False:
-                glyphCopyName = glyphName + '.copy'
-                fontToSendTo.newGlyph(glyphCopyName)
+                # glyphCopyName = glyphName + '.copy'
+                # fontToSendTo.newGlyph(glyphCopyName)
+
+                copyGlyph = False
 
             elif overwrite600 == True and overwriteNon600 == True:
                 fontToSendTo[glyphCopyName].clear()
 
             elif overwrite600 == False and overwriteNon600 == True:
                 if round(fontToSendTo[glyphCopyName].width, -1) == 600:
-                    glyphCopyName = glyphName + '.copy'
-                    fontToSendTo.newGlyph(glyphCopyName)
+                    # glyphCopyName = glyphName + '.copy'
+                    # fontToSendTo.newGlyph(glyphCopyName)
+
+                    copyGlyph = False
                 else:
                     fontToSendTo[glyphCopyName].clear()
 
@@ -84,23 +89,35 @@ class GlyphFax(object):
                 if round(fontToSendTo[glyphCopyName].width, -1) == 600:
                     fontToSendTo[glyphCopyName].clear()
                 else:
-                    glyphCopyName = glyphName + '.copy'
-                    fontToSendTo.newGlyph(glyphCopyName)
+                    # glyphCopyName = glyphName + '.copy'
+                    # fontToSendTo.newGlyph(glyphCopyName)
 
-        glyphToCopy = fontToCopyFrom[glyphName]
-        layerGlyph = fontToSendTo[glyphCopyName].getLayer("foreground")
+                    copyGlyph = False
 
-        # get the point pen of the layer glyph
-        pen = layerGlyph.getPointPen()
-        # draw the points of the imported glyph into the layered glyph
-        glyphToCopy.drawPoints(pen)
+        if copyGlyph:
+            glyphToCopy = fontToCopyFrom[glyphName]
+            layerGlyph = fontToSendTo[glyphCopyName].getLayer("foreground")
 
-        layerGlyph.width = glyphToCopy.width
+            # get the point pen of the layer glyph
+            pen = layerGlyph.getPointPen()
+            # draw the points of the imported glyph into the layered glyph
+            glyphToCopy.drawPoints(pen)
 
-        layerGlyph.markColor = (self.w.colorWell.get().redComponent(), self.w.colorWell.get().greenComponent(),self.w.colorWell.get().blueComponent(),self.w.colorWell.get().alphaComponent())
+            
 
-        for anchor in glyphToCopy.anchors:
-            layerGlyph.appendAnchor(anchor.name, (anchor.x, anchor.y))
+            if len(layerGlyph.components) == 1:
+                parentGlyphWidth = fontToSendTo[layerGlyph.components[0].baseGlyph].width
+                print(type(parentGlyphWidth))
+                layerGlyph.width = parentGlyphWidth
+
+                print("copied glyph now has width of its component parent:", str(parentGlyphWidth))
+            else:
+                layerGlyph.width = glyphToCopy.width
+
+            layerGlyph.markColor = (self.w.colorWell.get().redComponent(), self.w.colorWell.get().greenComponent(),self.w.colorWell.get().blueComponent(),self.w.colorWell.get().alphaComponent())
+
+            for anchor in glyphToCopy.anchors:
+                layerGlyph.appendAnchor(anchor.name, (anchor.x, anchor.y))
 
     def glyphsToCopy(self,sender):
         if self.w.editText.get() == "":
@@ -135,11 +152,6 @@ class GlyphFax(object):
 
             for glyphName in glyphsToCopy:
                 self.copyGlyph(glyphName, self.fonts[variation][0], self.fonts[variation][1])
-
-            # for f in self.fonts[variation]:
-            #     # print('\t', f)
-            #     f.save()
-            #     f.close()
 
         self.w.close()
 
