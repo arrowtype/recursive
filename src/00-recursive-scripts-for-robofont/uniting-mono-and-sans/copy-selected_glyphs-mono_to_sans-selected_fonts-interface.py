@@ -114,7 +114,7 @@ class GlyphFax(object):
                 allowsMultipleSelection=True, fileTypes=["ufo"])
 
         for path in files:
-            f = OpenFont(path, showInterface=False)
+            f = OpenFont(path, showInterface=True)
             # style = f.info.styleName
             variation = f.info.styleName.replace('Mono ','').replace('Sans ','')
             if variation not in self.fonts.keys():
