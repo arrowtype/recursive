@@ -2,7 +2,13 @@
 <glyph name="f_quote.code" format="2">
 	<advance width="1200"/>
 	<outline>
-		<component base="f" xOffset="169"/>
-		<component base="quotedbl" xOffset="500"/>
+		<component base="f"/>
+		<component base="quotesingle" xOffset="600"/>
 	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>1,0.5,0,1</string>
+		</dict>
+	</lib>
 </glyph>

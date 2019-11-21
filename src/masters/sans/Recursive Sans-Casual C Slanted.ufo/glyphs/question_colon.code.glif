@@ -3,6 +3,12 @@
 	<advance width="1200"/>
 	<outline>
 		<component base="question" xOffset="100"/>
-		<component base="colon" xOffset="664"/>
+		<component base="colon" xOffset="530"/>
 	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>1,0.5,0,1</string>
+		</dict>
+	</lib>
 </glyph>

@@ -14,7 +14,13 @@
 			<point x="805" y="250" type="line"/>
 			<point x="403" y="250" type="line"/>
 		</contour>
-		<component base="equal" xOffset="2"/>
-		<component base="equal" xOffset="602"/>
+		<component base="equal"/>
+		<component base="equal" xOffset="600"/>
 	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>1,0.5,0,1</string>
+		</dict>
+	</lib>
 </glyph>

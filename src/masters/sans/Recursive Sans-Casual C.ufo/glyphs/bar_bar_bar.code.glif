@@ -2,8 +2,14 @@
 <glyph name="bar_bar_bar.code" format="2">
 	<advance width="1800"/>
 	<outline>
-		<component base="bar" xOffset="284"/>
-		<component base="bar" xOffset="744"/>
-		<component base="bar" xOffset="1204"/>
+		<component base="bar" xOffset="140"/>
+		<component base="bar" xOffset="600"/>
+		<component base="bar" xOffset="1060"/>
 	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>1,0.5,0,1</string>
+		</dict>
+	</lib>
 </glyph>
