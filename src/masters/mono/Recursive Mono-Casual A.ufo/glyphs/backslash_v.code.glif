@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<glyph name="f_quote.code.copy" format="2">
+<glyph name="backslash_v.code" format="2">
 	<advance width="1200"/>
 	<outline>
-		<component base="f"/>
-		<component base="quotesingle" xOffset="600"/>
+		<component base="backslash" xOffset="30"/>
+		<component base="v" xOffset="510"/>
 	</outline>
 	<lib>
 		<dict>
 			<key>public.markColor</key>
-			<string>1,0.5,0,1</string>
+			<string>0.25,1,1,0.5</string>
 		</dict>
 	</lib>
 </glyph>

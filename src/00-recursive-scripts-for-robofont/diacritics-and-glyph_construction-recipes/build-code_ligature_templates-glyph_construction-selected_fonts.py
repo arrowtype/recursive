@@ -118,7 +118,7 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 # backslash_b.code = backslash & b
 # backslash_r.code = backslash & r
 # backslash_t.code = backslash & t
-# backslash_v.cpde = backslash & v
+# backslash_v.code = backslash & v
 # quotesingle.code = quotesingle
 # quotedbl.code = quotedbl
 # backslash.code = backslash
