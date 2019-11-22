@@ -84,8 +84,8 @@ feature ss06 {
 @dfltCapL = [L      Lacute      Lcommaaccent      Lcaron      Ldotbelow      Llinebelow      Lslash       ];
 @sansCapL = [L.sans Lacute.sans Lcommaaccent.sans Lcaron.sans Ldotbelow.sans Llinebelow.sans Lslash.sans  ];
 
-@dfltCapZ = [Z      Zacute      Zdotaccent      Zcaron      Zdotbelow      ]
-@sansCapZ = [Z.sans Zacute.sans Zdotaccent.sans Zcaron.sans Zdotbelow.sans ]
+@dfltCapZ = [Z      Zacute      Zdotaccent      Zcaron      Zdotbelow      ];
+@sansCapZ = [Z.sans Zacute.sans Zdotaccent.sans Zcaron.sans Zdotbelow.sans ];
 
 feature ss07 {
     featureNames {
