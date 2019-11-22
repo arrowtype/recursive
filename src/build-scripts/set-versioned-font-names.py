@@ -77,6 +77,7 @@ NAME_ABBR = {
 }
 
 def abbreviateName(name, styleNames):
+    print('abbreviating ', name)
     # style names
     for word in styleNames:
         if word in NAME_ABBR.keys():
@@ -84,8 +85,8 @@ def abbreviateName(name, styleNames):
     # version name
     name=name.replace('Beta ', 'b')
     name=name.replace('1.','')
-    # static
-    name=name.replace('Static','ST')
+
+    print('abbreviated ', name)
 
     return name
 
@@ -112,8 +113,25 @@ def main():
         # UPDATE NAME ID 16, typographic family name
         famName = getFontNameID(ttfont, 16)
 
+        legalStyleNames = ['Regular', 'Italic', 'Bold', 'Bold Italic']
+
         if fontIsStatic:
-            newFamName = f"{famName} ST {projectVersion}"
+
+            # TODO: if name17 isn't just "Regular" "Italic" "Bold" or "Bold Italic", remove first part and append to newFamName
+
+            newFamName = f"{famName} {projectVersion}st"
+
+            if 'Linear' in styleName:
+                styleName = styleName.replace('Linear ','')
+                newFamName = newFamName + ' Linear'
+
+            if 'Casual' in styleName:
+                styleName = styleName.replace('Casual ','')
+                newFamName = newFamName + ' Casual'
+
+            print('newFamName is ', newFamName)
+
+            newFamName = newFamName.replace('Italic','')
         else:
             newFamName = f"{famName} {projectVersion}"
 
@@ -128,14 +146,16 @@ def main():
             psName = str(getFontNameID(ttfont, 6))
             # psStyle = psName.split("-")[-1]
             psFam = psName.split("-")[0]
-            newPsName = psName.replace(psFam, f"{psFam}{projectVersion.replace(' ','').replace('1.','_')}")
+            newPsName = psName.replace(psFam, f"{psFam}{projectVersion.replace(' ','').replace('1.','')}st")
 
-            for word in styleNames:
-                if word in NAME_ABBR.keys():
-                    newPsName = newPsName.replace(word, NAME_ABBR[word])
+            # for word in styleNames:
+            #     if word in NAME_ABBR.keys():
+            #         newPsName = newPsName.replace(word, NAME_ABBR[word])
 
             if 'Beta' in newPsName:
                 newPsName = newPsName.replace('Beta', NAME_ABBR['Beta'])
+
+            newPsName = abbreviateName(newPsName, styleNames)
         else:
             print("Variable font")
             psName = str(getFontNameID(ttfont, 6))
@@ -158,8 +178,6 @@ def main():
         # FULL FONT NAME, ID 4
 
         if fontIsStatic:
-            newFamName = newFamName + " " + styleName
-            newFamName = abbreviateName(newFamName, styleNames)
             setFontNameID(ttfont, 4, newFamName)
         else:
             newFamName = abbreviateName(newFamName, styleNames)
@@ -177,6 +195,7 @@ def main():
 
         # TODO: if 'Italic' in name 1, remove it; then change name 2 to 'Italic'
 
+        setFontNameID(ttfont, 2, styleName)
         setFontNameID(ttfont, 1, newFamName)
 
         # SAVE FONT
