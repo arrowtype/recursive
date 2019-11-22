@@ -81,8 +81,11 @@ feature ss06 {
     sub @monoR by @italR;
 } ss06;
 
-# TODO: add to font, then feature: Lacute.sans Lcommaaccent.sans Lcaron.sans Ldotbelow.sans Llinebelow.sans Ldot.sans Lslash.sans
-# TODO: add to font, then feature: Zacute.sans Zdotaccent.sans Zcaron.sans Zdotbelow.sans 
+@dfltCapL = [L      Lacute      Lcommaaccent      Lcaron      Ldotbelow      Llinebelow      Lslash       ];
+@sansCapL = [L.sans Lacute.sans Lcommaaccent.sans Lcaron.sans Ldotbelow.sans Llinebelow.sans Lslash.sans  ];
+
+@dfltCapZ = [Z      Zacute      Zdotaccent      Zcaron      Zdotbelow      ]
+@sansCapZ = [Z.sans Zacute.sans Zdotaccent.sans Zcaron.sans Zdotbelow.sans ]
 
 feature ss07 {
     featureNames {
@@ -91,8 +94,9 @@ feature ss07 {
         # Apple, roman, unspecified
         name 1 "No-serif 'L' & 'Z'";
     };
-    sub L by L.sans;
-    sub Z by Z.sans;
+    sub @dfltCapL by @sansCapL;
+    sub @dfltCapZ by @sansCapZ;
+    sub z.italic by z;
 } ss07;
 
 feature ss08 {
@@ -149,7 +153,6 @@ feature ss11 {
     sub one by one.sans;
 } ss11;
 
-
 feature ss20 {
     featureNames {
         # MS, unicode, English
@@ -158,6 +161,6 @@ feature ss20 {
         name 1 "Slashed Zero in Sans";
     };
     sub zero.sans by zero;
-    #sub zero by zero.ss03;
-    #sub zero.sans by zero.ss03;
+    sub zerosuperior.sans by zerosuperior;
+    sub zeroinferior.sans by zeroinferior;
 } ss20;

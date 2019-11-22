@@ -385,6 +385,8 @@
         <condition name="Slant" minimum="-15" maximum="0" />
       </conditionset>
       <sub name="zero" with="zero.sans" />
+      <sub name="zerosuperior" with="zero.sans" />
+      <sub name="zeroinferior" with="zeroinferior.sans" />
     </rule>
     <rule name="sans autoroman">
       <conditionset>
@@ -398,7 +400,9 @@
       <sub name="ldotbelow" with="ldotbelow.sans" />
       <sub name="llinebelow" with="llinebelow.sans" />
       <sub name="lslash" with="lslash.sans" />
-      <sub name="zero" with="zero.sans" />      
+      <sub name="zero" with="zero.sans" />
+      <sub name="zerosuperior" with="zerosuperior.sans" />
+      <sub name="zeroinferior" with="zeroinferior.sans" />
     </rule>
     <rule name="sans forceroman">
       <conditionset>
@@ -412,6 +416,8 @@
       <sub name="llinebelow" with="llinebelow.sans" />
       <sub name="lslash" with="lslash.sans" />
       <sub name="zero" with="zero.sans" />
+      <sub name="zerosuperior" with="zerosuperior.sans" />
+      <sub name="zeroinferior" with="zeroinferior.sans" />
     </rule>
     <rule name="sans autoitalic">
       <conditionset>
