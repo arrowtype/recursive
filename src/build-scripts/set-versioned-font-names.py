@@ -178,7 +178,10 @@ def main():
         # FULL FONT NAME, ID 4
 
         if fontIsStatic:
-            setFontNameID(ttfont, 4, newFamName)
+            completeName = newFamName
+            if 'Italic' in styleName:
+                completeName = abbreviateName(newFamName + 'Italic', styleNames)
+            setFontNameID(ttfont, 4, completeName)
         else:
             newFamName = abbreviateName(newFamName, styleNames)
             setFontNameID(ttfont, 4, newFamName)
