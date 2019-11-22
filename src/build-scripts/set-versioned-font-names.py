@@ -45,13 +45,6 @@ parser = argparse.ArgumentParser(description='Add version numbering to font name
 parser.add_argument('fonts', nargs="+")
 
 parser.add_argument(
-        "-s",
-        "--static",
-        action='store_true',
-        help="Is font static? If so, this will update its versions differently.",
-    )
-
-parser.add_argument(
         "-i",
         "--inplace",
         action='store_true',
@@ -83,40 +76,55 @@ NAME_ABBR = {
     'Heavy': 'Hv'
 }
 
+def abbreviateName(name, styleNames):
+    # style names
+    for word in styleNames:
+        if word in NAME_ABBR.keys():
+            name = name.replace(word, NAME_ABBR[word])
+    # version name
+    name=name.replace('Beta ', 'b')
+    name=name.replace('1.','')
+    # static
+    name=name.replace('Static','ST')
+
+    return name
+
 def main():
     args = parser.parse_args()
     projectVersion = getVersion()
 
     for font_path in args.fonts:
-        print("\n-----------------------------------------\n")
-        print(font_path)
+
+        # open font path as a font object, for manipulation
         ttfont = TTFont(font_path)
 
-        if args.static:
+        # check for gvar table to see whether it's a variable font
+        if 'gvar' not in ttfont.keys():
+            fontIsStatic = True
+
+        if fontIsStatic:
             print("NOTE: treating as a static font due to --static option")
 
-        for nameID in NAME_IDS:
-            print(f"{NAME_IDS[nameID].ljust(10)}: {getFontNameID(ttfont, nameID)}")
-
         # GET NAME ID 17, typographic style name, to use in name ID 6
-
         styleName = getFontNameID(ttfont, 17)
         styleNames = str(styleName).split(' ')
 
         # UPDATE NAME ID 16, typographic family name
         famName = getFontNameID(ttfont, 16)
 
-        if args.static:
-            newFamName = f"{famName} Static {projectVersion}"
+        if fontIsStatic:
+            newFamName = f"{famName} ST {projectVersion}"
         else:
             newFamName = f"{famName} {projectVersion}"
+
+        newFamName = abbreviateName(newFamName, styleNames)
 
         setFontNameID(ttfont, 16, newFamName)
 
         # UPDATE NAME ID 6
         # replace last part of postScript font name, e.g. "LinearA" from "RecursiveMono-LinearA"
 
-        if args.static:
+        if fontIsStatic:
             psName = str(getFontNameID(ttfont, 6))
             # psStyle = psName.split("-")[-1]
             psFam = psName.split("-")[0]
@@ -149,10 +157,12 @@ def main():
 
         # FULL FONT NAME, ID 4
 
-        if args.static:
+        if fontIsStatic:
             newFamName = newFamName + " " + styleName
+            newFamName = abbreviateName(newFamName, styleNames)
             setFontNameID(ttfont, 4, newFamName)
         else:
+            newFamName = abbreviateName(newFamName, styleNames)
             setFontNameID(ttfont, 4, newFamName)
 
 
@@ -164,6 +174,9 @@ def main():
         setFontNameID(ttfont, 3, newUniqueID)
 
         # UPDATE BASIC FONT NAME, id 1
+
+        # TODO: if 'Italic' in name 1, remove it; then change name 2 to 'Italic'
+
         setFontNameID(ttfont, 1, newFamName)
 
         # SAVE FONT
