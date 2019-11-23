@@ -50,6 +50,7 @@ feature ss04 {
     };
     sub @sansI by @italI;
     sub @monoI by @italI;
+    sub fi by f i.italic;
 } ss04;
 
 @sansL = [l.sans lacute.sans lcommaaccent.sans ldotbelow.sans llinebelow.sans lslash.sans ];

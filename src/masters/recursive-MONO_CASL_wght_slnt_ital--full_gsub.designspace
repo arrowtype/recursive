@@ -385,7 +385,7 @@
         <condition name="Slant" minimum="-15" maximum="0" />
       </conditionset>
       <sub name="zero" with="zero.sans" />
-      <sub name="zerosuperior" with="zero.sans" />
+      <sub name="zerosuperior" with="zerosuperior.sans" />
       <sub name="zeroinferior" with="zeroinferior.sans" />
     </rule>
     <rule name="sans autoroman">
@@ -934,7 +934,7 @@
     </source>
   </sources>
   <instances>
-    <instance familyname="Recursive Mono" stylename="Linear Light" filename="instances/Recursive Mono-Linear Light.ufo"  name="Recursive Mono-Linear Light.ufo" postScriptFontName="RecursiveMonoLnr-Light" styleMapFamilyName="Recursive Mn Lnr Lght" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Mono Linear Light" filename="instances/Recursive Mono-Linear Light.ufo"  name="Recursive Mono-Linear Light.ufo" postScriptFontName="RecursiveMonoLnr-Light" styleMapFamilyName="Recursive Mn Lnr Lght" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
@@ -945,7 +945,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Linear Light Italic" filename="instances/Recursive Mono-Linear Light Italic.ufo" name="Recursive Mono-Linear Light Italic.ufo" postScriptFontName="RecursiveMonoLnr-LightItalic" styleMapFamilyName="Recursive Mn Lnr Lght" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Mono Linear Light Italic" filename="instances/Recursive Mono-Linear Light Italic.ufo" name="Recursive Mono-Linear Light Italic.ufo" postScriptFontName="RecursiveMonoLnr-LightItalic" styleMapFamilyName="Recursive Mn Lnr Lght" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
@@ -956,7 +956,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Casual Light" filename="instances/Recursive Mono-Casual Light.ufo"  name="Recursive Mono-Casual Light.ufo" postScriptFontName="RecursiveMonoCsl-Light" styleMapFamilyName="Recursive Mono Csl Lt" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Mono Casual Light" filename="instances/Recursive Mono-Casual Light.ufo"  name="Recursive Mono-Casual Light.ufo" postScriptFontName="RecursiveMonoCsl-Light" styleMapFamilyName="Recursive Mono Csl Lt" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
@@ -967,7 +967,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Casual Light Italic" filename="instances/Recursive Mono-Casual Light Italic.ufo" name="Recursive Mono-Casual Light Italic.ufo" postScriptFontName="RecursiveMonoCsl-LtItalic" styleMapFamilyName="Recursive Mono Csl Lt" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Mono Casual Light Italic" filename="instances/Recursive Mono-Casual Light Italic.ufo" name="Recursive Mono-Casual Light Italic.ufo" postScriptFontName="RecursiveMonoCsl-LtItalic" styleMapFamilyName="Recursive Mono Csl Lt" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
@@ -978,7 +978,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Linear" filename="instances/Recursive Mono-Linear Regular.ufo"  name="Recursive Mono-Linear Regular.ufo" postScriptFontName="RecursiveMonoLnr-Regular" styleMapFamilyName="Recursive Mono Lnr" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Mono Linear" filename="instances/Recursive Mono-Linear Regular.ufo"  name="Recursive Mono-Linear Regular.ufo" postScriptFontName="RecursiveMonoLnr-Regular" styleMapFamilyName="Recursive Mono Lnr" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
@@ -989,7 +989,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Linear Italic" filename="instances/Recursive Mono-Linear Italic.ufo"  name="Recursive Mono-Linear Italic.ufo" postScriptFontName="RecursiveMonoLnr-Italic" styleMapFamilyName="Recursive Mono Lnr" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Mono Linear Italic" filename="instances/Recursive Mono-Linear Italic.ufo"  name="Recursive Mono-Linear Italic.ufo" postScriptFontName="RecursiveMonoLnr-Italic" styleMapFamilyName="Recursive Mono Lnr" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1000,7 +1000,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Casual" filename="instances/Recursive Mono-Casual Regular.ufo"  name="Recursive Mono-Casual Regular.ufo" postScriptFontName="RecursiveMonoCsl-Regular" styleMapFamilyName="Recursive Mono Csl" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Mono Casual" filename="instances/Recursive Mono-Casual Regular.ufo"  name="Recursive Mono-Casual Regular.ufo" postScriptFontName="RecursiveMonoCsl-Regular" styleMapFamilyName="Recursive Mono Csl" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1011,7 +1011,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Casual Italic" filename="instances/Recursive Mono-Casual Italic.ufo"  name="Recursive Mono-Casual Italic.ufo" postScriptFontName="RecursiveMonoCsl-Italic" styleMapFamilyName="Recursive Mono Csl" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Mono Casual Italic" filename="instances/Recursive Mono-Casual Italic.ufo"  name="Recursive Mono-Casual Italic.ufo" postScriptFontName="RecursiveMonoCsl-Italic" styleMapFamilyName="Recursive Mono Csl" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1022,7 +1022,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Linear Medium" filename="instances/Recursive Mono-Linear Medium.ufo"  name="Recursive Mono-Linear Medium.ufo" postScriptFontName="RecursiveMonoLnr-Med" styleMapFamilyName="Recursive Mono Lnr Med" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Mono Linear Medium" filename="instances/Recursive Mono-Linear Medium.ufo"  name="Recursive Mono-Linear Medium.ufo" postScriptFontName="RecursiveMonoLnr-Med" styleMapFamilyName="Recursive Mono Lnr Med" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1033,7 +1033,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Linear Medium Italic" filename="instances/Recursive Mono-Linear Medium Italic.ufo" name="Recursive Mono-Linear Medium Italic.ufo" postScriptFontName="RecursiveMonoLnr-MedItalic" styleMapFamilyName="Recursive Mono Lnr Med" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Mono Linear Medium Italic" filename="instances/Recursive Mono-Linear Medium Italic.ufo" name="Recursive Mono-Linear Medium Italic.ufo" postScriptFontName="RecursiveMonoLnr-MedItalic" styleMapFamilyName="Recursive Mono Lnr Med" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1044,7 +1044,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Casual Medium" filename="instances/Recursive Mono-Casual Medium.ufo"  name="Recursive Mono-Casual Medium.ufo" postScriptFontName="RecursiveMonoCsl-Med" styleMapFamilyName="Recursive Mono Csl Md" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Mono Casual Medium" filename="instances/Recursive Mono-Casual Medium.ufo"  name="Recursive Mono-Casual Medium.ufo" postScriptFontName="RecursiveMonoCsl-Med" styleMapFamilyName="Recursive Mono Csl Md" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1055,7 +1055,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Casual Medium Italic" filename="instances/Recursive Mono-Casual Medium Italic.ufo" name="Recursive Mono-Casual Medium Italic.ufo" postScriptFontName="RecursiveMonoCsl-MedItalic" styleMapFamilyName="Recursive Mono Csl Md" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Mono Casual Medium Italic" filename="instances/Recursive Mono-Casual Medium Italic.ufo" name="Recursive Mono-Casual Medium Italic.ufo" postScriptFontName="RecursiveMonoCsl-MedItalic" styleMapFamilyName="Recursive Mono Csl Md" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1066,7 +1066,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Linear SemiBold" filename="instances/Recursive Mono-Linear SemiBold.ufo"  name="Recursive Mono-Linear SemiBold.ufo" postScriptFontName="RecursiveMonoLnr-SemiBold" styleMapFamilyName="Recursive Mn Lnr SmBd" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Mono Linear SemiBold" filename="instances/Recursive Mono-Linear SemiBold.ufo"  name="Recursive Mono-Linear SemiBold.ufo" postScriptFontName="RecursiveMonoLnr-SemiBold" styleMapFamilyName="Recursive Mn Lnr SmBd" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1077,7 +1077,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Linear SemiBold Italic" filename="instances/Recursive Mono-Linear SemiBold Italic.ufo" name="Recursive Mono-Linear SemiBold Italic.ufo" postScriptFontName="RecursiveMonoLnr-SemiBdItalic" styleMapFamilyName="Recursive Mn Lnr SmBd" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Mono Linear SemiBold Italic" filename="instances/Recursive Mono-Linear SemiBold Italic.ufo" name="Recursive Mono-Linear SemiBold Italic.ufo" postScriptFontName="RecursiveMonoLnr-SemiBdItalic" styleMapFamilyName="Recursive Mn Lnr SmBd" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1088,7 +1088,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Casual SemiBold" filename="instances/Recursive Mono-Casual SemiBold.ufo"  name="Recursive Mono-Casual SemiBold.ufo" postScriptFontName="RecursiveMonoCsl-SemiBd" styleMapFamilyName="Recursive Mn Csl SmBd" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Mono Casual SemiBold" filename="instances/Recursive Mono-Casual SemiBold.ufo"  name="Recursive Mono-Casual SemiBold.ufo" postScriptFontName="RecursiveMonoCsl-SemiBd" styleMapFamilyName="Recursive Mn Csl SmBd" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1099,7 +1099,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Casual SemiBold Italic" filename="instances/Recursive Mono-Casual SemiBold Italic.ufo" name="Recursive Mono-Casual SemiBold Italic.ufo" postScriptFontName="RecursiveMonoCsl-SmBdItalic" styleMapFamilyName="Recursive Mn Csl SmBd" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Mono Casual SemiBold Italic" filename="instances/Recursive Mono-Casual SemiBold Italic.ufo" name="Recursive Mono-Casual SemiBold Italic.ufo" postScriptFontName="RecursiveMonoCsl-SmBdItalic" styleMapFamilyName="Recursive Mn Csl SmBd" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1110,7 +1110,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Linear Bold" filename="instances/Recursive Mono-Linear Bold.ufo"  name="Recursive Mono-Linear Bold.ufo" postScriptFontName="RecursiveMonoLnr-Bold" styleMapFamilyName="Recursive Mono Lnr" setStyleMapStyleName="Bold">
+    <instance familyname="Recursive" stylename="Mono Linear Bold" filename="instances/Recursive Mono-Linear Bold.ufo"  name="Recursive Mono-Linear Bold.ufo" postScriptFontName="RecursiveMonoLnr-Bold" styleMapFamilyName="Recursive Mono Lnr" setStyleMapStyleName="Bold">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1121,7 +1121,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Linear Bold Italic" filename="instances/Recursive Mono-Linear Bold Italic.ufo" name="Recursive Mono-Linear Bold Italic.ufo" postScriptFontName="RecursiveMonoLnr-BoldItalic" styleMapFamilyName="Recursive Mono Lnr" setStyleMapStyleName="Bold Italic">
+    <instance familyname="Recursive" stylename="Mono Linear Bold Italic" filename="instances/Recursive Mono-Linear Bold Italic.ufo" name="Recursive Mono-Linear Bold Italic.ufo" postScriptFontName="RecursiveMonoLnr-BoldItalic" styleMapFamilyName="Recursive Mono Lnr" setStyleMapStyleName="Bold Italic">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1132,7 +1132,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Casual Bold" filename="instances/Recursive Mono-Casual Bold.ufo"  name="Recursive Mono-Casual Bold.ufo" postScriptFontName="RecursiveMonoCsl-Bold" styleMapFamilyName="Recursive Mono Csl" setStyleMapStyleName="Bold">
+    <instance familyname="Recursive" stylename="Mono Casual Bold" filename="instances/Recursive Mono-Casual Bold.ufo"  name="Recursive Mono-Casual Bold.ufo" postScriptFontName="RecursiveMonoCsl-Bold" styleMapFamilyName="Recursive Mono Csl" setStyleMapStyleName="Bold">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1143,7 +1143,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Casual Bold Italic" filename="instances/Recursive Mono-Casual Bold Italic.ufo" name="Recursive Mono-Casual Bold Italic.ufo" postScriptFontName="RecursiveMonoCsl-BdItalic" styleMapFamilyName="Recursive Mono Csl" setStyleMapStyleName="Bold Italic">
+    <instance familyname="Recursive" stylename="Mono Casual Bold Italic" filename="instances/Recursive Mono-Casual Bold Italic.ufo" name="Recursive Mono-Casual Bold Italic.ufo" postScriptFontName="RecursiveMonoCsl-BdItalic" styleMapFamilyName="Recursive Mono Csl" setStyleMapStyleName="Bold Italic">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1154,7 +1154,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Linear ExtraBold" filename="instances/Recursive Mono-Linear ExtraBold.ufo"  name="Recursive Mono-Linear ExtraBold.ufo" postScriptFontName="RecursiveMonoLnr-ExtraBold" styleMapFamilyName="Recursive Mono Lnr XBd" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Mono Linear ExtraBold" filename="instances/Recursive Mono-Linear ExtraBold.ufo"  name="Recursive Mono-Linear ExtraBold.ufo" postScriptFontName="RecursiveMonoLnr-ExtraBold" styleMapFamilyName="Recursive Mono Lnr XBd" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1165,7 +1165,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Linear ExtraBold Italic" filename="instances/Recursive Mono-Linear ExtraBold Italic.ufo" name="Recursive Mono-Linear ExtraBold Italic.ufo" postScriptFontName="RecursiveMonoLnr-ExtraBdItalic" styleMapFamilyName="Recursive Mono Lnr XBd" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Mono Linear ExtraBold Italic" filename="instances/Recursive Mono-Linear ExtraBold Italic.ufo" name="Recursive Mono-Linear ExtraBold Italic.ufo" postScriptFontName="RecursiveMonoLnr-ExtraBdItalic" styleMapFamilyName="Recursive Mono Lnr XBd" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1176,7 +1176,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Casual ExtraBold" filename="instances/Recursive Mono-Casual ExtraBold.ufo"  name="Recursive Mono-Casual ExtraBold.ufo" postScriptFontName="RecursiveMonoCsl-ExtraBd" styleMapFamilyName="Recursive Mn Csl XBd" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Mono Casual ExtraBold" filename="instances/Recursive Mono-Casual ExtraBold.ufo"  name="Recursive Mono-Casual ExtraBold.ufo" postScriptFontName="RecursiveMonoCsl-ExtraBd" styleMapFamilyName="Recursive Mn Csl XBd" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1187,7 +1187,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Casual ExtraBold Italic" filename="instances/Recursive Mono-Casual ExtraBold Italic.ufo" name="Recursive Mono-Casual ExtraBold Italic.ufo" postScriptFontName="RecursiveMonoCsl-XBdItalic" styleMapFamilyName="Recursive Mn Csl XBd" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Mono Casual ExtraBold Italic" filename="instances/Recursive Mono-Casual ExtraBold Italic.ufo" name="Recursive Mono-Casual ExtraBold Italic.ufo" postScriptFontName="RecursiveMonoCsl-XBdItalic" styleMapFamilyName="Recursive Mn Csl XBd" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1198,7 +1198,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Linear Black" filename="instances/Recursive Mono-Linear Black.ufo"  name="Recursive Mono-Linear Black.ufo" postScriptFontName="RecursiveMonoLnr-Black" styleMapFamilyName="Recursive Mono Lnr Blk" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Mono Linear Black" filename="instances/Recursive Mono-Linear Black.ufo"  name="Recursive Mono-Linear Black.ufo" postScriptFontName="RecursiveMonoLnr-Black" styleMapFamilyName="Recursive Mono Lnr Blk" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1209,7 +1209,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Linear Black Italic" filename="instances/Recursive Mono-Linear Black Italic.ufo" name="Recursive Mono-Linear Black Italic.ufo" postScriptFontName="RecursiveMonoLnr-BlackItalic" styleMapFamilyName="Recursive Mono Lnr Blk" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Mono Linear Black Italic" filename="instances/Recursive Mono-Linear Black Italic.ufo" name="Recursive Mono-Linear Black Italic.ufo" postScriptFontName="RecursiveMonoLnr-BlackItalic" styleMapFamilyName="Recursive Mono Lnr Blk" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1220,7 +1220,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Casual Black" filename="instances/Recursive Mono-Casual Black.ufo"  name="Recursive Mono-Casual Black.ufo" postScriptFontName="RecursiveMonoCsl-Black" styleMapFamilyName="Recursive Mono Csl Blk" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Mono Casual Black" filename="instances/Recursive Mono-Casual Black.ufo"  name="Recursive Mono-Casual Black.ufo" postScriptFontName="RecursiveMonoCsl-Black" styleMapFamilyName="Recursive Mono Csl Blk" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1231,7 +1231,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Casual Black Italic" filename="instances/Recursive Mono-Casual Black Italic.ufo" name="Recursive Mono-Casual Black Italic.ufo" postScriptFontName="RecursiveMonoCsl-BlkItalic" styleMapFamilyName="Recursive Mono Csl Blk" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Mono Casual Black Italic" filename="instances/Recursive Mono-Casual Black Italic.ufo" name="Recursive Mono-Casual Black Italic.ufo" postScriptFontName="RecursiveMonoCsl-BlkItalic" styleMapFamilyName="Recursive Mono Csl Blk" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1242,7 +1242,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Linear ExtraBlack" filename="instances/Recursive Mono-Linear ExtraBlack.ufo"  name="Recursive Mono-Linear ExtraBlack.ufo" postScriptFontName="RecursiveMonoLnr-XBlk" styleMapFamilyName="Recursive Mn Lnr XBlk" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Mono Linear ExtraBlack" filename="instances/Recursive Mono-Linear ExtraBlack.ufo"  name="Recursive Mono-Linear ExtraBlack.ufo" postScriptFontName="RecursiveMonoLnr-XBlk" styleMapFamilyName="Recursive Mn Lnr XBlk" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1253,7 +1253,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Linear ExtraBlack Italic" filename="instances/Recursive Mono-Linear ExtraBlack Italic.ufo" name="Recursive Mono-Linear ExtraBlack Italic.ufo" postScriptFontName="RecursiveMonoLnr-XBlkItalic" styleMapFamilyName="Recursive Mn Lnr XBlk" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Mono Linear ExtraBlack Italic" filename="instances/Recursive Mono-Linear ExtraBlack Italic.ufo" name="Recursive Mono-Linear ExtraBlack Italic.ufo" postScriptFontName="RecursiveMonoLnr-XBlkItalic" styleMapFamilyName="Recursive Mn Lnr XBlk" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1264,7 +1264,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Casual ExtraBlack" filename="instances/Recursive Mono-Casual ExtraBlack.ufo"  name="Recursive Mono-Casual ExtraBlack.ufo" postScriptFontName="RecursiveMonoCsl-XBlk" styleMapFamilyName="Recursive Mn Csl XBlk" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Mono Casual ExtraBlack" filename="instances/Recursive Mono-Casual ExtraBlack.ufo"  name="Recursive Mono-Casual ExtraBlack.ufo" postScriptFontName="RecursiveMonoCsl-XBlk" styleMapFamilyName="Recursive Mn Csl XBlk" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1275,7 +1275,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Mono" stylename="Casual ExtraBlack Italic" filename="instances/Recursive Mono-Casual ExtraBlack Italic.ufo" name="Recursive Mono-Casual ExtraBlack Italic.ufo" postScriptFontName="RecursiveMonoCsl-XBlkItalic" styleMapFamilyName="Recursive Mn Csl XBlk" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Mono Casual ExtraBlack Italic" filename="instances/Recursive Mono-Casual ExtraBlack Italic.ufo" name="Recursive Mono-Casual ExtraBlack Italic.ufo" postScriptFontName="RecursiveMonoCsl-XBlkItalic" styleMapFamilyName="Recursive Mn Csl XBlk" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1286,7 +1286,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Linear Light" filename="instances/Recursive Sans-Linear Light.ufo"  name="Recursive Sans-Linear Light.ufo" postScriptFontName="RecursiveSansLnr-Light" styleMapFamilyName="Recursive Sn Lnr Lght" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Sans Linear Light" filename="instances/Recursive Sans-Linear Light.ufo"  name="Recursive Sans-Linear Light.ufo" postScriptFontName="RecursiveSansLnr-Light" styleMapFamilyName="Recursive Sn Lnr Lght" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1297,7 +1297,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Linear Light Italic" filename="instances/Recursive Sans-Linear Light Italic.ufo" name="Recursive Sans-Linear Light Italic.ufo" postScriptFontName="RecursiveSansLnr-LightItalic" styleMapFamilyName="Recursive Sn Lnr Lght" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Sans Linear Light Italic" filename="instances/Recursive Sans-Linear Light Italic.ufo" name="Recursive Sans-Linear Light Italic.ufo" postScriptFontName="RecursiveSansLnr-LightItalic" styleMapFamilyName="Recursive Sn Lnr Lght" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1308,7 +1308,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Casual Light" filename="instances/Recursive Sans-Casual Light.ufo"  name="Recursive Sans-Casual Light.ufo" postScriptFontName="RecursiveSansCsl-Light" styleMapFamilyName="Recursive Sans Csl Lt" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Sans Casual Light" filename="instances/Recursive Sans-Casual Light.ufo"  name="Recursive Sans-Casual Light.ufo" postScriptFontName="RecursiveSansCsl-Light" styleMapFamilyName="Recursive Sans Csl Lt" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1319,7 +1319,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Casual Light Italic" filename="instances/Recursive Sans-Casual Light Italic.ufo" name="Recursive Sans-Casual Light Italic.ufo" postScriptFontName="RecursiveSansCsl-LtItalic" styleMapFamilyName="Recursive Sans Csl Lt" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Sans Casual Light Italic" filename="instances/Recursive Sans-Casual Light Italic.ufo" name="Recursive Sans-Casual Light Italic.ufo" postScriptFontName="RecursiveSansCsl-LtItalic" styleMapFamilyName="Recursive Sans Csl Lt" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1330,7 +1330,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Linear" filename="instances/Recursive Sans-Linear Regular.ufo"  name="Recursive Sans-Linear Regular.ufo" postScriptFontName="RecursiveSansLnr-Regular" styleMapFamilyName="Recursive Sans Lnr" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Sans Linear" filename="instances/Recursive Sans-Linear Regular.ufo"  name="Recursive Sans-Linear Regular.ufo" postScriptFontName="RecursiveSansLnr-Regular" styleMapFamilyName="Recursive Sans Lnr" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1341,7 +1341,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Linear Italic" filename="instances/Recursive Sans-Linear Italic.ufo"  name="Recursive Sans-Linear Italic.ufo" postScriptFontName="RecursiveSansLnr-Italic" styleMapFamilyName="Recursive Sans Lnr" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Sans Linear Italic" filename="instances/Recursive Sans-Linear Italic.ufo"  name="Recursive Sans-Linear Italic.ufo" postScriptFontName="RecursiveSansLnr-Italic" styleMapFamilyName="Recursive Sans Lnr" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1352,7 +1352,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Casual" filename="instances/Recursive Sans-Casual Regular.ufo"  name="Recursive Sans-Casual Regular.ufo" postScriptFontName="RecursiveSansCsl-Regular" styleMapFamilyName="Recursive Sans Csl" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Sans Casual" filename="instances/Recursive Sans-Casual Regular.ufo"  name="Recursive Sans-Casual Regular.ufo" postScriptFontName="RecursiveSansCsl-Regular" styleMapFamilyName="Recursive Sans Csl" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1363,7 +1363,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Casual Italic" filename="instances/Recursive Sans-Casual Italic.ufo"  name="Recursive Sans-Casual Italic.ufo" postScriptFontName="RecursiveSansCsl-Italic" styleMapFamilyName="Recursive Sans Csl" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Sans Casual Italic" filename="instances/Recursive Sans-Casual Italic.ufo"  name="Recursive Sans-Casual Italic.ufo" postScriptFontName="RecursiveSansCsl-Italic" styleMapFamilyName="Recursive Sans Csl" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1374,7 +1374,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Linear Medium" filename="instances/Recursive Sans-Linear Medium.ufo"  name="Recursive Sans-Linear Medium.ufo" postScriptFontName="RecursiveSansLnr-Med" styleMapFamilyName="Recursive Sans Lnr Med" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Sans Linear Medium" filename="instances/Recursive Sans-Linear Medium.ufo"  name="Recursive Sans-Linear Medium.ufo" postScriptFontName="RecursiveSansLnr-Med" styleMapFamilyName="Recursive Sans Lnr Med" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1385,7 +1385,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Linear Medium Italic" filename="instances/Recursive Sans-Linear Medium Italic.ufo" name="Recursive Sans-Linear Medium Italic.ufo" postScriptFontName="RecursiveSansLnr-MedItalic" styleMapFamilyName="Recursive Sans Lnr Med" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Sans Linear Medium Italic" filename="instances/Recursive Sans-Linear Medium Italic.ufo" name="Recursive Sans-Linear Medium Italic.ufo" postScriptFontName="RecursiveSansLnr-MedItalic" styleMapFamilyName="Recursive Sans Lnr Med" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1396,7 +1396,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Casual Medium" filename="instances/Recursive Sans-Casual Medium.ufo"  name="Recursive Sans-Casual Medium.ufo" postScriptFontName="RecursiveSansCsl-Med" styleMapFamilyName="Recursive Sans Csl Med" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Sans Casual Medium" filename="instances/Recursive Sans-Casual Medium.ufo"  name="Recursive Sans-Casual Medium.ufo" postScriptFontName="RecursiveSansCsl-Med" styleMapFamilyName="Recursive Sans Csl Med" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1407,7 +1407,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Casual Medium Italic" filename="instances/Recursive Sans-Casual Medium Italic.ufo" name="Recursive Sans-Casual Medium Italic.ufo" postScriptFontName="RecursiveSansCsl-MedItalic" styleMapFamilyName="Recursive Sans Csl Med" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Sans Casual Medium Italic" filename="instances/Recursive Sans-Casual Medium Italic.ufo" name="Recursive Sans-Casual Medium Italic.ufo" postScriptFontName="RecursiveSansCsl-MedItalic" styleMapFamilyName="Recursive Sans Csl Med" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1418,7 +1418,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Linear SemiBold" filename="instances/Recursive Sans-Linear SemiBold.ufo"  name="Recursive Sans-Linear SemiBold.ufo" postScriptFontName="RecursiveSansLnr-SemiBold" styleMapFamilyName="Recursive Sn Lnr SmBd" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Sans Linear SemiBold" filename="instances/Recursive Sans-Linear SemiBold.ufo"  name="Recursive Sans-Linear SemiBold.ufo" postScriptFontName="RecursiveSansLnr-SemiBold" styleMapFamilyName="Recursive Sn Lnr SmBd" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1429,7 +1429,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Linear SemiBold Italic" filename="instances/Recursive Sans-Linear SemiBold Italic.ufo" name="Recursive Sans-Linear SemiBold Italic.ufo" postScriptFontName="RecursiveSansLnr-SemiBdItalic" styleMapFamilyName="Recursive Sn Lnr SmBd" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Sans Linear SemiBold Italic" filename="instances/Recursive Sans-Linear SemiBold Italic.ufo" name="Recursive Sans-Linear SemiBold Italic.ufo" postScriptFontName="RecursiveSansLnr-SemiBdItalic" styleMapFamilyName="Recursive Sn Lnr SmBd" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1440,7 +1440,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Casual SemiBold" filename="instances/Recursive Sans-Casual SemiBold.ufo"  name="Recursive Sans-Casual SemiBold.ufo" postScriptFontName="RecursiveSansCsl-SemiBd" styleMapFamilyName="Recursive Sn Csl SmBd" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Sans Casual SemiBold" filename="instances/Recursive Sans-Casual SemiBold.ufo"  name="Recursive Sans-Casual SemiBold.ufo" postScriptFontName="RecursiveSansCsl-SemiBd" styleMapFamilyName="Recursive Sn Csl SmBd" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1451,7 +1451,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Casual SemiBold Italic" filename="instances/Recursive Sans-Casual SemiBold Italic.ufo" name="Recursive Sans-Casual SemiBold Italic.ufo" postScriptFontName="RecursiveSansCsl-SmBdItalic" styleMapFamilyName="Recursive Sn Csl SmBd" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Sans Casual SemiBold Italic" filename="instances/Recursive Sans-Casual SemiBold Italic.ufo" name="Recursive Sans-Casual SemiBold Italic.ufo" postScriptFontName="RecursiveSansCsl-SmBdItalic" styleMapFamilyName="Recursive Sn Csl SmBd" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1462,7 +1462,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Linear Bold" filename="instances/Recursive Sans-Linear Bold.ufo"  name="Recursive Sans-Linear Bold.ufo" postScriptFontName="RecursiveSansLnr-Bold" styleMapFamilyName="Recursive Sans Lnr" setStyleMapStyleName="Bold">
+    <instance familyname="Recursive" stylename="Sans Linear Bold" filename="instances/Recursive Sans-Linear Bold.ufo"  name="Recursive Sans-Linear Bold.ufo" postScriptFontName="RecursiveSansLnr-Bold" styleMapFamilyName="Recursive Sans Lnr" setStyleMapStyleName="Bold">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1473,7 +1473,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Linear Bold Italic" filename="instances/Recursive Sans-Linear Bold Italic.ufo" name="Recursive Sans-Linear Bold Italic.ufo" postScriptFontName="RecursiveSansLnr-BoldItalic" styleMapFamilyName="Recursive Sans Lnr" setStyleMapStyleName="Bold Italic">
+    <instance familyname="Recursive" stylename="Sans Linear Bold Italic" filename="instances/Recursive Sans-Linear Bold Italic.ufo" name="Recursive Sans-Linear Bold Italic.ufo" postScriptFontName="RecursiveSansLnr-BoldItalic" styleMapFamilyName="Recursive Sans Lnr" setStyleMapStyleName="Bold Italic">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1484,7 +1484,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Casual Bold" filename="instances/Recursive Sans-Casual Bold.ufo"  name="Recursive Sans-Casual Bold.ufo" postScriptFontName="RecursiveSansCsl-Bold" styleMapFamilyName="Recursive Sans Csl" setStyleMapStyleName="Bold">
+    <instance familyname="Recursive" stylename="Sans Casual Bold" filename="instances/Recursive Sans-Casual Bold.ufo"  name="Recursive Sans-Casual Bold.ufo" postScriptFontName="RecursiveSansCsl-Bold" styleMapFamilyName="Recursive Sans Csl" setStyleMapStyleName="Bold">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1495,7 +1495,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Casual Bold Italic" filename="instances/Recursive Sans-Casual Bold Italic.ufo" name="Recursive Sans-Casual Bold Italic.ufo" postScriptFontName="RecursiveSansCsl-BdItalic" styleMapFamilyName="Recursive Sans Csl" setStyleMapStyleName="Bold Italic">
+    <instance familyname="Recursive" stylename="Sans Casual Bold Italic" filename="instances/Recursive Sans-Casual Bold Italic.ufo" name="Recursive Sans-Casual Bold Italic.ufo" postScriptFontName="RecursiveSansCsl-BdItalic" styleMapFamilyName="Recursive Sans Csl" setStyleMapStyleName="Bold Italic">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1506,7 +1506,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Linear ExtraBold" filename="instances/Recursive Sans-Linear ExtraBold.ufo"  name="Recursive Sans-Linear ExtraBold.ufo" postScriptFontName="RecursiveSansLnr-ExtraBold" styleMapFamilyName="Recursive Sans Lnr XBd" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Sans Linear ExtraBold" filename="instances/Recursive Sans-Linear ExtraBold.ufo"  name="Recursive Sans-Linear ExtraBold.ufo" postScriptFontName="RecursiveSansLnr-ExtraBold" styleMapFamilyName="Recursive Sans Lnr XBd" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1517,7 +1517,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Linear ExtraBold Italic" filename="instances/Recursive Sans-Linear ExtraBold Italic.ufo" name="Recursive Sans-Linear ExtraBold Italic.ufo" postScriptFontName="RecursiveSansLnr-ExtraBdItalic" styleMapFamilyName="Recursive Sans Lnr XBd" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Sans Linear ExtraBold Italic" filename="instances/Recursive Sans-Linear ExtraBold Italic.ufo" name="Recursive Sans-Linear ExtraBold Italic.ufo" postScriptFontName="RecursiveSansLnr-ExtraBdItalic" styleMapFamilyName="Recursive Sans Lnr XBd" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1528,7 +1528,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Casual ExtraBold" filename="instances/Recursive Sans-Casual ExtraBold.ufo"  name="Recursive Sans-Casual ExtraBold.ufo" postScriptFontName="RecursiveSansCsl-ExtraBd" styleMapFamilyName="Recursive Sans Csl XBd" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Sans Casual ExtraBold" filename="instances/Recursive Sans-Casual ExtraBold.ufo"  name="Recursive Sans-Casual ExtraBold.ufo" postScriptFontName="RecursiveSansCsl-ExtraBd" styleMapFamilyName="Recursive Sans Csl XBd" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1539,7 +1539,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Casual ExtraBold Italic" filename="instances/Recursive Sans-Casual ExtraBold Italic.ufo" name="Recursive Sans-Casual ExtraBold Italic.ufo" postScriptFontName="RecursiveSansCsl-XBdItalic" styleMapFamilyName="Recursive Sans Csl XBd" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Sans Casual ExtraBold Italic" filename="instances/Recursive Sans-Casual ExtraBold Italic.ufo" name="Recursive Sans-Casual ExtraBold Italic.ufo" postScriptFontName="RecursiveSansCsl-XBdItalic" styleMapFamilyName="Recursive Sans Csl XBd" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1550,7 +1550,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Linear Black" filename="instances/Recursive Sans-Linear Black.ufo"  name="Recursive Sans-Linear Black.ufo" postScriptFontName="RecursiveSansLnr-Black" styleMapFamilyName="Recursive Sans Lnr Blk" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Sans Linear Black" filename="instances/Recursive Sans-Linear Black.ufo"  name="Recursive Sans-Linear Black.ufo" postScriptFontName="RecursiveSansLnr-Black" styleMapFamilyName="Recursive Sans Lnr Blk" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1561,7 +1561,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Linear Black Italic" filename="instances/Recursive Sans-Linear Black Italic.ufo" name="Recursive Sans-Linear Black Italic.ufo" postScriptFontName="RecursiveSansLnr-BlackItalic" styleMapFamilyName="Recursive Sans Lnr Blk" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Sans Linear Black Italic" filename="instances/Recursive Sans-Linear Black Italic.ufo" name="Recursive Sans-Linear Black Italic.ufo" postScriptFontName="RecursiveSansLnr-BlackItalic" styleMapFamilyName="Recursive Sans Lnr Blk" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1572,7 +1572,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Casual Black" filename="instances/Recursive Sans-Casual Black.ufo"  name="Recursive Sans-Casual Black.ufo" postScriptFontName="RecursiveSansCsl-Black" styleMapFamilyName="Recursive Sans Csl Blk" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Sans Casual Black" filename="instances/Recursive Sans-Casual Black.ufo"  name="Recursive Sans-Casual Black.ufo" postScriptFontName="RecursiveSansCsl-Black" styleMapFamilyName="Recursive Sans Csl Blk" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1583,7 +1583,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Casual Black Italic" filename="instances/Recursive Sans-Casual Black Italic.ufo" name="Recursive Sans-Casual Black Italic.ufo" postScriptFontName="RecursiveSansCsl-BlkItalic" styleMapFamilyName="Recursive Sans Csl Blk" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Sans Casual Black Italic" filename="instances/Recursive Sans-Casual Black Italic.ufo" name="Recursive Sans-Casual Black Italic.ufo" postScriptFontName="RecursiveSansCsl-BlkItalic" styleMapFamilyName="Recursive Sans Csl Blk" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1594,7 +1594,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Linear ExtraBlack" filename="instances/Recursive Sans-Linear ExtraBlack.ufo"  name="Recursive Sans-Linear ExtraBlack.ufo" postScriptFontName="RecursiveSansLnr-XBlk" styleMapFamilyName="Recursive Sn Lnr XBlk" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Sans Linear ExtraBlack" filename="instances/Recursive Sans-Linear ExtraBlack.ufo"  name="Recursive Sans-Linear ExtraBlack.ufo" postScriptFontName="RecursiveSansLnr-XBlk" styleMapFamilyName="Recursive Sn Lnr XBlk" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1605,7 +1605,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Linear ExtraBlack Italic" filename="instances/Recursive Sans-Linear ExtraBlack Italic.ufo" name="Recursive Sans-Linear ExtraBlack Italic.ufo" postScriptFontName="RecursiveSansLnr-XBlkItalic" styleMapFamilyName="Recursive Sn Lnr XBlk" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Sans Linear ExtraBlack Italic" filename="instances/Recursive Sans-Linear ExtraBlack Italic.ufo" name="Recursive Sans-Linear ExtraBlack Italic.ufo" postScriptFontName="RecursiveSansLnr-XBlkItalic" styleMapFamilyName="Recursive Sn Lnr XBlk" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
@@ -1616,7 +1616,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Casual ExtraBlack" filename="instances/Recursive Sans-Casual ExtraBlack.ufo"  name="Recursive Sans-Casual ExtraBlack.ufo" postScriptFontName="RecursiveSansCsl-XBlk" styleMapFamilyName="Recursive Sn Csl XBlk" setStyleMapStyleName="Regular">
+    <instance familyname="Recursive" stylename="Sans Casual ExtraBlack" filename="instances/Recursive Sans-Casual ExtraBlack.ufo"  name="Recursive Sans-Casual ExtraBlack.ufo" postScriptFontName="RecursiveSansCsl-XBlk" styleMapFamilyName="Recursive Sn Csl XBlk" setStyleMapStyleName="Regular">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
@@ -1627,7 +1627,7 @@
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive Sans" stylename="Casual ExtraBlack Italic" filename="instances/Recursive Sans-Casual ExtraBlack Italic.ufo" name="Recursive Sans-Casual ExtraBlack Italic.ufo" postScriptFontName="RecursiveSansCsl-XBlkItalic" styleMapFamilyName="Recursive Sn Csl XBlk" setStyleMapStyleName="Italic">
+    <instance familyname="Recursive" stylename="Sans Casual ExtraBlack Italic" filename="instances/Recursive Sans-Casual ExtraBlack Italic.ufo" name="Recursive Sans-Casual ExtraBlack Italic.ufo" postScriptFontName="RecursiveSansCsl-XBlkItalic" styleMapFamilyName="Recursive Sn Csl XBlk" setStyleMapStyleName="Italic">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>

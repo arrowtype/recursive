@@ -77,7 +77,6 @@ NAME_ABBR = {
 }
 
 def abbreviateName(name, styleNames):
-    print('abbreviating ', name)
     # style names
     for word in styleNames:
         if word in NAME_ABBR.keys():
@@ -85,8 +84,6 @@ def abbreviateName(name, styleNames):
     # version name
     name=name.replace('Beta ', 'b')
     name=name.replace('1.','')
-
-    print('abbreviated ', name)
 
     return name
 
@@ -102,42 +99,28 @@ def main():
         # check for gvar table to see whether it's a variable font
         if 'gvar' not in ttfont.keys():
             fontIsStatic = True
+            print("\n-------------------------------------------\nFont is static.")
+        else:
+            fontIsStatic = False
+            print("\n-------------------------------------------\nFont is variable.")
 
-        if fontIsStatic:
-            print("NOTE: treating as a static font due to --static option")
 
         # GET NAME ID 17, typographic style name, to use in name ID 6
         styleName = getFontNameID(ttfont, 17)
+        print(styleName)
         styleNames = str(styleName).split(' ')
 
         # UPDATE NAME ID 16, typographic family name
         famName = getFontNameID(ttfont, 16)
 
-        legalStyleNames = ['Regular', 'Italic', 'Bold', 'Bold Italic']
-
-        if fontIsStatic:
-
-            # TODO: if name17 isn't just "Regular" "Italic" "Bold" or "Bold Italic", remove first part and append to newFamName
-
-            newFamName = f"{famName} {projectVersion}st"
-
-            if 'Linear' in styleName:
-                styleName = styleName.replace('Linear ','')
-                newFamName = newFamName + ' Linear'
-
-            if 'Casual' in styleName:
-                styleName = styleName.replace('Casual ','')
-                newFamName = newFamName + ' Casual'
-
-            print('newFamName is ', newFamName)
-
-            newFamName = newFamName.replace('Italic','')
-        else:
-            newFamName = f"{famName} {projectVersion}"
-
+       
+        newFamName = f"{famName} {projectVersion}st"
         newFamName = abbreviateName(newFamName, styleNames)
-
         setFontNameID(ttfont, 16, newFamName)
+
+        
+
+        
 
         # UPDATE NAME ID 6
         # replace last part of postScript font name, e.g. "LinearA" from "RecursiveMono-LinearA"
@@ -148,10 +131,6 @@ def main():
             psFam = psName.split("-")[0]
             newPsName = psName.replace(psFam, f"{psFam}{projectVersion.replace(' ','').replace('1.','')}st")
 
-            # for word in styleNames:
-            #     if word in NAME_ABBR.keys():
-            #         newPsName = newPsName.replace(word, NAME_ABBR[word])
-
             if 'Beta' in newPsName:
                 newPsName = newPsName.replace('Beta', NAME_ABBR['Beta'])
 
@@ -160,7 +139,7 @@ def main():
             print("Variable font")
             psName = str(getFontNameID(ttfont, 6))
             psFam = psName.split("-")[0]
-            newPsName = psName.replace(psFam, psFam + projectVersion.replace(' ','_').replace('.','_'))
+            newPsName = psName.replace(psFam, psFam + projectVersion.replace(' ','').replace('1.',''))
 
         # set new ps name
         setFontNameID(ttfont, 6, newPsName)
@@ -176,6 +155,27 @@ def main():
         setFontNameID(ttfont, 5, newVersion)
 
         # FULL FONT NAME, ID 4
+
+        if fontIsStatic:
+
+            newFamName = f"{famName} {projectVersion}st"
+
+            newFamName = newFamName + ' ' + styleName
+            styleName = styleName.replace('Linear ','').replace('Casual ','')
+
+            # if 'Linear' in styleName:
+            #     newFamName = newFamName + ' ' + styleName
+            #     styleName = styleName.replace('Linear ','')
+
+            # if 'Casual' in styleName:
+            #     newFamName = newFamName + ' ' + styleName
+            #     styleName = styleName.replace('Casual ','')
+
+            newFamName = newFamName.replace(' Italic','').replace('Italic','')
+        else:
+            newFamName = f"{famName} {projectVersion}"
+
+        newFamName = abbreviateName(newFamName, styleNames)
 
         if fontIsStatic:
             completeName = newFamName
@@ -196,7 +196,12 @@ def main():
 
         # UPDATE BASIC FONT NAME, id 1
 
-        # TODO: if 'Italic' in name 1, remove it; then change name 2 to 'Italic'
+        legalStyleNames = ['Regular', 'Italic', 'Bold', 'Bold Italic']
+        # TODO: 
+        if styleName not in legalStyleNames and 'Italic' in styleName:
+            styleName = 'Italic'
+        if styleName not in legalStyleNames and 'Italic' not in styleName:
+            styleName = 'Regular'
 
         setFontNameID(ttfont, 2, styleName)
         setFontNameID(ttfont, 1, newFamName)

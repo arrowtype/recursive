@@ -50,6 +50,7 @@ feature ss04 {
     };
     sub @sansI by @italI;
     sub @monoI by @italI;
+    sub fi by f i.italic;
 } ss04;
 
 @sansL = [l.sans lacute.sans lcommaaccent.sans ldotbelow.sans llinebelow.sans lslash.sans ];
@@ -81,8 +82,8 @@ feature ss06 {
     sub @monoR by @italR;
 } ss06;
 
-@dfltCapL = [L      Lacute      Lcaron      Ldotbelow      Llinebelow      Lslash       ]; #Lcommaaccent     
-@sansCapL = [L.sans Lacute.sans Lcaron.sans Ldotbelow.sans Llinebelow.sans Lslash.sans  ]; #Lcommaaccent.sans
+@dfltCapL = [L      Lacute      Lcommaaccent      Lcaron      Ldotbelow      Llinebelow      Lslash       ];
+@sansCapL = [L.sans Lacute.sans Lcommaaccent.sans Lcaron.sans Ldotbelow.sans Llinebelow.sans Lslash.sans  ];
 
 @dfltCapZ = [Z      Zacute      Zdotaccent      Zcaron      Zdotbelow      ];
 @sansCapZ = [Z.sans Zacute.sans Zdotaccent.sans Zcaron.sans Zdotbelow.sans ];

@@ -18,7 +18,7 @@ fi
 
 if [[ $2 = "-o" || $2 = "--otf" ]] ; then
     fontFormat="otf"
-elif [[ $2 = "-t" || $2 = "--ttf" ]] ; then
+else
     fontFormat="ttf"
 fi
 
@@ -34,6 +34,7 @@ mkdir -p $finalDirectory
 
 # Build
 echo 🏗 Building static $fontFormat files
+# fontmake -m $DS -o $fontFormat -i "Recursive Mono-Linear Regular.*" # test version
 fontmake -m $DS -o $fontFormat -i
 
 # Move
@@ -45,7 +46,7 @@ rm -r "instance_${fontFormat}"
 
 # Set versioned names
 for font in $finalDirectory/*; do
-    python src/build-scripts/set-versioned-font-names.py "$font" --static --inplace
+    python src/build-scripts/set-versioned-font-names.py "$font" --inplace
 done
 
 # Make woff2 files
