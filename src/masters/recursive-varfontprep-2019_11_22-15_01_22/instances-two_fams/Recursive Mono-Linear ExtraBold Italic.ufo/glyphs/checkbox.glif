@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="checkbox" format="2">
+  <advance width="600.0"/>
+  <outline>
+    <contour>
+      <point x="14.0" y="570.0" type="line"/>
+      <point x="14.0" y="24.0" type="line" smooth="yes"/>
+      <point x="14.0" y="5.0"/>
+      <point x="22.0" y="0.0"/>
+      <point x="38.0" y="0.0" type="curve" smooth="yes"/>
+      <point x="594.0" y="0.0" type="line"/>
+      <point x="594.0" y="546.0" type="line" smooth="yes"/>
+      <point x="594.0" y="563.0"/>
+      <point x="586.0" y="570.0"/>
+      <point x="570.0" y="570.0" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="94.0" y="490.0" type="curve"/>
+      <point x="514.0" y="490.0" type="line"/>
+      <point x="514.0" y="359.0"/>
+      <point x="514.0" y="204.0"/>
+      <point x="514.0" y="80.0" type="curve"/>
+      <point x="94.0" y="80.0" type="line"/>
+      <point x="94.0" y="213.0"/>
+      <point x="94.0" y="366.0"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0.5,0,1</string>
+    </dict>
+  </lib>
+</glyph>

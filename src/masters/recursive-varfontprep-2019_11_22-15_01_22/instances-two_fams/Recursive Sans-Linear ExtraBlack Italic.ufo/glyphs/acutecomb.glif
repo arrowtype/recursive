@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="acutecomb" format="2">
+  <unicode hex="0301"/>
+  <anchor x="68.0" y="549.0" name="_top"/>
+  <anchor x="71.0" y="560.0" name="_dot"/>
+  <anchor x="-145.0" y="710.0" name="dot"/>
+  <outline>
+    <contour>
+      <point x="119.0" y="805.0" type="curve"/>
+      <point x="67.0" y="741.0"/>
+      <point x="16.0" y="679.0"/>
+      <point x="-35.0" y="617.0" type="curve"/>
+      <point x="12.0" y="617.0"/>
+      <point x="81.0" y="617.0"/>
+      <point x="132.0" y="617.0" type="curve" smooth="yes"/>
+      <point x="143.0" y="617.0"/>
+      <point x="150.0" y="619.0"/>
+      <point x="155.0" y="624.0" type="curve" smooth="yes"/>
+      <point x="230.0" y="689.0"/>
+      <point x="280.0" y="732.0"/>
+      <point x="346.0" y="789.0" type="curve" smooth="yes"/>
+      <point x="353.0" y="796.0"/>
+      <point x="351.0" y="805.0"/>
+      <point x="343.0" y="805.0" type="curve" smooth="yes"/>
+      <point x="271.0" y="805.0"/>
+      <point x="193.0" y="805.0"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0,0,0.25</string>
+    </dict>
+  </lib>
+</glyph>
