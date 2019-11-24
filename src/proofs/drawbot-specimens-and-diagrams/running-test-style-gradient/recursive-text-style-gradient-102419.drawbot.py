@@ -14,7 +14,7 @@ if refresh == True:
 # ---------------------------------------------------------
 # CONFIGURATION -------------------------------------------
 
-docTitle = "recursive-text-style-gradient"
+docTitle = "recursive-text-style-gradient--line_breaks"
 
 save = True
 autoOpen = True
@@ -83,6 +83,9 @@ fill(0)
 
 txt = FormattedString()
 
+# specimenText = specimenText.replace("\n\n", " ¶ ").replace("§","\n\n") # pilcrows for paragraph breaks
+specimenText = specimenText.replace("\n\n", "\n  ").replace("§","\n\n") # tabs for paragraph breaks
+
 specimenWords = specimenText.split(" ")
 
 wordCount = len(specimenWords)
@@ -92,9 +95,21 @@ minCASL, maxCASL = 0.001, 0.999
 
 for num, word in enumerate(specimenWords):
     txt.font(fontFam)
+    leading = textSize*1.5
+    txt.lineHeight(leading)
+
     currentMONO = interpolate(maxMono, minMONO, num/wordCount)
     currentCASL = interpolate(maxCASL, minCASL, num/wordCount)
-    txt.fontVariations(MONO=currentMONO, CASL=currentCASL)
+    txt.fontVariations(MONO=currentMONO, CASL=currentCASL, wght=400)
+
+    if word == "¶":
+        txt.fill(0,0,1,1)
+        # txt.fontVariations(MONO=currentMONO, CASL=currentCASL, wght=350)
+    elif num < 9:
+        txt.fill(0,0,1,1)
+        txt.fontVariations(MONO=currentMONO, CASL=currentCASL, wght=700)
+    else:
+        txt.fill(0)
     txt.append(word + " ")
 
 
