@@ -81,13 +81,25 @@ fontSize(textSize)
 
 fill(0)
 
-string="In programming, Recursion is when a function calls itself, using its outputs as inputs to yield powerful results. It’s definition contains a reference to itself."
+txt = FormattedString()
+
+specimenWords = specimenText.split(" ")
+
+wordCount = len(specimenWords)
+
+minMONO, maxMono = 0.001, 0.999
+minCASL, maxCASL = 0.001, 0.999
+
+for num, word in enumerate(specimenWords):
+    txt.font(fontFam)
+    currentMONO = interpolate(maxMono, minMONO, num/wordCount)
+    currentCASL = interpolate(maxCASL, minCASL, num/wordCount)
+    txt.fontVariations(MONO=currentMONO, CASL=currentCASL)
+    txt.append(word + " ")
 
 
 
-overflow = textBox(specimenText, (padding,padding,W/2-(padding*2),H-(padding*2)))
-
-print(overflow)
+overflow = textBox(txt, (padding,padding,W/2-(padding*2),H-(padding*2)))
 
 textBox(overflow, (W/2+padding,padding,W/2-(padding*2),H-(padding*2)))
 
