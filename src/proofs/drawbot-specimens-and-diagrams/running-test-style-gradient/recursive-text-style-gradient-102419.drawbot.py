@@ -38,13 +38,13 @@ background = 1
 # def computeFontSizePoints(pts):
 #     return W * (pts / (bookSizeW * 72))
 # textSize = computeFontSizePoints(7)
-textSize = 10
+textSize = 11
 
 fontFam = "/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-specimens-and-diagrams/running-test-style-gradient/fonts/recursive-MONO_CASL_wght_slnt_ital--full_gsub--2019_11_22-20_38.ttf"
 
 # rwSize =  computeFontSizePoints(152)
 
-padding = DPI*0.25
+padding = DPI*0.5
 
 
 # # this will draw cyan guides to help align content
@@ -84,7 +84,7 @@ fill(0)
 txt = FormattedString()
 
 # specimenText = specimenText.replace("\n\n", " ¶ ").replace("§","\n\n") # pilcrows for paragraph breaks
-specimenText = specimenText.replace("\n\n", "\n  ").replace("§","\n\n") # tabs for paragraph breaks
+specimenText = specimenText.replace("\n\n", "\n    ").replace("§","\n") # tabs for paragraph breaks
 
 specimenWords = specimenText.split(" ")
 
@@ -101,6 +101,10 @@ for num, word in enumerate(specimenWords):
     currentMONO = interpolate(maxMono, minMONO, num/wordCount)
     currentCASL = interpolate(maxCASL, minCASL, num/wordCount)
     txt.fontVariations(MONO=currentMONO, CASL=currentCASL, wght=400)
+
+    if word == "§":
+        txt.fontVariations(MONO=currentMONO, CASL=currentCASL, wght=700)
+        # output next words until you hit "\n"
 
     if word == "¶":
         txt.fill(0,0,1,1)
