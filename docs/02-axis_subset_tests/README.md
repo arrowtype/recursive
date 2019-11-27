@@ -29,3 +29,7 @@ Note: subsetting `ital` makes no filesize difference – all these alternate gly
 I'm using this script to run `fontTools.instancer`: 
 
 https://github.com/arrowtype/recursive/blob/dfe7a4569cdf0b599f5bfb1ac79d973cd2c7fdcf/src/build-scripts/instancing/partial-instance-tests.py
+
+**Note: Subsetting must be on masters**
+
+Instancer will *only* make subsets where masters are already located. In Recursive, that means you can subset weight to 300–800, 800–1000, or 300–1000, but *not* 400–750, etc.
