@@ -1,12 +1,14 @@
 # Variable font axis splitting notes
 
-Generally, a variable font's filesize is about:
+Generally, a variable font's filesize is approximately:
 
 ```
-(the size of a single font) × (number of masters required)
+(the size of a single font) × (number of masters required) - (savings from non-duplicated metadata)
 ```
 
-In Recursive, each static instance woff2 is around 40kb.
+This can be improved, however, depending how well font compression is able to de-duplicate similar curves between the masters involved in a variable font file. For example, the Mono & Sans masters share the same outlines for all "normal-width" glyphs, so file compression is able to (basically) just store these outlines once. Therefore, a variable font with the `MONO` axis has a smaller filesize than a variable font with just a single one of the other axes. 
+
+In Recursive, each static instance woff2 is around 40kb. The files below are set to a default except where described: `MONO=0, CASL=0, wght=400, slnt=0, ital=0.5`.
 
 | File                                            | Description                          | Masters | Size     |
 | ----------------------------------------------- | ------------------------------------ | ------- | -------: |
@@ -24,7 +26,7 @@ In Recursive, each static instance woff2 is around 40kb.
 
 Note: subsetting `ital` makes no filesize difference – all these alternate glyphs must be remaining in the partial font.
 
-## Process
+## Testing process
 
 I'm using this script to run `fontTools.instancer`: 
 
