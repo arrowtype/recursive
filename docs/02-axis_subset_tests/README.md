@@ -27,9 +27,9 @@ Variable font filesize can be further improved depending how much font compressi
 | recursive--wght_300_800.woff2                   | Weight 300–800                       | 2       |  `80 KB` |
 | recursive--wght_300_1000.woff2                  | Weight 300–1000                      | 3       | `112 KB` |
 | recursive--wght_300_800-mono_0_1.woff2          | Weight 300–800, plus Monospace axis  | 4       | `164 KB` |
-| recursive--wght_300_1000-mono_0_1.woff2         | Weight 300–1000, plus Monospace axis | 4       | `239 KB` |
 | recursive--wght_300_800-slnt0_15.woff2          | Weight 300–800, Slant, Ital 0.5      | 4       | `135 KB` |
 | recursive--wght_300_800-slnt0_15-ital_0.woff2   | Weight 300–800, Slant, Ital 0        | 4       | `135 KB` |
+| recursive--wght_300_1000-mono_0_1.woff2         | Weight 300–1000, plus Monospace axis | 6       | `239 KB` |
 | recursive--wght_300_1000-slnt0_15.woff2         | Weight 300–1000, Slant, Ital 0.5     | 6       | `194 KB` |
 
 Note: subsetting `ital` makes no filesize difference – all these alternate glyphs must be remaining in the partial font.
