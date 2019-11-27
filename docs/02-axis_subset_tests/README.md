@@ -6,9 +6,17 @@ Generally, a variable font's filesize is approximately:
 (the size of a single font) × (number of masters required) - (savings from non-duplicated metadata)
 ```
 
-This can be improved, however, depending how well font compression is able to de-duplicate similar curves between the masters involved in a variable font file. For example, the Mono & Sans masters share the same outlines for all "normal-width" glyphs, so file compression is able to (basically) just store these outlines once. Therefore, a variable font with the `MONO` axis has a smaller filesize than a variable font with just a single one of the other axes. 
+In Recursive, a single instance/master as a woff2 is around 40kb. Masters required for each axis are:
 
-In Recursive, each static instance woff2 is around 40kb. The files below are set to a default except where described: `MONO=0, CASL=0, wght=400, slnt=0, ital=0.5`.
+- Weight: `300`, `800`, `1000`
+- Monospace: `0`, `1`
+- Casual: `0`, `1`
+- Slant: `-15`, `0`
+- Italic: (no masters – this axis controls glyph alternates)
+
+Variable font filesize can be further improved depending how much font compression can de-duplicate similar curves between the masters involved. For example, the Mono & Sans masters share the same outlines for all "normal-width" glyphs, so file compression is able to (basically) just store these outlines once. Therefore, a variable font with the `MONO` axis has a smaller filesize than a variable font with just a single one of the other axes. 
+
+ The files below are set to a default except where described: `MONO=0, CASL=0, wght=400, slnt=0, ital=0.5`.
 
 | File                                            | Description                          | Masters | Size     |
 | ----------------------------------------------- | ------------------------------------ | ------- | -------: |
