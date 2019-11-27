@@ -23,3 +23,9 @@ In Recursive, each static instance woff2 is around 40kb.
 | recursive--wght_300_1000-slnt0_15.woff2         | Weight 300–1000, Slant, Ital 0.5     | 6       | `194 KB` |
 
 Note: subsetting `ital` makes no filesize difference – all these alternate glyphs must be remaining in the partial font.
+
+## Process
+
+I'm using this script to run `fontTools.instancer`: 
+
+https://github.com/arrowtype/recursive/blob/dfe7a4569cdf0b599f5bfb1ac79d973cd2c7fdcf/src/build-scripts/instancing/partial-instance-tests.py
