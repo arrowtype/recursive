@@ -22,12 +22,12 @@ A slight additional complexity: variable font filesize can be further improved d
 
 | File                                            | Description                          | Masters | Size     |
 | ----------------------------------------------- | ------------------------------------ | ------- | -------: |
+| recursive--wght_300_800.woff2                   | Weight 300–800                       | 2       |  `80 KB` |
+| recursive--wght_300_1000.woff2                  | Weight 300–1000                      | 3       | `112 KB` |
 | recursive--MONO_0_1.woff2                       | Just the Monospace axis              | 2       |  `62 KB` |
 | recursive--CASL_0_1.woff2                       | Just the Casual axis                 | 2       |  `88 KB` |
 | recursive--slnt_0_15.woff2                      | Slant 0 to -15 (mono 0)              | 2       |  `83 KB` |
 | recursive--slnt_0_15-mono_1.woff2               | Slant 0 to -15 (mono 1)              | 2       |  `82 KB` |
-| recursive--wght_300_800.woff2                   | Weight 300–800                       | 2       |  `80 KB` |
-| recursive--wght_300_1000.woff2                  | Weight 300–1000                      | 3       | `112 KB` |
 | recursive--wght_300_800-mono_0_1.woff2          | Weight 300–800, plus Monospace axis  | 4       | `164 KB` |
 | recursive--wght_300_800-slnt0_15.woff2          | Weight 300–800, Slant, Ital 0.5      | 4       | `135 KB` |
 | recursive--wght_300_800-slnt0_15-ital_0.woff2   | Weight 300–800, Slant, Ital 0        | 4       | `135 KB` |
