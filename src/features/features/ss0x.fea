@@ -147,16 +147,6 @@ feature ss10 {
 feature ss11 {
     featureNames {
         # MS, unicode, English
-        name "Simplified '1'";
-        # Apple, roman, unspecified
-        name 1 "Simplified '1'";
-    };
-    sub one by one.sans;
-} ss11;
-
-feature ss20 {
-    featureNames {
-        # MS, unicode, English
         name "Slashed Zero in Sans";
         # Apple, roman, unspecified
         name 1 "Slashed Zero in Sans";
@@ -164,4 +154,14 @@ feature ss20 {
     sub zero.sans by zero;
     sub zerosuperior.sans by zerosuperior;
     sub zeroinferior.sans by zeroinferior;
-} ss20;
+} ss11;
+
+feature ss12 {
+    featureNames {
+        # MS, unicode, English
+        name "Simplified '1'";
+        # Apple, roman, unspecified
+        name 1 "Simplified '1'";
+    };
+    sub one by one.sans;
+} ss12;
