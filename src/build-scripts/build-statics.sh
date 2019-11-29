@@ -35,7 +35,7 @@ mkdir -p $finalDirectory
 # Build
 echo 🏗 Building static $fontFormat files
 # fontmake -m $DS -o $fontFormat -i "Recursive Mono-Linear Regular.*" # test version
-fontmake -m $DS -o $fontFormat -i
+fontmake -m $DS -o $fontFormat -i --expand-features-to-instances
 
 # Move
 for font in "instance_${fontFormat}"/*; do

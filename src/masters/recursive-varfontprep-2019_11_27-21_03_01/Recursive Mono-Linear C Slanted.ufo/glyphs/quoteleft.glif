@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="quoteleft" format="2">
+	<unicode hex="2018"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="383" y="750" type="curve" smooth="yes"/>
+			<point x="375" y="750"/>
+			<point x="372" y="749"/>
+			<point x="368" y="743" type="curve" smooth="yes"/>
+			<point x="303" y="632"/>
+			<point x="237" y="521"/>
+			<point x="191" y="443" type="curve" smooth="yes"/>
+			<point x="186" y="435"/>
+			<point x="188" y="431"/>
+			<point x="196" y="431" type="curve" smooth="yes"/>
+			<point x="290" y="431"/>
+			<point x="336" y="431"/>
+			<point x="445" y="431" type="curve"/>
+			<point x="499" y="553"/>
+			<point x="533" y="628"/>
+			<point x="587" y="750" type="curve"/>
+			<point x="533" y="750"/>
+			<point x="471" y="750"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+			<key>public.markColor</key>
+			<string>1,1,0,1</string>
+		</dict>
+	</lib>
+</glyph>

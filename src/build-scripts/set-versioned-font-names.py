@@ -1,3 +1,5 @@
+# coding=utf8
+
 '''
 
     Font versions often clash in software. The simplest way to avoid that is to add a version number to new fonts, e.g.
@@ -81,8 +83,12 @@ def abbreviateName(name, styleNames):
     for word in styleNames:
         if word in NAME_ABBR.keys():
             name = name.replace(word, NAME_ABBR[word])
+
+    for word in name.split():
+        if word in NAME_ABBR.keys():
+            name = name.replace(word, NAME_ABBR[word])
     # version name
-    name=name.replace('Beta ', 'b')
+    name=name.replace(' B ', ' b')
     name=name.replace('1.','')
 
     return name
@@ -92,7 +98,6 @@ def main():
     projectVersion = getVersion()
 
     for font_path in args.fonts:
-
         # open font path as a font object, for manipulation
         ttfont = TTFont(font_path)
 
@@ -104,23 +109,29 @@ def main():
             fontIsStatic = False
             print("\n-------------------------------------------\nFont is variable.")
 
-
         # GET NAME ID 17, typographic style name, to use in name ID 6
         styleName = getFontNameID(ttfont, 17)
-        print(styleName)
-        styleNames = str(styleName).split(' ')
+        print("name 17 is ", styleName)
+
+        if styleName == 'None':
+            styleName = getFontNameID(ttfont, 2)
+            styleNames = styleName.split()
+        else:
+            styleNames = str(styleName).split(' ')
+
+        print('styleNames is ', styleNames)
 
         # UPDATE NAME ID 16, typographic family name
         famName = getFontNameID(ttfont, 16)
 
-       
-        newFamName = f"{famName} {projectVersion}st"
-        newFamName = abbreviateName(newFamName, styleNames)
-        setFontNameID(ttfont, 16, newFamName)
 
-        
+        if famName != 'None':
+            newFamName = f"{famName} {projectVersion}st"
+            newFamName = abbreviateName(newFamName, styleNames)
+            setFontNameID(ttfont, 16, newFamName)
 
-        
+        if famName == 'None':
+            famName = getFontNameID(ttfont, 1)
 
         # UPDATE NAME ID 6
         # replace last part of postScript font name, e.g. "LinearA" from "RecursiveMono-LinearA"
@@ -160,16 +171,10 @@ def main():
 
             newFamName = f"{famName} {projectVersion}st"
 
-            newFamName = newFamName + ' ' + styleName
+            if styleName != 'None':
+                newFamName = newFamName + ' ' + styleName
+
             styleName = styleName.replace('Linear ','').replace('Casual ','')
-
-            # if 'Linear' in styleName:
-            #     newFamName = newFamName + ' ' + styleName
-            #     styleName = styleName.replace('Linear ','')
-
-            # if 'Casual' in styleName:
-            #     newFamName = newFamName + ' ' + styleName
-            #     styleName = styleName.replace('Casual ','')
 
             newFamName = newFamName.replace(' Italic','').replace('Italic','')
         else:
@@ -178,9 +183,10 @@ def main():
         newFamName = abbreviateName(newFamName, styleNames)
 
         if fontIsStatic:
-            completeName = newFamName
-            if 'Italic' in styleName:
-                completeName = abbreviateName(newFamName + 'Italic', styleNames)
+            if 'Italic' in styleNames:
+                completeName = abbreviateName(newFamName + ' Italic', styleNames)
+            else:
+                completeName = abbreviateName(newFamName, styleNames)
             setFontNameID(ttfont, 4, completeName)
         else:
             newFamName = abbreviateName(newFamName, styleNames)
@@ -204,6 +210,8 @@ def main():
             styleName = 'Regular'
 
         setFontNameID(ttfont, 2, styleName)
+
+        newFamName = newFamName.replace(' Rg','').replace(' It','')
         setFontNameID(ttfont, 1, newFamName)
 
         # SAVE FONT

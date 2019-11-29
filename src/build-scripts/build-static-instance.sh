@@ -4,21 +4,30 @@
 # 
 # NOTE: the designspace instances *must* include 'name' attributes for this to work
 
+source venv/bin/activate
+
 DS=$1
 
-outputDir="font_betas"
-dsName=$(basename $DS)
-fontName=${dsName/".designspace"/""}
-finalDirectory="${outputDir}/static_fonts/${fontName}-static_ttf"
-
+finalDirectory="font_betas/test_builds"
+mkdir -p $finalDirectory
 
 if [[ $2 ]] ; then
-    fontmake -m $DS -o ttf -i "$2" --output-dir $finalDirectory
+    fontmake -m $DS -o ttf -i "$2" --output-dir $finalDirectory --expand-features-to-instances
 else
-    fontmake -m $DS -o ttf -i "Recursive Mono-Linear Regular.*" --output-dir $finalDirectory
+    fontmake -m $DS -o ttf -i "Recursive Mono Linear-Regular.*" --output-dir $finalDirectory --expand-features-to-instances
+    fontmake -m $DS -o ttf -i "Recursive Mono Linear-Italic.*" --output-dir $finalDirectory --expand-features-to-instances
+    # fontmake -m $DS -o ttf -i "Recursive Mono Linear-ExtraBold.*" --output-dir $finalDirectory --expand-features-to-instances
+    # fontmake -m $DS -o ttf -i "Recursive Mono Linear-Bold.*" --output-dir $finalDirectory --expand-features-to-instances
+    # fontmake -u "src/masters/recursive-varfontprep-2019_11_27-21_03_01/instances/Recursive Mono Linear-Italic.ufo" -o ttf --output-dir $finalDirectory
+    # fontmake -u "src/masters/recursive-varfontprep-2019_11_27-21_03_01/instances/Recursive Mono Linear-Regular.ufo" -o ttf --output-dir $finalDirectory
 fi
 
-# Set versioned names
+## Set versioned names
 for font in $finalDirectory/*; do
     python src/build-scripts/set-versioned-font-names.py "$font" --inplace
 done
+
+## get name tables
+# for font in $finalDirectory/*; do
+#     ttx -t name "$font"
+# done
