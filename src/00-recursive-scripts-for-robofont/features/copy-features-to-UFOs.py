@@ -3,7 +3,7 @@
 
     python "<path>/copy-kerning-without-metrics_machine.py" "<path>/Recursive Sans-Casual B.ufo" <dir/to/copy/to>
 
-    Required argument: UFO path to copy kerning & features from
+    Required argument: Feature file to copy
 
     Optional argument: Dir path of UFOs to copy to, if separate
 

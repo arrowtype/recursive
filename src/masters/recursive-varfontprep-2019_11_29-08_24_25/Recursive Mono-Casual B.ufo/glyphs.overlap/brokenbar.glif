@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="brokenbar" format="2">
+	<unicode hex="00A6"/>
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="207" y="758" type="curve"/>
+			<point x="216" y="722"/>
+			<point x="220" y="685"/>
+			<point x="220" y="645" type="curve" smooth="yes"/>
+			<point x="220" y="433" type="line" smooth="yes"/>
+			<point x="220" y="388"/>
+			<point x="261" y="366"/>
+			<point x="343" y="366" type="curve" smooth="yes"/>
+			<point x="360" y="366"/>
+			<point x="372" y="367"/>
+			<point x="380" y="369" type="curve"/>
+			<point x="380" y="695" type="line" smooth="yes"/>
+			<point x="380" y="720"/>
+			<point x="376" y="732"/>
+			<point x="365" y="743" type="curve" smooth="yes"/>
+			<point x="349" y="759"/>
+			<point x="324" y="765"/>
+			<point x="274" y="765" type="curve" smooth="yes"/>
+			<point x="249" y="765"/>
+			<point x="230" y="763"/>
+		</contour>
+		<contour>
+			<point x="220" y="228" type="curve"/>
+			<point x="220" y="-97" type="line" smooth="yes"/>
+			<point x="220" y="-142"/>
+			<point x="261" y="-164"/>
+			<point x="343" y="-164" type="curve" smooth="yes"/>
+			<point x="360" y="-164"/>
+			<point x="372" y="-163"/>
+			<point x="380" y="-161" type="curve"/>
+			<point x="380" y="165" type="line" smooth="yes"/>
+			<point x="380" y="217"/>
+			<point x="350" y="235"/>
+			<point x="279" y="235" type="curve" smooth="yes"/>
+			<point x="257" y="235"/>
+			<point x="236" y="233"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.rafalbuchner.mirroringDrawingLocal</key>
+			<dict>
+				<key>mirroringOptions</key>
+				<integer>3</integer>
+				<key>offset</key>
+				<array>
+					<integer>0</integer>
+					<integer>0</integer>
+				</array>
+			</dict>
+		</dict>
+	</lib>
+</glyph>

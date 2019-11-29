@@ -20,8 +20,7 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 # '''
 
 txt = '''\
-hyphensoft = hyphen|00AD
-nbspace = space|00A0
+apostrophemod = commaaboverightcomb | 02BC
 '''
 # recipeFile = "/Users/stephennixon/type-repos/recursive/src/00-recursive-scripts-for-robofont/diacritics-and-glyph_construction-recipes/diacritic-recipes-for-recursive-generated-with_alts.txt"
 # with open(recipeFile, 'r') as recipe:
