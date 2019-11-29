@@ -32,31 +32,31 @@ echo $finalDirectory
 
 mkdir -p $finalDirectory
 
-# Build
-echo 🏗 Building static $fontFormat files
-# fontmake -m $DS -o $fontFormat -i "Recursive Mono-Linear Regular.*" # test version
-fontmake -m $DS -o $fontFormat -i --expand-features-to-instances
+# # Build
+# echo 🏗 Building static $fontFormat files
+# fontmake -m $DS -o $fontFormat -i --expand-features-to-instances
 
-# Move
-for font in "instance_${fontFormat}"/*; do
-    mv "${font}" ${finalDirectory}
-done
+# # Move
+# for font in "instance_${fontFormat}"/*; do
+#     mv "${font}" ${finalDirectory}
+# done
 
-rm -r "instance_${fontFormat}"
+# rm -r "instance_${fontFormat}"
 
-# Set versioned names
-for font in $finalDirectory/*; do
-    python src/build-scripts/set-versioned-font-names.py "$font" --inplace
-done
+# # Set versioned names
+# for font in $finalDirectory/*; do
+#     python src/build-scripts/set-versioned-font-names.py "$font" --inplace
+# done
 
 # Make woff2 files
 
 woff2Directory="${outputDir}/static_fonts/${fontName}-static_woff2"
 mkdir -p $woff2Directory
 
-for font in $finalDirectory/*.*tf; do
-    python src/build-scripts/set-up-RIBBI-style_linking.py "$font" --inplace
-done
+## probably no longer needed?
+# for font in $finalDirectory/*.*tf; do
+#     python src/build-scripts/set-up-RIBBI-style_linking.py "$font" --inplace
+# done
 
 for font in $finalDirectory/*.*tf; do
     woff2_compress "$font"

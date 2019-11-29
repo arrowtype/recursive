@@ -116,6 +116,7 @@ def main():
         if styleName == 'None':
             styleName = getFontNameID(ttfont, 2)
             styleNames = styleName.split()
+            setFontNameID(ttfont, 17, styleName)
         else:
             styleNames = str(styleName).split(' ')
 
@@ -132,6 +133,9 @@ def main():
 
         if famName == 'None':
             famName = getFontNameID(ttfont, 1)
+            newFamName = f"{famName} {projectVersion}st"
+            newFamName = abbreviateName(newFamName, styleNames)
+            setFontNameID(ttfont, 16, newFamName)
 
         # UPDATE NAME ID 6
         # replace last part of postScript font name, e.g. "LinearA" from "RecursiveMono-LinearA"
