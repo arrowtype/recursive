@@ -167,14 +167,13 @@ atom-text-editor {
 }
 ```
 
-# Sublime Text
+**Sublime Text**
 
 Go to `Sublime Text` -> `Preferences` -> `Settings` and add:
 
 ```json
 "font_options": ["ss01", "ss05", "dlig"]
 ```
-
 
 --- 
 
