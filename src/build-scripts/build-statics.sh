@@ -14,6 +14,8 @@ if [[ -z "$DS" || $DS = "--help" || -z "$fontFormat" ]] ; then
     exit 2
 fi
 
+# TODO: switch features to static ss0X
+
 # Sort out path naming
 
 if [[ $2 = "-o" || $2 = "--otf" ]] ; then
@@ -32,21 +34,21 @@ echo $finalDirectory
 
 mkdir -p $finalDirectory
 
-# # Build
-# echo 🏗 Building static $fontFormat files
-# fontmake -m $DS -o $fontFormat -i --expand-features-to-instances
+# Build
+echo 🏗 Building static $fontFormat files
+fontmake -m $DS -o $fontFormat -i --expand-features-to-instances
 
-# # Move
-# for font in "instance_${fontFormat}"/*; do
-#     mv "${font}" ${finalDirectory}
-# done
+# Move
+for font in "instance_${fontFormat}"/*; do
+    mv "${font}" ${finalDirectory}
+done
 
-# rm -r "instance_${fontFormat}"
+rm -r "instance_${fontFormat}"
 
-# # Set versioned names
-# for font in $finalDirectory/*; do
-#     python src/build-scripts/set-versioned-font-names.py "$font" --inplace
-# done
+# Set versioned names
+for font in $finalDirectory/*; do
+    python src/build-scripts/set-versioned-font-names.py "$font" --inplace
+done
 
 # Make woff2 files
 
