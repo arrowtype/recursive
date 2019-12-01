@@ -211,7 +211,7 @@ pip install -U -r requirements.txt
 
 #### First, prep fonts
 
-1. Font sources are prepped with https://github.com/arrowtype/varfont-prep
+1. Font sources are prepped with https://github.com/arrowtype/varfont-prep. Run this on `src/masters/recursive-MONO_CASL_wght_slnt_ital--full_gsub.designspace`.
 
 #### Second, sort feature code
 
@@ -219,25 +219,25 @@ Currently (as of Nov 30), copying feature code into prepped fonts is more manual
 
 1. Copy the directory `src/features/features` into the varfontprep directory
 
-To build the static fonts:
+**To build the static fonts**
 
 1. Update `src/features/features.fea` to comment out `include(./features/liga_ss0x.fea);` and uncomment `include(./features/liga_ss0x-static.fea);`.
 2. Use `src/features/copy-features-to-UFOs.py` to copy `src/features/features.fea` into the UFOs of the varfontprep directory
+3. Copy `src/masters/recursive-statics-four_way_split.designspace` into the varfontprep folder.
+4. To test a single static font, run `src/build-scripts/build-static-instance.sh <designspace>` (edit this as needed). To build all the static fonts, run:
 
-To build the variable font:
+```
+src/build-scripts/build-statics.sh src/masters/<VARFONTPREP_FOLDER_HERE>/recursive-statics-four_way_split.designspace -t
+```
+
+**To build the variable font**
    
 1. Update `src/features/features.fea` to comment out `include(./features/liga_ss0x-static.fea);` and uncomment `include(./features/liga_ss0x.fea);`.
 2. Use `src/features/copy-features-to-UFOs.py` to copy `src/features/features.fea` into the UFOs of the varfontprep directory
-      
-      
-#### Third, run build scripts
 
-The varfontprep sources are then built with scripts in `src/build-scripts`
-
-  - Static fonts currently built with `src/build-scripts/build-statics.sh`
-  - Variable fonts built in `src/build-scripts/build.sh`
-  
-(Be sure to properly sort feature code before you run either script).
+```
+src/build-scripts/build.sh src/masters/<VARFONTPREP_FOLDER_HERE>/recursive-MONO_CASL_wght_slnt_ital--full_gsub.designspace
+```
 
 
 ## Using the resources in this project for type design
