@@ -185,18 +185,59 @@ Go to `Sublime Text` -> `Preferences` -> `Settings` and add:
 
 ## Building the fonts
 
+
+### Set up the environment
+
+
+To build, set up the virtual environment
+
+```
+virtualenv -p python3 venv
+```
+
+Then activate it:
+
+```
+source venv/bin/activate
+```
+
+Then install requirements:
+
+```
+pip install -U -r requirements.txt
+```
+
+### Build the fonts
+
+#### First, prep fonts
+
 1. Font sources are prepped with https://github.com/arrowtype/varfont-prep
-2. Currently (as of Nov 30), copying feature code into prepped fonts is more manual than I'd like it to be.
-    1. Copy the directory `src/features/features` into the varfontprep directory
-    2. To build the static fonts:
-      1. Update `src/features/features.fea` to comment out `include(./features/liga_ss0x.fea);` and uncomment `include(./features/liga_ss0x-static.fea);`.
-      2. Use `src/features/copy-features-to-UFOs.py` to copy `src/features/features.fea` into the UFOs of the varfontprep directory
-    3. To build the variable font:
-      3. Update `src/features/features.fea` to comment out `include(./features/liga_ss0x-static.fea);` and uncomment `include(./features/liga_ss0x.fea);`.
-      4. Use `src/features/copy-features-to-UFOs.py` to copy `src/features/features.fea` into the UFOs of the varfontprep directory
-3. The varfontprep sources are then built with scripts in `src/build-scripts`
-  - Static fonts currently built with `src/build-scripts/build-statics.sh` (do this after updating feature code for static fonts)
-  - Variable fonts built in `src/build-scripts/build.sh` (do this after updating feature code for variable fonts)
+
+#### Second, sort feature code
+
+Currently (as of Nov 30), copying feature code into prepped fonts is more manual than I'd like it to be.
+
+1. Copy the directory `src/features/features` into the varfontprep directory
+
+To build the static fonts:
+
+1. Update `src/features/features.fea` to comment out `include(./features/liga_ss0x.fea);` and uncomment `include(./features/liga_ss0x-static.fea);`.
+2. Use `src/features/copy-features-to-UFOs.py` to copy `src/features/features.fea` into the UFOs of the varfontprep directory
+
+To build the variable font:
+   
+1. Update `src/features/features.fea` to comment out `include(./features/liga_ss0x-static.fea);` and uncomment `include(./features/liga_ss0x.fea);`.
+2. Use `src/features/copy-features-to-UFOs.py` to copy `src/features/features.fea` into the UFOs of the varfontprep directory
+      
+      
+#### Third, run build scripts
+
+The varfontprep sources are then built with scripts in `src/build-scripts`
+
+  - Static fonts currently built with `src/build-scripts/build-statics.sh`
+  - Variable fonts built in `src/build-scripts/build.sh`
+  
+(Be sure to properly sort feature code before you run either script).
 
 
 ## Using the resources in this project for type design
@@ -226,27 +267,6 @@ Like any Python scripts, read through them and be generally familiar with what t
 
 Feel free to use/remix these scripts in other projects. I give no warrantees or guarantees of their quality, and your mileage may vary.
 
-<!-- 
-## Build
-
-
-To build, set up the virtual environment
-
-```
-virtualenv -p python3 venv
-```
-
-Then activate it:
-
-```
-source venv/bin/activate
-```
-
-Then install requirements:
-
-```
-pip install -U -r requirements.txt
-```
 
 (...to be continued) -->
 
