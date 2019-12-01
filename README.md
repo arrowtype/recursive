@@ -64,18 +64,26 @@ Notes:
 
 ### In Code Editors
 
-Currently, the static OTF fonts are the best fonts to use for code.
+Currently, the static TTF fonts are the best fonts to use for code.
 
 In code editors like VS Code and Atom, you must use a string to set your preferred font. These strings work well with the font names as follows:
 
+**On macOS**
+
 | Style           | Font name for VS Code seetings   | Recommended use case                             |
 | --------------- | -------------------------------- | ------------------------------------------------ |
-| Linear Regular  | `RecursiveMonoB_020-LnrRg`       | General use                                      |
-| Casual Regular  | `RecursiveMonoB_020-CslRg`       | General, with more personality (try in terminal) |
+| Linear Regular  | `RecursiveMonoLinearB027st-Rg`       | General use                                      |
+| Casual Regular  | `RecursiveMonoCasualB027st-Rg`       | General, with more personality (try in terminal) |
 
-The `B_020` in these name string represents the current beta release version. It's possible this has shifted (I am releasing often at this point), so check what the release notes say.
+**On Windows**
 
-Note: as of Nov 20, this is not working as expected on Windows; will be fixed ASAP. See issue https://github.com/arrowtype/recursive/issues/255
+| Style           | Font name for VS Code seetings   | Recommended use case                             |
+| --------------- | -------------------------------- | ------------------------------------------------ |
+| Linear Regular  | `Recursive Mono Lnr b027st`       | General use                                      |
+| Casual Regular  | `Recursive Mono Csl b027st`       | General, with more personality (try in terminal) |
+
+
+The `027` in these name string represents the current beta release version. It's possible this has shifted (I am releasing often at this point), so check what the release notes say.
 
 ---
 
@@ -165,14 +173,13 @@ atom-text-editor {
 }
 ```
 
-# Sublime Text
+**Sublime Text**
 
 Go to `Sublime Text` -> `Preferences` -> `Settings` and add:
 
 ```json
 "font_options": ["ss01", "ss05", "dlig"]
 ```
-
 
 --- 
 
