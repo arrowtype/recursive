@@ -139,7 +139,7 @@ Things to be aware of:
 
 Recursive is built with a number of OpenType features that make it simple to control a few handy typographic features.
 
-![OpenType Features in Recursive](docs/001-opentype_features/recursive-b024-ot_features.png)
+![OpenType Features in Recursive](docs/001-opentype_features/recursive-b027-ot_features.png)
 
 
 
