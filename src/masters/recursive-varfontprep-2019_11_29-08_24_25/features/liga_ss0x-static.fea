@@ -9,9 +9,9 @@ feature liga {
 feature ss01 {
     featureNames {
         # MS, unicode, English
-        name "Single-story 'a'";
+        name "Single-story ‘a’";
         # Apple, roman, unspecified
-        name 1 "Single-story 'a'";
+        name 1 "Single-story ‘a’";
     };
     sub @dfltA by @italicA;
 } ss01;
@@ -22,9 +22,9 @@ feature ss01 {
 feature ss02 {
     featureNames {
         # MS, unicode, English
-        name "Single-story 'g'";
+        name "Single-story ‘g’";
         # Apple, roman, unspecified
-        name 1 "Single-story 'g'";
+        name 1 "Single-story ‘g’";
     };
     sub @dfltG by @italicG;
     sub g.mono by g.italic;
@@ -33,9 +33,9 @@ feature ss02 {
 feature ss03 {
     featureNames {
         # MS, unicode, English
-        name "Simplified mono 'f'";
+        name "Simplified Mono ‘f’";
         # Apple, roman, unspecified
-        name 1 "Simplified mono 'f'";
+        name 1 "Simplified Mono ‘f’";
     };
     sub f by f.mono;
 } ss03;
@@ -47,9 +47,9 @@ feature ss03 {
 feature ss04 {
     featureNames {
         # MS, unicode, English
-        name "Simplified mono 'i'";
+        name "Simplified Mono ‘i’";
         # Apple, roman, unspecified
-        name 1 "Simplified mono 'i'";
+        name 1 "Simplified Mono ‘i’";
     };
     sub @sansI by @italI;
     sub @monoI by @italI;
@@ -62,9 +62,9 @@ feature ss04 {
 feature ss05 {
     featureNames {
         # MS, unicode, English
-        name "Simplified mono 'l'";
+        name "Simplified Mono ‘l’";
         # Apple, roman, unspecified
-        name 1 "Simplified mono 'l'";
+        name 1 "Simplified Mono ‘l’";
     };
     sub @monoL by @italL;
 } ss05;
@@ -76,9 +76,9 @@ feature ss05 {
 feature ss06 {
     featureNames {
         # MS, unicode, English
-        name "Simplified mono 'r'";
+        name "Simplified Mono ‘r’";
         # Apple, roman, unspecified
-        name 1 "Simplified mono 'r'";
+        name 1 "Simplified Mono ‘r’";
     };
     sub @dfltR by @italR;
 } ss06;
@@ -92,9 +92,9 @@ feature ss06 {
 feature ss07 {
     featureNames {
         # MS, unicode, English
-        name "No-serif 'L' & 'Z'";
+        name "No-serif ‘L’ & ‘Z’";
         # Apple, roman, unspecified
-        name 1 "No-serif 'L' & 'Z'";
+        name 1 "No-serif ‘L’ & ‘Z’";
     };
     sub @dfltCapL by @sansCapL;
     sub @dfltCapZ by @sansCapZ;
@@ -104,22 +104,22 @@ feature ss07 {
 feature ss08 {
     featureNames {
         # MS, unicode, English
-        name "Simplified mono 'at' sign";
+        name "Simplified Mono ‘at’ sign";
         # Apple, roman, unspecified
-        name 1 "Simplified mono 'at' sign";
+        name 1 "Simplified Mono ‘at’ sign";
     };
     sub at by at.alt;
     sub at.case by at.alt_case;
 } ss08;
 
-# TODO: change names of 'six.ss01', etc, in sources
+# TODO: change names of ‘s’x.ss01', etc, in sources
 
 feature ss09 {
     featureNames {
         # MS, unicode, English
-        name "Simplified 6 and 9";
+        name "Simplified Six & Nine";
         # Apple, roman, unspecified
-        name 1 "Simplified 6 and 9";
+        name 1 "Simplified Six & Nine";
     };
     sub six by six.ss01;
     sub sixsuperior by sixsuperior.ss01;
@@ -160,9 +160,24 @@ feature ss11 {
 feature ss12 {
     featureNames {
         # MS, unicode, English
-        name "Simplified '1'";
+        name "Simplified One";
         # Apple, roman, unspecified
-        name 1 "Simplified '1'";
+        name 1 "Simplified One";
     };
     sub one by one.sans;
 } ss12;
+
+## Not yet working as intended (https://github.com/arrowtype/recursive/issues/270)
+
+# @dfltChars = [a        agrave        aacute        acircumflex        atilde        adieresis        aring        amacron        abreve        aogonek        aringacute        agravedbl        ainvertedbreve        adotbelow        ahook        acircumflexacute        acircumflexgrave        acircumflexhook        acircumflextilde        acircumflexdot        abreveacute        abrevegrave        abrevehook        abrevetilde        abrevedot        b        c        ccedilla        cacute        ccircumflex        cdotaccent        ccaron        ccedillaacute        d        ddotbelow        dlinebelow        e        egrave        eacute        ecircumflex        edieresis        emacron        ebreve        edotaccent        ecaron        egravedbl        einvertedbreve        emacrongrave        emacronacute        ecedillabreve        edotbelow        ehook        etilde        ecircumflexacute        ecircumflexgrave        ecircumflexhook        ecircumflextilde        ecircumflexdot        f        g        gcircumflex        gbreve        gdotaccent        gcommaaccent        gcaron        gmacron        h        hcircumflex        hdotbelow        hbrevebelow        i        igrave        iacute        icircumflex        idieresis        itilde        imacron        ibreve        iogonek        igravedbl        iinvertedbreve        idieresisacute        ihook        idotbelow        j        jcircumflex        k        kcommaaccent        l        lacute        lcommaaccent        ldotbelow        llinebelow        m        mdotbelow        n        ntilde        nacute        ncommaaccent        ncaron        ndot        ndotbelow        nlinebelow        r        racute        rcommaaccent        rcaron        rgravedbl        rinvertedbreve        rdotbelow        rlinebelow        s        sacute        scircumflex        scedilla        scaron        scommaaccent        sdot        sdotbelow        sacutedotaccent        scarondot        sdotbelowdotabove        u        ugrave        uacute        ucircumflex        udieresis        utilde        umacron        ubreve        uring        uhungarumlaut        uogonek        uhorn        ugravedbl        uinvertedbreve        utildeacute        umacrondieresis        udotbelow        uhook        uhornacute        uhorngrave        uhornhook        uhorntilde        uhorndot        v        w        wcircumflex        wgrave        wacute        wdieresis        x        y        yacute        ydieresis        ycircumflex        ymacron        ydot        ygrave        ydotbelow        yhookabove        ytilde        z        zacute        zdotaccent        zcaron        zdotbelow        dotlessi        lslash        napostrophe        dzcaron        lj        nj        dotlessj        Lj        Nj        idot        idotaccent       ];
+# @italChars = [a.italic agrave.italic aacute.italic acircumflex.italic atilde.italic adieresis.italic aring.italic amacron.italic abreve.italic aogonek.italic aringacute.italic agravedbl.italic ainvertedbreve.italic adotbelow.italic ahook.italic acircumflexacute.italic acircumflexgrave.italic acircumflexhook.italic acircumflextilde.italic acircumflexdot.italic abreveacute.italic abrevegrave.italic abrevehook.italic abrevetilde.italic abrevedot.italic b.italic c.italic ccedilla.italic cacute.italic ccircumflex.italic cdotaccent.italic ccaron.italic ccedillaacute.italic d.italic ddotbelow.italic dlinebelow.italic e.italic egrave.italic eacute.italic ecircumflex.italic edieresis.italic emacron.italic ebreve.italic edotaccent.italic ecaron.italic egravedbl.italic einvertedbreve.italic emacrongrave.italic emacronacute.italic ecedillabreve.italic edotbelow.italic ehook.italic etilde.italic ecircumflexacute.italic ecircumflexgrave.italic ecircumflexhook.italic ecircumflextilde.italic ecircumflexdot.italic f.italic g.italic gcircumflex.italic gbreve.italic gdotaccent.italic gcommaaccent.italic gcaron.italic gmacron.italic h.italic hcircumflex.italic hdotbelow.italic hbrevebelow.italic i.italic igrave.italic iacute.italic icircumflex.italic idieresis.italic itilde.italic imacron.italic ibreve.italic iogonek.italic igravedbl.italic iinvertedbreve.italic idieresisacute.italic ihook.italic idotbelow.italic j.italic jcircumflex.italic k.italic kcommaaccent.italic l.italic lacute.italic lcommaaccent.italic ldotbelow.italic llinebelow.italic m.italic mdotbelow.italic n.italic ntilde.italic nacute.italic ncommaaccent.italic ncaron.italic ndot.italic ndotbelow.italic nlinebelow.italic r.italic racute.italic rcommaaccent.italic rcaron.italic rgravedbl.italic rinvertedbreve.italic rdotbelow.italic rlinebelow.italic s.italic sacute.italic scircumflex.italic scedilla.italic scaron.italic scommaaccent.italic sdot.italic sdotbelow.italic sacutedotaccent.italic scarondot.italic sdotbelowdotabove.italic u.italic ugrave.italic uacute.italic ucircumflex.italic udieresis.italic utilde.italic umacron.italic ubreve.italic uring.italic uhungarumlaut.italic uogonek.italic uhorn.italic ugravedbl.italic uinvertedbreve.italic utildeacute.italic umacrondieresis.italic udotbelow.italic uhook.italic uhornacute.italic uhorngrave.italic uhornhook.italic uhorntilde.italic uhorndot.italic v.italic w.italic wcircumflex.italic wgrave.italic wacute.italic wdieresis.italic x.italic y.italic yacute.italic ydieresis.italic ycircumflex.italic ymacron.italic ydot.italic ygrave.italic ydotbelow.italic yhookabove.italic ytilde.italic z.italic zacute.italic zdotaccent.italic zcaron.italic zdotbelow.italic dotlessi.italic lslash.italic napostrophe.italic dzcaron.italic lj.italic nj.italic dotlessj.italic Lj.italic Nj.italic idot.italic idotaccent.italic];
+# 
+# feature ss13 {
+#     featureNames {
+#         # MS, unicode, English
+#         name "Toggle italic forms";
+#         # Apple, roman, unspecified
+#         name 1 "Toggle italic forms";
+#     };
+#     sub @dfltChars by @italChars;
+# } ss13;
