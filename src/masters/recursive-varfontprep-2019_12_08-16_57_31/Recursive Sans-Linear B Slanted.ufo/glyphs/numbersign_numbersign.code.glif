@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="numbersign_numbersign.code" format="2">
+	<advance width="1200"/>
+	<outline>
+		<contour>
+			<point x="523" y="435" type="line"/>
+			<point x="837" y="435" type="line"/>
+			<point x="837" y="550" type="line"/>
+			<point x="523" y="550" type="line"/>
+		</contour>
+		<contour>
+			<point x="393" y="150" type="line"/>
+			<point x="707" y="150" type="line"/>
+			<point x="707" y="255" type="line"/>
+			<point x="393" y="255" type="line"/>
+		</contour>
+		<component base="numbersign" xOffset="20"/>
+		<component base="numbersign" xOffset="580"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>1,0.5,0,1</string>
+		</dict>
+	</lib>
+</glyph>

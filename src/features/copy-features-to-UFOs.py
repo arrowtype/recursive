@@ -9,9 +9,7 @@
 
     Assumptions: 
         - You have a single group of UFOs
-        - The UFO path you feed in contains both features.plist and kerning.plist
-        - You wish to exactly copy features.plist from the UFO path to all other UFOs in the same directory
-        - You wish to exactly copy kerning.plist from the UFO path to all other UFOs in the same directory with 'Sans' in their filepath
+        - You wish to exactly copy the features.fea from the features path to all other UFOs in the specified directory
 '''
 
 import sys
@@ -20,13 +18,14 @@ import shutil
 
 try:
     feaToCopy = sys.argv[1]
+    print(feaToCopy)
 except IndexError:
-    print("At least one arg required: path of UFO to copy from")
+    print("At least one arg required: path of feature file to copy")
 
 try:
     if sys.argv[2]:
-        print("Copying from UFO to UFOs in another Directory")
         dirToCopyTo = sys.argv[2]
+        print(f"Copying feature file to UFOs in {dirToCopyTo}")
         ufosToCopyTo = next(os.walk(dirToCopyTo))[1]
 
         head = dirToCopyTo

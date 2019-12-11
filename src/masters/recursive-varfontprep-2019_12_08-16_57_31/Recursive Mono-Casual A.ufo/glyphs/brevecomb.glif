@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="brevecomb" format="2">
+	<unicode hex="0306"/>
+	<outline>
+		<contour>
+			<point x="0" y="695" type="curve"/>
+			<point x="-79" y="701"/>
+			<point x="-113" y="736"/>
+			<point x="-132" y="799" type="curve"/>
+			<point x="-145" y="797"/>
+			<point x="-156" y="793"/>
+			<point x="-163" y="786" type="curve" smooth="yes"/>
+			<point x="-167" y="782"/>
+			<point x="-168" y="775"/>
+			<point x="-163" y="762" type="curve" smooth="yes"/>
+			<point x="-138" y="695"/>
+			<point x="-84" y="656"/>
+			<point x="-4" y="656" type="curve" smooth="yes"/>
+			<point x="4" y="656" type="line" smooth="yes"/>
+			<point x="84" y="656"/>
+			<point x="138" y="695"/>
+			<point x="163" y="762" type="curve" smooth="yes"/>
+			<point x="168" y="775"/>
+			<point x="167" y="782"/>
+			<point x="163" y="786" type="curve" smooth="yes"/>
+			<point x="156" y="793"/>
+			<point x="145" y="797"/>
+			<point x="132" y="799" type="curve"/>
+			<point x="113" y="736"/>
+			<point x="79" y="701"/>
+		</contour>
+	</outline>
+	<anchor name="_top" x="0" y="535"/>
+	<anchor name="top" x="0" y="724"/>
+	<anchor name="hook" x="0" y="802"/>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+		</dict>
+	</lib>
+</glyph>

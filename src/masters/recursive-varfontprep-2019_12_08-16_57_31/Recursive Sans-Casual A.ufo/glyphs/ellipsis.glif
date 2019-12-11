@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="ellipsis" format="2">
+	<unicode hex="2026"/>
+	<advance width="800"/>
+	<outline>
+		<contour>
+			<point x="184" y="4" type="curve"/>
+			<point x="184" y="48" type="line" smooth="yes"/>
+			<point x="184" y="82"/>
+			<point x="174" y="97"/>
+			<point x="146" y="97" type="curve" smooth="yes"/>
+			<point x="129" y="97"/>
+			<point x="115" y="93"/>
+			<point x="100" y="87" type="curve"/>
+			<point x="100" y="53" type="line" smooth="yes"/>
+			<point x="100" y="10"/>
+			<point x="112" y="-5"/>
+			<point x="144" y="-5" type="curve" smooth="yes"/>
+			<point x="159" y="-5"/>
+			<point x="172" y="-2"/>
+		</contour>
+		<contour>
+			<point x="442" y="4" type="curve"/>
+			<point x="442" y="48" type="line" smooth="yes"/>
+			<point x="442" y="82"/>
+			<point x="432" y="97"/>
+			<point x="404" y="97" type="curve" smooth="yes"/>
+			<point x="387" y="97"/>
+			<point x="373" y="93"/>
+			<point x="358" y="87" type="curve"/>
+			<point x="358" y="53" type="line" smooth="yes"/>
+			<point x="358" y="10"/>
+			<point x="370" y="-5"/>
+			<point x="402" y="-5" type="curve" smooth="yes"/>
+			<point x="417" y="-5"/>
+			<point x="430" y="-2"/>
+		</contour>
+		<contour>
+			<point x="700" y="4" type="curve"/>
+			<point x="700" y="48" type="line" smooth="yes"/>
+			<point x="700" y="82"/>
+			<point x="690" y="97"/>
+			<point x="662" y="97" type="curve" smooth="yes"/>
+			<point x="645" y="97"/>
+			<point x="631" y="93"/>
+			<point x="616" y="87" type="curve"/>
+			<point x="616" y="53" type="line" smooth="yes"/>
+			<point x="616" y="10"/>
+			<point x="628" y="-5"/>
+			<point x="660" y="-5" type="curve" smooth="yes"/>
+			<point x="675" y="-5"/>
+			<point x="688" y="-2"/>
+		</contour>
+	</outline>
+	<lib>
+		<dict>
+			<key>com.arrowtype.glyphMarkStatus</key>
+			<string>fromComponents</string>
+			<key>public.markColor</key>
+			<string>0,0,0,0.25</string>
+		</dict>
+	</lib>
+</glyph>
