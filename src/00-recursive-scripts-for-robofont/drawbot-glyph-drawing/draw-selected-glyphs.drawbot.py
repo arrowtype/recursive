@@ -7,10 +7,22 @@
 f = CurrentFont()
 
 # settings
-glyphScale = 0.6
-canvasWidth = canvasHeight = 850
-captionSize = 13
-captionColor = 1, 0, 0
+glyphScale = 0.8
+canvasWidth = 650
+canvasHeight = 900
+
+captionSize = 14
+
+def hex2rgb(hex):
+    h = hex.lstrip('#')
+    RGB = tuple(int(h[i:i+2], 16) for i in (0, 2 ,4))
+    r1, g1, b1 = RGB[0] / 255, RGB[1] / 255, RGB[2] / 255
+    return(r1, g1, b1)
+
+blue = hex2rgb("#0051FF")
+blueDark = hex2rgb("#003099")
+blueLight = hex2rgb("#6696FF")
+blueLight2 = hex2rgb("#B3CAFF")
 
 # collect vertical metrics
 metricsY = {
@@ -52,7 +64,8 @@ for glyphName in f.glyphOrder:
     # --------
 
     save()
-    fill(0.9)
+    
+    fill(*blue)
     rect(x, boxY, boxWidth, boxHeight)
     restore()
 
@@ -61,8 +74,9 @@ for glyphName in f.glyphOrder:
     # -----------
 
     save()
-    lineDash(6, 3)
-    stroke(0.5)
+#    lineDash(1, 1)
+    stroke(0,0,0,0.25)
+    stroke(*blueDark)
 
     # draw guides x
     for guideX in guidesX:
@@ -81,7 +95,7 @@ for glyphName in f.glyphOrder:
 
     save()
     fill(None)
-    stroke(0.5)
+    stroke(*blueLight)
     strokeWidth(1)
     lineJoin('round')
     translate(x, y)
@@ -111,43 +125,31 @@ for glyphName in f.glyphOrder:
             ptIn = bPt.bcpIn
             ptOut = bPt.bcpOut 
             
-            fill(1)
-            stroke(1,0,0)
+            fill(*blue)
+            
             if abs(ptIn[0]) > 0 or abs(ptIn[1]) > 0:
-                
                 ptInX = pt[0]+ptIn[0]
                 ptInY = pt[1]+ptIn[1]
+                stroke(*blueLight2)
                 line((ptX, ptY), (ptInX, ptInY))
+                stroke(1)
                 rect(ptInX - offcurveSize/2, ptInY - offcurveSize/2, offcurveSize, offcurveSize)
-                
-                
                 
             
             if abs(ptOut[0]) > 0 or abs(ptOut[1]) > 0:
                 ptOutX = pt[0]+ptOut[0]
                 ptOutY = pt[1]+ptOut[1]
+                stroke(*blueLight2)
                 line((ptX, ptY), (ptOutX, ptOutY))
+                stroke(1)
                 rect(ptOutX - offcurveSize/2, pt[1]+ptOut[1] - offcurveSize/2, offcurveSize, offcurveSize)
                 
                 
             # now draw oncurve point so it's on top
             
-            fill(1)
-            stroke(0,0,1)
+            fill(*blue)
+            stroke(1)
             oval(ptX - oncurveSize/2, ptY - oncurveSize/2, oncurveSize, oncurveSize)
-            
-            # if bPt.type == "line" or bPt.type == "curve":
-            #     rect(pt.x - oncurveSize/2, pt.y - oncurveSize/2, oncurveSize, oncurveSize)
-            # if bPt.type == "offcurve":
-            #     rect(pt.x - offcurveSize/2, pt.y - offcurveSize/2, offcurveSize, offcurveSize)
-        # for s in c:
-        #     for pt in s:
-        #         if pt.type == "line" or pt.type == "curve":
-        #             rect(pt.x - oncurveSize/2, pt.y - oncurveSize/2, oncurveSize, oncurveSize)
-        #         if pt.type == "offcurve":
-        #             rect(pt.x - offcurveSize/2, pt.y - offcurveSize/2, offcurveSize, offcurveSize)
-                    
-        #             help(pt)
                     
             
 
@@ -182,7 +184,7 @@ for glyphName in f.glyphOrder:
     save()
     font('Recursive Mono Lnr b027st')
     fontSize(captionSize)
-    fill(*captionColor)
+    fill(*blue)
 
     # top
     captionY = height() - captionSize * 3
