@@ -14,11 +14,13 @@ if [[ -z "$DS" || $DS = "--help" || -z "$fontFormat" ]] ; then
     exit 2
 fi
 
+# TODO: switch features to static ss0X
+
 # Sort out path naming
 
 if [[ $2 = "-o" || $2 = "--otf" ]] ; then
     fontFormat="otf"
-elif [[ $2 = "-t" || $2 = "--ttf" ]] ; then
+else
     fontFormat="ttf"
 fi
 
@@ -34,7 +36,7 @@ mkdir -p $finalDirectory
 
 # Build
 echo 🏗 Building static $fontFormat files
-fontmake -m $DS -o $fontFormat -i
+fontmake -m $DS -o $fontFormat -i --expand-features-to-instances
 
 # Move
 for font in "instance_${fontFormat}"/*; do
@@ -45,7 +47,7 @@ rm -r "instance_${fontFormat}"
 
 # Set versioned names
 for font in $finalDirectory/*; do
-    python src/build-scripts/set-versioned-font-names.py "$font" --static --inplace
+    python src/build-scripts/set-versioned-font-names.py "$font" --inplace
 done
 
 # Make woff2 files
@@ -53,9 +55,10 @@ done
 woff2Directory="${outputDir}/static_fonts/${fontName}-static_woff2"
 mkdir -p $woff2Directory
 
-for font in $finalDirectory/*.*tf; do
-    python src/build-scripts/set-up-RIBBI-style_linking.py "$font" --inplace
-done
+## probably no longer needed?
+# for font in $finalDirectory/*.*tf; do
+#     python src/build-scripts/set-up-RIBBI-style_linking.py "$font" --inplace
+# done
 
 for font in $finalDirectory/*.*tf; do
     woff2_compress "$font"

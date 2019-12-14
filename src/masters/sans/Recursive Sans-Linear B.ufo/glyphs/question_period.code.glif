@@ -2,7 +2,13 @@
 <glyph name="question_period.code" format="2">
 	<advance width="1200"/>
 	<outline>
-		<component base="question" xOffset="130"/>
-		<component base="period" xOffset="640"/>
+		<component base="question" xOffset="100"/>
+		<component base="period" xOffset="650"/>
 	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>1,0.5,0,1</string>
+		</dict>
+	</lib>
 </glyph>

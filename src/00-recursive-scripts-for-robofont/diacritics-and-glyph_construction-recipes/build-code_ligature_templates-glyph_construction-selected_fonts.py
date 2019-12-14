@@ -56,22 +56,89 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 # equal_equal.code = equal&equal
 # '''
 
+# txt='''\
+# fi.mono = f.mono & i.mono
+# fi.italic = f.italic & i.italic
+# fl.mono = f.mono & l.mono
+# fl.italic = f.italic & l.italic
+# f_f.mono = f.mono & f.mono
+# f_f.italic = f.italic & f.italic
+# f_f_i.mono = f.mono & f.mono & i.mono
+# f_f_i.italic = f.italic & f.italic & i.italic
+# f_f_l.mono = f.mono & f.mono & l.mono
+# f_f_l.italic = f.italic & f.italic & l.italic
+# Lj.italic = L & j.italic
+# lj.italic = l.italic & j.italic
+# dzcaron.italic = d.italic & zcaron
+# Nj.italic = N & j.italic
+# nj.italic = n & j.italic
+# '''
+
+# txt='''\
+# numbersign.code = numbersign
+# f_quote.code = f & quotesingle
+# underscore_underscore.code = underscore & underscore
+# slash_asterisk.code = slash & asterisk
+# asterisk_slash.code = asterisk & slash
+# slash_slash_slash.code = slash & slash & slash
+# quotesingle_quotesingle_quotesingle.code = quotesingle & quotesingle & quotesingle
+# quotedbl_quotedbl_quotedbl.code = quotedbl & quotedbl & quotedbl
+# grave_grave_grave.code = grave & grave & grave
+# less_exclam_hyphen_hyphen.code = less & exclam & hyphen & hyphen
+# hyphen_hyphen_greater.code = hyphen & hyphen & greater
+# greater_hyphen.code = greater & hyphen
+# hyphen_less.code = hyphen & less
+# colon_colon.code = colon & colon
+# greater_greater.code = greater & greater
+# greater_greater_greater.code = greater & greater & greater
+# less_less.code = less & less
+# less_less_less.code = less & less & less
+# less.code = less
+# greater.code = greater
+# colon_slash_slash.code = colon & slash & slash
+# plus.code = plus
+# plus_plus.code = plus & plus
+# plus_plus_plus.code = plus & plus & plus
+# hyphen.code = hyphen
+# hyphen_hyphen.code = hyphen & hyphen
+# hyphen_hyphen_hyphen.code = hyphen & hyphen & hyphen
+# asterisk.code = asterisk
+# asterix_asterix.code = asterisk & asterisk
+# asterix_asterix_asterix.code = asterisk & asterisk & asterisk
+# plus_equal.code = plus & equal
+# minus_equal.code = minus & equal
+# asterisk_equal.code = asterisk & equal
+# slash_equal.code = slash & equal
+# percent_c.code = percent & c
+# percent_d.code = percent & d
+# percent_s.code = percent & s
+# percent_g.code = percent & g
+# percent_r.code = percent & r
+# backslash_n.code = backslash & n
+# backslash_b.code = backslash & b
+# backslash_r.code = backslash & r
+# backslash_t.code = backslash & t
+# backslash_v.code = backslash & v
+# quotesingle.code = quotesingle
+# quotedbl.code = quotedbl
+# backslash.code = backslash
+# braceleft_bracketleft.code = braceleft & bracketleft
+# bracketright_braceright.code = bracketright & braceright
+# bracketleft_bracketleft.code = bracketleft & bracketleft
+# bracketright_bracketright.code = bracketright & bracketright
+# bracketleft_parenleft.code = bracketleft & parenleft
+# parenright_bracketright.code = parenright & bracketright
+# braceleft_parenleft.code = braceleft & parenleft
+# parenright_braceright.code = parenright & braceright
+# parenleft_parenleft.code = parenleft & parenleft
+# parenright_parenright.code = parenright & parenright
+# hyphen_space_bracketleft_space_bracketright.code = hyphen & bracketleft & space & bracketright
+# hyphen_space_bracketleft_x_bracketright.code = hyphen & bracketleft & x & bracketright
+# '''
+
 txt='''\
-fi.mono = f.mono & i.mono
-fi.italic = f.italic & i.italic
-fl.mono = f.mono & l.mono
-fl.italic = f.italic & l.italic
-f_f.mono = f.mono & f.mono
-f_f.italic = f.italic & f.italic
-f_f_i.mono = f.mono & f.mono & i.mono
-f_f_i.italic = f.italic & f.italic & i.italic
-f_f_l.mono = f.mono & f.mono & l.mono
-f_f_l.italic = f.italic & f.italic & l.italic
-Lj.italic = L & j.italic
-lj.italic = l.italic & j.italic
-dzcaron.italic = d.italic & zcaron
-Nj.italic = N & j.italic
-nj.italic = n & j.italic
+hyphen_space_bracketleft_space_bracketright.code = hyphen & bracketleft & space & bracketright
+hyphen_space_bracketleft_x_bracketright.code = hyphen & bracketleft & x & bracketright
 '''
 
 # get the actual glyph constructions from text

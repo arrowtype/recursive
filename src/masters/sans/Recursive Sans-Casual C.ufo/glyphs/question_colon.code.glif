@@ -2,7 +2,13 @@
 <glyph name="question_colon.code" format="2">
 	<advance width="1200"/>
 	<outline>
-		<component base="question" xOffset="117"/>
-		<component base="colon" xOffset="685"/>
+		<component base="question" xOffset="80"/>
+		<component base="colon" xOffset="650"/>
 	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>1,0.5,0,1</string>
+		</dict>
+	</lib>
 </glyph>

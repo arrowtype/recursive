@@ -64,16 +64,26 @@ Notes:
 
 ### In Code Editors
 
-Currently, the static OTF fonts are the best fonts to use for code.
+Currently, the static TTF fonts are the best fonts to use for code.
 
 In code editors like VS Code and Atom, you must use a string to set your preferred font. These strings work well with the font names as follows:
 
+**On macOS**
+
 | Style           | Font name for VS Code seetings   | Recommended use case                             |
 | --------------- | -------------------------------- | ------------------------------------------------ |
-| Linear Regular  | `RecursiveMonoB_020-LnrRg`       | General use                                      |
-| Casual Regular  | `RecursiveMonoB_020-CslRg`       | General, with more personality (try in terminal) |
+| Linear Regular  | `RecursiveMonoLinearB027st-Rg`       | General use                                      |
+| Casual Regular  | `RecursiveMonoCasualB027st-Rg`       | General, with more personality (try in terminal) |
 
-The `B_020` in these name string represents the current beta release version. It's possible this has shifted (I am releasing often at this point), so check what the release notes say.
+**On Windows**
+
+| Style           | Font name for VS Code seetings   | Recommended use case                             |
+| --------------- | -------------------------------- | ------------------------------------------------ |
+| Linear Regular  | `Recursive Mono Lnr b027st`       | General use                                      |
+| Casual Regular  | `Recursive Mono Csl b027st`       | General, with more personality (try in terminal) |
+
+
+The `027` in these name string represents the current beta release version. It's possible this has shifted (I am releasing often at this point), so check what the release notes say.
 
 ---
 
@@ -132,16 +142,14 @@ Things to be aware of:
 - Casual and Slant axes look great with intermediate values at text sizes, but they are mostly intended to be used at either fully "on or off" values, with intermediates available to allow animated stylistic transitions. If you are setting type at large sizes, avoid intermediate `CASL` and `slnt` values. If you stick to named instances in design apps (e.g. `Mono Casual Bold Italic`, etc), this is handled for you automatically.
 - The Casual Italic instances are drawn to work well in text but are also the most expressive styles of the family – try them at large sizes to show off their wavy stems and really make a statement! 🏄‍♂️🏄‍♀️
 
-<!--
+
 ## OpenType Features
 
 Recursive is built with a number of OpenType features that make it simple to control a few handy typographic features.
 
-![OpenType Features in Recursive](docs/001-opentype_features/recursive-b024-ot_features.png)
+![OpenType Features in Recursive](docs/001-opentype_features/recursive-b027-ot_features.png)
 
--->
 
-<!--
 ### Activating OpenType Features in Code Editors
 
 **VS Code**
@@ -165,25 +173,72 @@ atom-text-editor {
 }
 ```
 
-# Sublime Text
+**Sublime Text**
 
 Go to `Sublime Text` -> `Preferences` -> `Settings` and add:
 
 ```json
 "font_options": ["ss01", "ss05", "dlig"]
 ```
--->
 
 --- 
 
 ## Building the fonts
 
-TODO: add more detail here
 
-1. Font sources are prepped with https://github.com/arrowtype/varfont-prep
-2. The varfontprep sources are then built with scripts in `src/build-scripts`
-  - Variable fonts built in `src/build-scripts/build.sh`
-  - Static fonts currently built with `src/build-scripts/build-statics.sh`
+### Set up the environment
+
+
+To build, set up the virtual environment
+
+```
+virtualenv -p python3 venv
+```
+
+Then activate it:
+
+```
+source venv/bin/activate
+```
+
+Then install requirements:
+
+```
+pip install -U -r requirements.txt
+```
+
+### Build the fonts
+
+#### First, prep fonts
+
+1. Font sources are prepped with https://github.com/arrowtype/varfont-prep. Run this on `src/masters/recursive-MONO_CASL_wght_slnt_ital--full_gsub.designspace`.
+
+#### Second, sort feature code
+
+Currently (as of Nov 30), copying feature code into prepped fonts is more manual than I'd like it to be.
+
+1. Copy the directory `src/features/features` into the varfontprep directory
+
+**To build the static fonts**
+
+1. Update `src/features/features.fea` to comment out `include(./features/liga_ss0x.fea);` and uncomment `include(./features/liga_ss0x-static.fea);`.
+2. Use `src/features/copy-features-to-UFOs.py` to copy `src/features/features.fea` into the UFOs of the varfontprep directory
+3. Copy `src/masters/recursive-statics-four_way_split.designspace` into the varfontprep folder.
+4. To test a single static font, run `src/build-scripts/build-static-instance.sh <designspace>` (edit this as needed). To build all the static fonts, run:
+
+```
+src/build-scripts/build-statics.sh src/masters/<VARFONTPREP_FOLDER_HERE>/recursive-statics-four_way_split.designspace -t
+```
+
+**To build the variable font**
+   
+1. Update `src/features/features.fea` to comment out `include(./features/liga_ss0x-static.fea);` and uncomment `include(./features/liga_ss0x.fea);`.
+2. Use `src/features/copy-features-to-UFOs.py` to copy `src/features/features.fea` into the UFOs of the varfontprep directory
+
+```
+src/build-scripts/build.sh src/masters/<VARFONTPREP_FOLDER_HERE>/recursive-MONO_CASL_wght_slnt_ital--full_gsub.designspace
+```
+
 
 ## Using the resources in this project for type design
 
@@ -212,27 +267,6 @@ Like any Python scripts, read through them and be generally familiar with what t
 
 Feel free to use/remix these scripts in other projects. I give no warrantees or guarantees of their quality, and your mileage may vary.
 
-<!-- 
-## Build
-
-
-To build, set up the virtual environment
-
-```
-virtualenv -p python3 venv
-```
-
-Then activate it:
-
-```
-source venv/bin/activate
-```
-
-Then install requirements:
-
-```
-pip install -U -r requirements.txt
-```
 
 (...to be continued) -->
 

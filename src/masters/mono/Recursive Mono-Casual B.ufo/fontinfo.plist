@@ -35,6 +35,12 @@
 				<integer>795</integer>
 			</dict>
 		</array>
+		<key>openTypeHheaAscender</key>
+		<integer>1031</integer>
+		<key>openTypeHheaDescender</key>
+		<integer>-250</integer>
+		<key>openTypeHheaLineGap</key>
+		<integer>0</integer>
 		<key>openTypeNameRecords</key>
 		<array>
 		</array>
@@ -51,12 +57,28 @@
 			<integer>0</integer>
 			<integer>0</integer>
 		</array>
+		<key>openTypeOS2Selection</key>
+		<array>
+			<integer>7</integer>
+		</array>
+		<key>openTypeOS2TypoAscender</key>
+		<integer>1031</integer>
+		<key>openTypeOS2TypoDescender</key>
+		<integer>-250</integer>
+		<key>openTypeOS2TypoLineGap</key>
+		<integer>0</integer>
 		<key>openTypeOS2UnicodeRanges</key>
 		<array>
 			<integer>0</integer>
 		</array>
 		<key>openTypeOS2VendorID</key>
 		<string>ARRW</string>
+		<key>openTypeOS2WidthClass</key>
+		<integer>5</integer>
+		<key>openTypeOS2WinAscent</key>
+		<integer>1207</integer>
+		<key>openTypeOS2WinDescent</key>
+		<integer>271</integer>
 		<key>postscriptBlueValues</key>
 		<array>
 			<integer>-20</integer>
@@ -87,9 +109,17 @@
 		</array>
 		<key>postscriptStemSnapH</key>
 		<array>
+			<integer>140</integer>
+			<integer>149</integer>
+			<integer>140</integer>
+			<integer>150</integer>
 		</array>
 		<key>postscriptStemSnapV</key>
 		<array>
+			<integer>156</integer>
+			<integer>150</integer>
+			<integer>150</integer>
+			<integer>145</integer>
 		</array>
 		<key>styleMapStyleName</key>
 		<string>bold</string>
