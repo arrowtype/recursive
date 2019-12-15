@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Ldot.sans" format="2">
+	<advance width="550"/>
+	<outline>
+		<contour>
+			<point x="393" y="501" type="curve"/>
+			<point x="356" y="352" type="line" smooth="yes"/>
+			<point x="354" y="345"/>
+			<point x="357" y="341"/>
+			<point x="364" y="341" type="curve"/>
+			<point x="417" y="341"/>
+			<point x="470" y="341"/>
+			<point x="523" y="341" type="curve"/>
+			<point x="560" y="490" type="line" smooth="yes"/>
+			<point x="562" y="497"/>
+			<point x="559" y="501"/>
+			<point x="552" y="501" type="curve"/>
+			<point x="499" y="501"/>
+			<point x="446" y="501"/>
+		</contour>
+		<component base="L.sans"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>1,0.5,0,1</string>
+		</dict>
+	</lib>
+</glyph>

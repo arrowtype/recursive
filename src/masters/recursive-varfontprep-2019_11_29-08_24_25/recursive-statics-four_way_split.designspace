@@ -25,7 +25,7 @@
       <labelname xml:lang="en">Italic</labelname>
     </axis>
   </axes>
-  <rules>
+  <rules processing="last">
     <rule name="mono">
       <conditionset>
         <condition name="Monospace" minimum="0.490000" maximum="1" />

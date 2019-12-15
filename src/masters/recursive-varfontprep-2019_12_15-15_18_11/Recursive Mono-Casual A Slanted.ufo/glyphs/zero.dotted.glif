@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="zero.dotted" format="2">
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="377" y="381" type="line"/>
+			<point x="367" y="391"/>
+			<point x="353" y="396"/>
+			<point x="334" y="396" type="curve"/>
+			<point x="308" y="396"/>
+			<point x="286" y="387"/>
+			<point x="278" y="357" type="curve" smooth="yes"/>
+			<point x="267" y="314" type="line"/>
+			<point x="277" y="303"/>
+			<point x="289" y="299"/>
+			<point x="310" y="299" type="curve"/>
+			<point x="341" y="299"/>
+			<point x="359" y="307"/>
+			<point x="364" y="329" type="curve" smooth="yes"/>
+		</contour>
+		<component base="zero.sans"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0,0,0,0.5</string>
+		</dict>
+	</lib>
+</glyph>
