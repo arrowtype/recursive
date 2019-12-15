@@ -26,4 +26,22 @@ However, this doesn't entirely fix it ... the code-edited glyph just doesn't sho
 
 ## Going back in (Git) history
 
-I'll try checking out an earlier version of this offending file, to see whether I can find a previous version without the problem.
+I'll try checking out an earlier version of this offending file, to see whether I can find a previous version without the problem. I started by making a branch:
+
+```
+git checkout -b "fixing-curves-zerosuperior_dotted"
+```
+
+I ran git log:
+
+```
+git log -- "src/masters/sans/Recursive Sans-Casual C Slanted.ufo/glyphs/zerosuperior.dotted.glif"
+```
+
+...and then copied the hash for Lisa's last commit on this file:
+
+```
+git checkout 3fda3d2dd8 -- "src/masters/sans/Recursive Sans-Casual C Slanted.ufo/glyphs/zerosuperior.dotted.glif"
+```
+
+And sure enough, it opens into RoboFont with no problem.
