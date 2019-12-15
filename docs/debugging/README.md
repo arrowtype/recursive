@@ -92,39 +92,52 @@ git diff 3fda3d2dd..a0f5f7445 -- 'src/masters/sans/*zerosuperior.dotted.glif'
 
 This was `git diff` then `<commit before merge>..<commit after merge>` then `-- '<path with wildcards, in quotes>'`.
 
+...buuut even though it showed me interesting details of the merge, it didn't provide an easy answer as to which files had merge _conflicts_.
+
+Instead, I Googled it and realized that I should just re-run the merge: https://stackoverflow.com/a/15443923
+
+> Yes, it is trivial. First of all, you need find sha1 id of the merge commit using git log. When you do the next:
+> 
+> git checkout <sha1>^1
+> git merge <sha1>^2
+> you will be in a headless state. ^n means n-th parent of a commit. So, no branches are created. You could resolve conflicts again more carefully and then
+> 
+> git diff HEAD..<sha1>
+> to see if there are any differences in the conflict resolutions.
+
+I could then run `grep` to see which files had merge conflict syntax:
 
 ```
-diff --git a/src/masters/sans/Recursive Sans-Casual C Slanted.ufo/glyphs/zerosuperior.dotted.glif b/src/masters/sans/Recursive Sans-Casual C Slanted.ufo/glyphs/zerosuperior.dotted.glif
-index 97ba4da305..2ef14d0b74 100644
---- a/src/masters/sans/Recursive Sans-Casual C Slanted.ufo/glyphs/zerosuperior.dotted.glif      
-+++ b/src/masters/sans/Recursive Sans-Casual C Slanted.ufo/glyphs/zerosuperior.dotted.glif      
-@@ -55,6 +55,26 @@
-                        <point x="249" y="599" type="line" smooth="yes"/>
-                        <point x="266" y="667"/>
-                        <point x="301" y="695"/>
-+                       <point x="402" y="628" type="line"/>
-+                       <point x="397" y="633"/>
-+                       <point x="392" y="635"/>
-+                       <point x="385" y="635" type="curve"/>
-+                       <point x="373" y="635"/>
-+                       <point x="361" y="621"/>
-+                       <point x="350" y="579" type="curve" smooth="yes"/>
-+                       <point x="329" y="496" type="line"/>
-+                       <point x="333" y="492"/>
-+                       <point x="339" y="490"/>
-+                       <point x="345" y="490" type="curve" smooth="yes"/>
-+                       <point x="358" y="490"/>
-+                       <point x="372" y="507"/>
-+                       <point x="379" y="535" type="curve" smooth="yes"/>
-                </contour>
-        </outline>
-+       <lib>
-+               <dict>
-+                       <key>public.markColor</key>
-+                       <string>1,0.5,0,1</string>
-+               </dict>
-+       </lib>
- </glyph>
- ```
+▶ grep -R "<<<<<<< HEAD" *
+src/masters/sans/Recursive Sans-Linear B Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/masters/sans/Recursive Sans-Linear A Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/masters/sans/Recursive Sans-Casual C.ufo/lib.plist:<<<<<<< HEAD
+src/masters/sans/Recursive Sans-Casual B.ufo/lib.plist:<<<<<<< HEAD
+src/masters/sans/Recursive Sans-Casual A.ufo/lib.plist:<<<<<<< HEAD
+src/masters/sans/Recursive Sans-Casual C Slanted.ufo/glyphs/zerosuperior.dotted.glif:<<<<<<< HEAD
+src/masters/sans/Recursive Sans-Casual C Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/masters/sans/Recursive Sans-Linear C Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/masters/sans/Recursive Sans-Casual A Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/masters/sans/Recursive Sans-Casual B Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/masters/sans/Recursive Sans-Linear A.ufo/lib.plist:<<<<<<< HEAD
+src/masters/sans/Recursive Sans-Linear C.ufo/lib.plist:<<<<<<< HEAD
+src/masters/sans/Recursive Sans-Linear B.ufo/lib.plist:<<<<<<< HEAD
+src/masters/mono/Recursive Mono-Casual A.ufo/lib.plist:<<<<<<< HEAD
+src/masters/mono/Recursive Mono-Casual B.ufo/lib.plist:<<<<<<< HEAD
+src/masters/mono/Recursive Mono-Casual A Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/masters/mono/Recursive Mono-Casual C.ufo/lib.plist:<<<<<<< HEAD
+src/masters/mono/Recursive Mono-Linear C Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/masters/mono/Recursive Mono-Casual B Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/masters/mono/Recursive Mono-Linear B Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/masters/mono/Recursive Mono-Linear B.ufo/lib.plist:<<<<<<< HEAD
+src/masters/mono/Recursive Mono-Linear C.ufo/lib.plist:<<<<<<< HEAD
+src/masters/mono/Recursive Mono-Linear A.ufo/lib.plist:<<<<<<< HEAD
+src/masters/mono/Recursive Mono-Casual C Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/masters/mono/Recursive Mono-Linear A Slanted.ufo/lib.plist:<<<<<<< HEAD
+```
 
- https://stackoverflow.com/questions/11048094/git-get-conflicts-from-past-merge-without-running-merge-once-again
+And, this confirms that `src/masters/sans/Recursive Sans-Casual C Slanted.ufo/glyphs/zerosuperior.dotted.glif` was the only glyph with a conflict!
+
+Good to know.
+
+I got out of this detached HEAD state with `git merge --abort`, then `git checkout master` (https://stackoverflow.com/a/11801199).
