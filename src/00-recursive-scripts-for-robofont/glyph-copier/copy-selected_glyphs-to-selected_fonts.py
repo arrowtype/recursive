@@ -103,8 +103,6 @@ class GlyphFax(object):
             # draw the points of the imported glyph into the layered glyph
             glyphToCopy.drawPoints(pen)
 
-            
-
             if len(layerGlyph.components) == 1:
                 parentGlyphWidth = fontToSendTo[layerGlyph.components[0].baseGlyph].width
                 print(type(parentGlyphWidth))

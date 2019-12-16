@@ -8,18 +8,48 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 # define glyph constructions
 
 txt = '''\
-f.simple = f
-l.simple = l.italic
-lacute.simple = lacute
-lcommaaccent.simple = lcommaaccent
-ldotbelow.simple = ldotbelow
-llinebelow.simple = llinebelow
-lslash.simple = lslash
-r.simple = r.italic
-racute.simple = racute.italic
-rcaron.simple = rcaron.italic
-rcommaaccent.simple = rcommaaccent.italic
-one.simple = one.sans
+
+# a.simple = a.italic 
+# aacute.simple = aacute.italic 
+# abreve.simple = abreve.italic 
+# abreveacute.simple = abreveacute.italic 
+# abrevedot.simple = abrevedot.italic 
+# abrevegrave.simple = abrevegrave.italic 
+# abrevehook.simple = abrevehook.italic 
+# abrevetilde.simple = abrevetilde.italic 
+# acircumflex.simple = acircumflex.italic 
+# acircumflexacute.simple = acircumflexacute.italic 
+# acircumflexdot.simple = acircumflexdot.italic 
+# acircumflexgrave.simple = acircumflexgrave.italic 
+# acircumflexhook.simple = acircumflexhook.italic 
+# acircumflextilde.simple = acircumflextilde.italic 
+# adieresis.simple = adieresis.italic 
+# adotbelow.simple = adotbelow.italic 
+# agrave.simple = agrave.italic 
+# ahook.simple = ahook.italic 
+# amacron.simple = amacron.italic 
+# aogonek.simple = aogonek.italic 
+# aring.simple = aring.italic 
+# aringacute.simple = aringacute.italic 
+atilde.simple = atilde.italic
+# g.simple = g.italic 
+# gbreve.simple = gbreve.italic 
+# gcaron.simple = gcaron.italic 
+# gcircumflex.simple = gcircumflex.italic 
+# gcommaaccent.simple = gcommaaccent.italic 
+# gdotaccent.simple = gdotaccent.italic
+# f.simple = f
+# l.simple = l.italic
+# lacute.simple = lacute.italic
+# lcommaaccent.simple = lcommaaccent.italic
+# ldotbelow.simple = ldotbelow.italic
+# llinebelow.simple = llinebelow.italic
+# lslash.simple = lslash.italic
+# r.simple = r.italic
+# racute.simple = racute.italic
+# rcaron.simple = rcaron.italic
+# rcommaaccent.simple = rcommaaccent.italic
+# one.simple = one.sans
 '''
 
 

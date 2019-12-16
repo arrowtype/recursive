@@ -27,7 +27,7 @@ fi
 outputDir="font_betas"
 dsName=$(basename $DS)
 fontName=${dsName/".designspace"/""}
-finalDirectory="${outputDir}/static_fonts/${fontName}-static_${fontFormat}"
+finalDirectory="${outputDir}/static_fonts-20191215/${fontName}-static_${fontFormat}"
 
 echo $fontName
 echo $finalDirectory

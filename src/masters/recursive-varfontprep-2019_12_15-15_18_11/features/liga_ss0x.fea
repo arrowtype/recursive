@@ -37,7 +37,8 @@ feature ss03 {
         # Apple, roman, unspecified
         name 1 "Simplified Mono ‘f’";
     };
-    sub f.mono by f;
+    sub f by f.simple;
+    sub f.mono by f.simple;
 } ss03;
 
 @sansI = [i        iacute        ibreve        icircumflex        idieresis        idotbelow        igrave        ihook        imacron        iogonek        itilde       ];
@@ -56,9 +57,10 @@ feature ss04 {
     sub fi by f i.italic;
 } ss04;
 
-@sansL = [l.sans lacute.sans lcommaaccent.sans ldotbelow.sans llinebelow.sans lslash.sans ];
-@italL = [l      lacute      lcommaaccent      ldotbelow      llinebelow      lslash      ];
-@monoL = [l.mono lacute.mono lcommaaccent.mono ldotbelow.mono llinebelow.mono lslash.mono ];
+@sansL =   [l.sans   lacute.sans   lcommaaccent.sans   ldotbelow.sans   llinebelow.sans   lslash.sans   ];
+@italL =   [l        lacute        lcommaaccent        ldotbelow        llinebelow        lslash        ];
+@monoL =   [l.mono   lacute.mono   lcommaaccent.mono   ldotbelow.mono   llinebelow.mono   lslash.mono   ];
+@simpleL = [l.simple lacute.simple lcommaaccent.simple ldotbelow.simple llinebelow.simple lslash.simple ];
 
 feature ss05 {
     featureNames {
@@ -67,13 +69,14 @@ feature ss05 {
         # Apple, roman, unspecified
         name 1 "Simplified Mono ‘l’";
     };
-    sub @monoL by @italL;
-    sub @sansL by @italL;
+    sub @sansL by @simpleL;
+    sub @monoL by @simpleL;
 } ss05;
 
-@sansR = [r        racute        rcaron        rcommaaccent        ];
-@monoR = [r.mono   racute.mono   rcaron.mono   rcommaaccent.mono   ];
-@italR = [r.italic racute.italic rcaron.italic rcommaaccent.italic ];
+@sansR =   [r        racute        rcaron        rcommaaccent        ];
+@monoR =   [r.mono   racute.mono   rcaron.mono   rcommaaccent.mono   ];
+@italR =   [r.italic racute.italic rcaron.italic rcommaaccent.italic ];
+@simpleR = [r.simple racute.simple rcaron.simple rcommaaccent.simple ];
 
 feature ss06 {
     featureNames {
@@ -82,7 +85,8 @@ feature ss06 {
         # Apple, roman, unspecified
         name 1 "Simplified Mono ‘r’";
     };
-    sub @monoR by @italR;
+    sub @sansR by @simpleR;
+    sub @monoR by @simpleR;
 } ss06;
 
 @dfltCapL = [L      Lacute      Lcommaaccent      Lcaron      Ldotbelow      Llinebelow      Lslash       ];
@@ -166,5 +170,6 @@ feature ss12 {
         # Apple, roman, unspecified
         name 1 "Simplified One";
     };
-    sub one by one.sans;
+    sub one by one.simple;
+    sub one.sans by one.simple;
 } ss12;

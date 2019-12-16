@@ -127,13 +127,19 @@ def main():
 
 
         if famName != 'None':
-            newFamName = f"{famName} {projectVersion}st"
+            if fontIsStatic:
+                newFamName = f"{famName} {projectVersion}st"
+            else:
+                newFamName = f"{famName} {projectVersion}"
             newFamName = abbreviateName(newFamName, styleNames)
             setFontNameID(ttfont, 16, newFamName)
 
         if famName == 'None':
             famName = getFontNameID(ttfont, 1)
-            newFamName = f"{famName} {projectVersion}st"
+            if fontIsStatic:
+                newFamName = f"{famName} {projectVersion}st"
+            else:
+                newFamName = f"{famName} {projectVersion}"
             newFamName = abbreviateName(newFamName, styleNames)
             setFontNameID(ttfont, 16, newFamName)
 
