@@ -13,14 +13,6 @@ from fontParts.world import *
 import sys
 import os
 
-# from vanilla.dialogs import *
-# from mojo.UI import AskString
-# from mojo.UI import OutputWindow
-
-## Robofont stuff
-# oldNames = AskString('Names of glyphs to swap from').split()
-# newSuffix = AskString('Suffix for glyphs to swap to (leave blank to swap with defaults)')
-# files = getFile("Select files to swap glyphs in", allowsMultipleSelection=True, fileTypes=["ufo"])
 
 oldNames = "l.sans lcaron.sans lacute.sans lcommaaccent.sans ldotbelow.sans llinebelow.sans lslash.sans".split()
 newSuffix = ""
@@ -139,52 +131,4 @@ for ufo in sorted(ufosToAdjust):
     font.save()
     font.close()
 
-
-
-# from vanilla.dialogs import *
-# from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstructionBuilder
-
-
-# glyphsToMakeDefault = "l lacute lcommaaccent lcaron ldotbelow llinebelow".split()
-
-# suffixForPreviousDefaults = 
-# # l.sans lacute.sans lcommaaccent.sans ldotbelow.sans llinebelow.sans lslash.sans
-
-
-# # swapping suffixed glyph with main
-
-# # making current /l into /l.italic, etc
-
-# # make temp glyph of /l, etc
-
-# # overwrite main /l with l.sans
-
-
-# for file in files:
-#     font = OpenFont(file, showInterface=False)
-#     # iterate over all glyph constructions
-#     for construction in constructions:
-
-#         print(construction)
-#         # build a construction glyph
-#         constructionGlyph = GlyphConstructionBuilder(construction, font)
-
-#         # get the destination glyph in the font
-#         glyph = font.newGlyph(constructionGlyph.name, clear=True)
-
-#         # draw the construction glyph into the destination glyph
-#         constructionGlyph.draw(glyph.getPen())
-
-#         # copy construction glyph attributes to the destination glyph
-#         glyph.name = constructionGlyph.name
-#         glyph.unicode = constructionGlyph.unicode
-#         glyph.width = constructionGlyph.width
-#         glyph.markColor = 0, 0, 0, 0.5
-
-#         # if no unicode was given, try to set it automatically
-#         if glyph.unicode is None:
-#             glyph.autoUnicodes()
-
-#     font.save()
-#     font.close()
 
