@@ -614,18 +614,18 @@
 		</array>
 		<key>public.kern1.l_right</key>
 		<array>
-			<string>l</string>
-			<string>lacute</string>
-			<string>lcaron</string>
-			<string>lcommaaccent</string>
-			<string>ldotbelow</string>
-			<string>llinebelow</string>
 			<string>l.sans</string>
 			<string>lacute.sans</string>
+			<string>lcaron</string>
 			<string>lcommaaccent.sans</string>
 			<string>ldotbelow.sans</string>
 			<string>llinebelow.sans</string>
-			<string>lslash.sans</string>
+			<string>l</string>
+			<string>lacute</string>
+			<string>lcommaaccent</string>
+			<string>ldotbelow</string>
+			<string>llinebelow</string>
+			<string>lslash</string>
 			<string>l.mono</string>
 			<string>lacute.mono</string>
 			<string>lcommaaccent.mono</string>
@@ -677,7 +677,7 @@
 			<string>iogonek.italic</string>
 			<string>itilde.italic</string>
 			<string>ldot</string>
-			<string>lslash</string>
+			<string>lslash.sans</string>
 		</array>
 		<key>public.kern1.n_right</key>
 		<array>
@@ -1395,12 +1395,12 @@
 			<string>b.italic</string>
 			<string>k.italic</string>
 			<string>kcommaaccent.italic</string>
-			<string>l.sans</string>
-			<string>lacute.sans</string>
-			<string>lcommaaccent.sans</string>
-			<string>ldotbelow.sans</string>
-			<string>llinebelow.sans</string>
-			<string>lslash.sans</string>
+			<string>l</string>
+			<string>lacute</string>
+			<string>lcommaaccent</string>
+			<string>ldotbelow</string>
+			<string>llinebelow</string>
+			<string>lslash</string>
 		</array>
 		<key>public.kern2.i_left</key>
 		<array>
@@ -1481,14 +1481,14 @@
 		</array>
 		<key>public.kern2.l_left</key>
 		<array>
-			<string>l</string>
-			<string>lacute</string>
+			<string>l.sans</string>
+			<string>lacute.sans</string>
 			<string>lcaron</string>
-			<string>lcommaaccent</string>
-			<string>ldotbelow</string>
-			<string>llinebelow</string>
+			<string>lcommaaccent.sans</string>
+			<string>ldotbelow.sans</string>
+			<string>llinebelow.sans</string>
 			<string>ldot</string>
-			<string>lslash</string>
+			<string>lslash.sans</string>
 			<string>lj</string>
 			<string>l.italic</string>
 			<string>lacute.italic</string>

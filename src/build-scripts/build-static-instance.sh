@@ -34,6 +34,7 @@ fi
 
 ## Set versioned names
 for font in $finalDirectory/*; do
+    echo $font
     python src/build-scripts/set-versioned-font-names.py "$font" --inplace
 done
 

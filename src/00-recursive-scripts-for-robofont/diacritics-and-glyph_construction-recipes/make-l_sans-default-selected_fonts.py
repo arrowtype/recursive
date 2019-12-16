@@ -8,17 +8,37 @@
 import typing
 from typing import Any, Dict, List, Mapping, Set, Tuple, Union
 import ufoLib2
+from fontParts.world import *
 
-from vanilla.dialogs import *
-from mojo.UI import AskString
-from mojo.UI import OutputWindow
+import sys
+import os
 
-oldNames = AskString('Names of glyphs to swap from').split()
-newSuffix = AskString('Suffix for glyphs to swap to (leave blank to swap with defaults)')
+# from vanilla.dialogs import *
+# from mojo.UI import AskString
+# from mojo.UI import OutputWindow
 
-files = getFile("Select files to swap glyphs in", allowsMultipleSelection=True, fileTypes=["ufo"])
+## Robofont stuff
+# oldNames = AskString('Names of glyphs to swap from').split()
+# newSuffix = AskString('Suffix for glyphs to swap to (leave blank to swap with defaults)')
+# files = getFile("Select files to swap glyphs in", allowsMultipleSelection=True, fileTypes=["ufo"])
 
-OutputWindow().show()
+oldNames = "l.sans lcaron.sans lacute.sans lcommaaccent.sans ldotbelow.sans llinebelow.sans lslash.sans".split()
+newSuffix = ""
+
+
+try:
+    if sys.argv[1]:
+        print("Swapping glyph names!")
+        dirToUpdate = sys.argv[1]
+        subDirs = next(os.walk(dirToUpdate))[1]
+        ufosToAdjust = [ path for path in subDirs if path.endswith(".ufo")]
+        head = dirToUpdate
+
+except IndexError:
+    print("Please include directory containing UFOs")
+
+
+# OutputWindow().show()
 
 
 # from https://github.com/googlefonts/fontmake/blob/a5529377219a13f5685f38bcefb248150704ff5e/Lib/fontmake/instantiator.py#L556
@@ -35,10 +55,13 @@ def swap_glyph_names(font: ufoLib2.Font, name_old: str, name_new: str):
     """
 
     if name_old not in font or name_new not in font:
-        raise InstantiatorError(
-            f"Cannot swap glyphs '{name_old}' and '{name_new}', as either or both are "
-            "missing."
-        )
+        print(f"Cannot swap glyphs '{name_old}' and '{name_new}', as either or both are "
+            "missing.")
+        return
+        # raise InstantiatorError(
+        #     f"Cannot swap glyphs '{name_old}' and '{name_new}', as either or both are "
+        #     "missing."
+        # )
 
     # 1. Swap outlines and glyph width. Ignore lib content and other properties.
     glyph_swap = ufoLib2.objects.Glyph(name="temporary_swap_glyph")
@@ -80,7 +103,8 @@ def swap_glyph_names(font: ufoLib2.Font, name_old: str, name_new: str):
         elif second == name_new:
             second = name_old
         kerning_new[(first, second)] = value
-    font.kerning = kerning_new
+    # font.kerning = kerning_new
+    font.kerning.update(kerning_new)
 
     # 4. Swap names in groups.
     for group_name, group_members in font.groups.items():
@@ -95,24 +119,25 @@ def swap_glyph_names(font: ufoLib2.Font, name_old: str, name_new: str):
         font.groups[group_name] = group_members_new
 
 
-
-
-for filepath in files:
-    font = OpenFont(filepath, showInterface=False)
+for ufo in sorted(ufosToAdjust):
+    ufoPath = f"{head}/{ufo}"
+    font = OpenFont(ufoPath, showInterface=False)
 
     for glyphName in oldNames:
 
-        print(newSuffix)
-
         if newSuffix != "":
-            newName = glyphName.split(".")[0] + '.' + newSuffix
+                newName = glyphName.split(".")[0] + '.' + newSuffix
         else:
             newName = glyphName.split(".")[0]
 
         print(newName)
-        
 
         swap_glyph_names(font, glyphName, newName)
+
+        # TODO: remove old glyphName
+
+    font.save()
+    font.close()
 
 
 

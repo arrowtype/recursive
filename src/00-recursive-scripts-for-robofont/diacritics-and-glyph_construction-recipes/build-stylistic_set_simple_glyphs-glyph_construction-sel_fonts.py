@@ -8,7 +8,6 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 # define glyph constructions
 
 txt = '''\
-
 # a.simple = a.italic 
 # aacute.simple = aacute.italic 
 # abreve.simple = abreve.italic 
@@ -31,7 +30,7 @@ txt = '''\
 # aogonek.simple = aogonek.italic 
 # aring.simple = aring.italic 
 # aringacute.simple = aringacute.italic 
-atilde.simple = atilde.italic
+# atilde.simple = atilde.italic
 # g.simple = g.italic 
 # gbreve.simple = gbreve.italic 
 # gcaron.simple = gcaron.italic 
@@ -50,6 +49,23 @@ atilde.simple = atilde.italic
 # rcaron.simple = rcaron.italic
 # rcommaaccent.simple = rcommaaccent.italic
 # one.simple = one.sans
+
+i.simple = i.italic
+igrave.simple = igrave.italic
+iacute.simple = iacute.italic
+icircumflex.simple = icircumflex.italic
+idieresis.simple = idieresis.italic
+itilde.simple = itilde.italic
+imacron.simple = imacron.italic
+ibreve.simple = ibreve.italic
+iogonek.simple = iogonek.italic
+igravedbl.simple = igravedbl.italic
+iinvertedbreve.simple = iinvertedbreve.italic
+idieresisacute.simple = idieresisacute.italic
+ihook.simple = ihook.italic
+idotbelow.simple = idotbelow.italic
+idot.simple = idot.italic
+idotaccent.simple = idotaccent.italic
 '''
 
 

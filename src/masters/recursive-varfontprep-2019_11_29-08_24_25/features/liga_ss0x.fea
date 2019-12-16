@@ -45,6 +45,7 @@ feature ss03 {
 
 @sansI = [i        iacute        ibreve        icircumflex        idieresis        idotbelow        igrave        ihook        imacron        iogonek        itilde       ];
 @italI = [i.italic iacute.italic ibreve.italic icircumflex.italic idieresis.italic idotbelow.italic igrave.italic ihook.italic imacron.italic iogonek.italic itilde.italic];
+@smplI = [i.simple iacute.simple ibreve.simple icircumflex.simple idieresis.simple idotbelow.simple igrave.simple ihook.simple imacron.simple iogonek.simple itilde.simple];
 @monoI = [i.mono   iacute.mono   ibreve.mono   icircumflex.mono   idieresis.mono   idotbelow.mono   igrave.mono   ihook.mono   imacron.mono   iogonek.mono   itilde.mono  ];
 
 feature ss04 {
@@ -54,14 +55,16 @@ feature ss04 {
         # Apple, roman, unspecified
         name 1 "Simplified Mono ‘i’";
     };
-    sub @sansI by @italI;
-    sub @monoI by @italI;
-    sub fi by f i.italic;
+    sub @sansI by @smplI;
+    sub @monoI by @smplI;
+    sub fi by f i.simple;
 } ss04;
 
-@sansL =   [l.sans   lacute.sans   lcommaaccent.sans   ldotbelow.sans   llinebelow.sans   lslash.sans   ];
-@italL =   [l        lacute        lcommaaccent        ldotbelow        llinebelow        lslash        ];
+# TODO: add /lcaron
+# TODO: update l italic rules
+@sansL =   [l        lacute        lcommaaccent        ldotbelow        llinebelow        lslash        ];
 @monoL =   [l.mono   lacute.mono   lcommaaccent.mono   ldotbelow.mono   llinebelow.mono   lslash.mono   ];
+@italL =   [l.italic lacute.italic lcommaaccent.italic ldotbelow.italic llinebelow.italic lslash.italic ];
 @simpleL = [l.simple lacute.simple lcommaaccent.simple ldotbelow.simple llinebelow.simple lslash.simple ];
 
 feature ss05 {
