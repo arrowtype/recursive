@@ -30,8 +30,6 @@ except IndexError:
     print("Please include directory containing UFOs")
 
 
-# OutputWindow().show()
-
 
 # from https://github.com/googlefonts/fontmake/blob/a5529377219a13f5685f38bcefb248150704ff5e/Lib/fontmake/instantiator.py#L556
 def swap_glyph_names(font: ufoLib2.Font, name_old: str, name_new: str):
@@ -63,16 +61,22 @@ def swap_glyph_names(font: ufoLib2.Font, name_old: str, name_new: str):
     p = glyph_swap.getPointPen()
     glyph_old.drawPoints(p)
     glyph_swap.width = glyph_old.width
+    for a in glyph_old.anchors:
+        glyph_swap.anchors.appendAnchor(a.copy(), a.position)
 
     glyph_old.clear()
     p = glyph_old.getPointPen()
     glyph_new.drawPoints(p)
     glyph_old.width = glyph_new.width
+    for a in glyph_new.anchors:
+        glyph_old.anchors.appendAnchor(a.copy(), a.position)
 
     glyph_new.clear()
     p = glyph_new.getPointPen()
     glyph_swap.drawPoints(p)
     glyph_new.width = glyph_swap.width
+    for a in glyph_swap.anchors:
+        glyph_new.anchors.appendAnchor(a.copy(), a.position)
 
     # 2. Remap components.
     for g in font:
@@ -113,12 +117,12 @@ def swap_glyph_names(font: ufoLib2.Font, name_old: str, name_new: str):
 
 for ufo in sorted(ufosToAdjust):
     ufoPath = f"{head}/{ufo}"
-    font = OpenFont(ufoPath, showInterface=False)
+    font = OpenFont(ufoPath, showInterface=True)
 
     for glyphName in oldNames:
 
         if newSuffix != "":
-                newName = glyphName.split(".")[0] + '.' + newSuffix
+            newName = glyphName.split(".")[0] + '.' + newSuffix
         else:
             newName = glyphName.split(".")[0]
 
@@ -128,7 +132,7 @@ for ufo in sorted(ufosToAdjust):
 
         # TODO: remove old glyphName
 
-    font.save()
-    font.close()
+    # font.save()
+    # font.close()
 
 
