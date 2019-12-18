@@ -31,16 +31,16 @@ aogonek.simple = aogonek.italic
 aring.simple = aring.italic 
 aringacute.simple = aringacute.italic 
 atilde.simple = atilde.italic
-
+#
 f.simple = f
-
+#
 g.simple = g.italic 
 gbreve.simple = gbreve.italic 
 gcaron.simple = gcaron.italic 
 gcircumflex.simple = gcircumflex.italic 
 gcommaaccent.simple = gcommaaccent.italic 
 gdotaccent.simple = gdotaccent.italic
-
+#
 i.simple = i.italic
 igrave.simple = igrave.italic
 iacute.simple = iacute.italic
@@ -57,20 +57,20 @@ ihook.simple = ihook.italic
 idotbelow.simple = idotbelow.italic
 idot.simple = idot.italic
 idotaccent.simple = idotaccent.italic
-
+#
 l.simple = l.italic
 lacute.simple = lacute.italic
 lcommaaccent.simple = lcommaaccent.italic
 ldotbelow.simple = ldotbelow.italic
 llinebelow.simple = llinebelow.italic
 lslash.simple = lslash.italic
-lcaron.simple = lcaron.italic
-
+# lcaron.simple = lcaron.italic
+#
 r.simple = r.italic
 racute.simple = racute.italic
 rcaron.simple = rcaron.italic
 rcommaaccent.simple = rcommaaccent.italic
-
+#
 one.simple = one.sans
 '''
 

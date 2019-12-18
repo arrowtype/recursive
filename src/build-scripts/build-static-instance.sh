@@ -4,6 +4,8 @@
 # 
 # NOTE: the designspace instances *must* include 'name' attributes for this to work
 
+set -e
+
 source venv/bin/activate
 
 DS=$1
@@ -16,10 +18,10 @@ if [[ $2 ]] ; then
 else
     # fontmake -m $DS -o ttf -i "Recursive Sans *-Bold.*" --output-dir $finalDirectory --expand-features-to-instances
     # fontmake -m $DS -o ttf -i "Recursive Mono *-Bold.*" --output-dir $finalDirectory --expand-features-to-instances
-    # fontmake -m $DS -o ttf -i "Recursive Mono Linear-Regular.*" --output-dir $finalDirectory --expand-features-to-instances
-    # fontmake -m $DS -o ttf -i "Recursive Mono Linear-Italic.*" --output-dir $finalDirectory --expand-features-to-instances
     fontmake -m $DS -o ttf -i "Recursive Mono Linear-Regular.*" --output-dir $finalDirectory --expand-features-to-instances
     fontmake -m $DS -o ttf -i "Recursive Mono Linear-Italic.*" --output-dir $finalDirectory --expand-features-to-instances
+    fontmake -m $DS -o ttf -i "Recursive-Mono Linear Regular.*" --output-dir $finalDirectory --expand-features-to-instances
+    fontmake -m $DS -o ttf -i "Recursive-Mono Linear Italic.*" --output-dir $finalDirectory --expand-features-to-instances
     # fontmake -m $DS -o ttf -i "Recursive Mono Linear-ExtraBold.*" --output-dir $finalDirectory --expand-features-to-instances
     # fontmake -m $DS -o ttf -i "Recursive Mono Linear-Bold.*" --output-dir $finalDirectory --expand-features-to-instances
     # fontmake -u "src/masters/recursive-varfontprep-2019_11_27-21_03_01/instances/Recursive Mono Linear-Bold.ufo" -o ttf --output-dir $finalDirectory
