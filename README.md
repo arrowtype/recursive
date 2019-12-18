@@ -49,7 +49,7 @@ In general, you should link in the font with `@font-face`, being sure to use `fo
 ```
 @font-face {
  font-family: 'Recursive';
- src: 'path/to/font/file/rec-mono_xprn_wght_slnt_ital--2019_09_30.woff2' format('woff2-variations');
+ src: url('path/to/font/file/rec-mono_xprn_wght_slnt_ital--2019_09_30.woff2') format('woff2-variations');
  font-weight: 300 900;
 }
 ```
