@@ -156,6 +156,9 @@ feature ss10 {
     sub zeroinferior.sans by zeroinferior.dotted;
 } ss10;
 
+@dfltZero = [zero       zerosuperior       zeroinferior       zeroinferior.afrc       zeroinferior.afrc       ];
+@slshZero = [zero.slash zerosuperior.slash zeroinferior.slash zeroinferior_afrc.slash zeroinferior_afrc.slash ];
+
 feature ss11 {
     featureNames {
         # MS, unicode, English
@@ -163,9 +166,7 @@ feature ss11 {
         # Apple, roman, unspecified
         name 1 "Slashed Zero in Sans";
     };
-    sub zero.sans by zero;
-    sub zerosuperior.sans by zerosuperior;
-    sub zeroinferior.sans by zeroinferior;
+    sub @dfltZero by @slshZero;
 } ss11;
 
 feature ss12 {

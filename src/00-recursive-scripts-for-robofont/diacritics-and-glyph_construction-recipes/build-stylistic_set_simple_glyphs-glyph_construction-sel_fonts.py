@@ -72,6 +72,12 @@ rcaron.simple = rcaron.italic
 rcommaaccent.simple = rcommaaccent.italic
 #
 one.simple = one.sans
+#
+zero.slash = zero
+zerosuperior.slash = zerosuperior
+zeroinferior.slash = zeroinferior
+zeroinferior_afrc.slash = zeroinferior.afrc
+zeroinferior_afrc.slash = zeroinferior.afrc
 '''
 
 
