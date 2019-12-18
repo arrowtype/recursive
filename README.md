@@ -44,13 +44,13 @@ To install many static font files (these may work better in apps such as Microso
 
 This is a big topic, but a couple of good guides are [from MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide) and [from CSS-Tricks](https://css-tricks.com/one-file-many-options-using-variable-fonts-web/).
 
-In general, you should link in the font with `@font-face`, being sure to use `font-weight: 300 900;` to specify the font's weight range:
+In general, you should link in the font with `@font-face`, being sure to use `font-weight: 300 1000;` to specify the font's weight range:
 
 ```
 @font-face {
  font-family: 'Recursive';
- src: url('path/to/font/file/rec-mono_xprn_wght_slnt_ital--2019_09_30.woff2') format('woff2-variations');
- font-weight: 300 900;
+ src: url('path/to/font/<UPDATE_SPECIFIC_FONT_PATH>.woff2') format('woff2-variations');
+ font-weight: 300 1000;
 }
 ```
 
