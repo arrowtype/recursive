@@ -121,8 +121,10 @@ class GlyphFax(object):
         if self.w.editText.get() == "":
             Message('no glyphs listed', title='Glyph Fax Machine', informativeText='Please list glyphs to send copies of!')
             return
-        
+         
         return self.w.editText.get().split(" ")
+
+    # default: dlig & ss01–ss12 off
 
     def getFontsCueCopying(self, proportionToCopyFrom, glyphsToCopy):
         files = getFile("Select UFOs to copy glyphs between",
@@ -130,7 +132,6 @@ class GlyphFax(object):
 
         for path in files:
             f = OpenFont(path, showInterface=True)
-            # style = f.info.styleName
             variation = f.info.styleName.replace('Mono ','').replace('Sans ','')
             if variation not in self.fonts.keys():
                 self.fonts[variation] = []
@@ -147,12 +148,12 @@ class GlyphFax(object):
 
         for variation in self.fonts.keys():
             print('\n',variation,'\n')
-
             for glyphName in glyphsToCopy:
                 self.copyGlyph(glyphName, self.fonts[variation][0], self.fonts[variation][1])
 
         self.w.close()
 
+    ## ss01–ss12 on
 
     def mono2SansCallback(self, sender):
         '''Copy glyphs from Mono to Sans masters.'''
