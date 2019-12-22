@@ -3,9 +3,9 @@ from vanilla.dialogs import *
 inputFonts = getFile("select masters to add feature code to", allowsMultipleSelection=True, fileTypes=["ufo"])
 
 renames = {
-    'Yhook': 'Yhookabove',
-    'yhook': 'yhookabove',
-    'yhook.italic': 'yhookabove.italic'
+    'f_quote.code': 'f_quotesingle.code',
+    'asterix_asterix_asterix.code': 'asterisk_asterisk_asterisk.code',
+    'asterix_asterix.code': 'asterisk_asterisk.code'
 }
     
 for fontPath in inputFonts:

@@ -1,6 +1,8 @@
 """
 	Build dlig feature code from "*.code" glyph names.
 
+	Works best to run on a UFO in a varfontprep folder, so it doesn't generate code for nonexisting glyphs.
+
 	USAGE:
 
 	python <path>/make-dlig-fea-code.py "<path>/<source-font>.ufo"
@@ -38,13 +40,12 @@ for g in font:
 	if ".code" in g.name and "_" in g.name:
 		codeLigs.append(g.name)
 
-print(codeLigs)
-
 font.close()
 
+codeLigsSorted = sorted(codeLigs,key=lambda x: x.count('_'),reverse=True)
 
 dligBlocks = ""
-for lig in codeLigs:
+for lig in codeLigsSorted:
 	dligBlocks += makeDligBlock(lig) + "\n"
 
 dligCode = f"""\
@@ -58,13 +59,4 @@ feaPath = "src/features/features/dlig-generated.fea"
 with open(feaPath, "w") as f:
 	f.write(dligCode)
 
-
-
-print(dligCode)
-
-
-# lookup exclam_equal_equal {
-# 	ignore sub exclam exclam' equal' equal';
-# 	ignore sub exclam' equal' equal' equal;
-# 	sub exclam' equal' equal' by exclam_equal_equal.code;
-# } exclam_equal_equal;
+print(f"→ dligCode saved to {feaPath}")
