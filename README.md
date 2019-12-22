@@ -72,15 +72,15 @@ In code editors like VS Code and Atom, you must use a string to set your preferr
 
 | Style           | Font name for VS Code seetings   | Recommended use case                             |
 | --------------- | -------------------------------- | ------------------------------------------------ |
-| Linear Regular  | `RecursiveMonoLinearB027st-Rg`       | General use                                      |
-| Casual Regular  | `RecursiveMonoCasualB027st-Rg`       | General, with more personality (try in terminal) |
+| Linear Regular  | `RecursiveMonoLinearB030st-Rg`       | General use                                      |
+| Casual Regular  | `RecursiveMonoCasualB030st-Rg`       | General, with more personality (try in terminal) |
 
 **On Windows**
 
 | Style           | Font name for VS Code seetings   | Recommended use case                             |
 | --------------- | -------------------------------- | ------------------------------------------------ |
-| Linear Regular  | `Recursive Mono Lnr b027st`       | General use                                      |
-| Casual Regular  | `Recursive Mono Csl b027st`       | General, with more personality (try in terminal) |
+| Linear Regular  | `Recursive Mono Lnr b030st`       | General use                                      |
+| Casual Regular  | `Recursive Mono Csl b030st`       | General, with more personality (try in terminal) |
 
 
 The `027` in these name string represents the current beta release version. It's possible this has shifted (I am releasing often at this point), so check what the release notes say.
