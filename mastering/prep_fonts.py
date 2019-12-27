@@ -349,7 +349,7 @@ def prep(designspacePath):
                                "varfontprep-report.txt")
     writeReport(report_path)
 
-    print("✅ Done preparing sources")
+    print("✅  Done preparing sources")
 
 
 if __name__ == "__main__":
