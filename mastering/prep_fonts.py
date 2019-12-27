@@ -1,4 +1,6 @@
 import os
+import shutil
+import datetime
 from fontParts.fontshell import RFont as Font
 from designspaceProblems import DesignSpaceChecker
 from fontTools.designspaceLib import DesignSpaceDocument
@@ -43,44 +45,31 @@ def removeGlyphs(font, names):
             del font.kerning[(left, right)]
 
 
-def copyFiles(designspacePath):
+def copyFiles(designspacePath, outRoot):
     """
-    Copies the supplied designspace and all of it's sources to a versioned
-    directory named by the font family name, followed by `-varfontprep-`,
-    followed by the current year_month_date_hour_minute_second.
+    Copies the supplied designspace and all of it's sources to `outRoot`
 
     This updates the source paths in the the designspace file.
     """
 
-    import shutil
-    import datetime
-
     ignore = shutil.ignore_patterns(".git", ".git*")
 
-    ds = DesignSpaceDocument.fromfile(designspacePath)
-    sources = [source.path for source in ds.sources]
-
-    now = datetime.datetime.now()
-
-    font = Font(sources[0])
-    fn = font.info.familyName.replace(" ", "_").lower()
-    font.close()
-
-    fn += "-varfontprep-" + now.strftime("%Y_%m_%d-%H_%M_%S")
-    directory, file = os.path.split(designspacePath)
-    root = os.path.join(directory, fn)
-    if os.path.exists(root):
+    if os.path.exists(outRoot):
         print("🛑  new folder path exists, stopping")
         raise ValueError
-    newDesignspacePath = os.path.join(root, file)
-    os.mkdir(root)
+    os.mkdir(outRoot)
+
+    newDesignspacePath = os.path.join(outRoot,
+                                      os.path.split(designspacePath)[1])
 
     shutil.copy(designspacePath, newDesignspacePath)
 
+    ds = DesignSpaceDocument.fromfile(designspacePath)
+    sources = [source.path for source in ds.sources]
     paths = {}
     for fontPath in sources:
         f = os.path.split(fontPath)[1]
-        newPath = os.path.join(root, f)
+        newPath = os.path.join(outRoot, f)
         paths[f] = newPath
         shutil.copytree(fontPath, newPath, ignore=ignore)
 
@@ -377,9 +366,22 @@ if __name__ == "__main__":
     parser.add_argument("-o", "--overwrite", action="store_true",
                         help="Overwrite source files in place.")
     args = parser.parse_args()
+    designspacePath = args.designspacePath
+
     if not args.overwrite:
-        print("🏗  Moving files")
-        designspacePath = copyFiles(args.designspacePath)
-    else:
-        designspacePath = args.designspacePath
+        print("🏗  Copying files")
+
+        ds = DesignSpaceDocument.fromfile(designspacePath)
+        font = Font(ds.sources[0].path)
+        fn = font.info.familyName.replace(" ", "_").lower()
+        font.close()
+
+        now = datetime.datetime.now()
+        fn += "-varfontprep-" + now.strftime("%Y_%m_%d-%H_%M_%S")
+
+        directory, file = os.path.split(designspacePath)
+        root = os.path.join(directory, fn)
+
+        designspacePath = copyFiles(designspacePath, root)
+
     prep(designspacePath)
