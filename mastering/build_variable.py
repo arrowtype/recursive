@@ -1,6 +1,8 @@
 import os
 from plistlib import dump as plDump
-from fontTools.designspaceLib import DesignSpaceDocument
+import fontTools.ttLib
+from fontmake.font_project import FontProject
+from statmake.lib import apply_stylespace_to_variable_font
 
 
 def makeSTAT(directory, designspace):
@@ -103,23 +105,42 @@ def makeSTAT(directory, designspace):
         plDump(stat, fp, sort_keys=False)
 
     print("🏗  Made stylespace")
+    return path
 
 
-def build_variable(designspacePath, root):
+def build_variable(designspacePath, stylespacePath=None, out=None):
 
-    doc = DesignSpaceDocument.fromfile(designspacePath)
+    if out is None:
+        out = os.path.splitext(os.path.basename(designspacePath))[0] + "-VF.ttf"
 
-    # Fix default value for weight axis in design space file
-    for axis in doc.axes:
-        if axis.name == "Weight":
-            axis.default = 300
+    print("🏗  Constructing variable font")
+    fp = FontProject()
 
-    # Still in memory, but need to save for other operations
-    doc.write(doc)
+    fp.build_variable_font(designspacePath, output_path=out)
+
+    if stylespacePath is not None:
+        print("🏗  Adding STAT table")
+        font = fontTools.ttLib.TTFont(out)
+        apply_stylespace_to_variable_font(font, {})
+        font.save(out)
+    print("✅ Built variable font")
 
 
-    #  Variable font build
-    #print("Building Variable fonts")
+if __name__ == "__main__":
+    import argparse
+    description = """
+    Builds the Recursive variable font.
+    """
+    parser = argparse.ArgumentParser(description=description)
+    parser.add_argument("designspacePath",
+                        help="The path to a designspace file")
+    parser.add_argument("-s", "--stylespace",
+                        help="Path to the stylespace file")
+    parser.add_argument("-o", "--out",
+                        help="Output path")
+    args = parser.parse_args()
+    designspacePath = args.designspacePath
+    stylespacePath = args.stylespace
+    out = args.out
 
-    # Fix default va
-    # fontmake -m $DS -o variable --output-path $outputDir/$fontName--$date.ttf
+    build_variable(designspacePath, stylespacePath=stylespacePath, out=out)
