@@ -15,12 +15,13 @@ report = {}
 
 def removeGlyphs(font, names):
     """
-    Removes the glyphs in the list of `names` from the supplied `font`.
+    Removes the glyphs in the list of *names* from the supplied *font*.
     This checks all layers for the glyph, removes the glyph from any
     composite glyphs that use it, removes the glyph from the `glyphOrder`,
     and removes the glyph from the kerning.
 
-    This method operates on a font object.
+    *font* is a font object (Defcon or FontParts)
+    *names* is a `list` of glyph names
     """
 
     for name in names:
@@ -47,15 +48,18 @@ def removeGlyphs(font, names):
 
 def copyFiles(designspacePath, outRoot):
     """
-    Copies the supplied designspace and all of it's sources to `outRoot`
+    Copies the supplied designspace and all of it's sources to *outRoot*
 
     This updates the source paths in the the designspace file.
+
+    *designspacePath* is a `string` of the path to a designspace file
+    *outRoot* is a `string` of the root directory to copy files to
     """
 
     ignore = shutil.ignore_patterns(".git", ".git*")
 
     if os.path.exists(outRoot):
-        print("🛑  new folder path exists, stopping")
+        print("🛑 new folder path exists, stopping")
         raise ValueError
     os.mkdir(outRoot)
 
@@ -84,7 +88,9 @@ def copyFiles(designspacePath, outRoot):
 def writeReport(path):
     """
     Writes out the report text file from the report dictionary to
-    the given `path`.
+    the given *path*.
+
+    *path* is a `string` of the path to write to
     """
 
     seperator = "\n_________________________"
@@ -151,7 +157,7 @@ def checkFamilyName(fonts):
 
     Returns `True` if so, prints an error and returns `False` if not.
 
-    This method operates on a list of font objects.
+    *fonts* is a `list` of font objects (Defcon or FontParts).
     """
 
     familyName = []
@@ -160,7 +166,7 @@ def checkFamilyName(fonts):
             familyName.append(font.info.familyName)
 
     if len(familyName) != 1:
-        print("🛑  source UFOs have different family names, stopping")
+        print("🛑 source UFOs have different family names, stopping")
         print(f"{', '.join(familyName)}")
         return False
     else:
@@ -171,7 +177,7 @@ def clearGuides(font):
     """
     Clears both font level and glyph level guides in a font.
 
-    This method operates on a font object.
+    *font* is a font object (Defcon or FontParts)
     """
 
     local_report = report.get("Clear Guidelines", [])
@@ -190,10 +196,10 @@ def clearGuides(font):
 
 def makeSourceFontsGlyphCompatible(fonts):
     """
-    Compares the glyphs of all `fonts` and removes glyphs that are not
-    common to all the provided `fonts`.
+    Compares the glyphs of all *fonts* and removes glyphs that are not
+    common to all the provided *fonts*.
 
-    This method operates on a list of font objects.
+    *fonts* is a `list` of font objects (Defcon or FontParts).
     """
 
     local_report = report.get("Removed Glyphs", [])
@@ -222,7 +228,7 @@ def decomposeNonExportingGlyphs(fonts):
     is used as a component. Decomposes these components, then removes the
     glyph(s) from the font.
 
-    This method operates on a list of font objects.
+    *fonts* is a `list` of font objects (Defcon or FontParts).
     """
 
     local_report = report.get("Non-exporting glyphs", [])
@@ -243,9 +249,9 @@ def decomposeNonExportingGlyphs(fonts):
 
 def sortGlyphOrder(fonts):
     """
-    Sorts all fonts in the list of `fonts` to have a common sort order.
+    Sorts all fonts in the list of *fonts* to have a common sort order.
 
-    This method operates on a list of font objects.
+    *fonts* is a `list` of font objects (Defcon or FontParts).
     """
     for font in fonts:
         newGlyphOrder = font.naked().unicodeData.sortGlyphNames(font.glyphOrder, sortDescriptors=[dict(type="cannedDesign", ascending=True, allowPseudoUnicode=True)])
@@ -256,7 +262,7 @@ def kerningCompatibility(fonts):
     """
     Adds dummy kerning to a font that has no kerning.
 
-    This method operates on a list of font objects.
+    *fonts* is a `list` of font objects (Defcon or FontParts).
     """
     local_report = report.get("Added blank kerning", [])
 
@@ -269,10 +275,10 @@ def kerningCompatibility(fonts):
 
 def makeCompatible(fonts):
     """
-    Checks all glyphs from the provided list of `fonts` for compatibility.
-    Removes any glyphs that aren't compatible from all of the `fonts`.
+    Checks all glyphs in *fonts* for compatibility. Removes any glyphs that
+    aren't compatible from all of the fonts.
 
-    This method operates on a list of font objects.
+    *fonts* is a `list` of font objects (Defcon or FontParts).
     """
 
     local_report = report.get("Removed non-compatible glyphs", [])
@@ -301,6 +307,8 @@ def prep(designspacePath):
 
     Uses https://github.com/LettError/DesignspaceProblems to check and
     report on issues with the design space.
+
+    *designspacePath* is a `string` of the path to the designspace file
     """
 
     # Checking to see if there are any large issues with the designspace
@@ -349,7 +357,7 @@ def prep(designspacePath):
                                "varfontprep-report.txt")
     writeReport(report_path)
 
-    print("✅  Done preparing sources")
+    print("✅ Done preparing sources")
 
 
 if __name__ == "__main__":
