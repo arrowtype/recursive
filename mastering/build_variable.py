@@ -19,6 +19,10 @@ def makeSTAT(directory, designspace):
     Put the axis specific information in the styles dictionary, let the rest
     of the code be generic, save for the special sauce Recursive needs for
     Italic.
+
+    *directory* is a `string` of the path to the directory to save the
+                stylespace file
+    *designspace* is a `DesignSpaceDocument` object
     """
 
     # Style naming info

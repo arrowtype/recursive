@@ -40,8 +40,8 @@ def makeSources(ds, src, designspacePath):
     buildFeatures(src)
 
 
-def buildFiles(sources=False,
-               static=False,
+def buildFiles(sources=True,
+               static=True,
                variable=True,
                ds="recursive-MONO_CASL_wght_slnt_ital--full_gsub.designspace",
                version=1.001):

@@ -186,6 +186,11 @@ def buildFontInfo(stylename, dir):
 
 
 def writeFeature(font):
+    """
+    Write the font specific features file
+
+    *font* is a font object (Defcon or FontParts)
+    """
     path = os.path.join(os.path.split(font.path)[0], "features")
     hhea = (f"table hhea {{\n"
             f"    Ascender {font.info.openTypeHheaAscender};\n"
@@ -349,7 +354,6 @@ def buildFolders(designspace, root, name_map):
     """
     Makes folder structure for static mastering
     """
-    print("🏗  Making folders for static fonts")
     familyNames = {}
     for i in designspace.instances:
         fn, sn, _ = name_map[(i.familyName, i.styleName)]
@@ -377,15 +381,14 @@ def buildFontMenuDB(designspace, root, name_map):
     or "Recursive Mono" for the static fonts.
     """
 
-    out = ""
-
     for i in designspace.instances:
         fn, sn, m1 = name_map[(i.familyName, i.styleName)]
-        out += f"[{i.postScriptFontName}]\n"
-        out += f"    f={fn}\n"
-        out += f"    s={sn}\n"
-        out += f"    l={i.styleMapFamilyName}\n"
-        out += f"    m=1,{m1}\n\n"
+        out = (f"[{i.postScriptFontName}]\n"
+               f"    f={fn}\n"
+               f"    s={sn}\n"
+               f"    l={i.styleMapFamilyName}\n"
+               f"    m=1,{m1}\n\n"
+               )
 
     path = os.path.join(root, "FontMenuNameDB")
     with open(path, "w") as f:
@@ -411,6 +414,9 @@ def buildGlyphOrderAndAlias(fontPath, root):
                     out = f"{finalName}\t{name}\n"
                 f.write(out)
         f.write("\n")
+
+
+def makeOTF(root):
 
 
 def buildStatic(root, otf=True, ttf=True):
