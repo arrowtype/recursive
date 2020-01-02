@@ -37,7 +37,7 @@ def build_aalt(font, outPath):
                         alt_list.append(glyph.name)
                         alts[split] = alt_list
 
-    keys = alts.keys()
+    keys = list(alts.keys())
     keys.sort()
 
     for name in keys:
@@ -50,6 +50,7 @@ def build_aalt(font, outPath):
             for count, _ in enumerate(glyphs):
                 line = rotate(glyphs, count)
                 sub = f"    sub {line[0]} from [{' '.join(line)}];"
+                aalt.append(sub)
 
     aalt.append("} aalt;")
 
