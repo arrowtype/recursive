@@ -2,6 +2,7 @@ import os
 
 
 # Helper functions
+
 def getFiles(path, extension):
     """
     Walks down all directories starting at *path* looking for files

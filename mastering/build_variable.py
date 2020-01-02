@@ -2,7 +2,9 @@ import os
 from plistlib import dump as plDump
 import fontTools.ttLib
 from fontmake.font_project import FontProject
+from fontTools.designspaceLib import DesignSpaceDocument
 from statmake.lib import apply_stylespace_to_variable_font
+from statmake.classes import Stylespace
 
 
 def makeSTAT(directory, designspace):
@@ -42,10 +44,10 @@ def makeSTAT(directory, designspace):
             0: "Linear",
             1: "Casual"
         },
-        "Slant":
+        "Italic":
         {
-            0: "Upright",
-            -15: "Italic"
+            (0, 0.5): "Upright",
+            (-15, 1): "Italic"
         }
     }
 
@@ -58,7 +60,7 @@ def makeSTAT(directory, designspace):
         #
         # Recursive is unusual in that it has both a Italic and Slant
         # axis that need to be linked. This is dealt with at the end.
-        if axis.name not in ["Italic"]:
+        if axis.name not in ["Italic", "Slant"]:
             a = {}
             a["name"] = axis.name
             a["tag"] = axis.tag
@@ -84,22 +86,24 @@ def makeSTAT(directory, designspace):
                         locations.append({"name": name,
                                           "value": value,
                                           })
-            else:
-                for value, name in styles["Slant"].items():
-                    if value != 0:
-                        locations.append({"name": name, "value": value})
-                    else:
-                        locations.append({"name": name,
-                                          "value": value,
-                                          "linked_value": -15,
-                                          "flags": ["ElidableAxisValueName"]
-                                          })
             a["locations"] = locations
         else:
             a = {"name": axis.name, "tag": axis.tag}
         axes.append(a)
 
-    stat = {"axes": axes}
+    locations = []
+    for values, name in styles["Italic"].items():
+        location = {}
+        location["name"] = name
+        axis_values = {}
+        axis_values["Slant"] = values[0]
+        axis_values["Italic"] = values[1]
+        location["axis_values"] = axis_values
+        if values[0] == 0:
+            location["flags"] = ["ElidableAxisValueName"]
+        locations.append(location)
+
+    stat = {"axes": axes, "locations": locations}
     path = os.path.join(directory, "Recursive.stylespace")
     with open(path, 'wb') as fp:
         plDump(stat, fp, sort_keys=False)
@@ -108,29 +112,39 @@ def makeSTAT(directory, designspace):
     return path
 
 
-def build_variable(designspacePath, stylespacePath=None, out=None):
+def build_variable(designspacePath,
+                   stylespacePath=None,
+                   out=None,
+                   verbose="ERROR",
+                   ):
 
     if out is None:
         out = os.path.splitext(os.path.basename(designspacePath))[0] + "-VF.ttf"
 
     print("🏗  Constructing variable font")
-    fp = FontProject()
-
-    fp.build_variable_font(designspacePath, output_path=out)
+    fp = FontProject(verbose=verbose)
+    fp.build_variable_font(designspacePath,
+                           output_path=out,
+                           useProductionNames=True)
 
     if stylespacePath is not None:
         print("🏗  Adding STAT table")
+        ds = DesignSpaceDocument.fromfile(designspacePath)
+        additional_locations = ds.lib.get("org.statmake.additionalLocations",
+                                          {})
         font = fontTools.ttLib.TTFont(out)
-        apply_stylespace_to_variable_font(font, {})
+        stylespace = Stylespace.from_file(stylespacePath)
+        apply_stylespace_to_variable_font(stylespace,
+                                          font,
+                                          additional_locations)
         font.save(out)
+
     print("✅ Built variable font")
 
 
 if __name__ == "__main__":
     import argparse
-    description = """
-    Builds the Recursive variable font.
-    """
+    description = "Builds the Recursive variable font."
     parser = argparse.ArgumentParser(description=description)
     parser.add_argument("designspacePath",
                         help="The path to a designspace file")

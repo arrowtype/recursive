@@ -2,6 +2,7 @@ import os
 import shutil
 import datetime
 from fontParts.fontshell import RFont as Font
+from fontTools import agl
 from designspaceProblems import DesignSpaceChecker
 from fontTools.designspaceLib import DesignSpaceDocument
 
@@ -255,7 +256,81 @@ def sortGlyphOrder(fonts):
     """
     for font in fonts:
         newGlyphOrder = font.naked().unicodeData.sortGlyphNames(font.glyphOrder, sortDescriptors=[dict(type="cannedDesign", ascending=True, allowPseudoUnicode=True)])
+
+        # Trick here to put the .notdef first, as the cannedDesign sort puts it
+        # last, and it must be the first glyph in a font.
+        newGlyphOrder.insert(0, newGlyphOrder.pop())
         font.glyphOrder = newGlyphOrder
+
+
+def checkName(name, mapping):
+    """
+    Helper function that takes in a glyph name and a mapping of glyph
+    names to final (production) names and returns a production name for
+    the provided glyph name.
+
+    For example, given the mapping:
+    {'florin': 'uni0192', }
+
+    florin.tl will be transformed to uni0192.tl
+    florin.simple.tl will be transformed to uni0192.simple_tl
+    florin will be transformed to uni0192
+    a will be returned as a
+
+    *name* is a `string` of the glyph name
+    *mapping* is a `dictionary` of glyph name to final names, both `string`s
+    """
+    if len(name.split('.')) == 2:
+        n, ext = name.split('.')
+        if n in mapping.keys():
+            return f"{mapping[n]}.{ext}"
+        else:
+            return name
+    elif len(name.split('.')) > 2:
+        r = name.split('.')
+        n = check_name(r[0], mapping)
+        return f"{n}.{'_'.join(r[1:])}"
+    else:
+        if name in mapping.keys():
+            return mapping[name]
+        else:
+            return name
+
+
+def setProductionNames(fonts):
+    """
+    Sets the `public.postscriptNames` for a `list` of fonts.
+
+    *fonts* is a `list` of font objects (Defcon or FontParts).
+    """
+    mapping = {
+               'florin': 'uni0192',
+               'f_f': 'f_f',
+               'f_f_i': 'f_f_i',
+               'f_f_l': 'f_f_l',
+               }
+    names = []
+
+    for font in fonts:
+        for glyph in font:
+            added = False
+            if glyph.name not in mapping.keys():
+                if len(glyph.unicodes) == 1:
+                    if glyph.name not in agl.AGL2UV.keys():
+                        mapping[glyph.name] = f"uni{glyph.unicode:04X}"
+                        added = True
+            if not added and glyph.name not in names:
+                names.append(glyph.name)
+
+    for name in names:
+        if name in agl.AGL2UV.keys():
+            mapping[name] = name
+        else:
+            prod_name = checkName(name, mapping)
+            mapping[name] = prod_name
+
+    for font in fonts:
+        font.lib["public.postscriptNames"] = mapping
 
 
 def kerningCompatibility(fonts):
@@ -343,6 +418,9 @@ def prep(designspacePath):
 
     print("🏗  Sorting glyph order to be common")
     sortGlyphOrder(fonts)
+
+    print("🏗  Setting production names")
+    setProductionNames(fonts)
 
     print("🏗  Closing and saving sources")
     for font in fonts:

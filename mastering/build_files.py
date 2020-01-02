@@ -3,14 +3,18 @@ import shutil
 from fontTools.designspaceLib import DesignSpaceDocument
 from prep_fonts import prep, copyFiles
 from build_variable import makeSTAT
-from build_static import buildFolders, buildNameMap, buildFontMenuDB, buildInstances
+from build_static import (buildFolders,
+                          buildNameMap,
+                          buildFontMenuDB,
+                          buildInstances,
+                          buildGlyphOrderAndAlias,
+                          buildFamilyFeatures)
 from utils import getFiles
 
 
 def buildFeatures(src):
     ufos = getFiles(src, "ufo")
     feature = os.path.join(src, "features.fea")
-    print(feature)
     for ufo in ufos:
         shutil.copy(feature, ufo)
     print("🏗  Moved features into UFOs")
@@ -36,10 +40,11 @@ def makeSources(ds, src, designspacePath):
     buildFeatures(src)
 
 
-def buildFiles(sources=True,
+def buildFiles(sources=False,
                static=False,
-               variable=False,
-               ds="recursive-MONO_CASL_wght_slnt_ital--full_gsub.designspace"):
+               variable=True,
+               ds="recursive-MONO_CASL_wght_slnt_ital--full_gsub.designspace",
+               version=1.001):
 
     print("🚚 Building files for mastering")
 
@@ -73,8 +78,12 @@ def buildFiles(sources=True,
         print("\n🚚 Making files for static font mastering")
 
         name_map = buildNameMap()
-        #buildFolders(ds, static_root, name_map)
+        buildFolders(ds, static_root, name_map)
         buildFontMenuDB(ds, static_root, name_map)
+        buildGlyphOrderAndAlias(ds.sources[0].path, static_root)
+        buildFamilyFeatures(static_root,
+                            os.path.join(src, 'features.fea'),
+                            version)
         buildInstances(designspacePath, static_root, name_map)
 
     if variable:

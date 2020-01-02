@@ -1,5 +1,6 @@
 import os
 import shutil
+import re
 from ufoProcessor import DesignSpaceProcessor
 from fontParts.fontshell import RFont as Font
 from ufo2ft import compileTTF
@@ -142,6 +143,122 @@ def fixStandardStems(font):
         font.info.postscriptStemSnapV = newVStems
 
 
+def writeKerning(font, path):
+    """
+    Uses ufo2ft to write out the *font*'s kerning feature file to the *path*
+
+    *font* is a font object (Defcon or FontParts)
+    *path* is a `string` of the path to write the kerning feature file
+    """
+    from ufo2ft.featureWriters.kernFeatureWriter import KernFeatureWriter, ast
+
+    feaFile = ast.FeatureFile()
+    w = KernFeatureWriter()
+    w.write(font, feaFile)
+    with open(path, "w") as f:
+        f.write(str(feaFile))
+
+
+def buildFontInfo(stylename, dir):
+    """
+    Makes the fontinfo file for the Adobe FDK
+
+    Setting 'IsOS/2OBLIQUE' causes weird things to happen with italic fonts
+    so we never set that to true.
+
+    *stylename* is a `string` of the font's style (font.info.styleName)
+    *dir* is a `string` of the path to the directory where the UFO is
+    """
+    style = stylename.split()
+    bold = italic = "false"
+    if "Bold" in style:
+        bold = "true"
+    if "Italic" in style:
+        italic = "true"
+    fontinfo = (f"IsBoldStyle {bold}\n"
+                f"IsItalicStyle {italic}\n"
+                "PreferOS/2TypoMetrics true\n"
+                "IsOS/2WidthWeigthSlopeOnly true\n"
+                "IsOS/2OBLIQUE false\n")
+    path = os.path.join(dir, "fontinfo")
+    with open(path, "w") as f:
+        f.write(fontinfo)
+
+
+def writeFeature(font):
+    path = os.path.join(os.path.split(font.path)[0], "features")
+    hhea = (f"table hhea {{\n"
+            f"    Ascender {font.info.openTypeHheaAscender};\n"
+            f"    Descender {font.info.openTypeHheaDescender};\n"
+            f"    LineGap {font.info.openTypeHheaLineGap};\n"
+            f"}} hhea;\n\n")
+    os2 = (f"table OS/2 {{\n"
+           f"    FSType 0;\n"
+           f"    Panose {' '.join(str(x) for x in font.info.openTypeOS2Panose)};\n"
+           f"    TypoAscender {font.info.openTypeOS2TypoAscender};\n"
+           f"    TypoDescender {font.info.openTypeOS2TypoDescender};\n"
+           f"    TypoLineGap {font.info.openTypeOS2TypoLineGap};\n"
+           f"    winAscent {font.info.openTypeOS2WinAscent};\n"
+           f"    winDescent {font.info.openTypeOS2WinDescent};\n"
+           f"    XHeight {font.info.xHeight};\n"
+           f"    CapHeight {font.info.capHeight};\n"
+           f"    WeightClass {font.info.openTypeOS2WeightClass};\n"
+           f"    WidthClass {font.info.openTypeOS2WidthClass};\n"
+           f'    Vendor "{font.info.openTypeOS2VendorID}";\n'
+           f"}} OS/2;\n\n")
+    includes = ("include (../../features.family);\n"
+                "include (../../features.fea);\n"
+                "include (kern.fea);\n")
+    out = hhea + os2 + includes
+    with open(path, "w") as f:
+        f.write(out)
+
+
+def buildFamilyFeatures(root, features, version):
+    fea_root = os.path.split(features)[0]
+    regex = re.compile(r'/.+/(.+\.fea)')
+    feature = []
+    with open(features, 'r') as f:
+        for l in f:
+            if l.startswith("languagesystem"):
+                feature.append(l)
+            elif l.startswith("#"):
+                pass
+            elif l.startswith("include"):
+                match = regex.search(l)
+                path = os.path.join(fea_root, "features", match.group(1))
+                with open(path, 'r') as fea:
+                    for l in fea:
+                        feature.append(l.replace("\t", "    "))
+                feature.append("\n\n")
+            else:
+                feature.append(l)
+    path = os.path.join(root, "features.fea")
+    with open(path, 'w') as f:
+        f.write("".join(feature))
+
+    head = ("table head {\n"
+            f"    FontRevision {version};\n}}"
+            "head;\n")
+    base = (
+            "table BASE {\n"
+            "    HorizAxis.BaseTagList       ideo  romn;\n"
+            "    HorizAxis.BaseScriptList    DFLT    romn    -250 0,\n"
+            "                                latn    romn    -250 0;\n"
+            "} BASE;\n"
+            )
+    name = (
+            "table name {\n"
+            '    nameid 0 "Copyright 2019 The Recursive Project Authors (github.com/arrowtype/recursive).";\n'
+            '    nameid 0 1 "Copyright 2019 The Recursive Project Authors (github.com/arrowtype/recursive)";\n'
+            "} name;\n"
+            )
+    path = os.path.join(root, "features.family")
+    with open(path, "w") as f:
+        f.write("\n".join([head, base, name]))
+    print("🏗  Made Family features")
+
+
 def buildInstances(designspacePath, root, name_map):
     doc = DesignSpaceProcessor()
     doc.useVarlib = True
@@ -152,7 +269,7 @@ def buildInstances(designspacePath, root, name_map):
         path = os.path.join(root,
                             fn.strip().replace(" ", ""),
                             sn.strip().replace(" ", ""),
-                            os.path.split(i.filename)[1])
+                            os.path.split(i.filename)[1].strip().replace(" ", ""))
         i.path = path
     print("🏗  Generating instance UFOs")
     doc.generateUFO()
@@ -165,7 +282,7 @@ def buildInstances(designspacePath, root, name_map):
 
     print("🏗  Setting values, removing overlap, writing files")
     length = len(fonts)
-    printProgressBar(0, length, prefix='Progress:', suffix='Complete', length=50)
+    printProgressBar(0, length, prefix='  ', suffix='Complete', length=50)
     for i, font in enumerate(fonts):
         font_dir = os.path.split(font.path)[0]
 
@@ -193,7 +310,7 @@ def buildInstances(designspacePath, root, name_map):
         font.info.openTypeOS2WeightClass = weightMap[weight][0]
 
         # Set Panose
-        fillInPanoseValues(font, fullname, weight)
+        fillInPanoseValues(font, weight)
 
         # Set fixed pitch if font is Mono
         if fullname.split()[0] == "Mono":
@@ -209,7 +326,7 @@ def buildInstances(designspacePath, root, name_map):
         # Remove overlap in the font
         for glyph in font:
             glyph.removeOverlap()
-        font.save(ufo)
+        font.save(font.path)
 
         # External files
         # Write out the `fontinfo` file
@@ -222,7 +339,8 @@ def buildInstances(designspacePath, root, name_map):
         # Write out the font feature file
         writeFeature(font)
 
-        printProgressBar(i + 1, length, prefix='Progress:', suffix='Complete', length=50)
+        printProgressBar(i + 1, length, prefix='  ',
+                         suffix='Complete', length=50)
 
     print("✅ Made UFO instances")
 
@@ -234,7 +352,7 @@ def buildFolders(designspace, root, name_map):
     print("🏗  Making folders for static fonts")
     familyNames = {}
     for i in designspace.instances:
-        fn, sn = name_map[(i.familyName, i.styleName)]
+        fn, sn, _ = name_map[(i.familyName, i.styleName)]
         if fn not in familyNames.keys():
             familyNames[fn] = [sn]
         else:
@@ -276,41 +394,23 @@ def buildFontMenuDB(designspace, root, name_map):
     print("🏗  Made FontMenuDB")
 
 
-def buildGlyphOrderAndAlias(root, ):
-    pass
-
-
-def writeKerning(font, path):
-    """
-    Uses ufo2ft to write out the *font*'s kerning feature file to the *path*
-
-    *font* is a font object (Defcon or FontParts)
-    *path* is a `string` of the path to write the kerning feature file
-    """
-    from ufo2ft.featureWriters.kernFeatureWriter import KernFeatureWriter, ast
-
-    feaFile = ast.FeatureFile()
-    w = KernFeatureWriter()
-    w.write(font, feaFile)
+def buildGlyphOrderAndAlias(fontPath, root):
+    font = Font(fontPath)
+    order = font.glyphOrder
+    mapping = font.lib["public.postscriptNames"]
+    path = os.path.join(root, "GlyphOrderAndAliasDB")
     with open(path, "w") as f:
-        f.write(feaFile)
-
-
-def buildFontInfo(stylename, dir):
-    style = stylename.split()
-    bold = italic = False
-    if "Bold" in style:
-        bold = True
-    if "Italic" in style:
-        itlaic = True
-    fontinfo = f"IsBoldStyle {bold}\nIsItalicStyle {italic}\nPreferOS/2TypoMetrics true\nIsOS/2WidthWeigthSlopeOnly true\nIsOS/2OBLIQUE false"
-    path = os.path.join(dir, "fontinfo")
-    with open(path, "w") as f:
-        f.write(fontinfo)
-
-
-def buildFeatures(font):
-    pass
+        for name in order:
+            if name in font.keys():
+                glyph = font[name]
+                finalName = mapping[name]
+                if len(glyph.unicodes) > 1:
+                    unicodes = [f"uni{uni:04X}" for uni in glyph.unicodes]
+                    out = f"{finalName}\t{name}\t{','.join(unicodes)}\n"
+                else:
+                    out = f"{finalName}\t{name}\n"
+                f.write(out)
+        f.write("\n")
 
 
 def buildStatic(root, otf=True, ttf=True):
@@ -325,4 +425,3 @@ def buildStatic(root, otf=True, ttf=True):
     """
     print("Building Static fonts")
     name_map = buildNameMap()
-
