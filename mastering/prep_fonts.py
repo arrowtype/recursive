@@ -280,6 +280,7 @@ def checkName(name, mapping):
     *name* is a `string` of the glyph name
     *mapping* is a `dictionary` of glyph name to final names, both `string`s
     """
+
     if len(name.split('.')) == 2:
         n, ext = name.split('.')
         if n in mapping.keys():
@@ -297,12 +298,36 @@ def checkName(name, mapping):
             return name
 
 
+def setVersion(fonts, version):
+    """
+    Sets the `versionMajor` and `versionMinor` for a `list` of fonts.
+
+    *fonts* is a `list` of font objects (Defcon or FontParts).
+    *version* is a `string` of the version number for the fonts
+    """
+
+    if len(version.split(".")) > 2:
+        raise ValueError
+
+    version = version.split(".")
+    versionMajor = int(version[0])
+    try:
+        versionMinor = int(version[1])
+    except IndexError:
+        versionMinor = 0
+
+    for font in fonts:
+        font.info.versionMajor = versionMajor
+        font.info.versionMinor = versionMinor
+
+
 def setProductionNames(fonts):
     """
     Sets the `public.postscriptNames` for a `list` of fonts.
 
     *fonts* is a `list` of font objects (Defcon or FontParts).
     """
+
     mapping = {
                'florin': 'uni0192',
                'f_f': 'f_f',
@@ -339,6 +364,7 @@ def kerningCompatibility(fonts):
 
     *fonts* is a `list` of font objects (Defcon or FontParts).
     """
+
     local_report = report.get("Added blank kerning", [])
 
     for font in fonts:
@@ -376,7 +402,7 @@ def makeCompatible(fonts):
     report["Removed non-compatible glyphs"] = local_report
 
 
-def prep(designspacePath):
+def prep(designspacePath, version):
     """
     Runs all of the checks and corrections and generates the report.
 
@@ -384,6 +410,7 @@ def prep(designspacePath):
     report on issues with the design space.
 
     *designspacePath* is a `string` of the path to the designspace file
+    *version* is a `string` that is the version to set the font to
     """
 
     # Checking to see if there are any large issues with the designspace
@@ -422,6 +449,10 @@ def prep(designspacePath):
     print("🏗  Setting production names")
     setProductionNames(fonts)
 
+    if version:
+        print("🏗  Setting version")
+        setVersion(fonts, version)
+
     print("🏗  Closing and saving sources")
     for font in fonts:
         font.close(save=True)
@@ -439,6 +470,7 @@ def prep(designspacePath):
 
 
 if __name__ == "__main__":
+
     import argparse
     description = """
     Prepares the sources of a designspace for building a variable font.
@@ -451,6 +483,8 @@ if __name__ == "__main__":
                         help="The path to a designspace file")
     parser.add_argument("-o", "--overwrite", action="store_true",
                         help="Overwrite source files in place.")
+    parser.add_argument("-v", "--version",
+                        help="Version to set in files")
     args = parser.parse_args()
     designspacePath = args.designspacePath
 
@@ -470,4 +504,4 @@ if __name__ == "__main__":
 
         designspacePath = copyFiles(designspacePath, root)
 
-    prep(designspacePath)
+    prep(designspacePath, args.version)

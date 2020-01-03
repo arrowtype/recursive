@@ -43,3 +43,44 @@ def printProgressBar(iteration, total, prefix='', suffix='',
     # Print New Line on Complete
     if iteration == total:
         print()
+
+
+def makeWOFF(files, destination):
+    """
+    Makes WOFF and WOFF2 files from list of paths.
+    This uses the highest compression for making WOFF files. It is slow.
+
+    *files* is a `list` of file paths as `string`
+    *destination* is a `string` of the destination to save the WOFF files.
+    """
+    from fontTools.ttLib import TTFont, sfnt
+    from fontTools.ttLib.sfnt import WOFFFlavorData
+    from fontTools.ttx import makeOutputFileName
+
+    sfnt.USE_ZOPFLI = True
+    sfnt.ZLIB_COMPRESSION_LEVEL = 9
+
+    print("🏗  Making WOFF & WOFF2")
+    printProgressBar(0, len(files), prefix='  ', suffix='Complete', length=50)
+    for i, file in enumerate(files):
+        font = TTFont(file, recalcBBoxes=False, recalcTimestamp=False)
+
+        font.flavor = "woff"
+        data = WOFFFlavorData()
+        data.majorVersion = 1
+        data.minorVersion = 0
+        font.flavorData = data
+
+        outfilename = makeOutputFileName(file,
+                                         outputDir=destination,
+                                         extension='.woff')
+        font.save(outfilename)
+
+        outfilename = makeOutputFileName(source,
+                                         outputDir=destination,
+                                         extension='.woff2')
+        font.flavor = "woff2"
+        font.save(outfilename, reorderTables=False)
+
+        printProgressBar(i + 1, length, prefix='  ',
+                         suffix='Complete', length=50)

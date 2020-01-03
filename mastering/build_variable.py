@@ -1,10 +1,26 @@
 import os
-from plistlib import dump as plDump
 import fontTools.ttLib
+import shutil
+from plistlib import dump as plDump
 from fontmake.font_project import FontProject
 from fontTools.designspaceLib import DesignSpaceDocument
 from statmake.lib import apply_stylespace_to_variable_font
 from statmake.classes import Stylespace
+from utils import getFiles
+
+
+def buildFeatures(src):
+    """
+    Replaces the features.fea file in the UFO with the external
+    features.fea file
+
+    *src* is the source directory with the UFOs and external features.fea file
+    """
+    ufos = getFiles(src, "ufo")
+    feature = os.path.join(src, "features.fea")
+    for ufo in ufos:
+        shutil.copy(feature, ufo)
+    print("🏗  Moved features into UFOs")
 
 
 def makeSTAT(directory, designspace):
@@ -121,6 +137,15 @@ def build_variable(designspacePath,
                    out=None,
                    verbose="ERROR",
                    ):
+    """
+    Builds a variable font from a designspace using fontmake.
+    Post applies the STAT table using a stylespace if given.
+
+    *designspacePath* a `string` of the path to the designspace
+    *stylespacePath* a `string` of the path to the stylespace
+    *out* a `string` of the path where the varible font should be saved
+    *verbose* sets the verbosity level for fontmake. Defaults to "ERROR"
+    """
 
     if out is None:
         out = os.path.splitext(os.path.basename(designspacePath))[0] + "-VF.ttf"

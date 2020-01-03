@@ -3,7 +3,14 @@ import shutil
 import re
 from ufoProcessor import DesignSpaceProcessor
 from fontParts.fontshell import RFont as Font
+from defcon import Font as DFont
 from ufo2ft import compileTTF
+from afdko import makeotf
+from psautohint.autohint import hintFiles, ACOptions
+from ttfautohint import ttfautohint
+from ttfautohint.options import USER_OPTIONS as ttfautohint_options
+from fontTools.ttLib import TTFont
+from fontTools import ttLib
 from utils import getFiles, printProgressBar
 
 # Family specific data
@@ -28,6 +35,7 @@ def buildNameMap():
     familes apart in the instance_names.csv file. Read this to get the
     corrent family and style names for the static fonts.
     """
+
     import csv
     names = {}
     with open('data/instance_names.csv', newline='') as csvfile:
@@ -61,6 +69,7 @@ def getBlueScale(fonts):
 
     *font* is a font object (Defcon or FontParts)
     """
+
     maxZoneHeight = 0
     blueScale = 0.039625
 
@@ -94,6 +103,7 @@ def fillInPanoseValues(font, weight):
     *font* is a font object (Defcon or FontParts)
     *weight* is a `string` of the font's weight value
     """
+
     names = font.info.postscriptFullName.split()
 
     if names[1] == "Mono":
@@ -114,8 +124,35 @@ def fillInPanoseValues(font, weight):
         font.info.openTypeOS2Panose = [2, 11, wght, prop, 4, 2, 2, form, 2, 4]
 
 
-def makeTTF(ufos):
-    pass
+def buildTTFfiles(cff_root, ttf_root):
+    """
+    Copies all the mastering files from cff_root to ttf_root, save the ufo.
+    Then compilies the source ufo into a source ttf for mastering.
+
+    *cff_root* `string` path to the root of the CFF files
+    *ttf_root* `string` path to the root of the TTF files
+    """
+
+    ignore = shutil.ignore_patterns("*.ufo",)
+    print("🏗  Copying files")
+    shutil.copytree(cff_root, ttf_root, ignore=ignore)
+
+    files = getFiles(cff_root, "ufo")
+    print("🏗  Making TTF sources")
+    printProgressBar(0, len(files), prefix='  ', suffix='Complete', length=50)
+    for i, file in enumerate(files):
+        oldPath = os.path.split(file)
+        newPath = []
+        for p in oldPath:
+            if p == "CFF":
+                p = "TTF"
+            newPath.append(p)
+        out = "".join(newPath)
+        ufo = DFont(file)
+        ttf = compileTTF(ufo)
+        ttf.save(out)
+        printProgressBar(i + 1, length, prefix='  ',
+                         suffix='Complete', length=50)
 
 
 def fixStandardStems(font):
@@ -150,6 +187,7 @@ def writeKerning(font, path):
     *font* is a font object (Defcon or FontParts)
     *path* is a `string` of the path to write the kerning feature file
     """
+
     from ufo2ft.featureWriters.kernFeatureWriter import KernFeatureWriter, ast
 
     feaFile = ast.FeatureFile()
@@ -169,6 +207,7 @@ def buildFontInfo(stylename, dir):
     *stylename* is a `string` of the font's style (font.info.styleName)
     *dir* is a `string` of the path to the directory where the UFO is
     """
+
     style = stylename.split()
     bold = italic = "false"
     if "Bold" in style:
@@ -191,6 +230,7 @@ def writeFeature(font):
 
     *font* is a font object (Defcon or FontParts)
     """
+
     path = os.path.join(os.path.split(font.path)[0], "features")
     hhea = (f"table hhea {{\n"
             f"    Ascender {font.info.openTypeHheaAscender};\n"
@@ -220,6 +260,16 @@ def writeFeature(font):
 
 
 def buildFamilyFeatures(root, features, version):
+    """
+    Makes the features.fea and features.family files.
+    Combines the various feature files into one for features.fea
+
+    *root* the root folder where the features files should be saved to
+    *features* the master features.fea file that points to the various other
+               features.
+    *version* a `string` of the version to set the font to
+    """
+
     fea_root = os.path.split(features)[0]
     regex = re.compile(r'/.+/(.+\.fea)')
     feature = []
@@ -265,6 +315,22 @@ def buildFamilyFeatures(root, features, version):
 
 
 def buildInstances(designspacePath, root, name_map):
+    """
+    Generates and cleans up the instances for building the static fonts.
+
+    This sets a variety of font info related values (blueScale, weight class,
+    panose, and fixed pitch)
+
+    It also cleans up the standard ps stems, sets the font features to be
+    nothing, and removes overlap.
+
+    For each instance it generates the fontinfo, kern.fea, and features files
+
+    *designspace* is a designspace object
+    *root* is the root directory where the file structure has been built
+    *name_map* is the name mapping dictionary
+    """
+
     doc = DesignSpaceProcessor()
     doc.useVarlib = True
     doc.roundGeometry = True
@@ -327,6 +393,10 @@ def buildInstances(designspacePath, root, name_map):
         # Set blueScale
         font.info.postscriptBlueScale = blueScale
 
+        # Remove the font features, as this is wholely external and
+        # causes issues with making TTFs
+        font.features.text = ""
+
         # Font cleanup
         # Remove overlap in the font
         for glyph in font:
@@ -353,7 +423,12 @@ def buildInstances(designspacePath, root, name_map):
 def buildFolders(designspace, root, name_map):
     """
     Makes folder structure for static mastering
+
+    *designspace* is a designspace object
+    *root* is the directory where the folders should be built
+    *name_map* is the name mapping dictionary
     """
+
     familyNames = {}
     for i in designspace.instances:
         fn, sn, _ = name_map[(i.familyName, i.styleName)]
@@ -376,9 +451,11 @@ def buildFolders(designspace, root, name_map):
 
 def buildFontMenuDB(designspace, root, name_map):
     """
-    Pulls the postscript, and the mapping names from the designspace.
-    Transforms the family name from "Recursive" to either "Recursive Sans"
-    or "Recursive Mono" for the static fonts.
+    Using the values from the name map, generates a FontMenuNameDB file.
+
+    *designspace* is a designspace object
+    *root* is the directory where the FontMenuNameDB file is to be saved
+    *name_map* is the name mapping dictionary
     """
 
     for i in designspace.instances:
@@ -398,6 +475,14 @@ def buildFontMenuDB(designspace, root, name_map):
 
 
 def buildGlyphOrderAndAlias(fontPath, root):
+    """
+    Using the font's glyphOrder and postscriptNames, generates a
+    GlyphOrderAndAliasDB file.
+
+    *fontPath* is a `string` path to a UFO
+    *root* is the directory to save the GlyphOrderAndAliasDB to
+    """
+
     font = Font(fontPath)
     order = font.glyphOrder
     mapping = font.lib["public.postscriptNames"]
@@ -416,18 +501,169 @@ def buildGlyphOrderAndAlias(fontPath, root):
         f.write("\n")
 
 
-def makeOTF(root):
-
-
-def buildStatic(root, otf=True, ttf=True):
+def nameTableTweak(font):
     """
-    Reads designspace file, generates instance UFOs,
-    builds mastering files for the Adobe FDK, then
-    builds files.
+    Removes nameID 16 and 17 for the Macintosh entry. This makes MS Word
+    much happier to exchange documents cross version and platform.
 
-    *designspacePath* is the path to the designspace file.
-    *outputPath* is the path for file builds.
-
+    *font* is a fontTools font object
     """
-    print("Building Static fonts")
-    name_map = buildNameMap()
+
+    nameIDs = [(16, 1, 0, 0), (17, 1, 0, 0)]
+    nameTable = font["name"]
+
+    for n in nameIDs:
+        nameRecord = nameTable.getName(n[0], n[1], n[2], n[3])
+        if nameRecord is not None:
+            nameTable.names.remove(nameRecord)
+
+
+def makeDSIG(font):
+    """
+    Makes a fake DSIG to keep certain applications happy.
+
+    *font* is a fontTools font object
+    """
+
+    from fontTools.ttLib.tables.D_S_I_G_ import SignatureRecord
+    newDSIG = ttLib.newTable("DSIG")
+    newDSIG.ulVersion = 1
+    newDSIG.usFlag = 1
+    newDSIG.usNumSigs = 1
+    sig = SignatureRecord()
+    sig.ulLength = 20
+    sig.cbSignature = 12
+    sig.usReserved2 = 0
+    sig.usReserved1 = 0
+    sig.pkcs7 = b'\xd3M4\xd3M5\xd3M4\xd3M4'
+    sig.ulFormat = 1
+    sig.ulOffset = 20
+    newDSIG.signatureRecords = [sig]
+    font.tables["DSIG"] = newDSIG
+
+
+def makeSFNT(root, outputPath, kind="otf"):
+    """
+    Generates otf or ttf fonts using the Adobe FDK.
+
+    This also autohints the generated fonts either with psautohint (cff) or
+    ttfautohint (ttf)
+
+    *root* is the root to find the source files in
+    *outputPath* is the path to save the generated fonts to
+    *kind* is either 'otf' or 'ttf'.
+    """
+
+    if kind == "ttf":
+        source = "ttf"
+    else:
+        source = "ufo"
+
+    # make sure output dir contains no files
+    files = getFiles(outputPath, kind)
+    if len(files) != 0:
+        for file in files:
+            os.remove(file)
+
+    print(f"🏗  Initial {kind.upper()} building")
+    files = getFiles(root, source)
+    printProgressBar(0, len(files), prefix='  ', suffix='Complete', length=50)
+    for i, file in enumerate(files):
+
+        # Set the makeotf parameters
+        # -r is release mode
+        # -nshw quiets the "glyph not hinted" warnings, as we
+        #  have yet to run the autohinter (we do that after fonts)
+        #  are built
+
+        args = ["-f", file, "-o", outputPath, "-r", "-nshw"]
+        makeOTFParams = makeotf.MakeOTFParams()
+        makeotf.getOptions(makeOTFParams, args)
+        makeotf.setMissingParams(makeOTFParams)
+        makeotf.setOptionsFromFontInfo(makeOTFParams)
+
+        # Run makeotf
+        makeotf.runMakeOTF(makeOTFParams)
+        printProgressBar(i + 1, length, prefix='  ',
+                         suffix='Complete', length=50)
+
+    print(f"🏗  {kind.upper()} table fixing")
+    files = getFiles(outputPath, kind)
+    printProgressBar(0, len(files), prefix='  ', suffix='Complete', length=50)
+    for i, file in enumerate(files):
+        font = TTFont(file)
+        nameTableTweak(font)
+        makeDSIG(font)
+        font.save(file)
+        printProgressBar(i + 1, length, prefix='  ',
+                         suffix='Complete', length=50)
+
+    print(f"🏗  {kind.upper()} autohinting")
+    files = getFiles(outputPath, kind)
+    printProgressBar(0, len(files), prefix='  ', suffix='Complete', length=50)
+    for i, file in enumerate(files):
+        if kind is "otf":
+            options = ACOptions()
+            options.inputPaths = [file]
+            options.allowChanges = True
+            hintFiles(options)
+        elif kind is "ttf":
+            ttfautohint_options.update(
+                                       in_file=file,
+                                       out_file=file,
+                                       hint_composites=True
+                                       )
+            ttfautohint(ttfautohint_options)
+
+        printProgressBar(i + 1, length, prefix='  ',
+                         suffix='Complete', length=50)
+
+
+def build_static(cff_root, ttf_root, destination, otf=True, ttf=True):
+    """
+    Build the static fonts, CFF and/or TTF flavored OpenType fonts.
+
+    *cff_root* is the path to the files used to build the CFF fonts
+    *ttf_root* is the path to the files used to build the TTF fonts
+    *destination* is where the final fonts should end up
+    *otf* is a boolean. If `True`, CFF OpenType fonts will be built
+    *ttf* is a boolean. If `True`, TTF OpenType fonts will be built
+    """
+
+    if otf:
+        d = os.path.join(destination, "Static_OTF")
+        try:
+            os.makedirs(d)
+        except OSError:
+            if not os.path.isdir(d):
+                raise
+        makeSFNT(cff_root, d)
+    if ttf:
+        d = os.path.join(destination, "Static_TTF")
+        try:
+            os.makedirs(d)
+        except OSError:
+            if not os.path.isdir(d):
+                raise
+        makeSFNT(ttf_root, d, kind="ttf")
+
+
+if __name__ == "__main__":
+
+    import argparse
+    description = "Builds the Recursive static fonts."
+    parser = argparse.ArgumentParser(description=description)
+    parser.add_argument("root",
+                        help="The path to the static root")
+    parser.add_argument("--otf", action='store_true', default=True,
+                        help="Make OTFs")
+    parser.add_argument("--ttf", action='store_true',
+                        help="Make TTFs")
+    parser.add_argument("-o", "--out",
+                        help="Output path")
+    args = parser.parse_args()
+
+    cff_root = os.path.join(args.root, "CFF")
+    ttf_root = os.path.join(args.root, "TTF")
+
+    build_static(cff_root, ttf_root, args.out, otf=args.otf, ttf=args.ttf)
