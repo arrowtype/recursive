@@ -1,17 +1,18 @@
 import os
 import shutil
 import re
+import ttfautohint
 from ufoProcessor import DesignSpaceProcessor
 from fontParts.fontshell import RFont as Font
 from defcon import Font as DFont
 from ufo2ft import compileTTF
 from afdko import makeotf
 from psautohint.autohint import hintFiles, ACOptions
-from ttfautohint import ttfautohint
 from ttfautohint.options import USER_OPTIONS as ttfautohint_options
 from fontTools.ttLib import TTFont
 from fontTools import ttLib
-from utils import getFiles, printProgressBar
+from utils import getFiles, printProgressBar, splitall
+from contextlib import redirect_stdout, redirect_stderr
 
 # Family specific data
 
@@ -141,17 +142,20 @@ def buildTTFfiles(cff_root, ttf_root):
     print("🏗  Making TTF sources")
     printProgressBar(0, len(files), prefix='  ', suffix='Complete', length=50)
     for i, file in enumerate(files):
-        oldPath = os.path.split(file)
+        oldPath = splitall(file)
         newPath = []
         for p in oldPath:
             if p == "CFF":
                 p = "TTF"
             newPath.append(p)
-        out = "".join(newPath)
-        ufo = DFont(file)
-        ttf = compileTTF(ufo)
-        ttf.save(out)
-        printProgressBar(i + 1, length, prefix='  ',
+        out = os.path.join(*newPath)
+        out = out[:-4] + ".ttf"
+        with open(os.path.join(ttf_root, f"makeotf_output.txt"), "a") as f:
+            with redirect_stdout(f), redirect_stderr(f):
+                ufo = DFont(file)
+                ttf = compileTTF(ufo, useProductionNames=False)
+                ttf.save(out)
+        printProgressBar(i + 1, len(files), prefix='  ',
                          suffix='Complete', length=50)
 
 
@@ -331,6 +335,36 @@ def buildInstances(designspacePath, root, name_map):
     *name_map* is the name mapping dictionary
     """
 
+    overlapGlyphs = ["Aogonek", "Aring", "Aringacute", "Ccedilla",
+                     "Ccedillaacute", "Dcroat", "Ecedillabreve", "Eng",
+                     "Eogonek", "Eth", "Hbar", "Iogonek", "Lslash",
+                     "Lslash.sans", "Nhookleft", "Ohorn", "Ohornacute",
+                     "Ohorndot", "Ohorngrave", "Ohornhook", "Ohorntilde",
+                     "Oogonek", "Oslash", "Oslashacute", "Q", "Scedilla",
+                     "Tbar", "Tcedilla", "Uhorn", "Uhornacute", "Uhorndot",
+                     "Uhorngrave", "Uhornhook", "Uhorntilde", "Uogonek",
+                     "aogonek", "aogonek.italic", "aogonek.simple",
+                     "aringacute", "aringacute.italic", "aringacute.simple",
+                     "ccedilla", "ccedilla.italic", "ccedillaacute",
+                     "ccedillaacute.italic", "dcroat", "ecedillabreve",
+                     "ecedillabreve.italic", "eogonek", "equal_equal.code",
+                     "hbar", "iogonek", "iogonek.italic", "iogonek.mono",
+                     "iogonek.simple", "lslash", "lslash.italic",
+                     "lslash.mono", "lslash.sans", "lslash.simple",
+                     "nhookleft", "notequal", "notequal.case",
+                     "numbersign_numbersign.code",
+                     "numbersign_numbersign_numbersign.code",
+                     "numbersign_numbersign_numbersign_numbersign.code",
+                     "ohorn", "ohornacute", "ohorndot", "ohorngrave",
+                     "ohornhook", "ohorntilde", "oogonek", "oslash",
+                     "oslashacute", "ringacute", "ringacute.case", "scedilla",
+                     "scedilla.italic", "tbar", "tcedilla", "uhorn",
+                     "uhorn.italic", "uhornacute", "uhornacute.italic",
+                     "uhorndot", "uhorndot.italic", "uhorngrave",
+                     "uhorngrave.italic", "uhornhook", "uhornhook.italic",
+                     "uhorntilde", "uhorntilde.italic", "uogonek",
+                     "uogonek.italic"]
+
     doc = DesignSpaceProcessor()
     doc.useVarlib = True
     doc.roundGeometry = True
@@ -399,6 +433,8 @@ def buildInstances(designspacePath, root, name_map):
 
         # Font cleanup
         # Remove overlap in the font
+        for name in overlapGlyphs:
+            font[name].decompose()
         for glyph in font:
             glyph.removeOverlap()
         font.save(font.path)
@@ -458,14 +494,15 @@ def buildFontMenuDB(designspace, root, name_map):
     *name_map* is the name mapping dictionary
     """
 
+    out = ""
     for i in designspace.instances:
         fn, sn, m1 = name_map[(i.familyName, i.styleName)]
-        out = (f"[{i.postScriptFontName}]\n"
-               f"    f={fn}\n"
-               f"    s={sn}\n"
-               f"    l={i.styleMapFamilyName}\n"
-               f"    m=1,{m1}\n\n"
-               )
+        out += (f"[{i.postScriptFontName}]\n"
+                f"    f={fn}\n"
+                f"    s={sn}\n"
+                f"    l={i.styleMapFamilyName}\n"
+                f"    m=1,{m1}\n\n"
+                )
 
     path = os.path.join(root, "FontMenuNameDB")
     with open(path, "w") as f:
@@ -577,14 +614,17 @@ def makeSFNT(root, outputPath, kind="otf"):
         #  are built
 
         args = ["-f", file, "-o", outputPath, "-r", "-nshw"]
-        makeOTFParams = makeotf.MakeOTFParams()
-        makeotf.getOptions(makeOTFParams, args)
-        makeotf.setMissingParams(makeOTFParams)
-        makeotf.setOptionsFromFontInfo(makeOTFParams)
+        with open(os.path.join(outputPath, f"makeotf_output.txt"), "a") as f:
+            with redirect_stdout(f), redirect_stderr(f):
+                makeOTFParams = makeotf.MakeOTFParams()
+                makeotf.getOptions(makeOTFParams, args)
+                makeotf.setMissingParams(makeOTFParams)
+                makeotf.setOptionsFromFontInfo(makeOTFParams)
 
-        # Run makeotf
-        makeotf.runMakeOTF(makeOTFParams)
-        printProgressBar(i + 1, length, prefix='  ',
+                # Run makeotf
+                makeotf.runMakeOTF(makeOTFParams)
+
+        printProgressBar(i + 1, len(files), prefix='  ',
                          suffix='Complete', length=50)
 
     print(f"🏗  {kind.upper()} table fixing")
@@ -595,7 +635,7 @@ def makeSFNT(root, outputPath, kind="otf"):
         nameTableTweak(font)
         makeDSIG(font)
         font.save(file)
-        printProgressBar(i + 1, length, prefix='  ',
+        printProgressBar(i + 1, len(files), prefix='  ',
                          suffix='Complete', length=50)
 
     print(f"🏗  {kind.upper()} autohinting")
@@ -606,16 +646,21 @@ def makeSFNT(root, outputPath, kind="otf"):
             options = ACOptions()
             options.inputPaths = [file]
             options.allowChanges = True
-            hintFiles(options)
+            with open(os.path.join(outputPath, f"autohint_output.txt"), "a") as f:
+                with redirect_stdout(f), redirect_stderr(f):
+                    hintFiles(options)
         elif kind is "ttf":
             ttfautohint_options.update(
                                        in_file=file,
                                        out_file=file,
                                        hint_composites=True
                                        )
-            ttfautohint(ttfautohint_options)
+            print(ttfautohint_options)
+            with open(os.path.join(outputPath, f"autohint_output.txt"), "a") as f:
+                with redirect_stdout(f), redirect_stderr(f):
+                    ttfautohint.ttfautohint(ttfautohint_options)
 
-        printProgressBar(i + 1, length, prefix='  ',
+        printProgressBar(i + 1, len(files), prefix='  ',
                          suffix='Complete', length=50)
 
 
@@ -642,9 +687,11 @@ def build_static(cff_root, ttf_root, destination, otf=True, ttf=True):
         d = os.path.join(destination, "Static_TTF")
         try:
             os.makedirs(d)
+            buildTTFfiles(cff_root, ttf_root)
         except OSError:
             if not os.path.isdir(d):
                 raise
+
         makeSFNT(ttf_root, d, kind="ttf")
 
 
@@ -655,12 +702,12 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=description)
     parser.add_argument("root",
                         help="The path to the static root")
-    parser.add_argument("--otf", action='store_true', default=True,
+    parser.add_argument("out",
+                        help="The path to the output directory")
+    parser.add_argument("--otf", action='store_true',
                         help="Make OTFs")
     parser.add_argument("--ttf", action='store_true',
                         help="Make TTFs")
-    parser.add_argument("-o", "--out",
-                        help="Output path")
     args = parser.parse_args()
 
     cff_root = os.path.join(args.root, "CFF")

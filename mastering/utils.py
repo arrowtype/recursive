@@ -20,6 +20,25 @@ def getFiles(path, extension):
                 file[-len(extension):] == extension]
 
 
+def splitall(path):
+    """
+    Splits a path into all it's parts, returns a list.
+    """
+    allparts = []
+    while 1:
+        parts = os.path.split(path)
+        if parts[0] == path:  # sentinel for absolute paths
+            allparts.insert(0, parts[0])
+            break
+        elif parts[1] == path: # sentinel for relative paths
+            allparts.insert(0, parts[1])
+            break
+        else:
+            path = parts[0]
+            allparts.insert(0, parts[1])
+    return allparts
+
+
 def printProgressBar(iteration, total, prefix='', suffix='',
                      decimals=1, length=100, fill='█'):
     """
@@ -84,3 +103,15 @@ def makeWOFF(files, destination):
 
         printProgressBar(i + 1, length, prefix='  ',
                          suffix='Complete', length=50)
+
+
+def batchCheckOutlines(root):
+    from afdko.checkoutlinesufo import run as checkoutlinesufo
+    from contextlib import redirect_stdout, redirect_stderr
+    import re
+
+    regex = re.compile(r'[\.]{2,}')
+
+    files = getFiles(root, "ufo")
+    for file in files:
+        pass

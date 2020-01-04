@@ -5,6 +5,7 @@ from fontParts.fontshell import RFont as Font
 from fontTools import agl
 from designspaceProblems import DesignSpaceChecker
 from fontTools.designspaceLib import DesignSpaceDocument
+from ufonormalizer import normalizeUFO
 
 # A re-write of Varfont Prep (https://github.com/arrowtype/varfont-prep)
 # for the commandline. This just does what is needed to get the Recursive
@@ -456,6 +457,10 @@ def prep(designspacePath, version):
     print("🏗  Closing and saving sources")
     for font in fonts:
         font.close(save=True)
+
+    print("🏗  Normalize UFOs")
+    for path in sources:
+        normalizeUFO(path)
 
     print("🏗  Checking full design space")
     dsc.checkEverything()

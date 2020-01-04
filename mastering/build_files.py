@@ -8,8 +8,38 @@ from build_static import (buildFolders,
                           buildFontMenuDB,
                           buildInstances,
                           buildGlyphOrderAndAlias,
-                          buildFamilyFeatures,
-                          buildTTFfiles)
+                          buildFamilyFeatures)
+
+
+def getFolders(ds):
+    """
+    Makes path strings for all the paths needed.
+
+    Returns a dictionary of paths.
+
+    *ds* is the designspace file.
+    """
+
+    root = os.path.join(os.getcwd(), "build")
+    static_root = os.path.join(root, "static")
+    cff_root = os.path.join(static_root, "CFF")
+    ttf_root = os.path.join(static_root, "TTF")
+    var_root = os.path.join(root, "var")
+    src = os.path.join(root, "src")
+    designspacePath = os.path.join(src, ds)
+    stylespacePath = os.path.join(var_root, "Recursive.stylespace")
+
+    paths = {"root": root,
+             "static:": static_root,
+             "cff": cff_root,
+             "ttf": ttf_root,
+             "var": var_root,
+             "src": src,
+             "designspace": designspacePath,
+             "stylespace": stylespacePath
+             }
+
+    return paths
 
 
 def makeSources(ds, src, designspacePath, version):
@@ -32,61 +62,46 @@ def makeSources(ds, src, designspacePath, version):
     buildFeatures(src)
 
 
-def buildFiles(sources=False,
+def buildFiles(sources=True,
                static=True,
                variable=True,
                ds="recursive-MONO_CASL_wght_slnt_ital--full_gsub.designspace",
-               version="1.001"):
+               version="0.000"):
 
     print("🚚 Building files for mastering")
 
-    root = os.path.join(os.getcwd(), "build")
-    static_root = os.path.join(root, "static")
-    cff_root = os.path.join(static_root, "CFF")
-    ttf_root = os.path.join(static_root, "TTF")
-    var_root = os.path.join(root, "var")
-    src = os.path.join(root, "src")
-    designspacePath = os.path.join(src, ds)
-
-    paths = {"root": root,
-             "static:": static_root,
-             "cff": cff_root,
-             "ttf": ttf_root,
-             "var": var_root,
-             "src": src,
-             "designspace": designspacePath,
-             }
+    paths = getFolders(ds)
 
     if sources:
         print("\n🚚 Generating sources")
-        if os.path.exists(root):
-            shutil.rmtree(root)
+        if os.path.exists(paths["root"]):
+            shutil.rmtree(paths["root"])
 
-        os.mkdir(root)
-        os.mkdir(static_root)
-        os.mkdir(var_root)
+        os.mkdir(paths["root"])
+        os.mkdir(paths["static"])
+        os.mkdir(paths["var"])
 
-        makeSources(ds, src, designspacePath, version)
+        makeSources(ds, paths["src"], paths["designspace"], version)
 
-    ds = DesignSpaceDocument.fromfile(designspacePath)
+    ds = DesignSpaceDocument.fromfile(paths["designspace"])
 
     if static:
         print("\n🚚 Making files for static font mastering")
 
         name_map = buildNameMap()
-        buildFolders(ds, cff_root, name_map)
-        buildFontMenuDB(ds, cff_root, name_map)
-        buildGlyphOrderAndAlias(ds.sources[0].path, cff_root)
-        buildFamilyFeatures(cff_root,
-                            os.path.join(src, 'features.fea'),
+        print(name_map)
+        buildFolders(ds, paths["CFF"], name_map)
+        buildFontMenuDB(ds, paths["CFF"], name_map)
+        buildGlyphOrderAndAlias(ds.sources[0].path, paths["CFF"])
+        buildFamilyFeatures(paths["CFF"],
+                            os.path.join(paths["src"], 'features.fea'),
                             version)
-        buildInstances(designspacePath, cff_root, name_map)
-        buildTTFfiles(cff_root, ttf_root)
+        buildInstances(paths["designspace"], paths["CFF"], name_map)
 
     if variable:
         print("\n🚚 Making files for varible font mastering")
         # Make STAT table source
-        paths["stylespace"] = makeSTAT(var_root, ds)
+        makeSTAT(paths["stylespace"], ds)
 
     return paths
 

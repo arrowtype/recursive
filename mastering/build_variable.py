@@ -23,7 +23,7 @@ def buildFeatures(src):
     print("🏗  Moved features into UFOs")
 
 
-def makeSTAT(directory, designspace):
+def makeSTAT(path, designspace):
     """
     Create a stylespace.plist for https://github.com/daltonmaag/statmake.
     This is a bit more rational than dealing with TTX files for the STAT
@@ -36,8 +36,7 @@ def makeSTAT(directory, designspace):
     of the code be generic, save for the special sauce Recursive needs for
     Italic.
 
-    *directory* is a `string` of the path to the directory to save the
-                stylespace file
+    *path* is a `string` of the path to the to save the stylespace file
     *designspace* is a `DesignSpaceDocument` object
     """
 
@@ -124,12 +123,10 @@ def makeSTAT(directory, designspace):
         locations.append(location)
 
     stat = {"axes": axes, "locations": locations}
-    path = os.path.join(directory, "Recursive.stylespace")
     with open(path, 'wb') as fp:
         plDump(stat, fp, sort_keys=False)
 
     print("🏗  Made stylespace")
-    return path
 
 
 def build_variable(designspacePath,
