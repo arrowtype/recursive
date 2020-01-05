@@ -1,8 +1,14 @@
+afdko>=3.1.0
 fontmake==2.0.5
 defcon
 cu2qu
 brotli
-fontParts
+fontParts>=0.9.2
+psautohint>=2.0.0
+statmake>=0.2.2
+ttfautohint-py>=0.4.3
+ufoProcessor>=1.8
+git+https://github.com/LettError/DesignspaceProblems
 
 # to run drawbot proofs
 git+https://github.com/typemytype/drawbot
