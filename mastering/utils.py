@@ -23,6 +23,8 @@ def getFiles(path, extension):
 def splitall(path):
     """
     Splits a path into all it's parts, returns a list.
+
+    *path* is the path to split
     """
     allparts = []
     while 1:
@@ -66,43 +68,26 @@ def printProgressBar(iteration, total, prefix='', suffix='',
 
 def makeWOFF(files, destination):
     """
-    Makes WOFF and WOFF2 files from list of paths.
-    This uses the highest compression for making WOFF files. It is slow.
+    Makes WOFF2 files from list of paths.
 
     *files* is a `list` of file paths as `string`
     *destination* is a `string` of the destination to save the WOFF files.
     """
-    from fontTools.ttLib import TTFont, sfnt
-    from fontTools.ttLib.sfnt import WOFFFlavorData
+    from fontTools.ttLib import woff2
     from fontTools.ttx import makeOutputFileName
 
-    sfnt.USE_ZOPFLI = True
-    sfnt.ZLIB_COMPRESSION_LEVEL = 9
+    if not os.path.exists(destination):
+        os.mkdir(destination)
 
     print("🏗  Making WOFF & WOFF2")
-    printProgressBar(0, len(files), prefix='  ', suffix='Complete', length=50)
     for i, file in enumerate(files):
-        font = TTFont(file, recalcBBoxes=False, recalcTimestamp=False)
-
-        font.flavor = "woff"
-        data = WOFFFlavorData()
-        data.majorVersion = 1
-        data.minorVersion = 0
-        font.flavorData = data
-
         outfilename = makeOutputFileName(file,
                                          outputDir=destination,
-                                         extension='.woff')
-        font.save(outfilename)
-
-        outfilename = makeOutputFileName(source,
-                                         outputDir=destination,
                                          extension='.woff2')
-        font.flavor = "woff2"
-        font.save(outfilename, reorderTables=False)
+        if os.path.exists(outfilename):
+            os.remove(outfilename)
 
-        printProgressBar(i + 1, length, prefix='  ',
-                         suffix='Complete', length=50)
+        woff2.compress(file, outfilename)
 
 
 def batchCheckOutlines(root):
@@ -110,8 +95,67 @@ def batchCheckOutlines(root):
     from contextlib import redirect_stdout, redirect_stderr
     import re
 
-    regex = re.compile(r'[\.]{2,}')
-
     files = getFiles(root, "ufo")
-    for file in files:
-        pass
+
+    skips = ["uni000D has no contours\n",
+             "uniE0A0 has no contours\n", ]
+
+    outputFile = os.path.join(root, "checkoutlines.txt")
+    if os.path.exists(outputFile):
+        os.remove(outputFile)
+
+    print("🏗  Running checkoutlinesUFO on files")
+    printProgressBar(0, len(files), prefix='  ', suffix='Complete', length=50)
+    for i, file in enumerate(files):
+        with open(outputFile, "a") as f:
+            with redirect_stdout(f), redirect_stderr(f):
+                print(f"Checking {file}")
+                checkoutlinesufo([file, "--all"])
+                print("\n\n")
+        printProgressBar(i + 1, len(files), prefix='  ',
+                         suffix='Complete', length=50)
+
+    log = []
+    with open(outputFile, "r") as f:
+        for line in f:
+            if not line.startswith("Checking"):
+                pass1 = re.sub(r'[\.]{2,}', '', line)
+                pass2 = re.sub(r' Flat curve at \([0-9,\.]+, [0-9,\.]+\)\.',
+                               '', pass1)
+                if len(pass2.split()) > 1:
+                    if pass2 not in skips:
+                        log.append(pass2)
+            elif line.startswith("Checking"):
+                log.append("\n\n" + line)
+
+    with open(outputFile, "w") as f:
+        f.write("".join(log))
+
+
+if __name__ == "__main__":
+
+    import argparse
+    description = "Two helper tools"
+    parser = argparse.ArgumentParser(description=description)
+    group = parser.add_mutually_exclusive_group()
+    parser.add_argument("directory", help="Directory of files to work on")
+    group.add_argument("-w", "--woff", action="store_true",
+                       help="Make WOFF & WOFF2 files from fonts in directory")
+    group.add_argument("-c", "--checkoutlines", action="store_true",
+                       help="Run checkoutlines on all UFOs in directory")
+
+    args = parser.parse_args()
+
+    if args.woff:
+        out = os.path.join(args.directory, "WOFF")
+        ttfs = getFiles(args.directory, 'ttf')
+        otfs = getFiles(args.directory, 'otf')
+        fonts = ttfs + otfs
+        print(fonts)
+        if len(fonts) != 0:
+            makeWOFF(fonts, out)
+        else:
+            print("No otfs or ttfs to make WOFFs from")
+
+    if args.checkoutlines:
+        batchCheckOutlines(args.directory)

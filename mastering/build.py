@@ -1,4 +1,6 @@
 import os
+import shutil
+from pathlib import Path
 from build_files import buildFiles, getFolders
 from build_variable import build_variable
 from build_static import build_static
@@ -16,7 +18,7 @@ if __name__ == "__main__":
                         help="Build all (source files, variable, static fonts, & WOFF")
     parser.add_argument("-f", "--files", action="store_true",
                         help="Build source files for mastering")
-    parser.add_argument("-v", "--variable", action="store_true",
+    parser.add_argument("-var", "--variable", action="store_true",
                         help="Build variable font")
     parser.add_argument("-s", "--static", action="store_true",
                         help="Build static fonts")
@@ -33,39 +35,40 @@ if __name__ == "__main__":
     if args.out:
         out = args.out
     else:
-        out = os.path.join("..", os.getcwd(), f"fonts_{version}")
+        out = os.path.join(Path(os.getcwd()).parents[0],
+                           f"fonts_{version}")
+
+    if not os.path.exists(out):
+        os.mkdir(out)
+
+    outPaths = [os.path.join(out, "Variable_TTF", f"Recursive_VF_{version}.ttf"),
+                os.path.join(out, "Static_OTF"),
+                os.path.join(out, "Static_TTF")]
 
     if args.all:
-        files = buildFiles(version=version)
+        args.files = True
+        args.variable = True
+        args.static = True
+        args.woff = True
 
-        var_out = os.path.join(out, "Variable_TTF")
-        build_variable(designspacePath=files["designspace"]
+    if args.files:
+        files = buildFiles(version=version)
+    else:
+        files = getFolders("recursive-MONO_CASL_wght_slnt_ital--full_gsub.designspace")
+
+    if args.variable:
+        build_variable(designspacePath=files["designspace"],
                        stylespacePath=files["stylespace"],
-                       out=out)
+                       out=outPaths[0])
+
+    if args.static:
         build_static(files["cff"], files["ttf"], out)
 
-        ttf = getFiles(out, "ttf")
-        otfs = getFiles(out, "otf")
-        fonts = ttfs + otfs
-        makeWOFF(fonts, os.path.join(out, "WOFFS"))
-
-    else:
-        if args.files:
-            files = buildFiles(version=version)
-        else:
-            files = getFolders()
-
-        if args.variable:
-            var_out = os.path.join(out, "Variable_TTF")
-            build_variable(designspacePath=files["designspace"]
-                           stylespacePath=files["stylespace"],
-                           out=out)
-
-        if args.static:
-            build_static(files["cff"], files["ttf"], out)
-
-        if args.woff:
-            ttf = getFiles(out, "ttf")
-            otfs = getFiles(out, "otf")
-            fonts = ttfs + otfs
-            makeWOFF(fonts, os.path.join(out, "WOFFS"))
+    if args.woff:
+        for path in outPaths:
+            if os.path.exists(path):
+                ttfs = getFiles(out, "ttf")
+                otfs = getFiles(out, "otf")
+                fonts = ttfs + otfs
+                print(f"🏗  Making WOFFs for {path}")
+                makeWOFF(fonts, os.path.join(path, "WOFFS"))

@@ -1,17 +1,16 @@
 import os
 import shutil
 import re
+import subprocess
 import ttfautohint
 from ufoProcessor import DesignSpaceProcessor
 from fontParts.fontshell import RFont as Font
 from defcon import Font as DFont
 from ufo2ft import compileTTF
-from afdko import makeotf
-from psautohint.autohint import hintFiles, ACOptions
 from ttfautohint.options import USER_OPTIONS as ttfautohint_options
 from fontTools.ttLib import TTFont
 from fontTools import ttLib
-from utils import getFiles, printProgressBar, splitall
+from utils import getFiles, printProgressBar, splitall, batchCheckOutlines
 from contextlib import redirect_stdout, redirect_stderr
 
 # Family specific data
@@ -107,7 +106,7 @@ def fillInPanoseValues(font, weight):
 
     names = font.info.postscriptFullName.split()
 
-    if names[1] == "Mono":
+    if names[1] == "Mono" or names[1] == "Mn":
         prop = 9
     else:
         prop = 4
@@ -140,6 +139,11 @@ def buildTTFfiles(cff_root, ttf_root):
 
     files = getFiles(cff_root, "ufo")
     print("🏗  Making TTF sources")
+
+    outputFile = os.path.join(ttf_root, "make_ttf_source_output.txt")
+    if os.path.exists(outputFile):
+        os.remove(outputFile)
+
     printProgressBar(0, len(files), prefix='  ', suffix='Complete', length=50)
     for i, file in enumerate(files):
         oldPath = splitall(file)
@@ -150,7 +154,7 @@ def buildTTFfiles(cff_root, ttf_root):
             newPath.append(p)
         out = os.path.join(*newPath)
         out = out[:-4] + ".ttf"
-        with open(os.path.join(ttf_root, f"makeotf_output.txt"), "a") as f:
+        with open(outputFile, "a") as f:
             with redirect_stdout(f), redirect_stderr(f):
                 ufo = DFont(file)
                 ttf = compileTTF(ufo, useProductionNames=False)
@@ -302,8 +306,8 @@ def buildFamilyFeatures(root, features, version):
     base = (
             "table BASE {\n"
             "    HorizAxis.BaseTagList       ideo  romn;\n"
-            "    HorizAxis.BaseScriptList    DFLT    romn    -250 0,\n"
-            "                                latn    romn    -250 0;\n"
+            "    HorizAxis.BaseScriptList    DFLT    romn    -150 0,\n"
+            "                                latn    romn    -150 0;\n"
             "} BASE;\n"
             )
     name = (
@@ -414,11 +418,16 @@ def buildInstances(designspacePath, root, name_map):
         # Set weight class
         font.info.openTypeOS2WeightClass = weightMap[weight][0]
 
+        splitFn = fullname.split()
+        # Set the Italic angle
+        if "Italic" in splitFn:
+            font.info.italicAngle = -15
+
         # Set Panose
         fillInPanoseValues(font, weight)
 
         # Set fixed pitch if font is Mono
-        if fullname.split()[0] == "Mono":
+        if "Mono" in splitFn or "Mn" in splitFn:
             font.info.postscriptIsFixedPitch = True
 
         # Fix standard stems
@@ -454,6 +463,7 @@ def buildInstances(designspacePath, root, name_map):
                          suffix='Complete', length=50)
 
     print("✅ Made UFO instances")
+    batchCheckOutlines(root)
 
 
 def buildFolders(designspace, root, name_map):
@@ -604,6 +614,10 @@ def makeSFNT(root, outputPath, kind="otf"):
 
     print(f"🏗  Initial {kind.upper()} building")
     files = getFiles(root, source)
+    outputFile = os.path.join(outputPath, "makeotf_output.txt")
+    if os.path.exists(outputFile):
+        os.remove(outputFile)
+
     printProgressBar(0, len(files), prefix='  ', suffix='Complete', length=50)
     for i, file in enumerate(files):
 
@@ -613,16 +627,13 @@ def makeSFNT(root, outputPath, kind="otf"):
         #  have yet to run the autohinter (we do that after fonts)
         #  are built
 
-        args = ["-f", file, "-o", outputPath, "-r", "-nshw"]
-        with open(os.path.join(outputPath, f"makeotf_output.txt"), "a") as f:
-            with redirect_stdout(f), redirect_stderr(f):
-                makeOTFParams = makeotf.MakeOTFParams()
-                makeotf.getOptions(makeOTFParams, args)
-                makeotf.setMissingParams(makeOTFParams)
-                makeotf.setOptionsFromFontInfo(makeOTFParams)
-
-                # Run makeotf
-                makeotf.runMakeOTF(makeOTFParams)
+        args = ["makeotf", "-f", file, "-o", outputPath, "-r", "-nshw"]
+        run = subprocess.run(args,
+                             stdout=subprocess.PIPE,
+                             stderr=subprocess.STDOUT,
+                             universal_newlines=True)
+        with open(outputFile, "a") as f:
+            f.write(run.stdout)
 
         printProgressBar(i + 1, len(files), prefix='  ',
                          suffix='Complete', length=50)
@@ -640,25 +651,30 @@ def makeSFNT(root, outputPath, kind="otf"):
 
     print(f"🏗  {kind.upper()} autohinting")
     files = getFiles(outputPath, kind)
+
+    outputFile = os.path.join(outputPath, "autohint_output.txt")
+    if os.path.exists(outputFile):
+        os.remove(outputFile)
+
     printProgressBar(0, len(files), prefix='  ', suffix='Complete', length=50)
     for i, file in enumerate(files):
         if kind is "otf":
-            options = ACOptions()
-            options.inputPaths = [file]
-            options.allowChanges = True
-            with open(os.path.join(outputPath, f"autohint_output.txt"), "a") as f:
-                with redirect_stdout(f), redirect_stderr(f):
-                    hintFiles(options)
+            args = ["psautohint", file]
+            run = subprocess.run(args,
+                                 stdout=subprocess.PIPE,
+                                 stderr=subprocess.STDOUT,
+                                 universal_newlines=True)
+            with open(outputFile, "a") as f:
+                f.write(run.stdout)
         elif kind is "ttf":
             ttfautohint_options.update(
                                        in_file=file,
                                        out_file=file,
                                        hint_composites=True
                                        )
-            print(ttfautohint_options)
-            with open(os.path.join(outputPath, f"autohint_output.txt"), "a") as f:
+            with open(outputFile, "a") as f:
                 with redirect_stdout(f), redirect_stderr(f):
-                    ttfautohint.ttfautohint(ttfautohint_options)
+                    ttfautohint.ttfautohint()
 
         printProgressBar(i + 1, len(files), prefix='  ',
                          suffix='Complete', length=50)

@@ -5,7 +5,6 @@ from fontParts.fontshell import RFont as Font
 from fontTools import agl
 from designspaceProblems import DesignSpaceChecker
 from fontTools.designspaceLib import DesignSpaceDocument
-from ufonormalizer import normalizeUFO
 
 # A re-write of Varfont Prep (https://github.com/arrowtype/varfont-prep)
 # for the commandline. This just does what is needed to get the Recursive
@@ -264,41 +263,6 @@ def sortGlyphOrder(fonts):
         font.glyphOrder = newGlyphOrder
 
 
-def checkName(name, mapping):
-    """
-    Helper function that takes in a glyph name and a mapping of glyph
-    names to final (production) names and returns a production name for
-    the provided glyph name.
-
-    For example, given the mapping:
-    {'florin': 'uni0192', }
-
-    florin.tl will be transformed to uni0192.tl
-    florin.simple.tl will be transformed to uni0192.simple_tl
-    florin will be transformed to uni0192
-    a will be returned as a
-
-    *name* is a `string` of the glyph name
-    *mapping* is a `dictionary` of glyph name to final names, both `string`s
-    """
-
-    if len(name.split('.')) == 2:
-        n, ext = name.split('.')
-        if n in mapping.keys():
-            return f"{mapping[n]}.{ext}"
-        else:
-            return name
-    elif len(name.split('.')) > 2:
-        r = name.split('.')
-        n = check_name(r[0], mapping)
-        return f"{n}.{'_'.join(r[1:])}"
-    else:
-        if name in mapping.keys():
-            return mapping[name]
-        else:
-            return name
-
-
 def setVersion(fonts, version):
     """
     Sets the `versionMajor` and `versionMinor` for a `list` of fonts.
@@ -322,6 +286,44 @@ def setVersion(fonts, version):
         font.info.versionMinor = versionMinor
 
 
+def checkName(name, mapping):
+    """
+    Helper function that takes in a glyph name and a mapping of glyph
+    names to final (production) names and returns a production name for
+    the provided glyph name.
+
+    For example, given the mapping:
+    {'florin': 'uni0192', }
+
+    florin.tl will be transformed to uni0192.tl
+    florin.simple.tl will be transformed to uni0192.simple_tl
+    florin will be transformed to uni0192
+    a will be returned as a
+
+    *name* is a `string` of the glyph name
+    *mapping* is a `dictionary` of glyph name to final names, both `string`s
+    """
+
+    if len(name.split('.')) == 2:
+        n, ext = name.split('.')
+        n = checkName(n, mapping)
+        return f"{n}.{ext}"
+    elif len(name.split('.')) > 2:
+        r = name.split('.')
+        n = checkName(r[0], mapping)
+        return f"{n}.{'_'.join(r[1:])}"
+    elif len(name.split('_')) == 2:
+        n, ext = name.split('_')
+        n = checkName(n, mapping)
+        ext = checkName(ext, mapping)
+        return f"{n}_{ext}"
+    else:
+        if name in mapping.keys():
+            return mapping[name]
+        else:
+            return name
+
+
 def setProductionNames(fonts):
     """
     Sets the `public.postscriptNames` for a `list` of fonts.
@@ -330,22 +332,45 @@ def setProductionNames(fonts):
     """
 
     mapping = {
+               'acutecomb': 'uni0301',
+               'arrowleft': 'uni2190',
+               'arrowright': 'uni2192',
+               'brevecomb': 'uni0306',
+               'caroncomb': 'uni030C',
+               'cedillacomb': 'uni0327',
+               'circumflexcomb': 'uni0302',
+               'commaaboverightcomb': 'uni0315',
+               'commaaccentcomb': 'uni0326',
+               'commaturnedabovecomb': 'uni0312',
+               'dieresiscomb': 'uni0308',
+               'dotaccentcomb': 'uni0307',
+               'dotbelowcomb': 'uni0323',
                'florin': 'uni0192',
                'f_f': 'f_f',
                'f_f_i': 'f_f_i',
                'f_f_l': 'f_f_l',
+               'gravecomb': 'uni0300',
+               'hungarumlautcomb': 'uni030B',
+               'macroncomb': 'uni0304',
+               'minute': 'uni2032',
+               'ogonekcomb': 'uni0328',
+               'ringcomb': 'uni030A',
+               'Scedilla': 'uni015E',
+               'scedilla': 'uni015F',
+               'second': 'uni2033',
+               'slashcomb': 'uni0337',
+               'tildecomb': 'uni0303',
+               'mu.math': 'uni00B5'
                }
     names = []
 
     for font in fonts:
         for glyph in font:
-            added = False
             if glyph.name not in mapping.keys():
                 if len(glyph.unicodes) == 1:
                     if glyph.name not in agl.AGL2UV.keys():
                         mapping[glyph.name] = f"uni{glyph.unicode:04X}"
-                        added = True
-            if not added and glyph.name not in names:
+            if glyph.name not in mapping.keys() and glyph.name not in names:
                 names.append(glyph.name)
 
     for name in names:
@@ -450,17 +475,14 @@ def prep(designspacePath, version):
     print("🏗  Setting production names")
     setProductionNames(fonts)
 
+    print("🏗  Setting version")
     if version:
-        print("🏗  Setting version")
         setVersion(fonts, version)
+
 
     print("🏗  Closing and saving sources")
     for font in fonts:
         font.close(save=True)
-
-    print("🏗  Normalize UFOs")
-    for path in sources:
-        normalizeUFO(path)
 
     print("🏗  Checking full design space")
     dsc.checkEverything()

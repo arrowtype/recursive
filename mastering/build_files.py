@@ -30,7 +30,7 @@ def getFolders(ds):
     stylespacePath = os.path.join(var_root, "Recursive.stylespace")
 
     paths = {"root": root,
-             "static:": static_root,
+             "static": static_root,
              "cff": cff_root,
              "ttf": ttf_root,
              "var": var_root,
@@ -42,7 +42,18 @@ def getFolders(ds):
     return paths
 
 
-def makeSources(ds, src, designspacePath, version):
+def makeSources(ds, src, version):
+    """
+    Generates the source files from the working src files
+
+    We don't want to use the working files as this will prep the files
+    for making all the fonts, so it has to subset and change things that one
+    wants to keep in the design files.
+
+    *ds* file name of the working source designspace file
+    *src* is path to the mastering source directory
+    *version* is the version number to set the fonts to
+    """
     # Copy files from src/masters, as we need to edit them
     ignore = shutil.ignore_patterns(".git",
                                     ".git*",
@@ -58,7 +69,7 @@ def makeSources(ds, src, designspacePath, version):
     shutil.copy("../src/features/features.fea",
                 os.path.join(src, 'features.fea'))
 
-    prep(designspacePath, version)
+    prep(os.path.join(src, ds), version)
     buildFeatures(src)
 
 
@@ -81,7 +92,7 @@ def buildFiles(sources=True,
         os.mkdir(paths["static"])
         os.mkdir(paths["var"])
 
-        makeSources(ds, paths["src"], paths["designspace"], version)
+        makeSources(ds, paths["src"], version)
 
     ds = DesignSpaceDocument.fromfile(paths["designspace"])
 
@@ -89,18 +100,16 @@ def buildFiles(sources=True,
         print("\n🚚 Making files for static font mastering")
 
         name_map = buildNameMap()
-        print(name_map)
-        buildFolders(ds, paths["CFF"], name_map)
-        buildFontMenuDB(ds, paths["CFF"], name_map)
-        buildGlyphOrderAndAlias(ds.sources[0].path, paths["CFF"])
-        buildFamilyFeatures(paths["CFF"],
+        buildFolders(ds, paths["cff"], name_map)
+        buildFontMenuDB(ds, paths["cff"], name_map)
+        buildGlyphOrderAndAlias(ds.sources[0].path, paths["cff"])
+        buildFamilyFeatures(paths["cff"],
                             os.path.join(paths["src"], 'features.fea'),
                             version)
-        buildInstances(paths["designspace"], paths["CFF"], name_map)
+        buildInstances(paths["designspace"], paths["cff"], name_map)
 
     if variable:
         print("\n🚚 Making files for varible font mastering")
-        # Make STAT table source
         makeSTAT(paths["stylespace"], ds)
 
     return paths

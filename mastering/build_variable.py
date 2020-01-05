@@ -147,6 +147,10 @@ def build_variable(designspacePath,
     if out is None:
         out = os.path.splitext(os.path.basename(designspacePath))[0] + "-VF.ttf"
 
+    else:
+        if not os.path.exists(os.path.split(out)[0]):
+            os.mkdir(os.path.split(out)[0])
+
     print("🏗  Constructing variable font")
     fp = FontProject(verbose=verbose)
     fp.build_variable_font(designspacePath,
