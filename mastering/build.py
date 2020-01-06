@@ -41,7 +41,7 @@ if __name__ == "__main__":
     if not os.path.exists(out):
         os.mkdir(out)
 
-    outPaths = [os.path.join(out, "Variable_TTF", f"Recursive_VF_{version}.ttf"),
+    outPaths = [os.path.join(out, "Variable_TTF"),
                 os.path.join(out, "Static_OTF"),
                 os.path.join(out, "Static_TTF")]
 
@@ -59,7 +59,8 @@ if __name__ == "__main__":
     if args.variable:
         build_variable(designspacePath=files["designspace"],
                        stylespacePath=files["stylespace"],
-                       out=outPaths[0])
+                       out=os.path.join(outPaths[0],
+                                        f"Recursive_VF_{version}.ttf"))
 
     if args.static:
         build_static(files["cff"], files["ttf"], out)
@@ -67,8 +68,8 @@ if __name__ == "__main__":
     if args.woff:
         for path in outPaths:
             if os.path.exists(path):
-                ttfs = getFiles(out, "ttf")
-                otfs = getFiles(out, "otf")
+                ttfs = getFiles(path, "ttf")
+                otfs = getFiles(path, "otf")
                 fonts = ttfs + otfs
                 print(f"🏗  Making WOFFs for {path}")
-                makeWOFF(fonts, os.path.join(path, "WOFFS"))
+                makeWOFF(fonts, os.path.join(path, "WOFF2"))

@@ -79,7 +79,8 @@ def makeWOFF(files, destination):
     if not os.path.exists(destination):
         os.mkdir(destination)
 
-    print("🏗  Making WOFF & WOFF2")
+    print("🏗  Making WOFF2")
+    printProgressBar(0, len(files), prefix='  ', suffix='Complete', length=50)
     for i, file in enumerate(files):
         outfilename = makeOutputFileName(file,
                                          outputDir=destination,
@@ -88,6 +89,8 @@ def makeWOFF(files, destination):
             os.remove(outfilename)
 
         woff2.compress(file, outfilename)
+        printProgressBar(i + 1, len(files), prefix='  ',
+                         suffix='Complete', length=50)
 
 
 def batchCheckOutlines(root):

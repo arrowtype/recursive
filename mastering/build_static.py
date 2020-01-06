@@ -707,7 +707,6 @@ def build_static(cff_root, ttf_root, destination, otf=True, ttf=True):
         except OSError:
             if not os.path.isdir(d):
                 raise
-
         makeSFNT(ttf_root, d, kind="ttf")
 
 
