@@ -133,6 +133,9 @@ def buildTTFfiles(cff_root, ttf_root):
     *ttf_root* `string` path to the root of the TTF files
     """
 
+    if os.path.exists(ttf_root):
+        shutil.rmtree(ttf_root)
+
     ignore = shutil.ignore_patterns("*.ufo",)
     print("🏗  Copying files")
     shutil.copytree(cff_root, ttf_root, ignore=ignore)
@@ -703,10 +706,11 @@ def build_static(cff_root, ttf_root, destination, otf=True, ttf=True):
         d = os.path.join(destination, "Static_TTF")
         try:
             os.makedirs(d)
-            buildTTFfiles(cff_root, ttf_root)
         except OSError:
             if not os.path.isdir(d):
                 raise
+
+        buildTTFfiles(cff_root, ttf_root)
         makeSFNT(ttf_root, d, kind="ttf")
 
 
