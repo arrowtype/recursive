@@ -39,10 +39,10 @@ fontFam = f"{currentDir}/Recursive_VF_1.031.ttf" # Update as needed. Easiest whe
 
 frames = 1
 frameRate = 1/60 # only applicable to mp4
-fileFormat = "pdf" # pdf, gif, or mp4
+fileFormat = "pdf" # pdf, gif, or mp4 # if just 1 frame, can also be jpg or png
 
 pageSize = 3.5 # inches
-DPI = 72 # dots per inch
+DPI = 300 # dots per inch
 
 paddingInPts = 18
 
@@ -61,6 +61,14 @@ def computeFontSizePoints(pts):
 def interpolate(a, b, t):
 	return(a + (b-a) * t)
 
+def hex2rgb(hex):
+    h = hex.lstrip('#')
+    RGB = tuple(int(h[i:i+2], 16) for i in (0, 2 ,4))
+    r1, g1, b1 = RGB[0] / 255, RGB[1] / 255, RGB[2] / 255
+    return(r1, g1, b1)
+
+# Data for font axes
+
 axes = {
 	'MONO': (0, 1),
 	'CASL': (0, 1),
@@ -69,16 +77,25 @@ axes = {
 	# 'ital': (0, 1), # intentionally left out
 }
 
-def makeDrawing(xVar="wght", yVar="slnt", xAsc=True, yAsc=True, char="a", splits=6):
+def makeDrawing(xVar="wght", yVar="slnt", aXasc=True, bYasc=True, char="a", splits=6):
 
 	"""
 		Set x and y to the variation axes you wish to control. 
 
-		Add arguments to control diagram. Defaults are xVar="wght", yVar="slnt", xAsc=True, yAsc=True, splits=6 and char="a"
+		Add arguments to control diagram. Defaults are:
 
-		python <path>/create-flattened-noordzij-cube.py -x CASL -y wght -c r
+			splits=6	| -s | Number of splits in cube
+			char="a"	| -c | character to draw
+			xVar="wght"	| -x | X axis variation
+			yVar="slnt"	| -y | Y axis variation
+			aXasc=True	| -a | Ascend on X axis
+			bYasc=True	| -b | Ascend on Y axis
+
+		USAGE:
+
+		python <path>/create-flattened-noordzij-cube.py -c r -x CASL -y wght -a False -b False
 		
-		TODO: support xAsc and yAsc (make axes descend if False)
+		TODO: support aXasc and bYasc (make axes descend if False)
 	"""
 
 	newDrawing() # required by drawbot module
@@ -88,7 +105,8 @@ def makeDrawing(xVar="wght", yVar="slnt", xAsc=True, yAsc=True, char="a", splits
 
 	for frame in range(frames):
 		newPage(W, H) # required for each new page/frame
-
+		fill(*hex2rgb("0021ff"))
+		rect(0,0,W,H) # background
 
 		cubeSize = W - (padding * 2)
 		letterAdvance = cubeSize / splits
@@ -102,23 +120,25 @@ def makeDrawing(xVar="wght", yVar="slnt", xAsc=True, yAsc=True, char="a", splits
 
 		for xStep in range(0, splits):
 			x = xStep * letterAdvance + padding
-			t = xStep / splits
-			xAxisVal = round(interpolate(axes[xVar][0], axes[xVar][1], t), 2)
+			t = xStep / (splits - 1)
+			if aXasc:
+				xAxisVal = round(interpolate(axes[xVar][0], axes[xVar][1], t), 2)
+			else:
+				xAxisVal = round(interpolate(axes[xVar][1], axes[xVar][0], t), 2)
+
 			for yStep in range(0, splits):
-				t = yStep / splits
-				yAxisVal = round(interpolate(axes[yVar][0], axes[yVar][1], t), 2)
+				t = yStep / (splits - 1)
+
+				if bYasc:
+					yAxisVal = round(interpolate(axes[yVar][0], axes[yVar][1], t), 2)
+				else:
+					yAxisVal = round(interpolate(axes[yVar][1], axes[yVar][0], t), 2)
+
 				y = yStep * letterAdvance + padding
 
-
-
-
-				# MONO = round(interpolate(axes['MONO'][0], axes['MONO'][1], t), 2)
-				# CASL = round(interpolate(axes['CASL'][0], axes['CASL'][1], t), 2)
-				# wght = round(interpolate(axes['wght'][0], axes['wght'][1], t), 2)
-				# slnt = round(interpolate(axes['slnt'][0], axes['slnt'][1], t), 2)
-				# ital = 0.5 # auto
 				print(xVar, xAxisVal, yVar, yAxisVal)
 
+				# allow default vars to be set, as well?
 				kwargs = {xVar: xAxisVal, yVar: yAxisVal}
 				fontVariations(**kwargs)
 				
@@ -129,7 +149,7 @@ def makeDrawing(xVar="wght", yVar="slnt", xAsc=True, yAsc=True, char="a", splits
 					rect(x, y, letterAdvance, letterAdvance)
 
 				strokeWidth(0)
-				fill(0)
+				fill(1)
 				text(char, (x + letterAdvance/2, y), align="center")
 
 	endDrawing() # advised by drawbot docs
