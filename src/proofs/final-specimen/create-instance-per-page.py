@@ -9,7 +9,7 @@ axes = {
 	'casl': (0, 1),
 	'wght': (300, 1000),
 	'slnt': (0, -15)
-	# 'ital': (300, 1000), # intentionally left out
+	# 'ital': (0, 1), # intentionally left out
 }
 
 def interpolate(a, b, t):
