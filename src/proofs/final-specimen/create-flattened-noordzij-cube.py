@@ -26,13 +26,14 @@ print(currentDir)
 # ---------------------------------------------------------
 # CONFIGURATION -------------------------------------------
 
-cubeSplits = 5 # number of glyphs on each edge
-cubeChar = "r"
+cubeSplits = 9 # number of glyphs on each edge
+cubeChar = "a"
 
 docTitle = "drawbot-export" # update this for your output file name
 save = True
 outputDir = "exports"
 autoOpen = True
+debug = False
 
 fontFam = f"{currentDir}/Recursive_VF_1.031.ttf" # Update as needed. Easiest when font file is in same directory.
 
@@ -74,17 +75,13 @@ axes = {
 for frame in range(frames):
 	newPage(W, H) # required for each new page/frame
 
-	
-
-	textSize = computeFontSizePoints(24)
-	font(fontFam, textSize) # set a font and font size
 
 	cubeSize = W - (padding * 2)
 	letterAdvance = cubeSize / cubeSplits
+	textSize = letterAdvance*1.5
+	font(fontFam, textSize) # set a font and font size
 
-	# fill(0)
-	# # rect(0, 0, 100, 100)
-	# rect(0, 0, cubeSize, cubeSize)
+	print(letterAdvance,textSize)
 
 	for xStep in range(0, cubeSplits):
 		x = xStep * letterAdvance + padding
@@ -100,8 +97,16 @@ for frame in range(frames):
 			ital = 0.5 # auto
 
 			fontVariations(MONO=mono, CASL=casl, wght=wght, slnt=slnt)
+			
+			if debug:
+				fill(0.9)
+				stroke(1, 0, 0)
+				strokeWidth(0.25)
+				rect(x, y, letterAdvance, letterAdvance)
 
-			text(cubeChar, (x, y))
+			strokeWidth(0)
+			fill(0)
+			text(cubeChar, (x + letterAdvance/2, y), align="center")
 
 endDrawing() # advised by drawbot docs
 
