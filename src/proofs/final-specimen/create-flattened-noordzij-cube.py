@@ -77,7 +77,7 @@ axes = {
 	# 'ital': (0, 1), # intentionally left out
 }
 
-def makeDrawing(xVar="wght", yVar="slnt", aXasc=True, bYasc=True, char="a", splits=6):
+def makeDrawing(xVar="wght", yVar="slnt", aXasc=True, bYasc=True, char="a", splits=6, MONOVal=0, CASLVal=0, wghtVal=300, slntVal=0, italVal=0.5):
 
 	"""
 		Set x and y to the variation axes you wish to control. 
@@ -90,12 +90,22 @@ def makeDrawing(xVar="wght", yVar="slnt", aXasc=True, bYasc=True, char="a", spli
 			yVar="slnt"	| -y | Y axis variation
 			aXasc=True	| -a | Ascend on X axis
 			bYasc=True	| -b | Ascend on Y axis
+			MONOVal=0	| -M | Var axis default for MONO (Range: 0 to 1)
+			CASLVal=0	| -C | Var axis default for CASL (Range: 0 to 1)
+			wghtVal=300	| -w | Var axis default for wght (Range: 300 to 1000)
+			slntVal=0	| -s | Var axis default for slnt (Range: 0 to -15)
+			italVal=0.5	| -i | Var axis default for ital (Range: 0 to 1, 0.5 for auto)
 
 		USAGE EXAMPLE:
 
 		python <path>/create-flattened-noordzij-cube.py -s 5 -c r -x CASL -y wght -a False -b False
 
 		(args left out will use defaults)
+
+		# TODO: add control over
+			- other axis defaults
+			- letter sizing
+			- colors
 	"""
 
 	newDrawing() # required by drawbot module
@@ -105,7 +115,8 @@ def makeDrawing(xVar="wght", yVar="slnt", aXasc=True, bYasc=True, char="a", spli
 
 	for frame in range(frames):
 		newPage(W, H) # required for each new page/frame
-		fill(*hex2rgb("0021ff"))
+		# fill(*hex2rgb("0021ff"))
+		fill(0)
 		rect(0,0,W,H) # background
 
 		cubeSize = W - (padding * 2)
@@ -138,7 +149,11 @@ def makeDrawing(xVar="wght", yVar="slnt", aXasc=True, bYasc=True, char="a", spli
 
 				print(xVar, xAxisVal, yVar, yAxisVal)
 
-				# allow default vars to be set, as well?
+				# allow default vars to be set
+				dfltKwargs = {"MONO": MONOVal, "CASL": CASLVal, "wght": wghtVal, "slnt": slntVal, "ital": italVal}
+				fontVariations(**dfltKwargs)
+
+				# set x & y axis styles
 				kwargs = {xVar: xAxisVal, yVar: yAxisVal}
 				fontVariations(**kwargs)
 				
