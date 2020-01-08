@@ -91,11 +91,11 @@ def makeDrawing(xVar="wght", yVar="slnt", aXasc=True, bYasc=True, char="a", spli
 			aXasc=True	| -a | Ascend on X axis
 			bYasc=True	| -b | Ascend on Y axis
 
-		USAGE:
+		USAGE EXAMPLE:
 
-		python <path>/create-flattened-noordzij-cube.py -c r -x CASL -y wght -a False -b False
-		
-		TODO: support aXasc and bYasc (make axes descend if False)
+		python <path>/create-flattened-noordzij-cube.py -s 5 -c r -x CASL -y wght -a False -b False
+
+		(args left out will use defaults)
 	"""
 
 	newDrawing() # required by drawbot module
