@@ -35,8 +35,10 @@ debug = False
 
 fontFam = f"{currentDir}/Recursive_VF_1.031.ttf" # Update as needed. Easiest when font file is in same directory.
 
-frames = 1
-fileFormat = "pdf" # pdf # if just 1 frame, can also be jpg or png (otherwise, only the final frame is saved)
+frames = 24
+fps = 3
+frameRate = 1/fps # only applicable to mp4
+fileFormat = "mp4" # pdf, gif, or mp4 # if just 1 frame, can also be jpg or png
 
 pageSize = 3.5 # inches
 DPI = 300 # dots per inch
@@ -114,6 +116,9 @@ def makeDrawing(xVar="wght", yVar="slnt", aXasc=True, bYasc=True, char="a", spli
 
 	for frame in range(0, frames):
 		newPage(W, H) # required for each new page/frame
+
+		# if fileFormat == "gif" or "mp4":
+		frameDuration(frameRate)
 
 		splits = frame+2
 		# fill(*hex2rgb("0021ff"))
