@@ -16,8 +16,9 @@
 from drawBot import * # requires drawbot to be installed as module
 import sys
 import os
+import fire
 
-newDrawing() # required by drawbot module
+
 
 # currentDir = sys.argv[0]
 currentDir = os.path.dirname(os.path.abspath(__file__))
@@ -26,7 +27,6 @@ print(currentDir)
 # ---------------------------------------------------------
 # CONFIGURATION -------------------------------------------
 
-cubeSplits = 9 # number of glyphs on each edge
 cubeChar = "a"
 
 docTitle = "drawbot-export" # update this for your output file name
@@ -62,67 +62,94 @@ def interpolate(a, b, t):
 	return(a + (b-a) * t)
 
 axes = {
-	'mono': (0, 1),
-	'casl': (0, 1),
+	'MONO': (0, 1),
+	'CASL': (0, 1),
 	'wght': (300, 1000),
 	'slnt': (0, -15)
 	# 'ital': (0, 1), # intentionally left out
 }
 
-# ----------------------------------------------
-# THE ACTUAL ANIMATION
+def makeDrawing(xVar="wght", yVar="slnt", xAsc=True, yAsc=True, char="a", splits=6):
 
-for frame in range(frames):
-	newPage(W, H) # required for each new page/frame
+	"""
+		Set x and y to the variation axes you wish to control. 
+
+		Add arguments to control diagram. Defaults are xVar="wght", yVar="slnt", xAsc=True, yAsc=True, splits=6 and char="a"
+
+		python <path>/create-flattened-noordzij-cube.py -x CASL -y wght -c r
+		
+		TODO: support xAsc and yAsc (make axes descend if False)
+	"""
+
+	newDrawing() # required by drawbot module
+
+	# ----------------------------------------------
+	# THE ACTUAL ANIMATION
+
+	for frame in range(frames):
+		newPage(W, H) # required for each new page/frame
 
 
-	cubeSize = W - (padding * 2)
-	letterAdvance = cubeSize / cubeSplits
-	textSize = letterAdvance*1.5
-	font(fontFam, textSize) # set a font and font size
+		cubeSize = W - (padding * 2)
+		letterAdvance = cubeSize / splits
+		textSize = letterAdvance*1.5
+		font(fontFam, textSize) # set a font and font size
 
-	print(letterAdvance,textSize)
+		print(letterAdvance,textSize)
 
-	for xStep in range(0, cubeSplits):
-		x = xStep * letterAdvance + padding
-		for yStep in range(0, cubeSplits):
-			y = yStep * letterAdvance + padding
+		# needs instructions on *which* var axis to put on which square axis, e.g.
+		# x=wght, y=slnt
 
-			t = xStep / cubeSplits
+		for xStep in range(0, splits):
+			x = xStep * letterAdvance + padding
+			t = xStep / splits
+			xAxisVal = round(interpolate(axes[xVar][0], axes[xVar][1], t), 2)
+			for yStep in range(0, splits):
+				t = yStep / splits
+				yAxisVal = round(interpolate(axes[yVar][0], axes[yVar][1], t), 2)
+				y = yStep * letterAdvance + padding
 
-			mono = round(interpolate(axes['mono'][0], axes['mono'][1], t), 2)
-			casl = round(interpolate(axes['casl'][0], axes['casl'][1], t), 2)
-			wght = round(interpolate(axes['wght'][0], axes['wght'][1], t), 2)
-			slnt = round(interpolate(axes['slnt'][0], axes['slnt'][1], t), 2)
-			ital = 0.5 # auto
 
-			fontVariations(MONO=mono, CASL=casl, wght=wght, slnt=slnt)
-			
-			if debug:
-				fill(0.9)
-				stroke(1, 0, 0)
-				strokeWidth(0.25)
-				rect(x, y, letterAdvance, letterAdvance)
 
-			strokeWidth(0)
-			fill(0)
-			text(cubeChar, (x + letterAdvance/2, y), align="center")
 
-endDrawing() # advised by drawbot docs
+				# MONO = round(interpolate(axes['MONO'][0], axes['MONO'][1], t), 2)
+				# CASL = round(interpolate(axes['CASL'][0], axes['CASL'][1], t), 2)
+				# wght = round(interpolate(axes['wght'][0], axes['wght'][1], t), 2)
+				# slnt = round(interpolate(axes['slnt'][0], axes['slnt'][1], t), 2)
+				# ital = 0.5 # auto
+				print(xVar, xAxisVal, yVar, yAxisVal)
 
-if save:
-	import datetime
+				kwargs = {xVar: xAxisVal, yVar: yAxisVal}
+				fontVariations(**kwargs)
+				
+				if debug:
+					fill(0.9)
+					stroke(1, 0, 0)
+					strokeWidth(0.25)
+					rect(x, y, letterAdvance, letterAdvance)
 
-	now = datetime.datetime.now().strftime("%Y_%m_%d-%H_%M") # -%H_%M_%S
+				strokeWidth(0)
+				fill(0)
+				text(char, (x + letterAdvance/2, y), align="center")
 
-	if not os.path.exists(f"{currentDir}/{outputDir}"):
-		os.makedirs(f"{currentDir}/{outputDir}")
+	endDrawing() # advised by drawbot docs
 
-	path = f"{currentDir}/{outputDir}/{docTitle}-{now}.{fileFormat}"
+	if save:
+		import datetime
 
-	print("saved to ", path)
+		now = datetime.datetime.now().strftime("%Y_%m_%d-%H_%M") # -%H_%M_%S
 
-	saveImage(path)
+		if not os.path.exists(f"{currentDir}/{outputDir}"):
+			os.makedirs(f"{currentDir}/{outputDir}")
 
-	if autoOpen:
-		os.system(f"open --background -a Preview {path}")
+		path = f"{currentDir}/{outputDir}/{docTitle}-{now}.{fileFormat}"
+
+		print("saved to ", path)
+
+		saveImage(path)
+
+		if autoOpen:
+			os.system(f"open --background -a Preview {path}")
+
+if __name__ == '__main__':
+	fire.Fire(makeDrawing)
