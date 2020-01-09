@@ -1,23 +1,23 @@
 """
                                                                            
                                                                            
-        |– – – – – – –|                                    NOORDZIJCUBE    
-    z5  | s5. top     |                                    CONSTRUCTION    
-        |             |                                                    
-        |             |                                                    
-        |             |                                                    
+        |– – – – – – –|                                       FLATTENED    
+    z5  | s5. top     |                                   NOORDZIJ CUBE    
+        |             |                                    CONSTRUCTION    
+        | X↑ Y↓       |                                                    
+        | Zmax        |                                                    
         |– – – – – – –|                                                    
         |– – – – – – –| |– – – – – – –| |– – – – – – –| |– – – – – – –|    
     z4  | s1. front   | | s2. right   | | s3. back    | | s4. left    |    
     z3  |             | |             | |             | |             |    
-    z2  |             | |             | |             | |             |    
-    z1  |             | |             | |             | |             |    
+    z2  | X↑ Z↑       | | Y↓ Z↑       | | X↓ Z↑       | | Y↑ Z↑       |    
+    z1  | Ymin        | | Xmax        | | Ymax        | | Xmin        |    
         |– – – – – – –| |– – – – – – –| |– – – – – – –| |– – – – – – –|    
         |– – – – – – –|                                                    
     z0  | s0. bottom  |                                                    
         |             |                                      • – – – •     
-        |             |                                    /   5   / |     
-        |             |                               ↑  • – – – • 2 •     
+        | X↑ Y↑       |                                    /   5   / |     
+        | Zmin        |                               ↑  • – – – • 2 •     
         |– – – – – – –|                               z  |   1   | /  ↗    
                                                          • – – – •  y      
                                                             x →            
@@ -25,58 +25,60 @@
                                                                            
 """
 
-# given -x CASL -y wght -z slnt --Xasc True --Yasc True --Zasc True
-
-# def makeDrawing(xVar="wght", yVar="slnt", Xasc=True, Yasc=True, letter="a", rows=6, cols=6, MONOVal=0, CASLVal=0, wghtVal=300, slntVal=0, italVal=0.5, fileTag=""):
-#     print("xVar", xVar)
-#     print("yVar", yVar)
-#     print("Xasc", Xasc)
-#     print("Yasc", Yasc)
-#     print("letter", letter)
-#     print("rows", rows)
-#     print("cols", cols)
-#     print("MONOVal", MONOVal)
-#     print("CASLVal", CASLVal)
-#     print("wghtVal", wghtVal)
-#     print("slntVal", slntVal)
-#     print("italVal", italVal)
-#     print("fileTag", fileTag)
-#     print()
+import cubeHelpers
+from cubeHelpers.drawCubeSide import *
+import importlib
+importlib.reload(cubeHelpers.drawCubeSide)
+from cubeHelpers.drawCubeSide import *
 
 axes = {
 	'MONO': (0, 1),
 	'CASL': (0, 1),
 	'wght': (300, 1000),
-	'slnt': (0, -15)
+	'slnt': (-15, 0)
 	# 'ital': (0, 1), # intentionally left out
 }
 
-def makeCube(xAxis, yAxis, zAxis, Xasc=True, Yasc=True, Zasc=True, rows=6):
 
+def makeCube(xAxis, yAxis, zAxis, Xasc=True, Yasc=True, Zasc=True, rows=6, cols=4, mono=0):
+
+    xVal = f"{xAxis}Val"
+    yVal = f"{yAxis}Val"
     zVal = f"{zAxis}Val"
+    name = f"{xAxis}_{yAxis}_{zAxis}"
 
-    # go through rows+2, because you need sides, plus bottom & top
-    for z in range(rows+2):
-        if z == 0:
-            # s0: X↑, Y↓, Zmin
-            kwargs = {"xVar": xAxis, "yVar": yAxis, "Yasc": False, zVal: axes[zAxis][0]}
-            makeDrawing(**kwargs)
-        elif z > 0 and z < (rows+2):
+    # TODO: if Zasc is False, feed in axes[zAxis] reversed
+
+    # go through sides of cube
+    for s in range(0,6):
+        if s == 0:
+            # s0: X↑, Y↑, Zmin
+            kwargs = {"MONOVal": mono, "letter": "rw", "cols": cols, "axes": axes, "fileTag": f"00_bottom-{name}", "xVar": xAxis, "yVar": yAxis, "Xasc": Xasc, "Yasc": Yasc, zVal: axes[zAxis][0]}
+            drawFlatCubeSide(**kwargs)
+        elif s == 1:
             # s1: X↑, Z↑, Ymin
-            kwargs = {"xVar": xAxis, "yVar": zAxis, zVal: axes[yAxis][0]}
-            makeDrawing(**kwargs)
-            # s2: Y↑, Z↑, Xmax
-            kwargs = {"xVar": yAxis, "yVar": zAxis, zVal: axes[xAxis][1]}
-            makeDrawing(**kwargs)
+            kwargs = {"MONOVal": mono, "letter": "rw", "cols": cols, "axes": axes, "fileTag": f"01_front-{name}", "xVar": xAxis, "yVar": zAxis,"Xasc": Xasc, "Yasc": Yasc, yVal: axes[yAxis][1]}
+            drawFlatCubeSide(**kwargs)
+        elif s == 2:
+            # s2: Y↓, Z↑, Xmax
+            kwargs = {"MONOVal": mono, "letter": "rw", "cols": cols, "axes": axes, "fileTag": f"02_right-{name}", "xVar": yAxis, "yVar": zAxis, "Xasc": not Xasc, "Yasc": Yasc, xVal: axes[xAxis][1]}
+            print(kwargs)
+            drawFlatCubeSide(**kwargs)
+        elif s == 3:
             # s3: X↓, Z↑, Ymax
-            kwargs = {"xVar": xAxis, "yVar": zAxis, Xasc=False, zVal: axes[yAxis][1]}
-            makeDrawing(**kwargs)
-            # s4: Y↓, Z↑, Xmin
-            kwargs = {"xVar": yAxis, "yVar": zAxis, Xasc=False, zVal: axes[xAxis][0]}
-            makeDrawing(**kwargs)
-        elif z == (rows+2):
-            # s5: X↑, Y↑, Zmax
-            kwargs = {"xVar": xAxis, "yVar": yAxis, zVal: axes[xAxis][1]}
-            makeDrawing(**kwargs)
+            kwargs = {"MONOVal": mono, "letter": "rw", "cols": cols, "axes": axes, "fileTag": f"03_back-{name}", "xVar": xAxis, "yVar": zAxis, "Xasc": not Xasc, "Yasc": Yasc, yVal: axes[yAxis][0]}
+            print(kwargs)
+            drawFlatCubeSide(**kwargs)
+        elif s == 4:
+            # s4: Y↑, Z↑, Xmin
+            kwargs = {"MONOVal": mono, "letter": "rw", "cols": cols, "axes": axes, "fileTag": f"04_left-{name}", "xVar": yAxis, "yVar": zAxis, "Xasc": Xasc, "Yasc": Yasc, xVal: axes[xAxis][0]}
+            drawFlatCubeSide(**kwargs)
+        elif s == 5:
+            # s5: X↑, Y↓, Zmax
+            kwargs = {"MONOVal": mono, "letter": "rw", "cols": cols, "axes": axes, "fileTag": f"05_top-{name}", "xVar": xAxis, "yVar": yAxis, "Xasc": Xasc, "Yasc": not Yasc,  zVal: axes[zAxis][1]}
+            drawFlatCubeSide(**kwargs)
 
-makeCube("CASL", "wght", "slnt")
+# xyz values - to generate monospace cube, use arg mono=1
+makeCube("CASL", "wght", "slnt", mono=1)
+# makeCube( "wght", "CASL", "slnt")
+# makeCube("slnt", "wght", "CASL")
