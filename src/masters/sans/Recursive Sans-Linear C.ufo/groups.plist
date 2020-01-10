@@ -837,6 +837,10 @@
 			<string>Zdotaccent</string>
 			<string>Zdotbelow</string>
 			<string>DZcaron</string>
+			<string>Zacute.sans</string>
+			<string>Zcaron.sans</string>
+			<string>Zdotaccent.sans</string>
+			<string>Zdotbelow.sans</string>
 		</array>
 		<key>public.kern1.a_right</key>
 		<array>
@@ -865,6 +869,29 @@
 			<string>ahook</string>
 			<string>agravedbl</string>
 			<string>ainvertedbreve</string>
+			<string>a.simple</string>
+			<string>aacute.simple</string>
+			<string>abreve.simple</string>
+			<string>abreveacute.simple</string>
+			<string>abrevedot.simple</string>
+			<string>abrevegrave.simple</string>
+			<string>abrevehook.simple</string>
+			<string>abrevetilde.simple</string>
+			<string>acircumflex.simple</string>
+			<string>acircumflexacute.simple</string>
+			<string>acircumflexdot.simple</string>
+			<string>acircumflexgrave.simple</string>
+			<string>acircumflexhook.simple</string>
+			<string>acircumflextilde.simple</string>
+			<string>adieresis.simple</string>
+			<string>adotbelow.simple</string>
+			<string>agrave.simple</string>
+			<string>ahook.simple</string>
+			<string>amacron.simple</string>
+			<string>aogonek.simple</string>
+			<string>aring.simple</string>
+			<string>aringacute.simple</string>
+			<string>atilde.simple</string>
 		</array>
 		<key>public.kern1.c_right</key>
 		<array>
@@ -881,6 +908,7 @@
 			<string>ccedilla.italic</string>
 			<string>ccircumflex.italic</string>
 			<string>cdotaccent.italic</string>
+			<string>ccedillaacute.italic</string>
 		</array>
 		<key>public.kern1.ditalic_right</key>
 		<array>
@@ -1006,7 +1034,6 @@
 			<string>gcommaaccent</string>
 			<string>gmacron</string>
 			<string>g.mono</string>
-			<string>gmacron.mono</string>
 		</array>
 		<key>public.kern1.i_right</key>
 		<array>
@@ -1132,6 +1159,11 @@
 			<string>itilde.italic</string>
 			<string>ldot</string>
 			<string>lslash</string>
+			<string>l.simple</string>
+			<string>lacute.simple</string>
+			<string>lcommaaccent.simple</string>
+			<string>ldotbelow.simple</string>
+			<string>llinebelow.simple</string>
 		</array>
 		<key>public.kern1.n_right</key>
 		<array>
@@ -1211,6 +1243,7 @@
 			<string>otildeacute</string>
 			<string>otildedieresis</string>
 			<string>otildemacron</string>
+			<string>b.italic_191117-17_02</string>
 		</array>
 		<key>public.kern1.r_right</key>
 		<array>
@@ -1484,6 +1517,12 @@
 			<string>Ldot</string>
 			<string>Lslash</string>
 			<string>Thorn</string>
+			<string>Lacute.sans</string>
+			<string>Lcaron.sans</string>
+			<string>Ldot.sans</string>
+			<string>Ldotbelow.sans</string>
+			<string>Llinebelow.sans</string>
+			<string>Lcommaaccent.sans</string>
 		</array>
 		<key>public.kern2.O_left</key>
 		<array>
@@ -1706,6 +1745,10 @@
 			<string>Zcaron</string>
 			<string>Zdotaccent</string>
 			<string>Zdotbelow</string>
+			<string>Zacute.sans</string>
+			<string>Zcaron.sans</string>
+			<string>Zdotaccent.sans</string>
+			<string>Zdotbelow.sans</string>
 		</array>
 		<key>public.kern2.a_left</key>
 		<array>
@@ -1827,6 +1870,8 @@
 			<string>fi.mono</string>
 			<string>fl.italic</string>
 			<string>fl.mono</string>
+			<string>f.mono</string>
+			<string>f.simple</string>
 		</array>
 		<key>public.kern2.g_left</key>
 		<array>
@@ -1838,7 +1883,6 @@
 			<string>gcommaaccent</string>
 			<string>gmacron</string>
 			<string>g.mono</string>
-			<string>gmacron.mono</string>
 		</array>
 		<key>public.kern2.h_left</key>
 		<array>
@@ -1941,6 +1985,26 @@
 			<string>rlinebelow.mono</string>
 			<string>idot</string>
 			<string>idotaccent</string>
+			<string>i.simple</string>
+			<string>iacute.simple</string>
+			<string>ibreve.simple</string>
+			<string>icircumflex.simple</string>
+			<string>idieresis.simple</string>
+			<string>idieresisacute.simple</string>
+			<string>idot.simple</string>
+			<string>idotaccent.simple</string>
+			<string>idotbelow.simple</string>
+			<string>igrave.simple</string>
+			<string>igravedbl.simple</string>
+			<string>ihook.simple</string>
+			<string>iinvertedbreve.simple</string>
+			<string>imacron.simple</string>
+			<string>iogonek.simple</string>
+			<string>itilde.simple</string>
+			<string>r.simple</string>
+			<string>racute.simple</string>
+			<string>rcaron.simple</string>
+			<string>rcommaaccent.simple</string>
 		</array>
 		<key>public.kern2.l_left</key>
 		<array>
@@ -1966,6 +2030,15 @@
 			<string>ldotbelow.mono</string>
 			<string>llinebelow.mono</string>
 			<string>lslash.mono</string>
+			<string>l.simple</string>
+			<string>lacute.simple</string>
+			<string>lcommaaccent.simple</string>
+			<string>ldotbelow.simple</string>
+			<string>llinebelow.simple</string>
+			<string>lcaron.italic</string>
+			<string>ldot.italic</string>
+			<string>lcaron.mono</string>
+			<string>ldot.mono</string>
 		</array>
 		<key>public.kern2.n_left</key>
 		<array>
@@ -2077,6 +2150,35 @@
 			<string>agravedbl.italic</string>
 			<string>ainvertedbreve.italic</string>
 			<string>ccedillaacute.italic</string>
+			<string>a.simple</string>
+			<string>aacute.simple</string>
+			<string>abreve.simple</string>
+			<string>abreveacute.simple</string>
+			<string>abrevedot.simple</string>
+			<string>abrevegrave.simple</string>
+			<string>abrevehook.simple</string>
+			<string>abrevetilde.simple</string>
+			<string>acircumflex.simple</string>
+			<string>acircumflexacute.simple</string>
+			<string>acircumflexdot.simple</string>
+			<string>acircumflexgrave.simple</string>
+			<string>acircumflexhook.simple</string>
+			<string>acircumflextilde.simple</string>
+			<string>adieresis.simple</string>
+			<string>adotbelow.simple</string>
+			<string>agrave.simple</string>
+			<string>ahook.simple</string>
+			<string>amacron.simple</string>
+			<string>aogonek.simple</string>
+			<string>aring.simple</string>
+			<string>aringacute.simple</string>
+			<string>atilde.simple</string>
+			<string>g.simple</string>
+			<string>gbreve.simple</string>
+			<string>gcaron.simple</string>
+			<string>gcircumflex.simple</string>
+			<string>gcommaaccent.simple</string>
+			<string>gdotaccent.simple</string>
 		</array>
 		<key>public.kern2.s_left</key>
 		<array>
