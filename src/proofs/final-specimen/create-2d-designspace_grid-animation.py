@@ -35,15 +35,13 @@ debug = False
 
 fontFam = f"{currentDir}/Recursive_VF_1.031.ttf" # Update as needed. Easiest when font file is in same directory.
 
-frames = 24
-fps = 3
-frameRate = 1/fps # only applicable to mp4
+
 fileFormat = "mp4" # pdf, gif, or mp4 # if just 1 frame, can also be jpg or png
 
-pageSize = 3.5 # inches
+pageSize = 4 # inches
 DPI = 300 # dots per inch
 
-paddingInPts = 8
+paddingInPts = 0
 
 # ----------------------------------------------
 # Helper functions
@@ -76,7 +74,7 @@ axes = {
 	# 'ital': (0, 1), # intentionally left out
 }
 
-def makeDrawing(xVar="wght", yVar="slnt", aXasc=True, bYasc=True, char="a", splits=6, MONOVal=0, CASLVal=0, wghtVal=300, slntVal=0, italVal=0.5):
+def makeDrawing(xVar="wght", yVar="slnt", aXasc=True, bYasc=True, char="a", splits=6, MONOVal=0, CASLVal=0, wghtVal=300, slntVal=0, italVal=0.5, frames=10):
 
 	"""
 		Set x and y to the variation axes you wish to control. 
@@ -111,11 +109,17 @@ def makeDrawing(xVar="wght", yVar="slnt", aXasc=True, bYasc=True, char="a", spli
 
 	newDrawing() # required by drawbot module
 
+	fps = 3
+	frameRate = 1/fps # only applicable to mp4
+
+
 	# ----------------------------------------------
 	# THE ACTUAL ANIMATION
 
 	for frame in range(0, frames):
 		newPage(W, H) # required for each new page/frame
+		
+		CASLVal= 1 - 1/frames * frame
 
 		# if fileFormat == "gif" or "mp4":
 		frameDuration(frameRate)
@@ -151,7 +155,7 @@ def makeDrawing(xVar="wght", yVar="slnt", aXasc=True, bYasc=True, char="a", spli
 				else:
 					yAxisVal = round(interpolate(axes[yVar][1], axes[yVar][0], t), 2)
 
-				y = yStep * letterAdvance + padding
+				y = yStep * letterAdvance + padding + (textSize*0.045)
 
 				print(xVar, xAxisVal, yVar, yAxisVal)
 

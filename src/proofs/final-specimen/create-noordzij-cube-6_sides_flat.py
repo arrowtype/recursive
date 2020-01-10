@@ -79,6 +79,6 @@ def makeCube(xAxis, yAxis, zAxis, Xasc=True, Yasc=True, Zasc=True, rows=6, cols=
             drawFlatCubeSide(**kwargs)
 
 # xyz values - to generate monospace cube, use arg mono=1
-makeCube("CASL", "wght", "slnt", mono=1)
+makeCube("CASL", "wght", "slnt", mono=0)
 # makeCube( "wght", "CASL", "slnt")
 # makeCube("slnt", "wght", "CASL")
