@@ -1,16 +1,5 @@
 """
-  This is a set of Python I use many times I wish to make an animation or multipage doc with Drawbot, 
-  but code in my preferred editor (currently, VS Code) rather than in the Drawbot app.
-
-  USAGE:
-
-  First, install DrawBot as a module:
-
-  pip install git+https://github.com/typemytype/drawbot
-  
-  Adapt script as needed, then run from the command line with:
-  
-  python3 <path>/remote-drawbot-script-template.py
+  animate 2-dimension variable diagram from 2 x 2 to frames x frames.
 """
 
 from drawBot import * # requires drawbot to be installed as module
