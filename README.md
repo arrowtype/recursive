@@ -265,14 +265,9 @@ This project has included a large amount of research (contained in `docs/`), and
 
 Now, you can run the Recursive project scripts directly from the Scripts menu, or by opening them in the Scripting Window. 
 
-**Standard disclaimers:**
+## License
 
-Like any Python scripts, read through them and be generally familiar with what they do before running them. Also, use Git and/or backups when you are using scripts to design. 
-
-Feel free to use/remix these scripts in other projects. I give no warrantees or guarantees of their quality, and your mileage may vary.
-
-
-(...to be continued) -->
+The Recursive project is licensed under the [SIL Open Font License v1.1](OFL.txt).  This is a free software license that permits you to use the font software under a set of conditions.  Please refer to the full text of the license for details about the permissions, conditions, and disclaimers.
 
 ## Collaborators 
 
