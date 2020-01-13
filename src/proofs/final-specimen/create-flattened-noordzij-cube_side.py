@@ -88,8 +88,8 @@ def makeDrawing(xVar="wght", yVar="slnt", Xasc=True, Yasc=True, letter="a", rows
 		--cols      | -c   | 6     | Number of cols in cube
 		--xVar      | -x   | wght  | X axis variation
 		--yVar      | -y   | slnt  | Y axis variation
-		--Xasc     | -a   | True  | Ascend on X axis
-		--Yasc     | -b   | True  | Ascend on Y axis
+		--Xasc      | -a   | True  | Ascend on X axis
+		--Yasc      | -b   | True  | Ascend on Y axis
 		--MONOVal   | -M   | 0     | Default for MONO (Range: 0 to 1)
 		--CASLVal   | -C   | 0     | Default for CASL (Range: 0 to 1)
 		--wghtVal   | -w   | 300   | Default for wght (Range: 300 to 1000)
