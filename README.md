@@ -246,9 +246,23 @@ python build.py --all
 
 ## Using the resources in this project for type design
 
-This project has included a large amount of research (contained in `docs/`), and contains many small tools (contained in `src/00-recursive-scripts-for-robofont` that may help you if you are designing variable fonts with UFOs in RoboFont.
+This project has included a large amount of research (contained in `docs/`), and contains many small tools (contained in `src/00-recursive-scripts-for-robofont` that may help you if you are designing variable fonts – especially with UFOs in RoboFont.
+
+### Licensing
+
+The Recursive project is licensed under the [SIL Open Font License v1.1](OFL.txt).  This is a free software license that permits you to use the font software under a set of conditions.  Please refer to the full text of the license for full details about the permissions, conditions, and disclaimers.
+
+*Please note:* everything within this repo (including RoboFont, Drawbot, and build scripts) is licensed under the OFL, meaning that if they are incorporated directly into another project (e.g. included in the same repo), that project technically must adopt the OFL license as well. If you do not wish to adopt the OFL license, you can still use/remix these scripts, but you may wish to use them in a separate repository, to avoid ambiguity in your licensing. For example, if you are making a font under the Apache 2.0 license in the repo `my-cool-new-font`, you should consider keeping OFL scripts in a _separate_ repo, e.g. `my-cool-new-font-robofont_scripts`.
+
+As for data directly related to the font (such as source or output font outlines), these can be reused in other projects, but must retain the OFL license (e.g. you are free to make a modified/derivative version of Recursive, but that version must also be OFL-licensed, and you cannot change the license or sell that modified version under a different license).
+
+You are free to use Recursive in documents/websites/etc without changing the license for those projects. If Recursive is bundled with other software, the OFL license must be kept alongside it.
+
+See the [SIL Open Font License v1.1](OFL.txt) for full details.
 
 ### Using the project scripts in RoboFont
+
+Like any Python scripts, read through them and be generally familiar with what they do before running them. Also, use Git and/or backups when you are using scripts to design.
 
 1. Navigate to your robofont scripts folder in a terminal. 
     1. In RoboFont's menu, go to *Scripts > Reveal Scripts Folder*
@@ -265,9 +279,7 @@ This project has included a large amount of research (contained in `docs/`), and
 
 Now, you can run the Recursive project scripts directly from the Scripts menu, or by opening them in the Scripting Window. 
 
-## License
 
-The Recursive project is licensed under the [SIL Open Font License v1.1](OFL.txt).  This is a free software license that permits you to use the font software under a set of conditions.  Please refer to the full text of the license for details about the permissions, conditions, and disclaimers.
 
 ## Collaborators 
 
