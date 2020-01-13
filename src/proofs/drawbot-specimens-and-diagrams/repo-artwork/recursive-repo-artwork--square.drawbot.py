@@ -9,8 +9,9 @@ newDrawing() # for drawbot module
 
 export = True
 autoOpen = True
-exportFormat = "pdf" # pdf, gif, mp4, jpeg, png, or bmp
-W,H = 1280, 1280 # pixels
+exportFormat = "jpg" # pdf, gif, mp4, jpeg, png, or bmp
+# W,H = 1280, 1280 # pixels
+W,H = 1500, 1500 # pixels
 
 now = datetime.datetime.now().strftime("%Y_%m_%d-%H_%M")
 timestamp = datetime.datetime.now().strftime("%Y-%m-%d, %H:%M")
@@ -41,7 +42,7 @@ rect(0,0,W,H)
 font(fontFam)
 fill(1,1,1,0)
 
-strokeWidth(W * .00015)
+strokeWidth(W * .0025)
 
 
 sizeOfFont = H*1.2
@@ -52,12 +53,12 @@ def interpolate(a, b, t):
     distance = b-a
     return(a + distance * t)
 
-numOfRs = 80
+numOfRs = 40 #80
 
 minWght = 300.01
 maxWght = 999.99
 
-minCasl = 0.01
+minCasl = 0.99 # 0.01
 maxCasl = 0.99
 
 def getCurrentWeight(t):

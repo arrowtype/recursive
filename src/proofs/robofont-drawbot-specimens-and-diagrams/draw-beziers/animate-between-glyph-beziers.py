@@ -37,21 +37,26 @@ timestamp = datetime.now().strftime("%Y_%m_%d")
 # startFont = getFile("Select file to start animation from", allowsMultipleSelection=False, fileTypes=["ufo"])
 # endFont = getFile("Select file to end animation at", allowsMultipleSelection=False, fileTypes=["ufo"])
 
-# glyphToAnimate = 'r.mono' #'x.italic'
-# startFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual B Slanted.ufo"
-# endFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear A.ufo"
+glyphToAnimate = 'r.mono' #'x.italic'
+startFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual B Slanted.ufo"
+endFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear A.ufo"
+glyphScale, yShift = 1.5, 0.93 # baseline to x-height
 
-glyphToAnimate = 'ampersand' #'x.italic'
-startFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual B.ufo"
-endFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear B.ufo"
+
+# glyphToAnimate = 'ampersand' #'x.italic'
+# startFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual B.ufo"
+# endFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear B.ufo"
+# glyphScale, yShift = 1.25, 0.6 #capHeight
+
 
 print(startFont)
 print(endFont)
 
 # settings
 #glyphScale = 0.975 # descender to ascender
-#glyphScale, yShift = 1.5, 0.93 # baseline to x-height
-glyphScale, yShift = 1.25, 0.6 #capHeight
+
+
+
 W, H = 1080, 1080
 
 captionSize = 16
@@ -62,17 +67,35 @@ def hex2rgb(hex):
     r1, g1, b1 = RGB[0] / 255, RGB[1] / 255, RGB[2] / 255
     return(r1, g1, b1)
 
+# Dark theme
 colors = {
-    "points": hex2rgb("#ffffff"),
+    "points": hex2rgb("#FFFFFF"),
     "offcurvePoints":  hex2rgb("#ffffff"),
-    "pointFill": hex2rgb("#0051FF"),         # primary blue
-    "background": hex2rgb("#080822"),        # dark blue
-    "glyphBox": hex2rgb("#080811"), #(0,0,0),
-    "glyphFill": (0.8,0.8,1,0.2),
-    "glyphStroke": hex2rgb("#B3CAFF"),
+    "pointFill": hex2rgb("#0050FF"),         # primary blue
+    "background": hex2rgb("#0c0c0c"),
+    "glyphBox": hex2rgb("#000000"), #(0,0,0),
+    "glyphFill": (*hex2rgb("#FFFFFF"),0.1),
+    "glyphStroke": hex2rgb("#0050FF"), #B3CAFF
     "guides": hex2rgb("#003099"),
     "labels": (1,1,1)
 }
+
+# # Light theme
+# colors = {
+#     "points": hex2rgb("#0050FF"), # primary blue
+#     "offcurvePoints":  hex2rgb("#0050FF"),
+#     "pointFill": hex2rgb("#ffffff"),      
+#     "handles": hex2rgb("#0050FF"),   
+#     "background": hex2rgb("#FFFFFF"),        # dark blue
+#     "glyphBox": (*hex2rgb("#000000"),0.05), #(0,0,0),
+#     "glyphFill": (*hex2rgb("#000000"),0.075),
+#     "glyphStroke": (*hex2rgb("#000000"),0.5), #hex2rgb("#B3CAFF"),
+#     "guides": hex2rgb("#0050FF"), #hex2rgb("#003099"), # 080822
+#     "labels": (0,0,0),
+#     "connections": hex2rgb("#0050FF")
+# }
+
+
 
 def interpolate(a, b, t):
     return(a + (b-a) * t)
@@ -132,15 +155,6 @@ boxY = (H - boxHeight) * 0.5
 
 for frame in range(frames):
     
-    #TODO: add curve to factor
-    
-
-    
-    # if frame <= frames/2:
-    #     t = frame*2/(frames)
-    # else:
-    #     t = 1 - (frame*2/(frames-1)-1)
-    
     t = frame/frames
     factor = getCurveValue(t, 1, 0, 1)
     
@@ -148,8 +162,6 @@ for frame in range(frames):
     g = RGlyph()
     g.interpolate(factor, f1[glyphToAnimate], f2[glyphToAnimate])
 
-    # get glyph
-    # g = f1[glyphToAnimate]
     boxWidth = g.width * glyphScale
 
     # make new page
@@ -206,7 +218,7 @@ for frame in range(frames):
     #fill(None)
     fill(*colors["glyphFill"])
     stroke(*colors["glyphStroke"])
-    strokeWidth(1)
+    strokeWidth(1.25)
     lineJoin('round')
     translate(x, y)
     scale(glyphScale)
@@ -241,7 +253,7 @@ for frame in range(frames):
                 ptInY = pt[1]+ptIn[1]
                 stroke(*colors["points"])
                 line((ptX, ptY), (ptInX, ptInY))
-                stroke(1)
+                stroke(*colors["points"])
                 rect(ptInX - offcurveSize/2, ptInY - offcurveSize/2, offcurveSize, offcurveSize)
             
         
@@ -250,13 +262,14 @@ for frame in range(frames):
                 ptOutY = pt[1]+ptOut[1]
                 stroke(*colors["points"])
                 line((ptX, ptY), (ptOutX, ptOutY))
-                stroke(1)
+                stroke(*colors["points"])
                 rect(ptOutX - offcurveSize/2, pt[1]+ptOut[1] - offcurveSize/2, offcurveSize, offcurveSize)
             
             
             # now draw oncurve point so it's on top
             fill(*colors["pointFill"])
-            stroke(1)
+            stroke(*colors["points"])
+            strokeWidth(1.25)
 
             if bPt.type == "corner":
                 rect(ptX - oncurveSize/2, ptY - oncurveSize/2, oncurveSize, oncurveSize)
