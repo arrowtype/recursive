@@ -36,15 +36,30 @@ for fontPath in inputFonts:
     #     font.info.familyName = "Recursive Mono"
     #     font.info.styleName = font.info.styleName.replace("Mono ", "")
 
-    if " A" in font.info.styleName:
-        font.info.styleName = font.info.styleName.replace(" A", " Light")
-    if " B" in font.info.styleName:
-        font.info.styleName = font.info.styleName.replace(" B", " ExtraBold")
-    if "Casual C" in font.info.styleName or "Linear C" in font.info.styleName:
-        font.info.styleName = font.info.styleName.replace("Casual C", "Casual ExtraBlack")
-        font.info.styleName = font.info.styleName.replace("Linear C", "Linear ExtraBlack")
-    if " Slanted" in font.info.styleName:
-        font.info.styleName = font.info.styleName.replace(" Slanted", " Italic")
+    # if " A" in font.info.styleName:
+    #     font.info.styleName = font.info.styleName.replace(" A", " Light")
+    # if " B" in font.info.styleName:
+    #     font.info.styleName = font.info.styleName.replace(" B", " ExtraBold")
+    # if "Casual C" in font.info.styleName or "Linear C" in font.info.styleName:
+    #     font.info.styleName = font.info.styleName.replace("Casual C", "Casual ExtraBlack")
+    #     font.info.styleName = font.info.styleName.replace("Linear C", "Linear ExtraBlack")
+    # if " Slanted" in font.info.styleName:
+    #     font.info.styleName = font.info.styleName.replace(" Slanted", " Italic")
+
+    ## set split family names (e.g. Recursive Mono Linear)
+    if "Mono" in font.info.styleName:
+        font.info.familyName = font.info.familyName + " Mono"
+        font.info.styleName = font.info.styleName.replace("Mono ", "")
+    if "Sans" in font.info.styleName:
+        font.info.familyName = font.info.familyName + " Sans"
+        font.info.styleName = font.info.styleName.replace("Sans ", "")
+    if "Casual" in font.info.styleName:
+        font.info.familyName = font.info.familyName + " Casual"
+        font.info.styleName = font.info.styleName.replace("Casual ", "")
+    if "Linear" in font.info.styleName:
+        font.info.familyName = font.info.familyName + " Linear"
+        font.info.styleName = font.info.styleName.replace("Linear ", "")
+
 
 
 
