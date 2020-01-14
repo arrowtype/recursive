@@ -20,7 +20,7 @@ saveOutput = True
 outputDir = "exports"
 autoOpen = False
 
-fileFormat = "gif" # pdf, gif, or mp4 # if just 1 frame, can also be jpg or png
+fileFormat = "mp4" # pdf, gif, or mp4 # if just 1 frame, can also be jpg or png
 
 frames = 40
 
@@ -37,16 +37,16 @@ timestamp = datetime.now().strftime("%Y_%m_%d")
 # startFont = getFile("Select file to start animation from", allowsMultipleSelection=False, fileTypes=["ufo"])
 # endFont = getFile("Select file to end animation at", allowsMultipleSelection=False, fileTypes=["ufo"])
 
-glyphToAnimate = 'r.mono' #'x.italic'
-startFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual B Slanted.ufo"
-endFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear A.ufo"
-glyphScale, yShift = 1.5, 0.93 # baseline to x-height
+# glyphToAnimate = 'r.mono' #'x.italic'
+# startFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual B Slanted.ufo"
+# endFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear A.ufo"
+# glyphScale, yShift = 1.5, 0.93 # baseline to x-height
 
 
-# glyphToAnimate = 'ampersand' #'x.italic'
-# startFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual B.ufo"
-# endFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear B.ufo"
-# glyphScale, yShift = 1.25, 0.6 #capHeight
+glyphToAnimate = 'ampersand' #'x.italic'
+startFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual B.ufo"
+endFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear B.ufo"
+glyphScale, yShift = 1.25, 0.6 #capHeight
 
 
 print(startFont)
@@ -67,33 +67,33 @@ def hex2rgb(hex):
     r1, g1, b1 = RGB[0] / 255, RGB[1] / 255, RGB[2] / 255
     return(r1, g1, b1)
 
-# Dark theme
-colors = {
-    "points": hex2rgb("#FFFFFF"),
-    "offcurvePoints":  hex2rgb("#ffffff"),
-    "pointFill": hex2rgb("#0050FF"),         # primary blue
-    "background": hex2rgb("#0c0c0c"),
-    "glyphBox": hex2rgb("#000000"), #(0,0,0),
-    "glyphFill": (*hex2rgb("#FFFFFF"),0.1),
-    "glyphStroke": hex2rgb("#0050FF"), #B3CAFF
-    "guides": hex2rgb("#003099"),
-    "labels": (1,1,1)
-}
-
-# # Light theme
+# # Dark theme
 # colors = {
-#     "points": hex2rgb("#0050FF"), # primary blue
-#     "offcurvePoints":  hex2rgb("#0050FF"),
-#     "pointFill": hex2rgb("#ffffff"),      
-#     "handles": hex2rgb("#0050FF"),   
-#     "background": hex2rgb("#FFFFFF"),        # dark blue
-#     "glyphBox": (*hex2rgb("#000000"),0.05), #(0,0,0),
-#     "glyphFill": (*hex2rgb("#000000"),0.075),
-#     "glyphStroke": (*hex2rgb("#000000"),0.5), #hex2rgb("#B3CAFF"),
-#     "guides": hex2rgb("#0050FF"), #hex2rgb("#003099"), # 080822
-#     "labels": (0,0,0),
-#     "connections": hex2rgb("#0050FF")
+#     "points": hex2rgb("#FFFFFF"),
+#     "offcurvePoints":  hex2rgb("#ffffff"),
+#     "pointFill": hex2rgb("#0050FF"),         # primary blue
+#     "background": hex2rgb("#0c0c0c"),
+#     "glyphBox": hex2rgb("#000000"), #(0,0,0),
+#     "glyphFill": (*hex2rgb("#FFFFFF"),0.1),
+#     "glyphStroke": hex2rgb("#0050FF"), #B3CAFF
+#     "guides": hex2rgb("#003099"),
+#     "labels": (1,1,1)
 # }
+
+# Light theme
+colors = {
+    "points": hex2rgb("#0050FF"), # primary blue
+    "offcurvePoints":  hex2rgb("#0050FF"),
+    "pointFill": hex2rgb("#ffffff"),      
+    "handles": hex2rgb("#0050FF"),   
+    "background": hex2rgb("#FFFFFF"),        # dark blue
+    "glyphBox": (*hex2rgb("#000000"),0.05), #(0,0,0),
+    "glyphFill": (*hex2rgb("#000000"),0.075),
+    "glyphStroke": (*hex2rgb("#000000"),0.5), #hex2rgb("#B3CAFF"),
+    "guides": hex2rgb("#0050FF"), #hex2rgb("#003099"), # 080822
+    "labels": (0,0,0),
+    "connections": hex2rgb("#0050FF")
+}
 
 
 
