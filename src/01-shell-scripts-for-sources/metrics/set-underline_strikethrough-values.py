@@ -76,18 +76,21 @@ for ufo in sorted(ufosToAdjust):
 	fontName = f"{font.info.familyName} {font.info.styleName}"
 	print(fontName)
 
-	if "Casual A" in fontName or "Casual Light" in fontName:
-		subFam = "Casual A"
-	if "Casual B" in fontName or "Casual Light" in fontName:
-		subFam = "Casual B"
-	if "Casual C" in fontName or "Casual Light" in fontName:
-		subFam = "Casual C"
-	if "Linear A" in fontName or "Casual Light" in fontName:
-		subFam = "Linear A"
-	if "Linear B" in fontName or "Casual Light" in fontName:
-		subFam = "Linear B"
-	if "Linear C" in fontName or "Casual Light" in fontName:
-		subFam = "Linear C"
+	subFam = "Casual A"
+
+	## only useful if fontmake builds values into MVAR table
+	# if "Casual A" in fontName or "Casual Light" in fontName:
+	# 	subFam = "Casual A"
+	# if "Casual B" in fontName or "Casual Light" in fontName:
+	# 	subFam = "Casual B"
+	# if "Casual C" in fontName or "Casual Light" in fontName:
+	# 	subFam = "Casual C"
+	# if "Linear A" in fontName or "Casual Light" in fontName:
+	# 	subFam = "Linear A"
+	# if "Linear B" in fontName or "Casual Light" in fontName:
+	# 	subFam = "Linear B"
+	# if "Linear C" in fontName or "Casual Light" in fontName:
+	# 	subFam = "Linear C"
 
 	print('\nStrikethrough ------------------------------------------')
 
