@@ -36,9 +36,6 @@ Some glyphs will not be supported by Recursive because they are not useful in a 
 - Carriage Return
   - Reason: [unecessary](https://github.com/googlefonts/fontbakery/issues/2677)
 
-## Technical additions, partially-complete
-- Top anchors to combining accents (TODO: check how these are working)
-
 ## Potential glyphs to consider adding in the future
 
 - ℗, soundcopyright
