@@ -1,3 +1,13 @@
+"""
+	Goes through UFOs in a directory and checks the segment types of a specific glyph for compatibility.
+
+	If points are in the wrong order or segment types mismatch, this will help you find which master the problem exists in.
+
+	USAGE EXAMPLE:
+
+	python src/01-shell-scripts-for-sources/checking-similarity-between-fonts/check-seg-types-for-glyph-selected_fonts.py src/masters/sans f.italic
+"""
+
 import sys
 import os
 from fontParts.world import *
