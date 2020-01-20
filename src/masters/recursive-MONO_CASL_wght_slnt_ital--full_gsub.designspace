@@ -387,6 +387,12 @@
       <sub name="zero" with="zero.sans" />
       <sub name="zerosuperior" with="zerosuperior.sans" />
       <sub name="zeroinferior" with="zeroinferior.sans" />
+      <sub name="l" with="l.sans" />
+      <sub name="lacute" with="lacute.sans" />
+      <sub name="lcommaaccent" with="lcommaaccent.sans" />
+      <sub name="ldotbelow" with="ldotbelow.sans" />
+      <sub name="llinebelow" with="llinebelow.sans" />
+      <sub name="lslash" with="lslash.sans" />
     </rule>
     <rule name="sans autoroman">
       <conditionset>
@@ -394,12 +400,6 @@
         <condition name="Slant" minimum="-7.490000" maximum="0" />
         <condition name="Italic" minimum="0" maximum="0.890000" />
       </conditionset>
-      <sub name="l" with="l.sans" />
-      <sub name="lacute" with="lacute.sans" />
-      <sub name="lcommaaccent" with="lcommaaccent.sans" />
-      <sub name="ldotbelow" with="ldotbelow.sans" />
-      <sub name="llinebelow" with="llinebelow.sans" />
-      <sub name="lslash" with="lslash.sans" />
       <sub name="zero" with="zero.sans" />
       <sub name="zerosuperior" with="zerosuperior.sans" />
       <sub name="zeroinferior" with="zeroinferior.sans" />
@@ -507,12 +507,6 @@
       <sub name="itilde" with="itilde.italic" />
       <sub name="k" with="k.italic" />
       <sub name="kcommaaccent" with="kcommaaccent.italic" />
-      <sub name="l" with="l.italic" />
-      <sub name="lacute" with="lacute.italic" />
-      <sub name="lcommaaccent" with="lcommaaccent.italic" />
-      <sub name="ldotbelow" with="ldotbelow.italic" />
-      <sub name="llinebelow" with="llinebelow.italic" />
-      <sub name="lslash" with="lslash.italic" />
       <sub name="m" with="m.italic" />
       <sub name="mdotbelow" with="mdotbelow.italic" />
       <sub name="n" with="n.italic" />
@@ -652,12 +646,6 @@
       <sub name="itilde" with="itilde.italic" />
       <sub name="k" with="k.italic" />
       <sub name="kcommaaccent" with="kcommaaccent.italic" />
-      <sub name="l" with="l.italic" />
-      <sub name="lacute" with="lacute.italic" />
-      <sub name="lcommaaccent" with="lcommaaccent.italic" />
-      <sub name="ldotbelow" with="ldotbelow.italic" />
-      <sub name="llinebelow" with="llinebelow.italic" />
-      <sub name="lslash" with="lslash.italic" />
       <sub name="m" with="m.italic" />
       <sub name="mdotbelow" with="mdotbelow.italic" />
       <sub name="n" with="n.italic" />
