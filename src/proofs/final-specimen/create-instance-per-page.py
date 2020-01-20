@@ -5,10 +5,21 @@ import shutil
 import fire
 
 axes = {
-	'mono': (1, 0),
+	## move on all axes
+	# 'mono': (1, 0),
+	# 'casl': (0, 1),
+	# 'wght': (300, 1000),
+	# 'slnt': (0, -15)
+	## sans linear to mono casual
+	'mono': (0, 1),
 	'casl': (0, 1),
-	'wght': (300, 1000),
-	'slnt': (0, -15)
+	'wght': (400, 400),
+	'slnt': (0, 0)
+	## mono casual to sans linear
+	# 'mono': (1, 0),
+	# 'casl': (1, 0),
+	# 'wght': (400, 400),
+	# 'slnt': (0, 0)
 	# 'ital': (0, 1), # intentionally left out
 }
 
