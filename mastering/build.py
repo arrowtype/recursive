@@ -20,6 +20,8 @@ if __name__ == "__main__":
                         help="Build source files for mastering")
     parser.add_argument("-fvar", "--varfiles", action="store_true",
                         help="Build source files for mastering variable font only")
+    parser.add_argument("-fstat", "--statfiles", action="store_true",
+                        help="Build source files for mastering static fonts only")
     parser.add_argument("-var", "--variable", action="store_true",
                         help="Build variable font")
     parser.add_argument("-s", "--static", action="store_true",
@@ -66,6 +68,8 @@ if __name__ == "__main__":
     
     if args.varfiles:
         files = buildFiles(version=version, static=False)
+    if args.statfiles:
+        files = buildFiles(version=version, variable=False)
 
     if args.static:
         build_static(files["cff"], files["ttf"], out)
