@@ -2,7 +2,7 @@
 <glyph name="ogonekcombo.case" format="2">
 	<outline>
 		<contour>
-			<point x="-52" y="38" type="curve" smooth="yes"/>
+			<point x="-52" y="38" type="curve"/>
 			<point x="-151" y="0"/>
 			<point x="-213" y="-65"/>
 			<point x="-218" y="-140" type="curve" smooth="yes"/>
@@ -28,8 +28,8 @@
 			<point x="22" y="35"/>
 			<point x="32" y="42"/>
 			<point x="40" y="50" type="curve"/>
-			<point x="24" y="58"/>
-			<point x="-13" y="53"/>
+			<point x="3" y="53"/>
+			<point x="-28" y="48"/>
 		</contour>
 	</outline>
 	<anchor name="_ogonek" x="41" y="50"/>
