@@ -439,6 +439,16 @@ feature aalt {
     sub ldotbelow.italic from [ldotbelow.italic ldotbelow.sans ldotbelow ldotbelow.simple ldotbelow.mono];
     sub ldotbelow.mono from [ldotbelow.mono ldotbelow.italic ldotbelow.sans ldotbelow ldotbelow.simple];
     sub ldotbelow.simple from [ldotbelow.simple ldotbelow.mono ldotbelow.italic ldotbelow.sans ldotbelow];
+    sub lcaron from [lcaron lcaron.simple lcaron.sans lcaron.mono lcaron.italic];
+    sub lcaron.italic from [lcaron.italic lcaron lcaron.simple lcaron.sans lcaron.mono];
+    sub lcaron.mono from [lcaron.mono lcaron.italic lcaron lcaron.simple lcaron.sans];
+    sub lcaron.sans from [lcaron.sans lcaron.mono lcaron.italic lcaron lcaron.simple];
+    sub lcaron.simple from [lcaron.simple lcaron.sans lcaron.mono lcaron.italic lcaron];
+    sub ldot from [ldot ldot.simple ldot.sans ldot.mono ldot.italic];
+    sub ldot.italic from [ldot.italic ldot ldot.simple ldot.sans ldot.mono];
+    sub ldot.mono from [ldot.mono ldot.italic ldot ldot.simple ldot.sans];
+    sub ldot.sans from [ldot.sans ldot.mono ldot.italic ldot ldot.simple];
+    sub ldot.simple from [ldot.simple ldot.sans ldot.mono ldot.italic ldot];
     sub less from [less less.code less.case];
     sub less.case from [less.case less less.code];
     sub less.code from [less.code less.case less];

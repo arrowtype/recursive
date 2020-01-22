@@ -209,14 +209,16 @@ pip install -U -r requirements.txt
 
 ### Build the fonts
 
-The fonts are built with the `mastering/build.py` script. This script can build everything (`python build.py --all`), or a subset of the fonts. To view all the options, type `python build.py -h` to see all options. The recommended build process is detailed below. Before beginning, change your working directory to `mastering`.
+The fonts are built with the `mastering/build.py` script. This script can build everything (`python build.py --all`), or a subset of the fonts. To view all the options, type `python build.py -h` to see all options. The recommended build process is detailed below. 
 
 **Note:**
 There are sub-scripts for just prepping the source files (`mastering/prep_fonts.py`), building the source files (`mastering/build_files.py`), generating the variable font (`mastering/build_variable.py`), and generating the static fonts (`build_static.py`). These scripts can be handy if you just want to do one thing to the build files. Each takes a set of command line arguments, all documented (type `python <script_name> -h`) to view the documentation.
 
 #### First, prep fonts
 
-`python build.py --files` is the first step. This will generate all the files needed for building the variable and static fonts. You will likely want to give the font a version number with this command (`python build.py --version 1.03 --files`).
+Before beginning, change your working directory to `mastering`.
+
+`python build.py --files` is the first step. This will generate all the files needed for building the variable and static fonts. You will likely want to give the font a version number with this command (`python build.py --version 1.03 --files`). To prep only files for the variable font, use `python build.py --varfiles`, or to prep only files for the static fonts, use `python build.py --statfiles`.
 
 After the files have been generated (do note that the static instances take a bit of time to generate), you will want to look at the `mastering/build/static/CFF/checkoutlines.txt` file. This is the report (edited to remove issues that do not need attention) from [checkoutlinesUFO](https://adobe-type-tools.github.io/afdko/AFDKO-Overview.html#checkoutlinesufo). Issues found in this report should be cleaned up in the static UFOs. Many issues are due to overlap removal. Nothing is perfect, overlap removal algorithms included.
 

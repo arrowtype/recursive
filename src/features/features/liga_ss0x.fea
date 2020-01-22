@@ -62,10 +62,10 @@ feature ss04 {
 
 # TODO: add /lcaron
 # TODO: update l italic rules
-@sansL =   [l        lacute        lcommaaccent        ldotbelow        llinebelow        lslash        ];
-@monoL =   [l.mono   lacute.mono   lcommaaccent.mono   ldotbelow.mono   llinebelow.mono   lslash.mono   ];
-@italL =   [l.italic lacute.italic lcommaaccent.italic ldotbelow.italic llinebelow.italic lslash.italic ];
-@simpleL = [l.simple lacute.simple lcommaaccent.simple ldotbelow.simple llinebelow.simple lslash.simple ];
+@sansL =   [l        lacute        lcaron        lcommaaccent        ldot        ldotbelow        llinebelow        lslash        ];
+@monoL =   [l.mono   lacute.mono   lcaron.mono   lcommaaccent.mono   ldot.mono   ldotbelow.mono   llinebelow.mono   lslash.mono   ];
+@italL =   [l.italic lacute.italic lcaron.italic lcommaaccent.italic ldot.italic ldotbelow.italic llinebelow.italic lslash.italic ];
+@simpleL = [l.simple lacute.simple lcaron.simple lcommaaccent.simple ldot.simple ldotbelow.simple llinebelow.simple lslash.simple ];
 
 feature ss05 {
     featureNames {
