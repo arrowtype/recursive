@@ -63,7 +63,7 @@ if __name__ == "__main__":
     description = "Make a aalt feature from a UFO"
     parser = argparse.ArgumentParser(description=description)
     parser.add_argument("fontPath",
-                        help="The path to a designspace file")
+                        help="The path to a UFO file")
     parser.add_argument("-o", "--out",
                         help="Output path")
     args = parser.parse_args()
