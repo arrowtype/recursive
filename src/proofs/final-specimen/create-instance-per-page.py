@@ -5,10 +5,21 @@ import shutil
 import fire
 
 axes = {
+	## move on all axes
+	# 'mono': (1, 0),
+	# 'casl': (0, 1),
+	# 'wght': (300, 1000),
+	# 'slnt': (0, -15)
+	## sans linear to mono casual
 	'mono': (0, 1),
 	'casl': (0, 1),
-	'wght': (300, 1000),
-	'slnt': (0, -15)
+	'wght': (400, 400),
+	'slnt': (0, 0)
+	## mono casual to sans linear
+	# 'mono': (1, 0),
+	# 'casl': (1, 0),
+	# 'wght': (400, 400),
+	# 'slnt': (0, 0)
 	# 'ital': (0, 1), # intentionally left out
 }
 
@@ -21,7 +32,7 @@ def setFontNameID(font, ID, newName, platformID=3, platEncID=1, langID=0x409):
     font['name'].setName(newName, ID, platformID, platEncID, langID)
     print(f"\t• name {ID}:  \t {str(oldName).ljust(30, ' ')} \t → {str(newName).ljust(20, ' ')}")
 
-def splitFont(splits=10, fontPath="fonts_1.031/Variable_TTF/Recursive_VF_1.031.ttf", outputDir="recursive-split", run=False):
+def splitFont(splits=10, fontPath="fonts_1.031/Variable_TTF/Recursive_VF_1.031.ttf", outputDirectoryyyy="recursive-split", run=False):
 	"""
 		Use to split Recursive VF into an arbitrary number of instances, so that each style is slightly different from the previous one.
 
@@ -34,9 +45,11 @@ def splitFont(splits=10, fontPath="fonts_1.031/Variable_TTF/Recursive_VF_1.031.t
 
 	report = ""
 
-	if run and not os.path.exists(outputDir):
-		shutil.rmtree(outputDir)
-		os.makedirs(outputDir)	
+	if run:
+		if os.path.exists(outputDirectoryyyy):
+			shutil.rmtree(outputDirectoryyyy)
+		if not os.path.exists(outputDirectoryyyy):
+			os.makedirs(outputDirectoryyyy)	
 
 	varfont = ttLib.TTFont(fontPath)
 
@@ -67,18 +80,18 @@ def splitFont(splits=10, fontPath="fonts_1.031/Variable_TTF/Recursive_VF_1.031.t
 			)
 
 			# give instance page-based style name
-			setFontNameID(instance, 1, "Recursive VF Split")
+			setFontNameID(instance, 1, f"Recursive {splits}p")
 			setFontNameID(instance, 3, f"1.031;ARRW;RecVarSplit-split{pageNum}")
-			setFontNameID(instance, 4, "Recursive VF Split")
+			setFontNameID(instance, 4, f"Recursive {splits}p")
 			setFontNameID(instance, 6, f"RecVarSplit-split{pageNum}")
-			setFontNameID(instance, 16, "Recursive VF Split")
+			setFontNameID(instance, 16, f"Recursive {splits}p")
 			setFontNameID(instance, 17, f"Split_{pageNum}")
 
 			# save custom instance
-			instance.save(f"{outputDir}/recursive-split--page_{pageNum}--MONO{mono}_CASL{casl}_wght{wght}_slnt{slnt}.ttf")
+			instance.save(f"{outputDirectoryyyy}/recursive-split--page_{pageNum}--MONO{mono}_CASL{casl}_wght{wght}_slnt{slnt}.ttf")
 
 	if run:
-		with open(f"{outputDir}/font-split-report.txt", "w") as file:  
+		with open(f"{outputDirectoryyyy}/font-split-report.txt", "w") as file:  
 			file.write(report)
 
 	if not run:

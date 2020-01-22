@@ -6,15 +6,17 @@ Recursive will support the following [Google Fonts Glyph Sets](https://github.co
 - Pro
 - Expert
 
-## Glyphs added that are not required
+## Where Recursive exceeds standard Google Fonts Latin character setssd
 
 - [Code ligatures](./code-ligatures--planning)
 - Additional currencies for many countries which use the Latin script ([more details](https://github.com/googlefonts/gftools/pull/145)) `฿ ₨ ₪ ₴ ₸ ₿`
 - Additional arrows `↔ ↕ ↖ ↗ ↘ ↙`
 - A few additional language-specific glyphs, such as Dutch ij and ijacute ligatures
 - A variable .notdef glyph (because it's cool)
+- Case-specific forms (need to specify an exact set)
+- check, checkbox, checkedbox
 
-## Glyphs that will be excluded
+## Glyphs excluded despite being in existing Google Fonts Latin character sets, and why
 
 Some glyphs will not be supported by Recursive because they are not useful in a font for code & UI. 
 
@@ -34,14 +36,7 @@ Some glyphs will not be supported by Recursive because they are not useful in a 
 - Carriage Return
   - Reason: [unecessary](https://github.com/googlefonts/fontbakery/issues/2677)
 
-## Technical additions, partially-complete
-- case-specific forms (need to specify an exact set)
-- Top anchors to combining accents
+## Potential glyphs to consider adding in the future
 
-## Potential glyphs to consider adding
-
-- check
-- checkbox
-- checkedbox
 - ℗, soundcopyright
 - ℠, servicemark

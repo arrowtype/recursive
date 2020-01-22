@@ -16,7 +16,7 @@ newTopAscenderValue = 950
 
 try:
     if sys.argv[1]:
-        print("Copying from UFO to UFOs in another Directory")
+        print("Getting UFO paths")
         dirToUpdate = sys.argv[1]
         subDirs = next(os.walk(dirToUpdate))[1]
         ufosToAdjust = [ path for path in subDirs if path.endswith(".ufo")]
