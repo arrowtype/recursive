@@ -23,7 +23,7 @@ echo $outputDir
 
 fontPath300_800=$outputDir/${fontFile/'.ttf'/'--wght300_800.ttf'}
 fontFile300_800=$(basename $fontPath300_800)
-fonttools varLib.instancer $fontPath wght=300_800 -o $fontPath300_800
+fonttools varLib.instancer $fontPath wght=300:800 -o $fontPath300_800
 
 # --------------------------------------
 # agressively-split ranges
@@ -31,7 +31,7 @@ fonttools varLib.instancer $fontPath wght=300_800 -o $fontPath300_800
 
 # bare minimum English subset, plus copyright & arrows (← ↑ → ↓)
 englishBasicFile=${fontFile300_800/'.ttf'/--subset_range_english_basic.woff2}
-englishBasicUni="U+0020-007F,U+00A9,U+2190-2193"
+englishBasicUni="U+0020-007F,U+00A9,U+2190-2193,U+2018,U+2019,U+201C,U+201D,U+2022"
 pyftsubset $fontPath300_800 --flavor="woff2" --output-file=$outputDir/$englishBasicFile --unicodes=$englishBasicUni
 
 # unicode latin-1 letters, basic european diacritics

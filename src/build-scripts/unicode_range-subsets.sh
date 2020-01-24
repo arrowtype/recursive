@@ -21,9 +21,9 @@ echo $outputDir
 # agressively-split ranges
 # # based on https://en.wikipedia.org/wiki/List_of_Unicode_characters
 
-## bare minimum English subset, plus copyright & arrows (← ↑ → ↓)
+## bare minimum English subset, plus copyright & arrows (← ↑ → ↓) & quotes (“ ” ‘ ’) & bullet (•)
 englishBasicFile=${fontFile/'.ttf'/--subset_range_english_basic.woff2}
-englishBasicUni="U+0020-007F,U+00A9,U+2190-2193"
+englishBasicUni="U+0020-007F,U+00A9,U+2190-2193,U+2018,U+2019,U+201C,U+201D,U+2022"
 
 pyftsubset $fontPath --flavor="woff2"\
  --output-file=$outputDir/$englishBasicFile\
