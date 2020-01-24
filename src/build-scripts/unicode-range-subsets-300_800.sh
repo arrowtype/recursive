@@ -8,7 +8,7 @@ source venv/bin/activate
 
 fontPath=$1
 fontFile=$(basename $fontPath)
-outputDir="$(dirname $fontPath)/WOFF2_subsets-wght300:800"
+outputDir="$(dirname $fontPath)/WOFF2_subsets-wght300_800"
 outputDir1="$(dirname $fontPath)/WOFF2"
 
 mkdir -p $outputDir
@@ -21,9 +21,9 @@ echo $outputDir
 # --------------------------------------
 # start by subsetting wght axis
 
-fontPath300_800=$outputDir/${fontFile/'.ttf'/'--wght300:800.ttf'}
+fontPath300_800=$outputDir/${fontFile/'.ttf'/'--wght300_800.ttf'}
 fontFile300_800=$(basename $fontPath300_800)
-fonttools varLib.instancer $fontPath wght=300:800 -o $fontPath300_800
+fonttools varLib.instancer $fontPath wght=300_800 -o $fontPath300_800
 
 # --------------------------------------
 # agressively-split ranges
@@ -110,7 +110,7 @@ __CSS="
 }
 "
 
-echo "$__CSS" > $outputDir/fonts-300:800.css
+echo "$__CSS" > $outputDir/fonts-wght300_800.css
 
 # clean up wght-subset font
 rm $fontPath300_800
