@@ -1,6 +1,8 @@
 feature liga {
     sub f i.italic by fi;
+    sub f f i.italic by f_f_i;
     sub f l.italic by fl;
+    sub f f l.italic by f_f_l;
 } liga;
 
 @dfltA = [ a        aacute        abreve        abreveacute        abrevedot        abrevegrave        abrevehook        abrevetilde        acircumflex        acircumflexacute        acircumflexdot        acircumflexgrave        acircumflexhook        acircumflextilde        adieresis        adotbelow        agrave        ahook        amacron        aogonek        aring        aringacute        atilde        ];
