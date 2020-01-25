@@ -15,7 +15,6 @@ mkdir -p $outputDir1
 
 echo $fontPath
 echo $fontFile
-# echo $fontName
 echo $outputDir
 
 # agressively-split ranges
@@ -24,36 +23,26 @@ echo $outputDir
 ## bare minimum English subset, plus copyright & arrows (← ↑ → ↓) & quotes (“ ” ‘ ’) & bullet (•)
 englishBasicFile=${fontFile/'.ttf'/--subset_range_english_basic.woff2}
 englishBasicUni="U+0020-007F,U+00A9,U+2190-2193,U+2018,U+2019,U+201C,U+201D,U+2022"
-
-pyftsubset $fontPath --flavor="woff2"\
- --output-file=$outputDir/$englishBasicFile\
- --unicodes=$englishBasicUni
+pyftsubset $fontPath --flavor="woff2" --output-file=$outputDir/$englishBasicFile --layout-features-="numr,dnom,frac" --unicodes=$englishBasicUni
 
 # unicode latin-1 letters, basic european diacritics
 latin1File=${fontFile/'.ttf'/--subset_range_latin_1.woff2}
 latin1Uni="U+00C0-00FF"
-
-pyftsubset $fontPath --flavor="woff2"\
- --output-file=$outputDir/$latin1File\
- --unicodes=$latin1Uni
+pyftsubset $fontPath --flavor="woff2" --output-file=$outputDir/$latin1File --unicodes=$latin1Uni
 
 # unicode latin-1, punc/symbols & arrows (↔ ↕ ↖ ↗ ↘ ↙)
 latin1PuncFile=${fontFile/'.ttf'/--subset_range_latin_1_punc.woff2}
 latin1PuncUni="U+00A0-00BF,U+2194-2199"
-pyftsubset $fontPath --flavor="woff2"\
- --output-file=$outputDir/$latin1PuncFile\
- --unicodes=$latin1PuncUni
+pyftsubset $fontPath --flavor="woff2" --output-file=$outputDir/$latin1PuncFile --unicodes=$latin1PuncUni
 
 # unicode latin A extended
 latinExtFile=${fontFile/'.ttf'/--subset_range_latin_ext.woff2}
 latinExtUni="U+0100-017F"
-pyftsubset $fontPath --flavor="woff2"\
- --output-file=$outputDir/$latinExtFile\
- --unicodes="U+0100-017F"
+pyftsubset $fontPath --flavor="woff2" --output-file=$outputDir/$latinExtFile --unicodes="U+0100-017F"
 
 
 __CSS="
- /* The bare minimum for the English Language */
+ /* The bare minimum English subset, plus copyright & arrows (← ↑ → ↓) & quotes (“ ” ‘ ’) & bullet (•) */
 @font-face {
   font-family: 'Recursive';
   font-style: oblique -15deg 0deg;

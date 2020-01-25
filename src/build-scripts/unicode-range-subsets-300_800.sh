@@ -31,9 +31,8 @@ fonttools varLib.instancer $fontPath wght=300:800 -o $fontPath300_800
 
 # bare minimum English subset, plus copyright & arrows (← ↑ → ↓)
 englishBasicFile=${fontFile300_800/'.ttf'/--subset_range_english_basic.woff2}
-# englishBasicUni="U+0020-007E,U+00A9,U+2190-2193,U+2018,U+2019,U+201C,U+201D,U+2022"
-englishBasicUni="U+0020,U+0021,U+0023,U+0025,U+0026,U+0027,U+0028,U+0029,U+002A,U+002B,U+002C,U+002D,U+002E,U+0030,U+0031,U+0032,U+0033,U+0034,U+0035,U+0036,U+0037,U+0038,U+0039,U+003A,U+003B,U+003D,U+003F,U+0041,U+0042,U+0043,U+0044,U+0045,U+0046,U+0047,U+0048,U+0049,U+004A,U+004B,U+004C,U+004D,U+004E,U+004F,U+0050,U+0052,U+0053,U+0054,U+0055,U+0056,U+0057,U+0059,U+005B,U+005D,U+0061,U+0062,U+0063,U+0064,U+0065,U+0066,U+0067,U+0068,U+0069,U+006A,U+006B,U+006C,U+006D,U+006E,U+006F,U+0070,U+0071,U+0072,U+0073,U+0074,U+0075,U+0076,U+0077,U+0078,U+0079,U+007A,U+007C,U+007B,U+007D,U+00A9,U+2018,U+2019,U+201C,U+201D,U+2190-2193"
-pyftsubset $fontPath300_800 --flavor="woff2" --output-file=$outputDir/$englishBasicFile --unicodes=$englishBasicUni
+englishBasicUni="U+0020-007E,U+00A9,U+2190-2193,U+2018,U+2019,U+201C,U+201D,U+2022"
+pyftsubset $fontPath300_800 --flavor="woff2" --layout-features-="numr,dnom,frac" --output-file=$outputDir/$englishBasicFile --unicodes=$englishBasicUni
 
 # unicode latin-1 letters, basic european diacritics
 latin1File=${fontFile300_800/'.ttf'/--subset_range_latin_1.woff2}
@@ -70,7 +69,7 @@ __CSS="
   src: url('fonts/$siaLogoFile') format('woff2');
   unicode-range: $siaLogoUni;
 }
- /* The bare minimum for the English Language */
+ /* The bare minimum English subset, plus copyright & arrows (← ↑ → ↓) & quotes (“ ” ‘ ’) & bullet (•) */
 @font-face {
   font-family: 'Recursive';
   font-style: oblique -15deg 0deg;
