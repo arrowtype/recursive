@@ -37,7 +37,7 @@ def makeDligBlock(ligName):
 	return block
 
 for g in font:
-	if ".code" in g.name and "_" in g.name:
+	if ".code" in g.name and "_" in g.name and g.name not in font.lib["public.skipExportGlyphs"]:
 		codeLigs.append(g.name)
 
 font.close()
