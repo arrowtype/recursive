@@ -243,6 +243,8 @@ def decomposeNonExportingGlyphs(fonts):
                     elif component.baseGlyph[0] == "_":
                         non_exporting.append(component.baseGlyph)
                         component.decompose()
+        # add glyphs from lib.skipExportGlyphs
+        non_exporting.extend(font.lib["public.skipExportGlyphs"])
         removeGlyphs(font, non_exporting)
         local_report.append((font.info.familyName + " " + font.info.styleName, non_exporting))
     report["Non-exporting glyphs"] = local_report
