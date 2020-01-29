@@ -8,20 +8,13 @@ currentDir = os.path.dirname(os.path.abspath(__file__))
 saveOutput = True
 outputDir = "exports"
 docTitle = "recursive-interpolation"
-fileFormat = "png"
+fileFormat = "pdf"
 
 scaling = 1.5
 
 W, H = 1000 * scaling,1000 * scaling
 
-newPage(W, H)
 
-scale(scaling)
-
-f = CurrentFont()
-fill(1)
-rect(0,0,W, H)
-# glyphName = "bullet"
 glyphName = "R"
 startFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual A Slanted.ufo"
 endFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear C.ufo"
@@ -36,17 +29,6 @@ handlesDict = {}
 
 # TODO: it would be better to grab the glyph box for this
 
-glyph1 = f1[glyphName]
-glyph2 = f2[glyphName]
-
-
-
-glyph1Pos = (-14, 58) #(200,200) 
-glyph2Pos = (600, 478) # (200,200)
-
-
-scale(.82)
-lineCap("round")
 
 
 
@@ -58,19 +40,39 @@ def hex2rgb(hex):
     return(r1, g1, b1)
 
 colors = {
-    "points": hex2rgb("#0020aa"), # primary blue
-    "offcurvePoints":  hex2rgb("#0050FF"),
+    "points": hex2rgb("#000066"), # primary blue
+    "offcurvePoints":  hex2rgb("#ffffff"),
     "pointFill": hex2rgb("#ffffff"),      
-    "handles": hex2rgb("#0050FF"),   
-    "background": hex2rgb("#080822"),        # dark blue
+    "handles": hex2rgb("#ffffff"),   
+    "background": hex2rgb("#0000ff"),        # dark blue
     "glyphBox": hex2rgb("#080811"), #(0,0,0),
-    "glyphFill": (*hex2rgb("#000000"),0.05),
-    "glyphStroke": (*hex2rgb("#000000"),0.5), #hex2rgb("#B3CAFF"),
-    "guides": hex2rgb("#080822"), #hex2rgb("#003099"),
+    "glyphFill": (*hex2rgb("#000000"),0.25),
+    "glyphStroke": hex2rgb("#000066"), #hex2rgb("#B3CAFF"),
+    "guides": hex2rgb("#ffffff"), #hex2rgb("#003099"),
     "labels": (0,0,0),
-    "connections": hex2rgb("#0050FF")
+    "connections": (*hex2rgb("#ffffff"),0.175)
 }
 
+newPage(W, H)
+
+scale(scaling)
+
+f = CurrentFont()
+fill(*colors["background"])
+rect(0,0,W, H)
+# glyphName = "bullet"
+
+glyph1 = f1[glyphName]
+glyph2 = f2[glyphName]
+
+
+
+glyph1Pos = (-14, 58) #(200,200) 
+glyph2Pos = (600, 478) # (200,200)
+
+
+scale(.82)
+lineCap("round")
 
 
 fonts = [f1, f2]
@@ -138,19 +140,19 @@ for f in fonts:
 
 # oncurve connections
 for point, coordinates in pointsDict.items():
-    stroke(*colors["connections"], 1)
+    stroke(*colors["connections"])
     x1, y1 = (coordinates[0][0] + glyph1Pos[0], coordinates[0][1] + glyph1Pos[1])
     x2, y2 = (coordinates[1][0] + glyph2Pos[0], coordinates[1][1] + glyph2Pos[1])
-    lineDash(4)
+    #lineDash(4)
     strokeWidth(2)
     line((x1,y1),(x2,y2))
     
 # offcurve connections
 for point, coordinates in handlesDict.items():
-    stroke(*colors["connections"], .25)
+    stroke(*colors["connections"])
     x1, y1 = (coordinates[0][0] + glyph1Pos[0], coordinates[0][1] + glyph1Pos[1])
     x2, y2 = (coordinates[1][0] + glyph2Pos[0], coordinates[1][1] + glyph2Pos[1])
-    lineDash(4)
+    #lineDash(4)
     strokeWidth(2)
     line((x1,y1),(x2,y2))
     
