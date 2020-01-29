@@ -24,8 +24,9 @@ Steps to reproduce the behavior:
 4. See error
 
 **Environment (please complete the following information):**
- - OS: [e.g. iOS 13.2, Windows 10 v1909]
- - Browser: [e.g. chrome 79, safari 13.0.4]
+- OS: [e.g. iOS 13.2, Windows 10 v1909]
+- Browser: [e.g. chrome 79, safari 13.0.4]
+- Fonts: [e.g. v 1.036 at commit e72e93e]
 
 **Additional context**
 Add any other context about the problem here.
