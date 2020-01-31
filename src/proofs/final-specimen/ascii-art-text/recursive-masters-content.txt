@@ -1,3 +1,5 @@
+Maybe something like this, and maybe also with folder & file icons:
+
 recursive/src/masters/
 
 	mono/
@@ -29,3 +31,38 @@ recursive/src/masters/
 		Recursive Sans-Linear C.ufo
 
 	recursive-MONO_CASL_wght_slnt_ital.designspace
+
+
+...Or maybe the following, but with line numbers and very light-gray arrows (to mimic a code editor)
+
+recursive/src/masters/
+
+→   mono/
+→   →   Recursive Mono-Casual A Slanted.ufo
+→   →   Recursive Mono-Casual A.ufo
+→   →   Recursive Mono-Casual B Slanted.ufo
+→   →   Recursive Mono-Casual B.ufo
+→   →   Recursive Mono-Casual C Slanted.ufo
+→   →   Recursive Mono-Casual C.ufo
+→   →   Recursive Mono-Linear A Slanted.ufo
+→   →   Recursive Mono-Linear A.ufo
+→   →   Recursive Mono-Linear B Slanted.ufo
+→   →   Recursive Mono-Linear B.ufo
+→   →   Recursive Mono-Linear C Slanted.ufo
+→   →   Recursive Mono-Linear C.ufo
+
+→   sans/
+→   →   Recursive Sans-Casual A Slanted.ufo
+→   →   Recursive Sans-Casual A.ufo
+→   →   Recursive Sans-Casual B Slanted.ufo
+→   →   Recursive Sans-Casual B.ufo
+→   →   Recursive Sans-Casual C Slanted.ufo
+→   →   Recursive Sans-Casual C.ufo
+→   →   Recursive Sans-Linear A Slanted.ufo
+→   →   Recursive Sans-Linear A.ufo
+→   →   Recursive Sans-Linear B Slanted.ufo
+→   →   Recursive Sans-Linear B.ufo
+→   →   Recursive Sans-Linear C Slanted.ufo
+→   →   Recursive Sans-Linear C.ufo
+
+→   recursive-MONO_CASL_wght_slnt_ital.designspace
