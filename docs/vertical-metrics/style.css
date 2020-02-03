@@ -1,0 +1,34 @@
+@font-face {
+	font-family: "RecMono Linear";
+	src: url("fonts/RecursiveMonoLnr-ExtraBold.otf") format("woff2");
+  }
+
+@font-face {
+	font-family: "RecMono Casual";
+	src: url("fonts/RecursiveMonoCsl-ExtraBd.otf") format("woff2");
+  }
+
+html {
+	font-family: "RecMono Casual";
+}
+
+.linear {
+	font-family: "RecMono Linear", fantasy;
+}
+
+.casual {
+	font-family: "RecMono Casual", fantasy;
+}
+
+.test {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 0.5rem;
+}
+
+button {
+	height: 2.25rem;
+	font-size: 1.5rem;
+	background: lightblue;
+	border: blue 1px solid;
+}
