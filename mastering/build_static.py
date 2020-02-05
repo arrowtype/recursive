@@ -54,7 +54,8 @@ def buildNameMap():
                 fn = f"{familymap} {stylemap}"
             else:
                 fn = f"{familymap}"
-            names[(varFamily, varStyle)] = (staticFamily, staticStyle, fn, staticPS, staticFamilyMap)
+            names[(varFamily, varStyle)] = (staticFamily, staticStyle, fn,
+                                            staticPS, familymap)
 
     return names
 
@@ -402,7 +403,7 @@ def buildInstances(designspacePath, root, name_map):
         font_dir = os.path.split(font.path)[0]
 
         # Font info
-        # Get and set PS Font Full Name
+        # Get and set PS Font Full Name and PS Font Name
         _, _, fullname, ps, _ = name_map[(font.info.familyName, font.info.styleName)]
         font.info.postscriptFontName = ps
         font.info.postscriptFullName = fullname
@@ -416,7 +417,7 @@ def buildInstances(designspacePath, root, name_map):
         # fourth item in the name is "Italic", the weight should be
         # 400, so we catch that here too.
         try:
-            weight = fullname.split()[3]
+            weight = fullname.split()[4]
             if weight == "Italic":
                 weight = "Regular"
         except IndexError:
