@@ -10,7 +10,7 @@
 saveOutput = True
 outputDir = "exports"
 docTitle = "recursive-beziers"
-fileFormat = "svg"
+fileFormat = "pdf"
 
 # exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual C Slanted.ufo"
 # glyphNames = "a.italic".split()
@@ -18,14 +18,25 @@ fileFormat = "svg"
 # exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual A.ufo"
 # glyphNames = "S".split()
 
-# exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear C.ufo"
-# glyphNames = "Z".split()
+# Z --------------------------------------
+#exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear C.ufo"
+#exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual A.ufo"
+#glyphNames = "Z".split()
 
-# exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear B Slanted.ufo"
-# glyphNames = "l.italic".split()
+# l.italic --------------------------------------
+#exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual B Slanted.ufo"
+#exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear B Slanted.ufo"
+#glyphNames = "l.italic".split()
 
-exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual A.ufo"
-glyphNames = "g".split()
+# n --------------------------------------
+exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear B.ufo"
+#exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual B.ufo"
+glyphNames = "n".split()
+
+# g --------------------------------------
+#exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear B.ufo"
+#exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual A.ufo"
+#glyphNames = "g".split()
 
 f = OpenFont(exampleFont, showInterface=False)
 
@@ -51,7 +62,7 @@ colors = {
     "background": hex2rgb("#0050FF"),        # dark blue
     "glyphBox": hex2rgb("#0050FF"), #(0,0,0),
     "glyphFill": (*hex2rgb("#ffffff"),1),
-    "glyphStroke": (*hex2rgb("#222266"),1), #hex2rgb("#B3CAFF"),
+    "glyphStroke": (*hex2rgb("#0038B3"),1), #hex2rgb("#B3CAFF"),
     "guides": (*hex2rgb("#FFFFFF"), 0.25), #hex2rgb("#003099"),
     "labels": (0,0,0),
     "connections": hex2rgb("#0050FF")
@@ -143,7 +154,7 @@ for glyphName in f.glyphOrder:
     # draw points
     # ------------
     
-    oncurveSize = 8
+    oncurveSize = 6
     
     offcurveSize = 4
     
@@ -168,7 +179,7 @@ for glyphName in f.glyphOrder:
                 stroke(*colors["handles"])
                 line((ptX, ptY), (ptInX, ptInY))
                 stroke(*colors["offcurvePoints"])
-                rect(ptInX - offcurveSize/2, ptInY - offcurveSize/2, offcurveSize, offcurveSize)
+                oval(ptInX - offcurveSize/2, ptInY - offcurveSize/2, offcurveSize, offcurveSize)
                 
             
             if abs(ptOut[0]) > 0 or abs(ptOut[1]) > 0:
@@ -177,7 +188,7 @@ for glyphName in f.glyphOrder:
                 stroke(*colors["handles"])
                 line((ptX, ptY), (ptOutX, ptOutY))
                 stroke(*colors["offcurvePoints"])
-                rect(ptOutX - offcurveSize/2, pt[1]+ptOut[1] - offcurveSize/2, offcurveSize, offcurveSize)
+                oval(ptOutX - offcurveSize/2, pt[1]+ptOut[1] - offcurveSize/2, offcurveSize, offcurveSize)
                 
                 
             # now draw oncurve point so it's on top
@@ -185,7 +196,8 @@ for glyphName in f.glyphOrder:
             stroke(*colors["points"])
 
             if bPt.type == "corner":
-                rect(ptX - oncurveSize/2, ptY - oncurveSize/2, oncurveSize, oncurveSize)
+                # rect(ptX - oncurveSize/2, ptY - oncurveSize/2, oncurveSize, oncurveSize)
+                oval(ptX - oncurveSize/2, ptY - oncurveSize/2, oncurveSize, oncurveSize)
             else:
                 oval(ptX - oncurveSize/2, ptY - oncurveSize/2, oncurveSize, oncurveSize)
                     
@@ -237,7 +249,7 @@ for glyphName in f.glyphOrder:
         
         currentDir = os.path.dirname(os.path.abspath(__file__))
 
-        now = datetime.datetime.now().strftime("%Y_%m_%d-%H_%M") # -%H_%M_%S
+        now = datetime.datetime.now().strftime("%Y_%m_%d-%H_%M_%S") # -%H_%M_%S
 
         if not os.path.exists(f"{currentDir}/{outputDir}"):
             os.makedirs(f"{currentDir}/{outputDir}")
