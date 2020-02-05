@@ -10,8 +10,8 @@ with open('instance_names.csv', newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         names[(row["Var Instance Family Name"],
-               row["Var Instance Style Name"])] = (row["postscript"],
-                                                   row["familymap"],
+               row["Var Instance Style Name"])] = (row["Var postscript"],
+                                                   row["Var familymap"],
                                                    row["stylemap"])
 
 doc = DesignSpaceDocument()
