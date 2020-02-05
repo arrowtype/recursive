@@ -19,10 +19,12 @@ from contextlib import redirect_stdout, redirect_stderr
 # (OS/2 weight, Panose weight) values
 weightMap = {
              "XBlk": (1000, 11),
+             "XBk": (1000, 11),
              "Blk": (900, 10),
              "XBd": (800, 9),
              "Bold": (700, 8),
              "SmBd": (600, 7),
+             "SmB": (600, 7),
              "Med": (500, 6),
              "Regular": (400, 5),
              "Lt": (300, 4),
@@ -33,7 +35,7 @@ def buildNameMap():
     """
     To keep data in one place, we store how we want to break the static
     familes apart in the instance_names.csv file. Read this to get the
-    corrent family and style names for the static fonts.
+    correct family and style names for the static fonts.
     """
 
     import csv
@@ -47,11 +49,13 @@ def buildNameMap():
             staticStyle = row["Static Style Name"]
             familymap = row["familymap"]
             stylemap = row["stylemap"]
+            staticPS = row["Static postscript"]
             if stylemap != "Regular":
                 fn = f"{familymap} {stylemap}"
             else:
                 fn = f"{familymap}"
-            names[(varFamily, varStyle)] = (staticFamily, staticStyle, fn)
+            names[(varFamily, varStyle)] = (staticFamily, staticStyle, fn,
+                                            staticPS, familymap)
 
     return names
 
@@ -377,7 +381,7 @@ def buildInstances(designspacePath, root, name_map):
     doc.roundGeometry = True
     doc.read(designspacePath)
     for i in doc.instances:
-        fn, sn, _ = name_map[(i.familyName, i.styleName)]
+        fn, sn, _, _, _ = name_map[(i.familyName, i.styleName)]
         path = os.path.join(root,
                             fn.strip().replace(" ", ""),
                             sn.strip().replace(" ", ""),
@@ -399,8 +403,9 @@ def buildInstances(designspacePath, root, name_map):
         font_dir = os.path.split(font.path)[0]
 
         # Font info
-        # Get and set PS Font Full Name
-        fullname = name_map[(font.info.familyName, font.info.styleName)][2]
+        # Get and set PS Font Full Name and PS Font Name
+        _, _, fullname, ps, _ = name_map[(font.info.familyName, font.info.styleName)]
+        font.info.postscriptFontName = ps
         font.info.postscriptFullName = fullname
 
         # Get weight value based on fullname
@@ -412,7 +417,7 @@ def buildInstances(designspacePath, root, name_map):
         # fourth item in the name is "Italic", the weight should be
         # 400, so we catch that here too.
         try:
-            weight = fullname.split()[3]
+            weight = fullname.split()[4]
             if weight == "Italic":
                 weight = "Regular"
         except IndexError:
@@ -480,7 +485,7 @@ def buildFolders(designspace, root, name_map):
 
     familyNames = {}
     for i in designspace.instances:
-        fn, sn, _ = name_map[(i.familyName, i.styleName)]
+        fn, sn, _, _, _ = name_map[(i.familyName, i.styleName)]
         if fn not in familyNames.keys():
             familyNames[fn] = [sn]
         else:
@@ -509,11 +514,11 @@ def buildFontMenuDB(designspace, root, name_map):
 
     out = ""
     for i in designspace.instances:
-        fn, sn, m1 = name_map[(i.familyName, i.styleName)]
-        out += (f"[{i.postScriptFontName}]\n"
+        fn, sn, m1, ps, fm = name_map[(i.familyName, i.styleName)]
+        out += (f"[{ps}]\n"
                 f"    f={fn}\n"
                 f"    s={sn}\n"
-                f"    l={i.styleMapFamilyName}\n"
+                f"    l={fm}\n"
                 f"    m=1,{m1}\n\n"
                 )
 
