@@ -92,9 +92,10 @@ def main():
 		# UPDATE NAME ID 16, typographic family name
 		try:
 			currentTypoFamName = getFontNameID(ttfont, 16)
-			newTypoFamName = currentTypoFamName.replace(args.oldname, args.newname)
-			print(currentTypoFamName + " → " + newTypoFamName)
-			setFontNameID(ttfont, 16, newTypoFamName)
+			if currentTypoFamName != 'None':
+				newTypoFamName = currentTypoFamName.replace(args.oldname, args.newname)
+				print(currentTypoFamName + " → " + newTypoFamName)
+				setFontNameID(ttfont, 16, newTypoFamName)
 		except:
 			print("The font does not seem to have a name ID 16 (typographic family name)")
 
@@ -125,6 +126,7 @@ def main():
 		# SAVE FONT
 		if args.inplace:
 			 ttfont.save(font_path)
+			#  ttfont.save(font_path.replace(args.oldname, args.newname))
 		else:
 			 ttfont.save(font_path + '.fix')
 
