@@ -29,6 +29,9 @@ Using macOS, install the fonts at `docs/ribbi-style-linking-macOS/recursive_v1.0
 
 ![](assets/2020-02-09-16-17-00.png)
 
+`Rocursive`
+- This is a curveball, just used to check that the issue isn't limited to only Recursive (e.g. there might be an additional variable at work, such as something else in the font metadata allowing this style-linking to be manipulated by the "cursive" substring.) However, this also demonstrates similar RIBBI style-linking issues as "Recursive."
+
 ## Test method
 
 You can easily change the family naming of TrueType fonts with a directory using this script: `docs/ribbi-style-linking-macOS/change-family-name.py`. To use it on all fonts in a directly, use it like this:
