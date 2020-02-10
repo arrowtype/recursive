@@ -1,6 +1,8 @@
 # Testing style-linking and family name bug in macOS (Catalina 10.15.3)
 
-**Finding:** in macOS, the substring `cursive` within a font family name will cause many problems with style-linking in apps using macOS CoreText to display type.
+**Finding:** in macOS, the substring `cursive` within a font family name will cause many problems with style-linking in apps using macOS CoreText to layout type. It seems that macOS has an undocumented heuristic that considers a font to be Italic-by-default if it has such a name.
+
+![](assets/2020-02-09-21-51-49.png)
 
 Due to this, Recursive has several issues on macOS, as of Catalina 10.15.3:
 
@@ -30,7 +32,9 @@ Using macOS, install the fonts at `docs/ribbi-style-linking-macOS/recursive_v1.0
 ![](assets/2020-02-09-16-17-00.png)
 
 `Rocursive`
-- This is a curveball, just used to check that the issue isn't limited to only Recursive (e.g. there might be an additional variable at work, such as something else in the font metadata allowing this style-linking to be manipulated by the "cursive" substring.) However, this also demonstrates similar RIBBI style-linking issues as "Recursive."
+- This is a curveball: Roboto, but with its name changed to Rocursive. This was used to check that the issue isn't limited to only Recursive (e.g. there might have been an additional variable at play, such as something else in the font metadata allowing this style-linking to be manipulated by the "cursive" substring.) However, this test demonstrates similar RIBBI style-linking issues as "Recursive," seemingly confirming my theory.
+
+![](assets/2020-02-09-21-54-20.png)
 
 ## Test method
 
