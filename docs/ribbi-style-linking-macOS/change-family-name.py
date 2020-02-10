@@ -125,8 +125,8 @@ def main():
 
 		# SAVE FONT
 		if args.inplace:
-			 ttfont.save(font_path)
-			#  ttfont.save(font_path.replace(args.oldname, args.newname))
+			#  ttfont.save(font_path)
+			 ttfont.save(font_path.replace(args.oldname, args.newname))
 		else:
 			 ttfont.save(font_path + '.fix')
 
