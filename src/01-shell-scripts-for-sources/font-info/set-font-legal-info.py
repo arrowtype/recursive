@@ -2,10 +2,13 @@
 
 '''
 	Sets legal info in fonts to conform to Google Fonts expectations.
+		- Sets openTypeNameLicense to OFL notice
+		- Sets openTypeOS2Type (fsType) to 0, "Installable Embedding"
 
 	USAGE:
 
-	python <path>/set-font-legal-info.py <UFOs-dir> <--save>
+	python <path>/set-font-legal-info.py src/masters/mono <--save>
+	python <path>/set-font-legal-info.py src/masters/sans <--save>
 '''
 
 import sys
@@ -48,10 +51,13 @@ for ufo in sorted(ufosToAdjust):
 	print('--------------------------------------------------------')
 	print(font.info.styleName)
 
-
+	# set license string
 	font.info.openTypeNameLicense = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL"
-
 	print(font.info.openTypeNameLicense)
+
+	# set fsType to 0
+	font.info.openTypeOS2Type = [0]
+	print(font.info.openTypeOS2Type)
 
 
 	if save:
