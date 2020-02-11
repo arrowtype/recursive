@@ -65,7 +65,7 @@ if __name__ == "__main__":
                        stylespacePath=files["stylespace"],
                        out=os.path.join(outPaths[0],
                                         f"Recursive_VF_{version}.ttf"))
-    
+
     if args.varfiles:
         files = buildFiles(version=version, static=False)
     if args.statfiles:
