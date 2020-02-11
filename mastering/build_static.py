@@ -321,6 +321,8 @@ def buildFamilyFeatures(root, features, version):
             "table name {\n"
             '    nameid 0 "Copyright 2019 The Recursive Project Authors (github.com/arrowtype/recursive).";\n'
             '    nameid 0 1 "Copyright 2019 The Recursive Project Authors (github.com/arrowtype/recursive)";\n'
+            '    nameid 13 "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL";\n'
+            '    nameid 13 1 "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL";\n'
             "} name;\n"
             )
     path = os.path.join(root, "features.family")
