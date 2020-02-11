@@ -169,6 +169,37 @@ def build_variable(designspacePath,
                                           additional_locations)
         font.save(out)
 
+    font = fontTools.ttLib.TTFont(out)
+
+    print("🏗  Add gasp table")
+    gasp = fontTools.ttLib.newTable("gasp")
+    gasp.gaspRange = {0xFFFF: 15}
+    font["gasp"] = gasp
+
+    print("🏗  Fix prep table")
+    program = fontTools.ttLib.tables.ttProgram.Program()
+
+    assembly = ['PUSHW[]',
+                '511',
+                'SCANCTRL[]',
+                'PUSHB[]',
+                '4',
+                'SCANTYPE[]']
+    program.fromAssembly(assembly)
+    prep = fontTools.ttLib.newTable("prep")
+    prep.program = program
+    font["prep"] = prep
+
+    print("🏗  Add dsig table")
+    dsig = fontTools.ttLib.newTable("DSIG")
+    dsig.ulVersion = 1
+    dsig.usFlag = 0
+    dsig.usNumSigs = 0
+    dsig.signatureRecords = []
+    font["DSIG"] = dsig
+
+    font.save(out)
+
     print("✅ Built variable font")
 
 
