@@ -128,7 +128,7 @@ def main():
 			#  ttfont.save(font_path)
 			 ttfont.save(font_path.replace(args.oldname, args.newname))
 		else:
-			 ttfont.save(font_path + '.fix')
+			 ttfont.save(font_path.replace('.ttf','.fix.ttf').replace('.otf','.fix.otf'))
 
 
 if __name__ == '__main__':

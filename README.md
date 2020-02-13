@@ -211,10 +211,10 @@ pip install -U -r requirements.txt
 
 The fonts are built with the `mastering/build.py` script. This script can build everything (`python build.py --all`), or a subset of the fonts. To view all the options, type `python build.py -h` to see all options. The recommended build process is detailed below. 
 
-**Note:**
+*Note:*
 There are sub-scripts for just prepping the source files (`mastering/prep_fonts.py`), building the source files (`mastering/build_files.py`), generating the variable font (`mastering/build_variable.py`), and generating the static fonts (`build_static.py`). These scripts can be handy if you just want to do one thing to the build files. Each takes a set of command line arguments, all documented (type `python <script_name> -h`) to view the documentation.
 
-#### First, prep fonts
+**First, prep fonts**
 
 Before beginning, change your working directory to `mastering`.
 
