@@ -198,6 +198,9 @@ def build_variable(designspacePath,
     dsig.signatureRecords = []
     font["DSIG"] = dsig
 
+    print("🏗  Set fsType to 0")
+    font["OS/2"].fsType = 0
+
     font.save(out)
 
     print("✅ Built variable font")
