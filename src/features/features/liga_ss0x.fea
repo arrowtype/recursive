@@ -19,9 +19,9 @@ feature ss01 {
     sub @dfltA by @simpleA;
 } ss01;
 
-@dfltG =     [g        gbreve        gcaron        gcircumflex        gcommaaccent        gdotaccent        ];
-@italicG =    [g.italic gbreve.italic gcaron.italic gcircumflex.italic gcommaaccent.italic gdotaccent.italic ];
-@simpleG =    [g.simple gbreve.simple gcaron.simple gcircumflex.simple gcommaaccent.simple gdotaccent.simple ];
+@dfltG =      [g        gbreve        gcaron        gcircumflex        gcommaaccent        gdotaccent        gmacron        ];
+@italicG =    [g.italic gbreve.italic gcaron.italic gcircumflex.italic gcommaaccent.italic gdotaccent.italic gmacron.italic ];
+@simpleG =    [g.simple gbreve.simple gcaron.simple gcircumflex.simple gcommaaccent.simple gdotaccent.simple gmacron.simple ];
 
 feature ss02 {
     featureNames {
@@ -45,10 +45,10 @@ feature ss03 {
     sub f.mono by f.simple;
 } ss03;
 
-@sansI = [i        iacute        ibreve        icircumflex        idieresis        idotbelow        igrave        ihook        imacron        iogonek        itilde       ];
-@italI = [i.italic iacute.italic ibreve.italic icircumflex.italic idieresis.italic idotbelow.italic igrave.italic ihook.italic imacron.italic iogonek.italic itilde.italic];
-@smplI = [i.simple iacute.simple ibreve.simple icircumflex.simple idieresis.simple idotbelow.simple igrave.simple ihook.simple imacron.simple iogonek.simple itilde.simple];
-@monoI = [i.mono   iacute.mono   ibreve.mono   icircumflex.mono   idieresis.mono   idotbelow.mono   igrave.mono   ihook.mono   imacron.mono   iogonek.mono   itilde.mono  ];
+@sansI = [i        iacute        ibreve        icircumflex        idieresis        idieresisacute        idotbelow        igrave        igravedbl        ihook        iinvertedbreve        imacron        iogonek        itilde       ];
+@italI = [i.italic iacute.italic ibreve.italic icircumflex.italic idieresis.italic idieresisacute.italic idotbelow.italic igrave.italic igravedbl.italic ihook.italic iinvertedbreve.italic imacron.italic iogonek.italic itilde.italic];
+@smplI = [i.simple iacute.simple ibreve.simple icircumflex.simple idieresis.simple idieresisacute.simple idotbelow.simple igrave.simple igravedbl.simple ihook.simple iinvertedbreve.simple imacron.simple iogonek.simple itilde.simple];
+@monoI = [i.mono   iacute.mono   ibreve.mono   icircumflex.mono   idieresis.mono   idieresisacute.mono   idotbelow.mono   igrave.mono   igravedbl.mono   ihook.mono   iinvertedbreve.mono   imacron.mono   iogonek.mono   itilde.mono  ];
 
 feature ss04 {
     featureNames {
