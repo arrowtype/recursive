@@ -34,7 +34,7 @@ fontFam = f"{currentDir}/Recursive_VF_1.039.ttf" # Update as needed. Easiest whe
 frames = 50
 fps = 3
 frameRate = 1/fps # only applicable to mp4 and gif; can be buggy
-fileFormat = "mp4" # pdf, gif, or mp4
+fileFormat = "gif" # pdf, gif, or mp4
 
 pageSize = 3.5 # inches
 DPI = 150 # dots per inch
@@ -68,17 +68,18 @@ def writeInfoTop(f, r,g,b):
 		wghtVal = interpolate(600,400, f)
 		caslVal = interpolate(1, 0, f)
 		fontVariations(wght=wghtVal,CASL=caslVal)
-		casualValue = "{:0.2f}".format(caslVal)
 		blendMode("normal")
 		fill(0)
 		lineHeight(fontSizeSm*1.25)
 
-		wghtVal = interpolate(1000,300, f)
+		wghtVal = interpolate(300,1000, f)
 		caslVal = interpolate(0, 1, f)
+		casualValue = "{:0.2f}".format(caslVal)
 		text(f"CASL = {casualValue}\nwght = {str(int(wghtVal)).rjust(4,'0')}", (W*.75, H*.76), align="center")
 
-		wghtVal = interpolate(300,1000, f)
-		caslVal = interpolate(1, 0, f)
+		wghtVal = interpolate(1000,300, f)
+		caslVal = interpolate(0, 1, f)
+		casualValue = "{:0.2f}".format(caslVal)
 		text(f"CASL = {casualValue}\nwght = {str(int(wghtVal)).rjust(4,'0')}", (W*.25, H*.275), align="center")
 
 def drawHearts(f, r=1,g=1,b=1, info=False):
