@@ -5,9 +5,9 @@ feature liga {
     sub f f l.italic by f_f_l;
 } liga;
 
-@dfltA = [ a        aacute        abreve        abreveacute        abrevedot        abrevegrave        abrevehook        abrevetilde        acircumflex        acircumflexacute        acircumflexdot        acircumflexgrave        acircumflexhook        acircumflextilde        adieresis        adotbelow        agrave        ahook        amacron        aogonek        aring        aringacute        atilde        ];
-@italicA = [a.italic aacute.italic abreve.italic abreveacute.italic abrevedot.italic abrevegrave.italic abrevehook.italic abrevetilde.italic acircumflex.italic acircumflexacute.italic acircumflexdot.italic acircumflexgrave.italic acircumflexhook.italic acircumflextilde.italic adieresis.italic adotbelow.italic agrave.italic ahook.italic amacron.italic aogonek.italic aring.italic aringacute.italic atilde.italic ];
-@simpleA = [a.simple aacute.simple abreve.simple abreveacute.simple abrevedot.simple abrevegrave.simple abrevehook.simple abrevetilde.simple acircumflex.simple acircumflexacute.simple acircumflexdot.simple acircumflexgrave.simple acircumflexhook.simple acircumflextilde.simple adieresis.simple adotbelow.simple agrave.simple ahook.simple amacron.simple aogonek.simple aring.simple aringacute.simple atilde.simple ];
+@dfltA =   [a        aacute        abreve        abreveacute        abrevedot        abrevegrave        abrevehook        abrevetilde        acircumflex        acircumflexacute        acircumflexdot        acircumflexgrave        acircumflexhook        acircumflextilde        adieresis        adotbelow        agrave        agravedbl        ahook        ainvertedbreve        amacron        aogonek        aring        aringacute        atilde        ];
+@italicA = [a.italic aacute.italic abreve.italic abreveacute.italic abrevedot.italic abrevegrave.italic abrevehook.italic abrevetilde.italic acircumflex.italic acircumflexacute.italic acircumflexdot.italic acircumflexgrave.italic acircumflexhook.italic acircumflextilde.italic adieresis.italic adotbelow.italic agrave.italic agravedbl.italic ahook.italic ainvertedbreve.italic amacron.italic aogonek.italic aring.italic aringacute.italic atilde.italic ];
+@simpleA = [a.simple aacute.simple abreve.simple abreveacute.simple abrevedot.simple abrevegrave.simple abrevehook.simple abrevetilde.simple acircumflex.simple acircumflexacute.simple acircumflexdot.simple acircumflexgrave.simple acircumflexhook.simple acircumflextilde.simple adieresis.simple adotbelow.simple agrave.simple agravedbl.simple ahook.simple ainvertedbreve.simple amacron.simple aogonek.simple aring.simple aringacute.simple atilde.simple ];
 
 feature ss01 {
     featureNames {
@@ -80,10 +80,10 @@ feature ss05 {
     sub @monoL by @simpleL;
 } ss05;
 
-@sansR =   [r        racute        rcaron        rcommaaccent        ];
-@monoR =   [r.mono   racute.mono   rcaron.mono   rcommaaccent.mono   ];
-@italR =   [r.italic racute.italic rcaron.italic rcommaaccent.italic ];
-@simpleR = [r.simple racute.simple rcaron.simple rcommaaccent.simple ];
+@sansR =   [r        racute        rcaron        rcommaaccent        rinvertedbreve        rgravedbl        rdotbelow        rlinebelow        ];
+@monoR =   [r.mono   racute.mono   rcaron.mono   rcommaaccent.mono   rinvertedbreve.mono   rgravedbl.mono   rdotbelow.mono   rlinebelow.mono   ];
+@italR =   [r.italic racute.italic rcaron.italic rcommaaccent.italic rinvertedbreve.italic rgravedbl.italic rdotbelow.italic rlinebelow.italic ];
+@simpleR = [r.simple racute.simple rcaron.simple rcommaaccent.simple rinvertedbreve.simple rgravedbl.simple rdotbelow.simple rlinebelow.simple ];
 
 feature ss06 {
     featureNames {
