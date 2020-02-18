@@ -18,7 +18,7 @@ newDrawing() # required by drawbot module
 
 # currentDir = sys.argv[0]
 currentDir = os.path.dirname(os.path.abspath(__file__))
-print(currentDir)
+print(currentDir)          
 
 # ---------------------------------------------------------
 # CONFIGURATION -------------------------------------------
@@ -31,13 +31,13 @@ debug = False
 
 fontFam = f"{currentDir}/Recursive_VF_1.039.ttf" # Update as needed. Easiest when font file is in same directory.
 
-frames = 50
+frames = 16
 fps = 3
 frameRate = 1/fps # only applicable to mp4 and gif; can be buggy
-fileFormat = "gif" # pdf, gif, or mp4
+fileFormat = "mp4" # pdf, gif, or mp4
 
 pageSize = 3.5 # inches
-DPI = 150 # dots per inch
+DPI = 450 # dots per inch
 
 paddingInPts = 18
 
@@ -46,7 +46,7 @@ paddingInPts = 18
 
 pixels = DPI*pageSize # do not edit
 # W, H = pixels, pixels # do not edit
-W, H = 1080,1080 # do not edit
+W, H = 1080,1080 # IG square
 padding = DPI*paddingInPts/72 # do not edit
 
 # turn font size into usable value for given pageSize
@@ -60,7 +60,7 @@ def interpolate(a, b, t):
 # ----------------------------------------------
 # TEXT FUNCTIONS
 
-def writeInfoTop(f, r,g,b):
+def writeInfoTop(f, r,g,b):    
 	with savedState():
 		fontSizeSm = H*.025
 		fontVariations(wght=500,CASL=1,MONO=1)
@@ -104,35 +104,36 @@ def drawHearts(f, r=1,g=1,b=1, info=False):
 # ----------------------------------------------
 # ANIMATION
 
-for frame in range(frames):
-	newPage(W, H) # required for each new page/frame
-	fill(0)
-	rect(0,0,W, H)
+for repeat in range(5):
+	for frame in range(frames):
+		newPage(W, H) # required for each new page/frame
+		fill(0)
+		rect(0,0,W, H)
 
-	f = frame / frames
-	t = frame / frames
-	if t <= 0.5:
-		f *= 2
-	else:
-		f = 1 - (f - 0.5) * 2
+		f = frame / frames
+		t = frame / frames
+		if t <= 0.5:
+			f *= 2
+		else:
+			f = 1 - (f - 0.5) * 2
 
-	t = frame / frames
+		t = frame / frames
 
-	if debug:
-		fill(1,0,0)
-		rect(0, H/2, W, 1)
-		rect(W/2, 0, 1, H)
+		if debug:
+			fill(1,0,0)
+			rect(0, H/2, W, 1)
+			rect(W/2, 0, 1, H)
 
-	
-	rgbOffset = 0.0075
-	
-	drawHearts(f, 0,1,0)
-	translate(0,H*rgbOffset)
-	drawHearts(f, 1,0,0)
-	translate(0,-H*rgbOffset*2)
-	drawHearts(f, 0,0,1, info=True)
+		
+		rgbOffset = 0.0075
+		
+		drawHearts(f, 0,1,0)
+		translate(0,H*rgbOffset)
+		drawHearts(f, 1,0,0)
+		translate(0,-H*rgbOffset*2)
+		drawHearts(f, 0,0,1, info=True)
 
-	writeInfoTop(f, 0,0,0)
+		writeInfoTop(f, 0,0,0)
 
 endDrawing() # advised by drawbot docs
 
