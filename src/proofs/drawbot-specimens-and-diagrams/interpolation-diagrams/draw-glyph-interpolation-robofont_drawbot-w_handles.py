@@ -19,9 +19,9 @@ scaling = 3 #1.5
 W, H = 1000 * scaling,1000 * scaling
 
 
-glyphName = "r.mono"
-startFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual A Slanted.ufo"
-endFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear C.ufo"
+glyphName = "endash"
+startFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual B.ufo"
+endFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear B.ufo"
 
 f1 = OpenFont(startFont, showInterface=False)
 f2 = OpenFont(endFont, showInterface=False)
@@ -34,9 +34,6 @@ handlesDict = {}
 # TODO: it would be better to grab the glyph box for this
 
 
-
-
-
 def hex2rgb(hex):
     h = hex.lstrip('#')
     RGB = tuple(int(h[i:i+2], 16) for i in (0, 2 ,4))
@@ -44,18 +41,18 @@ def hex2rgb(hex):
     return(r1, g1, b1)
 
 colors = {
-    "points": hex2rgb("#000000"), ##000066
+    "points": hex2rgb("#0000ff"), ##000066
     "pointFill": hex2rgb("#ffffff"), 
-    "offcurvePoints":  (*hex2rgb("#7B97D3"),1), # hex2rgb("#0A1429"),
-    "handles":  (*hex2rgb("#7B97D3"),1), #hex2rgb("#0A1429"),   #hex2rgb("#ffffff")
-    "background": hex2rgb("#000000"),        # dark blue
+    "offcurvePoints":  (*hex2rgb("#0000ff"),1), # hex2rgb("#0A1429"),
+    "handles":  (*hex2rgb("#0000ff"),1), #hex2rgb("#0A1429"),   #hex2rgb("#ffffff")
+    "background": hex2rgb("#ffffff"),        # dark blue
     "glyphBox": hex2rgb("#080811"), #(0,0,0),
-    "glyphFill": (*hex2rgb("#ffffff"),0.125), #(*hex2rgb("#000000"),0.25)
-    "glyphStroke": (*hex2rgb("#0D2D73"),1), # hex2rgb("#000066"), #hex2rgb("#B3CAFF"),
+    "glyphFill": (*hex2rgb("#2222ff"),0.125), #(*hex2rgb("#000000"),0.25)
+    "glyphStroke": (*hex2rgb("#6666ff"),1), # hex2rgb("#000066"), #hex2rgb("#B3CAFF"),
     "guides": hex2rgb("#ffffff"), #hex2rgb("#003099"),
     "labels": (0,0,0),
-    "connections": (*hex2rgb("#ffffff"),1), #0.175
-    "offCurveConnections": (*hex2rgb("#ffffff"),0.175), #0.175
+    "connections": (*hex2rgb("#0000ff"),1), #0.175
+    "offCurveConnections": (*hex2rgb("#ffffff"),0), #0.175
 }
 
 newPage(W, H)

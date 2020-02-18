@@ -7,7 +7,7 @@
   
   Adapt script as needed, then run from the command line with:
   
-  python3 <path>/remote-drawbot-script-template.py
+  python3 <path>/hearts.py
 """
 
 from drawBot import * # requires drawbot to be installed as module
