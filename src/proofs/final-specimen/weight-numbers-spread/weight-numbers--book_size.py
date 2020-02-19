@@ -46,16 +46,12 @@ debug = False # useful to tie guides / helper visuals to this
 
 fontFam = f"{currentDir}/Recursive_VF_1.039.ttf" # Update as needed. Easiest when font file is in same directory.
 
-fileFormat = "pdf" # pdf, png, jpg
+fileFormat = "png" # pdf, gif, or mp4
 
-pageW = 5.216 # inches
-pageH = 7.216 # inches
-
-pageW = 10.80
-pageH = 19.20
-padding = 0.1667  # inches
+pageW = 5.2126 # inches
+pageH = 7.7126 # inches
+padding = 0.04  # inches
 DPI = 300 # dots per inch
-
 
 # ----------------------------------------------
 # Helper functions
@@ -64,9 +60,10 @@ W = DPI*pageW # do not edit
 H = DPI*pageH # do not edit
 padding = DPI*padding # do not edit
 
+
 # turn font size into usable value for given pageSize
-# def computeFontSizePoints(pts):
-# 	return W * (pts / (pageSize * 72))
+def computeFontSizePoints(pts):
+	return pts * DPI / 72
 
 # a frequently-useful function
 def interpolate(a, b, t):
@@ -75,12 +72,8 @@ def interpolate(a, b, t):
 # ----------------------------------------------
 # Pages
 
-newPage(W, H) # required for each new page/frame
-fill(0,0,0)
-rect(0,0,W, H)
 
 font(fontFam)
-
 minWght = listFontVariations()["wght"]["minValue"]
 maxWght = listFontVariations()["wght"]["maxValue"]
 
@@ -92,30 +85,70 @@ cols = 10
 rows = 35
 
 wghtRange = maxWght - minWght
-numSteps = cols * rows + 2
+numSteps = (cols * rows) * 2
 stepSize = wghtRange / (numSteps - 1)
 
 # calculates steps, formats with 2 decimal places, and puts in list, then joins that into a string separated by "  "
-stepsList = ["{:0.2f}".format(minWght+stepSize*step) for step in range(numSteps)]
+# stepsList = ["{:0.2f}".format(minWght+stepSize*step) for step in range(numSteps)]
+stepsList = [f"{(minWght+stepSize*step):0.2f}" for step in range(numSteps)]
 stepsStr = "  ".join(stepsList)
 
 print(stepsStr)
 
-# make font 8pt/16pt
 txt = FormattedString()
-# txt.fontSize(9*2*2)
-txt.fontSize(W*0.0275)
-txt.lineHeight(W*0.02*1.875)
+txt.fontSize(computeFontSizePoints(8))
+txt.lineHeight(computeFontSizePoints(16))
 txt.fill(1)
 txt.font(fontFam)
 txt.align("center")
 
-for step in stepsList:
-	txt.fontVariations(MONO=1,wght=float(step))
-	txt.append(f"{step} ")
+for page in range(2):
 
-textBox(txt, (padding, padding, W-padding*2, H-padding*5))
+	newPage(W, H) # required for each new page/frame
+	# fill(0,0,0)
+	# rect(0,0,W, H)
 
+	# make font 8pt/16pt
+	
+
+	for i, step in enumerate(stepsList):
+		txt.fontVariations(MONO=1,wght=float(step))
+		# don't add a space to final column
+		txt.tracking(None)
+		if (i+1) % cols == 0:
+			if debug:
+				txt.fill(1,0,0)
+			txt.append(f"{step}\n")
+		else:
+			txt.fill(1)
+			txt.append(f"{step}")
+			txt.tracking(-computeFontSizePoints(8)*0.045)
+			txt.append("  ")
+			
+	box = (padding, -padding*0.125, W-padding*2, H+padding*2)
+	txt = textBox(txt, box)
+
+	if debug:
+		stroke(1,0,0)
+		fill(1,1,1,0)
+		rect(box)
+
+	if save:
+		import datetime
+
+		now = datetime.datetime.now().strftime("%Y_%m_%d-%H_%M_%S") # -%H_%M_%S
+
+		if not os.path.exists(f"{currentDir}/{outputDir}"):
+			os.makedirs(f"{currentDir}/{outputDir}")
+
+		path = f"{currentDir}/{outputDir}/{docTitle}-{now}.{fileFormat}"
+
+		print("saved to ", path)
+
+		saveImage(path)
+
+		if autoOpen:
+			os.system(f"open --background -a Preview {path}")
 
 print()
 
@@ -123,19 +156,3 @@ print()
 
 endDrawing() # advised by drawbot docs
 
-if save:
-	import datetime
-
-	now = datetime.datetime.now().strftime("%Y_%m_%d-%H_%M") # -%H_%M_%S
-
-	if not os.path.exists(f"{currentDir}/{outputDir}"):
-		os.makedirs(f"{currentDir}/{outputDir}")
-
-	path = f"{currentDir}/{outputDir}/{docTitle}-{now}.{fileFormat}"
-
-	print("saved to ", path)
-
-	saveImage(path)
-
-	if autoOpen:
-		os.system(f"open --background -a Preview {path}")
