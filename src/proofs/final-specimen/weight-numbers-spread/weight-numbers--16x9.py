@@ -42,20 +42,16 @@ docTitle = "drawbot-export" # update this for your output file name
 save = True
 outputDir = "exports"
 autoOpen = True
-debug = False # useful to tie guides / helper visuals to this
+debug = True # useful to tie guides / helper visuals to this
 
 fontFam = f"{currentDir}/Recursive_VF_1.039.ttf" # Update as needed. Easiest when font file is in same directory.
 
-fileFormat = "pdf" # pdf, png, jpg
+fileFormat = "jpg" # pdf, gif, or mp4
 
 pageW = 5.216 # inches
 pageH = 7.216 # inches
-
-pageW = 10.80
-pageH = 19.20
-padding = 0.1667  # inches
+padding = 0.04  # inches
 DPI = 300 # dots per inch
-
 
 # ----------------------------------------------
 # Helper functions
@@ -64,9 +60,10 @@ W = DPI*pageW # do not edit
 H = DPI*pageH # do not edit
 padding = DPI*padding # do not edit
 
+
 # turn font size into usable value for given pageSize
-# def computeFontSizePoints(pts):
-# 	return W * (pts / (pageSize * 72))
+def computeFontSizePoints(pts):
+	return pts * DPI / 72
 
 # a frequently-useful function
 def interpolate(a, b, t):
@@ -92,30 +89,45 @@ cols = 10
 rows = 35
 
 wghtRange = maxWght - minWght
-numSteps = cols * rows + 2
+numSteps = (cols * rows)
 stepSize = wghtRange / (numSteps - 1)
 
 # calculates steps, formats with 2 decimal places, and puts in list, then joins that into a string separated by "  "
-stepsList = ["{:0.2f}".format(minWght+stepSize*step) for step in range(numSteps)]
+# stepsList = ["{:0.2f}".format(minWght+stepSize*step) for step in range(numSteps)]
+stepsList = [f"{(minWght+stepSize*step):0.2f}" for step in range(numSteps)]
 stepsStr = "  ".join(stepsList)
 
 print(stepsStr)
 
 # make font 8pt/16pt
 txt = FormattedString()
-# txt.fontSize(9*2*2)
-txt.fontSize(W*0.0275)
-txt.lineHeight(W*0.02*1.875)
+txt.fontSize(computeFontSizePoints(8))
+txt.lineHeight(computeFontSizePoints(16))
 txt.fill(1)
 txt.font(fontFam)
 txt.align("center")
 
-for step in stepsList:
+for i, step in enumerate(stepsList):
 	txt.fontVariations(MONO=1,wght=float(step))
-	txt.append(f"{step} ")
+	# don't add a space to final column
+	txt.tracking(None)
+	if (i+1) % cols == 0:
+		txt.fill(1,0,0)
+		txt.append(f"{step}\n")
+	else:
+		txt.fill(1)
+		txt.append(f"{step}")
+		txt.tracking(-computeFontSizePoints(8)*0.045)
+		txt.append("  ")
+		
 
-textBox(txt, (padding, padding, W-padding*2, H-padding*5))
+textBox(txt, (padding, padding, W-padding*2, H-padding*2))
 
+
+if debug:
+	stroke(1,0,0)
+	fill(1,1,1,0)
+	rect(padding, padding, W-padding*2, H-padding*2)
 
 print()
 
