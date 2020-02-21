@@ -30,8 +30,6 @@ from drawBot import * # requires drawbot to be installed as module
 import sys
 import os
 
-newDrawing() # required by drawbot module
-
 currentDir = os.path.dirname(os.path.abspath(__file__))
 print(currentDir)          
 
@@ -42,16 +40,20 @@ docTitle = "drawbot-export" # update this for your output file name
 save = True
 outputDir = "exports"
 autoOpen = True
-debug = False # useful to tie guides / helper visuals to this
+debug = False # will add outer margin guidelines if true
 
 fontFam = f"{currentDir}/Recursive_VF_1.039.ttf" # Update as needed. Easiest when font file is in same directory.
 
-fileFormat = "png" # pdf, gif, or mp4
+solidBackground = False # will add a black background to pages if True
+background = (0,0,0,0) # (0,0,0,0) for transparent
+foreground = (1,1,1)
+
+fileFormat = "pdf" # pdf, gif, or mp4
 
 pageW = 5.2126 # inches
 pageH = 7.7126 # inches
 padding = 0.04  # inches
-DPI = 300 # dots per inch
+DPI = 72 # dots per inch
 
 # ----------------------------------------------
 # Helper functions
@@ -65,19 +67,14 @@ padding = DPI*padding # do not edit
 def computeFontSizePoints(pts):
 	return pts * DPI / 72
 
-# a frequently-useful function
-def interpolate(a, b, t):
-	return(a + (b-a) * t)
-
 # ----------------------------------------------
 # Pages
 
-
 font(fontFam)
-minWght = listFontVariations()["wght"]["minValue"]
-maxWght = listFontVariations()["wght"]["maxValue"]
+minWght = listFontVariations()["wght"]["minValue"] # get min Weight from font
+maxWght = listFontVariations()["wght"]["maxValue"] # get max Weight from font
 
-# make maxWght just 6 digits in length for graphic
+# if maxWght is 1000.0, make just 6 digits in length for graphic
 if maxWght == 1000.0:
 	maxWght = 999.99
 
@@ -89,13 +86,11 @@ numSteps = (cols * rows) * 2
 stepSize = wghtRange / (numSteps - 1)
 
 # calculates steps, formats with 2 decimal places, and puts in list, then joins that into a string separated by "  "
-# stepsList = ["{:0.2f}".format(minWght+stepSize*step) for step in range(numSteps)]
-stepsList = [f"{(minWght+stepSize*step):0.2f}" for step in range(numSteps)]
-stepsStr = "  ".join(stepsList)
-
-print(stepsStr)
+# stepsList = [f"{(minWght+stepSize*step):0.2f}" for step in range(numSteps)] # for ascending weights
+stepsList = [f"{(maxWght-stepSize*step):0.2f}" for step in range(numSteps)] # for descending weights
 
 txt = FormattedString()
+# make font 8pt/16pt
 txt.fontSize(computeFontSizePoints(8))
 txt.lineHeight(computeFontSizePoints(16))
 txt.fill(1)
@@ -104,15 +99,17 @@ txt.align("center")
 
 for page in range(2):
 
-	newPage(W, H) # required for each new page/frame
-	# fill(0,0,0)
-	# rect(0,0,W, H)
+	newDrawing() # needed to separate pages into multiple PDFs
 
-	# make font 8pt/16pt
+	newPage(W, H) # required for each new page/frame
+
+	fill(*background)
+	rect(0,0,W, H)
+
 	
 
 	for i, step in enumerate(stepsList):
-		txt.fontVariations(MONO=1,wght=float(step))
+		txt.fontVariations(MONO=1, CASL=0, wght=float(step))
 		# don't add a space to final column
 		txt.tracking(None)
 		if (i+1) % cols == 0:
@@ -120,18 +117,26 @@ for page in range(2):
 				txt.fill(1,0,0)
 			txt.append(f"{step}\n")
 		else:
-			txt.fill(1)
+			txt.fill(*foreground)
 			txt.append(f"{step}")
-			txt.tracking(-computeFontSizePoints(8)*0.045)
+			txt.tracking(-computeFontSizePoints(8)*0.045) # make spaces narrower to fit all columns into width of page
 			txt.append("  ")
 			
 	box = (padding, -padding*0.125, W-padding*2, H+padding*2)
-	txt = textBox(txt, box)
+
+	textPath = BezierPath()
+
+	txt = textPath.textBox(txt, box)
+
+	fill(*foreground)
+	drawPath(textPath)
 
 	if debug:
 		stroke(1,0,0)
 		fill(1,1,1,0)
 		rect(box)
+
+	endDrawing() # advised by drawbot docs
 
 	if save:
 		import datetime
@@ -154,5 +159,5 @@ print()
 
 
 
-endDrawing() # advised by drawbot docs
+
 
