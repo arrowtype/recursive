@@ -9,7 +9,7 @@ Custom 4-style packages specifically made for code editors, each featuring:
 
 ## Packages
 
-Install these fonts, then call them with their family names, e.g. `Rec Mono Duotone`.
+Download the zip in this folder for an easy way to download these fonts. Then, install the fonts then call them from your favorite code editor with their relevant family name, e.g. `Rec Mono Duotone`.
 
 **`Rec Mono Linear`**
 - Everyday workhorse for code. Simplified shapes meant to help enhance focus in complex code.
