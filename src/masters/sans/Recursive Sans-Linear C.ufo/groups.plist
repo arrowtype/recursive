@@ -598,8 +598,9 @@
 			<string>LJ</string>
 			<string>NJ</string>
 			<string>Nhookleft</string>
-			<string>J</string>
-			<string>Jcircumflex</string>
+			<string>d</string>
+			<string>ddotbelow</string>
+			<string>dlinebelow</string>
 		</array>
 		<key>public.kern1.I_right</key>
 		<array>
@@ -618,6 +619,12 @@
 			<string>Idieresisacute</string>
 			<string>Igravedbl</string>
 			<string>Iinvertedbreve</string>
+		</array>
+		<key>public.kern1.J_right</key>
+		<array>
+			<string>IJ</string>
+			<string>J</string>
+			<string>Jcircumflex</string>
 		</array>
 		<key>public.kern1.K_right</key>
 		<array>
@@ -893,6 +900,16 @@
 			<string>aringacute.simple</string>
 			<string>atilde.simple</string>
 		</array>
+		<key>public.kern1.braceleft</key>
+		<array>
+			<string>bracketleft</string>
+			<string>bracketleft.case</string>
+		</array>
+		<key>public.kern1.bracketleft</key>
+		<array>
+			<string>braceleft</string>
+			<string>braceleft.case</string>
+		</array>
 		<key>public.kern1.c_right</key>
 		<array>
 			<string>c.italic</string>
@@ -1093,6 +1110,7 @@
 			<string>dotlessj.italic</string>
 			<string>lj.italic</string>
 			<string>nj.italic</string>
+			<string>ij</string>
 		</array>
 		<key>public.kern1.l_right</key>
 		<array>
@@ -1246,6 +1264,11 @@
 			<string>otildemacron</string>
 			<string>b.italic_191117-17_02</string>
 		</array>
+		<key>public.kern1.parenleft</key>
+		<array>
+			<string>parenleft</string>
+			<string>parenleft.case</string>
+		</array>
 		<key>public.kern1.r_right</key>
 		<array>
 			<string>r</string>
@@ -1307,6 +1330,8 @@
 			<string>tdieresis</string>
 			<string>tdotbelow</string>
 			<string>tlinebelow</string>
+			<string>pi</string>
+			<string>tbar</string>
 		</array>
 		<key>public.kern1.uhorn</key>
 		<array>
@@ -1813,6 +1838,16 @@
 			<string>aringacute.italic</string>
 			<string>atilde.italic</string>
 		</array>
+		<key>public.kern2.braceright</key>
+		<array>
+			<string>braceright</string>
+			<string>braceright.case</string>
+		</array>
+		<key>public.kern2.bracketright</key>
+		<array>
+			<string>bracketright</string>
+			<string>bracketright.case</string>
+		</array>
 		<key>public.kern2.e_left</key>
 		<array>
 			<string>e</string>
@@ -2016,6 +2051,7 @@
 			<string>racute.simple</string>
 			<string>rcaron.simple</string>
 			<string>rcommaaccent.simple</string>
+			<string>ij</string>
 		</array>
 		<key>public.kern2.l_left</key>
 		<array>
@@ -2088,6 +2124,7 @@
 			<string>nlinebelow</string>
 			<string>ntilde</string>
 			<string>p</string>
+			<string>nj</string>
 		</array>
 		<key>public.kern2.o_left</key>
 		<array>
@@ -2190,6 +2227,12 @@
 			<string>gcircumflex.simple</string>
 			<string>gcommaaccent.simple</string>
 			<string>gdotaccent.simple</string>
+			<string>schwa</string>
+		</array>
+		<key>public.kern2.parenright</key>
+		<array>
+			<string>parenright</string>
+			<string>parenright.case</string>
 		</array>
 		<key>public.kern2.s_left</key>
 		<array>
@@ -2225,6 +2268,8 @@
 			<string>tdieresis</string>
 			<string>tdotbelow</string>
 			<string>tlinebelow</string>
+			<string>pi</string>
+			<string>tbar</string>
 		</array>
 		<key>public.kern2.u_left</key>
 		<array>

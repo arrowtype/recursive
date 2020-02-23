@@ -1169,6 +1169,13 @@
 				<real>0.5</real>
 				<real>0.5</real>
 			</array>
+			<key>public.kern1.J_right</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>0</integer>
+				<real>0.25</real>
+			</array>
 			<key>public.kern1.K_right</key>
 			<array>
 				<integer>1</integer>
@@ -1267,6 +1274,20 @@
 				<real>0.5</real>
 				<real>0.25</real>
 			</array>
+			<key>public.kern1.braceleft</key>
+			<array>
+				<integer>1</integer>
+				<real>0.5</real>
+				<integer>0</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern1.bracketleft</key>
+			<array>
+				<integer>1</integer>
+				<integer>0</integer>
+				<integer>0</integer>
+				<real>0.25</real>
+			</array>
 			<key>public.kern1.c_right</key>
 			<array>
 				<integer>0</integer>
@@ -1327,6 +1348,13 @@
 			<array>
 				<integer>1</integer>
 				<integer>0</integer>
+				<integer>0</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern1.parenleft</key>
+			<array>
+				<integer>1</integer>
+				<integer>1</integer>
 				<integer>0</integer>
 				<real>0.25</real>
 			</array>
@@ -1519,6 +1547,20 @@
 				<integer>1</integer>
 				<real>0.25</real>
 			</array>
+			<key>public.kern2.braceright</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>1</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern2.bracketright</key>
+			<array>
+				<integer>0</integer>
+				<integer>1</integer>
+				<integer>0</integer>
+				<real>0.25</real>
+			</array>
 			<key>public.kern2.e_left</key>
 			<array>
 				<integer>0</integer>
@@ -1572,6 +1614,13 @@
 			<array>
 				<integer>1</integer>
 				<integer>0</integer>
+				<integer>1</integer>
+				<real>0.25</real>
+			</array>
+			<key>public.kern2.parenright</key>
+			<array>
+				<integer>0</integer>
+				<real>0.5</real>
 				<integer>1</integer>
 				<real>0.25</real>
 			</array>
