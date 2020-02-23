@@ -193,8 +193,6 @@ def splitFont(fontPath, outputDirectory="fonts/rec_mono-for-code", newName="Rec 
 
 	fontFileName = os.path.basename(fontPath)
 
-	
-
 	for package in instanceValues:
 		for instance in instanceValues[package]:
 

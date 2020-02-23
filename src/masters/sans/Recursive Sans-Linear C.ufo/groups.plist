@@ -1034,6 +1034,7 @@
 			<string>gcommaaccent</string>
 			<string>gmacron</string>
 			<string>g.mono</string>
+			<string>gmacron.mono</string>
 		</array>
 		<key>public.kern1.i_right</key>
 		<array>
@@ -1306,6 +1307,15 @@
 			<string>tdieresis</string>
 			<string>tdotbelow</string>
 			<string>tlinebelow</string>
+		</array>
+		<key>public.kern1.uhorn</key>
+		<array>
+			<string>uhorn</string>
+			<string>uhornacute</string>
+			<string>uhorndot</string>
+			<string>uhorngrave</string>
+			<string>uhornhook</string>
+			<string>uhorntilde</string>
 		</array>
 		<key>public.kern1.v_right</key>
 		<array>
@@ -1883,6 +1893,7 @@
 			<string>gcommaaccent</string>
 			<string>gmacron</string>
 			<string>g.mono</string>
+			<string>gmacron.mono</string>
 		</array>
 		<key>public.kern2.h_left</key>
 		<array>
