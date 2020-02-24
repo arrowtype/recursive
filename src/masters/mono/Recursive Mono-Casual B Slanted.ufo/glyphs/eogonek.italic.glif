@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="eogonek.italic" format="2">
+	<advance width="600"/>
+	<outline>
+		<contour>
+			<point x="228" y="-123" type="curve"/>
+			<point x="212" y="-203"/>
+			<point x="253" y="-250"/>
+			<point x="330" y="-250" type="curve"/>
+			<point x="393" y="-250"/>
+			<point x="429" y="-224"/>
+			<point x="444" y="-161" type="curve"/>
+			<point x="451" y="-134"/>
+			<point x="448" y="-114"/>
+			<point x="438" y="-93" type="curve"/>
+			<point x="432" y="-93" type="line"/>
+			<point x="419" y="-104"/>
+			<point x="408" y="-106"/>
+			<point x="389" y="-106" type="curve"/>
+			<point x="364" y="-106"/>
+			<point x="351" y="-95"/>
+			<point x="355" y="-76" type="curve"/>
+			<point x="364" y="-43"/>
+			<point x="397" y="-14"/>
+			<point x="445" y="8" type="curve"/>
+			<point x="469" y="18"/>
+			<point x="511" y="49"/>
+			<point x="530" y="147" type="curve"/>
+			<point x="495" y="94"/>
+			<point x="457" y="41"/>
+			<point x="428" y="31" type="curve"/>
+			<point x="309" y="-10"/>
+			<point x="244" y="-53"/>
+		</contour>
+		<component base="e.italic"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>1,0.5,0,1</string>
+		</dict>
+	</lib>
+</glyph>
