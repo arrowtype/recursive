@@ -1,3 +1,11 @@
+"""
+    USAGE:
+
+    Best to use on a font-prepped font, with only compatible glyphs in font.
+
+    python <path>/make_aalt.py "mastering/build/src/Recursive Mono-Linear B.ufo" -o <path>/aalt.fea 
+"""
+
 import os
 from fontParts.fontshell import RFont as Font
 
