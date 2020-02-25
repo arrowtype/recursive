@@ -499,6 +499,8 @@
 			<string>B</string>
 			<string>thai:baht</string>
 			<string>bitcoin</string>
+			<string>Germandbls</string>
+			<string>germandbls</string>
 		</array>
 		<key>public.kern1.C_right</key>
 		<array>
@@ -642,6 +644,13 @@
 			<string>Lcaron</string>
 			<string>Ldotbelow</string>
 			<string>Llinebelow</string>
+			<string>Lacute.sans</string>
+			<string>Lcaron.sans</string>
+			<string>Lcommaaccent.sans</string>
+			<string>Ldot.sans</string>
+			<string>Ldotbelow.sans</string>
+			<string>Llinebelow.sans</string>
+			<string>Lslash.sans</string>
 		</array>
 		<key>public.kern1.M_right</key>
 		<array>
@@ -927,6 +936,11 @@
 			<string>cdotaccent.italic</string>
 			<string>ccedillaacute.italic</string>
 		</array>
+		<key>public.kern1.dcaron_right</key>
+		<array>
+			<string>dcaron</string>
+			<string>dcaron.italic</string>
+		</array>
 		<key>public.kern1.ditalic_right</key>
 		<array>
 			<string>a.italic</string>
@@ -1031,6 +1045,7 @@
 			<string>emacronacute.italic</string>
 			<string>emacrongrave.italic</string>
 			<string>etilde.italic</string>
+			<string>eogonek.italic</string>
 		</array>
 		<key>public.kern1.f_right</key>
 		<array>
@@ -1040,6 +1055,7 @@
 			<string>f.mono</string>
 			<string>f_f</string>
 			<string>f</string>
+			<string>f.simple</string>
 		</array>
 		<key>public.kern1.g_right</key>
 		<array>
@@ -1052,6 +1068,20 @@
 			<string>gmacron</string>
 			<string>g.mono</string>
 			<string>gmacron.mono</string>
+			<string>g.simple</string>
+			<string>gbreve.simple</string>
+			<string>gcaron.simple</string>
+			<string>gcircumflex.simple</string>
+			<string>gcommaaccent.simple</string>
+			<string>gdotaccent.simple</string>
+			<string>g.italic</string>
+			<string>gbreve.italic</string>
+			<string>gcaron.italic</string>
+			<string>gcircumflex.italic</string>
+			<string>gcommaaccent.italic</string>
+			<string>gdotaccent.italic</string>
+			<string>gmacron.italic</string>
+			<string>gmacron.simple</string>
 		</array>
 		<key>public.kern1.i_right</key>
 		<array>
@@ -1098,19 +1128,28 @@
 			<string>idotaccent</string>
 			<string>j.italic</string>
 			<string>jcircumflex.italic</string>
-			<string>g.italic</string>
-			<string>gbreve.italic</string>
-			<string>gcaron.italic</string>
-			<string>gcircumflex.italic</string>
-			<string>gcommaaccent.italic</string>
-			<string>gdotaccent.italic</string>
-			<string>gmacron.italic</string>
 			<string>Lj.italic</string>
 			<string>Nj.italic</string>
 			<string>dotlessj.italic</string>
 			<string>lj.italic</string>
 			<string>nj.italic</string>
 			<string>ij</string>
+			<string>i.simple</string>
+			<string>iacute.simple</string>
+			<string>ibreve.simple</string>
+			<string>icircumflex.simple</string>
+			<string>idieresis.simple</string>
+			<string>idieresisacute.simple</string>
+			<string>idot.simple</string>
+			<string>idotaccent.simple</string>
+			<string>idotbelow.simple</string>
+			<string>igrave.simple</string>
+			<string>igravedbl.simple</string>
+			<string>ihook.simple</string>
+			<string>iinvertedbreve.simple</string>
+			<string>imacron.simple</string>
+			<string>iogonek.simple</string>
+			<string>itilde.simple</string>
 		</array>
 		<key>public.kern1.l_right</key>
 		<array>
@@ -1183,6 +1222,8 @@
 			<string>lcommaaccent.simple</string>
 			<string>ldotbelow.simple</string>
 			<string>llinebelow.simple</string>
+			<string>f_f_l</string>
+			<string>fl</string>
 		</array>
 		<key>public.kern1.n_right</key>
 		<array>
@@ -1295,6 +1336,14 @@
 			<string>rinvertedbreve.mono</string>
 			<string>rdotbelow.mono</string>
 			<string>rlinebelow.mono</string>
+			<string>r.simple</string>
+			<string>racute.simple</string>
+			<string>rcaron.simple</string>
+			<string>rcommaaccent.simple</string>
+			<string>rdotbelow.simple</string>
+			<string>rgravedbl.simple</string>
+			<string>rinvertedbreve.simple</string>
+			<string>rlinebelow.simple</string>
 		</array>
 		<key>public.kern1.s_right</key>
 		<array>
@@ -1652,6 +1701,9 @@
 			<string>figuredash</string>
 			<string>gnrl:hyphen</string>
 			<string>horizontalbar</string>
+			<string>arrowleft</string>
+			<string>arrowleftright</string>
+			<string>lessequal</string>
 		</array>
 		<key>public.kern2.Punct_top_left</key>
 		<array>
@@ -1832,6 +1884,8 @@
 			<string>aring.italic</string>
 			<string>aringacute.italic</string>
 			<string>atilde.italic</string>
+			<string>agravedbl.simple</string>
+			<string>ainvertedbreve.simple</string>
 		</array>
 		<key>public.kern2.braceright</key>
 		<array>
@@ -1890,6 +1944,7 @@
 			<string>emacronacute.italic</string>
 			<string>emacrongrave.italic</string>
 			<string>etilde.italic</string>
+			<string>eogonek.italic</string>
 		</array>
 		<key>public.kern2.f_left</key>
 		<array>
@@ -1924,6 +1979,20 @@
 			<string>gmacron</string>
 			<string>g.mono</string>
 			<string>gmacron.mono</string>
+			<string>g.italic</string>
+			<string>gbreve.italic</string>
+			<string>gcaron.italic</string>
+			<string>gcircumflex.italic</string>
+			<string>gcommaaccent.italic</string>
+			<string>gdotaccent.italic</string>
+			<string>gmacron.italic</string>
+			<string>g.simple</string>
+			<string>gbreve.simple</string>
+			<string>gcaron.simple</string>
+			<string>gcircumflex.simple</string>
+			<string>gcommaaccent.simple</string>
+			<string>gdotaccent.simple</string>
+			<string>gmacron.simple</string>
 		</array>
 		<key>public.kern2.h_left</key>
 		<array>
@@ -2047,6 +2116,10 @@
 			<string>rcaron.simple</string>
 			<string>rcommaaccent.simple</string>
 			<string>ij</string>
+			<string>rdotbelow.simple</string>
+			<string>rgravedbl.simple</string>
+			<string>rinvertedbreve.simple</string>
+			<string>rlinebelow.simple</string>
 		</array>
 		<key>public.kern2.l_left</key>
 		<array>
@@ -2155,7 +2228,6 @@
 			<string>oe</string>
 			<string>c.italic</string>
 			<string>d.italic</string>
-			<string>g.italic</string>
 			<string>ocircumflexdot</string>
 			<string>ocircumflexhook</string>
 			<string>ohook</string>
@@ -2183,12 +2255,6 @@
 			<string>cdotaccent.italic</string>
 			<string>ddotbelow.italic</string>
 			<string>dlinebelow.italic</string>
-			<string>gbreve.italic</string>
-			<string>gcaron.italic</string>
-			<string>gcircumflex.italic</string>
-			<string>gcommaaccent.italic</string>
-			<string>gdotaccent.italic</string>
-			<string>gmacron.italic</string>
 			<string>ccedillaacute</string>
 			<string>agravedbl.italic</string>
 			<string>ainvertedbreve.italic</string>
@@ -2216,13 +2282,8 @@
 			<string>aring.simple</string>
 			<string>aringacute.simple</string>
 			<string>atilde.simple</string>
-			<string>g.simple</string>
-			<string>gbreve.simple</string>
-			<string>gcaron.simple</string>
-			<string>gcircumflex.simple</string>
-			<string>gcommaaccent.simple</string>
-			<string>gdotaccent.simple</string>
 			<string>schwa</string>
+			<string>dcaron.italic</string>
 		</array>
 		<key>public.kern2.parenright</key>
 		<array>
