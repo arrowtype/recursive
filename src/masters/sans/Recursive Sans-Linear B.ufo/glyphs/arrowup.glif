@@ -32,14 +32,14 @@
 			<point x="297" y="491"/>
 			<point x="280" y="491"/>
 		</contour>
-		<component base="_arrowhead"/>
+		<component base="_arrowhead" xOffset="-1"/>
 	</outline>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
 			<string>needsFixing</string>
 			<key>public.markColor</key>
-			<string>0,0,0,0.25</string>
+			<string>1,0.5,0,1</string>
 		</dict>
 	</lib>
 </glyph>
