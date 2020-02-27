@@ -46,6 +46,7 @@ for file in files:
 
             # add anchor list to base glyph
             for anchor in font[glyph.name.split('.')[0]].anchors:
+                print(font.info.styleName, glyph.name, anchor.name)
                 if anchor.name not in anchors[glyph.name.split('.')[0]]['anchorsInBase']:
                     anchors[glyph.name.split('.')[0]]['anchorsInBase'].append(anchor.name)
 
@@ -61,6 +62,7 @@ for file in files:
         # find if anchorsInAlts don't match anchors in base. If not, print about it
 
     for baseGlyph in anchors:
+        print(baseGlyph)
         for altGlyph in anchors[baseGlyph]['anchorsInAlts']:
             if len(Diff(anchors[baseGlyph]['anchorsInBase'], anchors[baseGlyph]['anchorsInAlts'][altGlyph])) >= 1:
                 print(baseGlyph.ljust(20), sorted(anchors[baseGlyph]['anchorsInBase']))
