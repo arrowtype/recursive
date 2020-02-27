@@ -27,9 +27,12 @@ for ufo in sorted(ufosToCheck):
 		for anchor in g.anchors:
 			if anchor.name == None:
 				print(f"{(f.info.styleName).ljust(30, ' ')} \t {(g.name).ljust(9, ' ')} \t {anchor}")
-				if sys.argv[2] == "-r" or sys.argv[2] == "--remove" :
-					print(f"{anchor} removed!")
-					g.removeAnchor(anchor)
-					f.save()
+				try:
+					if sys.argv[2] == "-r" or sys.argv[2] == "--remove" :
+						print(f"{anchor} removed!")
+						g.removeAnchor(anchor)
+						f.save()
+				except IndexError:
+					pass
 	
 	f.close()
