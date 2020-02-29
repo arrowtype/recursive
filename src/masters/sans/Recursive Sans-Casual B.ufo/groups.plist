@@ -746,16 +746,18 @@
 			<string>horizontalbar</string>
 			<string>bulletoperator</string>
 		</array>
+		<key>public.kern1.Punct_straight_quote</key>
+		<array>
+			<string>quotedbl</string>
+			<string>quotesingle</string>
+		</array>
 		<key>public.kern1.Punct_top_right</key>
 		<array>
-			<string>asterisk</string>
 			<string>overline</string>
-			<string>quotedbl</string>
 			<string>quotedblleft</string>
 			<string>quotedblright</string>
 			<string>quoteleft</string>
 			<string>quoteright</string>
-			<string>quotesingle</string>
 			<string>slash</string>
 			<string>slash.case</string>
 			<string>minute</string>
@@ -765,14 +767,9 @@
 			<string>primemod</string>
 			<string>verticallinemod</string>
 			<string>macronmod</string>
-			<string>acutemod</string>
-			<string>gravemod</string>
 			<string>apostrophemod</string>
 			<string>ringhalfleftmod</string>
 			<string>ringhalfrightmod</string>
-			<string>ordmasculine</string>
-			<string>ordfeminine</string>
-			<string>acute</string>
 			<string>breve</string>
 			<string>caron</string>
 			<string>circumflex</string>
@@ -787,6 +784,18 @@
 			<string>trademark</string>
 			<string>ringacute</string>
 			<string>fraction</string>
+		</array>
+		<key>public.kern1.Punct_top_right_big</key>
+		<array>
+			<string>asterisk</string>
+			<string>ordfeminine</string>
+			<string>ordmasculine</string>
+		</array>
+		<key>public.kern1.Punct_top_right_tiny</key>
+		<array>
+			<string>acutemod</string>
+			<string>gravemod</string>
+			<string>acute</string>
 		</array>
 		<key>public.kern1.R_right</key>
 		<array>
@@ -1439,6 +1448,8 @@
 			<string>kgreenlandic</string>
 			<string>x.italic</string>
 			<string>x</string>
+			<string>k.italic</string>
+			<string>kcommaaccent.italic</string>
 		</array>
 		<key>public.kern1.z_right</key>
 		<array>
@@ -1705,48 +1716,54 @@
 			<string>arrowleftright</string>
 			<string>lessequal</string>
 		</array>
+		<key>public.kern2.Punct_straight_quote</key>
+		<array>
+			<string>quotedbl</string>
+			<string>quotesingle</string>
+		</array>
 		<key>public.kern2.Punct_top_left</key>
 		<array>
-			<string>asterisk</string>
 			<string>overline</string>
-			<string>quotedbl</string>
 			<string>quotedblleft</string>
 			<string>quotedblright</string>
 			<string>quoteleft</string>
 			<string>quoteright</string>
-			<string>quotesingle</string>
 			<string>backslash</string>
 			<string>backslash.case</string>
 			<string>minute</string>
 			<string>second</string>
 			<string>ringacute</string>
-			<string>acute</string>
 			<string>breve</string>
 			<string>caron</string>
 			<string>circumflex</string>
 			<string>degree</string>
 			<string>dieresis</string>
 			<string>dotaccent</string>
-			<string>grave</string>
-			<string>hungarumlaut</string>
 			<string>macron</string>
 			<string>ring</string>
 			<string>tilde</string>
 			<string>trademark</string>
 			<string>minus</string>
 			<string>plus</string>
-			<string>acutemod</string>
-			<string>apostrophemod</string>
 			<string>commaturnedmod</string>
-			<string>gravemod</string>
 			<string>macronmod</string>
-			<string>ordfeminine</string>
-			<string>ordmasculine</string>
 			<string>primedblmod</string>
 			<string>primemod</string>
 			<string>ringhalfleftmod</string>
 			<string>ringhalfrightmod</string>
 			<string>verticallinemod</string>
+		</array>
+		<key>public.kern2.Punct_top_left_big</key>
+		<array>
+			<string>ordfeminine</string>
+			<string>ordmasculine</string>
+			<string>asterisk</string>
+		</array>
+		<key>public.kern2.Punct_top_left_tiny</key>
+		<array>
+			<string>acutemod</string>
+			<string>gravemod</string>
+			<string>apostrophemod</string>
 		</array>
 		<key>public.kern2.S_left</key>
 		<array>
