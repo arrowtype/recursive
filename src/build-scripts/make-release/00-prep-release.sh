@@ -1,3 +1,20 @@
+# Recursive-Beta_1.042
+# 	recursive_desktop
+# 		recursive-staticOTF_1.042.otc
+# 		recursive-staticTTF_1.042.ttc
+# 		recursive-variable_1.042.ttf
+# 		rec_mono-for-code
+# 			[rec mono as four ttc]
+# 	recursive_web
+# 		static_woff2
+# 			[TTFs as woff2]
+# 		recursive-variable_1.042.woff2
+# 		subsets
+# 			[figure this out]
+# 
+# copy OFL.txt into folder
+# copy README.md (recommendations) into folder
+
 # run on fonts folder, e.g.
 # src/build-scripts/make-release/00-prep-release.sh fonts_1.042
 
@@ -79,28 +96,8 @@ cp $(dirname $0)/release-notes.md $outputDir/README.md
 
 zip $outputDir.zip -r $outputDir
 
+# ---------------------------------------------
+# move folder into "fonts/"
 
-
-# move into single "recursive_1.042" folder
-# 
-# fonts
-# 	recursive_desktop
-# 		recursive-staticOTF_1.042.otc
-# 		recursive-staticTTF_1.042.ttc
-# 		recursive-variable_1.042.ttf
-# 		rec_mono-for-code
-# 			[rec mono as four ttc]
-# 	recursive_web
-# 		static_woff2
-# 			[TTFs as woff2]
-# 		recursive-variable_1.042.woff2
-# 		subsets
-# 			[figure this out]
-# 
-# copy OFL.txt into folder
-# copy README.md (recommendations) into folder
-
-
-# fonts/recursive-beta_1.042/
-
-
+cp $outputDir fonts/$outputDir
+cp $outputDir.zip fonts/$outputDir.zip
