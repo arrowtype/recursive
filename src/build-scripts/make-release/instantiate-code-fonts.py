@@ -24,6 +24,9 @@ import os
 import pathlib
 from fontTools import ttLib
 from fontTools.varLib import instancer
+import subprocess
+import shutil
+import glob
 import fire
 
 # instances to split
@@ -186,7 +189,7 @@ def setFontNameID(font, ID, newName):
 
 oldName = "Recursive"
 
-def splitFont(fontPath, outputDirectory="fonts/rec_mono-for-code", newName="Rec Mono"):
+def splitFont(fontPath, outputDirectory="fonts/rec_mono-for-code", newName="Rec Mono", ttc=False, zip=False):
 
 	# access font as TTFont object
 	varfont = ttLib.TTFont(fontPath)
@@ -194,6 +197,8 @@ def splitFont(fontPath, outputDirectory="fonts/rec_mono-for-code", newName="Rec 
 	fontFileName = os.path.basename(fontPath)
 
 	for package in instanceValues:
+		outputSubDir = f"{outputDirectory}/{package}"
+
 		for instance in instanceValues[package]:
 
 			print(instance)
@@ -228,21 +233,34 @@ def splitFont(fontPath, outputDirectory="fonts/rec_mono-for-code", newName="Rec 
 			setFontNameID(instanceFont, 1, newFamName)
 			setFontNameID(instanceFont, 16, newFamName)
 
-
-
-			# TODO: remove version number from filename?
-
 			newFileName = fontFileName.replace(oldName,newName.replace(' ','')).replace('_VF_','-'+instance.replace(' ','')+'-')
-			outputSubDir = f"{outputDirectory}/{package}"
 
 			# make dir for new fonts
 			pathlib.Path(outputSubDir).mkdir(parents=True, exist_ok=True) 
 
 			instanceFont.save(f"{outputSubDir}/{newFileName}")
 
-	import shutil
-	shutil.make_archive(f"{outputDirectory}", 'zip', outputDirectory)
-	shutil.move(f"{outputDirectory}.zip",f"{outputDirectory}/{outputDirectory.split('/')[-1]}.zip")
+		# -----------------------------------------------------------
+		# make TTC (truetype collection) of fonts – doesn't current work on Mac very well :(
+
+		if ttc:
+			# make list of fonts in subdir
+			fontPaths = [os.path.abspath(outputSubDir + "/" + x) for x in os.listdir(outputSubDir)]
+
+			# form command
+			command = f"otf2otc {' '.join(fontPaths)} -o {outputDirectory}/RecMono-{package}.ttc"
+			print("▶", command, "\n")
+
+			# run command in shell
+			makeTTF = subprocess.run(command.split(), check=True, text=True)
+			
+			# remove dir with individual fontpaths
+			shutil.rmtree(os.path.abspath(outputSubDir))
+
+	# Make zip of output, then put inside output directory
+	if zip:
+		shutil.make_archive(f"{outputDirectory}", 'zip', outputDirectory)
+		shutil.move(f"{outputDirectory}.zip",f"{outputDirectory}/{outputDirectory.split('/')[-1]}.zip")
 
 
 
