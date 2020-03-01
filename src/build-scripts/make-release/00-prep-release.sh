@@ -6,7 +6,7 @@
 # CONFIGURATION
 
 desktopDir="Recursive_Desktop"
-desktopCodeDir="Recursive_DesktopCode"
+desktopCodeDir="Recursive_Code"
 webDir="Recursive_Web"
 
 # ---------------------------------------------
