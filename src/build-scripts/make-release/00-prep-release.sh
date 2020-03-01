@@ -101,7 +101,9 @@ cp $(dirname $0)/data/release-notes.md $outputDir/README.md
 cp $(dirname $0)/data/rec_mono-for-code--notes.md $outputDir/$desktopCodeDir/README.md
 
 # ---------------------------------------------
-# move folder into "fonts/" and make a zip of it
+# make a zip of the outputDir, then move both dir & zip into "fonts/"
 
+zip $outputDir.zip -r $outputDir
+
+mv $outputDir.zip fonts
 mv $outputDir fonts
-zip fonts/$outputDir.zip -r fonts/$outputDir
