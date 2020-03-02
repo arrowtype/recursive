@@ -101,6 +101,12 @@ This would be similar to the previous two options, but instead of `CRSV` having 
 - Currently unclear how to implement. My first attempt resulted in slanted italics *only* being available when *both* `slnt` & `ital` were at maximum values
 - The `ital`/`CRSV` axis is already hard to understand as `off/auto/on`, and making it `off/auto/on/full` becomes a mixed set of effects, and probably much harder to explain
 
+## What's the best option?
+
+Without much testing, I personally feel that Option 3 (`ital` controls slope & alts, `CRSV` controls alts) is best.
+
+It is the option which makes things most clear, without adding additional complexity to the system. It still allows for the entire designspace to be accessible, without creating unsafe or newly confusing areas.
+
 ## What *are* Italics? What is Slant?
 
 Arguably, there is a typographic difference between concepts of *Slant* & *Italic*. Generally speaking, *Italics* are used for hierarchy within text (somewhat similar to *Weight*), while *Slant* is a visual attribute that can be used in layout (more similar to *Width*). Put another way, *Italics* are about semantic meaning, while *Slant* is more about visual presentation.
@@ -119,11 +125,21 @@ Within different scripts in the same type family, general levels of slant may al
 
  I don't know of an "italic" Arabic, but presumably, it would be possible for a single Arabic typeface to have a standard style, plus a secondary style that might have more-handwritten letterforms.
 
- Even though "Italics" in some typefaces (such as Arial) are simply slanted versions of the general style, this is more of an exception than a rule – and these "Italics" are still used to provide emphasis in text in a similar manner to other type systems.
+ Even though "Italics" in some typefaces (such as Arial) are simply slanted versions of the general style, this is more of an exception than a rule. These styles are often called "Obliques" by typographers, but are still used to provide emphasis in text in a similar manner to other type systems.
 
 ### Slant is a visual/"mechanical" attribute
 
-Just as *Width* changes the overall shaping of letters as a visual change that can help in certain layouts, *Slant* may be best treated as a visual change that affects the overall lean of letters, more as a visual change for certain aesthetics than as a device for typographic semantics.
+Just as *Width* changes the overall shaping of letters as a visual change that can help in certain layouts, *Slant* may be best treated as a visual change that affects the overall lean of letters, more as a visual change for certain aesthetics than as a device for typographic semantics. Slant without glyph substitution allows for things like animated interactions (e.g. links that slant when hovered, letters that stay "upright" despite a device's gyroscopic tilt), interesting display typography (e.g. posters with sloped typography, signage on staircases), and more.
+
+### Should the OpenType/Google Fonts specs deprecate Slant or Italic? No.
+
+There is overlap and ambiguity between Slant and Italic axes, and this has led to confusion and slow movement in browsers supporting this axes, as well as in average font designers in following the spec properly.
+
+As outlined above, *Italic* and *Slant* both serve a unique purpose, and there are contexts in which a user would want one or the other separately, and probably also contexts in which a user might want some separately-controllable combination of the two (e.g. animated UI text that includes a secondary level of emphasis).
+
+The specs shouldn't eliminate one or the other; they should provide more clarity and guidance around the purpose and implemenation of each.
+
+In general, "Italic" instances should be activated via the `ital` axis, while "Oblique" instances are activated via the `slnt` axis.
 
 ## Tests
 
