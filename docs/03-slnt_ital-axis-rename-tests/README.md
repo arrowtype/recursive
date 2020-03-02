@@ -17,14 +17,17 @@ The `ital` axis allows users to have more control over the true-italic substitut
 
 ## Possible ways forward
 
+**Simple options**
 1. Keep `slnt` and `ital` as-is
 2. Keep `slnt` as is, control true-italic substitution with "Cursive" (`CRSV`)
 3. Change Slant `slnt` axis to Italic `ital` axis, control true-italic substitution with "Cursive" (`CRSV`)
-4. Something else?? E.g. Keep existing behavior mostly, but connect `ital=1` to full slant
 
-### Option 1: Pros and Cons
+**Additional possibilities**
+4. Just `ital` or just `slnt`, then split out `CRSV` and `ROMN` into two separate binary axes
+5. `slnt` and `CRSV` could be like "parametric axes," while `ital` is the combination of these. Italic text is Slanted *and* Cursive.
+6. Keep existing behavior for `slnt` and `ital` up to 0.9, but make `ital=1` activate full slant (first attempt at this not successful)
 
-> Keep `slnt` and `ital` as-is
+### Option 1: Keep `slnt` and `ital` as-is
 
 **Pros**
 - No need to change print specimen design/content at this late stage (as of Friday, we thought we had "frozen" content & design)
@@ -34,9 +37,7 @@ The `ital` axis allows users to have more control over the true-italic substitut
 **Cons**
 - (see "Problems" section, above)
 
-### Option 2: Pros and Cons
-
-> Keep `slnt` as is, control true-italic substitution with "Cursive" (`CRSV`)
+### Option 2: Keep `slnt` as is, control true-italic substitution with "Cursive" (`CRSV`)
 
 **Pros**
 - We only have to partially change user expectations
@@ -49,9 +50,7 @@ The `ital` axis allows users to have more control over the true-italic substitut
 - `sltn` cannot be mathematically exact between min and max values, and is only really a general amount of lean, becuase various letterforms in Italic styles generally break the general italic angle. (E.g. *f* often has less slant in the middle than *H*.)
 - `slnt` may not be the best axis to activate a true-italic style (See *What are Italics?* section below.)
 
-### Option 3: Pros and Cons
-
-> Change Slant `slnt` axis to Italic `ital` axis, control true-italic substitution with "Cursive" (`CRSV`)
+### Option 3: Change Slant `slnt` axis to Italic `ital` axis, control true-italic substitution with "Cursive" (`CRSV`)
 
 **Pros**
 - Recursive Italic styles are not merely slanted, but truly Italic. (See *What are Italics?* section below.)
@@ -61,6 +60,46 @@ The `ital` axis allows users to have more control over the true-italic substitut
 **Cons**
 - Shifts user understanding in two axes, rather than just one
 - The print specimen has already taken more time than the designers expected they had signed up for, so it would seem unethical to change something now, unless we can pay them for the extra time it will take to update
+
+### Option 4: Just `ital` or just `slnt`, then split out `CRSV` and `ROMN` into two separate binary axes
+
+This would be similar to the previous two options, but instead of `CRSV` having options `0`, `0.5`, and `1` (off, auto, on), it would have Roman (`ROMN`) with options `0` and `1` (auto, on) and Cursive, (auto, on).
+
+**Pros**
+- DJR: "a good axis does one simple thing, and does it well"
+- 
+
+**Cons**
+- Would be less clear why these aren't just Stylistic Sets (and this isn't a stylistic set because those are often hard to find, and customize behavior of just one character, while control cursive alts is a near-global change convering most of the lowercase)
+- Not easy to guess what happens when `ROMN=1` *and* `CRSV=1`. Probably, one would override the other? Or possibly, it would flip the behavior of cursive alts (e.g. upright is cursive while sloped is roman).
+- Might suggest that Fraunces `WONK` should also be split into two axes such as `WONK` and `NORM`
+
+### Option 5: `slnt` and `CRSV` could be like "parametric axes," while `ital` is the combination of these.
+
+**Pros**
+- Each axis has its role, and each does its thing
+- DJR: "I think it's worth the risk to have them both in [`slnt` and `CRSV` making up the blended `ital`], because it's not easy to get to a "bad" solution. That would only ever happen for users seeing the axis sliders in a pro design tool." (Counterpoint: users will likely see these sliders on the minisite, on specimens, and possibly on Google Fonts.)
+- Might allow two in-spec CSS ways to access italic *or* oblique
+
+`font-style: italic;` gives proper italic
+`font-style: oblique;` gives sloped roman
+
+**Cons**
+- Might introduce "doubling" possibility / unsafe areas of designspace
+- Currently unclear how to implement (though DJR is confident it could be done, possibly via duplicate sources)
+- Would add additional axis, possibly making the font more rather than less confusing
+- Might feel a bit like "amstelvar," which is easy for newcomers to perceive as broken/confusing. Amstelvar is very cool, but the goal of Recursive is to be nerdy but approacheable.
+
+### Option 6: Keep existing behavior for `slnt` and `ital` up to 0.9, but make `ital=1` activate full slant (first attempt at this not successful)
+
+**Pros**
+- Listed axes don't change
+- `ital=1` would activate expected style, as would `slnt=-15`
+- ital 0–0.9 could still have off/auto/on interaction
+
+**Cons**
+- Currently unclear how to implement. My first attempt resulted in slanted italics *only* being available when *both* `slnt` & `ital` were at maximum values
+- The `ital`/`CRSV` axis is already hard to understand as `off/auto/on`, and making it `off/auto/on/full` becomes a mixed set of effects, and probably much harder to explain
 
 ## What *are* Italics? What is Slant?
 
@@ -82,10 +121,13 @@ Within different scripts in the same type family, general levels of slant may al
 
  Even though "Italics" in some typefaces (such as Arial) are simply slanted versions of the general style, this is more of an exception than a rule – and these "Italics" are still used to provide emphasis in text in a similar manner to other type systems.
 
-### Slant is a visual attribute
+### Slant is a visual/"mechanical" attribute
 
 Just as *Width* changes the overall shaping of letters as a visual change that can help in certain layouts, *Slant* may be best treated as a visual change that affects the overall lean of letters, more as a visual change for certain aesthetics than as a device for typographic semantics.
 
 ## Tests
 
-(Work in progress)
+> (⚠️ Work in progress – test fonts not yet made ⚠️)
+> 1. Prep variable font build as usual `cd mastering && python build.py --varfiles`
+> 2. Copy the test designspace into the generated `mastering/build/src` folder
+> 3. Run `fontmake -m <test_designspace> -o variable`
