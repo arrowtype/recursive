@@ -42,7 +42,13 @@
 			<point x="88" y="109"/>
 			<point x="144" y="194"/>
 		</contour>
-		<component base="fourinferior.afrc" xOffset="110"/>
-		<component base="threesuperior.afrc" xOffset="-110"/>
+		<component base="fourinferior.afrc" xOffset="115" yOffset="10"/>
+		<component base="threesuperior.afrc" xOffset="-105"/>
 	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>1,0.5,0,1</string>
+		</dict>
+	</lib>
 </glyph>
