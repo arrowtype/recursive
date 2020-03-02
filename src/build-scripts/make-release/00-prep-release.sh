@@ -15,7 +15,7 @@ webDir="Recursive_Web"
 set -e
 source venv/bin/activate
 
-# use dir as argument
+# required argument: directory with built fonts
 dir=$1
 version=$(cat version.txt)
 
@@ -28,9 +28,9 @@ fi
 # make folder name for outputs
 outputDir=Recursive-${version/" "/"_"}
 # clean up past runs
-rm -rf $outputDir
-rm -rf fonts/$outputDir
-rm -rf fonts/$outputDir.zip
+# rm -rf $outputDir
+# rm -rf fonts/$outputDir
+# rm -rf fonts/$outputDir.zip
 
 # make folders for outputs
 mkdir -p $outputDir
