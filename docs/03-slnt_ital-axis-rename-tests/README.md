@@ -79,12 +79,14 @@ In general, "Italic" instances should be activated via the `ital` axis, while "O
 5. `slnt` and `CRSV` could be like "parametric axes," while `ital` is the combination of these. Italic text is Slanted *and* Cursive.
 6. Keep existing behavior for `slnt` and `ital` up to 0.9, but make `ital=1` activate full slant (first attempt at this not successful)
 
+NOTE: A general drawback of any change is that the font and print specimen are almost complete and revision will take time (potentially quite a bit of time). And, of course, it would have been beneficial to make fundamental changes earlier. However, this consideration shouldn't block us from making the best decision now, as we will have many more users affected going forward.
+
 ### Option 1: Keep `slnt` and `ital` as-is
 
 **Pros**
-- No need to change print specimen design/content at this late stage (as of Friday, we thought we had "frozen" content & design)
 - No need to change setup for users that may be used to the current implementation
 - If we think CSS `font-style: italic` *should* control Slant + Italic, this would possibly help influence that
+- No need to change print specimen design/font
 
 **Cons**
 - (see "Problems" section, above)
@@ -98,7 +100,6 @@ In general, "Italic" instances should be activated via the `ital` axis, while "O
 
 **Cons**
 - Most users don't expect clockwise slant to be negative, and this doesn't deal with that
-- The print specimen has already taken more time than the designers expected they had signed up for, so it would seem unethical to change something now, unless we can pay them for the extra time it will take to update
 - `sltn` cannot be mathematically exact between min and max values, and is only really a general amount of lean, becuase various letterforms in Italic styles generally break the general italic angle. (E.g. *f* often has less slant in the middle than *H*.)
 - `slnt` may not be the best axis to activate a true-italic style (See *What are Italics?* section below.)
 
@@ -111,7 +112,6 @@ In general, "Italic" instances should be activated via the `ital` axis, while "O
 
 **Cons**
 - Shifts user understanding in two axes, rather than just one
-- The print specimen has already taken more time than the designers expected they had signed up for, so it would seem unethical to change something now, unless we can pay them for the extra time it will take to update
 
 ### Option 4: Just `ital` or just `slnt`, then split out `CRSV` and `ROMN` into two separate binary axes
 
