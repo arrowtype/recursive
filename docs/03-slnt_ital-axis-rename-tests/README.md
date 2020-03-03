@@ -168,10 +168,18 @@ It is the option which makes things most clear, without adding additional comple
 
 ## Test fonts
 
-> (⚠️ Work in progress – test fonts not yet made ⚠️)
-> 1. Prep variable font build as usual `cd mastering && python build.py --varfiles`
-> 2. Copy the test designspace into the generated `mastering/build/src` folder
-> 3. Run `fontmake -m <test_designspace> -o variable`
+(⚠️ Work in progress – some options not built yet ⚠️)
+
+1. Prep variable font build as usual `cd mastering && python build.py --varfiles`
+2. Copy the test designspace into the generated `mastering/build/src` folder
+3. Run `fontmake -m <test_designspace> -o variable`
+
+
+**Fonts**
+1. As-is font: [test-fonts/01-recursive-MONO_CASL_wght_slnt_ital-VF--as_is.ttf](test-fonts/01-recursive-MONO_CASL_wght_slnt_ital-VF--as_is.ttf)
+2. slnt & CRSV: [test-fonts/02-recursive-MONO_CASL_CRSV_wght_slnt-VF.ttf](test-fonts/02-recursive-MONO_CASL_CRSV_wght_slnt-VF.ttf)
+3. ital & CRSV: [test-fonts/03-recursive-MONO_CASL_CRSV_wght_ital-VF](test-fonts/03-recursive-MONO_CASL_CRSV_wght_ital-VF)
+4. Attempted option 6, not really working [test-fonts/06-recursive--slanted_ital-VF.ttf](test-fonts/06-recursive--slanted_ital-VF.ttf)
 
 ## Relevant links
 
