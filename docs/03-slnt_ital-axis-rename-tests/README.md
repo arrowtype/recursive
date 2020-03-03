@@ -1,12 +1,17 @@
 # Testing different axis naming for Slant & Italic axes
 
-*Note: Much of the following was greatly assisted through conversation with David Jonathan Ross (DJR), though also through experimentation and experience in the Recursive project.*
+*Note: Much of the following was greatly assisted through conversation with David Jonathan Ross (DJR), as well as through experimentation and experience in the Recursive project.*
+
+TL;DR: 
+- The variable axes [Slant](https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxistag_slnt) and [Italic](https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxistag_ital) have similar-sounding specs, but have distinct typographic purposes. For most fonts with "Italic" instances used for secondary emphasis, the `ital` axis is probably the best, most user-friendly axis to activate these styles. For fonts that is designed specifically with slanted *layouts* in mind (perhaps for angled text on posters, tilting screens, etc), the `slnt` axis is more appropriate.
+- In CSS, the most common way to activate Italic styles is with the declaration `font-style:italic`.
+- As of Beta 1.043, Recursive uses the `slnt` axis to activate slanted styles with substituted cursive glyph alternates, and the `ital` axis can override those substitutions. This risks poor support in CSS and user confusion. Probably, the best way to solve this will be to make the `ital` axis activate slanted, cursive styles, and a new `CRSV` axis which can tweak the alternate behavior.
 
 ## The problem(s)
 
 1. There is a lack of clarity as to how CSS should treat variable fonts that contain *both* Slant and Italic axes. The main question is: what should `font-style: italic` do with these axes? There is a good chance that this property & value will *either* set Slant to max or set Italic to `1`, but may not do both.
 2. It is hard for users to understand the different and interaction between Recursive's `slnt` and `ital` axes.
-3. It is hard for users to predict that *negative* Slant slants letters "forward" (clockwise)
+3. It is hard for users to predict that *negative* Slant values should make letters lean "forward" (clockwise), in part because most of CSS operates by linking positive values to clockwise movement.
 
 ## How Recursive currently works (as of March 2, 2020)
 
@@ -29,9 +34,11 @@ But this is (maybe?) complicated by a later statement:
 
 > For the purposes of font matching, User Agents may treat italic as a synonym for oblique. For User Agents that treat these values distinctly, synthesis must not be performed for italic.
 
-This means, as far as I can tell, that `font-style:italic` should call a font if that font is established in `@font-face` rules to have `font-style:oblique`. However, the concept might logically be extended as saying that `font-style:italic` should "implement oblique values" with the slnt variation, as stated above.
+This last part means, as far as I can tell, that `font-style:italic` should call a font if that font is established in `@font-face` rules to have `font-style:oblique`. However, the concept might logically be extended as saying that `font-style:italic` should "implement oblique values" with the slnt variation, as stated above.
 
-However, because there are different legitimate uses for slant vs italic styles, it may not be a bad thing for `<em>`, `<i>`, and `font-style:italic` to only call the ital axis.
+However, it seems likely that most browsers will interpret `font-style:italic` by requesting for `ital=1`, and as a backup, requesting for `slnt` at its max clockwise lean (negative value).
+
+Furthermore, because there are different legitimate uses for slanted vs italic styles, it may actually be best for `<em>`, `<i>`, and `font-style:italic` to *only* call the ital axis.
 
 ## What *are* Italics? What is Slant?
 
