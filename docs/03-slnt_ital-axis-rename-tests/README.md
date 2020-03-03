@@ -17,7 +17,7 @@ The `ital` axis allows users to have more control over the true-italic substitut
 - `0.5` (the default) allows for automatic true-italic substitution when slnt is above 50%
 - `1` turns on true-italic forms at any slant, allowing for upright italics
 
-![Interaction of slnt & ital axes in Recursive](docs/03-slnt_ital-axis-rename-tests/assets/recursive-slnt_ital-2020_03_02.gif)
+![Interaction of slnt & ital axes in Recursive](assets/recursive-slnt_ital-2020_03_02.gif)
 
 ## What does the CSS spec say?
 
