@@ -126,12 +126,13 @@ This would be similar to the previous two options, but instead of `CRSV` having 
 
 **Pros**
 - DJR: "a good axis does one simple thing, and does it well"
-- 
+- These binary, off/on `ROMN` and `CRSV` axes might be simpler for some users to understand than a off/auto/on axis.
 
 **Cons**
 - Would be less clear why these aren't just Stylistic Sets (and this isn't a stylistic set because those are often hard to find, and customize behavior of just one character, while control cursive alts is a near-global change convering most of the lowercase)
 - Not easy to guess what happens when `ROMN=1` *and* `CRSV=1`. Probably, one would override the other? Or possibly, it would flip the behavior of cursive alts (e.g. upright is cursive while sloped is roman).
 - Might suggest that Fraunces `WONK` should also be split into two axes such as `WONK` and `NORM`
+- Would add an additional axis to the font, which would require more explanation than just changing existing axes
 
 ### Option 5: `slnt` and `CRSV` could be like "parametric axes," while `ital` is the combination of these.
 
@@ -179,7 +180,9 @@ It is the option which makes things most clear, without adding additional comple
 1. As-is font: [test-fonts/01-recursive-MONO_CASL_wght_slnt_ital-VF--as_is.ttf](test-fonts/01-recursive-MONO_CASL_wght_slnt_ital-VF--as_is.ttf)
 2. slnt & CRSV: [test-fonts/02-recursive-MONO_CASL_CRSV_wght_slnt-VF.ttf](test-fonts/02-recursive-MONO_CASL_CRSV_wght_slnt-VF.ttf)
 3. ital & CRSV: [test-fonts/03-recursive-MONO_CASL_CRSV_wght_ital-VF](test-fonts/03-recursive-MONO_CASL_CRSV_wght_ital-VF)
-4. Attempted option 6, not really working [test-fonts/06-recursive--slanted_ital-VF.ttf](test-fonts/06-recursive--slanted_ital-VF.ttf)
+
+Alternative experiments (not all made currently)
+6. Attempted option 6, not currently working well – this requires *both* `slnt` and `ital` to be at max values for an italic style [test-fonts/06-recursive-MONO_CASL_wght_slnt_ital--MOD-VF.ttf](test-fonts/06-recursive-MONO_CASL_wght_slnt_ital--MOD-VF.ttf)
 
 ## Relevant links
 
