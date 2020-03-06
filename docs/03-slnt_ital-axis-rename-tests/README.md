@@ -184,6 +184,24 @@ It is the option which makes things most clear, without adding additional comple
 Alternative experiments (not all made currently)
 6. Attempted option 6, not currently working well – this requires *both* `slnt` and `ital` to be at max values for an italic style [test-fonts/06-recursive-MONO_CASL_wght_slnt_ital--MOD-VF.ttf](test-fonts/06-recursive-MONO_CASL_wght_slnt_ital--MOD-VF.ttf)
 
+## Web Tests
+
+
+
+**1. As-is, slnt + ital**
+
+![Web test of slnt + ital axes in Firefox, Safari, and Chrome](assets/2020-03-06-17-56-17.png)
+
+**2. slnt + CRSV**
+
+![Web test of slnt + CRSV axes in Firefox, Safari, and Chrome](assets/2020-03-06-17-55-19.png)
+
+**3. ital + CRSV**
+
+This is the only test that actually works as desired, and only in Firefox. Still, this may indicate that this is an interpretation of the CSS spec that can be adopted by the other browsers.
+
+![Web test of ital + CRSV axes in Firefox, Safari, and Chrome](assets/2020-03-06-14-15-27.png)
+
 ## Relevant links
 
 - [CSS Spec, font-style](https://drafts.csswg.org/css-fonts-4/#font-style-prop)
