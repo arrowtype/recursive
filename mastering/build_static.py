@@ -266,9 +266,17 @@ def writeFeature(font):
            f"    WidthClass {font.info.openTypeOS2WidthClass};\n"
            f'    Vendor "{font.info.openTypeOS2VendorID}";\n'
            f"}} OS/2;\n\n")
-    includes = ("include (../../features.family);\n"
-                "include (../../features.fea);\n"
-                "include (kern.fea);\n")
+
+    split = font.info.postscriptFullName.split()
+
+    if "Italic" in split and "Mono" not in split and "Mn" not in split:
+        includes = ("include (../../features.family);\n"
+                    "include (../../features_italic.fea);\n"
+                    "include (kern.fea);\n")
+    else:
+        includes = ("include (../../features.family);\n"
+                    "include (../../features_roman.fea);\n"
+                    "include (kern.fea);\n")
     out = hhea + os2 + includes
     with open(path, "w") as f:
         f.write(out)
@@ -277,7 +285,8 @@ def writeFeature(font):
 def buildFamilyFeatures(root, features, version):
     """
     Makes the features.fea and features.family files.
-    Combines the various feature files into one for features.fea
+    Combines the various feature files into one for features_roman.fea and
+    features_italic.fea.
 
     *root* the root folder where the features files should be saved to
     *features* the master features.fea file that points to the various other
@@ -287,25 +296,39 @@ def buildFamilyFeatures(root, features, version):
 
     fea_root = os.path.split(features)[0]
     regex = re.compile(r'/.+/(.+\.fea)')
-    feature = []
+    feature_roman = []
+    feature_italic = []
     with open(features, 'r') as f:
         for l in f:
             if l.startswith("languagesystem"):
-                feature.append(l)
-            elif l.startswith("#"):
+                feature_roman.append(l)
+                feature_italic.append(l)
+            elif "#" in l:
                 pass
             elif l.startswith("include"):
                 match = regex.search(l)
                 path = os.path.join(fea_root, "features", match.group(1))
                 with open(path, 'r') as fea:
-                    for l in fea:
-                        feature.append(l.replace("\t", "    "))
-                feature.append("\n\n")
+                    for line in fea:
+                        line = line.replace("\t", "    ")
+                        if match.group(1) == "liga.fea":
+                            line = line.replace("i.italic", "i")
+                            line = line.replace("l.italic", "l")
+                            feature_italic.append(line)
+                        else:
+                            feature_roman.append(line)
+                            feature_italic.append(line)
+                feature_roman.append("\n\n")
+                feature_italic.append("\n\n")
             else:
-                feature.append(l)
-    path = os.path.join(root, "features.fea")
-    with open(path, 'w') as f:
-        f.write("".join(feature))
+                feature_roman.append(l)
+                feature_italic.append(l)
+    path_roman = os.path.join(root, "features_roman.fea")
+    path_italic = os.path.join(root, "features_italic.fea")
+    with open(path_roman, 'w') as f:
+        f.write("".join(feature_roman))
+    with open(path_italic, 'w') as f:
+        f.write("".join(feature_italic))
 
     head = ("table head {\n"
             f"    FontRevision {version};\n}}"
