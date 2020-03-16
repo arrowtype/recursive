@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Slant + Cursive</title>
+</head>
+<style>
+	@font-face {
+		font-family: "Rec-CRSV";
+		src: url("../../test-fonts/02-recursive-MONO_CASL_CRSV_wght_slnt-VF.ttf");
+	}
+	html {
+		font-family: "Rec-CRSV", fantasy;
+	}
+	h2 {
+		font-size: 16px;
+		margin-top: 3rem;
+		margin-bottom: -1rem;
+	}
+	p {
+		font-size: 12vw;
+		line-height: 0;
+		mix-blend-mode: multiply;
+	}
+	.italic {
+		font-style:italic;
+	}
+	.variable-italic {
+		font-variation-settings: "slnt" -15;
+	}
+	#ital-compare {
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr;
+	}
+	#ital-compare p {
+		grid-row: 1;
+		grid-column: 1;
+	}
+	.cyan{
+		color: rgb(0,100,255);
+	}
+	.magenta {
+		color: rgb(255,0,255);
+	}
+	code {
+		font-family: "Rec-CRSV", fantasy;
+		font-weight: 400;
+		font-variation-settings: "MONO" 1, "CASL" 1;
+	}
+</style>
+<body>
+	<h1>Slant + Cursive axes</h1>
+	
+	<h2>
+		<code class="cyan">font-style:italic;</code>
+		<code class="magenta">font-variation-settings: "slnt" -15;</code>
+		<br/>
+		<code>/* should perfectly overlap */</code>
+	</h2>
+	<div id="ital-compare">
+		<p class="variable-italic magenta">hamburgfontsiv</p>
+		<p class="italic cyan">hamburgfontsiv</p>
+	</div>
+	
+	<h2><code>font-style:italic;</code></h2>
+	<p class="italic">hamburgfontsiv</p>
+	
+	<h2><code>font-variation-settings: "slnt" -15;</code></h2>
+	<p class="variable-italic">hamburgfontsiv</p>
+
+
+</body>
+</html>
