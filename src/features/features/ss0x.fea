@@ -1,10 +1,3 @@
-feature liga {
-    sub f i.italic by fi;
-    sub f f i.italic by f_f_i;
-    sub f l.italic by fl;
-    sub f f l.italic by f_f_l;
-} liga;
-
 @dfltA =   [a        aacute        abreve        abreveacute        abrevedot        abrevegrave        abrevehook        abrevetilde        acircumflex        acircumflexacute        acircumflexdot        acircumflexgrave        acircumflexhook        acircumflextilde        adieresis        adotbelow        agrave        agravedbl        ahook        ainvertedbreve        amacron        aogonek        aring        aringacute        atilde        ];
 @italicA = [a.italic aacute.italic abreve.italic abreveacute.italic abrevedot.italic abrevegrave.italic abrevehook.italic abrevetilde.italic acircumflex.italic acircumflexacute.italic acircumflexdot.italic acircumflexgrave.italic acircumflexhook.italic acircumflextilde.italic adieresis.italic adotbelow.italic agrave.italic agravedbl.italic ahook.italic ainvertedbreve.italic amacron.italic aogonek.italic aring.italic aringacute.italic atilde.italic ];
 @simpleA = [a.simple aacute.simple abreve.simple abreveacute.simple abrevedot.simple abrevegrave.simple abrevehook.simple abrevetilde.simple acircumflex.simple acircumflexacute.simple acircumflexdot.simple acircumflexgrave.simple acircumflexhook.simple acircumflextilde.simple adieresis.simple adotbelow.simple agrave.simple agravedbl.simple ahook.simple ainvertedbreve.simple amacron.simple aogonek.simple aring.simple aringacute.simple atilde.simple ];
