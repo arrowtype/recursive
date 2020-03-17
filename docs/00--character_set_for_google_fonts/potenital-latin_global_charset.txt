@@ -1,6 +1,25 @@
 # A rough look at what additional glyphs would have to be added to Recursive for a "Latin Global" character set, as defined by:
 # https://github.com/googlefonts/gftools/blob/c9cba9dcaaaafae01e966fb9e3d0dfdfc3c14ceb/Lib/gftools/encodings/GF%20Glyph%20Sets/GF-latin-global_unique-glyphs.nam
 
+# Recursive Expansion: GF Latin Global Character Set
+# What’s involved:
+# 
+# - adding characters listed in the GF-latin-global_unique-glyphs.nam file. I am further classifying this into categories in the Recursive repo docs (permalink)
+#     - About 53 glyphs will need drawing in all 24 masters
+#     - About 34 glyphs can probably be drawn in the 12 Mono masters and copied to remaining masters without adjustment (they will have a “normal” width in both styles)
+#     - About 184 glyphs should be possible to build from components
+#     - An additional 46 glyphs can probably be made from components, but may require further fixing / rvrn logic (!!! see unresolved questions below)
+#     - 178 glyphs are seemingly already done / working correctly, but may need additional checking and fixes
+# - extending `.italic`, `.mono`, and `.sans` alternates, and updating `rvrn` rules to activate these correctly
+# - sorting through glyph naming issues
+# - proofing larger character set
+# - kerning
+# 
+# Plan:
+# 
+# - Contract Lisa Huang to help complete new drawing, collaborate via GitHub
+# - I would handle technical work and around half (?) of new drawing
+
 # -----------------------------------------------------------------------------
 # NEW DRAWING REQUIRED → probably mono + proportional drawings (24 masters, each drawn/spaced individually – usually somewhat to much more time consuming)
 
