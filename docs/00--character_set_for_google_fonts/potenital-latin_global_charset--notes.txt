@@ -1,0 +1,55 @@
+
+- overview of GF latin global
+- show what percentage recursive already has
+
+Characters to make (approximation, includes required alternates for mono, italic, and sans versions):
+- 56 glyphs will need drawing in all 24 masters
+- 41 glyphs can probably be drawn in the 12 Mono masters
+- 45 glyphs are likely possible to make with components, but may need extra adjustment / decomposing w/ manual edits
+- 186 new component glyphs
+- 204 existing glyphs to double-check
+
+assumptions: between us, we can do:
+- 5 to 10 new Mono glyphs per day in 12 masters
+- 3 to 5 new Mono+Sans glyphs per day in 24 masters
+
+And we will need:
+- 5 total days to create & possibly refine 231 new component/mostly-component glyphs
+- 5 total days for proofing (writing scripts to check completeness, print checks)
+- 10 total days for fixing issues
+
+fastest timeline: 
+- 56/10 = 5.6 days for mono-only glyphs
+- 41/5 = 8.2 days for mono+sans glyphs
+- 5 days for new component glyphs
+- 15 days proofing + fixing issues
+
+5.6 + 8.2 + 5 + 15 = 33.8 days for both designers (about 7 weeks @ 5 days/week)
+
+slower timeline:
+- 56/5 = 11.2 days mono-only
+- 41/3 = 13.7 days mono+sans
+- 5 days for new component glyphs
+- 15 days proofing + fixing
+
+11.2 + 13.7 + 5 + 15 = 44.9 days for both designers (about 9 weeks @ 5 days/week)
+
+Stephen only
+- about 5 days for additional mastering, updating website (some will be done during production process)
+
+Lisa 
+- Timeline before starting: probably in 2–4 weeks
+	- finishing nushu design, starting an article about it
+
+Stephen
+	- still working on website
+
+Project timeline: approx. April 15 – June 15
+
+precendents
+- currencies: 
+	- about 10–20 glyphs per day, between 12 masters (currencies are mostly mono, apart from ₩)
+	- then double the time to make them compatible
+- vietnamese
+	- about 94 extra glyphs, mostly diacritics (https://github.com/googlefonts/gftools/blob/master/Lib/gftools/encodings/vietnamese_unique-glyphs.nam)
+	- about 5 days for both Lisa & Stephen
