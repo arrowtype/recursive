@@ -16,7 +16,7 @@
 			<point x="462" y="63"/>
 			<point x="497" y="197" type="curve" smooth="yes"/>
 			<point x="531" y="328" type="line" smooth="yes"/>
-			<point x="560" y="440"/>
+			<point x="559.6360716595" y="440.4988529479"/>
 			<point x="491" y="536"/>
 		</contour>
 		<contour>
@@ -47,11 +47,7 @@
 	<anchor name="horn" x="490" y="480"/>
 	<anchor name="hook" x="380" y="584"/>
 	<anchor name="tildeviet" x="325" y="537"/>
-	<anchor name="ogonek" x="409" y="42"/>
-	<guideline x="495" y="197" angle="75.4503672299" identifier="oZhReKzoMF"/>
-	<guideline x="477" y="321" angle="255.4170576705" identifier="obxuITtFNV"/>
-	<guideline x="118" y="205" angle="75.4170576705" identifier="IjjBNJpQQB"/>
-	<guideline x="100" y="329" angle="255.8608916883" identifier="XYu4sOp3AC"/>
+	<anchor name="ogonek" x="408" y="42"/>
 	<lib>
 		<dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
@@ -62,6 +58,8 @@
 			<integer>1</integer>
 			<key>com.typemytype.robofont.Image.Sharpness</key>
 			<real>0.4</real>
+			<key>public.markColor</key>
+			<string>1,0.5,0,1</string>
 		</dict>
 	</lib>
 </glyph>

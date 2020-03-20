@@ -45,9 +45,9 @@
 	<anchor name="top" x="300" y="537"/>
 	<anchor name="bottom" x="300" y="-1"/>
 	<anchor name="horn" x="433" y="484"/>
-	<anchor name="hook" x="300" y="584"/>
 	<anchor name="tildeviet" x="260" y="537"/>
-	<anchor name="ogonek" x="480" y="84"/>
+	<anchor name="hook" x="300" y="584"/>
+	<anchor name="ogonek" x="481" y="84"/>
 	<lib>
 		<dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
@@ -58,6 +58,8 @@
 			<integer>1</integer>
 			<key>com.typemytype.robofont.Image.Sharpness</key>
 			<real>0.4</real>
+			<key>public.markColor</key>
+			<string>1,0.5,0,1</string>
 		</dict>
 	</lib>
 </glyph>
