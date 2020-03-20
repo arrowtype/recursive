@@ -18,10 +18,10 @@
 			<point x="94" y="0" type="curve"/>
 			<point x="137" y="171"/>
 			<point x="180" y="344"/>
-			<point x="223" y="515" type="curve" smooth="yes"/>
-			<point x="225" y="522"/>
-			<point x="220" y="526"/>
-			<point x="215" y="526" type="curve" smooth="yes"/>
+			<point x="200" y="425" type="curve"/>
+			<point x="201" y="427"/>
+			<point x="215" y="525"/>
+			<point x="215" y="526" type="curve"/>
 			<point x="202" y="526"/>
 			<point x="189" y="526"/>
 		</contour>
@@ -56,8 +56,8 @@
 		<contour>
 			<point x="672" y="536" type="curve" smooth="yes"/>
 			<point x="602" y="536"/>
-			<point x="548" y="504"/>
-			<point x="492" y="433" type="curve"/>
+			<point x="550" y="504"/>
+			<point x="494" y="433" type="curve"/>
 			<point x="476" y="433" type="line"/>
 			<point x="452" y="329" type="line"/>
 			<point x="536" y="432"/>
@@ -99,6 +99,7 @@
 		</contour>
 	</outline>
 	<anchor name="bottom" x="359" y="0"/>
+	<guideline x="94" y="0" angle="75.9375821257" identifier="qe3AWkapGM"/>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>

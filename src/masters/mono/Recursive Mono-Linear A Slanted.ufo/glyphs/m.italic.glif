@@ -18,10 +18,10 @@
 			<point x="44" y="0" type="curve"/>
 			<point x="87" y="171"/>
 			<point x="130" y="344"/>
-			<point x="173" y="515" type="curve" smooth="yes"/>
-			<point x="175" y="522"/>
-			<point x="170" y="526"/>
-			<point x="165" y="526" type="curve" smooth="yes"/>
+			<point x="156" y="446" type="curve"/>
+			<point x="156" y="447"/>
+			<point x="165" y="525"/>
+			<point x="165" y="526" type="curve"/>
 			<point x="152" y="526"/>
 			<point x="139" y="526"/>
 		</contour>
@@ -99,6 +99,7 @@
 		</contour>
 	</outline>
 	<anchor name="bottom" x="234" y="0"/>
+	<guideline x="44" y="0" angle="75.9375821257" identifier="UATFPCsb1j"/>
 	<lib>
 		<dict>
 			<key>com.typemytype.robofont.Image.Brightness</key>
