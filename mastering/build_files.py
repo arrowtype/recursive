@@ -76,7 +76,7 @@ def makeSources(ds, src, version):
 def buildFiles(sources=True,
                static=True,
                variable=True,
-               ds="recursive-MONO_CASL_wght_slnt_ital--full_gsub.designspace",
+               ds="recursive-MONO_CASL_wght_ital_CRSV--full_gsub.designspace",
                version="0.000"):
 
     print("🚚 Building files for mastering")

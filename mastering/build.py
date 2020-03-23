@@ -58,7 +58,7 @@ if __name__ == "__main__":
     if args.files:
         files = buildFiles(version=version)
     else:
-        files = getFolders("recursive-MONO_CASL_wght_slnt_ital--full_gsub.designspace")
+        files = getFolders("recursive-MONO_CASL_wght_ital_CRSV--full_gsub.designspace")
 
     if args.variable:
         build_variable(designspacePath=files["designspace"],

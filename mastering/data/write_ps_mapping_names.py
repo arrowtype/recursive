@@ -15,7 +15,7 @@ with open('instance_names.csv', newline='') as csvfile:
                                                    row["stylemap"])
 
 doc = DesignSpaceDocument()
-doc.read("../../src/masters/recursive-MONO_CASL_wght_slnt_ital--full_gsub.designspace")
+doc.read("../../src/masters/recursive-MONO_CASL_wght_ital_CRSV--full_gsub.designspace")
 for i in doc.instances:
     k = (i.familyName, i.styleName)
     ps, fm, sm = names[k]
@@ -28,4 +28,4 @@ for i in doc.instances:
 # designSpace file. Yes, this is dumb, but is the better solution to
 # save all the comments and formatting (for better git diffs) in the
 # working designSpace file.
-doc.write("../../src/masters/recursive-MONO_CASL_wght_slnt_ital--full_gsub_ps_names.designspace")
+doc.write("../../src/masters/recursive-MONO_CASL_wght_ital_CRSV--full_gsub_ps_names.designspace")
