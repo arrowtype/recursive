@@ -66,20 +66,20 @@ def makeSTAT(path, designspace):
         "Italic":
         {
             (0, 0.5): "Upright",
-            (-15, 1): "Italic"
+            (1, 1): "Italic"
         }
     }
 
     axes = []
     for axis in designspace.axes:
         # Axes are in the order we want (Proportion, Expression, Weight,
-        # Slant/Italic), so we can just walk down the list and make a
+        # Italic/Cursive), so we can just walk down the list and make a
         # Stylespace file to use. If you need to change values, change the
         # above dictorary of style naming info.
         #
-        # Recursive is unusual in that it has both a Italic and Slant
+        # Recursive is unusual in that it has both a Italic and Cursive
         # axis that need to be linked. This is dealt with at the end.
-        if axis.name not in ["Italic", "Slant"]:
+        if axis.name not in ["Italic", "Cursive"]:
             a = {}
             a["name"] = axis.name
             a["tag"] = axis.tag
@@ -115,8 +115,8 @@ def makeSTAT(path, designspace):
         location = {}
         location["name"] = name
         axis_values = {}
-        axis_values["Slant"] = values[0]
-        axis_values["Italic"] = values[1]
+        axis_values["Italic"] = values[0]
+        axis_values["Cursive"] = values[1]
         location["axis_values"] = axis_values
         if values[0] == 0:
             location["flags"] = ["ElidableAxisValueName"]
