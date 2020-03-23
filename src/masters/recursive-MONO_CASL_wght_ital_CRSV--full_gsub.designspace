@@ -18,10 +18,10 @@
       <map input="900" output="192" />
       <map input="1000" output="215" />
     </axis>
-    <axis tag="slnt" name="Slant" minimum="-15" maximum="0" default="0">
+    <axis tag="ital" name="Italic"  minimum="0" maximum="1" default="0">
       <labelname xml:lang="en">Slant</labelname>
     </axis>
-    <axis tag="ital" name="Italic" minimum="0" maximum="1" default="0.500000">
+    <axis tag="CRSV" name="Cursive" minimum="0" maximum="1" default="0.500000">
       <labelname xml:lang="en">Italic</labelname>
     </axis>
   </axes>
@@ -29,8 +29,8 @@
     <rule name="mono">
       <conditionset>
         <condition name="Monospace" minimum="0.490000" maximum="1"/>
-        <condition name="Slant" minimum="-7.490000" maximum="0"/>
-        <condition name="Italic" minimum="0" maximum="0.890000"/>
+        <condition name="Italic" minimum="0" maximum="0.499"/>
+        <condition name="Cursive" minimum="0" maximum="0.890000"/>
       </conditionset>
       <sub name="dotlessi" with="dotlessi.mono"/>
       <sub name="f" with="f.mono"/>
@@ -74,7 +74,7 @@
     <rule name="mono forceroman">
       <conditionset>
         <condition name="Monospace" minimum="0.490000" maximum="1"/>
-        <condition name="Italic" minimum="0" maximum="0.090000"/>
+        <condition name="Cursive" minimum="0" maximum="0.090000"/>
       </conditionset>
       <sub name="dotlessi" with="dotlessi.mono"/>
       <sub name="f" with="f.mono"/>
@@ -104,8 +104,8 @@
     <rule name="mono autoitalic">
       <conditionset>
         <condition name="Monospace" minimum="0.490000" maximum="1"/>
-        <condition name="Slant" minimum="-15" maximum="-7.500000"/>
-        <condition name="Italic" minimum="0.100000" maximum="1"/>
+        <condition name="Italic" minimum="0.5" maximum="1"/>
+        <condition name="Cursive" minimum="0.100000" maximum="1"/>
       </conditionset>
       <sub name="a" with="a.italic"/>
       <sub name="aacute" with="aacute.italic"/>
@@ -282,7 +282,7 @@
     <rule name="mono forceitalic">
       <conditionset>
         <condition name="Monospace" minimum="0.490000" maximum="1"/>
-        <condition name="Italic" minimum="0.900000" maximum="1"/>
+        <condition name="Cursive" minimum="0.900000" maximum="1"/>
       </conditionset>
       <sub name="a" with="a.italic"/>
       <sub name="aacute" with="aacute.italic"/>
@@ -459,7 +459,7 @@
     <rule name="sans">
       <conditionset>
         <condition name="Monospace" minimum="0" maximum="0.490000"/>
-        <condition name="Slant" minimum="-15" maximum="0"/>
+        <condition name="Italic" minimum="0" maximum="1"/>
       </conditionset>
       <sub name="zero" with="zero.sans"/>
       <sub name="zerosuperior" with="zerosuperior.sans"/>
@@ -476,8 +476,8 @@
     <rule name="sans autoroman">
       <conditionset>
         <condition name="Monospace" minimum="0" maximum="0.490000"/>
-        <condition name="Slant" minimum="-7.490000" maximum="0"/>
-        <condition name="Italic" minimum="0" maximum="0.890000"/>
+        <condition name="Italic" minimum="0" maximum="0.499"/>
+        <condition name="Cursive" minimum="0" maximum="0.890000"/>
       </conditionset>
       <sub name="zero" with="zero.sans"/>
       <sub name="zerosuperior" with="zerosuperior.sans"/>
@@ -486,7 +486,7 @@
     <rule name="sans forceroman">
       <conditionset>
         <condition name="Monospace" minimum="0" maximum="0.490000"/>
-        <condition name="Italic" minimum="0" maximum="0.090000"/>
+        <condition name="Cursive" minimum="0" maximum="0.090000"/>
       </conditionset>
       <sub name="l" with="l.sans"/>
       <sub name="ldot" with="ldot.sans"/>
@@ -503,8 +503,8 @@
     <rule name="sans autoitalic">
       <conditionset>
         <condition name="Monospace" minimum="0" maximum="0.490000"/>
-        <condition name="Slant" minimum="-15" maximum="-7.500000"/>
-        <condition name="Italic" minimum="0.100000" maximum="1"/>
+        <condition name="Italic" minimum="0.5" maximum="1"/>
+        <condition name="Cursive" minimum="0.100000" maximum="1"/>
       </conditionset>
       <sub name="a" with="a.italic"/>
       <sub name="aacute" with="aacute.italic"/>
@@ -649,8 +649,6 @@
       <sub name="yhookabove" with="yhookabove.italic"/>
       <sub name="ymacron" with="ymacron.italic"/>
       <sub name="ytilde" with="ytilde.italic"/>
-
-
       <sub name="agravedbl" with="agravedbl.italic"/>
       <sub name="ddotbelow" with="ddotbelow.italic"/>
       <sub name="dlinebelow" with="dlinebelow.italic"/>
@@ -675,7 +673,7 @@
     <rule name="sans forceitalic">
       <conditionset>
         <condition name="Monospace" minimum="0" maximum="0.490000"/>
-        <condition name="Italic" minimum="0.900000" maximum="1"/>
+        <condition name="Cursive" minimum="0.900000" maximum="1"/>
       </conditionset>
       <sub name="a" with="a.italic"/>
       <sub name="aacute" with="aacute.italic"/>
@@ -831,8 +829,8 @@
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="40" />
-        <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="1" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="mono/Recursive Mono-Casual A.ufo">
@@ -840,8 +838,8 @@
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="40" />
-        <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="0" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="mono/Recursive Mono-Casual B Slanted.ufo">
@@ -849,8 +847,8 @@
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="146" />
-        <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="1" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="mono/Recursive Mono-Casual B.ufo">
@@ -858,8 +856,8 @@
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="146" />
-        <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="0" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="mono/Recursive Mono-Casual C Slanted.ufo">
@@ -867,8 +865,8 @@
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="215" />
-        <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="1" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="mono/Recursive Mono-Casual C.ufo">
@@ -876,8 +874,8 @@
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="215" />
-        <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="0" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="mono/Recursive Mono-Linear A Slanted.ufo">
@@ -885,8 +883,8 @@
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="40" />
-        <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="1" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="mono/Recursive Mono-Linear A.ufo">
@@ -894,8 +892,8 @@
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="40" />
-        <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="0" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="mono/Recursive Mono-Linear B Slanted.ufo">
@@ -903,8 +901,8 @@
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="146" />
-        <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="1" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="mono/Recursive Mono-Linear B.ufo">
@@ -912,8 +910,8 @@
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="146" />
-        <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="0" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="mono/Recursive Mono-Linear C Slanted.ufo">
@@ -921,8 +919,8 @@
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="215" />
-        <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="1" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="mono/Recursive Mono-Linear C.ufo">
@@ -930,8 +928,8 @@
         <dimension name="Monospace" xvalue="1" />
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="215" />
-        <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="0" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Casual A Slanted.ufo">
@@ -939,8 +937,8 @@
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="40" />
-        <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="1" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Casual A.ufo">
@@ -948,8 +946,8 @@
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="40" />
-        <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="0" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Casual B Slanted.ufo">
@@ -957,8 +955,8 @@
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="146" />
-        <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="1" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Casual B.ufo">
@@ -966,8 +964,8 @@
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="146" />
-        <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="0" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Casual C Slanted.ufo">
@@ -975,8 +973,8 @@
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="215" />
-        <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="1" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Casual C.ufo">
@@ -984,8 +982,8 @@
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="215" />
-        <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="0" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Linear A Slanted.ufo">
@@ -993,8 +991,8 @@
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="40" />
-        <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="1" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Linear A.ufo" familyname="Recursive" stylename="Sans Linear Light">
@@ -1006,8 +1004,8 @@
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="40" />
-        <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="0" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Linear B Slanted.ufo">
@@ -1015,8 +1013,8 @@
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="146" />
-        <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="1" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Linear B.ufo">
@@ -1024,8 +1022,8 @@
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="146" />
-        <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="0" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Linear C Slanted.ufo">
@@ -1033,8 +1031,8 @@
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="215" />
-        <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="1" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Linear C.ufo">
@@ -1042,8 +1040,8 @@
         <dimension name="Monospace" xvalue="0" />
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="215" />
-        <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Italic" xvalue="0" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
   </sources>
@@ -1053,19 +1051,19 @@
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="40"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Mono Linear Light Italic" filename="instances/Recursive Mono-Linear Light Italic.ufo" name="Recursive Mono-Linear Light Italic.ufo" postscriptfontname="RecursiveMonoLnr-LightItalic" stylemapfamilyname="Recursive Mn Lnr Lt" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Mono Linear Light Italic" filename="instances/Recursive Mono-Linear Light Italic.ufo" name="Recursive Mono-Linear Light Italic.ufo" postscriptfontname="RecursiveMonoLnr-LightItalic" stylemapfamilyname="Recursive Mn Lnr Lt" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="40"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1075,19 +1073,19 @@
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="40"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Mono Casual Light Italic" filename="instances/Recursive Mono-Casual Light Italic.ufo" name="Recursive Mono-Casual Light Italic.ufo" postscriptfontname="RecursiveMonoCsl-LtItalic" stylemapfamilyname="Recursive Mono Csl Lt" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Mono Casual Light Italic" filename="instances/Recursive Mono-Casual Light Italic.ufo" name="Recursive Mono-Casual Light Italic.ufo" postscriptfontname="RecursiveMonoCsl-LtItalic" stylemapfamilyname="Recursive Mono Csl Lt" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="40"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1097,19 +1095,19 @@
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="84"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Mono Linear Italic" filename="instances/Recursive Mono-Linear Italic.ufo"  name="Recursive Mono-Linear Italic.ufo" postscriptfontname="RecursiveMonoLnr-Italic" stylemapfamilyname="Recursive Mono Lnr" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Mono Linear Italic" filename="instances/Recursive Mono-Linear Italic.ufo"  name="Recursive Mono-Linear Italic.ufo" postscriptfontname="RecursiveMonoLnr-Italic" stylemapfamilyname="Recursive Mono Lnr" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="84"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1119,19 +1117,19 @@
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="84"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Mono Casual Italic" filename="instances/Recursive Mono-Casual Italic.ufo"  name="Recursive Mono-Casual Italic.ufo" postscriptfontname="RecursiveMonoCsl-Italic" stylemapfamilyname="Recursive Mono Csl" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Mono Casual Italic" filename="instances/Recursive Mono-Casual Italic.ufo"  name="Recursive Mono-Casual Italic.ufo" postscriptfontname="RecursiveMonoCsl-Italic" stylemapfamilyname="Recursive Mono Csl" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="84"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1141,19 +1139,19 @@
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="99.500000"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Mono Linear Medium Italic" filename="instances/Recursive Mono-Linear Medium Italic.ufo" name="Recursive Mono-Linear Medium Italic.ufo" postscriptfontname="RecursiveMonoLnr-MedItalic" stylemapfamilyname="Recursive Mono Lnr Med" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Mono Linear Medium Italic" filename="instances/Recursive Mono-Linear Medium Italic.ufo" name="Recursive Mono-Linear Medium Italic.ufo" postscriptfontname="RecursiveMonoLnr-MedItalic" stylemapfamilyname="Recursive Mono Lnr Med" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="99.500000"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1163,19 +1161,19 @@
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="99.500000"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Mono Casual Medium Italic" filename="instances/Recursive Mono-Casual Medium Italic.ufo" name="Recursive Mono-Casual Medium Italic.ufo" postscriptfontname="RecursiveMonoCsl-MedItalic" stylemapfamilyname="Recursive Mono Csl Med" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Mono Casual Medium Italic" filename="instances/Recursive Mono-Casual Medium Italic.ufo" name="Recursive Mono-Casual Medium Italic.ufo" postscriptfontname="RecursiveMonoCsl-MedItalic" stylemapfamilyname="Recursive Mono Csl Med" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="99.500000"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1185,19 +1183,19 @@
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="115"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Mono Linear SemiBold Italic" filename="instances/Recursive Mono-Linear SemiBold Italic.ufo" name="Recursive Mono-Linear SemiBold Italic.ufo" postscriptfontname="RecursiveMonoLnr-SemiBdItalic" stylemapfamilyname="Recursive Mn Lnr SmBd" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Mono Linear SemiBold Italic" filename="instances/Recursive Mono-Linear SemiBold Italic.ufo" name="Recursive Mono-Linear SemiBold Italic.ufo" postscriptfontname="RecursiveMonoLnr-SemiBdItalic" stylemapfamilyname="Recursive Mn Lnr SmBd" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="115"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1207,19 +1205,19 @@
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="115"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Mono Casual SemiBold Italic" filename="instances/Recursive Mono-Casual SemiBold Italic.ufo" name="Recursive Mono-Casual SemiBold Italic.ufo" postscriptfontname="RecursiveMonoCsl-SmBdItalic" stylemapfamilyname="Recursive Mn Csl SmBd" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Mono Casual SemiBold Italic" filename="instances/Recursive Mono-Casual SemiBold Italic.ufo" name="Recursive Mono-Casual SemiBold Italic.ufo" postscriptfontname="RecursiveMonoCsl-SmBdItalic" stylemapfamilyname="Recursive Mn Csl SmBd" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="115"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1229,8 +1227,8 @@
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="130.500000"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1240,8 +1238,8 @@
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="130.500000"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1251,8 +1249,8 @@
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="130.500000"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1262,8 +1260,8 @@
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="130.500000"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1273,19 +1271,19 @@
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="146"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Mono Linear ExtraBold Italic" filename="instances/Recursive Mono-Linear ExtraBold Italic.ufo" name="Recursive Mono-Linear ExtraBold Italic.ufo" postscriptfontname="RecursiveMonoLnr-ExtraBdItalic" stylemapfamilyname="Recursive Mono Lnr XBd" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Mono Linear ExtraBold Italic" filename="instances/Recursive Mono-Linear ExtraBold Italic.ufo" name="Recursive Mono-Linear ExtraBold Italic.ufo" postscriptfontname="RecursiveMonoLnr-ExtraBdItalic" stylemapfamilyname="Recursive Mono Lnr XBd" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="146"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1295,19 +1293,19 @@
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="146"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Mono Casual ExtraBold Italic" filename="instances/Recursive Mono-Casual ExtraBold Italic.ufo" name="Recursive Mono-Casual ExtraBold Italic.ufo" postscriptfontname="RecursiveMonoCsl-XBdItalic" stylemapfamilyname="Recursive Mn Csl XBd" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Mono Casual ExtraBold Italic" filename="instances/Recursive Mono-Casual ExtraBold Italic.ufo" name="Recursive Mono-Casual ExtraBold Italic.ufo" postscriptfontname="RecursiveMonoCsl-XBdItalic" stylemapfamilyname="Recursive Mn Csl XBd" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="146"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1317,19 +1315,19 @@
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="192"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Mono Linear Black Italic" filename="instances/Recursive Mono-Linear Black Italic.ufo" name="Recursive Mono-Linear Black Italic.ufo" postscriptfontname="RecursiveMonoLnr-BlackItalic" stylemapfamilyname="Recursive Mono Lnr Blk" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Mono Linear Black Italic" filename="instances/Recursive Mono-Linear Black Italic.ufo" name="Recursive Mono-Linear Black Italic.ufo" postscriptfontname="RecursiveMonoLnr-BlackItalic" stylemapfamilyname="Recursive Mono Lnr Blk" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="192"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1339,19 +1337,19 @@
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="192"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Mono Casual Black Italic" filename="instances/Recursive Mono-Casual Black Italic.ufo" name="Recursive Mono-Casual Black Italic.ufo" postscriptfontname="RecursiveMonoCsl-BlkItalic" stylemapfamilyname="Recursive Mono Csl Blk" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Mono Casual Black Italic" filename="instances/Recursive Mono-Casual Black Italic.ufo" name="Recursive Mono-Casual Black Italic.ufo" postscriptfontname="RecursiveMonoCsl-BlkItalic" stylemapfamilyname="Recursive Mono Csl Blk" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="192"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1361,19 +1359,19 @@
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="215"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Mono Linear ExtraBlack Italic" filename="instances/Recursive Mono-Linear ExtraBlack Italic.ufo" name="Recursive Mono-Linear ExtraBlack Italic.ufo" postscriptfontname="RecursiveMonoLnr-XBlkItalic" stylemapfamilyname="Recursive Mn Lnr XBlk" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Mono Linear ExtraBlack Italic" filename="instances/Recursive Mono-Linear ExtraBlack Italic.ufo" name="Recursive Mono-Linear ExtraBlack Italic.ufo" postscriptfontname="RecursiveMonoLnr-XBlkItalic" stylemapfamilyname="Recursive Mn Lnr XBlk" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="215"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1383,19 +1381,19 @@
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="215"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Mono Casual ExtraBlack Italic" filename="instances/Recursive Mono-Casual ExtraBlack Italic.ufo" name="Recursive Mono-Casual ExtraBlack Italic.ufo" postscriptfontname="RecursiveMonoCsl-XBlkItalic" stylemapfamilyname="Recursive Mn Csl XBlk" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Mono Casual ExtraBlack Italic" filename="instances/Recursive Mono-Casual ExtraBlack Italic.ufo" name="Recursive Mono-Casual ExtraBlack Italic.ufo" postscriptfontname="RecursiveMonoCsl-XBlkItalic" stylemapfamilyname="Recursive Mn Csl XBlk" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="1"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="215"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1405,19 +1403,19 @@
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="40"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Sans Linear Light Italic" filename="instances/Recursive Sans-Linear Light Italic.ufo" name="Recursive Sans-Linear Light Italic.ufo" postscriptfontname="RecursiveSansLnr-LightItalic" stylemapfamilyname="Recursive Sn Lnr Lt" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Sans Linear Light Italic" filename="instances/Recursive Sans-Linear Light Italic.ufo" name="Recursive Sans-Linear Light Italic.ufo" postscriptfontname="RecursiveSansLnr-LightItalic" stylemapfamilyname="Recursive Sn Lnr Lt" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="40"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1427,19 +1425,19 @@
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="40"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Sans Casual Light Italic" filename="instances/Recursive Sans-Casual Light Italic.ufo" name="Recursive Sans-Casual Light Italic.ufo" postscriptfontname="RecursiveSansCsl-LtItalic" stylemapfamilyname="Recursive Sans Csl Lt" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Sans Casual Light Italic" filename="instances/Recursive Sans-Casual Light Italic.ufo" name="Recursive Sans-Casual Light Italic.ufo" postscriptfontname="RecursiveSansCsl-LtItalic" stylemapfamilyname="Recursive Sans Csl Lt" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="40"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1449,19 +1447,19 @@
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="84"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Sans Linear Italic" filename="instances/Recursive Sans-Linear Italic.ufo"  name="Recursive Sans-Linear Italic.ufo" postscriptfontname="RecursiveSansLnr-Italic" stylemapfamilyname="Recursive Sans Lnr" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Sans Linear Italic" filename="instances/Recursive Sans-Linear Italic.ufo"  name="Recursive Sans-Linear Italic.ufo" postscriptfontname="RecursiveSansLnr-Italic" stylemapfamilyname="Recursive Sans Lnr" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="84"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1471,19 +1469,19 @@
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="84"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Sans Casual Italic" filename="instances/Recursive Sans-Casual Italic.ufo"  name="Recursive Sans-Casual Italic.ufo" postscriptfontname="RecursiveSansCsl-Italic" stylemapfamilyname="Recursive Sans Csl" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Sans Casual Italic" filename="instances/Recursive Sans-Casual Italic.ufo"  name="Recursive Sans-Casual Italic.ufo" postscriptfontname="RecursiveSansCsl-Italic" stylemapfamilyname="Recursive Sans Csl" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="84"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1493,19 +1491,19 @@
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="99.500000"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Sans Linear Medium Italic" filename="instances/Recursive Sans-Linear Medium Italic.ufo" name="Recursive Sans-Linear Medium Italic.ufo" postscriptfontname="RecursiveSansLnr-MedItalic" stylemapfamilyname="Recursive Sans Lnr Med" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Sans Linear Medium Italic" filename="instances/Recursive Sans-Linear Medium Italic.ufo" name="Recursive Sans-Linear Medium Italic.ufo" postscriptfontname="RecursiveSansLnr-MedItalic" stylemapfamilyname="Recursive Sans Lnr Med" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="99.500000"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1515,19 +1513,19 @@
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="99.500000"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Sans Casual Medium Italic" filename="instances/Recursive Sans-Casual Medium Italic.ufo" name="Recursive Sans-Casual Medium Italic.ufo" postscriptfontname="RecursiveSansCsl-MedItalic" stylemapfamilyname="Recursive Sans Csl Med" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Sans Casual Medium Italic" filename="instances/Recursive Sans-Casual Medium Italic.ufo" name="Recursive Sans-Casual Medium Italic.ufo" postscriptfontname="RecursiveSansCsl-MedItalic" stylemapfamilyname="Recursive Sans Csl Med" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="99.500000"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1537,19 +1535,19 @@
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="115"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Sans Linear SemiBold Italic" filename="instances/Recursive Sans-Linear SemiBold Italic.ufo" name="Recursive Sans-Linear SemiBold Italic.ufo" postscriptfontname="RecursiveSansLnr-SemiBdItalic" stylemapfamilyname="Recursive Sn Lnr SmBd" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Sans Linear SemiBold Italic" filename="instances/Recursive Sans-Linear SemiBold Italic.ufo" name="Recursive Sans-Linear SemiBold Italic.ufo" postscriptfontname="RecursiveSansLnr-SemiBdItalic" stylemapfamilyname="Recursive Sn Lnr SmBd" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="115"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1559,19 +1557,19 @@
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="115"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Sans Casual SemiBold Italic" filename="instances/Recursive Sans-Casual SemiBold Italic.ufo" name="Recursive Sans-Casual SemiBold Italic.ufo" postscriptfontname="RecursiveSansCsl-SmBdItalic" stylemapfamilyname="Recursive Sn Csl SmBd" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Sans Casual SemiBold Italic" filename="instances/Recursive Sans-Casual SemiBold Italic.ufo" name="Recursive Sans-Casual SemiBold Italic.ufo" postscriptfontname="RecursiveSansCsl-SmBdItalic" stylemapfamilyname="Recursive Sn Csl SmBd" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="115"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1581,8 +1579,8 @@
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="130.500000"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1592,8 +1590,8 @@
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="130.500000"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1603,8 +1601,8 @@
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="130.500000"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1614,8 +1612,8 @@
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="130.500000"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1625,19 +1623,19 @@
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="146"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Sans Linear ExtraBold Italic" filename="instances/Recursive Sans-Linear ExtraBold Italic.ufo" name="Recursive Sans-Linear ExtraBold Italic.ufo" postscriptfontname="RecursiveSansLnr-ExtraBdItalic" stylemapfamilyname="Recursive Sans Lnr XBd" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Sans Linear ExtraBold Italic" filename="instances/Recursive Sans-Linear ExtraBold Italic.ufo" name="Recursive Sans-Linear ExtraBold Italic.ufo" postscriptfontname="RecursiveSansLnr-ExtraBdItalic" stylemapfamilyname="Recursive Sans Lnr XBd" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="146"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1647,19 +1645,19 @@
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="146"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Sans Casual ExtraBold Italic" filename="instances/Recursive Sans-Casual ExtraBold Italic.ufo" name="Recursive Sans-Casual ExtraBold Italic.ufo" postscriptfontname="RecursiveSansCsl-XBdItalic" stylemapfamilyname="Recursive Sans Csl XBd" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Sans Casual ExtraBold Italic" filename="instances/Recursive Sans-Casual ExtraBold Italic.ufo" name="Recursive Sans-Casual ExtraBold Italic.ufo" postscriptfontname="RecursiveSansCsl-XBdItalic" stylemapfamilyname="Recursive Sans Csl XBd" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="146"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1669,19 +1667,19 @@
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="192"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Sans Linear Black Italic" filename="instances/Recursive Sans-Linear Black Italic.ufo" name="Recursive Sans-Linear Black Italic.ufo" postscriptfontname="RecursiveSansLnr-BlackItalic" stylemapfamilyname="Recursive Sans Lnr Blk" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Sans Linear Black Italic" filename="instances/Recursive Sans-Linear Black Italic.ufo" name="Recursive Sans-Linear Black Italic.ufo" postscriptfontname="RecursiveSansLnr-BlackItalic" stylemapfamilyname="Recursive Sans Lnr Blk" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="192"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1691,19 +1689,19 @@
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="192"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Sans Casual Black Italic" filename="instances/Recursive Sans-Casual Black Italic.ufo" name="Recursive Sans-Casual Black Italic.ufo" postscriptfontname="RecursiveSansCsl-BlkItalic" stylemapfamilyname="Recursive Sans Csl Blk" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Sans Casual Black Italic" filename="instances/Recursive Sans-Casual Black Italic.ufo" name="Recursive Sans-Casual Black Italic.ufo" postscriptfontname="RecursiveSansCsl-BlkItalic" stylemapfamilyname="Recursive Sans Csl Blk" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="192"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1713,19 +1711,19 @@
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="215"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Sans Linear ExtraBlack Italic" filename="instances/Recursive Sans-Linear ExtraBlack Italic.ufo" name="Recursive Sans-Linear ExtraBlack Italic.ufo" postscriptfontname="RecursiveSansLnr-XBlkItalic" stylemapfamilyname="Recursive Sn Lnr XBlk" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Sans Linear ExtraBlack Italic" filename="instances/Recursive Sans-Linear ExtraBlack Italic.ufo" name="Recursive Sans-Linear ExtraBlack Italic.ufo" postscriptfontname="RecursiveSansLnr-XBlkItalic" stylemapfamilyname="Recursive Sn Lnr XBlk" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="215"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1735,19 +1733,19 @@
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="215"/>
-        <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Italic" xvalue="0"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
     </instance>
-    <instance familyname="Recursive" stylename="Sans Casual ExtraBlack Italic" filename="instances/Recursive Sans-Casual ExtraBlack Italic.ufo" name="Recursive Sans-Casual ExtraBlack Italic.ufo" postscriptfontname="RecursiveSansCsl-XBlkItalic" stylemapfamilyname="Recursive Sn Csl XBlk" stylemapstylename="Italic">
+    <instance familyname="Recursive" stylename="Sans Casual ExtraBlack Italic" filename="instances/Recursive Sans-Casual ExtraBlack Italic.ufo" name="Recursive Sans-Casual ExtraBlack Italic.ufo" postscriptfontname="RecursiveSansCsl-XBlkItalic" stylemapfamilyname="Recursive Sn Csl XBlk" stylemapstylename="Cursive">
       <location>
         <dimension name="Monospace" xvalue="0"/>
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="215"/>
-        <dimension name="Slant" xvalue="-15"/>
         <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
