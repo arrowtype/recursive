@@ -39,6 +39,7 @@ instanceValues = {
 			'CASL': 0,
 			'wght': 400,
 			'slnt': 0,
+			'CRSV': 0,
 			'style': 'Regular'
 		},
 		'Linear Italic': {
@@ -46,6 +47,7 @@ instanceValues = {
 			'CASL': 0,
 			'wght': 400,
 			'slnt': -10,
+			'CRSV': 1,
 			'style': 'Italic'
 		},
 		'Linear Bold': {
@@ -53,6 +55,7 @@ instanceValues = {
 			'CASL': 0,
 			'wght': 700,
 			'slnt': 0,
+			'CRSV': 0,
 			'style': 'Bold'
 		},
 		'Linear Bold Italic': {
@@ -60,6 +63,7 @@ instanceValues = {
 			'CASL': 0,
 			'wght': 700,
 			'slnt': -10,
+			'CRSV': 1,
 			'style': 'Bold Italic'
 		},
 	},
@@ -70,6 +74,7 @@ instanceValues = {
 			'CASL': 1,
 			'wght': 400,
 			'slnt': 0,
+			'CRSV': 0,
 			'style': 'Regular'
 		},
 		'Casual Italic': {
@@ -77,6 +82,7 @@ instanceValues = {
 			'CASL': 1,
 			'wght': 400,
 			'slnt': -10,
+			'CRSV': 1,
 			'style': 'Italic'
 		},
 		'Casual Bold': {
@@ -84,6 +90,7 @@ instanceValues = {
 			'CASL': 1,
 			'wght': 700,
 			'slnt': 0,
+			'CRSV': 0,
 			'style': 'Bold'
 		},
 		'Casual Bold Italic': {
@@ -91,6 +98,7 @@ instanceValues = {
 			'CASL': 1,
 			'wght': 700,
 			'slnt': -10,
+			'CRSV': 1,
 			'style': 'Bold Italic'
 		},
 	},
@@ -101,6 +109,7 @@ instanceValues = {
 			'CASL': 0.5,
 			'wght': 400,
 			'slnt': 0,
+			'CRSV': 0,
 			'style': 'Regular'
 		},
 		'SemiCasual Italic': {
@@ -108,6 +117,7 @@ instanceValues = {
 			'CASL': 0.5,
 			'wght': 400,
 			'slnt': -10,
+			'CRSV': 1,
 			'style': 'Italic'
 		},
 		'SemiCasual Bold': {
@@ -115,6 +125,7 @@ instanceValues = {
 			'CASL': 0.5,
 			'wght': 700,
 			'slnt': 0,
+			'CRSV': 0,
 			'style': 'Bold'
 		},
 		'SemiCasual Bold Italic': {
@@ -122,6 +133,7 @@ instanceValues = {
 			'CASL': 0.5,
 			'wght': 700,
 			'slnt': -10,
+			'CRSV': 1,
 			'style': 'Bold Italic'
 		},
 	},
@@ -132,6 +144,7 @@ instanceValues = {
 			'CASL': 0,
 			'wght': 400,
 			'slnt': 0,
+			'CRSV': 0,
 			'style': 'Regular'
 		},
 		'Duotone Italic': {
@@ -139,6 +152,7 @@ instanceValues = {
 			'CASL': 1,
 			'wght': 400,
 			'slnt': -10,
+			'CRSV': 1,
 			'style': 'Italic'
 		},
 		'Duotone Bold': {
@@ -146,6 +160,7 @@ instanceValues = {
 			'CASL': 0,
 			'wght': 700,
 			'slnt': 0,
+			'CRSV': 0,
 			'style': 'Bold'
 		},
 		'Duotone Bold Italic': {
@@ -153,6 +168,7 @@ instanceValues = {
 			'CASL': 1,
 			'wght': 700,
 			'slnt': -10,
+			'CRSV': 1,
 			'style': 'Bold Italic'
 		}
 	},
@@ -204,7 +220,12 @@ def splitFont(fontPath, outputDirectory="fonts/rec_mono-for-code", newName="Rec 
 			print(instance)
 
 			instanceFont = instancer.instantiateVariableFont(
-						varfont, {"wght": instanceValues[package][instance]['wght'], "CASL": instanceValues[package][instance]['CASL'], "MONO": instanceValues[package][instance]['MONO'], "slnt": instanceValues[package][instance]['slnt']}
+						varfont, {\
+							"wght": instanceValues[package][instance]['wght'], \
+							"CASL": instanceValues[package][instance]['CASL'], \
+							"MONO": instanceValues[package][instance]['MONO'], \
+							"slnt": instanceValues[package][instance]['slnt'], \
+							"CRSV": instanceValues[package][instance]['CRSV']}
 					)
 		
 			# UPDATE NAME ID 6, postscript name

@@ -21,16 +21,16 @@
     <axis tag="slnt" name="Slant" minimum="-15" maximum="0" default="0">
       <labelname xml:lang="en">Slant</labelname>
     </axis>
-    <axis tag="ital" name="Italic" minimum="0" maximum="1" default="0.500000">
-      <labelname xml:lang="en">Italic</labelname>
+    <axis tag="CRSV" name="Cursive" minimum="0" maximum="1" default="0.500000">
+      <labelname xml:lang="en">Cursive</labelname>
     </axis>
   </axes>
   <rules>
     <rule name="mono">
       <conditionset>
         <condition name="Monospace" minimum="0.490000" maximum="1"/>
-        <condition name="Slant" minimum="-7.490000" maximum="0"/>
-        <condition name="Italic" minimum="0" maximum="0.890000"/>
+        <condition name="Slant" minimum="-13.99" maximum="0"/>
+        <condition name="Cursive" minimum="0" maximum="0.890000"/>
       </conditionset>
       <sub name="dotlessi" with="dotlessi.mono"/>
       <sub name="f" with="f.mono"/>
@@ -74,7 +74,7 @@
     <rule name="mono forceroman">
       <conditionset>
         <condition name="Monospace" minimum="0.490000" maximum="1"/>
-        <condition name="Italic" minimum="0" maximum="0.090000"/>
+        <condition name="Cursive" minimum="0" maximum="0.090000"/>
       </conditionset>
       <sub name="dotlessi" with="dotlessi.mono"/>
       <sub name="f" with="f.mono"/>
@@ -104,8 +104,8 @@
     <rule name="mono autoitalic">
       <conditionset>
         <condition name="Monospace" minimum="0.490000" maximum="1"/>
-        <condition name="Slant" minimum="-15" maximum="-7.500000"/>
-        <condition name="Italic" minimum="0.100000" maximum="1"/>
+        <condition name="Slant" minimum="-15" maximum="-14"/>
+        <condition name="Cursive" minimum="0.100000" maximum="1"/>
       </conditionset>
       <sub name="a" with="a.italic"/>
       <sub name="aacute" with="aacute.italic"/>
@@ -282,7 +282,7 @@
     <rule name="mono forceitalic">
       <conditionset>
         <condition name="Monospace" minimum="0.490000" maximum="1"/>
-        <condition name="Italic" minimum="0.900000" maximum="1"/>
+        <condition name="Cursive" minimum="0.900000" maximum="1"/>
       </conditionset>
       <sub name="a" with="a.italic"/>
       <sub name="aacute" with="aacute.italic"/>
@@ -476,8 +476,8 @@
     <rule name="sans autoroman">
       <conditionset>
         <condition name="Monospace" minimum="0" maximum="0.490000"/>
-        <condition name="Slant" minimum="-7.490000" maximum="0"/>
-        <condition name="Italic" minimum="0" maximum="0.890000"/>
+        <condition name="Slant" minimum="-13.99" maximum="0"/>
+        <condition name="Cursive" minimum="0" maximum="0.890000"/>
       </conditionset>
       <sub name="zero" with="zero.sans"/>
       <sub name="zerosuperior" with="zerosuperior.sans"/>
@@ -486,7 +486,7 @@
     <rule name="sans forceroman">
       <conditionset>
         <condition name="Monospace" minimum="0" maximum="0.490000"/>
-        <condition name="Italic" minimum="0" maximum="0.090000"/>
+        <condition name="Cursive" minimum="0" maximum="0.090000"/>
       </conditionset>
       <sub name="l" with="l.sans"/>
       <sub name="ldot" with="ldot.sans"/>
@@ -503,8 +503,8 @@
     <rule name="sans autoitalic">
       <conditionset>
         <condition name="Monospace" minimum="0" maximum="0.490000"/>
-        <condition name="Slant" minimum="-15" maximum="-7.500000"/>
-        <condition name="Italic" minimum="0.100000" maximum="1"/>
+        <condition name="Slant" minimum="-15" maximum="-14"/>
+        <condition name="Cursive" minimum="0.100000" maximum="1"/>
       </conditionset>
       <sub name="a" with="a.italic"/>
       <sub name="aacute" with="aacute.italic"/>
@@ -675,7 +675,7 @@
     <rule name="sans forceitalic">
       <conditionset>
         <condition name="Monospace" minimum="0" maximum="0.490000"/>
-        <condition name="Italic" minimum="0.900000" maximum="1"/>
+        <condition name="Cursive" minimum="0.900000" maximum="1"/>
       </conditionset>
       <sub name="a" with="a.italic"/>
       <sub name="aacute" with="aacute.italic"/>
@@ -832,7 +832,7 @@
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="mono/Recursive Mono-Casual A.ufo">
@@ -841,7 +841,7 @@
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="mono/Recursive Mono-Casual B Slanted.ufo">
@@ -850,7 +850,7 @@
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="146" />
         <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="mono/Recursive Mono-Casual B.ufo">
@@ -859,7 +859,7 @@
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="146" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="mono/Recursive Mono-Casual C Slanted.ufo">
@@ -868,7 +868,7 @@
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="215" />
         <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="mono/Recursive Mono-Casual C.ufo">
@@ -877,7 +877,7 @@
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="215" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="mono/Recursive Mono-Linear A Slanted.ufo">
@@ -886,7 +886,7 @@
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="mono/Recursive Mono-Linear A.ufo">
@@ -895,7 +895,7 @@
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="mono/Recursive Mono-Linear B Slanted.ufo">
@@ -904,7 +904,7 @@
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="146" />
         <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="mono/Recursive Mono-Linear B.ufo">
@@ -913,7 +913,7 @@
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="146" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="mono/Recursive Mono-Linear C Slanted.ufo">
@@ -922,7 +922,7 @@
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="215" />
         <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="mono/Recursive Mono-Linear C.ufo">
@@ -931,7 +931,7 @@
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="215" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Casual A Slanted.ufo">
@@ -940,7 +940,7 @@
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Casual A.ufo">
@@ -949,7 +949,7 @@
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Casual B Slanted.ufo">
@@ -958,7 +958,7 @@
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="146" />
         <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Casual B.ufo">
@@ -967,7 +967,7 @@
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="146" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Casual C Slanted.ufo">
@@ -976,7 +976,7 @@
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="215" />
         <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Casual C.ufo">
@@ -985,7 +985,7 @@
         <dimension name="Casual" xvalue="1" />
         <dimension name="Weight" xvalue="215" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Linear A Slanted.ufo">
@@ -994,7 +994,7 @@
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Linear A.ufo" familyname="Recursive" stylename="Sans Linear Light">
@@ -1007,7 +1007,7 @@
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="40" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Linear B Slanted.ufo">
@@ -1016,7 +1016,7 @@
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="146" />
         <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Linear B.ufo">
@@ -1025,7 +1025,7 @@
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="146" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Linear C Slanted.ufo">
@@ -1034,7 +1034,7 @@
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="215" />
         <dimension name="Slant" xvalue="-15" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
     <source filename="sans/Recursive Sans-Linear C.ufo">
@@ -1043,7 +1043,7 @@
         <dimension name="Casual" xvalue="0" />
         <dimension name="Weight" xvalue="215" />
         <dimension name="Slant" xvalue="0" />
-        <dimension name="Italic" xvalue="0.500000" />
+        <dimension name="Cursive" xvalue="0.500000" />
       </location>
     </source>
   </sources>
@@ -1054,7 +1054,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="40"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1065,7 +1065,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="40"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1076,7 +1076,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="40"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1087,7 +1087,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="40"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1098,7 +1098,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="84"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1109,7 +1109,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="84"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1120,7 +1120,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="84"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1131,7 +1131,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="84"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1142,7 +1142,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="99.500000"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1153,7 +1153,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="99.500000"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1164,7 +1164,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="99.500000"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1175,7 +1175,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="99.500000"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1186,7 +1186,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="115"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1197,7 +1197,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="115"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1208,7 +1208,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="115"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1219,7 +1219,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="115"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1230,7 +1230,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="130.500000"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1241,7 +1241,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="130.500000"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1252,7 +1252,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="130.500000"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1263,7 +1263,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="130.500000"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1274,7 +1274,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="146"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1285,7 +1285,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="146"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1296,7 +1296,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="146"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1307,7 +1307,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="146"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1318,7 +1318,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="192"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1329,7 +1329,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="192"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1340,7 +1340,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="192"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1351,7 +1351,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="192"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1362,7 +1362,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="215"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1373,7 +1373,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="215"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1384,7 +1384,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="215"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1395,7 +1395,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="215"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1406,7 +1406,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="40"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1417,7 +1417,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="40"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1428,7 +1428,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="40"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1439,7 +1439,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="40"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1450,7 +1450,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="84"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1461,7 +1461,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="84"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1472,7 +1472,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="84"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1483,7 +1483,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="84"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1494,7 +1494,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="99.500000"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1505,7 +1505,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="99.500000"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1516,7 +1516,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="99.500000"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1527,7 +1527,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="99.500000"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1538,7 +1538,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="115"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1549,7 +1549,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="115"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1560,7 +1560,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="115"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1571,7 +1571,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="115"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1582,7 +1582,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="130.500000"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1593,7 +1593,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="130.500000"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1604,7 +1604,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="130.500000"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1615,7 +1615,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="130.500000"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1626,7 +1626,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="146"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1637,7 +1637,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="146"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1648,7 +1648,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="146"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1659,7 +1659,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="146"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1670,7 +1670,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="192"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1681,7 +1681,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="192"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1692,7 +1692,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="192"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1703,7 +1703,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="192"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1714,7 +1714,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="215"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1725,7 +1725,7 @@
         <dimension name="Casual" xvalue="0"/>
         <dimension name="Weight" xvalue="215"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
@@ -1736,7 +1736,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="215"/>
         <dimension name="Slant" xvalue="0"/>
-        <dimension name="Italic" xvalue="0.500000"/>
+        <dimension name="Cursive" xvalue="0.500000"/>
       </location>
       <kerning/>
       <info/>
@@ -1747,7 +1747,7 @@
         <dimension name="Casual" xvalue="1"/>
         <dimension name="Weight" xvalue="215"/>
         <dimension name="Slant" xvalue="-15"/>
-        <dimension name="Italic" xvalue="1"/>
+        <dimension name="Cursive" xvalue="1"/>
       </location>
       <kerning/>
       <info/>
