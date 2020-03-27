@@ -70,14 +70,14 @@ In code editors like VS Code and Atom, you must use a string to set your preferr
 
 **On macOS**
 
-| Style           | Font name for VS Code seetings   | Recommended use case                             |
+| Style           | Font name for VS Code settings   | Recommended use case                             |
 | --------------- | -------------------------------- | ------------------------------------------------ |
 | Linear Regular  | `RecursiveMonoLinearB030st-Rg`       | General use                                      |
 | Casual Regular  | `RecursiveMonoCasualB030st-Rg`       | General, with more personality (try in terminal) |
 
 **On Windows**
 
-| Style           | Font name for VS Code seetings   | Recommended use case                             |
+| Style           | Font name for VS Code settings   | Recommended use case                             |
 | --------------- | -------------------------------- | ------------------------------------------------ |
 | Linear Regular  | `Recursive Mono Lnr b030st`       | General use                                      |
 | Casual Regular  | `Recursive Mono Csl b030st`       | General, with more personality (try in terminal) |
