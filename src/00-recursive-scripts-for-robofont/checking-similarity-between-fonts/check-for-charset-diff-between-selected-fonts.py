@@ -50,7 +50,7 @@ print("")
 problemGlyphs = []
 
 for glyphName in glyphs.keys():
-    if len(glyphs[glyph.name]) < len(fonts):
+    if len(glyphs[glyphName]) < len(fonts):
         if glyphName not in problemGlyphs and glyphName not in glyphsToIgnore.split(" "):
             problemGlyphs.append(glyphName)
 
