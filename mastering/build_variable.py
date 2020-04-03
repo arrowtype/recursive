@@ -79,7 +79,7 @@ def makeSTAT(path, designspace):
         #
         # Recursive is unusual in that it has both a Italic and Slant
         # axis that need to be linked. This is dealt with at the end.
-        if axis.name not in ["Italic", "Slant"]:
+        if axis.name not in ["Slant", "Cursive"]:
             a = {}
             a["name"] = axis.name
             a["tag"] = axis.tag
@@ -116,7 +116,7 @@ def makeSTAT(path, designspace):
         location["name"] = name
         axis_values = {}
         axis_values["Slant"] = values[0]
-        axis_values["Italic"] = values[1]
+        axis_values["Cursive"] = values[1]
         location["axis_values"] = axis_values
         if values[0] == 0:
             location["flags"] = ["ElidableAxisValueName"]

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slnt+CRSV hover test</title>
+  </head>
+  <style>
+    @font-face {
+      font-family: "Rec-slnt-CRSV";
+      font-style: oblique 0deg 15deg;
+      src: url("Recursive_VF-MONO_CASL_CRSV_slnt_wght.ttf");
+    }
+    a {
+      font-size: 3rem;
+    }
+    a.fancy {
+      font-family: "Rec-slnt-CRSV";
+      font-style: oblique 0deg;
+      transition: font-style 0.35s;
+    }
+    a.fancy:hover {
+      font-style: oblique 13.5deg;
+    }
+  </style>
+  <body>
+    <a class="fancy" href="#">Hover me to test</a>
+  </body>
+</html>
