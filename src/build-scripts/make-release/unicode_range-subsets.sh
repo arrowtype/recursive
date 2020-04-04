@@ -45,7 +45,7 @@ __CSS="
  /* The bare minimum English subset, plus copyright & arrows (← ↑ → ↓) & quotes (“ ” ‘ ’) & bullet (•) */
 @font-face {
   font-family: 'Recursive';
-  font-style: oblique -15deg 0deg;
+  font-style: oblique 0deg 15deg;
   font-weight: 300 1000;
   font-display: swap;
   src: url('/fonts/$englishBasicFile') format('woff2');
@@ -55,7 +55,7 @@ __CSS="
 /* unicode latin-1 letters, basic european diacritics */
 @font-face {
   font-family: 'Recursive';
-  font-style: oblique -15deg 0deg;
+  font-style: oblique 0deg 15deg;
   font-weight: 300 1000;
   font-display: swap;
   src: url('/fonts/$latin1File') format('woff2');
@@ -65,7 +65,7 @@ __CSS="
 /* unicode latin-1, punc/symbols & arrows (↔ ↕ ↖ ↗ ↘ ↙) */
 @font-face {
   font-family: 'Recursive';
-  font-style: oblique -15deg 0deg;
+  font-style: oblique 0deg 15deg;
   font-weight: 300 1000;
   font-display: swap;
   src: url('/fonts/$latin1PuncFile') format('woff2');
@@ -75,7 +75,7 @@ __CSS="
 /* unicode latin A extended */
 @font-face {
   font-family: 'Recursive';
-  font-style: oblique -15deg 0deg;
+  font-style: oblique 0deg 15deg;
   font-weight: 300 1000;
   font-display: swap;
   src: url('/fonts/$latinExtFile') format('woff2');

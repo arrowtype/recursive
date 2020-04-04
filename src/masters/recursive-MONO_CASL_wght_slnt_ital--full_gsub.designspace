@@ -29,7 +29,7 @@
     <rule name="mono">
       <conditionset>
         <condition name="Monospace" minimum="0.490000" maximum="1"/>
-        <condition name="Slant" minimum="-14.04" maximum="0"/>
+        <condition name="Slant" minimum="-13.99" maximum="0"/>
         <condition name="Cursive" minimum="0" maximum="0.890000"/>
       </conditionset>
       <sub name="dotlessi" with="dotlessi.mono"/>
@@ -104,7 +104,7 @@
     <rule name="mono autoitalic">
       <conditionset>
         <condition name="Monospace" minimum="0.490000" maximum="1"/>
-        <condition name="Slant" minimum="-15" maximum="-14.041"/>
+        <condition name="Slant" minimum="-15" maximum="-14"/>
         <condition name="Cursive" minimum="0.100000" maximum="1"/>
       </conditionset>
       <sub name="a" with="a.italic"/>
@@ -476,7 +476,7 @@
     <rule name="sans autoroman">
       <conditionset>
         <condition name="Monospace" minimum="0" maximum="0.490000"/>
-        <condition name="Slant" minimum="-14.04" maximum="0"/>
+        <condition name="Slant" minimum="-13.99" maximum="0"/>
         <condition name="Cursive" minimum="0" maximum="0.890000"/>
       </conditionset>
       <sub name="zero" with="zero.sans"/>
@@ -503,7 +503,7 @@
     <rule name="sans autoitalic">
       <conditionset>
         <condition name="Monospace" minimum="0" maximum="0.490000"/>
-        <condition name="Slant" minimum="-15" maximum="-14.041"/>
+        <condition name="Slant" minimum="-15" maximum="-14"/>
         <condition name="Cursive" minimum="0.100000" maximum="1"/>
       </conditionset>
       <sub name="a" with="a.italic"/>

@@ -1,0 +1,45 @@
+@font-face {
+font-family: 'Recursive';
+font-style: oblique 0deg 15deg;
+font-weight: 300 1000;
+font-display: swap;
+src: url('Recursive_VF_1.046--subset_range_english_basic.woff2') format('woff2');
+unicode-range: U+0020-007F,U+00A9,U+2190-2193,U+2018,U+2019,U+201C,U+201D,U+2022;
+}
+html {
+    font-family: 'Recursive';
+}
+body {
+    padding: 3rem 2rem;
+    background: black;
+    color: #eee;
+}
+.big    {
+    font-size: 8.5rem;
+    font-weight: 700;
+    font-variation-settings: 'CASL' 1;
+    margin-bottom: 4rem;
+    line-height: 0.75;
+    color: white;
+    text-decoration: none;
+}
+a {
+    font-style: oblique 0deg;
+    transition: 0.25s font-style;
+}
+a:hover {
+    font-style: oblique 12deg;
+}
+pre {
+    font-family: 'Recursive';
+    color:blanchedalmond;
+    margin-top: 2rem;
+    display: block;
+    font-weight: 500;
+    font-variation-settings: 'MONO' 1;
+    line-height: 1.5;
+}
+
+.italic {
+    font-style: italic;
+}
