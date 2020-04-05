@@ -1,5 +1,12 @@
 # Testing different axis naming for Slant & Italic axes
 
+---
+
+**Update:**
+**I ended up opting to go with Slant & Cursive axes, making this change in [Pull Request 330](https://github.com/arrowtype/recursive/pull/330) and releasing this as v1.047.**
+
+---
+
 *Note: Much of the following was greatly assisted through conversation with David Jonathan Ross (DJR), as well as through experimentation and experience in the Recursive project.*
 
 TL;DR: 
