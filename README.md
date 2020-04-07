@@ -59,31 +59,12 @@ Then, you can use the font with both `font-weight` and `font-variation-settings`
 Notes: 
 
 - `MONO` and `CASL` are "unregistered" axes (not currently in Microsoft's official listing of variation axes and specs), so these tags must be used in all-caps and controlled via `font-variation-settings`.
-- You will eventually be able to also use the property `font-style` to control `slnt` and `ital` axes, but these have some browser support issues (as of Oct 2019, but tools are rapidly evolving to better support variable fonts, so this will improve over time!) For now, these work best in `font-variation-settings`.
+- You will eventually be able to also use the property `font-style` to control `slnt` and `CRSV` axes, but these have some browser support issues (as of Oct 2019, but tools are rapidly evolving to better support variable fonts, so this will improve over time!) For now, these work best in `font-variation-settings`.
 - One weird trick: you can use CSS custom properties to more easily control `font-variation-settings` – read more about this technique in [Pixel Ambacht's fantastic tutorial on it](https://pixelambacht.nl/2019/fixing-variable-font-inheritance/).
 
 ### In Code Editors
 
-Currently, the static TTF fonts are the best fonts to use for code.
-
-In code editors like VS Code and Atom, you must use a string to set your preferred font. These strings work well with the font names as follows:
-
-**On macOS**
-
-| Style           | Font name for VS Code settings   | Recommended use case                             |
-| --------------- | -------------------------------- | ------------------------------------------------ |
-| Linear Regular  | `RecursiveMonoLinearB030st-Rg`       | General use                                      |
-| Casual Regular  | `RecursiveMonoCasualB030st-Rg`       | General, with more personality (try in terminal) |
-
-**On Windows**
-
-| Style           | Font name for VS Code settings   | Recommended use case                             |
-| --------------- | -------------------------------- | ------------------------------------------------ |
-| Linear Regular  | `Recursive Mono Lnr b030st`       | General use                                      |
-| Casual Regular  | `Recursive Mono Csl b030st`       | General, with more personality (try in terminal) |
-
-
-The `027` in these name string represents the current beta release version. It's possible this has shifted (I am releasing often at this point), so check what the release notes say.
+Instructions for using Recursive in code editors is included in the `README.md` of the `Recursive_Code` directory of release, such as in [the notes for release 1.047](https://github.com/arrowtype/recursive/tree/1293eaba14e66028a9e0b9919049e3e464f8e3cd/fonts/Recursive-Beta_1.047/Recursive_Code).
 
 ---
 
@@ -95,9 +76,9 @@ Recursive has the following axes:
 | ---------- | ------ | ------------ | ------- | --------------------------------------------------------------- |
 | Monospace  | `MONO` | 0 to 1       | 0       | Sans (natural-width) to Mono (fixed-width)                      |
 | Casual     | `CASL` | 0 to 1       | 0       | Linear to Casual                                                |
-| Weight     | `wght` | 300 to 1000   | 300     | Light to ExtraBlack. Can be defined with usual font-weight property. |
+| Weight     | `wght` | 300 to 1000  | 300     | Light to ExtraBlack. Can be defined with usual font-weight property. |
 | Slant      | `slnt` | 0 to -15     | 0       | Upright (0°) to Slanted (about 15°)                             |
-| Italic     | `ital` | 0, 0.5, or 1 | 0.5     | Always roman (0), auto (0.5), or always italic (1)              |
+| Cursive    | `CRSV` | 0, 0.5, or 1 | 0.5     | Always roman (0), auto (0.5), or always cursive (1)             |
 
 ### Axis Definitions
 
@@ -115,13 +96,13 @@ Axis Definitions, Recursive
 
   *Recommended use:* Differences in weight can provide emphasis in text, show user interaction, or adjust the tone of communication. For light text on dark backgrounds, 400 (“Regular”) tends to be appropriate for text and code. For dark text on a light background, it can be beneficial to adjust the weight upwards to 500 (“Medium”).
 
-- **Slant** `slnt` – 0 to -15. The "forward lean" of letters. Note: `-15` (negative 15) corresponds to a 15° clockwise slant, due to type design's roots in geometry. If the Italic axis is at its default value, going past a slant of -7.5 will "italicize" letters, converting them to more-handwritten forms such as the simplified, "single story" `a` and `g`.
+- **Slant** `slnt` – 0 to -15. The "forward lean" of letters. Note: `-15` (negative 15) corresponds to a 15° clockwise slant, due to type design's roots in geometry. If the Italic axis is at its default value, going past a slant of `-13.99` will activate "cursive" letters, converting them to more-handwritten forms such as the simplified, "single story" `a` and `g`.
 
-  *Recommended use:* Use Slant as a secondary way to emphasize text or vary typographic tone. In text, it can be useful to use a partial slant of around -9, while at display sizes, you can expect the most precise outlines at either 0 or -15.
+  *Recommended use:* Use Slant as a secondary way to emphasize text or vary typographic tone. In text, it can be useful to use a partial slant of around -9, while at display sizes, you can expect the most precise outlines at either 0 or -15. You can also animate from `0` to `-13` without letterforms or glyph widths changing, which is great for things like hovered links or buttons.
 
-- **Italic** `ital` – 0, 0.5, or 1. Controls the substitution of italic forms along the Slant axis. "Off" (0) maintains Roman letterforms, such as a "double story" `a` and `g`, "Auto" (0.5) allows for Italic substitution, and "On" (1) asserts italic forms even in upright text with a Slant of 0.
+- **Cursive** `CRSV` – 0, 0.5, or 1. Controls the substitution of cursive forms along the Slant axis. "Off" (0) maintains Roman letterforms such as a "double story" `a` and `g`, "Auto" (0.5) allows for Cursive substitution, and "On" (1) asserts cursive forms even in upright text with a Slant of 0.
 
-  *Recommended use:* Use Italic as a tertiary way to emphasize text, or as a way to have more control over animated text (e.g. a hyperlink that slants upon user interaction can by styled with Italic 0 or 1 to prevent the abrupt changes of glyph substitution).
+  *Recommended use:* Use Cursive as a tertiary way to emphasize text, or as a way to have more control over animated text (e.g. a hyperlink that slants upon user interaction can by styled with Cursive 0 or 1 to prevent the abrupt changes of glyph substitution).
   
   
 ### Advanced design recommendations
@@ -147,7 +128,7 @@ Things to be aware of:
 
 Recursive is built with a number of OpenType features that make it simple to control a few handy typographic features.
 
-![OpenType Features in Recursive](docs/001-opentype_features/recursive-b027-ot_features.png)
+![OpenType Features in Recursive](docs/001-opentype_features/recursive-ot_features.png)
 
 
 ### Activating OpenType Features in Code Editors
@@ -156,7 +137,7 @@ Recursive is built with a number of OpenType features that make it simple to con
 
 In VS Code, you can activate OpenType features by searching for `fontLigatures`, then editing this in settings.json like this:
 
-```
+```json
     "editor.fontLigatures": "'ss01','ss05','dlig'"
 ```
 
@@ -166,7 +147,7 @@ In VS Code, you can activate OpenType features by searching for `fontLigatures`,
 
 Go to `Atom` -> `Stylesheet` and add in the following:
 
-```
+```css
 atom-text-editor {
   font-family: 'RecursiveMonoB_023-CslRg';
   font-feature-settings: "ss01", "ss05", "dlig";
