@@ -63,7 +63,7 @@ def makeSTAT(path, designspace):
             0: "Linear",
             1: "Casual"
         },
-        "Italic":
+        "Slant":
         {
             (0, 0.5): "Upright",
             (-15, 1): "Italic"
@@ -79,7 +79,7 @@ def makeSTAT(path, designspace):
         #
         # Recursive is unusual in that it has both a Italic and Slant
         # axis that need to be linked. This is dealt with at the end.
-        if axis.name not in ["Slant", "Cursive"]:
+        if axis.name not in ["Cursive", "Slant"]:
             a = {}
             a["name"] = axis.name
             a["tag"] = axis.tag
@@ -111,7 +111,7 @@ def makeSTAT(path, designspace):
         axes.append(a)
 
     locations = []
-    for values, name in styles["Italic"].items():
+    for values, name in styles["Slant"].items():
         location = {}
         location["name"] = name
         axis_values = {}
