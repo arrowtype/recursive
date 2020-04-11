@@ -641,8 +641,6 @@
       <sub name="yhookabove" with="yhookabove.italic"/>
       <sub name="ymacron" with="ymacron.italic"/>
       <sub name="ytilde" with="ytilde.italic"/>
-
-
       <sub name="agravedbl" with="agravedbl.italic"/>
       <sub name="ddotbelow" with="ddotbelow.italic"/>
       <sub name="dlinebelow" with="dlinebelow.italic"/>
@@ -663,6 +661,9 @@
       <sub name="nlinebelow" with="nlinebelow.italic"/>
       <sub name="gmacron" with="gmacron.italic"/>
       <sub name="hdotbelow" with="hdotbelow.italic"/>
+      <sub name="zero" with="zero.sans"/>
+      <sub name="zerosuperior" with="zerosuperior.sans"/>
+      <sub name="zeroinferior" with="zeroinferior.sans"/>
     </rule>
     <rule name="sans forceitalic">
       <conditionset>
@@ -831,6 +832,9 @@
       <sub name="nlinebelow" with="nlinebelow.italic"/>
       <sub name="gmacron" with="gmacron.italic"/>
       <sub name="hdotbelow" with="hdotbelow.italic"/>
+      <sub name="zero" with="zero.sans"/>
+      <sub name="zerosuperior" with="zerosuperior.sans"/>
+      <sub name="zeroinferior" with="zeroinferior.sans"/>
     </rule>
   </rules>
   <sources>
