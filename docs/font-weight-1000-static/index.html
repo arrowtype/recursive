@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Static font-weight 1000</title>
+</head>
+<style>
+	@font-face {
+		src:url("RecursiveMonoCslSt-XBlk.woff2");
+		font-family: RecStatic;
+		font-weight: 1000;
+	}
+	@font-face {
+		src:url("RecursiveMonoCslSt-Black.woff2");
+		font-family: RecStatic;
+		font-weight: 900;
+	}
+	html {
+		font-size: 14vw;
+	}
+	p {
+		line-height: 1;
+		margin:0;
+	}
+	.extrablack {
+		font-family: "RecStatic";
+		font-weight: 1000;
+		color: green;
+	}
+	.black {
+		font-family: "RecStatic";
+		font-weight: 900;
+		color: blue;
+	}
+</style>
+<body>
+	<p class="extrablack">font-weight 1000 with a static font</p>
+	<p class="black">font-weight 0900 with a static font</p>
+</body>
+</html>
