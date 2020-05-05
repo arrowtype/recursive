@@ -1,3 +1,7 @@
+#!/bin/bash
+
+# Simplifies the process of calling mastering scripts
+
 set -e
 source venv/bin/activate
 

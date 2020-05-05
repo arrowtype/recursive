@@ -151,20 +151,7 @@ feature ss10 {
     sub zeroinferior.sans by zeroinferior.dotted;
 } ss10;
 
-@dfltZero = [zero       zerosuperior       zeroinferior       zeroinferior.afrc       zeroinferior.afrc       ];
-@slshZero = [zero.slash zerosuperior.slash zeroinferior.slash zeroinferior_afrc.slash zeroinferior_afrc.slash ];
-
 feature ss11 {
-    featureNames {
-        # MS, unicode, English
-        name "Slashed Zero in Sans";
-        # Apple, roman, unspecified
-        name 1 "Slashed Zero in Sans";
-    };
-    sub @dfltZero by @slshZero;
-} ss11;
-
-feature ss12 {
     featureNames {
         # MS, unicode, English
         name "Simplified One";
@@ -173,4 +160,17 @@ feature ss12 {
     };
     sub one by one.simple;
     sub one.sans by one.simple;
-} ss12;
+} ss11;
+
+@dfltZero = [zero.sans       zerosuperior.sans       zeroinferior.sans       zeroinferiorsans.afrc       zerosuperiorsans.afrc       ];
+@slshZero = [zero.slash      zerosuperior.slash      zeroinferior.slash      zeroinferior_afrc.slash     zeroinferior_afrc.slash     ];
+
+feature ss20 {
+    featureNames {
+        # MS, unicode, English
+        name "Slashed Zero in Sans";
+        # Apple, roman, unspecified
+        name 1 "Slashed Zero in Sans";
+    };
+    sub @dfltZero by @slshZero;
+} ss20;
