@@ -24,10 +24,12 @@ import os
 import pathlib
 from fontTools import ttLib
 from fontTools.varLib import instancer
+from opentype_feature_freezer import cli as pyftfeatfreeze
 import subprocess
 import shutil
 import glob
 import fire
+
 
 # instances to split
 
@@ -262,13 +264,13 @@ def splitFont(fontPath, outputDirectory="fonts/rec_mono-for-code", newName="Rec 
 			# drop STAT table to allow RIBBI style naming & linking on Windows
 			del instanceFont["STAT"]
 
-			# TODO: freeze in rvrn features
+			outputPath = f"{outputSubDir}/{newFileName}"
 
 			# save font
-			instanceFont.save(f"{outputSubDir}/{newFileName}")
+			instanceFont.save(outputPath)
 
-
-
+			# freeze in rvrn features with pyftfeatfreeze
+			pyftfeatfreeze.main(["--features=rvrn", outputPath, outputPath])
 
 
 		# -----------------------------------------------------------

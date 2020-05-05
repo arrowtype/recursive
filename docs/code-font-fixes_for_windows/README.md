@@ -77,3 +77,7 @@ del instanceFont["STAT"]
 ## Glyph substitutions
 
 - [Rec Mono for Code fonts should freeze in rvrn subsitutions, #335](https://github.com/arrowtype/recursive/issues/335)
+
+I have found that freezing in `rvrn` rules really does help to solve the immediate issue of the correct glyphs working in MacVim.
+
+I have added a pyftfeatfreeze step to the instantiation script.
