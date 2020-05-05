@@ -259,7 +259,17 @@ def splitFont(fontPath, outputDirectory="fonts/rec_mono-for-code", newName="Rec 
 			# make dir for new fonts
 			pathlib.Path(outputSubDir).mkdir(parents=True, exist_ok=True) 
 
+			# drop STAT table to allow RIBBI style naming & linking on Windows
+			del instanceFont["STAT"]
+
+			# TODO: freeze in rvrn features
+
+			# save font
 			instanceFont.save(f"{outputSubDir}/{newFileName}")
+
+
+
+
 
 		# -----------------------------------------------------------
 		# make TTC (truetype collection) of fonts – doesn't current work on Mac very well :(

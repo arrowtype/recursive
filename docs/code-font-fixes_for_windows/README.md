@@ -67,6 +67,12 @@ I replicated the issue, then I tried with fonts in which I had dropped the STAT 
 
 ![VS Code in Windows 10, with proper style linking](assets/2020-05-05-14-22-40.png)
 
+Amazingly, that only took 1 additional line in the instancing script:
+
+```python
+del instanceFont["STAT"]
+```
+
 
 ## Glyph substitutions
 
