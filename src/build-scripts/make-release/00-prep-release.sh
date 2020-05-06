@@ -97,8 +97,10 @@ python src/build-scripts/make-release/instantiate-code-fonts.py $dir/Variable_TT
 # copy metadata
 
 cp OFL.txt $outputDir/LICENSE.txt
-cp $(dirname $0)/data/release-notes.md $outputDir/README.md
-cp $(dirname $0)/data/rec_mono-for-code--notes.md $outputDir/$desktopCodeDir/README.md
+cp $(dirname $0)/data/release-notes--all.md $outputDir/README.md
+cp $(dirname $0)/data/release-notes--code.md $outputDir/$desktopCodeDir/README.md
+cp $(dirname $0)/data/release-notes--desktop.md $outputDir/$desktopDir/README.md
+cp $(dirname $0)/data/release-notes--web.md $outputDir/$webDir/README.md
 
 # ---------------------------------------------
 # make a zip of the outputDir, then move both dir & zip into "fonts/"
