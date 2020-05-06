@@ -29,6 +29,9 @@ import subprocess
 import shutil
 import glob
 import fire
+from dlig2calt import *
+
+print(dlig2calt)
 
 
 # instances to split
@@ -271,6 +274,9 @@ def splitFont(fontPath, outputDirectory="fonts/rec_mono-for-code", newName="Rec 
 
 			# freeze in rvrn features with pyftfeatfreeze
 			pyftfeatfreeze.main(["--features=rvrn", outputPath, outputPath])
+
+			# change dlig to calt to make code ligatures on by default
+			dlig2calt(outputPath)
 
 
 		# -----------------------------------------------------------
