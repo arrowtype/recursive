@@ -37,4 +37,4 @@ In VS Code, you can control ligatures *and* stylistic sets by doubling the setti
   "editor.fontLigatures": "'ss01','ss03', 'ss06'",
 ```
 
-In the Desktop & Web fonts, code ligatures are still controlled by the `dlig` feature, so that they are *not* on by default for settings in which they may not be well-understood by many users.
+In the Desktop & Web fonts, code ligatures are still controlled by the `dlig` feature, so that they are *not* on by default for contexts in which they may not be well-understood by many users.
