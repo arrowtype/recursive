@@ -6,7 +6,7 @@
 from fontTools import ttLib
 import fire
 
-def dlig2clig(fontPath, inplace=False):
+def dlig2calt(fontPath, inplace=False):
 	font = ttLib.TTFont(fontPath)
 
 	featureRecords = font['GSUB'].table.FeatureList.FeatureRecord
@@ -26,4 +26,4 @@ def dlig2clig(fontPath, inplace=False):
 
 
 if __name__ == '__main__':
-	fire.Fire(dlig2clig)
+	fire.Fire(dlig2calt)

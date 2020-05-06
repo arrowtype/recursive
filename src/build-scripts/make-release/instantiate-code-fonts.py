@@ -29,6 +29,7 @@ import subprocess
 import shutil
 import glob
 import fire
+from dlig2calt import dlig2calt
 
 
 # instances to split
@@ -204,23 +205,6 @@ def setFontNameID(font, ID, newName):
 
 
 # ----------------------------------------------
-# SWAP DLIG TO CALT FOR OLD CODE APPS
-
-def dlig2clig(fontPath):
-	font = TTFont(fontPath)
-
-	featureRecords = font['GSUB'].table.FeatureList.FeatureRecord
-
-	for fea in featureRecords:
-		if fea.FeatureTag == 'dlig':
-			fea.FeatureTag = 'calt'
-			print('Updated feature "dlig" to be "calt".')
-
-	font.save(fontPath)
-	print("Saved font inplace with feature 'dlig' changed to 'calt'.")
-
-
-# ----------------------------------------------
 # MAIN FUNCTION
 
 oldName = "Recursive"
@@ -291,7 +275,7 @@ def splitFont(fontPath, outputDirectory="fonts/rec_mono-for-code", newName="Rec 
 			pyftfeatfreeze.main(["--features=rvrn", outputPath, outputPath])
 
 			# swap dlig2calt to make code ligatures work in old code editor apps
-			dlig2clig(outputPath)
+			dlig2calt(outputPath, inplace=True)
 
 
 		# -----------------------------------------------------------

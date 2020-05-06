@@ -17,7 +17,8 @@ source venv/bin/activate
 
 # required argument: directory with built fonts
 dir=$1
-version=$(cat version.txt)
+version=$(cat version.txt) # too clever
+# version=${dir/"fonts_"/""}
 
 if [[ -z $dir || $dir = "--help" ]] ; then
     echo 'Add a dir path, such as:'
