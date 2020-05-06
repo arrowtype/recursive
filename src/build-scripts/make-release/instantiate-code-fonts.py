@@ -202,6 +202,24 @@ def setFontNameID(font, ID, newName):
 		font['name'].setName(newName, ID, *winIDs.values())
 		print(f"\n\t\t Win name now '{newName}'")
 
+
+# ----------------------------------------------
+# SWAP DLIG TO CALT FOR OLD CODE APPS
+
+def dlig2clig(fontPath):
+	font = TTFont(fontPath)
+
+	featureRecords = font['GSUB'].table.FeatureList.FeatureRecord
+
+	for fea in featureRecords:
+		if fea.FeatureTag == 'dlig':
+			fea.FeatureTag = 'calt'
+			print('Updated feature "dlig" to be "calt".')
+
+	font.save(fontPath)
+	print("Saved font inplace with feature 'dlig' changed to 'calt'.")
+
+
 # ----------------------------------------------
 # MAIN FUNCTION
 
@@ -271,6 +289,9 @@ def splitFont(fontPath, outputDirectory="fonts/rec_mono-for-code", newName="Rec 
 
 			# freeze in rvrn features with pyftfeatfreeze
 			pyftfeatfreeze.main(["--features=rvrn", outputPath, outputPath])
+
+			# swap dlig2calt to make code ligatures work in old code editor apps
+			dlig2clig(outputPath)
 
 
 		# -----------------------------------------------------------
