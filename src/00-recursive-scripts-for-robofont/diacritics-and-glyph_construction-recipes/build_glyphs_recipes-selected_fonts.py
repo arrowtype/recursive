@@ -21,8 +21,12 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 
 # apostrophemod = commaaboverightcomb | 02BC
 txt = '''\
-dcaron.italic = dcaron
+? DZ = DZcaron | 01F1
+? Dz = Dzcaron | 01F2
+? dz = dzcaron | 01F3
+? dz.italic = dzcaron.italic
 '''
+
 # recipeFile = "/Users/stephennixon/type-repos/recursive/src/00-recursive-scripts-for-robofont/diacritics-and-glyph_construction-recipes/diacritic-recipes-for-recursive-generated-with_alts.txt"
 # with open(recipeFile, 'r') as recipe:
 #     for line in recipe:
@@ -41,8 +45,16 @@ files = getFile("Select files to build glyphs in", allowsMultipleSelection=True,
 # collect glyphs to ignore if they already exist in the font
 ignoreExisting = [L.split('=')[0].strip()[1:] for L in txt.split('\n') if L.startswith('?')]
 
+# Set to False to open fonts with RoboFont UI (e.g. to visually check changes before saving)
+skipInterface = True
+
 for file in files:
-    font = OpenFont(file, showInterface=False)
+
+    if skipInterface:
+        font = OpenFont(file, showInterface=False)
+    else:
+        font = OpenFont(file, showInterface=True)
+
     # iterate over all glyph constructions
     for construction in constructions:
 
@@ -71,5 +83,6 @@ for file in files:
         if glyph.unicode is None:
             glyph.autoUnicodes()
 
-    font.save()
-    font.close()
+    if skipInterface:
+        font.save()
+        font.close()
