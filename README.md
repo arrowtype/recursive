@@ -199,6 +199,10 @@ There are sub-scripts for just prepping the source files (`mastering/prep_fonts.
 
 Before beginning, change your working directory to `mastering`.
 
+```
+cd mastering
+```
+
 `python build.py --files` is the first step. This will generate all the files needed for building the variable and static fonts. You will likely want to give the font a version number with this command (`python build.py --version 1.03 --files`). To prep only files for the variable font, use `python build.py --varfiles`, or to prep only files for the static fonts, use `python build.py --statfiles`.
 
 After the files have been generated (do note that the static instances take a bit of time to generate), you will want to look at the `mastering/build/static/CFF/checkoutlines.txt` file. This is the report (edited to remove issues that do not need attention) from [checkoutlinesUFO](https://adobe-type-tools.github.io/afdko/AFDKO-Overview.html#checkoutlinesufo). Issues found in this report should be cleaned up in the static UFOs. Many issues are due to overlap removal. Nothing is perfect, overlap removal algorithms included.
@@ -224,8 +228,22 @@ python build.py --variable
 If you want to build all of the sources, fonts, and WOFF2 versions of all of the fonts run:
 
 ```
-python build.py --all
+python build.py --all --version 1.03
 ```
+
+### Making a GitHub release
+
+First, build fonts with the mastering flow above. Then:
+
+```bash
+# navigate to the root directory of the project, then...
+
+# update version number at version.txt
+
+ src/build-scripts/make-release/00-prep-release.sh fonts_1.52
+```
+
+Then, go to the repo’s Releases page to make a new one.
 
 ## Using the resources in this project for type design
 
