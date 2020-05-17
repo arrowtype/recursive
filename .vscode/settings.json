@@ -1,10 +1,19 @@
 {
-    "python.pythonPath": "/Users/stephennixon/type-repos/recursive/venv/bin/python",
-    "git.ignoreLimitWarning": true,
-    "[markdown]": {
-      "editor.formatOnSave": false,
-      "editor.wordWrap": "on",
-      "editor.renderWhitespace": "all",
-      "editor.acceptSuggestionOnEnter": "on"
-    }
+  "python.pythonPath": "/Users/stephennixon/type-repos/recursive/venv/bin/python",
+  "git.ignoreLimitWarning": true,
+  "[markdown]": {
+    "editor.formatOnSave": false,
+    "editor.wordWrap": "on",
+    "editor.renderWhitespace": "all",
+    "editor.acceptSuggestionOnEnter": "on"
+  },
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "python.linting.flake8Args": ["--ignore=E203, E501, W503", "--max-line-length=100"],
+  "editor.formatOnSave": true,
+  "python.formatting.autopep8Args": ["--ignore W191"],
+  "python.formatting.blackArgs": ["--line-length=100"],
+  "python.formatting.provider": "yapf",
+  "python.formatting.yapfArgs": ["column_limit=100"]
 }
