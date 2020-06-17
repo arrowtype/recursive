@@ -135,6 +135,11 @@ feature ss09 {
     sub nineinferior by nineinferior.ss01;
 } ss09;
 
+@dfltZero = [zero             zerosuperior             zeroinferior             zeroinferior.afrc           zerosuperior.afrc           ];
+@sansZero = [zero.sans        zerosuperior.sans        zeroinferior.sans        zeroinferiorsans.afrc       zerosuperiorsans.afrc       ];
+@slshZero = [zero.slash       zerosuperior.slash       zeroinferior.slash       zeroinferiorslash.afrc      zeroinferiorslash.afrc      ];
+@dttdZero = [zero.dotted      zerosuperior.dotted      zeroinferior.dotted      zeroinferiordotted.afrc     zeroinferiordotted.afrc     ];
+
 # TODO: add dotted zero as ss10
 feature ss10 {
     featureNames {
@@ -143,12 +148,8 @@ feature ss10 {
         # Apple, roman, unspecified
         name 1 "Dotted Zero";
     };
-    sub zero by zero.dotted;
-    sub zero.sans by zero.dotted;
-    sub zerosuperior by zerosuperior.dotted;
-    sub zeroinferior by zeroinferior.dotted;
-    sub zerosuperior.sans by zerosuperior.dotted;
-    sub zeroinferior.sans by zeroinferior.dotted;
+    sub @sansZero by @dttdZero;
+    sub @dfltZero by @dttdZero;
 } ss10;
 
 feature ss11 {
@@ -162,15 +163,14 @@ feature ss11 {
     sub one.sans by one.simple;
 } ss11;
 
-@dfltZero = [zero.sans       zerosuperior.sans       zeroinferior.sans       zeroinferiorsans.afrc       zerosuperiorsans.afrc       ];
-@slshZero = [zero.slash      zerosuperior.slash      zeroinferior.slash      zeroinferior_afrc.slash     zeroinferior_afrc.slash     ];
-
 feature ss20 {
     featureNames {
         # MS, unicode, English
-        name "Slashed Zero in Sans";
+        name "Slashed Zero";
         # Apple, roman, unspecified
-        name 1 "Slashed Zero in Sans";
+        name 1 "Slashed Zero";
     };
+    #sub @sansZero by @slshZero;
     sub @dfltZero by @slshZero;
+    #sub @dfltZero by @sansZero;
 } ss20;

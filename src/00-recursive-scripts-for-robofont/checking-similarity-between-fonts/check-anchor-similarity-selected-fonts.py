@@ -47,7 +47,7 @@ for fontName in fonts:
 print("")
 
 print("Anchors found:")
-for anchor in sorted(anchors.keys()):
+for anchor in anchors.keys():
     print("• ", anchor)
 print("")
 
@@ -66,7 +66,7 @@ for anchor in anchors:
 for glyphName in sorted(problemGlyphs):
     print("--------------------------------------------------------------")
     print(f"{glyphName}\n")
-    for anchor in sorted(anchors.keys()):
+    for anchor in anchors.keys():
         if glyphName in anchors[anchor]:
             if len(anchors[anchor][glyphName]) < len(fonts):
                 print(f"\t /{glyphName} has '{anchor}' in:")

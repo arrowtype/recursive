@@ -21,10 +21,10 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 
 # apostrophemod = commaaboverightcomb | 02BC
 txt = '''\
-? DZ = DZcaron | 01F1
-? Dz = Dzcaron | 01F2
-? dz = dzcaron | 01F3
-? dz.italic = dzcaron.italic
+zerosuperior.slash = zerosuperior
+zeroinferior.slash = zeroinferior
+zeroinferiorslash.afrc = zerosuperior.afrc
+zerosuperiorslash.afrc = zeroinferior.afrc
 '''
 
 # recipeFile = "/Users/stephennixon/type-repos/recursive/src/00-recursive-scripts-for-robofont/diacritics-and-glyph_construction-recipes/diacritic-recipes-for-recursive-generated-with_alts.txt"
