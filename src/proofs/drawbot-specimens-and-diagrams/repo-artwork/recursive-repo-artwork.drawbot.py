@@ -14,6 +14,8 @@ exportFormat = "png" # pdf, gif, mp4, jpeg, png, or bmp
 # W,H = 1800, 900 # pixels
 W,H = 1200, 630 # pixels - opengraph image
 
+mainColor = (0, 0.25, 1)
+
 now = datetime.datetime.now().strftime("%Y_%m_%d-%H_%M")
 timestamp = datetime.datetime.now().strftime("%Y-%m-%d, %H:%M")
 parentDir = "/Users/stephennixon/type-repos/recursive/src/proofs/drawbot-specimens-and-diagrams/repo-artwork"
@@ -36,14 +38,15 @@ newPage(W,H)
 
 
 # fill(*hex2rgb("#0050FF"))
-fill(0)
+fill(*mainColor)
+# fill(0)
 rect(0,0,W,H)
 
 # Draw Rs
 font(fontFam)
-fill(1,1,1,0)
+fill(1,1,1,0.0325)
 
-strokeWidth(W * .0025) # for larger images: 0.00015
+strokeWidth(W * .0005) # for larger images: 0.00015
 
 
 sizeOfFont = H*1.2
@@ -83,7 +86,7 @@ for i in range(numOfRs):
 
     # fill(1, 1, 1, getCurrentOpacity(t)[0])
     # stroke(1,1, 1, getCurrentOpacity(t)[1])
-    stroke(getCurrentOpacity(t,0.6)[1], getCurrentOpacity(t,0.6)[1], 1, getCurrentOpacity(t,0.5)[1])
+    stroke(getCurrentOpacity(t,1)[1], getCurrentOpacity(t,1)[1], 1, getCurrentOpacity(t,0.75)[1])
 
     text(backgroundLetter, (((W - sizeOfFont*0.6)/numOfRs)*i - (sizeOfFont*0.02), H*0.075))
 
@@ -91,7 +94,7 @@ for i in range(numOfRs):
 # ------------------------------------------------
 # add text ---------------------------------------
 
-line1 = "Recursive"
+line1 = "recursive"
 line2 = "sans*mono"
 
 fontSizing = (W/len(line1)*1.666666667) * 0.95
@@ -103,7 +106,8 @@ miterLimit(3)
 def writeText(fillColor, strokeThickness):
     fill(fillColor)
     # stroke(*hex2rgb("#0050FF"))
-    stroke(0)
+    # stroke(*hex2rgb("#0050FF"))
+    stroke(*mainColor)
     strokeWidth(strokeThickness)
     fontVariations(wght=850, CASL=0.999, slnt=-14.99, MONO=0.999)
     text(line1, (W/2, H/2+fontSizing*0.05), align="center")
@@ -116,16 +120,17 @@ writeText(1, 0)
 # ------------------------------------------------
 # add logo ---------------------------------------
 
-if W >= 1400:
+if W >= 1000:
     logoText = "@ArrowType"
     # logoText = "@"
 
-    fontSizing = (W/len(logoText)*1.666666667) * 0.1
+    fontSizing = (W/len(logoText)*1.666666667) * 0.1 *1.25
     # fontSizing = (W/10*1.666666667) * 0.1
     fontSize(fontSizing)
-    tracking(1)
-    fontVariations(wght=900.999, CASL=0.001, slnt=0, MONO=0.999)
+    fontVariations(wght=800.999, CASL=0.999, slnt=0, MONO=0.999)
     # fontVariations(wght=300.999, CASL=0.001, MONO=0.001)
+
+    fill(*mainColor)
     text(logoText, (W*0.5, H*0.1), align='center')
 
 # ------------------------------------------------
