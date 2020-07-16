@@ -14,7 +14,7 @@
     {
       "label": "Run Current Python File",
       "type": "shell",
-      "command": "/Users/stephennixon/type-repos/recursive/venv/bin/python",
+      "command": "python3",
       "args": ["${file}"],
     }
   ]
