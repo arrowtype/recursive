@@ -6,7 +6,7 @@
 
 # Recursive Sans & Mono
 
-![Recursive Sans & Mono Repo Artwork](specimens/00-arrowtype-recursive-designspace-cubes.png)
+![Recursive Sans & Mono Repo Artwork](specimens/repo-artwork/recursive-repo-artwork.png)
 
 Recursive Sans & Mono is a variable type family built for better code & UI. It is inspired by casual script signpainting, but designed primarily to meet the needs of programming environments and application interfaces.
 
