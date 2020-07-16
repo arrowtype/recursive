@@ -12,7 +12,8 @@ autoOpen = True
 exportFormat = "png" # pdf, gif, mp4, jpeg, png, or bmp
 # W,H = 1280, 640 # pixels
 # W,H = 1800, 900 # pixels
-W,H = 1200, 630 # pixels - opengraph image
+W,H = 1280, 640 # pixels - opengraph image
+# W,H = 1600, 640 # pixels - github repo artwork
 
 mainColor = (0, 0.25, 1)
 
@@ -44,7 +45,8 @@ rect(0,0,W,H)
 
 # Draw Rs
 font(fontFam)
-fill(1,1,1,0.0325)
+fill(1,1,1,0.015)
+# fill(1,1,1,0)
 
 strokeWidth(W * .0005) # for larger images: 0.00015
 
@@ -87,6 +89,7 @@ for i in range(numOfRs):
     # fill(1, 1, 1, getCurrentOpacity(t)[0])
     # stroke(1,1, 1, getCurrentOpacity(t)[1])
     stroke(getCurrentOpacity(t,1)[1], getCurrentOpacity(t,1)[1], 1, getCurrentOpacity(t,0.75)[1])
+    # stroke(getCurrentOpacity(t,0)[1], getCurrentOpacity(t,0)[1], 0, getCurrentOpacity(t,0.75)[1])
 
     text(backgroundLetter, (((W - sizeOfFont*0.6)/numOfRs)*i - (sizeOfFont*0.02), H*0.075))
 
@@ -111,27 +114,52 @@ def writeText(fillColor, strokeThickness):
     strokeWidth(strokeThickness)
     fontVariations(wght=850, CASL=0.999, slnt=-14.99, MONO=0.999)
     text(line1, (W/2, H/2+fontSizing*0.05), align="center")
+
     fontVariations(wght=350.001, CASL=0.001, slnt=0, MONO=0.999)
     text(line2, (W/2, H/2-fontSizing*0.7), align="center")
 
-writeText(1, W*0.008)
-writeText(1, 0)
+# write with outline
+writeText(1, W*0.006)
+
+# write again to overlap without outline
+with savedState():
+    translate(0, 0)
+    writeText(1, 0)
+
+strokeWidth(0)
 
 # ------------------------------------------------
 # add logo ---------------------------------------
 
-if W >= 1000:
+fill(1)
+
+if W >= 1400:
     logoText = "@ArrowType"
     # logoText = "@"
 
-    fontSizing = (W/len(logoText)*1.666666667) * 0.1 *1.25
+    fontSizing = (W/len(logoText)*1.666666667) * 0.1 #*1.25
     # fontSizing = (W/10*1.666666667) * 0.1
     fontSize(fontSizing)
     fontVariations(wght=800.999, CASL=0.999, slnt=0, MONO=0.999)
     # fontVariations(wght=300.999, CASL=0.001, MONO=0.001)
 
-    fill(*mainColor)
+    # fill(*mainColor)
     text(logoText, (W*0.5, H*0.1), align='center')
+    
+else:
+    fill(1,1,1,0.75)
+    logoText = "@"
+    fontSizing = (W/len(logoText)*1.666666667) * 0.05
+    fontSize(fontSizing)
+    fontVariations(wght=800, CASL=0.999, slnt=0, MONO=0.001)
+
+    # stroke(1)
+    # rect(W*0.05, H*0.1, W*0.9, H*0.1)
+
+    # paddingUnit = W*0.035
+    paddingUnit = -W*0.005
+
+    textBox(logoText, (paddingUnit, paddingUnit*2.5, W-(paddingUnit*2), fontSizing*1.25), align='right')
 
 # ------------------------------------------------
 # save result ------------------------------------

@@ -6,9 +6,9 @@
 
 # Recursive Sans & Mono
 
-![Recursive Sans & Mono Repo Artwork](specimens/recursive-repo-artwork.png)
+![Recursive Sans & Mono Repo Artwork](specimens/00-arrowtype-recursive-designspace-cubes.png)
 
-Recursive Mono & Sans is a variable type family built for better code & UI. It is inspired by casual script signpainting, but designed primarily to meet the needs of programming environments and application interfaces.
+Recursive Sans & Mono is a variable type family built for better code & UI. It is inspired by casual script signpainting, but designed primarily to meet the needs of programming environments and application interfaces.
 
 In programming, “recursion” is when a function calls itself, using its own output as an input to yield powerful results. Recursive Mono was used as a tool to help build itself: it was used to write Python scripts to automate type production work and to generate specimen images, and it was used in HTML, CSS, and JS to create web-based proofs & prototypes. Through this active usage, Recursive Mono was crafted to be both fun to look at as well as deeply useful for all-day work.
 
@@ -270,11 +270,12 @@ Now, you can run the Recursive project scripts directly from the Scripts menu, o
 
 The Recursive project is licensed under the [SIL Open Font License v1.1](OFL.txt).  This is a free software license that permits you to use the font software under a set of conditions.  Please refer to the full text of the license for details about the permissions, conditions, and disclaimers.
 
-## Collaborators 
+## Contributors 
 
-- Stephen Nixon
-- Lisa Huang
-- Katja Schimmel
-- Rafał Buchner
+- Design by Stephen Nixon, with
+  - Lisa Huang
+  - Katja Schimmel
+  - Rafał Buchner
+- Font Mastering with Ben Kiel
 
 + Many other advisors and reviewers
