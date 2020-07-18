@@ -31,7 +31,7 @@ fontPath = sys.argv[1]
 
 inputdata = [
     ["", "MONO=1"],
-    ["", "wght=500"],
+    ["", "wght=500", "wght=300:800"],
     ["","slnt=-7.5"],
     ["", "CASL=1"],
     # ["", "CRSV=1"]
