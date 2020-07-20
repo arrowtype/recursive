@@ -3,7 +3,7 @@
 # HOW TO USE: 
 # remove-kerning-groups-ufos.sh <family dir>
 #
-# src/build-scripts/remove-kerning-groups-ufos.sh src/masters/sans/recursive-varfontprep-2019_08_12-01_24_58
+# src/build-scripts/remove-kerning-groups-ufos.sh src/ufo/sans/recursive-varfontprep-2019_08_12-01_24_58
 
 set -e
 source venv/bin/activate

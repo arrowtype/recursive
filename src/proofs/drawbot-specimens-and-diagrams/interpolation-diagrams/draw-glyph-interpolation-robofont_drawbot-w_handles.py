@@ -20,8 +20,8 @@ W, H = 1000 * scaling,1000 * scaling
 
 
 glyphName = "endash"
-startFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual B.ufo"
-endFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear B.ufo"
+startFont = "/Users/stephennixon/type-repos/recursive/src/ufo/mono/Recursive Mono-Casual B.ufo"
+endFont = "/Users/stephennixon/type-repos/recursive/src/ufo/mono/Recursive Mono-Linear B.ufo"
 
 f1 = OpenFont(startFont, showInterface=False)
 f2 = OpenFont(endFont, showInterface=False)

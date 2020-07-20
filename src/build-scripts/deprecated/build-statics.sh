@@ -9,7 +9,7 @@ fontFormat=$2
 
 if [[ -z "$DS" || $DS = "--help" || -z "$fontFormat" ]] ; then
     echo '\tAdd relative path to a designspace file, such as:'
-    echo '\tsrc/build-scripts/build.sh src/masters/mono/FONTNAME.designspace'
+    echo '\tsrc/build-scripts/build.sh src/ufo/mono/FONTNAME.designspace'
     echo '\n\tAdd argument -o for static OTF files or -t for static TTF files'
     exit 2
 fi

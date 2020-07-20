@@ -7,8 +7,8 @@
 
 	USAGE:
 
-	python <path>/set-font-legal-info.py src/masters/mono <--save>
-	python <path>/set-font-legal-info.py src/masters/sans <--save>
+	python <path>/set-font-legal-info.py src/ufo/mono <--save>
+	python <path>/set-font-legal-info.py src/ufo/sans <--save>
 '''
 
 import sys

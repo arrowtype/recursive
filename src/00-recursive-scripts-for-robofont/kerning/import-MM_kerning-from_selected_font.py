@@ -9,20 +9,20 @@ print(copyFrom)
 print(importTo)
 
 ## use if you wish to just make this a one-button copy (update as needed)
-# copyFrom = "/Users/stephennixon/type-repos/recursive/src/masters/sans/Recursive Sans-Casual B.ufo"
+# copyFrom = "/Users/stephennixon/type-repos/recursive/src/ufo/sans/Recursive Sans-Casual B.ufo"
 # importTo = (
-#     "/Users/stephennixon/type-repos/recursive/src/masters/sans/Recursive Sans-Casual A Slanted.ufo",
-#     "/Users/stephennixon/type-repos/recursive/src/masters/sans/Recursive Sans-Casual A.ufo",
-#     "/Users/stephennixon/type-repos/recursive/src/masters/sans/Recursive Sans-Casual B Slanted.ufo",
-#     "/Users/stephennixon/type-repos/recursive/src/masters/sans/Recursive Sans-Casual B.ufo",
-#     "/Users/stephennixon/type-repos/recursive/src/masters/sans/Recursive Sans-Casual C Slanted.ufo",
-#     "/Users/stephennixon/type-repos/recursive/src/masters/sans/Recursive Sans-Casual C.ufo",
-#     "/Users/stephennixon/type-repos/recursive/src/masters/sans/Recursive Sans-Linear A Slanted.ufo",
-#     "/Users/stephennixon/type-repos/recursive/src/masters/sans/Recursive Sans-Linear A.ufo",
-#     "/Users/stephennixon/type-repos/recursive/src/masters/sans/Recursive Sans-Linear B Slanted.ufo",
-#     "/Users/stephennixon/type-repos/recursive/src/masters/sans/Recursive Sans-Linear B.ufo",
-#     "/Users/stephennixon/type-repos/recursive/src/masters/sans/Recursive Sans-Linear C Slanted.ufo",
-#     "/Users/stephennixon/type-repos/recursive/src/masters/sans/Recursive Sans-Linear C.ufo"
+#     "/Users/stephennixon/type-repos/recursive/src/ufo/sans/Recursive Sans-Casual A Slanted.ufo",
+#     "/Users/stephennixon/type-repos/recursive/src/ufo/sans/Recursive Sans-Casual A.ufo",
+#     "/Users/stephennixon/type-repos/recursive/src/ufo/sans/Recursive Sans-Casual B Slanted.ufo",
+#     "/Users/stephennixon/type-repos/recursive/src/ufo/sans/Recursive Sans-Casual B.ufo",
+#     "/Users/stephennixon/type-repos/recursive/src/ufo/sans/Recursive Sans-Casual C Slanted.ufo",
+#     "/Users/stephennixon/type-repos/recursive/src/ufo/sans/Recursive Sans-Casual C.ufo",
+#     "/Users/stephennixon/type-repos/recursive/src/ufo/sans/Recursive Sans-Linear A Slanted.ufo",
+#     "/Users/stephennixon/type-repos/recursive/src/ufo/sans/Recursive Sans-Linear A.ufo",
+#     "/Users/stephennixon/type-repos/recursive/src/ufo/sans/Recursive Sans-Linear B Slanted.ufo",
+#     "/Users/stephennixon/type-repos/recursive/src/ufo/sans/Recursive Sans-Linear B.ufo",
+#     "/Users/stephennixon/type-repos/recursive/src/ufo/sans/Recursive Sans-Linear C Slanted.ufo",
+#     "/Users/stephennixon/type-repos/recursive/src/ufo/sans/Recursive Sans-Linear C.ufo"
 # )
 
 ## uncomment if you wish to see output window

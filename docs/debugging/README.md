@@ -10,7 +10,7 @@ So, the problem probably came either from a merge issue or from ... some kind of
 
 ## Finding the source of the bug
 
-I added some `print()` statements into varfontprep to discover which glyph was crashing the process. It seems that it was `src/masters/sans/Recursive Sans-Casual C Slanted.ufo/glyphs/zerosuperior.dotted.glif`. So, I made a new, specific UFO to test just this glyph.
+I added some `print()` statements into varfontprep to discover which glyph was crashing the process. It seems that it was `src/ufo/sans/Recursive Sans-Casual C Slanted.ufo/glyphs/zerosuperior.dotted.glif`. So, I made a new, specific UFO to test just this glyph.
 
 I copied the XML code from this file into a glif file of the new UFO, then played around to find the issue. It seems that mostly, it was the following:
 
@@ -35,13 +35,13 @@ git checkout -b "fixing-curves-zerosuperior_dotted"
 I ran git log:
 
 ```
-git log -- "src/masters/sans/Recursive Sans-Casual C Slanted.ufo/glyphs/zerosuperior.dotted.glif"
+git log -- "src/ufo/sans/Recursive Sans-Casual C Slanted.ufo/glyphs/zerosuperior.dotted.glif"
 ```
 
 ...and then copied the hash for Lisa's last commit on this file:
 
 ```
-git checkout 3fda3d2dd8 -- "src/masters/sans/Recursive Sans-Casual C Slanted.ufo/glyphs/zerosuperior.dotted.glif"
+git checkout 3fda3d2dd8 -- "src/ufo/sans/Recursive Sans-Casual C Slanted.ufo/glyphs/zerosuperior.dotted.glif"
 ```
 
 And sure enough, it opens into RoboFont with no problem.
@@ -49,7 +49,7 @@ And sure enough, it opens into RoboFont with no problem.
 Merging these fixes back into master, I see the issue:
 
 ```
-src/masters/sans/Recursive Sans-Casual C Slanted.ufo/glyphs/zerosuperior.dotted.glif | 20 --------------------
+src/ufo/sans/Recursive Sans-Casual C Slanted.ufo/glyphs/zerosuperior.dotted.glif | 20 --------------------
 ```
 
 Basically, 20 extra lines had made their way into the glyph.
@@ -87,7 +87,7 @@ Date:   Sat Dec 14 18:06:19 2019 -0500
 This took some experimentation, but I found that the following format could work:
 
 ```
-git diff 3fda3d2dd..a0f5f7445 -- 'src/masters/sans/*zerosuperior.dotted.glif'
+git diff 3fda3d2dd..a0f5f7445 -- 'src/ufo/sans/*zerosuperior.dotted.glif'
 ```
 
 This was `git diff` then `<commit before merge>..<commit after merge>` then `-- '<path with wildcards, in quotes>'`.
@@ -109,34 +109,34 @@ I could then run `grep` to see which files had merge conflict syntax:
 
 ```
 ▶ grep -R "<<<<<<< HEAD" *
-src/masters/sans/Recursive Sans-Linear B Slanted.ufo/lib.plist:<<<<<<< HEAD
-src/masters/sans/Recursive Sans-Linear A Slanted.ufo/lib.plist:<<<<<<< HEAD
-src/masters/sans/Recursive Sans-Casual C.ufo/lib.plist:<<<<<<< HEAD
-src/masters/sans/Recursive Sans-Casual B.ufo/lib.plist:<<<<<<< HEAD
-src/masters/sans/Recursive Sans-Casual A.ufo/lib.plist:<<<<<<< HEAD
-src/masters/sans/Recursive Sans-Casual C Slanted.ufo/glyphs/zerosuperior.dotted.glif:<<<<<<< HEAD
-src/masters/sans/Recursive Sans-Casual C Slanted.ufo/lib.plist:<<<<<<< HEAD
-src/masters/sans/Recursive Sans-Linear C Slanted.ufo/lib.plist:<<<<<<< HEAD
-src/masters/sans/Recursive Sans-Casual A Slanted.ufo/lib.plist:<<<<<<< HEAD
-src/masters/sans/Recursive Sans-Casual B Slanted.ufo/lib.plist:<<<<<<< HEAD
-src/masters/sans/Recursive Sans-Linear A.ufo/lib.plist:<<<<<<< HEAD
-src/masters/sans/Recursive Sans-Linear C.ufo/lib.plist:<<<<<<< HEAD
-src/masters/sans/Recursive Sans-Linear B.ufo/lib.plist:<<<<<<< HEAD
-src/masters/mono/Recursive Mono-Casual A.ufo/lib.plist:<<<<<<< HEAD
-src/masters/mono/Recursive Mono-Casual B.ufo/lib.plist:<<<<<<< HEAD
-src/masters/mono/Recursive Mono-Casual A Slanted.ufo/lib.plist:<<<<<<< HEAD
-src/masters/mono/Recursive Mono-Casual C.ufo/lib.plist:<<<<<<< HEAD
-src/masters/mono/Recursive Mono-Linear C Slanted.ufo/lib.plist:<<<<<<< HEAD
-src/masters/mono/Recursive Mono-Casual B Slanted.ufo/lib.plist:<<<<<<< HEAD
-src/masters/mono/Recursive Mono-Linear B Slanted.ufo/lib.plist:<<<<<<< HEAD
-src/masters/mono/Recursive Mono-Linear B.ufo/lib.plist:<<<<<<< HEAD
-src/masters/mono/Recursive Mono-Linear C.ufo/lib.plist:<<<<<<< HEAD
-src/masters/mono/Recursive Mono-Linear A.ufo/lib.plist:<<<<<<< HEAD
-src/masters/mono/Recursive Mono-Casual C Slanted.ufo/lib.plist:<<<<<<< HEAD
-src/masters/mono/Recursive Mono-Linear A Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/sans/Recursive Sans-Linear B Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/sans/Recursive Sans-Linear A Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/sans/Recursive Sans-Casual C.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/sans/Recursive Sans-Casual B.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/sans/Recursive Sans-Casual A.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/sans/Recursive Sans-Casual C Slanted.ufo/glyphs/zerosuperior.dotted.glif:<<<<<<< HEAD
+src/ufo/sans/Recursive Sans-Casual C Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/sans/Recursive Sans-Linear C Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/sans/Recursive Sans-Casual A Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/sans/Recursive Sans-Casual B Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/sans/Recursive Sans-Linear A.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/sans/Recursive Sans-Linear C.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/sans/Recursive Sans-Linear B.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/mono/Recursive Mono-Casual A.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/mono/Recursive Mono-Casual B.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/mono/Recursive Mono-Casual A Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/mono/Recursive Mono-Casual C.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/mono/Recursive Mono-Linear C Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/mono/Recursive Mono-Casual B Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/mono/Recursive Mono-Linear B Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/mono/Recursive Mono-Linear B.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/mono/Recursive Mono-Linear C.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/mono/Recursive Mono-Linear A.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/mono/Recursive Mono-Casual C Slanted.ufo/lib.plist:<<<<<<< HEAD
+src/ufo/mono/Recursive Mono-Linear A Slanted.ufo/lib.plist:<<<<<<< HEAD
 ```
 
-And, this confirms that `src/masters/sans/Recursive Sans-Casual C Slanted.ufo/glyphs/zerosuperior.dotted.glif` was the only glyph with a conflict!
+And, this confirms that `src/ufo/sans/Recursive Sans-Casual C Slanted.ufo/glyphs/zerosuperior.dotted.glif` was the only glyph with a conflict!
 
 Good to know.
 

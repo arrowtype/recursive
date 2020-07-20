@@ -5,7 +5,7 @@
 
 	Run of the command line:
 		
-	python src/01-shell-scripts-for-sources/metrics/set-underline_strikethrough-values.py src/masters/mono
+	python src/01-shell-scripts-for-sources/metrics/set-underline_strikethrough-values.py src/ufo/mono
 '''
 
 import sys

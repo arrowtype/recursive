@@ -5,7 +5,7 @@
 
 	USAGE EXAMPLE:
 
-	python src/01-shell-scripts-for-sources/checking-similarity-between-fonts/check-seg-types-for-glyph-selected_fonts.py src/masters/sans f.italic
+	python src/01-shell-scripts-for-sources/checking-similarity-between-fonts/check-seg-types-for-glyph-selected_fonts.py src/ufo/sans f.italic
 """
 
 import sys

@@ -8,7 +8,7 @@ DS=$1
 
 if [[ -z "$DS" || $DS = "--help" ]] ; then
     echo 'Add relative path to a designspace file, such as:'
-    echo 'src/build-scripts/build.sh src/masters/mono/FONTNAME.designspace'
+    echo 'src/build-scripts/build.sh src/ufo/mono/FONTNAME.designspace'
     exit 2
 fi
 

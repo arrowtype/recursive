@@ -12,30 +12,30 @@ outputDir = "exports"
 docTitle = "recursive-beziers"
 fileFormat = "pdf"
 
-# exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual C Slanted.ufo"
+# exampleFont = "/Users/stephennixon/type-repos/recursive/src/ufo/mono/Recursive Mono-Casual C Slanted.ufo"
 # glyphNames = "a.italic".split()
 
-# exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual A.ufo"
+# exampleFont = "/Users/stephennixon/type-repos/recursive/src/ufo/mono/Recursive Mono-Casual A.ufo"
 # glyphNames = "S".split()
 
 # Z --------------------------------------
-#exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear C.ufo"
-#exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual A.ufo"
+#exampleFont = "/Users/stephennixon/type-repos/recursive/src/ufo/mono/Recursive Mono-Linear C.ufo"
+#exampleFont = "/Users/stephennixon/type-repos/recursive/src/ufo/mono/Recursive Mono-Casual A.ufo"
 #glyphNames = "Z".split()
 
 # l.italic --------------------------------------
-#exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual B Slanted.ufo"
-#exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear B Slanted.ufo"
+#exampleFont = "/Users/stephennixon/type-repos/recursive/src/ufo/mono/Recursive Mono-Casual B Slanted.ufo"
+#exampleFont = "/Users/stephennixon/type-repos/recursive/src/ufo/mono/Recursive Mono-Linear B Slanted.ufo"
 #glyphNames = "l.italic".split()
 
 # n --------------------------------------
-exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear B.ufo"
-#exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual B.ufo"
+exampleFont = "/Users/stephennixon/type-repos/recursive/src/ufo/mono/Recursive Mono-Linear B.ufo"
+#exampleFont = "/Users/stephennixon/type-repos/recursive/src/ufo/mono/Recursive Mono-Casual B.ufo"
 glyphNames = "n".split()
 
 # g --------------------------------------
-#exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear B.ufo"
-#exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual A.ufo"
+#exampleFont = "/Users/stephennixon/type-repos/recursive/src/ufo/mono/Recursive Mono-Linear B.ufo"
+#exampleFont = "/Users/stephennixon/type-repos/recursive/src/ufo/mono/Recursive Mono-Casual A.ufo"
 #glyphNames = "g".split()
 
 f = OpenFont(exampleFont, showInterface=False)
