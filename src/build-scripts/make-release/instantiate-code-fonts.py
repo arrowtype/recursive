@@ -298,7 +298,7 @@ def splitFont(
             dlig2calt(outputPath, inplace=True)
 
         # -----------------------------------------------------------
-        # make TTC (truetype collection) of fonts – doesn't current work on Mac very well :(
+        # make TTC (truetype collection) of fonts – doesn't currently work on Mac very well :(
 
         if ttc:
             # make list of fonts in subdir
