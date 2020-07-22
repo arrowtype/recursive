@@ -38,21 +38,13 @@ lookup numbersign_numbersign_numbersign_numbersign {
     sub numbersign' numbersign numbersign numbersign by LIG;
 } numbersign_numbersign_numbersign_numbersign;
     
-lookup equal_equal_equal {
-    ignore sub equal equal' equal' equal';
-    ignore sub equal' equal' equal' equal;
-    sub LIG LIG equal' by equal_equal_equal.code;
-    sub LIG equal' equal by LIG;
-    sub equal' equal equal by LIG;
-} equal_equal_equal;
-    
-lookup asterisk_asterisk_asterisk {
-    ignore sub asterisk asterisk' asterisk' asterisk';
-    ignore sub asterisk' asterisk' asterisk' asterisk;
-    sub LIG LIG asterisk' by asterisk_asterisk_asterisk.code;
-    sub LIG asterisk' asterisk by LIG;
-    sub asterisk' asterisk asterisk by LIG;
-} asterisk_asterisk_asterisk;
+lookup numbersign_numbersign_numbersign {
+    ignore sub numbersign numbersign' numbersign' numbersign';
+    ignore sub numbersign' numbersign' numbersign' numbersign;
+    sub LIG LIG numbersign' by numbersign_numbersign_numbersign.code;
+    sub LIG numbersign' numbersign by LIG;
+    sub numbersign' numbersign numbersign by LIG;
+} numbersign_numbersign_numbersign;
     
 lookup hyphen_hyphen_greater {
     ignore sub hyphen hyphen' hyphen' greater';
@@ -62,69 +54,13 @@ lookup hyphen_hyphen_greater {
     sub hyphen' hyphen greater by LIG;
 } hyphen_hyphen_greater;
     
-lookup equal_slash_equal {
-    ignore sub equal equal' slash' equal';
-    ignore sub equal' slash' equal' equal;
-    sub LIG LIG equal' by equal_slash_equal.code;
-    sub LIG slash' equal by LIG;
-    sub equal' slash equal by LIG;
-} equal_slash_equal;
-    
-lookup less_less_less {
-    ignore sub less less' less' less';
-    ignore sub less' less' less' less;
-    sub LIG LIG less' by less_less_less.code;
-    sub LIG less' less by LIG;
-    sub less' less less by LIG;
-} less_less_less;
-    
-lookup exclam_equal_equal {
-    ignore sub exclam exclam' equal' equal';
-    ignore sub exclam' equal' equal' equal;
-    sub LIG LIG equal' by exclam_equal_equal.code;
-    sub LIG equal' equal by LIG;
-    sub exclam' equal equal by LIG;
-} exclam_equal_equal;
-    
-lookup plus_plus_plus {
-    ignore sub plus plus' plus' plus';
-    ignore sub plus' plus' plus' plus;
-    sub LIG LIG plus' by plus_plus_plus.code;
-    sub LIG plus' plus by LIG;
-    sub plus' plus plus by LIG;
-} plus_plus_plus;
-    
-lookup ampersand_ampersand_ampersand {
-    ignore sub ampersand ampersand' ampersand' ampersand';
-    ignore sub ampersand' ampersand' ampersand' ampersand;
-    sub LIG LIG ampersand' by ampersand_ampersand_ampersand.code;
-    sub LIG ampersand' ampersand by LIG;
-    sub ampersand' ampersand ampersand by LIG;
-} ampersand_ampersand_ampersand;
-    
-lookup bar_bar_bar {
-    ignore sub bar bar' bar' bar';
-    ignore sub bar' bar' bar' bar;
-    sub LIG LIG bar' by bar_bar_bar.code;
-    sub LIG bar' bar by LIG;
-    sub bar' bar bar by LIG;
-} bar_bar_bar;
-    
-lookup colon_slash_slash {
-    ignore sub colon colon' slash' slash';
-    ignore sub colon' slash' slash' slash;
-    sub LIG LIG slash' by colon_slash_slash.code;
-    sub LIG slash' slash by LIG;
-    sub colon' slash slash by LIG;
-} colon_slash_slash;
-    
-lookup grave_grave_grave {
-    ignore sub grave grave' grave' grave';
-    ignore sub grave' grave' grave' grave;
-    sub LIG LIG grave' by grave_grave_grave.code;
-    sub LIG grave' grave by LIG;
-    sub grave' grave grave by LIG;
-} grave_grave_grave;
+lookup asterisk_asterisk_asterisk {
+    ignore sub asterisk asterisk' asterisk' asterisk';
+    ignore sub asterisk' asterisk' asterisk' asterisk;
+    sub LIG LIG asterisk' by asterisk_asterisk_asterisk.code;
+    sub LIG asterisk' asterisk by LIG;
+    sub asterisk' asterisk asterisk by LIG;
+} asterisk_asterisk_asterisk;
     
 lookup greater_greater_greater {
     ignore sub greater greater' greater' greater';
@@ -133,22 +69,6 @@ lookup greater_greater_greater {
     sub LIG greater' greater by LIG;
     sub greater' greater greater by LIG;
 } greater_greater_greater;
-    
-lookup numbersign_numbersign_numbersign {
-    ignore sub numbersign numbersign' numbersign' numbersign';
-    ignore sub numbersign' numbersign' numbersign' numbersign;
-    sub LIG LIG numbersign' by numbersign_numbersign_numbersign.code;
-    sub LIG numbersign' numbersign by LIG;
-    sub numbersign' numbersign numbersign by LIG;
-} numbersign_numbersign_numbersign;
-    
-lookup quotesingle_quotesingle_quotesingle {
-    ignore sub quotesingle quotesingle' quotesingle' quotesingle';
-    ignore sub quotesingle' quotesingle' quotesingle' quotesingle;
-    sub LIG LIG quotesingle' by quotesingle_quotesingle_quotesingle.code;
-    sub LIG quotesingle' quotesingle by LIG;
-    sub quotesingle' quotesingle quotesingle by LIG;
-} quotesingle_quotesingle_quotesingle;
     
 lookup hyphen_hyphen_hyphen {
     ignore sub hyphen hyphen' hyphen' hyphen';
@@ -174,47 +94,99 @@ lookup quotedbl_quotedbl_quotedbl {
     sub quotedbl' quotedbl quotedbl by LIG;
 } quotedbl_quotedbl_quotedbl;
     
-lookup greater_greater {
-    ignore sub greater greater' greater';
-    ignore sub greater' greater' greater;
-    sub LIG greater' by greater_greater.code;
-    sub greater' greater by LIG;
-} greater_greater;
+lookup bar_bar_bar {
+    ignore sub bar bar' bar' bar';
+    ignore sub bar' bar' bar' bar;
+    sub LIG LIG bar' by bar_bar_bar.code;
+    sub LIG bar' bar by LIG;
+    sub bar' bar bar by LIG;
+} bar_bar_bar;
     
-lookup less_less {
-    ignore sub less less' less';
-    ignore sub less' less' less;
-    sub LIG less' by less_less.code;
-    sub less' less by LIG;
-} less_less;
+lookup quotesingle_quotesingle_quotesingle {
+    ignore sub quotesingle quotesingle' quotesingle' quotesingle';
+    ignore sub quotesingle' quotesingle' quotesingle' quotesingle;
+    sub LIG LIG quotesingle' by quotesingle_quotesingle_quotesingle.code;
+    sub LIG quotesingle' quotesingle by LIG;
+    sub quotesingle' quotesingle quotesingle by LIG;
+} quotesingle_quotesingle_quotesingle;
     
-lookup exclam_exclam {
-    ignore sub exclam exclam' exclam';
-    ignore sub exclam' exclam' exclam;
-    sub LIG exclam' by exclam_exclam.code;
-    sub exclam' exclam by LIG;
-} exclam_exclam;
+lookup equal_slash_equal {
+    ignore sub equal equal' slash' equal';
+    ignore sub equal' slash' equal' equal;
+    sub LIG LIG equal' by equal_slash_equal.code;
+    sub LIG slash' equal by LIG;
+    sub equal' slash equal by LIG;
+} equal_slash_equal;
     
-lookup plus_equal {
-    ignore sub plus plus' equal';
-    ignore sub plus' equal' equal;
-    sub LIG equal' by plus_equal.code;
-    sub plus' equal by LIG;
-} plus_equal;
+lookup equal_equal_equal {
+    ignore sub equal equal' equal' equal';
+    ignore sub equal' equal' equal' equal;
+    sub LIG LIG equal' by equal_equal_equal.code;
+    sub LIG equal' equal by LIG;
+    sub equal' equal equal by LIG;
+} equal_equal_equal;
     
-lookup less_equal {
-    ignore sub less less' equal';
-    ignore sub less' equal' equal;
-    sub LIG equal' by less_equal.code;
-    sub less' equal by LIG;
-} less_equal;
+lookup less_less_less {
+    ignore sub less less' less' less';
+    ignore sub less' less' less' less;
+    sub LIG LIG less' by less_less_less.code;
+    sub LIG less' less by LIG;
+    sub less' less less by LIG;
+} less_less_less;
     
-lookup backslash_b {
-    ignore sub backslash backslash' b';
-    ignore sub backslash' b' b;
-    sub LIG b' by backslash_b.code;
-    sub backslash' b by LIG;
-} backslash_b;
+lookup plus_plus_plus {
+    ignore sub plus plus' plus' plus';
+    ignore sub plus' plus' plus' plus;
+    sub LIG LIG plus' by plus_plus_plus.code;
+    sub LIG plus' plus by LIG;
+    sub plus' plus plus by LIG;
+} plus_plus_plus;
+    
+lookup ampersand_ampersand_ampersand {
+    ignore sub ampersand ampersand' ampersand' ampersand';
+    ignore sub ampersand' ampersand' ampersand' ampersand;
+    sub LIG LIG ampersand' by ampersand_ampersand_ampersand.code;
+    sub LIG ampersand' ampersand by LIG;
+    sub ampersand' ampersand ampersand by LIG;
+} ampersand_ampersand_ampersand;
+    
+lookup colon_slash_slash {
+    ignore sub colon colon' slash' slash';
+    ignore sub colon' slash' slash' slash;
+    sub LIG LIG slash' by colon_slash_slash.code;
+    sub LIG slash' slash by LIG;
+    sub colon' slash slash by LIG;
+} colon_slash_slash;
+    
+lookup grave_grave_grave {
+    ignore sub grave grave' grave' grave';
+    ignore sub grave' grave' grave' grave;
+    sub LIG LIG grave' by grave_grave_grave.code;
+    sub LIG grave' grave by LIG;
+    sub grave' grave grave by LIG;
+} grave_grave_grave;
+    
+lookup exclam_equal_equal {
+    ignore sub exclam exclam' equal' equal';
+    ignore sub exclam' equal' equal' equal;
+    sub LIG LIG equal' by exclam_equal_equal.code;
+    sub LIG equal' equal by LIG;
+    sub exclam' equal equal by LIG;
+} exclam_equal_equal;
+    
+lookup minus_equal {
+    ignore sub minus minus' equal';
+    ignore sub minus' equal' equal;
+    sub LIG equal' by minus_equal.code;
+    sub minus' equal by LIG;
+} minus_equal;
+    
+lookup slash_equal {
+    ignore sub slash slash' equal';
+    ignore sub slash' equal' equal;
+    sub LIG equal' by slash_equal.code;
+    sub slash' equal by LIG;
+} slash_equal;
     
 lookup equal_greater {
     ignore sub equal equal' greater';
@@ -230,96 +202,12 @@ lookup numbersign_numbersign {
     sub numbersign' numbersign by LIG;
 } numbersign_numbersign;
     
-lookup minus_equal {
-    ignore sub minus minus' equal';
-    ignore sub minus' equal' equal;
-    sub LIG equal' by minus_equal.code;
-    sub minus' equal by LIG;
-} minus_equal;
-    
-lookup bar_bar {
-    ignore sub bar bar' bar';
-    ignore sub bar' bar' bar;
-    sub LIG bar' by bar_bar.code;
-    sub bar' bar by LIG;
-} bar_bar;
-    
-lookup question_colon {
-    ignore sub question question' colon';
-    ignore sub question' colon' colon;
-    sub LIG colon' by question_colon.code;
-    sub question' colon by LIG;
-} question_colon;
-    
-lookup colon_colon {
-    ignore sub colon colon' colon';
-    ignore sub colon' colon' colon;
-    sub LIG colon' by colon_colon.code;
-    sub colon' colon by LIG;
-} colon_colon;
-    
 lookup less_hyphen {
     ignore sub less less' hyphen';
     ignore sub less' hyphen' hyphen;
     sub LIG hyphen' by less_hyphen.code;
     sub less' hyphen by LIG;
 } less_hyphen;
-    
-lookup slash_slash {
-    ignore sub slash slash' slash';
-    ignore sub slash' slash' slash;
-    sub LIG slash' by slash_slash.code;
-    sub slash' slash by LIG;
-} slash_slash;
-    
-lookup underscore_underscore {
-    ignore sub underscore underscore' underscore';
-    ignore sub underscore' underscore' underscore;
-    sub LIG underscore' by underscore_underscore.code;
-    sub underscore' underscore by LIG;
-} underscore_underscore;
-    
-lookup equal_equal {
-    ignore sub equal equal' equal';
-    ignore sub equal' equal' equal;
-    sub LIG equal' by equal_equal.code;
-    sub equal' equal by LIG;
-} equal_equal;
-    
-lookup f_quotesingle {
-    ignore sub f f' quotesingle';
-    ignore sub f' quotesingle' quotesingle;
-    sub LIG quotesingle' by f_quotesingle.code;
-    sub f' quotesingle by LIG;
-} f_quotesingle;
-    
-lookup question_question {
-    ignore sub question question' question';
-    ignore sub question' question' question;
-    sub LIG question' by question_question.code;
-    sub question' question by LIG;
-} question_question;
-    
-lookup slash_asterisk {
-    ignore sub slash slash' asterisk';
-    ignore sub slash' asterisk' asterisk;
-    sub LIG asterisk' by slash_asterisk.code;
-    sub slash' asterisk by LIG;
-} slash_asterisk;
-    
-lookup greater_equal {
-    ignore sub greater greater' equal';
-    ignore sub greater' equal' equal;
-    sub LIG equal' by greater_equal.code;
-    sub greater' equal by LIG;
-} greater_equal;
-    
-lookup hyphen_hyphen {
-    ignore sub hyphen hyphen' hyphen';
-    ignore sub hyphen' hyphen' hyphen;
-    sub LIG hyphen' by hyphen_hyphen.code;
-    sub hyphen' hyphen by LIG;
-} hyphen_hyphen;
     
 lookup backslash_v {
     ignore sub backslash backslash' v';
@@ -328,33 +216,33 @@ lookup backslash_v {
     sub backslash' v by LIG;
 } backslash_v;
     
-lookup backslash_n {
-    ignore sub backslash backslash' n';
-    ignore sub backslash' n' n;
-    sub LIG n' by backslash_n.code;
-    sub backslash' n by LIG;
-} backslash_n;
+lookup less_equal {
+    ignore sub less less' equal';
+    ignore sub less' equal' equal;
+    sub LIG equal' by less_equal.code;
+    sub less' equal by LIG;
+} less_equal;
     
-lookup plus_plus {
-    ignore sub plus plus' plus';
-    ignore sub plus' plus' plus;
-    sub LIG plus' by plus_plus.code;
-    sub plus' plus by LIG;
-} plus_plus;
+lookup greater_equal {
+    ignore sub greater greater' equal';
+    ignore sub greater' equal' equal;
+    sub LIG equal' by greater_equal.code;
+    sub greater' equal by LIG;
+} greater_equal;
     
-lookup dollar_braceleft {
-    ignore sub dollar dollar' braceleft';
-    ignore sub dollar' braceleft' braceleft;
-    sub LIG braceleft' by dollar_braceleft.code;
-    sub dollar' braceleft by LIG;
-} dollar_braceleft;
+lookup greater_hyphen {
+    ignore sub greater greater' hyphen';
+    ignore sub greater' hyphen' hyphen;
+    sub LIG hyphen' by greater_hyphen.code;
+    sub greater' hyphen by LIG;
+} greater_hyphen;
     
-lookup question_period {
-    ignore sub question question' period';
-    ignore sub question' period' period;
-    sub LIG period' by question_period.code;
-    sub question' period by LIG;
-} question_period;
+lookup exclam_exclam {
+    ignore sub exclam exclam' exclam';
+    ignore sub exclam' exclam' exclam;
+    sub LIG exclam' by exclam_exclam.code;
+    sub exclam' exclam by LIG;
+} exclam_exclam;
     
 lookup backslash_t {
     ignore sub backslash backslash' t';
@@ -363,12 +251,54 @@ lookup backslash_t {
     sub backslash' t by LIG;
 } backslash_t;
     
+lookup ampersand_ampersand {
+    ignore sub ampersand ampersand' ampersand';
+    ignore sub ampersand' ampersand' ampersand;
+    sub LIG ampersand' by ampersand_ampersand.code;
+    sub ampersand' ampersand by LIG;
+} ampersand_ampersand;
+    
+lookup slash_asterisk {
+    ignore sub slash slash' asterisk';
+    ignore sub slash' asterisk' asterisk;
+    sub LIG asterisk' by slash_asterisk.code;
+    sub slash' asterisk by LIG;
+} slash_asterisk;
+    
+lookup dollar_braceleft {
+    ignore sub dollar dollar' braceleft';
+    ignore sub dollar' braceleft' braceleft;
+    sub LIG braceleft' by dollar_braceleft.code;
+    sub dollar' braceleft by LIG;
+} dollar_braceleft;
+    
+lookup hyphen_hyphen {
+    ignore sub hyphen hyphen' hyphen';
+    ignore sub hyphen' hyphen' hyphen;
+    sub LIG hyphen' by hyphen_hyphen.code;
+    sub hyphen' hyphen by LIG;
+} hyphen_hyphen;
+    
 lookup asterisk_equal {
     ignore sub asterisk asterisk' equal';
     ignore sub asterisk' equal' equal;
     sub LIG equal' by asterisk_equal.code;
     sub asterisk' equal by LIG;
 } asterisk_equal;
+    
+lookup asterisk_asterisk {
+    ignore sub asterisk asterisk' asterisk';
+    ignore sub asterisk' asterisk' asterisk;
+    sub LIG asterisk' by asterisk_asterisk.code;
+    sub asterisk' asterisk by LIG;
+} asterisk_asterisk;
+    
+lookup question_colon {
+    ignore sub question question' colon';
+    ignore sub question' colon' colon;
+    sub LIG colon' by question_colon.code;
+    sub question' colon by LIG;
+} question_colon;
     
 lookup hyphen_less {
     ignore sub hyphen hyphen' less';
@@ -377,19 +307,12 @@ lookup hyphen_less {
     sub hyphen' less by LIG;
 } hyphen_less;
     
-lookup hyphen_greater {
-    ignore sub hyphen hyphen' greater';
-    ignore sub hyphen' greater' greater;
-    sub LIG greater' by hyphen_greater.code;
-    sub hyphen' greater by LIG;
-} hyphen_greater;
-    
-lookup greater_hyphen {
-    ignore sub greater greater' hyphen';
-    ignore sub greater' hyphen' hyphen;
-    sub LIG hyphen' by greater_hyphen.code;
-    sub greater' hyphen by LIG;
-} greater_hyphen;
+lookup less_less {
+    ignore sub less less' less';
+    ignore sub less' less' less;
+    sub LIG less' by less_less.code;
+    sub less' less by LIG;
+} less_less;
     
 lookup backslash_r {
     ignore sub backslash backslash' r';
@@ -405,19 +328,68 @@ lookup exclam_equal {
     sub exclam' equal by LIG;
 } exclam_equal;
     
-lookup slash_equal {
-    ignore sub slash slash' equal';
-    ignore sub slash' equal' equal;
-    sub LIG equal' by slash_equal.code;
-    sub slash' equal by LIG;
-} slash_equal;
+lookup question_period {
+    ignore sub question question' period';
+    ignore sub question' period' period;
+    sub LIG period' by question_period.code;
+    sub question' period by LIG;
+} question_period;
     
-lookup asterisk_asterisk {
-    ignore sub asterisk asterisk' asterisk';
-    ignore sub asterisk' asterisk' asterisk;
-    sub LIG asterisk' by asterisk_asterisk.code;
-    sub asterisk' asterisk by LIG;
-} asterisk_asterisk;
+lookup bar_bar {
+    ignore sub bar bar' bar';
+    ignore sub bar' bar' bar;
+    sub LIG bar' by bar_bar.code;
+    sub bar' bar by LIG;
+} bar_bar;
+    
+lookup f_quotesingle {
+    ignore sub f f' quotesingle';
+    ignore sub f' quotesingle' quotesingle;
+    sub LIG quotesingle' by f_quotesingle.code;
+    sub f' quotesingle by LIG;
+} f_quotesingle;
+    
+lookup backslash_n {
+    ignore sub backslash backslash' n';
+    ignore sub backslash' n' n;
+    sub LIG n' by backslash_n.code;
+    sub backslash' n by LIG;
+} backslash_n;
+    
+lookup colon_colon {
+    ignore sub colon colon' colon';
+    ignore sub colon' colon' colon;
+    sub LIG colon' by colon_colon.code;
+    sub colon' colon by LIG;
+} colon_colon;
+    
+lookup equal_equal {
+    ignore sub equal equal' equal';
+    ignore sub equal' equal' equal;
+    sub LIG equal' by equal_equal.code;
+    sub equal' equal by LIG;
+} equal_equal;
+    
+lookup plus_equal {
+    ignore sub plus plus' equal';
+    ignore sub plus' equal' equal;
+    sub LIG equal' by plus_equal.code;
+    sub plus' equal by LIG;
+} plus_equal;
+    
+lookup backslash_b {
+    ignore sub backslash backslash' b';
+    ignore sub backslash' b' b;
+    sub LIG b' by backslash_b.code;
+    sub backslash' b by LIG;
+} backslash_b;
+    
+lookup slash_slash {
+    ignore sub slash slash' slash';
+    ignore sub slash' slash' slash;
+    sub LIG slash' by slash_slash.code;
+    sub slash' slash by LIG;
+} slash_slash;
     
 lookup asterisk_slash {
     ignore sub asterisk asterisk' slash';
@@ -426,11 +398,39 @@ lookup asterisk_slash {
     sub asterisk' slash by LIG;
 } asterisk_slash;
     
-lookup ampersand_ampersand {
-    ignore sub ampersand ampersand' ampersand';
-    ignore sub ampersand' ampersand' ampersand;
-    sub LIG ampersand' by ampersand_ampersand.code;
-    sub ampersand' ampersand by LIG;
-} ampersand_ampersand;
+lookup hyphen_greater {
+    ignore sub hyphen hyphen' greater';
+    ignore sub hyphen' greater' greater;
+    sub LIG greater' by hyphen_greater.code;
+    sub hyphen' greater by LIG;
+} hyphen_greater;
+    
+lookup question_question {
+    ignore sub question question' question';
+    ignore sub question' question' question;
+    sub LIG question' by question_question.code;
+    sub question' question by LIG;
+} question_question;
+    
+lookup greater_greater {
+    ignore sub greater greater' greater';
+    ignore sub greater' greater' greater;
+    sub LIG greater' by greater_greater.code;
+    sub greater' greater by LIG;
+} greater_greater;
+    
+lookup underscore_underscore {
+    ignore sub underscore underscore' underscore';
+    ignore sub underscore' underscore' underscore;
+    sub LIG underscore' by underscore_underscore.code;
+    sub underscore' underscore by LIG;
+} underscore_underscore;
+    
+lookup plus_plus {
+    ignore sub plus plus' plus';
+    ignore sub plus' plus' plus;
+    sub LIG plus' by plus_plus.code;
+    sub plus' plus by LIG;
+} plus_plus;
     
 } calt;

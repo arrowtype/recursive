@@ -32,42 +32,19 @@ def makeCaltBlock(ligName):
 lookup {feaName} {{
     ignore sub {firstChar} {ligSequence};
     ignore sub {ligSequence} {lastChar};
-    """
+"""
 
     feaList = feaName.split("_")
     filler = "LIG"
 
-
-    # >>> list = "a_b_c_d".split("_")
-    # >>> for i in range(len(list)):
-    # ...     str = "".join("n " for x in range(len(list)-1-i))
-    # ...     str += list[-(i+1)] + "' "
-    # ...     if i > 0:
-    # ...         str += " ".join(x for x in list[-(i):])
-    # ...     print(str)
-    # ...
-    # n n n d'
-    # n n c' d
-    # n b' c d
-    # a' b c d
-
     # create inner logic
     logic = ""
 
-    for i in range(len(feaList)):
-        if i == 0:
-            logic += "sub "
-        else:
-            logic += "    sub "
-            
-        logic += "".join(f"{filler} " for x in range(len(feaList)-1-i))
-        logic += feaList[-(i+1)] + "' "
-        if i == 0:
-            logic += f"by {ligName};\n"
-        if i > 0:
-            logic += " ".join(x for x in feaList[-(i):])
-            logic += f" by {filler};\n"
-    
+    for i in range(len(feaList) -1, -1, -1):
+        logic += "    sub " + (f"{filler} " * i) + " ".join([feaList[i] + "'"] + feaList[i + 1:])
+
+        logic += f" by {ligName};\n" if i == len(feaList) -1 else f" by {filler};\n"
+
     block += logic
 
     # end block
