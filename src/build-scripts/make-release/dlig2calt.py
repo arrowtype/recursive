@@ -6,70 +6,43 @@
 from babelfont import OpenFont
 from fontTools import ttLib
 from fontTools.feaLib import builder
-from fontTools.pens import basePen
-from fontTools.pens import ttGlyphPen
 from fontTools.pens.recordingPen import DecomposingRecordingPen
+from fontTools.pens.ttGlyphPen import TTGlyphPen
 
-import fire
+import fire # alternative to argparse, used to easily fire the script
 
-# def makeLigGlyph(font):
-#     # copy /space glyph
-#     # rename as "LIG"
+try:
+    import pathops
+except ImportError:
+    sys.exit(
+        "This script requires the skia-pathops module. "
+        "`pip install skia-pathops` and then retry."
+    )
 
+def decomposeAndRemoveOverlap(font, glyphName):
 
+    glyfTable = font["glyf"]
+    glyphSet = font.getGlyphSet()
 
-# TODO: make all glyphs 600 units wide, cropping on left
-    # make dictionary of width units while you do this
-    # advance_sb_pair = 600, 600-prevWidth
+    # record TTGlyph outlines without components
+    dcPen = DecomposingRecordingPen(glyphSet)
+    glyphSet[glyphName].draw(dcPen)
 
-# TODO: update dlig code
+    # replay recording onto a skia-pathops Path
+    path = pathops.Path()
+    pathPen = path.getPen()
+    dcPen.replay(pathPen)
 
-codeLigs = {}
+    # remove overlaps
+    path.simplify()
 
-## attempt to use babelFont; didn’t work: https://github.com/simoncozens/babelfont/issues/6
-# def decomposeCodeLigs(fontPath, inplace=False):
-#     font = OpenFont(fontPath)
-#     for glyph in font:
-#         print(glyph.name, glyph.width)
-#         if glyph.width > 600:
-#             for comp in glyph.components:
-#                 comp.decompose()
-#     # then save
-
-def decomposeGlyph(font, glyphName):
-
-    components = (font['glyf'][glyphName].getComponentNames(font['glyf']))
-
-    ## BASIC IDEA (not yet working)
-    # for component in glyph
-        # record tt points of component base
-        # draw points to glyph
-    
-    glyphset = font.getGlyphSet()
-
-    for comp in components:
-        glyph = glyphset[comp]
-        pen = ttGlyphPen.TTGlyphPen(glyph)
-        help(pen)
-        # font['glyf'][glyphName].drawPoints(pen, font['glyf'])
-        font['glyf'][glyphName].draw(pen, font['glyf'])
+    # create new TTGlyph from Path
+    ttPen = TTGlyphPen(None)
+    path.draw(ttPen)
+    glyfTable[glyphName] = ttPen.glyph()
 
 
-    ## Also tried:
-
-    # glyphset = font.getGlyphSet()
-    # glyph = glyphset[glyphName]
-    # print(glyph)
-    # # pen = basePen.DecomposingPen(glyph)
-    # pen = DecomposingRecordingPen(glyph)
-    # print(pen.value)
-    # ttpen = ttGlyphPen.TTGlyphPen(pen)
-    # glyph.draw(ttpen)
-
-# def decomposeGlyph(font,glyphName):
-#     glyph = font.getGlyphSet()[glyphName]
-#     pen = basePen.DecomposingPen(glyph)
-#     glyph.draw(pen)
+# codeLigs = {} # probably not needed
 
 def dlig2calt(fontPath, inplace=False):
 
@@ -88,10 +61,10 @@ def dlig2calt(fontPath, inplace=False):
     for glyphName in font.getGlyphNames():
         if font['hmtx'][glyphName][0] > 600:
 
-            decomposeGlyph(font, glyphName)
+            decomposeAndRemoveOverlap(font, glyphName)
 
-            # add to dict for later
-            codeLigs[glyphName] = font['hmtx'][glyphName][0]
+            # add to dict for later?
+            # codeLigs[glyphName] = font['hmtx'][glyphName][0]
 
             # set width to space (e.g. 600), then offset left side to be negative
             # lsb = oldLSB - oldWidth
