@@ -16,6 +16,56 @@ try:
 except IndexError:
     print("At least one arg required: path of UFO with code ligature glyphs")
 
+# copied from source at mastering/prep_fonts.py
+abbreviations = {
+    'numbersign_numbersign_numbersign.code': 'num_num_num.code',
+    'quotesingle.code': 'qutsng.code',
+    'hyphen_space_bracketleft_space_bracketright.code': 'hyphen_space_brktleft_space_brktright.code',
+    'hyphen_space_brktleft_space_brktright.code': 'hyphen_space_brktlf_space_brktright.code',
+    'hyphen_space_brktlf_space_brktright.code': 'hyphen_space_brktlf_space_brktrt.code',
+    'hyphen_space_brktlf_space_brktrt.code': 'hyphen_spc_brktlf_spc_brktrt.code',
+    'asterisk_equal.code': 'astr_equal.code',
+    'asterisk_slash.code': 'astr_slash.code',
+    'question_period.code': 'qust_period.code',
+    'bracketright_bracketright.code': 'brktright_brktright.code',
+    'brktright_brktright.code': 'brktrt_brktrt.code',
+    'question_colon.code': 'qust_colon.code',
+    'question_question.code': 'qust_qust.code',
+    'bracketleft_parenleft.code': 'brktleft_parenleft.code',
+    'brktleft_parenleft.code': 'brktlf_parenlf.code',
+    'quotesingle_quotesingle_quotesingle.code': 'qutsng_qutsng_qutsng.code',
+    'quotedbl.code': 'qutdbl.code',
+    'asterisk_asterisk_asterisk.code': 'astr_astr_astr.code',
+    'dollar_braceleft.code': 'dollar_bracelf.code',
+    'bracketright_braceright.code': 'brktright_braceright.code',
+    'brktright_braceright.code': 'brktrt_bracert.code',
+    'braceleft_bracketleft.code': 'braceleft_brktleft.code',
+    'braceleft_brktleft.code': 'bracelf_brktlf.code',
+    'ampersand_ampersand_ampersand.code': 'and_and_and.code',
+    'asterisk.code': 'astr.code',
+    'numbersign.code': 'num.code',
+    'quotedbl_quotedbl_quotedbl.code': 'qutdbl_qutdbl_qutdbl.code',
+    'numbersign_numbersign.code': 'num_num.code',
+    'f_quotesingle.code': 'f_qutsng.code',
+    'braceleft_parenleft.code': 'bracelf_parenlf.code',
+    'slash_asterisk.code': 'slash_astr.code',
+    'parenright_bracketright.code': 'parenright_brktright.code',
+    'parenright_brktright.code': 'parenrt_brktrt.code',
+    'parenright_parenright.code': 'parenrt_parenrt.code',
+    'parenright_braceright.code': 'parenrt_bracert.code',
+    'bracketleft_bracketleft.code': 'brktleft_brktleft.code',
+    'brktleft_brktleft.code': 'brktlf_brktlf.code',
+    'asterisk_asterisk.code': 'astr_astr.code',
+    'numbersign_numbersign_numbersign_numbersign.code': 'num_num_num_num.code',
+    'hyphen_space_bracketleft_x_bracketright.code': 'hyphen_space_brktleft_x_brktright.code',
+    'hyphen_space_brktleft_x_brktright.code': 'hyphen_space_brktlf_x_brktright.code',
+    'hyphen_space_brktlf_x_brktright.code': 'hyphen_space_brktlf_x_brktrt.code',
+    'hyphen_space_brktlf_x_brktrt.code': 'hyphen_spc_brktlf_x_brktrt.code',
+    'parenleft_parenleft.code': 'parenlf_parenlf.code',
+    'ampersand_ampersand.code': 'and_and.code'
+}
+
+
 font = OpenFont(sourceUFO, showInterface=False)
 
 codeLigs = []
@@ -43,7 +93,10 @@ lookup {feaName} {{
     for i in range(len(feaList) -1, -1, -1):
         logic += "    sub " + (f"{filler} " * i) + " ".join([feaList[i] + "'"] + feaList[i + 1:])
 
-        logic += f" by {ligName};\n" if i == len(feaList) -1 else f" by {filler};\n"
+        try:
+            logic += f" by {abbreviations[ligName]};\n" if i == len(feaList) -1 else f" by {filler};\n"
+        except KeyError:
+            logic += f" by {ligName};\n" if i == len(feaList) -1 else f" by {filler};\n"
 
     block += logic
 
