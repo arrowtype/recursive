@@ -3,7 +3,6 @@
     to make code ligatures on by default in Rec Mono for Code.
 """
 
-from babelfont import OpenFont
 from fontTools import ttLib
 from fontTools.feaLib import builder
 from fontTools.pens.recordingPen import DecomposingRecordingPen
@@ -75,8 +74,6 @@ def dlig2calt(fontPath, inplace=False):
 
 
     # add new feature code, using calt rather than dlig
-
-    # builder.addOpenTypeFeatures(font,"src/features/features.fea",tables="GSUB")
     builder.addOpenTypeFeatures(font,"src/features/features/calt-generated--code_fonts_only.fea")
 
 
