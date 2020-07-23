@@ -291,14 +291,14 @@ def splitFont(
             # save font
             instanceFont.save(outputPath)
 
-            # freeze in rvrn features with pyftfeatfreeze
-            pyftfeatfreeze.main(["--features=rvrn", outputPath, outputPath])
+            # freeze in rvrn features with pyftfeatfreeze: serifless 'f', unambiguous 'l', '6', '9'
+            pyftfeatfreeze.main(["--features=rvrn,ss03,ss05,ss09", outputPath, outputPath])
 
             # swap dlig2calt to make code ligatures work in old code editor apps
             dlig2calt(outputPath, inplace=True)
 
         # -----------------------------------------------------------
-        # make TTC (truetype collection) of fonts – doesn't current work on Mac very well :(
+        # make TTC (truetype collection) of fonts – doesn't currently work on Mac very well :(
 
         if ttc:
             # make list of fonts in subdir
