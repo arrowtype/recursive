@@ -20,9 +20,9 @@ saveOutput = True
 outputDir = "exports"
 autoOpen = False
 
-fileFormat = "mp4"  # pdf, gif, or mp4 # if just 1 frame, can also be jpg or png
+fileFormat = "gif"  # pdf, gif, or mp4 # if just 1 frame, can also be jpg or png
 
-frames = 40
+frames = 30
 
 
 def normalRGB(r, g, b):
@@ -42,8 +42,8 @@ timestamp = datetime.now().strftime("%Y_%m_%d")
 # endFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear A.ufo"
 # glyphScale, yShift = 1.5, 0.93 # baseline to x-height
 glyphToAnimate = 'ampersand'  #'x.italic'
-startFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual B.ufo"
-endFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear B.ufo"
+startFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear A.ufo"
+endFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual C Slanted.ufo"
 glyphScale, yShift = 1.25, 0.6  #capHeight
 
 print(startFont)
@@ -52,7 +52,7 @@ print(endFont)
 # settings
 #glyphScale = 0.975 # descender to ascender
 
-W, H = 1600, 1600 # originally 1080
+W, H = 1080, 1080 # originally 1080
 
 captionSize = 16
 
@@ -65,17 +65,18 @@ def hex2rgb(hex):
 
 
 # # Dark theme
-# colors = {
-#     "points": hex2rgb("#FFFFFF"),
-#     "offcurvePoints":  hex2rgb("#ffffff"),
-#     "pointFill": hex2rgb("#0050FF"),         # primary blue
-#     "background": hex2rgb("#0c0c0c"),
-#     "glyphBox": hex2rgb("#000000"), #(0,0,0),
-#     "glyphFill": (*hex2rgb("#FFFFFF"),0.1),
-#     "glyphStroke": hex2rgb("#0050FF"), #B3CAFF
-#     "guides": hex2rgb("#003099"),
-#     "labels": (1,1,1)
-# }
+colors = {
+    "points": hex2rgb("#0050FF"),  # primary blue
+    "offcurvePoints": hex2rgb("#0050FF"),
+    "pointFill": hex2rgb("#0050FF"),         # primary blue
+    "background": hex2rgb("#000000"),
+    "glyphBox": hex2rgb("#000000"), #(0,0,0),
+    "glyphFill": (*hex2rgb("#FFFFFF"),0.9),
+    "glyphStroke": hex2rgb("#0050FF"),
+    "guides": hex2rgb("#003099"),
+    "labels": (1,1,1),
+     "connections": hex2rgb("#0050FF")
+}
 
 # # Light theme
 # colors = {
@@ -93,19 +94,19 @@ def hex2rgb(hex):
 # }
 
 # Blue theme
-colors = {
-    "points": hex2rgb("#0050FF"),  # primary blue
-    "offcurvePoints": hex2rgb("#0050FF"),
-    "pointFill": hex2rgb("#ffffff"),
-    "handles": hex2rgb("#0050FF"),
-    "background": (*hex2rgb("#f2f2fa"), 1),  # dark blue
-    "glyphBox": (*hex2rgb("#0050FF"), 0.1),  #(0,0,0),
-    "glyphFill": (*hex2rgb("#0050FF"), 0.25),
-    "glyphStroke": (*hex2rgb("#0050FF"), 0.5),  #hex2rgb("#B3CAFF"),
-    "guides": hex2rgb("#0050FF"),  #hex2rgb("#003099"), # 080822
-    "labels": (0, 0, 0),
-    "connections": hex2rgb("#0050FF")
-}
+# colors = {
+#     "points": hex2rgb("#0050FF"),  # primary blue
+#     "offcurvePoints": hex2rgb("#0050FF"),
+#     "pointFill": hex2rgb("#ffffff"),
+#     "handles": hex2rgb("#0050FF"),
+#     "background": (*hex2rgb("#f2f2fa"), 1),  # light blue
+#     "glyphBox": (*hex2rgb("#0050FF"), 0.1),  #(0,0,0),
+#     "glyphFill": (*hex2rgb("#111133"), 1),
+#     "glyphStroke": (*hex2rgb("#0050FF"), 0.75),  #hex2rgb("#B3CAFF"),
+#     "guides": hex2rgb("#0050FF"),  #hex2rgb("#003099"), # 080822
+#     "labels": (0, 0, 0),
+#     "connections": hex2rgb("#0050FF")
+# }
 
 
 def interpolate(a, b, t):
