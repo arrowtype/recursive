@@ -33,76 +33,76 @@ from dlig2calt import dlig2calt
 # instances to split
 
 instanceValues = {
-    # Linear package
-    "Linear": {
-        "Linear": {
-            "MONO": 1,
-            "CASL": 0,
-            "wght": 400,
-            "slnt": 0,
-            "CRSV": 0,
-            "style": "Regular",
-        },
-        "Linear Italic": {
-            "MONO": 1,
-            "CASL": 0,
-            "wght": 400,
-            "slnt": -10,
-            "CRSV": 1,
-            "style": "Italic",
-        },
-        "Linear Bold": {
-            "MONO": 1,
-            "CASL": 0,
-            "wght": 700,
-            "slnt": 0,
-            "CRSV": 0,
-            "style": "Bold",
-        },
-        "Linear Bold Italic": {
-            "MONO": 1,
-            "CASL": 0,
-            "wght": 700,
-            "slnt": -10,
-            "CRSV": 1,
-            "style": "Bold Italic",
-        },
-    },
-    # Casual package
-    "Casual": {
-        "Casual": {
-            "MONO": 1,
-            "CASL": 1,
-            "wght": 400,
-            "slnt": 0,
-            "CRSV": 0,
-            "style": "Regular",
-        },
-        "Casual Italic": {
-            "MONO": 1,
-            "CASL": 1,
-            "wght": 400,
-            "slnt": -10,
-            "CRSV": 1,
-            "style": "Italic",
-        },
-        "Casual Bold": {
-            "MONO": 1,
-            "CASL": 1,
-            "wght": 700,
-            "slnt": 0,
-            "CRSV": 0,
-            "style": "Bold",
-        },
-        "Casual Bold Italic": {
-            "MONO": 1,
-            "CASL": 1,
-            "wght": 700,
-            "slnt": -10,
-            "CRSV": 1,
-            "style": "Bold Italic",
-        },
-    },
+    # # Linear package
+    # "Linear": {
+    #     "Linear": {
+    #         "MONO": 1,
+    #         "CASL": 0,
+    #         "wght": 400,
+    #         "slnt": 0,
+    #         "CRSV": 0,
+    #         "style": "Regular",
+    #     },
+    #     "Linear Italic": {
+    #         "MONO": 1,
+    #         "CASL": 0,
+    #         "wght": 400,
+    #         "slnt": -10,
+    #         "CRSV": 1,
+    #         "style": "Italic",
+    #     },
+    #     "Linear Bold": {
+    #         "MONO": 1,
+    #         "CASL": 0,
+    #         "wght": 700,
+    #         "slnt": 0,
+    #         "CRSV": 0,
+    #         "style": "Bold",
+    #     },
+    #     "Linear Bold Italic": {
+    #         "MONO": 1,
+    #         "CASL": 0,
+    #         "wght": 700,
+    #         "slnt": -10,
+    #         "CRSV": 1,
+    #         "style": "Bold Italic",
+    #     },
+    # },
+    # # Casual package
+    # "Casual": {
+    #     "Casual": {
+    #         "MONO": 1,
+    #         "CASL": 1,
+    #         "wght": 400,
+    #         "slnt": 0,
+    #         "CRSV": 0,
+    #         "style": "Regular",
+    #     },
+    #     "Casual Italic": {
+    #         "MONO": 1,
+    #         "CASL": 1,
+    #         "wght": 400,
+    #         "slnt": -10,
+    #         "CRSV": 1,
+    #         "style": "Italic",
+    #     },
+    #     "Casual Bold": {
+    #         "MONO": 1,
+    #         "CASL": 1,
+    #         "wght": 700,
+    #         "slnt": 0,
+    #         "CRSV": 0,
+    #         "style": "Bold",
+    #     },
+    #     "Casual Bold Italic": {
+    #         "MONO": 1,
+    #         "CASL": 1,
+    #         "wght": 700,
+    #         "slnt": -10,
+    #         "CRSV": 1,
+    #         "style": "Bold Italic",
+    #     },
+    # },
     # SemiCasual package
     "SemiCasual": {
         "SemiCasual": {
@@ -113,66 +113,66 @@ instanceValues = {
             "CRSV": 0,
             "style": "Regular",
         },
-        "SemiCasual Italic": {
-            "MONO": 1,
-            "CASL": 0.5,
-            "wght": 400,
-            "slnt": -10,
-            "CRSV": 1,
-            "style": "Italic",
-        },
-        "SemiCasual Bold": {
-            "MONO": 1,
-            "CASL": 0.5,
-            "wght": 700,
-            "slnt": 0,
-            "CRSV": 0,
-            "style": "Bold",
-        },
-        "SemiCasual Bold Italic": {
-            "MONO": 1,
-            "CASL": 0.5,
-            "wght": 700,
-            "slnt": -10,
-            "CRSV": 1,
-            "style": "Bold Italic",
-        },
+        # "SemiCasual Italic": {
+        #     "MONO": 1,
+        #     "CASL": 0.5,
+        #     "wght": 400,
+        #     "slnt": -10,
+        #     "CRSV": 1,
+        #     "style": "Italic",
+        # },
+        # "SemiCasual Bold": {
+        #     "MONO": 1,
+        #     "CASL": 0.5,
+        #     "wght": 700,
+        #     "slnt": 0,
+        #     "CRSV": 0,
+        #     "style": "Bold",
+        # },
+        # "SemiCasual Bold Italic": {
+        #     "MONO": 1,
+        #     "CASL": 0.5,
+        #     "wght": 700,
+        #     "slnt": -10,
+        #     "CRSV": 1,
+        #     "style": "Bold Italic",
+        # },
     },
-    # Duotone package
-    "Duotone": {
-        "Duotone": {
-            "MONO": 1,
-            "CASL": 0,
-            "wght": 400,
-            "slnt": 0,
-            "CRSV": 0,
-            "style": "Regular",
-        },
-        "Duotone Italic": {
-            "MONO": 1,
-            "CASL": 1,
-            "wght": 400,
-            "slnt": -10,
-            "CRSV": 1,
-            "style": "Italic",
-        },
-        "Duotone Bold": {
-            "MONO": 1,
-            "CASL": 0,
-            "wght": 700,
-            "slnt": 0,
-            "CRSV": 0,
-            "style": "Bold",
-        },
-        "Duotone Bold Italic": {
-            "MONO": 1,
-            "CASL": 1,
-            "wght": 700,
-            "slnt": -10,
-            "CRSV": 1,
-            "style": "Bold Italic",
-        },
-    },
+    # # Duotone package
+    # "Duotone": {
+    #     "Duotone": {
+    #         "MONO": 1,
+    #         "CASL": 0,
+    #         "wght": 400,
+    #         "slnt": 0,
+    #         "CRSV": 0,
+    #         "style": "Regular",
+    #     },
+    #     "Duotone Italic": {
+    #         "MONO": 1,
+    #         "CASL": 1,
+    #         "wght": 400,
+    #         "slnt": -10,
+    #         "CRSV": 1,
+    #         "style": "Italic",
+    #     },
+    #     "Duotone Bold": {
+    #         "MONO": 1,
+    #         "CASL": 0,
+    #         "wght": 700,
+    #         "slnt": 0,
+    #         "CRSV": 0,
+    #         "style": "Bold",
+    #     },
+    #     "Duotone Bold Italic": {
+    #         "MONO": 1,
+    #         "CASL": 1,
+    #         "wght": 700,
+    #         "slnt": -10,
+    #         "CRSV": 1,
+    #         "style": "Bold Italic",
+    #     },
+    # },
 }
 
 # GET / SET NAME HELPER FUNCTIONS
@@ -292,7 +292,7 @@ def splitFont(
             instanceFont.save(outputPath)
 
             # freeze in rvrn features with pyftfeatfreeze
-            pyftfeatfreeze.main(["--features=rvrn", outputPath, outputPath])
+            # pyftfeatfreeze.main(["--features=rvrn", outputPath, outputPath])
 
             # swap dlig2calt to make code ligatures work in old code editor apps
             dlig2calt(outputPath, inplace=True)
