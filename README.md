@@ -211,7 +211,7 @@ After the files have been generated (do note that the static instances take a bi
 
 To build all the static fonts, run:
 
-```
+```bash
 python build.py --static
 ```
 
@@ -219,7 +219,7 @@ python build.py --static
    
 To build the variable font, run:
 
-```
+```bash
 python build.py --variable
 ```
 
@@ -227,8 +227,8 @@ python build.py --variable
 
 If you want to build all of the sources, fonts, and WOFF2 versions of all of the fonts run:
 
-```
-python build.py --all --version 1.03
+```bash
+python build.py --all --version 1.054 # (replace version number)
 ```
 
 ### Making a GitHub release
