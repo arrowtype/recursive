@@ -1892,8 +1892,8 @@
 			<string>Ycircumflex</string>
 			<string>Ydieresis</string>
 			<string>Ymacron</string>
-			<string>Ydot</string>
 			<string>Ygrave</string>
+			<string>Ydot</string>
 			<string>Ydotbelow</string>
 			<string>Yhookabove</string>
 			<string>Ytilde</string>
@@ -1921,6 +1921,7 @@
 			<string>DZcaron</string>
 			<string>LJ</string>
 			<string>NJ</string>
+			<string>DZ</string>
 			<string>Germandbls</string>
 			<string>ohm</string>
 			<string>a</string>
@@ -2008,6 +2009,7 @@
 			<string>iinvertedbreve</string>
 			<string>idieresisacute</string>
 			<string>ihook</string>
+			<string>idot</string>
 			<string>idotbelow</string>
 			<string>j</string>
 			<string>jcircumflex</string>
@@ -2124,8 +2126,8 @@
 			<string>ydieresis</string>
 			<string>ycircumflex</string>
 			<string>ymacron</string>
-			<string>ydot</string>
 			<string>ygrave</string>
+			<string>ydot</string>
 			<string>ydotbelow</string>
 			<string>yhookabove</string>
 			<string>ytilde</string>
@@ -2155,6 +2157,7 @@
 			<string>dzcaron</string>
 			<string>lj</string>
 			<string>nj</string>
+			<string>dz</string>
 			<string>dotlessj</string>
 			<string>schwa</string>
 			<string>nhookleft</string>
@@ -2162,6 +2165,7 @@
 			<string>Dzcaron</string>
 			<string>Lj</string>
 			<string>Nj</string>
+			<string>Dz</string>
 			<string>primemod</string>
 			<string>primedblmod</string>
 			<string>commaturnedmod</string>
@@ -2390,20 +2394,25 @@
 			<string>gmtr:diamondblack</string>
 			<string>gmtr:diamondwhite</string>
 			<string>lozenge</string>
+			<string>checkbox</string>
+			<string>checkboxchecked</string>
 			<string>heartwhite</string>
 			<string>heartblack</string>
+			<string>check</string>
 			<string>uni000D</string>
 			<string>hyphensoft</string>
 			<string>zerowidthspace</string>
+			<string>uniE0A0</string>
 			<string>ijacute</string>
 			<string>IJacute</string>
 			<string>apple</string>
 			<string>.contrast-circles</string>
 			<string>Idotabove</string>
+			<string>caronslovakcomb</string>
 			<string>dotlessij</string>
+			<string>dotsidecomb</string>
 			<string>fj</string>
 			<string>horncombo</string>
-			<string>idot</string>
 			<string>idotaccent</string>
 			<string>ogonekcombo</string>
 			<string>ringacute</string>
@@ -2424,12 +2433,10 @@
 			<string>_arrowhead</string>
 			<string>braceleft.cap</string>
 			<string>braceright.cap</string>
-			<string>at.cap</string>
 			<string>braceleft.asymmetrical</string>
 			<string>braceright.asymmetrical</string>
 			<string>at.prop</string>
 			<string>at.short</string>
-			<string>hyphen.simple</string>
 			<string>dagger.daggery</string>
 			<string>periodcentered.loclCAT</string>
 			<string>at.alt_case</string>
@@ -2439,6 +2446,9 @@
 			<string>at.replaced_with_prop</string>
 			<string>ampersand.code_experimental_2</string>
 			<string>ampersand.code_experimental_3</string>
+			<string>caroncomb.alt</string>
+			<string>at.alt</string>
+			<string>dollar.lower</string>
 			<string>gravecomb.case</string>
 			<string>acutecomb.case</string>
 			<string>circumflexcomb.case</string>
@@ -2460,6 +2470,9 @@
 			<string>commaaccentcomb.case</string>
 			<string>cedillacomb.case</string>
 			<string>ogonekcomb.case</string>
+			<string>hyphen.case</string>
+			<string>endash.case</string>
+			<string>emdash.case</string>
 			<string>parenleft.case</string>
 			<string>parenright.case</string>
 			<string>bracketleft.case</string>
@@ -2472,11 +2485,35 @@
 			<string>guillemotright.case</string>
 			<string>slash.case</string>
 			<string>backslash.case</string>
-			<string>at.case</string>
+			<string>colon.case</string>
 			<string>exclamdown.case</string>
 			<string>questiondown.case</string>
+			<string>at.case</string>
 			<string>periodcentered.case</string>
 			<string>bullet.case</string>
+			<string>plus.case</string>
+			<string>minus.case</string>
+			<string>plusminus.case</string>
+			<string>divide.case</string>
+			<string>multiply.case</string>
+			<string>equal.case</string>
+			<string>less.case</string>
+			<string>greater.case</string>
+			<string>lessequal.case</string>
+			<string>greaterequal.case</string>
+			<string>approxequal.case</string>
+			<string>notequal.case</string>
+			<string>logicalnot.case</string>
+			<string>arrowleft.case</string>
+			<string>arrowup.case</string>
+			<string>arrowright.case</string>
+			<string>arrowdown.case</string>
+			<string>arrowleftright.case</string>
+			<string>arrowupdown.case</string>
+			<string>arrowNW.case</string>
+			<string>arrowNE.case</string>
+			<string>arrowSE.case</string>
+			<string>arrowSW.case</string>
 			<string>acutecombviet.case</string>
 			<string>gravecombviet.case</string>
 			<string>horncombo.case</string>
@@ -2484,9 +2521,45 @@
 			<string>ringacute.case</string>
 			<string>slashcomb.case</string>
 			<string>tildecombviet.case</string>
-			<string>caroncomb.alt</string>
-			<string>at.alt</string>
-			<string>dollar.lower</string>
+			<string>onesuperior.afrc</string>
+			<string>twosuperior.afrc</string>
+			<string>threesuperior.afrc</string>
+			<string>onequarter.afrc</string>
+			<string>onehalf.afrc</string>
+			<string>threequarters.afrc</string>
+			<string>zerosuperior.afrc</string>
+			<string>foursuperior.afrc</string>
+			<string>fivesuperior.afrc</string>
+			<string>sixsuperior.afrc</string>
+			<string>sevensuperior.afrc</string>
+			<string>eightsuperior.afrc</string>
+			<string>ninesuperior.afrc</string>
+			<string>zeroinferior.afrc</string>
+			<string>oneinferior.afrc</string>
+			<string>twoinferior.afrc</string>
+			<string>threeinferior.afrc</string>
+			<string>fourinferior.afrc</string>
+			<string>fiveinferior.afrc</string>
+			<string>sixinferior.afrc</string>
+			<string>seveninferior.afrc</string>
+			<string>eightinferior.afrc</string>
+			<string>nineinferior.afrc</string>
+			<string>onethird.afrc</string>
+			<string>twothirds.afrc</string>
+			<string>oneeighth.afrc</string>
+			<string>threeeighths.afrc</string>
+			<string>fiveeighths.afrc</string>
+			<string>seveneighths.afrc</string>
+			<string>nineinferiorss01.afrc</string>
+			<string>ninesuperiorss01.afrc</string>
+			<string>sixinferiorss01.afrc</string>
+			<string>sixsuperiorss01.afrc</string>
+			<string>zeroinferiordotted.afrc</string>
+			<string>zeroinferiorsans.afrc</string>
+			<string>zeroinferiorslash.afrc</string>
+			<string>zerosuperiordotted.afrc</string>
+			<string>zerosuperiorsans.afrc</string>
+			<string>zerosuperiorslash.afrc</string>
 			<string>zero.ss01</string>
 			<string>six.ss01</string>
 			<string>nine.ss01</string>
@@ -2494,6 +2567,12 @@
 			<string>ninesuperior.ss01</string>
 			<string>sixinferior.ss01</string>
 			<string>nineinferior.ss01</string>
+			<string>zero.slash</string>
+			<string>zerosuperior.slash</string>
+			<string>zeroinferior.slash</string>
+			<string>zero.dotted</string>
+			<string>zerosuperior.dotted</string>
+			<string>zeroinferior.dotted</string>
 			<string>onehalf.v1</string>
 			<string>one.flatflag</string>
 			<string>a.italic</string>
@@ -2530,6 +2609,7 @@
 			<string>ccaron.italic</string>
 			<string>ccedillaacute.italic</string>
 			<string>d.italic</string>
+			<string>dcaron.italic</string>
 			<string>ddotbelow.italic</string>
 			<string>dlinebelow.italic</string>
 			<string>e.italic</string>
@@ -2540,6 +2620,7 @@
 			<string>emacron.italic</string>
 			<string>ebreve.italic</string>
 			<string>edotaccent.italic</string>
+			<string>eogonek.italic</string>
 			<string>ecaron.italic</string>
 			<string>egravedbl.italic</string>
 			<string>einvertedbreve.italic</string>
@@ -2579,6 +2660,7 @@
 			<string>iinvertedbreve.italic</string>
 			<string>idieresisacute.italic</string>
 			<string>ihook.italic</string>
+			<string>idot.italic</string>
 			<string>idotbelow.italic</string>
 			<string>j.italic</string>
 			<string>jcircumflex.italic</string>
@@ -2587,6 +2669,7 @@
 			<string>l.italic</string>
 			<string>lacute.italic</string>
 			<string>lcommaaccent.italic</string>
+			<string>lcaron.italic</string>
 			<string>ldotbelow.italic</string>
 			<string>llinebelow.italic</string>
 			<string>m.italic</string>
@@ -2653,8 +2736,8 @@
 			<string>ydieresis.italic</string>
 			<string>ycircumflex.italic</string>
 			<string>ymacron.italic</string>
-			<string>ydot.italic</string>
 			<string>ygrave.italic</string>
+			<string>ydot.italic</string>
 			<string>ydotbelow.italic</string>
 			<string>yhookabove.italic</string>
 			<string>ytilde.italic</string>
@@ -2664,15 +2747,16 @@
 			<string>zcaron.italic</string>
 			<string>zdotbelow.italic</string>
 			<string>dotlessi.italic</string>
+			<string>ldot.italic</string>
 			<string>lslash.italic</string>
 			<string>napostrophe.italic</string>
 			<string>dzcaron.italic</string>
 			<string>lj.italic</string>
 			<string>nj.italic</string>
+			<string>dz.italic</string>
 			<string>dotlessj.italic</string>
 			<string>Lj.italic</string>
 			<string>Nj.italic</string>
-			<string>idot.italic</string>
 			<string>idotaccent.italic</string>
 			<string>f_f.italic</string>
 			<string>f_f_i.italic</string>
@@ -2695,10 +2779,12 @@
 			<string>iinvertedbreve.mono</string>
 			<string>idieresisacute.mono</string>
 			<string>ihook.mono</string>
+			<string>idot.mono</string>
 			<string>idotbelow.mono</string>
 			<string>l.mono</string>
 			<string>lacute.mono</string>
 			<string>lcommaaccent.mono</string>
+			<string>lcaron.mono</string>
 			<string>ldotbelow.mono</string>
 			<string>llinebelow.mono</string>
 			<string>r.mono</string>
@@ -2710,8 +2796,8 @@
 			<string>rdotbelow.mono</string>
 			<string>rlinebelow.mono</string>
 			<string>dotlessi.mono</string>
+			<string>ldot.mono</string>
 			<string>lslash.mono</string>
-			<string>idot.mono</string>
 			<string>idotaccent.mono</string>
 			<string>f_f.mono</string>
 			<string>f_f_i.mono</string>
@@ -2726,84 +2812,6 @@
 			<string>g.extra</string>
 			<string>Z.noserif</string>
 			<string>r.simple_italic</string>
-			<string>f_quotesingle.code</string>
-			<string>hyphen_greater.code</string>
-			<string>exclam_equal.code</string>
-			<string>exclam_equal_equal.code</string>
-			<string>exclam_exclam.code</string>
-			<string>question_colon.code</string>
-			<string>question_period.code</string>
-			<string>question_question.code</string>
-			<string>numbersign_numbersign.code</string>
-			<string>numbersign_numbersign_numbersign.code</string>
-			<string>numbersign_numbersign_numbersign_numbersign.code</string>
-			<string>percent_percent.code</string>
-			<string>ampersand_ampersand.code</string>
-			<string>ampersand_ampersand_ampersand.code</string>
-			<string>slash_slash.code</string>
-			<string>bar_bar.code</string>
-			<string>bar_bar_bar.code</string>
-			<string>equal_equal.code</string>
-			<string>equal_equal_equal.code</string>
-			<string>equal_greater.code</string>
-			<string>equal_slash_equal.code</string>
-			<string>less_equal.code</string>
-			<string>less_hyphen.code</string>
-			<string>greater_equal.code</string>
-			<string>dollar_braceleft.code</string>
-			<string>l.sans</string>
-			<string>lacute.sans</string>
-			<string>lcommaaccent.sans</string>
-			<string>ldotbelow.sans</string>
-			<string>llinebelow.sans</string>
-			<string>lslash.sans</string>
-			<string>zero.sans</string>
-			<string>one.sans</string>
-			<string>.notdef</string>
-			<string>zero.dotted</string>
-			<string>zerosuperior.sans</string>
-			<string>zeroinferior.sans</string>
-			<string>zerosuperior.dotted</string>
-			<string>zeroinferior.dotted</string>
-			<string>L.sans</string>
-			<string>Z.sans</string>
-			<string>twosuperior.afrc</string>
-			<string>threesuperior.afrc</string>
-			<string>onesuperior.afrc</string>
-			<string>onequarter.afrc</string>
-			<string>onehalf.afrc</string>
-			<string>threequarters.afrc</string>
-			<string>zerosuperior.afrc</string>
-			<string>foursuperior.afrc</string>
-			<string>fivesuperior.afrc</string>
-			<string>sixsuperior.afrc</string>
-			<string>sevensuperior.afrc</string>
-			<string>eightsuperior.afrc</string>
-			<string>ninesuperior.afrc</string>
-			<string>zeroinferior.afrc</string>
-			<string>oneinferior.afrc</string>
-			<string>twoinferior.afrc</string>
-			<string>threeinferior.afrc</string>
-			<string>fourinferior.afrc</string>
-			<string>fiveinferior.afrc</string>
-			<string>sixinferior.afrc</string>
-			<string>seveninferior.afrc</string>
-			<string>eightinferior.afrc</string>
-			<string>nineinferior.afrc</string>
-			<string>onethird.afrc</string>
-			<string>twothirds.afrc</string>
-			<string>oneeighth.afrc</string>
-			<string>threeeighths.afrc</string>
-			<string>fiveeighths.afrc</string>
-			<string>seveneighths.afrc</string>
-			<string>nineinferiorss01.afrc</string>
-			<string>ninesuperiorss01.afrc</string>
-			<string>sixinferiorss01.afrc</string>
-			<string>sixsuperiorss01.afrc</string>
-			<string>zeroinferiordotted.afrc</string>
-			<string>zeroinferiorsans.afrc</string>
-			<string>zerosuperiordotted.afrc</string>
-			<string>zerosuperiorsans.afrc</string>
 			<string>hyphen.code</string>
 			<string>numbersign.code</string>
 			<string>quotesingle.code</string>
@@ -2811,6 +2819,8 @@
 			<string>quotedbl.code</string>
 			<string>quotedbl_quotedbl_quotedbl.code</string>
 			<string>asterisk.code</string>
+			<string>asterisk_asterisk.code</string>
+			<string>asterisk_asterisk_asterisk.code</string>
 			<string>asterisk_equal.code</string>
 			<string>asterisk_slash.code</string>
 			<string>plus.code</string>
@@ -2818,15 +2828,24 @@
 			<string>plus_plus.code</string>
 			<string>plus_plus_plus.code</string>
 			<string>minus_equal.code</string>
+			<string>equal_equal.code</string>
+			<string>equal_equal_equal.code</string>
+			<string>equal_greater.code</string>
+			<string>equal_slash_equal.code</string>
 			<string>less.code</string>
+			<string>less_equal.code</string>
 			<string>less_exclam_hyphen_hyphen.code</string>
+			<string>less_hyphen.code</string>
 			<string>less_less.code</string>
 			<string>less_less_less.code</string>
 			<string>greater.code</string>
+			<string>greater_equal.code</string>
 			<string>greater_greater.code</string>
 			<string>greater_greater_greater.code</string>
 			<string>greater_hyphen.code</string>
+			<string>f_quotesingle.code</string>
 			<string>underscore_underscore.code</string>
+			<string>hyphen_greater.code</string>
 			<string>hyphen_hyphen.code</string>
 			<string>hyphen_hyphen_greater.code</string>
 			<string>hyphen_hyphen_hyphen.code</string>
@@ -2843,97 +2862,97 @@
 			<string>parenright_parenright.code</string>
 			<string>bracketright_braceright.code</string>
 			<string>bracketright_bracketright.code</string>
+			<string>numbersign_numbersign.code</string>
+			<string>numbersign_numbersign_numbersign.code</string>
+			<string>numbersign_numbersign_numbersign_numbersign.code</string>
 			<string>percent_c.code</string>
 			<string>percent_d.code</string>
 			<string>percent_g.code</string>
+			<string>percent_percent.code</string>
 			<string>percent_r.code</string>
 			<string>percent_s.code</string>
+			<string>ampersand_ampersand.code</string>
+			<string>ampersand_ampersand_ampersand.code</string>
 			<string>slash_asterisk.code</string>
 			<string>slash_equal.code</string>
+			<string>slash_slash.code</string>
 			<string>slash_slash_slash.code</string>
 			<string>backslash.code</string>
 			<string>backslash_b.code</string>
 			<string>backslash_n.code</string>
 			<string>backslash_r.code</string>
 			<string>backslash_t.code</string>
+			<string>backslash_v.code</string>
+			<string>bar_bar.code</string>
+			<string>bar_bar_bar.code</string>
 			<string>colon_colon.code</string>
 			<string>colon_slash_slash.code</string>
+			<string>exclam_equal.code</string>
+			<string>exclam_equal_equal.code</string>
+			<string>exclam_exclam.code</string>
+			<string>question_colon.code</string>
+			<string>question_period.code</string>
+			<string>question_question.code</string>
+			<string>dollar_braceleft.code</string>
 			<string>grave_grave_grave.code</string>
-			<string>asterisk_asterisk.code</string>
-			<string>asterisk_asterisk_asterisk.code</string>
-			<string>hyphen.case</string>
-			<string>endash.case</string>
-			<string>emdash.case</string>
-			<string>colon.case</string>
-			<string>plus.case</string>
-			<string>minus.case</string>
-			<string>plusminus.case</string>
-			<string>divide.case</string>
-			<string>multiply.case</string>
-			<string>equal.case</string>
-			<string>less.case</string>
-			<string>greater.case</string>
-			<string>lessequal.case</string>
-			<string>greaterequal.case</string>
-			<string>approxequal.case</string>
-			<string>notequal.case</string>
-			<string>logicalnot.case</string>
-			<string>arrowleft.case</string>
-			<string>arrowup.case</string>
-			<string>arrowright.case</string>
-			<string>arrowdown.case</string>
-			<string>arrowleftright.case</string>
-			<string>arrowupdown.case</string>
-			<string>arrowNW.case</string>
-			<string>arrowNE.case</string>
-			<string>arrowSE.case</string>
-			<string>arrowSW.case</string>
-			<string>backslash_v.code</string>
-			<string>uniE0A0</string>
-			<string>checkbox</string>
-			<string>checkboxchecked</string>
-			<string>check</string>
+			<string>L.sans</string>
 			<string>Lacute.sans</string>
+			<string>Lcommaaccent.sans</string>
 			<string>Lcaron.sans</string>
 			<string>Ldotbelow.sans</string>
 			<string>Llinebelow.sans</string>
-			<string>Ldot.sans</string>
-			<string>Lslash.sans</string>
+			<string>Z.sans</string>
 			<string>Zacute.sans</string>
 			<string>Zdotaccent.sans</string>
 			<string>Zcaron.sans</string>
 			<string>Zdotbelow.sans</string>
-			<string>Lcommaaccent.sans</string>
+			<string>Ldot.sans</string>
+			<string>Lslash.sans</string>
+			<string>l.sans</string>
+			<string>lacute.sans</string>
+			<string>lcommaaccent.sans</string>
+			<string>lcaron.sans</string>
+			<string>ldotbelow.sans</string>
+			<string>llinebelow.sans</string>
+			<string>ldot.sans</string>
+			<string>lslash.sans</string>
+			<string>zero.sans</string>
+			<string>one.sans</string>
+			<string>zerosuperior.sans</string>
+			<string>zeroinferior.sans</string>
 			<string>a.simple</string>
+			<string>agrave.simple</string>
 			<string>aacute.simple</string>
-			<string>abreve.simple</string>
-			<string>abreveacute.simple</string>
-			<string>abrevedot.simple</string>
-			<string>abrevegrave.simple</string>
-			<string>abrevehook.simple</string>
-			<string>abrevetilde.simple</string>
 			<string>acircumflex.simple</string>
+			<string>atilde.simple</string>
+			<string>adieresis.simple</string>
+			<string>aring.simple</string>
+			<string>amacron.simple</string>
+			<string>abreve.simple</string>
+			<string>aogonek.simple</string>
+			<string>aringacute.simple</string>
+			<string>agravedbl.simple</string>
+			<string>ainvertedbreve.simple</string>
+			<string>adotbelow.simple</string>
+			<string>ahook.simple</string>
 			<string>acircumflexacute.simple</string>
-			<string>acircumflexdot.simple</string>
 			<string>acircumflexgrave.simple</string>
 			<string>acircumflexhook.simple</string>
 			<string>acircumflextilde.simple</string>
-			<string>adieresis.simple</string>
-			<string>adotbelow.simple</string>
-			<string>agrave.simple</string>
-			<string>ahook.simple</string>
-			<string>amacron.simple</string>
-			<string>aogonek.simple</string>
-			<string>aring.simple</string>
-			<string>aringacute.simple</string>
-			<string>atilde.simple</string>
+			<string>acircumflexdot.simple</string>
+			<string>abreveacute.simple</string>
+			<string>abrevegrave.simple</string>
+			<string>abrevehook.simple</string>
+			<string>abrevetilde.simple</string>
+			<string>abrevedot.simple</string>
 			<string>f.simple</string>
 			<string>g.simple</string>
-			<string>gbreve.simple</string>
-			<string>gcaron.simple</string>
 			<string>gcircumflex.simple</string>
-			<string>gcommaaccent.simple</string>
+			<string>gbreve.simple</string>
 			<string>gdotaccent.simple</string>
+			<string>gcommaaccent.simple</string>
+			<string>gcaron.simple</string>
+			<string>gmacron.simple</string>
 			<string>i.simple</string>
 			<string>igrave.simple</string>
 			<string>iacute.simple</string>
@@ -2947,46 +2966,28 @@
 			<string>iinvertedbreve.simple</string>
 			<string>idieresisacute.simple</string>
 			<string>ihook.simple</string>
-			<string>idotbelow.simple</string>
 			<string>idot.simple</string>
-			<string>idotaccent.simple</string>
+			<string>idotbelow.simple</string>
 			<string>l.simple</string>
 			<string>lacute.simple</string>
 			<string>lcommaaccent.simple</string>
+			<string>lcaron.simple</string>
 			<string>ldotbelow.simple</string>
 			<string>llinebelow.simple</string>
-			<string>lslash.simple</string>
 			<string>r.simple</string>
 			<string>racute.simple</string>
-			<string>rcaron.simple</string>
 			<string>rcommaaccent.simple</string>
-			<string>one.simple</string>
-			<string>zero.slash</string>
-			<string>zerosuperior.slash</string>
-			<string>zeroinferior.slash</string>
-			<string>dotsidecomb</string>
-			<string>caronslovakcomb</string>
-			<string>ldot.italic</string>
-			<string>ldot.sans</string>
-			<string>lcaron.italic</string>
-			<string>lcaron.sans</string>
-			<string>ldot.mono</string>
-			<string>lcaron.mono</string>
-			<string>lcaron.simple</string>
-			<string>ldot.simple</string>
-			<string>ainvertedbreve.simple</string>
-			<string>agravedbl.simple</string>
-			<string>gmacron.simple</string>
-			<string>rinvertedbreve.simple</string>
+			<string>rcaron.simple</string>
 			<string>rgravedbl.simple</string>
+			<string>rinvertedbreve.simple</string>
 			<string>rdotbelow.simple</string>
 			<string>rlinebelow.simple</string>
-			<string>dcaron.italic</string>
-			<string>eogonek.italic</string>
-			<string>DZ</string>
-			<string>Dz</string>
-			<string>dz</string>
-			<string>dz.italic</string>
+			<string>ldot.simple</string>
+			<string>lslash.simple</string>
+			<string>one.simple</string>
+			<string>hyphen.simple</string>
+			<string>idotaccent.simple</string>
+			<string>.notdef</string>
 		</array>
 		<key>public.skipExportGlyphs</key>
 		<array>
