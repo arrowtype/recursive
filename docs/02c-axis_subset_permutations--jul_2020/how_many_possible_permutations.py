@@ -68,7 +68,7 @@ inputdata = {
     "MONO": ["0","0.5","1"],
     "CASL": ["0", "0.5", "1"],
     "wght": ["400","700"], # finding options with a step of wghtStep
-    "slnt": ["0","-9","-12","-15"],
+    "slnt": ["0","-9","-12"],
     "CRSV": ["0","1"]
 }
 
