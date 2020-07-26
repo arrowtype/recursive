@@ -1,0 +1,16 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+# include paths written relative to UFOs in varfontprep folders
+# `features` dir will be copied to varfontprep folder, and these includes will link to that
+include(../../../features/features/frac.fea);
+include(../../../features/features/numr_dnom_supr_infr.fea);
+include(../../../features/features/pnum.fea);
+include(../../../features/features/zero.fea);
+include(../../../features/features/titl.fea);
+include(../../../features/features/ordn.fea);
+include(../../../features/features/case.fea);
+include(../../../features/features/liga.fea);
+include(../../../features/features/ss0x.fea);
+include(../../../features/features/calt-generated--code_fonts_only.fea);
+include(../../../features/features/aalt.fea);
