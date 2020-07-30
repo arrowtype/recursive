@@ -292,7 +292,7 @@ def splitFont(
             instanceFont.save(outputPath)
 
             # freeze in rvrn features with pyftfeatfreeze: serifless 'f', unambiguous 'l', '6', '9'
-            pyftfeatfreeze.main(["--features=rvrn,ss03,ss05,ss09", outputPath, outputPath])
+            pyftfeatfreeze.main(["--features=rvrn,ss03,ss05,ss07,ss09", outputPath, outputPath])
 
             # swap dlig2calt to make code ligatures work in old code editor apps
             dlig2calt(outputPath, inplace=True)
