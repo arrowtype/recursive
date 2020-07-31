@@ -95,6 +95,8 @@ Axis Definitions, Recursive
 - **Weight** `wght` - 300 to 1000. The overall thickness of letters and the darkness of text composed with them. Notably, in Recursive, the weight axis does not affect glyph width. A bold weight takes the same amount of space as a light weight, even at in proportional styles of the `MONO` axis.
 
   *Recommended use:* Differences in weight can provide emphasis in text, show user interaction, or adjust the tone of communication. For light text on dark backgrounds, 400 (“Regular”) tends to be appropriate for text and code. For dark text on a light background, it can be beneficial to adjust the weight upwards to 500 (“Medium”).
+  
+  *Why isn’t it a Grade axis?* See [Issue #365](https://github.com/arrowtype/recursive/issues/365)
 
 - **Slant** `slnt` – 0 to -15. The "forward lean" of letters. Note: `-15` (negative 15) corresponds to a 15° clockwise slant, due to type design's roots in geometry. If the Italic axis is at its default value, going past a slant of `-13.99` will activate "cursive" letters, converting them to more-handwritten forms such as the simplified, "single story" `a` and `g`.
 
