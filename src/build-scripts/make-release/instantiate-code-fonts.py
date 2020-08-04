@@ -283,13 +283,31 @@ def splitFont(
             # make dir for new fonts
             pathlib.Path(outputSubDir).mkdir(parents=True, exist_ok=True)
 
+            # -------------------------------------------------------
+            # OpenType Table fixes
+
             # drop STAT table to allow RIBBI style naming & linking on Windows
             del instanceFont["STAT"]
+
+            # In the post table, isFixedPitched flag must be set in the code fonts
+            instanceFont['post'].isFixedPitch = 1
+
+            # In the OS/2 table Panose bProportion must be set to 9
+            instanceFont["OS/2"].panose.bProportion = 9
+
+            # Also in the OS/2 table, xAvgCharWidth should be set to 600 rather than 612 (612 is an average of glyphs in the "Mono" files which include wide ligatures).
+            instanceFont["OS/2"].xAvgCharWidth = 600
+
+            # -------------------------------------------------------
+            # save instance font
 
             outputPath = f"{outputSubDir}/{newFileName}"
 
             # save font
             instanceFont.save(outputPath)
+
+            # -------------------------------------------------------
+            # Code font special stuff in post processing
 
             # freeze in rvrn features with pyftfeatfreeze: serifless 'f', unambiguous 'l', '6', '9'
             pyftfeatfreeze.main(["--features=rvrn,ss03,ss05,ss07,ss09", outputPath, outputPath])
