@@ -1,10 +1,15 @@
 <p align="center">
-💌 <strong>Want (infrequent) updates on new fonts from Arrow Type? Sign up for the <a href="https://arrowtype.com/" target="_blank">Arrow Type newsletter!</a></strong> 💌
+💌 <strong>Want (infrequent) updates on new fonts from Arrow Type?</strong> 💌
+ </p>
+<p align="center">
+💌 <strong>Sign up for the <a href="https://arrowtype.com/" target="_blank">Arrow Type newsletter!</a></strong> 💌
  </p>
 
 ---
 
 # Recursive Sans & Mono
+
+Learn more on the [Recursive web specimen →](https://recursive.design)
 
 ![Recursive Sans & Mono Repo Artwork](specimens/repo-artwork/recursive-repo-artwork.png)
 
