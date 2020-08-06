@@ -1,5 +1,5 @@
 <p align="center">
-💌 <strong>Want (infrequent) updates on new fonts from Arrow Type?</strong> 💌
+<strong>Want (infrequent) updates on new fonts from Arrow Type?</strong>
  </p>
 <p align="center">
 💌 <strong>Sign up for the <a href="https://arrowtype.com/" target="_blank">Arrow Type newsletter!</a></strong> 💌
