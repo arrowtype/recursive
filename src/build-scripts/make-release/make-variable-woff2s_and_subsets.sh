@@ -17,6 +17,17 @@ echo $fontPath
 echo $fontFile
 echo $outputDir
 
+# --------------------------------------------
+# basic variable fonts
+
+# full font
+woff2_compress $fontPath
+mv ${fontPath/'.ttf'/'.woff2'} $outputDir1/${fontFile/'.ttf'/'.woff2'}
+
+# google fonts latin basic
+pyftsubset $fontPath --flavor="woff2" --output-file="$outputDir1/${fontFile/'.ttf'/--subset-GF_latin_basic.woff2}" --unicodes="U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+
+
 # agressively-split ranges
 # # based on https://en.wikipedia.org/wiki/List_of_Unicode_characters
 
@@ -87,7 +98,4 @@ echo "$__CSS" > $outputDir/fonts.css
 
 
 
-# --------------------------------------------
-# google fonts latin basic
-pyftsubset $fontPath --flavor="woff2" --output-file="$outputDir1/${fontFile/'.ttf'/--subset-GF_latin_basic.woff2}" --unicodes="U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
 
