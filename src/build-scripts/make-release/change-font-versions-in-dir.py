@@ -13,6 +13,11 @@
     python3 src/build-scripts/make-release/change-font-versions-in-dir.py <font_dir_path> <version>
 
     ...where <version> is a number in the format of "1.054"
+
+    WARNING:
+    - Doesn’t currently work if the manually-set oldVersion ends in a "0" :|
+    - Assumes version numbers will match in head table, plus names 3 & 5
+    - has option arg from --oldVersion, but it is a bit inconsistent. Check outputs carefully!
 """
 
 from fontTools.ttLib import TTFont
@@ -47,12 +52,14 @@ def setFontNameID(font, ID, newName):
 
 # MAIN FUNCTION
 
-def changeVersion(fontPath, newVersion):
+def changeVersion(fontPath, newVersion, oldVersion=""):
 # def changeVersion(fontPath):
     font = TTFont(fontPath)
 
-    oldVersion = str(font['head'].fontRevision)[0:5]
-    # oldVersion = "1.520" # if you need to replace a specific bad version number in the naming, set the old version string manually
+    if oldVersion == "":
+        oldVersion = str(font['head'].fontRevision)[0:5]
+    else:
+        oldVersion = str(oldVersion)
 
     print(oldVersion)
 
@@ -77,14 +84,14 @@ def changeVersion(fontPath, newVersion):
             font.save(fontPath)
             print(f"Font version: {oldVersion} → {newVersion}")
 
-def changeVersionsInDir(directory, newVersion):
+def changeVersionsInDir(directory, newVersion, oldVersion=""):
     for root, dirs, files in os.walk(directory):
         for file in files:
             extension = file.split(".")[-1]
-            if extension in ["ttf","otf"]:
+            if extension in ["ttf","otf","woff2"]:
                 fontPath = os.path.join(root, file)
 
-                changeVersion(fontPath, newVersion)
+                changeVersion(fontPath, newVersion, oldVersion)
 
 
 if __name__ == '__main__':
