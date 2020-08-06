@@ -86,6 +86,7 @@ lookup plus_plus_plus {
 #     sub asterisk' asterisk asterisk by LIG;
 # } asterisk_asterisk_asterisk;
 
+# Testing feature code copied from Fira Code, which works better in Netbeans IDE
 lookup asterisk_asterisk_asterisk {
   ignore sub asterisk asterisk' asterisk asterisk;
   ignore sub asterisk' asterisk asterisk asterisk;
