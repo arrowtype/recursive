@@ -19,12 +19,13 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 # apple=.notdef|F8FF
 # '''
 
-# apostrophemod = commaaboverightcomb | 02BC
+
+# zerosuperior.slash = zerosuperior
+# zeroinferior.slash = zeroinferior
+# zeroinferiorslash.afrc = zerosuperior.afrc
+# zerosuperiorslash.afrc = zeroinferior.afrc
 txt = '''\
-zerosuperior.slash = zerosuperior
-zeroinferior.slash = zeroinferior
-zeroinferiorslash.afrc = zerosuperior.afrc
-zerosuperiorslash.afrc = zeroinferior.afrc
+ringbelowcomb=ringcomb | 0325
 '''
 
 # recipeFile = "/Users/stephennixon/type-repos/recursive/src/00-recursive-scripts-for-robofont/diacritics-and-glyph_construction-recipes/diacritic-recipes-for-recursive-generated-with_alts.txt"
