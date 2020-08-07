@@ -14,6 +14,12 @@
 
     questions:
     - will this work for slanted masters?
+
+    to fix manually:
+    - F, bottom
+    - b, d, f
+    - j, q
+    - (add ringbelow)
 """
 
 from vanilla.dialogs import *
@@ -23,12 +29,18 @@ uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 # also check for .italic, .sans, .mono alternates...
 
-lowercaseXheight = "acemnorsuvwxz"
+lowercaseXheight = [char for char in "acemnorsuvwxz"] +"a.italic c.italic e.italic m.italic n.italic r.italic s.italic u.italic v.italic w.italic x.italic z.italic".split()
 
 # add to ... highest/lowest points in glyphs?
-ascenders = "bdfhl"
-descenders = "gpqy"
-ij = "ij" # don’t add 'top' to i, j
+ascenders = "b d f h l b.italic d.italic f.italic h.italic k.italic l.italic".split()
+descenders = "g p q y f.italic g.italic y.italic".split()
+
+ij = "i j i.italic j.italic".split()
+
+
+
+
+
 
 
 OutputWindow().show()
@@ -43,19 +55,22 @@ def addMissingAnchors(font):
         g = font[char]
         if 'top' not in [a.name for a in g.anchors]:
             print("\n")
-            print(g.anchors)
-            g.appendAnchor("top", (g.width/2, font.info.capHeight + 11))
+            print(g, g.anchors)
 
             # stupid way to align top anchor with bottom
             if char is "K":
-                xPos = [anchor.x for anchor in f["K"].anchors if anchor.name == "bottom"][0]
+                xPos = [anchor.x for anchor in font["K"].anchors if anchor.name == "bottom"][0]
                 g.appendAnchor("top", (xPos, font.info.capHeight + 11))
+
+            else:
+                g.appendAnchor("top", (g.width/2, font.info.capHeight + 11))
+
 
             print("- Anchor 'top' added")
 
         if 'bottom' not in [a.name for a in g.anchors]:
             print("\n")
-            print(g.anchors)
+            print(g, g.anchors)
             g.appendAnchor("bottom", (g.width/2, 0))
             print("- Anchor 'bottom' added")
 
@@ -64,7 +79,7 @@ def addMissingAnchors(font):
         g = font[char]
         if 'top' not in [a.name for a in g.anchors]:
             print("\n")
-            print(g.anchors)
+            print(g, g.anchors)
             g.appendAnchor("top", (g.width/2, font.info.xHeight + 11))
             print("- Anchor 'top' added")
 
@@ -73,7 +88,7 @@ def addMissingAnchors(font):
         g = font[char]
         if 'top' not in [a.name for a in g.anchors]:
             print("\n")
-            print(g.anchors)
+            print(g, g.anchors)
             g.appendAnchor("top", (g.width/2, font.info.ascender - 20))
             print("- Anchor 'top' added")
 
@@ -82,26 +97,32 @@ def addMissingAnchors(font):
         g = font[char]
         if 'bottom' not in [a.name for a in g.anchors]:
             print("\n")
-            print(g.anchors)
-            g.appendAnchor("bottom", (g.width/2, -1))
+            print(g, g.anchors)
+
+            if char is "f.italic":
+                g.appendAnchor("bottom", (g.width/2, g.bounds[1] - 1))
+            else:
+                g.appendAnchor("bottom", (g.width/2, -1))
+
             print("- Anchor 'bottom' added")
+
 
     # add bottom to descenders
     for char in descenders:
         g = font[char]
-        if 'top' not in [a.name for a in g.anchors]:
+        if 'bottom' not in [a.name for a in g.anchors]:
             print("\n")
-            print(g.anchors)
-            g.appendAnchor("bottom", (g.width/2, font.info.descender))
+            print(g, g.anchors)
+            g.appendAnchor("bottom", (g.width/2, g.bounds[1] - 1)) # at min Y of glyph
             print("- Anchor 'bottom' added")
 
     # add bottom to ij
-    for char in "ij":
+    for char in ij:
         g = font[char]
         if 'bottom' not in [a.name for a in g.anchors]:
             print("\n")
-            print(g.anchors)
-            g.appendAnchor("bottom", (g.width/2, -1))
+            print(g, g.anchors)
+            g.appendAnchor("bottom", (g.width/2, g.bounds[1] - 1)) # at min Y of glyph
             print("- Anchor 'bottom' added")
 
 
@@ -110,5 +131,7 @@ for file in files:
     font = OpenFont(file, showInterface=False)
 
     addMissingAnchors(font)
+
+    font.save()
 
     font.close()
