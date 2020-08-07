@@ -25,21 +25,17 @@
 from vanilla.dialogs import *
 from mojo.UI import OutputWindow
 
-uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+uppercase = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z L.sans Z.sans".split()
 
 # also check for .italic, .sans, .mono alternates...
 
-lowercaseXheight = [char for char in "acemnorsuvwxz"] +"a.italic c.italic e.italic m.italic n.italic r.italic s.italic u.italic v.italic w.italic x.italic z.italic".split()
+lowercaseXheight = [char for char in "acemnorsuvwxz"] +"a.italic c.italic e.italic m.italic n.italic r.italic s.italic u.italic v.italic w.italic x.italic z.italic r.mono".split()
 
 # add to ... highest/lowest points in glyphs?
-ascenders = "b d f h l b.italic d.italic f.italic h.italic k.italic l.italic".split()
-descenders = "g p q y f.italic g.italic y.italic".split()
+ascenders = "b d f h l b.italic d.italic f.italic h.italic k.italic l.italic f.mono l.mono l.sans".split()
+descenders = "g p q y f.italic g.italic y.italic g.mono".split()
 
-ij = "i j i.italic j.italic".split()
-
-
-
-
+ij = "i j i.italic j.italic i.mono".split()
 
 
 
