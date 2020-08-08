@@ -78,12 +78,23 @@ lookup plus_plus_plus {
     sub plus' plus plus by LIG;
 } plus_plus_plus;
     
+# lookup asterisk_asterisk_asterisk {
+#     ignore sub asterisk asterisk' asterisk' asterisk';
+#     ignore sub asterisk' asterisk' asterisk' asterisk;
+#     sub LIG LIG asterisk' by astr_astr_astr.code;
+#     sub LIG asterisk' asterisk by LIG;
+#     sub asterisk' asterisk asterisk by LIG;
+# } asterisk_asterisk_asterisk;
+
+# Testing feature code copied from Fira Code, which works better in Netbeans IDE
 lookup asterisk_asterisk_asterisk {
-    ignore sub asterisk asterisk' asterisk' asterisk';
-    ignore sub asterisk' asterisk' asterisk' asterisk;
-    sub LIG LIG asterisk' by astr_astr_astr.code;
-    sub LIG asterisk' asterisk by LIG;
-    sub asterisk' asterisk asterisk by LIG;
+  ignore sub asterisk asterisk' asterisk asterisk;
+  ignore sub asterisk' asterisk asterisk asterisk;
+  ignore sub slash asterisk' asterisk asterisk;
+  ignore sub asterisk' asterisk asterisk slash;
+  sub LIG LIG asterisk' by astr_astr_astr.code;
+  sub LIG  asterisk' asterisk  by LIG;
+  sub asterisk'   asterisk  asterisk  by LIG;
 } asterisk_asterisk_asterisk;
     
 lookup less_less_less {
