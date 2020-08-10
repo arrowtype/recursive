@@ -6,6 +6,8 @@ Custom 4-style packages specifically made for code editors, each featuring:
 - Reduced-slant italics for easier readability in code (normal Recursive Italics have slnt=-15, which is pretty intense)
 - Stylistic sets pre-applied for clear, unambiguous code: a simplified `L`, `Z`, `l`, & `f` and a more-open `6` and `9`
 
+If you would rather customize your own version of Rec Mono for Code, check out https://github.com/arrowtype/recursive-code-config.
+
 
 ## Packages
 

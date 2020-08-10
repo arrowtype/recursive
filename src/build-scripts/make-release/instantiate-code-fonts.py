@@ -267,7 +267,7 @@ def splitFont(
             setFontNameID(instanceFont, 2, newStyleLinkingName)
             setFontNameID(instanceFont, 17, newStyleLinkingName)
 
-            # UPDATE NAME ID 1, unique font ID
+            # UPDATE NAME ID 1, Font Family name
             currentFamName = getFontNameID(instanceFont, 1)
             newFamName = (currentFamName.replace(" Sans", "").replace(oldName, newName).replace(
                 "Linear Light",
@@ -295,16 +295,6 @@ def splitFont(
             # In the OS/2 table Panose bProportion must be set to 9
             instanceFont["OS/2"].panose.bProportion = 9
 
-            # # for italic fonts
-            # if "Italic" in instanceValues[package][instance]["style"]:
-            #     instanceFont["OS/2"].panose.bLetterForm = 11
-
-            #     instanceFont["OS/2"].fsSelection = 0b1
-            #     instanceFont["head"].macStyle    = "00000000 00000010"
-
-            # if "Bold Italic" in instanceValues[package][instance]["style"]:
-            #     instanceFont["OS/2"].fsSelection = "00000000 00100001"
-            #     instanceFont["head"].macStyle    = "00000000 00000011"
 
             if "Italic" in instanceValues[package][instance]["style"]:
                 instanceFont['OS/2'].fsSelection = 0b1

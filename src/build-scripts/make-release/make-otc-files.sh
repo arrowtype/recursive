@@ -9,7 +9,7 @@ dir=$1
 
 if [[ -z $dir || $dir = "--help" ]] ; then
     echo 'Add a dir path, such as:'
-    echo 'src/build-scripts/make-release/make-otc-files.sh fonts/recursive_beta_1.040/Static_TTF'
+    echo 'src/build-scripts/make-release/make-otc-files.sh fonts/recursive_beta_1.040/Static_OTF'
     exit 2
 fi
 
