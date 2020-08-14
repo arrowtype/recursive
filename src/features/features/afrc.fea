@@ -1,0 +1,112 @@
+@FIGS = [ zero              zero.sans             one              two              three              four              five              six              seven              eight              nine              ];
+@NUMR = [ zerosuperior.afrc zerosuperiorsans.afrc onesuperior.afrc twosuperior.afrc threesuperior.afrc foursuperior.afrc fivesuperior.afrc sixsuperior.afrc sevensuperior.afrc eightsuperior.afrc ninesuperior.afrc ];
+@DNOM = [ zeroinferior.afrc zeroinferiorsans.afrc oneinferior.afrc twoinferior.afrc threeinferior.afrc fourinferior.afrc fiveinferior.afrc sixinferior.afrc seveninferior.afrc eightinferior.afrc nineinferior.afrc ];
+
+@PRE  = [ onehalf.afrc onethird.afrc twothirds.afrc onequarter.afrc threequarters.afrc oneeighth.afrc threeeighths.afrc fiveeighths.afrc seveneighths.afrc ];
+
+feature frac {
+
+    lookup FractionBar {
+        ignore sub slash @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS slash';
+        ignore sub slash' @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS slash;
+        ignore sub slash @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS slash';
+        ignore sub slash' @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS slash;
+        ignore sub slash @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS slash';
+        ignore sub slash' @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS slash;
+        ignore sub slash @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS slash';
+        ignore sub slash' @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS slash;
+        ignore sub slash @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS slash';
+        ignore sub slash' @FIGS @FIGS @FIGS @FIGS @FIGS @FIGS slash;
+        ignore sub slash @FIGS @FIGS @FIGS @FIGS @FIGS slash';
+        ignore sub slash' @FIGS @FIGS @FIGS @FIGS @FIGS slash;
+        ignore sub slash @FIGS @FIGS @FIGS @FIGS slash';
+        ignore sub slash' @FIGS @FIGS @FIGS @FIGS slash;
+        ignore sub slash @FIGS @FIGS @FIGS slash';
+        ignore sub slash' @FIGS @FIGS @FIGS slash;
+        ignore sub slash @FIGS @FIGS slash';
+        ignore sub slash' @FIGS @FIGS slash;
+        ignore sub slash @FIGS slash';
+        ignore sub slash' @FIGS slash;
+        ignore sub slash slash';
+        ignore sub slash' slash;
+        sub @FIGS slash' @FIGS by fraction;
+    } FractionBar;
+
+    lookup Numerator1 {
+        sub @FIGS' fraction by @NUMR;
+    } Numerator1;
+
+    lookup Numerator2 {
+        sub @FIGS' @NUMR fraction by @NUMR;
+    } Numerator2;
+
+    lookup Numerator3 {
+        sub @FIGS' @NUMR @NUMR fraction by @NUMR;
+    } Numerator3;
+
+    lookup Numerator4 {
+        sub @FIGS' @NUMR @NUMR @NUMR fraction by @NUMR;
+    } Numerator4;
+
+    lookup Numerator5 {
+        sub @FIGS' @NUMR @NUMR @NUMR @NUMR fraction by @NUMR;
+    } Numerator5;
+
+    lookup Numerator6 {
+        sub @FIGS' @NUMR @NUMR @NUMR @NUMR @NUMR fraction by @NUMR;
+    } Numerator6;
+
+    lookup Numerator7 {
+        sub @FIGS' @NUMR @NUMR @NUMR @NUMR @NUMR @NUMR fraction by @NUMR;
+    } Numerator7;
+
+    lookup Numerator8 {
+        sub @FIGS' @NUMR @NUMR @NUMR @NUMR @NUMR @NUMR @NUMR fraction by @NUMR;
+    } Numerator8;
+
+    lookup Numerator9 {
+        sub @FIGS' @NUMR @NUMR @NUMR @NUMR @NUMR @NUMR @NUMR @NUMR fraction by @NUMR;
+    } Numerator9;
+
+    lookup Numerator10 {
+        sub @FIGS' @NUMR @NUMR @NUMR @NUMR @NUMR @NUMR @NUMR @NUMR @NUMR fraction by @NUMR;
+    } Numerator10;
+
+    lookup Denominator {
+        sub [fraction @DNOM] @FIGS' by @DNOM;
+    } Denominator;
+
+    lookup precomposed {
+        ignore sub @NUMR onesuperior.afrc' fraction' twoinferior.afrc'; 
+        ignore sub onesuperior.afrc' fraction' twoinferior.afrc' @DNOM; 
+        ignore sub @NUMR onesuperior.afrc' fraction' threeinferior.afrc';
+        ignore sub onesuperior.afrc' fraction' threeinferior.afrc' @DNOM;
+        ignore sub @NUMR twosuperior.afrc' fraction' threeinferior.afrc';
+        ignore sub twosuperior.afrc' fraction' threeinferior.afrc' @DNOM;
+        ignore sub @NUMR onesuperior.afrc' fraction' fourinferior.afrc';
+        ignore sub onesuperior.afrc' fraction' fourinferior.afrc' @DNOM;
+        ignore sub @NUMR threesuperior.afrc' fraction' fourinferior.afrc';
+        ignore sub threesuperior.afrc' fraction' fourinferior.afrc' @DNOM;
+        ignore sub @NUMR onesuperior.afrc' fraction' eightinferior.afrc';
+        ignore sub onesuperior.afrc' fraction' eightinferior.afrc' @DNOM;
+        ignore sub @NUMR threesuperior.afrc' fraction' eightinferior.afrc';
+        ignore sub threesuperior.afrc' fraction' eightinferior.afrc' @DNOM;
+        ignore sub @NUMR fivesuperior.afrc' fraction' eightinferior.afrc';
+        ignore sub fivesuperior.afrc' fraction' eightinferior.afrc' @DNOM;
+        ignore sub @NUMR sevensuperior.afrc' fraction' eightinferior.afrc';
+        ignore sub sevensuperior.afrc' fraction' eightinferior.afrc' @DNOM;
+        sub onesuperior.afrc' fraction' twoinferior.afrc' by onehalf.afrc;
+        sub onesuperior.afrc' fraction' threeinferior.afrc' by onethird.afrc;
+        sub twosuperior.afrc' fraction' threeinferior.afrc' by twothirds.afrc;
+        sub onesuperior.afrc' fraction' fourinferior.afrc' by onequarter.afrc;
+        sub threesuperior.afrc' fraction' fourinferior.afrc' by threequarters.afrc;
+        sub onesuperior.afrc' fraction' eightinferior.afrc' by oneeighth.afrc;
+        sub threesuperior.afrc' fraction' eightinferior.afrc' by threeeighths.afrc;
+        sub fivesuperior.afrc' fraction' eightinferior.afrc' by fiveeighths.afrc;
+        sub sevensuperior.afrc' fraction' eightinferior.afrc' by seveneighths.afrc;
+    } precomposed;
+
+    sub @FIGS space' @NUMR by space.frac;
+    sub @FIGS space' @PRE by space.frac;
+
+} frac;
