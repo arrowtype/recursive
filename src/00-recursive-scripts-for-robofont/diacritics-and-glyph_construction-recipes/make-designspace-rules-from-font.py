@@ -14,7 +14,7 @@ try:
     fontPath = (sys.argv[1])
 except IndexError:
     print("no arg; using pre-written font path")
-    fontPath = '/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual A.ufo'
+    fontPath = '/Users/stephennixon/type-repos/recursive/src/ufo/mono/Recursive Mono-Casual A.ufo'
 
 
 # timestamp = datetime.now().strftime("%Y-%m-%d")

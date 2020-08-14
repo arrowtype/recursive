@@ -23,7 +23,7 @@ fill(1)
 rect(0,0,W, H)
 # glyphName = "bullet"
 glyphName = "R"
-exampleFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear C.ufo"
+exampleFont = "/Users/stephennixon/type-repos/recursive/src/ufo/mono/Recursive Mono-Linear C.ufo"
 
 f1 = OpenFont(startFont, showInterface=False)
 

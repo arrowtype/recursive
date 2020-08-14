@@ -12,8 +12,8 @@
 # EDIT THESE VARIABLES AS NEEDED
 
 # The files you're building from
-ufoRoman="src/masters--cubic_overlapped/experimental/curvier-casual/Previews/Preview_recursive-mono-a_b-slant_0.00_weight_450.00_expression_0.00.ufo"
-ufoItalic="src/masters--cubic_overlapped/experimental/curvier-casual/Previews/Preview_recursive-mono-a_b-slant_9.45_weight_450.00_expression_0.00.ufo"
+ufoRoman="src/ufo--cubic_overlapped/experimental/curvier-casual/Previews/Preview_recursive-mono-a_b-slant_0.00_weight_450.00_expression_0.00.ufo"
+ufoItalic="src/ufo--cubic_overlapped/experimental/curvier-casual/Previews/Preview_recursive-mono-a_b-slant_9.45_weight_450.00_expression_0.00.ufo"
 
 # These might be weird – get them from the font info or from the name table
 oldFamilyName="recursive-mono-a_b"
@@ -28,7 +28,7 @@ newFamilyName="IterativeBetaV"
 fontsFolder="/Users/stephennixon/Library/Fonts"
 
 # the current source dir which is holding the "Previews" folder
-sourceDir="src/masters--cubic_overlapped/experimental/curvier-casual"
+sourceDir="src/ufo--cubic_overlapped/experimental/curvier-casual"
 
 ufoDir="$sourceDir/Previews"
 

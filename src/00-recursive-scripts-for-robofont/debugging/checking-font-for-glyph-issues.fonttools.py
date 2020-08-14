@@ -1,7 +1,7 @@
 from fontTools.ufoLib import UFOReader
 
 
-ufoPath="src/masters/mono/Recursive Mono-Linear A Slanted.ufo"
+ufoPath="src/ufo/mono/Recursive Mono-Linear A Slanted.ufo"
 
 
 from fontTools.ufoLib.glifLib import GlifLibError

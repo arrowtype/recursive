@@ -5,7 +5,7 @@
 
     Run of the command line:
     
-    python src/01-shell-scripts-for-sources/metrics/set-v_metrics.py src/masters/mono <--save>
+    python src/01-shell-scripts-for-sources/metrics/set-v_metrics.py src/ufo/mono <--save>
 '''
 
 import sys

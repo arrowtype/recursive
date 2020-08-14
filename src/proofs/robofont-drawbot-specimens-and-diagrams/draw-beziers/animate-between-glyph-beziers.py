@@ -38,12 +38,12 @@ timestamp = datetime.now().strftime("%Y_%m_%d")
 # endFont = getFile("Select file to end animation at", allowsMultipleSelection=False, fileTypes=["ufo"])
 
 # glyphToAnimate = 'r.mono' #'x.italic'
-# startFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual B Slanted.ufo"
-# endFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear A.ufo"
+# startFont = "/Users/stephennixon/type-repos/recursive/src/ufo/mono/Recursive Mono-Casual B Slanted.ufo"
+# endFont = "/Users/stephennixon/type-repos/recursive/src/ufo/mono/Recursive Mono-Linear A.ufo"
 # glyphScale, yShift = 1.5, 0.93 # baseline to x-height
 glyphToAnimate = 'ampersand'  #'x.italic'
-startFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Casual B.ufo"
-endFont = "/Users/stephennixon/type-repos/recursive/src/masters/mono/Recursive Mono-Linear B.ufo"
+startFont = "/Users/stephennixon/type-repos/recursive/src/ufo/mono/Recursive Mono-Casual B.ufo"
+endFont = "/Users/stephennixon/type-repos/recursive/src/ufo/mono/Recursive Mono-Linear B.ufo"
 glyphScale, yShift = 1.25, 0.6  #capHeight
 
 print(startFont)

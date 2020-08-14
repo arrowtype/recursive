@@ -54,13 +54,13 @@ def makeSources(ds, src, version):
     *src* is path to the mastering source directory
     *version* is the version number to set the fonts to
     """
-    # Copy files from src/masters, as we need to edit them
+    # Copy files from src/ufo, as we need to edit them
     ignore = shutil.ignore_patterns(".git",
                                     ".git*",
                                     )
     print("🏗  Copying files")
 
-    dsPath = os.path.join("../src/masters", ds)
+    dsPath = os.path.join("../src/ufo", ds)
     copyFiles(dsPath, src)
 
     # Copy features

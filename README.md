@@ -218,7 +218,7 @@ Before beginning, change your working directory to `mastering`.
 cd mastering
 ```
 
-`python build.py --files` is the first step. This will generate all the files needed for building the variable and static fonts. You will likely want to give the font a version number with this command (`python build.py --version 1.03 --files`). To prep only files for the variable font, use `python build.py --varfiles`, or to prep only files for the static fonts, use `python build.py --statfiles`.
+`python build.py --files` is the first step. This will generate all the files needed for building the variable and static fonts. You will likely want to give the font a version number with this command (`python build.py --version 1.054 --files`). To prep only files for the variable font, use `python build.py --varfiles`, or to prep only files for the static fonts, use `python build.py --statfiles`.
 
 After the files have been generated (do note that the static instances take a bit of time to generate), you will want to look at the `mastering/build/static/CFF/checkoutlines.txt` file. This is the report (edited to remove issues that do not need attention) from [checkoutlinesUFO](https://adobe-type-tools.github.io/afdko/AFDKO-Overview.html#checkoutlinesufo). Issues found in this report should be cleaned up in the static UFOs. Many issues are due to overlap removal. Nothing is perfect, overlap removal algorithms included.
 
@@ -226,7 +226,7 @@ After the files have been generated (do note that the static instances take a bi
 
 To build all the static fonts, run:
 
-```
+```bash
 python build.py --static
 ```
 
@@ -234,7 +234,7 @@ python build.py --static
    
 To build the variable font, run:
 
-```
+```bash
 python build.py --variable
 ```
 
@@ -242,8 +242,8 @@ python build.py --variable
 
 If you want to build all of the sources, fonts, and WOFF2 versions of all of the fonts run:
 
-```
-python build.py --all --version 1.03
+```bash
+python build.py --all --version 1.054 # (replace version number)
 ```
 
 ### Making a GitHub release

@@ -27,7 +27,7 @@ newFamilyName="RecursiveBetaV"
 fontsFolder="/Users/stephennixon/Library/Fonts"
 
 # the current source dir which is holding the "Previews" folder
-sourceDir="src/masters--cubic_overlapped/experimental/curvier-casual"
+sourceDir="src/ufo--cubic_overlapped/experimental/curvier-casual"
 
 ufoDir="$sourceDir/Previews"
 
