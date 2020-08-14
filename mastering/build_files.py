@@ -108,10 +108,6 @@ def buildFiles(sources=True,
                             version)
         buildInstances(paths["designspace"], paths["cff"], name_map)
 
-    if variable:
-        print("\n🚚 Making files for varible font mastering")
-        makeSTAT(paths["stylespace"], ds)
-
     return paths
 
 

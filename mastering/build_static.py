@@ -496,7 +496,7 @@ def buildInstances(designspacePath, root, name_map):
                          suffix='Complete', length=50)
 
     print("✅ Made UFO instances")
-    batchCheckOutlines(root)
+    # batchCheckOutlines(root)
 
 
 def buildFolders(designspace, root, name_map):
