@@ -62,7 +62,6 @@ if __name__ == "__main__":
 
     if args.variable:
         build_variable(designspacePath=files["designspace"],
-                       stylespacePath=files["stylespace"],
                        out=os.path.join(outPaths[0],
                                         f"Recursive_VF_{version}.ttf"))
 

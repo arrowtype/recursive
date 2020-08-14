@@ -4,8 +4,7 @@ import shutil
 from plistlib import dump as plDump
 from fontmake.font_project import FontProject
 from fontTools.designspaceLib import DesignSpaceDocument
-from statmake.lib import apply_stylespace_to_variable_font
-from statmake.classes import Stylespace
+from fontTools.otlLib.builder import buildStatTable
 from utils import getFiles
 
 
@@ -23,20 +22,11 @@ def buildFeatures(src):
     print("🏗  Moved features into UFOs")
 
 
-def makeSTAT(path, designspace):
+def makeSTAT(font, designspace):
     """
-    Create a stylespace.plist for https://github.com/daltonmaag/statmake.
-    This is a bit more rational than dealing with TTX files for the STAT
-    table, though it still requires a bit of font specific logic in this
-    function, ideally one could parse more of the designspace file to get
-    the style information, but writing parsing code would take more effort,
-    and run into design specific challeges too, so this ends up a bit cleaner.
-
-    Put the axis specific information in the styles dictionary, let the rest
-    of the code be generic, save for the special sauce Recursive needs for
-    Italic.
-
-    *path* is a `string` of the path to the to save the stylespace file
+    Uses fontTools.otlLib.builder.buildStatTable to build the STAT table.
+    
+    *font* is a `fontTools` font object.
     *designspace* is a `DesignSpaceDocument` object
     """
 
@@ -81,8 +71,8 @@ def makeSTAT(path, designspace):
         # axis that need to be linked. This is dealt with at the end.
         if axis.name not in ["Cursive", "Slant"]:
             a = {}
-            a["name"] = axis.name
             a["tag"] = axis.tag
+            a["name"] = axis.name
             locations = []
             if axis.name == "Weight":
                 for value, name in styles["Weight"].items():
@@ -91,21 +81,13 @@ def makeSTAT(path, designspace):
                     else:
                         locations.append({"name": name,
                                           "value": value,
-                                          "linked_value": 700,
-                                          "flags": ["ElidableAxisValueName"]
+                                          "linkedValue": 700,
+                                          "flags": 0x2
                                           })
-            elif axis.name == "Monospace":
-                for value, name in styles["Monospace"].items():
+            else:
+                for value, name in styles[axis.name].items():
                     locations.append({"name": name, "value": value})
-            elif axis.name == "Casual":
-                for value, name in styles["Casual"].items():
-                    if value != 0:
-                        locations.append({"name": name, "value": value})
-                    else:
-                        locations.append({"name": name,
-                                          "value": value,
-                                          })
-            a["locations"] = locations
+            a["values"] = locations
         else:
             a = {"name": axis.name, "tag": axis.tag}
         axes.append(a)
@@ -115,22 +97,17 @@ def makeSTAT(path, designspace):
         location = {}
         location["name"] = name
         axis_values = {}
-        axis_values["Slant"] = values[0]
-        axis_values["Cursive"] = values[1]
-        location["axis_values"] = axis_values
+        axis_values["slnt"] = values[0]
+        axis_values["CRSV"] = values[1]
+        location["location"] = axis_values
         if values[0] == 0:
-            location["flags"] = ["ElidableAxisValueName"]
+            location["flags"] = 0x2
         locations.append(location)
 
-    stat = {"axes": axes, "locations": locations}
-    with open(path, 'wb') as fp:
-        plDump(stat, fp, sort_keys=False)
-
-    print("🏗  Made stylespace")
+    buildStatTable(font, axes, locations)
 
 
 def build_variable(designspacePath,
-                   stylespacePath=None,
                    out=None,
                    verbose="ERROR",
                    ):
@@ -157,17 +134,11 @@ def build_variable(designspacePath,
                            output_path=out,
                            useProductionNames=True)
 
-    if stylespacePath is not None:
-        print("🏗  Adding STAT table")
-        ds = DesignSpaceDocument.fromfile(designspacePath)
-        additional_locations = ds.lib.get("org.statmake.additionalLocations",
-                                          {})
-        font = fontTools.ttLib.TTFont(out)
-        stylespace = Stylespace.from_file(stylespacePath)
-        apply_stylespace_to_variable_font(stylespace,
-                                          font,
-                                          additional_locations)
-        font.save(out)
+    print("🏗  Adding STAT table")
+    ds = DesignSpaceDocument.fromfile(designspacePath)
+    font = fontTools.ttLib.TTFont(out)
+    makeSTAT(font, ds)
+    font.save(out)
 
     font = fontTools.ttLib.TTFont(out)
 
