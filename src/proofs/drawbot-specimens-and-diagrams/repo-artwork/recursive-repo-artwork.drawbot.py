@@ -12,7 +12,7 @@ autoOpen = True
 exportFormat = "png" # pdf, gif, mp4, jpeg, png, or bmp
 # W,H = 1280, 640 # pixels
 # W,H = 1800, 900 # pixels
-W,H = 1280, 640 # pixels - opengraph image
+W,H = 1270, 760 # pixels - opengraph image
 # W,H = 1600, 640 # pixels - github repo artwork
 
 mainColor = (0, 0.25, 1)

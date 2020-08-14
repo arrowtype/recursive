@@ -6,6 +6,8 @@ Custom 4-style packages specifically made for code editors, each featuring:
 - Reduced-slant italics for easier readability in code (normal Recursive Italics have slnt=-15, which is pretty intense)
 - All the same OpenType features that are available in Recursive generally, including `ss01`-`ss11` to customize letterforms to your preference.
 
+If you would rather customize your own version of Rec Mono for Code, check out https://github.com/arrowtype/recursive-code-config.
+
 
 ## Packages
 

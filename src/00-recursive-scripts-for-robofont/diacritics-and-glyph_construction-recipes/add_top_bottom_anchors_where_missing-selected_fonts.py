@@ -16,10 +16,10 @@
     - will this work for slanted masters?
 
     to fix manually:
-    - F, bottom
-    - b, d, f
-    - j, q
-    - (add ringbelow)
+    - [ ] F, bottom
+    - [ ] b, d, f
+    - [ ] j, q
+    - [x] (add ringbelow)
 """
 
 from vanilla.dialogs import *

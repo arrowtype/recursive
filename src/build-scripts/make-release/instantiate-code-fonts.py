@@ -267,7 +267,7 @@ def splitFont(
             setFontNameID(instanceFont, 2, newStyleLinkingName)
             setFontNameID(instanceFont, 17, newStyleLinkingName)
 
-            # UPDATE NAME ID 1, unique font ID
+            # UPDATE NAME ID 1, Font Family name
             currentFamName = getFontNameID(instanceFont, 1)
             newFamName = (currentFamName.replace(" Sans", "").replace(oldName, newName).replace(
                 "Linear Light",
@@ -283,22 +283,56 @@ def splitFont(
             # make dir for new fonts
             pathlib.Path(outputSubDir).mkdir(parents=True, exist_ok=True)
 
+            # -------------------------------------------------------
+            # OpenType Table fixes
+
             # drop STAT table to allow RIBBI style naming & linking on Windows
             del instanceFont["STAT"]
+
+            # In the post table, isFixedPitched flag must be set in the code fonts
+            instanceFont['post'].isFixedPitch = 1
+
+            # In the OS/2 table Panose bProportion must be set to 9
+            instanceFont["OS/2"].panose.bProportion = 9
+
+
+            if "Italic" in instanceValues[package][instance]["style"]:
+                instanceFont['OS/2'].fsSelection = 0b1
+                instanceFont["head"].macStyle = 0b10
+                # In the OS/2 table Panose bProportion must be set to 11 for "oblique boxed" (this is partially a guess)
+                instanceFont["OS/2"].panose.bLetterForm = 11
+
+            if "Bold" in instanceValues[package][instance]["style"]:
+                instanceFont['OS/2'].fsSelection = 0b100000
+                instanceFont["head"].macStyle = 0b1
+
+            if "Bold Italic" in instanceValues[package][instance]["style"]:
+                instanceFont['OS/2'].fsSelection = 0b100001
+                instanceFont["head"].macStyle = 0b11
+
+
+            # Also in the OS/2 table, xAvgCharWidth should be set to 600 rather than 612 (612 is an average of glyphs in the "Mono" files which include wide ligatures).
+            instanceFont["OS/2"].xAvgCharWidth = 600
+
+            # -------------------------------------------------------
+            # save instance font
 
             outputPath = f"{outputSubDir}/{newFileName}"
 
             # save font
             instanceFont.save(outputPath)
 
-            # freeze in rvrn features with pyftfeatfreeze
-            pyftfeatfreeze.main(["--features=rvrn", outputPath, outputPath])
+            # -------------------------------------------------------
+            # Code font special stuff in post processing
+
+            # freeze in rvrn features with pyftfeatfreeze: serifless 'f', unambiguous 'l', '6', '9'
+            pyftfeatfreeze.main(["--features=rvrn,ss03,ss05,ss07,ss09", outputPath, outputPath])
 
             # swap dlig2calt to make code ligatures work in old code editor apps
             dlig2calt(outputPath, inplace=True)
 
         # -----------------------------------------------------------
-        # make TTC (truetype collection) of fonts – doesn't current work on Mac very well :(
+        # make TTC (truetype collection) of fonts – doesn't currently work on Mac very well :(
 
         if ttc:
             # make list of fonts in subdir
