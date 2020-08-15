@@ -1,13 +1,4 @@
-@dfltZero = [zero             zerosuperior             zeroinferior             zeroinferior.afrc           zerosuperior.afrc           ];
-@sansZero = [zero.sans        zerosuperior.sans        zeroinferior.sans        zeroinferiorsans.afrc       zerosuperiorsans.afrc       ];
-@slshZero = [zero.slash       zerosuperior.slash       zeroinferior.slash       zeroinferiorslash.afrc      zerosuperiorslash.afrc      ];
-
-
-
 feature zero {
-    #sub zero.sans by zero;
-    #sub zero by zero.ss03;
-    #sub zero.sans by zero.ss03;
-    #sub @sansZero by @slshZero;
+    sub @sansZero by @slshZero;
     sub @dfltZero by @slshZero; # may not work in variable font
 } zero;
