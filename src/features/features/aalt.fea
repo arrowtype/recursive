@@ -376,10 +376,6 @@ feature aalt {
     sub idieresisacute.mono from [idieresisacute.mono idieresisacute idieresisacute.italic idieresisacute.simple];
     sub idieresisacute.simple from [idieresisacute.simple idieresisacute.mono idieresisacute idieresisacute.italic];
     sub idieresisacute.italic from [idieresisacute.italic idieresisacute.simple idieresisacute.mono idieresisacute];
-    sub idot from [idot idot.italic idot.simple idot.mono];
-    sub idot.mono from [idot.mono idot idot.italic idot.simple];
-    sub idot.simple from [idot.simple idot.mono idot idot.italic];
-    sub idot.italic from [idot.italic idot.simple idot.mono idot];
     sub idotaccent from [idotaccent idotaccent.mono idotaccent.italic idotaccent.simple];
     sub idotaccent.simple from [idotaccent.simple idotaccent idotaccent.mono idotaccent.italic];
     sub idotaccent.italic from [idotaccent.italic idotaccent.simple idotaccent idotaccent.mono];
