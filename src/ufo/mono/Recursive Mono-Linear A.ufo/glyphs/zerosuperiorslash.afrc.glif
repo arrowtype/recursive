@@ -2,12 +2,12 @@
 <glyph name="zerosuperiorslash.afrc" format="2">
 	<advance width="600"/>
 	<outline>
-		<component base="zeroinferior.afrc"/>
+		<component base="zerosuperior.afrc"/>
 	</outline>
 	<lib>
 		<dict>
 			<key>public.markColor</key>
-			<string>0,0,0,0.5</string>
+			<string>1,0.5,0,1</string>
 		</dict>
 	</lib>
 </glyph>

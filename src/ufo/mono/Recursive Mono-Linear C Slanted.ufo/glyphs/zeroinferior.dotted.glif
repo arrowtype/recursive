@@ -2,6 +2,12 @@
 <glyph name="zeroinferior.dotted" format="2">
 	<advance width="600"/>
 	<outline>
-		<component base="zerosuperior.dotted" xOffset="-120" yOffset="-480"/>
+		<component base="zerosuperior.dotted" xOffset="-117" yOffset="-470"/>
 	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>1,0.5,0,1</string>
+		</dict>
+	</lib>
 </glyph>

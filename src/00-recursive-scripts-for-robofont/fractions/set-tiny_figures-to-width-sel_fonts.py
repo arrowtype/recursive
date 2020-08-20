@@ -8,7 +8,8 @@ from vanilla.dialogs import *
 
 # settings below --------------------------------
 
-newWidth = 400
+# newWidth = 400 # sans
+newWidth = 600 # mono
 substringsToFind = "superior inferior"
 
 # settings above --------------------------------
@@ -22,6 +23,19 @@ for file in files:
 
     tinyFigs = [g.name for g in f if any(substring in g.name for substring in substringsToFind.split(" "))]
 
+    for gname in tinyFigs:
+        g = f[gname]
+        g.width = newWidth
+
+        # center glyph
+        totalMargin = g.angledLeftMargin + g.angledRightMargin
+        g.angledLeftMargin = totalMargin / 2
+        g.angledRightMargin = totalMargin / 2
+
+        # enforce width
+        g.width = newWidth
+
+    # repeat to catch component glyphs...
     for gname in tinyFigs:
         g = f[gname]
         g.width = newWidth
