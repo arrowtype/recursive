@@ -2,8 +2,47 @@
 <glyph name="seveneighths.afrc" format="2">
 	<advance width="800"/>
 	<outline>
+		<contour>
+			<point x="445" y="401" type="curve"/>
+			<point x="487.3620689655" y="401"/>
+			<point x="528.6379310345" y="401"/>
+			<point x="571" y="401" type="curve" smooth="yes"/>
+			<point x="576" y="401"/>
+			<point x="580" y="402"/>
+			<point x="585" y="409" type="curve" smooth="yes"/>
+			<point x="651" y="505"/>
+			<point x="719" y="600"/>
+			<point x="786" y="697" type="curve" smooth="yes"/>
+			<point x="792" y="705"/>
+			<point x="792" y="710"/>
+			<point x="784" y="710" type="curve" smooth="yes"/>
+			<point x="747.9881656805" y="710"/>
+			<point x="645.2485207101" y="710"/>
+			<point x="605" y="710" type="curve"/>
+			<point x="552.6669390399" y="607.2721395968"/>
+			<point x="497.3330609601" y="503.7278604032"/>
+		</contour>
+		<contour>
+			<point x="392" y="300" type="curve"/>
+			<point x="349.6379310345" y="300"/>
+			<point x="308.3620689655" y="300"/>
+			<point x="266" y="300" type="curve" smooth="yes"/>
+			<point x="261" y="300"/>
+			<point x="257" y="299"/>
+			<point x="252" y="292" type="curve" smooth="yes"/>
+			<point x="186" y="196"/>
+			<point x="117" y="101"/>
+			<point x="51" y="4" type="curve" smooth="yes"/>
+			<point x="45" y="-4"/>
+			<point x="45" y="-9"/>
+			<point x="53" y="-9" type="curve" smooth="yes"/>
+			<point x="89.0118343195" y="-9"/>
+			<point x="209.7573964497" y="-9"/>
+			<point x="232" y="-9" type="curve"/>
+			<point x="284.3356318239" y="93.7329069136"/>
+			<point x="339.6643681761" y="197.2670930864"/>
+		</contour>
 		<component base="sevensuperior.afrc"/>
-		<component base="fraction.split" xOffset="400"/>
 		<component base="eightinferior.afrc" xOffset="400"/>
 	</outline>
 	<lib>

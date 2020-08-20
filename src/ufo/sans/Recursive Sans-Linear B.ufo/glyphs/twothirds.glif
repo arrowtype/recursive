@@ -3,8 +3,47 @@
 	<unicode hex="2154"/>
 	<advance width="800"/>
 	<outline>
+		<contour>
+			<point x="425" y="415" type="curve"/>
+			<point x="436" y="415"/>
+			<point x="529" y="415"/>
+			<point x="539" y="415" type="curve" smooth="yes"/>
+			<point x="544" y="415"/>
+			<point x="547" y="416"/>
+			<point x="550" y="422" type="curve" smooth="yes"/>
+			<point x="556.7633759049" y="436.4929483677"/>
+			<point x="675.2045116013" y="682.5112790034"/>
+			<point x="681" y="697" type="curve" smooth="yes"/>
+			<point x="685" y="705"/>
+			<point x="683" y="710"/>
+			<point x="675" y="710" type="curve" smooth="yes"/>
+			<point x="665" y="710"/>
+			<point x="549" y="710"/>
+			<point x="539" y="710" type="curve"/>
+			<point x="535.130749597" y="699.3595613917"/>
+			<point x="430.8039923715" y="428.5426488669"/>
+		</contour>
+		<contour>
+			<point x="375" y="286" type="curve"/>
+			<point x="364" y="286"/>
+			<point x="271" y="286"/>
+			<point x="261" y="286" type="curve" smooth="yes"/>
+			<point x="256" y="286"/>
+			<point x="253" y="285"/>
+			<point x="250" y="279" type="curve" smooth="yes"/>
+			<point x="243.2366240951" y="264.5070516323"/>
+			<point x="124.7954883987" y="18.4887209966"/>
+			<point x="119" y="4" type="curve" smooth="yes"/>
+			<point x="115" y="-4"/>
+			<point x="117" y="-9"/>
+			<point x="125" y="-9" type="curve" smooth="yes"/>
+			<point x="135" y="-9"/>
+			<point x="251" y="-9"/>
+			<point x="261" y="-9" type="curve"/>
+			<point x="264.869250403" y="1.6404386083"/>
+			<point x="369.1960076285" y="272.4573511331"/>
+		</contour>
 		<component base="twosuperior"/>
-		<component base="fraction.split" xOffset="400"/>
 		<component base="threeinferior" xOffset="400"/>
 	</outline>
 	<lib>
