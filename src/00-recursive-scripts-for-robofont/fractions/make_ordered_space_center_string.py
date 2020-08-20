@@ -23,21 +23,26 @@ print(len(sups))
 #     if i == len(sups) - 1:
 #         print("/zerowidthspace")
 
-# # With fraction.split between, sorted
-# for i, sup in enumerate(sups):
-#     if i != 0 and i % 5 == 0:
-#         print("\\n", end="")
-
-#     print(f"/{sup}/fraction.split/{sup.replace('superior','inferior')}", end=" ")
-
-#     if i == len(sups) - 1:
-#         print("/zerowidthspace")
-
+# ----------------------------------------------
+# With fraction.split between, sorted
 for i, sup in enumerate(sups):
-    print(f"/{sup}", end=" ")
+    if i != 0 and i % 5 == 0:
+        print("\\n", end="")
 
-for i, sup in enumerate(sups):
-    print(f"/{sup.replace('superior','inferior')}", end=" ")
+    print(f"/{sup}/fraction.split/{sup.replace('superior','inferior')}", end=" ")
 
     if i == len(sups) - 1:
         print("/zerowidthspace")
+
+
+# # ----------------------------------------------
+# # just arranged ordered tiny figs
+
+# for i, sup in enumerate(sups):
+#     print(f"/{sup}", end=" ")
+
+# for i, sup in enumerate(sups):
+#     print(f"/{sup.replace('superior','inferior')}", end=" ")
+
+#     if i == len(sups) - 1:
+#         print("/zerowidthspace")
