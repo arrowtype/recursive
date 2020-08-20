@@ -51,7 +51,7 @@ def setTinyFigGuides(roundFig="eightsuperior"):
         zerosuperior.slash zeroinferior.slash zerosuperior.dotted zeroinferior.dotted \
         zerosuperior.sans zeroinferior.sans".split()
 
-    # get round figure maxY, min&
+    # get round figure maxY, minY
     minY = f[roundFig].bounds[1]
     maxY = f[roundFig].bounds[3]
     minYflat = minY + 10
