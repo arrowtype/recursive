@@ -10,8 +10,8 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 txt = '''\
 zerosuperior.slash = zerosuperior
 zeroinferior.slash = zeroinferior
-zeroinferiorslash.afrc = zerosuperior.afrc
-zerosuperiorslash.afrc = zeroinferior.afrc
+zerosuperiorslash.afrc = zerosuperior.afrc
+zeroinferiorslash.afrc = zeroinferior.afrc
 '''
 
 print(txt)
