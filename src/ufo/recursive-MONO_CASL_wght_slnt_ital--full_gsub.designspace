@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <designspace format="4.0">
   <axes>
     <axis tag="MONO" name="Monospace" minimum="0" maximum="1" default="0">
@@ -463,6 +463,7 @@
       <sub name="zero" with="zero.sans" />
       <sub name="zerosuperior" with="zerosuperior.sans" />
       <sub name="zeroinferior" with="zeroinferior.sans" />
+      <sub name="fraction" with="fraction.split" />
       <sub name="l" with="l.sans" />
       <sub name="lcaron" with="lcaron.sans" />
       <sub name="ldot" with="ldot.sans" />
@@ -481,6 +482,7 @@
       <sub name="zero" with="zero.sans" />
       <sub name="zerosuperior" with="zerosuperior.sans" />
       <sub name="zeroinferior" with="zeroinferior.sans" />
+      <sub name="fraction" with="fraction.split" />
     </rule>
     <rule name="sans forceroman">
       <conditionset>
@@ -498,6 +500,7 @@
       <sub name="zero" with="zero.sans" />
       <sub name="zerosuperior" with="zerosuperior.sans" />
       <sub name="zeroinferior" with="zeroinferior.sans" />
+      <sub name="fraction" with="fraction.split" />
     </rule>
     <rule name="sans autoitalic">
       <conditionset>

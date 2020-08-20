@@ -7,11 +7,27 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 
 
 
+# zerosuperior.slash = zerosuperior
+# zeroinferior.slash = zeroinferior
+# zerosuperiorslash.afrc = zerosuperior.afrc
+# zeroinferiorslash.afrc = zeroinferior.afrc
 txt = '''\
-zerosuperior.slash = zerosuperior
-zeroinferior.slash = zeroinferior
-zerosuperiorslash.afrc = zerosuperior.afrc
-zeroinferiorslash.afrc = zeroinferior.afrc
+onequarter = onesuperior & fraction.split & fourinferior
+threequarters = threesuperior & fraction.split & fourinferior
+onethird = onesuperior & fraction.split & threeinferior
+twothirds = twosuperior & fraction.split & threeinferior
+oneeighth = onesuperior & fraction.split & eightinferior
+threeeighths = threesuperior & fraction.split & eightinferior
+fiveeighths = fivesuperior & fraction.split & eightinferior
+seveneighths = sevensuperior & fraction.split & eightinferior
+onequarter.afrc = onesuperior.afrc & fraction.split & fourinferior.afrc 
+threequarters.afrc = threesuperior.afrc & fraction.split & fourinferior.afrc 
+onethird.afrc = onesuperior.afrc & fraction.split & threeinferior.afrc
+twothirds.afrc = twosuperior.afrc & fraction.split & threeinferior.afrc
+oneeighth.afrc = onesuperior.afrc &  fraction.split & eightinferior.afrc
+threeeighths.afrc = threesuperior.afrc & fraction.split & eightinferior.afrc
+fiveeighths.afrc = fivesuperior.afrc & fraction.split & eightinferior.afrc
+seveneighths.afrc = sevensuperior.afrc & fraction.split & eightinferior.afrc
 '''
 
 print(txt)
