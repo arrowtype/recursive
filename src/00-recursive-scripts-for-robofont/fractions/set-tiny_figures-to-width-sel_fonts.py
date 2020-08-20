@@ -15,6 +15,7 @@ substringsToFind = "superior inferior"
 
 files = getFile("Select files to build glyphs in", allowsMultipleSelection=True, fileTypes=["ufo"])
 
+
 for file in files:
     # font = OpenFont(file, showInterface=False)
     f = OpenFont(file, showInterface=True)
@@ -26,9 +27,9 @@ for file in files:
         g.width = newWidth
 
         # center glyph
-        totalMargin = g.leftMargin + g.rightMargin
-        g.leftMargin = totalMargin / 2
-        g.rightMargin = totalMargin / 2
+        totalMargin = g.angledLeftMargin + g.angledRightMargin
+        g.angledLeftMargin = totalMargin / 2
+        g.angledRightMargin = totalMargin / 2
 
         # enforce width
         g.width = newWidth
