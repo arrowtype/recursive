@@ -1,12 +1,12 @@
 # Rec Mono for Code
 
-Custom 4-style packages specifically made for code editors, each featuring:
+NOTE: If you would rather customize your own version of Rec Mono for Code, check out https://github.com/arrowtype/recursive-code-config.
+
+This folder includes four pre-customized packages specifically made for code editors, each featuring:
 - Regular, Italic, Bold, & Bold Italic static fonts
 - An abbreviated family name to enable italic themes on macOS
 - Reduced-slant italics for easier readability in code (normal Recursive Italics have slnt=-15, which is pretty intense)
 - All the same OpenType features that are available in Recursive generally, including `ss01`-`ss11` to customize letterforms to your preference.
-
-If you would rather customize your own version of Rec Mono for Code, check out https://github.com/arrowtype/recursive-code-config.
 
 
 ## Packages
@@ -29,14 +29,5 @@ Download the zip in this folder for an easy way to download these fonts. Then, i
 ## Code Ligatures
 
 By popular demand, these fonts shift the code ligature feature from their usual OpenType feature of `dlig` to the feature `calt`, to act more like preexisting code-ligature fonts such as Fira Code & Hasklig.
-
-These are therefore activated by default in general text settings, and activatable in many code editors under typical "Code Ligatures" setting.
-
-In VS Code, you can control ligatures *and* stylistic sets by doubling the setting in `settings.json`, using the first line for ligatures and the second for stylistic sets:
-
-```json
-  "editor.fontLigatures": true,
-  "editor.fontLigatures": "'ss01','ss03', 'ss06'",
-```
 
 In the Desktop & Web fonts, code ligatures are still controlled by the `dlig` feature, so that they are *not* on by default for contexts in which they may not be well-understood by many users.
