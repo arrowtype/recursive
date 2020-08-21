@@ -227,7 +227,8 @@ After the files have been generated (do note that the static instances take a bi
 To build all the static fonts, run:
 
 ```bash
-python build.py --static
+python build.py --statfiles # preps the files
+python build.py --static --version 1.055 # (replace version number)
 ```
 
 **To build the variable font**
@@ -235,7 +236,8 @@ python build.py --static
 To build the variable font, run:
 
 ```bash
-python build.py --variable
+python build.py --varfiles # preps the files
+python build.py --variable --version 1.055 # (replace version number)
 ```
 
 **To build all the fonts**

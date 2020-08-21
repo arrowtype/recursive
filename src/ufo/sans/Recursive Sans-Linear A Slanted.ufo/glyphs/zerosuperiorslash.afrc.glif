@@ -2,12 +2,14 @@
 <glyph name="zerosuperiorslash.afrc" format="2">
 	<advance width="400"/>
 	<outline>
-		<component base="zeroinferior.afrc"/>
+		<component base="zerosuperior.afrc"/>
 	</outline>
-	<lib>
-		<dict>
-			<key>public.markColor</key>
-			<string>0,0,0,0.5</string>
-		</dict>
-	</lib>
+	<guideline x="0" y="372" angle="0"/>
+	<guideline x="0" y="727" angle="0"/>
+	<guideline x="0" y="382" angle="0"/>
+	<guideline x="0" y="717" angle="0"/>
+	<guideline x="0" y="-27" angle="0"/>
+	<guideline x="0" y="328" angle="0"/>
+	<guideline x="0" y="-17" angle="0"/>
+	<guideline x="0" y="318" angle="0"/>
 </glyph>

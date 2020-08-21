@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="zeroinferior" format="2">
 	<unicode hex="2080"/>
-	<advance width="450"/>
+	<advance width="400"/>
 	<outline>
-		<component base="zerosuperior" xOffset="-118" yOffset="-470"/>
+		<component base="zerosuperior" xOffset="-117" yOffset="-470"/>
 	</outline>
+	<guideline x="0" y="350" angle="0"/>
+	<guideline x="0" y="820" angle="0"/>
+	<guideline x="0" y="360" angle="0"/>
+	<guideline x="0" y="810" angle="0"/>
+	<guideline x="0" y="-120" angle="0"/>
+	<guideline x="0" y="350" angle="0"/>
+	<guideline x="0" y="-110" angle="0"/>
+	<guideline x="0" y="340" angle="0"/>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>

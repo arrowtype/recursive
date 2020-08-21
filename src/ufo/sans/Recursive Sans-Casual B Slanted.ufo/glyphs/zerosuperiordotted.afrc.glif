@@ -3,60 +3,68 @@
 	<advance width="400"/>
 	<outline>
 		<contour>
-			<point x="319" y="742" type="curve" smooth="yes"/>
-			<point x="233" y="742"/>
-			<point x="166" y="677"/>
-			<point x="136" y="561" type="curve" smooth="yes"/>
-			<point x="125" y="519" type="line" smooth="yes"/>
-			<point x="101" y="426"/>
-			<point x="140" y="357"/>
-			<point x="237" y="357" type="curve" smooth="yes"/>
-			<point x="322" y="357"/>
-			<point x="387" y="413"/>
-			<point x="414" y="515" type="curve" smooth="yes"/>
-			<point x="425" y="556" type="line" smooth="yes"/>
-			<point x="450" y="658"/>
-			<point x="415" y="742"/>
+			<point x="312" y="742" type="curve" smooth="yes"/>
+			<point x="226" y="742"/>
+			<point x="159" y="677"/>
+			<point x="129" y="561" type="curve" smooth="yes"/>
+			<point x="118" y="519" type="line" smooth="yes"/>
+			<point x="94" y="426"/>
+			<point x="133" y="357"/>
+			<point x="230" y="357" type="curve" smooth="yes"/>
+			<point x="315" y="357"/>
+			<point x="380" y="413"/>
+			<point x="407" y="515" type="curve" smooth="yes"/>
+			<point x="418" y="556" type="line" smooth="yes"/>
+			<point x="443" y="658"/>
+			<point x="408" y="742"/>
 		</contour>
 		<contour>
-			<point x="309" y="660" type="curve" smooth="yes"/>
-			<point x="325" y="660"/>
-			<point x="338" y="658"/>
-			<point x="345" y="655" type="curve"/>
-			<point x="354" y="640"/>
-			<point x="353" y="612"/>
-			<point x="344" y="577" type="curve" smooth="yes"/>
-			<point x="330" y="524" type="line" smooth="yes"/>
-			<point x="312" y="458"/>
-			<point x="285" y="439"/>
-			<point x="240" y="439" type="curve" smooth="yes"/>
-			<point x="232" y="439"/>
-			<point x="226" y="439"/>
-			<point x="218" y="441" type="curve"/>
-			<point x="206" y="454"/>
-			<point x="203" y="481"/>
-			<point x="209" y="504" type="curve" smooth="yes"/>
-			<point x="225" y="565" type="line" smooth="yes"/>
-			<point x="242" y="628"/>
-			<point x="271" y="660"/>
+			<point x="302" y="660" type="curve" smooth="yes"/>
+			<point x="318" y="660"/>
+			<point x="331" y="658"/>
+			<point x="338" y="655" type="curve"/>
+			<point x="347" y="640"/>
+			<point x="346" y="612"/>
+			<point x="337" y="577" type="curve" smooth="yes"/>
+			<point x="323" y="524" type="line" smooth="yes"/>
+			<point x="305" y="458"/>
+			<point x="278" y="439"/>
+			<point x="233" y="439" type="curve" smooth="yes"/>
+			<point x="225" y="439"/>
+			<point x="219" y="439"/>
+			<point x="211" y="441" type="curve"/>
+			<point x="199" y="454"/>
+			<point x="196" y="481"/>
+			<point x="202" y="504" type="curve" smooth="yes"/>
+			<point x="218" y="565" type="line" smooth="yes"/>
+			<point x="235" y="628"/>
+			<point x="264" y="660"/>
 		</contour>
 		<contour>
-			<point x="321" y="589" type="line"/>
-			<point x="312" y="594"/>
-			<point x="302" y="596"/>
-			<point x="291" y="596" type="curve" smooth="yes"/>
-			<point x="266" y="596"/>
-			<point x="251" y="581"/>
-			<point x="242" y="544" type="curve" smooth="yes"/>
-			<point x="237" y="523" type="line"/>
-			<point x="245" y="519"/>
-			<point x="251" y="517"/>
-			<point x="262" y="517" type="curve" smooth="yes"/>
-			<point x="289" y="517"/>
-			<point x="302" y="523"/>
-			<point x="311" y="554" type="curve" smooth="yes"/>
+			<point x="314" y="589" type="line"/>
+			<point x="305" y="594"/>
+			<point x="295" y="596"/>
+			<point x="284" y="596" type="curve" smooth="yes"/>
+			<point x="259" y="596"/>
+			<point x="244" y="581"/>
+			<point x="235" y="544" type="curve" smooth="yes"/>
+			<point x="230" y="523" type="line"/>
+			<point x="238" y="519"/>
+			<point x="244" y="517"/>
+			<point x="255" y="517" type="curve" smooth="yes"/>
+			<point x="282" y="517"/>
+			<point x="295" y="523"/>
+			<point x="304" y="554" type="curve" smooth="yes"/>
 		</contour>
 	</outline>
+	<guideline x="0" y="357" angle="0"/>
+	<guideline x="0" y="742" angle="0"/>
+	<guideline x="0" y="367" angle="0"/>
+	<guideline x="0" y="732" angle="0"/>
+	<guideline x="0" y="-42" angle="0"/>
+	<guideline x="0" y="343" angle="0"/>
+	<guideline x="0" y="-32" angle="0"/>
+	<guideline x="0" y="333" angle="0"/>
 	<lib>
 		<dict>
 			<key>public.markColor</key>
