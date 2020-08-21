@@ -61,16 +61,23 @@ def changeVersion(fontPath, newVersion, oldVersion=""):
     else:
         oldVersion = str(oldVersion)
 
-    print(oldVersion)
+    oldVersion = oldVersion.ljust(5, "0")
+
+    print()
+    print('oldVersion:', oldVersion)
 
     font['head'].fontRevision = newVersion
+
+    print('head version now ', font['head'].fontRevision)
 
     # update name 3 – 1.050;ARRW;Recursive-SansLinearLight
     oldName3 = getFontNameID(font, 3)
     setFontNameID(font, 3, oldName3.replace(oldVersion, str(newVersion)))
 
     # update name 5 – Version 1.050
-    print(getFontNameID(font, 5))
+    print()
+    print('Name 5:', getFontNameID(font, 5))
+    print(newVersion)
     oldName5 = getFontNameID(font, 5)
     setFontNameID(font, 5, oldName5.replace(f"Version {oldVersion}", f"Version {str(newVersion)}"))
 

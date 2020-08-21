@@ -33,6 +33,12 @@ outputDir=Recursive-${version/" "/"_"}
 # rm -rf fonts/$outputDir
 # rm -rf fonts/$outputDir.zip
 
+# ---------------------------------------------
+# make sure versions are set
+
+python src/build-scripts/make-release/change-font-versions-in-dir.py $dir $version
+
+# ---------------------------------------------
 # make folders for outputs
 mkdir -p $outputDir
 mkdir -p $outputDir/$desktopDir
