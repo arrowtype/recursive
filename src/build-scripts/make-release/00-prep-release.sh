@@ -68,7 +68,7 @@ webVFttf=$outputDir/$webDir/$(basename $VF)
 cp $VF $webVFttf
 
 # make subsets with separate shell script
-src/build-scripts/make-release/unicode_range-subsets.sh $webVFttf
+src/build-scripts/make-release/make-variable-woff2s_and_subsets.sh $webVFttf
 
 # remove temp variable ttf
 rm $webVFttf
@@ -112,7 +112,9 @@ cp $(dirname $0)/data/release-notes--web.md $outputDir/$webDir/README.md
 # ---------------------------------------------
 # make a zip of the outputDir, then move both dir & zip into "fonts/"
 
-zip $outputDir.zip -r $outputDir
+zip $outputDir.zip -r $outputDir -x .DS_*
+# zip $outputDir.zip -d __MACOSX* # not working...
 
-mv $outputDir.zip fonts
-mv $outputDir fonts
+
+mv $outputDir.zip fonts/$outputDir.zip
+mv $outputDir fonts/$outputDir
