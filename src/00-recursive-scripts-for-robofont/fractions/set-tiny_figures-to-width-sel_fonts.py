@@ -8,9 +8,12 @@ from vanilla.dialogs import *
 
 # settings below --------------------------------
 
+newWidth = 0 # sans fraction
 # newWidth = 400 # sans
-newWidth = 600 # mono
-substringsToFind = "superior inferior"
+# newWidth = 600 # mono
+# substringsToFind = "superior inferior"
+substringsToFind = "fraction"
+
 
 # settings above --------------------------------
 
