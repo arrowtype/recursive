@@ -17,6 +17,8 @@ OutputWindow().clear()
 
 af = AllFonts()
 
+check = "dotbelowcomb dotbelowcomb.case".split()
+
 fix = True
 
 threshold = 20
@@ -28,13 +30,14 @@ for file in files:
     print()
     print(f.info.styleName)
     print()
-    print(f"\t yPos of 'dotaccentcomb' in composed glyphs, if not 0 or greater than {threshold}:")
+    print(f"\t yPos of {check} in composed glyphs, if not 0 or greater than {threshold}:")
     print()
     for g in f:
         if len(g.components) > 0:
             for c in g.components:
-                if c.baseGlyph == 'dotaccentcomb' and g.name != 'dotaccentcomb.case':
-                    if c.offset[1] != 0 and c.offset[1] <= threshold:
+                # if c.baseGlyph == 'dotaccentcomb' and g.name != 'dotaccentcomb.case':
+                if c.baseGlyph in check:
+                    if c.offset[1] != 0 and abs(c.offset[1]) <= threshold:
                         print("\t", g.name, "yPos: ", c.offset[1])
 
                         if fix:
