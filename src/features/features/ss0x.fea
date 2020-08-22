@@ -70,6 +70,16 @@ feature ss06 {
 feature ss07 {
     featureNames {
         # MS, unicode, English
+        name "Simplified italic diagonals";
+        # Apple, roman, unspecified
+        name 1 "Simplified italic diagonals";
+    };
+    sub @curvyDiagonals by @romanDiagonals;
+} ss07;
+
+feature ss08 {
+    featureNames {
+        # MS, unicode, English
         name "No-serif \2018L\2019 & \2018Z\2019";
         # Apple, roman, unspecified
         name 1 "No-serif \2018L\2019 & \D4Z\D5";
@@ -77,20 +87,7 @@ feature ss07 {
     sub @dfltCapL by @sansCapL;
     sub @dfltCapZ by @sansCapZ;
     sub z.italic by z;
-} ss07;
-
-feature ss08 {
-    featureNames {
-        # MS, unicode, English
-        name "Simplified Mono \2018at\2019";
-        # Apple, roman, unspecified
-        name 1 "Simplified Mono \D4at\D5";
-    };
-    sub at by at.alt;
-    sub at.case by at.alt_case;
 } ss08;
-
-# TODO: change names of \2018s\2019x.ss01', etc, in sources
 
 feature ss09 {
     featureNames {
@@ -107,7 +104,6 @@ feature ss09 {
     sub nineinferior by nineinferior.ss01;
 } ss09;
 
-# TODO: add dotted zero as ss10
 feature ss10 {
     featureNames {
         # MS, unicode, English
@@ -129,6 +125,17 @@ feature ss11 {
     sub one by one.simple;
     sub one.sans by one.simple;
 } ss11;
+
+feature ss12 {
+    featureNames {
+        # MS, unicode, English
+        name "Simplified Mono \2018at\2019";
+        # Apple, roman, unspecified
+        name 1 "Simplified Mono \D4at\D5";
+    };
+    sub at by at.alt;
+    sub at.case by at.alt_case;
+} ss12;
 
 feature ss20 {
     featureNames {
