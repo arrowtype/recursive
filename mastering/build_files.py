@@ -27,7 +27,6 @@ def getFolders(ds):
     var_root = os.path.join(root, "var")
     src = os.path.join(root, "src")
     designspacePath = os.path.join(src, ds)
-    stylespacePath = os.path.join(var_root, "Recursive.stylespace")
 
     paths = {"root": root,
              "static": static_root,
@@ -36,7 +35,6 @@ def getFolders(ds):
              "var": var_root,
              "src": src,
              "designspace": designspacePath,
-             "stylespace": stylespacePath
              }
 
     return paths
