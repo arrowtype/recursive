@@ -118,7 +118,7 @@ mkdir -p $outputDir/$desktopDir/separate_statics/TTF
 cp -r $dir/Static_OTF $outputDir/$desktopDir/separate_statics/
 rm $outputDir/$desktopDir/separate_statics/Static_OTF/*_output.txt
 
-cp -r $dir/Static_TTF $outputDir/$desktopDir/separate_statics/TTF
+cp -r $dir/Static_TTF $outputDir/$desktopDir/separate_statics/
 rm $outputDir/$desktopDir/separate_statics/Static_TTF/*_output.txt
 
 # ---------------------------------------------
