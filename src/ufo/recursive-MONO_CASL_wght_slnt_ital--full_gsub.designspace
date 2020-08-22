@@ -463,7 +463,6 @@
       <sub name="zero" with="zero.sans" />
       <sub name="zerosuperior" with="zerosuperior.sans" />
       <sub name="zeroinferior" with="zeroinferior.sans" />
-      <sub name="slash" with="slash.split" />
       <sub name="l" with="l.sans" />
       <sub name="lcaron" with="lcaron.sans" />
       <sub name="ldot" with="ldot.sans" />
@@ -482,7 +481,6 @@
       <sub name="zero" with="zero.sans" />
       <sub name="zerosuperior" with="zerosuperior.sans" />
       <sub name="zeroinferior" with="zeroinferior.sans" />
-      <sub name="slash" with="slash.split" />
     </rule>
     <rule name="sans forceroman">
       <conditionset>
@@ -500,7 +498,6 @@
       <sub name="zero" with="zero.sans" />
       <sub name="zerosuperior" with="zerosuperior.sans" />
       <sub name="zeroinferior" with="zeroinferior.sans" />
-      <sub name="slash" with="slash.split" />
     </rule>
     <rule name="sans autoitalic">
       <conditionset>
@@ -837,6 +834,14 @@
       <sub name="zero" with="zero.sans" />
       <sub name="zerosuperior" with="zerosuperior.sans" />
       <sub name="zeroinferior" with="zeroinferior.sans" />
+    </rule>
+  </rules>
+  <rules processing="last">
+    <rule name="mono fractions">
+      <conditionset>
+        <condition name="Monospace" minimum="0.5" maximum="1" />
+      </conditionset>
+      <sub name="fraction.split" with="fraction" />
     </rule>
   </rules>
   <sources>
