@@ -3,78 +3,48 @@ feature frac {
     lookup FractionBar;
 
     lookup Numerator1 {
-        sub @numbers_dflt' fraction.split by @numbers_numr;
+        sub @numbers_dflt' @fractions by @numbers_numr;
     } Numerator1;
 
     lookup Numerator2 {
-        sub @numbers_dflt' @numbers_numr fraction.split by @numbers_numr;
+        sub @numbers_dflt' @numbers_numr @fractions by @numbers_numr;
     } Numerator2;
 
     lookup Numerator3 {
-        sub @numbers_dflt' @numbers_numr @numbers_numr fraction.split by @numbers_numr;
+        sub @numbers_dflt' @numbers_numr @numbers_numr @fractions by @numbers_numr;
     } Numerator3;
 
     lookup Numerator4 {
-        sub @numbers_dflt' @numbers_numr @numbers_numr @numbers_numr fraction.split by @numbers_numr;
+        sub @numbers_dflt' @numbers_numr @numbers_numr @numbers_numr @fractions by @numbers_numr;
     } Numerator4;
 
     lookup Numerator5 {
-        sub @numbers_dflt' @numbers_numr @numbers_numr @numbers_numr @numbers_numr fraction.split by @numbers_numr;
+        sub @numbers_dflt' @numbers_numr @numbers_numr @numbers_numr @numbers_numr @fractions by @numbers_numr;
     } Numerator5;
 
     lookup Numerator6 {
-        sub @numbers_dflt' @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr fraction.split by @numbers_numr;
+        sub @numbers_dflt' @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @fractions by @numbers_numr;
     } Numerator6;
 
     lookup Numerator7 {
-        sub @numbers_dflt' @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr fraction.split by @numbers_numr;
+        sub @numbers_dflt' @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @fractions by @numbers_numr;
     } Numerator7;
 
     lookup Numerator8 {
-        sub @numbers_dflt' @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr fraction.split by @numbers_numr;
+        sub @numbers_dflt' @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @fractions by @numbers_numr;
     } Numerator8;
 
     lookup Numerator9 {
-        sub @numbers_dflt' @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr fraction.split by @numbers_numr;
+        sub @numbers_dflt' @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @fractions by @numbers_numr;
     } Numerator9;
 
     lookup Numerator10 {
-        sub @numbers_dflt' @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr fraction.split by @numbers_numr;
+        sub @numbers_dflt' @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @fractions by @numbers_numr;
     } Numerator10;
 
     lookup Denominator {
-        sub [fraction.split @numbers_dnom] @numbers_dflt' by @numbers_dnom;
+        sub [@fractions @numbers_dnom] @numbers_dflt' by @numbers_dnom;
     } Denominator;
-
-    # lookup precomposed {
-    #     ignore sub @numbers_numr onesuperior' fraction' twoinferior'; 
-    #     ignore sub onesuperior' fraction' twoinferior' @numbers_dnom; 
-    #     ignore sub @numbers_numr onesuperior' fraction' threeinferior';
-    #     ignore sub onesuperior' fraction' threeinferior' @numbers_dnom;
-    #     ignore sub @numbers_numr twosuperior' fraction' threeinferior';
-    #     ignore sub twosuperior' fraction' threeinferior' @numbers_dnom;
-    #     ignore sub @numbers_numr onesuperior' fraction' fourinferior';
-    #     ignore sub onesuperior' fraction' fourinferior' @numbers_dnom;
-    #     ignore sub @numbers_numr threesuperior' fraction' fourinferior';
-    #     ignore sub threesuperior' fraction' fourinferior' @numbers_dnom;
-    #     ignore sub @numbers_numr onesuperior' fraction' eightinferior';
-    #     ignore sub onesuperior' fraction' eightinferior' @numbers_dnom;
-    #     ignore sub @numbers_numr threesuperior' fraction' eightinferior';
-    #     ignore sub threesuperior' fraction' eightinferior' @numbers_dnom;
-    #     ignore sub @numbers_numr fivesuperior' fraction' eightinferior';
-    #     ignore sub fivesuperior' fraction' eightinferior' @numbers_dnom;
-    #     ignore sub @numbers_numr sevensuperior' fraction' eightinferior';
-    #     ignore sub sevensuperior' fraction' eightinferior' @numbers_dnom;
-    #     sub onesuperior' fraction' twoinferior' by onehalf;
-    #     sub onesuperior' fraction' threeinferior' by onethird;
-    #     sub twosuperior' fraction' threeinferior' by twothirds;
-    #     sub onesuperior' fraction' fourinferior' by onequarter;
-    #     sub threesuperior' fraction' fourinferior' by threequarters;
-    #     sub onesuperior' fraction' eightinferior' by oneeighth;
-    #     sub threesuperior' fraction' eightinferior' by threeeighths;
-    #     sub fivesuperior' fraction' eightinferior' by fiveeighths;
-    #     sub sevensuperior' fraction' eightinferior' by seveneighths;
-    # } precomposed;
 
     sub @numbers_dflt space' @numbers_numr by space.frac;
     sub @numbers_dflt space' @PRE by space.frac;

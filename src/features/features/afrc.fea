@@ -3,80 +3,50 @@ feature afrc {
     lookup FractionBar;
 
     lookup Numerator1_afrc {
-        sub @numbers_dflt' fraction.split by @numbers_numr_afrc;
+        sub @numbers_dflt' @fractions by @numbers_numr_afrc;
     } Numerator1_afrc;
 
     lookup Numerator2_afrc {
-        sub @numbers_dflt' @numbers_numr_afrc fraction.split by @numbers_numr_afrc;
+        sub @numbers_dflt' @numbers_numr_afrc @fractions by @numbers_numr_afrc;
     } Numerator2_afrc;
 
     lookup Numerator3_afrc {
-        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc fraction.split by @numbers_numr_afrc;
+        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc @fractions by @numbers_numr_afrc;
     } Numerator3_afrc;
 
     lookup Numerator4_afrc {
-        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc fraction.split by @numbers_numr_afrc;
+        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @fractions by @numbers_numr_afrc;
     } Numerator4_afrc;
 
     lookup Numerator5_afrc {
-        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc fraction.split by @numbers_numr_afrc;
+        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @fractions by @numbers_numr_afrc;
     } Numerator5_afrc;
 
     lookup Numerator6_afrc {
-        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc fraction.split by @numbers_numr_afrc;
+        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @fractions by @numbers_numr_afrc;
     } Numerator6_afrc;
 
     lookup Numerator7_afrc {
-        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc fraction.split by @numbers_numr_afrc;
+        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @fractions by @numbers_numr_afrc;
     } Numerator7_afrc;
 
     lookup Numerator8_afrc {
-        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc fraction.split by @numbers_numr_afrc;
+        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @fractions by @numbers_numr_afrc;
     } Numerator8_afrc;
 
     lookup Numerator9_afrc {
-        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc fraction.split by @numbers_numr_afrc;
+        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @fractions by @numbers_numr_afrc;
     } Numerator9_afrc;
 
     lookup Numerator10_afrc {
-        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc fraction.split by @numbers_numr_afrc;
+        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @fractions by @numbers_numr_afrc;
     } Numerator10_afrc;
 
     lookup Denominator_afrc {
-        sub [fraction.split @numbers_dnom_afrc] @numbers_dflt' by @numbers_dnom_afrc;
+        sub [@fractions @numbers_dnom_afrc] @numbers_dflt' by @numbers_dnom_afrc;
     } Denominator_afrc;
 
     sub @PRE by @PRE_afrc;
-
-    # lookup precomposed_afrc {
-    #     ignore sub @numbers_numr_afrc onesuperior.afrc' fraction' twoinferior.afrc'; 
-    #     ignore sub onesuperior.afrc' fraction' twoinferior.afrc' @numbers_dnom_afrc; 
-    #     ignore sub @numbers_numr_afrc onesuperior.afrc' fraction' threeinferior.afrc';
-    #     ignore sub onesuperior.afrc' fraction' threeinferior.afrc' @numbers_dnom_afrc;
-    #     ignore sub @numbers_numr_afrc twosuperior.afrc' fraction' threeinferior.afrc';
-    #     ignore sub twosuperior.afrc' fraction' threeinferior.afrc' @numbers_dnom_afrc;
-    #     ignore sub @numbers_numr_afrc onesuperior.afrc' fraction' fourinferior.afrc';
-    #     ignore sub onesuperior.afrc' fraction' fourinferior.afrc' @numbers_dnom_afrc;
-    #     ignore sub @numbers_numr_afrc threesuperior.afrc' fraction' fourinferior.afrc';
-    #     ignore sub threesuperior.afrc' fraction' fourinferior.afrc' @numbers_dnom_afrc;
-    #     ignore sub @numbers_numr_afrc onesuperior.afrc' fraction' eightinferior.afrc';
-    #     ignore sub onesuperior.afrc' fraction' eightinferior.afrc' @numbers_dnom_afrc;
-    #     ignore sub @numbers_numr_afrc threesuperior.afrc' fraction' eightinferior.afrc';
-    #     ignore sub threesuperior.afrc' fraction' eightinferior.afrc' @numbers_dnom_afrc;
-    #     ignore sub @numbers_numr_afrc fivesuperior.afrc' fraction' eightinferior.afrc';
-    #     ignore sub fivesuperior.afrc' fraction' eightinferior.afrc' @numbers_dnom_afrc;
-    #     ignore sub @numbers_numr_afrc sevensuperior.afrc' fraction' eightinferior.afrc';
-    #     ignore sub sevensuperior.afrc' fraction' eightinferior.afrc' @numbers_dnom_afrc;
-    #     sub onesuperior.afrc' fraction' twoinferior.afrc' by onehalf.afrc;
-    #     sub onesuperior.afrc' fraction' threeinferior.afrc' by onethird.afrc;
-    #     sub twosuperior.afrc' fraction' threeinferior.afrc' by twothirds.afrc;
-    #     sub onesuperior.afrc' fraction' fourinferior.afrc' by onequarter.afrc;
-    #     sub threesuperior.afrc' fraction' fourinferior.afrc' by threequarters.afrc;
-    #     sub onesuperior.afrc' fraction' eightinferior.afrc' by oneeighth.afrc;
-    #     sub threesuperior.afrc' fraction' eightinferior.afrc' by threeeighths.afrc;
-    #     sub fivesuperior.afrc' fraction' eightinferior.afrc' by fiveeighths.afrc;
-    #     sub sevensuperior.afrc' fraction' eightinferior.afrc' by seveneighths.afrc;
-    # } precomposed_afrc;
 
     sub @numbers_dflt space' @numbers_numr_afrc by space.frac;
     sub @numbers_dflt space' @PRE_afrc by space.frac;
