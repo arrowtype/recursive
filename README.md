@@ -228,7 +228,7 @@ To build all the static fonts, run:
 
 ```bash
 version=1.058 # (replace version number)
-python buildpy --statfiles --version $version
+python build.py --statfiles --version $version
 python build.py --static --version $version
 ```
 
@@ -238,7 +238,7 @@ To build the variable font, run:
 
 ```bash
 version=1.058 # (replace version number)
-python buildpy --varfiles --version $version
+python build.py --varfiles --version $version
 python build.py --variable --version $version
 ```
 
