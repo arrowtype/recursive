@@ -267,6 +267,8 @@ def writeFeature(font):
            f'    Vendor "{font.info.openTypeOS2VendorID}";\n'
            f"}} OS/2;\n\n")
 
+    cmap = "feature ccmp {\n    sub slash by slash.split;\n}ccmp;"
+
     split = font.info.postscriptFullName.split()
 
     if "Italic" in split and "Mono" not in split and "Mn" not in split:
@@ -277,6 +279,8 @@ def writeFeature(font):
         includes = ("include (../../features.family);\n"
                     "include (../../features_roman.fea);\n"
                     "include (kern.fea);\n")
+    if "Sn" in split:
+        includes += cmap
     out = hhea + os2 + includes
     with open(path, "w") as f:
         f.write(out)
