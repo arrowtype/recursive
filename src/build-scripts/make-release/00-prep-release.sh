@@ -112,8 +112,8 @@ cp $(dirname $0)/data/release-notes--web.md $outputDir/$webDir/README.md
 # ---------------------------------------------
 # copy separate statics, in case people want these
 
-mkdir -p $outputDir/$desktopDir/separate_statics/OTF
-mkdir -p $outputDir/$desktopDir/separate_statics/TTF
+# mkdir -p $outputDir/$desktopDir/separate_statics/OTF
+# mkdir -p $outputDir/$desktopDir/separate_statics/TTF
 
 cp -r $dir/Static_OTF $outputDir/$desktopDir/separate_statics/
 rm $outputDir/$desktopDir/separate_statics/Static_OTF/*_output.txt
