@@ -267,7 +267,7 @@ def writeFeature(font):
            f'    Vendor "{font.info.openTypeOS2VendorID}";\n'
            f"}} OS/2;\n\n")
 
-    cmap = "feature ccmp {\n    sub slash by slash.split;\n}ccmp;"
+    cmap = "feature ccmp {\n    sub fraction by fraction.split;\n}ccmp;"
 
     split = font.info.postscriptFullName.split()
 
