@@ -69,8 +69,8 @@
 @slshZero = [zero.slash       zerosuperior.slash       zeroinferior.slash       zeroinferiorslash.afrc      zerosuperiorslash.afrc      ];
 @dttdZero = [zero.dotted      zerosuperior.dotted      zeroinferior.dotted      zeroinferiordotted.afrc     zeroinferiordotted.afrc     ];
 
-@slashes = [slash slash.split];
-@fractions = [fraction fraction.split];
+@slashes = [slash slash.solid];
+@fractions = [fraction fraction.solid];
 
 lookup FractionBar {
     ignore sub slash @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt slash';

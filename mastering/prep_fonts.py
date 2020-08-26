@@ -243,8 +243,8 @@ def decomposeNonExportingGlyphs(fonts):
                     elif component.baseGlyph[0] == "_":
                         non_exporting.append(component.baseGlyph)
                         component.decompose()
-        if "slash.split" in font.keys():
-            font["slash.split"].decompose()
+        if "slash.solid" in font.keys():
+            font["slash.solid"].decompose()
         # add glyphs from lib.skipExportGlyphs
         non_exporting.extend(font.lib["public.skipExportGlyphs"])
         removeGlyphs(font, non_exporting)
