@@ -267,7 +267,7 @@ def writeFeature(font):
            f'    Vendor "{font.info.openTypeOS2VendorID}";\n'
            f"}} OS/2;\n\n")
 
-    cmap = "feature ccmp {\n    sub fraction by fraction.split;\n}ccmp;"
+    cmap = "feature ccmp {\n    sub fraction by fraction.solid;\n}ccmp;"
 
     split = font.info.postscriptFullName.split()
 
@@ -279,7 +279,7 @@ def writeFeature(font):
         includes = ("include (../../features.family);\n"
                     "include (../../features_roman.fea);\n"
                     "include (kern.fea);\n")
-    if "Sn" in split:
+    if "Mn" in split:
         includes += cmap
     out = hhea + os2 + includes
     with open(path, "w") as f:

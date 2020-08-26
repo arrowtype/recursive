@@ -107,19 +107,18 @@ cp OFL.txt $outputDir/LICENSE.txt
 cp $(dirname $0)/data/release-notes--all.md $outputDir/README.md
 cp $(dirname $0)/data/release-notes--code.md $outputDir/$desktopCodeDir/README.md
 cp $(dirname $0)/data/release-notes--desktop.md $outputDir/$desktopDir/README.md
-cp $(dirname $0)/data/release-notes--web.md $outputDir/$webDir/README.md
+# cp $(dirname $0)/data/release-notes--web.md $outputDir/$webDir/README.md
 
 # ---------------------------------------------
 # copy separate statics, in case people want these
 
-# mkdir -p $outputDir/$desktopDir/separate_statics/OTF
-# mkdir -p $outputDir/$desktopDir/separate_statics/TTF
+mkdir -p $outputDir/$desktopDir/separate_statics
 
-cp -r $dir/Static_OTF $outputDir/$desktopDir/separate_statics/
-rm $outputDir/$desktopDir/separate_statics/Static_OTF/*_output.txt
+cp -r $dir/Static_OTF $outputDir/$desktopDir/separate_statics/OTF
+rm $outputDir/$desktopDir/separate_statics/OTF/*_output.txt
 
-cp -r $dir/Static_TTF $outputDir/$desktopDir/separate_statics/
-rm $outputDir/$desktopDir/separate_statics/Static_TTF/*_output.txt
+cp -r $dir/Static_TTF $outputDir/$desktopDir/separate_statics/TTF
+rm $outputDir/$desktopDir/separate_statics/TTF/*_output.txt
 
 # ---------------------------------------------
 # make a zip of the outputDir, then move both dir & zip into "fonts/"
