@@ -29,9 +29,9 @@ outputDir = "exports"
 autoOpen = True
 debug = False
 
-fontFam = f"{currentDir}/Recursive_VF_1.039.ttf" # Update as needed. Easiest when font file is in same directory.
+fontFam = f"{currentDir}/Recursive_VF_1.060.ttf" # Update as needed. Easiest when font file is in same directory.
 
-frames = 16
+frames = 1
 fps = 3
 frameRate = 1/fps # only applicable to mp4 and gif; can be buggy
 fileFormat = "mp4" # pdf, gif, or mp4
