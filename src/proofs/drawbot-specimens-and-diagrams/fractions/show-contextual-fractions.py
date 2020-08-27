@@ -77,13 +77,21 @@ def words(string,frac=False):
 
     text(string, (W/2, H*0.375),align="center")
 
+def metadata(wghtVal, caslVal, monoVal):
+    fill(1)
+    font(fontFam, 20)
+    fontVariations(wght=500,CASL=1, MONO=1)
+    text(f"MONO: {str(monoVal)}", (padding, H*0.1))
+    text(f"CASL: {str(caslVal)}", (padding+W*.33, H*0.1))
+    text(f"wght: {str(wghtVal)}", (padding+W*.66, H*0.1))
 
-def outOfTen(n):
-    return n % 10
 
 def animation(frames, frac=False):
     for frame in range(frames):
         newPage(W,H)
+
+        fill(0)
+        rect(0,0,W,H)
 
         f = frame / frames
         t = frame / frames
@@ -103,10 +111,9 @@ def animation(frames, frac=False):
         monoVal = interpolate(0, 1, f)
 
         fontVariations(wght=wghtVal,CASL=caslVal, MONO=monoVal)
-
-        fill(0)
-        rect(0,0,W,H)
         words(f"{outOfTen}{two}/{three}{four}", frac)
+
+        metadata(wghtVal, caslVal, monoVal)
 
 
 animation(frames)
