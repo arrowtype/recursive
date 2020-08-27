@@ -51,105 +51,105 @@ padding = DPI*paddingInPts/72 # do not edit
 
 # turn font size into usable value for given pageSize
 def computeFontSizePoints(pts):
-	return W * (pts / (pageSize * 72))
+    return W * (pts / (pageSize * 72))
 
 # a frequently-useful function
 def interpolate(a, b, t):
-	return(a + (b-a) * t)
+    return(a + (b-a) * t)
 
 # ----------------------------------------------
 # TEXT FUNCTIONS
 
 def writeInfoTop(f, r,g,b):    
-	with savedState():
-		fontSizeSm = H*.025
-		fontVariations(wght=500,CASL=1,MONO=1)
-		font(fontFam, fontSizeSm)
-		wghtVal = interpolate(600,400, f)
-		caslVal = interpolate(1, 0, f)
-		fontVariations(wght=wghtVal,CASL=caslVal)
-		blendMode("normal")
-		fill(0)
-		lineHeight(fontSizeSm*1.25)
+    with savedState():
+        fontSizeSm = H*.025
+        fontVariations(wght=500,CASL=1,MONO=1)
+        font(fontFam, fontSizeSm)
+        wghtVal = interpolate(600,400, f)
+        caslVal = interpolate(1, 0, f)
+        fontVariations(wght=wghtVal,CASL=caslVal)
+        blendMode("normal")
+        fill(0)
+        lineHeight(fontSizeSm*1.25)
 
-		wghtVal = interpolate(300,1000, f)
-		caslVal = interpolate(0, 1, f)
-		casualValue = "{:0.2f}".format(caslVal)
-		text(f"CASL = {casualValue}\nwght = {str(int(wghtVal)).rjust(4,'0')}", (W*.75, H*.76), align="center")
+        wghtVal = interpolate(300,1000, f)
+        caslVal = interpolate(0, 1, f)
+        casualValue = "{:0.2f}".format(caslVal)
+        text(f"CASL = {casualValue}\nwght = {str(int(wghtVal)).rjust(4,'0')}", (W*.75, H*.76), align="center")
 
-		wghtVal = interpolate(1000,300, f)
-		caslVal = interpolate(0, 1, f)
-		casualValue = "{:0.2f}".format(caslVal)
-		text(f"CASL = {casualValue}\nwght = {str(int(wghtVal)).rjust(4,'0')}", (W*.25, H*.275), align="center")
+        wghtVal = interpolate(1000,300, f)
+        caslVal = interpolate(0, 1, f)
+        casualValue = "{:0.2f}".format(caslVal)
+        text(f"CASL = {casualValue}\nwght = {str(int(wghtVal)).rjust(4,'0')}", (W*.25, H*.275), align="center")
 
 def drawHearts(f, r=1,g=1,b=1, info=False):
-	fontSizeLg = H*.825
-	offset = H*0.0375
-	fill(r,g,b)
-	blendMode("screen")
-	font(fontFam, fontSizeLg)
-	wghtVal = interpolate(1000,300, f)
-	caslVal = interpolate(0, 1, f)
-	fontVariations(wght=wghtVal,CASL=caslVal)
-	fontSize = fontSizeLg
-	text("♥♡", (W/2, 0-offset),align="center")
+    fontSizeLg = H*.825
+    offset = H*0.0375
+    fill(r,g,b)
+    blendMode("screen")
+    font(fontFam, fontSizeLg)
+    wghtVal = interpolate(1000,300, f)
+    caslVal = interpolate(0, 1, f)
+    fontVariations(wght=wghtVal,CASL=caslVal)
+    fontSize = fontSizeLg
+    text("♥♡", (W/2, 0-offset),align="center")
 
-	wghtVal = interpolate(300, 1000, f)
-	caslVal = interpolate(0, 1, f)
-	fontVariations(wght=wghtVal,CASL=caslVal)
-	fontSize = fontSizeLg
-	text("♡♥", (W/2, H/2-offset*1.5), align="center")
+    wghtVal = interpolate(300, 1000, f)
+    caslVal = interpolate(0, 1, f)
+    fontVariations(wght=wghtVal,CASL=caslVal)
+    fontSize = fontSizeLg
+    text("♡♥", (W/2, H/2-offset*1.5), align="center")
 
 
 # ----------------------------------------------
 # ANIMATION
 
 for repeat in range(5):
-	for frame in range(frames):
-		newPage(W, H) # required for each new page/frame
-		fill(0)
-		rect(0,0,W, H)
+    for frame in range(frames):
+        newPage(W, H) # required for each new page/frame
+        fill(0)
+        rect(0,0,W, H)
 
-		f = frame / frames
-		t = frame / frames
-		if t <= 0.5:
-			f *= 2
-		else:
-			f = 1 - (f - 0.5) * 2
+        f = frame / frames
+        t = frame / frames
+        if t <= 0.5:
+            f *= 2
+        else:
+            f = 1 - (f - 0.5) * 2
 
-		t = frame / frames
+        t = frame / frames
 
-		if debug:
-			fill(1,0,0)
-			rect(0, H/2, W, 1)
-			rect(W/2, 0, 1, H)
+        if debug:
+            fill(1,0,0)
+            rect(0, H/2, W, 1)
+            rect(W/2, 0, 1, H)
 
-		
-		rgbOffset = 0.0075
-		
-		drawHearts(f, 0,1,0)
-		translate(0,H*rgbOffset)
-		drawHearts(f, 1,0,0)
-		translate(0,-H*rgbOffset*2)
-		drawHearts(f, 0,0,1, info=True)
+        
+        rgbOffset = 0.0075
+        
+        drawHearts(f, 0,1,0)
+        translate(0,H*rgbOffset)
+        drawHearts(f, 1,0,0)
+        translate(0,-H*rgbOffset*2)
+        drawHearts(f, 0,0,1, info=True)
 
-		writeInfoTop(f, 0,0,0)
+        writeInfoTop(f, 0,0,0)
 
 endDrawing() # advised by drawbot docs
 
 if save:
-	import datetime
+    import datetime
 
-	now = datetime.datetime.now().strftime("%Y_%m_%d-%H_%M") # -%H_%M_%S
+    now = datetime.datetime.now().strftime("%Y_%m_%d-%H_%M") # -%H_%M_%S
 
-	if not os.path.exists(f"{currentDir}/{outputDir}"):
-		os.makedirs(f"{currentDir}/{outputDir}")
+    if not os.path.exists(f"{currentDir}/{outputDir}"):
+        os.makedirs(f"{currentDir}/{outputDir}")
 
-	path = f"{currentDir}/{outputDir}/{docTitle}-{now}.{fileFormat}"
+    path = f"{currentDir}/{outputDir}/{docTitle}-{now}.{fileFormat}"
 
-	print("saved to ", path)
+    print("saved to ", path)
 
-	saveImage(path)
+    saveImage(path)
 
-	if autoOpen:
-		os.system(f"open --background -a Preview {path}")
+    if autoOpen:
+        os.system(f"open --background -a Preview {path}")

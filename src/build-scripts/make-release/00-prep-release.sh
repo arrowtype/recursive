@@ -27,7 +27,7 @@ if [[ -z $dir || $dir = "--help" ]] ; then
 fi
 
 # make folder name for outputs
-outputDir=Recursive-${version/" "/"_"}
+outputDir=ArrowType-Recursive-${version/" "/"_"}
 # clean up past runs
 # rm -rf $outputDir
 # rm -rf fonts/$outputDir

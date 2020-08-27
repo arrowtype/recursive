@@ -24,13 +24,13 @@ print(currentDir)
 
 W,H = 1080,1080
 
-fontFam = f"{currentDir}/Recursive_VF_1.060.ttf" # Update as needed. Easiest when font file is in same directory.
+fontFam = f"{currentDir}/Recursive_VF_1.061.ttf" # Update as needed. Easiest when font file is in same directory.
 # fontFam = f"{currentDir}/Recursive_VF_1.039.ttf" # Update as needed. Easiest when font file is in same directory.
 
-frames = 4
+frames = 32
 fps = 3
 frameRate = 1/fps # only applicable to mp4 and gif; can be buggy
-fileFormat = "pdf" # pdf, gif, or mp4
+fileFormat = "gif" # pdf, gif, or mp4
 
 pageSize = 3.5 # inches
 DPI = 450 # dots per inch
@@ -64,57 +64,54 @@ def interpolate(a, b, t):
 font(fontFam, 72)
 
 
-def words(string):
+def words(string,frac=False):
     fill(1)
-    fontSizeLg = H*.325
-    fontVariations(wght=800,CASL=0.99, MONO=0)
-    openTypeFeatures(frac=True)
+    fontSizeLg = H*.2825
     font(fontFam, fontSizeLg)
     fontSize(fontSizeLg)
-    # do your usual drawbot stuff here
-    # text("1/3", (500,500))
-    text(string, (W/2, H/2),align="center")
 
-# words("24/7")
+    openTypeFeatures(frac=False, case=True)
 
+    if frac:
+        openTypeFeatures(frac=True, case=True)
 
-
-def drawFraction(string, frame, r=1,g=1,b=1, info=False):
-
-    blendMode("screen")
-    txt = FormattedString()
-    fontSizeLg = H*.5
-    offset = H*-0.375
-    txt.fill(r,g,b)
-    txt.font(fontFam, fontSizeLg)
-    wghtVal = interpolate(1000,300, frame)
-    caslVal = interpolate(0, 1, frame)
-    txt.fontVariations(wght=wghtVal,CASL=caslVal)
-    txt.fontSize(fontSizeLg)
-    txt.lineHeight(1.5)
-    # text("♥♡", (W/2, 0-offset),align="center")
-
-    txt.append(string)
-    text(txt, (W/2, 0-offset),align="center")
-
-    # wghtVal = interpolate(300, 1000, f)
-    # caslVal = interpolate(0, 1, f)
-    # fontVariations(wght=wghtVal,CASL=caslVal)
-    # fontSize = fontSizeLg
-    # text("♡♥", (W/2, H/2-offset*1.5), align="center")
+    text(string, (W/2, H*0.375),align="center")
 
 
-for frame in range(frames):
-    newPage(W,H)
+def outOfTen(n):
+    return n % 10
 
-    outOfTen = frame % 10
+def animation(frames, frac=False):
+    for frame in range(frames):
+        newPage(W,H)
+
+        f = frame / frames
+        t = frame / frames
+        if t <= 0.5:
+            f *= 2
+        else:
+            f = 1 - (f - 0.5) * 2
+
+        if frame % 2 == 0:
+            outOfTen = int(frame/2) % 10
+            two   = (outOfTen+1) % 10
+            three = (outOfTen+2) % 10
+            four  = (outOfTen+3) % 10
+
+        wghtVal = interpolate(1000,300, f)
+        caslVal = interpolate(0, 1, f)
+        monoVal = interpolate(0, 1, f)
+
+        fontVariations(wght=wghtVal,CASL=caslVal, MONO=monoVal)
+
+        fill(0)
+        rect(0,0,W,H)
+        words(f"{outOfTen}{two}/{three}{four}", frac)
 
 
-    fill(0)
-    rect(0,0,W,H)
-    words(f"{outOfTen}{outOfTen+1}/{outOfTen+2}{outOfTen+3}")
-    
-    # drawFraction("frac", 1, 1,0,1)
+animation(frames)
+
+animation(frames, True)
 
 
 endDrawing()                      # advised by drawbot docs
@@ -134,7 +131,7 @@ if save:
     saveImage(path)
 
     if autoOpen:
-        os.system(f"open --background -a Preview {path}")
+        os.system(f"open --background -a Safari {path}")
 
 ## not required, but functions as an instant preview
 # import os
