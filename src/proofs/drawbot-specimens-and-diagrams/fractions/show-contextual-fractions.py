@@ -30,7 +30,7 @@ fontFam = f"{currentDir}/Recursive_VF_1.062.ttf" # Update as needed. Easiest whe
 frames = 32
 fps = 3
 frameRate = 1/fps # only applicable to mp4 and gif; can be buggy
-fileFormat = "mp4" # pdf, gif, or mp4
+fileFormat = "gif" # pdf, gif, or mp4
 
 pageSize = 3.5 # inches
 DPI = 450 # dots per inch
