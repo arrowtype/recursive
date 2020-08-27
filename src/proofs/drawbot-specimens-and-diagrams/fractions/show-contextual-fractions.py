@@ -10,6 +10,7 @@
 
 import os 
 from drawBot import *             # requires drawbot to be first installed as module
+from fontTools.misc.bezierTools import splitCubicAtT
 newDrawing()                      # required by drawbot module
 
 docTitle = "contextual-fractions" # update this for your output file name
@@ -18,24 +19,28 @@ outputDir = "exports"
 autoOpen = True
 debug = False
 
-
 currentDir = os.path.dirname(os.path.abspath(__file__))
 print(currentDir)        
 
 W,H = 1080,1080
 
-fontFam = f"{currentDir}/Recursive_VF_1.061.ttf" # Update as needed. Easiest when font file is in same directory.
+fontFam = f"{currentDir}/Recursive_VF_1.062.ttf" # Update as needed. Easiest when font file is in same directory.
 # fontFam = f"{currentDir}/Recursive_VF_1.039.ttf" # Update as needed. Easiest when font file is in same directory.
 
 frames = 32
 fps = 3
 frameRate = 1/fps # only applicable to mp4 and gif; can be buggy
-fileFormat = "gif" # pdf, gif, or mp4
+fileFormat = "mp4" # pdf, gif, or mp4
 
 pageSize = 3.5 # inches
 DPI = 450 # dots per inch
 
-paddingInPts = 18
+paddingInPts = 16
+
+
+# colors
+
+accent = (0.125,0.5,1)
 
 # ----------------------------------------------
 # Helper functions
@@ -53,6 +58,26 @@ def computeFontSizePoints(pts):
 def interpolate(a, b, t):
     return(a + (b-a) * t)
 
+def getCurveValue(t, curviness, axMin, axMax, loop="loop"):
+    # curve = ((0,0), (W*curviness, 0), (W-(W*curviness),H), (W,H)) # fast to slow to fast (not sure?)
+    curve = ((0,0), (0, H*curviness), (W,H-(H*curviness)), (W,H)) # slow to fast to slow, based on x over time (bell curve)
+    # curve = ((0, 20), (-2689.98, 30), (-2000,H), (W,H))
+    split = splitCubicAtT(*curve, t)
+    x, y = split[0][-1]
+    # Scale the y value to the range of 0 and 1, assuming it was in a range of 0 to 1000
+    # f = y / H # for some reason, y isn't working as well for me as x to attain different curves...
+    f = x / W
+    
+    # go up with curve for first half, then back down
+    if loop is "loop":
+        if t <= 0.5:
+            f *= 2
+        else:
+            f = 1 - (f - 0.5) * 2
+            
+    value = interpolate(axMin, axMax, f)
+            
+    return value, x, y
 
 # ----------------------------------------------
 # composition
@@ -62,49 +87,91 @@ def interpolate(a, b, t):
 
 
 font(fontFam, 72)
-fontSizeLg = H*.2825
+#fontSizeLg = H*.2825
+fontSizeLg = H*.271
 
-def words(string,frac=False, afrc=False):
-    fill(1)
+def fraction(string, wghtVal, caslVal, monoVal, frac=False, afrc=False):
+
+    # lines
+    stroke(*accent)
+    baseline = H*0.404
+    line((0, baseline), (W, baseline))
+
+    capHeight = H*0.5927
+    line((0, capHeight), (W, capHeight))
+
     
-    font(fontFam, fontSizeLg)
-    fontSize(fontSizeLg)
+    stroke(0,0,0,0)
 
-    openTypeFeatures(frac=False, case=True)
+    fraction = FormattedString()
+    
+    # fraction.fill(1)
+    fraction.fontVariations(wght=wghtVal,CASL=caslVal, MONO=monoVal)
+    
+    fraction.font(fontFam)
+    fraction.fontSize(fontSizeLg)
+
+    fraction.openTypeFeatures(frac=False, case=True)
+    fraction.align("center")
 
     if frac:
-        openTypeFeatures(frac=True, case=True)
+        fraction.openTypeFeatures(frac=True, case=True)
     
     if afrc:
-        openTypeFeatures(afrc=True, case=True, ss10=True)
+        # openTypeFeatures(afrc=True, case=True, ss10=True)
+        fraction.openTypeFeatures(afrc=True, case=True)
 
-    text(string, (W/2, H*0.375),align="center")
+    # TODO: outline text
+
+    fraction.append(string)
+
+    textPath = BezierPath()
+    textPath.textBox(fraction, (-W, H*0.322, W*3, fontSizeLg*1.25))
+    fill(1)
+    drawPath(textPath)
 
 def metadata(wghtVal, caslVal, monoVal):
-    fill(1)
-    font(fontFam, 20)
+
+    monoNum = str('{:4.2f}'.format(monoVal))
+    caslNum = str('{:4.2f}'.format(caslVal))
+    wghtNum = str('{:3.0f}'.format(wghtVal))
+
+    charWidth = 36
+
+    wghtRate = (wghtVal-300)/(1000-300)
+
+    # fill(1)
+    fill(*accent)
+    font(fontFam, 32)
     fontVariations(wght=500,CASL=1, MONO=1)
-    text(f"MONO: {str(monoVal)}", (padding, H*0.1))
-    text(f"CASL: {str(caslVal)}", (padding+W*.33, H*0.1))
-    text(f"wght: {str(wghtVal)}", (padding+W*.66, H*0.1))
+    text(f"MONO {monoNum}", (padding, H*0.175))
+    text("*".rjust(int(charWidth*monoVal),"-"), (padding*2.9, H*0.175))
+
+    text(f"CASL {caslNum}", (padding, H*0.1375))
+    text("*".rjust(int(charWidth*caslVal),"-"), (padding*2.9, H*0.1375))
+
+    text(f"wght {wghtNum.rjust(4,' ')}", (padding, H*0.1))
+    text("*".rjust(int(charWidth*wghtRate),"-"), (padding*2.9, H*0.1))
 
 def fracState(frac=False, afrc=False):
-    font(fontFam, fontSizeLg/3)
+    #font(fontFam, fontSizeLg/3)
+    font(fontFam, fontSizeLg/2.60)
     fontVariations(wght=300,CASL=0, MONO=1)
+    fracStateHeight= H*0.82
     if frac:
-        fill(0,0.1,1)
-        text(f"☑ frac", (padding, H*0.75),align="left")
+        fill(*accent)
+        text(f"☑ frac", (padding, fracStateHeight),align="left")
         fill(0.25)
-        text(f"☐ afrc", (W/2+padding, H*0.75),align="left")
+        text(f"☐ afrc", (W-padding, fracStateHeight),align="right")
     if afrc:
         fill(0.25)
-        text(f"☐ frac", (padding, H*0.75),align="left")
-        fill(0,0.1,1)
-        text(f"☑ afrc", (W/2+padding, H*0.75),align="left")
+        text(f"☐ frac", (padding, fracStateHeight),align="left")
+        fill(*accent)
+        text(f"☑ afrc", (W-padding, fracStateHeight),align="right")
     if frac == False and afrc == False:
         fill(0.25)
-        text(f"☐ frac", (padding, H*0.75),align="left")
-        text(f"☐ afrc", (W/2+padding, H*0.75),align="left")
+        text(f"☐ frac", (padding, fracStateHeight),align="left")
+        text(f"☐ afrc", (W-padding, fracStateHeight),align="right")
 
 one = 0
 two = 0
@@ -115,7 +182,7 @@ def animation(frames, one, two, three, four, frac=False, afrc=False):
     for frame in range(frames):
         newPage(W,H)
 
-        fill(0)
+        fill(0.05)
         rect(0,0,W,H)
 
         f = frame / frames
@@ -145,30 +212,39 @@ def animation(frames, one, two, three, four, frac=False, afrc=False):
         if (frame+3) % 4 == 0:
             four  = (one+3) % 10
 
-        wghtVal = interpolate(1000,300, f)
-        caslVal = interpolate(0, 1, f)
-        monoVal = 1
+        wghtVal = getCurveValue(t, 0.5, 1000, 300)
+        caslVal = getCurveValue(t, 0.5, 0, 1)
+        monoVal = (1,0,0)
         if frac or afrc:
-            monoVal = interpolate(0, 1, f)
+            monoVal = getCurveValue(t, 0.5, 1, 0)
 
-        fontVariations(wght=wghtVal,CASL=caslVal, MONO=monoVal)
-        words(f"{one}{two}/{three}{four}", frac, afrc)
+        fraction(f"{one}{two}{three}{four}{one}{two}/{three}{four}{one}{two}{three}{four}",wghtVal[0], caslVal[0], monoVal[0], frac, afrc)
 
-        metadata(wghtVal, caslVal, monoVal)
+        metadata(wghtVal[0], caslVal[0], monoVal[0])
 
         fracState(frac,afrc)
 
+        if debug:
+            stroke(1,0,1)
+            fill(1,1,1,0)
+            line((0,H/2),(W,H/2))
+            rect(padding, padding, W-padding*2, H-padding*2)
+            for count in range(4):
+                rect(padding+((W-padding*2)/5)*count, padding, (W-padding*2)/5, H-padding*2)
+
+# TODO: make numbers count 0–9 without being even/odd
 # TODO: make "slider" visualization of axes
 # TODO: add loop with "afrc"
 # TODO: offset weight & casl from mono
+# TODO: rebuild fonts & make new release
 
-
-
-animation(frames,one, two, three, four)
 
 animation(frames,one, two, three, four, frac=True)
 
 animation(frames,one, two, three, four, afrc=True)
+
+animation(frames,one, two, three, four)
+
 
 
 endDrawing()                      # advised by drawbot docs
