@@ -124,8 +124,6 @@ rm $outputDir/$desktopDir/separate_statics/TTF/*_output.txt
 # make a zip of the outputDir, then move both dir & zip into "fonts/"
 
 zip $outputDir.zip -r $outputDir -x .DS_*
-# zip $outputDir.zip -d __MACOSX* # not working...
-
 
 mv $outputDir.zip fonts/$outputDir.zip
 mv $outputDir fonts/$outputDir
