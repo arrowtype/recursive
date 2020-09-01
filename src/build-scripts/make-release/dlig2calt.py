@@ -58,21 +58,26 @@ def dlig2calt(fontPath, inplace=False):
 
     # update code ligature widths to be single units with left overhang
     for glyphName in font.getGlyphNames():
-        if font['hmtx'][glyphName][0] > 600:
+        if font['hmtx'][glyphName][0] > unitWidth:
 
             decomposeAndRemoveOverlap(font, glyphName)
 
-            # add to dict for later?
-            # codeLigs[glyphName] = font['hmtx'][glyphName][0]
-
             # set width to space (e.g. 600), then offset left side to be negative
-            # lsb = oldLSB - oldWidth
-            oldLSB = font['hmtx'][glyphName][1]
             oldWidth = font['hmtx'][glyphName][0]
-            newLSB = oldLSB - (oldWidth - unitWidth)
+            oldLSB = font['hmtx'][glyphName][1]
+            widthDiff = oldWidth - unitWidth
+            newLSB = oldLSB - widthDiff
             font['hmtx'].__setitem__(glyphName, (unitWidth, newLSB))
 
+            # Adjust coordinates in glyf table
+            coords = font['glyf'][glyphName].coordinates
+            phantoms = font['glyf'].getPhantomPoints(glyphName, font)
 
+            adjustedCoords = [(x-widthDiff, y) for x, y in coords]
+            adjustedPhantoms = [(0,0), (unitWidth,0), phantoms[-2], phantoms[-1]]
+
+            newCoords = adjustedCoords+adjustedPhantoms
+            font['glyf'].setCoordinates(glyphName, newCoords, font)
     # add new feature code, using calt rather than dlig
     builder.addOpenTypeFeatures(font,"src/features/features/calt-generated--code_fonts_only.fea")
 

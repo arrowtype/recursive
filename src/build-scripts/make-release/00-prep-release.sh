@@ -34,9 +34,9 @@ outputDir=ArrowType-Recursive-${version/" "/"_"}
 # rm -rf fonts/$outputDir.zip
 
 # ---------------------------------------------
-# make sure versions are set
+# if you need to make sure versions are set to something specific
 
-python src/build-scripts/make-release/change-font-versions-in-dir.py $dir $version
+# python src/build-scripts/make-release/change-font-versions-in-dir.py $dir $version
 
 # ---------------------------------------------
 # make folders for outputs
