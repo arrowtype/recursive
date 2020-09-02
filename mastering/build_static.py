@@ -269,8 +269,6 @@ def writeFeature(font):
 
     split = font.info.postscriptFullName.split()
 
-    print(split)
-
     if "Italic" in split and "Mn" in split:
         includes = ("include (../../features.family);\n"
                     "include (../../features_mono_italic.fea);\n"
