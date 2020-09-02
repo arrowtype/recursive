@@ -269,9 +269,15 @@ def writeFeature(font):
 
     split = font.info.postscriptFullName.split()
 
-    if "Italic" in split and "Mono" not in split and "Mn" not in split:
+    print(split)
+
+    if "Italic" in split and "Mn" in split:
         includes = ("include (../../features.family);\n"
-                    "include (../../features_italic.fea);\n"
+                    "include (../../features_mono_italic.fea);\n"
+                    "include (kern.fea);\n")
+    elif "Italic" in split and "Sn" in split:
+        includes = ("include (../../features.family);\n"
+                    "include (../../features_sans_italic.fea);\n"
                     "include (kern.fea);\n")
     else:
         includes = ("include (../../features.family);\n"
@@ -298,12 +304,13 @@ def buildFamilyFeatures(root, features, version):
     fea_root = os.path.split(features)[0]
     regex = re.compile(r'/.+/(.+\.fea)')
     feature_roman = []
-    feature_italic = []
+    feature_mono_italic = [] # includes ss07
+    feature_sans_italic = [] # includes ss07, liga
     with open(features, 'r') as f:
         for l in f:
             if l.startswith("languagesystem"):
                 feature_roman.append(l)
-                feature_italic.append(l)
+                feature_sans_italic.append(l)
             elif "#" in l:
                 pass
             elif l.startswith("include"):
@@ -315,21 +322,40 @@ def buildFamilyFeatures(root, features, version):
                         if match.group(1) == "liga.fea":
                             line = line.replace("i.italic", "i")
                             line = line.replace("l.italic", "l")
-                            feature_italic.append(line)
+                            feature_sans_italic.append(line)
                         else:
                             feature_roman.append(line)
-                            feature_italic.append(line)
+                            feature_mono_italic.append(line)
+                            feature_sans_italic.append(line)
                 feature_roman.append("\n\n")
-                feature_italic.append("\n\n")
+                feature_mono_italic.append("\n\n")
+                feature_sans_italic.append("\n\n")
             else:
                 feature_roman.append(l)
-                feature_italic.append(l)
+                feature_mono_italic.append(l)
+                feature_sans_italic.append(l)
+
+    # swap italic diagonals in ss07
+    for i, line in enumerate(feature_sans_italic):
+        if "sub @curvyDiagonals by @romanDiagonals;" in line:
+           feature_sans_italic[i] = "    sub @romanDiagonals by @curvyDiagonals;"
+
+    # swap italic diagonals in ss07
+    for i, line in enumerate(feature_mono_italic):
+        if "sub @curvyDiagonals by @romanDiagonals;" in line:
+           feature_mono_italic[i] = "    sub @romanDiagonals by @curvyDiagonals;"
+
     path_roman = os.path.join(root, "features_roman.fea")
-    path_italic = os.path.join(root, "features_italic.fea")
+    path_mono_italic = os.path.join(root, "features_mono_italic.fea")
+    path_sans_italic = os.path.join(root, "features_sans_italic.fea")
+
+
     with open(path_roman, 'w') as f:
         f.write("".join(feature_roman))
-    with open(path_italic, 'w') as f:
-        f.write("".join(feature_italic))
+    with open(path_mono_italic, 'w') as f:
+        f.write("".join(feature_mono_italic))
+    with open(path_sans_italic, 'w') as f:
+        f.write("".join(feature_sans_italic))
 
     head = ("table head {\n"
             f"    FontRevision {version};\n}}"
