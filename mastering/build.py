@@ -1,5 +1,6 @@
 import os
 import shutil
+import pync
 from pathlib import Path
 from build_files import buildFiles, getFolders
 from build_variable import build_variable
@@ -64,14 +65,18 @@ if __name__ == "__main__":
         build_variable(designspacePath=files["designspace"],
                        out=os.path.join(outPaths[0],
                                         f"Recursive_VF_{version}.ttf"))
+        pync.notify('Variable files built!', title='Recursive Build')
 
     if args.varfiles:
         files = buildFiles(version=version, static=False)
+        pync.notify('Variable files prepped!', title='Recursive Build')
     if args.statfiles:
         files = buildFiles(version=version, variable=False)
+        pync.notify('Static files prepped!', title='Recursive Build')
 
     if args.static:
         build_static(files["cff"], files["ttf"], out)
+        pync.notify('Static files built!', title='Recursive Build')
 
     if args.woff:
         for path in outPaths:
