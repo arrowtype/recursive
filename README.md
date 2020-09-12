@@ -146,11 +146,39 @@ Recursive is built with a number of OpenType features that make it simple to con
 ![OpenType Features in Recursive](specimens/repo-artwork/recursive-v1.064-opentype_features.png)
 
 
-### Activating OpenType Features in Code Editors
+## Font usage in Code Editors
 
-**VS Code**
+There are two primary ways to use Recursive in code editors:
 
-In VS Code, you can activate OpenType features by searching for `fontLigatures`, then editing this in settings.json like this:
+#### 1: Rec Mono for Code fonts
+
+Install the `Rec Mono` fonts (found in the “Recursive_Code” folder of release downloads). These have code ligatures & several stylistic sets pre-applied so they will work by default in most code environments & apps. These are also named & configured in a way that enables their use in code themes that utilize italic & bold styles. If you wish to configure specific features in `Rec Mono` fonts, see [Recursive Code Config](https://github.com/arrowtype/recursive-code-config).
+
+One drawback of the Code fonts is that they do not have hinting. On most modern screens, they still render very well. However, if you want hinting or simpler control over OpenType features, you may wish to instead use the standard Recursive Mono desktop fonts.
+
+
+#### 2: Standard Recursive Mono desktop fonts
+
+Install the desktop `Recursive Mono` fonts (found in the “Recursive_Desktop” folder of release downloads). Then, activate them & set OpenType features if your code editor allows this. Instructions for three editors follow. On Mac before macOS 11, these do not work in themes with Italic styles – see above for “Code” fonts that do.
+
+<details>
+<summary><b><!-------->VS Code<!--------></b> (Click to expand)</summary>
+
+First, set the font family. In Settings, search `Font Family`, then specify the family you wish to use. You must use their PostScript name.
+
+For Recursive Mono Casual Regular:
+
+```
+"RecursiveMonoCslSt-Regular", Menlo, "Apple Color Emoji",  monospace
+```
+
+For Recursive Mono Linear Regular:
+
+```
+"RecursiveMonoLnrSt-Regular", Menlo, "Apple Color Emoji",  monospace
+```
+
+Then, if you want, you can activate OpenType features by searching in the settings for `fontLigatures`, then editing this in settings.json like this:
 
 ```json
     "editor.fontLigatures": "'ss01','ss05','dlig'"
@@ -158,32 +186,52 @@ In VS Code, you can activate OpenType features by searching for `fontLigatures`,
 
 (The above would give you a simplied `6` & `9`, a single-story `a`, and activate code ligatures.)
 
-**Atom**
+</details>
+
+<details>
+<summary><b><!-------->Atom<!--------></b> (Click to expand)</summary>
 
 Go to `Atom` -> `Stylesheet` and add in the following:
 
 ```css
 atom-text-editor {
-  font-family: 'RecursiveMonoB_023-CslRg';
+  font-family: 'RecursiveMonoCslSt-Regular';
   font-feature-settings: "ss01", "ss05", "dlig";
 }
 ```
 
-**Sublime Text**
+</details>
 
-Go to `Sublime Text` -> `Preferences` -> `Settings` and add:
+<details>
+<summary><b><!-------->Sublime Text<!--------></b> (Click to expand)</summary>
+
+Go to `Sublime Text` -> `Preferences` -> `Settings` and set `font_face` to the specific PostScript name of the style you wish to use.
+
+For Recursive Mono Casual Regular:
 
 ```json
-"font_options": ["ss01", "ss05", "dlig"]
+"font_face": "RecursiveMonoCslSt-Regular",
 ```
+
+For Recursive Mono Linear Regular:
+
+```json
+"font_face": "RecursiveMonoLnrSt-Regular",
+```
+
+To control code ligatures or other OpenType features, set the `font_options` open, like so:
+
+```json
+"font_options": ["ss01", "ss05", "dlig"],
+```
+
+</details>
 
 --- 
 
 ## Building the fonts
 
-
 ### Set up the environment
-
 
 To build, set up the virtual environment
 
