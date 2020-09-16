@@ -14,7 +14,7 @@
 			<point x="230" y="-136"/>
 			<point x="272" y="-200"/>
 			<point x="375" y="-200" type="curve"/>
-			<point x="403.4722222222" y="-200"/>
+			<point x="403" y="-200"/>
 			<point x="430.9973868383" y="-196.78329039"/>
 			<point x="457" y="-190" type="curve"/>
 			<point x="448" y="-151"/>
@@ -50,7 +50,7 @@
 			<point x="408" y="368" type="curve"/>
 			<point x="436" y="472" type="line"/>
 			<point x="399" y="469" type="line"/>
-			<point x="382.785668511" y="528.452548793"/>
+			<point x="383" y="528"/>
 			<point x="345" y="562"/>
 			<point x="274" y="562" type="curve"/>
 			<point x="160" y="562"/>
@@ -65,8 +65,8 @@
 			<point x="297" y="118" type="curve"/>
 		</contour>
 	</outline>
-	<anchor name="top" x="300" y="561"/>
-	<anchor name="bottom" x="300" y="-201"/>
+	<anchor name="top" x="360" y="561"/>
+	<anchor name="bottom" x="317" y="-201"/>
 	<lib>
 		<dict>
 			<key>com.arrowtype.glyphMarkStatus</key>
@@ -80,7 +80,7 @@
 			<key>com.typemytype.robofont.Image.Sharpness</key>
 			<real>0.4</real>
 			<key>public.markColor</key>
-			<string>0,0,0,0.25</string>
+			<string>1,0.5,0,1</string>
 		</dict>
 	</lib>
 </glyph>
