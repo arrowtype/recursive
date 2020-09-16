@@ -25,7 +25,10 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 # zeroinferiorslash.afrc = zerosuperior.afrc
 # zerosuperiorslash.afrc = zeroinferior.afrc
 txt = '''\
-ringbelowcomb=ringcomb | 0325
+Wcircumflex = W + circumflexcomb.case@top
+Wgrave = W + gravecomb.case@top
+Wacute = W + acutecomb.case@top
+Wdieresis = W + dieresiscomb.case@top
 '''
 
 # recipeFile = "/Users/stephennixon/type-repos/recursive/src/00-recursive-scripts-for-robofont/diacritics-and-glyph_construction-recipes/diacritic-recipes-for-recursive-generated-with_alts.txt"
