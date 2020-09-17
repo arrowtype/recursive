@@ -603,8 +603,6 @@
 			<integer>-10</integer>
 			<key>public.kern2.braceright</key>
 			<integer>-20</integer>
-			<key>public.kern2.h_left</key>
-			<integer>20</integer>
 			<key>public.kern2.n_left</key>
 			<integer>20</integer>
 			<key>public.kern2.parenright</key>
@@ -1030,7 +1028,7 @@
 			<key>public.kern2.Z_left</key>
 			<integer>-60</integer>
 			<key>public.kern2.a_left</key>
-			<integer>-75</integer>
+			<integer>-50</integer>
 			<key>public.kern2.e_left</key>
 			<integer>-120</integer>
 			<key>public.kern2.f_left</key>
@@ -1609,6 +1607,11 @@
 			<integer>-40</integer>
 			<key>public.kern2.z_left</key>
 			<integer>-40</integer>
+		</dict>
+		<key>public.kern1.ditalic_right</key>
+		<dict>
+			<key>public.kern2.Punct_top_left</key>
+			<integer>-30</integer>
 		</dict>
 		<key>public.kern1.e_right</key>
 		<dict>
