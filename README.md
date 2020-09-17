@@ -266,7 +266,7 @@ Before beginning, change your working directory to `mastering`.
 cd mastering
 ```
 
-`python build.py --files` is the first step. This will generate all the files needed for building the variable and static fonts. You will likely want to give the font a version number with this command (`python build.py --version 1.054 --files`). To prep only files for the variable font, use `python build.py --varfiles`, or to prep only files for the static fonts, use `python build.py --statfiles`.
+`python build.py --files` is the first step. This will generate all the files needed for building the variable and static fonts. You will likely want to give the font a version number with this command (`python build.py --version 1.065 --files`). To prep only files for the variable font, use `python build.py --varfiles`, or to prep only files for the static fonts, use `python build.py --statfiles`.
 
 After the files have been generated (do note that the static instances take a bit of time to generate), you will want to look at the `mastering/build/static/CFF/checkoutlines.txt` file. This is the report (edited to remove issues that do not need attention) from [checkoutlinesUFO](https://adobe-type-tools.github.io/afdko/AFDKO-Overview.html#checkoutlinesufo). Issues found in this report should be cleaned up in the static UFOs. Many issues are due to overlap removal. Nothing is perfect, overlap removal algorithms included.
 
@@ -275,7 +275,7 @@ After the files have been generated (do note that the static instances take a bi
 To build all the static fonts, run:
 
 ```bash
-version=1.064 # (replace version number)
+version=1.065 # (replace version number)
 python build.py --statfiles --version $version
 python build.py --static --version $version
 ```
@@ -285,7 +285,7 @@ python build.py --static --version $version
 To build the variable font, run:
 
 ```bash
-version=1.064 # (replace version number)
+version=1.065 # (replace version number)
 python build.py --varfiles --version $version
 python build.py --variable --version $version
 ```
@@ -295,7 +295,15 @@ python build.py --variable --version $version
 If you want to build all of the sources, fonts, and WOFF2 versions of all of the fonts run:
 
 ```bash
-python build.py --all --version 1.054 # (replace version number)
+python build.py --all --version 1.065 # (replace version number)
+```
+
+**Get notifications (Mac only)**
+
+Add option `--pync` (`-p` for short) to the script call to get Mac notifications, which may be helpful if you are working on other tasks while a build runs.
+
+```bash
+python build.py --all --version 1.065 # (replace version number)
 ```
 
 ### Making a GitHub release
@@ -307,7 +315,7 @@ First, build fonts with the mastering flow above. Then:
 
 # update version number at version.txt
 
- src/build-scripts/make-release/00-prep-release.sh fonts_1.52
+ src/build-scripts/make-release/00-prep-release.sh fonts_1.52 # point to the latest build directory
 ```
 
 Then, go to the repo’s Releases page to make a new one.
