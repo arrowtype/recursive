@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="uniE0A0" format="2">
-	<advance width="600"/>
 	<unicode hex="E0A0"/>
-	<guideline x="100" y="-250" angle="270"/>
-	<guideline x="500" y="-250" angle="270"/>
-	<guideline x="408" y="-250" angle="270"/>
-	<guideline x="192" y="-250" angle="270"/>
-	<guideline x="300" y="-250" angle="90"/>
-	<guideline x="192" y="327" angle="30"/>
-	<note>
-		uniE0A0
-	</note>
+	<advance width="600"/>
 	<outline>
 		<contour>
 			<point x="100" y="-250" type="line"/>
@@ -60,6 +51,12 @@
 			<point x="104" y="285"/>
 		</contour>
 	</outline>
+	<guideline x="100" y="-250" angle="270"/>
+	<guideline x="500" y="-250" angle="270"/>
+	<guideline x="408" y="-250" angle="270"/>
+	<guideline x="192" y="-250" angle="270"/>
+	<guideline x="300" y="-250" angle="90"/>
+	<guideline x="192" y="327" angle="30"/>
 	<lib>
 		<dict>
 			<key>com.schriftgestaltung.Glyphs.lastChange</key>
@@ -68,4 +65,7 @@
 			<string>0.67,0.95,0.38,1</string>
 		</dict>
 	</lib>
+	<note>
+		uniE0A0
+	</note>
 </glyph>
