@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="uniE0CF" format="2">
-	<advance width="600"/>
 	<unicode hex="E0CF"/>
-	<guideline x="300" y="0" angle="270"/>
-	<guideline x="600" y="650" angle="315"/>
-	<guideline x="0" y="650" angle="45"/>
-	<note>
-		uniE0CF
-	</note>
+	<advance width="600"/>
 	<outline>
 		<contour>
 			<point x="273" y="-250" type="line"/>
@@ -102,6 +96,9 @@
 			<point x="254" y="822"/>
 		</contour>
 	</outline>
+	<guideline x="300" y="0" angle="270"/>
+	<guideline x="600" y="650" angle="315"/>
+	<guideline x="0" y="650" angle="45"/>
 	<lib>
 		<dict>
 			<key>com.schriftgestaltung.Glyphs.lastChange</key>
@@ -110,4 +107,7 @@
 			<string>0.67,0.95,0.38,1</string>
 		</dict>
 	</lib>
+	<note>
+		uniE0CF
+	</note>
 </glyph>

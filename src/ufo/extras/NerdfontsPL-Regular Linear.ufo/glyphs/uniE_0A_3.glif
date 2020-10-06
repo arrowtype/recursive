@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="uniE0A3" format="2">
-	<advance width="600"/>
 	<unicode hex="E0A3"/>
-	<guideline x="125" y="0" angle="0"/>
-	<guideline x="262" y="591" angle="0"/>
-	<note>
-		uniE0A3
-	</note>
+	<advance width="600"/>
 	<outline>
 		<contour>
 			<point x="279" y="374" type="curve" smooth="yes"/>
@@ -89,6 +84,8 @@
 			<point x="195" y="-86"/>
 		</contour>
 	</outline>
+	<guideline x="125" y="0" angle="0"/>
+	<guideline x="262" y="591" angle="0"/>
 	<lib>
 		<dict>
 			<key>com.schriftgestaltung.Glyphs.lastChange</key>
@@ -97,4 +94,7 @@
 			<string>0.67,0.95,0.38,1</string>
 		</dict>
 	</lib>
+	<note>
+		uniE0A3
+	</note>
 </glyph>
