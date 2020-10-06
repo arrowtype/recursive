@@ -303,7 +303,7 @@ python build.py --all --version 1.065 # (replace version number)
 Add option `--pync` (`-p` for short) to the script call to get Mac notifications, which may be helpful if you are working on other tasks while a build runs.
 
 ```bash
-python build.py --all --version 1.065 # (replace version number)
+python build.py --all --pync --version 1.065 # (replace version number)
 ```
 
 ### Making a GitHub release
