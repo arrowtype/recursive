@@ -281,7 +281,7 @@ After the files have been generated (do note that the static instances take a bi
 To build all the static fonts, run:
 
 ```bash
-version=1.065 # (replace version number)
+version=1.066 # (replace version number)
 python build.py --statfiles --version $version
 python build.py --static --version $version
 ```
@@ -291,7 +291,7 @@ python build.py --static --version $version
 To build the variable font, run:
 
 ```bash
-version=1.065 # (replace version number)
+version=1.066 # (replace version number)
 python build.py --varfiles --version $version
 python build.py --variable --version $version
 ```
@@ -301,7 +301,7 @@ python build.py --variable --version $version
 If you want to build all of the sources, fonts, and WOFF2 versions of all of the fonts run:
 
 ```bash
-python build.py --all --version 1.065 # (replace version number)
+python build.py --all --version 1.066 # (replace version number)
 ```
 
 **Get notifications (Mac only)**

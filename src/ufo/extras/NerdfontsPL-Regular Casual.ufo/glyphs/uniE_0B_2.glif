@@ -4,9 +4,19 @@
 	<advance width="600"/>
 	<outline>
 		<contour>
-			<point x="600" y="-250" type="line"/>
 			<point x="600" y="950" type="line"/>
-			<point x="0" y="350" type="line"/>
+			<point x="388" y="821"/>
+			<point x="190" y="646"/>
+			<point x="53" y="430" type="curve" smooth="yes"/>
+			<point x="36" y="402"/>
+			<point x="26" y="375"/>
+			<point x="26" y="344" type="curve" smooth="yes"/>
+			<point x="26" y="333"/>
+			<point x="27" y="322"/>
+			<point x="29" y="309" type="curve"/>
+			<point x="183" y="77"/>
+			<point x="378" y="-120"/>
+			<point x="600" y="-250" type="curve"/>
 		</contour>
 	</outline>
 	<lib>
