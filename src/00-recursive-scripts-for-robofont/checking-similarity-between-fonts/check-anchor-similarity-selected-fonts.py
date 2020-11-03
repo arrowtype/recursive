@@ -13,20 +13,31 @@ glyphsToIgnore = ""
 
 files = getFile("Select files to check for anchor similarity", allowsMultipleSelection=True, fileTypes=["ufo"])
 
-fonts = []
+fontNames = []
 anchors = {}
 
 OutputWindow().show()
 OutputWindow().clear()
 
-for file in files:
-    font = OpenFont(file, showInterface=False)
+print("🏗  Opening sources")
+fonts = [OpenFont(file, showInterface=False) for file in files]
+
+# Get a list of all glyphs in each font
+glyphSets = [font.keys() for font in fonts]
+
+# Use set intersection to get all common glyph from each list
+commonGlyphs = set.intersection(*map(set, glyphSets))
+
+print(commonGlyphs)
+
+for font in fonts:
 
     fontName = font.info.familyName + " " + font.info.styleName
 
-    fonts.append(fontName)
+    fontNames.append(fontName)
 
     for glyph in font:
+        
         for anchor in glyph.anchors:
 
             # if the anchor doesn't yet have an entry, make one
@@ -39,10 +50,10 @@ for file in files:
 
             anchors[anchor.name][glyph.name].append(fontName)
 
-    font.close()
+    # font.close()
 
 print("Checking fonts:")
-for fontName in fonts:
+for fontName in fontNames:
     print("• ", fontName)
 print("")
 
@@ -55,13 +66,15 @@ print("")
 # pp = pprint.PrettyPrinter(indent=2, width=200)
 # pp.pprint(anchors)
 
+
 problemGlyphs = []
 
 for anchor in anchors:
     for glyphName in anchors[anchor]:
-        if len(anchors[anchor][glyphName]) < len(fonts):
-            if glyphName not in problemGlyphs and glyphName not in glyphsToIgnore.split(" "):
-                problemGlyphs.append(glyphName)
+        if glyphName in commonGlyphs:
+            if len(anchors[anchor][glyphName]) < len(fontNames):
+                if glyphName not in problemGlyphs and glyphName not in glyphsToIgnore.split(" "):
+                    problemGlyphs.append(glyphName)
 
 for glyphName in sorted(problemGlyphs):
     print("--------------------------------------------------------------")
@@ -70,14 +83,14 @@ for glyphName in sorted(problemGlyphs):
         if glyphName in anchors[anchor]:
             if len(anchors[anchor][glyphName]) < len(fonts):
                 print(f"\t /{glyphName} has '{anchor}' in:")
-                for fontName in fonts:
+                for fontName in fontNames:
                     # if glyphName in anchors[anchor]:
                     if fontName in anchors[anchor][glyphName]:
                         print(f"\t\t • {fontName}")
 
                 print("")
                 print(f"\t\t ...but not in:")
-                for fontName in fonts:
+                for fontName in fontNames:
                     # if glyphName in anchors[anchor]:
                     if fontName not in anchors[anchor][glyphName]:
                         print(f"\t\t\t • {fontName}")
