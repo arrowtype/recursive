@@ -250,6 +250,33 @@ def decomposeNonExportingGlyphs(fonts):
     report["Non-exporting glyphs"] = local_report
 
 
+def decomposeClosingPunctuation(fonts):
+    """
+        Decomposes open/closing punctuation pairs to (hopefully) ensure better vertical alignment.
+
+        See Recursive Issue #297 for more details.
+    """
+
+    pairPunctuation = "\
+        parenleft parenright bracketleft bracketright braceleft braceright \
+        bracketangleleft bracketangleright quotesingle quotedbl quoteleft \
+        quoteright quotedblleft quotedblright quotesinglbase quotedblbase \
+        guilsinglleft guilsinglright guillemotleft guillemotright less greater".split()
+
+    local_report = report.get("Decomposed pair punctuation", [])
+    for font in fonts:
+        decomposed_pair_punc = []
+        for name in pairPunctuation:
+            if font[name].components:
+                for component in font[name].components:
+                    component.decompose()
+        
+        local_report.append((font.info.familyName + " " + font.info.styleName, decomposed_pair_punc))
+
+    report["Decomposed pair punctuation"] = local_report
+
+
+
 def sortGlyphOrder(fonts):
     """
     Sorts all fonts in the list of *fonts* to have a common sort order.
@@ -505,6 +532,9 @@ def prep(designspacePath, version):
 
     print("🏗  Removing non-exporting glyphs")
     decomposeNonExportingGlyphs(fonts)
+
+    print("🏗  Decomposing pair punctuation")
+    decomposeClosingPunctuation(fonts)
 
     print("🏗  Clearing guides")
     for font in fonts:
