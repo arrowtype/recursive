@@ -2,6 +2,12 @@
 <glyph name="braceright.case" format="2">
 	<advance width="600"/>
 	<outline>
-		<component base="braceleft.case" xScale="-1" yScale="-1" xOffset="633" yOffset="659"/>
+		<component base="braceleft.case" xScale="-1" yScale="-1" xOffset="635" yOffset="669"/>
 	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>1,0.5,0,1</string>
+		</dict>
+	</lib>
 </glyph>
