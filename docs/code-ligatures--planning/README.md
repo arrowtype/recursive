@@ -160,8 +160,34 @@ Including these because they should be relatively simple, and will be seen very 
 | \*=      | asterisk_equal.code          | JS, SQL            |
 | /=       | slash_equal.code             | JS, SQL            |
 
+#### Powerline symbols
 
-`# I'm still not sure about making special brackets`
+Done!
+
+| glyph | name    |
+| ----- | ------- |
+|      | uniE0A0 |
+| ☐     | uni2610 |
+| ☑     | uni2611 |
+
+#### Added glyphs for Haskell, etc, Dec 2020
+
+| ligature | name                         | usecase                    |
+| -------- | ---------------------------- | -------------------------- |
+| <>       | less_greater.code            | Java, C#, Perl, VBA, PHP   |
+| <=>      | less_equal_greater.code      | three-way comparison       |
+| <<=      | less_less_equal.code         | Java Bit Operator          |
+| >>=      | greater_greater_equal.code   | Java Bit Operator          |
+| |=       | bar_equal.code               | Java Bit Operator          |
+| /=       | slash_equal.code             | Haskell                    |
+| !~       | exclam_asciitilde.code       |                            |
+| =~       | equal_asciitilde.code        |                            |
+| <<-      | less_less_hyphen.code        | heredoc                    |
+| <<~      | less_less_asciitilde.code    | heredoc                    |
+| |>       | bar_greater.code             | Elixir's pipeline operator |
+
+
+<!-- -->
 
 #### string formatting operators and escape characters
 
@@ -184,6 +210,8 @@ Including these because they should be relatively simple, and will be seen very 
 
 #### bracket combinations
 
+Not doing these because they would mess with extensions like the [Pair Bracket Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer).
+
 | ligature | name                           |
 | -------- | ------------------------------ |
 | {[       | braceleft_bracketleft.code     |
@@ -200,13 +228,7 @@ Including these because they should be relatively simple, and will be seen very 
 ### _Priority "Maybe"_
 
 
-#### Powerline symbols
 
-| glyph | name    |
-| ----- | ------- |
-|      | uniE0A0 |
-| ☐     | uni2610 |
-| ☑     | uni2611 |
 
 #### extra markdown ligatures (Will `space` glyphs work in clig? Needs testing in code editors!)
 

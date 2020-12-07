@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="less_equal_greater.code" format="2">
+	<advance width="1800"/>
+	<outline>
+		<component base="less"/>
+		<component base="equal" xOffset="600"/>
+		<component base="greater" xOffset="1200"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0,0,1,0.5</string>
+		</dict>
+	</lib>
+</glyph>
