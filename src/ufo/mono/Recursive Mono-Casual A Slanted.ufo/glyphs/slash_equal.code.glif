@@ -2,8 +2,39 @@
 <glyph name="slash_equal.code" format="2">
 	<advance width="1200"/>
 	<outline>
+		<contour>
+			<point x="440" y="450" type="line"/>
+			<point x="438" y="445"/>
+			<point x="435" y="439"/>
+			<point x="433" y="431" type="curve" smooth="yes"/>
+			<point x="428" y="409"/>
+			<point x="455" y="400"/>
+			<point x="485" y="400" type="curve"/>
+			<point x="1171" y="400" type="line"/>
+			<point x="1174" y="404"/>
+			<point x="1177" y="409"/>
+			<point x="1179" y="419" type="curve" smooth="yes"/>
+			<point x="1184" y="443"/>
+			<point x="1175" y="450"/>
+			<point x="1155" y="450" type="curve" smooth="yes"/>
+		</contour>
+		<contour>
+			<point x="277" y="200" type="line"/>
+			<point x="275" y="196"/>
+			<point x="272" y="190"/>
+			<point x="270" y="182" type="curve" smooth="yes"/>
+			<point x="263.6414805787" y="158.6854287886"/>
+			<point x="295" y="150"/>
+			<point x="325" y="150" type="curve" smooth="yes"/>
+			<point x="1109" y="150" type="line"/>
+			<point x="1112" y="154"/>
+			<point x="1115" y="159"/>
+			<point x="1117" y="172" type="curve" smooth="yes"/>
+			<point x="1120" y="193"/>
+			<point x="1114" y="200"/>
+			<point x="1101" y="200" type="curve" smooth="yes"/>
+		</contour>
 		<component base="slash"/>
-		<component base="equal" xOffset="600"/>
 	</outline>
 	<lib>
 		<dict>

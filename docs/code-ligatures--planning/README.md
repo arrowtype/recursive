@@ -179,12 +179,41 @@ Done!
 | <<=      | less_less_equal.code         | Java Bit Operator          |
 | >>=      | greater_greater_equal.code   | Java Bit Operator          |
 | |=       | bar_equal.code               | Java Bit Operator          |
-| /=       | slash_equal.code             | Haskell                    |
 | !~       | exclam_asciitilde.code       |                            |
 | =~       | equal_asciitilde.code        |                            |
+| |>       | bar_greater.code             | Elixir's pipeline operator |
+
+Haskell-specific
+
+| ligature | name                         | done?                      |
+| -------- | ---------------------------- | -------------------------- |
+| /=       | slash_equal.code             | done                       |
+| <|>      | less_bar_greater.code        |                            |
+| <|       | less_bar.code                |                            |
+| <*>      | less_asterisk_greater.code   |                            |
+| <*       | less_asterisk.code           |                            |
+| <$>      | less_dollar_greater.code     |                            |
+| <+>      | less_plus_greater.code       |                            |
+
+| =<<      | equal_less_less.code         # greater_greater_equal.code (180 flip)                   
+| -<       | hyphen_less.code             # less_hyphen.code (rearrange)                 
+| >-       | greater_hyphen.code          # hyphen_greater.code (rearrange)          
+| -<<      | hyphen_less_less.code        # less_hyphen.code (rearrange)                  
+| >>-      | greater_greater_hyphen.code  # hyphen_greater.code (rearrange)                             
+
+==> =>
+=== ==>
+
+**Maybe?**
+
+| ligature | name                         | usecase                    |
+| -------- | ---------------------------- | -------------------------- |
 | <<-      | less_less_hyphen.code        | heredoc                    |
 | <<~      | less_less_asciitilde.code    | heredoc                    |
-| |>       | bar_greater.code             | Elixir's pipeline operator |
+
+<<-****
+
+<- -> =>
 
 
 <!-- -->

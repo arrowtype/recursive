@@ -2,8 +2,42 @@
 <glyph name="bar_greater.code" format="2">
 	<advance width="1200"/>
 	<outline>
-		<component base="bar"/>
-		<component base="greater" xOffset="600"/>
+		<contour>
+			<point x="735" y="-28"/>
+			<point x="883" y="125"/>
+			<point x="945" y="240" type="curve"/>
+			<point x="949" y="264"/>
+			<point x="950" y="276"/>
+			<point x="950" y="306" type="curve" smooth="yes"/>
+			<point x="950" y="361"/>
+			<point x="936" y="395"/>
+			<point x="901" y="437" type="curve" smooth="yes"/>
+			<point x="814" y="543"/>
+			<point x="706" y="646"/>
+			<point x="519" y="710" type="curve"/>
+			<point x="514" y="683"/>
+			<point x="510" y="657"/>
+			<point x="510" y="625" type="curve" smooth="yes"/>
+			<point x="510" y="557"/>
+			<point x="531" y="523"/>
+			<point x="566" y="504" type="curve" smooth="yes"/>
+			<point x="664" y="449"/>
+			<point x="735" y="403"/>
+			<point x="823" y="285" type="curve"/>
+			<point x="807" y="349" type="line"/>
+			<point x="807" y="255" type="line"/>
+			<point x="820" y="316" type="line"/>
+			<point x="742" y="208"/>
+			<point x="667" y="154"/>
+			<point x="566" y="100" type="curve" smooth="yes"/>
+			<point x="530" y="81"/>
+			<point x="510" y="50"/>
+			<point x="510" y="-20" type="curve" smooth="yes"/>
+			<point x="510" y="-49"/>
+			<point x="514" y="-78"/>
+			<point x="519" y="-103" type="curve"/>
+		</contour>
+		<component base="bar" xOffset="30"/>
 	</outline>
 	<lib>
 		<dict>

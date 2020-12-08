@@ -25,17 +25,11 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 # zeroinferiorslash.afrc = zerosuperior.afrc
 # zerosuperiorslash.afrc = zeroinferior.afrc
 txt = '''\
-less_greater.code          = less & greater
-less_equal_greater.code    = less & equal & greater
-less_less_equal.code       = less & less & equal
-greater_greater_equal.code = greater & greater & equal
-bar_equal.code             = bar & equal
-slash_equal.code           = slash & equal
-exclam_asciitilde.code     = exclam & asciitilde
-equal_asciitilde.code      = equal & asciitilde
-less_less_hyphen.code      = less & less & hyphen
-less_less_asciitilde.code  = less & less & asciitilde
-bar_greater.code           = bar & greater
+less_bar_greater.code        = less_equal_greater.code + bar
+less_asterisk_greater.code   = less_equal_greater.code + asterisk
+less_asterisk.code           = less_equal_greater.code + asterisk
+less_dollar_greater.code     = less_equal_greater.code + dollar
+less_plus_greater.code       = less_equal_greater.code + plus
 '''
 
 # recipeFile = "/Users/stephennixon/type-repos/recursive/src/00-recursive-scripts-for-robofont/diacritics-and-glyph_construction-recipes/diacritic-recipes-for-recursive-generated-with_alts.txt"
