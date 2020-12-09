@@ -2,8 +2,77 @@
 <glyph name="less_dollar_greater.code" format="2">
 	<advance width="1800"/>
 	<outline>
-		<component base="less_equal_greater.code"/>
-		<component base="dollar"/>
+		<contour>
+			<point x="338" y="672"/>
+			<point x="174" y="519"/>
+			<point x="106" y="404" type="curve"/>
+			<point x="101" y="380"/>
+			<point x="100" y="368"/>
+			<point x="100" y="338" type="curve" smooth="yes"/>
+			<point x="100" y="283"/>
+			<point x="116" y="249"/>
+			<point x="154" y="207" type="curve" smooth="yes"/>
+			<point x="250" y="101"/>
+			<point x="370" y="-2"/>
+			<point x="577" y="-66" type="curve"/>
+			<point x="582" y="-39"/>
+			<point x="587" y="-13"/>
+			<point x="587" y="19" type="curve" smooth="yes"/>
+			<point x="587" y="87"/>
+			<point x="565" y="124"/>
+			<point x="525" y="140" type="curve" smooth="yes"/>
+			<point x="416" y="189"/>
+			<point x="338" y="235"/>
+			<point x="241" y="350" type="curve"/>
+			<point x="259" y="288" type="line"/>
+			<point x="259" y="382" type="line"/>
+			<point x="244" y="319" type="line"/>
+			<point x="330" y="442"/>
+			<point x="413" y="496"/>
+			<point x="525" y="544" type="curve" smooth="yes"/>
+			<point x="565" y="561"/>
+			<point x="587" y="594"/>
+			<point x="587" y="664" type="curve" smooth="yes"/>
+			<point x="587" y="693"/>
+			<point x="582" y="722"/>
+			<point x="577" y="747" type="curve"/>
+		</contour>
+		<contour>
+			<point x="1462" y="10"/>
+			<point x="1626" y="163"/>
+			<point x="1694" y="278" type="curve"/>
+			<point x="1699" y="302"/>
+			<point x="1700" y="314"/>
+			<point x="1700" y="344" type="curve" smooth="yes"/>
+			<point x="1700" y="399"/>
+			<point x="1684" y="433"/>
+			<point x="1646" y="475" type="curve" smooth="yes"/>
+			<point x="1550" y="581"/>
+			<point x="1430" y="684"/>
+			<point x="1223" y="748" type="curve"/>
+			<point x="1218" y="721"/>
+			<point x="1213" y="695"/>
+			<point x="1213" y="663" type="curve" smooth="yes"/>
+			<point x="1213" y="595"/>
+			<point x="1235" y="558"/>
+			<point x="1275" y="542" type="curve" smooth="yes"/>
+			<point x="1384" y="493"/>
+			<point x="1462" y="447"/>
+			<point x="1559" y="332" type="curve"/>
+			<point x="1541" y="394" type="line"/>
+			<point x="1541" y="300" type="line"/>
+			<point x="1556" y="363" type="line"/>
+			<point x="1470" y="240"/>
+			<point x="1387" y="186"/>
+			<point x="1275" y="138" type="curve" smooth="yes"/>
+			<point x="1235" y="121"/>
+			<point x="1213" y="88"/>
+			<point x="1213" y="18" type="curve" smooth="yes"/>
+			<point x="1213" y="-11"/>
+			<point x="1218" y="-40"/>
+			<point x="1223" y="-65" type="curve"/>
+		</contour>
+		<component base="dollar" xOffset="597"/>
 	</outline>
 	<lib>
 		<dict>
