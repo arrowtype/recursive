@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="slash_equal.code" format="2">
-	<advance width="1200"/>
+	<advance width="600"/>
 	<outline>
-		<component base="slash" xOffset="20"/>
-		<component base="equal" xOffset="540"/>
+		<contour>
+			<point x="438" y="500" type="line"/>
+			<point x="426" y="454"/>
+			<point x="418" y="419"/>
+			<point x="406" y="373" type="curve" smooth="yes"/>
+			<point x="404" y="366"/>
+			<point x="406" y="362"/>
+			<point x="414" y="362" type="curve" smooth="yes"/>
+			<point x="1162" y="362" type="line"/>
+			<point x="1174" y="408"/>
+			<point x="1183" y="443"/>
+			<point x="1194" y="489" type="curve" smooth="yes"/>
+			<point x="1196" y="496"/>
+			<point x="1194" y="500"/>
+			<point x="1186" y="500" type="curve" smooth="yes"/>
+		</contour>
+		<contour>
+			<point x="273" y="240" type="line"/>
+			<point x="261" y="194"/>
+			<point x="252" y="159"/>
+			<point x="241" y="113" type="curve" smooth="yes"/>
+			<point x="239" y="106"/>
+			<point x="241" y="102"/>
+			<point x="249" y="102" type="curve" smooth="yes"/>
+			<point x="1097" y="102" type="line"/>
+			<point x="1109" y="148"/>
+			<point x="1117" y="183"/>
+			<point x="1129" y="229" type="curve" smooth="yes"/>
+			<point x="1131" y="236"/>
+			<point x="1129" y="240"/>
+			<point x="1121" y="240" type="curve" smooth="yes"/>
+		</contour>
+		<component base="slash"/>
 	</outline>
 	<lib>
 		<dict>
