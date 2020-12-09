@@ -2,13 +2,12 @@
 <glyph name="hyphen_less.code" format="2">
 	<advance width="1200"/>
 	<outline>
-		<component base="hyphen" xOffset="30"/>
-		<component base="less" xOffset="550"/>
+		<component base="less_hyphen.code"/>
 	</outline>
 	<lib>
 		<dict>
 			<key>public.markColor</key>
-			<string>0.25,1,1,0.5</string>
+			<string>0,0,1,0.5</string>
 		</dict>
 	</lib>
 </glyph>
