@@ -281,7 +281,8 @@ After the files have been generated (do note that the static instances take a bi
 To build all the static fonts, run:
 
 ```bash
-version=1.066 # (replace version number)
+cd mastering # (if you haven’t already moved to the mastering directory)
+version=1.067 # (replace version number)
 python build.py --statfiles --version $version
 python build.py --static --version $version
 ```
@@ -291,7 +292,8 @@ python build.py --static --version $version
 To build the variable font, run:
 
 ```bash
-version=1.066 # (replace version number)
+cd mastering # (if you haven’t already moved to the mastering directory)
+version=1.067 # (replace version number)
 python build.py --varfiles --version $version
 python build.py --variable --version $version
 ```
