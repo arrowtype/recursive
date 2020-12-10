@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="less_bar_greater.code" format="2">
-	<advance width="300"/>
+	<advance width="1800"/>
 	<outline>
 		<contour>
 			<point x="471" y="624"/>
@@ -72,7 +72,29 @@
 			<point x="1113" y="-90"/>
 			<point x="1115" y="-98" type="curve"/>
 		</contour>
-		<component base="bar" xOffset="600"/>
+		<contour>
+			<point x="868" y="760" type="curve"/>
+			<point x="874" y="725"/>
+			<point x="875" y="690"/>
+			<point x="875" y="653" type="curve" smooth="yes"/>
+			<point x="875" y="390"/>
+			<point x="875" y="126"/>
+			<point x="875" y="-137" type="curve" smooth="yes"/>
+			<point x="875" y="-155"/>
+			<point x="893" y="-160"/>
+			<point x="915" y="-160" type="curve" smooth="yes"/>
+			<point x="918" y="-160"/>
+			<point x="922" y="-160"/>
+			<point x="925" y="-160" type="curve"/>
+			<point x="925" y="127"/>
+			<point x="925" y="416"/>
+			<point x="925" y="703" type="curve" smooth="yes"/>
+			<point x="925" y="740"/>
+			<point x="914" y="763"/>
+			<point x="885" y="763" type="curve" smooth="yes"/>
+			<point x="879" y="763"/>
+			<point x="874" y="762"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>

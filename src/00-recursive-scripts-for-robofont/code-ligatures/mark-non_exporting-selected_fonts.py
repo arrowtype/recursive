@@ -22,6 +22,7 @@ percent_g.code
 percent_percent.code
 percent_r.code
 percent_s.code
+f_quotesingle.code
 """.split()
 
 for name in nonExportingGlyphs:

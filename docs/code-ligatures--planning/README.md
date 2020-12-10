@@ -194,12 +194,11 @@ Haskell-specific
 | <*       | less_asterisk.code           |                            |
 | <$>      | less_dollar_greater.code     |                            |
 | <+>      | less_plus_greater.code       |                            |
-
-| =<<      | equal_less_less.code         # greater_greater_equal.code (180 flip)                   
-| -<       | hyphen_less.code             # less_hyphen.code (rearrange)                 
-| >-       | greater_hyphen.code          # hyphen_greater.code (rearrange)          
-| -<<      | hyphen_less_less.code        # less_hyphen.code (rearrange)                  
-| >>-      | greater_greater_hyphen.code  # hyphen_greater.code (rearrange)                             
+| =<<      | equal_less_less.code         |                            |
+| -<       | hyphen_less.code             |                            |
+| >-       | greater_hyphen.code          |                            |
+| -<<      | hyphen_less_less.code        |                            |
+| >>-      | greater_greater_hyphen.code  |                            |
 
 ==> =>
 === ==>

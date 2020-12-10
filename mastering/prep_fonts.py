@@ -263,6 +263,7 @@ def sortGlyphOrder(fonts):
         # last, and it must be the first glyph in a font.
         newGlyphOrder.insert(0, newGlyphOrder.pop())
         font.glyphOrder = newGlyphOrder
+        
 
 
 def setVersion(fonts, version):

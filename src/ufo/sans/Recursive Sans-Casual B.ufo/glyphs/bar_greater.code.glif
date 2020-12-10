@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="bar_greater.code" format="2">
-	<advance width="300"/>
+	<advance width="1200"/>
 	<outline>
 		<contour>
 			<point x="735" y="-28"/>
@@ -37,7 +37,29 @@
 			<point x="514" y="-78"/>
 			<point x="519" y="-103" type="curve"/>
 		</contour>
-		<component base="bar" xOffset="30"/>
+		<contour>
+			<point x="237" y="758" type="curve"/>
+			<point x="246" y="722"/>
+			<point x="250" y="685"/>
+			<point x="250" y="645" type="curve" smooth="yes"/>
+			<point x="250" y="398"/>
+			<point x="250" y="150"/>
+			<point x="250" y="-97" type="curve" smooth="yes"/>
+			<point x="250" y="-142"/>
+			<point x="291" y="-164"/>
+			<point x="373" y="-164" type="curve" smooth="yes"/>
+			<point x="390" y="-164"/>
+			<point x="402" y="-163"/>
+			<point x="410" y="-161" type="curve"/>
+			<point x="410" y="114"/>
+			<point x="410" y="389"/>
+			<point x="410" y="664" type="curve" smooth="yes"/>
+			<point x="410" y="724"/>
+			<point x="380" y="765"/>
+			<point x="304" y="765" type="curve" smooth="yes"/>
+			<point x="279" y="765"/>
+			<point x="260" y="763"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>

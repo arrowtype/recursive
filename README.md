@@ -303,7 +303,7 @@ python build.py --variable --version $version
 If you want to build all of the sources, fonts, and WOFF2 versions of all of the fonts run:
 
 ```bash
-python build.py --all --version 1.066 # (replace version number)
+python build.py --all --version 1.067 # (replace version number)
 ```
 
 **Get notifications (Mac only)**

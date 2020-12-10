@@ -2,7 +2,55 @@
 <glyph name="greater_hyphen.code" format="2">
 	<advance width="1200"/>
 	<outline>
-		<component base="hyphen_less.code" xScale="-1" yScale="-1" xOffset="1244" yOffset="702"/>
+		<contour>
+			<point x="476" y="330" type="line"/>
+			<point x="340" y="248"/>
+			<point x="234" y="186"/>
+			<point x="66" y="84" type="curve"/>
+			<point x="69" y="94"/>
+			<point x="72" y="109"/>
+			<point x="79" y="138" type="curve" smooth="yes"/>
+			<point x="82" y="148"/>
+			<point x="82" y="151"/>
+			<point x="99" y="162" type="curve" smooth="yes"/>
+			<point x="144" y="188"/>
+			<point x="320" y="287"/>
+			<point x="466" y="364" type="curve"/>
+			<point x="436" y="331" type="line"/>
+			<point x="449" y="380" type="line"/>
+			<point x="461" y="348" type="line"/>
+			<point x="357" y="426"/>
+			<point x="235" y="529"/>
+			<point x="205" y="553" type="curve" smooth="yes"/>
+			<point x="193" y="563"/>
+			<point x="186" y="565"/>
+			<point x="190" y="578" type="curve" smooth="yes"/>
+			<point x="196" y="604"/>
+			<point x="197" y="608"/>
+			<point x="200" y="618" type="curve"/>
+			<point x="320" y="519"/>
+			<point x="427" y="426"/>
+			<point x="470" y="390" type="curve" smooth="yes"/>
+			<point x="486" y="375"/>
+			<point x="488" y="373"/>
+			<point x="485" y="362" type="curve" smooth="yes"/>
+		</contour>
+		<contour>
+			<point x="1106" y="328" type="curve"/>
+			<point x="475" y="328" type="line"/>
+			<point x="468" y="328"/>
+			<point x="464" y="332"/>
+			<point x="466" y="339" type="curve" smooth="yes"/>
+			<point x="470" y="352"/>
+			<point x="473" y="365"/>
+			<point x="476" y="378" type="curve"/>
+			<point x="1107" y="378" type="line" smooth="yes"/>
+			<point x="1114" y="378"/>
+			<point x="1117" y="374"/>
+			<point x="1115" y="367" type="curve" smooth="yes"/>
+			<point x="1112" y="354"/>
+			<point x="1109" y="341"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>
