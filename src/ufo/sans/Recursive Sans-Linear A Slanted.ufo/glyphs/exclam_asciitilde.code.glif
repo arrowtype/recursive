@@ -41,40 +41,7 @@
 			<point x="222" y="-5"/>
 			<point x="275" y="-5"/>
 		</contour>
-		<contour>
-			<point x="865" y="275" type="curve" smooth="yes"/>
-			<point x="778" y="275"/>
-			<point x="720" y="375"/>
-			<point x="622" y="375" type="curve" smooth="yes"/>
-			<point x="576" y="375"/>
-			<point x="542" y="359"/>
-			<point x="514" y="336" type="curve" smooth="yes"/>
-			<point x="504" y="328"/>
-			<point x="503" y="323"/>
-			<point x="502" y="319" type="curve" smooth="yes"/>
-			<point x="498" y="305"/>
-			<point x="494" y="286"/>
-			<point x="491" y="274" type="curve"/>
-			<point x="503" y="274" type="line"/>
-			<point x="548" y="313"/>
-			<point x="579" y="328"/>
-			<point x="617" y="328" type="curve" smooth="yes"/>
-			<point x="706" y="328"/>
-			<point x="754" y="228"/>
-			<point x="858" y="228" type="curve" smooth="yes"/>
-			<point x="901" y="228"/>
-			<point x="936" y="241"/>
-			<point x="967" y="263" type="curve" smooth="yes"/>
-			<point x="977" y="270"/>
-			<point x="979" y="276"/>
-			<point x="980" y="280" type="curve" smooth="yes"/>
-			<point x="984" y="298"/>
-			<point x="989" y="317"/>
-			<point x="992" y="329" type="curve"/>
-			<point x="980" y="329" type="line"/>
-			<point x="940" y="291"/>
-			<point x="905" y="275"/>
-		</contour>
+		<component base="asciitilde" xOffset="423" yOffset="-1"/>
 	</outline>
 	<lib>
 		<dict>
