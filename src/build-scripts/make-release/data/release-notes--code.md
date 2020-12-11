@@ -18,6 +18,9 @@ NOTE: If you would rather customize your own version of Rec Mono for Code (for i
 
 Download the zip in this folder for an easy way to download these fonts. Then, install the fonts then call them from your favorite code editor with their relevant family name, e.g. `Rec Mono Duotone`.
 
+**`Rec Mono Duotone`**
+- A personal favorite – this uses Linear styles for upright text and Casual styles for italic text. In many themes that use italic styles, this will give most code a utilitarian look, but set comments and some keywords in a more-handwritten style.
+
 **`Rec Mono Linear`**
 - Everyday workhorse for code. Simplified shapes meant to help enhance focus in complex code.
 
@@ -26,10 +29,6 @@ Download the zip in this folder for an easy way to download these fonts. Then, i
 
 **`Rec Mono SemiCasual`**
 - Sets the CASL axis at `0.5` for font that is serious but softened a little bit. This isn't the best choice for text at large sizes (like headlines on a website), but can be a really nice balance in code.
-
-**`Rec Mono Duotone`**
-- A personal favorite – this uses Linear styles for upright text and Casual styles for italic text. In many themes that use italic styles, this will give most code a utilitarian look, but set comments and some keywords in a more-handwritten style.
-
 
 ## Code Ligatures
 

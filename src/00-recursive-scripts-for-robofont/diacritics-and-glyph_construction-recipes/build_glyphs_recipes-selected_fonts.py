@@ -25,10 +25,7 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 # zeroinferiorslash.afrc = zerosuperior.afrc
 # zerosuperiorslash.afrc = zeroinferior.afrc
 txt = '''\
-Wcircumflex = W + circumflexcomb.case@top
-Wgrave = W + gravecomb.case@top
-Wacute = W + acutecomb.case@top
-Wdieresis = W + dieresiscomb.case@top
+greater_greater_hyphen.code = hyphen_less_less.code
 '''
 
 # recipeFile = "/Users/stephennixon/type-repos/recursive/src/00-recursive-scripts-for-robofont/diacritics-and-glyph_construction-recipes/diacritic-recipes-for-recursive-generated-with_alts.txt"
@@ -50,7 +47,7 @@ files = getFile("Select files to build glyphs in", allowsMultipleSelection=True,
 ignoreExisting = [L.split('=')[0].strip()[1:] for L in txt.split('\n') if L.startswith('?')]
 
 # Set to False to open fonts with RoboFont UI (e.g. to visually check changes before saving)
-skipInterface = True
+skipInterface = False
 
 for file in files:
 
@@ -81,7 +78,7 @@ for file in files:
         glyph.name = constructionGlyph.name
         glyph.unicode = constructionGlyph.unicode
         glyph.width = constructionGlyph.width
-        glyph.markColor = 0, 0, 0, 0.5
+        glyph.markColor = 0, 0, 1, 0.5
 
         # if no unicode was given, try to set it automatically
         if glyph.unicode is None:

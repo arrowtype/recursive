@@ -17,8 +17,7 @@ source venv/bin/activate
 
 # required argument: directory with built fonts
 dir=$1
-version=$(cat version.txt) # too clever
-# version=${dir/"fonts_"/""}
+version=${dir: 6:5} # assumes the folder has a name like 'fonts_1.067' or 'fonts_1.067_ignore'
 
 if [[ -z $dir || $dir = "--help" ]] ; then
     echo 'Add a dir path, such as:'
@@ -97,6 +96,8 @@ otf2otc $fonts -o "$outputDir/$desktopDir/recursive-static-TTFs.ttc"
 
 # ---------------------------------------------
 # Make code-specific fonts
+
+# TODO: change directories to auto-build this from that other project? Might be overly dependent on my own
 
 python src/build-scripts/make-release/instantiate-code-fonts.py $dir/Variable_TTF/*.ttf -o $outputDir/$desktopCodeDir
 

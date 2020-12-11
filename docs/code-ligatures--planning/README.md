@@ -160,8 +160,62 @@ Including these because they should be relatively simple, and will be seen very 
 | \*=      | asterisk_equal.code          | JS, SQL            |
 | /=       | slash_equal.code             | JS, SQL            |
 
+#### Powerline symbols
 
-`# I'm still not sure about making special brackets`
+Done!
+
+| glyph | name    |
+| ----- | ------- |
+|      | uniE0A0 |
+| ☐     | uni2610 |
+| ☑     | uni2611 |
+
+#### Added glyphs for Haskell, etc, Dec 2020
+
+| ligature | name                         | usecase                    |
+| -------- | ---------------------------- | -------------------------- |
+| <>       | less_greater.code            | Java, C#, Perl, VBA, PHP   |
+| <=>      | less_equal_greater.code      | three-way comparison       |
+| <<=      | less_less_equal.code         | Java Bit Operator          |
+| >>=      | greater_greater_equal.code   | Java Bit Operator          |
+| |=       | bar_equal.code               | Java Bit Operator          |
+| !~       | exclam_asciitilde.code       |                            |
+| =~       | equal_asciitilde.code        |                            |
+| |>       | bar_greater.code             | Elixir's pipeline operator |
+
+Haskell-specific
+
+| ligature | name                         | done?                      |
+| -------- | ---------------------------- | -------------------------- |
+| /=       | slash_equal.code             | done                       |
+| <|>      | less_bar_greater.code        |                            |
+| <|       | less_bar.code                |                            |
+| <*>      | less_asterisk_greater.code   |                            |
+| <*       | less_asterisk.code           |                            |
+| <$>      | less_dollar_greater.code     |                            |
+| <+>      | less_plus_greater.code       |                            |
+| =<<      | equal_less_less.code         |                            |
+| -<       | hyphen_less.code             |                            |
+| >-       | greater_hyphen.code          |                            |
+| -<<      | hyphen_less_less.code        |                            |
+| >>-      | greater_greater_hyphen.code  |                            |
+
+==> =>
+=== ==>
+
+**Maybe?**
+
+| ligature | name                         | usecase                    |
+| -------- | ---------------------------- | -------------------------- |
+| <<-      | less_less_hyphen.code        | heredoc                    |
+| <<~      | less_less_asciitilde.code    | heredoc                    |
+
+<<-****
+
+<- -> =>
+
+
+<!-- -->
 
 #### string formatting operators and escape characters
 
@@ -184,6 +238,8 @@ Including these because they should be relatively simple, and will be seen very 
 
 #### bracket combinations
 
+Not doing these because they would mess with extensions like the [Pair Bracket Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer).
+
 | ligature | name                           |
 | -------- | ------------------------------ |
 | {[       | braceleft_bracketleft.code     |
@@ -200,13 +256,7 @@ Including these because they should be relatively simple, and will be seen very 
 ### _Priority "Maybe"_
 
 
-#### Powerline symbols
 
-| glyph | name    |
-| ----- | ------- |
-|      | uniE0A0 |
-| ☐     | uni2610 |
-| ☑     | uni2611 |
 
 #### extra markdown ligatures (Will `space` glyphs work in clig? Needs testing in code editors!)
 
