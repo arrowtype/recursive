@@ -281,7 +281,7 @@ After the files have been generated (do note that the static instances take a bi
 To build all the static fonts, run:
 
 ```bash
-# activate venv, install dependencies, cd mastering
+# activate venv, install dependencies, cd mastering 
 version=1.069 # (replace version number)
 python build.py --statfiles --version $version
 python build.py --static --version $version
