@@ -4,7 +4,7 @@
     Dec 9, 2020.
 """
 
-ligs = "less_greater.code less_equal_greater.code less_less_equal.code greater_greater_equal.code bar_equal.code exclam_asciitilde.code equal_asciitilde.code bar_greater.code slash_equal.code less_bar_greater.code less_bar.code less_asterisk_greater.code less_asterisk.code less_dollar_greater.code less_plus_greater.code equal_less_less.code hyphen_less.code greater_hyphen.code hyphen_less_less.code greater_greater_hyphen.code".split()
+ligs = "less_less_hyphen.code less_less_asciitilde.code".split()
 
 for name in ligs:
     print(name)
