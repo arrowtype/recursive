@@ -282,7 +282,7 @@ To build all the static fonts, run:
 
 ```bash
 cd mastering # (if you haven’t already moved to the mastering directory)
-version=1.067 # (replace version number)
+version=1.068 # (replace version number)
 python build.py --statfiles --version $version
 python build.py --static --version $version
 ```
@@ -293,7 +293,7 @@ To build the variable font, run:
 
 ```bash
 cd mastering # (if you haven’t already moved to the mastering directory)
-version=1.067 # (replace version number)
+version=1.068 # (replace version number)
 python build.py --varfiles --version $version
 python build.py --variable --version $version
 ```
@@ -303,7 +303,7 @@ python build.py --variable --version $version
 If you want to build all of the sources, fonts, and WOFF2 versions of all of the fonts run:
 
 ```bash
-python build.py --all --version 1.067 # (replace version number)
+python build.py --all --version 1.068 # (replace version number)
 ```
 
 **Get notifications (Mac only)**
@@ -311,7 +311,7 @@ python build.py --all --version 1.067 # (replace version number)
 Add option `--pync` (`-p` for short) to the script call to get Mac notifications, which may be helpful if you are working on other tasks while a build runs.
 
 ```bash
-python build.py --all --pync --version 1.065 # (replace version number)
+python build.py --all --pync --version 1.068 # (replace version number)
 ```
 
 ### Making a GitHub release
