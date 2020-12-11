@@ -97,6 +97,8 @@ otf2otc $fonts -o "$outputDir/$desktopDir/recursive-static-TTFs.ttc"
 # ---------------------------------------------
 # Make code-specific fonts
 
+# TODO: change directories to auto-build this from that other project? Might be overly dependent on my own
+
 python src/build-scripts/make-release/instantiate-code-fonts.py $dir/Variable_TTF/*.ttf -o $outputDir/$desktopCodeDir
 
 # ---------------------------------------------
