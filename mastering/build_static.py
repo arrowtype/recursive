@@ -725,14 +725,15 @@ def makeSFNT(root, outputPath, kind="otf"):
             with open(outputFile, "a") as f:
                 f.write(run.stdout)
         elif kind is "ttf":
-            ttfautohint_options.update(
-                                       in_file=file,
-                                       out_file=file,
-                                       hint_composites=True
-                                       )
-            with open(outputFile, "a") as f:
-                with redirect_stdout(f), redirect_stderr(f):
-                    ttfautohint.ttfautohint()
+            pass
+            # ttfautohint_options.update(
+            #                            in_file=file,
+            #                            out_file=file,
+            #                            hint_composites=True
+            #                            )
+            # with open(outputFile, "a") as f:
+            #     with redirect_stdout(f), redirect_stderr(f):
+            #         ttfautohint.ttfautohint()
 
         printProgressBar(i + 1, len(files), prefix='  ',
                          suffix='Complete', length=50)
