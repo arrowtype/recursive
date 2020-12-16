@@ -1091,6 +1091,29 @@
 				<string>glyphList</string>
 			</dict>
 		</array>
+		<key>com.github.googlei18n.ufo2ft.filters</key>
+		<array>
+			<dict>
+				<key>include</key>
+				<array>
+					<string>Eth</string>
+				</array>
+				<key>name</key>
+				<string>decomposeComponents</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>decomposeTransformedComponents</string>
+				<key>pre</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>flattenComponents</string>
+				<key>pre</key>
+				<integer>1</integer>
+			</dict>
+		</array>
 		<key>com.typemytype.robofont.compileSettings.autohint</key>
 		<true/>
 		<key>com.typemytype.robofont.compileSettings.checkOutlines</key>
