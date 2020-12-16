@@ -276,6 +276,28 @@ def decomposeClosingPunctuation(fonts):
     report["Decomposed pair punctuation"] = local_report
 
 
+# def decomposeProblemGlyphs(fonts):
+#     """
+#         Decomposing glyphs to help solve problems like
+#         https://github.com/arrowtype/recursive/issues/412
+#     """
+
+#     glyphsToDecompose = "\
+#             Eth Dcroat\
+#         ".split()
+
+#     local_report = report.get("Decomposed problem glyphs", [])
+#     for font in fonts:
+#         decomposed_problem_glyphs = []
+#         for name in glyphsToDecompose:
+#             if font[name].components:
+#                 for component in font[name].components:
+#                     component.decompose()
+        
+#         local_report.append((font.info.familyName + " " + font.info.styleName, decomposed_problem_glyphs))
+
+#     report["Decomposed problem glyphs"] = local_report
+
 
 def sortGlyphOrder(fonts):
     """
@@ -535,6 +557,9 @@ def prep(designspacePath, version):
 
     print("🏗  Decomposing pair punctuation")
     decomposeClosingPunctuation(fonts)
+
+    # print("🏗  Decomposing problem glyphs")
+    # decomposeProblemGlyphs(fonts)
 
     print("🏗  Clearing guides")
     for font in fonts:

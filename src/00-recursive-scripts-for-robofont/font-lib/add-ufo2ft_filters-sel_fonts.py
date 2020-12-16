@@ -12,7 +12,7 @@ for fontPath in inputFonts:
     font.lib["com.github.googlei18n.ufo2ft.filters"] = [
             {
                 'name': 'decomposeComponents', 
-                'include': "Eth".split()
+                'include': "Eth Dcroat".split()
             },
             {
                 'name': 'decomposeTransformedComponents', 
