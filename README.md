@@ -257,6 +257,12 @@ Then install requirements:
 pip install -U -r requirements.txt
 ```
 
+Also:
+
+```
+pip install git+https://github.com/LettError/DesignspaceProblems
+```
+
 ### Build the fonts
 
 The fonts are built with the `mastering/build.py` script. This script can build everything (`python build.py --all`), or a subset of the fonts. To view all the options, type `python build.py -h` to see all options. The recommended build process is detailed below. 
