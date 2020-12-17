@@ -283,7 +283,12 @@ def decomposeProblemGlyphs(fonts):
     """
 
     glyphsToDecompose = "\
-            Eth Dcroat\
+            Eth Dcroat \
+            caron caroncomb caroncomb.alt caroncomb.case \
+            brevecomb brevecomb_tildecomb brevecomb.case \
+            invertedbrevecmb invertedbrevecmb.case \
+            commaturnedabovecomb commaturnedabovecomb.case \
+            less_exclam_hyphen_hyphen.code\
         ".split()
 
     local_report = report.get("Decomposed problem glyphs", [])
