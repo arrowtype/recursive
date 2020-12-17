@@ -11,10 +11,6 @@ for fontPath in inputFonts:
     # un-nest nested components # https://github.com/googlefonts/fontbakery/issues/296
     font.lib["com.github.googlei18n.ufo2ft.filters"] = [
             {
-                'name': 'decomposeTransformedComponents', 
-                'pre': 1
-            },
-            {
                 'name': 'flattenComponents', 
                 'pre': 1
             },
