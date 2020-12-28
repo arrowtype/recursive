@@ -288,7 +288,7 @@ To build all the static fonts, run:
 
 ```bash
 # activate venv, install dependencies, cd mastering 
-version=1.069 # (replace version number)
+version=1.071 # (replace version number)
 python build.py --statfiles --version $version
 python build.py --static --version $version
 ```
@@ -299,7 +299,7 @@ To build the variable font, run:
 
 ```bash
 # activate venv, install dependencies, cd mastering
-version=1.069 # (replace version number)
+version=1.071 # (replace version number)
 python build.py --varfiles --version $version
 python build.py --variable --version $version
 ```
@@ -310,7 +310,7 @@ If you want to build all of the sources, fonts, and WOFF2 versions of all of the
 
 ```bash
 # activate venv, install dependencies, cd mastering
-python build.py --all --version 1.069 # (replace version number)
+python build.py --all --version 1.071 # (replace version number)
 ```
 
 **Get notifications (Mac only)**
@@ -319,7 +319,7 @@ Add option `--pync` (`-p` for short) to the script call to get Mac notifications
 
 ```bash
 # activate venv, install dependencies, cd mastering
-python build.py --all --pync --version 1.069 # (replace version number)
+python build.py --all --pync --version 1.071 # (replace version number)
 ```
 
 ### Making a GitHub release
@@ -350,7 +350,13 @@ This project has included a large amount of research (contained in `docs/`), and
 2. Make a symbolic link or "symlink" to the Recursive project scripts folder, `src/00-recursive-scripts-for-robofont`
     1. Still in the same terminal, type `ln -s `
     2. Copy-paste or drag-n-drop the `src/00-recursive-scripts-for-robofont` from Finder to get its full path. Hit return/enter.
-    3. Check that it's there by running `ls` to list files. You should see ``src/00-recursive-scripts-for-robofont` as one of the items listed.
+    3. Check that it's there by running `ls` to list files. You should see `src/00-recursive-scripts-for-robofont` as one of the items listed.
+
+So, this will look something like:
+
+```
+ln -s ~/FOLDER_PATH/robofont-scripts ~/FOLDER_PATH/recursive/src/00-recursive-scripts-for-robofont
+```
 
 3. Update your Scripts menu in RoboFont with *Scripts > Update Menu*
     - If the Recursive scripts don't appear, you may need to restart RoboFont
