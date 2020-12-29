@@ -267,11 +267,19 @@ def decomposeScaledNested(fonts):
                 changed = False
                 for c in glyph.components:
                     if c.scale != (1,1):
-                        c.decompose()
-                        changed = True
+                        try:
+                            c.decompose()
+                            changed = True
+                        except KeyError:
+                            print(font.path)
+                            print(glyph.name)
                     elif len(font[c.baseGlyph].components) != 0:
-                        c.decompose()
-                        changed = True
+                        try:
+                            c.decompose()
+                            changed = True
+                        except KeyError:
+                            print(font.path)
+                            print(glyph.name)
                 if changed:
                     changed_glyphs.append(glyph.name)
 
@@ -507,6 +515,9 @@ def makeCompatible(fonts):
 
     if nonCompatible != []:
         local_report.append(nonCompatible)
+        
+    print(nonCompatible) # debugging
+
     report["Removed non-compatible glyphs"] = local_report
 
 
