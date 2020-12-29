@@ -130,3 +130,11 @@ zip $outputDir.zip -r $outputDir -x .DS_*
 
 mv $outputDir.zip fonts/$outputDir.zip
 mv $outputDir fonts/$outputDir
+
+# ---------------------------------------------
+# just a reminder
+
+echo ""
+echo ""
+echo "⚠️ TO DO: Use Recursive Code Config to generate new Code release fonts!"
+echo ""
