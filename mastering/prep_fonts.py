@@ -250,30 +250,43 @@ def decomposeNonExportingGlyphs(fonts):
     report["Non-exporting glyphs"] = local_report
 
 
-def decomposeClosingPunctuation(fonts):
+def decomposeScaledNested(fonts):
     """
-        Decomposes open/closing punctuation pairs to (hopefully) ensure better vertical alignment.
-
-        See Recursive Issue #297 for more details.
+    Decompose anything that is scaled or built from nested components.
+    This replaces the fix from Recursive Issue #297, as it will catch
+    issues occurring in #412 and #427. 
     """
 
-    pairPunctuation = "\
-        parenleft parenright bracketleft bracketright braceleft braceright \
-        bracketangleleft bracketangleright quotesingle quotedbl quoteleft \
-        quoteright quotedblleft quotedblright quotesinglbase quotedblbase \
-        guilsinglleft guilsinglright guillemotleft guillemotright less greater".split()
-
-    local_report = report.get("Decomposed pair punctuation", [])
+    local_report = report.get("Decomposed scaled, flipped, and nested components", [])
     for font in fonts:
-        decomposed_pair_punc = []
-        for name in pairPunctuation:
-            if font[name].components:
-                for component in font[name].components:
-                    component.decompose()
         
-        local_report.append((font.info.familyName + " " + font.info.styleName, decomposed_pair_punc))
+        changed_glyphs = []
+        
+        for glyph in font:
+            if len(glyph.components) != 0:
+                changed = False
+                for c in glyph.components:
+                    if c.scale != (1,1):
+                        try:
+                            c.decompose()
+                            changed = True
+                        except KeyError:
+                            print(font.path)
+                            print(glyph.name)
+                    elif len(font[c.baseGlyph].components) != 0:
+                        try:
+                            c.decompose()
+                            changed = True
+                        except KeyError:
+                            print(font.path)
+                            print(glyph.name)
+                if changed:
+                    changed_glyphs.append(glyph.name)
 
-    report["Decomposed pair punctuation"] = local_report
+        if len(changed_glyphs) != 0:
+            local_report.append((font.info.familyName + " " + font.info.styleName, changed_glyphs))
+
+    report["Decomposed scaled, flipped, and nested components"] = local_report
 
 
 
@@ -502,6 +515,9 @@ def makeCompatible(fonts):
 
     if nonCompatible != []:
         local_report.append(nonCompatible)
+        
+    print(nonCompatible) # debugging
+
     report["Removed non-compatible glyphs"] = local_report
 
 
@@ -533,8 +549,8 @@ def prep(designspacePath, version):
     print("🏗  Removing non-exporting glyphs")
     decomposeNonExportingGlyphs(fonts)
 
-    print("🏗  Decomposing pair punctuation")
-    decomposeClosingPunctuation(fonts)
+    print("🏗  Decomposing scaled, flipped, and nested components")
+    decomposeScaledNested(fonts)
 
     print("🏗  Clearing guides")
     for font in fonts:
