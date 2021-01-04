@@ -126,9 +126,9 @@ rm $outputDir/$desktopDir/separate_statics/TTF/*_output.txt
 # ---------------------------------------------
 # make a zip of the outputDir, then move both dir & zip into "fonts/"
 
-zip $outputDir.zip -r $outputDir -x .DS_*
+# zip $outputDir.zip -r $outputDir -x .DS_*
 
-mv $outputDir.zip fonts/$outputDir.zip
+# mv $outputDir.zip fonts/$outputDir.zip
 mv $outputDir fonts/$outputDir
 
 # ---------------------------------------------
@@ -136,5 +136,6 @@ mv $outputDir fonts/$outputDir
 
 echo ""
 echo ""
-echo "⚠️ TO DO: Use Recursive Code Config to generate new Code release fonts!"
+echo "⚠️ TO DO: Use Recursive Code Config to generate new Code release fonts to copy into release!"
+echo "⚠️ TO DO: then make zip for release: cd into fonts, THEN make zip"
 echo ""
