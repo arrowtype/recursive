@@ -1,16 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="hyphen_space_bracketleft_x_bracketright.code" format="2">
-	<advance width="2400"/>
-	<outline>
-		<component base="hyphen" xOffset="40"/>
-		<component base="bracketleft" xOffset="600"/>
-		<component base="x" xOffset="1150"/>
-		<component base="bracketright" xOffset="1800"/>
-	</outline>
-	<lib>
-		<dict>
-			<key>public.markColor</key>
-			<string>1,0.5,0,1</string>
-		</dict>
-	</lib>
+  <advance width="2400"/>
+  <anchor x="600" y="0" name="caret_1"/>
+  <anchor x="1200" y="0" name="caret_2"/>
+  <anchor x="1800" y="0" name="caret_3"/>
+  <anchor x="2400" y="0" name="caret_4"/>
+  <outline>
+    <component base="hyphen" xOffset="40"/>
+    <component base="bracketleft" xOffset="600"/>
+    <component base="x" xOffset="1150"/>
+    <component base="bracketright" xOffset="1800"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0.5,0,1</string>
+    </dict>
+  </lib>
 </glyph>
