@@ -21,7 +21,8 @@
     <axis tag="slnt" name="Slant" minimum="-15" maximum="0" default="0">
       <labelname xml:lang="en">Slant</labelname>
       <map input="-15.000000" output="-15.000000" />
-      <map input="-14.039999" output="-14.999998" />
+      <map input="-14.050000" output="-14.999999" />
+      <map input="-14.040000" output="-14.980000" />
       <map input="-7.020000" output="-7.500000" />
       <map input="0.000000" output="0.000000" />
     </axis>
@@ -33,7 +34,7 @@
     <rule name="mono">
       <conditionset>
         <condition name="Monospace" minimum="0.500000" maximum="1" />
-        <condition name="Slant" minimum="-14.999998" maximum="0" />
+        <condition name="Slant" minimum="-14.985000" maximum="0" />
         <condition name="Cursive" minimum="0" maximum="0.900000" />
       </conditionset>
       <sub name="dotlessi" with="dotlessi.mono" />
@@ -104,7 +105,7 @@
     <rule name="mono autoitalic">
       <conditionset>
         <condition name="Monospace" minimum="0.500000" maximum="1" />
-        <condition name="Slant" minimum="-15" maximum="-14.999999" />
+        <condition name="Slant" minimum="-15" maximum="-14.990000" />
         <condition name="Cursive" minimum="0.100000" maximum="1" />
       </conditionset>
       <sub name="a" with="a.italic" />
@@ -458,7 +459,7 @@
     </rule>
     <rule name="sans">
       <conditionset>
-        <condition name="Monospace" minimum="0" maximum="0.449999" />
+        <condition name="Monospace" minimum="0" maximum="0.500000" />
         <condition name="Slant" minimum="-15" maximum="0" />
       </conditionset>
       <sub name="zero" with="zero.sans" />
@@ -475,8 +476,8 @@
     </rule>
     <rule name="sans autoroman">
       <conditionset>
-        <condition name="Monospace" minimum="0" maximum="0.449999" />
-        <condition name="Slant" minimum="-14.999998" maximum="0" />
+        <condition name="Monospace" minimum="0" maximum="0.500000" />
+        <condition name="Slant" minimum="-14.985000" maximum="0" />
         <condition name="Cursive" minimum="0" maximum="0.900000" />
       </conditionset>
       <sub name="zero" with="zero.sans" />
@@ -485,7 +486,7 @@
     </rule>
     <rule name="sans forceroman">
       <conditionset>
-        <condition name="Monospace" minimum="0" maximum="0.449999" />
+        <condition name="Monospace" minimum="0" maximum="0.500000" />
         <condition name="Cursive" minimum="0" maximum="0.090000" />
       </conditionset>
       <sub name="l" with="l.sans" />
@@ -502,8 +503,8 @@
     </rule>
     <rule name="sans autoitalic">
       <conditionset>
-        <condition name="Monospace" minimum="0" maximum="0.449999" />
-        <condition name="Slant" minimum="-15" maximum="-14.999999" />
+        <condition name="Monospace" minimum="0" maximum="0.500000" />
+        <condition name="Slant" minimum="-15" maximum="-14.990000" />
         <condition name="Cursive" minimum="0.100000" maximum="1" />
       </conditionset>
       <sub name="a" with="a.italic" />
@@ -672,7 +673,7 @@
     </rule>
     <rule name="sans forceitalic">
       <conditionset>
-        <condition name="Monospace" minimum="0" maximum="0.449999" />
+        <condition name="Monospace" minimum="0" maximum="0.500000" />
         <condition name="Cursive" minimum="0.900000" maximum="1" />
       </conditionset>
       <sub name="a" with="a.italic" />
