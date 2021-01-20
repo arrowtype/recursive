@@ -1,26 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="equal_equal.code" format="2">
-	<advance width="1200"/>
-	<outline>
-		<contour>
-			<point x="441" y="342" type="line"/>
-			<point x="814" y="342" type="line"/>
-			<point x="861" y="531" type="line"/>
-			<point x="488" y="531" type="line"/>
-		</contour>
-		<contour>
-			<point x="374" y="76" type="line"/>
-			<point x="747" y="76" type="line"/>
-			<point x="794" y="265" type="line"/>
-			<point x="421" y="265" type="line"/>
-		</contour>
-		<component base="equal"/>
-		<component base="equal" xOffset="600"/>
-	</outline>
-	<lib>
-		<dict>
-			<key>public.markColor</key>
-			<string>0.25,1,1,0.5</string>
-		</dict>
-	</lib>
+  <advance width="1200"/>
+  <anchor x="600" y="0" name="caret_1"/>
+  <outline>
+    <contour>
+      <point x="441" y="342" type="line"/>
+      <point x="814" y="342" type="line"/>
+      <point x="861" y="531" type="line"/>
+      <point x="488" y="531" type="line"/>
+    </contour>
+    <contour>
+      <point x="374" y="76" type="line"/>
+      <point x="747" y="76" type="line"/>
+      <point x="794" y="265" type="line"/>
+      <point x="421" y="265" type="line"/>
+    </contour>
+    <component base="equal"/>
+    <component base="equal" xOffset="600"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.25,1,1,0.5</string>
+    </dict>
+  </lib>
 </glyph>
