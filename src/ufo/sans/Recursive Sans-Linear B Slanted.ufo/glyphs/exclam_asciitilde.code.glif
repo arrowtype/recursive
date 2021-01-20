@@ -1,52 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="exclam_asciitilde.code" format="2">
-	<advance width="1200"/>
-	<outline>
-		<contour>
-			<point x="378.5202021934" y="290" type="line"/>
-			<point x="408.2751482477" y="361"/>
-			<point x="437.7800246392" y="431"/>
-			<point x="467.5349706934" y="502" type="curve"/>
-			<point x="514.297997625" y="689" type="line" smooth="yes"/>
-			<point x="516.0484852642" y="696"/>
-			<point x="512.0487639151" y="700"/>
-			<point x="506.0487639151" y="700" type="curve" smooth="yes"/>
-			<point x="434.0487639151" y="700"/>
-			<point x="378.0487639151" y="700"/>
-			<point x="337.0487639151" y="700" type="curve"/>
-			<point x="327.5461167312" y="662"/>
-			<point x="318.7936785354" y="627"/>
-			<point x="309.5411010142" y="590" type="curve" smooth="yes"/>
-			<point x="287.5349706934" y="502" type="line"/>
-			<point x="269.770829158" y="299"/>
-			<point x="270.2706898326" y="297"/>
-			<point x="273.2704111816" y="293" type="curve" smooth="yes"/>
-			<point x="274.7702718561" y="291"/>
-			<point x="276.5202021934" y="290"/>
-			<point x="280.5202021934" y="290" type="curve"/>
-		</contour>
-		<contour>
-			<point x="349" y="-10" type="curve"/>
-			<point x="396" y="179" type="line" smooth="yes"/>
-			<point x="398" y="186"/>
-			<point x="395" y="190"/>
-			<point x="388" y="190" type="curve"/>
-			<point x="325" y="190"/>
-			<point x="262" y="190"/>
-			<point x="199" y="190" type="curve"/>
-			<point x="152" y="1" type="line" smooth="yes"/>
-			<point x="150" y="-6"/>
-			<point x="153" y="-10"/>
-			<point x="160" y="-10" type="curve"/>
-			<point x="223" y="-10"/>
-			<point x="286" y="-10"/>
-		</contour>
-		<component base="asciitilde" xOffset="484" yOffset="-1"/>
-	</outline>
-	<lib>
-		<dict>
-			<key>public.markColor</key>
-			<string>1,0.5,0,1</string>
-		</dict>
-	</lib>
+  <advance width="1200"/>
+  <anchor x="600" y="0" name="caret_1"/>
+  <outline>
+    <contour>
+      <point x="378.5202021934" y="290" type="line"/>
+      <point x="408.2751482477" y="361"/>
+      <point x="437.7800246392" y="431"/>
+      <point x="467.5349706934" y="502" type="curve"/>
+      <point x="514.297997625" y="689" type="line" smooth="yes"/>
+      <point x="516.0484852642" y="696"/>
+      <point x="512.0487639151" y="700"/>
+      <point x="506.0487639151" y="700" type="curve" smooth="yes"/>
+      <point x="434.0487639151" y="700"/>
+      <point x="378.0487639151" y="700"/>
+      <point x="337.0487639151" y="700" type="curve"/>
+      <point x="327.5461167312" y="662"/>
+      <point x="318.7936785354" y="627"/>
+      <point x="309.5411010142" y="590" type="curve" smooth="yes"/>
+      <point x="287.5349706934" y="502" type="line"/>
+      <point x="269.770829158" y="299"/>
+      <point x="270.2706898326" y="297"/>
+      <point x="273.2704111816" y="293" type="curve" smooth="yes"/>
+      <point x="274.7702718561" y="291"/>
+      <point x="276.5202021934" y="290"/>
+      <point x="280.5202021934" y="290" type="curve"/>
+    </contour>
+    <contour>
+      <point x="349" y="-10" type="curve"/>
+      <point x="396" y="179" type="line" smooth="yes"/>
+      <point x="398" y="186"/>
+      <point x="395" y="190"/>
+      <point x="388" y="190" type="curve"/>
+      <point x="325" y="190"/>
+      <point x="262" y="190"/>
+      <point x="199" y="190" type="curve"/>
+      <point x="152" y="1" type="line" smooth="yes"/>
+      <point x="150" y="-6"/>
+      <point x="153" y="-10"/>
+      <point x="160" y="-10" type="curve"/>
+      <point x="223" y="-10"/>
+      <point x="286" y="-10"/>
+    </contour>
+    <component base="asciitilde" xOffset="484" yOffset="-1"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,0.5,0,1</string>
+    </dict>
+  </lib>
 </glyph>
