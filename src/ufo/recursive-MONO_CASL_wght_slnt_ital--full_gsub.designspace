@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<designspace format="4.0">
+<designspace format="4.1">
   <axes>
     <axis tag="MONO" name="Monospace" minimum="0" maximum="1" default="0">
       <labelname xml:lang="en">Monospace</labelname>
@@ -20,6 +20,10 @@
     </axis>
     <axis tag="slnt" name="Slant" minimum="-15" maximum="0" default="0">
       <labelname xml:lang="en">Slant</labelname>
+      <map input="-15.000000" output="-15.000000" />
+      <map input="-14.039999" output="-14.999998" />
+      <map input="-7.020000" output="-7.500000" />
+      <map input="0.000000" output="0.000000" />
     </axis>
     <axis tag="CRSV" name="Cursive" minimum="0" maximum="1" default="0.500000">
       <labelname xml:lang="en">Cursive</labelname>
@@ -28,9 +32,9 @@
   <rules>
     <rule name="mono">
       <conditionset>
-        <condition name="Monospace" minimum="0.499999999999999" maximum="1" />
-        <condition name="Slant" minimum="-13.99" maximum="0" />
-        <condition name="Cursive" minimum="0" maximum="0.899999999999999" />
+        <condition name="Monospace" minimum="0.500000" maximum="1" />
+        <condition name="Slant" minimum="-14.999998" maximum="0" />
+        <condition name="Cursive" minimum="0" maximum="0.900000" />
       </conditionset>
       <sub name="dotlessi" with="dotlessi.mono" />
       <sub name="f" with="f.mono" />
@@ -69,8 +73,8 @@
     </rule>
     <rule name="mono forceroman">
       <conditionset>
-        <condition name="Monospace" minimum="0.499999999999999" maximum="1" />
-        <condition name="Cursive" minimum="0" maximum="0.089999999999999" />
+        <condition name="Monospace" minimum="0.500000" maximum="1" />
+        <condition name="Cursive" minimum="0" maximum="0.090000" />
       </conditionset>
       <sub name="dotlessi" with="dotlessi.mono" />
       <sub name="f" with="f.mono" />
@@ -99,9 +103,9 @@
     </rule>
     <rule name="mono autoitalic">
       <conditionset>
-        <condition name="Monospace" minimum="0.499999999999999" maximum="1" />
-        <condition name="Slant" minimum="-15" maximum="-14" />
-        <condition name="Cursive" minimum="0.1" maximum="1" />
+        <condition name="Monospace" minimum="0.500000" maximum="1" />
+        <condition name="Slant" minimum="-15" maximum="-14.999999" />
+        <condition name="Cursive" minimum="0.100000" maximum="1" />
       </conditionset>
       <sub name="a" with="a.italic" />
       <sub name="aacute" with="aacute.italic" />
@@ -277,8 +281,8 @@
     </rule>
     <rule name="mono forceitalic">
       <conditionset>
-        <condition name="Monospace" minimum="0.499999999999999" maximum="1" />
-        <condition name="Cursive" minimum="0.9" maximum="1" />
+        <condition name="Monospace" minimum="0.500000" maximum="1" />
+        <condition name="Cursive" minimum="0.900000" maximum="1" />
       </conditionset>
       <sub name="a" with="a.italic" />
       <sub name="aacute" with="aacute.italic" />
@@ -454,13 +458,12 @@
     </rule>
     <rule name="sans">
       <conditionset>
-        <condition name="Monospace" minimum="0" maximum="0.499999999999999" />
+        <condition name="Monospace" minimum="0" maximum="0.449999" />
         <condition name="Slant" minimum="-15" maximum="0" />
       </conditionset>
       <sub name="zero" with="zero.sans" />
       <sub name="zerosuperior" with="zerosuperior.sans" />
       <sub name="zeroinferior" with="zeroinferior.sans" />
-      <!-- <sub name="slash" with="slash.split" /> -->
       <sub name="l" with="l.sans" />
       <sub name="lcaron" with="lcaron.sans" />
       <sub name="ldot" with="ldot.sans" />
@@ -472,19 +475,18 @@
     </rule>
     <rule name="sans autoroman">
       <conditionset>
-        <condition name="Monospace" minimum="0" maximum="0.499999999999999" />
-        <condition name="Slant" minimum="-13.99" maximum="0" />
-        <condition name="Cursive" minimum="0" maximum="0.899999999999999" />
+        <condition name="Monospace" minimum="0" maximum="0.449999" />
+        <condition name="Slant" minimum="-14.999998" maximum="0" />
+        <condition name="Cursive" minimum="0" maximum="0.900000" />
       </conditionset>
       <sub name="zero" with="zero.sans" />
       <sub name="zerosuperior" with="zerosuperior.sans" />
       <sub name="zeroinferior" with="zeroinferior.sans" />
-      <!-- <sub name="slash" with="slash.split" /> -->
     </rule>
     <rule name="sans forceroman">
       <conditionset>
-        <condition name="Monospace" minimum="0" maximum="0.499999999999999" />
-        <condition name="Cursive" minimum="0" maximum="0.089999999999999" />
+        <condition name="Monospace" minimum="0" maximum="0.449999" />
+        <condition name="Cursive" minimum="0" maximum="0.090000" />
       </conditionset>
       <sub name="l" with="l.sans" />
       <sub name="ldot" with="ldot.sans" />
@@ -497,13 +499,12 @@
       <sub name="zero" with="zero.sans" />
       <sub name="zerosuperior" with="zerosuperior.sans" />
       <sub name="zeroinferior" with="zeroinferior.sans" />
-      <!-- <sub name="slash" with="slash.split" /> -->
     </rule>
     <rule name="sans autoitalic">
       <conditionset>
-        <condition name="Monospace" minimum="0" maximum="0.499999999999999" />
-        <condition name="Slant" minimum="-15" maximum="-14" />
-        <condition name="Cursive" minimum="0.1" maximum="1" />
+        <condition name="Monospace" minimum="0" maximum="0.449999" />
+        <condition name="Slant" minimum="-15" maximum="-14.999999" />
+        <condition name="Cursive" minimum="0.100000" maximum="1" />
       </conditionset>
       <sub name="a" with="a.italic" />
       <sub name="aacute" with="aacute.italic" />
@@ -671,8 +672,8 @@
     </rule>
     <rule name="sans forceitalic">
       <conditionset>
-        <condition name="Monospace" minimum="0" maximum="0.499999999999999" />
-        <condition name="Cursive" minimum="0.9" maximum="1" />
+        <condition name="Monospace" minimum="0" maximum="0.449999" />
+        <condition name="Cursive" minimum="0.900000" maximum="1" />
       </conditionset>
       <sub name="a" with="a.italic" />
       <sub name="aacute" with="aacute.italic" />
