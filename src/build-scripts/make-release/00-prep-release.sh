@@ -137,5 +137,5 @@ mv $outputDir fonts/$outputDir
 echo ""
 echo ""
 echo "⚠️ TO DO: Use Recursive Code Config to generate new Code release fonts to copy into release!"
-echo "⚠️ TO DO: then make zip for release: cd into fonts, THEN make zip"
+echo "⚠️ TO DO: then make zip for release: cd into fonts, THEN make zip of complete package"
 echo ""
