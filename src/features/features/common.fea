@@ -29,10 +29,10 @@
 
 
 # ss04
-@sansI = [i        iacute        ibreve        icircumflex        idieresis        idieresisacute        idotbelow        igrave        igravedbl        ihook        iinvertedbreve        imacron        iogonek        itilde       ];
-@italI = [i.italic iacute.italic ibreve.italic icircumflex.italic idieresis.italic idieresisacute.italic idotbelow.italic igrave.italic igravedbl.italic ihook.italic iinvertedbreve.italic imacron.italic iogonek.italic itilde.italic];
-@smplI = [i.simple iacute.simple ibreve.simple icircumflex.simple idieresis.simple idieresisacute.simple idotbelow.simple igrave.simple igravedbl.simple ihook.simple iinvertedbreve.simple imacron.simple iogonek.simple itilde.simple];
-@monoI = [i.mono   iacute.mono   ibreve.mono   icircumflex.mono   idieresis.mono   idieresisacute.mono   idotbelow.mono   igrave.mono   igravedbl.mono   ihook.mono   iinvertedbreve.mono   imacron.mono   iogonek.mono   itilde.mono  ];
+@sansI = [dotlessi        i        iacute        ibreve        icircumflex        idieresis        idieresisacute        idotbelow        igrave        igravedbl        ihook        iinvertedbreve        imacron        iogonek        itilde       ];
+@italI = [dotlessi.italic i.italic iacute.italic ibreve.italic icircumflex.italic idieresis.italic idieresisacute.italic idotbelow.italic igrave.italic igravedbl.italic ihook.italic iinvertedbreve.italic imacron.italic iogonek.italic itilde.italic];
+@smplI = [dotlessi.italic i.simple iacute.simple ibreve.simple icircumflex.simple idieresis.simple idieresisacute.simple idotbelow.simple igrave.simple igravedbl.simple ihook.simple iinvertedbreve.simple imacron.simple iogonek.simple itilde.simple];
+@monoI = [dotlessi.mono   i.mono   iacute.mono   ibreve.mono   icircumflex.mono   idieresis.mono   idieresisacute.mono   idotbelow.mono   igrave.mono   igravedbl.mono   ihook.mono   iinvertedbreve.mono   imacron.mono   iogonek.mono   itilde.mono  ];
 
 
 # ss05
@@ -56,11 +56,11 @@
 
 # ss08
 
-@dfltCapL = [L      Lacute      Lcommaaccent      Lcaron      Ldotbelow      Llinebelow      Lslash       ];
-@sansCapL = [L.sans Lacute.sans Lcommaaccent.sans Lcaron.sans Ldotbelow.sans Llinebelow.sans Lslash.sans  ];
+@dfltCapL = [L      Lacute      Lcommaaccent      Lcaron      Ldotbelow      Llinebelow      Lslash      Ldot      ];
+@sansCapL = [L.sans Lacute.sans Lcommaaccent.sans Lcaron.sans Ldotbelow.sans Llinebelow.sans Lslash.sans Ldot.sans ];
 
-@dfltCapZ = [Z      Zacute      Zdotaccent      Zcaron      Zdotbelow      ];
-@sansCapZ = [Z.sans Zacute.sans Zdotaccent.sans Zcaron.sans Zdotbelow.sans ];
+@dfltCapZ = [Z      Zacute      Zdotaccent      Zcaron      Zdotbelow      DZ      DZcaron      ];
+@sansCapZ = [Z.sans Zacute.sans Zdotaccent.sans Zcaron.sans Zdotbelow.sans DZ.sans DZcaron.sans ];
 
 
 # zero and ss20

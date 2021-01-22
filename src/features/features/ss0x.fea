@@ -86,7 +86,6 @@ feature ss08 {
     };
     sub @dfltCapL by @sansCapL;
     sub @dfltCapZ by @sansCapZ;
-    sub z.italic by z;
 } ss08;
 
 feature ss09 {

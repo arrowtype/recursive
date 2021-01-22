@@ -24,8 +24,10 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 # zeroinferior.slash = zeroinferior
 # zeroinferiorslash.afrc = zerosuperior.afrc
 # zerosuperiorslash.afrc = zeroinferior.afrc
+# greater_greater_hyphen.code = hyphen_less_less.code
 txt = '''\
-greater_greater_hyphen.code = hyphen_less_less.code
+DZ.sans = DZ
+DZcaron.sans = DZcaron
 '''
 
 # recipeFile = "/Users/stephennixon/type-repos/recursive/src/00-recursive-scripts-for-robofont/diacritics-and-glyph_construction-recipes/diacritic-recipes-for-recursive-generated-with_alts.txt"
@@ -47,7 +49,7 @@ files = getFile("Select files to build glyphs in", allowsMultipleSelection=True,
 ignoreExisting = [L.split('=')[0].strip()[1:] for L in txt.split('\n') if L.startswith('?')]
 
 # Set to False to open fonts with RoboFont UI (e.g. to visually check changes before saving)
-skipInterface = False
+skipInterface = True
 
 for file in files:
 
