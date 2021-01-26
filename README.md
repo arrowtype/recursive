@@ -329,12 +329,14 @@ First, build fonts with the mastering flow above. Then:
 ```bash
 # navigate to the root directory of the project, then...
 
-# update version number at version.txt
-
- src/build-scripts/make-release/00-prep-release.sh fonts_1.52 # point to the latest build directory
+# update to latest font build directory
+fontDir="fonts_1.072"
+src/build-scripts/make-release/00-prep-release.sh $fontDir
 ```
 
-Then, go to the repo’s Releases page to make a new one.
+Then, copy the latest variable font into your local [Recursive Code Config](https://github.com/arrowtype/recursive-code-config) repo to build updated Code fonts. Copy these into the newly-made directory `fonts/ArrowType-Recursive-1.XXX/Recursive_Code`.
+
+Finally, go to the repo’s Releases page to make a new one.
 
 ## Using the resources in this project for type design
 

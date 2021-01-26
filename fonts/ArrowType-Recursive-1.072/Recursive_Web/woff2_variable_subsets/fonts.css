@@ -1,0 +1,41 @@
+
+ /* The bare minimum English subset, plus copyright & arrows (← ↑ → ↓) & quotes (“ ” ‘ ’) & bullet (•) */
+@font-face {
+  font-family: 'Recursive';
+  font-style: oblique 0deg 15deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url('/fonts/Recursive_VF_1.072--subset_range_english_basic.woff2') format('woff2');
+  unicode-range: U+0020-007F,U+00A9,U+2190-2193,U+2018,U+2019,U+201C,U+201D,U+2022;
+}
+
+/* unicode latin-1 letters, basic european diacritics */
+@font-face {
+  font-family: 'Recursive';
+  font-style: oblique 0deg 15deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url('/fonts/Recursive_VF_1.072--subset_range_latin_1.woff2') format('woff2');
+  unicode-range: U+00C0-00FF;
+}
+
+/* unicode latin-1, punc/symbols & arrows (↔ ↕ ↖ ↗ ↘ ↙) */
+@font-face {
+  font-family: 'Recursive';
+  font-style: oblique 0deg 15deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url('/fonts/Recursive_VF_1.072--subset_range_latin_1_punc.woff2') format('woff2');
+  unicode-range: U+00A0-00BF,U+2194-2199;
+}
+
+/* unicode latin A extended */
+@font-face {
+  font-family: 'Recursive';
+  font-style: oblique 0deg 15deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url('/fonts/Recursive_VF_1.072--subset_range_latin_ext.woff2') format('woff2');
+  unicode-range: U+0100-017F;
+}
+
