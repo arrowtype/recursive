@@ -282,26 +282,26 @@ cd mastering
 
 After the files have been generated (do note that the static instances take a bit of time to generate), you will want to look at the `mastering/build/static/CFF/checkoutlines.txt` file. This is the report (edited to remove issues that do not need attention) from [checkoutlinesUFO](https://adobe-type-tools.github.io/afdko/AFDKO-Overview.html#checkoutlinesufo). Issues found in this report should be cleaned up in the static UFOs. Many issues are due to overlap removal. Nothing is perfect, overlap removal algorithms included.
 
-**To build the static fonts**
-
-To build all the static fonts, run:
-
-```bash
-# activate venv, install dependencies, cd mastering 
-version=1.071 # (replace version number)
-python build.py --statfiles --version $version
-python build.py --static --version $version
-```
-
 **To build the variable font**
    
 To build the variable font, run:
 
 ```bash
 # activate venv, install dependencies, cd mastering
-version=1.071 # (replace version number)
+version=1.072 # (replace version number)
 python build.py --varfiles --version $version
 python build.py --variable --version $version
+```
+
+**To build the static fonts**
+
+To build all the static fonts, run:
+
+```bash
+# activate venv, install dependencies, cd mastering 
+version=1.072 # (replace version number)
+python build.py --statfiles --version $version
+python build.py --static --version $version
 ```
 
 **To build all the fonts**
@@ -310,7 +310,7 @@ If you want to build all of the sources, fonts, and WOFF2 versions of all of the
 
 ```bash
 # activate venv, install dependencies, cd mastering
-python build.py --all --version 1.071 # (replace version number)
+python build.py --all --version 1.072 # (replace version number)
 ```
 
 **Get notifications (Mac only)**
