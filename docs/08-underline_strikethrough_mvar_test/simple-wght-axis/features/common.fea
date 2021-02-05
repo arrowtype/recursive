@@ -1,0 +1,96 @@
+# numerals
+@numbers_dflt = [ zero              zero.sans             one              two              three              four              five              six              seven              eight              nine              ];
+@numbers_sups = [ zerosuperior      zerosuperior.sans     onesuperior      twosuperior      threesuperior      foursuperior      fivesuperior      sixsuperior      sevensuperior      eightsuperior      ninesuperior      ];
+@numbers_sinf = [ zeroinferior      zeroinferior.sans     oneinferior      twoinferior      threeinferior      fourinferior      fiveinferior      sixinferior      seveninferior      eightinferior      nineinferior      ];
+@numbers_numr = [ zerosuperior      zerosuperior.sans     onesuperior      twosuperior      threesuperior      foursuperior      fivesuperior      sixsuperior      sevensuperior      eightsuperior      ninesuperior      ];
+@numbers_dnom = [ zeroinferior      zeroinferior.sans     oneinferior      twoinferior      threeinferior      fourinferior      fiveinferior      sixinferior      seveninferior      eightinferior      nineinferior      ];
+@numbers_numr_afrc =    [ zerosuperior.afrc zerosuperiorsans.afrc onesuperior.afrc twosuperior.afrc threesuperior.afrc foursuperior.afrc fivesuperior.afrc sixsuperior.afrc sevensuperior.afrc eightsuperior.afrc ninesuperior.afrc ];
+@numbers_dnom_afrc =    [ zeroinferior.afrc zeroinferiorsans.afrc oneinferior.afrc twoinferior.afrc threeinferior.afrc fourinferior.afrc fiveinferior.afrc sixinferior.afrc seveninferior.afrc eightinferior.afrc nineinferior.afrc ];
+
+@PRE       = [ onehalf      onethird      twothirds      onequarter      threequarters      oneeighth      threeeighths      fiveeighths      seveneighths      ];
+@PRE_afrc  = [ onehalf.afrc onethird.afrc twothirds.afrc onequarter.afrc threequarters.afrc oneeighth.afrc threeeighths.afrc fiveeighths.afrc seveneighths.afrc ];
+
+# case
+# intentionally left out: colon 
+@lowercasePunc = [hyphen      endash      emdash      parenleft      parenright      bracketleft      bracketright      braceleft      braceright      guilsinglleft      guilsinglright      guillemotleft      guillemotright      slash      backslash      exclamdown      questiondown      at      periodcentered      bullet      plus      minus      plusminus      divide      multiply      equal      less      greater      lessequal      greaterequal      approxequal      notequal      logicalnot      arrowleft      arrowup      arrowright      arrowdown      arrowleftright      arrowupdown      arrowNW      arrowNE      arrowSE      arrowSW     ];
+@uppercasePunc = [hyphen.case endash.case emdash.case parenleft.case parenright.case bracketleft.case bracketright.case braceleft.case braceright.case guilsinglleft.case guilsinglright.case guillemotleft.case guillemotright.case slash.case backslash.case exclamdown.case questiondown.case at.case periodcentered.case bullet.case plus.case minus.case plusminus.case divide.case multiply.case equal.case less.case greater.case lessequal.case greaterequal.case approxequal.case notequal.case logicalnot.case arrowleft.case arrowup.case arrowright.case arrowdown.case arrowleftright.case arrowupdown.case arrowNW.case arrowNE.case arrowSE.case arrowSW.case];
+
+
+# ss01
+@dfltA =   [a        aacute        abreve        abreveacute        abrevedot        abrevegrave        abrevehook        abrevetilde        acircumflex        acircumflexacute        acircumflexdot        acircumflexgrave        acircumflexhook        acircumflextilde        adieresis        adotbelow        agrave        agravedbl        ahook        ainvertedbreve        amacron        aogonek        aring        aringacute        atilde        ];
+@italicA = [a.italic aacute.italic abreve.italic abreveacute.italic abrevedot.italic abrevegrave.italic abrevehook.italic abrevetilde.italic acircumflex.italic acircumflexacute.italic acircumflexdot.italic acircumflexgrave.italic acircumflexhook.italic acircumflextilde.italic adieresis.italic adotbelow.italic agrave.italic agravedbl.italic ahook.italic ainvertedbreve.italic amacron.italic aogonek.italic aring.italic aringacute.italic atilde.italic ];
+@simpleA = [a.simple aacute.simple abreve.simple abreveacute.simple abrevedot.simple abrevegrave.simple abrevehook.simple abrevetilde.simple acircumflex.simple acircumflexacute.simple acircumflexdot.simple acircumflexgrave.simple acircumflexhook.simple acircumflextilde.simple adieresis.simple adotbelow.simple agrave.simple agravedbl.simple ahook.simple ainvertedbreve.simple amacron.simple aogonek.simple aring.simple aringacute.simple atilde.simple ];
+
+
+# ss02
+@dfltG =      [g        gbreve        gcaron        gcircumflex        gcommaaccent        gdotaccent        gmacron        ];
+@italicG =    [g.italic gbreve.italic gcaron.italic gcircumflex.italic gcommaaccent.italic gdotaccent.italic gmacron.italic ];
+@simpleG =    [g.simple gbreve.simple gcaron.simple gcircumflex.simple gcommaaccent.simple gdotaccent.simple gmacron.simple ];
+
+
+# ss04
+@sansI = [dotlessi        i        iacute        ibreve        icircumflex        idieresis        idieresisacute        idotbelow        igrave        igravedbl        ihook        iinvertedbreve        imacron        iogonek        itilde       ];
+@italI = [dotlessi.italic i.italic iacute.italic ibreve.italic icircumflex.italic idieresis.italic idieresisacute.italic idotbelow.italic igrave.italic igravedbl.italic ihook.italic iinvertedbreve.italic imacron.italic iogonek.italic itilde.italic];
+@smplI = [dotlessi.italic i.simple iacute.simple ibreve.simple icircumflex.simple idieresis.simple idieresisacute.simple idotbelow.simple igrave.simple igravedbl.simple ihook.simple iinvertedbreve.simple imacron.simple iogonek.simple itilde.simple];
+@monoI = [dotlessi.mono   i.mono   iacute.mono   ibreve.mono   icircumflex.mono   idieresis.mono   idieresisacute.mono   idotbelow.mono   igrave.mono   igravedbl.mono   ihook.mono   iinvertedbreve.mono   imacron.mono   iogonek.mono   itilde.mono  ];
+
+
+# ss05
+@sansL =   [l        lacute        lcaron        lcommaaccent        ldot        ldotbelow        llinebelow        lslash        ];
+@monoL =   [l.mono   lacute.mono   lcaron.mono   lcommaaccent.mono   ldot.mono   ldotbelow.mono   llinebelow.mono   lslash.mono   ];
+@italL =   [l.italic lacute.italic lcaron.italic lcommaaccent.italic ldot.italic ldotbelow.italic llinebelow.italic lslash.italic ];
+@simpleL = [l.simple lacute.simple lcaron.simple lcommaaccent.simple ldot.simple ldotbelow.simple llinebelow.simple lslash.simple ];
+
+
+# ss06
+@sansR =   [r        racute        rcaron        rcommaaccent        rinvertedbreve        rgravedbl        rdotbelow        rlinebelow        ];
+@monoR =   [r.mono   racute.mono   rcaron.mono   rcommaaccent.mono   rinvertedbreve.mono   rgravedbl.mono   rdotbelow.mono   rlinebelow.mono   ];
+@italR =   [r.italic racute.italic rcaron.italic rcommaaccent.italic rinvertedbreve.italic rgravedbl.italic rdotbelow.italic rlinebelow.italic ];
+@simpleR = [r.simple racute.simple rcaron.simple rcommaaccent.simple rinvertedbreve.simple rgravedbl.simple rdotbelow.simple rlinebelow.simple ];
+
+
+# ss07
+
+@curvyDiagonals = [k.italic kcommaaccent.italic v.italic w.italic wcircumflex.italic wgrave.italic wacute.italic wdieresis.italic x.italic y.italic yacute.italic ydieresis.italic ycircumflex.italic ymacron.italic ydot.italic ygrave.italic ydotbelow.italic yhookabove.italic ytilde.italic z.italic zacute.italic zdotaccent.italic zcaron.italic zdotbelow.italic dz.italic dzcaron.italic];
+@romanDiagonals = [k        kcommaaccent        v        w        wcircumflex        wgrave        wacute        wdieresis        x        y        yacute        ydieresis        ycircumflex        ymacron        ydot        ygrave        ydotbelow        yhookabove        ytilde        z        zacute        zdotaccent        zcaron        zdotbelow        dz        dzcaron       ];
+
+# ss08
+
+@dfltCapL = [L      Lacute      Lcommaaccent      Lcaron      Ldotbelow      Llinebelow      Lslash      Ldot      ];
+@sansCapL = [L.sans Lacute.sans Lcommaaccent.sans Lcaron.sans Ldotbelow.sans Llinebelow.sans Lslash.sans Ldot.sans ];
+
+@dfltCapZ = [Z      Zacute      Zdotaccent      Zcaron      Zdotbelow      DZ      DZcaron      ];
+@sansCapZ = [Z.sans Zacute.sans Zdotaccent.sans Zcaron.sans Zdotbelow.sans DZ.sans DZcaron.sans ];
+
+
+# zero and ss20
+@dfltZero = [zero             zerosuperior             zeroinferior             zeroinferior.afrc           zerosuperior.afrc           ];
+@sansZero = [zero.sans        zerosuperior.sans        zeroinferior.sans        zeroinferiorsans.afrc       zerosuperiorsans.afrc       ];
+@slshZero = [zero.slash       zerosuperior.slash       zeroinferior.slash       zeroinferiorslash.afrc      zerosuperiorslash.afrc      ];
+@dttdZero = [zero.dotted      zerosuperior.dotted      zeroinferior.dotted      zeroinferiordotted.afrc     zerosuperiordotted.afrc     ];
+
+lookup FractionBar {
+    ignore sub slash @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt slash';
+    ignore sub slash' @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt slash;
+    ignore sub slash @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt slash';
+    ignore sub slash' @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt slash;
+    ignore sub slash @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt slash';
+    ignore sub slash' @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt slash;
+    ignore sub slash @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt slash';
+    ignore sub slash' @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt slash;
+    ignore sub slash @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt slash';
+    ignore sub slash' @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt slash;
+    ignore sub slash @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt slash';
+    ignore sub slash' @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt slash;
+    ignore sub slash @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt slash';
+    ignore sub slash' @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt slash;
+    ignore sub slash @numbers_dflt @numbers_dflt @numbers_dflt slash';
+    ignore sub slash' @numbers_dflt @numbers_dflt @numbers_dflt slash;
+    ignore sub slash @numbers_dflt @numbers_dflt slash';
+    ignore sub slash' @numbers_dflt @numbers_dflt slash;
+    ignore sub slash @numbers_dflt slash';
+    ignore sub slash' @numbers_dflt slash;
+    ignore sub slash slash';
+    ignore sub slash' slash;
+    sub @numbers_dflt slash' @numbers_dflt by fraction;
+} FractionBar;

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Sacutedotaccent" format="2">
+  <advance width="600"/>
+  <unicode hex="1E64"/>
+  <outline>
+    <contour>
+      <point x="111" y="929" type="curve"/>
+      <point x="111" y="873" type="line" smooth="yes"/>
+      <point x="111" y="819"/>
+      <point x="161" y="785"/>
+      <point x="231" y="785" type="curve" smooth="yes"/>
+      <point x="263" y="785"/>
+      <point x="294" y="791"/>
+      <point x="319" y="802" type="curve"/>
+      <point x="319" y="874" type="line" smooth="yes"/>
+      <point x="319" y="928"/>
+      <point x="274" y="946"/>
+      <point x="211" y="946" type="curve"/>
+      <point x="176" y="946"/>
+      <point x="136" y="939"/>
+    </contour>
+    <component base="S"/>
+    <component base="acutecomb.case" xOffset="407" yOffset="4"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0,0,0.1505</string>
+    </dict>
+  </lib>
+</glyph>

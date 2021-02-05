@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="numbersign_numbersign.code" format="2">
+  <advance width="1200"/>
+  <anchor x="600" y="0" name="caret_1"/>
+  <outline>
+    <contour>
+      <point x="507" y="420" type="line"/>
+      <point x="775" y="420" type="line"/>
+      <point x="775" y="550" type="line"/>
+      <point x="507" y="550" type="line"/>
+    </contour>
+    <contour>
+      <point x="437" y="150" type="line"/>
+      <point x="705" y="150" type="line"/>
+      <point x="705" y="280" type="line"/>
+      <point x="437" y="280" type="line"/>
+    </contour>
+    <component base="numbersign" xOffset="39"/>
+    <component base="numbersign" xOffset="568"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.typemytype.robofont.Image.Brightness</key>
+      <integer>0</integer>
+      <key>com.typemytype.robofont.Image.Contrast</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Saturation</key>
+      <integer>1</integer>
+      <key>com.typemytype.robofont.Image.Sharpness</key>
+      <real>0.4</real>
+    </dict>
+  </lib>
+</glyph>

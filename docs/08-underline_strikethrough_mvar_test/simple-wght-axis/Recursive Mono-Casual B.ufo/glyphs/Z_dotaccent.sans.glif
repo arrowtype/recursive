@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Zdotaccent.sans" format="2">
+  <advance width="600"/>
+  <outline>
+    <contour>
+      <point x="196" y="917" type="curve"/>
+      <point x="196" y="861" type="line" smooth="yes"/>
+      <point x="196" y="807"/>
+      <point x="246" y="773"/>
+      <point x="316" y="773" type="curve" smooth="yes"/>
+      <point x="348" y="773"/>
+      <point x="379" y="779"/>
+      <point x="404" y="790" type="curve"/>
+      <point x="404" y="862" type="line" smooth="yes"/>
+      <point x="404" y="916"/>
+      <point x="359" y="934"/>
+      <point x="296" y="934" type="curve"/>
+      <point x="261" y="934"/>
+      <point x="221" y="927"/>
+    </contour>
+    <component base="Z.sans"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0,0,0.1505</string>
+    </dict>
+  </lib>
+</glyph>

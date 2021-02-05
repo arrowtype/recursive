@@ -1,0 +1,4 @@
+feature zero {
+    sub @sansZero by @slshZero;
+    sub @dfltZero by @slshZero; # may not work in variable font
+} zero;

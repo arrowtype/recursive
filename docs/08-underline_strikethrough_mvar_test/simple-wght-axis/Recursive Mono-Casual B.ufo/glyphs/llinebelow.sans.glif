@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="llinebelow.sans" format="2">
+  <advance width="600"/>
+  <outline>
+    <contour>
+      <point x="115" y="-101" type="line"/>
+      <point x="115" y="-107"/>
+      <point x="115" y="-113"/>
+      <point x="115" y="-120" type="curve" smooth="yes"/>
+      <point x="115" y="-197"/>
+      <point x="139" y="-221"/>
+      <point x="261" y="-221" type="curve" smooth="yes"/>
+      <point x="518" y="-221" type="line"/>
+      <point x="521" y="-207"/>
+      <point x="525" y="-187"/>
+      <point x="525" y="-168" type="curve" smooth="yes"/>
+      <point x="525" y="-118"/>
+      <point x="508" y="-101"/>
+      <point x="452" y="-101" type="curve" smooth="yes"/>
+    </contour>
+    <component base="l.sans"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0,0,0.1505</string>
+    </dict>
+  </lib>
+</glyph>

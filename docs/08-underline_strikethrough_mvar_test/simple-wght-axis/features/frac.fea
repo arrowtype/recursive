@@ -1,0 +1,52 @@
+feature frac {
+
+    lookup FractionBar;
+
+    lookup Numerator1 {
+        sub @numbers_dflt' fraction by @numbers_numr;
+    } Numerator1;
+
+    lookup Numerator2 {
+        sub @numbers_dflt' @numbers_numr fraction by @numbers_numr;
+    } Numerator2;
+
+    lookup Numerator3 {
+        sub @numbers_dflt' @numbers_numr @numbers_numr fraction by @numbers_numr;
+    } Numerator3;
+
+    lookup Numerator4 {
+        sub @numbers_dflt' @numbers_numr @numbers_numr @numbers_numr fraction by @numbers_numr;
+    } Numerator4;
+
+    lookup Numerator5 {
+        sub @numbers_dflt' @numbers_numr @numbers_numr @numbers_numr @numbers_numr fraction by @numbers_numr;
+    } Numerator5;
+
+    lookup Numerator6 {
+        sub @numbers_dflt' @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr fraction by @numbers_numr;
+    } Numerator6;
+
+    lookup Numerator7 {
+        sub @numbers_dflt' @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr fraction by @numbers_numr;
+    } Numerator7;
+
+    lookup Numerator8 {
+        sub @numbers_dflt' @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr fraction by @numbers_numr;
+    } Numerator8;
+
+    lookup Numerator9 {
+        sub @numbers_dflt' @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr fraction by @numbers_numr;
+    } Numerator9;
+
+    lookup Numerator10 {
+        sub @numbers_dflt' @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr @numbers_numr fraction by @numbers_numr;
+    } Numerator10;
+
+    lookup Denominator {
+        sub [fraction @numbers_dnom] @numbers_dflt' by @numbers_dnom;
+    } Denominator;
+
+    sub @numbers_dflt space' @numbers_numr by space.frac;
+    sub @numbers_dflt space' @PRE by space.frac;
+
+} frac;

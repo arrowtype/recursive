@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Zdotbelow" format="2">
+  <advance width="600"/>
+  <unicode hex="1E92"/>
+  <outline>
+    <contour>
+      <point x="253" y="-100" type="curve"/>
+      <point x="253" y="-152" type="line" smooth="yes"/>
+      <point x="253" y="-174"/>
+      <point x="272" y="-187"/>
+      <point x="303" y="-187" type="curve" smooth="yes"/>
+      <point x="315" y="-187"/>
+      <point x="325" y="-186"/>
+      <point x="333" y="-184" type="curve"/>
+      <point x="333" y="-132" type="line" smooth="yes"/>
+      <point x="333" y="-110"/>
+      <point x="315" y="-97"/>
+      <point x="283" y="-97" type="curve" smooth="yes"/>
+      <point x="271" y="-97"/>
+      <point x="261" y="-98"/>
+    </contour>
+    <component base="Z"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0,0,0.1505</string>
+    </dict>
+  </lib>
+</glyph>

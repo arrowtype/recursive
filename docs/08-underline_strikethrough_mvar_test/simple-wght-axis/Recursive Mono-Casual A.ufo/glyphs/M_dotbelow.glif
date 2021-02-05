@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Mdotbelow" format="2">
+  <advance width="600"/>
+  <unicode hex="1E42"/>
+  <outline>
+    <contour>
+      <point x="263" y="-100" type="curve"/>
+      <point x="263" y="-152" type="line" smooth="yes"/>
+      <point x="263" y="-174"/>
+      <point x="282" y="-187"/>
+      <point x="313" y="-187" type="curve" smooth="yes"/>
+      <point x="325" y="-187"/>
+      <point x="335" y="-186"/>
+      <point x="343" y="-184" type="curve"/>
+      <point x="343" y="-132" type="line" smooth="yes"/>
+      <point x="343" y="-110"/>
+      <point x="325" y="-97"/>
+      <point x="293" y="-97" type="curve" smooth="yes"/>
+      <point x="281" y="-97"/>
+      <point x="271" y="-98"/>
+    </contour>
+    <component base="M"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0,0,0.1505</string>
+    </dict>
+  </lib>
+</glyph>

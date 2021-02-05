@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ddotbelow" format="2">
+  <advance width="600"/>
+  <unicode hex="1E0C"/>
+  <outline>
+    <contour>
+      <point x="243" y="-100" type="curve"/>
+      <point x="243" y="-152" type="line" smooth="yes"/>
+      <point x="243" y="-174"/>
+      <point x="262" y="-187"/>
+      <point x="293" y="-187" type="curve" smooth="yes"/>
+      <point x="305" y="-187"/>
+      <point x="315" y="-186"/>
+      <point x="323" y="-184" type="curve"/>
+      <point x="323" y="-132" type="line" smooth="yes"/>
+      <point x="323" y="-110"/>
+      <point x="305" y="-97"/>
+      <point x="273" y="-97" type="curve" smooth="yes"/>
+      <point x="261" y="-97"/>
+      <point x="251" y="-98"/>
+    </contour>
+    <component base="D"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0,0,0.1505</string>
+    </dict>
+  </lib>
+</glyph>

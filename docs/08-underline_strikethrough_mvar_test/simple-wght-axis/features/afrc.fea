@@ -1,0 +1,54 @@
+feature afrc {
+
+    lookup FractionBar;
+
+    lookup Numerator1_afrc {
+        sub @numbers_dflt' fraction by @numbers_numr_afrc;
+    } Numerator1_afrc;
+
+    lookup Numerator2_afrc {
+        sub @numbers_dflt' @numbers_numr_afrc fraction by @numbers_numr_afrc;
+    } Numerator2_afrc;
+
+    lookup Numerator3_afrc {
+        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc fraction by @numbers_numr_afrc;
+    } Numerator3_afrc;
+
+    lookup Numerator4_afrc {
+        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc fraction by @numbers_numr_afrc;
+    } Numerator4_afrc;
+
+    lookup Numerator5_afrc {
+        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc fraction by @numbers_numr_afrc;
+    } Numerator5_afrc;
+
+    lookup Numerator6_afrc {
+        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc fraction by @numbers_numr_afrc;
+    } Numerator6_afrc;
+
+    lookup Numerator7_afrc {
+        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc fraction by @numbers_numr_afrc;
+    } Numerator7_afrc;
+
+    lookup Numerator8_afrc {
+        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc fraction by @numbers_numr_afrc;
+    } Numerator8_afrc;
+
+    lookup Numerator9_afrc {
+        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc fraction by @numbers_numr_afrc;
+    } Numerator9_afrc;
+
+    lookup Numerator10_afrc {
+        sub @numbers_dflt' @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc @numbers_numr_afrc fraction by @numbers_numr_afrc;
+    } Numerator10_afrc;
+
+    lookup Denominator_afrc {
+        sub [fraction @numbers_dnom_afrc] @numbers_dflt' by @numbers_dnom_afrc;
+    } Denominator_afrc;
+
+    sub @PRE by @PRE_afrc;
+
+    sub @numbers_dflt space' @numbers_numr_afrc by space.frac;
+    sub @numbers_dflt space' @PRE_afrc by space.frac;
+
+} afrc;

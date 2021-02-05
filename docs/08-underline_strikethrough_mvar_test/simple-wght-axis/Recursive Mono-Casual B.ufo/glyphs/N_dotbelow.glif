@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ndotbelow" format="2">
+  <advance width="600"/>
+  <unicode hex="1E46"/>
+  <outline>
+    <contour>
+      <point x="204" y="-76" type="curve"/>
+      <point x="204" y="-159" type="line" smooth="yes"/>
+      <point x="204" y="-213"/>
+      <point x="253" y="-221"/>
+      <point x="314" y="-221" type="curve" smooth="yes"/>
+      <point x="337" y="-221"/>
+      <point x="367" y="-219"/>
+      <point x="392" y="-215" type="curve"/>
+      <point x="392" y="-132" type="line" smooth="yes"/>
+      <point x="392" y="-78"/>
+      <point x="343" y="-70"/>
+      <point x="282" y="-70" type="curve" smooth="yes"/>
+      <point x="259" y="-70"/>
+      <point x="229" y="-72"/>
+    </contour>
+    <component base="N"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0,0,0.1505</string>
+    </dict>
+  </lib>
+</glyph>

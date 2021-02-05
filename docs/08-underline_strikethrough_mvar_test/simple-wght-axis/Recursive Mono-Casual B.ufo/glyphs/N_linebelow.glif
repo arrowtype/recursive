@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Nlinebelow" format="2">
+  <advance width="600"/>
+  <unicode hex="1E48"/>
+  <outline>
+    <contour>
+      <point x="93" y="-101" type="line"/>
+      <point x="93" y="-107"/>
+      <point x="93" y="-113"/>
+      <point x="93" y="-120" type="curve" smooth="yes"/>
+      <point x="93" y="-197"/>
+      <point x="117" y="-221"/>
+      <point x="239" y="-221" type="curve" smooth="yes"/>
+      <point x="496" y="-221" type="line"/>
+      <point x="499" y="-207"/>
+      <point x="503" y="-187"/>
+      <point x="503" y="-168" type="curve" smooth="yes"/>
+      <point x="503" y="-118"/>
+      <point x="486" y="-101"/>
+      <point x="430" y="-101" type="curve" smooth="yes"/>
+    </contour>
+    <component base="N"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0,0,0.1505</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Tdotbelow" format="2">
+  <advance width="600"/>
+  <unicode hex="1E6C"/>
+  <outline>
+    <contour>
+      <point x="206" y="-52" type="curve"/>
+      <point x="206" y="-135" type="line" smooth="yes"/>
+      <point x="206" y="-189"/>
+      <point x="255" y="-197"/>
+      <point x="316" y="-197" type="curve" smooth="yes"/>
+      <point x="339" y="-197"/>
+      <point x="369" y="-195"/>
+      <point x="394" y="-191" type="curve"/>
+      <point x="394" y="-108" type="line" smooth="yes"/>
+      <point x="394" y="-54"/>
+      <point x="345" y="-46"/>
+      <point x="284" y="-46" type="curve" smooth="yes"/>
+      <point x="261" y="-46"/>
+      <point x="231" y="-48"/>
+    </contour>
+    <component base="T"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0,0,0.1505</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Ecircumflexdot" format="2">
+  <advance width="600"/>
+  <unicode hex="1EC6"/>
+  <outline>
+    <contour>
+      <point x="234" y="-76" type="curve"/>
+      <point x="234" y="-159" type="line" smooth="yes"/>
+      <point x="234" y="-213"/>
+      <point x="283" y="-221"/>
+      <point x="344" y="-221" type="curve" smooth="yes"/>
+      <point x="367" y="-221"/>
+      <point x="397" y="-219"/>
+      <point x="422" y="-215" type="curve"/>
+      <point x="422" y="-132" type="line" smooth="yes"/>
+      <point x="422" y="-78"/>
+      <point x="373" y="-70"/>
+      <point x="312" y="-70" type="curve" smooth="yes"/>
+      <point x="289" y="-70"/>
+      <point x="259" y="-72"/>
+    </contour>
+    <component base="E"/>
+    <component base="circumflexcomb.case" xOffset="300"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0,0,0.5</string>
+    </dict>
+  </lib>
+</glyph>

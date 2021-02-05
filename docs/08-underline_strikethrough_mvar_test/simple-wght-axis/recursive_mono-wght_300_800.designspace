@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<designspace format="4.1">
+  <axes>
+    <axis tag="wght" name="Weight" minimum="300" maximum="800" default="300">
+      <labelname xml:lang="en">Weight</labelname>
+      <map input="300" output="40" />
+      <map input="400" output="84" />
+      <map input="500" output="99.500000" />
+      <map input="600" output="115" />
+      <map input="700" output="130.500000" />
+      <map input="800" output="146" />
+    </axis>
+  </axes>
+  <sources>
+    <source filename="Recursive Mono-Casual A.ufo">
+      <location>
+        <dimension name="Weight" xvalue="40" />
+      </location>
+    </source>
+    <source filename="Recursive Mono-Casual B.ufo">
+      <location>
+        <dimension name="Weight" xvalue="146" />
+      </location>
+    </source>
+  </sources>
+  <instances>
+    <instance name="Recursive Mono-Casual Regular.ufo" familyname="Recursive" stylename="Mono Casual" filename="instances/Recursive Mono-Casual Regular.ufo" postscriptfontname="RecursiveMonoCsl-Regular" stylemapfamilyname="Recursive Mono Csl" stylemapstylename="Regular">
+      <location>
+        <dimension name="Weight" xvalue="84" />
+      </location>
+      <kerning />
+      <info />
+    </instance>
+    <instance name="Recursive Mono-Casual Medium.ufo" familyname="Recursive" stylename="Mono Casual Medium" filename="instances/Recursive Mono-Casual Medium.ufo" postscriptfontname="RecursiveMonoCsl-Med" stylemapfamilyname="Recursive Mono Csl Med" stylemapstylename="Regular">
+      <location>
+        <dimension name="Weight" xvalue="99.500000" />
+      </location>
+      <kerning />
+      <info />
+    </instance>
+    <instance name="Recursive Mono-Casual SemiBold.ufo" familyname="Recursive" stylename="Mono Casual SemiBold" filename="instances/Recursive Mono-Casual SemiBold.ufo" postscriptfontname="RecursiveMonoCsl-SemiBd" stylemapfamilyname="Recursive Mn Csl SmBd" stylemapstylename="Regular">
+      <location>
+        <dimension name="Weight" xvalue="115" />
+      </location>
+      <kerning />
+      <info />
+    </instance>
+    <instance name="Recursive Mono-Casual Bold.ufo" familyname="Recursive" stylename="Mono Casual Bold" filename="instances/Recursive Mono-Casual Bold.ufo" postscriptfontname="RecursiveMonoCsl-Bold" stylemapfamilyname="Recursive Mono Csl" stylemapstylename="Bold">
+      <location>
+        <dimension name="Weight" xvalue="130.500000" />
+      </location>
+      <kerning />
+      <info />
+    </instance>
+    <instance name="Recursive Mono-Casual ExtraBold.ufo" familyname="Recursive" stylename="Mono Casual ExtraBold" filename="instances/Recursive Mono-Casual ExtraBold.ufo" postscriptfontname="RecursiveMonoCsl-ExtraBd" stylemapfamilyname="Recursive Mn Csl XBd" stylemapstylename="Regular">
+      <location>
+        <dimension name="Weight" xvalue="146" />
+      </location>
+      <kerning />
+      <info />
+    </instance>
+  </instances>
+</designspace>

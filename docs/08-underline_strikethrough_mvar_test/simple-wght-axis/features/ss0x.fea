@@ -1,0 +1,148 @@
+feature ss01 {
+    featureNames {
+        # MS, unicode, English
+        name "Single-story \2018a\2019";
+        # Apple, roman, unspecified
+        name 1 "Single-story \D4a\D5";
+    };
+    sub @dfltA by @simpleA;
+} ss01;
+
+feature ss02 {
+    featureNames {
+        # MS, unicode, English
+        name "Single-story \2018g\2019";
+        # Apple, roman, unspecified
+        name 1 "Single-story \D4g\D5";
+    };
+    sub @dfltG by @simpleG;
+    sub g.mono by g.simple;
+} ss02;
+
+feature ss03 {
+    featureNames {
+        # MS, unicode, English
+        name "Simplified Mono \2018f\2019";
+        # Apple, roman, unspecified
+        name 1 "Simplified Mono \D4f\D5";
+    };
+    sub f by f.simple;
+    sub f.mono by f.simple;
+} ss03;
+
+feature ss04 {
+    featureNames {
+        # MS, unicode, English
+        name "Simplified Mono \2018i\2019";
+        # Apple, roman, unspecified
+        name 1 "Simplified Mono \D4i\D5";
+    };
+    sub @sansI by @smplI;
+    sub @monoI by @smplI;
+    sub fi by f i.simple;
+} ss04;
+
+# TODO: add /lcaron
+# TODO: update l italic rules
+
+feature ss05 {
+    featureNames {
+        # MS, unicode, English
+        name "Simplified Mono \2018l\2019";
+        # Apple, roman, unspecified
+        name 1 "Simplified Mono \D4l\D5";
+    };
+    sub @sansL by @simpleL;
+    sub @monoL by @simpleL;
+} ss05;
+
+feature ss06 {
+    featureNames {
+        # MS, unicode, English
+        name "Simplified Mono \2018r\2019";
+        # Apple, roman, unspecified
+        name 1 "Simplified Mono \D4r\D5";
+    };
+    sub @sansR by @simpleR;
+    sub @monoR by @simpleR;
+} ss06;
+
+feature ss07 {
+    featureNames {
+        # MS, unicode, English
+        name "Simplified italic diagonals";
+        # Apple, roman, unspecified
+        name 1 "Simplified italic diagonals";
+    };
+    sub @curvyDiagonals by @romanDiagonals;
+} ss07;
+
+feature ss08 {
+    featureNames {
+        # MS, unicode, English
+        name "No-serif \2018L\2019 & \2018Z\2019";
+        # Apple, roman, unspecified
+        name 1 "No-serif \2018L\2019 & \D4Z\D5";
+    };
+    sub @dfltCapL by @sansCapL;
+    sub @dfltCapZ by @sansCapZ;
+} ss08;
+
+feature ss09 {
+    featureNames {
+        # MS, unicode, English
+        name "Simplified Six & Nine";
+        # Apple, roman, unspecified
+        name 1 "Simplified Six & Nine";
+    };
+    sub six by six.ss01;
+    sub sixsuperior by sixsuperior.ss01;
+    sub sixinferior by sixinferior.ss01;
+    sub nine by nine.ss01;
+    sub ninesuperior by ninesuperior.ss01;
+    sub nineinferior by nineinferior.ss01;
+} ss09;
+
+feature ss10 {
+    featureNames {
+        # MS, unicode, English
+        name "Dotted Zero";
+        # Apple, roman, unspecified
+        name 1 "Dotted Zero";
+    };
+    sub @sansZero by @dttdZero;
+    sub @dfltZero by @dttdZero;
+} ss10;
+
+feature ss11 {
+    featureNames {
+        # MS, unicode, English
+        name "Simplified One";
+        # Apple, roman, unspecified
+        name 1 "Simplified One";
+    };
+    sub one by one.simple;
+    sub one.sans by one.simple;
+} ss11;
+
+feature ss12 {
+    featureNames {
+        # MS, unicode, English
+        name "Simplified Mono \2018at\2019";
+        # Apple, roman, unspecified
+        name 1 "Simplified Mono \D4at\D5";
+    };
+    sub at by at.alt;
+    sub at.case by at.alt_case;
+} ss12;
+
+feature ss20 {
+    featureNames {
+        # MS, unicode, English
+        name "Slashed Zero";
+        # Apple, roman, unspecified
+        name 1 "Slashed Zero";
+    };
+    sub @sansZero by @slshZero;
+    sub @dfltZero by @slshZero;
+} ss20;

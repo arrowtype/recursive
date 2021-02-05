@@ -1,0 +1,19 @@
+feature numr {
+	# numerators
+	sub @numbers_dflt by @numbers_numr;
+} numr;
+
+feature dnom {
+	# denominators
+	sub @numbers_dflt by @numbers_dnom;
+} dnom;
+
+feature sups {
+	# superiors
+	sub @numbers_dflt by @numbers_sups;
+} sups;
+
+feature sinf {
+	# inferiors
+	sub @numbers_dflt by @numbers_sinf;
+} sinf;

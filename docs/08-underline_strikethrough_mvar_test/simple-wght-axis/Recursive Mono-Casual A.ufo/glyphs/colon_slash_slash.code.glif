@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="colon_slash_slash.code" format="2">
+  <advance width="1800"/>
+  <anchor x="600" y="0" name="caret_1"/>
+  <anchor x="1200" y="0" name="caret_2"/>
+  <outline>
+    <contour>
+      <point x="382" y="416" type="curve"/>
+      <point x="382" y="477" type="line" smooth="yes"/>
+      <point x="382" y="511"/>
+      <point x="359" y="532"/>
+      <point x="309" y="532" type="curve" smooth="yes"/>
+      <point x="287" y="532"/>
+      <point x="271" y="527"/>
+      <point x="258" y="518" type="curve"/>
+      <point x="258" y="457" type="line" smooth="yes"/>
+      <point x="258" y="423"/>
+      <point x="281" y="402"/>
+      <point x="331" y="402" type="curve" smooth="yes"/>
+      <point x="353" y="402"/>
+      <point x="369" y="407"/>
+    </contour>
+    <contour>
+      <point x="382" y="9" type="curve"/>
+      <point x="382" y="70" type="line" smooth="yes"/>
+      <point x="382" y="104"/>
+      <point x="359" y="125"/>
+      <point x="309" y="125" type="curve" smooth="yes"/>
+      <point x="287" y="125"/>
+      <point x="271" y="120"/>
+      <point x="258" y="111" type="curve"/>
+      <point x="258" y="50" type="line" smooth="yes"/>
+      <point x="258" y="16"/>
+      <point x="281" y="-5"/>
+      <point x="331" y="-5" type="curve" smooth="yes"/>
+      <point x="353" y="-5"/>
+      <point x="369" y="0"/>
+    </contour>
+    <component base="slash" xOffset="520"/>
+    <component base="slash" xOffset="1040"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.25,1,1,0.5</string>
+    </dict>
+  </lib>
+</glyph>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Abrevedot" format="2">
+  <advance width="600"/>
+  <unicode hex="1EB6"/>
+  <outline>
+    <contour>
+      <point x="193" y="-76" type="curve"/>
+      <point x="193" y="-159" type="line" smooth="yes"/>
+      <point x="193" y="-213"/>
+      <point x="242" y="-221"/>
+      <point x="303" y="-221" type="curve" smooth="yes"/>
+      <point x="326" y="-221"/>
+      <point x="356" y="-219"/>
+      <point x="381" y="-215" type="curve"/>
+      <point x="381" y="-132" type="line" smooth="yes"/>
+      <point x="381" y="-78"/>
+      <point x="332" y="-70"/>
+      <point x="271" y="-70" type="curve" smooth="yes"/>
+      <point x="248" y="-70"/>
+      <point x="218" y="-72"/>
+    </contour>
+    <component base="A"/>
+    <component base="brevecomb.case" xOffset="300" yOffset="-1"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0,0,0.5</string>
+    </dict>
+  </lib>
+</glyph>

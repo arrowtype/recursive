@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="equal_equal.code" format="2">
+  <advance width="1200"/>
+  <anchor x="600" y="0" name="caret_1"/>
+  <outline>
+    <contour>
+      <point x="416" y="350" type="line"/>
+      <point x="818" y="350" type="line"/>
+      <point x="818" y="500" type="line"/>
+      <point x="416" y="500" type="line"/>
+    </contour>
+    <contour>
+      <point x="416" y="100" type="line"/>
+      <point x="818" y="100" type="line"/>
+      <point x="818" y="250" type="line"/>
+      <point x="416" y="250" type="line"/>
+    </contour>
+    <component base="equal"/>
+    <component base="equal" xOffset="600"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>1,1,0,0.5</string>
+    </dict>
+  </lib>
+</glyph>

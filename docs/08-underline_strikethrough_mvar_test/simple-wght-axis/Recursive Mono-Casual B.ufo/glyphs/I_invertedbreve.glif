@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Iinvertedbreve" format="2">
+  <advance width="600"/>
+  <unicode hex="020A"/>
+  <outline>
+    <contour>
+      <point x="201" y="776" type="curve"/>
+      <point x="223" y="813"/>
+      <point x="253" y="831"/>
+      <point x="300" y="835" type="curve"/>
+      <point x="347" y="831"/>
+      <point x="377" y="813"/>
+      <point x="399" y="776" type="curve"/>
+      <point x="435" y="776"/>
+      <point x="458" y="780"/>
+      <point x="480" y="792" type="curve" smooth="yes"/>
+      <point x="494" y="800"/>
+      <point x="496" y="813"/>
+      <point x="493" y="825" type="curve" smooth="yes"/>
+      <point x="472" y="905"/>
+      <point x="409" y="956"/>
+      <point x="304" y="956" type="curve" smooth="yes"/>
+      <point x="296" y="956" type="line" smooth="yes"/>
+      <point x="191" y="956"/>
+      <point x="128" y="905"/>
+      <point x="107" y="825" type="curve" smooth="yes"/>
+      <point x="104" y="813"/>
+      <point x="106" y="800"/>
+      <point x="120" y="792" type="curve" smooth="yes"/>
+      <point x="142" y="780"/>
+      <point x="165" y="776"/>
+    </contour>
+    <component base="I"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0,0,0.1505</string>
+    </dict>
+  </lib>
+</glyph>
