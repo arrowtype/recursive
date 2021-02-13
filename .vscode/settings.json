@@ -9,8 +9,10 @@
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
-  "python.linting.flake8Args": ["--ignore=E203, E501, W503", "--max-line-length=100"],
-  "editor.formatOnSave": true,
+  "python.linting.flake8Args": [
+    "--ignore=E203, E501, W503",
+    "--max-line-length=100"
+  ],
   "python.formatting.autopep8Args": ["--ignore W191"],
   "python.formatting.blackArgs": ["--line-length=100"],
   "python.formatting.provider": "yapf",

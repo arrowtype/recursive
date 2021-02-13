@@ -36,7 +36,9 @@ for ufo in sorted(ufosToAdjust):
 
     font = OpenFont(ufoPath, showInterface=False)
 
-    print(f"Checking {font.info.familyName} {font.info.styleName}...")
+    fontName = f"{font.info.familyName} {font.info.styleName}"
+
+    print(f"Checking {fontName}...")
 
     # BaseGlyph.bounds - The bounds of the glyph in the form (x minimum, y minimum, x maximum, y maximum)
 
@@ -46,13 +48,18 @@ for ufo in sorted(ufosToAdjust):
 
             if glyphMinY < minY:
                 minY = glyphMinY
-                lowFont = f"{font.info.familyName} {font.info.styleName}"
+                lowFont = f"{fontName}"
                 lowGlyph = glyph.name
 
             if glyphMaxY > maxY:
                 maxY = glyphMaxY
-                tallFont = f"{font.info.familyName} {font.info.styleName}"
+                tallFont = f"{fontName}"
                 tallGlyph = glyph.name
+
+            if glyphMinY == -363:
+                print(f"Found y=-363 at {fontName}:\n\t{glyph.name}")
+            if glyphMaxY == 1125:
+                print(f"Found y=1125 at {fontName}:\n\t{glyph.name}")
 
 
         except:

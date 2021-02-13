@@ -29,11 +29,11 @@ for fontPath in inputFonts:
     # font.info.copyright = "Copyright 2019 The Recursive Project Authors (github.com/arrowtype/recursive)"
     # print("copyright updated")
 
-    if "Sans" in font.info.styleName:
-        font.info.familyName = "Recursive Sans"
+    if "Sans" in font.info.familyName:
+        font.info.familyName = "RecEditFeb13 Sans"
         font.info.styleName = font.info.styleName.replace("Sans ", "")
-    if "Mono" in font.info.styleName:
-        font.info.familyName = "Recursive Mono"
+    if "Mono" in font.info.familyName:
+        font.info.familyName = "RecEditFeb13 Mono"
         font.info.styleName = font.info.styleName.replace("Mono ", "")
 
 
