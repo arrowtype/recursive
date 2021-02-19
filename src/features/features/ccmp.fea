@@ -1,0 +1,48 @@
+feature ccmp {
+
+    lookup DblMarks {
+        sub @base_lc [ @dead_marks @dead_marks_below @marks_below ] [ @dead_marks @dead_marks_below ]' by [ @undead_marks @undead_marks_below ];
+        sub @base_uc [ @dead_marks @dead_marks_below @marks_below ] [ @dead_marks @dead_marks_below ]' by [ @undead_marks_uc @undead_marks_below ];
+        sub @base_uc [ @lcMarks @dead_marks_below @marks_below ] @lcMarks' by @ucMarks;
+    } DblMarks;
+
+    lookup CmbMarks {
+        sub @base_lc [ @dead_marks @dead_marks_below ]' by [ @undead_marks @undead_marks_below ];
+        sub @base_uc [ @dead_marks @dead_marks_below ]' by [ @undead_marks_uc @undead_marks_below ];
+        sub @base_uc [@lcmarks @marks_below_lc]' by [@ucmarks @marks_below_uc];
+    } CmbMarks;
+
+    lookup Dotless {
+        sub [i j]' [ @undead_marks_below @marks_below ] @lcmarks by [ dotlessi dotlessj ];
+        sub [i j]' @lcmarks by [ dotlessi dotlessj ];
+    } Dotless;
+    
+    lookup replacements {
+        sub A ogonekcomb.case by Aogonek;
+        sub E ogonekcomb.case by Eogonek;
+        sub I ogonekcomb.case by Iogonek;
+        sub O ogonekcomb.case by Oogonek;
+        sub U ogonekcomb.case by Uogonek;
+
+        sub a ogonekcomb by aogonek;
+        sub a.italic ogonekcomb by aogonek.italic;
+        sub a.simple ogonekcomb by aogonek.simple;
+        sub e ogonekcomb by eogonek;
+        sub e.italic ogonekcomb by eogonek.italic;
+        sub i ogonekcomb by iogonek;
+        sub i.italic ogonekcomb by iogonek.italic;
+        sub i.simple ogonekcomb by iogonek.simple;
+        sub o ogonekcomb by oogonek;
+        sub u ogonekcomb by uogonek;
+        sub u.italic ogonekcomb by uogonek.italic;
+        
+        sub C cedillacomb.case by Ccedilla;
+        sub S cedillacomb.case by Scedilla;
+        sub T cedillacomb.case by Tcedilla;
+        
+        sub c cedillacomb by ccedilla;
+        sub s cedillacomb by scedilla;
+        sub t cedillacomb by tcedilla;
+    } replacements;
+
+} ccmp;
