@@ -1,0 +1,14 @@
+feature locl {
+  script latn;
+    language NLD; # Dutch
+      lookup LigatureIJ {
+        sub I acutecomb J acutecomb by IJacute;
+        sub I J by IJ;
+        sub Iacute J acutecomb by IJacute;
+
+        sub @i_for_ij acutecomb @j_for_ij acutecomb by ijacute;
+        sub @i_for_ij @j_for_ij by ij;
+        sub @iacute_for_ij @j_for_ij acutecomb by ijacute;
+
+      } LigatureIJ;
+} locl;
