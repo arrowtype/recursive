@@ -43,6 +43,10 @@ feature ccmp {
         sub c cedillacomb by ccedilla;
         sub s cedillacomb by scedilla;
         sub t cedillacomb by tcedilla;
+        
+        sub IJ acutecomb by IJacute;
+        sub ij acutecomb by ijacute;
+        
     } replacements;
 
 } ccmp;
