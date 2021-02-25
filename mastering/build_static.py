@@ -716,7 +716,7 @@ def makeSFNT(root, outputPath, kind="otf"):
 
     printProgressBar(0, len(files), prefix='  ', suffix='Complete', length=50)
     for i, file in enumerate(files):
-        if kind is "otf":
+        if kind == "otf":
             args = ["psautohint", file]
             run = subprocess.run(args,
                                  stdout=subprocess.PIPE,
@@ -724,7 +724,7 @@ def makeSFNT(root, outputPath, kind="otf"):
                                  universal_newlines=True)
             with open(outputFile, "a") as f:
                 f.write(run.stdout)
-        elif kind is "ttf":
+        elif kind == "ttf":
             ttfautohint_options.update(
                                        in_file=file,
                                        out_file=file,
