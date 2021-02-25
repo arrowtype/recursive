@@ -32,7 +32,7 @@ def splitall(path):
         if parts[0] == path:  # sentinel for absolute paths
             allparts.insert(0, parts[0])
             break
-        elif parts[1] == path: # sentinel for relative paths
+        elif parts[1] == path:  # sentinel for relative paths
             allparts.insert(0, parts[1])
             break
         else:
@@ -133,6 +133,256 @@ def batchCheckOutlines(root):
 
     with open(outputFile, "w") as f:
         f.write("".join(log))
+
+
+def make_mark_mkmk_gdef_feature(font):
+    from collections import defaultdict
+    """
+    Takes in a font and builds the mark, mkmk,
+    and gdef table in Adobe Feature File syntax.
+
+    *font* is a Defcon like font object.
+    """
+
+    # Gather all the data we need
+    ligCarets = defaultdict(list)
+    mark = defaultdict(list)
+    base = defaultdict(list)
+
+    for glyph in font:
+
+        # note, we're rounding (by int()) the anchor positions
+
+        if len(glyph.anchors) > 0:
+            # there can be more than one ligCaret in a ligature
+            # so need to store them before writing them out
+            carets = []
+
+            for a in glyph.anchors:
+                # Lig caret marks are named starting
+                # caret, so we look for those. Only
+                # need the x position for the feature
+                if a.name.startswith('caret'):
+                    carets.append(int(a.x))
+
+                # if a anchor name starts with a
+                # underscore, it's a mark
+                elif a.name.startswith("_"):
+                    mark[(int(a.x), int(a.y))].append((a.name, glyph.name))
+
+                # if it's not a ligature caret or a mark, it's base
+                else:
+                    base[(int(a.x), int(a.y))].append((a.name, glyph.name))
+
+            # make a dict of all the same caret positions
+            # with the glyph names as values. Streamines
+            # the GDEF table
+            if carets != []:
+                ligCarets[tuple(carets)].append(glyph.name)
+
+    # Now process the data
+
+    # Mark name list
+    kinds = list(base.keys())
+
+    # Get a list of all the ligs in the font for GDEF
+    ligatures = []
+    for names in ligCarets.values():
+        ligatures += names
+    ligatures.sort()
+
+    #  Sort out the marks
+    uc_marks = defaultdict(list)
+    lc_marks = defaultdict(list)
+    common_marks = defaultdict(list)
+    mark_names = []
+    mark_glyph_names = []
+    uc_marks_names = []
+
+    for pos, data in mark.items():
+        _lc_marks = defaultdict(list)
+        _uc_marks = defaultdict(list)
+        for markName, glyphName in data:
+            markName = markName[1:]
+            if markName not in mark_names:
+                mark_names.append(markName)
+            if glyphName not in mark_glyph_names:
+                mark_glyph_names.append(glyphName)
+            if glyphName.endswith(".case"):
+                _uc_marks[markName].append(glyphName)
+                uc_marks_names.append(glyphName)
+            else:
+                _lc_marks[markName].append(glyphName)
+        for markName, glyphs in _uc_marks.items():
+            uc_marks[markName].append((pos, glyphs))
+        for markName, glyphs in _lc_marks.items():
+            lc_marks[markName].append((pos, glyphs))
+
+    for markName, data in lc_marks.items():
+        newData = []
+        for pos, glyphNames in data:
+            common = []
+            for n in glyphNames:
+                if (n + ".case") not in uc_marks_names:
+                    common.append(n)
+            for i in common:
+                glyphNames.remove(i)
+            if common != []:
+                common_marks[markName].append((pos, common))
+            if glyphNames != []:
+                newData.append((pos, glyphNames))
+        lc_marks[markName] = newData
+
+    mark_names.sort()
+    mark_glyph_names.sort()
+    uc_marks_names.sort()
+
+    # Collect base info
+
+    # This is a hardcoded list, if marks are added to another UC glyph, this
+    # list needs extending. One could do this by looking at all glyphs with
+    # anchors anddoing a check of unicode category, but then you have to check
+    # for non-encodedglyphs also.
+    uc_base_names = ['A', 'AE', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
+                     'K', 'L', 'L.sans', 'M', 'N', 'O', 'Oslash', 'P', 'Q',
+                     'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Z.sans']
+    uc_bases = defaultdict(list)
+    bases = defaultdict(list)
+    mkmk_bases = defaultdict(list)
+    mkmk_uc_bases = defaultdict(list)
+    base_names = []
+
+    for pos, data in base.items():
+        _bases = defaultdict(list)
+        _uc_bases = defaultdict(list)
+        _mkmk_bases = defaultdict(list)
+        _mkmk_uc_bases = defaultdict(list)
+        for markName, glyphName in data:
+            if glyphName not in base_names:
+                base_names.append(glyphName)
+
+            if glyphName in uc_base_names and markName in uc_marks.keys():
+                _uc_bases[markName].append(glyphName)
+            elif glyphName in mark_glyph_names and glyphName.endswith(".case"):
+                _mkmk_uc_bases[markName].append(glyphName)
+                base_names.remove(glyphName)
+            elif glyphName in mark_glyph_names:
+                _mkmk_bases[markName].append(glyphName)
+                base_names.remove(glyphName)
+            else:
+                _bases[markName].append(glyphName)
+
+        for markName, glyphs in _uc_bases.items():
+            uc_bases[markName].append((pos, glyphs))
+        for markName, glyphs in _bases.items():
+            bases[markName].append((pos, glyphs))
+        for markName, glyphs in _mkmk_bases.items():
+            mkmk_bases[markName].append((pos, glyphs))
+        for markName, glyphs in _mkmk_uc_bases.items():
+            mkmk_uc_bases[markName].append((pos, glyphs))
+
+    base_names.sort()
+
+    # Make features
+
+    classes = ""
+    mark_feature = "feature mark {\n"
+    mkmk_feature = "feature mkmk {\n"
+
+    for n in mark_names:
+        if n in uc_marks.keys():
+            for a in uc_marks[n]:
+                pos = a[0]
+                names = a[1]
+                classes += f"markClass [{' '.join(names)}] <anchor {str(pos[0])} {str(pos[1])}> @mark_uc_{n};\n"
+            if n in uc_bases:
+                mark_feature += f"    lookup mark_uc_{n} {{\n"
+                for base in uc_bases[n]:
+                    pos = base[0]
+                    names = base[1]
+                    mark_feature += f"        pos base [{' '.join(names)}] <anchor {str(pos[0])} {str(pos[1])}> mark @mark_uc_{n};\n"
+                mark_feature += f"    }} mark_uc_{n};\n"
+            if n in mkmk_uc_bases:
+                mkmk_feature += f"    lookup mkmk_uc_{n} {{\n"
+                for base in mkmk_uc_bases[n]:
+                    pos = base[0]
+                    names = base[1]
+                    mkmk_feature += f"        pos mark [{' '.join(names)}] <anchor {str(pos[0])} {str(pos[1])}> mark @mark_uc_{n};\n"
+                mkmk_feature += f"    }} mkmk_uc_{n};\n"
+        if n in lc_marks.keys():
+            for a in lc_marks[n]:
+                pos = a[0]
+                names = a[1]
+                classes += f"markClass [{' '.join(names)}] <anchor {str(pos[0])} {str(pos[1])}> @mark_lc_{n};\n"
+            if n in bases:
+                mark_feature += f"    lookup mark_lc_{n} {{\n"
+                for base in bases[n]:
+                    pos = base[0]
+                    names = base[1]
+                    mark_feature += f"        pos base [{' '.join(names)}] <anchor {str(pos[0])} {str(pos[1])}> mark @mark_lc_{n};\n"
+                mark_feature += f"    }} mark_lc_{n};\n"
+            if n in mkmk_bases:
+                mkmk_feature += f"    lookup mkmk_lc_{n} {{\n"
+                for base in mkmk_bases[n]:
+                    pos = base[0]
+                    names = base[1]
+                    mkmk_feature += f"        pos mark [{' '.join(names)}] <anchor {str(pos[0])} {str(pos[1])}> mark @mark_lc_{n};\n"
+                mkmk_feature += f"    }} mkmk_lc_{n};\n"
+        if n in common_marks.keys():
+            for a in common_marks[n]:
+                pos = a[0]
+                names = a[1]
+                classes += f"markClass [{' '.join(names)}] <anchor {str(pos[0])} {str(pos[1])}> @mark_common_{n};\n"
+
+            # build our common bases for this mark
+            common_bases = []
+            if n in bases:
+                common_bases.append(bases[n])
+            if n in uc_bases:
+                common_bases.append(uc_bases[n])
+
+            common_mkmk_bases = []
+            if n in mkmk_bases:
+                if mkmk_bases[n][0][1] != []:
+                    common_mkmk_bases.append(mkmk_bases[n])
+            if n in mkmk_uc_bases:
+                if mkmk_uc_bases[n][0][1] != []:
+                    common_mkmk_bases.append(mkmk_uc_bases[n])
+
+            if common_bases != []:
+                mark_feature += f"    lookup mark_common_{n} {{\n"
+                for c in common_bases:
+                    for pos, names in c:
+                        mark_feature += f"        pos base [{' '.join(names)}] <anchor {str(pos[0])} {str(pos[1])}> mark @mark_common_{n};\n"
+                mark_feature += f"    }} mark_common_{n};\n"
+
+            if common_mkmk_bases != []:
+                mkmk_feature += f"    lookup mkmk_common_{n} {{\n"
+                for c in common_mkmk_bases:
+                    for pos, names in c:
+                        mkmk_feature += f"        pos mark [{' '.join(names)}] <anchor {str(pos[0])} {str(pos[1])}> mark @mark_common_{n};\n"
+                mkmk_feature += f"    }} mkmk_common_{n};\n"
+
+    mark_feature += "} mark;"
+    mkmk_feature += "} mkmk;"
+
+    gdef = f"""
+    @BASE  = [{' '.join(base_names)}];
+    @MARKS = [{' '.join(mark_glyph_names)}];
+    @LIGATURES = [{' '.join(ligatures)}];
+
+    table GDEF {{
+        GlyphClassDef @BASE, @LIGATURES, @MARKS,;
+    """
+
+    for k, v in ligCarets.items():
+        if len(v) > 1:
+            gdef += f"    LigatureCaretByPos [{' '.join(v)}] {' '.join(str(i) for i in k)};\n"
+        else:
+            gdef += f"    LigatureCaretByPos {' '.join(v)} {' '.join(str(i) for i in k)};\n"
+    gdef += "} GDEF;"
+
+    return f'{classes}\n{mark_feature}\n{mkmk_feature}\n{gdef}'
 
 
 if __name__ == "__main__":
