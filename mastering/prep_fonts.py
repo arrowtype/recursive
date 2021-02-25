@@ -254,19 +254,19 @@ def decomposeScaledNested(fonts):
     """
     Decompose anything that is scaled or built from nested components.
     This replaces the fix from Recursive Issue #297, as it will catch
-    issues occurring in #412 and #427. 
+    issues occurring in #412 and #427.
     """
 
     local_report = report.get("Decomposed scaled, flipped, and nested components", [])
     for font in fonts:
-        
+
         changed_glyphs = []
-        
+
         for glyph in font:
             if len(glyph.components) != 0:
                 changed = False
                 for c in glyph.components:
-                    if c.scale != (1,1):
+                    if c.scale != (1, 1):
                         try:
                             c.decompose()
                             changed = True
@@ -287,7 +287,6 @@ def decomposeScaledNested(fonts):
             local_report.append((font.info.familyName + " " + font.info.styleName, changed_glyphs))
 
     report["Decomposed scaled, flipped, and nested components"] = local_report
-
 
 
 def sortGlyphOrder(fonts):
@@ -403,7 +402,7 @@ def setProductionNames(fonts):
                 'slashcomb': 'uni0337',
                 'tildecomb': 'uni0303',
                 'mu.math': 'uni00B5',
-                # the following abbreviations are to keep code ligature glyph names under 31 characters, 
+                # the following abbreviations are to keep code ligature glyph names under 31 characters,
                 # per FontBakery check: com.google.fonts/check/valid_glyphnames
                 # (generated with src/01-shell-scripts-for-sources/font-info/shorten-long-glyph-names.py)
                 'numbersign_numbersign_numbersign.code': 'num_num_num.code',
@@ -515,8 +514,6 @@ def makeCompatible(fonts):
 
     if nonCompatible != []:
         local_report.append(nonCompatible)
-        
-    print(nonCompatible) # debugging
 
     report["Removed non-compatible glyphs"] = local_report
 
@@ -574,7 +571,6 @@ def prep(designspacePath, version):
     print("🏗  Setting version")
     if version:
         setVersion(fonts, version)
-
 
     print("🏗  Closing and saving sources")
     for font in fonts:
