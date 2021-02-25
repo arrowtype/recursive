@@ -10,7 +10,8 @@ from ufo2ft import compileTTF
 from ttfautohint.options import USER_OPTIONS as ttfautohint_options
 from fontTools.ttLib import TTFont
 from fontTools import ttLib
-from utils import getFiles, printProgressBar, splitall, batchCheckOutlines
+from utils import (getFiles, printProgressBar, splitall, batchCheckOutlines,
+                   make_mark_mkmk_gdef_feature)
 from contextlib import redirect_stdout, redirect_stderr
 
 # Family specific data
@@ -281,8 +282,8 @@ def writeFeature(font):
         includes = ("include (../../features.family);\n"
                     "include (../../features_roman.fea);\n"
                     "include (kern.fea);\n")
-
-    out = hhea + os2 + includes
+    mark_mkmk_gdef = make_mark_mkmk_gdef_feature(font)
+    out = hhea + os2 + includes + mark_mkmk_gdef
     with open(path, "w") as f:
         f.write(out)
 
@@ -302,8 +303,8 @@ def buildFamilyFeatures(root, features, version):
     fea_root = os.path.split(features)[0]
     regex = re.compile(r'/.+/(.+\.fea)')
     feature_roman = []
-    feature_mono_italic = [] # includes ss07
-    feature_sans_italic = [] # includes ss07, liga
+    feature_mono_italic = []  # includes ss07
+    feature_sans_italic = []  # includes ss07, liga
     with open(features, 'r') as f:
         for l in f:
             if l.startswith("languagesystem"):
@@ -336,17 +337,16 @@ def buildFamilyFeatures(root, features, version):
     # swap italic diagonals in ss07
     for i, line in enumerate(feature_sans_italic):
         if "sub @curvyDiagonals by @romanDiagonals;" in line:
-           feature_sans_italic[i] = "    sub @romanDiagonals by @curvyDiagonals;"
+            feature_sans_italic[i] = "    sub @romanDiagonals by @curvyDiagonals;"
 
     # swap italic diagonals in ss07
     for i, line in enumerate(feature_mono_italic):
         if "sub @curvyDiagonals by @romanDiagonals;" in line:
-           feature_mono_italic[i] = "    sub @romanDiagonals by @curvyDiagonals;"
+            feature_mono_italic[i] = "    sub @romanDiagonals by @curvyDiagonals;"
 
     path_roman = os.path.join(root, "features_roman.fea")
     path_mono_italic = os.path.join(root, "features_mono_italic.fea")
     path_sans_italic = os.path.join(root, "features_sans_italic.fea")
-
 
     with open(path_roman, 'w') as f:
         f.write("".join(feature_roman))
