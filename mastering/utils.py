@@ -366,14 +366,7 @@ def make_mark_mkmk_gdef_feature(font):
     mark_feature += "} mark;"
     mkmk_feature += "} mkmk;"
 
-    gdef = f"""
-    @BASE  = [{' '.join(base_names)}];
-    @MARKS = [{' '.join(mark_glyph_names)}];
-    @LIGATURES = [{' '.join(ligatures)}];
-
-    table GDEF {{
-        GlyphClassDef @BASE, @LIGATURES, @MARKS,;
-    """
+    gdef = f"@BASE  = [{' '.join(base_names)}];\n@MARKS = [{' '.join(mark_glyph_names)}];\n@LIGATURES = [{' '.join(ligatures)}];\n\ntable GDEF {{\n    GlyphClassDef @BASE, @LIGATURES, @MARKS,;\n"
 
     for k, v in ligCarets.items():
         if len(v) > 1:
