@@ -20,8 +20,8 @@ feature locl {
             lookup LigatureIJ {
                 # IJacute/ijacute
                 
-                sub I acutecomb J acutecomb by IJacute;
-                sub Iacute J acutecomb by IJacute;
+                sub I [acutecomb acutecomb.case] J [acutecomb acutecomb.case] by IJacute;
+                sub Iacute J [acutecomb acutecomb.case] by IJacute;
                 
                 #  ccmp should make these unneeded, but in case
                 sub @i_for_ij acutecomb @j_for_ij acutecomb by ijacute;
