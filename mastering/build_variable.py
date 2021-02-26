@@ -3,9 +3,8 @@ import fontTools.ttLib
 import shutil
 from fontmake.font_project import FontProject
 from fontTools.designspaceLib import DesignSpaceDocument
-from fontParts.fontshell import RFont as Font
 from fontTools.otlLib.builder import buildStatTable
-from utils import getFiles, make_mark_mkmk_gdef_feature
+from utils import getFiles
 
 
 def buildFeatures(src):
@@ -20,12 +19,6 @@ def buildFeatures(src):
     for ufo in ufos:
         shutil.copy(feature, ufo)
     print("🏗  Moved features into UFOs")
-    for ufo in ufos:
-        font = Font(ufo)
-        mark_mkmk_gdef = make_mark_mkmk_gdef_feature(font)
-        font.features.text += mark_mkmk_gdef
-        font.save(font.path)
-    print("🏗  Added mark, mkmk, and GDEF to features")
 
 
 def makeSTAT(font, designspace):
