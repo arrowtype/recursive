@@ -208,7 +208,7 @@ def writeKerning(font, path):
 
     feaFile = ast.FeatureFile()
     w = KernFeatureWriter()
-    w.write(font, feaFile)
+    w.write(font.naked(), feaFile)
     with open(path, "w") as f:
         f.write(str(feaFile))
 
