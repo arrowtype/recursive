@@ -61,9 +61,9 @@ feature ccmp {
         sub u.italic ogonekcomb by uogonek.italic;
 
         sub C acutecomb.case cedillacomb.case by Ccedillaacute;
-        sub C cedillacomb.case acutecomb.case  by Ccedillaacute;
-        sub E brevecomb.case cedillacomb.case Ecedillabreve;
-        sub E cedillacomb.case brevecomb.case Ecedillabreve;
+        sub C cedillacomb.case acutecomb.case by Ccedillaacute;
+        sub E brevecomb.case cedillacomb.case by Ecedillabreve;
+        sub E cedillacomb.case brevecomb.case by Ecedillabreve;
         sub C cedillacomb.case by Ccedilla;
         sub S cedillacomb.case by Scedilla;
         sub T cedillacomb.case by Tcedilla;
@@ -72,10 +72,10 @@ feature ccmp {
         sub c cedillacomb acutecomb by ccedillaacute;
         sub c.italic acutecomb cedillacomb by ccedillaacute.italic;
         sub c.italic cedillacomb acutecomb by ccedillaacute.italic;
-        sub e brevecomb cedillacomb ecedillabreve;
-        sub e cedillacomb brevecomb ecedillabreve;
-        sub e.italic brevecomb cedillacomb ecedillabreve.italic;
-        sub e.italic cedillacomb brevecomb ecedillabreve.italic;
+        sub e brevecomb cedillacomb by ecedillabreve;
+        sub e cedillacomb brevecomb by ecedillabreve;
+        sub e.italic brevecomb cedillacomb by ecedillabreve.italic;
+        sub e.italic cedillacomb brevecomb by ecedillabreve.italic;
         sub c cedillacomb by ccedilla;
         sub c.italic cedillacomb by ccedilla.italic;
         sub s cedillacomb by scedilla;
