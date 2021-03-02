@@ -510,12 +510,12 @@ def buildInstances(designspacePath, root, name_map):
         # Write out the `fontinfo` file
         buildFontInfo(font.info.styleName, font_dir)
 
+        # Write out the font feature file
+        writeFeature(font)
+
         # Write out the kerning feature file
         path = os.path.join(font_dir, "kern.fea")
         writeKerning(font, path)
-
-        # Write out the font feature file
-        writeFeature(font)
 
         printProgressBar(i + 1, length, prefix='  ',
                          suffix='Complete', length=50)
