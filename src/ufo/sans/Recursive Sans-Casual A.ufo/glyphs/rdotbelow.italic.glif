@@ -1,14 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <glyph name="rdotbelow.italic" format="2">
-	<advance width="450"/>
-	<outline>
-		<component base="r.italic"/>
-		<component base="dotbelowcomb" xOffset="126"/>
-	</outline>
-	<lib>
-		<dict>
-			<key>public.markColor</key>
-			<string>0,0,0,0.1505</string>
-		</dict>
-	</lib>
+  <advance width="450"/>
+  <anchor x="255" y="537" name="top"/>
+  <outline>
+    <component base="r.italic"/>
+    <component base="dotbelowcomb" xOffset="126"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0,0,0,0.1505</string>
+    </dict>
+  </lib>
 </glyph>
