@@ -2,7 +2,7 @@ import os
 import shutil
 from fontTools.designspaceLib import DesignSpaceDocument
 from prep_fonts import prep, copyFiles
-from build_variable import buildFeatures
+from build_variable import makeSTAT, buildFeatures
 from build_static import (buildFolders,
                           buildNameMap,
                           buildFontMenuDB,

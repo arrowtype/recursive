@@ -32,7 +32,7 @@ def splitall(path):
         if parts[0] == path:  # sentinel for absolute paths
             allparts.insert(0, parts[0])
             break
-        elif parts[1] == path:  # sentinel for relative paths
+        elif parts[1] == path: # sentinel for relative paths
             allparts.insert(0, parts[1])
             break
         else:
@@ -133,92 +133,6 @@ def batchCheckOutlines(root):
 
     with open(outputFile, "w") as f:
         f.write("".join(log))
-
-
-def make_mark_mkmk_gdef_feature(font, GDEF_Classes=True):
-    from collections import defaultdict
-    from ufo2ft.featureWriters.markFeatureWriter import MarkFeatureWriter, ast
-
-    """
-    Takes in a font and builds the mark, mkmk,
-    and gdef table in Adobe Feature File syntax.
-
-    *font* is a Defcon like font object.
-    *GDEF_Classes* will write out the Base, Mark, and Ligature classes in the
-                   gdef table.
-    """
-
-    # Use ufo2ft to write mark/mkmk feature
-    feaFile = ast.FeatureFile()
-    w = MarkFeatureWriter()
-    w.write(font.naked(), feaFile)
-
-    # Gather the ligCaret data
-    ligCarets = defaultdict(list)
-    marks = []
-    bases = []
-
-    for glyph in font:
-
-        # note, we're rounding (by int()) the anchor positions
-
-        if len(glyph.anchors) > 0:
-            # there can be more than one ligCaret in a ligature
-            # so need to store them before writing them out
-            carets = []
-
-            for a in glyph.anchors:
-                # Lig caret marks are named starting
-                # caret, so we look for those. Only
-                # need the x position for the feature
-                if a.name.startswith('caret'):
-                    carets.append(int(a.x))
-                # if a anchor name starts with a
-                # underscore, it's a mark
-                elif a.name.startswith("_"):
-                    if glyph.name not in marks:
-                        marks.append(glyph.name)
-                # otherwise it is a base
-                else:
-                    if glyph.name not in bases:
-                        bases.append(glyph.name)
-
-            # make a dict of all the same caret positions
-            # with the glyph names as values. Streamines
-            # the GDEF table
-            if carets != []:
-                ligCarets[tuple(carets)].append(glyph.name)
-
-    # Clean out any mark glyphs that are in bases:
-    for m in marks:
-        if m in bases:
-            bases.remove(m)
-
-    bases.sort()
-    marks.sort()
-
-    # Get a list of all the ligs in the font for GDEF
-    ligatures = []
-    for names in ligCarets.values():
-        ligatures += names
-    ligatures.sort()
-
-    if GDEF_Classes:
-        gdef = f"table GDEF {{\n    GlyphClassDef [{' '.join(bases)}], [{' '.join(ligatures)}], [{' '.join(marks)}],;\n"
-    else:
-        gdef = "table GDEF {\n"
-
-    for k, v in ligCarets.items():
-        if len(v) > 1:
-            gdef += f"    LigatureCaretByPos [{' '.join(v)}] {' '.join(str(i) for i in k)};\n"
-        else:
-            gdef += f"    LigatureCaretByPos {' '.join(v)} {' '.join(str(i) for i in k)};\n"
-    gdef += "} GDEF;"
-
-    font.features.text += f'{str(feaFile)}\n{gdef}'
-    font.save(font.path)
-
-    return f'{str(feaFile)}\n{gdef}'
 
 
 if __name__ == "__main__":

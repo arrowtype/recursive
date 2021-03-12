@@ -94,9 +94,3 @@ lookup FractionBar {
     ignore sub slash' slash;
     sub @numbers_dflt slash' @numbers_dflt by fraction;
 } FractionBar;
-
-# for Dutch ij locl & ccmp subs
-@j_for_ij =      [j j.italic];
-@i_for_ij =      [i      i.mono      i.italic      i.simple     ];
-@iacute_for_ij = [iacute iacute.mono iacute.italic iacute.simple];
-
