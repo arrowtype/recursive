@@ -1,11 +1,11 @@
 import os
 import fontTools.ttLib
 import shutil
-from plistlib import dump as plDump
 from fontmake.font_project import FontProject
 from fontTools.designspaceLib import DesignSpaceDocument
 from fontTools.otlLib.builder import buildStatTable
-from utils import getFiles
+from fontParts.fontshell import RFont as Font
+from utils import getFiles, make_mark_mkmk_gdef_feature
 
 
 def buildFeatures(src):
@@ -21,11 +21,25 @@ def buildFeatures(src):
         shutil.copy(feature, ufo)
     print("🏗  Moved features into UFOs")
 
+    for ufo in ufos:
+        font = Font(ufo)
+        # Turn off writing out gdef table glyph classes as this
+        # causes fontmake to choke on the variable font build.
+        # Ben Kiel thinks this is because the classes push the
+        # table size to create another lookup in the Sans fonts,
+        # causing a mis-match between the number of lookups in Sans
+        # vs Mono. Instead, only write out the ligature carets, and
+        # let fontmake/ufo2ft fill in the classes. Testing found that
+        # fontmake/ufo2ft will not write ligature classes, just mark
+        # and base, FYI.
+        make_mark_mkmk_gdef_feature(font, GDEF_Classes=False)
+    print("🏗  Added mark, mkmk, and GDEF to features")
+
 
 def makeSTAT(font, designspace):
     """
     Uses fontTools.otlLib.builder.buildStatTable to build the STAT table.
-    
+
     *font* is a `fontTools` font object.
     *designspace* is a `DesignSpaceDocument` object
     """
