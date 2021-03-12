@@ -6,9 +6,9 @@ However, it is useful to install only the specific static fonts you need from th
 
 ## General Desktop use (Word, PowerPoint, Keynote, InDesign, Illustrator, PhotoShop, etc)
 
-- On **Windows**, install `Recursive_Desktop/recursive-statics.ttc` (This is a collection of all 64 static instances in TTF format) *OR* the separate TTFs from the `separate_statics` folder.
-- On **Mac**, install `Recursive_Desktop/recursive-statics.otc` (This is a collection of all 64 static instances in OTF format) *OR* the separate OTFs from the `separate_statics` folder.
-- On **Linux**, you are probably safest to install the TTFs from the `separate_statics` folder.
+- On **Windows**, install `Recursive_Desktop/recursive-static-TTFs.ttc` (This is a collection of all 64 static instances in TTF format) *OR* the separate TTFs from the `separate_statics` folder.
+- On **Mac**, install `Recursive_Desktop/recursive-static-OTFs.otc` (This is a collection of all 64 static instances in OTF format) *OR* the separate OTFs from the `separate_statics` folder.
+- On **Linux** or other operating systems, you are probably safest to install the TTFs from the `separate_statics` folder.
 ### Usage-specific recommendations
 
 - For **design** in Figma, and for general usage in older systems/applications, you should use separate static fonts from within the `separate_statics` folder 

@@ -89,7 +89,7 @@ done
 # make otc & ttc collections
 
 fonts=$(ls $dir/Static_OTF/*.otf)
-otf2otc $fonts -o "$outputDir/$desktopDir/recursive-statics-OTFs.otc"
+otf2otc $fonts -o "$outputDir/$desktopDir/recursive-static-OTFs.otc"
 
 fonts=$(ls $dir/Static_TTF/*.ttf)
 otf2otc $fonts -o "$outputDir/$desktopDir/recursive-static-TTFs.ttc"
