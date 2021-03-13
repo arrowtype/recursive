@@ -1,6 +1,6 @@
 feature ccmp {
 
-    @base_uc = [ A AE B C D E F G H I J K L L.sans M N O Oslash P Q R S T U V W X Y Z Z.sans ];
+    @base_uc = [ A AE B C D E F G H I J K L L.sans M N O Oslash P Q R S T U V W X Y Z Z.sans Ldotbelow Rdotbelow ];
     @base_lc = [ a a.italic ae b b.italic c c.italic d d.italic dotlessi dotlessi.italic dotlessi.mono dotlessj dotlessj.italic e e.italic f f.italic f.mono g g.italic g.mono h h.italic i i.italic i.mono j j.italic k k.italic l l.italic l.mono l.sans m m.italic n n.italic o oslash p q q.italic r r.italic r.mono s s.italic t u u.italic v v.italic w w.italic x x.italic y y.italic z z.italic ];
 
     @dead_marks      = [ acute          grave          hungarumlaut          circumflex          caron          breve          tilde          macron          dieresis          dotaccent          ring          ];
