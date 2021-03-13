@@ -310,6 +310,7 @@ def buildFamilyFeatures(root, features, version):
             if l.startswith("languagesystem"):
                 feature_roman.append(l)
                 feature_sans_italic.append(l)
+                feature_mono_italic.append(l)
             elif "#" in l:
                 pass
             elif l.startswith("include"):
