@@ -244,7 +244,8 @@ def make_mark_mkmk_gdef_feature(font, GDEF_Classes=True):
     # for non-encodedglyphs also.
     uc_base_names = ['A', 'AE', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
                      'K', 'L', 'L.sans', 'M', 'N', 'O', 'Oslash', 'P', 'Q',
-                     'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Z.sans']
+                     'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Z.sans',
+                     'Ldotbelow','Rdotbelow']
     uc_bases = defaultdict(list)
     bases = defaultdict(list)
     mkmk_bases = defaultdict(list)
