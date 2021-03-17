@@ -58,6 +58,7 @@ def main():
 
     # convert to hex, then join in comma-separated string
     unicodesRemaining = [hex(n) for n in unicodesRemaining]
+    unicodesRemaining = [str(hex).replace("0x", "U+").upper() for hex in unicodesRemaining]
     unicodesRemaining = ",".join(unicodesRemaining)
 
     print(unicodesRemaining)

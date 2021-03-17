@@ -135,7 +135,7 @@ __CSS="
   font-weight: 300 1000;
   font-display: swap;
   src: url('./fonts/$remainingUnicodesFile') format('woff2');
-  unicode-range: $remainingUnicodesFile;
+  unicode-range: $remainingUnicodesUni;
 }
 "
 
