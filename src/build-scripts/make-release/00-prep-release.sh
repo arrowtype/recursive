@@ -27,6 +27,8 @@ fi
 
 # make folder name for outputs
 outputDir=ArrowType-Recursive-${version/" "/"_"}
+gfDir=fonts/recursive_for_googlefonts
+
 # clean up past runs
 # rm -rf $outputDir
 # rm -rf fonts/$outputDir
@@ -130,6 +132,16 @@ rm $outputDir/$desktopDir/separate_statics/TTF/*_output.txt
 
 # mv $outputDir.zip fonts/$outputDir.zip
 mv $outputDir fonts/$outputDir
+
+# ---------------------------------------------
+# Prep release for Google Fonts
+
+mkdir -p $gfDir
+
+cp $VF "$gfDir/Recursive[CASL,CRSV,MONO,slnt,wght].ttf"
+
+cp -r $dir/Static_TTF $gfDir/static
+rm $gfDir/static/*_output.txt || true # remove file if it exists OR move on
 
 # ---------------------------------------------
 # just a reminder
