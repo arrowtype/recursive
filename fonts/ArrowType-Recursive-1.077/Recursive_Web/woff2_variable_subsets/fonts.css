@@ -5,7 +5,7 @@
   font-style: oblique 0deg 15deg;
   font-weight: 300 1000;
   font-display: swap;
-  src: url('/fonts/Recursive_VF_1.077--subset_range_english_basic.woff2') format('woff2');
+  src: url('./fonts/Recursive_VF_1.077--subset_range_english_basic.woff2') format('woff2');
   unicode-range: U+0020-007F,U+00A9,U+2190-2193,U+2018,U+2019,U+201C,U+201D,U+2022;
 }
 
@@ -15,7 +15,7 @@
   font-style: oblique 0deg 15deg;
   font-weight: 300 1000;
   font-display: swap;
-  src: url('/fonts/Recursive_VF_1.077--subset_range_latin_1.woff2') format('woff2');
+  src: url('./fonts/Recursive_VF_1.077--subset_range_latin_1.woff2') format('woff2');
   unicode-range: U+00C0-00FF;
 }
 
@@ -25,7 +25,7 @@
   font-style: oblique 0deg 15deg;
   font-weight: 300 1000;
   font-display: swap;
-  src: url('/fonts/Recursive_VF_1.077--subset_range_latin_1_punc.woff2') format('woff2');
+  src: url('./fonts/Recursive_VF_1.077--subset_range_latin_1_punc.woff2') format('woff2');
   unicode-range: U+00A0-00BF,U+2194-2199;
 }
 
@@ -35,7 +35,27 @@
   font-style: oblique 0deg 15deg;
   font-weight: 300 1000;
   font-display: swap;
-  src: url('/fonts/Recursive_VF_1.077--subset_range_latin_ext.woff2') format('woff2');
+  src: url('./fonts/Recursive_VF_1.077--subset_range_latin_ext.woff2') format('woff2');
   unicode-range: U+0100-017F;
+}
+
+/* unicodes for vietnamese */
+@font-face {
+  font-family: 'Recursive';
+  font-style: oblique 0deg 15deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url('./fonts/Recursive_VF_1.077--subset_range_vietnamese.woff2') format('woff2');
+  unicode-range: U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB;
+}
+
+/* remaining Unicodes */
+@font-face {
+  font-family: 'Recursive';
+  font-style: oblique 0deg 15deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url('./fonts/Recursive_VF_1.077--subset_range_remaining.woff2') format('woff2');
+  unicode-range: Recursive_VF_1.077--subset_range_remaining.woff2;
 }
 

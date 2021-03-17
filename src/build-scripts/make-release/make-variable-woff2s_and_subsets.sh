@@ -49,8 +49,33 @@ pyftsubset $fontPath --flavor="woff2" --output-file=$outputDir/$latin1PuncFile -
 # unicode latin A extended
 latinExtFile=${fontFile/'.ttf'/--subset_range_latin_ext.woff2}
 latinExtUni="U+0100-017F"
-pyftsubset $fontPath --flavor="woff2" --output-file=$outputDir/$latinExtFile --unicodes="U+0100-017F"
+pyftsubset $fontPath --flavor="woff2" --output-file=$outputDir/$latinExtFile --unicodes=$latinExtUni
 
+# Vietnamese
+vietnameseFile=${fontFile/'.ttf'/--subset_range_vietnamese.woff2}
+vietnameseUni="U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB"
+pyftsubset $fontPath --flavor="woff2" --output-file=$outputDir/$vietnameseFile --unicodes=$vietnameseUni
+
+# everything else
+unicodesSoFar=$englishBasicUni,$latin1Uni,$latin1PuncUni,$latinExtUni,$vietnameUni
+remainingUnicodesFile=${fontFile/'.ttf'/--subset_range_remaining.woff2}
+remainingUnicodesUni=$(python3 src/build-scripts/make-release/compute-remaining-unicodes-in-font.py $fontPath $unicodesSoFar)
+pyftsubset $fontPath --flavor="woff2" --output-file=$outputDir/$remainingUnicodesFile --unicodes=$remainingUnicodesUni
+
+
+# move woff2 font files into "/fonts/" directory, next to CSS
+fontsDir=$outputDir/fonts
+mkdir -p $fontsDir
+# mv $outputDir/$englishBasicFile $fontsDir/$englishBasicFile
+# mv $outputDir/$latin1File $fontsDir/$latin1File
+# mv $outputDir/$latin1PuncFile $fontsDir/$latin1PuncFile
+# mv $outputDir/$latinExtFile $fontsDir/$latinExtFile
+# mv $outputDir/$vietnameseFile $fontsDir/$vietnameseFile
+# mv $outputDir/$remainingUnicodesFile $fontsDir/$remainingUnicodesFile
+
+find $outputDir -name '*.woff2' -exec mv {} $fontsDir/ \;
+
+# make CSS
 
 __CSS="
  /* The bare minimum English subset, plus copyright & arrows (← ↑ → ↓) & quotes (“ ” ‘ ’) & bullet (•) */
@@ -59,7 +84,7 @@ __CSS="
   font-style: oblique 0deg 15deg;
   font-weight: 300 1000;
   font-display: swap;
-  src: url('/fonts/$englishBasicFile') format('woff2');
+  src: url('./fonts/$englishBasicFile') format('woff2');
   unicode-range: $englishBasicUni;
 }
 
@@ -69,7 +94,7 @@ __CSS="
   font-style: oblique 0deg 15deg;
   font-weight: 300 1000;
   font-display: swap;
-  src: url('/fonts/$latin1File') format('woff2');
+  src: url('./fonts/$latin1File') format('woff2');
   unicode-range: $latin1Uni;
 }
 
@@ -79,7 +104,7 @@ __CSS="
   font-style: oblique 0deg 15deg;
   font-weight: 300 1000;
   font-display: swap;
-  src: url('/fonts/$latin1PuncFile') format('woff2');
+  src: url('./fonts/$latin1PuncFile') format('woff2');
   unicode-range: $latin1PuncUni;
 }
 
@@ -89,13 +114,32 @@ __CSS="
   font-style: oblique 0deg 15deg;
   font-weight: 300 1000;
   font-display: swap;
-  src: url('/fonts/$latinExtFile') format('woff2');
+  src: url('./fonts/$latinExtFile') format('woff2');
   unicode-range: $latinExtUni;
+}
+
+/* unicodes for vietnamese */
+@font-face {
+  font-family: 'Recursive';
+  font-style: oblique 0deg 15deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url('./fonts/$vietnameseFile') format('woff2');
+  unicode-range: $vietnameseUni;
+}
+
+/* remaining Unicodes */
+@font-face {
+  font-family: 'Recursive';
+  font-style: oblique 0deg 15deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url('./fonts/$remainingUnicodesFile') format('woff2');
+  unicode-range: $remainingUnicodesFile;
 }
 "
 
 echo "$__CSS" > $outputDir/fonts.css
 
 
-
-
+cp src/build-scripts/make-release/data/css-font-example.html $outputDir/index.html
