@@ -66,17 +66,9 @@ pyftsubset $fontPath --flavor="woff2" --output-file=$outputDir/$remainingUnicode
 # move woff2 font files into "/fonts/" directory, next to CSS
 fontsDir=$outputDir/fonts
 mkdir -p $fontsDir
-# mv $outputDir/$englishBasicFile $fontsDir/$englishBasicFile
-# mv $outputDir/$latin1File $fontsDir/$latin1File
-# mv $outputDir/$latin1PuncFile $fontsDir/$latin1PuncFile
-# mv $outputDir/$latinExtFile $fontsDir/$latinExtFile
-# mv $outputDir/$vietnameseFile $fontsDir/$vietnameseFile
-# mv $outputDir/$remainingUnicodesFile $fontsDir/$remainingUnicodesFile
-
 find $outputDir -name '*.woff2' -exec mv {} $fontsDir/ \;
 
 # make CSS
-
 __CSS="
  /* The bare minimum English subset, plus copyright & arrows (← ↑ → ↓) & quotes (“ ” ‘ ’) & bullet (•) */
 @font-face {
