@@ -43,7 +43,7 @@ pyftsubset $fontPath --flavor="woff2" --output-file=$outputDir/$latin1File --uni
 
 # unicode latin-1, punc/symbols & arrows (↔ ↕ ↖ ↗ ↘ ↙)
 latin1PuncFile=${fontFile/'.ttf'/--subset_range_latin_1_punc.woff2}
-latin1PuncUni="U+00A0-00BF,U+2194-2199"
+latin1PuncUni="U+00A0-00A8,U+00AA-00BF,U+2194-2199"
 pyftsubset $fontPath --flavor="woff2" --output-file=$outputDir/$latin1PuncFile --unicodes=$latin1PuncUni
 
 # unicode latin A extended
@@ -57,9 +57,9 @@ vietnameseUni="U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01A
 pyftsubset $fontPath --flavor="woff2" --output-file=$outputDir/$vietnameseFile --unicodes=$vietnameseUni
 
 # everything else
-unicodesSoFar=$englishBasicUni,$latin1Uni,$latin1PuncUni,$latinExtUni,$vietnameUni
+unicodesSoFar=$englishBasicUni,$latin1Uni,$latin1PuncUni,$latinExtUni,$vietnameseUni
 remainingUnicodesFile=${fontFile/'.ttf'/--subset_range_remaining.woff2}
-remainingUnicodesUni=$(python3 src/build-scripts/make-release/compute-remaining-unicodes-in-font.py $fontPath $unicodesSoFar)
+remainingUnicodesUni=$(python3 src/build-scripts/make-release/compute-remaining-unicodes-in-font.py $fontPath -u $unicodesSoFar)
 pyftsubset $fontPath --flavor="woff2" --output-file=$outputDir/$remainingUnicodesFile --unicodes=$remainingUnicodesUni
 
 
@@ -72,7 +72,7 @@ find $outputDir -name '*.woff2' -exec mv {} $fontsDir/ \;
 __CSS="
  /* The bare minimum English subset, plus copyright & arrows (← ↑ → ↓) & quotes (“ ” ‘ ’) & bullet (•) */
 @font-face {
-  font-family: 'Recursive';
+  font-family: 'RecVar';
   font-style: oblique 0deg 15deg;
   font-weight: 300 1000;
   font-display: swap;
@@ -82,7 +82,7 @@ __CSS="
 
 /* unicode latin-1 letters, basic european diacritics */
 @font-face {
-  font-family: 'Recursive';
+  font-family: 'RecVar';
   font-style: oblique 0deg 15deg;
   font-weight: 300 1000;
   font-display: swap;
@@ -92,7 +92,7 @@ __CSS="
 
 /* unicode latin-1, punc/symbols & arrows (↔ ↕ ↖ ↗ ↘ ↙) */
 @font-face {
-  font-family: 'Recursive';
+  font-family: 'RecVar';
   font-style: oblique 0deg 15deg;
   font-weight: 300 1000;
   font-display: swap;
@@ -102,7 +102,7 @@ __CSS="
 
 /* unicode latin A extended */
 @font-face {
-  font-family: 'Recursive';
+  font-family: 'RecVar';
   font-style: oblique 0deg 15deg;
   font-weight: 300 1000;
   font-display: swap;
@@ -112,7 +112,7 @@ __CSS="
 
 /* unicodes for vietnamese */
 @font-face {
-  font-family: 'Recursive';
+  font-family: 'RecVar';
   font-style: oblique 0deg 15deg;
   font-weight: 300 1000;
   font-display: swap;
@@ -122,7 +122,7 @@ __CSS="
 
 /* remaining Unicodes */
 @font-face {
-  font-family: 'Recursive';
+  font-family: 'RecVar';
   font-style: oblique 0deg 15deg;
   font-weight: 300 1000;
   font-display: swap;
