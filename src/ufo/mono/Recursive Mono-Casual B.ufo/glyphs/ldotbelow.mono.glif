@@ -1,15 +1,15 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="ldotbelow.mono" format="2">
-  <advance width="600"/>
-  <anchor x="326" y="761" name="top"/>
-  <outline>
-    <component base="l.mono"/>
-    <component base="dotbelowcomb" xOffset="311"/>
-  </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0,0,0,0.1505</string>
-    </dict>
-  </lib>
+	<advance width="600"/>
+	<outline>
+		<component base="l.mono"/>
+		<component base="dotbelowcomb" xOffset="311"/>
+	</outline>
+	<anchor name="top" x="326" y="761"/>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0,0,0,0.1505</string>
+		</dict>
+	</lib>
 </glyph>

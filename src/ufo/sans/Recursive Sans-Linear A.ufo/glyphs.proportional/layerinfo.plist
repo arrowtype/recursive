@@ -1,19 +1,33 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-  <dict>
-    <key>color</key>
-    <string>0,1,1,0.7</string>
-    <key>lib</key>
-    <dict>
-      <key>com.typemytype.robofont.layerShow</key>
-      <true/>
-      <key>com.typemytype.robofont.layerShowPoints</key>
-      <true/>
-      <key>com.typemytype.robofont.layerShowStroke</key>
-      <true/>
-      <key>org.unifiedfontobject.normalizer.imageReferences</key>
-      <dict/>
-    </dict>
-  </dict>
+	<dict>
+		<key>color</key>
+		<string>0,1,1,0.7</string>
+		<key>lib</key>
+		<dict>
+			<key>com.typemytype.robofont.layerShow</key>
+			<true/>
+			<key>com.typemytype.robofont.layerShowPoints</key>
+			<true/>
+			<key>com.typemytype.robofont.layerShowStroke</key>
+			<true/>
+			<key>org.unifiedfontobject.normalizer.imageReferences</key>
+			<dict>
+			</dict>
+			<key>org.unifiedfontobject.normalizer.modTimes</key>
+			<string>version: 0.3.6
+1597766770.2 asterisk.glif
+1597766770.2 braceleft.glif
+1597766770.2 braceright.glif
+1597766770.2 bracketleft.glif
+1597766770.2 bracketright.glif
+1597766770.2 grave.glif
+1597766770.2 l.glif
+1597766770.2 parenleft.glif
+1597766770.2 parenright.glif
+1597766770.2 period.glif
+1597766770.2 periodcentered.glif</string>
+		</dict>
+	</dict>
 </plist>

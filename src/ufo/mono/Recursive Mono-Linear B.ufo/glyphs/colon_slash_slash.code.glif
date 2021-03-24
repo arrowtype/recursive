@@ -1,17 +1,17 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="colon_slash_slash.code" format="2">
-  <advance width="1800"/>
-  <anchor x="600" y="0" name="caret_1"/>
-  <anchor x="1200" y="0" name="caret_2"/>
-  <outline>
-    <component base="colon" xOffset="40"/>
-    <component base="slash" xOffset="570"/>
-    <component base="slash" xOffset="1090"/>
-  </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0.25,1,1,0.5</string>
-    </dict>
-  </lib>
+	<advance width="1800"/>
+	<outline>
+		<component base="colon" xOffset="40"/>
+		<component base="slash" xOffset="570"/>
+		<component base="slash" xOffset="1090"/>
+	</outline>
+	<anchor name="caret_1" x="600" y="0"/>
+	<anchor name="caret_2" x="1200" y="0"/>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0.25,1,1,0.5</string>
+		</dict>
+	</lib>
 </glyph>

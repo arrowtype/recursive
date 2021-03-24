@@ -1,45 +1,45 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="acutecomb.case" format="2">
-  <note>
-combining acute accent
-</note>
-  <guideline x="0" y="950" angle="0" identifier="NBB2qDPBgP"/>
-  <guideline x="0" y="948" angle="0" identifier="w7Mq49BxZH"/>
-  <anchor x="0" y="712" name="_top"/>
-  <anchor x="0" y="700" name="_dot"/>
-  <anchor x="-187" y="869" name="dot"/>
-  <outline>
-    <contour>
-      <point x="35" y="948" type="curve"/>
-      <point x="0" y="887"/>
-      <point x="-30" y="837"/>
-      <point x="-65" y="776" type="curve"/>
-      <point x="-27" y="776"/>
-      <point x="-8" y="776"/>
-      <point x="55" y="776" type="curve" smooth="yes"/>
-      <point x="63" y="776"/>
-      <point x="68" y="779"/>
-      <point x="71" y="782" type="curve" smooth="yes"/>
-      <point x="143" y="859"/>
-      <point x="159" y="878"/>
-      <point x="210" y="934" type="curve" smooth="yes"/>
-      <point x="215" y="940"/>
-      <point x="212" y="948"/>
-      <point x="204" y="948" type="curve" smooth="yes"/>
-      <point x="133" y="948"/>
-      <point x="118" y="948"/>
-    </contour>
-  </outline>
-  <lib>
-    <dict>
-      <key>com.typemytype.robofont.Image.Brightness</key>
-      <integer>0</integer>
-      <key>com.typemytype.robofont.Image.Contrast</key>
-      <integer>1</integer>
-      <key>com.typemytype.robofont.Image.Saturation</key>
-      <integer>1</integer>
-      <key>com.typemytype.robofont.Image.Sharpness</key>
-      <real>0.4</real>
-    </dict>
-  </lib>
+	<outline>
+		<contour>
+			<point x="35" y="948" type="curve"/>
+			<point x="0" y="887"/>
+			<point x="-30" y="837"/>
+			<point x="-65" y="776" type="curve"/>
+			<point x="-27" y="776"/>
+			<point x="-8" y="776"/>
+			<point x="55" y="776" type="curve" smooth="yes"/>
+			<point x="63" y="776"/>
+			<point x="68" y="779"/>
+			<point x="71" y="782" type="curve" smooth="yes"/>
+			<point x="143" y="859"/>
+			<point x="159" y="878"/>
+			<point x="210" y="934" type="curve" smooth="yes"/>
+			<point x="215" y="940"/>
+			<point x="212" y="948"/>
+			<point x="204" y="948" type="curve" smooth="yes"/>
+			<point x="133" y="948"/>
+			<point x="118" y="948"/>
+		</contour>
+	</outline>
+	<anchor name="_top" x="0" y="712"/>
+	<anchor name="_dot" x="0" y="700"/>
+	<anchor name="dot" x="-187" y="869"/>
+	<guideline x="0" y="950" angle="0" identifier="NBB2qDPBgP"/>
+	<guideline x="0" y="948" angle="0" identifier="w7Mq49BxZH"/>
+	<lib>
+		<dict>
+			<key>com.typemytype.robofont.Image.Brightness</key>
+			<integer>0</integer>
+			<key>com.typemytype.robofont.Image.Contrast</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Saturation</key>
+			<integer>1</integer>
+			<key>com.typemytype.robofont.Image.Sharpness</key>
+			<real>0.4</real>
+		</dict>
+	</lib>
+	<note>
+		combining acute accent
+	</note>
 </glyph>

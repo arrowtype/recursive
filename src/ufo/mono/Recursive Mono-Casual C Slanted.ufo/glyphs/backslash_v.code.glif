@@ -1,15 +1,15 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="backslash_v.code" format="2">
-  <advance width="1200"/>
-  <anchor x="600" y="0" name="caret_1"/>
-  <outline>
-    <component base="backslash" xOffset="61"/>
-    <component base="v" xOffset="561"/>
-  </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0.25,1,1,0.5</string>
-    </dict>
-  </lib>
+	<advance width="1200"/>
+	<outline>
+		<component base="backslash" xOffset="61"/>
+		<component base="v" xOffset="561"/>
+	</outline>
+	<anchor name="caret_1" x="600" y="0"/>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0.25,1,1,0.5</string>
+		</dict>
+	</lib>
 </glyph>

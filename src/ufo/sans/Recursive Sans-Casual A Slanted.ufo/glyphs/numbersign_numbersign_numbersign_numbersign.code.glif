@@ -1,55 +1,55 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="numbersign_numbersign_numbersign_numbersign.code" format="2">
-  <advance width="2400"/>
-  <anchor x="600" y="0" name="caret_1"/>
-  <anchor x="1200" y="0" name="caret_2"/>
-  <anchor x="1800" y="0" name="caret_3"/>
-  <outline>
-    <contour>
-      <point x="492" y="454" type="line"/>
-      <point x="864" y="454" type="line"/>
-      <point x="864" y="500" type="line"/>
-      <point x="492" y="500" type="line"/>
-    </contour>
-    <contour>
-      <point x="382" y="204" type="line"/>
-      <point x="764" y="204" type="line"/>
-      <point x="764" y="250" type="line"/>
-      <point x="382" y="250" type="line"/>
-    </contour>
-    <contour>
-      <point x="1092" y="454" type="line"/>
-      <point x="1464" y="454" type="line"/>
-      <point x="1464" y="500" type="line"/>
-      <point x="1092" y="500" type="line"/>
-    </contour>
-    <contour>
-      <point x="982" y="204" type="line"/>
-      <point x="1364" y="204" type="line"/>
-      <point x="1364" y="250" type="line"/>
-      <point x="982" y="250" type="line"/>
-    </contour>
-    <contour>
-      <point x="1692" y="454" type="line"/>
-      <point x="2064" y="454" type="line"/>
-      <point x="2064" y="500" type="line"/>
-      <point x="1692" y="500" type="line"/>
-    </contour>
-    <contour>
-      <point x="1582" y="204" type="line"/>
-      <point x="1964" y="204" type="line"/>
-      <point x="1964" y="250" type="line"/>
-      <point x="1582" y="250" type="line"/>
-    </contour>
-    <component base="numbersign"/>
-    <component base="numbersign" xOffset="600"/>
-    <component base="numbersign" xOffset="1200"/>
-    <component base="numbersign" xOffset="1800"/>
-  </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>1,0.5,0,1</string>
-    </dict>
-  </lib>
+	<advance width="2400"/>
+	<outline>
+		<contour>
+			<point x="492" y="454" type="line"/>
+			<point x="864" y="454" type="line"/>
+			<point x="864" y="500" type="line"/>
+			<point x="492" y="500" type="line"/>
+		</contour>
+		<contour>
+			<point x="382" y="204" type="line"/>
+			<point x="764" y="204" type="line"/>
+			<point x="764" y="250" type="line"/>
+			<point x="382" y="250" type="line"/>
+		</contour>
+		<contour>
+			<point x="1092" y="454" type="line"/>
+			<point x="1464" y="454" type="line"/>
+			<point x="1464" y="500" type="line"/>
+			<point x="1092" y="500" type="line"/>
+		</contour>
+		<contour>
+			<point x="982" y="204" type="line"/>
+			<point x="1364" y="204" type="line"/>
+			<point x="1364" y="250" type="line"/>
+			<point x="982" y="250" type="line"/>
+		</contour>
+		<contour>
+			<point x="1692" y="454" type="line"/>
+			<point x="2064" y="454" type="line"/>
+			<point x="2064" y="500" type="line"/>
+			<point x="1692" y="500" type="line"/>
+		</contour>
+		<contour>
+			<point x="1582" y="204" type="line"/>
+			<point x="1964" y="204" type="line"/>
+			<point x="1964" y="250" type="line"/>
+			<point x="1582" y="250" type="line"/>
+		</contour>
+		<component base="numbersign"/>
+		<component base="numbersign" xOffset="600"/>
+		<component base="numbersign" xOffset="1200"/>
+		<component base="numbersign" xOffset="1800"/>
+	</outline>
+	<anchor name="caret_1" x="600" y="0"/>
+	<anchor name="caret_2" x="1200" y="0"/>
+	<anchor name="caret_3" x="1800" y="0"/>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>1,0.5,0,1</string>
+		</dict>
+	</lib>
 </glyph>

@@ -1,15 +1,15 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <glyph name="f_f.mono" format="2">
-  <advance width="800"/>
-  <anchor x="400" y="0" name="caret_1"/>
-  <outline>
-    <component base="f.mono"/>
-    <component base="f.mono" xOffset="400"/>
-  </outline>
-  <lib>
-    <dict>
-      <key>public.markColor</key>
-      <string>0.25,1,1,0.5</string>
-    </dict>
-  </lib>
+	<advance width="800"/>
+	<outline>
+		<component base="f.mono"/>
+		<component base="f.mono" xOffset="400"/>
+	</outline>
+	<anchor name="caret_1" x="400" y="0"/>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>0.25,1,1,0.5</string>
+		</dict>
+	</lib>
 </glyph>
