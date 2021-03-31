@@ -20,4 +20,4 @@ cd mastering
 python build.py --varfiles -v $version
 
 # build files
-python build.py -var -v $version
+python build.py --variable -v $version
