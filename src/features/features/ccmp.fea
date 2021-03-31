@@ -24,7 +24,7 @@ feature ccmp {
     } Dotless;
     
     lookup caron {
-        sub [l l.italic l.mono l.simple l.sans] [caron caroncomb]' by caronslovakcomb;
+        sub [l l.italic l.mono l.simple l.sans] caroncomb' by caronslovakcomb;
     } caron;
 
     lookup replacements {
