@@ -1,18 +1,17 @@
-from vanilla.dialogs import *
-from mojo.UI import AskString
+from vanilla.dialogs import OpenFont, getFile
 from mojo.UI import OutputWindow
 import pprint
 
 # TODO: ignore glyphs marked as "experimental" with robofont marx
 # TODO: allow user to paste space-separated string of glyphs to limit check to
 
-### SET THIS TO IGNORE GLYPHS YOU WANT TO LEAVE ALONE (e.g. experimental glyphs) ###
+# SET THIS TO IGNORE GLYPHS YOU WANT TO LEAVE ALONE (e.g. experimental glyphs) #
 
 glyphsToIgnore = ""
 
 ####################################################################################
 
-debug = False # will print full dictionaries
+debug = False  # will print full dictionaries
 
 files = getFile("Select files to check for point count similarity", allowsMultipleSelection=True, fileTypes=["ufo"])
 
@@ -25,7 +24,7 @@ OutputWindow().clear()
 print("\nCOMPATIBILITY CHECK: GLYPH CONSISTENCY & POINT COUNTS\n\n")
 
 print("""\
-    📊 Emoji are present to help you spot point number differences more quickly. 
+    📊 Emoji are present to help you spot point number differences more quickly.
     Specific emoji have no meaning as to which numbers are correct or incorrect.
     The first count will be marked with 🍇, the next with 🥑, and so on.\n
 """)
@@ -41,10 +40,9 @@ for file in files:
     for glyph in font:
         if glyph.name not in pointsDict:
             pointsDict[glyph.name] = {}
-        
+
         if fontName not in pointsDict[glyph.name]:
             pointsDict[glyph.name][fontName] = 0
-
 
         for c in glyph:
             for seg in c:
@@ -76,12 +74,12 @@ for glyphName in pointsDict.keys():
     if len(set(pointsDict[glyphName].values())) > 1:
         if glyphName not in glyphsWithUnevenPoints and glyphName not in glyphsToIgnore.split(" "):
             glyphsWithUnevenPoints.append(glyphName)
-            
+
 maxFontNameLength = len(max(fonts, key=len))
 
 
 alertEmoji = "🍇 🥑 🍉 🍊 🍑 🍌 🍒 🌽 🍈 🐶 🐱 🐭 🐰 🦊 🐻 🐯 🦁 🐮 🐷 🐸 🐵 🐔 🐣".split(" ")
-iconDict = {} # was {}b, but i think it was a syntax error
+iconDict = {}  # was {}b, but i think it was a syntax error
 
 for glyphName in sorted(glyphsWithUnevenPoints):
     iconDict[glyphName] = {}
@@ -89,11 +87,11 @@ for glyphName in sorted(glyphsWithUnevenPoints):
     for fontName in pointsDict[glyphName].keys():
         # if glyph point count not already in icon dict under glyph
         if pointsDict[glyphName][fontName] not in iconDict[glyphName].keys():
-            count  = str(pointsDict[glyphName][fontName])
+            count = str(pointsDict[glyphName][fontName])
             iconDict[glyphName][count] = ""
 
     # go through each glyph:font combo in iconDict and assing emoji to diff counts
-    for index,pointCount in enumerate(iconDict[glyphName].keys()):
+    for index, pointCount in enumerate(iconDict[glyphName].keys()):
         iconDict[glyphName][pointCount] = alertEmoji[index]
 
 
@@ -110,14 +108,14 @@ for glyphName in sorted(problemGlyphs):
     # If glyph has different point counts in different fonts, report
     if glyphName in glyphsWithUnevenPoints:
 
-        print(f"\t{'Font'.ljust(maxFontNameLength + 1)} |  Pts | 📊") # add contour count? segment count?
+        print(f"\t{'Font'.ljust(maxFontNameLength + 1)} |  Pts | 📊")  # add contour count? segment count?
         print(f"\t{''.ljust(maxFontNameLength + 1, '-')} | ---- | --")
 
         for fontName in pointsDict[glyphName].keys():
-            
+
             pointCount = str(pointsDict[glyphName][fontName])
             print(f"\t{fontName.ljust(maxFontNameLength + 1)} | {str(pointsDict[glyphName][fontName]).rjust(4)} | {iconDict[glyphName][pointCount]}")
-            
+
         print("")
 
     # If glyph is not in all fonts, report
@@ -126,14 +124,14 @@ for glyphName in sorted(problemGlyphs):
         print("\tIs in:\n\t------------------")
         for fontName in sorted(fonts):
             if fontName in pointsDict[glyphName]:
-                print("\t",fontName)
-        
+                print("\t", fontName)
+
         print("\n")
 
         print("\tNot in:\n\t------------------")
         for fontName in sorted(fonts):
             if fontName not in pointsDict[glyphName]:
-                print("\t",fontName)
+                print("\t", fontName)
 
 if len(glyphsWithUnevenPoints) >= 1:
     print("️\n\nGlyphs with unequal points between fonts:\n")
@@ -152,13 +150,13 @@ if len(glyphsNotInAllFonts) >= 1:
         print(glyphName, end=" ")
     print("")
 
-if len(problemGlyphs) is 0:
+if len(problemGlyphs) == 0:
     print("🤖🤖🤖\n")
     print("Looks like all glyphs have the same point counts – nice work! \n")
     print("🎉🎉🎉\n")
 
 
-if glyphsToIgnore is not "" and len(glyphsToIgnore.split(" ")) > 0:
+if glyphsToIgnore != "" and len(glyphsToIgnore.split(" ")) > 0:
     print("\n--------------------------------------------------------------\n")
     print("NOTE: ignored the following glyphs (they are experiments or currently low-priority)")
     print("(edit script to adjust these)")
