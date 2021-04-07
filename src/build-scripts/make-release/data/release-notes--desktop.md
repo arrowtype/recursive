@@ -9,9 +9,10 @@ However, it is useful to install only the specific static fonts you need from th
 - On **Windows**, install `Recursive_Desktop/recursive-static-TTFs.ttc` (This is a collection of all 64 static instances in TTF format) *OR* the separate TTFs from the `separate_statics` folder.
 - On **Mac**, install `Recursive_Desktop/recursive-static-OTFs.otc` (This is a collection of all 64 static instances in OTF format) *OR* the separate OTFs from the `separate_statics` folder.
 - On **Linux** and other operating systems, you are probably safest to install the TTFs from the `separate_statics` folder.
+
 ### Usage-specific recommendations
 
-- For **design** in Figma, and for general usage in older systems/applications, you should use separate static fonts from within the `separate_statics` folder 
+- For **design** in Figma, and for general usage in older systems/applications, you should use separate static fonts from within the `separate_statics` folder
 - For **printing**, you may get better results from the OTFs.
 - For the **web**, *don’t* use the fonts in this folder. You will get better results (and smaller file sizes) by using the `woff2` files in the adjacent `Recursive_Web` folder.
 

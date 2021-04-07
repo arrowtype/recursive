@@ -8,7 +8,7 @@ Do you have a question or have you found a bug? Please file an issue at https://
 
 ## Recommendations
 
-For design & usage recommendations, please see the project README at https://github.com/arrowtype/recursive/blob/master/README.
+For design & usage recommendations, please see the project README at https://github.com/arrowtype/recursive.
 
 Fonts in `Recursive_Desktop` and `Recursive_Code` are made so that it is possible to install all of these without experiencing conflicts in font menus. However, you may want to pick-and-choose which font files you wish to install, based on your needs.
 
@@ -28,5 +28,5 @@ Fonts in `Recursive_Desktop` and `Recursive_Code` are made so that it is possibl
 
 ### Web
 
-- Use the woff2 font files in `Recursive_Web`. This includes a few useful subsets for variable fonts, along with some starter `@font-face` CSS for the `woff2_variable_subsets`. 
+- Use the woff2 font files in `Recursive_Web`. This includes a few useful subsets for variable fonts, along with some starter `@font-face` CSS for the `woff2_variable_subsets`.
 - If you only need a style or two on a site, it may be practical to just use static instances, but you may want to figure out subsetting with `pyftsubset` to make those even smaller.
