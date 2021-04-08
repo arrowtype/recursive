@@ -1880,7 +1880,6 @@
 			<string>macronmod</string>
 			<string>acutemod</string>
 			<string>gravemod</string>
-			<string>verticallinelowmod</string>
 			<string>ordfeminine</string>
 			<string>ordmasculine</string>
 			<string>gravecomb</string>
@@ -1906,6 +1905,7 @@
 			<string>commaaccentcomb</string>
 			<string>cedillacomb</string>
 			<string>ogonekcomb</string>
+			<string>verticallinelowmod</string>
 			<string>belowbrevecmb</string>
 			<string>macronbelowcmb</string>
 			<string>overlaystrokeshortcmb</string>
@@ -2370,6 +2370,7 @@
 			<string>ndot.italic</string>
 			<string>ndotbelow.italic</string>
 			<string>nlinebelow.italic</string>
+			<string>q.italic</string>
 			<string>r.italic</string>
 			<string>racute.italic</string>
 			<string>rcommaaccent.italic</string>
@@ -2524,20 +2525,35 @@
 			<string>plus_plus.code</string>
 			<string>plus_plus_plus.code</string>
 			<string>minus_equal.code</string>
+			<string>equal_asciitilde.code</string>
 			<string>equal_equal.code</string>
 			<string>equal_equal_equal.code</string>
 			<string>equal_greater.code</string>
+			<string>equal_less_less.code</string>
 			<string>equal_slash_equal.code</string>
 			<string>less.code</string>
+			<string>less_asterisk.code</string>
+			<string>less_asterisk_greater.code</string>
+			<string>less_bar.code</string>
+			<string>less_bar_greater.code</string>
+			<string>less_dollar_greater.code</string>
 			<string>less_equal.code</string>
+			<string>less_equal_greater.code</string>
 			<string>less_exclam_hyphen_hyphen.code</string>
+			<string>less_greater.code</string>
 			<string>less_hyphen.code</string>
 			<string>less_less.code</string>
+			<string>less_less_asciitilde.code</string>
+			<string>less_less_equal.code</string>
+			<string>less_less_hyphen.code</string>
 			<string>less_less_less.code</string>
+			<string>less_plus_greater.code</string>
 			<string>greater.code</string>
 			<string>greater_equal.code</string>
 			<string>greater_greater.code</string>
+			<string>greater_greater_equal.code</string>
 			<string>greater_greater_greater.code</string>
+			<string>greater_greater_hyphen.code</string>
 			<string>greater_hyphen.code</string>
 			<string>f_quotesingle.code</string>
 			<string>underscore_underscore.code</string>
@@ -2546,6 +2562,7 @@
 			<string>hyphen_hyphen_greater.code</string>
 			<string>hyphen_hyphen_hyphen.code</string>
 			<string>hyphen_less.code</string>
+			<string>hyphen_less_less.code</string>
 			<string>hyphen_space_bracketleft_space_bracketright.code</string>
 			<string>hyphen_space_bracketleft_x_bracketright.code</string>
 			<string>parenleft_parenleft.code</string>
@@ -2581,8 +2598,11 @@
 			<string>backslash_v.code</string>
 			<string>bar_bar.code</string>
 			<string>bar_bar_bar.code</string>
+			<string>bar_equal.code</string>
+			<string>bar_greater.code</string>
 			<string>colon_colon.code</string>
 			<string>colon_slash_slash.code</string>
+			<string>exclam_asciitilde.code</string>
 			<string>exclam_equal.code</string>
 			<string>exclam_equal_equal.code</string>
 			<string>exclam_exclam.code</string>
@@ -2669,6 +2689,8 @@
 			<string>Zdotbelow.sans</string>
 			<string>Ldot.sans</string>
 			<string>Lslash.sans</string>
+			<string>DZcaron.sans</string>
+			<string>DZ.sans</string>
 			<string>l.sans</string>
 			<string>lacute.sans</string>
 			<string>lcommaaccent.sans</string>
@@ -2682,29 +2704,6 @@
 			<string>zerosuperior.sans</string>
 			<string>zeroinferior.sans</string>
 			<string>.notdef</string>
-			<string>q.italic</string>
-			<string>less_greater.code</string>
-			<string>less_equal_greater.code</string>
-			<string>less_less_equal.code</string>
-			<string>greater_greater_equal.code</string>
-			<string>bar_equal.code</string>
-			<string>exclam_asciitilde.code</string>
-			<string>equal_asciitilde.code</string>
-			<string>less_less_hyphen.code</string>
-			<string>less_less_asciitilde.code</string>
-			<string>bar_greater.code</string>
-			<string>less_bar_greater.code</string>
-			<string>less_bar.code</string>
-			<string>less_asterisk_greater.code</string>
-			<string>less_asterisk.code</string>
-			<string>less_dollar_greater.code</string>
-			<string>less_plus_greater.code</string>
-			<string>equal_less_less.code</string>
-			<string>hyphen_less_less.code</string>
-			<string>greater_greater_hyphen.code</string>
-			<string>rupeeIndian</string>
-			<string>DZ.sans</string>
-			<string>DZcaron.sans</string>
 		</array>
 		<key>public.skipExportGlyphs</key>
 		<array>

@@ -79,6 +79,7 @@ unicodeNameMatches = {
     "commaaccentcomb":          "0326",
     "cedillacomb":              "0327",
     "ogonekcomb":               "0328",
+    "verticallinelowmod":       "0329",
 
     # vienamese – copied in from GlyphsApp
 
@@ -148,7 +149,8 @@ unicodeNameMatches = {
     "Uhorntilde":            "1EEE",
     "Utilde":                "0168",
     "Yacute":                "00DD",
-    "Ydot":                  "1EF4",
+    "Ydot":                  "1E8E",
+    "Ydotbelow":             "1EF4",
     "Ygrave":                "1EF2",
     "Yhookabove":            "1EF6",
     "Ytilde":                "1EF8",
@@ -215,7 +217,8 @@ unicodeNameMatches = {
     "uhorntilde":            "1EEF",
     "utilde":                "0169",
     "yacute":                "00FD",
-    "ydot":                  "1EF5",
+    "ydot":                  "1E8F",
+    "ydotbelow":             "1EF5",
     "ygrave":                "1EF3",
     "yhookabove":            "1EF7",
     "ytilde":                "1EF9"
