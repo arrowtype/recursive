@@ -43,7 +43,7 @@ kerningPath = f"{ufoToCopyFrom}/kerning.plist"
 for ufo in sorted(ufosToCopyTo):
     ufoPath = f"{head}/{ufo}"
 
-    if ufoPath != ufoToCopyFrom and 'features' not in ufo and 'instances' not in ufo:
+    if ufoPath != ufoToCopyFrom and 'features' not in ufo and 'instances' not in ufo and '.ufo' in ufo:
         print(ufoPath)
         groupsDest = f"{ufoPath}/groups.plist"
         # good if mono or sans
