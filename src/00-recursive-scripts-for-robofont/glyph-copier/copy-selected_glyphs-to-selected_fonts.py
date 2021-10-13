@@ -2,7 +2,8 @@ from vanilla import FloatingWindow, Button, EditText, TextBox, CheckBox, ColorWe
 from AppKit import NSColor
 from mojo.UI import Message
 from mojo.roboFont import OpenWindow
-from vanilla.dialogs import *
+from vanilla.dialogs import getFile, OpenFont
+
 
 class GlyphFax(object):
 
@@ -11,49 +12,43 @@ class GlyphFax(object):
         x = y = padding = 10
         buttonHeight = 20
         windowWidth = 400
-        
+
         rows = 4.5
-        
-        self.w = FloatingWindow((windowWidth, buttonHeight*rows + padding*(rows)), "Glyph Fax Machine")
+
+        self.w = FloatingWindow((windowWidth, buttonHeight * rows + padding * (rows)), "Glyph Fax Machine")
 
         self.fonts = {}
-        
-        # self.w.textBox = TextBox((x, y, -padding, buttonHeight), "Glyphs to Copy")
-        
 
-        # y += buttonHeight 
-        
-        self.w.editText = EditText((x, y, -padding, buttonHeight*2+padding), placeholder="Space-separated list of glyphs to copy")
+        self.w.editText = EditText((x, y, -padding, buttonHeight * 2 + padding), placeholder="Space-separated list of glyphs to copy")
 
+        y += buttonHeight * 2 + padding * 2
 
-        y += buttonHeight*2 + padding*2
-        
         # self.w.overwriteGlyphsCheckBox = CheckBox((x, y, -padding, buttonHeight), "Overwrite Glyphs", value=False, callback=self.overwriteGlyphsOptions)
 
         # y += buttonHeight + padding
 
-        self.w.overwriteNormalWidthGlyphsCheckBox = CheckBox((x,y, -padding, buttonHeight), "Overwrite 600w Glyphs", value=False, sizeStyle="small")
+        self.w.overwriteNormalWidthGlyphsCheckBox = CheckBox((x, y, -padding, buttonHeight), "Overwrite 600w Glyphs", value=False, sizeStyle="small")
         # self.w.overwriteNormalWidthGlyphsCheckBox.show(False)
 
-        self.w.overwriteAdjustedWidthGlyphsCheckBox = CheckBox((windowWidth*0.4, y, -padding, buttonHeight), "Overwrite non-600w Glyphs", value=False, sizeStyle="small")
+        self.w.overwriteAdjustedWidthGlyphsCheckBox = CheckBox((windowWidth * 0.4, y, -padding, buttonHeight), "Overwrite non-600w Glyphs", value=False, sizeStyle="small")
         # self.w.overwriteAdjustedWidthGlyphsCheckBox.show(False)
-        self.w.colorWell = ColorWell((windowWidth*0.85, y, -padding, buttonHeight),color=NSColor.orangeColor())
+        self.w.colorWell = ColorWell((windowWidth * 0.85, y, -padding, buttonHeight), color=NSColor.orangeColor())
 
         y += buttonHeight + padding
 
         self.w.sans2mono = Button(
-                (x, y, windowWidth/3 - padding/2, buttonHeight),
-                "Sans → Mono",
-                callback=self.sans2monoCallback)
+            (x, y, windowWidth / 3 - padding / 2, buttonHeight),
+            "Sans → Mono",
+            callback=self.sans2monoCallback)
 
         self.w.mono2sans = Button(
-                (windowWidth/3 + padding, y, -padding, buttonHeight),
-                "Mono → Sans",
-                callback=self.mono2SansCallback)
+            (windowWidth / 3 + padding, y, -padding, buttonHeight),
+            "Mono → Sans",
+            callback=self.mono2SansCallback)
 
         self.w.open()
 
-    def copyGlyph(self,glyphName, fontToCopyFrom, fontToSendTo):
+    def copyGlyph(self, glyphName, fontToCopyFrom, fontToSendTo):
 
         print(f"copying glyph /{glyphName} from \n\t{fontToCopyFrom} \n\tto \n\t{fontToSendTo}")
 
@@ -67,16 +62,16 @@ class GlyphFax(object):
             overwriteNon600 = self.w.overwriteAdjustedWidthGlyphsCheckBox.get()
 
             # default case: overwrite is false (overwrite 600 is true, overwrite non600 is false)
-            if overwrite600 == False and overwriteNon600 == False:
+            if overwrite600 is False and overwriteNon600 is False:
                 # glyphCopyName = glyphName + '.copy'
                 # fontToSendTo.newGlyph(glyphCopyName)
 
                 copyGlyph = False
 
-            elif overwrite600 == True and overwriteNon600 == True:
+            elif overwrite600 is True and overwriteNon600 is True:
                 fontToSendTo[glyphCopyName].clear()
 
-            elif overwrite600 == False and overwriteNon600 == True:
+            elif overwrite600 is False and overwriteNon600 is True:
                 if round(fontToSendTo[glyphCopyName].width, -1) == 600:
                     # glyphCopyName = glyphName + '.copy'
                     # fontToSendTo.newGlyph(glyphCopyName)
@@ -85,7 +80,7 @@ class GlyphFax(object):
                 else:
                     fontToSendTo[glyphCopyName].clear()
 
-            elif overwrite600 == True and overwriteNon600 == False:
+            elif overwrite600 is True and overwriteNon600 is False:
                 if round(fontToSendTo[glyphCopyName].width, -1) == 600:
                     fontToSendTo[glyphCopyName].clear()
                 else:
@@ -112,27 +107,26 @@ class GlyphFax(object):
             else:
                 layerGlyph.width = glyphToCopy.width
 
-            layerGlyph.markColor = (self.w.colorWell.get().redComponent(), self.w.colorWell.get().greenComponent(),self.w.colorWell.get().blueComponent(),self.w.colorWell.get().alphaComponent())
+            layerGlyph.markColor = (self.w.colorWell.get().redComponent(), self.w.colorWell.get().greenComponent(), self.w.colorWell.get().blueComponent(), self.w.colorWell.get().alphaComponent())
 
             for anchor in glyphToCopy.anchors:
                 layerGlyph.appendAnchor(anchor.name, (anchor.x, anchor.y))
 
-    def glyphsToCopy(self,sender):
+    def glyphsToCopy(self, sender):
         if self.w.editText.get() == "":
             Message('no glyphs listed', title='Glyph Fax Machine', informativeText='Please list glyphs to send copies of!')
             return
-         
+
         return self.w.editText.get().split(" ")
 
     # default: dlig & ss01–ss12 off
 
     def getFontsCueCopying(self, proportionToCopyFrom, glyphsToCopy):
-        files = getFile("Select UFOs to copy glyphs between",
-                allowsMultipleSelection=True, fileTypes=["ufo"])
+        files = getFile("Select UFOs to copy glyphs between", allowsMultipleSelection=True, fileTypes=["ufo"])
 
         for path in files:
             f = OpenFont(path, showInterface=True)
-            variation = f.info.styleName.replace('Mono ','').replace('Sans ','')
+            variation = f.info.styleName.replace('Mono ', '').replace('Sans ', '')
             if variation not in self.fonts.keys():
                 self.fonts[variation] = []
 
@@ -147,13 +141,13 @@ class GlyphFax(object):
                     self.fonts[variation] = [f] + self.fonts[variation]
 
         for variation in self.fonts.keys():
-            print('\n',variation,'\n')
+            print('\n', variation, '\n')
             for glyphName in glyphsToCopy:
                 self.copyGlyph(glyphName, self.fonts[variation][0], self.fonts[variation][1])
 
         self.w.close()
 
-    ## ss01–ss12 on
+    # ss01–ss12 on
 
     def mono2SansCallback(self, sender):
         '''Copy glyphs from Mono to Sans masters.'''
@@ -161,7 +155,7 @@ class GlyphFax(object):
         glyphsToCopy = self.glyphsToCopy(sender)
 
         if glyphsToCopy is not None:
-            self.getFontsCueCopying('Mono',glyphsToCopy)
+            self.getFontsCueCopying('Mono', glyphsToCopy)
 
     def sans2monoCallback(self, sender):
         '''Copy glyphs from Sans to Mono masters.'''
@@ -169,8 +163,7 @@ class GlyphFax(object):
         glyphsToCopy = self.glyphsToCopy(sender)
 
         if glyphsToCopy is not None:
-            self.getFontsCueCopying('Sans',glyphsToCopy)
-
+            self.getFontsCueCopying('Sans', glyphsToCopy)
 
 
 if __name__ == '__main__':
