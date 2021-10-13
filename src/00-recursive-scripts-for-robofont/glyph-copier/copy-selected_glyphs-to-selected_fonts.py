@@ -61,17 +61,20 @@ class GlyphFax(object):
             overwrite600 = self.w.overwriteNormalWidthGlyphsCheckBox.get()
             overwriteNon600 = self.w.overwriteAdjustedWidthGlyphsCheckBox.get()
 
+            # print("overwrite600 ", overwrite600)
+            # print("overwriteNon600 ", overwriteNon600)
+
             # default case: overwrite is false (overwrite 600 is true, overwrite non600 is false)
-            if overwrite600 is False and overwriteNon600 is False:
+            if overwrite600 == 0 and overwriteNon600 == 0:
                 # glyphCopyName = glyphName + '.copy'
                 # fontToSendTo.newGlyph(glyphCopyName)
 
                 copyGlyph = False
 
-            elif overwrite600 is True and overwriteNon600 is True:
+            elif overwrite600 == 1 and overwriteNon600 == 1:
                 fontToSendTo[glyphCopyName].clear()
 
-            elif overwrite600 is False and overwriteNon600 is True:
+            elif overwrite600 == 0 and overwriteNon600 == 1:
                 if round(fontToSendTo[glyphCopyName].width, -1) == 600:
                     # glyphCopyName = glyphName + '.copy'
                     # fontToSendTo.newGlyph(glyphCopyName)
@@ -80,7 +83,7 @@ class GlyphFax(object):
                 else:
                     fontToSendTo[glyphCopyName].clear()
 
-            elif overwrite600 is True and overwriteNon600 is False:
+            elif overwrite600 == 1 and overwriteNon600 == 0:
                 if round(fontToSendTo[glyphCopyName].width, -1) == 600:
                     fontToSendTo[glyphCopyName].clear()
                 else:
