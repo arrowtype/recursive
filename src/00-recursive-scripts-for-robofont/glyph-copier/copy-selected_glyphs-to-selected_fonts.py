@@ -1,8 +1,8 @@
 from vanilla import FloatingWindow, Button, EditText, TextBox, CheckBox, ColorWell
 from AppKit import NSColor
 from mojo.UI import Message
-from mojo.roboFont import OpenWindow
-from vanilla.dialogs import getFile, OpenFont
+from mojo.roboFont import *
+from vanilla.dialogs import *
 
 
 class GlyphFax(object):
