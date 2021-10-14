@@ -26,20 +26,10 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 # zerosuperiorslash.afrc = zeroinferior.afrc
 # greater_greater_hyphen.code = hyphen_less_less.code
 txt = '''\
-zero.tnum = zero
-one.tnum = one
-two.tnum = two
-three.tnum = three
-four.tnum = four
-five.tnum = five
-six.tnum = six
-seven.tnum = seven
-eight.tnum = eight
-nine.tnum = nine
-zero.sans_tnum = zero.sans
-one.sans_tnum = one.sans
-six.ss01_tnum = six.ss01
-nine.ss01_tnum = nine.ss01
+zero.tnum = zero        
+zero.sans_tnum = zero.sans   
+zero.slash_tnum = zero.slash  
+zero.dotted_tnum = zero.dotted 
 '''
 
 # recipeFile = "/Users/stephennixon/type-repos/recursive/src/00-recursive-scripts-for-robofont/diacritics-and-glyph_construction-recipes/diacritic-recipes-for-recursive-generated-with_alts.txt"
