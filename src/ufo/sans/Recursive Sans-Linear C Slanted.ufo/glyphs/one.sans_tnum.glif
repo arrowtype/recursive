@@ -1,13 +1,57 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <glyph name="one.sans_tnum" format="2">
-  <advance width="400"/>
+  <advance width="600"/>
   <outline>
-    <component base="one.sans"/>
+    <contour>
+      <point x="381" y="0" type="curve"/>
+      <point x="387" y="24"/>
+      <point x="393" y="48"/>
+      <point x="399" y="72" type="curve" smooth="yes"/>
+      <point x="403" y="89"/>
+      <point x="551" y="679"/>
+      <point x="556" y="699" type="curve" smooth="yes"/>
+      <point x="558" y="706"/>
+      <point x="555" y="710"/>
+      <point x="548" y="710" type="curve" smooth="yes"/>
+      <point x="535" y="710"/>
+      <point x="360" y="710"/>
+      <point x="326" y="710" type="curve"/>
+      <point x="303" y="699"/>
+      <point x="271" y="683"/>
+      <point x="237" y="666" type="curve" smooth="yes"/>
+      <point x="202" y="650"/>
+      <point x="165" y="632"/>
+      <point x="138" y="619" type="curve"/>
+      <point x="75" y="376" type="line" smooth="yes"/>
+      <point x="73" y="368"/>
+      <point x="75" y="359"/>
+      <point x="87" y="359" type="curve" smooth="yes"/>
+      <point x="102" y="359"/>
+      <point x="117" y="365"/>
+      <point x="148" y="392" type="curve" smooth="yes"/>
+      <point x="187" y="425"/>
+      <point x="223" y="465"/>
+      <point x="293" y="557" type="curve"/>
+      <point x="252" y="535" type="line"/>
+      <point x="326" y="535" type="line"/>
+      <point x="304" y="565" type="line"/>
+      <point x="274" y="448"/>
+      <point x="211" y="193"/>
+      <point x="204" y="164" type="curve" smooth="yes"/>
+      <point x="197" y="135"/>
+      <point x="169" y="22"/>
+      <point x="166" y="11" type="curve" smooth="yes"/>
+      <point x="164" y="4"/>
+      <point x="167" y="0"/>
+      <point x="174" y="0" type="curve" smooth="yes"/>
+      <point x="243" y="0"/>
+      <point x="296" y="0"/>
+    </contour>
   </outline>
   <lib>
     <dict>
       <key>public.markColor</key>
-      <string>0,0,1,0.5</string>
+      <string>1,1,0,0.5</string>
     </dict>
   </lib>
 </glyph>
