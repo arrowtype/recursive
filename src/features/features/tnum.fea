@@ -1,0 +1,14 @@
+feature tnum {
+	sub one by one.tnum;
+	sub one.pnum by one.tnum;
+    sub zero by zero.tnum;
+    sub one by one.tnum;
+    sub two by two.tnum;
+    sub three by three.tnum;
+    sub four by four.tnum;
+    sub five by five.tnum;
+    sub six by six.tnum;
+    sub seven by seven.tnum;
+    sub eight by eight.tnum;
+    sub nine by nine.tnum;
+} tnum;

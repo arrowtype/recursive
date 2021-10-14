@@ -96,9 +96,11 @@ feature ss09 {
         name 1 "Simplified Six & Nine";
     };
     sub six by six.ss01;
+    sub six.tnum by six.ss01_tnum;
     sub sixsuperior by sixsuperior.ss01;
     sub sixinferior by sixinferior.ss01;
     sub nine by nine.ss01;
+    sub nine.tnum by nine.ss01_tnum;
     sub ninesuperior by ninesuperior.ss01;
     sub nineinferior by nineinferior.ss01;
 } ss09;
@@ -123,6 +125,7 @@ feature ss11 {
     };
     sub one by one.simple;
     sub one.sans by one.simple;
+    sub one.tnum by one.sans_tnum;
 } ss11;
 
 feature ss12 {
