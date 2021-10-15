@@ -310,7 +310,7 @@ If you want to build all of the sources, fonts, and WOFF2 versions of all of the
 
 ```bash
 # activate venv, install dependencies, cd mastering
-python build.py --all --version 1.079 # (replace version number)
+python build.py --all --version 1.080 # (replace version number)
 ```
 
 **Get notifications (Mac only)**
@@ -319,7 +319,7 @@ Add option `--pync` (`-p` for short) to the script call to get Mac notifications
 
 ```bash
 # activate venv, install dependencies, cd mastering
-python build.py --all --pync --version 1.079 # (replace version number)
+python build.py --all --pync --version 1.080 # (replace version number)
 ```
 
 ### Making a GitHub release
