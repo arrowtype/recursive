@@ -25,9 +25,7 @@ sansDir = "src/ufo/sans"
 numbers = "zero two three four five six seven eight nine six.ss01 nine.ss01 zero.slash zero.dotted zero.sans".split(" ")
 
 # get source UFO paths
-# ufoPaths = [os.path.join(monoDir, path) for path in os.listdir(monoDir) if ".ufo" in path] + [os.path.join(sansDir, path) for path in os.listdir(sansDir) if ".ufo" in path]
-
-ufoPaths = ["src/ufo/sans/Recursive Sans-Casual B.ufo"]
+ufoPaths = [os.path.join(monoDir, path) for path in os.listdir(monoDir) if ".ufo" in path] + [os.path.join(sansDir, path) for path in os.listdir(sansDir) if ".ufo" in path]
 
 for fontPath in ufoPaths:
     print(fontPath)
