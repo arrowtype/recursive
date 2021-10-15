@@ -65,9 +65,9 @@
 
 # zero and ss20
 @dfltZero = [zero            zero.tnum             zerosuperior             zeroinferior             zeroinferior.afrc           zerosuperior.afrc           ];
-@sansZero = [zero.sans       zero.tnum_sans        zerosuperior.sans        zeroinferior.sans        zeroinferiorsans.afrc       zerosuperiorsans.afrc       ];
-@slshZero = [zero.slash      zero.tnum_slash       zerosuperior.slash       zeroinferior.slash       zeroinferiorslash.afrc      zerosuperiorslash.afrc      ];
-@dttdZero = [zero.dotted     zero.tnum_dotted      zerosuperior.dotted      zeroinferior.dotted      zeroinferiordotted.afrc     zerosuperiordotted.afrc     ];
+@sansZero = [zero.sans       zero.sans_tnum        zerosuperior.sans        zeroinferior.sans        zeroinferiorsans.afrc       zerosuperiorsans.afrc       ];
+@slshZero = [zero.slash      zero.slash_tnum       zerosuperior.slash       zeroinferior.slash       zeroinferiorslash.afrc      zerosuperiorslash.afrc      ];
+@dttdZero = [zero.dotted     zero.dotted_tnum      zerosuperior.dotted      zeroinferior.dotted      zeroinferiordotted.afrc     zerosuperiordotted.afrc     ];
 
 lookup FractionBar {
     ignore sub slash @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt @numbers_dflt slash';

@@ -1,6 +1,7 @@
 feature tnum {
 	sub one by one.tnum;
-	sub one.pnum by one.tnum;
+	sub one.sans by one.tnum;
+	sub one.simple by one.tnum;
     sub zero by zero.tnum;
     sub one by one.tnum;
     sub two by two.tnum;
