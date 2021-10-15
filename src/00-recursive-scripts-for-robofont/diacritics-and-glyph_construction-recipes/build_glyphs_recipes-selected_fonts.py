@@ -26,7 +26,8 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 # zerosuperiorslash.afrc = zeroinferior.afrc
 # greater_greater_hyphen.code = hyphen_less_less.code
 txt = '''\
-Beta = B | 0392
+onehalf = onesuperior  &\ fraction &\ twoinferior 
+onehalf.afrc = onesuperior.afrc &\ fraction  &\ twoinferior.afrc
 '''
 
 # recipeFile = "/Users/stephennixon/type-repos/recursive/src/00-recursive-scripts-for-robofont/diacritics-and-glyph_construction-recipes/diacritic-recipes-for-recursive-generated-with_alts.txt"

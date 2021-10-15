@@ -288,7 +288,7 @@ To build the variable font, run:
 
 ```bash
 # activate venv, install dependencies, cd mastering
-version=1.079 # (replace version number)
+version=1.080 # (replace version number)
 python build.py --varfiles --version $version
 python build.py --variable --version $version
 ```
@@ -299,7 +299,7 @@ To build all the static fonts, run:
 
 ```bash
 # activate venv, install dependencies, cd mastering 
-version=1.079 # (replace version number)
+version=1.080 # (replace version number)
 python build.py --statfiles --version $version
 python build.py --static --version $version
 ```

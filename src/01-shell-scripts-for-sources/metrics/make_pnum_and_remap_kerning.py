@@ -22,7 +22,9 @@ monoDir = "src/ufo/mono"
 sansDir = "src/ufo/sans"
 
 # /one is intentionally excluded (one.sans already exists)
-numbers = "zero two three four five six seven eight nine six.ss01 nine.ss01 zero.slash zero.dotted zero.sans".split(" ")
+# numbers = "zero two three four five six seven eight nine six.ss01 nine.ss01 zero.slash zero.dotted zero.sans".split(" ")
+numbers = "one".split(" ")
+
 
 # get source UFO paths
 ufoPaths = [os.path.join(monoDir, path) for path in os.listdir(monoDir) if ".ufo" in path] + [os.path.join(sansDir, path) for path in os.listdir(sansDir) if ".ufo" in path]
