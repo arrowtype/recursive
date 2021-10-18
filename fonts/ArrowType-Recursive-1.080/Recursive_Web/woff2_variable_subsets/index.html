@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About these subsets</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <style>
+        body {
+            font-family: "RecVar";
+            max-width: 64rem;
+            margin: 2rem auto;
+        }
+        p {
+            font-size: 32px;
+            line-height: 2;
+            font-variation-settings:"MONO" 1;
+        }
+        .intro {
+            margin: 2rem 0 4rem 0;
+        }
+        .intro p, .intro blockquote, .intro li {
+            font-size: 16px;
+            line-height: 1.5;
+            max-width: 80ch;
+            font-variation-settings:"MONO" 0;
+            margin-bottom: 1rem;
+        }
+        blockquote{
+            border-left: 1px black solid;
+            margin: 0;
+            padding-left: 1rem;
+        }
+        code {
+            font-family: "RecVar";
+            font-variation-settings:"MONO" 1;
+            background-color: #eee;
+            padding: 0 0.05em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Example HTML for Recursive Variable Subsets</h1>
+
+    <div class="intro">
+        <p>
+            The subset fonts in this example use <a href="">CSS unicode-range</a> to load progressively, as needed. To quote MDN:
+        </p>
+        <blockquote>
+            The unicode-range CSS descriptor sets the specific range of characters to be used from a font defined by @font-face and made available for use on the current page. If the page doesn't use any character in this range, the font is not downloaded; if it uses at least one, the whole font is downloaded.
+        </blockquote>
+        <p>
+            See Appendix below for information on further font optimization strategies.
+        </p>
+    </div>
+
+    <h2>subset_range_english_basic</h2>
+    <p>
+        A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 _ - ( ) [ ] { } # % \' " ‘ ’ “ ” * . , : ; ! ? / \ | @ & • + = < > ← ↑ → ↓ $ ^ ~ ©
+    </p>
+    <h2>subset_range_latin_1_punc</h2>
+    <p>
+        ª º ¹ ² ³ ¼ ½ ¾ « » ¡ ¿ ¦ § ¶ · ± ¬ ↔ ¢ £ ¤ ¥ ´ ¯ ¨ ¸ ® ° ↕ ↖ ↗ ↘ ↙ µ
+    </p>
+    <h2>subset_range_latin_ext</h2>
+    <p>
+        Ā Ă Ą Ć Ĉ Ċ Č Ď Ē Ĕ Ė Ę Ě Ĝ Ğ Ġ Ģ Ĥ Ĩ Ī Ĭ Į İ Ĵ Ķ Ĺ Ļ Ľ Ń Ņ Ň Ō Ŏ Ő Ŕ Ŗ Ř Ś Ŝ Ş Š Ţ Ť Ũ Ū Ŭ Ů Ű Ų Ŵ Ŷ Ÿ Ź Ż Ž Đ Ħ Ĳ Ŀ Ł Ŋ Œ Ŧ ā ă ą ć ĉ ċ č ď ē ĕ ė ę ě ĝ ğ ġ ģ ĥ ĩ ī ĭ į ĵ ķ ĺ ļ ľ ń ņ ň ō ŏ ő ŕ ŗ ř ś ŝ ş š ţ ť ũ ū ŭ ů ű ų ŵ ŷ ź ż ž đ ħ ı ĳ ĸ ŀ ł ŉ ŋ œ ŧ
+    </p>
+    <h2>subset_range_vietnamese</h2>
+    <p>
+        Ă Ạ Ả Ấ Ầ Ẩ Ẫ Ậ Ắ Ằ Ẳ Ẵ Ặ Ẹ Ẻ Ẽ Ế Ề Ể Ễ Ệ Ĩ Ỉ Ị Ơ Ọ Ỏ Ố Ồ Ổ Ỗ Ộ Ớ Ờ Ở Ỡ Ợ Ũ Ư Ụ Ủ Ứ Ừ Ử Ữ Ự Ỳ Ỵ Ỷ Ỹ Đ ă ạ ả ấ ầ ẩ ẫ ậ ắ ằ ẳ ẵ ặ ẹ ẻ ẽ ế ề ể ễ ệ ĩ ỉ ị ơ ọ ỏ ố ồ ổ ỗ ộ ớ ờ ở ỡ ợ ũ ư ụ ủ ứ ừ ử ữ ự ỳ ỵ ỷ ỹ đ ₫ 
+    </p>
+    <h2>subset_range_remaining</h2>
+    <p>
+        Ǻ Ȁ Ȃ Ḉ Ḍ Ḏ Ȅ Ȇ Ḕ Ḗ Ḝ Ǧ Ḡ Ḥ Ḫ Ȉ Ȋ Ḯ Ḷ Ḻ Ṃ Ṅ Ṇ Ṉ Ǫ Ȍ Ȏ Ȫ Ȭ Ȱ Ṍ Ṏ Ṑ Ṓ Ȑ Ȓ Ṛ Ṟ Ș Ṡ Ṣ Ṥ Ṧ Ṩ Ț Ṭ Ṯ Ȕ Ȗ Ṹ Ṻ Ẁ Ẃ Ẅ Ȳ Ẏ Ẓ Ǽ Ǿ Ə Ɲ Ǆ Ǉ Ǌ Ǳ ẞ Ω ǻ ȁ ȃ ḉ ḍ ḏ ȅ ȇ ḕ ḗ ḝ ǧ ḡ ḥ ḫ ȉ ȋ ḯ ḷ ḻ ṃ ṅ ṇ ṉ ǫ ȍ ȏ ȫ ȭ ȱ ṍ ṏ ṑ ṓ ȑ ȓ ṛ ṟ ș ṡ ṣ ṥ ṧ ṩ ț ṭ ṯ ẗ ȕ ȗ ṹ ṻ ẁ ẃ ẅ ȳ ẏ ẓ ǽ ǿ ǆ ǉ ǌ ǳ ȷ ə ɲ π ǅ ǈ ǋ ǲ ʹ ʺ ʻ ʼ ʾ ʿ ˈ ˉ ˊ ˋ ˌ ̀ ́ ̂ ̃ ̄ ̆ ̇ ̈ ̉ ̊ ̋ ̌ ̏ ̑ ̒ ̕ ̛ ̣ ̤ ̥ ̦ ̧ ̨ ̮ ̱ ̵ ⁰ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ₀ ₁ ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉ ⅓ ⅔ ⅛ ⅜ ⅝ ⅞ ‐ ‒ – — ― ⟨ ⟩ ‰ ‚ „ ‹ › † ‡ … ⁄ ℓ № ′ ″ ‾ − ≤ ≥ ≈ ≠ ⁒ ∂ ∅ ∆ ∏ ∑ ∕ ∙ √ ∞ ∫ ≡ ▷ ◁ ฿ ₡ ₦ ₨ ₩ ₪ € ƒ ₭ ₱ ₲ ₴ ₵ ₸ ₹ ₺ ₼ ₽ ₿ ˝ ˆ ˇ ˘ ˜ ˙ ˚ ˛ ™ ℮ ■ □ ▲ △ ▶ ▼ ▽ ◀ ◆ ◇ ◊ ☐ ☑ ♡ ♥ ✓ 
+    </p>
+
+    <div class="intro">
+        <h2>Appendix</h2>
+        <p>There are ways to further optimize Recursive:</p>
+        <ol>
+            <li>If you only need part of the stylistic range (e.g. Monospace <code>0</code>, Casual <code>1</code>, Weight <code>300-800</code>), variable fonts can be “instanced” or “partially instanced” with the <a href="https://fonttools.readthedocs.io/en/latest/varLib/instancer.html" rel="nofollow">FontTools Instancer</a>. You can do it locally on the command line or in a Python script. Alternatively, the <a href="https://css-tricks.com/getting-the-most-out-of-variable-fonts-on-google-fonts/" rel="nofollow">Google Fonts API allows you to do this by requesting a special URL</a>, and the “Get Recursive” section of the <a href="https://recursive.design/" rel="nofollow">Recursive Minisite</a> has a UI to help construct these URLs.</li>
+            <li>You can tailor subsets and CSS <code>unicode-range</code> to your specific use case. E.g. if you are specifically writing in only English &amp; Spanish, you could make a subset for this, using the FontTools Subsetter or by adapting <a href="https://github.com/arrowtype/recursive/blob/4d6fb032b722968cdc12b7d6b7da1994e10e4f70/src/build-scripts/make-release/make-variable-woff2s_and_subsets.sh">my Recursive subsetting script</a> if you want.</li>
+            <li>You can combine instancing and subsetting. For instance, if you want a particular font style for just a website’s logo, you could make a font file that just includes characters in the single style (or style range) you need for that, and load it separately. For example, the website <a href="https://sia.codes/" rel="nofollow">https://sia.codes/</a> does something like this for the name <code>Sia</code> on the homepage.</li>
+        </ol>
+        <p>If you want to optimize these fonts but don’t want to use fonts from Google Fonts and also don’t want to dig into code to optimize them on your own, please consider reaching out to <a href="https://arrowtype.com">Arrow Type</a> to commission custom subsetting & instancing.</p>
+    </div>
+</body>
+</html>
