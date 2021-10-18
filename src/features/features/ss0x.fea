@@ -123,7 +123,7 @@ feature ss11 {
         # Apple, roman, unspecified
         name 1 "Simplified One";
     };
-    sub one by one.sans.tnum;
+    sub one by one.sans_tnum;
     sub one.pnum by one.sans;
     sub one.sans by one.simple;
 } ss11;
