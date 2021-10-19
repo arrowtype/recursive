@@ -60,7 +60,7 @@
 			<point x="788" y="-47"/>
 			<point x="855" y="-8" type="curve"/>
 			<point x="859" y="-8" type="line"/>
-			<point x="859" y="-13" type="line"/>
+			<point x="859" y="-13" type="line" smooth="yes"/>
 			<point x="859" y="-104"/>
 			<point x="738" y="-181"/>
 			<point x="603" y="-181" type="curve" smooth="yes"/>
@@ -107,18 +107,4 @@
 			<point x="511" y="39"/>
 		</contour>
 	</outline>
-	<lib>
-		<dict>
-			<key>com.rafalbuchner.mirroringDrawingLocal</key>
-			<dict>
-				<key>mirroringOptions</key>
-				<integer>3</integer>
-				<key>offset</key>
-				<array>
-					<integer>0</integer>
-					<integer>0</integer>
-				</array>
-			</dict>
-		</dict>
-	</lib>
 </glyph>

@@ -26,7 +26,7 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 # zerosuperiorslash.afrc = zeroinferior.afrc
 # greater_greater_hyphen.code = hyphen_less_less.code
 txt = '''\
-Beta = B | 0392
+minus.superior = minus ^ 400
 '''
 
 # recipeFile = "/Users/stephennixon/type-repos/recursive/src/00-recursive-scripts-for-robofont/diacritics-and-glyph_construction-recipes/diacritic-recipes-for-recursive-generated-with_alts.txt"
@@ -84,6 +84,11 @@ for file in files:
         # if no unicode was given, try to set it automatically
         if glyph.unicode is None:
             glyph.autoUnicodes()
+
+        # SPECIFIC TO RATIO GLYPH
+        if glyph.name == "minus.superior":
+            for component in glyph.components:
+                component.transformation = (0.5833373454702526, 0, 0, 0.5833373454702521, 25, 394)
 
     if skipInterface:
         font.save()

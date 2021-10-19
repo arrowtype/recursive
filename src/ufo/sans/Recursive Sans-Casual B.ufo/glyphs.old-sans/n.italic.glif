@@ -57,13 +57,13 @@
 			<point x="569" y="162" type="line"/>
 			<point x="556" y="148"/>
 			<point x="541" y="143"/>
-			<point x="523" y="142" type="curve" smooth="yes"/>
+			<point x="523" y="142" type="curve"/>
 			<point x="522" y="142"/>
 			<point x="520" y="142"/>
 			<point x="519" y="142" type="curve"/>
 			<point x="519" y="147"/>
 			<point x="519" y="153"/>
-			<point x="519" y="159" type="curve"/>
+			<point x="519" y="159" type="curve" smooth="yes"/>
 			<point x="519" y="237.3333333333"/>
 			<point x="519" y="315.6666666667"/>
 			<point x="519" y="394" type="curve" smooth="yes"/>
@@ -77,7 +77,4 @@
 			<point x="231" y="379" type="line"/>
 		</contour>
 	</outline>
-	<anchor name="top" x="300" y="551"/>
-	<anchor name="bottom" x="303" y="-1"/>
-	<anchor name="caronslovak" x="98" y="711"/>
 </glyph>

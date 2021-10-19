@@ -1,3 +1,12 @@
 feature pnum {
-	sub one by one.sans;
+	sub one by one.sans; # intentionally one.sans rather than one.pnum, even though a tabular-ish one.pnum also exists in the fonts
+	sub zero by zero.pnum;
+	sub two by two.pnum;
+	sub three by three.pnum;
+	sub four by four.pnum;
+	sub five by five.pnum;
+	sub six by six.pnum;
+	sub seven by seven.pnum;
+	sub eight by eight.pnum;
+	sub nine by nine.pnum;
 } pnum;
