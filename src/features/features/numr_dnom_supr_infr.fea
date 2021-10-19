@@ -12,6 +12,7 @@ feature sups {
 	# superiors
 	sub @numbers_dflt by @numbers_sups;
 	sub minus by minus.superior;
+	sub hyphen by minus.superior;
 } sups;
 
 feature sinf {
