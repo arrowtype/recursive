@@ -115,6 +115,9 @@ class GlyphFax(object):
             for anchor in glyphToCopy.anchors:
                 layerGlyph.appendAnchor(anchor.name, (anchor.x, anchor.y))
 
+            # copy unicodes
+            layerGlyph.unicodes = glyphToCopy.unicodes
+
     def glyphsToCopy(self, sender):
         if self.w.editText.get() == "":
             Message('no glyphs listed', title='Glyph Fax Machine', informativeText='Please list glyphs to send copies of!')

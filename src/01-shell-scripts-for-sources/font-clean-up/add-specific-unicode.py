@@ -15,6 +15,7 @@ ufoPaths = [os.path.join(monoDir, path) for path in os.listdir(monoDir) if ".ufo
 # setting as integers in tuple format, because I know this already
 unicodesToSet = {
     "beta": (946,),
+    "minus.superior": (8315,),
 }
 
 for fontPath in ufoPaths:
