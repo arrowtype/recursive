@@ -11,15 +11,15 @@ for filpath in files:
     f = OpenFont(filpath, showInterface=False)
 
     g = f["minus.superior"]
-    g.width = 600
+    g.width = 400
     
     for c in g:
         for s in c:
             for p in s:
-                if p.x < 300:
-                    p.x += 60
-                if p.x > 300:
-                    p.x -= 60
+                if p.x > 250:
+                    p.x -= 200
+                # if p.x > 300:
+                #     p.x -= 60
 
     g.update()
 
