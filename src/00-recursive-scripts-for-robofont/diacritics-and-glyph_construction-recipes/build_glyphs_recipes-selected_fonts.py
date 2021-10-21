@@ -6,27 +6,18 @@ from vanilla.dialogs import *
 from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstructionBuilder
 
 # define glyph constructions
-# e.g. equal_equal.code = equal & equal
-# i=dotlessi+dotaccentcomb@top
-# i.mono=dotlessi.mono+dotaccentcomb@top
-# i.italic=dotlessi.italic+dotaccentcomb@top
-# j=dotlessj+dotaccentcomb@top
-# j.italic=dotlessj.italic+dotaccentcomb@top
-# iogonek = dotlessi + ogonekcomb@ogonek + dotaccentcomb@dotlessi:top
-# iogonek.mono = dotlessi.mono + ogonekcomb@ogonek + dotaccentcomb@dotlessi.mono:top
-# iogonek.italic = dotlessi.italic + ogonekcomb@ogonek + dotaccentcomb@dotlessi.italic:top
-# txt = '''\
-# apple=.notdef|F8FF
-# '''
-
-
-# zerosuperior.slash = zerosuperior
-# zeroinferior.slash = zeroinferior
-# zeroinferiorslash.afrc = zerosuperior.afrc
-# zerosuperiorslash.afrc = zeroinferior.afrc
-# greater_greater_hyphen.code = hyphen_less_less.code
 txt = '''\
-minus.superior = minus ^ 400
+?Gamma = T | 0393
+?Delta = A | 0394
+?Theta = O + hyphen@center | 0398
+?Lambda = A | 039b
+?Pi = H | 03a0
+?Phi = O + bar@center | 03a6
+?gamma = v + bar@center | 03b3
+?delta = o + s@top | 03b4
+?theta = zero + hyphen@center | 03b8
+?lambda = l + v | 03bb
+?phi = o + bar@center | 03c6
 '''
 
 # recipeFile = "/Users/stephennixon/type-repos/recursive/src/00-recursive-scripts-for-robofont/diacritics-and-glyph_construction-recipes/diacritic-recipes-for-recursive-generated-with_alts.txt"
@@ -79,16 +70,16 @@ for file in files:
         glyph.name = constructionGlyph.name
         glyph.unicode = constructionGlyph.unicode
         glyph.width = constructionGlyph.width
-        glyph.markColor = 0, 0, 1, 0.5
+        glyph.markColor = 1, 0.75, 0, 0.5
 
         # if no unicode was given, try to set it automatically
         if glyph.unicode is None:
             glyph.autoUnicodes()
 
-        # SPECIFIC TO RATIO GLYPH
-        if glyph.name == "minus.superior":
-            for component in glyph.components:
-                component.transformation = (0.5833373454702526, 0, 0, 0.5833373454702521, 25, 394)
+        # # if you have to apply a transformation to a specific glyph
+        # if glyph.name == "minus.superior":
+        #     for component in glyph.components:
+        #         component.transformation = (0.5833373454702526, 0, 0, 0.5833373454702521, 25, 394)
 
     if skipInterface:
         font.save()
