@@ -8,7 +8,7 @@ from glyphConstruction import ParseGlyphConstructionListFromString, GlyphConstru
 # define glyph constructions
 txt = '''\
 ?Gamma = T | 0393
-?Delta = A | 0394
+?Delta = Increment | 0394
 ?Theta = O + hyphen@center | 0398
 ?Lambda = A | 039b
 ?Pi = H | 03a0
