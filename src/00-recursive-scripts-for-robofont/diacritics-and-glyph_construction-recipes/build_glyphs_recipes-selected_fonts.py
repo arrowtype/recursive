@@ -15,7 +15,7 @@ txt = '''\
 ?Phi = O + bar@center | 03a6
 ?gamma = v + bar@center | 03b3
 ?delta = o + s@top | 03b4
-?theta = zero + hyphen@center | 03b8
+?theta = zero.sans + hyphen@center | 03b8
 ?lambda = l + v | 03bb
 ?phi = o + bar@center | 03c6
 '''

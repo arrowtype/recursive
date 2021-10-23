@@ -3,8 +3,53 @@
 	<unicode hex="03B3"/>
 	<advance width="600"/>
 	<outline>
-		<component base="v"/>
-		<component base="bar" xOffset="2.1156132145" yOffset="-41.5"/>
+		<contour>
+			<point x="90" y="530" type="curve"/>
+			<point x="84" y="530"/>
+			<point x="79" y="529"/>
+			<point x="76" y="528" type="curve"/>
+			<point x="100.2505535189" y="225.9703789011"/>
+			<point x="160" y="84"/>
+			<point x="278" y="-9" type="curve"/>
+			<point x="273.2443415736" y="-47.0452674114"/>
+			<point x="269" y="-82.6440677966"/>
+			<point x="269" y="-119" type="curve" smooth="yes"/>
+			<point x="269" y="-184.2105263158"/>
+			<point x="287.2222222222" y="-203"/>
+			<point x="310" y="-203" type="curve" smooth="yes"/>
+			<point x="316" y="-203"/>
+			<point x="321" y="-202"/>
+			<point x="327" y="-201" type="curve"/>
+			<point x="333.1811990771" y="-168.3279477352"/>
+			<point x="335" y="-136.7064220183"/>
+			<point x="335" y="-105" type="curve" smooth="yes"/>
+			<point x="335" y="-71.5909090909"/>
+			<point x="331.6012999021" y="-41.5097492656"/>
+			<point x="327" y="-7" type="curve"/>
+			<point x="444" y="83"/>
+			<point x="526" y="217.6893939394"/>
+			<point x="526" y="392" type="curve" smooth="yes"/>
+			<point x="526" y="396" type="line" smooth="yes"/>
+			<point x="526" y="494"/>
+			<point x="506" y="530"/>
+			<point x="468" y="530" type="curve" smooth="yes"/>
+			<point x="459" y="530"/>
+			<point x="451" y="528"/>
+			<point x="444" y="526" type="curve"/>
+			<point x="444" y="521" type="line"/>
+			<point x="465" y="486"/>
+			<point x="473" y="451"/>
+			<point x="473" y="394" type="curve" smooth="yes"/>
+			<point x="473" y="235"/>
+			<point x="422.2639961019" y="138.3072904489"/>
+			<point x="304" y="27" type="curve"/>
+			<point x="297" y="27" type="line"/>
+			<point x="185.2837374226" y="130.6646400493"/>
+			<point x="146.0011737429" y="260.9840892629"/>
+			<point x="128" y="505" type="curve" smooth="yes"/>
+			<point x="127" y="524"/>
+			<point x="113" y="530"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>
