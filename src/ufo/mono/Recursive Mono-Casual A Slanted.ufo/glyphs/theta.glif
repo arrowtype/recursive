@@ -3,8 +3,60 @@
 	<unicode hex="03B8"/>
 	<advance width="600"/>
 	<outline>
-		<component base="zero"/>
-		<component base="hyphen" xOffset="12.0396763266" yOffset="50"/>
+		<contour>
+			<point x="137" y="402" type="line"/>
+			<point x="137" y="399"/>
+			<point x="137" y="395"/>
+			<point x="137" y="392" type="curve" smooth="yes"/>
+			<point x="137" y="364"/>
+			<point x="153" y="352"/>
+			<point x="190" y="352" type="curve"/>
+			<point x="517" y="352" type="line"/>
+			<point x="517" y="355"/>
+			<point x="517" y="359"/>
+			<point x="517" y="362" type="curve" smooth="yes"/>
+			<point x="517" y="390"/>
+			<point x="501" y="402"/>
+			<point x="464" y="402" type="curve" smooth="yes"/>
+		</contour>
+		<contour>
+			<point x="410" y="760" type="curve" smooth="yes"/>
+			<point x="277" y="760"/>
+			<point x="170" y="648"/>
+			<point x="103" y="386" type="curve" smooth="yes"/>
+			<point x="100" y="373" type="line" smooth="yes"/>
+			<point x="36" y="126"/>
+			<point x="107" y="-10"/>
+			<point x="242" y="-10" type="curve" smooth="yes"/>
+			<point x="361" y="-10"/>
+			<point x="477" y="81"/>
+			<point x="543" y="343" type="curve" smooth="yes"/>
+			<point x="546" y="355" type="line" smooth="yes"/>
+			<point x="610" y="612"/>
+			<point x="544" y="760"/>
+		</contour>
+		<contour>
+			<point x="409" y="716" type="curve" smooth="yes"/>
+			<point x="441" y="716"/>
+			<point x="464.364914535" y="707.42339031"/>
+			<point x="486" y="693" type="curve"/>
+			<point x="534" y="638"/>
+			<point x="535" y="524"/>
+			<point x="500" y="367" type="curve" smooth="yes"/>
+			<point x="498" y="358" type="line" smooth="yes"/>
+			<point x="453.0499431359" y="155.7247441115"/>
+			<point x="364" y="38"/>
+			<point x="242" y="38" type="curve" smooth="yes"/>
+			<point x="209" y="38"/>
+			<point x="179.6903078696" y="47.3823561167"/>
+			<point x="160" y="65" type="curve"/>
+			<point x="119" y="121"/>
+			<point x="112" y="222"/>
+			<point x="150" y="368" type="curve" smooth="yes"/>
+			<point x="152" y="376" type="line" smooth="yes"/>
+			<point x="206.1835984983" y="592.7343939933"/>
+			<point x="291" y="716"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>
