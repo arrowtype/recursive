@@ -3,8 +3,23 @@
 	<unicode hex="0398"/>
 	<advance width="600"/>
 	<outline>
+		<contour>
+			<point x="284" y="425" type="line"/>
+			<point x="273.8204391711" y="406.3374718137"/>
+			<point x="266" y="386"/>
+			<point x="259" y="360" type="curve" smooth="yes"/>
+			<point x="244" y="303"/>
+			<point x="260" y="275"/>
+			<point x="313" y="275" type="curve" smooth="yes"/>
+			<point x="379" y="275" type="line"/>
+			<point x="387.4760575173" y="292.7997207864"/>
+			<point x="395" y="312"/>
+			<point x="400" y="328" type="curve" smooth="yes"/>
+			<point x="419" y="393"/>
+			<point x="398" y="425"/>
+			<point x="353" y="425" type="curve" smooth="yes"/>
+		</contour>
 		<component base="O"/>
-		<component base="hyphen" xOffset="11.0895990727" yOffset="51"/>
 	</outline>
 	<lib>
 		<dict>
