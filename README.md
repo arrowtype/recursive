@@ -288,7 +288,7 @@ To build the variable font, run:
 
 ```bash
 # activate venv, install dependencies, cd mastering
-version=1.083 # (replace version number)
+version=1.084 # (replace version number)
 python build.py --varfiles --version $version
 python build.py --variable --version $version
 ```
@@ -299,7 +299,7 @@ To build all the static fonts, run:
 
 ```bash
 # activate venv, install dependencies, cd mastering 
-version=1.083 # (replace version number)
+version=1.084 # (replace version number)
 python build.py --statfiles --version $version
 python build.py --static --version $version
 ```
@@ -310,7 +310,7 @@ If you want to build all of the sources, fonts, and WOFF2 versions of all of the
 
 ```bash
 # activate venv, install dependencies, cd mastering
-python build.py --all --version 1.083 # (replace version number)
+python build.py --all --version 1.084 # (replace version number)
 ```
 
 **Get notifications (Mac only)**
@@ -319,7 +319,7 @@ Add option `--pync` (`-p` for short) to the script call to get Mac notifications
 
 ```bash
 # activate venv, install dependencies, cd mastering
-python build.py --all --pync --version 1.083 # (replace version number)
+python build.py --all --pync --version 1.084 # (replace version number)
 ```
 
 ### Making a GitHub release
