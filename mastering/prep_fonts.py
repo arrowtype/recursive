@@ -402,6 +402,8 @@ def setProductionNames(fonts):
                 'slashcomb': 'uni0337',
                 'tildecomb': 'uni0303',
                 'mu.math': 'uni00B5',
+                "Delta": "uni0394",
+                "mu": "uni03BC",
                 # the following abbreviations are to keep code ligature glyph names under 31 characters,
                 # per FontBakery check: com.google.fonts/check/valid_glyphnames
                 # (generated with src/01-shell-scripts-for-sources/font-info/shorten-long-glyph-names.py)
@@ -449,7 +451,7 @@ def setProductionNames(fonts):
                 'hyphen_space_brktlf_x_brktright.code': 'hyphen_space_brktlf_x_brktrt.code',
                 'hyphen_space_brktlf_x_brktrt.code': 'hyphen_spc_brktlf_x_brktrt.code',
                 'parenleft_parenleft.code': 'parenlf_parenlf.code',
-                'ampersand_ampersand.code': 'and_and.code'
+                'ampersand_ampersand.code': 'and_and.code',
                }
     names = []
 

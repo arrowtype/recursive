@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="Theta" format="2">
+	<unicode hex="0398"/>
+	<advance width="650"/>
+	<outline>
+		<contour>
+			<point x="293" y="422" type="line"/>
+			<point x="282" y="377"/>
+			<point x="271" y="336"/>
+			<point x="260" y="290" type="curve" smooth="yes"/>
+			<point x="258" y="283"/>
+			<point x="261" y="279"/>
+			<point x="268" y="279" type="curve" smooth="yes"/>
+			<point x="397" y="279" type="line"/>
+			<point x="409" y="325"/>
+			<point x="419" y="365"/>
+			<point x="430" y="411" type="curve" smooth="yes"/>
+			<point x="432" y="418"/>
+			<point x="429" y="422"/>
+			<point x="422" y="422" type="curve"/>
+		</contour>
+		<component base="O"/>
+	</outline>
+	<lib>
+		<dict>
+			<key>public.markColor</key>
+			<string>1,0.5,0,1</string>
+		</dict>
+	</lib>
+</glyph>

@@ -1,6 +1,7 @@
+#!/bin/bash
+
 # run on fonts build folder, e.g.
 # src/build-scripts/make-release/00-prep-release.sh fonts_1.042
-
 
 # ---------------------------------------------
 # CONFIGURATION
@@ -120,17 +121,14 @@ cp $(dirname $0)/data/release-notes--desktop.md $outputDir/$desktopDir/README.md
 mkdir -p $outputDir/$desktopDir/separate_statics
 
 cp -r $dir/Static_OTF $outputDir/$desktopDir/separate_statics/OTF
-rm $outputDir/$desktopDir/separate_statics/OTF/*_output.txt
+rm $outputDir/$desktopDir/separate_statics/OTF/*_output.txt || true # remove file if it exists OR move on
 
 cp -r $dir/Static_TTF $outputDir/$desktopDir/separate_statics/TTF
-rm $outputDir/$desktopDir/separate_statics/TTF/*_output.txt
+rm $outputDir/$desktopDir/separate_statics/TTF/*_output.txt || true # remove file if it exists OR move on
 
 # ---------------------------------------------
-# make a zip of the outputDir, then move both dir & zip into "fonts/"
+# move dir "fonts/"
 
-# zip $outputDir.zip -r $outputDir -x .DS_*
-
-# mv $outputDir.zip fonts/$outputDir.zip
 mv $outputDir fonts/$outputDir
 
 # ---------------------------------------------
@@ -144,10 +142,36 @@ cp -r $dir/Static_TTF $gfDir/static
 rm $gfDir/static/*_output.txt || true # remove file if it exists OR move on
 
 # ---------------------------------------------
-# just a reminder
+# make code fonts
+# assumes the "recursive-code-config" project lives in the same directory as "recursive"
 
-echo ""
-echo ""
-echo "⚠️ TO DO: Use Recursive Code Config to generate new Code release fonts to copy into release!"
-echo "⚠️ TO DO: then make zip for release: cd into fonts, THEN make zip of complete package"
-echo ""
+# gets VF filename
+VFname=$(basename $VF)
+# copy VF into code-config directory
+cp $VF ../recursive-code-config/font-data/$VFname
+
+# move there
+cd ../recursive-code-config
+
+# install requirements for recursive-code-config
+pip install -U -r requirements.txt
+
+echo recursive-code-config/font-data/$VFname
+
+# run scripts/build-all.sh $VFcopy
+scripts/build-all.sh font-data/$VFname
+
+# copy each dir in ./fonts back into ../recursive/fonts/$outputDir/Recursive_Code
+fontDirs=$(ls ./fonts)
+
+for fontDirPath in $fontDirs; do
+	cp -a "fonts/$fontDirPath/." ../recursive/fonts/$outputDir/Recursive_Code/$(basename "$fontDirPath")
+done
+
+# move back
+cd ../recursive
+
+# ---------------------------------------------
+# make zip of final release
+
+zip fonts/$outputDir.zip -r fonts/$outputDir -x .DS_*
