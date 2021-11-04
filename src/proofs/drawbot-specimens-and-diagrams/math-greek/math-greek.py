@@ -31,8 +31,8 @@ debug = False
 
 fontFam = f"{currentDir}/Recursive_VF_1.084.ttf" # Update as needed. Easiest when font file is in same directory.
 
-loops = 3 # number of times to repeat animation
-frames = 32 # frames per loop
+loops = 3 #3 # number of times to repeat animation
+frames = 32 # 32 # frames per loop
 fps = 3
 frameRate = 1/fps # only applicable to mp4 and gif; can be buggy
 fileFormat = "mp4" # pdf, gif, or mp4
@@ -42,11 +42,17 @@ DPI = 450 # dots per inch
 
 paddingInPts = 18
 
+# inputText = """\
+# Α Β Γ Δ Λ
+# Μ Ν Θ Π Φ
+# α β γ μ λ
+# ν θ π δ φ
+# """
 inputText = """\
-Α Β Γ Δ Λ
-Μ Ν Θ Π Φ
-α β γ μ λ
-ν θ π δ φ
+ΑΒΓΔΛ
+ΜΝΘΠΦ
+αβγμλ
+νθπδφ
 """
 
 # ----------------------------------------------
@@ -68,8 +74,9 @@ def interpolate(a, b, t):
 # ----------------------------------------------
 # TEXT FUNCTIONS
 
-def drawCharacters(f, r=1,g=1,b=1, t=1):
-    fontSizeLg = H*.13
+def drawCharacters(f, r=1,g=1,b=1, t=1, loop=1):
+    # fontSizeLg = H*.13
+    fontSizeLg = H*.2 
     offset = H*0.2
     
     blendMode("screen")
@@ -85,7 +92,7 @@ def drawCharacters(f, r=1,g=1,b=1, t=1):
 
             fill(*color)
 
-            rgbOffset = 0.005 * f
+            rgbOffset = 0.0025 * f * loop
             translate(0,H*rgbOffset)
 
             # tracking(20)
@@ -98,6 +105,7 @@ def drawCharacters(f, r=1,g=1,b=1, t=1):
                     font=fontFam,
                     fontSize=fontSizeLg,
                     fill=color,
+                    tracking=10,
                     align="center",
                     fontVariations={"wght": wghtVal,"CASL": caslVal,"slnt": slntVal, "MONO": monoVal}
                 )
@@ -120,7 +128,7 @@ def drawCharacters(f, r=1,g=1,b=1, t=1):
         fontVariations(wght=400,CASL=0.5,slnt=0, MONO=1)
         # rotate(90)
         # text(f"MONO {monoValue}    CASL {casualValue}    WGHT {weightValue}    SLNT {slantValue}", (W*.05, H*-.05), align="left")
-        text(f"MONO {monoValue}    CASL {casualValue}    WGHT {weightValue}    SLNT {slantValue}", (W*.5, H*.075), align="center")
+        text(f"MONO {monoValue}    CASL {casualValue}    WGHT {weightValue}    SLNT {slantValue}", (W*.5, H*.062), align="center")
 
 
 # ----------------------------------------------
@@ -146,7 +154,7 @@ for repeat in range(loops):
             rect(0, H/2, W, 1)
             rect(W/2, 0, 1, H)
 
-        drawCharacters(f, 0,1,0, t)
+        drawCharacters(f, 0,1,0, t, repeat+1)
 
 endDrawing() # advised by drawbot docs
 
