@@ -174,4 +174,5 @@ cd ../recursive
 # ---------------------------------------------
 # make zip of final release
 
-zip fonts/$outputDir.zip -r fonts/$outputDir -x .DS_*
+cd fonts
+zip $outputDir.zip -r $outputDir -x .DS_*
