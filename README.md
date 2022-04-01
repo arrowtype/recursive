@@ -160,9 +160,6 @@ There are two primary ways to use Recursive in code editors:
 
 Install the `Rec Mono` fonts (found in the “Recursive_Code” folder of release downloads). These have code ligatures & several stylistic sets pre-applied so they will work by default in most code environments & apps. These are also named & configured in a way that enables their use in code themes that utilize italic & bold styles. If you wish to configure specific features in `Rec Mono` fonts, see [Recursive Code Config](https://github.com/arrowtype/recursive-code-config).
 
-One drawback of the Code fonts is that they do not have hinting. On most modern screens, they still render very well. However, if you want hinting or simpler control over OpenType features, you may wish to instead use the standard Recursive Mono desktop fonts.
-
-
 #### 2: Standard Recursive Mono desktop fonts
 
 Install the desktop `Recursive Mono` fonts (found in the “Recursive_Desktop” folder of release downloads). Then, activate them & set OpenType features if your code editor allows this. Instructions for three editors follow. On Mac before macOS 11, these do not work in themes with Italic styles – see above for “Code” fonts that do.
