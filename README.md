@@ -156,9 +156,9 @@ Recursive is built with a number of OpenType features that make it simple to con
 
 There are two primary ways to use Recursive in code editors:
 
-#### 1: Rec Mono for Code fonts
+#### 1: Rec Mono for Code
 
-Install the `Rec Mono` fonts (found in the “Recursive_Code” folder of release downloads). These have code ligatures & several stylistic sets pre-applied so they will work by default in most code environments & apps. These are also named & configured in a way that enables their use in code themes that utilize italic & bold styles. If you wish to configure specific features in `Rec Mono` fonts, see [Recursive Code Config](https://github.com/arrowtype/recursive-code-config).
+Install the `Rec Mono` fonts (found in the “Recursive_Code” folder of release downloads). These have code ligatures & several stylistic sets pre-applied so they will work by default in most code environments & apps. These are also named & configured in a way that enables their use in code themes that utilize italic & bold styles. If you wish to configure specific features in `Rec Mono` fonts (such as a dotted `0` or single-story `g`), see [Recursive Code Config](https://github.com/arrowtype/recursive-code-config).
 
 #### 2: Standard Recursive Mono desktop fonts
 
