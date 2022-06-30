@@ -7,10 +7,10 @@
 			<point x="241" y="0" type="curve"/>
 			<point x="232" y="31"/>
 			<point x="230" y="65"/>
-			<point x="230" y="96" type="curve"/>
+			<point x="230" y="96" type="curve" smooth="yes"/>
 			<point x="230" y="216"/>
 			<point x="230" y="335"/>
-			<point x="230" y="455" type="curve"/>
+			<point x="230" y="455" type="curve" smooth="yes"/>
 			<point x="230" y="498"/>
 			<point x="219" y="528"/>
 			<point x="192" y="544" type="curve"/>
@@ -21,13 +21,11 @@
 			<point x="70" y="103" type="curve" smooth="yes"/>
 			<point x="70" y="26"/>
 			<point x="106" y="-6"/>
-			<point x="188" y="-6" type="curve"/>
+			<point x="188" y="-6" type="curve" smooth="yes"/>
 			<point x="210" y="-6"/>
 			<point x="223" y="-4"/>
 		</contour>
 		<contour>
-			<point x="507" y="-8"/>
-			<point x="526" y="-5"/>
 			<point x="549" y="0" type="curve"/>
 			<point x="540" y="36"/>
 			<point x="536" y="73"/>
@@ -49,6 +47,8 @@
 			<point x="380" y="32"/>
 			<point x="419" y="-8"/>
 			<point x="482" y="-8" type="curve" smooth="yes"/>
+			<point x="507" y="-8"/>
+			<point x="526" y="-5"/>
 		</contour>
 	</outline>
 	<guideline x="0" y="385" angle="0" identifier="P6THTpxNZr"/>

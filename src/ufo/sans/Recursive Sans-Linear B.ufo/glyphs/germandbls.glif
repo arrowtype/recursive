@@ -4,24 +4,22 @@
 	<advance width="600"/>
 	<outline>
 		<contour>
-			<point x="165" y="770"/>
-			<point x="69" y="695"/>
-			<point x="69" y="579" type="curve"/>
+			<point x="69" y="579" type="curve" smooth="yes"/>
 			<point x="69" y="420"/>
 			<point x="69" y="260"/>
-			<point x="69" y="101" type="curve"/>
+			<point x="69" y="101" type="curve" smooth="yes"/>
 			<point x="69" y="67"/>
 			<point x="69" y="34"/>
 			<point x="69" y="0" type="curve"/>
 			<point x="115" y="0"/>
 			<point x="162" y="0"/>
-			<point x="208" y="0" type="curve"/>
+			<point x="208" y="0" type="curve" smooth="yes"/>
 			<point x="215" y="0"/>
 			<point x="219" y="4"/>
-			<point x="219" y="11" type="curve"/>
+			<point x="219" y="11" type="curve" smooth="yes"/>
 			<point x="219" y="187"/>
 			<point x="219" y="364"/>
-			<point x="219" y="540" type="curve"/>
+			<point x="219" y="540" type="curve" smooth="yes"/>
 			<point x="219" y="574"/>
 			<point x="225" y="595"/>
 			<point x="238" y="607" type="curve" smooth="yes"/>
@@ -45,10 +43,10 @@
 			<point x="375" y="257" type="line" smooth="yes"/>
 			<point x="422" y="217"/>
 			<point x="430" y="206"/>
-			<point x="430" y="182" type="curve"/>
+			<point x="430" y="182" type="curve" smooth="yes"/>
 			<point x="430" y="168"/>
 			<point x="426" y="157"/>
-			<point x="419" y="149" type="curve" smooth="yes"/>
+			<point x="419" y="149" type="curve"/>
 			<point x="411" y="141"/>
 			<point x="399" y="136"/>
 			<point x="382" y="136" type="curve" smooth="yes"/>
@@ -75,7 +73,7 @@
 			<point x="456" y="361" type="line" smooth="yes"/>
 			<point x="429" y="384"/>
 			<point x="420" y="393"/>
-			<point x="420" y="401" type="curve"/>
+			<point x="420" y="401" type="curve" smooth="yes"/>
 			<point x="420" y="409"/>
 			<point x="426" y="417"/>
 			<point x="457" y="443" type="curve" smooth="yes"/>
@@ -87,6 +85,8 @@
 			<point x="537" y="718"/>
 			<point x="462" y="770"/>
 			<point x="312" y="770" type="curve" smooth="yes"/>
+			<point x="165" y="770"/>
+			<point x="69" y="695"/>
 		</contour>
 	</outline>
 	<lib>

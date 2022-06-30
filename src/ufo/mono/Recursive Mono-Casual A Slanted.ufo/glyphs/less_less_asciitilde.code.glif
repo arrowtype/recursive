@@ -3,7 +3,7 @@
 	<advance width="1800"/>
 	<outline>
 		<contour>
-			<point x="1509" y="178" type="curve"/>
+			<point x="1509" y="178" type="curve" smooth="yes"/>
 			<point x="1364" y="178"/>
 			<point x="1402" y="372"/>
 			<point x="1296" y="377" type="curve"/>
@@ -23,7 +23,7 @@
 			<point x="1163" y="294" type="line" smooth="yes"/>
 			<point x="1185" y="383"/>
 			<point x="1240" y="422"/>
-			<point x="1299" y="422" type="curve"/>
+			<point x="1299" y="422" type="curve" smooth="yes"/>
 			<point x="1444" y="422"/>
 			<point x="1406" y="228"/>
 			<point x="1512" y="223" type="curve"/>
@@ -45,8 +45,6 @@
 			<point x="1568" y="178"/>
 		</contour>
 		<contour>
-			<point x="453" y="524"/>
-			<point x="310" y="442"/>
 			<point x="174" y="329" type="curve"/>
 			<point x="169" y="318"/>
 			<point x="165" y="309"/>
@@ -78,10 +76,10 @@
 			<point x="681" y="561"/>
 			<point x="681" y="568"/>
 			<point x="681" y="576" type="curve"/>
+			<point x="453" y="524"/>
+			<point x="310" y="442"/>
 		</contour>
 		<contour>
-			<point x="943" y="524"/>
-			<point x="800" y="442"/>
 			<point x="664" y="329" type="curve"/>
 			<point x="659" y="318"/>
 			<point x="655" y="309"/>
@@ -113,6 +111,8 @@
 			<point x="1171" y="561"/>
 			<point x="1171" y="568"/>
 			<point x="1171" y="576" type="curve"/>
+			<point x="943" y="524"/>
+			<point x="800" y="442"/>
 		</contour>
 	</outline>
 	<anchor name="caret_1" x="600" y="0"/>

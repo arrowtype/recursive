@@ -3,15 +3,13 @@
 	<advance width="1800"/>
 	<outline>
 		<contour>
-			<point x="438" y="600"/>
-			<point x="281" y="502"/>
 			<point x="164" y="425" type="curve"/>
 			<point x="164" y="379"/>
 			<point x="164" y="329"/>
 			<point x="164" y="284" type="curve" smooth="yes"/>
 			<point x="164" y="274"/>
 			<point x="166" y="269"/>
-			<point x="175" y="263" type="curve"/>
+			<point x="175" y="263" type="curve" smooth="yes"/>
 			<point x="307" y="176"/>
 			<point x="442" y="92"/>
 			<point x="574" y="4" type="curve"/>
@@ -36,17 +34,17 @@
 			<point x="574" y="655"/>
 			<point x="574" y="670"/>
 			<point x="574" y="689" type="curve"/>
+			<point x="438" y="600"/>
+			<point x="281" y="502"/>
 		</contour>
 		<contour>
-			<point x="1362" y="93"/>
-			<point x="1519" y="191"/>
 			<point x="1636" y="268" type="curve"/>
 			<point x="1636" y="314"/>
 			<point x="1636" y="364"/>
 			<point x="1636" y="409" type="curve" smooth="yes"/>
 			<point x="1636" y="419"/>
 			<point x="1634" y="424"/>
-			<point x="1625" y="430" type="curve"/>
+			<point x="1625" y="430" type="curve" smooth="yes"/>
 			<point x="1493" y="517"/>
 			<point x="1358" y="601"/>
 			<point x="1226" y="689" type="curve"/>
@@ -71,6 +69,8 @@
 			<point x="1226" y="38"/>
 			<point x="1226" y="23"/>
 			<point x="1226" y="4" type="curve"/>
+			<point x="1362" y="93"/>
+			<point x="1519" y="191"/>
 		</contour>
 		<contour>
 			<point x="889" y="-16" type="curve" smooth="yes"/>
@@ -149,7 +149,7 @@
 			<point x="881" y="473" type="curve" smooth="yes"/>
 			<point x="881" y="466"/>
 			<point x="885" y="462"/>
-			<point x="892" y="462" type="curve" smooth="yes"/>
+			<point x="892" y="462" type="curve"/>
 			<point x="900" y="458"/>
 			<point x="910" y="456"/>
 		</contour>
@@ -172,7 +172,7 @@
 			<point x="908" y="235" type="curve" smooth="yes"/>
 			<point x="908" y="244"/>
 			<point x="905" y="250"/>
-			<point x="897" y="252" type="curve" smooth="yes"/>
+			<point x="897" y="252" type="curve"/>
 			<point x="888" y="255"/>
 			<point x="879" y="257"/>
 		</contour>

@@ -3,15 +3,13 @@
 	<advance width="1800"/>
 	<outline>
 		<contour>
-			<point x="438" y="553"/>
-			<point x="281" y="455"/>
 			<point x="164" y="378" type="curve"/>
 			<point x="164" y="332"/>
 			<point x="164" y="282"/>
 			<point x="164" y="237" type="curve" smooth="yes"/>
 			<point x="164" y="227"/>
 			<point x="166" y="222"/>
-			<point x="175" y="216" type="curve"/>
+			<point x="175" y="216" type="curve" smooth="yes"/>
 			<point x="307" y="129"/>
 			<point x="442" y="45"/>
 			<point x="574" y="-43" type="curve"/>
@@ -36,17 +34,17 @@
 			<point x="574" y="608"/>
 			<point x="574" y="623"/>
 			<point x="574" y="642" type="curve"/>
+			<point x="438" y="553"/>
+			<point x="281" y="455"/>
 		</contour>
 		<contour>
-			<point x="1362" y="46"/>
-			<point x="1519" y="144"/>
 			<point x="1636" y="221" type="curve"/>
 			<point x="1636" y="267"/>
 			<point x="1636" y="317"/>
 			<point x="1636" y="362" type="curve" smooth="yes"/>
 			<point x="1636" y="372"/>
 			<point x="1634" y="377"/>
-			<point x="1625" y="383" type="curve"/>
+			<point x="1625" y="383" type="curve" smooth="yes"/>
 			<point x="1493" y="470"/>
 			<point x="1358" y="554"/>
 			<point x="1226" y="642" type="curve"/>
@@ -71,6 +69,8 @@
 			<point x="1226" y="-9"/>
 			<point x="1226" y="-24"/>
 			<point x="1226" y="-43" type="curve"/>
+			<point x="1362" y="46"/>
+			<point x="1519" y="144"/>
 		</contour>
 		<contour>
 			<point x="875" y="576" type="curve"/>
@@ -102,14 +102,14 @@
 			<point x="626" y="286" type="curve" smooth="yes"/>
 			<point x="626" y="280"/>
 			<point x="630" y="275"/>
-			<point x="637" y="275" type="curve"/>
+			<point x="637" y="275" type="curve" smooth="yes"/>
 			<point x="1174" y="275" type="line"/>
 			<point x="1174" y="288"/>
 			<point x="1174" y="301"/>
 			<point x="1174" y="314" type="curve" smooth="yes"/>
 			<point x="1174" y="321"/>
 			<point x="1170" y="325"/>
-			<point x="1163" y="325" type="curve"/>
+			<point x="1163" y="325" type="curve" smooth="yes"/>
 		</contour>
 	</outline>
 	<anchor name="caret_1" x="600" y="0"/>
