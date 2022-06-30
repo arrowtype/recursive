@@ -42,8 +42,7 @@ if __name__ == "__main__":
     if args.out:
         out = args.out
     else:
-        out = os.path.join(Path(os.getcwd()).parents[0],
-                           f"fonts_{version}")
+        out = os.path.join(Path(os.getcwd()).parents[0], f"fonts_{version}")
 
     if not os.path.exists(out):
         os.mkdir(out)

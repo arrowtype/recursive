@@ -1,0 +1,61 @@
+
+ /* The bare minimum English subset, plus copyright & arrows (← ↑ → ↓) & quotes (“ ” ‘ ’) & bullet (•) */
+@font-face {
+  font-family: 'RecVar';
+  font-style: oblique 0deg 15deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url('./fonts/Recursive_VF_1.085--subset_range_english_basic.woff2') format('woff2');
+  unicode-range: U+0020-007F,U+00A9,U+2190-2193,U+2018,U+2019,U+201C,U+201D,U+2022;
+}
+
+/* unicode latin-1 letters, basic european diacritics */
+@font-face {
+  font-family: 'RecVar';
+  font-style: oblique 0deg 15deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url('./fonts/Recursive_VF_1.085--subset_range_latin_1.woff2') format('woff2');
+  unicode-range: U+00C0-00FF;
+}
+
+/* unicode latin-1, punc/symbols & arrows (↔ ↕ ↖ ↗ ↘ ↙) */
+@font-face {
+  font-family: 'RecVar';
+  font-style: oblique 0deg 15deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url('./fonts/Recursive_VF_1.085--subset_range_latin_1_punc.woff2') format('woff2');
+  unicode-range: U+00A0-00A8,U+00AA-00BF,U+2194-2199;
+}
+
+/* unicode latin A extended */
+@font-face {
+  font-family: 'RecVar';
+  font-style: oblique 0deg 15deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url('./fonts/Recursive_VF_1.085--subset_range_latin_ext.woff2') format('woff2');
+  unicode-range: U+0100-017F;
+}
+
+/* unicodes for vietnamese */
+@font-face {
+  font-family: 'RecVar';
+  font-style: oblique 0deg 15deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url('./fonts/Recursive_VF_1.085--subset_range_vietnamese.woff2') format('woff2');
+  unicode-range: U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB;
+}
+
+/* remaining Unicodes */
+@font-face {
+  font-family: 'RecVar';
+  font-style: oblique 0deg 15deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url('./fonts/Recursive_VF_1.085--subset_range_remaining.woff2') format('woff2');
+  unicode-range: U+2007,U+2008,U+2009,U+200A,U+200B,U+D,U+2010,U+2012,U+2013,U+2014,U+2015,U+201A,U+201E,U+2020,U+2021,U+2026,U+2030,U+2032,U+2033,U+2039,U+203A,U+203E,U+2044,U+2052,U+2070,U+2074,U+2075,U+2076,U+2077,U+2078,U+2079,U+207B,U+2080,U+2081,U+2082,U+2083,U+2084,U+2085,U+2086,U+2087,U+2088,U+2089,U+20A1,U+20A6,U+20A8,U+20A9,U+20AA,U+20AC,U+20AD,U+20B1,U+20B2,U+20B4,U+20B5,U+20B8,U+20B9,U+20BA,U+20BC,U+20BD,U+20BF,U+F8FF,U+2113,U+2116,U+2122,U+2126,U+212E,U+E132,U+E133,U+2153,U+2154,U+215B,U+215C,U+215D,U+215E,U+18F,U+192,U+19D,U+1C4,U+1C5,U+1C6,U+1C7,U+1C8,U+1C9,U+1CA,U+1CB,U+1CC,U+1E6,U+1E7,U+1EA,U+1EB,U+1F1,U+1F2,U+1F3,U+1FA,U+1FB,U+1FC,U+1FD,U+1FE,U+1FF,U+200,U+201,U+202,U+203,U+204,U+205,U+206,U+207,U+208,U+209,U+20A,U+20B,U+20C,U+20D,U+20E,U+20F,U+210,U+211,U+212,U+213,U+214,U+215,U+216,U+217,U+218,U+219,U+21A,U+21B,U+2215,U+2219,U+221E,U+221A,U+22A,U+22B,U+22C,U+22D,U+222B,U+230,U+231,U+232,U+233,U+2236,U+237,U+2248,U+259,U+2260,U+2261,U+2264,U+2265,U+272,U+2B9,U+2BA,U+2BB,U+2BC,U+2BE,U+2BF,U+2C6,U+2C7,U+2C8,U+2C9,U+2CA,U+2CB,U+2D8,U+2D9,U+2DA,U+2DB,U+2DC,U+2DD,U+300,U+301,U+FB02,U+FB03,U+302,U+303,U+304,U+FB01,U+306,U+307,U+308,U+309,U+30A,U+30B,U+30C,U+30F,U+311,U+312,U+315,U+31B,U+2202,U+323,U+324,U+325,U+326,U+327,U+328,U+329,U+2205,U+32E,U+2206,U+331,U+335,U+220F,U+2211,U+2212,U+391,U+392,U+393,U+394,U+398,U+39B,U+39C,U+39D,U+3A0,U+3A6,U+3B1,U+3B2,U+3B3,U+3B4,U+3B8,U+3BB,U+3BC,U+3BD,U+3C0,U+3C6,U+25A0,U+25A1,U+25B2,U+25B3,U+25B6,U+25B7,U+25BC,U+25BD,U+25C0,U+25C1,U+25C6,U+25C7,U+25CA,U+1E08,U+1E09,U+1E0C,U+1E0D,U+1E0E,U+1E0F,U+2610,U+2611,U+1E14,U+1E15,U+1E16,U+1E17,U+1E1C,U+1E1D,U+1E20,U+1E21,U+1E24,U+1E25,U+1E2A,U+1E2B,U+1E2E,U+1E2F,U+1E36,U+1E37,U+1E3A,U+1E3B,U+E3F,U+1E42,U+1E43,U+1E44,U+1E45,U+1E46,U+1E47,U+1E48,U+1E49,U+1E4C,U+1E4D,U+1E4E,U+1E4F,U+1E50,U+1E51,U+1E52,U+1E53,U+1E5A,U+1E5B,U+1E5E,U+1E5F,U+1E60,U+2661,U+1E61,U+1E62,U+1E63,U+1E64,U+1E65,U+1E66,U+1E67,U+1E68,U+1E69,U+2665,U+1E6C,U+1E6D,U+1E6E,U+1E6F,U+1E78,U+1E79,U+1E7A,U+1E7B,U+1E80,U+1E81,U+1E82,U+1E83,U+1E84,U+1E85,U+1E8E,U+1E8F,U+1E92,U+1E93,U+1E97,U+1E9E,U+2713,U+27E8,U+27E9;
+}
+
