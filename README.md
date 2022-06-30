@@ -299,7 +299,7 @@ Before beginning, change your working directory to `mastering`.
 cd mastering
 ```
 
-`python build.py --files` is the first step. This will generate all the files needed for building the variable and static fonts. You will likely want to give the font a version number with this command (`python build.py --version 1.065 --files`). To prep only files for the variable font, use `python build.py --varfiles`, or to prep only files for the static fonts, use `python build.py --statfiles`.
+`python build.py --files` is the first step. This will generate all the files needed for building the variable and static fonts. You will likely want to give the font a version number with this command (`python build.py --version 1.085 --files`). To prep only files for the variable font, use `python build.py --varfiles`, or to prep only files for the static fonts, use `python build.py --statfiles`.
 
 After the files have been generated (do note that the static instances take a bit of time to generate), you will want to look at the `mastering/build/static/CFF/checkoutlines.txt` file. This is the report (edited to remove issues that do not need attention) from [checkoutlinesUFO](https://adobe-type-tools.github.io/afdko/AFDKO-Overview.html#checkoutlinesufo). Issues found in this report should be cleaned up in the static UFOs. Many issues are due to overlap removal. Nothing is perfect, overlap removal algorithms included.
 
@@ -309,7 +309,7 @@ To build the variable font, run:
 
 ```bash
 # activate venv, install dependencies, cd mastering
-version=1.084 # (replace version number)
+version=1.085 # (replace version number)
 python build.py --varfiles --version $version
 python build.py --variable --version $version
 ```
@@ -320,7 +320,7 @@ To build all the static fonts, run:
 
 ```bash
 # activate venv, install dependencies, cd mastering 
-version=1.084 # (replace version number)
+version=1.085 # (replace version number)
 python build.py --statfiles --version $version
 python build.py --static --version $version
 ```
@@ -331,7 +331,7 @@ If you want to build all of the sources, fonts, and WOFF2 versions of all of the
 
 ```bash
 # activate venv, install dependencies, cd mastering
-python build.py --all --version 1.084 # (replace version number)
+python build.py --all --version 1.085 # (replace version number)
 ```
 
 **Get notifications (Mac only)**
@@ -340,7 +340,7 @@ Add option `--pync` (`-p` for short) to the script call to get Mac notifications
 
 ```bash
 # activate venv, install dependencies, cd mastering
-python build.py --all --pync --version 1.084 # (replace version number)
+python build.py --all --pync --version 1.085 # (replace version number)
 ```
 
 ### Making a GitHub release
@@ -351,7 +351,7 @@ First, build fonts with the mastering flow above. Then:
 # navigate to the root directory of the project, then...
 
 # update to latest font build directory
-fontDir="fonts_1.079"
+fontDir="fonts_1.085"
 src/build-scripts/make-release/00-prep-release.sh $fontDir
 ```
 
