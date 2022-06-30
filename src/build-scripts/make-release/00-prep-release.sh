@@ -31,9 +31,10 @@ outputDir=ArrowType-Recursive-${version/" "/"_"}
 gfDir=fonts/recursive_for_googlefonts
 
 # clean up past runs
-# rm -rf $outputDir
-# rm -rf fonts/$outputDir
-# rm -rf fonts/$outputDir.zip
+rm -rf "./$outputDir" || true           # move on if dir isn't there to delete
+rm -rf fonts/$outputDir || true     # move on if dir isn't there to delete
+rm -rf fonts/$outputDir.zip || true # move on if dir isn't there to delete
+rm -rf $gfDir || true               # move on if dir isn't there to delete
 
 # ---------------------------------------------
 # if you need to make sure versions are set to something specific
@@ -98,15 +99,6 @@ fonts=$(ls $dir/Static_TTF/*.ttf)
 otf2otc $fonts -o "$outputDir/$desktopDir/recursive-static-TTFs.ttc"
 
 # ---------------------------------------------
-# Make code-specific fonts
-
-# TODO: change directories to auto-build this from that other project? Might be overly dependent on my own
-
-# python src/build-scripts/make-release/instantiate-code-fonts.py $dir/Variable_TTF/*.ttf -o $outputDir/$desktopCodeDir
-
-mkdir -p $outputDir/$desktopCodeDir
-
-# ---------------------------------------------
 # copy metadata
 
 cp OFL.txt $outputDir/LICENSE.txt
@@ -127,7 +119,7 @@ cp -r $dir/Static_TTF $outputDir/$desktopDir/separate_statics/TTF
 rm $outputDir/$desktopDir/separate_statics/TTF/*_output.txt || true # remove file if it exists OR move on
 
 # ---------------------------------------------
-# move dir "fonts/"
+# move dir into "fonts/"
 
 mv $outputDir fonts/$outputDir
 
@@ -144,6 +136,9 @@ rm $gfDir/static/*_output.txt || true # remove file if it exists OR move on
 # ---------------------------------------------
 # make code fonts
 # assumes the "recursive-code-config" project lives in the same directory as "recursive"
+
+
+mkdir -p fonts/$outputDir/$desktopCodeDir
 
 # gets VF filename
 VFname=$(basename $VF)
