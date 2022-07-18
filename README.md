@@ -3,7 +3,10 @@
  </p>
 <p align="center">
 💌 <strong>Sign up for the <a href="https://arrowtype.com/" target="_blank">Arrow Type newsletter!</a></strong> 💌
- </p>
+</p>
+<p align="center">
+📝 <strong>Follow <a href="https://instagram.com/arrowtype" target="_blank">@ArrowType</a> on Instagram!</strong> 📝
+</p>
 
 ---
 
