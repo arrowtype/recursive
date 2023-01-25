@@ -252,10 +252,10 @@ def addUnicodeForTrickyGlyphs(g):
 
 ### use the below to use the current font (and comment out lines below)
 
-def sortFont(font):
-    # the new default is at the end, so this will re-apply a "smart sort" to the font
-    newGlyphOrder = font.naked().unicodeData.sortGlyphNames(font.glyphOrder, sortDescriptors=[dict(type="cannedDesign", ascending=True, allowPseudoUnicode=True)])
-    font.glyphOrder = newGlyphOrder
+# def sortFont(font):
+#     # the new default is at the end, so this will re-apply a "smart sort" to the font
+#     newGlyphOrder = font.naked().unicodeData.sortGlyphNames(font.glyphOrder, sortDescriptors=[dict(type="cannedDesign", ascending=True, allowPseudoUnicode=True)])
+#     font.glyphOrder = newGlyphOrder
 
 
 files = getFile("Select files to add unicodes to", allowsMultipleSelection=True, fileTypes=["ufo"])
@@ -265,7 +265,7 @@ for file in files:
     for g in font:
         addUnicodeForGlyph(g)
         addUnicodeForTrickyGlyphs(g)
-    sortFont(font)
+    # sortFont(font)
 
     font.save()
 

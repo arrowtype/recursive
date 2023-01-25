@@ -36,7 +36,7 @@ for file in files:
         if fontName not in glyphs[glyph.name]:
             glyphs[glyph.name].append(fontName)
 
-    font.close()
+    #font.close()
 
 print("Checking fonts:")
 for fontName in fonts:

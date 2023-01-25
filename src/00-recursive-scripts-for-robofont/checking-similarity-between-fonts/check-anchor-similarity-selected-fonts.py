@@ -28,7 +28,7 @@ glyphSets = [font.keys() for font in fonts]
 # Use set intersection to get all common glyph from each list
 commonGlyphs = set.intersection(*map(set, glyphSets))
 
-print(commonGlyphs)
+# print(commonGlyphs)
 
 for font in fonts:
 
