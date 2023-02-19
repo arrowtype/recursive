@@ -82,7 +82,7 @@ feature ss08 {
         # MS, unicode, English
         name "No-serif \2018L\2019 & \2018Z\2019";
         # Apple, roman, unspecified
-        name 1 "No-serif \2018L\2019 & \D4Z\D5";
+        name 1 "No-serif \D4L\D5 & \D4Z\D5";
     };
     sub @dfltCapL by @sansCapL;
     sub @dfltCapZ by @sansCapZ;
